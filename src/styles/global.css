@@ -1,0 +1,151 @@
+/* Brand foundations */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&family=Libre+Baskerville:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #0f1b1a;
+  --forest: #0f6f5c;
+  --mint: #9ee0c2;
+  --sand: #f3efe8;
+  --slate: #4c5b59;
+}
+
+/* Custom base styles */
+@layer base {
+  html {
+    font-family: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #f7f7f5;
+    color: var(--ink);
+    font-size: 16px;
+  }
+
+  body {
+    @apply antialiased;
+    background: transparent;
+    letter-spacing: -0.01em;
+    line-height: 1.7;
+    font-weight: 400;
+  }
+
+  p {
+    line-height: 1.75;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: 'Playfair Display', 'Libre Baskerville', serif;
+    color: var(--ink);
+    letter-spacing: -0.02em;
+    font-weight: 700;
+  }
+
+  h1 {
+    line-height: 1.05;
+  }
+
+  h2 {
+    line-height: 1.1;
+  }
+
+  h3,
+  h4 {
+    line-height: 1.15;
+  }
+}
+
+/* Custom component styles */
+@layer components {
+  .btn-primary {
+    @apply bg-emerald-700 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-emerald-800 transition-colors shadow-md shadow-emerald-900/10;
+  }
+
+  .btn-secondary {
+    @apply border-2 border-emerald-700 text-emerald-700 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-emerald-700 hover:text-white transition-colors;
+  }
+
+  /* WordPress compatibility styles for images */
+  .alignright {
+    @apply float-right ml-4 mb-4;
+  }
+
+  .alignleft {
+    @apply float-left mr-4 mb-4;
+  }
+
+  .aligncenter {
+    @apply mx-auto block;
+  }
+
+  .size-full,
+  .wp-image-2282,
+  .wp-image-2291 {
+    @apply max-w-full h-auto;
+  }
+
+  .section-shell {
+    @apply mx-auto px-5 relative w-full max-w-6xl;
+  }
+
+  .card-glass {
+    background: linear-gradient(135deg,
+        rgba(236, 253, 245, 0.98) 0%,
+        rgba(220, 252, 231, 0.95) 25%,
+        rgba(254, 249, 239, 0.92) 50%,
+        rgba(253, 242, 233, 0.95) 75%,
+        rgba(254, 243, 239, 0.98) 100%);
+    @apply border border-white/60 shadow-xl shadow-slate-900/5 backdrop-blur-xl rounded-3xl;
+  }
+
+  .pill {
+    @apply inline-flex items-center px-3 py-1 text-sm font-semibold rounded-full bg-white/70 border border-emerald-700/20 text-emerald-900 uppercase tracking-wide;
+    letter-spacing: 0.04em;
+  }
+
+  .soft-divider {
+    @apply w-full h-px bg-gradient-to-r from-transparent via-emerald-800/20 to-transparent my-12;
+  }
+
+  /* Header styling - solid emerald background for readability */
+  #site-header {
+    background: rgb(6, 78, 59); /* emerald-900 */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* Custom animations for hero section */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes float-delayed {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float-delayed 6s ease-in-out infinite 2s;
+}

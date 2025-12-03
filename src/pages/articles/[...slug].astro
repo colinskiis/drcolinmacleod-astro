@@ -1,0 +1,305 @@
+---
+import { type CollectionEntry, getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BookingButton from '../../components/BookingButton.astro';
+
+export async function getStaticPaths() {
+  const articles = await getCollection('articles');
+  return articles.map((article) => ({
+    params: { slug: article.slug },
+    props: article,
+  }));
+}
+
+type Props = CollectionEntry<'articles'>;
+
+const article = Astro.props;
+const { Content } = await article.render();
+
+// SEO preparation
+const seoTitle = article.data.seo?.title || article.data.title;
+const seoDescription = article.data.seo?.description || article.data.description;
+const focusKeyword = article.data.seo?.focusKeyword || '';
+
+// Format dates
+const publishedDate = new Date(article.data.publishDate).toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric'
+});
+
+const modifiedDate = article.data.modifiedDate 
+  ? new Date(article.data.modifiedDate).toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long', 
+      day: 'numeric'
+    })
+  : null;
+---
+
+<BaseLayout 
+  title={seoTitle}
+  description={seoDescription}
+  focusKeyword={focusKeyword}
+>
+  <!-- Article Header -->
+  <article class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="max-w-4xl mx-auto">
+        
+        <!-- Breadcrumbs -->
+        <nav class="flex items-center space-x-2 text-sm mb-8">
+          <a href="/" class="text-emerald-800 hover:text-emerald-900 font-medium">Home</a>
+          <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+          <a href="/articles" class="text-emerald-800 hover:text-emerald-900 font-medium">Articles</a>
+          <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+          <span class="text-gray-500 truncate">{article.data.title}</span>
+        </nav>
+
+        <!-- Article Header -->
+        <header class="mb-12">
+          <div class="flex flex-wrap items-center gap-2 mb-4">
+            {article.data.categories.map((category) => (
+              <span class="bg-emerald-100 text-emerald-900 text-xs font-medium px-3 py-1.5 rounded-full">
+                {category}
+              </span>
+            ))}
+          </div>
+          
+          <h1 class="text-4xl sm:text-5xl font-serif font-bold text-emerald-950 mb-6 leading-tight tracking-tight">
+            {article.data.title}
+          </h1>
+          
+          <p class="text-xl text-gray-600 mb-6 leading-relaxed">
+            {article.data.description}
+          </p>
+
+          <!-- Article Meta -->
+          <div class="flex flex-wrap items-center gap-6 text-sm text-gray-500 border-t border-gray-200 pt-6">
+            <div class="flex items-center">
+              <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+              </svg>
+              <span>{article.data.author}</span>
+            </div>
+            
+            <div class="flex items-center">
+              <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+              <span>Published {publishedDate}</span>
+            </div>
+
+            {modifiedDate && (
+              <div class="flex items-center">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                </svg>
+                <span>Updated {modifiedDate}</span>
+              </div>
+            )}
+          </div>
+        </header>
+
+        <!-- Hero Image -->
+        {article.data.heroImage && (
+          <div class="mb-12 -mx-4 sm:mx-0">
+            <img
+              src={article.data.heroImage}
+              alt={article.data.title}
+              class="w-full h-auto rounded-xl shadow-lg object-cover max-h-96"
+            />
+          </div>
+        )}
+
+        <!-- Article Content -->
+        <div class="prose prose-lg max-w-none">
+          <Content />
+        </div>
+
+        <!-- Article Footer -->
+        <footer class="mt-12 pt-8 border-t border-gray-200">
+          
+          <!-- Tags -->
+          {article.data.tags && article.data.tags.length > 0 && (
+            <div class="mb-8">
+              <h3 class="text-sm font-semibold text-gray-700 mb-3">Tags:</h3>
+              <div class="flex flex-wrap gap-2">
+                {article.data.tags.map((tag) => (
+                  <span class="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">
+                    #{tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <!-- Author Bio -->
+          <div class="bg-emerald-50/50 border border-emerald-100 rounded-2xl p-8 mb-8 shadow-sm">
+            <div class="flex items-start space-x-4">
+              <div class="w-16 h-16 bg-emerald-900 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                </svg>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-xl font-serif font-bold text-emerald-950 mb-2">About the Author</h3>
+                <p class="text-gray-600 mb-4">
+                  Dr. Colin MacLeod is a licensed Naturopathic Doctor in Halifax, Nova Scotia, specializing in natural pain solutions, IV therapy, prolotherapy, and comprehensive naturopathic medicine.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-3">
+                  <BookingButton
+                    text="Book Consultation"
+                    variant="secondary"
+                    size="sm"
+                    source={`article-${article.slug}`}
+                  />
+                  <a 
+                    href="/about"
+                    class="inline-flex items-center text-emerald-800 hover:text-emerald-900 font-medium text-sm"
+                  >
+                    Learn More About Dr. MacLeod
+                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Related Articles Navigation -->
+          <div class="flex justify-between items-center">
+            <a 
+              href="/articles"
+              class="inline-flex items-center text-emerald-800 hover:text-emerald-900 font-medium"
+            >
+              <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+              </svg>
+              Back to All Articles
+            </a>
+            
+            <div class="text-sm text-gray-500">
+              Questions about this topic?
+              <a href="/contact" class="text-emerald-800 hover:text-emerald-900 font-medium ml-1">
+                Contact Dr. MacLeod
+              </a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </article>
+
+  <!-- Related Content CTA -->
+  <section class="bg-emerald-950 py-16 lg:py-24">
+    <div class="section-shell">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-6">Ready to Explore Natural Health Solutions?</h2>
+        <p class="text-lg sm:text-xl text-white/90 mb-8 leading-relaxed">
+          Dr. MacLeod can help you understand how naturopathic approaches might benefit your specific health concerns.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <BookingButton 
+            text="Schedule Consultation" 
+            size="lg" 
+            source={`article-cta-${article.slug}`}
+          />
+          <a 
+            href="/services"
+            class="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-emerald-950 transition-colors inline-flex items-center justify-center"
+          >
+            View All Services
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  /* Page content styling - matches article template */
+  :global(.prose h2) {
+    color: #1f2937 !important;
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 700 !important;
+    font-size: 2rem !important;
+    margin-top: 3.5rem !important;
+    margin-bottom: 1.5rem !important;
+    line-height: 1.2 !important;
+  }
+  
+  :global(.prose h3) {
+    color: #1f2937 !important;
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 600 !important;
+    font-size: 1.75rem !important;
+    margin-top: 3rem !important;
+    margin-bottom: 1.5rem !important;
+    line-height: 1.3 !important;
+  }
+  
+  :global(.prose h4) {
+    color: #1f2937 !important;
+    font-weight: 600 !important;
+    font-size: 1.5rem !important;
+    margin-top: 2.5rem !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  :global(.prose p) {
+    font-size: 1.125rem !important;
+    line-height: 1.8 !important;
+    margin-bottom: 2rem !important;
+  }
+  
+  :global(.prose ul) {
+    margin: 2rem 0 !important;
+    padding-left: 1.5rem !important;
+    list-style-type: disc !important;
+  }
+
+  :global(.prose ol) {
+    margin: 2rem 0 !important;
+    padding-left: 1.5rem !important;
+    list-style-type: decimal !important;
+  }
+
+  :global(.prose li) {
+    margin-bottom: 0.75rem !important;
+    display: list-item !important;
+  }
+  
+  .prose a {
+    color: #059669;
+    text-decoration: underline;
+  }
+  
+  .prose a:hover {
+    color: #047857;
+  }
+  
+  .prose blockquote {
+    border-left: 4px solid #10b981;
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    background-color: #f0fdf4;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .prose strong {
+    font-weight: 600;
+    color: #1f2937;
+  }
+  
+  .prose em {
+    font-style: italic;
+  }
+</style>

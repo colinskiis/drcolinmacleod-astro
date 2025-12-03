@@ -1,0 +1,97 @@
+---
+// Floating booking button that appears on scroll
+---
+
+<div id="floating-booking" class="fixed bottom-8 right-8 z-40 hidden">
+  <a 
+    href="https://macleodnaturopathic.janeapp.com/" 
+    target="_blank"
+    rel="noopener noreferrer"
+    class="floating-book-btn bg-emerald-900 text-white px-8 py-4 rounded-full shadow-2xl shadow-emerald-900/30 hover:bg-emerald-800 transition-all duration-300 flex items-center group hover:-translate-y-1 hover:shadow-emerald-900/40 border border-white/10 backdrop-blur-md"
+    data-booking-source="floating"
+  >
+    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+    </svg>
+    <span class="font-serif font-medium tracking-wide text-lg">Book Appointment</span>
+  </a>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const floatingBooking = document.getElementById('floating-booking');
+    const floatingBtn = document.querySelector('.floating-book-btn');
+    let isVisible = false;
+
+    // Show/hide floating button based on scroll position
+    function toggleFloatingButton() {
+      const scrolled = window.scrollY > 800; // Show after scrolling 800px
+      
+      if (scrolled && !isVisible) {
+        floatingBooking?.classList.remove('hidden');
+        floatingBooking?.classList.add('animate-fade-in');
+        isVisible = true;
+      } else if (!scrolled && isVisible) {
+        floatingBooking?.classList.add('hidden');
+        floatingBooking?.classList.remove('animate-fade-in');
+        isVisible = false;
+      }
+    }
+
+    // Track floating button clicks
+    floatingBtn?.addEventListener('click', function() {
+      // Track with Google Analytics if available
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'booking_click', {
+          event_category: 'engagement',
+          event_label: 'floating',
+          value: 1
+        });
+      }
+      
+      console.log('Floating booking button clicked');
+    });
+
+    // Listen for scroll events
+    window.addEventListener('scroll', toggleFloatingButton);
+    
+    // Check initial scroll position
+    toggleFloatingButton();
+  });
+</script>
+
+<style>
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.5s ease-out;
+  }
+
+  /* Hover effect for urgent notification */
+  .floating-book-btn:hover .animate-pulse {
+    animation: none;
+    background-color: #ef4444;
+  }
+
+  /* Mobile responsiveness */
+  @media (max-width: 640px) {
+    #floating-booking {
+      bottom: 1rem;
+      right: 1rem;
+    }
+    
+    .floating-book-btn {
+      padding: 0.75rem 1rem;
+      font-size: 0.875rem;
+    }
+  }
+</style>

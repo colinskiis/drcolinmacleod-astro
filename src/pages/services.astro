@@ -1,0 +1,260 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout 
+  title="Services" 
+  description="Complete naturopathic healthcare services including IV therapy, prolotherapy, acupuncture, clinical nutrition, and specialized treatments for chronic conditions in Halifax, Nova Scotia."
+  focusKeyword="naturopathic services Halifax"
+>
+  <!-- Hero Section -->
+  <section class="bg-emerald-950 -mt-24 pt-48 pb-24 lg:pt-56 lg:pb-32">
+    <div class="section-shell">
+      <div class="text-center max-w-4xl mx-auto space-y-6">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-white mb-6 tracking-tight">Comprehensive Naturopathic Services</h1>
+        <p class="text-lg sm:text-xl text-white/90 mb-8 leading-relaxed font-light">
+          Evidence-based natural healthcare combining modern diagnostic techniques with traditional healing methods for optimal patient outcomes.
+        </p>
+        <a 
+          href="https://macleodnaturopathic.janeapp.com/" 
+          target="_blank"
+          class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center"
+        >
+          Book Your Consultation
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Categories -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      
+      <!-- Injectable Therapies -->
+      <div id="injectable" class="mb-16">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Injectable Therapies</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            High-dose intravenous nutrients and specialized injections for optimal health, healing, and disease prevention.
+          </p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- IV Therapy -->
+          <a href="/iv-therapy" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group">
+            <div class="aspect-[4/3] overflow-hidden">
+              <img src="/images/reference/services/iv-therapy.jpeg" alt="IV Therapy treatment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div class="p-6 text-center">
+              <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-3 group-hover:text-emerald-700 transition-colors">IV Therapy</h3>
+              <p class="text-gray-600 mb-4">High-dose intravenous vitamin and mineral therapy for rapid nutrient delivery and therapeutic effects.</p>
+              <span class="text-emerald-800 font-semibold group-hover:text-emerald-900">Learn More →</span>
+            </div>
+          </a>
+
+          <!-- Myers Cocktail -->
+          <a href="/myers-cocktail-intravenous-nutrients" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group">
+            <div class="aspect-[4/3] overflow-hidden">
+              <img src="/images/treatments/IV-nutrient-therapy.jpeg" alt="Myers Cocktail IV nutrients" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div class="p-6 text-center">
+              <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-3 group-hover:text-emerald-700 transition-colors">Myers Cocktail</h3>
+              <p class="text-gray-600 mb-4">Classic IV nutrient formula for energy, immune support, and overall wellness enhancement.</p>
+              <span class="text-emerald-800 font-semibold group-hover:text-emerald-900">Learn More →</span>
+            </div>
+          </a>
+
+          <!-- Glutathione -->
+          <a href="/glutathione" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group">
+            <div class="aspect-[4/3] overflow-hidden">
+              <img src="/images/treatments/glutathione-iv.jpeg" alt="Glutathione IV therapy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div class="p-6 text-center">
+              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Glutathione IV</h3>
+              <p class="text-gray-600 mb-4">Powerful antioxidant therapy for detoxification, immune support, and cellular protection.</p>
+              <span class="text-emerald-700 font-semibold group-hover:text-emerald-800">Learn More →</span>
+            </div>
+          </a>
+
+          <!-- Chelation -->
+          <a href="/chelation-therapy" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group">
+            <div class="aspect-[4/3] overflow-hidden">
+              <img src="/images/treatments/IV-Chelation.jpg" alt="Chelation therapy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div class="p-6 text-center">
+              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Chelation Therapy</h3>
+              <p class="text-gray-600 mb-4">Heavy metal detoxification and cardiovascular health support through specialized IV treatments.</p>
+              <span class="text-emerald-700 font-semibold group-hover:text-emerald-800">Learn More →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Pain Management -->
+      <div id="pain" class="mb-16">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Pain Management & Regenerative Medicine</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            Natural injection therapies and treatments for chronic pain, sports injuries, and musculoskeletal conditions.
+          </p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Prolotherapy -->
+          <a href="/prolotherapy-for-arthritis" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group">
+            <div class="aspect-[4/3] overflow-hidden">
+              <img src="/images/reference/services/prolotherapy.jpeg" alt="Prolotherapy injection treatment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div class="p-6 text-center">
+              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Prolotherapy</h3>
+              <p class="text-gray-600 mb-4">Regenerative injection therapy to strengthen ligaments, tendons, and joints for lasting pain relief.</p>
+              <span class="text-emerald-700 font-semibold group-hover:text-emerald-800">Learn More →</span>
+            </div>
+          </a>
+
+          <!-- Prolozone -->
+          <a href="/prolozone" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group">
+            <div class="aspect-[4/3] overflow-hidden">
+              <img src="/images/treatments/prolozone-injection.jpg" alt="Prolozone injection therapy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div class="p-6 text-center">
+              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Prolozone</h3>
+              <p class="text-gray-600 mb-4">Advanced combination of prolotherapy with ozone therapy for enhanced healing and pain relief.</p>
+              <span class="text-emerald-700 font-semibold group-hover:text-emerald-800">Learn More →</span>
+            </div>
+          </a>
+
+          <!-- Neural Prolotherapy -->
+          <a href="/neural-prolotherapy-pain" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group">
+            <div class="aspect-[4/3] overflow-hidden">
+              <img src="/images/treatments/neural-prolotherapy.jpg" alt="Neural prolotherapy treatment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div class="p-6 text-center">
+              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Neural Prolotherapy</h3>
+              <p class="text-gray-600 mb-4">Specialized nerve pain treatment targeting neurogenic inflammation and chronic pain patterns.</p>
+              <span class="text-emerald-700 font-semibold group-hover:text-emerald-800">Learn More →</span>
+            </div>
+          </a>
+
+          <!-- Acupuncture -->
+          <a href="/acupuncture-for-injury-pain" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group">
+            <div class="aspect-[4/3] overflow-hidden">
+              <img src="/images/reference/services/acupuncture.jpeg" alt="Acupuncture treatment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div class="p-6 text-center">
+              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Acupuncture</h3>
+              <p class="text-gray-600 mb-4">Traditional Chinese medicine for pain relief, stress reduction, and overall wellness enhancement.</p>
+              <span class="text-emerald-700 font-semibold group-hover:text-emerald-800">Learn More →</span>
+            </div>
+          </a>
+
+          <!-- Microcurrent -->
+          <a href="/microcurrent-therapy" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group">
+            <div class="aspect-[4/3] overflow-hidden">
+              <img src="/images/treatments/microcurrent-therapy.jpg" alt="Microcurrent therapy treatment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div class="p-6 text-center">
+              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Microcurrent Therapy</h3>
+              <p class="text-gray-600 mb-4">Low-level electrical stimulation to promote healing, reduce inflammation, and manage pain.</p>
+              <span class="text-emerald-700 font-semibold group-hover:text-emerald-800">Learn More →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Comprehensive Care -->
+      <div id="comprehensive" class="mb-16">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Comprehensive Natural Healthcare</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            Holistic approaches including nutrition, herbal medicine, and advanced diagnostic testing for complete wellness.
+          </p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Clinical Nutrition -->
+          <div class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
+            <div class="aspect-[4/3] overflow-hidden">
+              <img src="/images/reference/services/clinical-nutrition.jpeg" alt="Clinical nutrition counseling" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-6 text-center">
+              <h3 class="text-xl font-semibold mb-3">Clinical Nutrition</h3>
+              <p class="text-gray-600 mb-4">Evidence-based nutritional therapy and dietary counseling for optimal health and disease prevention.</p>
+              <div class="text-emerald-800 font-semibold">Available in consultation</div>
+            </div>
+          </div>
+
+          <!-- Herbal Medicine -->
+          <div class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
+            <div class="aspect-[4/3] overflow-hidden">
+              <img src="/images/reference/services/herbal-medicine.jpeg" alt="Herbal medicine remedies" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-6 text-center">
+              <h3 class="text-xl font-semibold mb-3">Herbal Medicine</h3>
+              <p class="text-gray-600 mb-4">Traditional and modern botanical medicine for therapeutic treatment and health maintenance.</p>
+              <div class="text-emerald-800 font-semibold">Available in consultation</div>
+            </div>
+          </div>
+
+          <!-- Lab Testing -->
+          <a href="/lab-testing" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group">
+            <div class="aspect-[4/3] overflow-hidden">
+              <img src="/images/reference/services/lab-testing.jpeg" alt="Laboratory diagnostic testing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div class="p-6 text-center">
+              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Laboratory Testing</h3>
+              <p class="text-gray-600 mb-4">Comprehensive diagnostic testing including functional medicine and nutritional assessments.</p>
+              <span class="text-emerald-800 font-semibold group-hover:text-emerald-900">Learn More →</span>
+            </div>
+          </a>
+
+          <!-- Ozone Therapy -->
+          <a href="/ozone-therapy" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group">
+            <div class="aspect-[4/3] overflow-hidden">
+              <img src="/images/treatments/ozone-therapy.jpg" alt="Ozone therapy treatment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div class="p-6 text-center">
+              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Ozone Therapy</h3>
+              <p class="text-gray-600 mb-4">Medical ozone applications for immune support, infection treatment, and cellular oxygenation.</p>
+              <span class="text-emerald-800 font-semibold group-hover:text-emerald-900">Learn More →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-emerald-950 py-16 lg:py-24">
+    <div class="section-shell text-center">
+      <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-6">Ready to Start Your Natural Health Journey?</h2>
+      <p class="text-lg sm:text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
+        Schedule your comprehensive naturopathic consultation to discuss which treatments are right for your specific health needs.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a 
+          href="https://macleodnaturopathic.janeapp.com/" 
+          target="_blank"
+          class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center justify-center"
+        >
+          Book Consultation
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+          </svg>
+        </a>
+        <a 
+          href="/contact"
+          class="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-emerald-950 transition-colors inline-flex items-center justify-center"
+        >
+          Ask Questions
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

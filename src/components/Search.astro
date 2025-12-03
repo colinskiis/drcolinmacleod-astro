@@ -1,0 +1,349 @@
+---
+// Search component for site-wide search functionality
+---
+
+<div class="relative" id="search-container">
+  <button
+    id="search-toggle"
+    class="p-2 rounded-full border border-white/25 text-white hover:bg-white/10 transition-colors"
+    aria-label="Search"
+  >
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 104.5 4.5a7.5 7.5 0 0012.15 12.15z"></path>
+    </svg>
+  </button>
+
+  <!-- Search Overlay -->
+  <div 
+    id="search-overlay" 
+    class="fixed inset-0 bg-black bg-opacity-40 z-50 hidden"
+  >
+    <div class="flex items-start justify-center min-h-screen pt-16">
+      <div class="bg-white rounded-2xl shadow-2xl shadow-emerald-900/10 w-full max-w-2xl mx-4 border border-emerald-900/10">
+        <div class="p-6">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-lg font-semibold">Search Content</h3>
+            <button 
+              id="search-close"
+              class="text-gray-400 hover:text-emerald-700"
+              aria-label="Close search"
+            >
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
+          
+          <div class="relative mb-4">
+            <input 
+              type="text" 
+              id="search-input"
+              placeholder="Search articles, services, and conditions..." 
+              class="w-full px-4 py-3 pl-10 rounded-lg border border-emerald-900/20 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent bg-white"
+              autocomplete="off"
+            >
+            <svg class="w-5 h-5 text-gray-400 absolute left-3 top-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+          </div>
+
+          <!-- Filter Buttons -->
+          <div class="flex flex-wrap gap-2 mb-4">
+            <button class="search-filter active" data-type="all">All</button>
+            <button class="search-filter" data-type="articles">Articles</button>
+            <button class="search-filter" data-type="services">Services</button>
+            <button class="search-filter" data-type="conditions">Conditions</button>
+          </div>
+
+          <!-- Search Results -->
+          <div id="search-results" class="max-h-96 overflow-y-auto">
+            <div class="text-gray-500 text-center py-8">
+              Start typing to search articles, services, and conditions...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .search-filter {
+    @apply px-3 py-1 text-sm rounded-full border border-emerald-900/20 text-emerald-900 hover:bg-emerald-50 transition-colors;
+  }
+  
+  .search-filter.active {
+    @apply bg-emerald-900 text-white border-emerald-900;
+  }
+
+  .search-result {
+    @apply p-3 border-b border-emerald-900/10 hover:bg-emerald-50/60 cursor-pointer transition-colors;
+  }
+
+  .search-result:last-child {
+    @apply border-b-0;
+  }
+</style>
+
+<script>
+  import Fuse from 'fuse.js';
+
+  class SiteSearch {
+    constructor() {
+      this.fuse = null;
+      this.searchData = [];
+      this.currentFilter = 'all';
+      this.init();
+    }
+
+    async init() {
+      // Initialize search data
+      await this.loadSearchData();
+      
+      // Set up event listeners
+      this.setupEventListeners();
+    }
+
+    async loadSearchData() {
+      try {
+        // Load article data from content collection
+        const articlesData = [];
+        try {
+          const response = await fetch('/api/search-data.json');
+          if (response.ok) {
+            const data = await response.json();
+            articlesData.push(...data.articles);
+          }
+        } catch (e) {
+          console.warn('Could not load articles data for search');
+        }
+
+        // Create search index from available content
+        this.searchData = [
+          // Articles from content collection
+          ...articlesData,
+          
+          // Services
+          {
+            type: 'service',
+            title: 'IV Therapy',
+            description: 'High-dose intravenous vitamin and mineral therapy for rapid nutrient delivery and therapeutic effects.',
+            url: '/iv-therapy',
+            category: 'Injectable Therapies'
+          },
+          {
+            type: 'service', 
+            title: 'Myers Cocktail',
+            description: 'Classic IV nutrient formula for energy, immune support, and overall wellness enhancement.',
+            url: '/myers-cocktail-intravenous-nutrients',
+            category: 'Injectable Therapies'
+          },
+          {
+            type: 'service',
+            title: 'Prolotherapy',
+            description: 'Regenerative injection therapy to strengthen ligaments, tendons, and joints for lasting pain relief.',
+            url: '/prolotherapy-for-arthritis',
+            category: 'Pain Management'
+          },
+          {
+            type: 'service',
+            title: 'Acupuncture',
+            description: 'Traditional Chinese medicine for pain relief, stress reduction, and overall wellness enhancement.',
+            url: '/acupuncture-for-injury-pain',
+            category: 'Pain Management'
+          },
+          {
+            type: 'service',
+            title: 'Glutathione IV',
+            description: 'Powerful antioxidant therapy for detoxification, immune support, and cellular protection.',
+            url: '/glutathione',
+            category: 'Injectable Therapies'
+          },
+
+          // Conditions  
+          {
+            type: 'condition',
+            title: 'Low Back Pain',
+            description: 'Comprehensive treatment for acute and chronic lower back pain using prolotherapy, acupuncture, and natural therapies.',
+            url: '/low-back-pain',
+            category: 'Musculoskeletal'
+          },
+          {
+            type: 'condition',
+            title: 'Osteoarthritis', 
+            description: 'Natural joint pain relief and cartilage support using prolotherapy and nutritional interventions.',
+            url: '/osteoarthritis',
+            category: 'Musculoskeletal'
+          },
+          {
+            type: 'condition',
+            title: 'Fibromyalgia',
+            description: 'Holistic approach to fibromyalgia management including IV therapy, nutrition, and pain management strategies.',
+            url: '/fibromyalgia', 
+            category: 'Musculoskeletal'
+          },
+          {
+            type: 'condition',
+            title: 'Migraine Headaches',
+            description: 'Comprehensive migraine treatment using IV therapy, acupuncture, and nutritional interventions.',
+            url: '/migraine-headache',
+            category: 'Neurological'
+          }
+        ];
+
+        // Initialize Fuse search
+        const options = {
+          keys: ['title', 'description', 'category'],
+          threshold: 0.3,
+          includeScore: true
+        };
+        
+        this.fuse = new Fuse(this.searchData, options);
+      } catch (error) {
+        console.error('Error loading search data:', error);
+      }
+    }
+
+    setupEventListeners() {
+      const searchToggle = document.getElementById('search-toggle');
+      const searchOverlay = document.getElementById('search-overlay'); 
+      const searchClose = document.getElementById('search-close');
+      const searchInput = document.getElementById('search-input');
+      const filterButtons = document.querySelectorAll('.search-filter');
+
+      // Open search
+      searchToggle?.addEventListener('click', () => {
+        searchOverlay?.classList.remove('hidden');
+        searchInput?.focus();
+      });
+
+      // Close search
+      const closeSearch = () => {
+        searchOverlay?.classList.add('hidden');
+        searchInput.value = '';
+        this.clearResults();
+      };
+
+      searchClose?.addEventListener('click', closeSearch);
+      
+      // Close on overlay click
+      searchOverlay?.addEventListener('click', (e) => {
+        if (e.target === searchOverlay) {
+          closeSearch();
+        }
+      });
+
+      // Close on Escape key
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !searchOverlay?.classList.contains('hidden')) {
+          closeSearch();
+        }
+      });
+
+      // Search input
+      searchInput?.addEventListener('input', (e) => {
+        this.performSearch(e.target.value);
+      });
+
+      // Filter buttons
+      filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          button.classList.add('active');
+          this.currentFilter = button.dataset.type;
+          this.performSearch(searchInput?.value || '');
+        });
+      });
+    }
+
+    performSearch(query) {
+      const resultsContainer = document.getElementById('search-results');
+      
+      if (!query.trim()) {
+        this.clearResults();
+        return;
+      }
+
+      if (!this.fuse) {
+        resultsContainer.innerHTML = '<div class="text-red-500 text-center py-4">Search not available</div>';
+        return;
+      }
+
+      let results = this.fuse.search(query);
+      
+      // Filter by type if needed
+      if (this.currentFilter !== 'all') {
+        results = results.filter(result => {
+          if (this.currentFilter === 'articles') {
+            return result.item.type === 'article';
+          } else if (this.currentFilter === 'services') {
+            return result.item.type === 'service';
+          } else if (this.currentFilter === 'conditions') {
+            return result.item.type === 'condition';
+          }
+          return true;
+        });
+      }
+
+      this.displayResults(results, query);
+    }
+
+    displayResults(results, query) {
+      const resultsContainer = document.getElementById('search-results');
+      
+      if (results.length === 0) {
+        resultsContainer.innerHTML = `
+          <div class="text-gray-500 text-center py-8">
+            No results found for "${query}"
+          </div>
+        `;
+        return;
+      }
+
+      const resultsHTML = results.slice(0, 10).map(result => {
+        const item = result.item;
+        const typeColor = {
+          'article': 'text-emerald-700 bg-emerald-100',
+          'service': 'text-blue-700 bg-blue-100', 
+          'condition': 'text-purple-700 bg-purple-100'
+        }[item.type] || 'text-gray-700 bg-gray-100';
+
+        return `
+          <div class="search-result" onclick="window.location.href='${item.url}'">
+            <div class="flex items-start justify-between">
+              <div class="flex-1">
+                <div class="flex items-center gap-2 mb-2">
+                  <span class="text-xs px-2 py-1 rounded ${typeColor} font-medium">
+                    ${item.type.toUpperCase()}
+                  </span>
+                  ${item.category ? `<span class="text-xs text-gray-500">${item.category}</span>` : ''}
+                </div>
+                <h4 class="font-semibold text-gray-900 mb-1">${item.title}</h4>
+                <p class="text-sm text-gray-600 line-clamp-2">${item.description}</p>
+              </div>
+              <svg class="w-4 h-4 text-gray-400 ml-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      resultsContainer.innerHTML = resultsHTML;
+    }
+
+    clearResults() {
+      const resultsContainer = document.getElementById('search-results');
+      resultsContainer.innerHTML = `
+        <div class="text-gray-500 text-center py-8">
+          Start typing to search articles, services, and conditions...
+        </div>
+      `;
+    }
+  }
+
+  // Initialize search when DOM is loaded
+  document.addEventListener('DOMContentLoaded', () => {
+    new SiteSearch();
+  });
+</script>

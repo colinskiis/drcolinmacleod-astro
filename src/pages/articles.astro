@@ -1,0 +1,342 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+// Get all articles and sort by date
+const articles = await getCollection('articles');
+const sortedArticles = articles.sort((a, b) => 
+  new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime()
+);
+
+// Categorize articles
+const categories = {
+  nutrition: articles.filter(article => 
+    article.data.categories?.includes('Nutrition') || 
+    article.slug.includes('nutrition') || 
+    article.slug.includes('vitamin') ||
+    article.slug.includes('magnesium') ||
+    article.slug.includes('fruit-vegetables')
+  ),
+  treatment: articles.filter(article =>
+    article.slug.includes('treatment') ||
+    article.slug.includes('acupuncture') ||
+    article.slug.includes('herbal') ||
+    article.slug.includes('arthritis') ||
+    article.slug.includes('cancer')
+  ),
+  wellness: articles.filter(article =>
+    article.slug.includes('stress') ||
+    article.slug.includes('sleep') ||
+    article.slug.includes('fatigue') ||
+    article.slug.includes('weight-loss') ||
+    article.slug.includes('naturopathic-medicine')
+  ),
+  conditions: articles.filter(article =>
+    article.slug.includes('acne') ||
+    article.slug.includes('cholesterol') ||
+    article.slug.includes('lead') ||
+    article.slug.includes('rhodiola')
+  )
+};
+---
+
+<BaseLayout 
+  title="Health Articles & Resources" 
+  description="Evidence-based articles on natural health, nutrition, herbal medicine, and naturopathic treatments by Dr. Colin MacLeod ND in Halifax, Nova Scotia."
+  focusKeyword="naturopathic health articles Halifax"
+>
+  <!-- Hero Section -->
+  <section class="bg-emerald-950 -mt-24 pt-48 pb-24 lg:pt-56 lg:pb-32">
+    <div class="section-shell">
+      <div class="text-center max-w-4xl mx-auto space-y-6">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-white mb-6 tracking-tight">Health Articles & Resources</h1>
+        <p class="text-lg sm:text-xl text-white/90 mb-8 leading-relaxed font-light">
+          Evidence-based articles on natural health, nutrition, and treatment approaches to help you make informed decisions about your healthcare.
+        </p>
+        <p class="text-white/70">
+          Use the search icon in the header to search across all articles, services, and conditions.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Article Categories -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      
+      <!-- Category Navigation -->
+      <div class="flex flex-wrap justify-center gap-4 mb-12">
+        <button class="category-btn active" data-category="all">All Articles</button>
+        <button class="category-btn" data-category="nutrition">Nutrition</button>
+        <button class="category-btn" data-category="treatment">Treatments</button>
+        <button class="category-btn" data-category="wellness">Wellness</button>
+        <button class="category-btn" data-category="conditions">Conditions</button>
+      </div>
+
+      <!-- All Articles Grid -->
+      <div id="all-articles" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {sortedArticles.map((article) => (
+          <article class="bg-gray-50 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-sm text-emerald-700 font-medium">
+                  {article.data.categories?.[0] || 'HEALTH'}
+                </span>
+                <time class="text-sm text-gray-500">
+                  {new Date(article.data.publishDate).toLocaleDateString('en-US', { 
+                    year: 'numeric', 
+                    month: 'short', 
+                    day: 'numeric' 
+                  })}
+                </time>
+              </div>
+              <h2 class="text-xl font-semibold mb-3 line-clamp-2">
+                <a href={`/articles/${article.slug}`} class="hover:text-emerald-700 transition-colors">
+                  {article.data.title}
+                </a>
+              </h2>
+              <p class="text-gray-600 mb-4 line-clamp-3">{article.data.description}</p>
+              <div class="flex items-center justify-between">
+                <a 
+                  href={`/articles/${article.slug}`} 
+                  class="text-emerald-700 font-medium hover:text-emerald-800 transition-colors"
+                >
+                  Read More →
+                </a>
+                {article.data.tags && (
+                  <div class="flex gap-2">
+                    {article.data.tags.slice(0, 2).map((tag) => (
+                      <span class="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+
+      <!-- Nutrition Articles -->
+      <div id="nutrition-articles" class="hidden grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {categories.nutrition.map((article) => (
+          <article class="bg-gradient-to-br from-green-50 to-green-100 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-sm text-emerald-700 font-medium">NUTRITION</span>
+                <time class="text-sm text-gray-500">
+                  {new Date(article.data.publishDate).toLocaleDateString('en-US', { 
+                    year: 'numeric', 
+                    month: 'short', 
+                    day: 'numeric' 
+                  })}
+                </time>
+              </div>
+              <h2 class="text-xl font-semibold mb-3">
+                <a href={`/articles/${article.slug}`} class="hover:text-emerald-700 transition-colors">
+                  {article.data.title}
+                </a>
+              </h2>
+              <p class="text-gray-600 mb-4">{article.data.description}</p>
+              <a 
+                href={`/articles/${article.slug}`} 
+                class="text-emerald-700 font-medium hover:text-emerald-800 transition-colors"
+              >
+                Read More →
+              </a>
+            </div>
+          </article>
+        ))}
+      </div>
+
+      <!-- Treatment Articles -->
+      <div id="treatment-articles" class="hidden grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {categories.treatment.map((article) => (
+          <article class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-sm text-blue-700 font-medium">TREATMENT</span>
+                <time class="text-sm text-gray-500">
+                  {new Date(article.data.publishDate).toLocaleDateString('en-US', { 
+                    year: 'numeric', 
+                    month: 'short', 
+                    day: 'numeric' 
+                  })}
+                </time>
+              </div>
+              <h2 class="text-xl font-semibold mb-3">
+                <a href={`/articles/${article.slug}`} class="hover:text-blue-700 transition-colors">
+                  {article.data.title}
+                </a>
+              </h2>
+              <p class="text-gray-600 mb-4">{article.data.description}</p>
+              <a 
+                href={`/articles/${article.slug}`} 
+                class="text-blue-700 font-medium hover:text-blue-800 transition-colors"
+              >
+                Read More →
+              </a>
+            </div>
+          </article>
+        ))}
+      </div>
+
+      <!-- Wellness Articles -->
+      <div id="wellness-articles" class="hidden grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {categories.wellness.map((article) => (
+          <article class="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-sm text-indigo-700 font-medium">WELLNESS</span>
+                <time class="text-sm text-gray-500">
+                  {new Date(article.data.publishDate).toLocaleDateString('en-US', { 
+                    year: 'numeric', 
+                    month: 'short', 
+                    day: 'numeric' 
+                  })}
+                </time>
+              </div>
+              <h2 class="text-xl font-semibold mb-3">
+                <a href={`/articles/${article.slug}`} class="hover:text-indigo-700 transition-colors">
+                  {article.data.title}
+                </a>
+              </h2>
+              <p class="text-gray-600 mb-4">{article.data.description}</p>
+              <a 
+                href={`/articles/${article.slug}`} 
+                class="text-indigo-700 font-medium hover:text-indigo-800 transition-colors"
+              >
+                Read More →
+              </a>
+            </div>
+          </article>
+        ))}
+      </div>
+
+      <!-- Conditions Articles -->
+      <div id="conditions-articles" class="hidden grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {categories.conditions.map((article) => (
+          <article class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-sm text-purple-700 font-medium">CONDITIONS</span>
+                <time class="text-sm text-gray-500">
+                  {new Date(article.data.publishDate).toLocaleDateString('en-US', { 
+                    year: 'numeric', 
+                    month: 'short', 
+                    day: 'numeric' 
+                  })}
+                </time>
+              </div>
+              <h2 class="text-xl font-semibold mb-3">
+                <a href={`/articles/${article.slug}`} class="hover:text-purple-700 transition-colors">
+                  {article.data.title}
+                </a>
+              </h2>
+              <p class="text-gray-600 mb-4">{article.data.description}</p>
+              <a 
+                href={`/articles/${article.slug}`} 
+                class="text-purple-700 font-medium hover:text-purple-800 transition-colors"
+              >
+                Read More →
+              </a>
+            </div>
+          </article>
+        ))}
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Newsletter/CTA Section -->
+  <section class="bg-emerald-950 py-16 lg:py-24">
+    <div class="section-shell text-center">
+      <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-6">Stay Informed About Natural Health</h2>
+      <p class="text-lg sm:text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
+        Questions about natural health approaches? Book a consultation to discuss how naturopathic medicine can support your health goals.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a 
+          href="https://macleodnaturopathic.janeapp.com/" 
+          target="_blank"
+          class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center justify-center"
+        >
+          Book Consultation
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+          </svg>
+        </a>
+        <a 
+          href="/contact"
+          class="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-emerald-950 transition-colors inline-flex items-center justify-center"
+        >
+          Ask Questions
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .category-btn {
+    @apply px-6 py-2 rounded-full border border-gray-300 text-gray-700 hover:bg-gray-100 transition-colors;
+  }
+  
+  .category-btn.active {
+    @apply bg-emerald-900 text-white border-emerald-900;
+  }
+  
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>
+
+<script>
+  // Category filtering functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    const categoryButtons = document.querySelectorAll('.category-btn');
+    const articleSections = {
+      'all': document.getElementById('all-articles'),
+      'nutrition': document.getElementById('nutrition-articles'),
+      'treatment': document.getElementById('treatment-articles'),
+      'wellness': document.getElementById('wellness-articles'), 
+      'conditions': document.getElementById('conditions-articles')
+    };
+
+    categoryButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const category = this.dataset.category;
+        
+        // Update active button
+        categoryButtons.forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+        
+        // Show/hide article sections
+        Object.keys(articleSections).forEach(key => {
+          const section = articleSections[key];
+          if (key === category) {
+            section.classList.remove('hidden');
+            section.classList.add('grid');
+          } else {
+            section.classList.add('hidden');
+            section.classList.remove('grid');
+          }
+        });
+      });
+    });
+  });
+</script>

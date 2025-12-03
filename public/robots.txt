@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Block access to admin areas and private files
+Disallow: /admin/
+Disallow: /_astro/
+Disallow: /.well-known/
+
+# Allow crawling of images
+Allow: /images/
+Allow: /wp-content/uploads/
+
+# Point to sitemap
+Sitemap: https://drcolinmacleod.com/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1

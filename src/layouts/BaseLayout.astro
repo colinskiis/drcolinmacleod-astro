@@ -1,0 +1,220 @@
+---
+import '../styles/global.css';
+import Search from '../components/Search.astro';
+import BookingButton from '../components/BookingButton.astro';
+import FloatingBooking from '../components/FloatingBooking.astro';
+
+export interface Props {
+  title: string;
+  description: string;
+  focusKeyword?: string;
+  image?: string;
+  articleData?: {
+    publishDate?: string;
+    modifiedDate?: string;
+    author?: string;
+    tags?: string[];
+  };
+}
+
+const { title, description, focusKeyword, image, articleData } = Astro.props;
+const fullTitle = title === 'Home' ? 'Dr. Colin MacLeod ND - Halifax Naturopathic Doctor' : `${title} | Dr. Colin MacLeod ND`;
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
+const ogImage = image || '/images/general/home-background.webp';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{fullTitle}</title>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HWHX5T8PEG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-HWHX5T8PEG');
+    </script>
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href={canonicalUrl} />
+    
+    <!-- SEO Meta Tags -->
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content={articleData ? "article" : "website"} />
+    <meta property="og:site_name" content="Dr. Colin MacLeod ND" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={new URL(ogImage, Astro.site)} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_CA" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={new URL(ogImage, Astro.site)} />
+    
+    {focusKeyword && <meta name="keywords" content={focusKeyword} />}
+    <meta name="author" content="Dr. Colin MacLeod ND" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Dr. Colin MacLeod ND",
+          "description": "Halifax Naturopathic Doctor providing comprehensive natural healthcare solutions including IV therapy, prolotherapy, acupuncture, and clinical nutrition.",
+          "url": "https://drcolinmacleod.com",
+          "logo": "https://drcolinmacleod.com/favicon.svg",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "appointment booking",
+            "url": "https://macleodnaturopathic.janeapp.com/"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Halifax",
+            "addressRegion": "Nova Scotia",
+            "addressCountry": "CA"
+          },
+          "sameAs": [
+            "https://macleodnaturopathic.janeapp.com/"
+          ]
+        })
+      }
+    </script>
+    
+    {articleData && (
+      <script type="application/ld+json">
+        {
+          JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": title,
+            "description": description,
+            "author": {
+              "@type": "Person",
+              "name": articleData.author || "Dr. Colin MacLeod ND"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Dr. Colin MacLeod ND",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://drcolinmacleod.com/favicon.svg"
+              }
+            },
+            "datePublished": articleData.publishDate,
+            "dateModified": articleData.modifiedDate || articleData.publishDate,
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": canonicalUrl
+            },
+            "image": new URL(ogImage, Astro.site)
+          })
+        }
+      </script>
+    )}
+    <!-- Fonts loaded via global.css (Manrope, Playfair Display) -->
+  </head>
+  <body class="font-sans antialiased text-slate-900 bg-white">
+    <!-- Header Navigation -->
+    <header id="site-header" class="fixed inset-x-0 top-0 z-40 bg-emerald-950 shadow-lg">
+      <div class="section-shell">
+        <nav class="flex items-center justify-between py-4 gap-4">
+          <a href="/" class="flex items-center text-white">
+            <div class="leading-tight">
+              <p class="text-xs uppercase tracking-[0.22em] text-white/80">Naturopathic Doctor</p>
+              <p class="text-lg font-semibold text-white">Dr. Colin MacLeod ND</p>
+            </div>
+          </a>
+          <div class="hidden lg:flex items-center gap-5 text-sm font-semibold text-white/85">
+            <a href="/" class="hover:text-white transition-colors">Home</a>
+            <a href="/about" class="hover:text-white transition-colors">About</a>
+            <a href="/services" class="hover:text-white transition-colors">Services</a>
+            <a href="/conditions" class="hover:text-white transition-colors">Conditions</a>
+            <a href="/contact" class="hover:text-white transition-colors">Contact</a>
+            <a href="/articles" class="hover:text-white transition-colors">Articles</a>
+          </div>
+          <div class="flex items-center gap-3">
+            <Search />
+            <BookingButton 
+              text="Book Online" 
+              size="sm" 
+              source="header" 
+            />
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-24">
+      <slot />
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white py-16">
+      <div class="section-shell">
+        <div class="card-glass p-10 lg:p-12 relative overflow-hidden max-w-screen-xl mx-auto">
+          <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+            <div class="absolute -right-16 -top-16 w-64 h-64 rounded-full bg-emerald-200/30 blur-3xl"></div>
+            <div class="absolute -left-10 bottom-0 w-52 h-52 rounded-full bg-emerald-900/10 blur-3xl"></div>
+          </div>
+          <div class="grid lg:grid-cols-3 gap-10 relative z-10">
+            <div class="space-y-3">
+              <p class="pill">Evidence-Based + Natural</p>
+              <h3 class="text-2xl font-semibold">Dr. Colin MacLeod ND</h3>
+              <p class="text-slate-700 leading-relaxed">
+                Halifax-based naturopathic doctor combining regenerative therapies, clinical nutrition, and acupuncture for purposeful healing.
+              </p>
+            </div>
+            
+            <div class="space-y-3">
+              <p class="uppercase tracking-[0.2em] text-xs text-emerald-900 font-semibold">Contact</p>
+              <div class="text-slate-800 space-y-1">
+                <p>Halifax, Nova Scotia</p>
+                <p>Phone available through online booking</p>
+                <a href="https://macleodnaturopathic.janeapp.com/" target="_blank" class="inline-flex items-center text-emerald-800 font-semibold hover:text-emerald-900">
+                  Book Appointment
+                  <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            
+            <div class="space-y-3">
+              <p class="uppercase tracking-[0.2em] text-xs text-emerald-900 font-semibold">Signature Services</p>
+              <div class="text-slate-800 space-y-2">
+                <p>IV Therapy & Myers Cocktail</p>
+                <p>Prolotherapy & Pain Care</p>
+                <p>Acupuncture & Microcurrent</p>
+                <p>Functional Nutrition & Testing</p>
+              </div>
+            </div>
+          </div>
+          <div class="soft-divider"></div>
+          <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 relative z-10">
+            <p class="text-sm text-slate-600">&copy; {new Date().getFullYear()} Dr. Colin MacLeod ND. All rights reserved.</p>
+            <div class="flex gap-3">
+              <a href="/articles" class="text-sm font-semibold text-emerald-900 hover:text-emerald-700">Articles</a>
+              <span class="text-slate-300">|</span>
+              <a href="/contact" class="text-sm font-semibold text-emerald-900 hover:text-emerald-700">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

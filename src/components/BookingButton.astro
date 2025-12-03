@@ -1,0 +1,74 @@
+---
+export interface Props {
+  text?: string;
+  variant?: 'primary' | 'secondary' | 'outline';
+  size?: 'sm' | 'md' | 'lg';
+  source?: string; // For tracking which page/section the booking came from
+  icon?: boolean;
+  fullWidth?: boolean;
+}
+
+const { 
+  text = 'Book Online', 
+  variant = 'primary', 
+  size = 'md',
+  source = 'unknown',
+  icon = true,
+  fullWidth = false
+} = Astro.props;
+
+// Button classes based on variant and size
+const variantClasses = {
+  primary: 'bg-white/10 text-white border border-white/30 backdrop-blur-sm hover:bg-white/20 hover:border-white/50 shadow-lg shadow-black/5',
+  secondary: 'bg-emerald-900 text-white border border-emerald-900 hover:bg-emerald-800 hover:border-emerald-800 shadow-lg shadow-emerald-900/20',
+  outline: 'bg-transparent border border-emerald-900 text-emerald-900 hover:bg-emerald-900 hover:text-white'
+};
+
+const sizeClasses = {
+  sm: 'px-4 py-2 text-sm',
+  md: 'px-5 py-2.5 text-sm',
+  lg: 'px-6 py-3 text-base'
+};
+
+const widthClass = fullWidth ? 'w-full' : '';
+---
+
+<a 
+  href="https://macleodnaturopathic.janeapp.com/" 
+  target="_blank"
+  rel="noopener noreferrer"
+  class={`booking-btn inline-flex items-center justify-center rounded-full font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 hover:-translate-y-0.5 ${variantClasses[variant]} ${sizeClasses[size]} ${widthClass}`}
+  data-booking-source={source}
+>
+  <span>{text}</span>
+  {icon && (
+    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+    </svg>
+  )}
+</a>
+
+<script>
+  // Track booking button clicks for analytics
+  document.addEventListener('DOMContentLoaded', function() {
+    const bookingButtons = document.querySelectorAll('.booking-btn');
+    
+    bookingButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const source = this.getAttribute('data-booking-source');
+        
+        // Track with Google Analytics if available
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'booking_click', {
+            event_category: 'engagement',
+            event_label: source,
+            value: 1
+          });
+        }
+        
+        // Track with other analytics platforms as needed
+        console.log(`Booking button clicked from: ${source}`);
+      });
+    });
+  });
+</script>
