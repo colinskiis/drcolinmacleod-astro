@@ -1,212 +1,100 @@
 ---
-title: "Laboratory Testing Guide"
-description: "Comprehensive guide to lab testing at MacLeod Naturopathic"
+title: "Lab Testing Preparation Guide"
+description: "How to prepare for your laboratory tests at MacLeod Naturopathic"
 ---
 
-# Laboratory Testing Information
+# Preparing for Your Lab Tests
 
-Laboratory testing is an essential diagnostic tool that helps Dr. MacLeod assess your health status, identify underlying causes of health issues, and monitor treatment progress.
+This guide covers what you need to know before your blood draw or sample collection. For information about available tests and what they reveal, see our [Laboratory Testing](/lab-testing) page.
 
-## Why We Use Lab Testing
+## General Preparation
 
-### Comprehensive Health Assessment
-- **Baseline health markers** - establish your individual normal ranges
-- **Root cause identification** - uncover hidden factors affecting your health
-- **Nutritional status** - identify deficiencies and imbalances
-- **Metabolic function** - assess how your body processes nutrients and energy
-- **Toxic load evaluation** - detect heavy metals and environmental toxins
+**Before your appointment:**
+- Follow any fasting instructions provided during your consultation
+- Stay hydrated—drink water normally (water doesn't break a fast)
+- Bring a list of all medications and supplements you're currently taking
+- Wear clothing with sleeves that roll up easily for blood draws
+- Bring a snack to eat after your blood draw
 
-### Treatment Monitoring
-- **Progress tracking** - measure improvement over time
-- **Treatment optimization** - adjust therapies based on results
-- **Prevention focus** - identify risks before symptoms develop
-- **Personalized medicine** - tailor treatments to your unique biochemistry
+## Fasting Tests
 
-## Types of Laboratory Tests
+Some tests require a 12-hour fast for accurate results. If your requisition indicates fasting:
 
-### Standard Blood Chemistry
-**Comprehensive Metabolic Panel:**
-- Glucose, kidney function, liver function
-- Electrolytes and protein levels
-- Cholesterol and lipid profile
+- Stop eating after 8 PM the night before
+- Water is allowed and encouraged—stay hydrated
+- Black coffee or plain tea is generally acceptable, but confirm with our office
+- Take your regular medications unless specifically instructed otherwise
+- Schedule a morning appointment (7-10 AM) when possible
+- Bring a snack to eat immediately after your blood draw
 
-**Complete Blood Count:**
-- Red and white blood cell counts
-- Hemoglobin and hematocrit
-- Platelet count and blood cell morphology
+**Common tests requiring fasting:**
+- Lipid panel (cholesterol, triglycerides)
+- Fasting glucose and fasting insulin
+- Comprehensive metabolic panel
+- Iron studies (for most accurate ferritin results)
 
-### Advanced Nutritional Testing
-**Vitamin and Mineral Analysis:**
-- B-vitamins (B1, B2, B6, B12, folate)
-- Fat-soluble vitamins (A, D, E, K)
-- Essential minerals (magnesium, zinc, selenium)
-- Toxic metals (lead, mercury, cadmium)
+## Hormone Testing
 
-**Amino Acid Analysis:**
-- Essential and non-essential amino acids
-- Metabolic intermediates
-- Neurotransmitter precursors
+Hormone levels fluctuate based on time of day, menstrual cycle, and other factors. Timing matters for accurate results.
 
-### Specialized Functional Tests
+**For menstruating women:**
+- Progesterone: Test on days 19-21 of your cycle (about 7 days after ovulation)
+- FSH and LH: Test on days 2-4 of your cycle
+- Estrogen: Can be tested at various points; we'll specify based on your situation
 
-#### Digestive Health Assessment
-- **Comprehensive stool analysis** - bacteria, parasites, inflammation
-- **SIBO breath testing** - small intestinal bacterial overgrowth
-- **Food sensitivity panels** - IgG reactions to common foods
-- **Intestinal permeability** - "leaky gut" assessment
+**For cortisol testing:**
+- Blood cortisol: Draw before 9 AM for morning cortisol assessment
+- Saliva cortisol: Collect samples at specified times (typically waking, noon, evening, bedtime)
+- Avoid strenuous exercise the morning of testing
+- Try to maintain your normal sleep schedule the night before
 
-#### Hormone Testing
-- **Adrenal function** - cortisol rhythm and DHEA levels
-- **Thyroid comprehensive** - TSH, T3, T4, reverse T3, antibodies
-- **Sex hormones** - estrogen, progesterone, testosterone
-- **Insulin resistance** - glucose tolerance and insulin levels
+**For thyroid testing:**
+- Morning draws (before 10 AM) are preferred
+- If you take thyroid medication, have your blood drawn before taking your morning dose
+- Fasting is not required for thyroid tests alone
 
-#### Cardiovascular Risk Assessment
-- **Advanced lipid panels** - particle size and number
-- **Inflammatory markers** - CRP, homocysteine, fibrinogen
-- **Nutrient factors** - CoQ10, magnesium, B-vitamins
-- **Heavy metal assessment** - cardiovascular toxic burden
+## Stool Testing
 
-#### Detoxification Assessment
-- **Liver function panels** - phase I and II detox capacity
-- **Glutathione levels** - master antioxidant status
-- **Heavy metal testing** - hair, urine, or blood analysis
-- **Environmental toxin screening** - pesticides, solvents, plastics
+For comprehensive stool analysis:
 
-## Preparing for Your Lab Tests
+- Avoid antibiotics for 2 weeks before collection (unless medically essential)
+- Stop probiotics 48 hours before collection
+- Maintain your normal diet—don't change eating patterns
+- Follow collection kit instructions carefully
+- Samples must be collected and returned within the timeframe specified
 
-### General Preparation
-- **Follow fasting instructions** - typically 12 hours for blood chemistry
-- **Maintain normal diet** 3 days before testing (unless instructed otherwise)
-- **Stay hydrated** - drink water normally before blood draws
-- **List all medications** - including supplements and herbs
+## At-Home Collection Tests
 
-### Specific Test Preparations
+For saliva or urine hormone tests (like the DUTCH test):
 
-#### Fasting Tests (12-hour fast)
-- **No food or beverages** except water after 8 PM the night before
-- **Morning appointment** recommended (7-10 AM)
-- **Continue medications** unless specifically instructed otherwise
-- **Bring a snack** for after the blood draw
+- Read all instructions before beginning collection
+- Note the specific timing requirements for each sample
+- Store samples as directed (some require refrigeration)
+- Complete the collection within the specified timeframe
+- Ship samples promptly using the provided materials
 
-#### Hormone Testing
-- **Timing matters** - specific days of menstrual cycle for women
-- **Avoid hormone supplements** 48 hours before testing (if approved by Dr. MacLeod)
-- **Normal sleep schedule** important for cortisol rhythm testing
-- **Stress management** - avoid major stressors before testing when possible
+## After Your Blood Draw
 
-#### Stool Testing
-- **Avoid antibiotics** for 2 weeks prior (unless essential)
-- **No probiotics** 48 hours before collection
-- **Normal diet** - don't change eating patterns
-- **Follow collection instructions** carefully for accurate results
+- Keep the bandage on for at least 15-30 minutes
+- Avoid heavy lifting with that arm for a few hours
+- Eat your snack and drink water
+- Light bruising at the draw site is normal and will resolve
 
-## Understanding Your Results
+## Results Timeline
 
-### Laboratory Reference Ranges
-- **Standard ranges** vs. **optimal ranges** - Dr. MacLeod uses functional ranges
-- **Individual variation** - your optimal may differ from population averages
-- **Trending patterns** - changes over time more important than single values
-- **Clinical correlation** - lab results interpreted with symptoms and history
+- **Standard blood work:** 5-7 business days
+- **Specialty hormone panels (DUTCH):** 2-3 weeks
+- **Comprehensive stool analysis:** 2-3 weeks
+- **Food sensitivity panels:** 2-3 weeks
 
-### What Dr. MacLeod Looks For
-**Pattern Recognition:**
-- Multiple markers pointing to similar issues
-- Nutrient co-dependencies and interactions
-- Metabolic pathway dysfunction
-- Inflammatory cascades and root triggers
+Once results are available, we'll contact you to schedule a follow-up appointment to review findings and discuss recommendations.
 
-**Early Detection:**
-- Sub-clinical deficiencies before symptoms appear
-- Metabolic shifts toward disease processes
-- Toxic accumulations affecting function
-- Hormonal imbalances affecting multiple systems
+## Questions?
 
-## Common Tests and What They Reveal
-
-### B12 and Folate Testing
-**Why Important:**
-- Energy production and neurological function
-- DNA synthesis and red blood cell formation
-- Methylation pathway function
-- Homocysteine metabolism
-
-**Optimal Ranges:**
-- B12: >600 pg/mL (not just >200)
-- Folate: >20 ng/mL
-- Methylmalonic acid: <300 nmol/L (B12 function)
-- Homocysteine: <8 μmol/L
-
-### Vitamin D Testing
-**Why Critical:**
-- Immune system regulation
-- Bone health and calcium absorption
-- Mood and neurological function
-- Anti-inflammatory effects
-
-**Optimal Range:**
-- 25-OH Vitamin D: 50-80 ng/mL (not just >30)
-- Higher levels may be needed for specific conditions
-- Seasonal variation considerations
-
-### Thyroid Comprehensive Panel
-**Complete Assessment Includes:**
-- TSH: <2.5 mIU/L (optimal, not just <4.5)
-- Free T4: Mid-range optimal
-- Free T3: Upper third of range
-- Reverse T3: <15 ng/dL
-- Thyroid antibodies: TPO, TGAb
-
-## After Your Lab Results
-
-### Result Review Process
-1. **Comprehensive analysis** - Dr. MacLeod reviews all results in context
-2. **Pattern identification** - connects findings to your symptoms and goals
-3. **Treatment planning** - develops targeted interventions based on findings
-4. **Follow-up scheduling** - determines monitoring timeline
-5. **Patient education** - explains findings and treatment rationale
-
-### Treatment Integration
-- **Nutritional protocols** based on deficiency patterns
-- **Targeted supplementation** for identified needs
-- **Dietary modifications** to support biochemical requirements
-- **Lifestyle recommendations** to optimize test parameters
-- **Re-testing schedule** to monitor progress
-
-## Costs and Insurance
-
-### Test Pricing
-- **Varies by complexity** and number of markers
-- **Bundled panels** often more cost-effective than individual tests
-- **Functional tests** may not be covered by insurance
-- **Payment plans** available for comprehensive testing
-
-### Insurance Considerations
-- **Standard tests** typically covered with appropriate diagnosis codes
-- **Specialized functional tests** often require out-of-pocket payment
-- **HSA/FSA funds** can be used for all testing
-- **Detailed receipts** provided for insurance submission
-
-## Frequently Asked Questions
-
-**Q: How often should I have lab testing?**  
-A: Initial baseline, then follow-up testing every 3-6 months during active treatment, annually for maintenance.
-
-**Q: Can I eat before my blood draw?**  
-A: Depends on the tests ordered. Fasting tests require 12 hours without food. We'll specify requirements when scheduling.
-
-**Q: How long do results take?**  
-A: Standard blood work: 1-3 days. Specialized functional tests: 1-3 weeks.
-
-**Q: What if my results are "normal" but I still feel unwell?**  
-A: "Normal" reference ranges are very broad. Dr. MacLeod uses optimal ranges and pattern analysis to identify subtle imbalances.
-
-**Q: Do I need to stop my supplements before testing?**  
-A: Generally no, unless specifically instructed. We want to see how your body is functioning with your current regimen.
-
-**Q: Will insurance cover functional testing?**  
-A: Coverage varies. Standard tests are usually covered; specialized functional tests may require out-of-pocket payment.
+If you're unsure about preparation requirements for your specific tests, contact our office before your appointment. We're happy to clarify any instructions.
 
 ---
 
-*Questions about laboratory testing? Contact our office at [phone] or [email] to discuss which tests might be appropriate for your health goals.*
+**Ready to book your lab work?** [Schedule your appointment →](https://macleodnaturopathic.janeapp.com/)
+
+**Learn more about available testing:** [Laboratory Testing Services](/lab-testing)

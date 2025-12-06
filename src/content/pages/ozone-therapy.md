@@ -23,10 +23,6 @@ Ozone gas is an unstable molecule and breaks down readily, exposing nearby simpl
 
 Red blood cells exposed to ozone during an autohemotherapy treatment have an increased production of 2,3-DPG and ATP, two essential components in the metabolic energy production pathway.
 
-## Ozone Therapy Treatment
-
-**Price:** $140.00 per autohemotherapy treatment
-
 ### Treatment Benefits
 
 - Increased oxygen saturation

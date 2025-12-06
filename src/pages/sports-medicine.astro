@@ -1,0 +1,733 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Sports Medicine & Regenerative Injection Therapy | Halifax Naturopath"
+  description="Naturopathic sports medicine in Halifax offering prolotherapy, prolozone, and regenerative injection therapy for athletic injuries, joint pain, and faster recovery. Evidence-based treatments for active Nova Scotians."
+  focusKeyword="sports medicine Halifax"
+>
+  <!-- Hero Section -->
+  <section class="bg-emerald-950 -mt-24 pt-48 pb-16 lg:pt-56 lg:pb-24">
+    <div class="section-shell">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6">
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-white tracking-tight">Sports Medicine & Regenerative Therapy</h1>
+          <p class="text-lg sm:text-xl text-white/90 leading-relaxed font-light">
+            Get back to the activities you love. Our regenerative injection therapies help heal injuries, reduce pain, and restore function for athletes and active individuals throughout Halifax.
+          </p>
+          <a
+            href="https://macleodnaturopathic.janeapp.com/"
+            target="_blank"
+            class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center"
+          >
+            Book Your Assessment
+            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-2xl">
+          <img
+            src="/images/services/sports-medicine-hero.jpg"
+            alt="Athlete receiving regenerative injection therapy for sports injury"
+            class="w-full h-full object-cover"
+            onerror="this.style.display='none'"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Regenerative Medicine Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="max-w-4xl mx-auto text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-6">Why Regenerative Medicine for Sports Injuries?</h2>
+        <p class="text-lg text-gray-600">
+          Traditional approaches often mask pain without addressing the underlying tissue damage. Regenerative injection therapies stimulate your body's natural healing response to repair damaged ligaments, tendons, and joints—not just manage symptoms.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Heal the Source -->
+        <div class="bg-emerald-50 rounded-2xl p-8 text-center">
+          <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-3">Heal the Source</h3>
+          <p class="text-gray-600">Target damaged tissue directly rather than masking pain with medications</p>
+        </div>
+
+        <!-- Avoid Surgery -->
+        <div class="bg-emerald-50 rounded-2xl p-8 text-center">
+          <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-3">Avoid Surgery</h3>
+          <p class="text-gray-600">Non-surgical option that can help many athletes avoid or delay invasive procedures</p>
+        </div>
+
+        <!-- Return to Activity -->
+        <div class="bg-emerald-50 rounded-2xl p-8 text-center">
+          <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-3">Return to Activity</h3>
+          <p class="text-gray-600">Progressive healing allows gradual return to sport with lasting results</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Treatment Options Grid -->
+  <section class="py-16 lg:py-24 bg-emerald-50">
+    <div class="section-shell">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Our Regenerative Treatments</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          Two proven injection therapies to address different aspects of sports injuries and joint conditions
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-8">
+        <!-- Prolotherapy Card -->
+        <div class="bg-white rounded-3xl shadow-xl overflow-hidden">
+          <div class="bg-emerald-700 p-6">
+            <h3 class="text-2xl font-serif font-bold text-white">Prolotherapy</h3>
+            <p class="text-emerald-100 mt-2">Concentrated dextrose injections for tissue regeneration</p>
+          </div>
+          <div class="p-8">
+            <p class="text-gray-600 mb-6">
+              Prolotherapy uses a concentrated dextrose (sugar) solution to trigger a regenerative response. When injected into damaged ligaments, tendons, or joints, it stimulates growth factor production and tissue repair.
+            </p>
+
+            <h4 class="font-semibold text-emerald-950 mb-3">Best For:</h4>
+            <ul class="space-y-2 mb-6">
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-700">Ligament sprains and laxity</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-700">Chronic tendinitis (tennis elbow, Achilles)</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-700">Osteoarthritis (knee, hip, thumb)</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-700">Joint instability</span>
+              </li>
+            </ul>
+
+            <div class="flex items-center justify-between border-t border-gray-100 pt-6">
+              <div>
+                <span class="text-3xl font-bold text-emerald-700">$110</span>
+                <span class="text-gray-500">/treatment</span>
+              </div>
+              <a href="/prolotherapy-for-arthritis" class="text-emerald-700 font-semibold hover:text-emerald-800 transition-colors inline-flex items-center">
+                Learn More
+                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Prolozone Card -->
+        <div class="bg-white rounded-3xl shadow-xl overflow-hidden">
+          <div class="bg-emerald-700 p-6">
+            <h3 class="text-2xl font-serif font-bold text-white">Prolozone Therapy</h3>
+            <p class="text-emerald-100 mt-2">Ozone-enhanced regenerative injections</p>
+          </div>
+          <div class="p-8">
+            <p class="text-gray-600 mb-6">
+              Prolozone combines the regenerative benefits of prolotherapy with medical-grade ozone. The ozone increases oxygen delivery to damaged tissues, enhances cellular metabolism, and reduces inflammation while promoting repair.
+            </p>
+
+            <h4 class="font-semibold text-emerald-950 mb-3">Best For:</h4>
+            <ul class="space-y-2 mb-6">
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-700">Chronic pain conditions</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-700">Degenerative joint disease</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-700">Back and neck pain</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-700">Rotator cuff injuries</span>
+              </li>
+            </ul>
+
+            <div class="flex items-center justify-between border-t border-gray-100 pt-6">
+              <div>
+                <span class="text-3xl font-bold text-emerald-700">$110</span>
+                <span class="text-gray-500">/treatment</span>
+              </div>
+              <a href="/prolozone" class="text-emerald-700 font-semibold hover:text-emerald-800 transition-colors inline-flex items-center">
+                Learn More
+                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Common Sports Injuries Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Common Sports Injuries We Treat</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          From weekend warriors to competitive athletes, we help Nova Scotians recover from a wide range of sports-related injuries
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Knee Injuries -->
+        <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-shadow">
+          <h3 class="text-lg font-semibold text-emerald-950 mb-3">Knee Injuries</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>• ACL/MCL sprains and laxity</li>
+            <li>• Patellar tendinitis (jumper's knee)</li>
+            <li>• Meniscus injuries</li>
+            <li>• Runner's knee</li>
+            <li>• Osgood-Schlatter disease</li>
+          </ul>
+        </div>
+
+        <!-- Shoulder Injuries -->
+        <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-shadow">
+          <h3 class="text-lg font-semibold text-emerald-950 mb-3">Shoulder Injuries</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>• Rotator cuff tendinitis/tears</li>
+            <li>• Shoulder impingement</li>
+            <li>• AC joint injuries</li>
+            <li>• Labral tears</li>
+            <li>• Chronic instability</li>
+          </ul>
+        </div>
+
+        <!-- Elbow & Wrist -->
+        <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-shadow">
+          <h3 class="text-lg font-semibold text-emerald-950 mb-3">Elbow & Wrist</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>• Tennis elbow (lateral epicondylitis)</li>
+            <li>• Golfer's elbow (medial epicondylitis)</li>
+            <li>• Wrist sprains</li>
+            <li>• TFCC injuries</li>
+          </ul>
+        </div>
+
+        <!-- Hip & Pelvis -->
+        <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-shadow">
+          <h3 class="text-lg font-semibold text-emerald-950 mb-3">Hip & Pelvis</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>• Hip labral tears</li>
+            <li>• Hip flexor strains</li>
+            <li>• SI joint dysfunction</li>
+            <li>• Greater trochanteric bursitis</li>
+            <li>• Groin strains</li>
+          </ul>
+        </div>
+
+        <!-- Ankle & Foot -->
+        <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-shadow">
+          <h3 class="text-lg font-semibold text-emerald-950 mb-3">Ankle & Foot</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>• Achilles tendinitis/tendinosis</li>
+            <li>• Ankle sprains (chronic)</li>
+            <li>• Plantar fasciitis</li>
+            <li>• Peroneal tendinitis</li>
+          </ul>
+        </div>
+
+        <!-- Back & Spine -->
+        <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-shadow">
+          <h3 class="text-lg font-semibold text-emerald-950 mb-3">Back & Spine</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>• Low back pain</li>
+            <li>• Facet joint syndrome</li>
+            <li>• Sacroiliac dysfunction</li>
+            <li>• Whiplash injuries</li>
+            <li>• Disc-related pain</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- For Active Nova Scotians Section -->
+  <section class="py-16 lg:py-24 bg-emerald-950">
+    <div class="section-shell">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-6 text-center">For Active Nova Scotians</h2>
+        <p class="text-white/90 text-lg text-center mb-12">
+          Whether you're training for the Bluenose Marathon, playing in a rec hockey league, hitting the trails at Keppoch, or simply staying active with your family, injuries can derail your goals. Our regenerative therapies help you get back to the activities that matter to you.
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-white/10 rounded-2xl p-6">
+            <h3 class="text-xl font-semibold text-white mb-4">Popular Activities We Support</h3>
+            <ul class="space-y-3 text-white/80">
+              <li class="flex items-center">
+                <span class="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>
+                Running & Trail Running
+              </li>
+              <li class="flex items-center">
+                <span class="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>
+                Hockey & Skating
+              </li>
+              <li class="flex items-center">
+                <span class="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>
+                Golf
+              </li>
+              <li class="flex items-center">
+                <span class="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>
+                CrossFit & Weightlifting
+              </li>
+              <li class="flex items-center">
+                <span class="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>
+                Cycling & Mountain Biking
+              </li>
+              <li class="flex items-center">
+                <span class="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>
+                Swimming & Water Sports
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-white/10 rounded-2xl p-6">
+            <h3 class="text-xl font-semibold text-white mb-4">Who Benefits Most</h3>
+            <ul class="space-y-3 text-white/80">
+              <li class="flex items-center">
+                <span class="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>
+                Athletes with chronic injuries
+              </li>
+              <li class="flex items-center">
+                <span class="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>
+                Those seeking surgery alternatives
+              </li>
+              <li class="flex items-center">
+                <span class="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>
+                Weekend warriors with recurring pain
+              </li>
+              <li class="flex items-center">
+                <span class="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>
+                Active adults wanting to stay mobile
+              </li>
+              <li class="flex items-center">
+                <span class="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>
+                Those who haven't improved with physio alone
+              </li>
+              <li class="flex items-center">
+                <span class="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>
+                Youth athletes (Osgood-Schlatter, etc.)
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Treatment Process Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">What to Expect</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          A typical treatment series involves 4-6 sessions, with many patients noticing improvement after 2-3 treatments
+        </p>
+      </div>
+
+      <div class="max-w-4xl mx-auto">
+        <div class="space-y-8">
+          <!-- Step 1 -->
+          <div class="flex gap-6">
+            <div class="flex-shrink-0">
+              <div class="w-12 h-12 bg-emerald-700 rounded-full flex items-center justify-center text-white font-bold text-lg">1</div>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-emerald-950 mb-2">Initial Assessment</h3>
+              <p class="text-gray-600">Comprehensive evaluation of your injury, movement patterns, and treatment history. We'll discuss your athletic goals and develop a personalized treatment plan.</p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="flex gap-6">
+            <div class="flex-shrink-0">
+              <div class="w-12 h-12 bg-emerald-700 rounded-full flex items-center justify-center text-white font-bold text-lg">2</div>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-emerald-950 mb-2">Treatment Sessions</h3>
+              <p class="text-gray-600">Injections are performed in-office, typically taking 15-30 minutes. A local anesthetic minimizes discomfort. Most patients describe mild pressure during the procedure.</p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="flex gap-6">
+            <div class="flex-shrink-0">
+              <div class="w-12 h-12 bg-emerald-700 rounded-full flex items-center justify-center text-white font-bold text-lg">3</div>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-emerald-950 mb-2">Recovery Period</h3>
+              <p class="text-gray-600">Rest from intense activity for 1-2 days post-treatment. Light movement is encouraged. Some temporary soreness is normal and indicates the healing response has begun.</p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="flex gap-6">
+            <div class="flex-shrink-0">
+              <div class="w-12 h-12 bg-emerald-700 rounded-full flex items-center justify-center text-white font-bold text-lg">4</div>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-emerald-950 mb-2">Progressive Return</h3>
+              <p class="text-gray-600">Gradual return to activity as healing progresses. Treatments are typically spaced 1-2 weeks apart. We'll monitor your progress and adjust the plan as needed.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="py-16 lg:py-24 bg-emerald-50">
+    <div class="section-shell">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Investment in Your Recovery</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          Transparent pricing with no surprises. Most extended health plans cover naturopathic services.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <!-- Initial Consultation -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 text-center">
+          <h3 class="text-xl font-semibold text-emerald-950 mb-2">Initial Consultation</h3>
+          <p class="text-gray-500 text-sm mb-4">60 minutes</p>
+          <div class="mb-6">
+            <span class="text-4xl font-bold text-emerald-700">$200</span>
+          </div>
+          <p class="text-gray-600 text-sm">Comprehensive assessment, diagnosis, and treatment planning</p>
+        </div>
+
+        <!-- Treatment Session -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 text-center border-2 border-emerald-700">
+          <div class="bg-emerald-700 text-white text-xs font-semibold px-3 py-1 rounded-full inline-block mb-4">MOST POPULAR</div>
+          <h3 class="text-xl font-semibold text-emerald-950 mb-2">Treatment Session</h3>
+          <p class="text-gray-500 text-sm mb-4">Prolotherapy or Prolozone</p>
+          <div class="mb-6">
+            <span class="text-4xl font-bold text-emerald-700">$110</span>
+          </div>
+          <p class="text-gray-600 text-sm">Per treatment area. Multiple areas may be treated in one session.</p>
+        </div>
+
+        <!-- Combo Package -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 text-center">
+          <h3 class="text-xl font-semibold text-emerald-950 mb-2">First Visit Package</h3>
+          <p class="text-gray-500 text-sm mb-4">Consultation + Treatment</p>
+          <div class="mb-2">
+            <span class="text-4xl font-bold text-emerald-700">$260</span>
+          </div>
+          <p class="text-emerald-600 text-sm font-semibold mb-4">Save $50</p>
+          <p class="text-gray-600 text-sm">Get started on treatment the same day as your assessment</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Supporting Recovery Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-6 text-center">Supporting Your Recovery</h2>
+        <p class="text-lg text-gray-600 text-center mb-12">
+          Regenerative injections work best as part of a comprehensive approach. We may recommend additional support:
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center">
+                <svg class="w-5 h-5 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+            </div>
+            <div>
+              <h3 class="font-semibold text-emerald-950 mb-1">IV Nutrient Therapy</h3>
+              <p class="text-gray-600 text-sm">Myers' Cocktail and other formulas to optimize tissue healing and energy for athletes.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center">
+                <svg class="w-5 h-5 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+            </div>
+            <div>
+              <h3 class="font-semibold text-emerald-950 mb-1">Nutritional Support</h3>
+              <p class="text-gray-600 text-sm">Anti-inflammatory diet strategies and targeted supplementation for connective tissue repair.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center">
+                <svg class="w-5 h-5 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+            </div>
+            <div>
+              <h3 class="font-semibold text-emerald-950 mb-1">Lab Testing</h3>
+              <p class="text-gray-600 text-sm">Identify nutritional deficiencies or inflammatory markers that may slow healing.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center">
+                <svg class="w-5 h-5 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+            </div>
+            <div>
+              <h3 class="font-semibold text-emerald-950 mb-1">Physiotherapy Coordination</h3>
+              <p class="text-gray-600 text-sm">We work alongside your physiotherapist to optimize rehabilitation and strengthen healed tissues.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 lg:py-24 bg-emerald-50">
+    <div class="section-shell">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
+
+        <div class="space-y-4">
+          <details class="bg-white rounded-xl shadow-md group">
+            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+              <span class="font-semibold text-emerald-950">How long until I can return to my sport?</span>
+              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              Most patients can return to light activity within 2-3 days and gradually increase intensity over the following weeks. Full return to sport typically occurs after completing the treatment series (4-6 weeks), though this varies based on injury severity and individual healing response. We'll provide specific guidance based on your situation.
+            </div>
+          </details>
+
+          <details class="bg-white rounded-xl shadow-md group">
+            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+              <span class="font-semibold text-emerald-950">Should I stop physiotherapy during treatment?</span>
+              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              Not necessarily. Regenerative injections and physiotherapy often work well together. We recommend avoiding aggressive manipulation or deep tissue work for 48-72 hours after treatment, but gentle exercises and stretching can continue. We're happy to coordinate with your physiotherapist to optimize your care.
+            </div>
+          </details>
+
+          <details class="bg-white rounded-xl shadow-md group">
+            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+              <span class="font-semibold text-emerald-950">Can I take anti-inflammatories?</span>
+              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              We recommend avoiding NSAIDs (ibuprofen, naproxen, etc.) for 48-72 hours before and after treatment, as they can interfere with the inflammatory healing response we're trying to stimulate. Acetaminophen (Tylenol) is acceptable if needed for discomfort. We'll discuss pain management strategies during your consultation.
+            </div>
+          </details>
+
+          <details class="bg-white rounded-xl shadow-md group">
+            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+              <span class="font-semibold text-emerald-950">Is this covered by insurance?</span>
+              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              Most extended health benefit plans cover naturopathic medicine, which includes our regenerative injection therapies. Coverage varies by plan—check with your provider for your specific naturopathic medicine benefits. We provide detailed receipts for insurance submission.
+            </div>
+          </details>
+
+          <details class="bg-white rounded-xl shadow-md group">
+            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+              <span class="font-semibold text-emerald-950">What's the difference between prolotherapy and cortisone?</span>
+              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              Cortisone suppresses inflammation and can provide short-term pain relief, but doesn't promote tissue healing and may actually weaken tendons with repeated use. Prolotherapy works differently—it stimulates a controlled healing response to strengthen and repair damaged tissue. Research comparing the two found both effective short-term, but prolotherapy showed superior results at 6 months.
+            </div>
+          </details>
+
+          <details class="bg-white rounded-xl shadow-md group">
+            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+              <span class="font-semibold text-emerald-950">Do you treat youth athletes?</span>
+              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              Yes, we treat adolescent athletes with certain conditions like Osgood-Schlatter disease, where prolotherapy has shown excellent results in research. Treatment decisions for youth are made carefully with parental involvement, considering the specific condition and growth plate status. We'll discuss whether treatment is appropriate during the initial consultation.
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Conditions Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Related Information</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <a href="/low-back-pain" class="bg-emerald-50 rounded-xl p-6 hover:shadow-lg transition-shadow group">
+          <h3 class="text-lg font-semibold text-emerald-950 mb-2 group-hover:text-emerald-700">Low Back Pain</h3>
+          <p class="text-gray-600 text-sm">Learn how regenerative injections can address chronic low back pain from sports or daily activities.</p>
+        </a>
+
+        <a href="/prolotherapy-for-arthritis" class="bg-emerald-50 rounded-xl p-6 hover:shadow-lg transition-shadow group">
+          <h3 class="text-lg font-semibold text-emerald-950 mb-2 group-hover:text-emerald-700">Prolotherapy for Arthritis</h3>
+          <p class="text-gray-600 text-sm">Detailed information on prolotherapy research and its effectiveness for osteoarthritis.</p>
+        </a>
+
+        <a href="/iv-therapy" class="bg-emerald-50 rounded-xl p-6 hover:shadow-lg transition-shadow group">
+          <h3 class="text-lg font-semibold text-emerald-950 mb-2 group-hover:text-emerald-700">IV Nutrient Therapy</h3>
+          <p class="text-gray-600 text-sm">Support your recovery and athletic performance with targeted nutrient infusions.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="py-16 lg:py-24 bg-emerald-950">
+    <div class="section-shell">
+      <div class="text-center max-w-3xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-6">Ready to Get Back in the Game?</h2>
+        <p class="text-lg text-white/80 mb-8">
+          Don't let an injury keep you sidelined. Book your assessment today and discover how regenerative injection therapy can help you return to the activities you love.
+        </p>
+        <a
+          href="https://macleodnaturopathic.janeapp.com/"
+          target="_blank"
+          class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center"
+        >
+          Book Your Assessment
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Schema Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How long until I can return to my sport?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most patients can return to light activity within 2-3 days and gradually increase intensity over the following weeks. Full return to sport typically occurs after completing the treatment series (4-6 weeks), though this varies based on injury severity and individual healing response."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I stop physiotherapy during treatment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not necessarily. Regenerative injections and physiotherapy often work well together. We recommend avoiding aggressive manipulation or deep tissue work for 48-72 hours after treatment, but gentle exercises and stretching can continue."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I take anti-inflammatories?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We recommend avoiding NSAIDs (ibuprofen, naproxen, etc.) for 48-72 hours before and after treatment, as they can interfere with the inflammatory healing response we're trying to stimulate. Acetaminophen (Tylenol) is acceptable if needed for discomfort."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this covered by insurance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most extended health benefit plans cover naturopathic medicine, which includes our regenerative injection therapies. Coverage varies by plan—check with your provider for your specific naturopathic medicine benefits."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the difference between prolotherapy and cortisone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cortisone suppresses inflammation and can provide short-term pain relief, but doesn't promote tissue healing and may actually weaken tendons with repeated use. Prolotherapy stimulates a controlled healing response to strengthen and repair damaged tissue. Research comparing the two found both effective short-term, but prolotherapy showed superior results at 6 months."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you treat youth athletes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we treat adolescent athletes with certain conditions like Osgood-Schlatter disease, where prolotherapy has shown excellent results in research. Treatment decisions for youth are made carefully with parental involvement."
+          }
+        }
+      ]
+    }
+  </script>
+</BaseLayout>

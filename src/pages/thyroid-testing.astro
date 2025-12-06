@@ -1,0 +1,564 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Complete Thyroid Testing in Halifax - Beyond TSH"
+  description="Comprehensive thyroid testing in Halifax including TSH, Free T3, Free T4, Reverse T3, and thyroid antibodies. Go beyond standard testing to find answers."
+  focusKeyword="thyroid testing Halifax"
+>
+  <!-- Hero Section -->
+  <section class="bg-emerald-950 -mt-24 pt-48 pb-16 lg:pt-56 lg:pb-24">
+    <div class="section-shell">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6">
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-white tracking-tight">Complete Thyroid Testing</h1>
+          <p class="text-lg sm:text-xl text-white/90 leading-relaxed font-light">
+            Standard TSH testing misses up to <strong class="text-white">7% of thyroid disorders</strong>. We offer comprehensive thyroid panels that reveal the full picture—including markers most doctors don't order—<strong class="text-white">without a family doctor requisition</strong>.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a
+              href="https://macleodnaturopathic.janeapp.com/"
+              target="_blank"
+              class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center justify-center"
+            >
+              Book Thyroid Assessment
+              <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-2xl">
+          <img
+            src="/images/lab-testing/thyroid-panel.png"
+            alt="Thyroid gland anatomy"
+            class="w-full h-full object-cover aspect-video"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistics -->
+  <section class="py-12 bg-white">
+    <div class="section-shell">
+      <div class="grid md:grid-cols-4 gap-8 text-center">
+        <div>
+          <div class="text-4xl font-bold text-emerald-700 mb-2">10%</div>
+          <p class="text-gray-600 text-sm">of Canadians 45+ have thyroid dysfunction</p>
+        </div>
+        <div>
+          <div class="text-4xl font-bold text-emerald-700 mb-2">50%</div>
+          <p class="text-gray-600 text-sm">of thyroid conditions are undiagnosed</p>
+        </div>
+        <div>
+          <div class="text-4xl font-bold text-emerald-700 mb-2">4x</div>
+          <p class="text-gray-600 text-sm">more common in women than men</p>
+        </div>
+        <div>
+          <div class="text-4xl font-bold text-emerald-700 mb-2">7%</div>
+          <p class="text-gray-600 text-sm">of cases missed by TSH-only testing</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Problem with Standard Testing -->
+  <section class="py-16 lg:py-24 bg-emerald-50">
+    <div class="section-shell">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-6">Why Standard Thyroid Testing Falls Short</h2>
+        <div class="prose prose-lg text-gray-600 mb-8">
+          <p>
+            If you've been told your thyroid is "normal" but still experience fatigue, weight gain, brain fog, or cold intolerance, you're not alone. <strong>Standard testing typically only includes TSH</strong>—and sometimes Free T4—missing critical markers that reveal the full picture.
+          </p>
+          <p>
+            TSH is like checking the thermostat without checking if the furnace is actually working. It tells us how hard your pituitary is signaling your thyroid, but not how well your thyroid is responding, whether you're converting T4 to active T3, or whether your immune system is attacking your thyroid.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 shadow-lg">
+          <h3 class="text-xl font-semibold text-emerald-950 mb-6">What Standard Testing Misses</h3>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-red-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <div>
+                <span class="font-medium text-emerald-950">Conversion problems</span>
+                <p class="text-sm text-gray-600">Normal T4 but poor conversion to active T3</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-red-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <div>
+                <span class="font-medium text-emerald-950">Reverse T3 dominance</span>
+                <p class="text-sm text-gray-600">T4 converting to inactive rT3 instead of active T3</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-red-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <div>
+                <span class="font-medium text-emerald-950">Early autoimmune disease</span>
+                <p class="text-sm text-gray-600">Antibodies attacking thyroid years before TSH changes</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-red-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <div>
+                <span class="font-medium text-emerald-950">"Normal" but not optimal</span>
+                <p class="text-sm text-gray-600">TSH in range but not where you function best</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Complete Thyroid Panel -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">The Complete Thyroid Panel</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          We test all the markers needed to understand your thyroid function—not just the basics.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- TSH -->
+        <div class="bg-emerald-50 rounded-2xl p-6">
+          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-white font-bold text-sm">TSH</span>
+          </div>
+          <h3 class="text-lg font-semibold text-emerald-950 mb-2">TSH</h3>
+          <p class="text-gray-600 text-sm mb-3">Thyroid Stimulating Hormone—the pituitary's signal to your thyroid. Shows how hard your body is working to maintain thyroid levels.</p>
+          <div class="text-xs text-gray-500">
+            <span class="font-medium">Standard range:</span> 0.4–4.5 mIU/L<br>
+            <span class="font-medium text-emerald-700">Optimal range:</span> 0.5–2.0 mIU/L
+          </div>
+        </div>
+
+        <!-- Free T4 -->
+        <div class="bg-emerald-50 rounded-2xl p-6">
+          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-white font-bold text-sm">FT4</span>
+          </div>
+          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Free T4</h3>
+          <p class="text-gray-600 text-sm mb-3">The storage form of thyroid hormone. Your thyroid primarily produces T4, which must be converted to T3 to be used by cells.</p>
+          <div class="text-xs text-gray-500">
+            <span class="font-medium">Standard range:</span> 0.8–1.8 ng/dL<br>
+            <span class="font-medium text-emerald-700">Optimal range:</span> 1.0–1.5 ng/dL
+          </div>
+        </div>
+
+        <!-- Free T3 -->
+        <div class="bg-emerald-50 rounded-2xl p-6">
+          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-white font-bold text-sm">FT3</span>
+          </div>
+          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Free T3</h3>
+          <p class="text-gray-600 text-sm mb-3">The <strong>active</strong> thyroid hormone. This is what actually affects your cells, metabolism, energy, and temperature regulation.</p>
+          <div class="text-xs text-gray-500">
+            <span class="font-medium">Standard range:</span> 2.0–4.4 pg/mL<br>
+            <span class="font-medium text-emerald-700">Optimal range:</span> 3.0–4.0 pg/mL
+          </div>
+        </div>
+
+        <!-- Reverse T3 -->
+        <div class="bg-emerald-50 rounded-2xl p-6">
+          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-white font-bold text-sm">rT3</span>
+          </div>
+          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Reverse T3</h3>
+          <p class="text-gray-600 text-sm mb-3">An <strong>inactive</strong> form of T3. High levels indicate your body is deactivating thyroid hormone—often due to stress, illness, or inflammation.</p>
+          <div class="text-xs text-gray-500">
+            <span class="font-medium">Standard range:</span> 10–24 ng/dL<br>
+            <span class="font-medium text-emerald-700">Optimal range:</span> 12–18 ng/dL
+          </div>
+        </div>
+
+        <!-- TPO Antibodies -->
+        <div class="bg-emerald-50 rounded-2xl p-6">
+          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-white font-bold text-sm">TPO</span>
+          </div>
+          <h3 class="text-lg font-semibold text-emerald-950 mb-2">TPO Antibodies</h3>
+          <p class="text-gray-600 text-sm mb-3">Thyroid Peroxidase antibodies. Elevated levels indicate <strong>Hashimoto's thyroiditis</strong>—the most common cause of hypothyroidism.</p>
+          <div class="text-xs text-gray-500">
+            <span class="font-medium">Standard range:</span> &lt;35 IU/mL<br>
+            <span class="font-medium text-emerald-700">Optimal range:</span> &lt;2 IU/mL
+          </div>
+        </div>
+
+        <!-- TG Antibodies -->
+        <div class="bg-emerald-50 rounded-2xl p-6">
+          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-white font-bold text-sm">TgAb</span>
+          </div>
+          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Thyroglobulin Antibodies</h3>
+          <p class="text-gray-600 text-sm mb-3">Another autoimmune marker. Present in 20–90% of Hashimoto's patients. Some people have elevated TgAb without elevated TPO.</p>
+          <div class="text-xs text-gray-500">
+            <span class="font-medium">Standard range:</span> &lt;40 IU/mL<br>
+            <span class="font-medium text-emerald-700">Optimal range:</span> &lt;2 IU/mL
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Antibodies Matter -->
+  <section class="py-16 lg:py-24 bg-emerald-950">
+    <div class="section-shell">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-6">Why Thyroid Antibodies Matter</h2>
+          <div class="prose prose-lg prose-invert">
+            <p class="text-white/90">
+              Hashimoto's thyroiditis—an autoimmune attack on the thyroid—is the most common cause of hypothyroidism. Yet most people with Hashimoto's don't know they have it because <strong class="text-white">antibody testing is rarely ordered</strong>.
+            </p>
+            <p class="text-white/90">
+              Here's the problem: <strong class="text-white">antibodies can be elevated for years before TSH becomes abnormal</strong>. During this time, you may experience classic hypothyroid symptoms—fatigue, weight gain, brain fog, hair loss—but be told your thyroid is "fine."
+            </p>
+            <p class="text-white/90">
+              Finding elevated antibodies early matters because we can often intervene to slow or halt the autoimmune process before significant thyroid damage occurs.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur rounded-2xl p-8">
+          <h3 class="text-xl font-semibold text-white mb-6">Who Should Test Thyroid Antibodies?</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3 text-white/90">
+              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Family history of thyroid disease or autoimmune conditions</span>
+            </li>
+            <li class="flex items-start gap-3 text-white/90">
+              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Thyroid symptoms despite "normal" TSH</span>
+            </li>
+            <li class="flex items-start gap-3 text-white/90">
+              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Other autoimmune conditions (celiac, RA, type 1 diabetes)</span>
+            </li>
+            <li class="flex items-start gap-3 text-white/90">
+              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Fertility concerns or recurrent miscarriage</span>
+            </li>
+            <li class="flex items-start gap-3 text-white/90">
+              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Postpartum thyroid symptoms</span>
+            </li>
+            <li class="flex items-start gap-3 text-white/90">
+              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Thyroid levels that fluctuate or are difficult to stabilize</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Optimal vs Normal -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-6 text-center">Optimal vs. "Normal" Ranges</h2>
+        <div class="prose prose-lg text-gray-600 mb-8 text-center max-w-3xl mx-auto">
+          <p>
+            Standard lab ranges are based on the general population—including people who are unwell. A "normal" result doesn't necessarily mean optimal function for you.
+          </p>
+        </div>
+
+        <div class="bg-emerald-50 rounded-2xl p-8">
+          <h3 class="text-xl font-semibold text-emerald-950 mb-6">TSH Example</h3>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white rounded-xl p-6">
+              <h4 class="font-medium text-gray-500 mb-2">Standard Lab Range</h4>
+              <div class="text-3xl font-bold text-gray-700 mb-2">0.4 – 4.5 mIU/L</div>
+              <p class="text-sm text-gray-600">A TSH of 4.0 would be considered "normal"</p>
+            </div>
+            <div class="bg-emerald-700 rounded-xl p-6 text-white">
+              <h4 class="font-medium text-emerald-200 mb-2">Optimal Functional Range</h4>
+              <div class="text-3xl font-bold mb-2">0.5 – 2.0 mIU/L</div>
+              <p class="text-sm text-emerald-100">Where most people feel and function best</p>
+            </div>
+          </div>
+          <p class="text-gray-600 text-sm mt-6">
+            Many patients with a TSH of 3.0–4.5 experience hypothyroid symptoms but are told their thyroid is "fine." We use optimal functional ranges to identify when intervention may help—even if your numbers are technically "normal."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Thyroid Symptoms -->
+  <section class="py-16 lg:py-24 bg-emerald-50">
+    <div class="section-shell">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Signs Your Thyroid May Need Attention</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <!-- Hypothyroid -->
+        <div class="bg-white rounded-2xl p-8 shadow-lg">
+          <h3 class="text-xl font-semibold text-emerald-950 mb-4">Underactive Thyroid (Hypothyroidism)</h3>
+          <ul class="space-y-2">
+            {['Fatigue and low energy', 'Weight gain or difficulty losing weight', 'Cold intolerance', 'Constipation', 'Dry skin and hair', 'Hair loss', 'Brain fog and poor concentration', 'Depression', 'Muscle weakness', 'Heavy or irregular periods'].map(symptom => (
+              <li class="flex items-center gap-2 text-gray-700">
+                <svg class="w-4 h-4 text-blue-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
+                {symptom}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <!-- Hyperthyroid -->
+        <div class="bg-white rounded-2xl p-8 shadow-lg">
+          <h3 class="text-xl font-semibold text-emerald-950 mb-4">Overactive Thyroid (Hyperthyroidism)</h3>
+          <ul class="space-y-2">
+            {['Unexplained weight loss', 'Rapid or irregular heartbeat', 'Anxiety and nervousness', 'Tremors', 'Heat intolerance', 'Increased sweating', 'Difficulty sleeping', 'Frequent bowel movements', 'Muscle weakness', 'Light or missed periods'].map(symptom => (
+              <li class="flex items-center gap-2 text-gray-700">
+                <svg class="w-4 h-4 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
+                {symptom}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nova Scotia Context -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-6">Thyroid Testing Access in Nova Scotia</h2>
+        <div class="prose prose-lg text-gray-600">
+          <p>
+            An estimated <strong>1 in 10 Canadians</strong> has a thyroid disorder, and about <strong>50% are undiagnosed</strong>. In Nova Scotia, accessing comprehensive thyroid testing can be challenging:
+          </p>
+          <ul>
+            <li>Many family doctors only order TSH, missing the broader picture</li>
+            <li>Wait times for endocrinology referrals can be months to years</li>
+            <li>MSI coverage is limited for comprehensive panels</li>
+            <li>Thousands of Nova Scotians don't have a family doctor at all</li>
+          </ul>
+          <p>
+            Through our practice, you can access <strong>complete thyroid testing without a family doctor requisition</strong>. Results are interpreted using optimal functional ranges, not just standard lab cutoffs, and we develop actionable treatment plans based on your findings.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Getting Started -->
+  <section class="py-16 lg:py-24 bg-emerald-50">
+    <div class="section-shell">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Getting Started</h2>
+
+        <div class="bg-white rounded-2xl shadow-xl p-8">
+          <div class="space-y-4">
+            <div class="flex justify-between items-center pb-4 border-b border-gray-100">
+              <div>
+                <h3 class="font-semibold text-emerald-950">Initial Naturopathic Consultation</h3>
+                <p class="text-sm text-gray-500">60 minutes — comprehensive assessment</p>
+              </div>
+              <span class="text-2xl font-bold text-emerald-700">$200</span>
+            </div>
+
+            <div class="flex justify-between items-center pb-4 border-b border-gray-100">
+              <div>
+                <h3 class="font-semibold text-emerald-950">Complete Thyroid Panel</h3>
+                <p class="text-sm text-gray-500">TSH, FT3, FT4, rT3, TPO, TgAb</p>
+              </div>
+              <span class="text-2xl font-bold text-emerald-700">~$200-250</span>
+            </div>
+
+            <div class="flex justify-between items-center pb-4 border-b border-gray-100">
+              <div>
+                <h3 class="font-semibold text-emerald-950">Results Review & Treatment Plan</h3>
+                <p class="text-sm text-gray-500">30-minute follow-up</p>
+              </div>
+              <span class="text-2xl font-bold text-emerald-700">$100</span>
+            </div>
+          </div>
+
+          <p class="text-sm text-gray-500 mt-6 text-center">Most extended health insurance plans cover naturopathic consultations</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
+
+        <div class="space-y-4">
+          <details class="bg-emerald-50 rounded-xl shadow-md group">
+            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+              <span class="font-semibold text-emerald-950">Do I need a doctor's requisition for thyroid testing?</span>
+              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              No. As a naturopathic doctor, I can order comprehensive thyroid panels directly. You don't need a family doctor or specialist referral to access complete testing.
+            </div>
+          </details>
+
+          <details class="bg-emerald-50 rounded-xl shadow-md group">
+            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+              <span class="font-semibold text-emerald-950">Is thyroid testing covered by MSI?</span>
+              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              Testing ordered through a naturopathic doctor is not covered by MSI. However, many extended health plans cover naturopathic services. The lab testing itself is an out-of-pocket expense, but provides access to markers that are often not ordered through conventional channels.
+            </div>
+          </details>
+
+          <details class="bg-emerald-50 rounded-xl shadow-md group">
+            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+              <span class="font-semibold text-emerald-950">When should I get my blood drawn for thyroid testing?</span>
+              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              Thyroid testing is best done in the morning, ideally before 10 AM. If you're taking thyroid medication, draw blood before taking your morning dose. Fasting is not required but is often recommended if we're running other tests at the same time.
+            </div>
+          </details>
+
+          <details class="bg-emerald-50 rounded-xl shadow-md group">
+            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+              <span class="font-semibold text-emerald-950">I'm already on thyroid medication. Can you still help?</span>
+              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              Yes. Many patients on thyroid medication still don't feel optimal. Comprehensive testing can reveal whether your current medication is working effectively, whether you're converting T4 to T3 properly, and whether there are other factors affecting your thyroid health. I work alongside your prescribing physician, not in place of them.
+            </div>
+          </details>
+
+          <details class="bg-emerald-50 rounded-xl shadow-md group">
+            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+              <span class="font-semibold text-emerald-950">What if my antibodies are elevated?</span>
+              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              Elevated antibodies indicate autoimmune thyroid activity, but it's not a death sentence. Research shows that addressing underlying triggers—gut health, nutrient deficiencies, gluten sensitivity, stress—can help reduce antibody levels in many patients. Early detection gives us the opportunity to intervene before significant thyroid damage occurs.
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 lg:py-24 bg-emerald-950">
+    <div class="section-shell">
+      <div class="text-center max-w-3xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-6">Ready to Get the Full Picture?</h2>
+        <p class="text-lg text-white/90 mb-8">
+          Stop wondering if your thyroid is the problem. Comprehensive testing gives you real answers—and a path forward.
+        </p>
+        <a
+          href="https://macleodnaturopathic.janeapp.com/"
+          target="_blank"
+          class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center"
+        >
+          Book Your Thyroid Assessment
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Pages -->
+  <section class="py-12 bg-white border-t border-gray-100">
+    <div class="section-shell">
+      <div class="max-w-4xl mx-auto">
+        <h3 class="text-lg font-semibold text-emerald-950 mb-4 text-center">Related Testing</h3>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="/lab-testing" class="text-emerald-700 hover:text-emerald-800 font-medium">← All Lab Testing Services</a>
+          <span class="text-gray-300">|</span>
+          <a href="/articles/comprehensive-hormone-testing-halifax" class="text-emerald-700 hover:text-emerald-800 font-medium">Hormone Testing →</a>
+          <span class="text-gray-300">|</span>
+          <a href="/patient-info/lab-testing-guide" class="text-emerald-700 hover:text-emerald-800 font-medium">Preparation Guide →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do I need a doctor's requisition for thyroid testing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. As a naturopathic doctor, I can order comprehensive thyroid panels directly. You don't need a family doctor or specialist referral."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is thyroid testing covered by MSI in Nova Scotia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Testing ordered through a naturopathic doctor is not covered by MSI. However, many extended health plans cover naturopathic services."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When should I get my blood drawn for thyroid testing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Thyroid testing is best done in the morning, ideally before 10 AM. If you're taking thyroid medication, draw blood before taking your morning dose."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if my thyroid antibodies are elevated?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Elevated antibodies indicate autoimmune thyroid activity. Research shows that addressing underlying triggers can help reduce antibody levels. Early detection gives us the opportunity to intervene before significant thyroid damage occurs."
+          }
+        }
+      ]
+    }
+  </script>
+</BaseLayout>
