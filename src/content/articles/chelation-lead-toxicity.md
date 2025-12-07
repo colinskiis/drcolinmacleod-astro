@@ -21,7 +21,10 @@ Because of its moldability, resistance to corrosion and low cost, lead is a wide
 Lead enters the body most through inhalation or ingestion of contaminated dust. Lead affects both adults and children but children are especially vulnerable due to their significantly increased absorption of the metal<sup>7</sup>.
 
 ### Lead in Nova Scotia
-Significant sources of lead exposure to Nova Scotians include contaminated drinking water, the manufacture of batteries and paint from some older homes<sup>8</sup>. There has been media attention over the past few years on lead contamination of drinking water of Acadia University<sup>9</sup> and Kings County Academy<sup>10</sup>. The death of eagles from lead poisoning here in Nova Scotia has also been reported by the CBC<sup>11</sup> and The Chronicle Herald<sup>12</sup>.
+
+![Peeling lead paint from an older home](/images/general/lead-paint.jpg)
+
+Significant sources of lead exposure to Nova Scotians include contaminated drinking water, the manufacture of batteries and paint from some older homes.<sup>8</sup> There has been media attention over the past few years on lead contamination of drinking water at Acadia University<sup>9</sup> and Kings County Academy.<sup>10</sup> The death of eagles from lead poisoning here in Nova Scotia has also been reported by the CBC<sup>11</sup> and The Chronicle Herald.<sup>12</sup>
 
 ## Chelation Therapy
 The standard and only proven effective treatment for lead toxicity is chelation therapy. Chelation involves giving a medicine (chelator) which latches onto a specific compound and allows it to be mobilized and removed from the body. The standard chelating agent used for removing lead is intravenous EDTA (Ethylene diamine tetraacetic acid), with oral DMSA (Dimercaptosuccinic acid) being used in some cases. Because lead binds very tightly within our tissues, especially bone, chelation is necessary to dislodge and remove it from the body.
@@ -39,11 +42,9 @@ Heavy metal toxicity is typically tested through blood testing. The current uppe
 The problem of the lead blood test is solved with the EDTA chelation challenge urine test. A chelation challenge with EDTA involves mobilizing a percentage of the lead from within the body and measuring its concentration in the urine over the following 6 hours. The concentration present in the post-chelation urine is a very good indicator of the body’s total burden of lead and other toxic heavy metals sequestered within the body.
 
 ## Lead Toxicity Prevention
-There are a few important ways which you can reduce your exposure to lead including avoiding contaminated products, being aware of your occupational exposure<sup>22</sup> and by limiting exposure through drinking water. Reducing lead exposure from drinking water here in Nova Scotia can be achieved through a few simple steps:
-- Use cold water for cooking and drinking,
-- Run the faucet for 5 minutes prior to drinking or cooking if the faucet hasn’t been used for 6 or more hours,
-- Clean all faucet aerators periodically and
-- If pregnant or if you have children consider using a NSF-53 water filter to significantly reduce lead levels in your drinking water.
+
+There are a few important ways to reduce your exposure to lead, including avoiding contaminated products, being aware of your occupational exposure<sup>22</sup> and limiting exposure through drinking water. Reducing lead exposure from drinking water here in Nova Scotia can be achieved through a few simple steps. Use cold water for cooking and drinking, and run the faucet for 5 minutes prior to drinking or cooking if the faucet hasn't been used for 6 or more hours. Clean all faucet aerators periodically. If pregnant or if you have children, consider using an NSF-53 certified water filter to significantly reduce lead levels in your drinking water.
+
 If you are in the Halifax area you can contact Halifax Water<sup>23</sup> to have your drinking water tested for the presence of heavy metals.
 
 ## Chelation Therapy in Halifax
