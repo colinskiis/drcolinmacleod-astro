@@ -27,21 +27,11 @@ The study followed patients for up to 5 years, tracking major cardiovascular eve
 
 ### Key Findings
 
-The TACT results, published in the Journal of the American Medical Association (JAMA), showed significant benefits:
-
-- **18% reduction** in cardiovascular events overall<sup>4</sup>
-- **Number needed to treat (NNT) of 18** patients over 5 years to prevent one cardiovascular event<sup>5</sup>
-- Treatment was well-tolerated with an excellent safety profile
+The TACT results, published in the Journal of the American Medical Association (JAMA), showed significant benefits. The chelation group experienced an 18% reduction in cardiovascular events overall.<sup>4</sup> The number needed to treat (NNT) was 18 patients over 5 years to prevent one cardiovascular event, and the treatment was well-tolerated with an excellent safety profile.<sup>5</sup>
 
 ### Remarkable Benefits for Diabetic Patients
 
-The most striking findings emerged from a pre-specified subgroup analysis of patients with diabetes:
-
-- **41% reduction** in cardiovascular events<sup>6</sup>
-- **43% reduction** in all-cause mortality<sup>6</sup>
-- Event rates dropped from 38% to 25% over 5 years in the chelation group<sup>6</sup>
-
-These results were so compelling that the American Heart Association and American College of Cardiology upgraded EDTA chelation from a Class III (not recommended) to a Class IIb indication in their 2014 guidelines for chronic ischemic heart disease.<sup>7</sup>
+The most striking findings emerged from a pre-specified subgroup analysis of patients with diabetes. This group showed a 41% reduction in cardiovascular events and a 43% reduction in all-cause mortality.<sup>6</sup> Event rates dropped from 38% to 25% over 5 years in the chelation group.<sup>6</sup> These results were so compelling that the American Heart Association and American College of Cardiology upgraded EDTA chelation from a Class III (not recommended) to a Class IIb indication in their 2014 guidelines for chronic ischemic heart disease.<sup>7</sup>
 
 ## How Does Chelation Help Heart Disease?
 
@@ -49,19 +39,9 @@ EDTA (ethylene diamine tetraacetic acid) chelation therapy works through several
 
 ### 1. Removal of Toxic Heavy Metals
 
-The American Heart Association released a scientific statement in 2023 confirming that toxic metals such as lead, cadmium and arsenic are significant cardiovascular risk factors.<sup>8</sup> Even at levels previously considered "safe," these metals increase the risk of:
+The American Heart Association released a scientific statement in 2023 confirming that toxic metals such as lead, cadmium and arsenic are significant cardiovascular risk factors.<sup>8</sup> Even at levels previously considered "safe," these metals increase the risk of heart attack,<sup>9</sup> stroke,<sup>10</sup> peripheral artery disease<sup>11</sup> and cardiovascular death.<sup>12</sup>
 
-- Heart attack<sup>9</sup>
-- Stroke<sup>10</sup>
-- Peripheral artery disease<sup>11</sup>
-- Cardiovascular death<sup>12</sup>
-
-Research published in the Journal of the American Heart Association found that comparing high versus low blood lead levels, the pooled relative risks were:<sup>13</sup>
-- **1.43** for cardiovascular disease
-- **1.85** for coronary heart disease
-- **1.63** for stroke
-
-EDTA has a high affinity for these toxic metals and effectively removes them from the body, reducing their harmful effects on blood vessels.<sup>14</sup>
+Research published in the Journal of the American Heart Association found that comparing high versus low blood lead levels, the pooled relative risks were 1.43 for cardiovascular disease, 1.85 for coronary heart disease and 1.63 for stroke.<sup>13</sup> EDTA has a high affinity for these toxic metals and effectively removes them from the body, reducing their harmful effects on blood vessels.<sup>14</sup>
 
 ### 2. Reduction of Oxidative Stress
 
@@ -99,14 +79,11 @@ The connection between toxic metal exposure and cardiovascular disease is now we
 
 ### Lead
 
-- Blood lead concentrations, even at levels considered safe, are associated with coronary artery calcification<sup>21</sup>
-- Lead exposure increases oxidative stress and impairs endothelial function<sup>22</sup>
-- Epidemiological studies consistently link lead to increased cardiovascular mortality<sup>23</sup>
+Blood lead concentrations, even at levels considered safe, are associated with coronary artery calcification.<sup>21</sup> Lead exposure increases oxidative stress and impairs endothelial function,<sup>22</sup> and epidemiological studies consistently link lead to increased cardiovascular mortality.<sup>23</sup>
 
 ### Cadmium
 
-- A dose-response meta-analysis found a relative risk of 2.58 for cardiovascular disease at blood cadmium levels of 1 μg/L<sup>24</sup>
-- Cadmium is independently associated with hypertension, stroke and peripheral artery disease<sup>25</sup>
+A dose-response meta-analysis found a relative risk of 2.58 for cardiovascular disease at blood cadmium levels of 1 μg/L.<sup>24</sup> Cadmium is independently associated with hypertension, stroke and peripheral artery disease.<sup>25</sup>
 
 ### Combined Effects
 
@@ -114,61 +91,31 @@ A study published in Circulation found that higher blood levels of lead and cadm
 
 ## Heart Disease in Nova Scotia
 
-Nova Scotians face particular cardiovascular health challenges:
-
-- **Highest ischemic heart disease prevalence** in Canada at 9.7%<sup>2</sup>
-- **Elevated rates** of hypertension and diabetes—both major cardiovascular risk factors<sup>27</sup>
-- **Environmental considerations**: Older homes and infrastructure may contribute to lead exposure
-
-Given these statistics, exploring all evidence-based options for cardiovascular health is particularly important for our region.
+Nova Scotians face particular cardiovascular health challenges. The province has the highest ischemic heart disease prevalence in Canada at 9.7%,<sup>2</sup> along with elevated rates of hypertension and diabetes—both major cardiovascular risk factors.<sup>27</sup> Additionally, older homes and infrastructure in the region may contribute to lead exposure. Given these statistics, exploring all evidence-based options for cardiovascular health is particularly important for our region.
 
 ## Sources of Heavy Metal Exposure
 
-Common sources of toxic metal exposure include:
+Common sources of toxic metal exposure vary by metal type. Lead exposure typically comes from older home plumbing (especially pre-1950s homes), lead paint in homes built before 1978, contaminated drinking water, certain occupational settings and some imported goods and cosmetics.
 
-### Lead
-- Older home plumbing (especially pre-1950s homes)
-- Lead paint in homes built before 1978
-- Contaminated drinking water
-- Some occupational exposures
-- Certain imported goods and cosmetics
+Cadmium exposure occurs primarily through cigarette smoke, but also through contaminated foods such as leafy vegetables and grains, occupational exposure in manufacturing, and some jewelry and pottery glazes.
 
-### Cadmium
-- Cigarette smoke (primary source)
-- Contaminated foods (leafy vegetables, grains)
-- Occupational exposure in manufacturing
-- Some jewelry and pottery glazes
-
-### Arsenic
-- Contaminated well water
-- Some rice products
-- Treated lumber (older pressure-treated wood)
-- Certain occupational settings
+Arsenic exposure sources include contaminated well water, some rice products, treated lumber (older pressure-treated wood) and certain occupational settings.
 
 ## What to Expect During Chelation Treatment
 
-A typical chelation therapy program for cardiovascular health involves:
+A typical chelation therapy program for cardiovascular health involves several stages.
 
 ### Initial Assessment
-Before starting chelation, a comprehensive evaluation including:
-- Complete medical history
-- Cardiovascular risk assessment
-- Baseline laboratory testing
-- Heavy metal testing (blood or provoked urine challenge)
-- Kidney and liver function tests
+
+Before starting chelation, a comprehensive evaluation is performed. This includes a complete medical history, cardiovascular risk assessment, baseline laboratory testing, heavy metal testing (blood or provoked urine challenge) and kidney and liver function tests.
 
 ### Treatment Protocol
-- **Number of treatments**: 15-25 infusions for optimal cardiovascular benefit
-- **Frequency**: Typically once weekly
-- **Duration**: Each infusion takes 1.5-3 hours
-- **Components**: EDTA, vitamin C, magnesium and other supportive nutrients
+
+For optimal cardiovascular benefit, most patients receive 15-25 infusions, typically scheduled once weekly. Each infusion takes 1.5-3 hours and includes EDTA, vitamin C, magnesium and other supportive nutrients.
 
 ### Expected Improvements
-Patients may experience:
-- Reduced chest pain (angina)
-- Improved circulation to extremities
-- Increased energy and exercise tolerance
-- Better overall cardiovascular function
+
+Patients may experience reduced chest pain (angina), improved circulation to extremities, increased energy and exercise tolerance, and better overall cardiovascular function.
 
 ### Important Precautions
 
@@ -184,22 +131,11 @@ Patients may experience:
 
 When administered by properly trained practitioners following established protocols, EDTA chelation therapy has an excellent safety record. The TACT trial, which provided over 55,000 infusions, confirmed the safety of this approach with no serious adverse events related to chelation.<sup>4</sup>
 
-Common temporary effects may include:
-- Mild fatigue during or after treatment
-- Temporary drop in blood pressure
-- Burning sensation at the IV site (usually related to infusion rate)
-
-These effects are generally manageable and resolve quickly.
+Common temporary effects may include mild fatigue during or after treatment, a temporary drop in blood pressure, or a burning sensation at the IV site (usually related to infusion rate). These effects are generally manageable and resolve quickly.
 
 ## Who May Benefit from Chelation?
 
-Based on current evidence, chelation therapy for cardiovascular health may be most appropriate for:
-
-- Individuals with documented heavy metal exposure or elevated levels
-- Those with coronary artery disease seeking complementary approaches
-- Patients who have had a heart attack, particularly those with diabetes
-- People with peripheral artery disease
-- Those with cardiovascular risk factors who want a comprehensive approach to heart health
+Based on current evidence, chelation therapy for cardiovascular health may be most appropriate for individuals with documented heavy metal exposure or elevated levels, those with coronary artery disease seeking complementary approaches, patients who have had a heart attack (particularly those with diabetes), people with peripheral artery disease, and those with cardiovascular risk factors who want a comprehensive approach to heart health.
 
 ## Chelation Therapy in Halifax
 
