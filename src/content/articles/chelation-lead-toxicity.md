@@ -3,7 +3,7 @@ title: "Chelation & Lead Toxicity"
 description: "Lead toxicity is a common disease which can be difficult to recognize. Chelation treatment and lead avoidance are the two essential weapons against lead."
 publishDate: 2015-02-02
 modifiedDate: 2022-07-12
-heroImage: "/images/treatments/chelation-edta-lead.jpg"
+heroImage: "/images/treatments/lead-toxicity2.jpg"
 categories: ["Naturopathic"]
 tags: ["naturopathic"]
 seo:
@@ -27,8 +27,6 @@ Lead enters the body most through inhalation or ingestion of contaminated dust. 
 Significant sources of lead exposure to Nova Scotians include contaminated drinking water, the manufacture of batteries and paint from some older homes.<sup>8</sup> There has been media attention over the past few years on lead contamination of drinking water at Acadia University<sup>9</sup> and Kings County Academy.<sup>10</sup> The death of eagles from lead poisoning here in Nova Scotia has also been reported by the CBC<sup>11</sup> and The Chronicle Herald.<sup>12</sup>
 
 ## Chelation Therapy
-
-![EDTA chelation therapy IV infusion](/images/treatments/lead-toxicity2.jpg)
 
 The standard and only proven effective treatment for lead toxicity is chelation therapy. Chelation involves giving a medicine (chelator) which latches onto a specific compound and allows it to be mobilized and removed from the body. The standard chelating agent used for removing lead is intravenous EDTA (Ethylene diamine tetraacetic acid), with oral DMSA (Dimercaptosuccinic acid) being used in some cases. Because lead binds very tightly within our tissues, especially bone, chelation is necessary to dislodge and remove it from the body.
 The number of chelation treatments required to reduce heavy metals down to a healthy level depends on the total body burden of the metal, i.e.: the total amount of the metal within the body. Treatments are typically given once every 1-2 weeks for 10-20 treatments to sufficiently reduce the total body level of the target heavy metal.
