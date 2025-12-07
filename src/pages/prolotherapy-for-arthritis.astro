@@ -12,9 +12,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <div class="section-shell">
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         <div class="space-y-6">
+          <nav class="text-emerald-300 text-sm">
+            <a href="/prolotherapy" class="hover:text-white transition-colors">Prolotherapy</a>
+            <span class="mx-2">/</span>
+            <span class="text-white">Arthritis</span>
+          </nav>
           <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-white tracking-tight">Prolotherapy For Arthritis</h1>
           <p class="text-lg sm:text-xl text-white/90 leading-relaxed font-light">
-            Prolotherapy is an injection of a concentrated dextrose solution which triggers a regenerative response at the site of degeneration or injury.
+            Prolotherapy has the strongest evidence base for osteoarthritis treatment, with 16 clinical studies showing significant improvements in pain, stiffness, and range of motion.
           </p>
           <a
             href="https://macleodnaturopathic.janeapp.com/"
@@ -302,13 +307,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </div>
   </section>
 
-  <!-- Conditions Treated Section -->
-  <section id="conditions-treated" class="py-16 lg:py-24 bg-white">
+  <!-- Joints We Treat Section -->
+  <section id="joints-treated" class="py-16 lg:py-24 bg-white">
     <div class="section-shell">
       <div class="text-center mb-12">
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Conditions Treated By Prolotherapy</h2>
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Joints We Treat</h2>
         <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-          Prolotherapy helps arthritis and many other painful conditions
+          Prolotherapy is effective for osteoarthritis in many joints
         </p>
       </div>
 
@@ -323,25 +328,25 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
         <div>
           <div class="grid grid-cols-2 gap-4 mb-8">
-            {['Achilles tendonitis', 'Back pain', 'Chondromalacia', 'Ligament injuries', 'Osgood-Schlatter disease', 'Osteoarthritis', 'Sacroiliac pain', 'Tendinitis', 'Tennis elbow', 'Whiplash'].map(condition => (
+            {['Knee', 'Hip', 'Thumb (CMC joint)', 'Fingers (DIP/PIP)', 'Shoulder', 'Ankle', 'Wrist', 'Elbow'].map(joint => (
               <div class="flex items-center">
                 <svg class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <span class="text-gray-700">{condition}</span>
+                <span class="text-gray-700">{joint}</span>
               </div>
             ))}
           </div>
 
           <p class="text-gray-600 mb-6">
-            Evidence has shown that prolotherapy is an effective treatment for many painful conditions including osteoarthritis<sup>17</sup>, chondromalacia<sup>18</sup>, low back pain<sup>19</sup>, sacroiliac pain<sup>20</sup>, tennis elbow<sup>21</sup>, ligament injuries<sup>22</sup>, rotator cuff tendinitis<sup>23</sup>, Achilles tendinitis<sup>24</sup>, whiplash<sup>25</sup> and Osgood-Schlatter disease<sup>26</sup>.
+            The strongest evidence exists for knee osteoarthritis, with 16 clinical studies demonstrating effectiveness. Studies have also shown benefit for thumb and finger joints, with Reeves et al. demonstrating significant improvement in hand OA patients.
           </p>
 
           <a
             href="#how-prolotherapy-works"
             class="text-emerald-700 font-semibold hover:text-emerald-800 transition-colors inline-flex items-center"
           >
-            Learn how prolotherapy works
+            Learn how prolotherapy works for arthritis
             <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
             </svg>
@@ -521,6 +526,30 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             </div>
           </details>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Other Conditions Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-6 text-center">Prolotherapy for Other Conditions</h2>
+      <p class="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-12">
+        While this page focuses on arthritis, prolotherapy is also effective for many other musculoskeletal conditions.
+      </p>
+      <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <a href="/prolotherapy-for-tendon-injuries" class="group bg-emerald-50 rounded-2xl p-6 hover:bg-emerald-100 transition-colors">
+          <h3 class="text-lg font-serif font-semibold text-emerald-950 mb-2 group-hover:text-emerald-700 transition-colors">Tendon Injuries</h3>
+          <p class="text-slate-600 text-sm">Tennis elbow, plantar fasciitis, and Achilles tendinopathy.</p>
+        </a>
+        <a href="/prolotherapy-for-back-pain" class="group bg-emerald-50 rounded-2xl p-6 hover:bg-emerald-100 transition-colors">
+          <h3 class="text-lg font-serif font-semibold text-emerald-950 mb-2 group-hover:text-emerald-700 transition-colors">Back & SI Joint Pain</h3>
+          <p class="text-slate-600 text-sm">Sacroiliac joint dysfunction and low back pain.</p>
+        </a>
+        <a href="/prolotherapy-for-osgood-schlatter" class="group bg-emerald-50 rounded-2xl p-6 hover:bg-emerald-100 transition-colors">
+          <h3 class="text-lg font-serif font-semibold text-emerald-950 mb-2 group-hover:text-emerald-700 transition-colors">Osgood-Schlatter</h3>
+          <p class="text-slate-600 text-sm">Knee pain in young athletes.</p>
+        </a>
       </div>
     </div>
   </section>
