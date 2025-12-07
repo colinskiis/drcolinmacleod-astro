@@ -27,6 +27,9 @@ Lead enters the body most through inhalation or ingestion of contaminated dust. 
 Significant sources of lead exposure to Nova Scotians include contaminated drinking water, the manufacture of batteries and paint from some older homes.<sup>8</sup> There has been media attention over the past few years on lead contamination of drinking water at Acadia University<sup>9</sup> and Kings County Academy.<sup>10</sup> The death of eagles from lead poisoning here in Nova Scotia has also been reported by the CBC<sup>11</sup> and The Chronicle Herald.<sup>12</sup>
 
 ## Chelation Therapy
+
+![EDTA chelation therapy IV infusion](/images/treatments/lead-toxicity2.jpg)
+
 The standard and only proven effective treatment for lead toxicity is chelation therapy. Chelation involves giving a medicine (chelator) which latches onto a specific compound and allows it to be mobilized and removed from the body. The standard chelating agent used for removing lead is intravenous EDTA (Ethylene diamine tetraacetic acid), with oral DMSA (Dimercaptosuccinic acid) being used in some cases. Because lead binds very tightly within our tissues, especially bone, chelation is necessary to dislodge and remove it from the body.
 The number of chelation treatments required to reduce heavy metals down to a healthy level depends on the total body burden of the metal, i.e.: the total amount of the metal within the body. Treatments are typically given once every 1-2 weeks for 10-20 treatments to sufficiently reduce the total body level of the target heavy metal.
 
@@ -39,7 +42,14 @@ When administered by a properly trained practitioner, chelation therapy is very 
 Heavy metal toxicity is typically tested through blood testing. The current upper limit for blood lead concentration recommended by the Centers for Disease Control and Prevention (CDC)<sup>15</sup> is 5ug/dl (micrograms per decilitre) for children and 10ug/dl for adults. However, adverse effects have been associated with much lower levels in the blood<sup>16, 17, 18, 19, 20</sup>. Also, the World Health Organization<sup>6</sup> has recently stated that there is "no known level of lead exposure that is considered safe." Blood testing is reliable for identifying acute lead poisoning but is not reliable for diagnosing long-term toxicity. According to the CDC, blood tests "under-represent the total body burden because most lead is stored in the bone"<sup>21</sup>, rather than in the blood.
 
 ### Chelation Challenge Urine Tests
-The problem of the lead blood test is solved with the EDTA chelation challenge urine test. A chelation challenge with EDTA involves mobilizing a percentage of the lead from within the body and measuring its concentration in the urine over the following 6 hours. The concentration present in the post-chelation urine is a very good indicator of the body’s total burden of lead and other toxic heavy metals sequestered within the body.
+
+The problem of the lead blood test is solved with the EDTA chelation challenge urine test. A chelation challenge with EDTA involves mobilizing a percentage of the lead from within the body and measuring its concentration in the urine over the following 6 hours. The concentration present in the post-chelation urine is a very good indicator of the body's total burden of lead and other toxic heavy metals sequestered within the body.
+
+![EDTA chelation challenge pre-test showing low concentrations of heavy metals](/images/treatments/edta-chelation-challenge-pre-test1.jpeg)
+*Pre-chelation urine test showing low concentrations of all heavy metals tested.*
+
+![EDTA chelation challenge post-test showing elevated lead levels](/images/treatments/edta-chelation-challenge-post-test1.jpeg)
+*Post-chelation urine test showing a significant increase in lead concentration, indicating elevated total body burden.*
 
 ## Lead Toxicity Prevention
 
