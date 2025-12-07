@@ -45,7 +45,7 @@ import BookingButton from '../components/BookingButton.astro';
                   <svg class="w-5 h-5 text-emerald-800 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
-                  <span class="text-gray-700">Doctor of Naturopathic Medicine (ND) - Accredited Naturopathic Medical School</span>
+                  <span class="text-gray-700">Doctor of Naturopathic Medicine (ND) - Canadian College of Naturopathic Medicine</span>
                 </li>
                 <li class="flex items-start">
                   <svg class="w-5 h-5 text-emerald-700 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -63,20 +63,14 @@ import BookingButton from '../components/BookingButton.astro';
                   <svg class="w-5 h-5 text-emerald-700 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
-                  <span class="text-gray-700">Certified in Intravenous Therapy and Clinical Nutrition</span>
-                </li>
-                <li class="flex items-start">
-                  <svg class="w-5 h-5 text-emerald-700 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                  </svg>
-                  <span class="text-gray-700">Traditional Chinese Medicine and Acupuncture Certification</span>
+                  <span class="text-gray-700">Certified in Intravenous Therapy</span>
                 </li>
               </ul>
             </div>
 
             <h3 class="text-2xl sm:text-3xl font-serif font-bold text-emerald-950 mb-4">Treatment Philosophy</h3>
             <p class="text-gray-600 mb-6">
-              Dr. MacLeod's approach to healthcare is rooted in the fundamental naturopathic principles of treating the whole person, addressing root causes rather than just symptoms, and supporting the body's inherent ability to heal itself. He believes in creating individualized treatment plans that combine the best of traditional wisdom with current scientific evidence.
+              Dr. MacLeod's approach to healthcare is rooted in the fundamental naturopathic principles of treating the whole person, addressing root causes and supporting the body's inherent ability to heal itself. He believes in creating individualized treatment plans that combine the best of traditional wisdom with current scientific evidence.
             </p>
 
             <div class="bg-emerald-50 border-l-4 border-emerald-600 rounded-r-2xl p-6 mb-8">
@@ -125,14 +119,14 @@ import BookingButton from '../components/BookingButton.astro';
                 <svg class="w-5 h-5 text-emerald-700 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
-                <span class="text-gray-700">Years of Clinical Experience</span>
+                <span class="text-gray-700">15 Years of Clinical Experience</span>
               </div>
             </div>
           </div>
 
           <!-- Specializations -->
           <div class="bg-emerald-50/50 border border-emerald-100 rounded-2xl p-6">
-            <h3 class="text-xl font-serif font-bold text-emerald-950 mb-4">Clinical Specializations</h3>
+            <h3 class="text-xl font-serif font-bold text-emerald-950 mb-4">Clinical Focus</h3>
             <ul class="space-y-2 text-gray-700">
               <li class="flex items-start">
                 <span class="w-2 h-2 bg-emerald-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
@@ -165,19 +159,6 @@ import BookingButton from '../components/BookingButton.astro';
             </ul>
           </div>
 
-          <!-- Book Appointment CTA -->
-          <div class="bg-emerald-950 rounded-2xl p-6 text-center shadow-lg">
-            <h3 class="text-xl font-serif italic font-bold mb-4 text-white">Ready to Get Started?</h3>
-            <p class="text-white/90 mb-6">
-              Book your comprehensive health assessment with Dr. MacLeod today.
-            </p>
-            <BookingButton
-              text="Schedule Consultation"
-              variant="primary"
-              source="about-sidebar"
-              fullWidth={true}
-            />
-          </div>
         </div>
       </div>
     </div>
@@ -199,14 +180,30 @@ import BookingButton from '../components/BookingButton.astro';
           <div class="text-center">
             <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
               <svg class="w-8 h-8 text-emerald-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                <!-- Stethoscope with artistic broken lines -->
+                <!-- Left earpiece -->
+                <path stroke-linecap="round" stroke-width="1.5" d="M7 3v2"/>
+                <!-- Right earpiece -->
+                <path stroke-linecap="round" stroke-width="1.5" d="M17 3v2"/>
+                <!-- Left tube curve (with gap) -->
+                <path stroke-linecap="round" stroke-width="1.5" d="M7 5c0 2-1 3-1 5"/>
+                <path stroke-linecap="round" stroke-width="1.5" d="M6 11.5c0 1.5 2 3 6 3"/>
+                <!-- Right tube curve (with gap) -->
+                <path stroke-linecap="round" stroke-width="1.5" d="M17 5c0 2 1 3 1 5"/>
+                <path stroke-linecap="round" stroke-width="1.5" d="M18 11.5c0 1.5-2 3-6 3"/>
+                <!-- Chest piece tube -->
+                <path stroke-linecap="round" stroke-width="1.5" d="M12 14.5v3"/>
+                <!-- Chest piece circle (with gap) -->
+                <path stroke-linecap="round" stroke-width="1.5" d="M9.5 19.5a2.5 2.5 0 0 0 2.5 2.5"/>
+                <path stroke-linecap="round" stroke-width="1.5" d="M14.5 19.5a2.5 2.5 0 0 1-2.5 2.5"/>
+                <path stroke-linecap="round" stroke-width="1.5" d="M9.5 19.5a2.5 2.5 0 0 1 0-2"/>
+                <path stroke-linecap="round" stroke-width="1.5" d="M14.5 19.5a2.5 2.5 0 0 0 0-2"/>
               </svg>
             </div>
             <h3 class="text-xl font-serif font-bold text-emerald-950 mb-3">Comprehensive Assessment</h3>
             <p class="text-gray-600">
               In-depth health history, lifestyle analysis, and examination to understand your unique health picture.
             </p>
-            <div class="mt-4 text-sm text-emerald-800 font-medium">60-90 minutes</div>
           </div>
 
           <!-- Testing & Analysis -->
@@ -220,7 +217,6 @@ import BookingButton from '../components/BookingButton.astro';
             <p class="text-gray-600">
               Advanced laboratory testing and diagnostic assessments to identify underlying imbalances and deficiencies.
             </p>
-            <div class="mt-4 text-sm text-emerald-800 font-medium">As needed</div>
           </div>
 
           <!-- Treatment Plan -->
@@ -234,34 +230,62 @@ import BookingButton from '../components/BookingButton.astro';
             <p class="text-gray-600">
               Customized treatment plan combining nutrition, herbal medicine, IV therapy, and lifestyle recommendations.
             </p>
-            <div class="mt-4 text-sm text-emerald-800 font-medium">Ongoing support</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Professional Memberships & Credentials -->
+  <!-- Marathon Running -->
   <section class="py-16 lg:py-24 bg-white">
     <div class="section-shell">
-      <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8">Professional Memberships</h2>
-        <div class="grid md:grid-cols-2 gap-8">
-          <div class="bg-emerald-50/30 border border-emerald-100 rounded-2xl p-6">
-            <h3 class="font-bold text-emerald-950 mb-4">Professional Associations</h3>
-            <ul class="text-gray-600 space-y-2">
-              <li>• Nova Scotia Association of Naturopathic Doctors (NSAND)</li>
-              <li>• Canadian Association of Naturopathic Doctors (CAND)</li>
-              <li>• American Association of Naturopathic Physicians (AANP)</li>
-            </ul>
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4 text-center">Beyond the Clinic</h2>
+        <p class="text-lg text-gray-600 text-center mb-10 max-w-3xl mx-auto">
+          I started running in 2023, completing my first 10K that year. Since then, marathon running has become a personal pursuit that reinforces my belief in the body's capacity for growth and adaptation at any stage of life.
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <!-- Image -->
+          <div class="rounded-2xl overflow-hidden shadow-lg">
+            <img
+              src="/images/general/bluenose-marathon.jpeg"
+              alt="Dr. Colin MacLeod running the Bluenose Marathon in Halifax"
+              class="w-full h-auto object-cover"
+            />
           </div>
-          <div class="bg-emerald-50/30 border border-emerald-100 rounded-2xl p-6">
-            <h3 class="font-bold text-emerald-950 mb-4">Specialized Training</h3>
-            <ul class="text-gray-600 space-y-2">
-              <li>• International Prolotherapy Association</li>
-              <li>• Canadian College of Naturopathic Medicine</li>
-              <li>• Advanced IV Therapy Certification</li>
-            </ul>
+
+          <!-- Results Table -->
+          <div class="bg-emerald-50/30 border border-emerald-100 rounded-2xl overflow-hidden h-fit">
+            <div class="px-6 py-4 bg-emerald-100/50 border-b border-emerald-100">
+              <h3 class="text-xl font-serif font-bold text-emerald-950">Race Results</h3>
+            </div>
+            <table class="w-full">
+              <thead>
+                <tr class="border-b border-emerald-100">
+                  <th class="px-4 py-3 text-left text-sm font-semibold text-emerald-900">Year</th>
+                  <th class="px-4 py-3 text-left text-sm font-semibold text-emerald-900">Event</th>
+                  <th class="px-4 py-3 text-left text-sm font-semibold text-emerald-900">Finish Time</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-emerald-50">
+                <tr>
+                  <td class="px-4 py-4 text-gray-700">2024</td>
+                  <td class="px-4 py-4 text-gray-700">Bluenose Marathon</td>
+                  <td class="px-4 py-4 text-gray-700 font-medium">3:57:14</td>
+                </tr>
+                <tr>
+                  <td class="px-4 py-4 text-gray-700">2025</td>
+                  <td class="px-4 py-4 text-gray-700">Bluenose Marathon</td>
+                  <td class="px-4 py-4 text-gray-700 font-medium">4:21:21</td>
+                </tr>
+                <tr class="bg-emerald-50/50">
+                  <td class="px-4 py-4 text-gray-700">2026</td>
+                  <td class="px-4 py-4 text-gray-700">Bluenose Marathon</td>
+                  <td class="px-4 py-4 text-gray-700 font-medium italic">In Training</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
@@ -275,22 +299,13 @@ import BookingButton from '../components/BookingButton.astro';
       <p class="text-lg sm:text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
         Dr. MacLeod is accepting new patients and looks forward to helping you achieve your optimal health goals through natural medicine.
       </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <BookingButton 
-          text="Book Your Consultation" 
-          variant="secondary" 
-          size="lg" 
-          source="about-cta" 
+      <div class="flex justify-center">
+        <BookingButton
+          text="Book Your Consultation"
+          variant="secondary"
+          size="lg"
+          source="about-cta"
         />
-        <a 
-          href="/contact"
-          class="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-emerald-950 transition-colors inline-flex items-center justify-center"
-        >
-          Ask Questions First
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-          </svg>
-        </a>
       </div>
     </div>
   </section>

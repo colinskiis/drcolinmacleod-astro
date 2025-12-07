@@ -175,7 +175,7 @@ const ogImage = image || '/images/general/home-background.webp';
               <p class="pill">Evidence-Based + Natural</p>
               <h3 class="text-2xl font-semibold">Dr. Colin MacLeod ND</h3>
               <p class="text-slate-700 leading-relaxed">
-                Halifax-based naturopathic doctor combining regenerative therapies, clinical nutrition, and acupuncture for purposeful healing.
+                Halifax-based naturopathic doctor combining clinical nutrition, lifestyle modification, regenerative injections, IV nutrient therapy, herbal medicine, and acupuncture for long-term health results.
               </p>
             </div>
             
@@ -183,7 +183,12 @@ const ogImage = image || '/images/general/home-background.webp';
               <p class="uppercase tracking-[0.2em] text-xs text-emerald-900 font-semibold">Contact</p>
               <div class="text-slate-800 space-y-1">
                 <p>Halifax, Nova Scotia</p>
-                <p>Phone available through online booking</p>
+                <a href="/contact" class="inline-flex items-center text-emerald-800 font-semibold hover:text-emerald-900">
+                  Contact Page
+                  <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                </a>
                 <a href="https://macleodnaturopathic.janeapp.com/" target="_blank" class="inline-flex items-center text-emerald-800 font-semibold hover:text-emerald-900">
                   Book Appointment
                   <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -194,23 +199,18 @@ const ogImage = image || '/images/general/home-background.webp';
             </div>
             
             <div class="space-y-3">
-              <p class="uppercase tracking-[0.2em] text-xs text-emerald-900 font-semibold">Signature Services</p>
+              <p class="uppercase tracking-[0.2em] text-xs text-emerald-900 font-semibold">Services</p>
               <div class="text-slate-800 space-y-2">
-                <p>IV Therapy & Myers Cocktail</p>
-                <p>Prolotherapy & Pain Care</p>
-                <p>Acupuncture & Microcurrent</p>
-                <p>Functional Nutrition & Testing</p>
+                <a href="/lab-testing" class="block hover:text-emerald-800 transition-colors">Private Blood Testing</a>
+                <a href="/services" class="block hover:text-emerald-800 transition-colors">Clinical Nutrition</a>
+                <a href="/iv-therapy" class="block hover:text-emerald-800 transition-colors">IV Therapy</a>
+                <a href="/prolotherapy" class="block hover:text-emerald-800 transition-colors">Prolotherapy</a>
+                <a href="/services" class="block hover:text-emerald-800 transition-colors">Acupuncture</a>
               </div>
             </div>
           </div>
-          <div class="soft-divider"></div>
-          <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 relative z-10">
+          <div class="mt-8 relative z-10">
             <p class="text-sm text-slate-600">&copy; {new Date().getFullYear()} Dr. Colin MacLeod ND. All rights reserved.</p>
-            <div class="flex gap-3">
-              <a href="/articles" class="text-sm font-semibold text-emerald-900 hover:text-emerald-700">Articles</a>
-              <span class="text-slate-300">|</span>
-              <a href="/contact" class="text-sm font-semibold text-emerald-900 hover:text-emerald-700">Contact</a>
-            </div>
           </div>
         </div>
       </div>
