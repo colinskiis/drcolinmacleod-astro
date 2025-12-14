@@ -1,0 +1,503 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import CTAButton from '../components/CTAButton.astro';
+---
+
+<BaseLayout
+  title="Clinical Nutrition | Halifax Naturopath"
+  description="Clinical nutrition assessment and targeted nutrient therapy in Halifax. Dr. MacLeod uses lab testing, symptom analysis and evidence-based protocols to identify and correct nutritional deficiencies."
+  focusKeyword="clinical nutrition Halifax"
+>
+  <HeroSection
+    title="Clinical Nutrition"
+    compact
+    image={{ src: "/images/reference/services/clinical-nutrition.webp", alt: "Clinical nutrition assessment and healthy foods", aspect: "video" }}
+  >
+    <p>Nutrient deficiencies are far more common than most people realize, and can be the hidden cause of fatigue, poor immune function, mood issues, and chronic disease.</p>
+    <p class="text-white/80">Dr. MacLeod uses lab testing and clinical assessment to identify deficiencies and develop targeted treatment plans using food, supplements, and when needed, injection or IV therapy.</p>
+    <CTAButton slot="cta">Book Your Appointment</CTAButton>
+  </HeroSection>
+
+  <!-- Assessment Process -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">How We Assess Nutritional Status</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          A comprehensive approach to identifying and correcting nutrient imbalances
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Signs & Symptoms -->
+        <div class="bg-emerald-50 rounded-3xl p-8">
+          <div class="w-14 h-14 bg-emerald-700 rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-4">Signs & Symptom Analysis</h3>
+          <p class="text-gray-600 mb-4">
+            Many nutrient deficiencies produce characteristic signs and symptoms before they show up on lab tests. A thorough clinical assessment can reveal deficiencies through:
+          </p>
+          <ul class="space-y-2 text-gray-600 text-sm">
+            <li class="flex items-start">
+              <svg class="w-4 h-4 text-emerald-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Skin, hair and nail changes
+            </li>
+            <li class="flex items-start">
+              <svg class="w-4 h-4 text-emerald-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Energy and fatigue patterns
+            </li>
+            <li class="flex items-start">
+              <svg class="w-4 h-4 text-emerald-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Mood and cognitive symptoms
+            </li>
+            <li class="flex items-start">
+              <svg class="w-4 h-4 text-emerald-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Muscle cramps and weakness
+            </li>
+            <li class="flex items-start">
+              <svg class="w-4 h-4 text-emerald-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Digestive function
+            </li>
+          </ul>
+        </div>
+
+        <!-- Lab Testing -->
+        <div class="bg-emerald-50 rounded-3xl p-8">
+          <div class="w-14 h-14 bg-emerald-700 rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-4">Laboratory Assessment</h3>
+          <p class="text-gray-600 mb-4">
+            Blood work provides objective measurement of nutrient levels. We test markers often overlooked in standard panels:
+          </p>
+          <ul class="space-y-2 text-gray-600 text-sm">
+            <li class="flex items-start">
+              <svg class="w-4 h-4 text-emerald-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Vitamin B12, folate, iron studies
+            </li>
+            <li class="flex items-start">
+              <svg class="w-4 h-4 text-emerald-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Vitamin D, calcium, magnesium
+            </li>
+            <li class="flex items-start">
+              <svg class="w-4 h-4 text-emerald-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Zinc, copper, selenium
+            </li>
+            <li class="flex items-start">
+              <svg class="w-4 h-4 text-emerald-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Homocysteine, methylation markers
+            </li>
+            <li class="flex items-start">
+              <svg class="w-4 h-4 text-emerald-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Organic acids (functional testing)
+            </li>
+          </ul>
+        </div>
+
+        <!-- Dietary Analysis -->
+        <div class="bg-emerald-50 rounded-3xl p-8">
+          <div class="w-14 h-14 bg-emerald-700 rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-4">Dietary Analysis</h3>
+          <p class="text-gray-600 mb-4">
+            Understanding your current eating patterns helps identify why deficiencies developed and how to prevent them from recurring:
+          </p>
+          <ul class="space-y-2 text-gray-600 text-sm">
+            <li class="flex items-start">
+              <svg class="w-4 h-4 text-emerald-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Food intake patterns
+            </li>
+            <li class="flex items-start">
+              <svg class="w-4 h-4 text-emerald-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Absorption issues
+            </li>
+            <li class="flex items-start">
+              <svg class="w-4 h-4 text-emerald-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Medication interactions
+            </li>
+            <li class="flex items-start">
+              <svg class="w-4 h-4 text-emerald-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Lifestyle factors
+            </li>
+            <li class="flex items-start">
+              <svg class="w-4 h-4 text-emerald-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Individual nutrient needs
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nutrient Replenishment Methods -->
+  <section class="py-16 lg:py-24 bg-emerald-950">
+    <div class="section-shell">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-4">Targeted Nutrient Replenishment</h2>
+        <p class="text-lg text-white/80 max-w-3xl mx-auto">
+          Multiple delivery methods ensure you get the nutrients you need at therapeutic levels
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Food -->
+        <div class="bg-white/10 rounded-2xl p-6 backdrop-blur">
+          <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold text-white mb-2">Food First</h3>
+          <p class="text-white/70 text-sm mb-4">
+            Dietary modification to increase nutrient-dense foods specific to your deficiencies. Food provides nutrients in their most natural, bioavailable form along with cofactors that enhance absorption.
+          </p>
+          <p class="text-emerald-300 text-sm font-medium">Foundation of treatment</p>
+        </div>
+
+        <!-- Supplements -->
+        <div class="bg-white/10 rounded-2xl p-6 backdrop-blur">
+          <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold text-white mb-2">Oral Supplements</h3>
+          <p class="text-white/70 text-sm mb-4">
+            Professional-grade supplements in optimal forms for absorption. Capsules, tablets, powders and liquids selected based on your specific needs and digestive capacity.
+          </p>
+          <p class="text-emerald-300 text-sm font-medium">For moderate deficiencies</p>
+        </div>
+
+        <!-- Injections -->
+        <div class="bg-white/10 rounded-2xl p-6 backdrop-blur">
+          <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold text-white mb-2">Nutrient Injections</h3>
+          <p class="text-white/70 text-sm mb-4">
+            Intramuscular B12 and other nutrient injections bypass digestive absorption entirely. Ideal for those with absorption issues or severe deficiencies.
+          </p>
+          <p class="text-emerald-300 text-sm font-medium">For absorption issues</p>
+        </div>
+
+        <!-- IV Therapy -->
+        <div class="bg-white/10 rounded-2xl p-6 backdrop-blur">
+          <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold text-white mb-2">IV Nutrient Therapy</h3>
+          <p class="text-white/70 text-sm mb-4">
+            Intravenous delivery achieves blood levels impossible with oral supplementation. Used for rapid correction of severe deficiencies or when high therapeutic doses are needed.
+          </p>
+          <p class="text-emerald-300 text-sm font-medium">For severe deficiencies</p>
+        </div>
+      </div>
+
+      <div class="mt-12 text-center">
+        <a href="/iv-therapy" class="text-white border border-white/30 px-6 py-3 rounded-full hover:bg-white/10 transition-colors inline-flex items-center">
+          Learn about IV Therapy
+          <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Common Deficiencies -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Common Nutrient Deficiencies</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          Signs and symptoms that may indicate specific nutrient insufficiencies
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- B12 -->
+        <div class="bg-emerald-50 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-emerald-950 mb-3">Vitamin B12</h3>
+          <p class="text-gray-600 text-sm mb-3">One of the most common deficiencies, especially in vegetarians, older adults, and those taking metformin or acid blockers.</p>
+          <p class="text-xs text-gray-500 font-medium mb-2">Common signs:</p>
+          <p class="text-sm text-gray-600">Fatigue, numbness/tingling, poor memory, depression, smooth tongue</p>
+        </div>
+
+        <!-- Iron -->
+        <div class="bg-emerald-50 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-emerald-950 mb-3">Iron</h3>
+          <p class="text-gray-600 text-sm mb-3">Common in menstruating women, vegetarians, and those with digestive issues. Often under-diagnosed using standard lab ranges.</p>
+          <p class="text-xs text-gray-500 font-medium mb-2">Common signs:</p>
+          <p class="text-sm text-gray-600">Fatigue, shortness of breath, pale skin, cold hands/feet, brittle nails, restless legs</p>
+        </div>
+
+        <!-- Vitamin D -->
+        <div class="bg-emerald-50 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-emerald-950 mb-3">Vitamin D</h3>
+          <p class="text-gray-600 text-sm mb-3">Extremely common in Canada due to limited sun exposure. Affects immune function, mood, bone health and more.</p>
+          <p class="text-xs text-gray-500 font-medium mb-2">Common signs:</p>
+          <p class="text-sm text-gray-600">Frequent illness, fatigue, bone pain, muscle weakness, depression, slow wound healing</p>
+        </div>
+
+        <!-- Magnesium -->
+        <div class="bg-emerald-50 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-emerald-950 mb-3">Magnesium</h3>
+          <p class="text-gray-600 text-sm mb-3">Depleted by stress, alcohol, and many medications. Standard blood tests miss most deficiencies.</p>
+          <p class="text-xs text-gray-500 font-medium mb-2">Common signs:</p>
+          <p class="text-sm text-gray-600">Muscle cramps, insomnia, anxiety, headaches, constipation, heart palpitations</p>
+        </div>
+
+        <!-- Zinc -->
+        <div class="bg-emerald-50 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-emerald-950 mb-3">Zinc</h3>
+          <p class="text-gray-600 text-sm mb-3">Essential for immune function, wound healing, and hormone production. Common in vegetarians and those with digestive issues.</p>
+          <p class="text-xs text-gray-500 font-medium mb-2">Common signs:</p>
+          <p class="text-sm text-gray-600">Frequent infections, slow wound healing, hair loss, loss of taste/smell, skin issues</p>
+        </div>
+
+        <!-- Folate -->
+        <div class="bg-emerald-50 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-emerald-950 mb-3">Folate</h3>
+          <p class="text-gray-600 text-sm mb-3">Critical for methylation, mood, and energy. Some people have genetic variants (MTHFR) that impair folate metabolism.</p>
+          <p class="text-xs text-gray-500 font-medium mb-2">Common signs:</p>
+          <p class="text-sm text-gray-600">Fatigue, irritability, sore tongue, digestive issues, elevated homocysteine</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Conditions Section -->
+  <section class="py-16 lg:py-24 bg-emerald-50">
+    <div class="section-shell">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-6">Conditions Linked to Nutrient Deficiency</h2>
+          <p class="text-gray-600 mb-6">
+            Many chronic health conditions have nutritional deficiencies as an underlying or contributing factor. Addressing these deficiencies can significantly improve outcomes.
+          </p>
+          <div class="grid grid-cols-2 gap-3">
+            {['Chronic fatigue', 'Depression & anxiety', 'Thyroid disorders', 'Anemia', 'Osteoporosis', 'Hair loss', 'Immune dysfunction', 'Digestive issues', 'Muscle weakness', 'Cognitive decline', 'Skin conditions', 'Hormone imbalances'].map(condition => (
+              <div class="flex items-center">
+                <svg class="w-4 h-4 text-emerald-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-700 text-sm">{condition}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div class="bg-white rounded-3xl p-8 shadow-xl">
+          <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-4">Who Should Consider Testing?</h3>
+          <ul class="space-y-3">
+            <li class="flex items-start">
+              <div class="w-6 h-6 bg-emerald-100 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                <svg class="w-3 h-3 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <span class="text-gray-600">Vegetarians and vegans</span>
+            </li>
+            <li class="flex items-start">
+              <div class="w-6 h-6 bg-emerald-100 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                <svg class="w-3 h-3 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <span class="text-gray-600">Those with digestive disorders (IBS, Crohn's, celiac)</span>
+            </li>
+            <li class="flex items-start">
+              <div class="w-6 h-6 bg-emerald-100 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                <svg class="w-3 h-3 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <span class="text-gray-600">People taking medications (PPIs, metformin, statins)</span>
+            </li>
+            <li class="flex items-start">
+              <div class="w-6 h-6 bg-emerald-100 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                <svg class="w-3 h-3 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <span class="text-gray-600">Those with unexplained fatigue or mood issues</span>
+            </li>
+            <li class="flex items-start">
+              <div class="w-6 h-6 bg-emerald-100 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                <svg class="w-3 h-3 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <span class="text-gray-600">Anyone with chronic health conditions</span>
+            </li>
+            <li class="flex items-start">
+              <div class="w-6 h-6 bg-emerald-100 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                <svg class="w-3 h-3 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <span class="text-gray-600">Older adults (absorption decreases with age)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
+
+        <div class="space-y-4">
+          <details class="bg-white rounded-xl shadow-md group border border-emerald-100">
+            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+              <span class="font-semibold text-emerald-950">Why do I need testing if I eat a healthy diet?</span>
+              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              Even with a healthy diet, deficiencies can occur due to soil depletion, digestive issues that impair absorption, medications that deplete nutrients, genetic variations affecting metabolism, or increased needs due to stress or health conditions. Testing removes the guesswork.
+            </div>
+          </details>
+
+          <details class="bg-white rounded-xl shadow-md group border border-emerald-100">
+            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+              <span class="font-semibold text-emerald-950">How is this different from taking a multivitamin?</span>
+              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              Multivitamins provide small, generic doses of many nutrients. Clinical nutrition identifies your specific deficiencies and provides therapeutic doses of exactly what you need. This targeted approach is more effective and avoids unnecessary supplementation.
+            </div>
+          </details>
+
+          <details class="bg-white rounded-xl shadow-md group border border-emerald-100">
+            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+              <span class="font-semibold text-emerald-950">When would IV therapy be recommended over oral supplements?</span>
+              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              IV therapy is typically recommended when digestive absorption is compromised, deficiencies are severe and need rapid correction, or when therapeutic doses higher than oral absorption allows are beneficial (such as high-dose vitamin C for immune support).
+            </div>
+          </details>
+
+          <details class="bg-white rounded-xl shadow-md group border border-emerald-100">
+            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+              <span class="font-semibold text-emerald-950">Is nutritional testing covered by insurance?</span>
+              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              Naturopathic consultations are covered by many extended health plans. Lab testing is typically an out-of-pocket expense but qualifies as a medical expense for tax purposes. We'll discuss costs upfront so you can make informed decisions.
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-emerald-950 py-16 lg:py-24">
+    <div class="section-shell text-center">
+      <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-6">Uncover Hidden Deficiencies</h2>
+      <p class="text-lg sm:text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
+        Book a consultation to assess your nutritional status and develop a targeted plan to optimize your nutrient levels and improve your health.
+      </p>
+      <div class="flex justify-center">
+        <a
+          href="https://macleodnaturopathic.janeapp.com/"
+          target="_blank"
+          class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center justify-center"
+        >
+          Book Your Appointment
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why do I need nutritional testing if I eat a healthy diet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Even with a healthy diet, deficiencies can occur due to soil depletion, digestive issues, medications that deplete nutrients, genetic variations, or increased needs due to stress or health conditions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is clinical nutrition different from taking a multivitamin?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Clinical nutrition identifies your specific deficiencies and provides therapeutic doses of exactly what you need, rather than small generic doses of many nutrients."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When would IV therapy be recommended over oral supplements?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "IV therapy is recommended when digestive absorption is compromised, deficiencies are severe and need rapid correction, or when therapeutic doses higher than oral absorption allows are beneficial."
+          }
+        }
+      ]
+    }
+  </script>
+</BaseLayout>

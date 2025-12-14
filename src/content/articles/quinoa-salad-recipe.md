@@ -3,7 +3,7 @@ title: "Quinoa Salad Recipe"
 description: "Quinoa salad is high in protein, high in fibre and is full of vegetables. This is an excellent meal for vegans and people going gluten-free."
 publishDate: 2012-12-21
 modifiedDate: 2022-07-12
-heroImage: "/images/nutrition/clinical-nutrition-1.jpeg"
+heroImage: "/images/nutrition/clinical-nutrition-1.webp"
 categories: ["Naturopathic"]
 tags: ["naturopathic"]
 seo:

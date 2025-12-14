@@ -1,6 +1,8 @@
 ---
 title: "Herniated Disc"
-description: "What Is A Herniated Disc? An intervertebral disc is made up of rigid, spongy tissue which sits between two vertebral bones (vertebrae) of our spine. Thi..."
+description: "A herniated disc occurs when the inner portion of a spinal disc protrudes through the outer layer, often causing pain and nerve compression. Learn about natural treatments."
+seo:
+  focusKeyword: "herniated disc treatment"
 ---
 
 ![Herniated disc - woman in pain holding her back](/images/conditions/herniated-disc-pain.jpeg)

@@ -3,7 +3,7 @@ title: "Natural Treatment for Sports Injuries"
 description: "Naturopathic treatment of sports injuries including prolotherapy, acupuncture, and nutritional support can accelerate healing and help prevent re-injury."
 publishDate: 2024-12-03
 modifiedDate: 2024-12-03
-heroImage: "/images/general/sports-injury-treatment.jpg"
+heroImage: "/images/general/sports-injury-treatment.webp"
 categories: ["Pain Management", "Sports Medicine"]
 tags: ["sports injuries", "prolotherapy", "acupuncture", "injury recovery", "naturopathic"]
 seo:
@@ -13,7 +13,7 @@ seo:
 
 ## A Naturopathic Approach to Sports Injuries
 
-Whether you are a competitive athlete or weekend warrior, sports injuries can sideline you from the activities you love. While rest and conventional treatment have their place, regenerative and naturopathic approaches can accelerate healing, reduce pain, and help prevent re-injury. The combination of prolotherapy, acupuncture, and nutritional medicine can address the full spectrum of sports injuries—from acute sprains to chronic overuse conditions.
+Whether you are a competitive athlete or weekend warrior, sports injuries can sideline you from the activities you love. While rest and conventional treatment have their place, regenerative and naturopathic approaches can accelerate healing, reduce pain, and help prevent re-injury. The combination of prolotherapy, acupuncture, and nutritional medicine can address the full spectrum of sports injuries, from acute sprains to chronic overuse conditions.
 
 ## Common Sports Injuries
 
@@ -25,7 +25,7 @@ Muscle strains range from minor fiber disruption to complete tears and commonly 
 
 ## Prolotherapy for Sports Injuries
 
-Prolotherapy (proliferative therapy) is a cornerstone of naturopathic sports medicine. This regenerative treatment involves injecting a solution—typically dextrose (sugar water)—into damaged ligaments, tendons, and joint spaces<sup>3</sup>.
+Prolotherapy (proliferative therapy) is a cornerstone of naturopathic sports medicine. This regenerative treatment involves injecting a solution, typically dextrose (sugar water), into damaged ligaments, tendons, and joint spaces<sup>3</sup>.
 
 The injection creates a controlled inflammatory response that triggers the body's natural repair cascade, stimulates growth factors, and results in stronger, more resilient connective tissue. Prolotherapy can improve stability by tightening lax ligaments and restoring joint function. Conditions commonly treated include chronic ankle instability, tennis and golfer's elbow, rotator cuff tendinopathy, knee ligament laxity, SI joint dysfunction, plantar fasciitis, and IT band syndrome.
 
@@ -50,8 +50,6 @@ Successful treatment goes beyond pain relief to address the factors that contrib
 ## Sports Injury Treatment in Halifax
 
 If you are experiencing pain that limits your training or competition, injuries that have not responded to rest alone, recurring injuries in the same area, or chronic joint instability, please contact MacLeod Naturopathic to book an initial naturopathic visit to discuss your options.
-
-[Book Your Appointment](https://macleodnaturopathic.janeapp.com/)
 
 ### References
 

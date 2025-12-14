@@ -3,7 +3,7 @@ title: "Herbal Spotlight: Rhodiola"
 description: "Rhodiola rosea is an herb which has traditionally been used for treating stress, fatigue and weakness. Research has verified these traditional indications"
 publishDate: 2013-02-12
 modifiedDate: 2022-07-12
-heroImage: "/images/nutrition/herbal-medicine-2.jpeg"
+heroImage: "/images/nutrition/herbal-medicine-2.webp"
 categories: ["Naturopathic"]
 tags: ["naturopathic"]
 seo:

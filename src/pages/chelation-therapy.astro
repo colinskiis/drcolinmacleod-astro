@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import CTAButton from '../components/CTAButton.astro';
 ---
 
 <BaseLayout
@@ -7,39 +9,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   description="Chelation therapy treats cardiovascular disease by reducing arterial plaques, removing toxic metals and improving circulation. Learn about EDTA chelation at MacLeod Naturopathic in Halifax."
   focusKeyword="chelation therapy Halifax"
 >
-  <!-- Hero Section with Image -->
-  <section class="bg-emerald-950 -mt-24 pt-48 pb-16 lg:pt-56 lg:pb-24">
-    <div class="section-shell">
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
-        <div class="space-y-6">
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-white tracking-tight">Chelation Therapy</h1>
-          <p class="text-lg sm:text-xl text-white/90 leading-relaxed font-light">
-            Chelation treats cardiovascular disease by reducing arterial plaques and improving circulation.
-          </p>
-          <p class="text-lg text-white/80 leading-relaxed font-light">
-            Chelation therapy is the only proven effective treatment for removing toxic metals safely from the body, including lead, cadmium, arsenic and mercury.
-          </p>
-          <a
-            href="https://macleodnaturopathic.janeapp.com/"
-            target="_blank"
-            class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center"
-          >
-            Book Your Appointment
-            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-            </svg>
-          </a>
-        </div>
-        <div class="rounded-2xl overflow-hidden shadow-2xl">
-          <img
-            src="/images/treatments/IV-Chelation.jpg"
-            alt="IV Chelation therapy treatment"
-            class="w-full h-full object-cover"
-          />
-        </div>
-      </div>
-    </div>
-  </section>
+  <HeroSection
+    title="Chelation Therapy"
+    compact
+    image={{ src: "/images/treatments/iv-patient-woman.webp", alt: "Patient receiving chelation therapy at MacLeod Naturopathic", aspect: "video" }}
+  >
+    <p>Chelation treats cardiovascular disease by reducing arterial plaques and improving circulation.</p>
+    <p class="text-white/80">Chelation therapy is the only proven effective treatment for removing toxic metals safely from the body, including lead, cadmium, arsenic and mercury.</p>
+    <CTAButton slot="cta" />
+  </HeroSection>
 
   <!-- Three Benefits Section -->
   <section class="py-16 lg:py-24 bg-white">
@@ -120,11 +98,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <p class="text-gray-600">Toxic Metal Chelation</p>
           </div>
 
-          <div class="text-center mb-8">
-            <span class="text-5xl font-bold text-emerald-700">$140</span>
-            <span class="text-gray-500">.00</span>
-          </div>
-
           <ul class="space-y-3 mb-8">
             <li class="flex items-center">
               <svg class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -179,31 +152,16 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             To ensure that chelation therapy will be a safe and effective treatment for you an initial naturopathic consultation is required prior to starting treatment. If you would like to get started with chelation therapy after your initial visit please book an "Initial consultation with IV treatment." The initial chelation therapy treatment is offered at a lesser cost if it is on the same day as the initial consultation.
           </p>
 
-          <div class="space-y-6">
-            <div class="flex justify-between items-center pb-4 border-b border-gray-100">
-              <div>
-                <h3 class="font-semibold text-emerald-950">Initial Consultation</h3>
-                <p class="text-sm text-gray-500">60 minute appointment</p>
-              </div>
-              <span class="text-2xl font-bold text-emerald-700">$200</span>
-            </div>
-
-            <div class="flex justify-between items-center pb-4 border-b border-gray-100">
-              <div>
-                <h3 class="font-semibold text-emerald-950">Chelation Treatment</h3>
-                <p class="text-sm text-gray-500">Subsequent visits</p>
-              </div>
-              <span class="text-2xl font-bold text-emerald-700">$140</span>
-            </div>
-
-            <div class="flex justify-between items-center p-4 bg-emerald-50 rounded-xl">
-              <div>
-                <h3 class="font-semibold text-emerald-950">Initial Consult & Treatment</h3>
-                <p class="text-sm text-emerald-600">Save $60</p>
-              </div>
-              <span class="text-2xl font-bold text-emerald-700">$280</span>
-            </div>
-          </div>
+          <a
+            href="https://macleodnaturopathic.janeapp.com/"
+            target="_blank"
+            class="w-full bg-emerald-700 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-emerald-800 transition-colors shadow-lg inline-flex items-center justify-center"
+          >
+            Book Your Appointment
+            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
@@ -256,7 +214,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           </div>
           <div class="mt-6">
             <a
-              href="/chelation-lead-toxicity"
+              href="/articles/chelation-lead-toxicity"
               class="text-emerald-700 font-semibold hover:text-emerald-800 transition-colors inline-flex items-center"
             >
               Learn more about lead toxicity
@@ -288,9 +246,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
         <div class="rounded-2xl overflow-hidden shadow-xl mb-8">
           <img
-            src="/images/charts/arteriosclerosis-s-edited.jpg"
+            src="/images/charts/arteriosclerosis-s-edited.webp"
             alt="Arteriosclerosis - cardiovascular disease progression showing healthy artery, plaque buildup and advanced blockage"
             class="w-full h-auto"
+            width="800"
+            height="400"
+            loading="lazy"
           />
         </div>
 

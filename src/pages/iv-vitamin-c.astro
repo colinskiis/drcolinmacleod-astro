@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import CTAButton from '../components/CTAButton.astro';
 ---
 
 <BaseLayout
@@ -7,38 +9,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   description="High-dose IV vitamin C therapy in Halifax for immune support, post-viral recovery, fatigue and wellness. Achieve blood levels 50x higher than oral supplements."
   focusKeyword="IV vitamin C Halifax"
 >
-  <!-- Hero Section -->
-  <section class="bg-emerald-950 -mt-24 pt-48 pb-16 lg:pt-56 lg:pb-24">
-    <div class="section-shell">
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
-        <div class="space-y-6">
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-white tracking-tight">IV Vitamin C Therapy</h1>
-          <p class="text-lg sm:text-xl text-white/90 leading-relaxed font-light">
-            When given intravenously, vitamin C reaches blood concentrations <strong class="text-white">50 times higher</strong> than oral supplements—enabling therapeutic effects impossible with pills alone. Support your immune system, recover faster and optimize your health.
-          </p>
-          <div class="flex flex-col sm:flex-row gap-4">
-            <a
-              href="https://macleodnaturopathic.janeapp.com/"
-              target="_blank"
-              class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center justify-center"
-            >
-              Book Your Treatment
-              <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-              </svg>
-            </a>
-          </div>
-        </div>
-        <div class="rounded-2xl overflow-hidden shadow-2xl">
-          <img
-            src="/images/services/iv-therapy.jpeg"
-            alt="IV vitamin C therapy"
-            class="w-full h-full object-cover aspect-video"
-          />
-        </div>
-      </div>
-    </div>
-  </section>
+  <HeroSection
+    title="IV Vitamin C Therapy"
+    compact
+    image={{ src: "/images/services/iv-therapy.webp", alt: "IV vitamin C therapy", aspect: "video" }}
+  >
+    <p>When given intravenously, vitamin C reaches blood concentrations <strong class="text-white">50 times higher</strong> than oral supplements, enabling therapeutic effects impossible with pills alone. Support your immune system, recover faster and optimize your health.</p>
+    <CTAButton slot="cta">Book Your Appointment</CTAButton>
+  </HeroSection>
 
   <!-- Key Benefits -->
   <section class="py-12 bg-white">
@@ -50,7 +28,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </div>
         <div>
           <div class="text-4xl font-bold text-emerald-700 mb-2">100%</div>
-          <p class="text-gray-600 text-sm">absorption—bypasses digestive limits</p>
+          <p class="text-gray-600 text-sm">absorption (bypasses digestive limits)</p>
         </div>
         <div>
           <div class="text-4xl font-bold text-emerald-700 mb-2">45-90</div>
@@ -71,7 +49,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-6">Why IV Instead of Oral Vitamin C?</h2>
         <div class="prose prose-lg text-gray-600 mb-8">
           <p>
-            No matter how much vitamin C you take orally, your body can only absorb so much. Intestinal absorption plateaus at around <strong>200mg</strong>—take more, and it simply passes through unabsorbed (often causing digestive upset).
+            No matter how much vitamin C you take orally, your body can only absorb so much. Intestinal absorption plateaus at around <strong>200mg</strong>. Take more, and it simply passes through unabsorbed (often causing digestive upset).
           </p>
           <p>
             IV administration completely bypasses this limitation. By delivering vitamin C directly into your bloodstream, we can achieve therapeutic concentrations that enable effects impossible with oral supplementation:
@@ -122,7 +100,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
                 <svg class="w-5 h-5 text-emerald-300 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <span>No absorption limit—100% bioavailable</span>
+                <span>No absorption limit (100% bioavailable)</span>
               </li>
               <li class="flex items-start gap-2">
                 <svg class="w-5 h-5 text-emerald-300 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -212,7 +190,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             </svg>
           </div>
           <h3 class="text-lg font-semibold text-emerald-950 mb-2">Stress & Adrenal Support</h3>
-          <p class="text-gray-600 text-sm">The adrenal glands have among the highest concentrations of vitamin C in the body. Chronic stress depletes these stores—IV vitamin C helps replenish them.</p>
+          <p class="text-gray-600 text-sm">The adrenal glands have among the highest concentrations of vitamin C in the body. Chronic stress depletes these stores. IV vitamin C helps replenish them.</p>
         </div>
 
         <!-- Skin & Collagen -->
@@ -240,11 +218,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               Vitamin C (ascorbic acid) is a potent antioxidant and essential cofactor for numerous enzymatic reactions in the body. It supports immune function through multiple mechanisms:
             </p>
             <ul class="text-white/90">
-              <li><strong class="text-white">Enhances neutrophil function</strong>—improving their ability to engulf and destroy pathogens</li>
-              <li><strong class="text-white">Supports T and B cell development</strong>—critical for adaptive immunity</li>
-              <li><strong class="text-white">Increases antibody production</strong>—studies show higher IgA, IgG and IgM levels with supplementation</li>
-              <li><strong class="text-white">Reduces oxidative stress</strong>—protecting cells from damage during infection</li>
-              <li><strong class="text-white">Supports collagen synthesis</strong>—essential for tissue repair and wound healing</li>
+              <li><strong class="text-white">Enhances neutrophil function</strong>, improving their ability to engulf and destroy pathogens</li>
+              <li><strong class="text-white">Supports T and B cell development</strong>, critical for adaptive immunity</li>
+              <li><strong class="text-white">Increases antibody production</strong>. Studies show higher IgA, IgG and IgM levels with supplementation</li>
+              <li><strong class="text-white">Reduces oxidative stress</strong>, protecting cells from damage during infection</li>
+              <li><strong class="text-white">Supports collagen synthesis</strong>, essential for tissue repair and wound healing</li>
             </ul>
             <p class="text-white/90">
               At high concentrations achievable only through IV administration, vitamin C may also have pro-oxidant effects that help fight certain pathogens while remaining protective to healthy cells.
@@ -259,19 +237,19 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               <p class="text-white/90 text-sm mb-2">
                 "Vitamin C contributes to immune defense by supporting various cellular functions of both the innate and adaptive immune system."
               </p>
-              <p class="text-emerald-400 text-xs">— Nutrients, 2017</p>
+              <p class="text-emerald-400 text-xs">(Nutrients, 2017)</p>
             </div>
             <div class="border-b border-white/20 pb-4">
               <p class="text-white/90 text-sm mb-2">
                 "IV vitamin C can enhance quality of life and alleviate symptoms in patients with various conditions compared to oral intake."
               </p>
-              <p class="text-emerald-400 text-xs">— Multiple clinical studies</p>
+              <p class="text-emerald-400 text-xs">(Multiple clinical studies)</p>
             </div>
             <div>
               <p class="text-white/90 text-sm mb-2">
                 "High-dose IV vitamin C showed reduction in organ dysfunction scores and decreased vascular injury in sepsis patients."
               </p>
-              <p class="text-emerald-400 text-xs">— Fowler et al., Phase I Trial</p>
+              <p class="text-emerald-400 text-xs">(Fowler et al., Phase I Trial)</p>
             </div>
           </div>
         </div>
@@ -290,13 +268,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <div class="bg-emerald-50 rounded-2xl p-8">
             <h3 class="text-xl font-semibold text-emerald-950 mb-4">Myers' Cocktail + Vitamin C</h3>
             <p class="text-gray-600 mb-4">Our standard Myers' Cocktail contains vitamin C along with B vitamins, magnesium and calcium. Great for general wellness, fatigue and immune support.</p>
-            <div class="flex justify-between items-center p-4 bg-white rounded-xl">
-              <div>
-                <span class="font-semibold text-emerald-950">Myers' Cocktail</span>
-                <p class="text-sm text-gray-500">30-45 minutes</p>
-              </div>
-              <span class="text-2xl font-bold text-emerald-700">$120</span>
-            </div>
             <a href="/myers-cocktail-intravenous-nutrients" class="text-emerald-700 text-sm font-medium mt-4 inline-flex items-center hover:text-emerald-800">
               Learn more about Myers' Cocktail
               <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -309,13 +280,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <div class="bg-emerald-50 rounded-2xl p-8">
             <h3 class="text-xl font-semibold text-emerald-950 mb-4">High-Dose Vitamin C</h3>
             <p class="text-gray-600 mb-4">Higher concentrations of vitamin C for acute illness, post-viral recovery or when more intensive support is needed. Dose determined based on your needs.</p>
-            <div class="flex justify-between items-center p-4 bg-white rounded-xl">
-              <div>
-                <span class="font-semibold text-emerald-950">High-Dose IV-C</span>
-                <p class="text-sm text-gray-500">45-90 minutes</p>
-              </div>
-              <span class="text-2xl font-bold text-emerald-700">$140-180</span>
-            </div>
             <p class="text-xs text-gray-500 mt-4">G6PD screening required before first high-dose treatment</p>
           </div>
         </div>
@@ -342,7 +306,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <div class="flex-shrink-0 w-12 h-12 bg-emerald-700 rounded-full flex items-center justify-center text-white font-bold text-lg">2</div>
             <div>
               <h3 class="text-xl font-semibold text-emerald-950 mb-2">During Treatment</h3>
-              <p class="text-gray-600">You'll relax in a comfortable chair while the IV infuses over 30-90 minutes depending on the dose. Many people read, work on their laptop, or simply rest. You may feel a mild cooling sensation or taste vitamin C during the infusion—this is normal.</p>
+              <p class="text-gray-600">You'll relax in a comfortable chair while the IV infuses over 30-90 minutes depending on the dose. Many people read, work on their laptop, or simply rest. You may feel a mild cooling sensation or taste vitamin C during the infusion, which is normal.</p>
             </div>
           </div>
 
@@ -460,7 +424,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               </svg>
             </summary>
             <div class="px-6 pb-6 text-gray-600">
-              Yes—in fact, this is often the best time to get it. Your body's vitamin C requirements increase significantly during infection. IV vitamin C can help support your immune response and may help you recover faster. Please let us know what symptoms you're experiencing when you book.
+              Yes. In fact, this is often the best time to get it. Your body's vitamin C requirements increase significantly during infection. IV vitamin C can help support your immune response and may help you recover faster. Please let us know what symptoms you're experiencing when you book.
             </div>
           </details>
 
@@ -484,7 +448,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               </svg>
             </summary>
             <div class="px-6 pb-6 text-gray-600">
-              Not necessarily. Oral vitamin C provides ongoing, low-level support between IV treatments. The two work well together—IV provides periodic high-dose therapy while oral maintains baseline levels. We can discuss the best approach for your situation.
+              Not necessarily. Oral vitamin C provides ongoing, low-level support between IV treatments. The two work well together: IV provides periodic high-dose therapy while oral maintains baseline levels. We can discuss the best approach for your situation.
             </div>
           </details>
         </div>
@@ -505,7 +469,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           target="_blank"
           class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center"
         >
-          Book Your Treatment
+          Book Your Appointment
           <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
           </svg>
@@ -534,7 +498,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           "name": "Can I get IV vitamin C while I'm sick?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes—in fact, this is often the best time to get it. Your body's vitamin C requirements increase significantly during infection. IV vitamin C can help support your immune response."
+            "text": "Yes. In fact, this is often the best time to get it. Your body's vitamin C requirements increase significantly during infection. IV vitamin C can help support your immune response."
           }
         },
         {

@@ -1,8 +1,8 @@
 ---
 title: "Plantar Fasciitis"
-description: "The plantar fascia is a flat strand of ligamentous tissue which connects the heel bone to the toes. It is responsible for the arc shape of the foot. Causes ..."
+description: "Plantar fasciitis causes heel pain from inflammation of the foot arch ligament. Learn about causes, symptoms, and effective natural treatments."
 seo:
-  focusKeyword: "plantar fasciitis"
+  focusKeyword: "plantar fasciitis treatment"
 ---
 
 ![Plantar fasciitis treatment](/images/conditions/plantar-fasciitis.jpeg)

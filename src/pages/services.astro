@@ -1,42 +1,27 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import CTAButton from '../components/CTAButton.astro';
 ---
 
-<BaseLayout 
-  title="Services" 
+<BaseLayout
+  title="Services"
   description="Complete naturopathic healthcare services including IV therapy, prolotherapy, acupuncture, clinical nutrition and specialized treatments for chronic conditions in Halifax, Nova Scotia."
   focusKeyword="naturopathic services Halifax"
 >
-  <!-- Hero Section -->
-  <section class="bg-emerald-950 -mt-24 pt-48 pb-24 lg:pt-56 lg:pb-32">
-    <div class="section-shell">
-      <div class="text-center max-w-4xl mx-auto space-y-6">
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-white mb-6 tracking-tight">Comprehensive Naturopathic Services</h1>
-        <p class="text-lg sm:text-xl text-white/90 mb-8 leading-relaxed font-light">
-          Evidence-based natural healthcare combining modern diagnostic techniques with traditional healing methods for optimal patient outcomes.
-        </p>
-        <a
-          href="https://macleodnaturopathic.janeapp.com/"
-          target="_blank"
-          class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center"
-        >
-          Book Your Appointment
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </section>
+  <HeroSection title="Comprehensive Naturopathic Services" centered>
+    Evidence-based natural healthcare combining modern diagnostic techniques with traditional healing methods for optimal patient outcomes.
+    <CTAButton slot="cta" />
+  </HeroSection>
 
   <!-- Service Categories -->
   <section class="py-16 lg:py-24 bg-white">
     <div class="section-shell">
       
-      <!-- Injectable Therapies -->
+      <!-- Intravenous Therapies -->
       <div id="injectable" class="mb-16">
         <div class="text-center mb-12">
-          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Injectable Therapies</h2>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Intravenous Therapies</h2>
           <p class="text-lg text-gray-600 max-w-3xl mx-auto">
             High-dose intravenous nutrients and specialized injections for optimal health, healing and disease prevention.
           </p>
@@ -44,9 +29,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <!-- IV Therapy -->
-          <a href="/iv-therapy" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group">
+          <a href="/iv-therapy" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
             <div class="aspect-[4/3] overflow-hidden">
-              <img src="/images/reference/services/iv-therapy.jpeg" alt="IV Therapy treatment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+              <img src="/images/treatments/iv-patient-man.webp" alt="Patient receiving IV therapy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="600" loading="lazy" />
             </div>
             <div class="p-6 text-center">
               <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-3 group-hover:text-emerald-700 transition-colors">IV Therapy</h3>
@@ -56,9 +41,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           </a>
 
           <!-- Myers Cocktail -->
-          <a href="/myers-cocktail-intravenous-nutrients" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group">
+          <a href="/myers-cocktail-intravenous-nutrients" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
             <div class="aspect-[4/3] overflow-hidden">
-              <img src="/images/treatments/IV-nutrient-therapy.jpeg" alt="Myers Cocktail IV nutrients" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+              <img src="/images/treatments/nad-patient.webp" alt="Patient receiving Myers Cocktail IV therapy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="600" loading="lazy" />
             </div>
             <div class="p-6 text-center">
               <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-3 group-hover:text-emerald-700 transition-colors">Myers Cocktail</h3>
@@ -67,22 +52,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             </div>
           </a>
 
-          <!-- Glutathione -->
-          <a href="/glutathione" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group">
-            <div class="aspect-[4/3] overflow-hidden">
-              <img src="/images/treatments/glutathione-iv.jpeg" alt="Glutathione IV therapy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            </div>
-            <div class="p-6 text-center">
-              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Glutathione IV</h3>
-              <p class="text-gray-600 mb-4">Powerful antioxidant therapy for detoxification, immune support and cellular protection.</p>
-              <span class="text-emerald-700 font-semibold group-hover:text-emerald-800">Learn More →</span>
-            </div>
-          </a>
-
           <!-- Chelation -->
-          <a href="/chelation-therapy" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group">
+          <a href="/chelation-therapy" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
             <div class="aspect-[4/3] overflow-hidden">
-              <img src="/images/treatments/IV-Chelation.jpg" alt="Chelation therapy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+              <img src="/images/treatments/iv-patient-woman.webp" alt="Patient receiving chelation therapy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="600" loading="lazy" />
             </div>
             <div class="p-6 text-center">
               <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Chelation Therapy</h3>
@@ -92,9 +65,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           </a>
 
           <!-- NAD+ Therapy -->
-          <a href="/nad-therapy" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group">
+          <a href="/nad-therapy" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
             <div class="aspect-[4/3] overflow-hidden">
-              <img src="/images/treatments/nad-therapy-hero.png" alt="NAD+ IV therapy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+              <img src="/images/treatments/nad-iv-therapy-session.png" alt="Patient receiving NAD+ IV therapy at MacLeod Naturopathic" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="600" loading="lazy" />
             </div>
             <div class="p-6 text-center">
               <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">NAD+ Therapy</h3>
@@ -114,11 +87,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           </p>
         </div>
         
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <!-- Prolotherapy -->
-          <a href="/prolotherapy-for-arthritis" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group">
+          <a href="/prolotherapy" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
             <div class="aspect-[4/3] overflow-hidden">
-              <img src="/images/reference/services/prolotherapy.jpeg" alt="Prolotherapy injection treatment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+              <img src="/images/treatments/prolotherapy-knee-injection.png" alt="Dr. MacLeod performing prolotherapy knee injection" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="600" loading="lazy" />
             </div>
             <div class="p-6 text-center">
               <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Prolotherapy</h3>
@@ -128,9 +101,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           </a>
 
           <!-- Prolozone -->
-          <a href="/prolozone" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group">
+          <a href="/prolozone" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
             <div class="aspect-[4/3] overflow-hidden">
-              <img src="/images/treatments/prolozone-injection.jpg" alt="Prolozone injection therapy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+              <img src="/images/treatments/prolozone-elbow-injection.png" alt="Prolozone elbow injection therapy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="600" loading="lazy" />
             </div>
             <div class="p-6 text-center">
               <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Prolozone</h3>
@@ -140,9 +113,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           </a>
 
           <!-- Neural Prolotherapy -->
-          <a href="/neural-prolotherapy-pain" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group">
+          <a href="/neural-prolotherapy-pain" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
             <div class="aspect-[4/3] overflow-hidden">
-              <img src="/images/treatments/neural-prolotherapy.jpg" alt="Neural prolotherapy treatment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+              <img src="/images/treatments/neural-prolotherapy-shoulder.png" alt="Neural prolotherapy shoulder injection" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="600" loading="lazy" />
             </div>
             <div class="p-6 text-center">
               <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Neural Prolotherapy</h3>
@@ -151,22 +124,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             </div>
           </a>
 
-          <!-- Acupuncture -->
-          <a href="/acupuncture-for-injury-pain" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group">
-            <div class="aspect-[4/3] overflow-hidden">
-              <img src="/images/reference/services/acupuncture.jpeg" alt="Acupuncture treatment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            </div>
-            <div class="p-6 text-center">
-              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Acupuncture</h3>
-              <p class="text-gray-600 mb-4">Traditional Chinese medicine for pain relief, stress reduction and overall wellness enhancement.</p>
-              <span class="text-emerald-700 font-semibold group-hover:text-emerald-800">Learn More →</span>
-            </div>
-          </a>
-
           <!-- Microcurrent -->
-          <a href="/microcurrent-therapy" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group">
+          <a href="/microcurrent-therapy" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
             <div class="aspect-[4/3] overflow-hidden">
-              <img src="/images/treatments/microcurrent-therapy.jpg" alt="Microcurrent therapy treatment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+              <img src="/images/treatments/microcurrent-therapy.webp" alt="Microcurrent therapy treatment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="600" loading="lazy" />
             </div>
             <div class="p-6 text-center">
               <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Microcurrent Therapy</h3>
@@ -187,34 +148,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </div>
         
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <!-- Clinical Nutrition -->
-          <div class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
-            <div class="aspect-[4/3] overflow-hidden">
-              <img src="/images/reference/services/clinical-nutrition.jpeg" alt="Clinical nutrition counseling" class="w-full h-full object-cover" />
-            </div>
-            <div class="p-6 text-center">
-              <h3 class="text-xl font-semibold mb-3">Clinical Nutrition</h3>
-              <p class="text-gray-600 mb-4">Evidence-based nutritional therapy and dietary counseling for optimal health and disease prevention.</p>
-              <div class="text-emerald-800 font-semibold">Available in consultation</div>
-            </div>
-          </div>
-
-          <!-- Herbal Medicine -->
-          <div class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
-            <div class="aspect-[4/3] overflow-hidden">
-              <img src="/images/reference/services/herbal-medicine.jpeg" alt="Herbal medicine remedies" class="w-full h-full object-cover" />
-            </div>
-            <div class="p-6 text-center">
-              <h3 class="text-xl font-semibold mb-3">Herbal Medicine</h3>
-              <p class="text-gray-600 mb-4">Traditional and modern botanical medicine for therapeutic treatment and health maintenance.</p>
-              <div class="text-emerald-800 font-semibold">Available in consultation</div>
-            </div>
-          </div>
-
           <!-- Lab Testing -->
-          <a href="/lab-testing" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group">
+          <a href="/lab-testing" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
             <div class="aspect-[4/3] overflow-hidden">
-              <img src="/images/reference/services/lab-testing.jpeg" alt="Laboratory diagnostic testing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+              <img src="/images/reference/services/lab-testing.webp" alt="Laboratory diagnostic testing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="600" loading="lazy" />
             </div>
             <div class="p-6 text-center">
               <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Laboratory Testing</h3>
@@ -223,10 +160,34 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             </div>
           </a>
 
-          <!-- Ozone Therapy -->
-          <a href="/ozone-therapy" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group">
+          <!-- Clinical Nutrition -->
+          <a href="/clinical-nutrition" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
             <div class="aspect-[4/3] overflow-hidden">
-              <img src="/images/treatments/ozone-therapy.jpg" alt="Ozone therapy treatment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+              <img src="/images/reference/services/clinical-nutrition.webp" alt="Clinical nutrition counseling" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="600" loading="lazy" />
+            </div>
+            <div class="p-6 text-center">
+              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Clinical Nutrition</h3>
+              <p class="text-gray-600 mb-4">Evidence-based nutritional assessment and targeted nutrient replenishment for optimal health.</p>
+              <span class="text-emerald-800 font-semibold group-hover:text-emerald-900">Learn More →</span>
+            </div>
+          </a>
+
+          <!-- Herbal Medicine -->
+          <a href="/herbal-medicine" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
+            <div class="aspect-[4/3] overflow-hidden">
+              <img src="/images/reference/services/herbal-medicine.webp" alt="Herbal medicine remedies" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="600" loading="lazy" />
+            </div>
+            <div class="p-6 text-center">
+              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Herbal Medicine</h3>
+              <p class="text-gray-600 mb-4">Traditional and modern botanical medicine for therapeutic treatment and health maintenance.</p>
+              <span class="text-emerald-800 font-semibold group-hover:text-emerald-900">Learn More →</span>
+            </div>
+          </a>
+
+          <!-- Ozone Therapy -->
+          <a href="/ozone-therapy" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
+            <div class="aspect-[4/3] overflow-hidden">
+              <img src="/images/treatments/ozone-therapy.webp" alt="Ozone therapy treatment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="600" loading="lazy" />
             </div>
             <div class="p-6 text-center">
               <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Ozone Therapy</h3>
@@ -239,31 +200,114 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </div>
   </section>
 
+  <!-- Pricing Section -->
+  <section id="pricing" class="py-16 lg:py-24 bg-slate-50">
+    <div class="section-shell">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Service Pricing</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          Transparent pricing for all treatments. Most services are eligible for insurance reimbursement through extended health benefits.
+        </p>
+      </div>
+
+      <div class="max-w-4xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Consultations -->
+          <div class="bg-white rounded-2xl p-8 shadow-lg border border-emerald-100">
+            <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-6 pb-4 border-b border-emerald-100">Consultations</h3>
+            <ul class="space-y-4">
+              <li class="flex justify-between items-center">
+                <span class="text-gray-700">Initial Visit</span>
+                <span class="font-semibold text-emerald-950">$200</span>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="text-gray-700">Follow-up Visit</span>
+                <span class="font-semibold text-emerald-950">$100</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Treatments -->
+          <div class="bg-white rounded-2xl p-8 shadow-lg border border-emerald-100">
+            <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-6 pb-4 border-b border-emerald-100">Treatments</h3>
+            <ul class="space-y-4">
+              <li class="flex justify-between items-center">
+                <span class="text-gray-700">Acupuncture</span>
+                <span class="font-semibold text-emerald-950">$75</span>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="text-gray-700">IV Therapy</span>
+                <span class="font-semibold text-emerald-950">$130</span>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="text-gray-700">Prolotherapy</span>
+                <span class="font-semibold text-emerald-950">$110</span>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="text-gray-700">Prolozone</span>
+                <span class="font-semibold text-emerald-950">$110</span>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="text-gray-700">Vitamin B12 Injection</span>
+                <span class="font-semibold text-emerald-950">$35</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Specialized IV Treatments -->
+          <div class="bg-white rounded-2xl p-8 shadow-lg border border-emerald-100">
+            <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-6 pb-4 border-b border-emerald-100">Specialized IV Treatments</h3>
+            <ul class="space-y-4">
+              <li class="flex justify-between items-center">
+                <span class="text-gray-700">NAD+ IV Therapy</span>
+                <span class="font-semibold text-emerald-950">$190</span>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="text-gray-700">Chelation Therapy</span>
+                <span class="font-semibold text-emerald-950">$130</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Combined Visits -->
+          <div class="bg-white rounded-2xl p-8 shadow-lg border border-emerald-100">
+            <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-6 pb-4 border-b border-emerald-100">Combined Visits</h3>
+            <ul class="space-y-4">
+              <li class="flex justify-between items-center">
+                <span class="text-gray-700">Initial Visit + IV Treatment</span>
+                <span class="font-semibold text-emerald-950">$260</span>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="text-gray-700">Initial Visit + Prolotherapy</span>
+                <span class="font-semibold text-emerald-950">$260</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="text-center text-gray-500 mt-8 text-sm">
+          Prices subject to change. Please contact us if you have questions about specific treatments.
+        </p>
+      </div>
+    </div>
+  </section>
+
   <!-- CTA Section -->
   <section class="bg-emerald-950 py-16 lg:py-24">
     <div class="section-shell text-center">
       <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-6">Ready to Start Your Natural Health Journey?</h2>
-      <p class="text-lg sm:text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
+      <p class="text-lg sm:text-xl text-emerald-100 mb-8 max-w-3xl mx-auto leading-relaxed">
         Schedule your comprehensive naturopathic consultation to discuss which treatments are right for your specific health needs.
       </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <div class="flex justify-center">
         <a
           href="https://macleodnaturopathic.janeapp.com/"
           target="_blank"
           class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center justify-center"
         >
           Book Your Appointment
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-          </svg>
-        </a>
-        <a 
-          href="/contact"
-          class="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-emerald-950 transition-colors inline-flex items-center justify-center"
-        >
-          Ask Questions
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
           </svg>
         </a>
       </div>

@@ -34,29 +34,7 @@ const pages = defineCollection({
   }),
 });
 
-const services = defineCollection({
-  type: 'content',
-  schema: z.object({
-    title: z.string(),
-    description: z.string(),
-    shortDescription: z.string(),
-    category: z.string(),
-    featured: z.boolean().default(false),
-    price: z.object({
-      initial: z.number().optional(),
-      followUp: z.number().optional(),
-      treatment: z.number().optional(),
-    }).optional(),
-    seo: z.object({
-      title: z.string().optional(),
-      description: z.string().optional(),
-      focusKeyword: z.string().optional(),
-    }).optional(),
-  }),
-});
-
 export const collections = {
   articles,
   pages,
-  services,
 };

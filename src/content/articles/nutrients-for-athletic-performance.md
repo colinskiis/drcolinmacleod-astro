@@ -3,7 +3,7 @@ title: "Nutrients For Athletic Performance"
 description: "For competitive athletes, maximized nutrition, training and rest are essential for performance and health; but perfect nutrient status is rare in athletes."
 publishDate: 2015-11-01
 modifiedDate: 2022-07-12
-heroImage: "/images/general/hockey-player-performance.jpg"
+heroImage: "/images/general/hockey-player-performance.webp"
 categories: ["Naturopathic"]
 tags: ["naturopathic"]
 seo:
@@ -20,7 +20,7 @@ While diet is pivotal for ensuring proper nutrient intake, intravenous nutrient 
 <h2>Athletic Performance Infusion</h2>
 Our athletic performance infusion is a combination of L-carnitine, vitamin B1, vitamin B2, vitamin B3, vitamin B5, vitamin B6, vitamin B12, vitamin C, calcium, magnesium and zinc. It is administered before and after competitions as a boost for competitive athletes and can also be used while training. Beyond simply correcting nutrient deficiencies, this infusion can be used to enhance muscle function, increase energy and shorten recovery time.
 <h3>Components Of The Infusion</h3>
-<img class="size-full wp-image-3545 aligncenter" style="padding-bottom: 17px;" src="/images/nutrition/nutrients-sport-performance.jpg" alt="Nutrient treatments for sport performance" width="609" height="332" />
+<img class="size-full wp-image-3545 aligncenter" style="padding-bottom: 17px;" src="/images/nutrition/nutrients-sport-performance.webp" alt="Nutrient treatments for sport performance" width="609" height="332" />
 <h4>L-Carnitine</h4>
 L-carnitine is a “conditionally essential” amino acid (i.e.: we assemble it from other amino acids in our diet). L-carnitine transports fats into the cell mitochondria to be burned as energy and as such, plays a critical role in energy metabolism. L-carnitine is instrumental for the burning of fat during physical activity. Concentrated in skeletal and heart muscle cells which use dietary fats as fuel. L-carnitine can be obtained through beef, fish, pork and chicken.
 <h4>Vitamin B1</h4>
@@ -44,7 +44,7 @@ Calcium is well known for its importance in formation and maintenance of healthy
 <h4>Zinc</h4>
 Zinc is found throughout every cell in our bodies and many functions. Zinc helps aid in tissue repair and healing as well as fine-tuning the immune system. Zinc is also important for taste, smell, vision, growth and reproduction. Zinc deficiency can cause loss of appetite, poor wound healing, fatigue, frequent infection or hair loss. Sources of zinc include wheat germ, wheat bran, dairy products, pumpkin or squash seeds, baked beans, lamb, beef liver and oysters. Zinc is depleted by physical activity.
 <h2>Safe For All Athletes</h2>
-<img class="size-full wp-image-3545 aligncenter" style="padding-bottom: 17px;" src="/images/general/hockey-player-performance.jpg" alt="Hockey player. Performance nutrition." width="609" height="332" />
+<img class="size-full wp-image-3545 aligncenter" style="padding-bottom: 17px;" src="/images/general/hockey-player-performance.webp" alt="Hockey player. Performance nutrition." width="609" height="332" />
 Our athletic performance infusion treatment falls within the guidelines set by the World Anti-Doping Agency and is safe for amateur and professional athletes alike.
 <h2>Nutrient Infusions in Halifax</h2>
 If you are interested in receiving nutrient infusion treatments and are located in the Halifax area, please contact MacLeod Naturopathic to book an initial naturopathic visit to discuss your options.

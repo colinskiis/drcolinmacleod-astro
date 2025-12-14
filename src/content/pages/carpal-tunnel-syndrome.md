@@ -1,8 +1,8 @@
 ---
 title: "Carpal Tunnel Syndrome"
-description: "Carpal tunnel syndrome is a condition which affects the wrist, hand and arm. The carpal tunnel of the wrist forms a boney, protective passageway for the me..."
+description: "Carpal tunnel syndrome causes wrist, hand, and arm pain from median nerve compression. Learn about symptoms and effective natural treatments."
 seo:
-  focusKeyword: "carpal tunnel syndrome"
+  focusKeyword: "carpal tunnel syndrome treatment"
 ---
 
 ![Carpal tunnel syndrome treatment](/images/conditions/carpal-tunnel-syndrome.jpeg)

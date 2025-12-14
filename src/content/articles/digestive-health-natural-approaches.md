@@ -3,7 +3,7 @@ title: "Natural Approaches to Digestive Health"
 description: "Digestive health is foundational to overall wellness. Naturopathic medicine offers effective approaches for IBS, SIBO, food sensitivities, and gut microbiome imbalances."
 publishDate: 2024-12-03
 modifiedDate: 2024-12-03
-heroImage: "/images/general/digestive-health.jpg"
+heroImage: "/images/general/digestive-health.webp"
 categories: ["Naturopathic", "Digestive Health"]
 tags: ["digestive health", "IBS", "SIBO", "gut health", "naturopathic"]
 seo:
@@ -13,7 +13,7 @@ seo:
 
 ## The Importance of Digestive Health
 
-Digestive health is foundational to overall wellness. The gastrointestinal system is responsible not only for breaking down and absorbing nutrients, but also houses approximately 70% of our immune system and produces many of the neurotransmitters that regulate mood and cognitive function<sup>1</sup>. When digestive function is compromised, the effects ripple throughout the entire body—affecting energy levels, immune function, skin health, and mental clarity.
+Digestive health is foundational to overall wellness. The gastrointestinal system is responsible not only for breaking down and absorbing nutrients, but also houses approximately 70% of our immune system and produces many of the neurotransmitters that regulate mood and cognitive function<sup>1</sup>. When digestive function is compromised, the effects ripple throughout the entire body, affecting energy levels, immune function, skin health, and mental clarity.
 
 ## Common Digestive Conditions
 
@@ -25,7 +25,7 @@ Food sensitivities differ from food allergies in that they create delayed inflam
 
 ## The Gut Microbiome
 
-The trillions of bacteria living in your digestive tract—collectively known as the gut microbiome—play crucial roles in digesting certain foods, training the immune system, protecting against pathogenic bacteria, and maintaining the integrity of the intestinal lining<sup>3</sup>. Dysbiosis, an imbalance in gut bacteria, has been linked to numerous conditions including inflammatory bowel disease, autoimmune disorders, and mental health conditions<sup>4</sup>.
+The trillions of bacteria living in your digestive tract, collectively known as the gut microbiome, play crucial roles in digesting certain foods, training the immune system, protecting against pathogenic bacteria, and maintaining the integrity of the intestinal lining<sup>3</sup>. Dysbiosis, an imbalance in gut bacteria, has been linked to numerous conditions including inflammatory bowel disease, autoimmune disorders, and mental health conditions<sup>4</sup>.
 
 ## Naturopathic Assessment and Treatment
 
@@ -38,8 +38,6 @@ Natural treatments including herbal medicine, probiotics, and digestive enzyme s
 ## Digestive Health Treatment in Halifax
 
 If you are experiencing chronic digestive concerns such as bloating, irregular bowel movements, heartburn, or food reactions, please contact MacLeod Naturopathic to book an initial naturopathic visit to discuss your options.
-
-[Book Your Appointment](https://macleodnaturopathic.janeapp.com/)
 
 ### References
 

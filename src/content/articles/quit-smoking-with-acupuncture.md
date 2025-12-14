@@ -1,11 +1,13 @@
 ---
 title: "Quit Smoking With Acupuncture"
-description: "Smoking has a major impact on our population. In Canada, 17% of adults smoke regularly and 16.6% of people die due to smoking-related causes."
+description: "Acupuncture helps reduce nicotine cravings and improves smoking cessation rates. Learn how this traditional treatment supports quitting smoking."
 publishDate: 2017-07-28
 modifiedDate: 2022-07-12
-heroImage: "/images/reference/services/acupuncture.jpeg"
+heroImage: "/images/reference/services/acupuncture.webp"
 categories: ["Naturopathic"]
 tags: ["naturopathic"]
+seo:
+  focusKeyword: "quit smoking acupuncture"
 ---
 
 Smoking has a major impact on our population. In Canada, 17% of adults smoke regularly<sup>1</sup> and 16.6% of people die due to smoking-related causes<sup>2</sup>. The leading smoking-induced causes of death in Canada are cancer (47%), cardiovascular disease (28%) and respiratory diseases (22%)<sup>2</sup>.
@@ -16,13 +18,13 @@ Acupuncture has been used for over two thousand years in Traditional Chinese Med
 
 Acupuncture as a treatment for smoking and addictions has been extensively studied over the past few decades. Many studies have shown positive effects, including reduced cravings and improved cessation rates<sup>3</sup>. Other studies have found acupuncture to be quite helpful in treatment of addictions in general, including in treating concurrent substance use and anxiety<sup>4</sup>. In my practice I have seen very encouraging results with acupuncture for quitting smoking and managing withdrawal. It is an essential part of my practice for helping patients, even those with a long history of smoking, to reduce and even quit.
 
-<img style="padding-bottom: 17px; padding-top: 17px;" src="/images/general/acupuncture-ear.jpg" alt="Ear acupuncture for smoking cessation">
+<img style="padding-bottom: 17px; padding-top: 17px;" src="/images/general/acupuncture-ear.webp" alt="Ear acupuncture for smoking cessation">
 
 ## Respiratory Conditions
 
 Compounds within cigarette smoke have been shown to directly cause lung cancer<sup>5</sup> and smoking has also been shown to be the direct cause of chronic obstructive pulmonary disease (COPD)<sup>6</sup>. Regular cigarette smoking also damages the airways and lung tissue, leading to respiratory conditions such as emphysema and chronic bronchitis.
 
-<img style="padding-bottom: 17px; padding-top: 17px;" src="/images/general/smoking-lung-cancer.jpg" alt="Affect of smoking on lungs - x-ray">
+<img style="padding-bottom: 17px; padding-top: 17px;" src="/images/general/smoking-lung-cancer.webp" alt="Affect of smoking on lungs - x-ray">
 
 ## Cardiovascular Disease
 
@@ -30,7 +32,7 @@ Cigarette smoking also contributes significantly to the build-up of plaques with
 
 A review of smoking research by the U.S. Surgeon General<sup>9</sup> concluded that "smoking harms nearly every organ of the body, causing many diseases and reduces the health of smokers in general." Also, "quitting smoking has immediate as well as long-term benefits."
 
-<img style="padding-bottom: 17px; padding-top: 17px;" src="/images/charts/smoking-cardiovascular-disease.png" alt="Smoking's affect on the cardiovascular system">
+<img style="padding-bottom: 17px; padding-top: 17px;" src="/images/charts/smoking-cardiovascular-disease.webp" alt="Smoking's effect on the cardiovascular system">
 
 ## Conventional Treatments
 

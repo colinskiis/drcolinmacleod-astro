@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import CTAButton from '../components/CTAButton.astro';
 ---
 
 <BaseLayout
@@ -7,32 +9,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   description="Prolotherapy shows strong results for sacroiliac joint pain and may help certain types of low back pain. Learn about the research and treatment at MacLeod Naturopathic in Halifax."
   focusKeyword="prolotherapy back pain Halifax"
 >
-  <!-- Hero Section -->
-  <section class="bg-emerald-950 -mt-24 pt-48 pb-16 lg:pt-56 lg:pb-24">
-    <div class="section-shell">
-      <div class="max-w-4xl">
-        <nav class="text-emerald-300 text-sm mb-4">
-          <a href="/prolotherapy" class="hover:text-white transition-colors">Prolotherapy</a>
-          <span class="mx-2">/</span>
-          <span class="text-white">Back Pain</span>
-        </nav>
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-white tracking-tight mb-6">Prolotherapy for Back Pain</h1>
-        <p class="text-lg sm:text-xl text-white/90 leading-relaxed font-light mb-8">
-          Back pain often involves ligament and joint dysfunction that prolotherapy can address. The evidence is particularly strong for sacroiliac joint pain, with promising but mixed results for other types of low back pain.
-        </p>
-        <a
-          href="https://macleodnaturopathic.janeapp.com/"
-          target="_blank"
-          class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center"
-        >
-          Book Your Appointment
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </section>
+  <HeroSection title="Prolotherapy for Back Pain" compact textOnly>
+    <nav slot="breadcrumb" class="text-emerald-300 text-sm mb-4">
+      <a href="/prolotherapy" class="hover:text-white transition-colors">Prolotherapy</a>
+      <span class="mx-2">/</span>
+      <span class="text-white">Back Pain</span>
+    </nav>
+    <p>Back pain often involves ligament and joint dysfunction that prolotherapy can address. The evidence is particularly strong for sacroiliac joint pain, with promising but mixed results for other types of low back pain.</p>
+    <CTAButton slot="cta" />
+  </HeroSection>
 
   <!-- Understanding Back Pain -->
   <section class="py-16 lg:py-24 bg-white">
@@ -41,7 +26,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8">Understanding Back Pain and Prolotherapy</h2>
         <div class="prose prose-lg prose-emerald max-w-none">
           <p>
-            The spine and pelvis are complex structures held together by an intricate network of ligaments. When these ligaments become damaged, stretched, or weakened—whether from injury, poor posture, or degenerative changes—they can cause chronic pain and instability.
+            The spine and pelvis are complex structures held together by an intricate network of ligaments. When these ligaments become damaged, stretched, or weakened, whether from injury, poor posture, or degenerative changes, they can cause chronic pain and instability.
           </p>
           <p>
             Prolotherapy targets these ligamentous structures, aiming to strengthen them and restore stability. However, it's important to understand that back pain has many causes, and prolotherapy works better for some types than others.
@@ -66,7 +51,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               The sacroiliac (SI) joints connect the spine to the pelvis. SI joint dysfunction is a common but often overlooked cause of lower back and buttock pain. It can result from injury, pregnancy, arthritis, or abnormal movement patterns.
             </p>
             <p>
-              A well-designed randomized controlled trial directly compared prolotherapy to steroid injection for SI joint pain—and the results strongly favored prolotherapy for long-term relief.
+              A well-designed randomized controlled trial directly compared prolotherapy to steroid injection for SI joint pain, and the results strongly favored prolotherapy for long-term relief.
             </p>
           </div>
         </div>
@@ -201,7 +186,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <ul class="space-y-2 text-slate-600">
               <li class="flex gap-2">
                 <span class="text-emerald-600 font-bold">•</span>
-                <span><strong>Good news:</strong> Both groups improved significantly—46% of dextrose group and 36% of saline group achieved &gt;50% pain reduction at 12 months</span>
+                <span><strong>Good news:</strong> Both groups improved significantly: 46% of dextrose group and 36% of saline group achieved &gt;50% pain reduction at 12 months</span>
               </li>
               <li class="flex gap-2">
                 <span class="text-amber-600 font-bold">•</span>
@@ -311,57 +296,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <div class="text-4xl font-bold text-white mb-4">15+</div>
           <h3 class="text-xl font-serif font-semibold text-white mb-3">Months Benefit</h3>
           <p class="text-emerald-200">
-            The Kim study showed maintained benefit at 15 months—the longest follow-up reported for SI joint prolotherapy.
+            The Kim study showed maintained benefit at 15 months, the longest follow-up reported for SI joint prolotherapy.
           </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Pricing Section -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
-    <div class="section-shell">
-      <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-12 text-center">Pricing</h2>
-      <div class="max-w-xl mx-auto">
-        <div class="bg-white rounded-3xl shadow-xl p-8 lg:p-10">
-          <div class="text-center mb-6">
-            <h3 class="text-2xl font-serif font-bold text-emerald-950 mb-4">Prolotherapy for Back/SI Joint Pain</h3>
-            <div class="text-4xl font-bold text-emerald-700">$250-$350</div>
-            <p class="text-slate-600 mt-2">per treatment session</p>
-          </div>
-          <ul class="space-y-3 text-slate-600 mb-8">
-            <li class="flex items-center gap-3">
-              <svg class="w-5 h-5 text-emerald-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-              </svg>
-              <span>SI joint treatment: $250</span>
-            </li>
-            <li class="flex items-center gap-3">
-              <svg class="w-5 h-5 text-emerald-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-              </svg>
-              <span>Lumbar ligaments (multiple areas): $300-$350</span>
-            </li>
-            <li class="flex items-center gap-3">
-              <svg class="w-5 h-5 text-emerald-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-              </svg>
-              <span>Typically 3-6 sessions needed</span>
-            </li>
-            <li class="flex items-center gap-3">
-              <svg class="w-5 h-5 text-emerald-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-              </svg>
-              <span>Initial consultation: $150</span>
-            </li>
-          </ul>
-          <a
-            href="https://macleodnaturopathic.janeapp.com/"
-            target="_blank"
-            class="block w-full bg-emerald-700 text-white text-center px-6 py-3 rounded-full font-semibold hover:bg-emerald-800 transition-colors"
-          >
-            Book Appointment
-          </a>
         </div>
       </div>
     </div>
@@ -380,7 +316,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             </svg>
           </summary>
           <div class="px-6 pb-6 text-slate-600">
-            We use a combination of history, physical examination tests (there are several specific tests for SI joint dysfunction), and sometimes diagnostic injection. In the Kim study, patients were confirmed to have SI joint pain by getting at least 50% relief from a diagnostic local anesthetic injection into the joint.
+            History, physical exam tests, imaging (xray or mri).
           </div>
         </details>
 
@@ -392,7 +328,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             </svg>
           </summary>
           <div class="px-6 pb-6 text-slate-600">
-            Steroid injections work by suppressing inflammation—they provide temporary relief but don't address the underlying ligament laxity or joint instability. Prolotherapy stimulates tissue repair and strengthening. Once the supporting structures are stronger, the improvement tends to persist. This is why the Kim study showed such a dramatic difference at 15 months.
+            Steroid injections work by suppressing inflammation. They provide temporary relief but don't address the underlying ligament laxity or joint instability. Prolotherapy stimulates tissue repair and strengthening. Once the supporting structures are stronger, the improvement tends to persist. This is why the Kim study showed such a dramatic difference at 15 months.
           </div>
         </details>
 

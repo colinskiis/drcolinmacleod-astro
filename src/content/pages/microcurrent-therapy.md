@@ -1,9 +1,11 @@
 ---
 title: "Microcurrent Therapy"
-description: "Microcurrent therapy employs a low amplitude of electricity which is closely in line with the electrical activity of the cells of the body. Microcurrent has a b..."
+description: "Microcurrent therapy uses low-amplitude electricity to promote healing, reduce pain, and preserve muscle function. Effective for wounds, arthritis, and fibromyalgia."
+seo:
+  focusKeyword: "microcurrent therapy"
 ---
 
-<div class="wp-block-stackable-image stk-block-image stk-block stk-23a6288" data-block-id="23a6288"><figure class="stk-img-wrapper stk-image--shape-stretch"><img class="stk-img wp-image-7411" src="/images/treatments/microcurrent-therapy.jpg" width="1000" height="667" alt="Microcurrent therapy treatment on man's knee"/></figure></div>
+<div class="wp-block-stackable-image stk-block-image stk-block stk-23a6288" data-block-id="23a6288"><figure class="stk-img-wrapper stk-image--shape-stretch"><img class="stk-img wp-image-7411" src="/images/treatments/microcurrent-therapy.webp" width="1000" height="667" alt="Microcurrent therapy treatment on man's knee"/></figure></div>
 
 <div class="wp-block-stackable-heading stk-block-heading stk-block stk-98d1b76" id="what-is-microcurrent-therapy" data-block-id="98d1b76"><h3 class="stk-block-heading__text">What Is Microcurrent Therapy?</h3></div>
 
@@ -41,7 +43,7 @@ In some cases tingling, skin sensitivity or muscle twitching can occur during tr
 
 If you are interested in receiving microcurrent treatment please contact MacLeod Naturopathic at 902-820-2727 to book an initial naturopathic visit to discuss your options.
 
-{"#" * int(group(1))} References
+## References
 
 1. Lazarenko NN, Supova MV, Trunova OV, et al. [The influence of electrical stimulation on the peripheral immune system under the experimental and clinical conditions]. Vopr Kurortol Fizioter Lech Fiz Kult. 2015 Jul-Aug;92(4):41-47. Russian.
 2. Avendaño-Coy J, Martín-Espinosa NM, Ladriñán-Maestro A, et al. Effectiveness of Microcurrent Therapy for Treating Pressure Ulcers in Older People: A Double-Blind, Controlled, Randomized Clinical Trial. Int J Environ Res Public Health. 2022 Aug 15;19(16):10045.

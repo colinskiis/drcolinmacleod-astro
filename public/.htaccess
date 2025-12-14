@@ -1,0 +1,107 @@
+# Enable RewriteEngine
+RewriteEngine On
+
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Force www to non-www (or vice versa - choose one)
+RewriteCond %{HTTP_HOST} ^www\.drcolinmacleod\.com [NC]
+RewriteRule ^(.*)$ https://drcolinmacleod.com/$1 [L,R=301]
+
+# Article redirects (old root URLs to new /articles/ paths)
+# Note: Some old articles were archived - redirecting to closest relevant page
+RewriteRule ^osteoarthritis-medication-natural-alternatives/?$ /articles/natural-treatments-for-arthritis/ [L,R=301]
+RewriteRule ^herbal-medicine/?$ /articles/herbal-medicine-history-and-uses/ [L,R=301]
+RewriteRule ^nutrition-healthy-life/?$ /clinical-nutrition/ [L,R=301]
+RewriteRule ^fatigue-causes-treatment/?$ /chronic-fatigue-syndrome/ [L,R=301]
+RewriteRule ^skin-acne-eczema-psoriasis-treatments/?$ /articles/acne-eczema-psoriasis-treatments/ [L,R=301]
+RewriteRule ^5-ways-to-eat-more-fruit-vegetables/?$ /articles/5-ways-to-eat-more-fruit-vegetables/ [L,R=301]
+RewriteRule ^what-is-naturopathic-medicine/?$ /about/ [L,R=301]
+RewriteRule ^quinoa-salad-recipe/?$ /articles/quinoa-salad-recipe/ [L,R=301]
+RewriteRule ^3-tips-for-combating-stress/?$ /articles/3-tips-for-combating-stress/ [L,R=301]
+RewriteRule ^herbal-spotlight-rhodiola/?$ /articles/herbal-spotlight-rhodiola/ [L,R=301]
+RewriteRule ^cholesterol-lowering-medication-risks/?$ /articles/ [L,R=301]
+RewriteRule ^3-little-known-vitamin-d-facts/?$ /articles/ [L,R=301]
+RewriteRule ^natural-weight-loss-solutions/?$ /articles/natural-weight-loss-solutions/ [L,R=301]
+RewriteRule ^frequently-asked-questions/?$ /articles/frequently-asked-questions/ [L,R=301]
+RewriteRule ^intravenous-vitamin-c-cancer/?$ /iv-vitamin-c/ [L,R=301]
+RewriteRule ^mistletoe-natural-cancer-treatment/?$ /articles/mistletoe-a-natural-cancer-treatment/ [L,R=301]
+RewriteRule ^chelation-lead-toxicity/?$ /articles/chelation-lead-toxicity/ [L,R=301]
+RewriteRule ^how-much-sleep-does-an-athlete-need/?$ /articles/how-much-sleep-does-an-athlete-need/ [L,R=301]
+RewriteRule ^methylation-the-mthfr-gene/?$ /articles/methylation-the-mthfr-gene/ [L,R=301]
+RewriteRule ^nutrients-for-athletic-performance/?$ /articles/nutrients-for-athletic-performance/ [L,R=301]
+RewriteRule ^natural-treatments-for-arthritis/?$ /articles/natural-treatments-for-arthritis/ [L,R=301]
+RewriteRule ^quit-smoking-acupuncture/?$ /articles/quit-smoking-with-acupuncture/ [L,R=301]
+RewriteRule ^magnesium/?$ /articles/magnesium-the-natural-muscle-relaxer/ [L,R=301]
+
+# Page URL changes (old WordPress URLs to new Astro URLs)
+RewriteRule ^acupuncture-injury-pain/?$ /acupuncture/ [L,R=301]
+RewriteRule ^acupuncture-for-injury-pain/?$ /acupuncture/ [L,R=301]
+RewriteRule ^microcurrent/?$ /microcurrent-therapy/ [L,R=301]
+RewriteRule ^migraine/?$ /migraine-headache/ [L,R=301]
+RewriteRule ^prolotherapy-arthritis/?$ /prolotherapy-for-arthritis/ [L,R=301]
+RewriteRule ^chelation-therapy-heart-disease/?$ /chelation-therapy/ [L,R=301]
+RewriteRule ^natural-pain-solutions/?$ /conditions/ [L,R=301]
+
+# Patient info redirects
+RewriteRule ^patient-info/new-patient-guide/?$ /patient-resources/ [L,R=301]
+RewriteRule ^patient-info/iv-therapy-guide/?$ /patient-resources/ [L,R=301]
+RewriteRule ^patient-info/prolotherapy-guide/?$ /patient-resources/ [L,R=301]
+RewriteRule ^patient-info/lab-testing-guide/?$ /patient-resources/ [L,R=301]
+RewriteRule ^patient-info/(.*)$ /patient-resources/ [L,R=301]
+
+# WordPress-specific redirects (feed, wp-admin, etc.)
+RewriteRule ^feed/?$ / [L,R=301]
+RewriteRule ^wp-admin/?$ / [L,R=301]
+RewriteRule ^wp-login\.php$ / [L,R=301]
+RewriteRule ^wp-content/(.*)$ / [L,R=301]
+
+# Category/archive pages redirect to articles
+RewriteRule ^category/(.*)$ /articles/ [L,R=301]
+RewriteRule ^tag/(.*)$ /articles/ [L,R=301]
+RewriteRule ^author/(.*)$ /about/ [L,R=301]
+
+# Remove trailing slash for files (but keep for directories)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} (.+)/$
+RewriteRule ^ %1 [L,R=301]
+
+# Handle clean URLs (serve index.html for directories)
+DirectoryIndex index.html
+
+# Error pages
+ErrorDocument 404 /404.html
+
+# Prevent directory listing
+Options -Indexes
+
+# Security headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Cache static assets
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
+    ExpiresByType application/pdf "access plus 1 month"
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>
+
+# Gzip compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/css application/javascript application/json text/xml application/xml
+</IfModule>

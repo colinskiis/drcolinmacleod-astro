@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import CTAButton from '../components/CTAButton.astro';
 ---
 
 <BaseLayout
@@ -7,32 +9,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   description="Prolotherapy is an effective treatment for chronic tendon injuries including tennis elbow, plantar fasciitis and Achilles tendinopathy. Learn about the research and treatment at MacLeod Naturopathic in Halifax."
   focusKeyword="prolotherapy tendon injuries Halifax"
 >
-  <!-- Hero Section -->
-  <section class="bg-emerald-950 -mt-24 pt-48 pb-16 lg:pt-56 lg:pb-24">
-    <div class="section-shell">
-      <div class="max-w-4xl">
-        <nav class="text-emerald-300 text-sm mb-4">
-          <a href="/prolotherapy" class="hover:text-white transition-colors">Prolotherapy</a>
-          <span class="mx-2">/</span>
-          <span class="text-white">Tendon Injuries</span>
-        </nav>
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-white tracking-tight mb-6">Prolotherapy for Tendon Injuries</h1>
-        <p class="text-lg sm:text-xl text-white/90 leading-relaxed font-light mb-8">
-          Chronic tendon injuries—tendinopathies—are notoriously difficult to treat. Prolotherapy offers an evidence-based approach that stimulates tissue repair rather than simply masking symptoms.
-        </p>
-        <a
-          href="https://macleodnaturopathic.janeapp.com/"
-          target="_blank"
-          class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center"
-        >
-          Book Your Appointment
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </section>
+  <HeroSection title="Prolotherapy for Tendon Injuries" compact textOnly>
+    <nav slot="breadcrumb" class="text-emerald-300 text-sm mb-4">
+      <a href="/prolotherapy" class="hover:text-white transition-colors">Prolotherapy</a>
+      <span class="mx-2">/</span>
+      <span class="text-white">Tendon Injuries</span>
+    </nav>
+    <p>Chronic tendon injuries (tendinopathies) are notoriously difficult to treat. Prolotherapy offers an evidence-based approach that stimulates tissue repair rather than simply masking symptoms.</p>
+    <CTAButton slot="cta" />
+  </HeroSection>
 
   <!-- Understanding Tendinopathy -->
   <section class="py-16 lg:py-24 bg-white">
@@ -41,10 +26,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8">Understanding Chronic Tendon Injuries</h2>
         <div class="prose prose-lg prose-emerald max-w-none">
           <p>
-            Chronic tendon injuries—now more accurately called tendinopathies rather than tendinitis—involve degeneration of tendon tissue rather than simple inflammation. Years of research have shown that these conditions involve failed healing attempts, disorganized collagen and changes in the tendon's cellular structure.
+            Chronic tendon injuries, now more accurately called tendinopathies rather than tendinitis, involve degeneration of tendon tissue rather than simple inflammation. Years of research have shown that these conditions involve failed healing attempts, disorganized collagen and changes in the tendon's cellular structure.
           </p>
           <p>
-            This is why anti-inflammatory treatments often provide only temporary relief: they address inflammation that may not be the primary problem. Prolotherapy takes a different approach—it stimulates a controlled healing response that can restart the repair process and strengthen the damaged tissue.
+            This is why anti-inflammatory treatments often provide only temporary relief: they address inflammation that may not be the primary problem. Prolotherapy takes a different approach: it stimulates a controlled healing response that can restart the repair process and strengthen the damaged tissue.
           </p>
           <p>
             The strongest research evidence for prolotherapy exists for three common tendinopathies: lateral epicondylosis (tennis elbow), plantar fasciitis and Achilles tendinopathy.
@@ -63,7 +48,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-6">Tennis Elbow (Lateral Epicondylosis)</h2>
           <div class="prose prose-lg prose-emerald">
             <p>
-              Lateral epicondylosis affects the tendons on the outside of the elbow and causes pain with gripping, lifting and twisting motions. Despite its name, it affects many people who don't play tennis—any repetitive arm activity can cause it.
+              Lateral epicondylosis affects the tendons on the outside of the elbow and causes pain with gripping, lifting and twisting motions. Despite its name, it affects many people who don't play tennis, and any repetitive arm activity can cause it.
             </p>
             <p>
               Tennis elbow has the strongest evidence base of any condition treated with prolotherapy. Multiple randomized controlled trials and a 2022 meta-analysis of 8 studies (354 patients) have demonstrated that dextrose prolotherapy is superior to control treatments.
@@ -106,7 +91,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               Plantar fasciitis causes heel pain, particularly with the first steps in the morning. It involves degeneration of the plantar fascia where it attaches to the heel bone. While many cases resolve with conservative treatment, chronic plantar fasciitis can be frustratingly persistent.
             </p>
             <p>
-              A 2021 meta-analysis of 8 randomized controlled trials (479 patients) confirmed that prolotherapy effectively reduces pain, improves foot function and even decreases plantar fascia thickness—suggesting actual tissue healing rather than just symptom relief.
+              A 2021 meta-analysis of 8 randomized controlled trials (479 patients) confirmed that prolotherapy effectively reduces pain, improves foot function and even decreases plantar fascia thickness, suggesting actual tissue healing rather than just symptom relief.
             </p>
           </div>
         </div>
@@ -174,29 +159,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </div>
   </section>
 
-  <!-- Rotator Cuff Section -->
-  <section id="rotator-cuff" class="py-16 lg:py-24 bg-white">
-    <div class="section-shell">
-      <div class="max-w-4xl mx-auto">
-        <div class="inline-block bg-slate-500 text-white text-sm font-semibold px-4 py-1 rounded-full mb-4">Mixed Evidence</div>
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-6">Rotator Cuff Tendinopathy</h2>
-        <div class="bg-slate-50 rounded-2xl p-8">
-          <div class="prose prose-lg prose-emerald max-w-none">
-            <p>
-              We believe in being transparent about the evidence. While some patients report improvement with prolotherapy for rotator cuff problems, the research is less conclusive than for the conditions above.
-            </p>
-            <p>
-              A 2025 meta-analysis found that prolotherapy was not superior to control treatments for pain and function in rotator cuff tendinopathy. Some studies showed minor structural improvements on imaging, but this didn't consistently translate to better clinical outcomes.
-            </p>
-            <p>
-              This doesn't mean prolotherapy can't help some patients with shoulder problems—individual responses vary, and clinical experience sometimes differs from study averages. However, we want patients to have realistic expectations. For rotator cuff issues, prolotherapy may be worth trying after other treatments have failed, but the evidence doesn't support it as a first-line treatment.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Treatment Protocol Section -->
   <section class="py-16 lg:py-24 bg-emerald-950">
     <div class="section-shell">
@@ -206,7 +168,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <div class="text-4xl font-bold text-white mb-4">3-6</div>
           <h3 class="text-xl font-serif font-semibold text-white mb-3">Sessions</h3>
           <p class="text-emerald-200">
-            Most tendon injuries require 3-6 treatment sessions. Response varies by condition and severity—some patients improve after 2-3 treatments while others need the full series.
+            Most tendon injuries require 3-6 treatment sessions. Response varies by condition and severity; some patients improve after 2-3 treatments while others need the full series.
           </p>
         </div>
         <div class="bg-white/10 rounded-2xl p-8">
@@ -220,7 +182,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <div class="text-4xl font-bold text-white mb-4">12.5-20%</div>
           <h3 class="text-xl font-serif font-semibold text-white mb-3">Dextrose Concentration</h3>
           <p class="text-emerald-200">
-            We use dextrose concentrations consistent with those used in clinical trials—typically 12.5-20% depending on the treatment area and patient factors.
+            We use dextrose concentrations consistent with those used in clinical trials, typically 12.5-20% depending on the treatment area and patient factors.
           </p>
         </div>
       </div>
@@ -296,55 +258,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </div>
   </section>
 
-  <!-- Pricing Section -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
-    <div class="section-shell">
-      <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-12 text-center">Pricing</h2>
-      <div class="max-w-xl mx-auto">
-        <div class="bg-white rounded-3xl shadow-xl p-8 lg:p-10">
-          <div class="text-center mb-6">
-            <h3 class="text-2xl font-serif font-bold text-emerald-950 mb-4">Prolotherapy for Tendon Injuries</h3>
-            <div class="text-4xl font-bold text-emerald-700">$200-$300</div>
-            <p class="text-slate-600 mt-2">per treatment session</p>
-          </div>
-          <ul class="space-y-3 text-slate-600 mb-8">
-            <li class="flex items-center gap-3">
-              <svg class="w-5 h-5 text-emerald-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-              </svg>
-              <span>Single tendon/area: $200</span>
-            </li>
-            <li class="flex items-center gap-3">
-              <svg class="w-5 h-5 text-emerald-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-              </svg>
-              <span>Multiple areas: $250-$300</span>
-            </li>
-            <li class="flex items-center gap-3">
-              <svg class="w-5 h-5 text-emerald-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-              </svg>
-              <span>Typically 3-6 sessions needed</span>
-            </li>
-            <li class="flex items-center gap-3">
-              <svg class="w-5 h-5 text-emerald-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-              </svg>
-              <span>Initial consultation: $150</span>
-            </li>
-          </ul>
-          <a
-            href="https://macleodnaturopathic.janeapp.com/"
-            target="_blank"
-            class="block w-full bg-emerald-700 text-white text-center px-6 py-3 rounded-full font-semibold hover:bg-emerald-800 transition-colors"
-          >
-            Book Appointment
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- FAQ Section -->
   <section class="py-16 lg:py-24 bg-white">
     <div class="section-shell">
@@ -358,7 +271,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             </svg>
           </summary>
           <div class="px-6 pb-6 text-slate-600">
-            Generally, you can continue most activities but should avoid high-intensity stress on the treated tendon for a few days after each treatment. For Achilles tendinopathy, we often recommend combining prolotherapy with a modified eccentric exercise program, as research shows this combination provides the best results.
+            No but avoid intense exercise on day of treatment. Return to regular intensity when comfort level allows (day 2 or later).
           </div>
         </details>
 
@@ -382,7 +295,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             </svg>
           </summary>
           <div class="px-6 pb-6 text-slate-600">
-            Previous cortisone injections don't prevent you from trying prolotherapy. We generally recommend waiting at least 4-6 weeks after a cortisone injection before starting prolotherapy, as the cortisone can interfere with the healing response we're trying to stimulate. Many patients come to us after cortisone has provided only temporary relief.
+            It is ok to have prolotherapy 1 week after cortisone injection.
           </div>
         </details>
 
@@ -394,7 +307,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             </svg>
           </summary>
           <div class="px-6 pb-6 text-slate-600">
-            Prolotherapy can help with partial tendon tears by stimulating tissue repair. However, complete tendon tears typically require surgical repair. We assess each case individually and can review any imaging you have to determine if prolotherapy is appropriate for your specific injury.
+            Yes. Complete tears can be helped with prolotherapy but take much longer for the body to complete its repair process.
           </div>
         </details>
 

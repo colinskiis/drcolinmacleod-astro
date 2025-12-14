@@ -3,7 +3,7 @@ title: "Chelation & Lead Toxicity"
 description: "Lead toxicity is a common disease which can be difficult to recognize. Chelation treatment and lead avoidance are the two essential weapons against lead."
 publishDate: 2015-02-02
 modifiedDate: 2022-07-12
-heroImage: "/images/treatments/lead-toxicity2.jpg"
+heroImage: "/images/treatments/lead-toxicity2.webp"
 categories: ["Naturopathic"]
 tags: ["naturopathic"]
 seo:

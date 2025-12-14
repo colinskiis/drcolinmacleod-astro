@@ -5,7 +5,7 @@ seo:
   focusKeyword: "Myers Cocktail IV therapy Halifax"
 ---
 
-![Myers' Cocktail IV therapy](/images/services/iv-therapy.jpeg)
+![Patient receiving Myers' Cocktail IV therapy](/images/treatments/nad-patient.webp)
 
 ## What Is A Myers' Cocktail?
 
@@ -33,7 +33,7 @@ Each nutrient in the Myers' Cocktail serves a specific purpose. Here's what you'
 <div style="flex-shrink: 0; width: 48px; height: 48px; background: linear-gradient(135deg, #065f46 0%, #047857 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">Mg</div>
 <div>
 
-**The Relaxation Mineral** — Essential for over 300 enzymatic reactions in the body. Supports muscle relaxation, blood vessel dilation, and nerve function. Many Nova Scotians are deficient in magnesium<sup>3</sup>, contributing to muscle tension, migraines, and cardiovascular issues<sup>4,7</sup>.
+**The Relaxation Mineral**: Essential for over 300 enzymatic reactions in the body. Supports muscle relaxation, blood vessel dilation, and nerve function. Many Nova Scotians are deficient in magnesium<sup>3</sup>, contributing to muscle tension, migraines, and cardiovascular issues<sup>4,7</sup>.
 </div>
 </div>
 
@@ -42,7 +42,7 @@ Each nutrient in the Myers' Cocktail serves a specific purpose. Here's what you'
 <div style="flex-shrink: 0; width: 48px; height: 48px; background: linear-gradient(135deg, #065f46 0%, #047857 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">B</div>
 <div>
 
-**The Energy Complex** — Six essential B vitamins work together to convert food into cellular energy, support nervous system function, and maintain mental clarity. Critical for anyone experiencing fatigue or brain fog.
+**The Energy Complex**: Six essential B vitamins work together to convert food into cellular energy, support nervous system function, and maintain mental clarity. Critical for anyone experiencing fatigue or brain fog.
 </div>
 </div>
 
@@ -60,7 +60,7 @@ Each nutrient in the Myers' Cocktail serves a specific purpose. Here's what you'
 <div style="flex-shrink: 0; width: 48px; height: 48px; background: linear-gradient(135deg, #065f46 0%, #047857 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">C</div>
 <div>
 
-**The Immune Powerhouse** — When given intravenously, vitamin C reaches blood concentrations **50 times higher** than oral supplementation<sup>2</sup>. At these levels, it demonstrates significant fatigue-reducing<sup>10</sup> and antiviral<sup>11</sup> properties.
+**The Immune Powerhouse**: When given intravenously, vitamin C reaches blood concentrations **50 times higher** than oral supplementation<sup>2</sup>. At these levels, it demonstrates significant fatigue-reducing<sup>10</sup> and antiviral<sup>11</sup> properties.
 </div>
 </div>
 
@@ -69,7 +69,7 @@ Each nutrient in the Myers' Cocktail serves a specific purpose. Here's what you'
 <div style="flex-shrink: 0; width: 48px; height: 48px; background: linear-gradient(135deg, #065f46 0%, #047857 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">Ca</div>
 <div>
 
-**The Structural Support** — Beyond bone health, calcium is essential for muscle contraction, nerve transmission, and heart rhythm. Works synergistically with magnesium for optimal effect.
+**The Structural Support**: Beyond bone health, calcium is essential for muscle contraction, nerve transmission, and heart rhythm. Works synergistically with magnesium for optimal effect.
 </div>
 </div>
 
@@ -81,7 +81,7 @@ The Myers' Cocktail works by increasing blood concentration of essential vitamin
 
 When you take vitamins orally, they must pass through your digestive system where absorption is limited by gut health, enzyme availability, and competition between nutrients. IV administration bypasses these barriers entirely, delivering nutrients directly to your cells.
 
-> **Example**: Oral vitamin C absorption plateaus at about 200mg — no matter how much more you take, your body can't absorb it. IV vitamin C reaches blood concentrations **50 times higher**<sup>2</sup>, enabling therapeutic effects impossible with oral supplementation.
+> **Example**: Oral vitamin C absorption plateaus at about 200mg; no matter how much more you take, your body can't absorb it. IV vitamin C reaches blood concentrations **50 times higher**<sup>2</sup>, enabling therapeutic effects impossible with oral supplementation.
 
 ---
 
@@ -90,26 +90,26 @@ When you take vitamins orally, they must pass through your digestive system wher
 Dr. Alan Gaby MD has published a comprehensive review<sup>1</sup> of his experience treating 800-1,000 patients with the Myers' Cocktail over 11 years, giving approximately **15,000 infusions**. Conditions that responded well include:
 
 ### Energy & Fatigue Conditions
-- **Chronic Fatigue Syndrome** — Often dramatic improvement in energy levels
-- **Fibromyalgia** — Reduction in pain and fatigue<sup>13</sup>
-- **General fatigue** — Quick energy restoration
-- **Post-viral fatigue** — Accelerated recovery
+- **Chronic Fatigue Syndrome**: Often dramatic improvement in energy levels
+- **Fibromyalgia**: Reduction in pain and fatigue<sup>13</sup>
+- **General fatigue**: Quick energy restoration
+- **Post-viral fatigue**: Accelerated recovery
 
 ### Pain & Neurological Conditions
-- **Migraines** — Both acute treatment and prevention<sup>8</sup>
-- **Acute muscle spasms** — Rapid relief through magnesium
-- **Tension headaches** — Related to magnesium deficiency
+- **Migraines**: Both acute treatment and prevention<sup>8</sup>
+- **Acute muscle spasms**: Rapid relief through magnesium
+- **Tension headaches**: Related to magnesium deficiency
 
 ### Immune & Respiratory Conditions
-- **Upper respiratory infections** — Faster recovery
-- **Chronic sinusitis** — Reduced inflammation
-- **Seasonal allergies** — Symptom relief
-- **Acute asthma attacks** — Bronchodilation support
+- **Upper respiratory infections**: Faster recovery
+- **Chronic sinusitis**: Reduced inflammation
+- **Seasonal allergies**: Symptom relief
+- **Acute asthma attacks**: Bronchodilation support
 
 ### Performance & Wellness
-- **Athletic performance** — Enhanced recovery and endurance
-- **Cardiovascular support** — Through magnesium's heart benefits<sup>4,9</sup>
-- **Pre-event optimization** — Popular before races and competitions
+- **Athletic performance**: Enhanced recovery and endurance
+- **Cardiovascular support**: Through magnesium's heart benefits<sup>4,9</sup>
+- **Pre-event optimization**: Popular before races and competitions
 
 ---
 
@@ -149,24 +149,11 @@ I have found that the Myers' Cocktail has been a very helpful treatment for seve
 ### What Patients Typically Experience
 
 After receiving a Myers' Cocktail, patients often report:
-- **Immediate energy boost** — Often noticeable within hours
-- **Improved ability to fight infections** — Especially lingering colds or flu
-- **Fibromyalgia relief** — Decreased fatigue and pain lasting 1-3 weeks
-- **Mental clarity** — Reduced brain fog and improved focus
-- **Better sleep quality** — Particularly if magnesium-deficient
-
----
-
-## Pricing
-
-| Treatment | Price | Notes |
-|-----------|-------|-------|
-| **Myers' Cocktail** | $120 | Standard IV nutrient infusion |
-| **Initial Consultation** | $200 | Required before first treatment |
-| **Initial Consult + Myers'** | $270 | Save $50 when combined |
-| **Follow-up IV Treatment** | $120 | Subsequent visits |
-
-*Most extended health insurance plans cover naturopathic services including IV therapy administration.*
+- **Immediate energy boost**: Often noticeable within hours
+- **Improved ability to fight infections**: Especially lingering colds or flu
+- **Fibromyalgia relief**: Decreased fatigue and pain lasting 1-3 weeks
+- **Mental clarity**: Reduced brain fog and improved focus
+- **Better sleep quality**: Particularly if magnesium-deficient
 
 ---
 
@@ -177,9 +164,9 @@ There are no documented major adverse effects of Myers' Cocktail infusions. Avai
 ### Possible Temporary Effects
 
 In practice, the most common effects I have observed include:
-- **Lightheadedness** — Brief and transient, usually from low blood pressure
-- **Warmth or flushing** — Normal response to magnesium
-- **Discomfort at IV site** — Easily prevented by adjusting infusion rate
+- **Lightheadedness**: Brief and transient, usually from low blood pressure
+- **Warmth or flushing**: Normal response to magnesium
+- **Discomfort at IV site**: Easily prevented by adjusting infusion rate
 
 These effects are generally self-limiting and resolve within minutes. Proper hydration before treatment minimizes most side effects.
 
@@ -228,7 +215,7 @@ To ensure that IV nutrient therapy will be safe and effective for you, an **init
 - Determine if Myers' Cocktail or a customized formula is best for you
 - Answer any questions you have
 
-If you would like to receive your first Myers' Cocktail on the same day as your initial consultation, please book an **"Initial consultation with IV treatment"** to save $50.
+If you would like to receive your first Myers' Cocktail on the same day as your initial consultation, please book an **"Initial consultation with IV treatment"**.
 
 <div style="background: linear-gradient(135deg, #065f46 0%, #047857 100%); padding: 2rem; border-radius: 1rem; text-align: center; margin: 2rem 0;">
 <p style="color: white; font-size: 1.25rem; margin-bottom: 1rem;"><strong>Ready to experience the Myers' Cocktail?</strong></p>

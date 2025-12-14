@@ -1,11 +1,13 @@
 ---
 title: "Magnesium - The Natural Muscle Relaxer"
-description: "Magnesium is a mineral which we need in our diet every day to ensure continued good health. Magnesium is an important factor in healthy functioning of muscles,..."
+description: "Magnesium is a mineral essential for healthy muscles, nervous system, cardiovascular system and digestive tract. Learn about magnesium deficiency symptoms and food sources."
 publishDate: 2019-09-24
 modifiedDate: 2022-07-12
-heroImage: "/images/conditions/woman-fibromyalgia-pain.jpeg"
+heroImage: "/images/conditions/woman-fibromyalgia-pain.webp"
 categories: ["Naturopathic"]
 tags: ["naturopathic"]
+seo:
+  focusKeyword: "magnesium deficiency"
 ---
 
 Magnesium is a mineral which we need in our diet every day to ensure continued good health. Magnesium is an important factor in healthy functioning of muscles, the nervous system, cardiovascular system and digestive tract. In the developing child magnesium is also important in the development of healthy bones and DNA.

@@ -3,7 +3,7 @@ title: "Methylation & The MTHFR Gene"
 description: "Methylation, the attachment of a methyl group to another molecule, is a critical process for building, maintaining and repairing throughout the body."
 publishDate: 2015-07-07
 modifiedDate: 2022-07-12
-heroImage: "/images/charts/methylation-mthfr-brain-mind.jpg"
+heroImage: "/images/charts/methylation-mthfr-brain-mind.webp"
 categories: ["Naturopathic"]
 tags: ["naturopathic"]
 seo:
@@ -36,7 +36,7 @@ Methylation can be interrupted by a few common issues:
 
 ## When Methylation Goes Wrong
 
-<img src="/images/general/dna-methylation.jpg" alt="DNA methylation illustration" />
+<img src="/images/general/dna-methylation.webp" alt="DNA methylation illustration" />
 
 A single nucleotide polymorphism (SNP) of the MTHFR gene is a common cause of methylation issues. People who have MTHFR SNPs are more likely to suffer a number of health conditions, including: autism<sup>11</sup>, cognitive decline<sup>12</sup>, depression, bipolar disorder, schizophrenia<sup>13</sup>, diabetes<sup>14,15</sup>, down syndrome<sup>16,17</sup>, essential hypertension<sup>18</sup>, gastric cancer<sup>19</sup>, ischemic stroke<sup>20</sup>, migraine<sup>21</sup>, neural tube defects<sup>22</sup> and smoking addiction<sup>23</sup>.
 
@@ -56,7 +56,7 @@ MTHFR SNPs are common throughout the world. A large study of 37,000 people found
 
 ## Where Can I Get Tested For Methylation Issues?
 
-<img src="/images/general/genetic-testing.jpg" alt="Genetic testing" />
+<img src="/images/general/genetic-testing.webp" alt="Genetic testing" />
 
 Below is a list of labs which test for MTHFR single nucleotide polymorphisms (SNPs):
 
@@ -77,7 +77,7 @@ Although MTHFR gene SNPs (copying errors) are quite common, there are other impo
 
 ## Methylation Testing In Halifax, Nova Scotia
 
-If you are interested in having genetic testing done and are located in the Halifax area, please contact MacLeod Naturopathic to book an initial naturopathic visit to discuss your options. Dr. MacLeod has completed formal training with Dr. Ben Lynch ND, an expert in the field of methylation.
+If you are interested in having genetic testing done and are located in the Halifax area, please contact MacLeod Naturopathic to book an initial naturopathic visit to discuss your options. Dr. MacLeod offers comprehensive [lab testing services](/lab-testing) including genetic testing for methylation issues. Dr. MacLeod has completed formal training with Dr. Ben Lynch ND, an expert in the field of methylation.
 
 ### References
 

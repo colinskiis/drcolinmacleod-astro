@@ -1,6 +1,8 @@
 ---
 title: "Tennis Elbow"
-description: "Lateral epicondylitis, otherwise known as tennis elbow, is a common condition which causes forearm pain for many Canadians. Tennis players, including amate..."
+description: "Tennis elbow (lateral epicondylitis) causes forearm pain from repetitive strain. Learn about causes, risk factors, and effective natural treatments."
+seo:
+  focusKeyword: "tennis elbow treatment"
 ---
 
 ![Tennis elbow treatment](/images/conditions/tennis-elbow.jpeg)

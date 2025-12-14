@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import CTAButton from '../components/CTAButton.astro';
 ---
 
 <BaseLayout
@@ -7,38 +9,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   description="Naturopathic treatment for fibromyalgia in Halifax. IV nutrient therapy including Myers' Cocktail, comprehensive testing and personalized treatment plans for pain and fatigue relief."
   focusKeyword="fibromyalgia treatment Halifax"
 >
-  <!-- Hero Section -->
-  <section class="bg-emerald-950 -mt-24 pt-48 pb-16 lg:pt-56 lg:pb-24">
-    <div class="section-shell">
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
-        <div class="space-y-6">
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-white tracking-tight">Fibromyalgia Treatment</h1>
-          <p class="text-lg sm:text-xl text-white/90 leading-relaxed font-light">
-            Fibromyalgia affects over <strong class="text-white">500,000 Canadians</strong> with widespread pain, fatigue and cognitive difficulties. We offer comprehensive naturopathic care including <strong class="text-white">IV nutrient therapy</strong> to help manage your symptoms and improve quality of life.
-          </p>
-          <div class="flex flex-col sm:flex-row gap-4">
-            <a
-              href="https://macleodnaturopathic.janeapp.com/"
-              target="_blank"
-              class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center justify-center"
-            >
-              Book Your Appointment
-              <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-              </svg>
-            </a>
-          </div>
-        </div>
-        <div class="rounded-2xl overflow-hidden shadow-2xl">
-          <img
-            src="/images/conditions/fibromyalgia-hero.jpg"
-            alt="Fibromyalgia treatment and pain relief"
-            class="w-full h-full object-cover aspect-video"
-          />
-        </div>
-      </div>
-    </div>
-  </section>
+  <HeroSection
+    title="Fibromyalgia Treatment"
+    compact
+    image={{ src: "/images/conditions/fibromyalgia-hero.webp", alt: "Fibromyalgia treatment and pain relief", aspect: "video" }}
+  >
+    <p>Fibromyalgia affects over <strong class="text-white">500,000 Canadians</strong> with widespread pain, fatigue and cognitive difficulties. We offer comprehensive naturopathic care including <strong class="text-white">IV nutrient therapy</strong> to help manage your symptoms and improve quality of life.</p>
+    <CTAButton slot="cta" />
+  </HeroSection>
 
   <!-- Statistics -->
   <section class="py-12 bg-white">
@@ -197,12 +175,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             </div>
           </div>
 
-          <div class="mt-8 pt-6 border-t border-white/20">
-            <div class="flex justify-between items-center">
-              <span class="font-semibold">Myers' Cocktail</span>
-              <span class="text-2xl font-bold">$120</span>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -302,7 +274,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <div class="flex-shrink-0 w-12 h-12 bg-emerald-700 rounded-full flex items-center justify-center text-white font-bold text-lg">3</div>
             <div>
               <h3 class="text-xl font-semibold text-emerald-950 mb-2">IV Therapy</h3>
-              <p class="text-gray-600">If appropriate, we'll begin Myers' Cocktail treatments. Each infusion takes 30-45 minutes. Many patients feel improvement within hours—decreased pain, increased energy, better mental clarity.</p>
+              <p class="text-gray-600">If appropriate, we'll begin Myers' Cocktail treatments. Each infusion takes 30-45 minutes. Many patients feel improvement within hours: decreased pain, increased energy, better mental clarity.</p>
             </div>
           </div>
 
@@ -313,45 +285,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               <p class="text-gray-600">We'll work with you to find the optimal treatment frequency and address other aspects of your health. Most fibromyalgia patients do best with regular IV treatments combined with other supportive strategies.</p>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Pricing -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
-    <div class="section-shell">
-      <div class="max-w-3xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Getting Started</h2>
-
-        <div class="bg-white rounded-2xl shadow-xl p-8">
-          <div class="space-y-4">
-            <div class="flex justify-between items-center pb-4 border-b border-gray-100">
-              <div>
-                <h3 class="font-semibold text-emerald-950">Initial Naturopathic Consultation</h3>
-                <p class="text-sm text-gray-500">60 minutes — comprehensive assessment</p>
-              </div>
-              <span class="text-2xl font-bold text-emerald-700">$200</span>
-            </div>
-
-            <div class="flex justify-between items-center pb-4 border-b border-gray-100">
-              <div>
-                <h3 class="font-semibold text-emerald-950">Myers' Cocktail IV Treatment</h3>
-                <p class="text-sm text-gray-500">30-45 minute infusion</p>
-              </div>
-              <span class="text-2xl font-bold text-emerald-700">$120</span>
-            </div>
-
-            <div class="flex justify-between items-center p-4 bg-emerald-50 rounded-xl">
-              <div>
-                <h3 class="font-semibold text-emerald-950">Initial Consult + First IV Treatment</h3>
-                <p class="text-sm text-emerald-600">Save $50 when combined</p>
-              </div>
-              <span class="text-2xl font-bold text-emerald-700">$270</span>
-            </div>
-          </div>
-
-          <p class="text-sm text-gray-500 mt-6 text-center">Most extended health insurance plans cover naturopathic services including IV therapy</p>
         </div>
       </div>
     </div>
@@ -408,7 +341,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               </svg>
             </summary>
             <div class="px-6 pb-6 text-gray-600">
-              Fibromyalgia and ME/CFS frequently overlap and share many features. The good news is that our approach—IV therapy, testing and comprehensive support—addresses both conditions. We'll tailor your treatment plan to address your specific combination of symptoms.
+              Fibromyalgia and ME/CFS frequently overlap and share many features. The good news is that our approach. IV therapy, testing and comprehensive support, addresses both conditions. We'll tailor your treatment plan to address your specific combination of symptoms.
             </div>
           </details>
 

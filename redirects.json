@@ -125,7 +125,11 @@
   },
   {
     "from": "/acupuncture-injury-pain",
-    "to": "/pages/acupuncture-for-injury-pain"
+    "to": "/acupuncture"
+  },
+  {
+    "from": "/acupuncture-for-injury-pain",
+    "to": "/acupuncture"
   },
   {
     "from": "/myers-cocktail-intravenous-nutrients",

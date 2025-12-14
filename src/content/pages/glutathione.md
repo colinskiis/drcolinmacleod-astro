@@ -1,9 +1,11 @@
 ---
 title: "Glutathione"
-description: "What is Glutathione Glutathione is a potent antioxidant that the body produces naturally from three amino acid starting materials: glycine, glutamine an..."
+description: "Glutathione is the body's master antioxidant, essential for fighting oxidative stress and supporting cellular health. Learn about IV glutathione therapy benefits."
+seo:
+  focusKeyword: "glutathione IV therapy"
 ---
 
-<div class="wp-block-stackable-image stk-block-image stk-block stk-8cbc70b" data-block-id="8cbc70b"><figure class="stk-img-wrapper stk-image--shape-stretch"><img class="stk-img wp-image-6605" src="/images/treatments/glutathione-iv.jpeg" width="1000" height="588" alt="Glutathione bottle. For IV use."/></figure></div>
+<div class="wp-block-stackable-image stk-block-image stk-block stk-8cbc70b" data-block-id="8cbc70b"><figure class="stk-img-wrapper stk-image--shape-stretch"><img class="stk-img wp-image-6605" src="/images/treatments/glutathione-iv.webp" width="1000" height="588" alt="Glutathione bottle. For IV use."/></figure></div>
 
 <div class="wp-block-stackable-heading stk-block-heading stk-block stk-eb8fc6e" id="what-is-glutathione" data-block-id="eb8fc6e"><h2 class="stk-block-heading__text">What is Glutathione</h2></div>
 

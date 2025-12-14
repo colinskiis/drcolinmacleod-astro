@@ -3,7 +3,7 @@ title: "Chelation Therapy for Heart Disease: The TACT Trial and Beyond"
 description: "EDTA chelation therapy has been studied in major NIH-funded trials for cardiovascular disease. Learn about the TACT study results, how chelation may benefit heart health, and what this means for Nova Scotians."
 publishDate: 2024-12-04
 modifiedDate: 2024-12-04
-heroImage: "/images/conditions/chelation-heart-disease.jpg"
+heroImage: "/images/conditions/chelation-heart-disease.webp"
 categories: ["Naturopathic", "Heart Health"]
 tags: ["chelation", "cardiovascular", "TACT trial", "heart disease"]
 seo:
@@ -11,7 +11,7 @@ seo:
   focusKeyword: "chelation therapy heart disease"
 ---
 
-Heart disease remains the second leading cause of death in Canada, claiming thousands of lives each year.<sup>1</sup> Nova Scotia has among the highest rates of ischemic heart disease in the country, with prevalence reaching 9.7%—the highest of any Canadian province.<sup>2</sup> While conventional treatments like medications, stents and bypass surgery remain important, many patients are seeking additional options to improve their cardiovascular health. EDTA chelation therapy has emerged as a promising complementary approach, backed by the largest NIH-funded trial ever conducted on this treatment.
+Heart disease remains the second leading cause of death in Canada, claiming thousands of lives each year.<sup>1</sup> Nova Scotia has among the highest rates of ischemic heart disease in the country, with prevalence reaching 9.7%, the highest of any Canadian province.<sup>2</sup> While conventional treatments like medications, stents and bypass surgery remain important, many patients are seeking additional options to improve their cardiovascular health. EDTA chelation therapy has emerged as a promising complementary approach, backed by the largest NIH-funded trial ever conducted on this treatment.
 
 ## The TACT Trial: A Landmark Study
 
@@ -45,7 +45,7 @@ Research published in the Journal of the American Heart Association found that c
 
 ### 2. Reduction of Oxidative Stress
 
-Heavy metals catalyze the formation of free radicals—highly reactive molecules that damage blood vessel walls and promote atherosclerosis.<sup>15</sup> By removing iron, copper and other metals that drive oxidative stress, chelation therapy may help reduce inflammation and protect the endothelium (the lining of blood vessels).<sup>16</sup>
+Heavy metals catalyze the formation of free radicals, highly reactive molecules that damage blood vessel walls and promote atherosclerosis.<sup>15</sup> By removing iron, copper and other metals that drive oxidative stress, chelation therapy may help reduce inflammation and protect the endothelium (the lining of blood vessels).<sup>16</sup>
 
 ### 3. Improved Endothelial Function
 
@@ -57,7 +57,7 @@ EDTA also binds calcium, potentially softening calcified plaques and improving a
 
 ## Understanding the TACT2 Trial
 
-Following the positive TACT results, a follow-up study called TACT2 was conducted specifically in diabetic patients who had suffered a heart attack—the group that showed the most benefit in the original trial.<sup>19</sup>
+Following the positive TACT results, a follow-up study called TACT2 was conducted specifically in diabetic patients who had suffered a heart attack. This was the group that showed the most benefit in the original trial.<sup>19</sup>
 
 TACT2, which enrolled 959 patients between 2015 and 2020, did not replicate the dramatic benefits seen in TACT. The primary outcome occurred in 35% of both the chelation and placebo groups.<sup>19</sup>
 
@@ -71,7 +71,7 @@ Several factors may explain this difference:
 
 **Different patient population**: While both trials studied diabetic post-heart attack patients, the improved survival rates with modern therapy may have changed the population characteristics.
 
-The TACT2 investigators noted that in areas with higher environmental lead exposure—which includes many regions outside North America—chelation therapy may still provide significant cardiovascular benefits.<sup>19</sup>
+The TACT2 investigators noted that in areas with higher environmental lead exposure, which includes many regions outside North America, chelation therapy may still provide significant cardiovascular benefits.<sup>19</sup>
 
 ## Heavy Metals and Heart Disease: The Evidence
 
@@ -91,7 +91,7 @@ A study published in Circulation found that higher blood levels of lead and cadm
 
 ## Heart Disease in Nova Scotia
 
-Nova Scotians face particular cardiovascular health challenges. The province has the highest ischemic heart disease prevalence in Canada at 9.7%,<sup>2</sup> along with elevated rates of hypertension and diabetes—both major cardiovascular risk factors.<sup>27</sup> Additionally, older homes and infrastructure in the region may contribute to lead exposure. Given these statistics, exploring all evidence-based options for cardiovascular health is particularly important for our region.
+Nova Scotians face particular cardiovascular health challenges. The province has the highest ischemic heart disease prevalence in Canada at 9.7%,<sup>2</sup> along with elevated rates of hypertension and diabetes, both major cardiovascular risk factors.<sup>27</sup> Additionally, older homes and infrastructure in the region may contribute to lead exposure. Given these statistics, exploring all evidence-based options for cardiovascular health is particularly important for our region.
 
 ## Sources of Heavy Metal Exposure
 
@@ -161,10 +161,6 @@ Most extended health insurance plans in Nova Scotia cover naturopathic services,
 
 Testing options include blood tests for recent exposure and provoked urine challenge tests for total body burden. These can be arranged as part of your initial consultation.
 
-### What is the cost of chelation therapy?
-
-Chelation therapy is $140 per treatment. An initial consultation ($200) is required before starting treatment. When combined, the initial consultation with first treatment is $260.
-
 ## References
 
 1. Statistics Canada. Leading causes of death, total population, by age group. Table 13-10-0394-01. 2022.
@@ -175,7 +171,7 @@ Chelation therapy is $140 per treatment. An initial consultation ($200) is requi
 6. Lamas GA, Ergui I. Chelation therapy to treat atherosclerosis, particularly in diabetes: is it time to reconsider? Expert Rev Cardiovasc Ther. 2016;14(8):927-938.
 7. Amsterdam EA, Wenger NK, Brindis RG, et al. 2014 AHA/ACC guideline for the management of patients with non-ST-elevation acute coronary syndromes. Circulation. 2014;130(25):e344-426.
 8. Lamas GA, Bhatnagar A, Jones MR, et al. Contaminant Metals as Cardiovascular Risk Factors: A Scientific Statement From the American Heart Association. J Am Heart Assoc. 2023;12(13):e029852.
-9. Navas-Acien A, Guallar E, Silbergeld EK, Rothenberg SJ. Lead exposure and cardiovascular disease—a systematic review. Environ Health Perspect. 2007;115(3):472-82.
+9. Navas-Acien A, Guallar E, Silbergeld EK, Rothenberg SJ. Lead exposure and cardiovascular disease: a systematic review. Environ Health Perspect. 2007;115(3):472-82.
 10. Menke A, Muntner P, Batuman V, et al. Blood lead below 0.48 micromol/L (10 microg/dL) and mortality among US adults. Circulation. 2006;114(13):1388-94.
 11. Navas-Acien A, Selvin E, Sharrett AR, et al. Lead, cadmium, smoking, and increased risk of peripheral arterial disease. Circulation. 2004;109(25):3196-201.
 12. Lanphear BP, Rauch S, Auinger P, et al. Low-level lead exposure and mortality in US adults: a population-based cohort study. Lancet Public Health. 2018;3(4):e177-e184.

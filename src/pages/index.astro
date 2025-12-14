@@ -5,7 +5,7 @@ import BookingButton from '../components/BookingButton.astro';
 
 <BaseLayout 
   title="Home" 
-  description="Dr. Colin MacLeod ND — MacLeod Naturopathic Health Clinic in Halifax, NS. Evidence-based naturopathic medicine, IV therapy, prolotherapy, acupuncture, nutrition."
+  description="Dr. Colin MacLeod ND, MacLeod Naturopathic Health Clinic in Halifax, NS. Evidence-based naturopathic medicine, IV therapy, prolotherapy, acupuncture, nutrition."
   focusKeyword="MacLeod Naturopathic Health Clinic, Dr. Colin MacLeod ND, Halifax naturopathic doctor, IV therapy, prolotherapy, acupuncture"
   image="/images/reference/home-background.webp"
 >
@@ -14,11 +14,11 @@ import BookingButton from '../components/BookingButton.astro';
     <div
       class="absolute inset-y-0 right-0 w-full sm:w-3/5 pointer-events-none"
       style="
-        background-image: url('/images/reference/doctor-portrait.png');
+        background-image: url('/images/general/Dr-colin-macleod-ND.jpeg');
         background-size: contain;
         background-repeat: no-repeat;
-        background-position: bottom right 0;
-        top: 6rem; /* Push down to clear header */
+        background-position: right bottom;
+        top: 0;
         bottom: 0;
         opacity: 1;
         mix-blend-mode: normal;
@@ -30,11 +30,11 @@ import BookingButton from '../components/BookingButton.astro';
         <h1 class="text-4xl sm:text-5xl lg:text-[64px] font-bold font-serif leading-[1.1] tracking-tight text-emerald-950 lg:text-white drop-shadow-sm lg:drop-shadow-lg">
           Dr. Colin MacLeod ND
         </h1>
-        <p class="text-lg sm:text-xl lg:text-2xl text-emerald-900 lg:text-white/90 max-w-xl leading-relaxed font-light">
+        <p class="text-lg sm:text-xl lg:text-2xl text-emerald-900 lg:text-emerald-100 max-w-xl leading-relaxed font-light">
           Naturopathic medicine combining the wisdom of traditional healing with the precision of modern science.
         </p>
         <div class="pt-4">
-          <BookingButton text="Book Appointment" size="lg" source="hero" />
+          <BookingButton text="Book Your Appointment" size="lg" source="hero" />
         </div>
       </div>
     </div>
@@ -55,13 +55,13 @@ import BookingButton from '../components/BookingButton.astro';
       <div class="relative overflow-hidden rounded-[40px] border border-white/10 bg-white/5 backdrop-blur-sm shadow-2xl shadow-emerald-950/50">
         <div class="relative px-8 sm:px-12 lg:px-16 py-16 sm:py-20 lg:py-24">
           <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <p class="inline-block px-4 py-1.5 rounded-full bg-white/10 text-white/90 border border-white/20 text-sm font-medium tracking-wide uppercase">About our clinic</p>
+            <p class="inline-block px-4 py-1.5 rounded-full bg-white/10 text-emerald-100 border border-white/20 text-sm font-medium tracking-wide uppercase">About our clinic</p>
             <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-medium text-white leading-[1.2]">Elevate your health.<br />Address the cause.</h2>
           </div>
           <div class="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-4">
             <div class="bg-white/10 border border-white/10 rounded-2xl px-6 py-8 text-white shadow-lg hover:bg-white/15 transition-colors duration-300 flex flex-col items-center text-center">
               <div class="mb-6 text-white">
-                <svg class="w-12 h-12" viewBox="0 0 480.436 480.436" fill="currentColor">
+                <svg class="w-12 h-12" viewBox="0 0 480.436 480.436" fill="currentColor" aria-hidden="true">
                   <path d="m417.057 88.333c-7.881 7.043 2.77 18.982 10.662 11.93 26.831-23.978 44.998-55.245 52.535-90.422 1.217-5.68-3.842-10.711-9.498-9.499-63.881 13.689-114.174 63.294-128.91 126.772l-27.343 27.343c14.451-46.952 7.965-98.879-19.511-141.341-3.15-4.866-10.283-4.867-13.434 0-36.01 55.652-36.011 127.572-.002 183.225 2.35 3.632 7.249 4.78 10.986 2.419 49.514-31.359 107.803-31.492 154.485-6.759-35.359 18.762-76.729 22.944-115.432 11.312-10.134-3.047-14.73 12.28-4.605 15.323 47.331 14.225 98.434 7.082 140.167-19.921 4.857-3.143 4.876-10.278 0-13.433-42.461-27.476-94.388-33.962-141.34-19.512 32.836-32.836 30.419-29.705 31.021-32.514 11.64-54.32 51.962-97.806 104.442-113.932-8.13 26.61-23.253 50.268-44.223 69.009zm-128.782-55.082c23.636 44.618 23.636 98.338 0 142.958-23.636-44.619-23.636-98.339 0-142.958zm122.093 258.013c-56.575-36.607-126.401-43.871-188.24-21.804l44.053-44.053c7.474-7.474-3.828-18.798-11.314-11.314l-44.053 44.053c22.067-61.839 14.804-131.666-21.803-188.242-3.15-4.866-10.283-4.867-13.434 0-32.974 50.96-42.752 113.782-26.826 172.358 2.773 10.2 18.216 6.015 15.439-4.198-13.591-49.988-6.949-103.319 18.104-148.296 35.283 63.331 33.176 141.652-6.304 203.2l-78.409 78.409c23.432-59.926 23.828-127.338-.22-188.203-3.882-9.83-18.769-3.965-14.881 5.879 26.951 68.211 21.17 145.195-15.108 208.482-44.645-77.851-42.407-174.953 6.718-250.872 5.742-8.873-7.683-17.579-13.434-8.692-53.71 83.009-54.853 189.754-3.446 273.78l-54.758 54.757c-7.475 7.475 3.83 18.796 11.314 11.314l58.642-58.642c75.819-48.694 172.562-50.792 250.177-6.282-60.804 34.796-135.098 41.564-201.308 17.813-9.948-3.57-15.367 11.486-5.402 15.06 73.12 26.231 157.294 18.58 226.425-26.153 4.857-3.143 4.876-10.278 0-13.433-70.182-45.412-157.336-53.25-233.38-23.517l74.533-74.533c69.941 42.301 158.281 40.974 226.914-3.436 4.859-3.145 4.877-10.28.001-13.435zm-212.558 6.717c59.778-33.303 132.92-33.302 192.696 0-59.776 33.302-132.918 33.304-192.696 0z"></path>
                 </svg>
               </div>
@@ -71,7 +71,7 @@ import BookingButton from '../components/BookingButton.astro';
 
             <div class="bg-white/10 border border-white/10 rounded-2xl px-6 py-8 text-white shadow-lg hover:bg-white/15 transition-colors duration-300 flex flex-col items-center text-center">
               <div class="mb-6 text-white">
-                <svg class="w-12 h-12" viewBox="0 0 511.999 511.999" fill="currentColor">
+                <svg class="w-12 h-12" viewBox="0 0 511.999 511.999" fill="currentColor" aria-hidden="true">
                   <path d="M410.25,179.331c-16.651,0.001-30.197,13.548-30.197,30.198c0,16.652,13.547,30.198,30.197,30.198
 			c16.652,0,30.198-13.547,30.198-30.198C440.449,192.878,426.902,179.331,410.25,179.331z M410.25,224.708
 			c-8.369,0-15.178-6.809-15.178-15.179c0-8.37,6.809-15.179,15.178-15.179s15.179,6.809,15.179,15.179
@@ -125,7 +125,7 @@ import BookingButton from '../components/BookingButton.astro';
 
             <div class="bg-white/10 border border-white/10 rounded-2xl px-6 py-8 text-white shadow-lg hover:bg-white/15 transition-colors duration-300 flex flex-col items-center text-center">
               <div class="mb-6 text-white">
-                <svg class="w-12 h-12" viewBox="0 0 512 512" fill="currentColor">
+                <svg class="w-12 h-12" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true">
                   <path d="M437.02,74.98C388.667,26.628,324.38,0,256,0S123.333,26.628,74.98,74.98S0,187.62,0,256s26.628,132.667,74.98,181.02
 		S187.62,512,256,512s132.667-26.628,181.02-74.98S512,324.38,512,256S485.372,123.333,437.02,74.98z M425.706,425.706
 		C380.376,471.036,320.106,496,256,496s-124.376-24.964-169.706-70.294C40.964,380.376,16,320.106,16,256
@@ -176,7 +176,7 @@ import BookingButton from '../components/BookingButton.astro';
 
             <div class="bg-white/10 border border-white/10 rounded-2xl px-6 py-8 text-white shadow-lg hover:bg-white/15 transition-colors duration-300 flex flex-col items-center text-center">
               <div class="mb-6 text-white">
-                <svg class="w-12 h-12" viewBox="0 0 512 512" fill="currentColor">
+                <svg class="w-12 h-12" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true">
                   <path d="m432.652344 89.957031-10.605469-10.605469-52.652344 52.652344-67.289062-67.289062-34.242188 34.238281 30.152344 30.152344-193.640625 193.640625 22.386719 22.386718-24.355469 24.355469-6.242188 20.25-31.960937 31.960938 7.746094 7.746093-71.949219 71.949219 10.605469 10.605469 71.953125-71.953125 7.746094 7.746094 31.960937-31.960938 20.246094-6.238281 24.355469-24.355469 22.386718 22.386719 193.640625-193.640625 30.152344 30.148437 34.238281-34.238281-67.285156-67.285156zm-298.113282 306.398438-20.25 6.238281-23.984374 23.988281-4.886719-4.886719 23.984375-23.984374 6.242187-20.25 21.722657-21.722657 18.894531 18.890625zm278.507813-173.433594-30.148437-30.148437-193.644532 193.640624-63.664062-63.667968 102.082031-102.085938 12.589844 12.589844 10.605469-10.605469-12.589844-12.589843 17.085937-17.085938 12.589844 12.589844 10.609375-10.605469-12.59375-12.59375 17.089844-17.085937 12.589844 12.589843 10.605468-10.605469-12.589844-12.589843 14.957032-14.957031 44.019531 44.019531 10.605469-10.605469-74.167969-74.171875 13.023437-13.027344 123.972657 123.96875zm0 0"></path><path d="m238.332031 301.988281 10.609375-10.605469 10.605469 10.605469-10.605469 10.609375zm0 0"></path><path d="m256.011719 284.3125 10.609375-10.605469 10.605468 10.605469-10.605468 10.605469zm0 0"></path><path d="m183.945312 356.375 47.316407-47.3125 10.605469 10.605469-47.316407 47.316406zm0 0"></path><path d="m212.019531 246.492188h91.980469v15h-91.980469zm0 0"></path><path d="m417.316406 0-28.46875 28.472656 22.179688 22.183594-52.648438 52.652344 10.605469 10.605468 52.652344-52.652343 19.714843 19.71875 10.605469-10.609375-41.898437-41.898438 7.257812-7.257812 73.46875 73.46875-7.257812 7.257812-22.183594-22.183594-63.257812 63.257813 10.605468 10.605469 52.652344-52.648438 22.183594 22.179688 28.472656-28.46875zm0 0"></path>
                 </svg>
               </div>
@@ -204,7 +204,7 @@ import BookingButton from '../components/BookingButton.astro';
             <div class="space-y-4 max-w-2xl">
               <div class="flex items-center gap-3">
                 <span class="inline-flex items-center px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-sm font-semibold tracking-wide">
-                  <svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
                   Now Available
@@ -218,19 +218,19 @@ import BookingButton from '../components/BookingButton.astro';
               </p>
               <ul class="text-slate-600 space-y-2">
                 <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg class="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                   </svg>
                   <span>No family doctor's requisition required</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg class="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                   </svg>
                   <span>Comprehensive panels including hormones, nutrients and more</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg class="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                   </svg>
                   <span>Results reviewed by Dr. MacLeod with personalized recommendations</span>
@@ -243,7 +243,7 @@ import BookingButton from '../components/BookingButton.astro';
                 class="inline-flex items-center justify-center bg-emerald-900 text-white px-8 py-4 rounded-full text-base font-semibold hover:bg-emerald-800 transition-colors shadow-lg shadow-emerald-900/20"
               >
                 Learn More
-                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                 </svg>
               </a>
@@ -266,8 +266,8 @@ import BookingButton from '../components/BookingButton.astro';
           {
             title: 'IV Therapy',
             description: 'Increase energy levels, boost immune function and build resiliency.',
-            img: '/images/reference/services/iv-therapy.jpeg',
-            href: '/services#iv-therapy',
+            img: '/images/treatments/iv-patient-woman.webp',
+            href: '/iv-therapy',
           },
           {
             title: 'Laboratory Testing',
@@ -278,38 +278,38 @@ import BookingButton from '../components/BookingButton.astro';
           {
             title: 'Prolotherapy',
             description: 'Injections that stimulate the healing of ligaments, tendons, cartilage and joints.',
-            img: '/images/reference/services/prolotherapy.jpeg',
-            href: '/services#pain',
+            img: '/images/treatments/prolotherapy-knee-injection.png',
+            href: '/prolotherapy',
           },
           {
             title: 'Clinical Nutrition',
             description: 'Nutrition is the most fundamental form of medicine. Eating an optimal diet helps prevent disease.',
             img: '/images/reference/services/clinical-nutrition.jpeg',
-            href: '/services#nutrition',
+            href: '/clinical-nutrition',
           },
           {
             title: 'Herbal Medicine',
             description: 'Extensive training in the practical application of herbal medicines.',
             img: '/images/reference/services/herbal-medicine.jpeg',
-            href: '/services#herbal-medicine',
+            href: '/herbal-medicine',
           },
           {
             title: 'Acupuncture',
             description: 'Combining Traditional Chinese Medicine and trigger point release styles.',
             img: '/images/reference/services/acupuncture.jpeg',
-            href: '/services#acupuncture',
+            href: '/acupuncture',
           },
         ].map((item) => (
-          <a href={item.href} class="group block overflow-hidden rounded-3xl bg-white shadow-xl shadow-emerald-900/5 hover:shadow-2xl hover:shadow-emerald-900/10 hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
+          <a href={item.href} class="group block overflow-hidden rounded-3xl bg-white shadow-xl shadow-emerald-900/5 hover:shadow-2xl hover:shadow-emerald-900/10 hover:-translate-y-1 transition-all duration-300 flex flex-col h-full focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
             <div class="aspect-[4/3] overflow-hidden">
-              <img src={item.img} alt={item.title} class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+              <img src={item.img} alt={item.title} class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" width="800" height="600" loading="lazy" />
             </div>
             <div class="p-8 space-y-4 flex-1 flex flex-col">
               <h3 class="text-2xl font-serif font-medium text-emerald-950 leading-tight group-hover:text-emerald-700 transition-colors">{item.title}</h3>
               <p class="text-base text-slate-600 leading-relaxed flex-1 font-light">{item.description}</p>
               <div class="flex items-center text-emerald-800 font-medium tracking-wide text-sm uppercase mt-4 group-hover:translate-x-1 transition-transform">
                 Learn more
-                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                 </svg>
               </div>
@@ -340,18 +340,18 @@ import BookingButton from '../components/BookingButton.astro';
               <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
                 <h3 class="text-xl font-medium text-emerald-950 pr-8">What makes naturopathic medicine different?</h3>
                 <span class="text-emerald-500 transition-transform duration-300 group-open:rotate-180">
-                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </span>
               </summary>
               <div class="px-6 pb-6 text-lg text-slate-600 leading-relaxed">
-                Naturopathic doctors treat the root cause of illness rather than just suppressing symptoms. We use natural therapies and lifestyle changes to support your body's innate healing ability.
+                Naturopathic doctors take the time to understand your health and address the root cause. We use natural therapies and lifestyle changes to support your body's innate healing ability.
               </div>
             </details>
             <details class="group bg-white rounded-2xl shadow-sm border border-emerald-100/50 overflow-hidden transition-all duration-300 hover:shadow-md open:shadow-lg open:ring-1 open:ring-emerald-500/20">
               <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
                 <h3 class="text-xl font-medium text-emerald-950 pr-8">Is naturopathic medicine covered by insurance?</h3>
                 <span class="text-emerald-500 transition-transform duration-300 group-open:rotate-180">
-                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </span>
               </summary>
               <div class="px-6 pb-6 text-lg text-slate-600 leading-relaxed">
@@ -362,7 +362,7 @@ import BookingButton from '../components/BookingButton.astro';
               <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
                 <h3 class="text-xl font-medium text-emerald-950 pr-8">How long are appointments?</h3>
                 <span class="text-emerald-500 transition-transform duration-300 group-open:rotate-180">
-                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </span>
               </summary>
               <div class="px-6 pb-6 text-lg text-slate-600 leading-relaxed">

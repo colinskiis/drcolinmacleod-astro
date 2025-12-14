@@ -1,8 +1,8 @@
 ---
 title: "Achilles Tendinitis"
-description: "The Achilles tendon is the largest and strongest tendon in the human body. It forms the connection between the heel bone and the calf muscles, providing stabi..."
+description: "Achilles tendinitis causes heel pain from inflammation of the largest tendon in the body. Learn about symptoms, causes, and natural treatment options."
 seo:
-  focusKeyword: "Achilles Tendinitis"
+  focusKeyword: "Achilles tendinitis treatment"
 ---
 
 ![Achilles tendinitis](/images/conditions/achilles-tendinitis-pain.jpeg)

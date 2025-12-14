@@ -1,0 +1,319 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import CTAButton from '../components/CTAButton.astro';
+---
+
+<BaseLayout
+  title="Acupuncture"
+  description="Acupuncture for pain relief and injury recovery in Halifax. Dr. Colin MacLeod uses trigger point release and electroacupuncture to treat muscle pain, joint pain, and sports injuries."
+  focusKeyword="acupuncture Halifax"
+>
+  <HeroSection
+    title="Acupuncture"
+    compact
+    image={{ src: "/images/reference/services/acupuncture.webp", alt: "Acupuncture treatment", aspect: "square" }}
+  >
+    <p>Acupuncture has been used for over 2000 years to treat pain and promote healing. At MacLeod Naturopathic, we combine traditional techniques with modern trigger point release to effectively treat injuries and chronic pain.</p>
+    <p class="text-white/80">Whether you're recovering from an injury, dealing with chronic pain, or looking to improve athletic performance, acupuncture can help restore function and reduce discomfort.</p>
+    <CTAButton slot="cta" />
+  </HeroSection>
+
+  <!-- How It Works Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">How Acupuncture Works</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          Understanding the science behind this ancient healing practice
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6">
+          <p class="text-gray-600 leading-relaxed">
+            After an injury, the body responds with inflammation and tense muscles. While this protective reaction is designed to defend the injury site, it often leads to impaired healing due to excessive inflammation and muscles that are too tight to permit optimal blood flow.
+          </p>
+          <p class="text-gray-600 leading-relaxed">
+            When a needle is inserted through the skin and into the belly of a tense muscle, the muscle spasms and then quietly relaxes. This allows muscles that have been stuck in one position to loosen up, leading to smoother blood flow and decreased inflammation.
+          </p>
+          <p class="text-gray-600 leading-relaxed">
+            Patients with old or new injuries often have visibly rigid muscle tissue. Once these muscles are loosened up, patients enjoy increased range of motion and less pain.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-6">
+          <div class="bg-emerald-50 rounded-2xl p-6 text-center">
+            <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold text-emerald-950 mb-2">Muscle Relaxation</h3>
+            <p class="text-sm text-gray-600">Releases tension in tight, spasmed muscles</p>
+          </div>
+          <div class="bg-emerald-50 rounded-2xl p-6 text-center">
+            <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold text-emerald-950 mb-2">Improved Blood Flow</h3>
+            <p class="text-sm text-gray-600">Enhances circulation to injured areas</p>
+          </div>
+          <div class="bg-emerald-50 rounded-2xl p-6 text-center">
+            <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold text-emerald-950 mb-2">Reduced Inflammation</h3>
+            <p class="text-sm text-gray-600">Decreases swelling and irritation</p>
+          </div>
+          <div class="bg-emerald-50 rounded-2xl p-6 text-center">
+            <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold text-emerald-950 mb-2">Faster Recovery</h3>
+            <p class="text-sm text-gray-600">Accelerates the healing process</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Conditions Treated -->
+  <section class="py-16 lg:py-24 bg-emerald-50">
+    <div class="section-shell">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Conditions Treated</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          High-quality studies have found benefit from acupuncture in a variety of conditions
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+          <h3 class="font-semibold text-emerald-950 mb-3">Osteoarthritis</h3>
+          <p class="text-sm text-gray-600">Joint pain and stiffness from wear and tear</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+          <h3 class="font-semibold text-emerald-950 mb-3">Plantar Fasciitis</h3>
+          <p class="text-sm text-gray-600">Heel and foot pain affecting mobility</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+          <h3 class="font-semibold text-emerald-950 mb-3">Low Back Pain</h3>
+          <p class="text-sm text-gray-600">Chronic or acute lumbar discomfort</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+          <h3 class="font-semibold text-emerald-950 mb-3">Neck Pain</h3>
+          <p class="text-sm text-gray-600">Cervical tension and restricted movement</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+          <h3 class="font-semibold text-emerald-950 mb-3">Migraines</h3>
+          <p class="text-sm text-gray-600">Chronic headaches and migraine prevention</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+          <h3 class="font-semibold text-emerald-950 mb-3">Tension Headaches</h3>
+          <p class="text-sm text-gray-600">Muscle tension-related head pain</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+          <h3 class="font-semibold text-emerald-950 mb-3">Joint Pain</h3>
+          <p class="text-sm text-gray-600">Shoulder, knee, hip, and other joints</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+          <h3 class="font-semibold text-emerald-950 mb-3">Sports Injuries</h3>
+          <p class="text-sm text-gray-600">Athletic strains, sprains, and overuse</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Electroacupuncture Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-6">Electroacupuncture</h2>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            Electroacupuncture uses traditional acupuncture combined with a gentle electric current to enhance the therapeutic effect. The electrical stimulation strengthens the muscle twitch response and improves results beyond acupuncture alone.
+          </p>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            The electrical pulses are similar to transcutaneous electrical nerve stimulation (TENS) but act deeper and closer to the problem area. The current is low enough to cause a gentle twitch of the affected muscle fibers while preventing muscle spasm.
+          </p>
+          <div class="bg-emerald-50 rounded-2xl p-6">
+            <h3 class="font-semibold text-emerald-950 mb-3">Benefits of Electroacupuncture</h3>
+            <ul class="space-y-2">
+              <li class="flex items-center text-gray-600">
+                <svg class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Enhanced muscle relaxation
+              </li>
+              <li class="flex items-center text-gray-600">
+                <svg class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Deeper tissue penetration
+              </li>
+              <li class="flex items-center text-gray-600">
+                <svg class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Improved treatment outcomes
+              </li>
+              <li class="flex items-center text-gray-600">
+                <svg class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Precise targeting of problem areas
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="bg-emerald-950 rounded-3xl p-8 lg:p-10 text-white">
+          <h3 class="text-2xl font-serif font-bold mb-6 text-white">How Electroacupuncture Works</h3>
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 mr-4">
+                <span class="font-bold">1</span>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-1 text-white">Needle Placement</h4>
+                <p class="text-white/80 text-sm">Acupuncture needles are inserted at specific trigger points</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 mr-4">
+                <span class="font-bold">2</span>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-1 text-white">Electrical Connection</h4>
+                <p class="text-white/80 text-sm">Small clips connect needles to the electrostim device</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 mr-4">
+                <span class="font-bold">3</span>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-1 text-white">Gentle Stimulation</h4>
+                <p class="text-white/80 text-sm">Low-intensity current creates rhythmic muscle contractions</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 mr-4">
+                <span class="font-bold">4</span>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-1 text-white">Deep Release</h4>
+                <p class="text-white/80 text-sm">Muscles release tension and healing is accelerated</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="max-w-3xl mx-auto space-y-4">
+        <details class="group bg-white rounded-2xl shadow-sm border border-emerald-100/50 overflow-hidden transition-all duration-300 hover:shadow-md open:shadow-lg open:ring-1 open:ring-emerald-500/20">
+          <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+            <h3 class="text-lg font-medium text-emerald-950 pr-8">Does acupuncture hurt?</h3>
+            <span class="text-emerald-500 transition-transform duration-300 group-open:rotate-180">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </span>
+          </summary>
+          <div class="px-6 pb-6 text-gray-600 leading-relaxed">
+            Most patients experience minimal discomfort during acupuncture. The needles used are very fine, much thinner than injection needles. You may feel a brief pinch upon insertion, followed by a sensation of pressure or heaviness at the needle site, which is actually a sign that the treatment is working.
+          </div>
+        </details>
+
+        <details class="group bg-white rounded-2xl shadow-sm border border-emerald-100/50 overflow-hidden transition-all duration-300 hover:shadow-md open:shadow-lg open:ring-1 open:ring-emerald-500/20">
+          <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+            <h3 class="text-lg font-medium text-emerald-950 pr-8">How many treatments will I need?</h3>
+            <span class="text-emerald-500 transition-transform duration-300 group-open:rotate-180">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </span>
+          </summary>
+          <div class="px-6 pb-6 text-gray-600 leading-relaxed">
+            The number of treatments varies depending on the condition being treated, how long you've had it, and how your body responds. Acute injuries may improve in 2-4 sessions, while chronic conditions often require 6-10 treatments. Many patients notice improvement after the first session.
+          </div>
+        </details>
+
+        <details class="group bg-white rounded-2xl shadow-sm border border-emerald-100/50 overflow-hidden transition-all duration-300 hover:shadow-md open:shadow-lg open:ring-1 open:ring-emerald-500/20">
+          <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+            <h3 class="text-lg font-medium text-emerald-950 pr-8">Is acupuncture covered by insurance?</h3>
+            <span class="text-emerald-500 transition-transform duration-300 group-open:rotate-180">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </span>
+          </summary>
+          <div class="px-6 pb-6 text-gray-600 leading-relaxed">
+            Yes, most extended health insurance plans cover acupuncture when performed by a Naturopathic Doctor. We offer direct billing for many major insurers. Check with your insurance provider to confirm your coverage.
+          </div>
+        </details>
+
+        <details class="group bg-white rounded-2xl shadow-sm border border-emerald-100/50 overflow-hidden transition-all duration-300 hover:shadow-md open:shadow-lg open:ring-1 open:ring-emerald-500/20">
+          <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+            <h3 class="text-lg font-medium text-emerald-950 pr-8">What should I do after an acupuncture treatment?</h3>
+            <span class="text-emerald-500 transition-transform duration-300 group-open:rotate-180">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </span>
+          </summary>
+          <div class="px-6 pb-6 text-gray-600 leading-relaxed">
+            After treatment, drink plenty of water, avoid strenuous exercise for 24 hours, and take note of any changes in your symptoms. Some patients feel relaxed or tired after treatment, while others feel energized. Mild soreness at needle sites is normal and typically resolves within a day.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 lg:py-24 bg-emerald-950">
+    <div class="section-shell text-center">
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-white mb-6">Ready to Get Started?</h2>
+      <p class="text-lg text-white/80 max-w-2xl mx-auto mb-8">
+        Book a consultation to discuss how acupuncture can help you recover from injury, reduce pain, and improve your quality of life.
+      </p>
+      <a
+        href="https://macleodnaturopathic.janeapp.com/"
+        target="_blank"
+        class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center"
+      >
+        Book Your Appointment
+        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- References Section -->
+  <section class="py-12 bg-gray-50">
+    <div class="section-shell">
+      <details class="group">
+        <summary class="cursor-pointer text-sm font-medium text-gray-500 hover:text-gray-700">
+          View References
+        </summary>
+        <div class="mt-4 text-xs text-gray-500 space-y-2">
+          <p>1. Hübscher M, Vogt L, Ziebart T, Banzer W. Immediate effects of acupuncture on strength performance: a randomized, controlled crossover trial. Eur J Appl Physiol. 2010 Sep;110(2):353-8.</p>
+          <p>2. Selfe TK, Taylor AG. Acupuncture and osteoarthritis of the knee: a review of randomized, controlled trials. Fam Community Health. 2008 Jul-Sep;31(3):247-54.</p>
+          <p>3. Karagounis P, Tsironi M, Prionas G, Tsiganos G, Baltopoulos P. Treatment of plantar fasciitis in recreational athletes: two different therapeutic protocols. Foot Ankle Spec. 2011 Aug;4(4):226-34.</p>
+          <p>4. Trigkilidas D. Acupuncture therapy for chronic lower back pain: a systematic review. Ann R Coll Surg Engl. 2010 Oct;92(7):595-8.</p>
+          <p>5. Fu LM, Li JT, Wu WS. Randomized controlled trials of acupuncture for neck pain: systematic review and meta-analysis. J Altern Complement Med. 2009 Feb;15(2):133-45.</p>
+          <p>6. Linde K, Allais G, Brinkhaus B, Manheimer E, Vickers A, White AR. Acupuncture for migraine prophylaxis. Cochrane Database Syst Rev. 2009 Jan 21;(1):CD001218.</p>
+          <p>7. Linde K, Allais G, Brinkhaus B, Manheimer E, Vickers A, White AR. Acupuncture for tension-type headache. Cochrane Database Syst Rev. 2009 Jan 21;(1):CD007587.</p>
+          <p>8. Crew KD, Capodice JL, Greenlee H, et al. Randomized, blinded, sham-controlled trial of acupuncture for the management of aromatase inhibitor-associated joint symptoms in women with early-stage breast cancer. J Clin Oncol. 2010 Mar 1;28(7):1154-60.</p>
+        </div>
+      </details>
+    </div>
+  </section>
+</BaseLayout>

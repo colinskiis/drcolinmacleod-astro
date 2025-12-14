@@ -1,0 +1,286 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import CTAButton from '../components/CTAButton.astro';
+---
+
+<BaseLayout
+  title="Herbal Medicine"
+  description="Evidence-based herbal medicine in Halifax. Dr. Colin MacLeod uses scientifically-supported botanical therapies to treat a wide range of health conditions naturally."
+  focusKeyword="herbal medicine Halifax"
+>
+  <HeroSection
+    title="Herbal Medicine"
+    compact
+    image={{ src: "/images/reference/services/herbal-medicine.webp", alt: "Herbal medicine preparations", aspect: "square" }}
+  >
+    <p>Plants have been used as medicine for thousands of years. Today, modern research validates what traditional healers have long known: botanical medicines offer safe, effective treatment options for many health conditions.</p>
+    <p class="text-white/80">At MacLeod Naturopathic, we combine traditional herbal knowledge with current scientific research to create personalized botanical protocols.</p>
+    <CTAButton slot="cta" />
+  </HeroSection>
+
+  <!-- Our Approach Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Evidence-Based Botanical Therapy</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          Bridging traditional wisdom with modern science
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6">
+          <p class="text-gray-600 leading-relaxed">
+            Many of today's pharmaceutical drugs are derived from plants. Aspirin comes from white willow bark, the cancer drug Taxol from Pacific yew, and morphine from the opium poppy. Plants contain complex combinations of active compounds that can be remarkably effective for treating disease.
+          </p>
+          <p class="text-gray-600 leading-relaxed">
+            As a Naturopathic Doctor with extensive training in botanical medicine, I select herbs based on both traditional use and current research. This ensures you receive treatments that are not only time-tested but also supported by scientific evidence.
+          </p>
+          <p class="text-gray-600 leading-relaxed">
+            Herbal medicines can work alongside conventional treatments, often reducing side effects or enhancing effectiveness. They can also be used as primary treatments for conditions where they offer clear advantages.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-6">
+          <div class="bg-emerald-50 rounded-2xl p-6 text-center">
+            <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold text-emerald-950 mb-2">Research-Backed</h3>
+            <p class="text-sm text-gray-600">Herbs selected based on clinical evidence</p>
+          </div>
+          <div class="bg-emerald-50 rounded-2xl p-6 text-center">
+            <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold text-emerald-950 mb-2">Quality Sourced</h3>
+            <p class="text-sm text-gray-600">Professional-grade botanical products</p>
+          </div>
+          <div class="bg-emerald-50 rounded-2xl p-6 text-center">
+            <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold text-emerald-950 mb-2">Personalized</h3>
+            <p class="text-sm text-gray-600">Formulas tailored to your needs</p>
+          </div>
+          <div class="bg-emerald-50 rounded-2xl p-6 text-center">
+            <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold text-emerald-950 mb-2">Safe Integration</h3>
+            <p class="text-sm text-gray-600">Checked for drug interactions</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Common Applications Section -->
+  <section class="py-16 lg:py-24 bg-emerald-50">
+    <div class="section-shell">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Common Applications</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          Herbal medicine can be helpful for a wide range of health concerns
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+          <h3 class="font-semibold text-emerald-950 mb-3">Stress & Anxiety</h3>
+          <p class="text-sm text-gray-600">Adaptogenic herbs like rhodiola, ashwagandha, and holy basil support the body's stress response and promote calm.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+          <h3 class="font-semibold text-emerald-950 mb-3">Digestive Health</h3>
+          <p class="text-sm text-gray-600">Bitter herbs, carminatives, and demulcents can address bloating, reflux, IBS symptoms, and other GI concerns.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+          <h3 class="font-semibold text-emerald-950 mb-3">Sleep Support</h3>
+          <p class="text-sm text-gray-600">Gentle sedative herbs like valerian, passionflower, and hops can improve sleep quality without morning grogginess.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+          <h3 class="font-semibold text-emerald-950 mb-3">Immune Support</h3>
+          <p class="text-sm text-gray-600">Immune-modulating herbs help prevent illness and support recovery from infections.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+          <h3 class="font-semibold text-emerald-950 mb-3">Hormone Balance</h3>
+          <p class="text-sm text-gray-600">Herbs like chaste tree, black cohosh, and maca can support hormonal health in both women and men.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+          <h3 class="font-semibold text-emerald-950 mb-3">Liver & Detoxification</h3>
+          <p class="text-sm text-gray-600">Milk thistle, dandelion, and other hepatoprotective herbs support healthy liver function.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+          <h3 class="font-semibold text-emerald-950 mb-3">Pain & Inflammation</h3>
+          <p class="text-sm text-gray-600">Anti-inflammatory herbs like turmeric, boswellia, and devil's claw can help manage chronic pain conditions.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+          <h3 class="font-semibold text-emerald-950 mb-3">Cardiovascular Health</h3>
+          <p class="text-sm text-gray-600">Herbs like hawthorn, garlic, and olive leaf support healthy blood pressure and circulation.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+          <h3 class="font-semibold text-emerald-950 mb-3">Energy & Vitality</h3>
+          <p class="text-sm text-gray-600">Tonic herbs can help restore energy levels and combat fatigue without stimulant side effects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quality & Safety Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="bg-emerald-950 rounded-3xl p-8 lg:p-10 text-white">
+          <h2 class="text-2xl font-serif font-bold mb-6">Quality & Safety</h2>
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 mr-4">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-1 text-white">Professional-Grade Products</h4>
+                <p class="text-white/80 text-sm">We use only professional-quality botanical products that are tested for purity, potency, and safety.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 mr-4">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-1 text-white">Drug Interaction Screening</h4>
+                <p class="text-white/80 text-sm">All herbal recommendations are checked against your current medications to ensure safe use.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 mr-4">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-1 text-white">Proper Dosing</h4>
+                <p class="text-white/80 text-sm">Herbs are dosed based on research and clinical experience to ensure effectiveness and safety.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 mr-4">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-1 text-white">Ongoing Monitoring</h4>
+                <p class="text-white/80 text-sm">We track your response to treatment and adjust protocols as needed for optimal results.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-6">Why Professional Guidance Matters</h2>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            While herbal products are widely available, effective botanical medicine requires proper training. Naturopathic Doctors complete extensive coursework in pharmacognosy (the study of medicinal plants) and botanical medicine as part of their four-year medical program.
+          </p>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            Self-treating with herbs can lead to ineffective treatment, adverse effects, or dangerous interactions with medications. Professional guidance ensures you receive the right herbs, in the right form, at the right dose.
+          </p>
+          <div class="bg-amber-50 border border-amber-200 rounded-xl p-4">
+            <p class="text-sm text-amber-800">
+              <strong>Important:</strong> Always inform your healthcare providers about any herbal products you're taking, as some herbs can interact with medications or affect certain medical conditions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="max-w-3xl mx-auto space-y-4">
+        <details class="group bg-white rounded-2xl shadow-sm border border-emerald-100/50 overflow-hidden transition-all duration-300 hover:shadow-md open:shadow-lg open:ring-1 open:ring-emerald-500/20">
+          <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+            <h3 class="text-lg font-medium text-emerald-950 pr-8">Are herbal medicines safe?</h3>
+            <span class="text-emerald-500 transition-transform duration-300 group-open:rotate-180">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </span>
+          </summary>
+          <div class="px-6 pb-6 text-gray-600 leading-relaxed">
+            When prescribed appropriately by a trained practitioner, herbal medicines are generally very safe. However, "natural" doesn't automatically mean safe for everyone. Some herbs can interact with medications, affect certain health conditions, or cause side effects in sensitive individuals. This is why professional guidance is important.
+          </div>
+        </details>
+
+        <details class="group bg-white rounded-2xl shadow-sm border border-emerald-100/50 overflow-hidden transition-all duration-300 hover:shadow-md open:shadow-lg open:ring-1 open:ring-emerald-500/20">
+          <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+            <h3 class="text-lg font-medium text-emerald-950 pr-8">Can I take herbs with my medications?</h3>
+            <span class="text-emerald-500 transition-transform duration-300 group-open:rotate-180">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </span>
+          </summary>
+          <div class="px-6 pb-6 text-gray-600 leading-relaxed">
+            Many herbs can be safely combined with medications, but some combinations should be avoided. During your consultation, we review all medications and supplements you're taking and check for potential interactions before recommending any botanical therapies.
+          </div>
+        </details>
+
+        <details class="group bg-white rounded-2xl shadow-sm border border-emerald-100/50 overflow-hidden transition-all duration-300 hover:shadow-md open:shadow-lg open:ring-1 open:ring-emerald-500/20">
+          <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+            <h3 class="text-lg font-medium text-emerald-950 pr-8">How long does herbal treatment take to work?</h3>
+            <span class="text-emerald-500 transition-transform duration-300 group-open:rotate-180">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </span>
+          </summary>
+          <div class="px-6 pb-6 text-gray-600 leading-relaxed">
+            This varies depending on the condition and the herbs used. Some effects, like digestive relief from carminative herbs, can be noticed quickly. Other conditions, like hormone balancing or building stress resilience, may take several weeks to months to show full benefit. We'll discuss realistic expectations for your specific situation.
+          </div>
+        </details>
+
+        <details class="group bg-white rounded-2xl shadow-sm border border-emerald-100/50 overflow-hidden transition-all duration-300 hover:shadow-md open:shadow-lg open:ring-1 open:ring-emerald-500/20">
+          <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+            <h3 class="text-lg font-medium text-emerald-950 pr-8">What forms do herbal medicines come in?</h3>
+            <span class="text-emerald-500 transition-transform duration-300 group-open:rotate-180">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </span>
+          </summary>
+          <div class="px-6 pb-6 text-gray-600 leading-relaxed">
+            Herbal medicines are available in many forms including tinctures (liquid extracts), capsules, tablets, teas, and topical preparations. The form recommended depends on the herb, the condition being treated, and your personal preferences. We'll work together to find what works best for you.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 lg:py-24 bg-emerald-950">
+    <div class="section-shell text-center">
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-white mb-6">Interested in Herbal Medicine?</h2>
+      <p class="text-lg text-white/80 max-w-2xl mx-auto mb-8">
+        Book a consultation to discuss how botanical therapies can support your health goals as part of a comprehensive treatment plan.
+      </p>
+      <a
+        href="https://macleodnaturopathic.janeapp.com/"
+        target="_blank"
+        class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center"
+      >
+        Book Your Appointment
+        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+        </svg>
+      </a>
+    </div>
+  </section>
+</BaseLayout>

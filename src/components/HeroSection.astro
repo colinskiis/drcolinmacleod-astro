@@ -1,0 +1,95 @@
+---
+export interface Props {
+  title: string;
+  centered?: boolean;
+  compact?: boolean;
+  textOnly?: boolean;
+  image?: {
+    src: string;
+    alt: string;
+    aspect?: 'video' | 'square';
+  };
+  video?: {
+    src: string;
+    title: string;
+  };
+}
+
+const { title, centered = false, compact = false, textOnly = false, image, video } = Astro.props;
+const hasMedia = image || video;
+
+// Padding classes based on compact prop
+const sectionPadding = compact
+  ? "pb-16 lg:pb-24"
+  : "pb-24 lg:pb-32";
+
+// Image dimensions based on aspect ratio
+const imageAspect = image?.aspect || 'video';
+const imageClasses = imageAspect === 'square'
+  ? "aspect-square"
+  : "aspect-video";
+const imageDimensions = imageAspect === 'square'
+  ? { width: 800, height: 800 }
+  : { width: 1280, height: 720 };
+---
+
+<section class={`bg-emerald-950 -mt-24 pt-48 lg:pt-56 ${sectionPadding}`}>
+  <div class="section-shell">
+    {centered ? (
+      <div class="text-center max-w-4xl mx-auto space-y-6">
+        <slot name="breadcrumb" />
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-white mb-6 tracking-tight">{title}</h1>
+        <div class="text-lg sm:text-xl text-emerald-100 mb-8 leading-relaxed font-light">
+          <slot />
+        </div>
+        <slot name="cta" />
+      </div>
+    ) : textOnly ? (
+      <div class="max-w-4xl">
+        <slot name="breadcrumb" />
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-white tracking-tight mb-6">{title}</h1>
+        <div class="text-lg sm:text-xl text-white/90 leading-relaxed font-light space-y-4 mb-8">
+          <slot />
+        </div>
+        <slot name="cta" />
+      </div>
+    ) : (
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6">
+          <slot name="breadcrumb" />
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-white tracking-tight">{title}</h1>
+          <div class="text-lg sm:text-xl text-white/90 leading-relaxed font-light space-y-4">
+            <slot />
+          </div>
+          <slot name="cta" />
+        </div>
+        {image && (
+          <div class={`rounded-2xl overflow-hidden shadow-2xl ${imageAspect === 'square' ? 'aspect-square' : ''}`}>
+            <img
+              src={image.src}
+              alt={image.alt}
+              class={`w-full h-full object-cover ${imageClasses}`}
+              width={imageDimensions.width}
+              height={imageDimensions.height}
+            />
+          </div>
+        )}
+        {video && (
+          <div class="aspect-video rounded-2xl overflow-hidden shadow-2xl">
+            <iframe
+              src={video.src}
+              title={video.title}
+              class="w-full h-full"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+        )}
+        {!hasMedia && (
+          <slot name="media" />
+        )}
+      </div>
+    )}
+  </div>
+</section>

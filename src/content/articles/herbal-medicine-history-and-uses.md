@@ -3,7 +3,7 @@ title: "Herbal Medicine: History and Uses"
 description: "Herbal Medicine is an ancient system of medicine, used in many civilizations for a variety health conditions, including weight loss, pain and mental health."
 publishDate: 2012-02-01
 modifiedDate: 2022-07-12
-heroImage: "/images/nutrition/herbal-medicine-2.jpeg"
+heroImage: "/images/nutrition/herbal-medicine-2.webp"
 categories: ["Naturopathic"]
 tags: ["naturopathic"]
 seo:

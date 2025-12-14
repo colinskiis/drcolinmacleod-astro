@@ -1,8 +1,8 @@
 ---
 title: "Frozen Shoulder"
-description: "The shoulder joint is a unique joint in that it is stabilized largely by the muscles which surround it. While most joints are stabilized heavily by ligamen..."
+description: "Frozen shoulder causes pain and stiffness with limited range of motion. Learn about symptoms, stages, and natural treatments including prolotherapy."
 seo:
-  focusKeyword: "frozen shoulder"
+  focusKeyword: "frozen shoulder treatment"
 ---
 
 ![Frozen shoulder treatment](/images/conditions/frozen-shoulder.jpeg)

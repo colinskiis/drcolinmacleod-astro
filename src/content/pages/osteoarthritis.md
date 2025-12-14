@@ -1,8 +1,8 @@
 ---
 title: "Osteoarthritis"
-description: "Causes of Arthritis (Osteoarthritis) Arthritis does not have a single cause but has many contributing factors. Mechanical over-use, excess body weight, ..."
+description: "Osteoarthritis causes joint pain and stiffness from cartilage degradation. Learn about causes, symptoms, and natural treatments including prolotherapy."
 seo:
-  focusKeyword: "osteoarthritis"
+  focusKeyword: "osteoarthritis treatment"
 ---
 
 ![Osteoarthritis](/images/conditions/osteoarthritis.jpeg)

@@ -1,9 +1,11 @@
 ---
 title: "Neural Prolotherapy & Pain"
-description: "What Is Neural Prolotherapy? Neural prolotherapy is a treatment for pain which uses shallow injections of a 5% dextrose (sugar) solution into the surrou..."
+description: "Neural prolotherapy uses shallow dextrose injections to reduce nerve inflammation and pain. Effective for frozen shoulder, sciatica, plantar fasciitis, and more."
+seo:
+  focusKeyword: "neural prolotherapy"
 ---
 
-![Neural prolotherapy treatment](/images/treatments/neural-prolotherapy.jpg)
+![Neural prolotherapy shoulder injection](/images/treatments/neural-prolotherapy-shoulder.png)
 
 ## What Is Neural Prolotherapy?
 

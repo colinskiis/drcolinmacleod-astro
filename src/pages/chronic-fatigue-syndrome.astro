@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import CTAButton from '../components/CTAButton.astro';
 ---
 
 <BaseLayout
@@ -7,38 +9,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   description="Naturopathic treatment for Chronic Fatigue Syndrome (ME/CFS) in Halifax. IV nutrient therapy, testing and comprehensive support for fatigue recovery."
   focusKeyword="chronic fatigue syndrome treatment Halifax"
 >
-  <!-- Hero Section -->
-  <section class="bg-emerald-950 -mt-24 pt-48 pb-16 lg:pt-56 lg:pb-24">
-    <div class="section-shell">
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
-        <div class="space-y-6">
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-white tracking-tight">Chronic Fatigue Syndrome</h1>
-          <p class="text-lg sm:text-xl text-white/90 leading-relaxed font-light">
-            Chronic Fatigue Syndrome (ME/CFS) is more than just being tired. It's a complex, debilitating condition that affects every aspect of life. We offer comprehensive testing and treatment approaches including <strong class="text-white">IV nutrient therapy</strong> to help restore your energy and quality of life.
-          </p>
-          <div class="flex flex-col sm:flex-row gap-4">
-            <a
-              href="https://macleodnaturopathic.janeapp.com/"
-              target="_blank"
-              class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center justify-center"
-            >
-              Book Your Appointment
-              <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-              </svg>
-            </a>
-          </div>
-        </div>
-        <div class="rounded-2xl overflow-hidden shadow-2xl">
-          <img
-            src="/images/conditions/chronic-fatigue-hero.jpg"
-            alt="Chronic fatigue syndrome treatment"
-            class="w-full h-full object-cover aspect-video"
-          />
-        </div>
-      </div>
-    </div>
-  </section>
+  <HeroSection
+    title="Chronic Fatigue Syndrome"
+    compact
+    image={{ src: "/images/conditions/chronic-fatigue-hero.webp", alt: "Chronic fatigue syndrome treatment", aspect: "video" }}
+  >
+    <p>Chronic Fatigue Syndrome (ME/CFS) is more than just being tired. It's a complex, debilitating condition that affects every aspect of life. We offer comprehensive testing and treatment approaches including <strong class="text-white">IV nutrient therapy</strong> to help restore your energy and quality of life.</p>
+    <CTAButton slot="cta" />
+  </HeroSection>
 
   <!-- What is CFS Section -->
   <section class="py-16 lg:py-24 bg-white">
@@ -47,7 +25,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-6">Understanding Chronic Fatigue Syndrome</h2>
         <div class="prose prose-lg text-gray-600 mb-8">
           <p>
-            Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS) is a serious, long-term illness characterized by profound fatigue that isn't improved by rest and is worsened by physical or mental activity—a hallmark symptom called <strong>post-exertional malaise</strong>.
+            Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS) is a serious, long-term illness characterized by profound fatigue that isn't improved by rest and is worsened by physical or mental exertion, a hallmark symptom called <strong>post-exertional malaise</strong>.
           </p>
           <p>
             Unlike ordinary tiredness, ME/CFS can make even simple activities like showering or preparing a meal feel insurmountable. Fewer than 5% of patients return to their pre-illness activity levels with conventional care alone.
@@ -196,7 +174,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               The Myers' Cocktail is an intravenous infusion of B vitamins, vitamin C, magnesium and calcium that has been used for decades to treat chronic fatigue. Dr. Alan Gaby reported treating hundreds of ME/CFS patients with this therapy over 11 years, finding it frequently effective for improving fatigue.<sup>1</sup>
             </p>
             <p>
-              IV administration bypasses digestive absorption—which is often impaired in ME/CFS—and delivers nutrients directly into the bloodstream at concentrations far higher than achievable with oral supplements. Many patients experience noticeable improvement in energy within hours of treatment.
+              IV administration bypasses digestive absorption, which is often impaired in ME/CFS, and delivers nutrients directly into the bloodstream at concentrations far higher than achievable with oral supplements. Many patients experience noticeable improvement in energy within hours of treatment.
             </p>
             <p>
               Research has shown that <strong>NADH and magnesium</strong> are among the nutrients most likely to benefit CFS patients.<sup>2</sup> Both are included in our IV protocols.
@@ -246,15 +224,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             </div>
           </div>
 
-          <div class="mt-8 p-4 bg-white rounded-xl">
-            <div class="flex justify-between items-center">
-              <div>
-                <span class="font-semibold text-emerald-950">Myers' Cocktail</span>
-                <p class="text-sm text-gray-500">IV nutrient therapy</p>
-              </div>
-              <span class="text-2xl font-bold text-emerald-700">$120</span>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -330,13 +299,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-6">We Understand Pacing</h2>
         <div class="prose prose-lg text-gray-600">
           <p>
-            If you have ME/CFS, you know that pushing through fatigue makes things worse—sometimes much worse. Post-exertional malaise can set you back for days, weeks, or longer.
+            If you have ME/CFS, you know that pushing through fatigue makes things worse, sometimes much worse. Post-exertional malaise can set you back for days, weeks, or longer.
           </p>
           <p>
             We understand this. Our approach respects your energy limits while working to expand them over time. We won't recommend exercise programs that could trigger crashes, and we'll work within your current capacity to make gradual improvements.
           </p>
           <p>
-            IV therapy can be particularly helpful because it provides support without requiring energy expenditure from you—you simply rest during the infusion while your body receives the nutrients it needs.
+            IV therapy can be particularly helpful because it provides support without requiring energy expenditure from you. You simply rest during the infusion while your body receives the nutrients it needs.
           </p>
         </div>
       </div>
@@ -394,7 +363,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               </svg>
             </summary>
             <div class="px-6 pb-6 text-gray-600">
-              Many patients come to us after years of unsuccessful treatment. We often find issues that weren't fully addressed—incomplete thyroid testing, unrecognized nutrient deficiencies, or chronic infections that weren't identified. Even when we can't find new issues, IV therapy provides a different delivery mechanism that may work when oral supplements haven't.
+              Many patients come to us after years of unsuccessful treatment. We often find issues that weren't fully addressed, including incomplete thyroid testing, unrecognized nutrient deficiencies, or chronic infections that weren't identified. Even when we can't find new issues, IV therapy provides a different delivery mechanism that may work when oral supplements haven't.
             </div>
           </details>
 
@@ -406,7 +375,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               </svg>
             </summary>
             <div class="px-6 pb-6 text-gray-600">
-              Yes. Long COVID shares many features with ME/CFS, including post-exertional malaise and profound fatigue. Our approach—comprehensive testing, IV nutrient therapy, and targeted support—applies equally well to post-viral fatigue from COVID-19 or other infections.
+              Yes. Long COVID shares many features with ME/CFS, including post-exertional malaise and profound fatigue. Our approach (comprehensive testing, IV nutrient therapy, and targeted support) applies equally well to post-viral fatigue from COVID-19 or other infections.
             </div>
           </details>
         </div>
@@ -434,7 +403,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             </svg>
           </a>
         </div>
-        <p class="text-white/70 mt-6 text-sm">Initial consultation: $200 | Most extended health plans cover naturopathic services</p>
+        <p class="text-white/70 mt-6 text-sm">Most extended health plans cover naturopathic services</p>
       </div>
     </div>
   </section>

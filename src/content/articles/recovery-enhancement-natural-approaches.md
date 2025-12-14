@@ -3,7 +3,7 @@ title: "Optimizing Recovery: Natural Approaches for Athletes"
 description: "Evidence-based strategies to enhance athletic recovery including IV therapy, nutrition, sleep optimization, and natural anti-inflammatory support for faster return to training."
 publishDate: 2024-12-03
 modifiedDate: 2024-12-03
-heroImage: "/images/general/athletic-recovery.jpg"
+heroImage: "/images/general/athletic-recovery.webp"
 categories: ["Sports Medicine", "Naturopathic"]
 tags: ["athletic recovery", "IV therapy", "sports nutrition", "sleep", "naturopathic"]
 seo:
@@ -66,8 +66,6 @@ Monitoring recovery status helps athletes optimize their training loads. Subject
 Certain signs suggest that recovery may require more than basic strategies. Persistent fatigue despite adequate sleep, declining performance despite consistent training, frequent illness or infection, nagging injuries that fail to resolve, difficulty sleeping, and mood changes or loss of motivation may all indicate overtraining or suboptimal recovery that warrants assessment<sup>13</sup>.
 
 A naturopathic approach to athletic recovery considers training demands and competition schedules, individual nutritional needs, sleep optimization, and strategic use of treatments such as IV therapy. If you are experiencing symptoms of inadequate recovery or are interested in optimizing your performance through enhanced recovery strategies, please contact MacLeod Naturopathic to book an initial naturopathic visit to discuss your options.
-
-[Book Your Appointment](https://macleodnaturopathic.janeapp.com/)
 
 ### References
 

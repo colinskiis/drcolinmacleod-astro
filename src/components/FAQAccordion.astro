@@ -1,0 +1,31 @@
+---
+export interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+export interface Props {
+  items: FAQItem[];
+  variant?: 'default' | 'card';
+}
+
+const { items, variant = 'default' } = Astro.props;
+
+const detailsClasses = variant === 'card'
+  ? "group bg-white rounded-2xl shadow-lg"
+  : "group bg-emerald-50 rounded-2xl";
+---
+
+<div class="space-y-6">
+  {items.map((item) => (
+    <details class={detailsClasses}>
+      <summary class="flex items-center justify-between cursor-pointer p-6 font-serif font-semibold text-emerald-950">
+        {item.question}
+        <svg class="w-5 h-5 text-emerald-700 group-open:rotate-180 transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </summary>
+      <div class="px-6 pb-6 text-slate-600" set:html={item.answer} />
+    </details>
+  ))}
+</div>

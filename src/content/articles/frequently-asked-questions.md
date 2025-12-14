@@ -3,7 +3,7 @@ title: "Frequently Asked Questions"
 description: "What training do naturopathic doctors have? Are homeopathy and naturopathic medicine the same? What conditions do naturopathic doctors treat?"
 publishDate: 2013-08-30
 modifiedDate: 2018-11-22
-heroImage: "/images/general/dr-colin-macleod-nd.jpg"
+heroImage: "/images/general/dr-colin-macleod-nd.webp"
 categories: ["Naturopathic"]
 tags: ["naturopathic"]
 seo:
@@ -26,7 +26,7 @@ Nova Scotia provincial healthcare does not cover appointments with a naturopathi
 Naturopathic doctors can treat the same conditions as a family medical doctor, including chronic and acute health conditions. Some conditions which naturopathic doctors treat include, digestive issues, fatigue, skin conditions, migraines, diabetes, cancer, chronic infections, injuries, pain and many more. If your ND is unable to treat a specific condition they will refer appropriately.
 
 ## How Do I Confirm A Naturopathic Doctor’s Qualifications?
-To ensure a naturopathic doctor’s qualifications in Nova Scotia you can look for their name listed online at the websites of the [Canadian Association of Naturopathic Doctors](http://www.cand.ca/) and the [Nova Scotia Association of Naturopathic Doctors](http://nsand.ca/members). If you have questions regarding any practitioner’s training, you should be upfront and ask them to clarify.
+To ensure a naturopathic doctor's qualifications in Nova Scotia you can look for their name listed online at the websites of the [Canadian Association of Naturopathic Doctors](https://www.cand.ca/) and the [Nova Scotia Association of Naturopathic Doctors](https://nsand.ca/members). If you have questions regarding any practitioner's training, you should be upfront and ask them to clarify.
 
 ## Can Naturopathic Doctors Prescribe Medications?
 In Nova Scotia, naturopathic doctors cannot prescribe medications. Naturopathic doctors practicing in British Columbia who have passed a standardized pharmacology examination can prescribe medications. British Columbia is the only province which permits naturopathic doctors to prescribe medications.

@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import CTAButton from '../components/CTAButton.astro';
 ---
 
 <BaseLayout
@@ -7,44 +9,19 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   description="Prolotherapy is a regenerative injection treatment that helps relieve arthritis pain, improve range of motion and promote tissue repair. Learn about prolotherapy at MacLeod Naturopathic in Halifax."
   focusKeyword="prolotherapy arthritis Halifax"
 >
-  <!-- Hero Section with YouTube Video -->
-  <section class="bg-emerald-950 -mt-24 pt-48 pb-16 lg:pt-56 lg:pb-24">
-    <div class="section-shell">
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
-        <div class="space-y-6">
-          <nav class="text-emerald-300 text-sm">
-            <a href="/prolotherapy" class="hover:text-white transition-colors">Prolotherapy</a>
-            <span class="mx-2">/</span>
-            <span class="text-white">Arthritis</span>
-          </nav>
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-white tracking-tight">Prolotherapy For Arthritis</h1>
-          <p class="text-lg sm:text-xl text-white/90 leading-relaxed font-light">
-            Prolotherapy has the strongest evidence base for osteoarthritis treatment, with 16 clinical studies showing significant improvements in pain, stiffness and range of motion.
-          </p>
-          <a
-            href="https://macleodnaturopathic.janeapp.com/"
-            target="_blank"
-            class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center"
-          >
-            Book Your Appointment
-            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-            </svg>
-          </a>
-        </div>
-        <div class="aspect-video rounded-2xl overflow-hidden shadow-2xl">
-          <iframe
-            src="https://www.youtube.com/embed/SBGjz31fZVI"
-            title="Prolotherapy Overview"
-            class="w-full h-full"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>
-        </div>
-      </div>
-    </div>
-  </section>
+  <HeroSection
+    title="Prolotherapy For Arthritis"
+    compact
+    video={{ src: "https://www.youtube.com/embed/SBGjz31fZVI", title: "Prolotherapy Overview" }}
+  >
+    <nav slot="breadcrumb" class="text-emerald-300 text-sm">
+      <a href="/prolotherapy" class="hover:text-white transition-colors">Prolotherapy</a>
+      <span class="mx-2">/</span>
+      <span class="text-white">Arthritis</span>
+    </nav>
+    <p>Prolotherapy has the strongest evidence base for osteoarthritis treatment, with 16 clinical studies showing significant improvements in pain, stiffness and range of motion.</p>
+    <CTAButton slot="cta" />
+  </HeroSection>
 
   <!-- Three Benefits Section -->
   <section class="py-16 lg:py-24 bg-white">
@@ -236,11 +213,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <p class="text-gray-600">Regenerative injection treatment</p>
           </div>
 
-          <div class="text-center mb-8">
-            <span class="text-5xl font-bold text-emerald-700">$110</span>
-            <span class="text-gray-500">.00</span>
-          </div>
-
           <ul class="space-y-3 mb-8">
             <li class="flex items-center">
               <svg class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -277,31 +249,16 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             To ensure that prolotherapy will be a safe and effective treatment for you, an initial naturopathic consultation is required prior to starting treatment. The initial prolotherapy treatment is offered at a lesser cost if it is on the same day as the initial consultation.
           </p>
 
-          <div class="space-y-6">
-            <div class="flex justify-between items-center pb-4 border-b border-gray-100">
-              <div>
-                <h3 class="font-semibold text-emerald-950">Initial Consultation</h3>
-                <p class="text-sm text-gray-500">60 minute appointment</p>
-              </div>
-              <span class="text-2xl font-bold text-emerald-700">$200</span>
-            </div>
-
-            <div class="flex justify-between items-center pb-4 border-b border-gray-100">
-              <div>
-                <h3 class="font-semibold text-emerald-950">Prolotherapy Treatment</h3>
-                <p class="text-sm text-gray-500">Subsequent visits</p>
-              </div>
-              <span class="text-2xl font-bold text-emerald-700">$110</span>
-            </div>
-
-            <div class="flex justify-between items-center p-4 bg-emerald-50 rounded-xl">
-              <div>
-                <h3 class="font-semibold text-emerald-950">Initial Consult & Treatment</h3>
-                <p class="text-sm text-emerald-600">Save $50</p>
-              </div>
-              <span class="text-2xl font-bold text-emerald-700">$260</span>
-            </div>
-          </div>
+          <a
+            href="https://macleodnaturopathic.janeapp.com/"
+            target="_blank"
+            class="w-full bg-emerald-700 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-emerald-800 transition-colors shadow-lg inline-flex items-center justify-center"
+          >
+            Book Your Appointment
+            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
@@ -320,9 +277,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         <div class="rounded-2xl overflow-hidden shadow-xl">
           <img
-            src="/images/conditions/arthritis-knee-prp.png"
-            alt="Comparison of healthy knee, osteoarthritic knee, and advanced osteoarthritic knee showing cartilage injury, osteophytes, meniscal damage and bone exposure"
+            src="/images/treatments/knee-examination.png"
+            alt="Dr. MacLeod examining a patient's knee for osteoarthritis assessment"
             class="w-full h-full object-cover"
+            width="800"
+            height="1067"
+            loading="lazy"
           />
         </div>
 
@@ -413,9 +373,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </div>
         <div class="rounded-2xl overflow-hidden shadow-xl">
           <img
-            src="/images/charts/prolotherapy-osteoarthritis-graph.png"
+            src="/images/charts/prolotherapy-osteoarthritis-graph.webp"
             alt="Prolotherapy treatment results graph showing progressive improvement over 2.5 years"
             class="w-full h-full object-cover"
+            width="800"
+            height="600"
+            loading="lazy"
           />
         </div>
       </div>

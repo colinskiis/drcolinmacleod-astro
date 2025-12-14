@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import CTAButton from '../components/CTAButton.astro';
 ---
 
 <BaseLayout
@@ -7,32 +9,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   description="Prolotherapy is an effective treatment for Osgood-Schlatter disease in young athletes. A PEDIATRICS study showed 84% achieved pain-free sport at one year. Learn more at MacLeod Naturopathic in Halifax."
   focusKeyword="Osgood-Schlatter treatment Halifax"
 >
-  <!-- Hero Section -->
-  <section class="bg-emerald-950 -mt-24 pt-48 pb-16 lg:pt-56 lg:pb-24">
-    <div class="section-shell">
-      <div class="max-w-4xl">
-        <nav class="text-emerald-300 text-sm mb-4">
-          <a href="/prolotherapy" class="hover:text-white transition-colors">Prolotherapy</a>
-          <span class="mx-2">/</span>
-          <span class="text-white">Osgood-Schlatter Disease</span>
-        </nav>
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-white tracking-tight mb-6">Prolotherapy for Osgood-Schlatter Disease</h1>
-        <p class="text-lg sm:text-xl text-white/90 leading-relaxed font-light mb-8">
-          Osgood-Schlatter disease causes knee pain in active young people during growth spurts. When rest and time aren't enough, prolotherapy offers an evidence-based solution that can get young athletes back to sport faster.
-        </p>
-        <a
-          href="https://macleodnaturopathic.janeapp.com/"
-          target="_blank"
-          class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center"
-        >
-          Book Your Appointment
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </section>
+  <HeroSection title="Prolotherapy for Osgood-Schlatter Disease" compact textOnly>
+    <nav slot="breadcrumb" class="text-emerald-300 text-sm mb-4">
+      <a href="/prolotherapy" class="hover:text-white transition-colors">Prolotherapy</a>
+      <span class="mx-2">/</span>
+      <span class="text-white">Osgood-Schlatter Disease</span>
+    </nav>
+    <p>Osgood-Schlatter disease causes knee pain in active young people during growth spurts. When rest and time aren't enough, prolotherapy offers an evidence-based solution that can get young athletes back to sport faster.</p>
+    <CTAButton slot="cta" />
+  </HeroSection>
 
   <!-- Understanding OSD Section -->
   <section class="py-16 lg:py-24 bg-white">
@@ -41,13 +26,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8">What is Osgood-Schlatter Disease?</h2>
         <div class="prose prose-lg prose-emerald max-w-none">
           <p>
-            Osgood-Schlatter disease (OSD) is one of the most common causes of knee pain in growing adolescents. It affects the tibial tuberosity—the bony bump just below the kneecap where the patellar tendon attaches. During growth spurts, the bones grow faster than the muscles and tendons can adapt, creating excessive pulling force at this attachment point.
+            Osgood-Schlatter disease (OSD) is one of the most common causes of knee pain in growing adolescents. It affects the tibial tuberosity, the bony bump just below the kneecap where the patellar tendon attaches. During growth spurts, the bones grow faster than the muscles and tendons can adapt, creating excessive pulling force at this attachment point.
           </p>
           <p>
-            The condition causes pain, swelling and tenderness at the front of the knee, just below the kneecap. It's especially common in young athletes who play sports involving running, jumping and quick direction changes—soccer, basketball, volleyball, gymnastics and similar activities.
+            The condition causes pain, swelling and tenderness at the front of the knee, just below the kneecap. It's especially common in young athletes who play sports involving running, jumping and quick direction changes, such as soccer, basketball, volleyball, gymnastics and similar activities.
           </p>
           <p>
-            While OSD often resolves on its own after growth is complete, this can mean months or even years of limited activity. For dedicated young athletes, being told to "just rest and wait" isn't always a satisfactory answer—especially when they're missing seasons of their sport.
+            While OSD often resolves on its own after growth is complete, this can mean months or even years of limited activity. For dedicated young athletes, being told to "just rest and wait" isn't always a satisfactory answer, especially when they're missing seasons of their sport.
           </p>
         </div>
       </div>
@@ -63,7 +48,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <div class="grid lg:grid-cols-2 gap-12 items-start">
         <div class="prose prose-lg prose-emerald">
           <p>
-            A landmark randomized controlled trial published in <em>PEDIATRICS</em>—one of the most respected pediatric medical journals—studied prolotherapy specifically for Osgood-Schlatter disease in young athletes.
+            A landmark randomized controlled trial published in <em>PEDIATRICS</em>, one of the most respected pediatric medical journals, studied prolotherapy specifically for Osgood-Schlatter disease in young athletes.
           </p>
           <p>
             This was the first rigorous RCT of prolotherapy in a pediatric population, and the results were impressive: prolotherapy with 12.5% dextrose significantly outperformed both lidocaine injection and usual care.
@@ -238,7 +223,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <div class="bg-white/10 rounded-2xl p-8">
           <h3 class="text-xl font-serif font-semibold text-white mb-4">The Dextrose Difference</h3>
           <p class="text-emerald-200 mb-4">
-            The study showed that dextrose prolotherapy was significantly more effective than lidocaine alone, indicating that the therapeutic effect isn't just from the needle stimulation—there's something specific about the dextrose that promotes healing.
+            The study showed that dextrose prolotherapy was significantly more effective than lidocaine alone, indicating that the therapeutic effect isn't just from the needle itself. There's something specific about the dextrose that promotes healing.
           </p>
           <p class="text-emerald-200">
             Dextrose is thought to stimulate growth factor release and promote tissue repair at the damaged tendon-bone junction.
@@ -290,7 +275,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               <li>Mild cases often resolve with activity modification</li>
               <li>Ice, stretching and gradual activity resumption work for many</li>
               <li>Not every case of OSD requires intervention</li>
-              <li>Discuss with parents—they should understand the options</li>
+              <li>Discuss with parents; they should understand the options</li>
             </ul>
           </div>
         </div>
@@ -367,55 +352,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </div>
   </section>
 
-  <!-- Pricing Section -->
-  <section class="py-16 lg:py-24 bg-white">
-    <div class="section-shell">
-      <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-12 text-center">Pricing</h2>
-      <div class="max-w-xl mx-auto">
-        <div class="bg-emerald-50 rounded-3xl shadow-xl p-8 lg:p-10">
-          <div class="text-center mb-6">
-            <h3 class="text-2xl font-serif font-bold text-emerald-950 mb-4">Prolotherapy for Osgood-Schlatter</h3>
-            <div class="text-4xl font-bold text-emerald-700">$200</div>
-            <p class="text-slate-600 mt-2">per treatment session</p>
-          </div>
-          <ul class="space-y-3 text-slate-600 mb-8">
-            <li class="flex items-center gap-3">
-              <svg class="w-5 h-5 text-emerald-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-              </svg>
-              <span>Single knee treatment</span>
-            </li>
-            <li class="flex items-center gap-3">
-              <svg class="w-5 h-5 text-emerald-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-              </svg>
-              <span>Both knees (if needed): $250</span>
-            </li>
-            <li class="flex items-center gap-3">
-              <svg class="w-5 h-5 text-emerald-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-              </svg>
-              <span>Typically 3 sessions needed (monthly)</span>
-            </li>
-            <li class="flex items-center gap-3">
-              <svg class="w-5 h-5 text-emerald-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-              </svg>
-              <span>Initial consultation: $150</span>
-            </li>
-          </ul>
-          <a
-            href="https://macleodnaturopathic.janeapp.com/"
-            target="_blank"
-            class="block w-full bg-emerald-700 text-white text-center px-6 py-3 rounded-full font-semibold hover:bg-emerald-800 transition-colors"
-          >
-            Book Appointment
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- FAQ for Parents -->
   <section class="py-16 lg:py-24 bg-emerald-50">
     <div class="section-shell">
@@ -429,7 +365,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             </svg>
           </summary>
           <div class="px-6 pb-6 text-slate-600">
-            The PEDIATRICS study specifically evaluated safety in adolescents ages 10-17. No serious adverse events were reported. The injection uses a small needle (27-gauge) and contains simple dextrose (sugar) mixed with lidocaine—both commonly used and well-understood substances. Temporary soreness at the injection site is normal and typically resolves within a few days.
+            The PEDIATRICS study specifically evaluated safety in adolescents ages 10-17. No serious adverse events were reported. The injection uses a small needle (27-gauge) and contains simple dextrose (sugar) mixed with lidocaine, both commonly used and well-understood substances. Temporary soreness at the injection site is normal and typically resolves within a few days.
           </div>
         </details>
 
@@ -453,19 +389,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             </svg>
           </summary>
           <div class="px-6 pb-6 text-slate-600">
-            OSD does eventually resolve for most people once growth is complete, but this can take months to years. The study showed that at one year, only 14% of the usual care group was completely asymptomatic, compared to 84% of those who received dextrose prolotherapy. Additionally, some athletes in the usual care group had to drop out of sports entirely—which didn't happen in the injection groups.
-          </div>
-        </details>
-
-        <details class="group bg-white rounded-2xl shadow-lg">
-          <summary class="flex items-center justify-between cursor-pointer p-6 font-serif font-semibold text-emerald-950">
-            Should we try other treatments first?
-            <svg class="w-5 h-5 text-emerald-700 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </summary>
-          <div class="px-6 pb-6 text-slate-600">
-            Many cases of OSD resolve with conservative measures like ice, stretching, activity modification and time. The study specifically enrolled patients who had failed at least 2 months of conservative care—so prolotherapy is typically considered when simpler approaches haven't worked. If your child's symptoms are mild or improving with rest, it makes sense to continue that approach.
+            OSD does eventually resolve for most people once growth is complete, but this can take months to years. The study showed that at one year, only 14% of the usual care group was completely asymptomatic, compared to 84% of those who received dextrose prolotherapy. Additionally, some athletes in the usual care group had to drop out of sports entirely, which didn't happen in the injection groups.
           </div>
         </details>
 
@@ -489,7 +413,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             </svg>
           </summary>
           <div class="px-6 pb-6 text-slate-600">
-            The bony prominence at the tibial tuberosity often remains even after pain resolves—this is true regardless of treatment. The goal of prolotherapy is to eliminate pain and allow return to full activity, not to change the bone structure. Most adults who had OSD as children have a slightly prominent tibial tuberosity that doesn't cause any symptoms.
+            The bony prominence at the tibial tuberosity often remains even after pain resolves; this is true regardless of treatment. The goal of prolotherapy is to eliminate pain and allow return to full activity, not to change the bone structure. Most adults who had OSD as children have a slightly prominent tibial tuberosity that doesn't cause any symptoms.
           </div>
         </details>
       </div>

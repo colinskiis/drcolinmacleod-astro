@@ -1,0 +1,36 @@
+---
+export interface StepItem {
+  title: string;
+  description: string;
+}
+
+export interface Props {
+  steps: StepItem[];
+  size?: 'sm' | 'md';
+  variant?: 'dark' | 'light';
+}
+
+const { steps, size = 'md', variant = 'dark' } = Astro.props;
+
+const sizeClasses = size === 'sm'
+  ? "w-8 h-8 text-sm"
+  : "w-12 h-12 text-lg";
+
+const colorClasses = variant === 'light'
+  ? "bg-emerald-100 text-emerald-700"
+  : "bg-emerald-700 text-white";
+---
+
+<div class="space-y-6">
+  {steps.map((step, index) => (
+    <div class="flex gap-6 items-start">
+      <div class={`flex-shrink-0 ${sizeClasses} ${colorClasses} rounded-full flex items-center justify-center font-bold`}>
+        {index + 1}
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold text-emerald-950 mb-2">{step.title}</h3>
+        <p class="text-gray-600">{step.description}</p>
+      </div>
+    </div>
+  ))}
+</div>

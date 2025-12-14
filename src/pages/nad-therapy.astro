@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import CTAButton from '../components/CTAButton.astro';
 ---
 
 <BaseLayout
@@ -7,36 +9,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   description="NAD+ IV therapy supports cellular energy, mental clarity and healthy aging. Learn about NAD+ infusions at MacLeod Naturopathic in Halifax, Nova Scotia."
   focusKeyword="NAD therapy Halifax"
 >
-  <!-- Hero Section -->
-  <section class="bg-emerald-950 -mt-24 pt-48 pb-16 lg:pt-56 lg:pb-24">
-    <div class="section-shell">
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
-        <div class="space-y-6">
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-white tracking-tight">NAD+ IV Therapy</h1>
-          <p class="text-lg sm:text-xl text-white/90 leading-relaxed font-light">
-            NAD+ (nicotinamide adenine dinucleotide) is a coenzyme essential for cellular energy production, DNA repair and healthy aging. IV administration delivers NAD+ directly to your cells for optimal absorption.
-          </p>
-          <a
-            href="https://macleodnaturopathic.janeapp.com/"
-            target="_blank"
-            class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center"
-          >
-            Book Your Appointment
-            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-            </svg>
-          </a>
-        </div>
-        <div class="rounded-2xl overflow-hidden shadow-2xl">
-          <img
-            src="/images/treatments/nad-therapy-hero.png"
-            alt="NAD+ IV therapy infusion in a comfortable clinical setting"
-            class="w-full h-full object-cover aspect-video"
-          />
-        </div>
-      </div>
-    </div>
-  </section>
+  <HeroSection
+    title="NAD+ IV Therapy"
+    compact
+    image={{ src: "/images/treatments/nad-iv-therapy-session.png", alt: "Patient receiving NAD+ IV therapy at MacLeod Naturopathic", aspect: "video" }}
+  >
+    <p>NAD+ (nicotinamide adenine dinucleotide) is a coenzyme essential for cellular energy production, DNA repair and healthy aging. IV administration delivers NAD+ directly to your cells for optimal absorption.</p>
+    <CTAButton slot="cta" />
+  </HeroSection>
 
   <!-- Three Benefits Section -->
   <section class="py-16 lg:py-24 bg-white">
@@ -98,8 +78,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </div>
         <div class="rounded-2xl overflow-hidden shadow-xl">
           <img
-            src="/images/treatments/nad-cellular-energy.png"
-            alt="Energized woman hiking outdoors representing renewed vitality from NAD+ therapy"
+            src="/images/treatments/nad-cellular-energy.webp"
+            alt="Active woman enjoying outdoor activities with renewed energy from NAD+ therapy"
             class="w-full h-full object-cover"
           />
         </div>
@@ -203,7 +183,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         <div class="rounded-2xl overflow-hidden shadow-xl order-2 lg:order-1">
           <img
-            src="/images/treatments/nad-brain-clarity.png"
+            src="/images/treatments/nad-brain-clarity.webp"
             alt="Brain fog to mental clarity transformation with NAD+ therapy"
             class="w-full h-full object-cover"
           />
@@ -242,12 +222,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <p class="text-gray-600">Cellular energy and regeneration support</p>
           </div>
 
-          <div class="text-center mb-8">
-            <span class="text-5xl font-bold text-emerald-700">$350</span>
-            <span class="text-gray-500">.00</span>
-            <p class="text-sm text-gray-500 mt-2">250mg NAD+ infusion (2-3 hours)</p>
-          </div>
-
           <ul class="space-y-3 mb-8">
             <li class="flex items-center">
               <svg class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -284,39 +258,16 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             To ensure that NAD+ therapy is appropriate for you, an initial naturopathic consultation is required. This allows us to review your health history, discuss your goals and create a personalized treatment plan.
           </p>
 
-          <div class="space-y-6">
-            <div class="flex justify-between items-center pb-4 border-b border-gray-100">
-              <div>
-                <h3 class="font-semibold text-emerald-950">Initial Consultation</h3>
-                <p class="text-sm text-gray-500">60 minute appointment</p>
-              </div>
-              <span class="text-2xl font-bold text-emerald-700">$200</span>
-            </div>
-
-            <div class="flex justify-between items-center pb-4 border-b border-gray-100">
-              <div>
-                <h3 class="font-semibold text-emerald-950">NAD+ 250mg Infusion</h3>
-                <p class="text-sm text-gray-500">Standard therapeutic dose</p>
-              </div>
-              <span class="text-2xl font-bold text-emerald-700">$350</span>
-            </div>
-
-            <div class="flex justify-between items-center pb-4 border-b border-gray-100">
-              <div>
-                <h3 class="font-semibold text-emerald-950">NAD+ 500mg Infusion</h3>
-                <p class="text-sm text-gray-500">Higher dose protocol</p>
-              </div>
-              <span class="text-2xl font-bold text-emerald-700">$550</span>
-            </div>
-
-            <div class="flex justify-between items-center p-4 bg-emerald-50 rounded-xl">
-              <div>
-                <h3 class="font-semibold text-emerald-950">Series of 4 Infusions</h3>
-                <p class="text-sm text-emerald-600">Recommended protocol</p>
-              </div>
-              <span class="text-2xl font-bold text-emerald-700">$1,260</span>
-            </div>
-          </div>
+          <a
+            href="https://macleodnaturopathic.janeapp.com/"
+            target="_blank"
+            class="w-full bg-emerald-700 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-emerald-800 transition-colors shadow-lg inline-flex items-center justify-center"
+          >
+            Book Your Appointment
+            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
@@ -416,7 +367,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               </svg>
             </summary>
             <div class="px-6 pb-6 text-gray-600">
-              NAD+ infusions typically take 2-4 hours depending on the dose and your individual tolerance. The infusion rate is adjusted to ensure comfort throughout the session. We recommend bringing something to read or watch during your treatment.
+              NAD+ infusions typically take 1-4 hours depending on the dose and your individual tolerance. The infusion rate is adjusted to ensure comfort throughout the session. We recommend bringing something to read or watch during your treatment.
             </div>
           </details>
 
@@ -428,7 +379,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               </svg>
             </summary>
             <div class="px-6 pb-6 text-gray-600">
-              Most people benefit from an initial series of 4 infusions spread over 2-4 weeks. Following this loading phase, maintenance infusions every 4-8 weeks help sustain benefits. Your treatment plan will be personalized based on your health goals and response to therapy.
+              Most people benefit from an initial series of 3 infusions spread over 3-6 weeks. Following this loading phase, maintenance infusions every 4-8 weeks help sustain benefits. Your treatment plan will be personalized based on your health goals and response to therapy.
             </div>
           </details>
 

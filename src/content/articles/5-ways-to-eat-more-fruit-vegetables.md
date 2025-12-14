@@ -3,7 +3,7 @@ title: "5 Ways To Eat More Fruit & Vegetables"
 description: "Fruit and Vegetable intake is an important part of a healthy diet. Eating 5-10 servings per day helps us to feel great and prevent disease."
 publishDate: 2012-08-13
 modifiedDate: 2022-07-12
-heroImage: "/images/nutrition/clinical-nutrition-1.jpeg"
+heroImage: "/images/nutrition/clinical-nutrition-1.webp"
 categories: ["Naturopathic"]
 tags: ["naturopathic"]
 seo:

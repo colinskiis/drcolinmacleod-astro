@@ -5,13 +5,13 @@ Allow: /
 Disallow: /admin/
 Disallow: /_astro/
 Disallow: /.well-known/
+Disallow: /api/
 
 # Allow crawling of images
 Allow: /images/
-Allow: /wp-content/uploads/
 
 # Point to sitemap
-Sitemap: https://drcolinmacleod.com/sitemap.xml
+Sitemap: https://drcolinmacleod.com/sitemap-index.xml
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1

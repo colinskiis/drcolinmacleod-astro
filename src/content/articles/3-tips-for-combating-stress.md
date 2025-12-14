@@ -3,7 +3,7 @@ title: "3 Tips For Combating Stress"
 description: "Stress comes in many forms. Use these naturopathic approved methods of stress reduction to help keep you cool and calm, any time of year."
 publishDate: 2012-12-17
 modifiedDate: 2018-11-22
-heroImage: "/images/general/running-woman-athletic.jpeg"
+heroImage: "/images/general/running-woman-athletic.webp"
 categories: ["Naturopathic"]
 tags: ["naturopathic"]
 seo:

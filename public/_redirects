@@ -1,0 +1,6 @@
+# Redirect archived patient guide pages to patient resources
+/patient-info/new-patient-guide      /patient-resources    301
+/patient-info/iv-therapy-guide       /patient-resources    301
+/patient-info/prolotherapy-guide     /patient-resources    301
+/patient-info/lab-testing-guide      /patient-resources    301
+/patient-info/*                      /patient-resources    301

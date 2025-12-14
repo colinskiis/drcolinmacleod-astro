@@ -1,6 +1,8 @@
 ---
 title: "Migraine Headache"
-description: "Migraines are a common type of headache characterized by a pulsing or throbbing sensation and often accompanied by nausea, vomiting, and sensitivity to lig..."
+description: "Migraines cause throbbing headaches with nausea, light sensitivity, and vision changes. Learn about triggers, symptoms, and natural treatment options."
+seo:
+  focusKeyword: "migraine treatment"
 ---
 
 ![Migraine headache. Woman holding her head.](/images/conditions/migraine.jpeg)

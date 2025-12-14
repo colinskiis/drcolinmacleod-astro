@@ -1,6 +1,8 @@
 ---
 title: "TMJ Dysfunction"
-description: "Temporomandibular joint (TMJ) dysfunction is a disorder that affects the jaw joint, causing pain and discomfort in the jaw, face, neck and head. TMJ dysfun..."
+description: "TMJ dysfunction affects the jaw joint, causing pain in the jaw, face, neck, and head. Learn about symptoms, risk factors, and treatment options."
+seo:
+  focusKeyword: "TMJ dysfunction treatment"
 ---
 
 ![TMJ pain. Woman holding jaw in pain](/images/conditions/tmj-pain-woman-holding-jaw.jpeg)

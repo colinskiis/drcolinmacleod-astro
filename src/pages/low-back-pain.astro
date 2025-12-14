@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import CTAButton from '../components/CTAButton.astro';
 ---
 
 <BaseLayout
@@ -7,38 +9,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   description="Comprehensive low back pain treatment in Halifax including prolotherapy, naturopathic medicine and regenerative therapies. Address the root cause of your back pain."
   focusKeyword="low back pain treatment Halifax"
 >
-  <!-- Hero Section -->
-  <section class="bg-emerald-950 -mt-24 pt-48 pb-16 lg:pt-56 lg:pb-24">
-    <div class="section-shell">
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
-        <div class="space-y-6">
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-white tracking-tight">Low Back Pain Treatment</h1>
-          <p class="text-lg sm:text-xl text-white/90 leading-relaxed font-light">
-            Low back pain affects up to <strong class="text-white">75% of Canadians</strong> at some point in their lives. Whether your pain stems from disc problems, facet joints, sacroiliac dysfunction, or ligament injury, we offer treatments that address the underlying cause—not just the symptoms.
-          </p>
-          <div class="flex flex-col sm:flex-row gap-4">
-            <a
-              href="https://macleodnaturopathic.janeapp.com/"
-              target="_blank"
-              class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center justify-center"
-            >
-              Book Your Appointment
-              <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-              </svg>
-            </a>
-          </div>
-        </div>
-        <div class="rounded-2xl overflow-hidden shadow-2xl">
-          <img
-            src="/images/conditions/low-back-pain-hero.jpg"
-            alt="Low back pain treatment"
-            class="w-full h-full object-cover aspect-video"
-          />
-        </div>
-      </div>
-    </div>
-  </section>
+  <HeroSection
+    title="Low Back Pain Treatment"
+    compact
+    image={{ src: "/images/conditions/low-back-pain-hero.webp", alt: "Low back pain treatment", aspect: "video" }}
+  >
+    <p>Low back pain affects up to <strong class="text-white">75% of Canadians</strong> at some point in their lives. Whether your pain stems from disc problems, facet joints, sacroiliac dysfunction, or ligament injury, we offer treatments that address the underlying cause, not just the symptoms.</p>
+    <CTAButton slot="cta" />
+  </HeroSection>
 
   <!-- Statistics Section -->
   <section class="py-16 lg:py-24 bg-white">
@@ -70,7 +48,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <div class="text-center mb-12">
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Understanding Your Back Pain</h2>
         <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-          Effective treatment requires identifying the source. Low back pain rarely has a single cause—most patients have multiple contributing structures.
+          Effective treatment requires identifying the source. Low back pain rarely has a single cause. Most patients have multiple contributing structures.
         </p>
       </div>
 
@@ -134,7 +112,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-6">Our Treatment Approach</h2>
           <div class="prose prose-lg prose-invert">
             <p class="text-white/90">
-              Conventional treatment for low back pain often focuses on managing symptoms with medications, or jumping to imaging and surgical consultations. Yet for the vast majority of patients, surgery isn't an option—and medications don't address the underlying problem.
+              Conventional treatment for low back pain often focuses on managing symptoms with medications, or jumping to imaging and surgical consultations. Yet for the vast majority of patients, surgery isn't an option, and medications don't address the underlying problem.
             </p>
             <p class="text-white/90">
               Our approach is different. We focus on identifying and treating the specific structures causing your pain, using regenerative therapies that promote actual tissue repair rather than simply masking symptoms.
@@ -161,7 +139,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </div>
         <div class="rounded-2xl overflow-hidden shadow-2xl">
           <img
-            src="/images/conditions/spine-anatomy.jpg"
+            src="/images/conditions/spine-anatomy.webp"
             alt="Spine anatomy showing disc, facet joints and ligaments"
             class="w-full h-full object-cover"
           />
@@ -199,11 +177,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           </div>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-6">
-          <div class="text-center p-6 bg-emerald-700 rounded-2xl text-white">
-            <div class="text-3xl font-bold mb-2">$110</div>
-            <p class="text-white/90">per treatment session</p>
-          </div>
+        <div class="grid md:grid-cols-2 gap-6">
           <div class="text-center p-6 bg-emerald-700 rounded-2xl text-white">
             <div class="text-3xl font-bold mb-2">4-6</div>
             <p class="text-white/90">typical treatment sessions</p>
@@ -341,32 +315,19 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             </div>
           </div>
         </div>
-        <div class="bg-emerald-50 rounded-2xl p-8">
-          <h3 class="text-xl font-semibold text-emerald-950 mb-6">Getting Started</h3>
-          <div class="space-y-4">
-            <div class="flex justify-between items-center pb-4 border-b border-emerald-200">
-              <div>
-                <h4 class="font-semibold text-emerald-950">Initial Consultation</h4>
-                <p class="text-sm text-gray-500">60 minute comprehensive assessment</p>
-              </div>
-              <span class="text-2xl font-bold text-emerald-700">$200</span>
-            </div>
-            <div class="flex justify-between items-center pb-4 border-b border-emerald-200">
-              <div>
-                <h4 class="font-semibold text-emerald-950">Prolotherapy Treatment</h4>
-                <p class="text-sm text-gray-500">Per session</p>
-              </div>
-              <span class="text-2xl font-bold text-emerald-700">$110</span>
-            </div>
-            <div class="flex justify-between items-center p-4 bg-emerald-100 rounded-xl">
-              <div>
-                <h4 class="font-semibold text-emerald-950">Initial Consult + Treatment</h4>
-                <p class="text-sm text-emerald-600">Save $50</p>
-              </div>
-              <span class="text-2xl font-bold text-emerald-700">$260</span>
-            </div>
-          </div>
-          <p class="text-sm text-gray-500 mt-4">Most extended health plans cover naturopathic services</p>
+        <div class="bg-emerald-50 rounded-2xl p-8 text-center">
+          <h3 class="text-xl font-semibold text-emerald-950 mb-4">Getting Started</h3>
+          <p class="text-gray-600 mb-6">Most extended health plans cover naturopathic services including prolotherapy.</p>
+          <a
+            href="https://macleodnaturopathic.janeapp.com/"
+            target="_blank"
+            class="bg-emerald-700 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-emerald-800 transition-colors shadow-lg inline-flex items-center justify-center"
+          >
+            Book Your Appointment
+            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
@@ -387,7 +348,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               </svg>
             </summary>
             <div class="px-6 pb-6 text-gray-600">
-              We use a combination of detailed history, physical examination including specific orthopedic tests and review of any imaging you've already had. Different pain sources have characteristic patterns—for example, sacroiliac pain typically affects one side and is worse with sitting, while facet joint pain is often worse with extension and twisting.
+              We use a combination of detailed history, physical examination including specific orthopedic tests and review of any imaging you've already had. Different pain sources have characteristic patterns. For example, sacroiliac pain typically affects one side and is worse with sitting, while facet joint pain is often worse with extension and twisting.
             </div>
           </details>
 
@@ -399,7 +360,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               </svg>
             </summary>
             <div class="px-6 pb-6 text-gray-600">
-              Not necessarily. While imaging can be helpful in some cases, research shows that MRI findings often don't correlate well with symptoms—many people have disc bulges or degeneration on imaging but no pain, while others have significant pain with normal-looking scans. Clinical assessment is often more valuable for directing treatment. If you have existing imaging, please bring it to your appointment.
+              Not necessarily. While imaging can be helpful in some cases, research shows that MRI findings often don't correlate well with symptoms. Many people have disc bulges or degeneration on imaging but no pain, while others have significant pain with normal-looking scans. Clinical assessment is often more valuable for directing treatment. If you have existing imaging, please bring it to your appointment.
             </div>
           </details>
 
@@ -447,7 +408,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               </svg>
             </summary>
             <div class="px-6 pb-6 text-gray-600">
-              Not necessarily—in fact, research shows prolotherapy works best when combined with other therapies like exercise and manual treatment. We encourage continuing with physiotherapy or chiropractic care if you're finding them helpful. We'll discuss any modifications needed around the timing of your treatments.
+              Not necessarily. In fact, research shows prolotherapy works best when combined with other therapies like exercise and manual treatment. We encourage continuing with physiotherapy or chiropractic care if you're finding them helpful. We'll discuss any modifications needed around the timing of your treatments.
             </div>
           </details>
         </div>
@@ -505,7 +466,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           "name": "How do you determine what's causing my back pain?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We use a combination of detailed history, physical examination including specific orthopedic tests and review of any imaging you've already had. Different pain sources have characteristic patterns—for example, sacroiliac pain typically affects one side and is worse with sitting, while facet joint pain is often worse with extension and twisting."
+            "text": "We use a combination of detailed history, physical examination including specific orthopedic tests and review of any imaging you've already had. Different pain sources have characteristic patterns. For example, sacroiliac pain typically affects one side and is worse with sitting, while facet joint pain is often worse with extension and twisting."
           }
         },
         {

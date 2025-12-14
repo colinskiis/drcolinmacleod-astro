@@ -3,7 +3,7 @@ title: "How Much Sleep Does An Athlete Need?"
 description: "Nutrition and training are front and centre in the minds of competitive athletes. However sleep is also an essential factor in performance optimization."
 publishDate: 2015-05-27
 modifiedDate: 2022-07-12
-heroImage: "/images/general/hockey-player-performance.jpg"
+heroImage: "/images/general/hockey-player-performance.webp"
 categories: ["Naturopathic"]
 tags: ["naturopathic"]
 seo:
@@ -21,7 +21,7 @@ Research has shown that short-term sleep loss has negative effects on many aspec
 
 ### Strength, Power
 
-<img src="/images/general/weightlifter-sleep.jpg" alt="Weightlifter and sleep deprivation" style="max-width: 100%; height: auto;">
+<img src="/images/general/weightlifter-sleep.webp" alt="Weightlifter and sleep deprivation" style="max-width: 100%; height: auto;">
 
 While weight lifters who lose one night's sleep may maintain normal strength levels<sup>2</sup>, getting three consecutive nights of poor sleep (3 hours per night) significantly reduces maximal and submaximal lifts, with maximal bench press decreasing 20lbs on average<sup>3</sup>. In another study Judo competitors also had significantly reduced performance<sup>4</sup> on strength tests after a single night of poor sleep.
 
@@ -35,7 +35,7 @@ A study of dart players found that after one night of 3-4 hours sleep they were 
 
 ### Speed
 
-<img src="/images/general/sprinter-sleep.jpg" alt="Sprinter and sleep" style="max-width: 100%; height: auto;">
+<img src="/images/general/sprinter-sleep.webp" alt="Sprinter and sleep" style="max-width: 100%; height: auto;">
 
 Sprinters' acceleration, maximum speed and submaximal sprint times<sup>14</sup> were all negatively affected after missing one night's sleep. In another study college basketball players who increased the amount they slept each night by 2 hours (on average) over a 5-7 week period also had significantly faster sprint times<sup>10</sup>. Another interesting study found that while a night's sleep of just 4 hours resulted in significantly slower sprints; sprint speed could be recovered<sup>15</sup> if the runner took a half-hour nap earlier in the day to recoup lost sleep.
 
@@ -47,7 +47,7 @@ More *realistic, real-world* tests reveal that sleep deprivation has a powerful 
 
 ## Long-term Sleep Deprivation
 
-<img src="/images/general/tired-athlete.jpg" alt="Tired young woman in gym">
+<img src="/images/general/tired-athlete.webp" alt="Tired young woman in gym">
 
 While exercise in general is an important factor in maintaining good quality sleep, elite level athletes tend to have more sleep problems<sup>17</sup> than the average person. Overreaching and overtraining can also result from long-term sleep deficits, leading to poor performance and a myriad of health issues including depression, fatigue and immune system suppression<sup>17,18</sup>. With this in mind athletes must make efforts to maintain ideal sleep habits for performance and health maintenance.
 

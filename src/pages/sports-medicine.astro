@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import CTAButton from '../components/CTAButton.astro';
 ---
 
 <BaseLayout
@@ -7,37 +9,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   description="Naturopathic sports medicine in Halifax offering prolotherapy, prolozone and regenerative injection therapy for athletic injuries, joint pain and faster recovery. Evidence-based treatments for active Nova Scotians."
   focusKeyword="sports medicine Halifax"
 >
-  <!-- Hero Section -->
-  <section class="bg-emerald-950 -mt-24 pt-48 pb-16 lg:pt-56 lg:pb-24">
-    <div class="section-shell">
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
-        <div class="space-y-6">
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-white tracking-tight">Sports Medicine & Regenerative Therapy</h1>
-          <p class="text-lg sm:text-xl text-white/90 leading-relaxed font-light">
-            Get back to the activities you love. Our regenerative injection therapies help heal injuries, reduce pain and restore function for athletes and active individuals throughout Halifax.
-          </p>
-          <a
-            href="https://macleodnaturopathic.janeapp.com/"
-            target="_blank"
-            class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center"
-          >
-            Book Your Assessment
-            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-            </svg>
-          </a>
-        </div>
-        <div class="rounded-2xl overflow-hidden shadow-2xl">
-          <img
-            src="/images/services/sports-medicine-hero.jpg"
-            alt="Athlete receiving regenerative injection therapy for sports injury"
-            class="w-full h-full object-cover"
-            onerror="this.style.display='none'"
-          />
-        </div>
-      </div>
-    </div>
-  </section>
+  <HeroSection
+    title="Sports Medicine & Regenerative Therapy"
+    compact
+    image={{ src: "/images/services/sports-medicine-hero.webp", alt: "Athlete receiving regenerative injection therapy for sports injury", aspect: "video" }}
+  >
+    <p>Get back to the activities you love. Our regenerative injection therapies help heal injuries, reduce pain and restore function for athletes and active individuals throughout Halifax.</p>
+    <CTAButton slot="cta">Book Your Appointment</CTAButton>
+  </HeroSection>
 
   <!-- Why Regenerative Medicine Section -->
   <section class="py-16 lg:py-24 bg-white">
@@ -45,7 +24,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <div class="max-w-4xl mx-auto text-center mb-12">
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-6">Why Regenerative Medicine for Sports Injuries?</h2>
         <p class="text-lg text-gray-600">
-          Traditional approaches often mask pain without addressing the underlying tissue damage. Regenerative injection therapies stimulate your body's natural healing response to repair damaged ligaments, tendons, and joints—not just manage symptoms.
+          Traditional approaches often mask pain without addressing the underlying tissue damage. Regenerative injection therapies stimulate your body's natural healing response to repair damaged ligaments, tendons, and joints rather than just manage symptoms.
         </p>
       </div>
 
@@ -136,11 +115,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               </li>
             </ul>
 
-            <div class="flex items-center justify-between border-t border-gray-100 pt-6">
-              <div>
-                <span class="text-3xl font-bold text-emerald-700">$110</span>
-                <span class="text-gray-500">/treatment</span>
-              </div>
+            <div class="flex items-center justify-end border-t border-gray-100 pt-6">
               <a href="/prolotherapy-for-arthritis" class="text-emerald-700 font-semibold hover:text-emerald-800 transition-colors inline-flex items-center">
                 Learn More
                 <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -190,11 +165,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               </li>
             </ul>
 
-            <div class="flex items-center justify-between border-t border-gray-100 pt-6">
-              <div>
-                <span class="text-3xl font-bold text-emerald-700">$110</span>
-                <span class="text-gray-500">/treatment</span>
-              </div>
+            <div class="flex items-center justify-end border-t border-gray-100 pt-6">
               <a href="/prolozone" class="text-emerald-700 font-semibold hover:text-emerald-800 transition-colors inline-flex items-center">
                 Learn More
                 <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -426,52 +397,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </div>
   </section>
 
-  <!-- Pricing Section -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
-    <div class="section-shell">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Investment in Your Recovery</h2>
-        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-          Transparent pricing with no surprises. Most extended health plans cover naturopathic services.
-        </p>
-      </div>
-
-      <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-        <!-- Initial Consultation -->
-        <div class="bg-white rounded-2xl shadow-lg p-8 text-center">
-          <h3 class="text-xl font-semibold text-emerald-950 mb-2">Initial Consultation</h3>
-          <p class="text-gray-500 text-sm mb-4">60 minutes</p>
-          <div class="mb-6">
-            <span class="text-4xl font-bold text-emerald-700">$200</span>
-          </div>
-          <p class="text-gray-600 text-sm">Comprehensive assessment, diagnosis and treatment planning</p>
-        </div>
-
-        <!-- Treatment Session -->
-        <div class="bg-white rounded-2xl shadow-lg p-8 text-center border-2 border-emerald-700">
-          <div class="bg-emerald-700 text-white text-xs font-semibold px-3 py-1 rounded-full inline-block mb-4">MOST POPULAR</div>
-          <h3 class="text-xl font-semibold text-emerald-950 mb-2">Treatment Session</h3>
-          <p class="text-gray-500 text-sm mb-4">Prolotherapy or Prolozone</p>
-          <div class="mb-6">
-            <span class="text-4xl font-bold text-emerald-700">$110</span>
-          </div>
-          <p class="text-gray-600 text-sm">Per treatment area. Multiple areas may be treated in one session.</p>
-        </div>
-
-        <!-- Combo Package -->
-        <div class="bg-white rounded-2xl shadow-lg p-8 text-center">
-          <h3 class="text-xl font-semibold text-emerald-950 mb-2">First Visit Package</h3>
-          <p class="text-gray-500 text-sm mb-4">Consultation + Treatment</p>
-          <div class="mb-2">
-            <span class="text-4xl font-bold text-emerald-700">$260</span>
-          </div>
-          <p class="text-emerald-600 text-sm font-semibold mb-4">Save $50</p>
-          <p class="text-gray-600 text-sm">Get started on treatment the same day as your assessment</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Supporting Recovery Section -->
   <section class="py-16 lg:py-24 bg-white">
     <div class="section-shell">
@@ -593,7 +518,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               </svg>
             </summary>
             <div class="px-6 pb-6 text-gray-600">
-              Most extended health benefit plans cover naturopathic medicine, which includes our regenerative injection therapies. Coverage varies by plan—check with your provider for your specific naturopathic medicine benefits. We provide detailed receipts for insurance submission.
+              Most extended health benefit plans cover naturopathic medicine, which includes our regenerative injection therapies. Coverage varies by plan. Check with your provider for your specific naturopathic medicine benefits. We offer direct billing for many major insurers.
             </div>
           </details>
 
@@ -605,7 +530,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               </svg>
             </summary>
             <div class="px-6 pb-6 text-gray-600">
-              Cortisone suppresses inflammation and can provide short-term pain relief, but doesn't promote tissue healing and may actually weaken tendons with repeated use. Prolotherapy works differently—it stimulates a controlled healing response to strengthen and repair damaged tissue. Research comparing the two found both effective short-term, but prolotherapy showed superior results at 6 months.
+              Cortisone suppresses inflammation and can provide short-term pain relief, but doesn't promote tissue healing and may actually weaken tendons with repeated use. Prolotherapy works differently: it stimulates a controlled healing response to strengthen and repair damaged tissue. Research comparing the two found both effective short-term, but prolotherapy showed superior results at 6 months.
             </div>
           </details>
 
@@ -664,7 +589,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           target="_blank"
           class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center"
         >
-          Book Your Assessment
+          Book Your Appointment
           <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
           </svg>
@@ -708,7 +633,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           "name": "Is this covered by insurance?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Most extended health benefit plans cover naturopathic medicine, which includes our regenerative injection therapies. Coverage varies by plan—check with your provider for your specific naturopathic medicine benefits."
+            "text": "Most extended health benefit plans cover naturopathic medicine, which includes our regenerative injection therapies. Coverage varies by plan. Check with your provider for your specific naturopathic medicine benefits."
           }
         },
         {

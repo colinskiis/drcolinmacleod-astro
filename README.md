@@ -1,43 +1,31 @@
-# Astro Starter Kit: Minimal
+# DrColinMacleod.com
 
-```sh
-npm create astro@latest -- --template minimal
+Naturopathic medicine website built with Astro.
+
+## Development
+
+```bash
+npm install      # Install dependencies
+npm run dev      # Start dev server at localhost:4321
+npm run build    # Build for production
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Deployment
 
-## 🚀 Project Structure
+Deploy to Namecheap hosting via SSH:
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+./deploy.sh
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+This builds the site and syncs to the server using rsync (only uploads changed files).
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+### SSH Setup
 
-Any static assets, like images, can be placed in the `public/` directory.
+The deploy script uses SSH key authentication:
+- **Host**: `business81.web-hosting.com`
+- **Port**: `21098`
+- **User**: `drcohmrh`
+- **Key**: `~/.ssh/namecheap_rsa`
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+To connect manually: `ssh namecheap` (configured in `~/.ssh/config`)

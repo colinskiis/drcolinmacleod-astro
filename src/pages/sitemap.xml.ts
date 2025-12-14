@@ -31,14 +31,7 @@ export async function GET() {
       priority: '0.7'
     }));
 
-  const patientInfoPages = [
-    { url: '/patient-info/new-patient-guide', changefreq: 'monthly', priority: '0.6' },
-    { url: '/patient-info/iv-therapy-guide', changefreq: 'monthly', priority: '0.6' },
-    { url: '/patient-info/prolotherapy-guide', changefreq: 'monthly', priority: '0.6' },
-    { url: '/patient-info/lab-testing-guide', changefreq: 'monthly', priority: '0.6' },
-  ];
-
-  const allPages = [...staticPages, ...articlePages, ...treatmentPages, ...patientInfoPages];
+  const allPages = [...staticPages, ...articlePages, ...treatmentPages];
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

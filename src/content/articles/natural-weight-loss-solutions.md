@@ -1,9 +1,9 @@
 ---
-title: "Natural Weight Loss Solutions"
+title: "Sustainable Weight Management"
 description: "While fewer calories in and more calories out is important for weight loss, actually making a plan to effectively lose weight is not as simple as 3 – 2 = 1"
 publishDate: 2013-08-20
 modifiedDate: 2022-07-12
-heroImage: "/images/general/running-woman-athletic.jpeg"
+heroImage: "/images/general/running-woman-athletic.webp"
 categories: ["Uncategorized"]
 tags: ["naturopathic"]
 seo:

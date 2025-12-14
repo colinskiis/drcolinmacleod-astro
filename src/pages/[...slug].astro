@@ -90,7 +90,7 @@ const modifiedDate = page.data.modifiedDate
                 </p>
                 <div class="flex flex-col sm:flex-row gap-3">
                   <BookingButton
-                    text="Book Appointment"
+                    text="Book Your Appointment"
                     variant="secondary"
                     size="sm"
                     source={`page-${page.slug}`}
@@ -240,21 +240,39 @@ const modifiedDate = page.data.modifiedDate
     font-style: italic;
   }
 
-  .prose table {
+  :global(.prose table) {
     width: 100%;
     border-collapse: collapse;
-    margin: 1.5rem 0;
+    margin: 2rem 0 !important;
   }
 
-  .prose th, .prose td {
-    border: 1px solid #d1d5db;
-    padding: 0.75rem;
-    text-align: left;
+  :global(.prose thead) {
+    border-bottom: 2px solid #065f46;
   }
 
-  .prose th {
+  :global(.prose th) {
     background-color: #f0fdf4;
     font-weight: 600;
     color: #065f46;
+    padding: 0.75rem 1rem;
+    text-align: left;
+  }
+
+  :global(.prose td) {
+    border-bottom: 1px solid #e5e7eb;
+    padding: 0.75rem 1rem;
+    text-align: left;
+  }
+
+  :global(.prose tbody tr:hover) {
+    background-color: #f9fafb;
+  }
+
+  :global(.prose img) {
+    border-radius: 1rem;
+    margin: 2rem 0 !important;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
   }
 </style>

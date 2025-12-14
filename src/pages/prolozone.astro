@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import CTAButton from '../components/CTAButton.astro';
 ---
 
 <BaseLayout
@@ -7,38 +9,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   description="Prolozone therapy in Halifax combines ozone gas with prolotherapy for joint pain, arthritis and disc problems. Experience faster healing with this regenerative treatment."
   focusKeyword="prolozone therapy Halifax"
 >
-  <!-- Hero Section -->
-  <section class="bg-emerald-950 -mt-24 pt-48 pb-16 lg:pt-56 lg:pb-24">
-    <div class="section-shell">
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
-        <div class="space-y-6">
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-white tracking-tight">Prolozone Therapy</h1>
-          <p class="text-lg sm:text-xl text-white/90 leading-relaxed font-light">
-            Prolozone combines the regenerative power of <strong class="text-white">prolotherapy</strong> with the healing benefits of <strong class="text-white">medical ozone</strong>. This dual-action treatment increases oxygen delivery to damaged tissues while stimulating repair—often providing relief faster than either treatment alone.
-          </p>
-          <div class="flex flex-col sm:flex-row gap-4">
-            <a
-              href="https://macleodnaturopathic.janeapp.com/"
-              target="_blank"
-              class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center justify-center"
-            >
-              Book Your Treatment
-              <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-              </svg>
-            </a>
-          </div>
-        </div>
-        <div class="rounded-2xl overflow-hidden shadow-2xl">
-          <img
-            src="/images/treatments/prolozone-injection.jpg"
-            alt="Prolozone injection therapy"
-            class="w-full h-full object-cover aspect-video"
-          />
-        </div>
-      </div>
-    </div>
-  </section>
+  <HeroSection
+    title="Prolozone Therapy"
+    compact
+    image={{ src: "/images/treatments/prolozone-elbow-injection.png", alt: "Prolozone elbow injection therapy", aspect: "video" }}
+  >
+    <p>Prolozone combines the regenerative power of <strong class="text-white">prolotherapy</strong> with the healing benefits of <strong class="text-white">medical ozone</strong>. This dual-action treatment increases oxygen delivery to damaged tissues while stimulating repair, often providing relief faster than either treatment alone.</p>
+    <CTAButton slot="cta">Book Your Appointment</CTAButton>
+  </HeroSection>
 
   <!-- What is Prolozone -->
   <section class="py-16 lg:py-24 bg-white">
@@ -117,12 +95,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               The oxygen-ozone gas mixture has a powerful dual effect on target tissues:
             </p>
             <ol class="text-white/90">
-              <li><strong class="text-white">Ozone increases oxygen utilization</strong>—damaged tissues often have poor oxygen delivery. Ozone helps cells use oxygen more efficiently, supporting the energy production needed for repair.</li>
-              <li><strong class="text-white">Oxygen increases tissue oxygenation</strong>—directly raising oxygen levels in the area, which is essential for healing and new tissue formation.</li>
-              <li><strong class="text-white">Mild proliferative effect</strong>—ozone acts as a gentle irritant that stimulates a healing response, similar to prolotherapy but through a different mechanism.</li>
+              <li><strong class="text-white">Ozone increases oxygen utilization</strong>,damaged tissues often have poor oxygen delivery. Ozone helps cells use oxygen more efficiently, supporting the energy production needed for repair.</li>
+              <li><strong class="text-white">Oxygen increases tissue oxygenation</strong>,directly raising oxygen levels in the area, which is essential for healing and new tissue formation.</li>
+              <li><strong class="text-white">Mild proliferative effect</strong>,ozone acts as a gentle irritant that stimulates a healing response, similar to prolotherapy but through a different mechanism.</li>
             </ol>
             <p class="text-white/90">
-              This "one-two punch" significantly increases the rate of healing and typically reduces pain within a short period—often within hours of treatment.
+              This "one-two punch" significantly increases the rate of healing and typically reduces pain within a short period, often within hours of treatment.
             </p>
           </div>
         </div>
@@ -136,7 +114,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               </div>
               <div>
                 <h4 class="font-medium text-white mb-1">Ozone Molecule</h4>
-                <p class="text-white/70 text-sm">Three oxygen atoms bonded together—less stable than O₂, which drives its therapeutic effects</p>
+                <p class="text-white/70 text-sm">Three oxygen atoms bonded together, less stable than O₂, which drives its therapeutic effects</p>
               </div>
             </div>
             <div class="flex gap-4">
@@ -147,7 +125,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               </div>
               <div>
                 <h4 class="font-medium text-white mb-1">Increased ATP Production</h4>
-                <p class="text-white/70 text-sm">Cells exposed to ozone produce more ATP—the energy currency needed for tissue repair</p>
+                <p class="text-white/70 text-sm">Cells exposed to ozone produce more ATP, the energy currency needed for tissue repair</p>
               </div>
             </div>
             <div class="flex gap-4">
@@ -230,7 +208,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
 
       <div class="mt-12 bg-emerald-700 rounded-2xl p-8 text-white">
-        <h3 class="text-xl font-semibold mb-4">Other Conditions That May Benefit</h3>
+        <h3 class="text-xl font-semibold text-white mb-4">Other Conditions That May Benefit</h3>
         <div class="grid md:grid-cols-3 gap-4">
           <ul class="space-y-2 text-sm">
             <li class="flex items-center gap-2">
@@ -308,7 +286,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <div class="flex-shrink-0 w-12 h-12 bg-emerald-700 rounded-full flex items-center justify-center text-white font-bold text-lg">1</div>
             <div>
               <h3 class="text-xl font-semibold text-emerald-950 mb-2">During Treatment</h3>
-              <p class="text-gray-600">The injection is slightly more uncomfortable than an acupuncture needle—Dr. Frank Shallenberger, who trained me in this technique, describes it as "like a mosquito with an attitude." A small volume of ozone/oxygen gas mixture is injected into or around the affected joint. The entire treatment takes just a few minutes.</p>
+              <p class="text-gray-600">The injection is slightly more uncomfortable than an acupuncture needle. Dr. Frank Shallenberger, who trained me in this technique, describes it as "like a mosquito with an attitude." A small volume of ozone/oxygen gas mixture is injected into or around the affected joint. The entire treatment takes just a few minutes.</p>
             </div>
           </div>
 
@@ -316,7 +294,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <div class="flex-shrink-0 w-12 h-12 bg-emerald-700 rounded-full flex items-center justify-center text-white font-bold text-lg">2</div>
             <div>
               <h3 class="text-xl font-semibold text-emerald-950 mb-2">Immediately After</h3>
-              <p class="text-gray-600">Some patients feel temporary stiffness or pressure at the injection site as the gas disperses—this is normal and short-lived. Most people can return to normal activities immediately.</p>
+              <p class="text-gray-600">Some patients feel temporary stiffness or pressure at the injection site as the gas disperses; this is normal and short-lived. Most people can return to normal activities immediately.</p>
             </div>
           </div>
 
@@ -340,45 +318,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </div>
   </section>
 
-  <!-- Pricing -->
-  <section class="py-16 lg:py-24 bg-white">
-    <div class="section-shell">
-      <div class="max-w-3xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Pricing</h2>
-
-        <div class="bg-emerald-50 rounded-2xl shadow-xl p-8">
-          <div class="space-y-4">
-            <div class="flex justify-between items-center pb-4 border-b border-emerald-200">
-              <div>
-                <h3 class="font-semibold text-emerald-950">Initial Naturopathic Consultation</h3>
-                <p class="text-sm text-gray-500">Required for new patients</p>
-              </div>
-              <span class="text-2xl font-bold text-emerald-700">$200</span>
-            </div>
-
-            <div class="flex justify-between items-center pb-4 border-b border-emerald-200">
-              <div>
-                <h3 class="font-semibold text-emerald-950">Prolozone Treatment</h3>
-                <p class="text-sm text-gray-500">Single joint or area</p>
-              </div>
-              <span class="text-2xl font-bold text-emerald-700">$110</span>
-            </div>
-
-            <div class="flex justify-between items-center p-4 bg-white rounded-xl">
-              <div>
-                <h3 class="font-semibold text-emerald-950">Initial Consult + First Treatment</h3>
-                <p class="text-sm text-emerald-600">Save $50</p>
-              </div>
-              <span class="text-2xl font-bold text-emerald-700">$260</span>
-            </div>
-          </div>
-
-          <p class="text-sm text-gray-500 mt-6 text-center">Most extended health insurance plans cover naturopathic services including injection therapies</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Safety -->
   <section class="py-16 lg:py-24 bg-emerald-50">
     <div class="section-shell">
@@ -391,7 +330,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               When administered by a properly trained practitioner, prolozone injections are very safe. Ozone gas is non-toxic at the physiologic doses used in medical applications.
             </p>
             <p>
-              I was trained in ozone therapy and prolozone injections with <strong>Dr. Frank Shallenberger MD</strong> of Reno, Nevada—recognized as the foremost educator on medical ozone in North America. This training covers clinical indications, safety protocols and proper injection techniques.
+              I was trained in ozone therapy and prolozone injections with <strong>Dr. Frank Shallenberger MD</strong> of Reno, Nevada, recognized as the foremost educator on medical ozone in North America. This training covers clinical indications, safety protocols and proper injection techniques.
             </p>
           </div>
 
@@ -402,7 +341,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
                 <svg class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
-                <span><strong>Prosthetic joint replacement</strong>—cannot inject into a joint with a prosthesis</span>
+                <span><strong>Prosthetic joint replacement</strong>,cannot inject into a joint with a prosthesis</span>
               </li>
               <li class="flex items-start gap-2">
                 <svg class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -450,7 +389,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               </svg>
             </summary>
             <div class="px-6 pb-6 text-gray-600">
-              Most conditions respond well within 6 treatments given every 2-4 weeks. After the initial treatment course, maintenance treatments every 1-3 months help sustain results. For advanced arthritis, ongoing treatments every 6-8 weeks are typically needed for optimal pain control and mobility.
+              Most conditions respond well within 6 treatments given every 1-2 weeks. After the initial treatment course, maintenance treatments every 6 months help sustain results.
             </div>
           </details>
 
@@ -474,22 +413,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               </svg>
             </summary>
             <div class="px-6 pb-6 text-gray-600">
-              No, prolozone cannot be injected into a joint that has a prosthetic replacement. However, we can treat other joints and areas that are causing pain. Many patients with one joint replacement develop problems in other joints from compensating—prolozone can help these secondary areas.
+              No, prolozone cannot be injected into a joint that has a prosthetic replacement. However, we can treat other joints and areas that are causing pain. Many patients with one joint replacement develop problems in other joints from compensating, and prolozone can help these secondary areas.
             </div>
           </details>
 
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Should I choose prolozone or prolotherapy?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              It depends on your condition. Prolozone tends to work better for degenerative conditions like arthritis, while prolotherapy is often better for ligament laxity and joint instability. In many cases, we use both treatments together or alternate between them. During your consultation, we'll assess your condition and recommend the best approach.
-            </div>
-          </details>
-        </div>
+                  </div>
       </div>
     </div>
   </section>
