@@ -14,7 +14,11 @@ import BookingButton from '../components/BookingButton.astro';
     <div
       class="absolute inset-y-0 right-0 w-full sm:w-3/5 pointer-events-none"
       style="
-        background-image: url('/images/general/Dr-colin-macleod-ND.jpeg');
+        background-image: image-set(
+          url('/images/general/colin-hero.avif') type('image/avif'),
+          url('/images/general/colin-hero.webp') type('image/webp'),
+          url('/images/general/Dr-colin-macleod-ND.jpeg') type('image/jpeg')
+        );
         background-size: contain;
         background-repeat: no-repeat;
         background-position: right bottom;
