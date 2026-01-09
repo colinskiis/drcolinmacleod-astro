@@ -1,83 +1,109 @@
 ---
-title: "Methylation & The MTHFR Gene"
-description: "Methylation, the attachment of a methyl group to another molecule, is a critical process for building, maintaining and repairing throughout the body."
+title: "MTHFR Gene Testing: What You Actually Need to Know"
+description: "MTHFR gene variants are common and often overhyped on social media. Learn when genetic testing is helpful, when it isn't, and what evidence-based medicine says about methylation."
 publishDate: 2015-07-07
-modifiedDate: 2022-07-12
+modifiedDate: 2026-01-09
 heroImage: "/images/charts/methylation-mthfr-brain-mind.webp"
 categories: ["Naturopathic"]
-tags: ["naturopathic"]
+tags: ["naturopathic", "genetic testing", "methylation"]
 seo:
-  description: "Methylation, the attachment of a methyl group to another molecule, is a critical process for building, maintaining and repairing throughout the body."
-  focusKeyword: "methylation"
+  description: "Evidence-based guide to MTHFR gene testing. Learn when genetic testing is helpful, when it isn't, and what the research actually shows about methylation."
+  focusKeyword: "MTHFR gene testing"
 ---
+
+## The MTHFR Buzz on Social Media
+
+If you've spent any time on TikTok or Instagram, you've probably seen influencers talking about MTHFR gene mutations as the hidden cause of everything from fatigue to anxiety to infertility. Some wellness personalities have built entire brands around methylation testing, often selling expensive supplement protocols alongside their content.
+
+As a naturopathic doctor who has been working with genetic testing for over a decade, I want to provide some balanced, evidence-based perspective on this topic.
+
+## What Is the MTHFR Gene?
+
+The MTHFR gene provides instructions for producing the methylenetetrahydrofolate reductase enzyme. This enzyme plays a key role in processing folate (vitamin B9) and is involved in the methylation cycle—a biochemical process that affects DNA repair, neurotransmitter production, and detoxification.
 
 ## What Is Methylation?
 
-Methylation is simply the attachment of a methyl group (single carbon, three hydrogen) to another molecule. Although simple, methylation is a critical process for building, maintaining and repairing cells and tissues throughout the body.
+Methylation is the attachment of a methyl group (one carbon, three hydrogen atoms) to another molecule. Although simple, this process is critical for:
 
-## Why Is Methylation Important?
+- Turning gene expression on and off as needed<sup>1</sup>
+- Protecting DNA from damage<sup>2,3,4</sup>
+- Recycling neurotransmitters including serotonin, melatonin, and epinephrine
+- Building immune cells, including natural killer cells<sup>5</sup>
+- Maintaining the protective myelin coating on nerve cells<sup>6</sup>
 
-Methylation has many important functions within our bodies, including:
+## MTHFR Variants Are Extremely Common
 
-- turning gene function on and off as needed1
-- protecting otherwise fragile DNA2,3,4
-- recycling neurotransmitters, such as serotonin, melatonin and epinephrine
-- building our basic immune cells, including natural killer cells5
-- maintaining the protective coating on nerve cells (myelin)6
+Here's something important that often gets lost in the social media conversation: MTHFR variants are not rare mutations—they're extremely common genetic variations.
 
-## How Is Methylation Interrupted?
+Studies show that approximately 40-60% of the population carries at least one copy of the C677T variant, and about 85% of people have some form of MTHFR polymorphism<sup>24</sup>. This means having an MTHFR variant puts you in the majority, not the minority.
 
-Methylation can be interrupted by a few common issues:
+## The Problem with MTHFR Testing: What Medical Guidelines Say
 
-- lack of required nutrient cofactors (folate, zinc, vitamin B2, B6, B12, magnesium or cysteine)
-- environmental toxicity from heavy metals7
-- certain drugs including alcohol8, nitrous oxide9 and antacids10 (proton pump inhibitors)
-- genetic mutations/polymorphisms (SNPs) of specific genes (MTHFR, GSTM1, PEMT, MAT, GAMT, CBS)
+In 2013, the American College of Medical Genetics published guidelines advising against routine MTHFR genetic testing<sup>25</sup>. This recommendation has been supported by numerous other medical organizations including:
 
-## When Methylation Goes Wrong
+- American College of Obstetrics and Gynecology
+- American Academy of Family Physicians
+- American Heart Association
+- College of American Pathologists
 
-<img src="/images/general/dna-methylation.webp" alt="DNA methylation illustration" />
+Why would these organizations recommend against testing for something that affects methylation? The key insight is this: **in the absence of elevated homocysteine levels, MTHFR variants alone are not a risk factor for disease**<sup>26</sup>.
 
-A single nucleotide polymorphism (SNP) of the MTHFR gene is a common cause of methylation issues. People who have MTHFR SNPs are more likely to suffer a number of health conditions, including: autism<sup>11</sup>, cognitive decline<sup>12</sup>, depression, bipolar disorder, schizophrenia<sup>13</sup>, diabetes<sup>14,15</sup>, down syndrome<sup>16,17</sup>, essential hypertension<sup>18</sup>, gastric cancer<sup>19</sup>, ischemic stroke<sup>20</sup>, migraine<sup>21</sup>, neural tube defects<sup>22</sup> and smoking addiction<sup>23</sup>.
+## The Better First Step: Homocysteine Testing
 
-As can be seen from the number of body systems affected, methylation is a universal process of regulation. When methylation is not functionally properly many processes within the body can falter, leading to disease.
+If the concern is whether your methylation pathways are functioning properly, there's a simpler, cheaper, and more clinically useful test: measuring homocysteine levels in your blood.
 
-## The MTHFR Gene
+Homocysteine is an amino acid that accumulates when methylation isn't working well. Here's the practical approach:
 
-The MTHFR gene is responsible for producing the methylene tetrahydrofolate reductase (MTHFR) enzyme. The MTHFR enzyme controls the rate limiting step of the methylation cycle. Methylation throughout the body will be inhibited if the concentration of MTHFR enzyme is below optimal levels.
+- **If homocysteine is normal**: Your methylation is working fine, regardless of your MTHFR status. No intervention needed.
+- **If homocysteine is elevated**: Treatment with B vitamins (folate, B12, B6) is the same whether or not you have an MTHFR variant.
 
-## What Is A Single Nucleotide Polymorphism (SNP)?
+This is why many clinicians now test homocysteine first. It tells you directly whether there's a functional problem, rather than revealing a genetic variant that may or may not be causing any issues.
 
-A single nucleotide polymorphism (SNP) is a fancy name for an error in DNA copying. This error can lead to downstream negative effects, typically a lower than optimal amount of the protein or enzyme which the affected gene is in control of producing.
+## When MTHFR Testing May Be Appropriate
 
-## MTHFR Problems (SNPs) Are Common
+There are specific situations where genetic testing for MTHFR can provide useful information:
 
-MTHFR SNPs are common throughout the world. A large study of 37,000 people found that 85% of people examined had SNPs affecting their MTHFR gene<sup>24</sup>. So it is not 1/100 or 1/10 people who have MTHFR SNPS, it is closer to 8/10 or 9/10!
+- **Severe hyperhomocysteinemia** that doesn't respond to standard B vitamin treatment
+- **Suspected homocystinuria** (a rare metabolic disorder) after other causes have been ruled out
+- **Family history** of known pathogenic MTHFR variants causing homocystinuria
+- **Personal interest** in understanding your genetic makeup (with proper counseling about interpretation)
 
-## Where Can I Get Tested For Methylation Issues?
+## What Can Interrupt Methylation?
 
-<img src="/images/general/genetic-testing.webp" alt="Genetic testing" />
+While MTHFR variants get most of the attention, methylation can be affected by several factors:
 
-Below is a list of labs which test for MTHFR single nucleotide polymorphisms (SNPs):
+- **Nutrient deficiencies**: Folate, zinc, vitamin B2, B6, B12, magnesium, or cysteine
+- **Environmental toxins**: Heavy metals, particularly lead<sup>7</sup>
+- **Certain medications**: Including alcohol<sup>8</sup>, nitrous oxide<sup>9</sup>, and proton pump inhibitors (antacids)<sup>10</sup>
+- **Other genetic variants**: Including GSTM1, PEMT, MAT, GAMT, and CBS
 
-- Genova Diagnostics
-- Doctor’s Data
-- Spectracell Laboratories
-- 23andme
+## Supporting Healthy Methylation
 
-The results which come back from a genetic test can be extensive, to say the least. The results help to shed light on problem areas and health risk factors based on the individual’s genetic make-up. The data can be difficult to interpret unless the person running the test has a working knowledge of the genes being tested.
+Regardless of your MTHFR status, these evidence-based strategies support methylation:
 
-## Fixing Methylation Problems
+**Dietary approaches:**
+- Consume folate-rich foods: leafy greens, legumes, asparagus, broccoli
+- Include B12 sources: meat, fish, eggs, dairy (or supplement if plant-based)
+- Eat foods containing B6: poultry, fish, potatoes, bananas
 
-Depending on the cause of the methylation issue (lack of cofactors, environmental toxins, genetic polymorphisms, side effects of medications) the best possible treatment may involve providing more substrate (activated methyl folate, methylated vitamin B12, etc.), eliminating environmental toxins and/or making changes to current medications being taken. In some cases an overlapping pathway must be supported in order to optimize methylation.
+**Lifestyle factors:**
+- Limit alcohol consumption
+- Discuss alternatives to proton pump inhibitors with your doctor if taking long-term
+- Minimize exposure to environmental toxins
 
-## Further Uses Of Genetic Testing
+**Supplementation (when indicated):**
+- If homocysteine is elevated, methylated forms of folate (5-MTHF) and B12 (methylcobalamin) may be helpful
+- Work with a healthcare provider to determine appropriate doses
 
-Although MTHFR gene SNPs (copying errors) are quite common, there are other important genes which can be affected by SNPs too. Genetic testing can also identify SNPs in other genes which can cause problems, such as sluggish liver function or neurotransmitter imbalances.
+## The Bottom Line
 
-## Methylation Testing In Halifax, Nova Scotia
+MTHFR gene variants are common and, for most people, don't require any intervention. The social media narrative around MTHFR often exaggerates its significance and promotes expensive testing and supplement protocols that may not be necessary.
 
-If you are interested in having genetic testing done and are located in the Halifax area, please contact MacLeod Naturopathic to book an initial naturopathic visit to discuss your options. Dr. MacLeod offers comprehensive [lab testing services](/lab-testing) including genetic testing for methylation issues. Dr. MacLeod has completed formal training with Dr. Ben Lynch ND, an expert in the field of methylation.
+If you're concerned about methylation, start with a homocysteine blood test. If levels are normal, your methylation is working fine. If levels are elevated, treatment is straightforward and doesn't require genetic testing to implement.
+
+## Methylation and Genetic Testing in Halifax
+
+If you have questions about methylation, homocysteine levels, or whether genetic testing might be appropriate for your situation, please contact MacLeod Naturopathic to book an initial visit. Dr. MacLeod offers comprehensive [lab testing services](/lab-testing) and can help you navigate this topic with an evidence-based approach. Dr. MacLeod has completed formal training with Dr. Ben Lynch ND, an expert in the field of methylation.
 
 ### References
 
@@ -105,3 +131,5 @@ If you are interested in having genetic testing done and are located in the Hali
 22. Christensen B, Arbour L, Tran P, et al. Genetic polymorphisms in methylenetetrahydrofolate reductase and neural tube defects. *Blood*. 1999 May 21;84(2):151-7.
 23. Linnebank M, Moskau S, Semmler A, et al. MTHFR genotypes and smoking. *PLoS One*. 2012;7(12):e53322.
 24. Rs1801133. SNPedia, 6 Aug. 2014. Web. 16 June 2015.
+25. Hickey SE, Curry CJ, Toriello HV. ACMG Practice Guideline: lack of evidence for MTHFR polymorphism testing. *Genet Med*. 2013 Feb;15(2):153-6.
+26. Moll S, Varga EA. Homocysteine and MTHFR Mutations. *Circulation*. 2015 Jul 7;132(1):e6-9.
