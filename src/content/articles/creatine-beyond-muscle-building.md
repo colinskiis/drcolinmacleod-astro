@@ -33,7 +33,7 @@ Creatine is one of the most studied supplements in sports nutrition, with decade
 
 Here's where things get interesting. Creatine can cross the blood-brain barrier, and your brain requires significant amounts of energy to function optimally. Researchers have begun exploring whether creatine supplementation might benefit cognitive function.
 
-A 2024 meta-analysis of 16 studies published in *Frontiers in Nutrition* concluded that creatine supplementation may improve memory, attention, and information processing in adults<sup>2</sup>. One particularly interesting study found that a single dose of creatine improved cognitive performance in sleep-deprived individuals<sup>3</sup>. When you haven't slept well, your brain's energy reserves are depleted, and creatine appears to help compensate.
+A 2024 meta-analysis of 16 studies published in *Frontiers in Nutrition* concluded that creatine supplementation may improve memory, attention, and information processing in adults<sup>2</sup>. One particularly interesting study found that a single dose of creatine improved cognitive performance in [sleep-deprived](/articles/sleep-optimization-evidence-based-strategies) individuals<sup>3</sup>. When you haven't slept well, your brain's energy reserves are depleted, and creatine appears to help compensate.
 
 The mechanism involves creatine helping to regenerate ATP in neurons with increased energy demands. When your brain is working hard, whether solving complex problems, dealing with stress, or functioning on inadequate sleep, creatine may help maintain the energy supply your neurons need.
 
@@ -87,7 +87,7 @@ For most people, creatine is safe, affordable, and backed by decades of research
 
 ## Creatine and Sports Medicine in Halifax
 
-If you're interested in learning whether creatine supplementation might benefit your specific situation, or if you have questions about optimizing your athletic performance and recovery, please contact MacLeod Naturopathic to book an initial visit. Dr. MacLeod works with athletes and active individuals to develop evidence-based supplementation and training strategies.
+If you're interested in learning whether creatine supplementation might benefit your specific situation, or if you have questions about optimizing your athletic performance and recovery, please contact MacLeod Naturopathic to book an initial visit. Dr. MacLeod provides [sports medicine services](/sports-medicine) and works with athletes and active individuals to develop evidence-based supplementation and training strategies.
 
 ### References
 

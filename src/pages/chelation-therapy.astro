@@ -414,4 +414,44 @@ import CTAButton from '../components/CTAButton.astro';
       </div>
     </div>
   </section>
+
+  <!-- Service Schema Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Chelation Therapy",
+      "serviceType": "Chelation Therapy",
+      "description": "Chelation therapy treats cardiovascular disease by reducing arterial plaques, removing toxic metals like lead, cadmium, arsenic, and mercury, and improving circulation.",
+      "provider": {
+        "@type": "Person",
+        "name": "Dr. Colin MacLeod",
+        "jobTitle": "Naturopathic Doctor"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Halifax",
+        "containedInPlace": {
+          "@type": "State",
+          "name": "Nova Scotia"
+        }
+      },
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceUrl": "https://drcolinmacleod.com/chelation-therapy",
+        "serviceLocation": {
+          "@type": "Place",
+          "name": "Optimal Wellbeing Clinic",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "6140 Young Street",
+            "addressLocality": "Halifax",
+            "addressRegion": "Nova Scotia",
+            "postalCode": "B3K 0G2",
+            "addressCountry": "CA"
+          }
+        }
+      }
+    }
+  </script>
 </BaseLayout>

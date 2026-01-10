@@ -1,6 +1,7 @@
 ---
 title: "5 Ways To Eat More Fruit & Vegetables"
 description: "Fruit and Vegetable intake is an important part of a healthy diet. Eating 5-10 servings per day helps us to feel great and prevent disease."
+draft: true
 publishDate: 2012-08-13
 modifiedDate: 2022-07-12
 heroImage: "/images/nutrition/clinical-nutrition-1.webp"
@@ -35,3 +36,5 @@ seo:
 - Salads are one of my favourite ways to increase fruit and vegetable intake. The most important thing is to keep it simple! If you don’t eat much salad already than try this very simple one: 2 handfuls of baby spinach and 4-5 sliced strawberries with balsamic vinegar and olive oil.
 - A mixture of cold pressed extra virgin olive oil and balsamic vinegar is the ideal dressing for salads. The magic ratio of olive oil to vinegar is 3:1 to achieve the optimal sweetness and tartness. Olive oil is great for the heart and balsamic vinegar can help control blood sugar.
 - Blueberries, mango, sliced pear, sliced almonds, romaine lettuce, red leaf lettuce and arugula should be cycled in or combined to add variety.
+
+Learn more about our [clinical nutrition services](/clinical-nutrition) for personalized dietary guidance.

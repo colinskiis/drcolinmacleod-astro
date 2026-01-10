@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import Search from '../components/Search.astro';
 import BookingButton from '../components/BookingButton.astro';
+import MedicalDisclaimer from '../components/MedicalDisclaimer.astro';
 
 export interface Props {
   title: string;
@@ -20,6 +21,160 @@ const { title, description, focusKeyword, image, articleData } = Astro.props;
 const fullTitle = title === 'Home' ? 'Dr. Colin MacLeod ND - Halifax Naturopathic Doctor' : `${title} | Dr. Colin MacLeod ND`;
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 const ogImage = image || '/images/reference/home-background.webp';
+
+// Schema definitions (pre-stringified for proper output)
+const medicalBusinessSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "Dr. Colin MacLeod ND",
+  "description": "Halifax Naturopathic Doctor providing comprehensive natural healthcare solutions including IV therapy, prolotherapy, acupuncture and clinical nutrition.",
+  "url": "https://drcolinmacleod.com",
+  "logo": "https://drcolinmacleod.com/favicon.svg",
+  "image": "https://drcolinmacleod.com/images/general/colin-hero.webp",
+  "priceRange": "$$",
+  "medicalSpecialty": "Naturopathic Medicine",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "appointment booking",
+    "url": "https://macleodnaturopathic.janeapp.com/",
+    "telephone": "+1-902-406-4424"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "6140 Young Street",
+    "addressLocality": "Halifax",
+    "addressRegion": "Nova Scotia",
+    "postalCode": "B3K 0G2",
+    "addressCountry": "CA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "44.6488",
+    "longitude": "-63.6046"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Halifax",
+    "containedInPlace": {
+      "@type": "State",
+      "name": "Nova Scotia"
+    }
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Wednesday", "Thursday", "Friday"],
+      "opens": "07:30",
+      "closes": "15:30"
+    }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Naturopathic Services",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "IV Therapy"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Prolotherapy"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Acupuncture"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Clinical Nutrition"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Herbal Medicine"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Chelation Therapy"}}
+    ]
+  },
+  "sameAs": [
+    "https://macleodnaturopathic.janeapp.com/"
+  ]
+});
+
+const personSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Dr. Colin MacLeod",
+  "givenName": "Colin",
+  "familyName": "MacLeod",
+  "honorificPrefix": "Dr.",
+  "honorificSuffix": "ND",
+  "jobTitle": "Naturopathic Doctor",
+  "description": "Naturopathic Doctor in Halifax, Nova Scotia specializing in IV therapy, prolotherapy, sports medicine, and herbal medicine.",
+  "url": "https://drcolinmacleod.com/about",
+  "image": "https://drcolinmacleod.com/images/general/colin-hero.webp",
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Canadian College of Naturopathic Medicine",
+    "alternateName": "CCNM",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Toronto",
+      "addressRegion": "Ontario",
+      "addressCountry": "CA"
+    }
+  },
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "credentialCategory": "degree",
+    "name": "Doctor of Naturopathy (ND)"
+  },
+  "knowsAbout": [
+    "Naturopathic Medicine",
+    "IV Therapy",
+    "Prolotherapy",
+    "Sports Medicine",
+    "Herbal Medicine",
+    "Clinical Nutrition",
+    "Acupuncture",
+    "Chelation Therapy"
+  ],
+  "worksFor": {
+    "@type": "MedicalBusiness",
+    "name": "Dr. Colin MacLeod ND",
+    "url": "https://drcolinmacleod.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "6140 Young Street",
+      "addressLocality": "Halifax",
+      "addressRegion": "Nova Scotia",
+      "postalCode": "B3K 0G2",
+      "addressCountry": "CA"
+    }
+  },
+  "workLocation": {
+    "@type": "Place",
+    "name": "Optimal Wellbeing Clinic",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "6140 Young Street",
+      "addressLocality": "Halifax",
+      "addressRegion": "Nova Scotia",
+      "postalCode": "B3K 0G2",
+      "addressCountry": "CA"
+    }
+  }
+});
+
+const articleSchema = articleData ? JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": description,
+  "author": {
+    "@type": "Person",
+    "name": articleData.author || "Dr. Colin MacLeod ND"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Dr. Colin MacLeod ND",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://drcolinmacleod.com/favicon.svg"
+    }
+  },
+  "datePublished": articleData.publishDate,
+  "dateModified": articleData.modifiedDate || articleData.publishDate,
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": canonicalUrl.toString()
+  },
+  "image": new URL(ogImage, Astro.site).toString()
+}) : null;
 ---
 
 <!doctype html>
@@ -64,74 +219,14 @@ const ogImage = image || '/images/reference/home-background.webp';
     <meta name="author" content="Dr. Colin MacLeod ND" />
     <meta name="robots" content="index, follow" />
     
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-      {
-        JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          "name": "Dr. Colin MacLeod ND",
-          "description": "Halifax Naturopathic Doctor providing comprehensive natural healthcare solutions including IV therapy, prolotherapy, acupuncture and clinical nutrition.",
-          "url": "https://drcolinmacleod.com",
-          "logo": "https://drcolinmacleod.com/favicon.svg",
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "contactType": "appointment booking",
-            "url": "https://macleodnaturopathic.janeapp.com/"
-          },
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "6140 Young Street",
-            "addressLocality": "Halifax",
-            "addressRegion": "Nova Scotia",
-            "postalCode": "B3K 0G2",
-            "addressCountry": "CA"
-          },
-          "openingHoursSpecification": [
-            {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": ["Monday", "Wednesday", "Thursday", "Friday"],
-              "opens": "07:30",
-              "closes": "15:30"
-            }
-          ],
-          "sameAs": [
-            "https://macleodnaturopathic.janeapp.com/"
-          ]
-        })
-      }
-    </script>
-    
-    {articleData && (
-      <script type="application/ld+json">
-        {
-          JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": title,
-            "description": description,
-            "author": {
-              "@type": "Person",
-              "name": articleData.author || "Dr. Colin MacLeod ND"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "Dr. Colin MacLeod ND",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://drcolinmacleod.com/favicon.svg"
-              }
-            },
-            "datePublished": articleData.publishDate,
-            "dateModified": articleData.modifiedDate || articleData.publishDate,
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": canonicalUrl
-            },
-            "image": new URL(ogImage, Astro.site)
-          })
-        }
-      </script>
+    <!-- Structured Data: MedicalBusiness -->
+    <script type="application/ld+json" set:html={medicalBusinessSchema} />
+
+    <!-- Structured Data: Person (Practitioner) -->
+    <script type="application/ld+json" set:html={personSchema} />
+
+    {articleSchema && (
+      <script type="application/ld+json" set:html={articleSchema} />
     )}
     <!-- Fonts loaded via global.css (Manrope, Playfair Display) -->
   </head>
@@ -260,7 +355,8 @@ const ogImage = image || '/images/reference/home-background.webp';
             </div>
           </div>
           <div class="mt-8 relative z-10">
-            <p class="text-sm text-slate-600">&copy; {new Date().getFullYear()} Dr. Colin MacLeod ND. All rights reserved.</p>
+            <MedicalDisclaimer />
+            <p class="text-sm text-slate-600 mt-4">&copy; {new Date().getFullYear()} Dr. Colin MacLeod ND. All rights reserved.</p>
           </div>
         </div>
       </div>

@@ -68,7 +68,7 @@ There are also several natural health products including vitamin, mineral and he
 
 ## Prevention of Migraines
 
-There is no one-size-fits-all approach to preventing migraines but making certain lifestyle changes may help reduce their frequency and intensity. These include eating a balanced diet low in processed foods, avoiding potential triggers such as alcohol, getting enough sleep and managing stress. In some cases, nutritional and herbal supplements can be used long term to reduce migraine frequency and severity.
+There is no one-size-fits-all approach to preventing migraines but making certain lifestyle changes may help reduce their frequency and intensity. For a comprehensive guide to migraine prevention, including trigger identification, food sensitivities, and lifestyle modifications, see my article on [migraine prevention: natural approaches that work](/articles/migraine-prevention-natural-approaches). These include eating a balanced diet low in processed foods, avoiding potential triggers such as alcohol, getting enough sleep and managing stress. In some cases, nutritional and herbal supplements can be used long term to reduce migraine frequency and severity.
 
 Certain medications, such as beta-blockers and calcium channel blockers, may also be used to prevent migraines. These medications help to reduce the number of migraine attacks and prevent them from becoming as severe. They are usually used in combination with lifestyle changes to help give the best results.
 

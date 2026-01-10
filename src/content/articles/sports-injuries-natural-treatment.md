@@ -25,7 +25,7 @@ Muscle strains range from minor fiber disruption to complete tears and commonly 
 
 ## Prolotherapy for Sports Injuries
 
-Prolotherapy (proliferative therapy) is a cornerstone of naturopathic sports medicine. This regenerative treatment involves injecting a solution, typically dextrose (sugar water), into damaged ligaments, tendons, and joint spaces<sup>3</sup>.
+[Prolotherapy](/prolotherapy) (proliferative therapy) is a cornerstone of naturopathic sports medicine. This regenerative treatment involves injecting a solution, typically dextrose (sugar water), into damaged ligaments, tendons, and joint spaces<sup>3</sup>.
 
 The injection creates a controlled inflammatory response that triggers the body's natural repair cascade, stimulates growth factors, and results in stronger, more resilient connective tissue. Prolotherapy can improve stability by tightening lax ligaments and restoring joint function. Conditions commonly treated include chronic ankle instability, tennis and golfer's elbow, rotator cuff tendinopathy, knee ligament laxity, SI joint dysfunction, plantar fasciitis, and IT band syndrome.
 
@@ -33,7 +33,7 @@ Treatment typically involves 3-6 sessions spaced 3-4 weeks apart. Patients exper
 
 ## Acupuncture for Pain and Healing
 
-Acupuncture offers both pain relief and healing support for sports injuries. Fine needles inserted at specific points release endorphins, reduce muscle tension and spasm, interrupt pain signaling pathways, and decrease inflammation<sup>5</sup>. Acupuncture also improves local circulation, bringing oxygen and nutrients to damaged tissue and supporting the repair process.
+[Acupuncture](/acupuncture) offers both pain relief and healing support for sports injuries. Fine needles inserted at specific points release endorphins, reduce muscle tension and spasm, interrupt pain signaling pathways, and decrease inflammation<sup>5</sup>. Acupuncture also improves local circulation, bringing oxygen and nutrients to damaged tissue and supporting the repair process.
 
 Motor point acupuncture is a specialized technique that targets the neuromuscular junction where nerves communicate with muscles. This approach can rapidly release chronic muscle tension, restore normal muscle firing patterns, and help prevent compensatory injuries that often develop when athletes modify their movement to avoid pain.
 
@@ -41,7 +41,7 @@ Motor point acupuncture is a specialized technique that targets the neuromuscula
 
 What you eat significantly impacts how quickly you heal. An anti-inflammatory diet rich in omega-3 fatty acids, colorful vegetables, and anti-inflammatory spices supports the healing process, while processed foods, refined sugars, and excessive omega-6 fatty acids can impair recovery<sup>6</sup>.
 
-Key nutrients for tissue repair include vitamin C (essential for collagen synthesis), zinc (required for protein synthesis and cell division), and adequate protein to provide the building blocks for tissue repair. Athletes recovering from injury may need higher protein intake than usual. Intravenous nutrient therapy can deliver therapeutic doses directly to tissues when rapid recovery is needed.
+Key nutrients for tissue repair include vitamin C (essential for collagen synthesis), zinc (required for protein synthesis and cell division), and adequate protein to provide the building blocks for tissue repair. Athletes recovering from injury may need higher protein intake than usual. [Intravenous nutrient therapy](/iv-therapy) can deliver therapeutic doses directly to tissues when rapid recovery is needed.
 
 ## Preventing Re-Injury
 
@@ -49,7 +49,7 @@ Successful treatment goes beyond pain relief to address the factors that contrib
 
 ## Sports Injury Treatment in Halifax
 
-If you are experiencing pain that limits your training or competition, injuries that have not responded to rest alone, recurring injuries in the same area, or chronic joint instability, please contact MacLeod Naturopathic to book an initial naturopathic visit to discuss your options.
+If you are experiencing pain that limits your training or competition, injuries that have not responded to rest alone, recurring injuries in the same area, or chronic joint instability, please contact MacLeod Naturopathic to book an initial naturopathic visit to discuss your options. Learn more about our [sports medicine services](/sports-medicine).
 
 ### References
 

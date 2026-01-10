@@ -1,6 +1,7 @@
 ---
 title: "Quinoa Salad Recipe"
 description: "Quinoa salad is high in protein, high in fibre and is full of vegetables. This is an excellent meal for vegans and people going gluten-free."
+draft: true
 publishDate: 2012-12-21
 modifiedDate: 2022-07-12
 heroImage: "/images/nutrition/clinical-nutrition-1.webp"
@@ -45,4 +46,4 @@ Quinoa is a very healthy whole grain and is packed with nutrients. One cup of co
 
 ## As Part Of A Meal
 
-Quinoa salad can be eaten on its own as a vegetarian option or with a small serving of chicken for the omnivores out there. Chick peas are a good vegetarian source of protein which can be added to the salad in place of chicken. Considering that all of the ingredients in this salad are quite healthy, including the quinoa, vegetables and olive oil, it is good recipe to work into your diet on a regular basis. This is also a gluten-free option for people with problems with gluten.
+Quinoa salad can be eaten on its own as a vegetarian option or with a small serving of chicken for the omnivores out there. Chick peas are a good vegetarian source of protein which can be added to the salad in place of chicken. Considering that all of the ingredients in this salad are quite healthy, including the quinoa, vegetables and olive oil, it is good recipe to work into your diet on a regular basis. This is also a gluten-free option for people with problems with gluten. For more ideas on incorporating more produce into your meals, see our guide on [5 ways to eat more fruits and vegetables](/articles/5-ways-to-eat-more-fruit-vegetables), and learn more about our [clinical nutrition services](/clinical-nutrition).

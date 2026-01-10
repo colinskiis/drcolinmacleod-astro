@@ -1,6 +1,7 @@
 ---
 title: "Herbal Spotlight: Rhodiola"
 description: "Rhodiola rosea is an herb which has traditionally been used for treating stress, fatigue and weakness. Research has verified these traditional indications"
+draft: true
 publishDate: 2013-02-12
 modifiedDate: 2022-07-12
 heroImage: "/images/nutrition/herbal-medicine-2.webp"
@@ -12,7 +13,7 @@ seo:
 ---
 
 ## An Adaptable Herb
-Rhodiola is classified as an “adaptogen”, which means that it is a herb which can assist the body in dealing with stress, help to maintain vitality and improve strength in general.
+Rhodiola is classified as an "adaptogen", which means that it is a herb which can assist the body in dealing with stress, help to maintain vitality and improve strength in general. For a broader overview of adaptogenic herbs including ashwagandha and others, see our guide to [adaptogens for stress management](/articles/adaptogens-for-stress-ashwagandha-rhodiola-and-beyond).
 
 ## How Rhodiola Works
 Rhodiola has several active constituents, including rosavin and salidroside, among others, which are believed to give Rhodiola it’s [stress-fighting properties](http://www.ncbi.nlm.nih.gov/pubmed/3751623)<sup>1</sup>. Rhodiola’s mechanism of action is suspected to be largely through neurotransmission, including serotonin, dopamine and adrenaline modulation<sup>2</sup>. My experience has been that this herb has a balancing effect on mood, energy, stress and can be a helpful adjunct to stress management techniques in people who are feeling the pinch of stress or exhaustion.

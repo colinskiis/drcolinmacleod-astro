@@ -1,6 +1,7 @@
 ---
 title: "Frequently Asked Questions"
 description: "What training do naturopathic doctors have? Are homeopathy and naturopathic medicine the same? What conditions do naturopathic doctors treat?"
+draft: true
 publishDate: 2013-08-30
 modifiedDate: 2018-11-22
 heroImage: "/images/general/dr-colin-macleod-nd.webp"

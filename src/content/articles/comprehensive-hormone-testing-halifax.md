@@ -84,12 +84,12 @@ Once results are available, we schedule a follow-up to review findings together.
 
 ## References
 
-1. Santoro N, Epperson CN, Mathews SB. Menopausal Symptoms and Their Management. *Endocrinol Metab Clin North Am*. 2015;44(3):497-515.
+1. Santoro N, Epperson CN, Mathews SB. [Menopausal Symptoms and Their Management](https://pubmed.ncbi.nlm.nih.gov/26316239/). *Endocrinol Metab Clin North Am*. 2015;44(3):497-515.
 
-2. Travison TG, Araujo AB, O'Donnell AB, Kupelian V, McKinlay JB. A population-level decline in serum testosterone levels in American men. *J Clin Endocrinol Metab*. 2007;92(1):196-202.
+2. Travison TG, Araujo AB, O'Donnell AB, Kupelian V, McKinlay JB. [A population-level decline in serum testosterone levels in American men](https://pubmed.ncbi.nlm.nih.gov/17062768/). *J Clin Endocrinol Metab*. 2007;92(1):196-202.
 
-3. McEwen BS. Protective and damaging effects of stress mediators. *N Engl J Med*. 1998;338(3):171-179.
+3. McEwen BS. [Protective and damaging effects of stress mediators](https://pubmed.ncbi.nlm.nih.gov/9428819/). *N Engl J Med*. 1998;338(3):171-179.
 
-4. Phillips AC, Carroll D, Gale CR, Lord JM, Arber S, Batty GD. Cortisol, DHEA sulphate, their ratio, and all-cause and cause-specific mortality in the Vietnam Experience Study. *Eur J Endocrinol*. 2010;163(2):285-292.
+4. Phillips AC, Carroll D, Gale CR, Lord JM, Arber S, Batty GD. [Cortisol, DHEA sulphate, their ratio, and all-cause and cause-specific mortality in the Vietnam Experience Study](https://pubmed.ncbi.nlm.nih.gov/20498081/). *Eur J Endocrinol*. 2010;163(2):285-292.
 
-5. Daan NM, Jaspers L, van Dijk GM, et al. Androgen levels in women with various forms of ovarian dysfunction: associations with cardiometabolic features. *Hum Reprod*. 2015;30(10):2376-2386.
+5. Daan NM, Jaspers L, van Dijk GM, et al. [Androgen levels in women with various forms of ovarian dysfunction: associations with cardiometabolic features](https://pubmed.ncbi.nlm.nih.gov/26269537/). *Hum Reprod*. 2015;30(10):2376-2386.

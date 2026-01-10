@@ -13,9 +13,7 @@ seo:
 
 ## The MTHFR Buzz on Social Media
 
-If you've spent any time on TikTok or Instagram, you've probably seen influencers talking about MTHFR gene mutations as the hidden cause of everything from fatigue to anxiety to infertility. Some wellness personalities have built entire brands around methylation testing, often selling expensive supplement protocols alongside their content.
-
-As a naturopathic doctor who has been working with genetic testing for over a decade, I want to provide some balanced, evidence-based perspective on this topic.
+If you've spent any time on TikTok or Instagram, you've probably seen influencers talking about MTHFR gene mutations as the hidden cause of everything from fatigue to anxiety to infertility. Some wellness personalities have built entire brands around methylation testing, often selling expensive supplement protocols alongside their content. As a naturopathic doctor who has been working with genetic testing for over a decade, I want to provide some balanced, evidence-based perspective on this topic.
 
 ## What Is the MTHFR Gene?
 

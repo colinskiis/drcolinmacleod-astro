@@ -25,13 +25,13 @@ Food sensitivities differ from food allergies in that they create delayed inflam
 
 ## The Gut Microbiome
 
-The trillions of bacteria living in your digestive tract, collectively known as the gut microbiome, play crucial roles in digesting certain foods, training the immune system, protecting against pathogenic bacteria, and maintaining the integrity of the intestinal lining<sup>3</sup>. Dysbiosis, an imbalance in gut bacteria, has been linked to numerous conditions including inflammatory bowel disease, autoimmune disorders, and mental health conditions<sup>4</sup>.
+The trillions of bacteria living in your digestive tract, collectively known as the gut microbiome, play crucial roles in digesting certain foods, training the immune system, protecting against pathogenic bacteria, and maintaining the integrity of the intestinal lining<sup>3</sup>. Dysbiosis, an imbalance in gut bacteria, has been linked to numerous conditions including inflammatory bowel disease, autoimmune disorders, and [mental health conditions](/articles/gut-brain-connection-mental-health)<sup>4</sup>.
 
 ## Naturopathic Assessment and Treatment
 
-A comprehensive approach to digestive health begins with proper assessment. Laboratory testing such as comprehensive stool analysis can provide valuable insight into beneficial and harmful bacteria populations, digestive enzyme function, inflammation markers, and intestinal immune function. This testing guides targeted treatment protocols for optimal results.
+A comprehensive approach to digestive health begins with proper assessment. [Laboratory testing](/lab-testing) such as comprehensive stool analysis can provide valuable insight into beneficial and harmful bacteria populations, digestive enzyme function, inflammation markers, and intestinal immune function. This testing guides targeted treatment protocols for optimal results.
 
-Diet is the foundation of digestive treatment. Depending on the individual case, elimination diets, low-FODMAP protocols, or anti-inflammatory approaches may be recommended. The gut-brain connection must also be addressed, as chronic stress impairs digestive function by reducing enzyme production, slowing gut motility, and altering microbiome composition.
+Diet is the foundation of digestive treatment, with [adequate fiber intake](/articles/fiber-the-underrated-nutrient) playing a central role. Depending on the individual case, elimination diets, low-FODMAP protocols, or anti-inflammatory approaches may be recommended. The gut-brain connection must also be addressed, as chronic stress impairs digestive function by reducing enzyme production, slowing gut motility, and altering microbiome composition.
 
 Natural treatments including herbal medicine, probiotics, and digestive enzyme support can be very effective when properly matched to the individual's specific condition. Due to the complex nature of digestive disorders and the many potential underlying causes, it is best to work with a naturopathic doctor who can design an optimal treatment plan based on your specific needs.
 

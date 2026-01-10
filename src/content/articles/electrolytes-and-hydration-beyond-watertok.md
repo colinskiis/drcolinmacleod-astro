@@ -35,7 +35,7 @@ Plain water is sufficient for most situations. For everyday activities like work
 
 There are legitimate situations where additional electrolytes can be beneficial.
 
-Prolonged intense exercise lasting more than an hour can deplete sodium through sweat. Electrolyte replacement helps maintain performance, particularly in hot, humid conditions.
+Prolonged intense exercise lasting more than an hour can deplete sodium through sweat, along with [other key nutrients for athletes](/articles/nutrients-for-athletic-performance). Electrolyte replacement helps maintain performance, particularly in hot, humid conditions.
 
 Endurance activities like marathon running, long-distance cycling, and hiking involve extended periods of sweating that deplete electrolyte stores. Replacement can help prevent exercise-associated hyponatremia (dangerously low sodium).
 
@@ -93,7 +93,7 @@ Focus on the fundamentals: drink when thirsty, eat a varied diet with plenty of 
 
 ## Hydration and Nutrition Support in Halifax
 
-If you have questions about hydration, electrolytes, or how to optimize your nutrition for your activity level and health goals, please contact MacLeod Naturopathic to book an initial visit. Dr. MacLeod can help you cut through the social media hype and develop an evidence-based approach to your nutrition needs.
+If you have questions about hydration, electrolytes, or how to optimize your nutrition for your activity level and health goals, please contact MacLeod Naturopathic to book an initial visit. Dr. MacLeod provides [clinical nutrition services](/clinical-nutrition) and can help you cut through the social media hype and develop an evidence-based approach to your nutrition needs.
 
 ### References
 

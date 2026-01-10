@@ -2,7 +2,8 @@
 title: "Mistletoe: A Natural Cancer Treatment"
 description: "Mistletoe extract injections are a natural cancer treatment helpful in improving quality of life and survival in most types of cancer while being very safe."
 publishDate: 2014-03-25
-modifiedDate: 2022-07-12
+modifiedDate: 2026-01-10
+author: "Dr. Colin MacLeod ND"
 heroImage: "/images/treatments/IV-nutrient-therapy.webp"
 categories: ["Naturopathic"]
 tags: ["naturopathic"]
@@ -41,7 +42,7 @@ Mistletoe contains two major compounds which have regulatory effects on cancer c
 
 ## How Is Mistletoe Used?
 
-Mistletoe is given by subcutaneous injection, just under the skin, typically nearby the site of a known cancerous growth. Injections of the mistletoe extract are minimally painful and are given every other day. Injecting mistletoe, rather than taking it orally allows it to act more directly on the immune system without being limited by digestive absorption or the liver's "first pass effect". Injecting mistletoe allows for a targeted treatment since it can be injected near the site of a known tumor or cancerous lesion.
+Mistletoe is given by subcutaneous injection, just under the skin, typically nearby the site of a known cancerous growth. While it differs from [IV therapy](/iv-therapy), both are forms of injectable treatments we offer. Injections of the mistletoe extract are minimally painful and are given every other day. Injecting mistletoe, rather than taking it orally allows it to act more directly on the immune system without being limited by digestive absorption or the liver's "first pass effect". Injecting mistletoe allows for a targeted treatment since it can be injected near the site of a known tumor or cancerous lesion.
 
 <img src="/images/general/mistletoe-injection.webp" alt="Mistletoe injection technique" style="max-width: 100%; height: auto;">
 
@@ -55,9 +56,15 @@ Mistletoe has no known major herb-drug interactions<sup>31,32</sup> but allergic
 
 In Canada injectable mistletoe extract is available under the product names Iscador and Helixor. In my practice I typically use Iscador as it has a strong research supporting its use. Helixor is another excellent choice, depending on the individual patient and their state of health.
 
+## Recent Research Developments
+
+Research on mistletoe therapy continues to grow. A 2020 systematic review and meta-analysis examining mistletoe therapy in cancer patients confirmed improvements in quality of life measures across multiple cancer types<sup>35</sup>. The review found consistent benefits for fatigue, sleep, emotional wellbeing, and tolerance of conventional treatments.
+
+Interest in mistletoe therapy has expanded in North America, with growing recognition from integrative oncology programs. While mistletoe remains primarily an adjunctive therapy used alongside conventional treatment, its safety profile and quality of life benefits make it a valuable option for many cancer patients seeking comprehensive care.
+
 ## Mistletoe Therapy in Halifax
 
-Mistletoe injections in the treatment of cancer are a viable adjunctive natural treatment option to conventional chemotherapy, radiation therapy and/or surgical treatment. If you are in the Halifax area and are interested in trying this treatment please contact MacLeod Naturopathic to book an initial consultation with Dr. MacLeod.
+Mistletoe injections in the treatment of cancer are a viable adjunctive natural treatment option to conventional chemotherapy, radiation therapy and/or surgical treatment. If you are in the Halifax area and are interested in trying this treatment please contact MacLeod Naturopathic to book an initial consultation. Learn more about our [herbal medicine services](/herbal-medicine).
 
 ### References
 
@@ -95,3 +102,4 @@ Mistletoe injections in the treatment of cancer are a viable adjunctive natural 
 32. Doehmer J, Eisenbraun J. Assessment of extracts from mistletoe (Viscum album) for herb-drug interaction by inhibition and induction of cytochrome P450 activities. *Phytother Res*. 2012 Jan;26(1):11-7.
 33. Bauer C, Oppel T, Ruëff F, Przybilla B. Anaphylaxis to viscotoxins of mistletoe (Viscum album) extracts. *Ann Allergy Asthma Immunol*. 2005 Jan;94(1):86-9.
 34. Hutt N, Kopferschmitt-Kubler M, Cabalion J, Purohit A, Alt M, Pauli G. Anaphylactic reactions after therapeutic injection of mistletoe (Viscum album L.). *Allergol Immunopathol (Madr)*. 2001 Sep-Oct;29(5):201-3.
+35. Loef M, Walach H. Quality of life in cancer patients treated with mistletoe: a systematic review and meta-analysis. *BMC Complement Med Ther*. 2020;20(1):227.

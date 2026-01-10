@@ -39,7 +39,7 @@ EDTA (ethylene diamine tetraacetic acid) chelation therapy works through several
 
 ### 1. Removal of Toxic Heavy Metals
 
-The American Heart Association released a scientific statement in 2023 confirming that toxic metals such as lead, cadmium and arsenic are significant cardiovascular risk factors.<sup>8</sup> Even at levels previously considered "safe," these metals increase the risk of heart attack,<sup>9</sup> stroke,<sup>10</sup> peripheral artery disease<sup>11</sup> and cardiovascular death.<sup>12</sup>
+The American Heart Association released a scientific statement in 2023 confirming that toxic metals such as [lead, cadmium and arsenic](/articles/chelation-lead-toxicity) are significant cardiovascular risk factors.<sup>8</sup> Even at levels previously considered "safe," these metals increase the risk of heart attack,<sup>9</sup> stroke,<sup>10</sup> peripheral artery disease<sup>11</sup> and cardiovascular death.<sup>12</sup>
 
 Research published in the Journal of the American Heart Association found that comparing high versus low blood lead levels, the pooled relative risks were 1.43 for cardiovascular disease, 1.85 for coronary heart disease and 1.63 for stroke.<sup>13</sup> EDTA has a high affinity for these toxic metals and effectively removes them from the body, reducing their harmful effects on blood vessels.<sup>14</sup>
 
@@ -141,7 +141,7 @@ Based on current evidence, chelation therapy for cardiovascular health may be mo
 
 If you're interested in exploring chelation therapy for cardiovascular health, MacLeod Naturopathic offers comprehensive evaluation and treatment. Dr. MacLeod has been trained in the proper administration of chelation therapy and follows established safety protocols.
 
-An initial naturopathic consultation is required before starting treatment to ensure chelation is appropriate for your individual situation and health goals.
+An initial naturopathic consultation is required before starting treatment to ensure chelation is appropriate for your individual situation and health goals. You can learn more about our [chelation therapy services](/chelation-therapy).
 
 ## Frequently Asked Questions
 

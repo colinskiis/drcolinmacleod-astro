@@ -1,6 +1,7 @@
 ---
 title: "3 Tips For Combating Stress"
 description: "Stress comes in many forms. Use these naturopathic approved methods of stress reduction to help keep you cool and calm, any time of year."
+draft: true
 publishDate: 2012-12-17
 modifiedDate: 2018-11-22
 heroImage: "/images/general/running-woman-athletic.webp"
@@ -20,4 +21,4 @@ It can be tempting to burn the candle a little longer to catch up on the news on
 Meditation, whether seated or active, is an excellent tool for dealing with day-to-day stress but it also improves sleep quality, decreases high blood pressure and improves outcomes in many health conditions, like depression and heart disease. The classic seated meditation with focus placed on the breath is an excellent choice to help to calm and relax the mind. A walking meditation is another great choice, especially if you’re not getting enough exercise. The object of this meditation is to focus on what you are doing, pay close attention to the movements of your body and to your surroundings while letting the rest go. 
 
 ## Relax to a Tea
-There are a few different herbs which have a calming effect on the nervous system, including lemon balm and chamomile. Lemon balm is a favourite of mine as it induces a warm, comfortable feeling that is perfect for when you feel a bit on edge, nervous or if you need some help getting to sleep. Lemon balm also has benefit on the digestive system and has been traditionally used to treat “nervous stomach”. Lemon balm tea can be purchased at your local health food store.
+There are a few different herbs which have a calming effect on the nervous system, including lemon balm and chamomile. For more potent stress relief, [adaptogenic herbs like ashwagandha and rhodiola](/articles/adaptogens-for-stress-ashwagandha-rhodiola-and-beyond) offer evidence-based options that can help your body better cope with ongoing stress. Lemon balm is a favourite of mine as it induces a warm, comfortable feeling that is perfect for when you feel a bit on edge, nervous or if you need some help getting to sleep. Lemon balm also has benefit on the digestive system and has been traditionally used to treat "nervous stomach". Lemon balm tea can be purchased at your local health food store, or you can learn more about our [herbal medicine services](/herbal-medicine) for personalized recommendations.

@@ -504,4 +504,44 @@ import CTAButton from '../components/CTAButton.astro';
       </div>
     </div>
   </section>
+
+  <!-- Service Schema Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Prolotherapy",
+      "serviceType": "Regenerative Injection Therapy",
+      "description": "Prolotherapy is a regenerative injection therapy that uses concentrated dextrose to trigger natural tissue healing for arthritis, tendon injuries, and chronic pain.",
+      "provider": {
+        "@type": "Person",
+        "name": "Dr. Colin MacLeod",
+        "jobTitle": "Naturopathic Doctor"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Halifax",
+        "containedInPlace": {
+          "@type": "State",
+          "name": "Nova Scotia"
+        }
+      },
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceUrl": "https://drcolinmacleod.com/prolotherapy",
+        "serviceLocation": {
+          "@type": "Place",
+          "name": "Optimal Wellbeing Clinic",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "6140 Young Street",
+            "addressLocality": "Halifax",
+            "addressRegion": "Nova Scotia",
+            "postalCode": "B3K 0G2",
+            "addressCountry": "CA"
+          }
+        }
+      }
+    }
+  </script>
 </BaseLayout>

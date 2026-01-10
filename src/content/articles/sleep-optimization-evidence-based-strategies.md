@@ -75,9 +75,9 @@ If tracking your sleep is causing stress, consider taking breaks from monitoring
 
 ### Natural Sleep Supports
 
-Several natural approaches have evidence for sleep improvement. Magnesium may help with sleep, particularly in those who are deficient. Melatonin is most useful for circadian rhythm issues like jet lag or shift work rather than general insomnia. Herbal options including valerian root, passionflower, and L-theanine have varying degrees of evidence for sleep support.
+Several natural approaches have evidence for sleep improvement, complementing [stress management techniques](/articles/3-tips-for-combating-stress). Magnesium may help with sleep, particularly in those who are deficient. Melatonin is most useful for circadian rhythm issues like jet lag or shift work rather than general insomnia. Herbal options including valerian root, passionflower, and L-theanine have varying degrees of evidence for sleep support.
 
-Supplements should complement, not replace, good sleep habits. They work best when the fundamentals are in place, and your naturopathic doctor can help determine what might be appropriate for your situation.
+Supplements should complement, not replace, good sleep habits. They work best when the fundamentals are in place, and your naturopathic doctor can help determine what might be appropriate for your situation through our [herbal medicine services](/herbal-medicine).
 
 ## When to Seek Professional Help
 
@@ -87,9 +87,7 @@ Obstructive sleep apnea is common and underdiagnosed, affecting an estimated 5-1
 
 ## The Bottom Line on Sleep Optimization
 
-Quality sleep is genuinely important for health, and the growing attention to sleep is largely positive. Start with the basics: consistent sleep schedule, appropriate light exposure, and a comfortable environment. Don't overcomplicate things, as expensive gadgets and elaborate supplement stacks often aren't necessary. Address underlying issues since stress, anxiety, and medical conditions often underlie sleep problems. Seek help when needed, as chronic insomnia and sleep apnea require professional evaluation. And avoid perfectionism, since occasional poor sleep is normal and anxiety about sleep makes it worse.
-
-Sleep improvement is often about subtraction (removing obstacles) as much as addition (adding interventions).
+Quality sleep is genuinely important for health, and the growing attention to sleep is largely positive. Start with the basics: consistent sleep schedule, appropriate light exposure, and a comfortable environment. Don't overcomplicate things, as expensive gadgets and elaborate supplement stacks often aren't necessary. Address underlying issues since stress, anxiety, and medical conditions often underlie sleep problems. Seek help when needed, as chronic insomnia and sleep apnea require professional evaluation. And avoid perfectionism, since occasional poor sleep is normal and anxiety about sleep makes it worse. Ultimately, sleep improvement is often about subtraction (removing obstacles) as much as addition (adding interventions).
 
 ## Sleep Support in Halifax
 

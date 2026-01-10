@@ -35,7 +35,7 @@ A whole-foods diet rich in colorful vegetables and fruits, quality proteins, and
 
 ## IV Therapy for Immune Support
 
-Intravenous nutrient therapy allows for therapeutic doses that cannot be achieved through oral supplementation. The Myers' Cocktail, which includes B vitamins, vitamin C, magnesium, and calcium, can replenish nutrient stores and support energy production needed for immune function. High-dose intravenous vitamin C achieves blood levels with direct antimicrobial activity and may be particularly beneficial for those with compromised immune systems or during acute illness.
+[Intravenous nutrient therapy](/iv-therapy) allows for therapeutic doses that cannot be achieved through oral supplementation. The Myers' Cocktail, which includes B vitamins, vitamin C, magnesium, and calcium, can replenish nutrient stores and support energy production needed for immune function. High-dose intravenous vitamin C achieves blood levels with direct antimicrobial activity and may be particularly beneficial for those with compromised immune systems or during acute illness.
 
 ## Herbal Medicine and Immunity
 
@@ -47,7 +47,7 @@ If you experience frequent colds or infections, infections that linger or are di
 
 ## Immune Support in Halifax
 
-If you are interested in optimizing your immune function or are experiencing recurrent infections, please contact MacLeod Naturopathic to book an initial naturopathic visit to discuss your options.
+If you are interested in optimizing your immune function or are experiencing recurrent infections, please contact MacLeod Naturopathic to book an initial naturopathic visit to discuss your options. If you're struggling with fatigue following a viral illness, see our guide on [post-viral recovery with IV therapy](/articles/post-viral-recovery-iv-therapy).
 
 ### References
 

@@ -3,7 +3,7 @@ title: "Parasites in Canada: Separating Social Media Hype from Science"
 description: "Parasite cleanses are trending on TikTok and Instagram, but are they necessary? A Canadian naturopathic doctor separates fact from fiction about parasitic infections."
 publishDate: 2026-01-09
 modifiedDate: 2026-01-09
-heroImage: "/images/general/digestive-health.webp"
+heroImage: "/images/general/digestive-testing.webp"
 categories: ["Naturopathic", "Digestive Health"]
 tags: ["parasites", "digestive health", "gut health", "naturopathic"]
 seo:
@@ -19,9 +19,7 @@ Wellness brands have capitalized on this trend, selling "parasite cleanses" and 
 
 ## Are Parasites Common in Canada?
 
-The short answer: not particularly.
-
-Canada has robust public health infrastructure, treated municipal water supplies, and food safety standards that significantly reduce parasitic infections compared to many other parts of the world.
+The short answer is not particularly. Canada has robust public health infrastructure, treated municipal water supplies, and food safety standards that significantly reduce parasitic infections compared to many other parts of the world.
 
 The most commonly reported intestinal parasite in Canada is Giardia lamblia, which causes giardiasis. It's typically acquired from contaminated water sources, particularly during outdoor activities like camping or hiking, and causes watery diarrhea, cramping, bloating, and nausea. It's easily diagnosed with stool testing and very treatable.
 
@@ -73,7 +71,7 @@ Small Intestinal Bacterial Overgrowth (SIBO) involves bacteria in the small inte
 
 Food sensitivities to foods like dairy, gluten, or FODMAPs can cause bloating, fatigue, brain fog, and many other symptoms.
 
-Gut dysbiosis refers to imbalanced gut bacteria without actual parasites, influenced by diet, stress, medications, and other factors.
+Gut dysbiosis refers to imbalanced gut bacteria without actual parasites, influenced by diet, stress, medications, and other factors. For more information on common digestive issues, see our guide to [natural approaches to digestive health](/articles/digestive-health-natural-approaches).
 
 Thyroid dysfunction can cause fatigue, brain fog, weight changes, and digestive issues, and a simple blood test can rule this out.
 

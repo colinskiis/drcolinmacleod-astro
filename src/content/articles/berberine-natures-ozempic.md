@@ -15,9 +15,7 @@ seo:
 
 Berberine has exploded on TikTok and Instagram, accumulating over 100 million views under the hashtag "nature's Ozempic." Influencers and wellness accounts have positioned this plant compound as a natural alternative to the blockbuster weight loss drugs semaglutide (Ozempic, Wegovy) and tirzepatide (Mounjaro).
 
-As interest in GLP-1 medications has increased alongside their cost and limited availability, many people are searching for accessible alternatives. Berberine has emerged as a popular candidate. But does it live up to the hype?
-
-Let's examine what the research actually shows.
+As interest in GLP-1 medications has increased alongside their cost and limited availability, many people are searching for accessible alternatives. Berberine has emerged as a popular candidate, but does it live up to the hype? Here's what the research actually shows.
 
 ## What Is Berberine?
 
@@ -51,7 +49,7 @@ The bottom line is that berberine is not a direct substitute for GLP-1 medicatio
 
 Some studies suggest berberine can support modest weight loss, but the evidence is mixed. Many studies are small and of limited quality, and weight loss appears to be secondary to blood sugar improvements rather than direct fat loss.
 
-Berberine may be most helpful for weight management when blood sugar dysregulation is contributing to weight gain, when used as part of a comprehensive approach including diet and exercise, and when expectations are realistic about what it can achieve.
+Berberine may be most helpful for weight management when blood sugar dysregulation is contributing to weight gain, when used as part of a [comprehensive approach to weight loss](/articles/natural-weight-loss-solutions) including diet and exercise, and when expectations are realistic about what it can achieve.
 
 ## Who Might Benefit from Berberine?
 
@@ -83,7 +81,7 @@ The most effective approach to metabolic health remains appropriate diet for you
 
 ## Metabolic Health Support in Halifax
 
-If you're interested in berberine or looking for evidence-based support for blood sugar management, metabolic health, or weight concerns, please contact MacLeod Naturopathic to book an initial visit. Dr. MacLeod can help determine whether berberine is appropriate for your situation and how it might fit into a comprehensive treatment plan.
+If you're interested in berberine or looking for evidence-based support for blood sugar management, metabolic health, or weight concerns, please contact MacLeod Naturopathic to book an initial visit. Dr. MacLeod provides [herbal medicine consultations](/herbal-medicine) and can help determine whether berberine is appropriate for your situation and how it might fit into a comprehensive treatment plan.
 
 ### References
 

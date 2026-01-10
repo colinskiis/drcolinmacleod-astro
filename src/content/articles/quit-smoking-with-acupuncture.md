@@ -40,7 +40,7 @@ As far as conventional treatment for quitting smoking goes, nicotine replacement
 
 ## Acupuncture To Quit Smoking in Halifax
 
-If you are interested in receiving acupuncture to help quit smoking in the Halifax area, please contact MacLeod Naturopathic at 902-820-2727 to book an initial naturopathic visit to discuss your options.
+If you are interested in receiving acupuncture to help quit smoking in the Halifax area, please contact MacLeod Naturopathic to book an initial naturopathic visit to discuss your options. Learn more about our [acupuncture services](/acupuncture).
 
 ### References
 

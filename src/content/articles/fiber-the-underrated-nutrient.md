@@ -87,6 +87,18 @@ Consider swapping white rice for brown rice, quinoa, or barley. Choose whole gra
 
 Rather than eliminating foods, focus on adding fiber-rich options. Add vegetables to every meal. Include legumes several times per week. Top meals with seeds like chia, hemp, or flax. Snack on fruit and nuts. Leave skins on potatoes, apples, and pears.
 
+### Quick Practical Tips
+
+**Smoothies:** Add two handfuls of baby spinach to your morning smoothie. The taste barely changes, but you get a significant fiber and nutrient boost. Experiment with kale, frozen berries, and banana for variety.
+
+**Breakfast upgrades:** Add broccoli, peppers, and mushrooms to omelettes. Top oatmeal with berries or banana slices. These small additions take only a few minutes but compound over time.
+
+**Strategic snacking:** Keep cut vegetables (carrot sticks, celery, bell peppers) with hummus ready in the fridge. Maintain a fruit bowl at home and keep fruit at your desk. Frozen grapes or berries make a refreshing alternative to processed snacks.
+
+**Hidden vegetables:** Finely chop or mince vegetables into dishes where they blend in. Add mushrooms, onions, peppers, and zucchini to pasta sauce. Mix vegetables into burger patties or meatballs.
+
+**Simple salads:** Start with a basic template: two handfuls of spinach or mixed greens, a few sliced strawberries or berries, and a simple olive oil and balsamic dressing (3:1 ratio). Keep it easy and you'll actually make it.
+
 ## Fiber Supplements: When and Which
 
 While whole foods are preferable, fiber supplements can be useful in some situations.
@@ -121,7 +133,7 @@ The unglamorous truth? Sometimes the most powerful health intervention is also t
 
 ## Digestive Health Support in Halifax
 
-If you're experiencing digestive issues, want guidance on optimizing your fiber intake, or need help identifying which foods work best for your individual situation, please contact MacLeod Naturopathic to book an initial visit. Dr. MacLeod offers comprehensive digestive health assessments and can help you develop an eating pattern that supports your gut health and overall wellness.
+If you're experiencing digestive issues, want guidance on optimizing your fiber intake, or need help identifying which foods work best for your individual situation, please contact MacLeod Naturopathic to book an initial visit. Dr. MacLeod offers [clinical nutrition services](/clinical-nutrition) and comprehensive [digestive health assessments](/articles/digestive-health-natural-approaches) to help you develop an eating pattern that supports your gut health and overall wellness.
 
 ### References
 

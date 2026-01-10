@@ -3,7 +3,7 @@ title: "Adaptogens for Stress: Ashwagandha, Rhodiola, and Beyond"
 description: "Adaptogens are trending on social media for stress relief. Here's what the research shows about ashwagandha, rhodiola, and other adaptogenic herbs for managing stress and fatigue."
 publishDate: 2026-01-09
 modifiedDate: 2026-01-09
-heroImage: "/images/nutrition/herbal-medicine-2.webp"
+heroImage: "/images/nutrition/adaptogens-herbs.webp"
 categories: ["Naturopathic", "Herbal Medicine"]
 tags: ["adaptogens", "ashwagandha", "rhodiola", "stress", "herbal medicine", "naturopathic"]
 seo:
@@ -13,9 +13,7 @@ seo:
 
 ## The Rise of Adaptogens
 
-Adaptogens have become one of the most popular categories of supplements, with ashwagandha in particular appearing everywhere from dedicated supplements to coffee creamers and energy drinks. The promise is appealing: natural substances that help your body "adapt" to stress and maintain balance.
-
-But what does the science actually show? Let's examine the evidence behind these trending herbs.
+Adaptogens have become one of the most popular categories of supplements, with ashwagandha in particular appearing everywhere from dedicated supplements to coffee creamers and energy drinks. The promise is appealing: natural substances that help your body "adapt" to stress and maintain balance. But what does the science actually show? Here's what the evidence tells us about these trending herbs.
 
 ## What Are Adaptogens?
 
@@ -119,11 +117,11 @@ Give adaptogens time to work. They typically work gradually rather than immediat
 
 Adaptogens can be helpful tools for stress management, but they're not a replacement for addressing the sources of stress or building sustainable coping strategies.
 
-The most effective approach combines lifestyle modification including sleep, exercise, and nutrition with stress management practices such as meditation, breathing exercises, and time in nature. Appropriate supplementation when indicated and professional support for significant stress or anxiety round out a comprehensive approach.
+The most effective approach combines lifestyle modification including [quality sleep](/articles/sleep-optimization-evidence-based-strategies), exercise, and nutrition with stress management practices such as meditation, breathing exercises, and time in nature. Appropriate supplementation when indicated and professional support for significant stress or anxiety round out a comprehensive approach.
 
 ## Adaptogen Support in Halifax
 
-If you're interested in whether adaptogens might be helpful for your situation, please contact MacLeod Naturopathic to book an initial visit. Dr. MacLeod can help determine which adaptogenic herbs (if any) are appropriate for your individual needs and ensure they're used safely alongside any medications or other treatments.
+If you're interested in whether adaptogens might be helpful for your situation, please contact MacLeod Naturopathic to book an initial visit. Dr. MacLeod provides [herbal medicine consultations](/herbal-medicine) and can help determine which adaptogenic herbs (if any) are appropriate for your individual needs and ensure they're used safely alongside any medications or other treatments.
 
 ### References
 

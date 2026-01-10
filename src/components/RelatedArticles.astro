@@ -1,0 +1,107 @@
+---
+// RelatedArticles.astro
+// Displays related articles based on shared tags and categories
+import { getCollection } from 'astro:content';
+
+interface Props {
+  currentSlug: string;
+  currentTags: string[];
+  currentCategories: string[];
+  limit?: number;
+}
+
+const { currentSlug, currentTags, currentCategories, limit = 3 } = Astro.props;
+
+// Get all published articles
+const allArticles = await getCollection('articles', ({ data }) => !data.draft);
+
+// Score articles by relevance (shared tags and categories)
+const scoredArticles = allArticles
+  .filter((article) => article.slug !== currentSlug)
+  .map((article) => {
+    let score = 0;
+
+    // Score for shared categories (weighted higher)
+    const sharedCategories = article.data.categories.filter((cat) =>
+      currentCategories.includes(cat)
+    );
+    score += sharedCategories.length * 3;
+
+    // Score for shared tags
+    const sharedTags = article.data.tags?.filter((tag) =>
+      currentTags?.includes(tag)
+    ) || [];
+    score += sharedTags.length * 2;
+
+    return { article, score };
+  })
+  .filter(({ score }) => score > 0)
+  .sort((a, b) => {
+    // Sort by score first, then by date
+    if (b.score !== a.score) return b.score - a.score;
+    return new Date(b.article.data.publishDate).getTime() - new Date(a.article.data.publishDate).getTime();
+  })
+  .slice(0, limit)
+  .map(({ article }) => article);
+
+// If we don't have enough related articles, pad with recent ones
+const recentArticles = scoredArticles.length < limit
+  ? allArticles
+      .filter((article) =>
+        article.slug !== currentSlug &&
+        !scoredArticles.some((ra) => ra.slug === article.slug)
+      )
+      .sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime())
+      .slice(0, limit - scoredArticles.length)
+  : [];
+
+const relatedArticles = [...scoredArticles, ...recentArticles];
+---
+
+{relatedArticles.length > 0 && (
+  <div class="mt-12 pt-8 border-t border-gray-200">
+    <h3 class="text-2xl font-serif font-bold text-emerald-950 mb-6">Related Articles</h3>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {relatedArticles.map((article) => (
+        <a
+          href={`/articles/${article.slug}`}
+          class="group bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-shadow"
+        >
+          {article.data.heroImage && (
+            <div class="aspect-video overflow-hidden">
+              <img
+                src={article.data.heroImage}
+                alt={article.data.title}
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+          )}
+          <div class="p-4">
+            <div class="flex flex-wrap gap-1 mb-2">
+              {article.data.categories.slice(0, 2).map((category) => (
+                <span class="bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded-full">
+                  {category}
+                </span>
+              ))}
+            </div>
+            <h4 class="font-serif font-bold text-gray-900 group-hover:text-emerald-800 transition-colors line-clamp-2">
+              {article.data.title}
+            </h4>
+            <p class="text-sm text-gray-600 mt-2 line-clamp-2">
+              {article.data.description}
+            </p>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+)}
+
+<style>
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>

@@ -25,7 +25,7 @@ The nervous system is also profoundly affected by intense training. Both central
 
 ## IV Therapy for Athletic Recovery
 
-Intravenous nutrient therapy offers unique advantages for athletes that cannot be replicated through oral supplementation. When nutrients are delivered directly into the bloodstream, they bypass the limitations of gastrointestinal absorption, which can be particularly compromised following intense exercise when blood flow has been diverted away from the digestive system<sup>5</sup>.
+[Intravenous nutrient therapy](/iv-therapy) offers unique advantages for athletes that cannot be replicated through oral supplementation. When nutrients are delivered directly into the bloodstream, they bypass the limitations of gastrointestinal absorption, which can be particularly compromised following intense exercise when blood flow has been diverted away from the digestive system<sup>5</sup>.
 
 The Myers' Cocktail, a foundational intravenous formula containing B vitamins, vitamin C, magnesium, and calcium, addresses several aspects of athletic recovery simultaneously. B vitamins are essential cofactors in energy production pathways and are depleted at higher rates in physically active individuals. Vitamin C serves as a powerful antioxidant that neutralizes exercise-induced free radicals while also supporting collagen synthesis for tissue repair. Magnesium is critical for muscle function, energy production, and sleep quality, and is commonly lost through sweat during training<sup>6</sup>.
 
@@ -43,7 +43,7 @@ The relationship between alcohol consumption and athletic recovery deserves part
 
 Sleep is perhaps the single most important recovery modality available to athletes, yet it is frequently undervalued. The majority of physical recovery occurs during sleep, when growth hormone secretion peaks and drives tissue repair. Protein synthesis accelerates, glycogen stores are replenished, and both the nervous system and immune function undergo restoration<sup>9</sup>.
 
-Research consistently demonstrates that athletes require more sleep than the general population, typically 8 to 10 hours nightly for optimal recovery. Studies of elite athletes show that many sleep 10 or more hours when naps are included. The consequences of inadequate sleep extend beyond subjective fatigue to measurable decrements in reaction time, accuracy, strength, and endurance<sup>10</sup>.
+Research consistently demonstrates that [athletes require more sleep](/articles/how-much-sleep-does-an-athlete-need) than the general population, typically 8 to 10 hours nightly for optimal recovery. Studies of elite athletes show that many sleep 10 or more hours when naps are included. The consequences of inadequate sleep extend beyond subjective fatigue to measurable decrements in reaction time, accuracy, strength, and endurance<sup>10</sup>.
 
 Sleep quality matters as much as duration. Environmental factors including room temperature, light exposure, and noise levels all influence sleep architecture and the proportion of time spent in restorative deep sleep stages. Behavioral factors such as consistent sleep and wake times, limiting screen exposure before bed, and avoiding caffeine late in the day can substantially improve sleep quality.
 
@@ -65,7 +65,7 @@ Monitoring recovery status helps athletes optimize their training loads. Subject
 
 Certain signs suggest that recovery may require more than basic strategies. Persistent fatigue despite adequate sleep, declining performance despite consistent training, frequent illness or infection, nagging injuries that fail to resolve, difficulty sleeping, and mood changes or loss of motivation may all indicate overtraining or suboptimal recovery that warrants assessment<sup>13</sup>.
 
-A naturopathic approach to athletic recovery considers training demands and competition schedules, individual nutritional needs, sleep optimization, and strategic use of treatments such as IV therapy. If you are experiencing symptoms of inadequate recovery or are interested in optimizing your performance through enhanced recovery strategies, please contact MacLeod Naturopathic to book an initial naturopathic visit to discuss your options.
+A naturopathic approach to athletic recovery considers training demands and competition schedules, individual nutritional needs, sleep optimization, and strategic use of treatments such as IV therapy. If you are experiencing symptoms of inadequate recovery or are interested in optimizing your performance through enhanced recovery strategies, please contact MacLeod Naturopathic to book an initial naturopathic visit. Learn more about our [sports medicine services](/sports-medicine).
 
 ### References
 

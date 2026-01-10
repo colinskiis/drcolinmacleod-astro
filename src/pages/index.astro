@@ -1,6 +1,35 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BookingButton from '../components/BookingButton.astro';
+
+// FAQ data for schema markup
+const faqItems = [
+  {
+    question: "What makes naturopathic medicine different?",
+    answer: "Naturopathic doctors take the time to understand your health and address the root cause. We use natural therapies and lifestyle changes to support your body's innate healing ability."
+  },
+  {
+    question: "Is naturopathic medicine covered by insurance?",
+    answer: "Yes, most extended health insurance plans cover naturopathic visits. We offer direct billing for many major insurers to make the process convenient for you."
+  },
+  {
+    question: "How long are appointments?",
+    answer: "Initial consultations are typically 60 minutes to allow for a comprehensive assessment. Follow-up appointments are usually 30 minutes."
+  }
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqItems.map(item => ({
+    "@type": "Question",
+    "name": item.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": item.answer
+    }
+  }))
+};
 ---
 
 <BaseLayout 
@@ -377,4 +406,7 @@ import BookingButton from '../components/BookingButton.astro';
       </div>
     </div>
   </section>
+
+  <!-- FAQ Schema for AI discoverability -->
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
 </BaseLayout>

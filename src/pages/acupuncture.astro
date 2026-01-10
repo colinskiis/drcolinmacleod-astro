@@ -276,6 +276,30 @@ import CTAButton from '../components/CTAButton.astro';
     </div>
   </section>
 
+  <!-- Related Articles -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Learn More</h2>
+        <p class="text-lg text-gray-600">Explore related articles on pain management and natural health.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <a href="/articles/sports-injuries-natural-treatment" class="bg-emerald-50 rounded-xl p-6 hover:bg-emerald-100 transition-colors group">
+          <h3 class="font-serif font-bold text-emerald-950 mb-2 group-hover:text-emerald-700">Sports Injuries: Natural Treatment</h3>
+          <p class="text-gray-600 text-sm">How acupuncture and naturopathic approaches accelerate sports injury recovery.</p>
+        </a>
+        <a href="/articles/natural-anxiety-management" class="bg-emerald-50 rounded-xl p-6 hover:bg-emerald-100 transition-colors group">
+          <h3 class="font-serif font-bold text-emerald-950 mb-2 group-hover:text-emerald-700">Natural Anxiety Management</h3>
+          <p class="text-gray-600 text-sm">Evidence-based approaches to anxiety, including acupuncture's calming effects.</p>
+        </a>
+        <a href="/articles/quit-smoking-with-acupuncture" class="bg-emerald-50 rounded-xl p-6 hover:bg-emerald-100 transition-colors group">
+          <h3 class="font-serif font-bold text-emerald-950 mb-2 group-hover:text-emerald-700">Quit Smoking with Acupuncture</h3>
+          <p class="text-gray-600 text-sm">How acupuncture helps manage cravings and withdrawal symptoms.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!-- CTA Section -->
   <section class="py-16 lg:py-24 bg-emerald-950">
     <div class="section-shell text-center">
@@ -316,4 +340,44 @@ import CTAButton from '../components/CTAButton.astro';
       </details>
     </div>
   </section>
+
+  <!-- Service Schema Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Acupuncture",
+      "serviceType": "Acupuncture Therapy",
+      "description": "Acupuncture for pain relief and injury recovery using trigger point release and electroacupuncture to treat muscle pain, joint pain, and sports injuries.",
+      "provider": {
+        "@type": "Person",
+        "name": "Dr. Colin MacLeod",
+        "jobTitle": "Naturopathic Doctor"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Halifax",
+        "containedInPlace": {
+          "@type": "State",
+          "name": "Nova Scotia"
+        }
+      },
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceUrl": "https://drcolinmacleod.com/acupuncture",
+        "serviceLocation": {
+          "@type": "Place",
+          "name": "Optimal Wellbeing Clinic",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "6140 Young Street",
+            "addressLocality": "Halifax",
+            "addressRegion": "Nova Scotia",
+            "postalCode": "B3K 0G2",
+            "addressCountry": "CA"
+          }
+        }
+      }
+    }
+  </script>
 </BaseLayout>

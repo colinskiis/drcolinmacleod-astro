@@ -445,6 +445,30 @@ import CTAButton from '../components/CTAButton.astro';
     </div>
   </section>
 
+  <!-- Related Articles -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Learn More</h2>
+        <p class="text-lg text-gray-600">Explore our articles on nutrition and health optimization.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <a href="/articles/fiber-the-underrated-nutrient" class="bg-emerald-50 rounded-xl p-6 hover:bg-emerald-100 transition-colors group">
+          <h3 class="font-serif font-bold text-emerald-950 mb-2 group-hover:text-emerald-700">Fiber: The Underrated Nutrient</h3>
+          <p class="text-gray-600 text-sm">Why fiber is essential and how to get more of this often-lacking nutrient.</p>
+        </a>
+        <a href="/articles/digestive-health-natural-approaches" class="bg-emerald-50 rounded-xl p-6 hover:bg-emerald-100 transition-colors group">
+          <h3 class="font-serif font-bold text-emerald-950 mb-2 group-hover:text-emerald-700">Digestive Health: Natural Approaches</h3>
+          <p class="text-gray-600 text-sm">Optimize nutrient absorption by supporting your digestive system.</p>
+        </a>
+        <a href="/articles/natural-weight-loss-solutions" class="bg-emerald-50 rounded-xl p-6 hover:bg-emerald-100 transition-colors group">
+          <h3 class="font-serif font-bold text-emerald-950 mb-2 group-hover:text-emerald-700">Sustainable Weight Management</h3>
+          <p class="text-gray-600 text-sm">Evidence-based nutrition strategies for healthy, lasting weight management.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!-- CTA Section -->
   <section class="bg-emerald-950 py-16 lg:py-24">
     <div class="section-shell text-center">
@@ -498,6 +522,46 @@ import CTAButton from '../components/CTAButton.astro';
           }
         }
       ]
+    }
+  </script>
+
+  <!-- Service Schema Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Clinical Nutrition",
+      "serviceType": "Nutritional Therapy",
+      "description": "Clinical nutrition assessment and targeted nutrient therapy using lab testing, symptom analysis, and evidence-based protocols to identify and correct nutritional deficiencies.",
+      "provider": {
+        "@type": "Person",
+        "name": "Dr. Colin MacLeod",
+        "jobTitle": "Naturopathic Doctor"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Halifax",
+        "containedInPlace": {
+          "@type": "State",
+          "name": "Nova Scotia"
+        }
+      },
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceUrl": "https://drcolinmacleod.com/clinical-nutrition",
+        "serviceLocation": {
+          "@type": "Place",
+          "name": "Optimal Wellbeing Clinic",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "6140 Young Street",
+            "addressLocality": "Halifax",
+            "addressRegion": "Nova Scotia",
+            "postalCode": "B3K 0G2",
+            "addressCountry": "CA"
+          }
+        }
+      }
     }
   </script>
 </BaseLayout>

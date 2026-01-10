@@ -2,7 +2,8 @@
 title: "Chelation & Lead Toxicity"
 description: "Lead toxicity is a common disease which can be difficult to recognize. Chelation treatment and lead avoidance are the two essential weapons against lead."
 publishDate: 2015-02-02
-modifiedDate: 2022-07-12
+modifiedDate: 2026-01-10
+author: "Dr. Colin MacLeod ND"
 heroImage: "/images/treatments/lead-toxicity2.webp"
 categories: ["Naturopathic"]
 tags: ["naturopathic"]
@@ -28,7 +29,7 @@ Significant sources of lead exposure to Nova Scotians include contaminated drink
 
 ## Chelation Therapy
 
-The standard and only proven effective treatment for lead toxicity is chelation therapy. Chelation involves giving a medicine (chelator) which latches onto a specific compound and allows it to be mobilized and removed from the body. The standard chelating agent used for removing lead is intravenous EDTA (Ethylene diamine tetraacetic acid), with oral DMSA (Dimercaptosuccinic acid) being used in some cases. Because lead binds very tightly within our tissues, especially bone, chelation is necessary to dislodge and remove it from the body.
+The standard and only proven effective treatment for lead toxicity is [chelation therapy](/chelation-therapy). Chelation involves giving a medicine (chelator) which latches onto a specific compound and allows it to be mobilized and removed from the body. The standard chelating agent used for removing lead is intravenous EDTA (Ethylene diamine tetraacetic acid), with oral DMSA (Dimercaptosuccinic acid) being used in some cases. Because lead binds very tightly within our tissues, especially bone, chelation is necessary to dislodge and remove it from the body.
 The number of chelation treatments required to reduce heavy metals down to a healthy level depends on the total body burden of the metal, i.e.: the total amount of the metal within the body. Treatments are typically given once every 1-2 weeks for 10-20 treatments to sufficiently reduce the total body level of the target heavy metal.
 
 ### Safety of Chelation
@@ -49,6 +50,14 @@ The problem of the lead blood test is solved with the EDTA chelation challenge u
 ![EDTA chelation challenge post-test showing elevated lead levels](/images/treatments/edta-chelation-challenge-post-test1.jpeg)
 *Post-chelation urine test showing a significant increase in lead concentration, indicating elevated total body burden.*
 
+## Recent Research Updates
+
+Research continues to confirm the dangers of even low-level lead exposure. A 2018 study in The Lancet Public Health estimated that lead exposure contributes to over 400,000 deaths annually in the United States alone, primarily through cardiovascular disease<sup>24</sup>. The study found significant associations between blood lead levels and mortality even at levels previously considered "safe."
+
+The CDC lowered its blood lead reference value for children in 2021 from 5 to 3.5 μg/dL, reflecting growing evidence that lower levels of exposure cause harm<sup>25</sup>. However, public health experts continue to emphasize that no level of lead exposure is known to be safe, particularly for children's neurological development.
+
+For those with documented elevated lead levels, chelation therapy remains the standard treatment. The principles outlined in this article continue to apply, and the TACT trial results demonstrating cardiovascular benefits of chelation have been supported by follow-up research.
+
 ## Lead Toxicity Prevention
 
 There are a few important ways to reduce your exposure to lead, including avoiding contaminated products, being aware of your occupational exposure<sup>22</sup> and limiting exposure through drinking water. Reducing lead exposure from drinking water here in Nova Scotia can be achieved through a few simple steps. Use cold water for cooking and drinking, and run the faucet for 5 minutes prior to drinking or cooking if the faucet hasn't been used for 6 or more hours. Clean all faucet aerators periodically. If pregnant or if you have children, consider using an NSF-53 certified water filter to significantly reduce lead levels in your drinking water.
@@ -57,6 +66,10 @@ If you are in the Halifax area you can contact Halifax Water<sup>23</sup> to hav
 
 ## Chelation Therapy in Halifax
 If you are interested in receiving chelation therapy and are located in the Halifax area, please contact MacLeod Naturopathic to book an initial naturopathic visit with Dr. MacLeod to discuss your options.
+
+## Related Resources
+
+Beyond treating lead toxicity, chelation therapy has also been studied for cardiovascular health. Research from the NIH-funded TACT trial showed significant benefits for heart disease patients, particularly those with diabetes. Learn more in our article on [chelation therapy for heart disease](/articles/chelation-therapy-heart-disease).
 
 ## References
 
@@ -82,4 +95,6 @@ If you are interested in receiving chelation therapy and are located in the Hali
 20. Olympio KP, Gonçalves C, Günther WM, Bechara EJ. Neurotoxicity and aggressiveness triggered by low-level lead in children: a review. Rev Panam Salud Publica. 2009 Sep;26(3):266-75.
 21. Agency for Toxic Substances & Disease Registry. “Environmental Health and Medicine Education.” Lead (Pb) Toxicity: What Tests Can Assist with Diagnosis of Lead Toxicity? N.p., 20 Aug. 2007. Web. 28 Jan. 2015.
 22. “Code of Practice: Working with Inorganic Lead.” Nova Scotia Labour And Workforce Development. N.p., 12 June 2010. Web. 28 Jan. 2015.
-23. “Water Quality and Lead.” Official Website of Halifax’s Municipal Government. Web. 28 Jan. 2015.
+23. "Water Quality and Lead." Official Website of Halifax's Municipal Government. Web. 28 Jan. 2015.
+24. Lanphear BP, Rauch S, Auinger P, Allen RW, Hornung RW. Low-level lead exposure and mortality in US adults: a population-based cohort study. Lancet Public Health. 2018;3(4):e177-e184.
+25. Centers for Disease Control and Prevention. Blood Lead Reference Value. CDC. Updated October 2021.

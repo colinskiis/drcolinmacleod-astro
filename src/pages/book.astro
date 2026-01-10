@@ -1,0 +1,248 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import BookingButton from '../components/BookingButton.astro';
+---
+
+<BaseLayout
+  title="Book Your Appointment"
+  description="Schedule your naturopathic consultation with Dr. Colin MacLeod in Halifax. Learn what to expect at your first visit and how to prepare."
+  focusKeyword="book naturopathic appointment Halifax"
+>
+  <HeroSection title="Book Your Appointment" centered>
+    Schedule your consultation with Dr. Colin MacLeod and take the first step toward better health through naturopathic medicine.
+  </HeroSection>
+
+  <!-- What to Expect -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">What to Expect</h2>
+          <p class="text-lg text-gray-600">Your first appointment is a comprehensive assessment designed to understand your health fully.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+          <!-- Initial Consultation -->
+          <div class="bg-emerald-50/50 border border-emerald-100 rounded-2xl p-6">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mr-4">
+                <svg class="w-6 h-6 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-serif font-bold text-emerald-950">Initial Consultation</h3>
+            </div>
+            <p class="text-gray-600 mb-4">60 minutes</p>
+            <p class="text-gray-700">A thorough assessment of your health history, current concerns, lifestyle, and goals. Dr. MacLeod will take the time to understand your unique situation and develop a personalized treatment plan.</p>
+          </div>
+
+          <!-- Follow-up Visits -->
+          <div class="bg-white border border-emerald-100 rounded-2xl p-6">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mr-4">
+                <svg class="w-6 h-6 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-serif font-bold text-emerald-950">Follow-up Visits</h3>
+            </div>
+            <p class="text-gray-600 mb-4">30 minutes</p>
+            <p class="text-gray-700">Subsequent appointments to monitor progress, review lab results, adjust treatments, and address any new concerns. Frequency depends on your individual needs and treatment plan.</p>
+          </div>
+        </div>
+
+        <!-- Treatment Visits -->
+        <div class="bg-white border border-emerald-100 rounded-2xl p-6 mb-12">
+          <h3 class="text-xl font-serif font-bold text-emerald-950 mb-4">Specialized Treatment Appointments</h3>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div class="flex items-start">
+              <svg class="w-5 h-5 text-emerald-600 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <div>
+                <p class="font-medium text-gray-800">IV Therapy</p>
+                <p class="text-sm text-gray-600">45-90 minutes depending on infusion</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <svg class="w-5 h-5 text-emerald-600 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <div>
+                <p class="font-medium text-gray-800">Prolotherapy</p>
+                <p class="text-sm text-gray-600">30-45 minutes per session</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <svg class="w-5 h-5 text-emerald-600 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <div>
+                <p class="font-medium text-gray-800">Acupuncture</p>
+                <p class="text-sm text-gray-600">45-60 minutes per session</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <svg class="w-5 h-5 text-emerald-600 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <div>
+                <p class="font-medium text-gray-800">Chelation Therapy</p>
+                <p class="text-sm text-gray-600">2-3 hours per session</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What to Bring -->
+  <section class="py-16 bg-gray-50">
+    <div class="section-shell">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">What to Bring</h2>
+          <p class="text-lg text-gray-600">Help us make the most of your appointment by coming prepared.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-white rounded-xl p-6 shadow-sm">
+            <div class="flex items-start">
+              <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                <svg class="w-5 h-5 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-gray-800 mb-2">Health History</h3>
+                <p class="text-gray-600 text-sm">A list of past health conditions, surgeries, and hospitalizations. Include approximate dates if possible.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl p-6 shadow-sm">
+            <div class="flex items-start">
+              <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                <svg class="w-5 h-5 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-gray-800 mb-2">Current Medications</h3>
+                <p class="text-gray-600 text-sm">All prescription medications, over-the-counter drugs, vitamins, and supplements you currently take.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl p-6 shadow-sm">
+            <div class="flex items-start">
+              <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                <svg class="w-5 h-5 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-gray-800 mb-2">Recent Lab Work</h3>
+                <p class="text-gray-600 text-sm">Bring copies of any recent blood tests, imaging, or diagnostic reports from the past 1-2 years.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl p-6 shadow-sm">
+            <div class="flex items-start">
+              <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                <svg class="w-5 h-5 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-gray-800 mb-2">Insurance Information</h3>
+                <p class="text-gray-600 text-sm">Your extended health insurance card if you have coverage for naturopathic medicine.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Insurance & Payment -->
+  <section class="py-16 bg-white">
+    <div class="section-shell">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Insurance & Payment</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-emerald-50/50 border border-emerald-100 rounded-2xl p-6">
+            <h3 class="text-xl font-serif font-bold text-emerald-950 mb-4">Insurance Coverage</h3>
+            <p class="text-gray-700 mb-4">Most extended health insurance plans in Canada cover naturopathic visits. Coverage typically ranges from $300-$1000 annually depending on your plan.</p>
+            <p class="text-gray-700 mb-4">We offer <strong>direct billing</strong> to many major insurers, so you only pay your portion at the time of service.</p>
+            <p class="text-sm text-gray-600">Check with your insurance provider to confirm your naturopathic coverage and annual limit.</p>
+          </div>
+
+          <div class="bg-white border border-emerald-100 rounded-2xl p-6">
+            <h3 class="text-xl font-serif font-bold text-emerald-950 mb-4">Payment Options</h3>
+            <ul class="space-y-3 text-gray-700">
+              <li class="flex items-center">
+                <svg class="w-5 h-5 text-emerald-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Credit and debit cards
+              </li>
+              <li class="flex items-center">
+                <svg class="w-5 h-5 text-emerald-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Cash and e-transfer
+              </li>
+              <li class="flex items-center">
+                <svg class="w-5 h-5 text-emerald-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Direct insurance billing (where available)
+              </li>
+              <li class="flex items-center">
+                <svg class="w-5 h-5 text-emerald-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Receipts for insurance reimbursement
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 lg:py-24 bg-emerald-950">
+    <div class="section-shell">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-6">Ready to Get Started?</h2>
+        <p class="text-xl text-emerald-100 mb-8">Book your appointment online and take the first step toward better health.</p>
+        <BookingButton
+          text="Book Your Appointment"
+          size="lg"
+          source="book-page"
+        />
+        <p class="text-emerald-200 mt-6 text-sm">Or call us at <a href="tel:+19024064424" class="underline hover:text-white">(902) 406-4424</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location Reminder -->
+  <section class="py-12 bg-gray-50">
+    <div class="section-shell">
+      <div class="max-w-2xl mx-auto text-center">
+        <h3 class="text-xl font-serif font-bold text-emerald-950 mb-3">Location</h3>
+        <p class="text-gray-700 mb-2"><strong>Optimal Wellbeing Clinic</strong></p>
+        <p class="text-gray-600 mb-4">6140 Young Street, Halifax, NS B3K 0G2</p>
+        <p class="text-gray-600"><strong>Hours:</strong> Mon, Wed-Fri: 7:30 AM - 3:30 PM</p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

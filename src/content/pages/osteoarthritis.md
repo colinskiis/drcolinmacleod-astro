@@ -5,7 +5,7 @@ seo:
   focusKeyword: "osteoarthritis treatment"
 ---
 
-![Osteoarthritis](/images/conditions/osteoarthritis.jpeg)
+![Osteoarthritis knee joint](/images/conditions/arthritis-knee-prp.webp)
 
 ## Causes of Arthritis (Osteoarthritis)
 
