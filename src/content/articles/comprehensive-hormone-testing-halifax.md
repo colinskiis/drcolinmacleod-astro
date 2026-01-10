@@ -1,7 +1,7 @@
 ---
 title: "Comprehensive Hormone Testing in Halifax: Sex Hormones and Adrenal Function"
 description: "Access comprehensive hormone testing in Halifax including estrogen, progesterone, testosterone, cortisol, and DHEA. Learn about sex hormone and adrenal assessment through private lab services."
-publishDate: 2024-10-21
+publishDate: 2024-05-09
 modifiedDate: 2024-12-06
 heroImage: "/images/lab-testing/hormone-testing-consult.webp"
 categories: ["Lab Testing", "Hormones"]

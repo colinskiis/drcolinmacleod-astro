@@ -1,7 +1,7 @@
 ---
 title: "Natural Treatment for Sports Injuries"
 description: "Naturopathic treatment of sports injuries including prolotherapy, acupuncture, and nutritional support can accelerate healing and help prevent re-injury."
-publishDate: 2024-10-13
+publishDate: 2024-03-20
 modifiedDate: 2024-12-03
 heroImage: "/images/general/sports-injury-treatment.webp"
 categories: ["Pain Management", "Sports Medicine"]

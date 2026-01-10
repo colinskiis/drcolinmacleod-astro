@@ -1,7 +1,7 @@
 ---
 title: "Natural Anxiety Management: Evidence-Based Approaches"
 description: "Discover evidence-based natural approaches to anxiety management including lifestyle, nutrition, and nervous system support from a Halifax naturopathic doctor."
-publishDate: 2025-01-09
+publishDate: 2025-09-21
 author: "Dr. Colin MacLeod ND"
 heroImage: "/images/general/meditation-forest-anxiety.webp"
 categories: ["Naturopathic", "Mental Health"]

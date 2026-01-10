@@ -1,7 +1,7 @@
 ---
 title: "Fiber: The Boring Nutrient That Actually Works"
 description: "While social media promotes miracle supplements and detox cleanses, fiber remains the most underconsumed and underappreciated nutrient. Here's why it deserves your attention."
-publishDate: 2024-11-14
+publishDate: 2024-10-06
 modifiedDate: 2026-01-09
 heroImage: "/images/nutrition/fruits-vegetables.webp"
 categories: ["Naturopathic", "Nutrition", "Digestive Health"]

@@ -1,7 +1,7 @@
 ---
 title: "IBS and IBD: Natural Approaches to Digestive Disorders"
 description: "Understanding the differences between IBS and IBD, and evidence-based natural approaches to managing these common digestive conditions."
-publishDate: 2024-12-24
+publishDate: 2025-06-13
 author: "Dr. Colin MacLeod ND"
 heroImage: "/images/general/digestive-testing.webp"
 categories: ["Naturopathic", "Digestive Health"]

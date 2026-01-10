@@ -1,7 +1,7 @@
 ---
 title: "Post-Viral Recovery: How IV Therapy Supports Healing After COVID, Flu, and Other Infections"
 description: "Struggling to recover after COVID or other viral infections? Learn how IV nutrient therapy, including Myers' Cocktail and IV Vitamin C, can support post-viral recovery and address lingering fatigue."
-publishDate: 2024-10-25
+publishDate: 2024-06-03
 modifiedDate: 2024-12-06
 heroImage: "/images/treatments/iv-patient-man.webp"
 categories: ["IV Therapy", "Post-Viral Recovery"]

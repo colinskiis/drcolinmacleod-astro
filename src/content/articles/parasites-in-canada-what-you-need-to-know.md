@@ -1,7 +1,7 @@
 ---
 title: "Parasites in Canada: Separating Social Media Hype from Science"
 description: "Parasite cleanses are trending on TikTok and Instagram, but are they necessary? A Canadian naturopathic doctor separates fact from fiction about parasitic infections."
-publishDate: 2024-11-22
+publishDate: 2024-11-25
 modifiedDate: 2026-01-09
 heroImage: "/images/general/digestive-testing.webp"
 categories: ["Naturopathic", "Digestive Health"]

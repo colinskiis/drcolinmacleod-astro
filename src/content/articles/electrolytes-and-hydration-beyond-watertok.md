@@ -1,7 +1,7 @@
 ---
 title: "Electrolytes and Hydration: Beyond the #WaterTok Trend"
 description: "Loaded water and electrolyte drinks are trending on social media. Here's what you actually need to know about hydration, electrolytes, and whether fancy water is worth it."
-publishDate: 2024-11-10
+publishDate: 2024-09-11
 modifiedDate: 2026-01-09
 heroImage: "/images/nutrition/water-hydration.webp"
 categories: ["Naturopathic", "Nutrition"]

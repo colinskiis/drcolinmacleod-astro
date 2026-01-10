@@ -1,7 +1,7 @@
 ---
 title: "The Gut-Brain Connection: How Your Digestive System Affects Mental Health"
 description: "The gut-brain axis is revolutionizing our understanding of mental health. Learn how your gut microbiome influences mood, anxiety, and cognitive function."
-publishDate: 2024-11-18
+publishDate: 2024-10-31
 modifiedDate: 2026-01-09
 heroImage: "/images/general/gut-brain-connection.webp"
 categories: ["Naturopathic", "Digestive Health", "Mental Health"]

@@ -1,7 +1,7 @@
 ---
 title: "Menopause and Perimenopause: Natural Approaches"
 description: "Learn how naturopathic medicine supports women through perimenopause and menopause with evidence-based natural approaches including nutrition, lifestyle, and herbal therapies."
-publishDate: 2024-12-28
+publishDate: 2025-07-08
 author: "Dr. Colin MacLeod ND"
 heroImage: "/images/general/menopause-woman.webp"
 categories: ["Naturopathic", "Hormones"]

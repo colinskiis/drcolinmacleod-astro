@@ -1,7 +1,7 @@
 ---
 title: "Hormonal Acne: Understanding and Treating Adult Breakouts Naturally"
 description: "Learn about the root causes of hormonal acne and evidence-based natural approaches to clearing skin from the inside out."
-publishDate: 2024-12-20
+publishDate: 2025-05-19
 author: "Dr. Colin MacLeod ND"
 heroImage: "/images/general/healthy-lifestyle.webp"
 categories: ["Naturopathic", "Women's Health", "Skin Health"]

@@ -1,7 +1,7 @@
 ---
 title: "Optimizing Recovery: Natural Approaches for Athletes"
 description: "Evidence-based strategies to enhance athletic recovery including IV therapy, nutrition, sleep optimization, and natural anti-inflammatory support for faster return to training."
-publishDate: 2024-10-09
+publishDate: 2024-02-24
 modifiedDate: 2024-12-03
 heroImage: "/images/general/athletic-recovery.webp"
 categories: ["Sports Medicine", "Naturopathic"]
