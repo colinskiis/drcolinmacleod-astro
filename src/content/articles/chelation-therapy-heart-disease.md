@@ -1,7 +1,7 @@
 ---
 title: "Chelation Therapy for Heart Disease: The TACT Trial and Beyond"
 description: "EDTA chelation therapy has been studied in major NIH-funded trials for cardiovascular disease. Learn about the TACT study results, how chelation may benefit heart health, and what this means for Nova Scotians."
-publishDate: 2024-12-04
+publishDate: 2024-10-17
 modifiedDate: 2024-12-04
 heroImage: "/images/conditions/chelation-heart-disease.webp"
 categories: ["Naturopathic", "Heart Health"]

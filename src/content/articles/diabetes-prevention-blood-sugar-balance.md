@@ -1,7 +1,7 @@
 ---
 title: "Diabetes Prevention and Blood Sugar Balance"
 description: "Learn evidence-based natural strategies for preventing type 2 diabetes and maintaining healthy blood sugar. Naturopathic approaches to metabolic health in Halifax."
-publishDate: 2026-01-10
+publishDate: 2024-12-12
 author: "Dr. Colin MacLeod ND"
 heroImage: "/images/nutrition/balanced-plate-diabetes.webp"
 categories: ["Naturopathic", "Nutrition"]

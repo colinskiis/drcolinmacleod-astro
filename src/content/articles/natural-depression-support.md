@@ -1,7 +1,7 @@
 ---
 title: "Natural Approaches to Depression Support"
 description: "Evidence-based natural approaches to supporting mental health and mood. Learn how nutrition, lifestyle, and naturopathic care can complement depression treatment."
-publishDate: 2026-01-10
+publishDate: 2025-01-13
 author: "Dr. Colin MacLeod ND"
 heroImage: "/images/general/coastal-hiking-depression.webp"
 categories: ["Naturopathic", "Mental Health"]

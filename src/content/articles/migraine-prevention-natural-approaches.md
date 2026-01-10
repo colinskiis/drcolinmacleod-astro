@@ -1,7 +1,7 @@
 ---
 title: "Migraine Prevention: Natural Approaches That Work"
 description: "Discover evidence-based natural approaches to migraine prevention. Learn about triggers, dietary factors, lifestyle changes, and how naturopathic medicine can help reduce migraine frequency."
-publishDate: 2026-01-10
+publishDate: 2025-01-05
 author: "Dr. Colin MacLeod ND"
 heroImage: "/images/general/peaceful-sleep-migraine.webp"
 categories: ["Naturopathic", "Pain Management"]

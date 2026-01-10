@@ -1,7 +1,7 @@
 ---
 title: "PCOS: Natural Approaches to Polycystic Ovary Syndrome"
 description: "Evidence-based natural approaches to managing PCOS including diet, lifestyle, and targeted supplementation from a Halifax naturopathic doctor."
-publishDate: 2026-01-10
+publishDate: 2025-01-17
 author: "Dr. Colin MacLeod ND"
 heroImage: "/images/general/menopause-woman.webp"
 categories: ["Naturopathic", "Women's Health", "Hormonal Health"]

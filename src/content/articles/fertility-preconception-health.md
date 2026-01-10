@@ -1,7 +1,7 @@
 ---
 title: "Fertility and Preconception Health: Preparing Your Body for Pregnancy"
 description: "Evidence-based natural approaches to optimize fertility and prepare for a healthy pregnancy, including nutrition, lifestyle, and targeted supplementation."
-publishDate: 2026-01-10
+publishDate: 2024-12-16
 author: "Dr. Colin MacLeod ND"
 heroImage: "/images/general/healthy-lifestyle.webp"
 categories: ["Naturopathic", "Women's Health", "Fertility"]

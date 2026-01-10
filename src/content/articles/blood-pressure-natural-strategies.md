@@ -1,7 +1,7 @@
 ---
 title: "Blood Pressure: Natural Strategies for Cardiovascular Health"
 description: "Discover evidence-based natural approaches to blood pressure management. Learn how diet, lifestyle, and naturopathic care support cardiovascular health."
-publishDate: 2026-01-10
+publishDate: 2024-12-08
 author: "Dr. Colin MacLeod ND"
 heroImage: "/images/nutrition/mediterranean-spread.webp"
 categories: ["Naturopathic", "Heart Health"]

@@ -1,7 +1,7 @@
 ---
 title: "Natural Approaches to Digestive Health"
 description: "Digestive health is foundational to overall wellness. Naturopathic medicine offers effective approaches for IBS, SIBO, food sensitivities, and gut microbiome imbalances."
-publishDate: 2024-12-03
+publishDate: 2024-10-01
 modifiedDate: 2024-12-03
 heroImage: "/images/general/digestive-health.webp"
 categories: ["Naturopathic", "Digestive Health"]

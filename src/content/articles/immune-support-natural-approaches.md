@@ -1,7 +1,7 @@
 ---
 title: "Strengthening Your Immune System Naturally"
 description: "The immune system is a complex network that can be supported through proper nutrition, lifestyle factors, and naturopathic treatments including IV therapy."
-publishDate: 2024-12-03
+publishDate: 2024-10-05
 modifiedDate: 2024-12-03
 heroImage: "/images/general/immune-health.webp"
 categories: ["Naturopathic", "Immune Health"]

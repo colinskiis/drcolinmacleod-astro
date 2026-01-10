@@ -1,7 +1,7 @@
 ---
 title: "Adaptogens for Stress: Ashwagandha, Rhodiola, and Beyond"
 description: "Adaptogens are trending on social media for stress relief. Here's what the research shows about ashwagandha, rhodiola, and other adaptogenic herbs for managing stress and fatigue."
-publishDate: 2026-01-09
+publishDate: 2024-10-29
 modifiedDate: 2026-01-09
 heroImage: "/images/nutrition/adaptogens-herbs.webp"
 categories: ["Naturopathic", "Herbal Medicine"]
