@@ -6,11 +6,63 @@
 @tailwind utilities;
 
 :root {
+  /* Original brand colors */
   --ink: #0f1b1a;
   --forest: #0f6f5c;
   --mint: #9ee0c2;
   --sand: #f3efe8;
   --slate: #4c5b59;
+
+  /* Semantic color tokens - Light theme (default) */
+  --color-bg-primary: #f7f7f5;
+  --color-bg-secondary: #ffffff;
+  --color-bg-tertiary: #FDFBF7;
+  --color-bg-hero: rgb(6, 78, 59);
+  --color-bg-accent: #ecfdf5;
+
+  --color-text-primary: #0f1b1a;
+  --color-text-secondary: #4c5b59;
+  --color-text-muted: #64748b;
+  --color-text-inverse: #ffffff;
+
+  --color-brand-primary: rgb(6, 78, 59);
+  --color-brand-secondary: #047857;
+  --color-brand-light: #d1fae5;
+  --color-brand-accent: #10b981;
+
+  --color-border-default: rgba(6, 78, 59, 0.1);
+  --color-border-subtle: rgba(6, 78, 59, 0.05);
+
+  --color-shadow: rgba(6, 78, 59, 0.05);
+}
+
+/* Dark theme (Variant C - Refined Dark) */
+[data-theme="dark"] {
+  --ink: #F5F2ED;
+  --forest: #10b981;
+  --sand: #111111;
+  --slate: rgba(245, 242, 237, 0.6);
+
+  --color-bg-primary: #0A0A0A;
+  --color-bg-secondary: #0A0A0A;
+  --color-bg-tertiary: #111111;
+  --color-bg-hero: #0A0A0A;
+  --color-bg-accent: rgba(245, 242, 237, 0.03);
+
+  --color-text-primary: #F5F2ED;
+  --color-text-secondary: rgba(245, 242, 237, 0.6);
+  --color-text-muted: rgba(245, 242, 237, 0.3);
+  --color-text-inverse: #0A0A0A;
+
+  --color-brand-primary: #F5F2ED;
+  --color-brand-secondary: rgba(245, 242, 237, 0.8);
+  --color-brand-light: rgba(245, 242, 237, 0.1);
+  --color-brand-accent: #10b981;
+
+  --color-border-default: rgba(245, 242, 237, 0.3);
+  --color-border-subtle: rgba(245, 242, 237, 0.1);
+
+  --color-shadow: rgba(0, 0, 0, 0.3);
 }
 
 /* Custom base styles */
@@ -148,4 +200,314 @@
 
 .animate-float-delayed {
   animation: float-delayed 6s ease-in-out infinite 2s;
+}
+
+/* Staggered fade-in animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-delay-100 { animation-delay: 100ms; }
+.animate-delay-200 { animation-delay: 200ms; }
+.animate-delay-300 { animation-delay: 300ms; }
+.animate-delay-400 { animation-delay: 400ms; }
+.animate-delay-500 { animation-delay: 500ms; }
+.animate-delay-600 { animation-delay: 600ms; }
+
+/* Hero gradient background */
+.hero-gradient {
+  background:
+    radial-gradient(ellipse 80% 50% at 20% 40%, rgba(16, 185, 129, 0.12) 0%, transparent 50%),
+    radial-gradient(ellipse 60% 40% at 80% 20%, rgba(5, 150, 105, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse 50% 30% at 50% 80%, rgba(16, 185, 129, 0.06) 0%, transparent 50%),
+    linear-gradient(180deg, #022c22 0%, #064e3b 40%, #065f46 100%);
+}
+
+/* ===========================================
+   DARK THEME OVERRIDES
+   Apply when data-theme="dark" is on <html>
+   =========================================== */
+
+/* Base document styles for dark theme */
+[data-theme="dark"] {
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+}
+
+[data-theme="dark"] body {
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+}
+
+/* Background color overrides */
+[data-theme="dark"] .bg-white {
+  background-color: var(--color-bg-secondary) !important;
+}
+
+[data-theme="dark"] .bg-cream,
+[data-theme="dark"] .bg-gray-50,
+[data-theme="dark"] .bg-slate-50 {
+  background-color: var(--color-bg-tertiary) !important;
+}
+
+[data-theme="dark"] .bg-emerald-950,
+[data-theme="dark"] .bg-emerald-900 {
+  background-color: var(--color-bg-primary) !important;
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+[data-theme="dark"] .bg-emerald-50,
+[data-theme="dark"] .bg-emerald-100 {
+  background-color: var(--color-bg-accent) !important;
+}
+
+/* Text color overrides */
+[data-theme="dark"] .text-slate-900,
+[data-theme="dark"] .text-emerald-950,
+[data-theme="dark"] .text-emerald-900,
+[data-theme="dark"] .text-gray-900 {
+  color: var(--color-text-primary) !important;
+}
+
+[data-theme="dark"] .text-slate-800,
+[data-theme="dark"] .text-gray-800 {
+  color: var(--color-text-primary) !important;
+}
+
+[data-theme="dark"] .text-slate-700,
+[data-theme="dark"] .text-slate-600,
+[data-theme="dark"] .text-gray-700,
+[data-theme="dark"] .text-gray-600 {
+  color: var(--color-text-secondary) !important;
+}
+
+[data-theme="dark"] .text-slate-500,
+[data-theme="dark"] .text-gray-500,
+[data-theme="dark"] .text-gray-400 {
+  color: var(--color-text-muted) !important;
+}
+
+[data-theme="dark"] .text-emerald-800,
+[data-theme="dark"] .text-emerald-700,
+[data-theme="dark"] .text-emerald-600 {
+  color: var(--color-brand-accent) !important;
+}
+
+/* Border color overrides */
+[data-theme="dark"] .border-emerald-100,
+[data-theme="dark"] .border-emerald-100\/50,
+[data-theme="dark"] .border-emerald-200,
+[data-theme="dark"] .border-gray-200,
+[data-theme="dark"] .border-gray-100 {
+  border-color: var(--color-border-subtle) !important;
+}
+
+[data-theme="dark"] .border-white\/60 {
+  border-color: var(--color-border-subtle) !important;
+}
+
+/* Shadow overrides */
+[data-theme="dark"] .shadow-emerald-900\/5,
+[data-theme="dark"] .shadow-emerald-900\/10,
+[data-theme="dark"] .shadow-slate-900\/5 {
+  --tw-shadow-color: var(--color-shadow);
+}
+
+[data-theme="dark"] .shadow-lg,
+[data-theme="dark"] .shadow-xl,
+[data-theme="dark"] .shadow-2xl {
+  --tw-shadow-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Header styling for dark theme */
+[data-theme="dark"] #site-header {
+  background: var(--color-bg-primary) !important;
+  border-bottom: 1px solid var(--color-border-subtle);
+  box-shadow: none;
+}
+
+[data-theme="dark"] #site-header .text-emerald-200,
+[data-theme="dark"] #site-header .text-emerald-100 {
+  color: var(--color-text-muted) !important;
+}
+
+/* Button overrides */
+[data-theme="dark"] .btn-primary {
+  background-color: var(--color-text-primary);
+  color: var(--color-bg-primary);
+}
+
+[data-theme="dark"] .btn-primary:hover {
+  background-color: rgba(245, 242, 237, 0.9);
+}
+
+[data-theme="dark"] .btn-secondary {
+  border-color: var(--color-text-primary);
+  color: var(--color-text-primary);
+}
+
+[data-theme="dark"] .btn-secondary:hover {
+  background-color: var(--color-text-primary);
+  color: var(--color-bg-primary);
+}
+
+/* Card glass effect for dark mode */
+[data-theme="dark"] .card-glass {
+  background: linear-gradient(135deg,
+    rgba(245, 242, 237, 0.05) 0%,
+    rgba(245, 242, 237, 0.02) 50%,
+    rgba(245, 242, 237, 0.03) 100%) !important;
+  border-color: var(--color-border-subtle) !important;
+  backdrop-filter: blur(20px);
+}
+
+/* Pill component for dark mode */
+[data-theme="dark"] .pill {
+  background: rgba(245, 242, 237, 0.1) !important;
+  border-color: var(--color-border-subtle) !important;
+  color: var(--color-text-primary) !important;
+}
+
+/* Soft divider for dark mode */
+[data-theme="dark"] .soft-divider {
+  background: linear-gradient(to right,
+    transparent,
+    rgba(245, 242, 237, 0.2),
+    transparent) !important;
+}
+
+/* Footer overrides */
+[data-theme="dark"] footer.bg-white {
+  background: var(--color-bg-primary) !important;
+}
+
+/* Gradient overlays for dark sections */
+[data-theme="dark"] .bg-emerald-200\/30,
+[data-theme="dark"] .bg-emerald-900\/10 {
+  background-color: rgba(245, 242, 237, 0.02) !important;
+}
+
+/* Form input styling */
+[data-theme="dark"] input,
+[data-theme="dark"] textarea,
+[data-theme="dark"] select {
+  background-color: var(--color-bg-tertiary);
+  border-color: var(--color-border-subtle);
+  color: var(--color-text-primary);
+}
+
+[data-theme="dark"] input:focus,
+[data-theme="dark"] textarea:focus,
+[data-theme="dark"] select:focus {
+  border-color: var(--color-brand-accent);
+  outline-color: var(--color-brand-accent);
+}
+
+[data-theme="dark"] input::placeholder,
+[data-theme="dark"] textarea::placeholder {
+  color: var(--color-text-muted);
+}
+
+/* Article prose styling for dark mode */
+[data-theme="dark"] .prose h1,
+[data-theme="dark"] .prose h2,
+[data-theme="dark"] .prose h3,
+[data-theme="dark"] .prose h4,
+[data-theme="dark"] .prose strong {
+  color: var(--color-text-primary) !important;
+}
+
+[data-theme="dark"] .prose p,
+[data-theme="dark"] .prose li,
+[data-theme="dark"] .prose td,
+[data-theme="dark"] .prose th {
+  color: var(--color-text-secondary) !important;
+}
+
+[data-theme="dark"] .prose a {
+  color: var(--color-brand-accent) !important;
+}
+
+[data-theme="dark"] .prose blockquote {
+  background-color: var(--color-bg-accent);
+  border-left-color: var(--color-brand-accent);
+  color: var(--color-text-secondary);
+}
+
+[data-theme="dark"] .prose code {
+  background-color: var(--color-bg-tertiary);
+  color: var(--color-text-primary);
+}
+
+[data-theme="dark"] .prose pre {
+  background-color: var(--color-bg-tertiary) !important;
+}
+
+/* FAQ accordion styling */
+[data-theme="dark"] details.bg-emerald-50,
+[data-theme="dark"] details.bg-white {
+  background: var(--color-bg-tertiary) !important;
+}
+
+[data-theme="dark"] details summary {
+  color: var(--color-text-primary);
+}
+
+[data-theme="dark"] details .text-emerald-700 {
+  color: var(--color-brand-accent) !important;
+}
+
+/* Hover states */
+[data-theme="dark"] a:hover .text-emerald-800,
+[data-theme="dark"] .hover\:text-emerald-800:hover,
+[data-theme="dark"] .hover\:text-emerald-900:hover {
+  color: var(--color-text-primary) !important;
+}
+
+/* Category tags */
+[data-theme="dark"] .bg-emerald-100.text-emerald-800 {
+  background-color: rgba(16, 185, 129, 0.2) !important;
+  color: var(--color-brand-accent) !important;
+}
+
+/* Search overlay */
+[data-theme="dark"] #search-overlay > div > div {
+  background: var(--color-bg-tertiary) !important;
+  border-color: var(--color-border-subtle) !important;
+}
+
+[data-theme="dark"] #search-input {
+  background: var(--color-bg-primary) !important;
+  border-color: var(--color-border-subtle) !important;
+  color: var(--color-text-primary) !important;
+}
+
+/* Mobile menu */
+[data-theme="dark"] #mobile-menu {
+  background: var(--color-bg-primary);
 }

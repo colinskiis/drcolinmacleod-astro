@@ -2,411 +2,288 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BookingButton from '../components/BookingButton.astro';
 
-// FAQ data for schema markup
-const faqItems = [
-  {
-    question: "What makes naturopathic medicine different?",
-    answer: "Naturopathic doctors take the time to understand your health and address the root cause. We use natural therapies and lifestyle changes to support your body's innate healing ability."
-  },
-  {
-    question: "Is naturopathic medicine covered by insurance?",
-    answer: "Yes, most extended health insurance plans cover naturopathic visits. We offer direct billing for many major insurers to make the process convenient for you."
-  },
-  {
-    question: "How long are appointments?",
-    answer: "Initial consultations are typically 60 minutes to allow for a comprehensive assessment. Follow-up appointments are usually 30 minutes."
-  }
+// Services (top 3)
+const services = [
+  { title: 'IV Therapy', href: '/iv-therapy' },
+  { title: 'Blood Testing', href: '/lab-testing' },
+  { title: 'Prolotherapy', href: '/prolotherapy' },
 ];
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": faqItems.map(item => ({
-    "@type": "Question",
-    "name": item.question,
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": item.answer
-    }
-  }))
-};
+// Conditions (top 3)
+const conditions = [
+  { title: 'Low Back Pain', href: '/low-back-pain' },
+  { title: 'Osteoarthritis', href: '/osteoarthritis' },
+  { title: 'Fibromyalgia', href: '/fibromyalgia' },
+];
+
+// Articles (top 3)
+const articles = [
+  { title: 'Berberine: Nature\'s Ozempic', href: '/articles/berberine-natures-ozempic' },
+  { title: 'Adaptogens for Stress', href: '/articles/adaptogens-for-stress-ashwagandha-rhodiola-and-beyond' },
+  { title: 'Sleep Optimization', href: '/articles/sleep-optimization-evidence-based-strategies' },
+];
+
+// Blood Tests (top 3)
+const bloodTests = [
+  { title: 'Thyroid Panel', href: '/lab-testing' },
+  { title: 'Hormone Panel', href: '/lab-testing' },
+  { title: 'Vitamin D', href: '/lab-testing' },
+];
 ---
 
-<BaseLayout 
-  title="Home" 
+<BaseLayout
+  title="Home"
   description="Dr. Colin MacLeod ND, MacLeod Naturopathic Health Clinic in Halifax, NS. Evidence-based naturopathic medicine, IV therapy, prolotherapy, acupuncture, nutrition."
   focusKeyword="MacLeod Naturopathic Health Clinic, Dr. Colin MacLeod ND, Halifax naturopathic doctor, IV therapy, prolotherapy, acupuncture"
   image="/images/reference/home-background.webp"
 >
-  <!-- Hero (matches current site) -->
-  <section class="relative overflow-hidden min-h-screen flex items-center bg-emerald-950 -mt-24 pt-24">
-    <div
-      class="absolute inset-y-0 right-0 w-full sm:w-3/5 pointer-events-none"
-      style="
-        background-image: image-set(
-          url('/images/general/colin-hero.avif') type('image/avif'),
-          url('/images/general/colin-hero.webp') type('image/webp'),
-          url('/images/general/Dr-colin-macleod-ND.jpeg') type('image/jpeg')
-        );
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: right bottom;
-        top: 0;
-        bottom: 0;
-        opacity: 1;
-        mix-blend-mode: normal;
-      "
-      aria-hidden="true"
-    ></div>
-    <div class="absolute inset-0 bg-emerald-950/70 sm:bg-transparent pointer-events-none" aria-hidden="true"></div>
-    <div class="section-shell relative z-10 py-28 sm:py-32 lg:py-40">
-      <div class="max-w-3xl space-y-6 animate-fade-in">
-        <h1 class="text-4xl sm:text-5xl lg:text-[64px] font-bold font-serif leading-[1.1] tracking-tight text-white drop-shadow-md lg:drop-shadow-lg">
-          Dr. Colin MacLeod ND
-        </h1>
-        <p class="text-lg sm:text-xl lg:text-2xl text-emerald-100 max-w-xl leading-relaxed font-light">
-          Naturopathic medicine combining the wisdom of traditional healing with the precision of modern science.
-        </p>
-        <div class="pt-4">
-          <BookingButton text="Book Your Appointment" size="lg" source="hero" />
-        </div>
-      </div>
+  <!-- Hero -->
+  <section class="hero-gradient -mt-24 pt-24 relative overflow-hidden">
+    <!-- Ambient background shapes -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+      <div class="absolute -top-32 -right-32 w-96 h-96 bg-emerald-800/20 rounded-full blur-3xl"></div>
+      <div class="absolute top-1/2 -left-24 w-64 h-64 bg-teal-700/15 rounded-full blur-2xl"></div>
+      <div class="absolute bottom-0 right-1/4 w-80 h-80 bg-emerald-600/10 rounded-full blur-3xl"></div>
     </div>
-  </section>
 
-  <!-- Values Strip -->
-  <section 
-    class="relative py-20 sm:py-24 lg:py-32 bg-emerald-950"
-  >
-    <div class="absolute inset-0">
-      <div 
-        class="absolute inset-0 opacity-10"
-        style="background-image: url('/images/reference/flowers-pattern-1-white.svg'); background-size: cover; background-position: center;"
-        aria-hidden="true"
-      ></div>
-    </div>
-    <div class="section-shell">
-      <div class="relative overflow-hidden rounded-[40px] border border-white/10 bg-white/5 backdrop-blur-sm shadow-2xl shadow-emerald-950/50">
-        <div class="relative px-8 sm:px-12 lg:px-16 py-16 sm:py-20 lg:py-24">
-          <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <p class="inline-block px-4 py-1.5 rounded-full bg-white/10 text-emerald-100 border border-white/20 text-sm font-medium tracking-wide uppercase">About our clinic</p>
-            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-medium text-white leading-[1.2]">Elevate your health.<br />Address the cause.</h2>
+    <div class="section-shell py-20 lg:py-24 relative z-10">
+      <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+        <!-- Left Column: Text + Cards -->
+        <div class="space-y-8">
+          <!-- Mobile Hero Image (circular) -->
+          <div class="lg:hidden flex justify-center animate-fade-in-up">
+            <div class="w-36 h-36 rounded-full overflow-hidden border-4 border-white/20 shadow-2xl shadow-black/30">
+              <picture>
+                <source srcset="/images/general/colin-hero.avif" type="image/avif" />
+                <source srcset="/images/general/colin-hero.webp" type="image/webp" />
+                <img
+                  src="/images/general/Dr-colin-macleod-ND.jpeg"
+                  alt="Dr. Colin MacLeod ND"
+                  class="w-full h-full object-cover object-top"
+                  loading="eager"
+                />
+              </picture>
+            </div>
           </div>
-          <div class="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-4">
-            <div class="bg-white/10 border border-white/10 rounded-2xl px-6 py-8 text-white shadow-lg hover:bg-white/15 transition-colors duration-300 flex flex-col items-center text-center">
-              <div class="mb-6 text-white">
-                <svg class="w-12 h-12" viewBox="0 0 480.436 480.436" fill="currentColor" aria-hidden="true">
-                  <path d="m417.057 88.333c-7.881 7.043 2.77 18.982 10.662 11.93 26.831-23.978 44.998-55.245 52.535-90.422 1.217-5.68-3.842-10.711-9.498-9.499-63.881 13.689-114.174 63.294-128.91 126.772l-27.343 27.343c14.451-46.952 7.965-98.879-19.511-141.341-3.15-4.866-10.283-4.867-13.434 0-36.01 55.652-36.011 127.572-.002 183.225 2.35 3.632 7.249 4.78 10.986 2.419 49.514-31.359 107.803-31.492 154.485-6.759-35.359 18.762-76.729 22.944-115.432 11.312-10.134-3.047-14.73 12.28-4.605 15.323 47.331 14.225 98.434 7.082 140.167-19.921 4.857-3.143 4.876-10.278 0-13.433-42.461-27.476-94.388-33.962-141.34-19.512 32.836-32.836 30.419-29.705 31.021-32.514 11.64-54.32 51.962-97.806 104.442-113.932-8.13 26.61-23.253 50.268-44.223 69.009zm-128.782-55.082c23.636 44.618 23.636 98.338 0 142.958-23.636-44.619-23.636-98.339 0-142.958zm122.093 258.013c-56.575-36.607-126.401-43.871-188.24-21.804l44.053-44.053c7.474-7.474-3.828-18.798-11.314-11.314l-44.053 44.053c22.067-61.839 14.804-131.666-21.803-188.242-3.15-4.866-10.283-4.867-13.434 0-32.974 50.96-42.752 113.782-26.826 172.358 2.773 10.2 18.216 6.015 15.439-4.198-13.591-49.988-6.949-103.319 18.104-148.296 35.283 63.331 33.176 141.652-6.304 203.2l-78.409 78.409c23.432-59.926 23.828-127.338-.22-188.203-3.882-9.83-18.769-3.965-14.881 5.879 26.951 68.211 21.17 145.195-15.108 208.482-44.645-77.851-42.407-174.953 6.718-250.872 5.742-8.873-7.683-17.579-13.434-8.692-53.71 83.009-54.853 189.754-3.446 273.78l-54.758 54.757c-7.475 7.475 3.83 18.796 11.314 11.314l58.642-58.642c75.819-48.694 172.562-50.792 250.177-6.282-60.804 34.796-135.098 41.564-201.308 17.813-9.948-3.57-15.367 11.486-5.402 15.06 73.12 26.231 157.294 18.58 226.425-26.153 4.857-3.143 4.876-10.278 0-13.433-70.182-45.412-157.336-53.25-233.38-23.517l74.533-74.533c69.941 42.301 158.281 40.974 226.914-3.436 4.859-3.145 4.877-10.28.001-13.435zm-212.558 6.717c59.778-33.303 132.92-33.302 192.696 0-59.776 33.302-132.918 33.304-192.696 0z"></path>
-                </svg>
-              </div>
-              <h3 class="text-2xl font-serif mb-3 tracking-tight text-white">Natural</h3>
-              <p class="text-base leading-relaxed text-white font-light">Safe, gentle and effective treatment.</p>
-            </div>
 
-            <div class="bg-white/10 border border-white/10 rounded-2xl px-6 py-8 text-white shadow-lg hover:bg-white/15 transition-colors duration-300 flex flex-col items-center text-center">
-              <div class="mb-6 text-white">
-                <svg class="w-12 h-12" viewBox="0 0 511.999 511.999" fill="currentColor" aria-hidden="true">
-                  <path d="M410.25,179.331c-16.651,0.001-30.197,13.548-30.197,30.198c0,16.652,13.547,30.198,30.197,30.198
-			c16.652,0,30.198-13.547,30.198-30.198C440.449,192.878,426.902,179.331,410.25,179.331z M410.25,224.708
-			c-8.369,0-15.178-6.809-15.178-15.179c0-8.37,6.809-15.179,15.178-15.179s15.179,6.809,15.179,15.179
-			C425.429,217.9,418.619,224.708,410.25,224.708z"></path>
-                  <path d="M410.25,142.483c-4.148,0-7.51,3.362-7.51,7.51c0,4.147,3.361,7.51,7.51,7.51c28.687,0,52.027,23.339,52.027,52.026
-			c0,24.065-16.427,44.359-38.654,50.276c-2.091,0.555-4.212,0.974-6.351,1.264c-0.156,0.021-0.313,0.04-0.471,0.06
-			c-0.971,0.122-1.946,0.218-2.922,0.286c-0.108,0.008-0.215,0.018-0.323,0.025c-2.201,0.139-4.411,0.139-6.613,0
-			c-0.108-0.007-0.215-0.017-0.323-0.025c-0.976-0.068-1.951-0.164-2.922-0.286c-0.157-0.02-0.314-0.039-0.471-0.06
-			c-2.138-0.289-4.261-0.709-6.351-1.264c-22.227-5.918-38.653-26.211-38.653-50.276c0-17.311,8.576-33.44,22.943-43.146
-			c2.358-1.593,4.864-3.002,7.449-4.185c3.771-1.727,5.428-6.184,3.7-9.955c-1.727-3.771-6.184-5.428-9.954-3.701
-			c-3.332,1.526-6.563,3.341-9.602,5.395c-18.506,12.503-29.555,33.285-29.555,55.592c0,28.901,18.382,53.589,44.067,62.989v31.794
-			v75.4c0,47.603-38.727,86.33-86.33,86.33s-86.33-38.727-86.33-86.33v-64.334c40.188-7.381,75.614-34.445,102.787-78.649
-			c5.439-8.847,4.142-19.968-2.446-27.346c26.828-52.209,38.862-101.469,31.466-129.55c-5.498-20.869-24.279-37.412-54.43-48.048
-			c-0.523-6.836-4.422-13.803-11.308-20.027c-6.669-6.029-15.138-10.43-22.101-11.485c-14.742-2.234-28.79,9.572-31.328,26.317
-			c-1.194,7.874,0.302,15.73,4.212,22.124c4.165,6.809,10.526,11.175,17.91,12.294c1.37,0.207,2.832,0.308,4.361,0.308
-			c6.248,0,13.599-1.69,20.151-4.729c5.959-2.764,10.592-6.328,13.691-10.434c18.417,6.583,39.213,18.141,44.314,37.506
-			c4.875,18.507-0.257,60.34-30.066,118.414c-3.06-0.543-6.224-0.471-9.337,0.271c-5.971,1.425-11.029,5.09-14.243,10.318
-			c-24.005,39.049-53.146,58.847-86.614,58.847c-33.47,0-62.611-19.8-86.616-58.849c-5.076-8.258-14.567-12.17-23.58-10.587
-			c-29.81-58.074-34.941-99.907-30.065-118.414c5.093-19.335,25.813-30.895,44.313-37.508c3.1,4.105,7.733,7.671,13.693,10.435
-			c6.552,3.039,13.903,4.729,20.151,4.729c1.528,0,2.992-0.101,4.361-0.308c7.385-1.119,13.745-5.486,17.91-12.294
-			c3.91-6.392,5.406-14.25,4.212-22.124c-2.536-16.744-16.581-28.549-31.328-26.317c-6.963,1.055-15.432,5.456-22.101,11.485
-			c-6.885,6.224-10.784,13.19-11.307,20.025C61.121,42.417,42.346,58.954,36.847,79.831c-7.398,28.08,4.636,77.339,31.463,129.547
-			c-6.588,7.378-7.885,18.498-2.447,27.346c27.174,44.206,62.601,71.271,102.79,78.652v36.765c0,4.147,3.362,7.51,7.51,7.51
-			c4.148,0,7.51-3.362,7.51-7.51v-43.19c0-3.777-2.805-6.965-6.549-7.449c-38.235-4.931-72.282-30.051-98.465-72.643
-			c-2.286-3.719-1.136-8.596,2.554-10.909c0.028-0.015,0.058-0.024,0.086-0.039c0.108-0.057,0.207-0.124,0.311-0.186
-			c3.695-2.031,8.381-0.829,10.61,2.799c26.923,43.797,60.37,66.004,99.412,66.004c39.041,0,72.487-22.206,99.41-66.002
-			c1.112-1.811,2.865-3.08,4.932-3.574c1.927-0.46,3.91-0.185,5.636,0.753c0.117,0.07,0.229,0.145,0.352,0.21
-			c0.03,0.016,0.061,0.026,0.09,0.041c3.687,2.315,4.835,7.189,2.55,10.907c-26.182,42.591-60.229,67.71-98.462,72.641
-			c-3.745,0.484-6.549,3.672-6.549,7.449v70.76c0,55.884,45.465,101.349,101.349,101.349c55.885,0,101.349-45.465,101.349-101.349
-			v-75.4v-28.211c0.21,0.025,0.421,0.043,0.631,0.066c0.293,0.032,0.587,0.064,0.881,0.092c0.915,0.088,1.833,0.159,2.752,0.21
-			c0.221,0.012,0.444,0.02,0.666,0.03c0.97,0.044,1.942,0.072,2.913,0.074c0.039,0,0.077,0.003,0.116,0.003s0.077-0.003,0.116-0.003
-			c0.971-0.002,1.943-0.03,2.913-0.074c0.222-0.01,0.445-0.018,0.667-0.03c0.918-0.05,1.835-0.121,2.751-0.21
-			c0.295-0.028,0.589-0.06,0.883-0.092c0.21-0.023,0.421-0.041,0.63-0.066v103.609c0,30.019-11.38,58.597-32.046,80.47
-			c-2.848,3.015-2.713,7.767,0.302,10.616c1.451,1.372,3.305,2.051,5.156,2.051c1.993,0,3.983-0.789,5.46-2.353
-			c23.309-24.672,36.147-56.913,36.147-90.785V272.517c25.688-9.4,44.07-34.087,44.07-62.989
-			C477.297,172.56,447.22,142.483,410.25,142.483z M276.977,34.122c-1.083,7.141-17.565,13.219-25.35,12.032
-			c-2.927-0.444-5.536-2.319-7.349-5.282c-2.068-3.379-2.84-7.653-2.176-12.035c1.275-8.413,7.799-14.699,14.227-13.718
-			c3.285,0.498,9.156,3.144,14.281,7.776C274.987,26.854,277.427,31.155,276.977,34.122z M112.654,22.897
-			c5.125-4.632,10.994-7.278,14.281-7.776c0.443-0.067,0.887-0.1,1.33-0.1c5.98,0,11.71,5.986,12.898,13.818
-			c0.664,4.382-0.108,8.656-2.176,12.035c-1.812,2.963-4.422,4.838-7.349,5.282c-7.79,1.188-24.268-4.891-25.35-12.032
-			C105.838,31.155,108.278,26.854,112.654,22.897z"></path>
-                  <path d="M378.998,477.281c-2.396-3.384-7.082-4.185-10.468-1.79c-19.86,14.058-43.231,21.489-67.589,21.489
-			c-64.662,0-117.268-52.607-117.268-117.269c0-4.147-3.361-7.51-7.51-7.51c-4.147,0-7.51,3.362-7.51,7.51
-			c0,72.945,59.344,132.289,132.288,132.289c27.483,0,53.856-8.386,76.266-24.249C380.593,485.353,381.395,480.666,378.998,477.281z
-			"></path>
-                </svg>
-              </div>
-              <h3 class="text-2xl font-serif mb-3 tracking-tight text-white">Professional</h3>
-              <p class="text-base leading-relaxed text-white font-light">Experienced and rigorously trained.</p>
-            </div>
+          <!-- Text Content -->
+          <div class="space-y-5 text-center lg:text-left">
+            <!-- Trust Badge -->
+            <p class="text-emerald-300 uppercase tracking-[0.2em] text-xs sm:text-sm font-medium animate-fade-in-up">
+              Halifax Naturopathic Doctor
+            </p>
 
-            <div class="bg-white/10 border border-white/10 rounded-2xl px-6 py-8 text-white shadow-lg hover:bg-white/15 transition-colors duration-300 flex flex-col items-center text-center">
-              <div class="mb-6 text-white">
-                <svg class="w-12 h-12" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true">
-                  <path d="M437.02,74.98C388.667,26.628,324.38,0,256,0S123.333,26.628,74.98,74.98S0,187.62,0,256s26.628,132.667,74.98,181.02
-		S187.62,512,256,512s132.667-26.628,181.02-74.98S512,324.38,512,256S485.372,123.333,437.02,74.98z M425.706,425.706
-		C380.376,471.036,320.106,496,256,496s-124.376-24.964-169.706-70.294C40.964,380.376,16,320.106,16,256
-		S40.964,131.624,86.294,86.294C131.624,40.964,191.894,16,256,16s124.376,24.964,169.706,70.294
-		C471.036,131.624,496,191.894,496,256S471.036,380.376,425.706,425.706z"></path>
-                  <path d="M48,256c0-114.691,93.309-208,208-208c41.368,0,81.326,12.111,115.555,35.024c3.671,2.458,8.64,1.474,11.098-2.198
-		c2.458-3.671,1.474-8.64-2.198-11.098C343.584,45.046,300.548,32,256,32c-59.833,0-116.084,23.3-158.392,65.608
-		C55.3,139.916,32,196.167,32,256c0,55.2,20.254,108.232,57.032,149.328c1.58,1.766,3.768,2.665,5.964,2.665
-		c1.899,0,3.806-0.672,5.332-2.039c3.292-2.947,3.573-8.004,0.626-11.296C66.807,356.5,48,307.257,48,256z"></path>
-                  <path d="M442.273,131.547c-2.458-3.672-7.427-4.656-11.098-2.198c-3.671,2.458-4.656,7.427-2.198,11.098
-		C451.889,174.675,464,214.633,464,256c0,114.691-93.309,208-208,208c-47.583,0-94.096-16.479-130.969-46.401
-		c-3.431-2.784-8.469-2.26-11.253,1.171s-2.26,8.469,1.171,11.253C154.664,462.251,204.757,480,256,480
-		c59.833,0,116.084-23.3,158.392-65.608C456.7,372.084,480,315.833,480,256C480,211.453,466.954,168.417,442.273,131.547z"></path>
-                  <path d="M394.658,100.955c5.379,4.813,10.565,9.964,15.414,15.308c1.579,1.74,3.749,2.624,5.927,2.624
-		c1.917,0,3.842-0.686,5.374-2.076c3.271-2.969,3.517-8.029,0.548-11.301c-5.22-5.752-10.803-11.296-16.593-16.478
-		c-3.292-2.946-8.35-2.666-11.296,0.626S391.365,98.008,394.658,100.955z"></path>
-                  <path d="M256,104c4.418,0,8-3.582,8-8V72c0-4.418-3.582-8-8-8s-8,3.582-8,8v24C248,100.418,251.582,104,256,104z"></path>
-                  <path d="M248,416v24c0,4.418,3.582,8,8,8s8-3.582,8-8v-24c0-4.418-3.582-8-8-8S248,411.582,248,416z"></path>
-                  <path d="M104,256c0-4.418-3.582-8-8-8H72c-4.418,0-8,3.582-8,8s3.582,8,8,8h24C100.418,264,104,260.418,104,256z"></path>
-                  <path d="M408,256c0,4.418,3.582,8,8,8h24c4.418,0,8-3.582,8-8s-3.582-8-8-8h-24C411.582,248,408,251.582,408,256z"></path>
-                  <path d="M182.928,113.436l-12-20.785c-2.209-3.827-7.102-5.136-10.928-2.928c-3.826,2.209-5.137,7.102-2.928,10.928l12,20.785
-		c1.482,2.566,4.171,4.001,6.936,4.001c1.357,0,2.733-0.346,3.993-1.073C183.826,122.155,185.137,117.262,182.928,113.436z"></path>
-                  <path d="M342.928,390.564c-2.209-3.826-7.103-5.135-10.928-2.928c-3.826,2.209-5.137,7.102-2.928,10.928l12,20.785
-		c1.482,2.566,4.171,4.001,6.936,4.001c1.357,0,2.733-0.346,3.993-1.073c3.826-2.209,5.137-7.102,2.928-10.928L342.928,390.564z"></path>
-                  <path d="M96.659,356.001c1.357,0,2.733-0.346,3.993-1.073l20.785-12c3.826-2.209,5.137-7.102,2.928-10.928
-		c-2.209-3.826-7.103-5.135-10.928-2.928l-20.785,12c-3.826,2.209-5.137,7.102-2.928,10.928
-		C91.205,354.566,93.894,356.001,96.659,356.001z"></path>
-                  <path d="M394.571,184.001c1.357,0,2.733-0.346,3.993-1.073l20.785-12c3.826-2.209,5.137-7.102,2.928-10.928
-		s-7.102-5.135-10.928-2.928l-20.785,12c-3.826,2.209-5.137,7.102-2.928,10.928C389.118,182.566,391.807,184.001,394.571,184.001z"></path>
-                  <path d="M352,89.723c-3.826-2.21-8.719-0.899-10.928,2.928l-12,20.785c-2.209,3.826-0.898,8.719,2.928,10.928
-		c1.26,0.728,2.635,1.073,3.993,1.073c2.765,0,5.454-1.435,6.936-4.001l12-20.785C357.137,96.825,355.826,91.932,352,89.723z"></path>
-                  <path d="M180,387.636c-3.826-2.209-8.719-0.898-10.928,2.928l-12,20.785c-2.209,3.826-0.898,8.719,2.928,10.928
-		c1.26,0.728,2.635,1.073,3.993,1.073c2.765,0,5.454-1.435,6.936-4.001l12-20.785C185.137,394.738,183.826,389.845,180,387.636z"></path>
-                  <path d="M390.564,342.928l20.785,12c1.26,0.728,2.635,1.073,3.993,1.073c2.765,0,5.454-1.435,6.936-4.001
-		c2.209-3.826,0.898-8.719-2.928-10.928l-20.785,12c-3.826-2.21-8.719-0.898-10.928,2.928
-		C385.427,335.826,386.738,340.719,390.564,342.928z"></path>
-                  <path d="M121.436,169.072l-20.785-12c-3.826-2.21-8.719-0.898-10.928,2.928c-2.209,3.826-0.898,8.719,2.928,10.928l20.785,12
-		c1.26,0.728,2.635,1.073,3.993,1.073c2.765,0,5.454-1.435,6.936-4.001C126.573,176.174,125.262,171.281,121.436,169.072z"></path>
-                  <path d="M311.692,360.451c1.357,0,2.733-0.346,3.993-1.073c3.826-2.209,5.137-7.102,2.928-10.928l-44.38-76.869
-		C277.824,267.384,280,261.943,280,256c0-10.429-6.689-19.322-16-22.624V128c0-4.418-3.582-8-8-8s-8,3.582-8,8v105.376
-		c-9.311,3.302-16,12.195-16,22.624c0,13.234,10.766,24,24,24c1.497,0,2.961-0.145,4.383-0.408l44.374,76.858
-		C306.239,359.016,308.928,360.451,311.692,360.451z M248,256c0-4.411,3.589-8,8-8s8,3.589,8,8s-3.589,8-8,8S248,260.411,248,256z"></path>
-                </svg>
-              </div>
-              <h3 class="text-2xl font-serif mb-3 tracking-tight text-white">No Rush</h3>
-              <p class="text-base leading-relaxed text-white font-light">60 min first appointment, 30 min follow-ups.</p>
-            </div>
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-serif leading-[1.05] tracking-tight text-white animate-fade-in-up animate-delay-100">
+              Dr. Colin MacLeod <span class="text-emerald-300">ND</span>
+            </h1>
 
-            <div class="bg-white/10 border border-white/10 rounded-2xl px-6 py-8 text-white shadow-lg hover:bg-white/15 transition-colors duration-300 flex flex-col items-center text-center">
-              <div class="mb-6 text-white">
-                <svg class="w-12 h-12" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true">
-                  <path d="m432.652344 89.957031-10.605469-10.605469-52.652344 52.652344-67.289062-67.289062-34.242188 34.238281 30.152344 30.152344-193.640625 193.640625 22.386719 22.386718-24.355469 24.355469-6.242188 20.25-31.960937 31.960938 7.746094 7.746093-71.949219 71.949219 10.605469 10.605469 71.953125-71.953125 7.746094 7.746094 31.960937-31.960938 20.246094-6.238281 24.355469-24.355469 22.386718 22.386719 193.640625-193.640625 30.152344 30.148437 34.238281-34.238281-67.285156-67.285156zm-298.113282 306.398438-20.25 6.238281-23.984374 23.988281-4.886719-4.886719 23.984375-23.984374 6.242187-20.25 21.722657-21.722657 18.894531 18.890625zm278.507813-173.433594-30.148437-30.148437-193.644532 193.640624-63.664062-63.667968 102.082031-102.085938 12.589844 12.589844 10.605469-10.605469-12.589844-12.589843 17.085937-17.085938 12.589844 12.589844 10.609375-10.605469-12.59375-12.59375 17.089844-17.085937 12.589844 12.589843 10.605468-10.605469-12.589844-12.589843 14.957032-14.957031 44.019531 44.019531 10.605469-10.605469-74.167969-74.171875 13.023437-13.027344 123.972657 123.96875zm0 0"></path><path d="m238.332031 301.988281 10.609375-10.605469 10.605469 10.605469-10.605469 10.609375zm0 0"></path><path d="m256.011719 284.3125 10.609375-10.605469 10.605468 10.605469-10.605468 10.605469zm0 0"></path><path d="m183.945312 356.375 47.316407-47.3125 10.605469 10.605469-47.316407 47.316406zm0 0"></path><path d="m212.019531 246.492188h91.980469v15h-91.980469zm0 0"></path><path d="m417.316406 0-28.46875 28.472656 22.179688 22.183594-52.648438 52.652344 10.605469 10.605468 52.652344-52.652343 19.714843 19.71875 10.605469-10.609375-41.898437-41.898438 7.257812-7.257812 73.46875 73.46875-7.257812 7.257812-22.183594-22.183594-63.257812 63.257813 10.605468 10.605469 52.652344-52.648438 22.183594 22.179688 28.472656-28.46875zm0 0"></path>
-                </svg>
-              </div>
-              <h3 class="text-2xl font-serif mb-3 tracking-tight text-white">Cutting Edge</h3>
-              <p class="text-base leading-relaxed text-white font-light">Modern, evidence-based solutions.</p>
-            </div>
+            <!-- Benefit-focused tagline -->
+            <p class="text-lg sm:text-xl text-white/95 max-w-lg leading-relaxed mx-auto lg:mx-0 animate-fade-in-up animate-delay-200">
+              Find the <strong class="font-semibold text-emerald-200">root cause</strong>. Restore your health <strong class="font-semibold text-emerald-200">naturally</strong>.
+            </p>
+
+            <!-- Credentials line -->
+            <p class="text-sm text-emerald-200/80 animate-fade-in-up animate-delay-300">
+              CCNM Graduate &bull; Licensed in Nova Scotia &bull; 15 Years Experience
+            </p>
+          </div>
+
+          <!-- Primary CTA - Positioned prominently -->
+          <div class="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start animate-fade-in-up animate-delay-400">
+            <BookingButton text="Book Your Appointment" variant="hero" size="lg" source="hero" />
+            <a href="tel:+19024064424" class="inline-flex items-center gap-2 text-emerald-200 hover:text-white transition-colors font-medium">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+              </svg>
+              (902) 406-4424
+            </a>
+          </div>
+
+          <!-- Featured Services - Simplified Badges -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 animate-fade-in-up animate-delay-500">
+            <a
+              href="/lab-testing"
+              class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 bg-white/5 backdrop-blur-sm text-white text-sm font-medium hover:bg-white/10 hover:border-white/30 transition-all group"
+            >
+              <svg class="w-4 h-4 text-emerald-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+              </svg>
+              Private Blood Testing
+              <svg class="w-3.5 h-3.5 text-emerald-400 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </a>
+            <a
+              href="/iv-therapy"
+              class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 bg-white/5 backdrop-blur-sm text-white text-sm font-medium hover:bg-white/10 hover:border-white/30 transition-all group"
+            >
+              <svg class="w-4 h-4 text-emerald-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+              </svg>
+              IV Therapy
+              <svg class="w-3.5 h-3.5 text-emerald-400 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Hero Image (Circular) -->
+        <div class="relative hidden lg:flex justify-center items-start">
+          <div class="w-80 h-80 xl:w-96 xl:h-96 rounded-full overflow-hidden shadow-2xl shadow-black/30 border-4 border-white/20">
+            <picture>
+              <source srcset="/images/general/colin-hero.avif" type="image/avif" />
+              <source srcset="/images/general/colin-hero.webp" type="image/webp" />
+              <img
+                src="/images/general/Dr-colin-macleod-ND.jpeg"
+                alt="Dr. Colin MacLeod ND"
+                class="w-full h-full object-cover object-top"
+                loading="eager"
+              />
+            </picture>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Private Blood Testing Callout -->
-  <section class="py-16 lg:py-20 bg-gradient-to-br from-emerald-50 to-white">
+  <!-- Navigation Hub -->
+  <section class="py-16 lg:py-20 bg-white">
     <div class="section-shell">
-      <div class="relative overflow-hidden rounded-3xl bg-white border border-emerald-100 shadow-xl shadow-emerald-900/5">
-        <div class="absolute top-0 right-0 w-1/2 h-full opacity-5" aria-hidden="true">
-          <svg viewBox="0 0 200 200" class="w-full h-full" fill="currentColor">
-            <path d="M100,10 L100,190 M10,100 L190,100 M100,10 C100,10 140,50 140,100 C140,150 100,190 100,190 C100,190 60,150 60,100 C60,50 100,10 100,10" stroke="currentColor" stroke-width="2" fill="none"/>
-            <circle cx="100" cy="100" r="30" fill="currentColor"/>
-          </svg>
-        </div>
-        <div class="relative px-8 sm:px-12 lg:px-16 py-12 lg:py-16">
-          <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
-            <div class="space-y-4 max-w-2xl">
-              <div class="flex items-center gap-3">
-                <span class="inline-flex items-center px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-sm font-semibold tracking-wide">
-                  <svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                  </svg>
-                  Now Available
-                </span>
-              </div>
-              <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 tracking-tight">Private Blood Testing</h2>
-              <p class="text-lg text-slate-600 leading-relaxed">
-                Get comprehensive blood work <strong class="text-emerald-900">without the wait</strong>.
-                Through Dr. MacLeod's partnership with <strong class="text-emerald-900">Optimal Wellbeing Clinic</strong>,
-                you can access the lab testing you need with convenient appointment times available.
-              </p>
-              <ul class="text-slate-600 space-y-2">
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>No family doctor's requisition required</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>Comprehensive panels including hormones, nutrients and more</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span>Results reviewed by Dr. MacLeod with personalized recommendations</span>
-                </li>
-              </ul>
-            </div>
-            <div class="flex flex-col sm:flex-row lg:flex-col gap-4">
-              <a
-                href="/lab-testing"
-                class="inline-flex items-center justify-center bg-emerald-900 text-white px-8 py-4 rounded-full text-base font-semibold hover:bg-emerald-800 transition-colors shadow-lg shadow-emerald-900/20"
-              >
-                Learn More
-                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services Grid -->
-  <section class="py-24 lg:py-32 bg-cream">
-    <div class="section-shell">
-      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-        <h2 class="text-4xl sm:text-5xl font-serif font-medium text-emerald-950 tracking-tight">Services</h2>
-        <p class="text-lg text-slate-600 max-w-2xl mx-auto">Comprehensive natural healthcare solutions tailored to your unique needs.</p>
-      </div>
-      <div class="grid gap-8 sm:gap-10 md:grid-cols-2 lg:grid-cols-3">
-        {[
-          {
-            title: 'IV Therapy',
-            description: 'Increase energy levels, boost immune function and build resiliency.',
-            img: '/images/treatments/iv-patient-woman.webp',
-            href: '/iv-therapy',
-          },
-          {
-            title: 'Laboratory Testing',
-            description: 'Identify nutrient deficiencies, hormone imbalances and sources of inflammation.',
-            img: '/images/reference/services/lab-testing.jpeg',
-            href: '/lab-testing',
-          },
-          {
-            title: 'Prolotherapy',
-            description: 'Injections that stimulate the healing of ligaments, tendons, cartilage and joints.',
-            img: '/images/treatments/prolotherapy-knee-injection.png',
-            href: '/prolotherapy',
-          },
-          {
-            title: 'Clinical Nutrition',
-            description: 'Nutrition is the most fundamental form of medicine. Eating an optimal diet helps prevent disease.',
-            img: '/images/reference/services/clinical-nutrition.jpeg',
-            href: '/clinical-nutrition',
-          },
-          {
-            title: 'Herbal Medicine',
-            description: 'Extensive training in the practical application of herbal medicines.',
-            img: '/images/reference/services/herbal-medicine.jpeg',
-            href: '/herbal-medicine',
-          },
-          {
-            title: 'Acupuncture',
-            description: 'Combining Traditional Chinese Medicine and trigger point release styles.',
-            img: '/images/reference/services/acupuncture.jpeg',
-            href: '/acupuncture',
-          },
-        ].map((item) => (
-          <a href={item.href} class="group block overflow-hidden rounded-3xl bg-white shadow-xl shadow-emerald-900/5 hover:shadow-2xl hover:shadow-emerald-900/10 hover:-translate-y-1 transition-all duration-300 flex flex-col h-full focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="aspect-[4/3] overflow-hidden">
-              <img src={item.img} alt={item.title} class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" width="800" height="600" loading="lazy" />
-            </div>
-            <div class="p-8 space-y-4 flex-1 flex flex-col">
-              <h3 class="text-2xl font-serif font-medium text-emerald-950 leading-tight group-hover:text-emerald-700 transition-colors">{item.title}</h3>
-              <p class="text-base text-slate-600 leading-relaxed flex-1 font-light">{item.description}</p>
-              <div class="flex items-center text-emerald-800 font-medium tracking-wide text-sm uppercase mt-4 group-hover:translate-x-1 transition-transform">
-                Learn more
-                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                </svg>
-              </div>
-            </div>
+      <!-- Desktop: 4-column grid with row dividers -->
+      <div class="hidden lg:block">
+        <!-- Row 1: Blood Tests -->
+        <div class="grid grid-cols-4 gap-x-8 py-5 border-b border-emerald-200/60 items-center">
+          <a href="/lab-testing" class="group inline-flex justify-center px-6 py-2 rounded-full border border-emerald-300/50 bg-emerald-50/50 hover:bg-emerald-100 hover:border-emerald-400 transition-all">
+            <span class="text-xl font-serif font-semibold text-emerald-900 tracking-tight">Blood Tests</span>
           </a>
-        ))}
+          {bloodTests.map((test) => (
+            <a href={test.href} class="group inline-flex items-center gap-2 text-lg text-emerald-950 hover:text-emerald-700 transition-colors">
+              {test.title}
+              <svg class="w-4 h-4 text-emerald-400 group-hover:text-emerald-600 group-hover:translate-x-0.5 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          ))}
+        </div>
+
+        <!-- Row 2: Conditions -->
+        <div class="grid grid-cols-4 gap-x-8 py-5 border-b border-emerald-200/60 items-center">
+          <a href="/conditions" class="group inline-flex justify-center px-6 py-2 rounded-full border border-emerald-300/50 bg-emerald-50/50 hover:bg-emerald-100 hover:border-emerald-400 transition-all">
+            <span class="text-xl font-serif font-semibold text-emerald-900 tracking-tight">Conditions</span>
+          </a>
+          {conditions.map((condition) => (
+            <a href={condition.href} class="group inline-flex items-center gap-2 text-lg text-emerald-950 hover:text-emerald-700 transition-colors">
+              {condition.title}
+              <svg class="w-4 h-4 text-emerald-400 group-hover:text-emerald-600 group-hover:translate-x-0.5 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          ))}
+        </div>
+
+        <!-- Row 3: Services -->
+        <div class="grid grid-cols-4 gap-x-8 py-5 border-b border-emerald-200/60 items-center">
+          <a href="/services" class="group inline-flex justify-center px-6 py-2 rounded-full border border-emerald-300/50 bg-emerald-50/50 hover:bg-emerald-100 hover:border-emerald-400 transition-all">
+            <span class="text-xl font-serif font-semibold text-emerald-900 tracking-tight">Services</span>
+          </a>
+          {services.map((service) => (
+            <a href={service.href} class="group inline-flex items-center gap-2 text-lg text-emerald-950 hover:text-emerald-700 transition-colors">
+              {service.title}
+              <svg class="w-4 h-4 text-emerald-400 group-hover:text-emerald-600 group-hover:translate-x-0.5 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          ))}
+        </div>
+
+        <!-- Row 4: Articles -->
+        <div class="grid grid-cols-4 gap-x-8 py-5 items-center">
+          <a href="/articles" class="group inline-flex justify-center px-6 py-2 rounded-full border border-emerald-300/50 bg-emerald-50/50 hover:bg-emerald-100 hover:border-emerald-400 transition-all">
+            <span class="text-xl font-serif font-semibold text-emerald-900 tracking-tight">Articles</span>
+          </a>
+          {articles.map((article) => (
+            <a href={article.href} class="group inline-flex items-center gap-2 text-lg text-emerald-950 hover:text-emerald-700 transition-colors">
+              {article.title}
+              <svg class="w-4 h-4 text-emerald-400 group-hover:text-emerald-600 group-hover:translate-x-0.5 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          ))}
+        </div>
       </div>
-      <div class="text-center mt-16">
-        <a 
-          href="/services"
-          class="inline-flex items-center bg-emerald-900 text-white px-10 py-4 rounded-full text-base font-medium tracking-wide hover:bg-emerald-800 transition-colors shadow-lg shadow-emerald-900/20"
-        >
-          View All Services
-        </a>
+
+      <!-- Mobile: Single column with large text -->
+      <div class="lg:hidden space-y-12 px-4">
+        <div class="space-y-5">
+          <a href="/lab-testing" class="group inline-flex items-center gap-3">
+            <h2 class="text-4xl font-serif font-semibold text-emerald-900 tracking-tight border-b-2 border-emerald-400 pb-1 group-hover:text-emerald-700 transition-colors">Blood Tests</h2>
+            <svg class="w-7 h-7 text-emerald-400 group-hover:text-emerald-600 group-hover:translate-x-0.5 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+          {bloodTests.map((test) => (
+            <a href={test.href} class="group flex items-center gap-3 text-2xl text-emerald-950 hover:text-emerald-700 transition-colors">
+              {test.title}
+              <svg class="w-5 h-5 text-emerald-400 group-hover:text-emerald-600 group-hover:translate-x-0.5 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          ))}
+        </div>
+
+        <div class="space-y-5">
+          <a href="/conditions" class="group inline-flex items-center gap-3">
+            <h2 class="text-4xl font-serif font-semibold text-emerald-900 tracking-tight border-b-2 border-emerald-400 pb-1 group-hover:text-emerald-700 transition-colors">Conditions</h2>
+            <svg class="w-7 h-7 text-emerald-400 group-hover:text-emerald-600 group-hover:translate-x-0.5 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+          {conditions.map((condition) => (
+            <a href={condition.href} class="group flex items-center gap-3 text-2xl text-emerald-950 hover:text-emerald-700 transition-colors">
+              {condition.title}
+              <svg class="w-5 h-5 text-emerald-400 group-hover:text-emerald-600 group-hover:translate-x-0.5 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          ))}
+        </div>
+
+        <div class="space-y-5">
+          <a href="/services" class="group inline-flex items-center gap-3">
+            <h2 class="text-4xl font-serif font-semibold text-emerald-900 tracking-tight border-b-2 border-emerald-400 pb-1 group-hover:text-emerald-700 transition-colors">Services</h2>
+            <svg class="w-7 h-7 text-emerald-400 group-hover:text-emerald-600 group-hover:translate-x-0.5 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+          {services.map((service) => (
+            <a href={service.href} class="group flex items-center gap-3 text-2xl text-emerald-950 hover:text-emerald-700 transition-colors">
+              {service.title}
+              <svg class="w-5 h-5 text-emerald-400 group-hover:text-emerald-600 group-hover:translate-x-0.5 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          ))}
+        </div>
+
+        <div class="space-y-5">
+          <a href="/articles" class="group inline-flex items-center gap-3">
+            <h2 class="text-4xl font-serif font-semibold text-emerald-900 tracking-tight border-b-2 border-emerald-400 pb-1 group-hover:text-emerald-700 transition-colors">Articles</h2>
+            <svg class="w-7 h-7 text-emerald-400 group-hover:text-emerald-600 group-hover:translate-x-0.5 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+          {articles.map((article) => (
+            <a href={article.href} class="group flex items-center gap-3 text-2xl text-emerald-950 hover:text-emerald-700 transition-colors">
+              {article.title}
+              <svg class="w-5 h-5 text-emerald-400 group-hover:text-emerald-600 group-hover:translate-x-0.5 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          ))}
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- FAQ (accordion style, replaces contact form) -->
-  <section class="py-24 lg:py-32 bg-white">
-    <div class="section-shell">
-      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-        <p class="text-emerald-800 font-medium tracking-widest uppercase text-sm">Common Questions</p>
-        <h2 class="text-4xl sm:text-5xl font-serif font-medium text-emerald-950">FAQ</h2>
-      </div>
-      <div class="max-w-3xl mx-auto space-y-6">
-            <details class="group bg-white rounded-2xl shadow-sm border border-emerald-100/50 overflow-hidden transition-all duration-300 hover:shadow-md open:shadow-lg open:ring-1 open:ring-emerald-500/20">
-              <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-                <h3 class="text-xl font-medium text-emerald-950 pr-8">What makes naturopathic medicine different?</h3>
-                <span class="text-emerald-500 transition-transform duration-300 group-open:rotate-180">
-                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                </span>
-              </summary>
-              <div class="px-6 pb-6 text-lg text-slate-600 leading-relaxed">
-                Naturopathic doctors take the time to understand your health and address the root cause. We use natural therapies and lifestyle changes to support your body's innate healing ability.
-              </div>
-            </details>
-            <details class="group bg-white rounded-2xl shadow-sm border border-emerald-100/50 overflow-hidden transition-all duration-300 hover:shadow-md open:shadow-lg open:ring-1 open:ring-emerald-500/20">
-              <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-                <h3 class="text-xl font-medium text-emerald-950 pr-8">Is naturopathic medicine covered by insurance?</h3>
-                <span class="text-emerald-500 transition-transform duration-300 group-open:rotate-180">
-                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                </span>
-              </summary>
-              <div class="px-6 pb-6 text-lg text-slate-600 leading-relaxed">
-                Yes, most extended health insurance plans cover naturopathic visits. We offer direct billing for many major insurers to make the process convenient for you.
-              </div>
-            </details>
-            <details class="group bg-white rounded-2xl shadow-sm border border-emerald-100/50 overflow-hidden transition-all duration-300 hover:shadow-md open:shadow-lg open:ring-1 open:ring-emerald-500/20">
-              <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-                <h3 class="text-xl font-medium text-emerald-950 pr-8">How long are appointments?</h3>
-                <span class="text-emerald-500 transition-transform duration-300 group-open:rotate-180">
-                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                </span>
-              </summary>
-              <div class="px-6 pb-6 text-lg text-slate-600 leading-relaxed">
-                Initial consultations are typically 60 minutes to allow for a comprehensive assessment. Follow-up appointments are usually 30 minutes.
-              </div>
-            </details>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ Schema for AI discoverability -->
-  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
 </BaseLayout>

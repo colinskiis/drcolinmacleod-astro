@@ -9,6 +9,7 @@ export interface Props {
   description: string;
   focusKeyword?: string;
   image?: string;
+  theme?: 'light' | 'dark';
   articleData?: {
     publishDate?: string;
     modifiedDate?: string;
@@ -17,7 +18,7 @@ export interface Props {
   };
 }
 
-const { title, description, focusKeyword, image, articleData } = Astro.props;
+const { title, description, focusKeyword, image, theme, articleData } = Astro.props;
 const fullTitle = title === 'Home' ? 'Dr. Colin MacLeod ND - Halifax Naturopathic Doctor' : `${title} | Dr. Colin MacLeod ND`;
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 const ogImage = image || '/images/reference/home-background.webp';
@@ -178,7 +179,7 @@ const articleSchema = articleData ? JSON.stringify({
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme={theme || 'light'}>
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
@@ -230,32 +231,50 @@ const articleSchema = articleData ? JSON.stringify({
     )}
     <!-- Fonts loaded via global.css (Manrope, Playfair Display) -->
   </head>
-  <body class="font-sans antialiased text-slate-900 bg-white">
+  <body class="font-sans antialiased" style="background: var(--color-bg-primary); color: var(--color-text-primary);">
     <!-- Header Navigation -->
     <header id="site-header" class="fixed inset-x-0 top-0 z-40 bg-emerald-950 shadow-lg">
       <div class="section-shell">
-        <nav class="flex items-center justify-between py-4 gap-4">
-          <a href="/" class="flex items-center text-white">
+        <nav class="flex items-center justify-between py-4 gap-6">
+          <!-- Logo with botanical mark -->
+          <a href="/" class="flex items-center gap-3 text-white flex-shrink-0 group">
+            <!-- CSS Logo Mark - Leaf icon -->
+            <div class="relative w-10 h-10 flex items-center justify-center flex-shrink-0">
+              <div class="absolute inset-0 rounded-full border-2 border-emerald-400/50 group-hover:border-emerald-300 transition-colors"></div>
+              <svg class="w-5 h-5 text-emerald-300" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z"/>
+              </svg>
+            </div>
             <div class="leading-tight">
-              <p class="text-xs uppercase tracking-[0.22em] text-emerald-200">Naturopathic Doctor</p>
-              <p class="text-lg font-semibold text-white">Dr. Colin MacLeod ND</p>
+              <p class="text-[10px] uppercase tracking-[0.25em] text-emerald-300/80 font-medium">Naturopathic Doctor</p>
+              <p class="text-lg font-semibold text-white tracking-tight">Dr. Colin MacLeod <span class="text-emerald-300 font-normal">ND</span></p>
             </div>
           </a>
-          <div class="hidden lg:flex items-center gap-5 text-sm font-semibold text-emerald-100">
-            <a href="/" class="hover:text-white transition-colors">Home</a>
-            <a href="/about" class="hover:text-white transition-colors">About</a>
-            <a href="/services" class="hover:text-white transition-colors">Services</a>
-            <a href="/conditions" class="hover:text-white transition-colors">Conditions</a>
-            <a href="/contact" class="hover:text-white transition-colors">Contact</a>
-            <a href="/articles" class="hover:text-white transition-colors">Articles</a>
+
+          <!-- Centered Navigation -->
+          <div class="hidden lg:flex items-center justify-center flex-1 gap-8 text-sm font-medium text-white">
+            <a href="/" class="hover:text-emerald-200 transition-colors">Home</a>
+            <a href="/about" class="hover:text-emerald-200 transition-colors">About</a>
+            <a href="/services" class="hover:text-emerald-200 transition-colors">Services</a>
+            <a href="/conditions" class="hover:text-emerald-200 transition-colors">Conditions</a>
+            <a href="/contact" class="hover:text-emerald-200 transition-colors">Contact</a>
+            <a href="/articles" class="hover:text-emerald-200 transition-colors">Articles</a>
           </div>
-          <div class="flex items-center gap-3">
+
+          <!-- Right Side: Search + Book Button + Mobile Menu -->
+          <div class="flex items-center gap-4 flex-shrink-0">
             <Search />
-            <BookingButton
-              text="Book Online"
-              size="sm"
-              source="header"
-            />
+            <a
+              href="https://macleodnaturopathic.janeapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-emerald-400 text-emerald-950 font-semibold hover:bg-emerald-300 transition-all shadow-lg shadow-emerald-500/20 hover:shadow-emerald-400/30"
+            >
+              Book Online
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"></path>
+              </svg>
+            </a>
             <!-- Mobile Menu Button -->
             <button
               id="mobile-menu-button"
@@ -273,14 +292,14 @@ const articleSchema = articleData ? JSON.stringify({
           </div>
         </nav>
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden lg:hidden pb-4">
-          <div class="flex flex-col space-y-3 text-emerald-100 font-semibold">
-            <a href="/" class="hover:text-white transition-colors py-2">Home</a>
-            <a href="/about" class="hover:text-white transition-colors py-2">About</a>
-            <a href="/services" class="hover:text-white transition-colors py-2">Services</a>
-            <a href="/conditions" class="hover:text-white transition-colors py-2">Conditions</a>
-            <a href="/contact" class="hover:text-white transition-colors py-2">Contact</a>
-            <a href="/articles" class="hover:text-white transition-colors py-2">Articles</a>
+        <div id="mobile-menu" class="hidden lg:hidden pb-6">
+          <div class="flex flex-col space-y-1 text-emerald-100 font-semibold">
+            <a href="/" class="hover:text-white transition-colors py-5 text-4xl">Home</a>
+            <a href="/about" class="hover:text-white transition-colors py-5 text-4xl">About</a>
+            <a href="/services" class="hover:text-white transition-colors py-5 text-4xl">Services</a>
+            <a href="/conditions" class="hover:text-white transition-colors py-5 text-4xl">Conditions</a>
+            <a href="/contact" class="hover:text-white transition-colors py-5 text-4xl">Contact</a>
+            <a href="/articles" class="hover:text-white transition-colors py-5 text-4xl">Articles</a>
           </div>
         </div>
       </div>
@@ -356,11 +375,14 @@ const articleSchema = articleData ? JSON.stringify({
           </div>
           <div class="mt-8 relative z-10">
             <MedicalDisclaimer />
-            <p class="text-sm text-slate-600 mt-4">&copy; {new Date().getFullYear()} Dr. Colin MacLeod ND. All rights reserved.</p>
+            <div class="mt-4">
+              <p class="text-sm text-slate-600">&copy; {new Date().getFullYear()} Dr. Colin MacLeod ND. All rights reserved.</p>
+            </div>
           </div>
         </div>
       </div>
     </footer>
+
 
   </body>
 </html>
