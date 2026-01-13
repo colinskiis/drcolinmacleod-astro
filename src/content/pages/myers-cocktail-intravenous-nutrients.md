@@ -215,12 +215,7 @@ To ensure that IV nutrient therapy will be safe and effective for you, an **init
 - Determine if Myers' Cocktail or a customized formula is best for you
 - Answer any questions you have
 
-If you would like to receive your first Myers' Cocktail on the same day as your initial consultation, please book an **"Initial consultation with IV treatment"**.
-
-<div style="background: linear-gradient(135deg, #065f46 0%, #047857 100%); padding: 2rem; border-radius: 1rem; text-align: center; margin: 2rem 0;">
-<p style="color: white; font-size: 1.25rem; margin-bottom: 1rem;"><strong>Ready to experience the Myers' Cocktail?</strong></p>
-<a href="https://macleodnaturopathic.janeapp.com/" target="_blank" style="display: inline-block; background: white; color: #065f46; padding: 0.75rem 2rem; border-radius: 9999px; font-weight: 600; text-decoration: none;">Book Online</a>
-</div>
+If you would like the option to receive IV therapy on the same day as your initial consultation, please book an **"Initial consultation with IV treatment"**. IV therapy will only be administered if Dr. MacLeod determines it is appropriate for your individual health needs.
 
 ---
 
