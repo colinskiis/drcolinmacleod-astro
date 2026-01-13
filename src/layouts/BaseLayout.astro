@@ -3,6 +3,7 @@ import '../styles/global.css';
 import Search from '../components/Search.astro';
 import BookingButton from '../components/BookingButton.astro';
 import MedicalDisclaimer from '../components/MedicalDisclaimer.astro';
+import { Calendar, Menu, X, ChevronRight } from '@lucide/astro';
 
 export interface Props {
   title: string;
@@ -248,7 +249,7 @@ const articleSchema = articleData ? JSON.stringify({
     <!-- Header Navigation -->
     <header id="site-header" class="fixed inset-x-0 top-0 z-40 bg-emerald-950 shadow-lg">
       <div class="section-shell">
-        <nav class="flex items-center justify-between py-4 gap-6">
+        <nav class="flex items-center justify-between py-4 gap-3 sm:gap-6">
           <!-- Logo with botanical mark -->
           <a href="/" class="flex items-center gap-3 text-white flex-shrink-0 group">
             <!-- CSS Logo Mark - Leaf icon -->
@@ -266,27 +267,26 @@ const articleSchema = articleData ? JSON.stringify({
 
           <!-- Centered Navigation -->
           <div class="hidden lg:flex items-center justify-center flex-1 gap-8 text-sm font-medium text-white" role="navigation" aria-label="Main navigation">
-            <a href="/" class={`hover:text-emerald-200 transition-colors py-1 px-2 rounded focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-emerald-950 ${Astro.url.pathname === '/' ? 'text-emerald-300 border-b-2 border-emerald-400' : ''}`} aria-current={Astro.url.pathname === '/' ? 'page' : undefined}>Home</a>
-            <a href="/about" class={`hover:text-emerald-200 transition-colors py-1 px-2 rounded focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-emerald-950 ${Astro.url.pathname.startsWith('/about') ? 'text-emerald-300 border-b-2 border-emerald-400' : ''}`} aria-current={Astro.url.pathname.startsWith('/about') ? 'page' : undefined}>About</a>
-            <a href="/services" class={`hover:text-emerald-200 transition-colors py-1 px-2 rounded focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-emerald-950 ${Astro.url.pathname.startsWith('/services') ? 'text-emerald-300 border-b-2 border-emerald-400' : ''}`} aria-current={Astro.url.pathname.startsWith('/services') ? 'page' : undefined}>Services</a>
-            <a href="/conditions" class={`hover:text-emerald-200 transition-colors py-1 px-2 rounded focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-emerald-950 ${Astro.url.pathname.startsWith('/conditions') ? 'text-emerald-300 border-b-2 border-emerald-400' : ''}`} aria-current={Astro.url.pathname.startsWith('/conditions') ? 'page' : undefined}>Conditions</a>
-            <a href="/contact" class={`hover:text-emerald-200 transition-colors py-1 px-2 rounded focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-emerald-950 ${Astro.url.pathname.startsWith('/contact') ? 'text-emerald-300 border-b-2 border-emerald-400' : ''}`} aria-current={Astro.url.pathname.startsWith('/contact') ? 'page' : undefined}>Contact</a>
-            <a href="/articles" class={`hover:text-emerald-200 transition-colors py-1 px-2 rounded focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-emerald-950 ${Astro.url.pathname.startsWith('/articles') ? 'text-emerald-300 border-b-2 border-emerald-400' : ''}`} aria-current={Astro.url.pathname.startsWith('/articles') ? 'page' : undefined}>Articles</a>
+            <a href="/" class={`hover:text-emerald-200 transition-colors pb-1 border-b-2 ${Astro.url.pathname === '/' ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={Astro.url.pathname === '/' ? 'page' : undefined}>Home</a>
+            <a href="/about" class={`hover:text-emerald-200 transition-colors pb-1 border-b-2 ${Astro.url.pathname.startsWith('/about') ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={Astro.url.pathname.startsWith('/about') ? 'page' : undefined}>About</a>
+            <a href="/services" class={`hover:text-emerald-200 transition-colors pb-1 border-b-2 ${Astro.url.pathname.startsWith('/services') ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={Astro.url.pathname.startsWith('/services') ? 'page' : undefined}>Services</a>
+            <a href="/conditions" class={`hover:text-emerald-200 transition-colors pb-1 border-b-2 ${Astro.url.pathname.startsWith('/conditions') ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={Astro.url.pathname.startsWith('/conditions') ? 'page' : undefined}>Conditions</a>
+            <a href="/contact" class={`hover:text-emerald-200 transition-colors pb-1 border-b-2 ${Astro.url.pathname.startsWith('/contact') ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={Astro.url.pathname.startsWith('/contact') ? 'page' : undefined}>Contact</a>
+            <a href="/articles" class={`hover:text-emerald-200 transition-colors pb-1 border-b-2 ${Astro.url.pathname.startsWith('/articles') ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={Astro.url.pathname.startsWith('/articles') ? 'page' : undefined}>Articles</a>
           </div>
 
           <!-- Right Side: Search + Book Button + Mobile Menu -->
-          <div class="flex items-center gap-4 flex-shrink-0">
+          <div class="flex items-center gap-2 sm:gap-4 flex-shrink-0">
             <Search />
             <a
               href="https://macleodnaturopathic.janeapp.com/"
               target="_blank"
               rel="noopener noreferrer"
-              class="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-5 py-2 sm:py-2.5 rounded-lg bg-emerald-400 text-emerald-950 font-semibold hover:bg-emerald-300 transition-all shadow-lg shadow-emerald-500/20 hover:shadow-emerald-400/30 text-sm sm:text-base"
+              class="inline-flex items-center gap-2 px-3 sm:px-5 py-2 sm:py-2.5 rounded-lg bg-emerald-400 text-emerald-950 font-semibold hover:bg-emerald-300 transition-all shadow-lg shadow-emerald-500/20 hover:shadow-emerald-400/30 text-sm sm:text-base whitespace-nowrap"
             >
-              Book Online
-              <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"></path>
-              </svg>
+              <span class="sm:hidden">Book</span>
+              <span class="hidden sm:inline">Book Online</span>
+              <Calendar class="hidden sm:block w-5 h-5" aria-hidden="true" />
             </a>
             <!-- Mobile Menu Button -->
             <button
@@ -295,12 +295,8 @@ const articleSchema = articleData ? JSON.stringify({
               aria-label="Toggle menu"
               aria-expanded="false"
             >
-              <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-              </svg>
-              <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-              </svg>
+              <Menu id="menu-icon" class="w-6 h-6" aria-hidden="true" />
+              <X id="close-icon" class="w-6 h-6 hidden" aria-hidden="true" />
             </button>
           </div>
         </nav>
@@ -368,9 +364,7 @@ const articleSchema = articleData ? JSON.stringify({
                 </a>
                 <a href="https://macleodnaturopathic.janeapp.com/" target="_blank" rel="noopener noreferrer" class="flex items-center text-emerald-800 font-semibold hover:text-emerald-900">
                   Book Online
-                  <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                  </svg>
+                  <ChevronRight class="w-5 h-5 ml-2" aria-hidden="true" />
                 </a>
               </div>
             </div>

@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
+import { Minus, Check, Shield, Zap, RefreshCw, Heart, Sparkles, ChevronRight, ChevronDown, Calendar } from '@lucide/astro';
 ---
 
 <BaseLayout
@@ -64,27 +65,19 @@ import CTAButton from '../components/CTAButton.astro';
             </h3>
             <ul class="space-y-3 text-gray-600">
               <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 text-gray-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                </svg>
+                <Minus class="w-5 h-5 text-gray-400 mt-0.5 flex-shrink-0" aria-hidden="true" />
                 <span>Absorption limited to ~200mg at a time</span>
               </li>
               <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 text-gray-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                </svg>
+                <Minus class="w-5 h-5 text-gray-400 mt-0.5 flex-shrink-0" aria-hidden="true" />
                 <span>Higher doses cause GI upset</span>
               </li>
               <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 text-gray-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                </svg>
+                <Minus class="w-5 h-5 text-gray-400 mt-0.5 flex-shrink-0" aria-hidden="true" />
                 <span>Peak blood levels: ~220 μmol/L</span>
               </li>
               <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 text-gray-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                </svg>
+                <Minus class="w-5 h-5 text-gray-400 mt-0.5 flex-shrink-0" aria-hidden="true" />
                 <span>Good for maintenance, not therapeutic</span>
               </li>
             </ul>
@@ -97,27 +90,19 @@ import CTAButton from '../components/CTAButton.astro';
             </h3>
             <ul class="space-y-3">
               <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 text-emerald-300 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                </svg>
+                <Check class="w-5 h-5 text-emerald-300 mt-0.5 flex-shrink-0" aria-hidden="true" />
                 <span>No absorption limit (100% bioavailable)</span>
               </li>
               <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 text-emerald-300 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                </svg>
+                <Check class="w-5 h-5 text-emerald-300 mt-0.5 flex-shrink-0" aria-hidden="true" />
                 <span>Bypasses GI tract entirely</span>
               </li>
               <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 text-emerald-300 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                </svg>
+                <Check class="w-5 h-5 text-emerald-300 mt-0.5 flex-shrink-0" aria-hidden="true" />
                 <span>Peak blood levels: 13,000+ μmol/L</span>
               </li>
               <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 text-emerald-300 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                </svg>
+                <Check class="w-5 h-5 text-emerald-300 mt-0.5 flex-shrink-0" aria-hidden="true" />
                 <span>Therapeutic effects at high concentrations</span>
               </li>
             </ul>
@@ -141,9 +126,7 @@ import CTAButton from '../components/CTAButton.astro';
         <!-- Immune Support -->
         <div class="bg-emerald-50 rounded-2xl p-6">
           <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-            </svg>
+            <Shield class="w-6 h-6 text-white" aria-hidden="true" />
           </div>
           <h3 class="text-lg font-semibold text-emerald-950 mb-2">Immune Support</h3>
           <p class="text-gray-600 text-sm">Vitamin C accumulates in immune cells and enhances their ability to fight infection. It supports both innate and adaptive immunity, including neutrophil function and antibody production.</p>
@@ -152,9 +135,7 @@ import CTAButton from '../components/CTAButton.astro';
         <!-- Acute Illness -->
         <div class="bg-emerald-50 rounded-2xl p-6">
           <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-            </svg>
+            <Zap class="w-6 h-6 text-white" aria-hidden="true" />
           </div>
           <h3 class="text-lg font-semibold text-emerald-950 mb-2">Fighting Acute Illness</h3>
           <p class="text-gray-600 text-sm">When you're fighting an infection, your vitamin C requirements increase dramatically. IV administration helps meet this increased demand when you need it most.</p>
@@ -163,9 +144,7 @@ import CTAButton from '../components/CTAButton.astro';
         <!-- Post-Viral Recovery -->
         <div class="bg-emerald-50 rounded-2xl p-6">
           <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
-            </svg>
+            <RefreshCw class="w-6 h-6 text-white" aria-hidden="true" />
           </div>
           <h3 class="text-lg font-semibold text-emerald-950 mb-2">Post-Viral Recovery</h3>
           <p class="text-gray-600 text-sm">Lingering fatigue after illness? IV vitamin C can help accelerate recovery by reducing oxidative stress and supporting tissue repair. Particularly helpful for post-COVID fatigue.</p>
@@ -174,9 +153,7 @@ import CTAButton from '../components/CTAButton.astro';
         <!-- Fatigue -->
         <div class="bg-emerald-50 rounded-2xl p-6">
           <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-            </svg>
+            <Zap class="w-6 h-6 text-white" aria-hidden="true" />
           </div>
           <h3 class="text-lg font-semibold text-emerald-950 mb-2">Fatigue Reduction</h3>
           <p class="text-gray-600 text-sm">Research shows IV vitamin C can significantly reduce fatigue, particularly in people with low baseline vitamin C levels or chronic health conditions.</p>
@@ -185,9 +162,7 @@ import CTAButton from '../components/CTAButton.astro';
         <!-- Stress -->
         <div class="bg-emerald-50 rounded-2xl p-6">
           <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-            </svg>
+            <Heart class="w-6 h-6 text-white" aria-hidden="true" />
           </div>
           <h3 class="text-lg font-semibold text-emerald-950 mb-2">Stress & Adrenal Support</h3>
           <p class="text-gray-600 text-sm">The adrenal glands have among the highest concentrations of vitamin C in the body. Chronic stress depletes these stores. IV vitamin C helps replenish them.</p>
@@ -196,9 +171,7 @@ import CTAButton from '../components/CTAButton.astro';
         <!-- Skin & Collagen -->
         <div class="bg-emerald-50 rounded-2xl p-6">
           <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
-            </svg>
+            <Sparkles class="w-6 h-6 text-white" aria-hidden="true" />
           </div>
           <h3 class="text-lg font-semibold text-emerald-950 mb-2">Skin & Collagen</h3>
           <p class="text-gray-600 text-sm">Vitamin C is essential for collagen synthesis. High-dose IV vitamin C supports wound healing, skin health and connective tissue repair.</p>
@@ -270,9 +243,7 @@ import CTAButton from '../components/CTAButton.astro';
             <p class="text-gray-600 mb-4">Our standard Myers' Cocktail contains vitamin C along with B vitamins, magnesium and calcium. Great for general wellness, fatigue and immune support.</p>
             <a href="/myers-cocktail-intravenous-nutrients" class="text-emerald-700 text-sm font-medium mt-4 inline-flex items-center hover:text-emerald-800">
               Learn more about Myers' Cocktail
-              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-              </svg>
+              <ChevronRight class="w-4 h-4 ml-1" aria-hidden="true" />
             </a>
           </div>
 
@@ -323,27 +294,19 @@ import CTAButton from '../components/CTAButton.astro';
           <h3 class="text-xl font-semibold text-emerald-950 mb-4">Preparation Tips</h3>
           <ul class="grid md:grid-cols-2 gap-4">
             <li class="flex items-start gap-2 text-gray-600">
-              <svg class="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
+              <Check class="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
               <span>Eat a light meal before your appointment</span>
             </li>
             <li class="flex items-start gap-2 text-gray-600">
-              <svg class="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
+              <Check class="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
               <span>Stay well-hydrated beforehand</span>
             </li>
             <li class="flex items-start gap-2 text-gray-600">
-              <svg class="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
+              <Check class="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
               <span>Wear comfortable, loose-fitting sleeves</span>
             </li>
             <li class="flex items-start gap-2 text-gray-600">
-              <svg class="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
+              <Check class="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
               <span>Bring something to read or do during infusion</span>
             </li>
           </ul>
@@ -407,9 +370,7 @@ import CTAButton from '../components/CTAButton.astro';
           <details class="bg-white rounded-xl shadow-md group">
             <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
               <span class="font-semibold text-emerald-950">How often should I get IV vitamin C?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
+              <ChevronDown class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" aria-hidden="true" />
             </summary>
             <div class="px-6 pb-6 text-gray-600">
               This depends on your goals. For acute illness, treatments may be given daily or every other day until you recover. For general wellness and immune support, weekly or bi-weekly treatments are common. For maintenance, monthly treatments may be sufficient. We'll recommend a schedule based on your individual needs.
@@ -419,9 +380,7 @@ import CTAButton from '../components/CTAButton.astro';
           <details class="bg-white rounded-xl shadow-md group">
             <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
               <span class="font-semibold text-emerald-950">Can I get IV vitamin C while I'm sick?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
+              <ChevronDown class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" aria-hidden="true" />
             </summary>
             <div class="px-6 pb-6 text-gray-600">
               Yes. In fact, this is often the best time to get it. Your body's vitamin C requirements increase significantly during infection. IV vitamin C can help support your immune response and may help you recover faster. Please let us know what symptoms you're experiencing when you book.
@@ -431,9 +390,7 @@ import CTAButton from '../components/CTAButton.astro';
           <details class="bg-white rounded-xl shadow-md group">
             <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
               <span class="font-semibold text-emerald-950">Is IV vitamin C the same as getting a vitamin C shot?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
+              <ChevronDown class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" aria-hidden="true" />
             </summary>
             <div class="px-6 pb-6 text-gray-600">
               No. Intramuscular vitamin C "shots" deliver a much smaller amount. IV infusion allows us to deliver significantly higher doses over time, achieving the blood concentrations needed for therapeutic effects.
@@ -443,9 +400,7 @@ import CTAButton from '../components/CTAButton.astro';
           <details class="bg-white rounded-xl shadow-md group">
             <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
               <span class="font-semibold text-emerald-950">Should I stop taking oral vitamin C if I'm getting IVs?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
+              <ChevronDown class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" aria-hidden="true" />
             </summary>
             <div class="px-6 pb-6 text-gray-600">
               Not necessarily. Oral vitamin C provides ongoing, low-level support between IV treatments. The two work well together: IV provides periodic high-dose therapy while oral maintains baseline levels. We can discuss the best approach for your situation.
@@ -470,9 +425,7 @@ import CTAButton from '../components/CTAButton.astro';
           class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center"
         >
           Book Online
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-          </svg>
+          <Calendar class="w-5 h-5 ml-2" aria-hidden="true" />
         </a>
         <p class="text-white/70 mt-6 text-sm">Initial consultation required for new patients | Most extended health plans cover naturopathic services</p>
       </div>
