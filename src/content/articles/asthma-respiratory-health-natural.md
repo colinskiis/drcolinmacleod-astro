@@ -3,7 +3,7 @@ title: "Asthma and Respiratory Health: Natural Approaches to Easier Breathing"
 description: "Evidence-based natural approaches to supporting respiratory health, managing asthma triggers, and reducing inflammation for easier breathing."
 publishDate: 2025-01-14
 author: "Dr. Colin MacLeod ND"
-heroImage: "/images/general/healthy-lifestyle.webp"
+heroImage: "/images/general/respiratory-health-lungs.webp"
 categories: ["Naturopathic", "Respiratory Health"]
 tags: ["asthma", "respiratory health", "allergies", "inflammation", "natural treatment", "Halifax"]
 featured: false

@@ -3,7 +3,7 @@ title: "Men's Hormonal Health: Understanding and Optimizing Testosterone Natural
 description: "Evidence-based natural approaches to supporting healthy testosterone levels, addressing symptoms of hormonal imbalance, and optimizing men's health."
 publishDate: 2025-08-02
 author: "Dr. Colin MacLeod ND"
-heroImage: "/images/general/athletic-performance.webp"
+heroImage: "/images/general/mens-health-vitality.webp"
 categories: ["Naturopathic", "Men's Health", "Hormonal Health"]
 tags: ["testosterone", "men's health", "hormones", "natural treatment", "Halifax"]
 featured: false

@@ -4,7 +4,7 @@ description: "Evidence-based natural approaches to weight management including m
 publishDate: 2013-08-20
 modifiedDate: 2026-01-10
 author: "Dr. Colin MacLeod ND"
-heroImage: "/images/general/healthy-lifestyle.webp"
+heroImage: "/images/general/weight-management-balance.webp"
 categories: ["Naturopathic", "Weight Management"]
 tags: ["weight loss", "metabolism", "nutrition", "lifestyle", "Halifax"]
 seo:

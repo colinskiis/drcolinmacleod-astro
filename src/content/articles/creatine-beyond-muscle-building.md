@@ -3,7 +3,7 @@ title: "Creatine: Beyond Muscle Building"
 description: "Creatine was named 'supplement of the year' for 2025. Learn about the emerging research on creatine for brain health, women's health, and benefits beyond the gym."
 publishDate: 2024-08-17
 modifiedDate: 2026-01-09
-heroImage: "/images/general/athletic-performance.webp"
+heroImage: "/images/nutrition/creatine-brain-muscle.webp"
 categories: ["Naturopathic", "Sports Medicine"]
 tags: ["creatine", "brain health", "women's health", "supplements", "naturopathic"]
 seo:

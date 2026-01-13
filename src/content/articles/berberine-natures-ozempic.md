@@ -3,7 +3,7 @@ title: "Berberine: The 'Nature's Ozempic' Claim Examined"
 description: "Berberine has gone viral on TikTok as 'nature's Ozempic.' Here's what the research actually shows about berberine for blood sugar, weight loss, and metabolic health."
 publishDate: 2024-07-23
 modifiedDate: 2026-01-09
-heroImage: "/images/general/herbal-medicine.webp"
+heroImage: "/images/treatments/berberine-blood-sugar.webp"
 categories: ["Naturopathic", "Herbal Medicine"]
 tags: ["berberine", "blood sugar", "weight loss", "metabolic health", "naturopathic"]
 featured: true

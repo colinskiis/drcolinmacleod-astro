@@ -4,7 +4,7 @@ description: "Mistletoe extract injections are a natural cancer treatment helpfu
 publishDate: 2014-03-25
 modifiedDate: 2026-01-10
 author: "Dr. Colin MacLeod ND"
-heroImage: "/images/treatments/IV-nutrient-therapy.webp"
+heroImage: "/images/treatments/mistletoe-viscum-album.webp"
 categories: ["Naturopathic"]
 tags: ["naturopathic"]
 seo:

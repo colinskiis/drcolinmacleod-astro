@@ -3,7 +3,7 @@ title: "Magnesium - The Natural Muscle Relaxer"
 description: "Magnesium is a mineral essential for healthy muscles, nervous system, cardiovascular system and digestive tract. Learn about magnesium deficiency symptoms and food sources."
 publishDate: 2019-09-24
 modifiedDate: 2022-07-12
-heroImage: "/images/conditions/woman-fibromyalgia-pain.webp"
+heroImage: "/images/nutrition/magnesium-muscle-foods.webp"
 categories: ["Naturopathic"]
 tags: ["naturopathic"]
 seo:
