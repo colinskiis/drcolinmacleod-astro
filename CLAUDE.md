@@ -33,6 +33,5 @@ Manual SSH: `ssh namecheap`
 
 ## Button Text Standards
 
-- Header: "Book Online"
-- All other buttons: "Book Your Appointment"
+- All booking buttons: "Book Online"
 - Articles should NOT have inline booking links

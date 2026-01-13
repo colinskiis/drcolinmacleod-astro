@@ -6,6 +6,7 @@ modifiedDate: 2026-01-09
 heroImage: "/images/nutrition/adaptogens-herbs.webp"
 categories: ["Naturopathic", "Herbal Medicine"]
 tags: ["adaptogens", "ashwagandha", "rhodiola", "stress", "herbal medicine", "naturopathic"]
+featured: true
 seo:
   description: "Evidence-based guide to adaptogens including ashwagandha and rhodiola. Learn what the research shows about these herbs for stress, fatigue, and cortisol."
   focusKeyword: "adaptogens stress"

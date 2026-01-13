@@ -62,6 +62,34 @@ const breadcrumbSchema = {
     }
   ]
 };
+
+// Article schema for Google rich results
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": article.data.title,
+  "description": article.data.description,
+  "author": {
+    "@type": "Person",
+    "name": article.data.author,
+    "url": "https://drcolinmacleod.com/about"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "MacLeod Naturopathic",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://drcolinmacleod.com/favicon.svg"
+    }
+  },
+  "datePublished": article.data.publishDate,
+  "dateModified": article.data.modifiedDate || article.data.publishDate,
+  "image": article.data.heroImage ? `https://drcolinmacleod.com${article.data.heroImage}` : "https://drcolinmacleod.com/images/reference/home-background.webp",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": `https://drcolinmacleod.com/articles/${article.slug}`
+  }
+};
 ---
 
 <BaseLayout 
@@ -187,7 +215,7 @@ const breadcrumbSchema = {
                 </p>
                 <div class="flex flex-col sm:flex-row gap-3">
                   <BookingButton
-                    text="Book Your Appointment"
+                    text="Book Online"
                     variant="secondary"
                     size="sm"
                     source={`article-${article.slug}`}
@@ -257,6 +285,9 @@ const breadcrumbSchema = {
 
   <!-- BreadcrumbList Schema for AI discoverability -->
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <!-- Article Schema for Google rich results -->
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
 </BaseLayout>
 
 <style>

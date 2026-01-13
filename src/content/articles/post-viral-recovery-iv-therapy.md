@@ -6,6 +6,7 @@ modifiedDate: 2024-12-06
 heroImage: "/images/treatments/iv-patient-man.webp"
 categories: ["IV Therapy", "Post-Viral Recovery"]
 tags: ["long COVID", "post-viral fatigue", "IV therapy", "Myers Cocktail", "vitamin C", "Halifax", "Nova Scotia"]
+featured: true
 seo:
   description: "Post-viral recovery support in Halifax with IV therapy. Address lingering fatigue, brain fog, and weakness after COVID, flu, and other infections with evidence-based nutrient infusions."
   focusKeyword: "post-viral recovery IV therapy"

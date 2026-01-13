@@ -1,5 +1,6 @@
-/* Brand foundations */
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&family=Libre+Baskerville:wght@400;700&display=swap');
+/* Brand foundations - Optimized font loading */
+/* Only load weights actually used: Manrope 400,600,700; Playfair 700 */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Playfair+Display:wght@700&display=swap');
 
 @tailwind base;
 @tailwind components;

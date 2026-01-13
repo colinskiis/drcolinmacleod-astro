@@ -6,6 +6,7 @@ modifiedDate: 2026-01-09
 heroImage: "/images/general/sleep-recovery.webp"
 categories: ["Naturopathic", "Wellness"]
 tags: ["sleep", "insomnia", "recovery", "wellness", "naturopathic"]
+featured: true
 seo:
   description: "Evidence-based guide to sleep optimization. Learn what actually improves sleep quality and what the research shows about sleep hygiene, regularity, and natural approaches."
   focusKeyword: "sleep optimization"
