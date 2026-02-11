@@ -1,0 +1,497 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import CTAButton from '../components/CTAButton.astro';
+---
+
+<BaseLayout
+  title="Digestive Health Testing in Halifax - Gut Health Assessment"
+  description="Comprehensive digestive health testing in Halifax including GI-MAP stool analysis, food sensitivity panels, SIBO breath testing and celiac screening. Find the root cause of gut issues."
+  focusKeyword="digestive health testing Halifax"
+>
+  <HeroSection
+    title="Digestive Health Testing"
+    compact
+    image={{ src: "/images/lab-testing/digestive-health.webp", alt: "Digestive system illustration", aspect: "video" }}
+  >
+    <p>Standard testing misses most functional gut issues. We use advanced stool analysis, breath testing and blood panels to find <strong class="text-white">the root cause of your digestive symptoms</strong> — not just manage them.</p>
+    <CTAButton slot="cta">Book Online</CTAButton>
+  </HeroSection>
+
+  <!-- Statistics -->
+  <section class="py-12 bg-white">
+    <div class="section-shell">
+      <div class="grid md:grid-cols-4 gap-8 text-center">
+        <div>
+          <div class="text-4xl font-bold text-emerald-700 mb-2">5M+</div>
+          <p class="text-gray-600 text-sm">Canadians affected by IBS</p>
+        </div>
+        <div>
+          <div class="text-4xl font-bold text-emerald-700 mb-2">70%</div>
+          <p class="text-gray-600 text-sm">of your immune system resides in your gut</p>
+        </div>
+        <div>
+          <div class="text-4xl font-bold text-emerald-700 mb-2">50%</div>
+          <p class="text-gray-600 text-sm">of IBS patients may actually have SIBO</p>
+        </div>
+        <div>
+          <div class="text-4xl font-bold text-emerald-700 mb-2">95%</div>
+          <p class="text-gray-600 text-sm">of your body's serotonin is produced in the gut</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Problem with Standard Testing -->
+  <section class="py-16 lg:py-24 bg-emerald-50">
+    <div class="section-shell">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-6">Why Standard Gut Testing Falls Short</h2>
+        <div class="prose prose-lg text-gray-600 mb-8">
+          <p>
+            If you've been told you have IBS, you've likely been given a diagnosis of exclusion — meaning they ruled out the serious stuff and stopped looking. <strong>IBS is a description of symptoms, not a root cause</strong>. Bloating, pain, constipation, diarrhea — these all have underlying drivers that the right testing can identify.
+          </p>
+          <p>
+            Standard digestive testing typically includes a colonoscopy (to rule out IBD or cancer) and maybe a celiac blood test. While important, these tests miss the functional issues that cause the majority of chronic digestive complaints: bacterial overgrowth, dysbiosis, food sensitivities, enzyme deficiency and intestinal permeability.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 shadow-lg">
+          <h3 class="text-xl font-semibold text-emerald-950 mb-6">What Standard Testing Misses</h3>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-red-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <div>
+                <span class="font-medium text-emerald-950">Small intestinal bacterial overgrowth (SIBO)</span>
+                <p class="text-sm text-gray-600">Present in up to 50% of IBS patients, rarely tested</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-red-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <div>
+                <span class="font-medium text-emerald-950">Gut microbiome imbalances</span>
+                <p class="text-sm text-gray-600">Dysbiosis, parasites and opportunistic organisms</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-red-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <div>
+                <span class="font-medium text-emerald-950">Food sensitivities (IgG)</span>
+                <p class="text-sm text-gray-600">Delayed reactions that are impossible to identify by symptoms alone</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-red-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <div>
+                <span class="font-medium text-emerald-950">Digestive enzyme deficiency</span>
+                <p class="text-sm text-gray-600">Low pancreatic elastase means poor breakdown of food</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Digestive Testing Panel Cards -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Digestive Health Testing Options</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          We select the tests most relevant to your symptoms and history — not a one-size-fits-all panel.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- GI-MAP -->
+        <div class="bg-emerald-50 rounded-2xl p-6">
+          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-white font-bold text-xs">GI-MAP</span>
+          </div>
+          <h3 class="text-lg font-semibold text-emerald-950 mb-2">GI-MAP Stool Analysis</h3>
+          <p class="text-gray-600 text-sm mb-3">The gold standard in comprehensive stool testing. Uses DNA-based PCR technology to identify bacteria, parasites, fungi, viruses and digestive markers with high accuracy.</p>
+          <div class="text-xs text-gray-500">
+            <span class="font-medium">Method:</span> qPCR DNA analysis<br>
+            <span class="font-medium text-emerald-700">Reveals:</span> Pathogens, dysbiosis, inflammation, digestion
+          </div>
+        </div>
+
+        <!-- Food Sensitivity -->
+        <div class="bg-emerald-50 rounded-2xl p-6">
+          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-white font-bold text-sm">IgG</span>
+          </div>
+          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Food Sensitivity (IgG)</h3>
+          <p class="text-gray-600 text-sm mb-3">IgG food sensitivity testing identifies delayed immune reactions to foods. Unlike food allergies (IgE), these reactions can occur 24–72 hours after eating, making them nearly impossible to identify through elimination alone.</p>
+          <div class="text-xs text-gray-500">
+            <span class="font-medium">Tests:</span> 120–200+ foods<br>
+            <span class="font-medium text-emerald-700">Best for:</span> Bloating, skin issues, migraines, fatigue
+          </div>
+        </div>
+
+        <!-- SIBO Breath Test -->
+        <div class="bg-emerald-50 rounded-2xl p-6">
+          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-white font-bold text-sm">SIBO</span>
+          </div>
+          <h3 class="text-lg font-semibold text-emerald-950 mb-2">SIBO Breath Test</h3>
+          <p class="text-gray-600 text-sm mb-3">A take-home breath test that detects bacterial overgrowth in the small intestine. Measures hydrogen and methane gases produced by bacteria after a lactulose challenge.</p>
+          <div class="text-xs text-gray-500">
+            <span class="font-medium">Method:</span> Lactulose breath test (at home)<br>
+            <span class="font-medium text-emerald-700">Types detected:</span> Hydrogen, methane, hydrogen sulfide
+          </div>
+        </div>
+
+        <!-- Celiac Screening -->
+        <div class="bg-emerald-50 rounded-2xl p-6">
+          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-white font-bold text-sm">tTG</span>
+          </div>
+          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Celiac Screening</h3>
+          <p class="text-gray-600 text-sm mb-3">Blood testing for celiac disease including tissue transglutaminase (tTG-IgA) and deamidated gliadin peptides. An estimated 1 in 100 Canadians have celiac, but most are undiagnosed.</p>
+          <div class="text-xs text-gray-500">
+            <span class="font-medium">Key markers:</span> tTG-IgA, DGP-IgG, Total IgA<br>
+            <span class="font-medium text-emerald-700">Note:</span> Must be eating gluten for accurate results
+          </div>
+        </div>
+
+        <!-- Intestinal Permeability -->
+        <div class="bg-emerald-50 rounded-2xl p-6">
+          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-white font-bold text-sm">Zon</span>
+          </div>
+          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Intestinal Permeability</h3>
+          <p class="text-gray-600 text-sm mb-3">"Leaky gut" markers including zonulin, a protein that regulates tight junctions between intestinal cells. Elevated levels indicate increased permeability linked to autoimmunity and inflammation.</p>
+          <div class="text-xs text-gray-500">
+            <span class="font-medium">Key marker:</span> Zonulin<br>
+            <span class="font-medium text-emerald-700">Associated with:</span> Autoimmune risk, food reactions
+          </div>
+        </div>
+
+        <!-- Pancreatic Elastase -->
+        <div class="bg-emerald-50 rounded-2xl p-6">
+          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-white font-bold text-sm">PE-1</span>
+          </div>
+          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Pancreatic Elastase</h3>
+          <p class="text-gray-600 text-sm mb-3">Measures your pancreas's ability to produce digestive enzymes. Low levels mean you're not breaking down food properly, leading to bloating, gas and nutrient malabsorption.</p>
+          <div class="text-xs text-gray-500">
+            <span class="font-medium">Normal:</span> &gt;200 &micro;g/g stool<br>
+            <span class="font-medium text-emerald-700">Insufficient:</span> &lt;200 &micro;g/g (enzyme support needed)
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deep Dive: Gut-Body Connection -->
+  <section class="py-16 lg:py-24 bg-emerald-950">
+    <div class="section-shell">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-6">Your Gut Affects Far More Than Digestion</h2>
+          <div class="prose prose-lg prose-invert">
+            <p class="text-white/90">
+              The gut is often called the "second brain" — and for good reason. It houses <strong class="text-white">70% of your immune system</strong>, produces <strong class="text-white">95% of your serotonin</strong>, and communicates directly with your brain through the vagus nerve.
+            </p>
+            <p class="text-white/90">
+              This means that gut dysfunction doesn't just cause bloating and stomach pain. It can drive <strong class="text-white">anxiety, depression, skin conditions, autoimmune disease, hormonal imbalances, and chronic fatigue</strong>. Many patients come to us for non-digestive symptoms and discover their gut was the missing piece all along.
+            </p>
+            <p class="text-white/90">
+              Finding and fixing the root cause of gut dysfunction — whether it's SIBO, dysbiosis, food sensitivities or intestinal permeability — can have profound effects on your overall health.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur rounded-2xl p-8">
+          <h3 class="text-xl font-semibold text-white mb-6">Conditions Linked to Gut Health</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3 text-white/90">
+              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Anxiety, depression and brain fog (gut-brain axis)</span>
+            </li>
+            <li class="flex items-start gap-3 text-white/90">
+              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Eczema, acne and psoriasis (gut-skin axis)</span>
+            </li>
+            <li class="flex items-start gap-3 text-white/90">
+              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Autoimmune conditions (Hashimoto's, RA, celiac)</span>
+            </li>
+            <li class="flex items-start gap-3 text-white/90">
+              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Hormonal imbalances (estrogen recirculation)</span>
+            </li>
+            <li class="flex items-start gap-3 text-white/90">
+              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Chronic fatigue and low energy (nutrient malabsorption)</span>
+            </li>
+            <li class="flex items-start gap-3 text-white/90">
+              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Frequent infections (immune system compromise)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Symptoms / Signs -->
+  <section class="py-16 lg:py-24 bg-emerald-50">
+    <div class="section-shell">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Signs You May Benefit from Digestive Testing</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="bg-white rounded-2xl p-8 shadow-lg">
+          <h3 class="text-xl font-semibold text-emerald-950 mb-4">Digestive Symptoms</h3>
+          <ul class="space-y-2">
+            {['Chronic bloating or gas', 'Constipation, diarrhea or alternating both', 'Abdominal pain or cramping', 'Acid reflux or heartburn', 'Nausea after eating', 'Undigested food in stool'].map(symptom => (
+              <li class="flex items-center gap-2 text-gray-700">
+                <svg class="w-4 h-4 text-blue-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
+                {symptom}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 shadow-lg">
+          <h3 class="text-xl font-semibold text-emerald-950 mb-4">Related Symptoms</h3>
+          <ul class="space-y-2">
+            {['Skin issues (eczema, acne, rashes)', 'Brain fog and fatigue after meals', 'Anxiety or mood changes', 'Joint pain or body aches', 'Frequent colds or infections', 'IBS diagnosis without clear answers'].map(symptom => (
+              <li class="flex items-center gap-2 text-gray-700">
+                <svg class="w-4 h-4 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
+                {symptom}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nova Scotia Context -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-6">Digestive Health Testing Access in Nova Scotia</h2>
+        <div class="prose prose-lg text-gray-600">
+          <p>
+            Gastroenterology wait times in Nova Scotia can stretch to <strong>12 months or more</strong>, and when you do get seen, the focus is typically on ruling out serious pathology — not identifying functional causes. If your scope comes back "clear," you're often told to manage symptoms with fiber and stress reduction.
+          </p>
+          <ul>
+            <li>Comprehensive stool analysis (like GI-MAP) is not available through MSI</li>
+            <li>SIBO breath testing is rarely offered through conventional channels</li>
+            <li>Food sensitivity testing (IgG) is not recognized or available in standard care</li>
+            <li>Functional gut markers like zonulin and pancreatic elastase are not routinely tested</li>
+          </ul>
+          <p>
+            Through our practice, you can access <strong>advanced digestive health testing without a gastroenterology referral</strong>. We identify the underlying drivers of your symptoms and create targeted treatment plans to restore gut health — not just suppress symptoms.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Getting Started -->
+  <section class="py-16 lg:py-24 bg-emerald-50">
+    <div class="section-shell">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Getting Started</h2>
+
+        <div class="bg-white rounded-2xl shadow-xl p-8 text-center">
+          <p class="text-gray-600 mb-6">Digestive health testing is tailored to your symptoms. We'll discuss your history and recommend the most appropriate tests during your initial consultation. Most extended health insurance plans cover naturopathic consultations.</p>
+          <a
+            href="https://macleodnaturopathic.janeapp.com/"
+            target="_blank"
+            class="bg-emerald-700 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-emerald-800 transition-colors shadow-lg inline-flex items-center justify-center"
+          >
+            Book Online
+            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
+
+        <div class="space-y-4">
+          <details class="bg-emerald-50 rounded-xl shadow-md group">
+            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+              <span class="font-semibold text-emerald-950">What's the difference between food allergies and food sensitivities?</span>
+              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              Food allergies (IgE) cause immediate reactions — think hives, swelling, or anaphylaxis. Food sensitivities (IgG) cause delayed reactions that can take 24–72 hours to appear, making them nearly impossible to identify without testing. Symptoms include bloating, headaches, fatigue, skin issues and joint pain.
+            </div>
+          </details>
+
+          <details class="bg-emerald-50 rounded-xl shadow-md group">
+            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+              <span class="font-semibold text-emerald-950">What is SIBO and how is it tested?</span>
+              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              SIBO (Small Intestinal Bacterial Overgrowth) occurs when bacteria that normally live in the large intestine migrate into the small intestine. It causes bloating, gas, pain and altered bowel habits. Testing involves a take-home breath test where you drink a lactulose solution and collect breath samples over 2–3 hours. The test measures hydrogen and methane gases produced by the bacteria.
+            </div>
+          </details>
+
+          <details class="bg-emerald-50 rounded-xl shadow-md group">
+            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+              <span class="font-semibold text-emerald-950">Is the GI-MAP stool test different from a regular stool test?</span>
+              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              Yes, significantly. Standard stool tests ordered through MSI use culture-based methods that miss most organisms. The GI-MAP uses quantitative PCR (DNA-based) technology, which is far more sensitive and accurate. It tests for over 30 pathogens, parasites, and opportunistic organisms, plus markers for digestion, inflammation, and immune function — all from a single stool sample collected at home.
+            </div>
+          </details>
+
+          <details class="bg-emerald-50 rounded-xl shadow-md group">
+            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+              <span class="font-semibold text-emerald-950">Do I need a referral for digestive health testing?</span>
+              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              No. You don't need a gastroenterologist or family doctor referral. As a naturopathic doctor, I can order all of these tests directly. Many patients come to us specifically because they've been waiting months for a GI specialist or have been told their standard testing is "normal."
+            </div>
+          </details>
+
+          <details class="bg-emerald-50 rounded-xl shadow-md group">
+            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+              <span class="font-semibold text-emerald-950">Can gut health really affect mood and anxiety?</span>
+              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              Absolutely. Your gut produces approximately 95% of your body's serotonin and communicates directly with your brain through the vagus nerve (the gut-brain axis). Gut dysbiosis, intestinal permeability and inflammation have all been linked to anxiety, depression and cognitive issues. Many patients report significant mood improvements after addressing gut imbalances.
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 lg:py-24 bg-emerald-950">
+    <div class="section-shell">
+      <div class="text-center max-w-3xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-6">Find the Root Cause of Your Gut Issues</h2>
+        <p class="text-lg text-white/90 mb-8">
+          Stop managing symptoms and start getting answers. Advanced digestive testing reveals what's actually driving your symptoms — so we can fix it.
+        </p>
+        <a
+          href="https://macleodnaturopathic.janeapp.com/"
+          target="_blank"
+          class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center"
+        >
+          Book Online
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Pages -->
+  <section class="py-12 bg-white border-t border-gray-100">
+    <div class="section-shell">
+      <div class="max-w-4xl mx-auto">
+        <h3 class="text-lg font-semibold text-emerald-950 mb-4 text-center">Related Testing</h3>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="/lab-testing" class="text-emerald-700 hover:text-emerald-800 font-medium">&larr; All Lab Testing Services</a>
+          <span class="text-gray-300">|</span>
+          <a href="/specialized-testing" class="text-emerald-700 hover:text-emerald-800 font-medium">Specialized Testing &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What's the difference between food allergies and food sensitivities?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Food allergies (IgE) cause immediate reactions like hives or anaphylaxis. Food sensitivities (IgG) cause delayed reactions taking 24-72 hours to appear, with symptoms like bloating, headaches, fatigue and joint pain."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is SIBO and how is it tested?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SIBO (Small Intestinal Bacterial Overgrowth) occurs when bacteria migrate into the small intestine. Testing involves a take-home breath test measuring hydrogen and methane gases over 2-3 hours."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the GI-MAP stool test different from a regular stool test?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Standard stool tests use culture-based methods that miss most organisms. The GI-MAP uses DNA-based PCR technology that is far more sensitive, testing for over 30 pathogens plus digestion and inflammation markers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a referral for digestive health testing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. As a naturopathic doctor, I can order all digestive health tests directly. You don't need a gastroenterologist or family doctor referral."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can gut health really affect mood and anxiety?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. Your gut produces approximately 95% of your body's serotonin and communicates with your brain through the vagus nerve. Gut dysbiosis and inflammation have been linked to anxiety, depression and cognitive issues."
+          }
+        }
+      ]
+    }
+  </script>
+</BaseLayout>

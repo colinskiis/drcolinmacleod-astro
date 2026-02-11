@@ -1,0 +1,497 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import CTAButton from '../components/CTAButton.astro';
+---
+
+<BaseLayout
+  title="Nutrient Testing in Halifax - Vitamin & Mineral Assessment"
+  description="Comprehensive nutrient testing in Halifax including Vitamin D, B12, iron, magnesium, zinc and folate. Identify hidden deficiencies with optimal functional ranges. No family doctor requisition needed."
+  focusKeyword="nutrient testing Halifax"
+>
+  <HeroSection
+    title="Nutrient Testing"
+    compact
+    image={{ src: "/images/lab-testing/nutrient-status.webp", alt: "Healthy woman with nutritious food", aspect: "video" }}
+  >
+    <p>Even with a good diet, <strong class="text-white">hidden nutrient deficiencies</strong> are remarkably common. We test key vitamins and minerals using optimal functional ranges that catch subclinical deficiency <strong class="text-white">before symptoms become serious</strong>.</p>
+    <CTAButton slot="cta">Book Online</CTAButton>
+  </HeroSection>
+
+  <!-- Statistics -->
+  <section class="py-12 bg-white">
+    <div class="section-shell">
+      <div class="grid md:grid-cols-4 gap-8 text-center">
+        <div>
+          <div class="text-4xl font-bold text-emerald-700 mb-2">32%</div>
+          <p class="text-gray-600 text-sm">of Canadians are vitamin D deficient</p>
+        </div>
+        <div>
+          <div class="text-4xl font-bold text-emerald-700 mb-2">1 in 6</div>
+          <p class="text-gray-600 text-sm">Canadians have insufficient B12 levels</p>
+        </div>
+        <div>
+          <div class="text-4xl font-bold text-emerald-700 mb-2">25%</div>
+          <p class="text-gray-600 text-sm">of premenopausal women are iron deficient</p>
+        </div>
+        <div>
+          <div class="text-4xl font-bold text-emerald-700 mb-2">34%</div>
+          <p class="text-gray-600 text-sm">of Canadians don't meet magnesium intake requirements</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Problem with Standard Testing -->
+  <section class="py-16 lg:py-24 bg-emerald-50">
+    <div class="section-shell">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-6">Why Standard Nutrient Testing Falls Short</h2>
+        <div class="prose prose-lg text-gray-600 mb-8">
+          <p>
+            If you're eating well but still struggling with fatigue, brain fog, hair loss, or frequent illness, nutrient deficiencies may be the missing piece. <strong>Standard blood work rarely includes comprehensive nutrient testing</strong>, and when it does, results are compared to ranges designed to detect severe deficiency — not optimal function.
+          </p>
+          <p>
+            A "normal" vitamin D level of 30 nmol/L, for example, technically avoids rickets but is far below the 100–150 nmol/L range where most people feel and function their best. The gap between "not deficient" and "optimal" is where many people live — and suffer.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 shadow-lg">
+          <h3 class="text-xl font-semibold text-emerald-950 mb-6">What Standard Testing Misses</h3>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-red-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <div>
+                <span class="font-medium text-emerald-950">Subclinical deficiency</span>
+                <p class="text-sm text-gray-600">Levels technically "normal" but too low for optimal function</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-red-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <div>
+                <span class="font-medium text-emerald-950">Intracellular levels</span>
+                <p class="text-sm text-gray-600">Serum magnesium can be normal while tissue stores are depleted</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-red-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <div>
+                <span class="font-medium text-emerald-950">Active vs. total forms</span>
+                <p class="text-sm text-gray-600">Total B12 may look fine while active B12 is low</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-red-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <div>
+                <span class="font-medium text-emerald-950">Full iron picture</span>
+                <p class="text-sm text-gray-600">Hemoglobin alone misses early iron depletion seen on ferritin</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nutrient Panel Detail Cards -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">The Comprehensive Nutrient Panel</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          We test the nutrients most commonly deficient and most impactful for your health.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Vitamin D -->
+        <div class="bg-emerald-50 rounded-2xl p-6">
+          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-white font-bold text-sm">Vit D</span>
+          </div>
+          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Vitamin D</h3>
+          <p class="text-gray-600 text-sm mb-3">Essential for immune function, bone health, mood and energy. Deficiency is extremely common in northern latitudes, especially in Nova Scotia's long winters.</p>
+          <div class="text-xs text-gray-500">
+            <span class="font-medium">Standard range:</span> 30–100 nmol/L<br>
+            <span class="font-medium text-emerald-700">Optimal range:</span> 100–150 nmol/L
+          </div>
+        </div>
+
+        <!-- Vitamin B12 -->
+        <div class="bg-emerald-50 rounded-2xl p-6">
+          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-white font-bold text-sm">B12</span>
+          </div>
+          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Vitamin B12</h3>
+          <p class="text-gray-600 text-sm mb-3">Critical for nerve function, energy production and red blood cell formation. Low levels cause fatigue, brain fog, numbness and mood changes.</p>
+          <div class="text-xs text-gray-500">
+            <span class="font-medium">Standard range:</span> 138–652 pmol/L<br>
+            <span class="font-medium text-emerald-700">Optimal range:</span> 400–600 pmol/L
+          </div>
+        </div>
+
+        <!-- Iron Panel -->
+        <div class="bg-emerald-50 rounded-2xl p-6">
+          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-white font-bold text-sm">Iron</span>
+          </div>
+          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Iron Panel</h3>
+          <p class="text-gray-600 text-sm mb-3">Includes ferritin, serum iron, TIBC and transferrin saturation. Iron deficiency is the most common nutritional deficiency worldwide, especially in women.</p>
+          <div class="text-xs text-gray-500">
+            <span class="font-medium">Standard ferritin:</span> 12–150 &micro;g/L (women)<br>
+            <span class="font-medium text-emerald-700">Optimal ferritin:</span> 50–100 &micro;g/L
+          </div>
+        </div>
+
+        <!-- RBC Magnesium -->
+        <div class="bg-emerald-50 rounded-2xl p-6">
+          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-white font-bold text-sm">Mg</span>
+          </div>
+          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Magnesium (RBC)</h3>
+          <p class="text-gray-600 text-sm mb-3">We test <strong>red blood cell</strong> magnesium, not serum. Serum levels represent only 1% of body magnesium and stay normal until stores are severely depleted.</p>
+          <div class="text-xs text-gray-500">
+            <span class="font-medium">Standard range:</span> 1.3–2.5 mmol/L<br>
+            <span class="font-medium text-emerald-700">Optimal range:</span> 2.0–2.5 mmol/L
+          </div>
+        </div>
+
+        <!-- Zinc -->
+        <div class="bg-emerald-50 rounded-2xl p-6">
+          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-white font-bold text-sm">Zn</span>
+          </div>
+          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Zinc</h3>
+          <p class="text-gray-600 text-sm mb-3">Essential for immune function, wound healing, thyroid conversion and over 300 enzymatic reactions. Low zinc is associated with frequent infections and slow healing.</p>
+          <div class="text-xs text-gray-500">
+            <span class="font-medium">Standard range:</span> 10–18 &micro;mol/L<br>
+            <span class="font-medium text-emerald-700">Optimal range:</span> 14–18 &micro;mol/L
+          </div>
+        </div>
+
+        <!-- Folate -->
+        <div class="bg-emerald-50 rounded-2xl p-6">
+          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-white font-bold text-sm">B9</span>
+          </div>
+          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Folate</h3>
+          <p class="text-gray-600 text-sm mb-3">Vital for methylation, DNA synthesis and mood regulation. Low folate contributes to fatigue, depression and elevated homocysteine, a cardiovascular risk marker.</p>
+          <div class="text-xs text-gray-500">
+            <span class="font-medium">Standard range:</span> &gt;7 nmol/L<br>
+            <span class="font-medium text-emerald-700">Optimal range:</span> &gt;30 nmol/L
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deep Dive: Why Deficiencies Are So Common -->
+  <section class="py-16 lg:py-24 bg-emerald-950">
+    <div class="section-shell">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-6">Why Deficiencies Are So Common — Even With a Good Diet</h2>
+          <div class="prose prose-lg prose-invert">
+            <p class="text-white/90">
+              Most people assume that eating well means they're getting enough nutrients. But the reality is more complicated. <strong class="text-white">Soil depletion, food processing, stress, medications and digestive issues</strong> all reduce the nutrients your body actually absorbs and retains.
+            </p>
+            <p class="text-white/90">
+              Add in factors unique to our region — <strong class="text-white">limited sun exposure for 6+ months of the year</strong>, higher rates of gut issues that impair absorption, and widespread use of medications like PPIs and birth control that deplete key nutrients — and it becomes clear why so many Nova Scotians are running on empty.
+            </p>
+            <p class="text-white/90">
+              Testing removes the guesswork. Rather than supplementing blindly, we identify exactly what your body needs and in what amounts.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur rounded-2xl p-8">
+          <h3 class="text-xl font-semibold text-white mb-6">Common Causes of Nutrient Depletion</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3 text-white/90">
+              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Acid-reducing medications (PPIs) deplete B12, magnesium, iron</span>
+            </li>
+            <li class="flex items-start gap-3 text-white/90">
+              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Birth control pills deplete B6, B12, folate, magnesium, zinc</span>
+            </li>
+            <li class="flex items-start gap-3 text-white/90">
+              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Chronic stress increases magnesium, zinc and B vitamin requirements</span>
+            </li>
+            <li class="flex items-start gap-3 text-white/90">
+              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Gut issues (IBS, celiac, low stomach acid) impair absorption</span>
+            </li>
+            <li class="flex items-start gap-3 text-white/90">
+              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Northern latitude reduces vitamin D production October–April</span>
+            </li>
+            <li class="flex items-start gap-3 text-white/90">
+              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Heavy periods significantly increase iron loss in women</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Signs of Nutrient Deficiency -->
+  <section class="py-16 lg:py-24 bg-emerald-50">
+    <div class="section-shell">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Signs You May Have a Nutrient Deficiency</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="bg-white rounded-2xl p-8 shadow-lg">
+          <h3 class="text-xl font-semibold text-emerald-950 mb-4">Energy & Mood</h3>
+          <ul class="space-y-2">
+            {['Persistent fatigue despite adequate sleep', 'Brain fog and poor concentration', 'Low mood or depression', 'Anxiety or irritability', 'Poor stress tolerance'].map(symptom => (
+              <li class="flex items-center gap-2 text-gray-700">
+                <svg class="w-4 h-4 text-blue-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
+                {symptom}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 shadow-lg">
+          <h3 class="text-xl font-semibold text-emerald-950 mb-4">Physical Signs</h3>
+          <ul class="space-y-2">
+            {['Hair loss or thinning', 'Brittle nails or white spots on nails', 'Frequent colds and infections', 'Muscle cramps or restless legs', 'Slow wound healing', 'Pale skin or dark circles under eyes'].map(symptom => (
+              <li class="flex items-center gap-2 text-gray-700">
+                <svg class="w-4 h-4 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
+                {symptom}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nova Scotia Context -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-6">Nutrient Testing Access in Nova Scotia</h2>
+        <div class="prose prose-lg text-gray-600">
+          <p>
+            In Nova Scotia, comprehensive nutrient testing is difficult to access through conventional channels. MSI covers very few nutrient markers, and many family doctors are limited in what they can order. Common gaps include:
+          </p>
+          <ul>
+            <li>Vitamin D is sometimes available, but follow-up testing is often denied</li>
+            <li>RBC magnesium is almost never ordered — serum magnesium is a poor indicator</li>
+            <li>Iron panels are often incomplete, checking hemoglobin but not ferritin</li>
+            <li>B12 testing may be available, but optimal ranges differ significantly from lab cutoffs</li>
+          </ul>
+          <p>
+            Through our practice, you can access <strong>complete nutrient testing without a family doctor requisition</strong>. Results are interpreted using optimal functional ranges, and we develop targeted supplementation plans based on your actual levels — not guesswork.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Getting Started -->
+  <section class="py-16 lg:py-24 bg-emerald-50">
+    <div class="section-shell">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Getting Started</h2>
+
+        <div class="bg-white rounded-2xl shadow-xl p-8 text-center">
+          <p class="text-gray-600 mb-6">Comprehensive nutrient testing includes Vitamin D, B12, iron panel (ferritin, serum iron, TIBC), RBC magnesium, zinc and folate. Most extended health insurance plans cover naturopathic consultations.</p>
+          <a
+            href="https://macleodnaturopathic.janeapp.com/"
+            target="_blank"
+            class="bg-emerald-700 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-emerald-800 transition-colors shadow-lg inline-flex items-center justify-center"
+          >
+            Book Online
+            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
+
+        <div class="space-y-4">
+          <details class="bg-emerald-50 rounded-xl shadow-md group">
+            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+              <span class="font-semibold text-emerald-950">Do I need a doctor's requisition for nutrient testing?</span>
+              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              No. As a naturopathic doctor, I can order comprehensive nutrient panels directly. You don't need a family doctor or specialist referral to access testing.
+            </div>
+          </details>
+
+          <details class="bg-emerald-50 rounded-xl shadow-md group">
+            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+              <span class="font-semibold text-emerald-950">Why do you use different "optimal" ranges than the lab?</span>
+              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              Standard lab ranges are designed to identify severe deficiency, not optimal health. They're based on the general population, including people who are unwell. Functional optimal ranges reflect the levels at which research shows people feel and function best. For example, a vitamin D of 35 nmol/L is "normal" by lab standards but associated with increased risk of illness and fatigue.
+            </div>
+          </details>
+
+          <details class="bg-emerald-50 rounded-xl shadow-md group">
+            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+              <span class="font-semibold text-emerald-950">Can't I just take a multivitamin instead of testing?</span>
+              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              A multivitamin provides small, standardized doses that may not address your specific deficiencies. If your ferritin is 15 and your vitamin D is 25, you need targeted therapeutic doses — not the token amounts in a daily multi. Testing tells us exactly what you need and how much, which saves you money on unnecessary supplements and ensures you're actually correcting the problem.
+            </div>
+          </details>
+
+          <details class="bg-emerald-50 rounded-xl shadow-md group">
+            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+              <span class="font-semibold text-emerald-950">Do I need to fast before nutrient testing?</span>
+              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              Fasting is not required for most nutrient tests. However, for the iron panel specifically, morning fasting samples give the most accurate results. If we're combining nutrient testing with other blood work (like a metabolic panel), we may recommend fasting. Specific instructions will be provided at your appointment.
+            </div>
+          </details>
+
+          <details class="bg-emerald-50 rounded-xl shadow-md group">
+            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+              <span class="font-semibold text-emerald-950">How long does it take to correct a nutrient deficiency?</span>
+              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              It depends on the nutrient and the severity of deficiency. Iron stores can take 3–6 months to rebuild. Vitamin D levels typically improve within 2–3 months with proper supplementation. B12 deficiency may resolve more quickly with appropriate forms and doses. We retest at intervals to confirm you're on track and adjust doses as needed.
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 lg:py-24 bg-emerald-950">
+    <div class="section-shell">
+      <div class="text-center max-w-3xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-6">Stop Guessing. Start Testing.</h2>
+        <p class="text-lg text-white/90 mb-8">
+          Find out exactly which nutrients your body needs — and in what amounts — so you can feel like yourself again.
+        </p>
+        <a
+          href="https://macleodnaturopathic.janeapp.com/"
+          target="_blank"
+          class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center"
+        >
+          Book Online
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Pages -->
+  <section class="py-12 bg-white border-t border-gray-100">
+    <div class="section-shell">
+      <div class="max-w-4xl mx-auto">
+        <h3 class="text-lg font-semibold text-emerald-950 mb-4 text-center">Related Testing</h3>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="/lab-testing" class="text-emerald-700 hover:text-emerald-800 font-medium">&larr; All Lab Testing Services</a>
+          <span class="text-gray-300">|</span>
+          <a href="/wellness-blood-work" class="text-emerald-700 hover:text-emerald-800 font-medium">Wellness Blood Work &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do I need a doctor's requisition for nutrient testing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. As a naturopathic doctor, I can order comprehensive nutrient panels directly. You don't need a family doctor or specialist referral."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do you use different optimal ranges than the lab?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Standard lab ranges identify severe deficiency, not optimal health. Functional optimal ranges reflect levels where research shows people feel and function best."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can't I just take a multivitamin instead of testing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A multivitamin provides small standardized doses that may not address your specific deficiencies. Testing tells us exactly what you need and how much."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to fast before nutrient testing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fasting is not required for most nutrient tests. For the iron panel specifically, morning fasting samples give the most accurate results."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to correct a nutrient deficiency?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on the nutrient and severity. Iron stores can take 3-6 months to rebuild. Vitamin D typically improves within 2-3 months with proper supplementation."
+          }
+        }
+      ]
+    }
+  </script>
+</BaseLayout>

@@ -1,0 +1,497 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import CTAButton from '../components/CTAButton.astro';
+---
+
+<BaseLayout
+  title="Specialized Functional Medicine Testing in Halifax"
+  description="Advanced functional medicine testing in Halifax including heavy metal assessment, organic acids, DUTCH hormone testing, chronic infection panels and methylation analysis. Root-cause investigation for complex cases."
+  focusKeyword="functional medicine testing Halifax"
+>
+  <HeroSection
+    title="Specialized Testing"
+    compact
+    image={{ src: "/images/lab-testing/specialized-testing.webp", alt: "Blood draw preparation for specialized testing", aspect: "video" }}
+  >
+    <p>When standard testing hasn't provided answers, <strong class="text-white">functional medicine testing digs deeper</strong>. These advanced panels investigate root causes that conventional testing simply doesn't look for.</p>
+    <CTAButton slot="cta">Book Online</CTAButton>
+  </HeroSection>
+
+  <!-- Statistics -->
+  <section class="py-12 bg-white">
+    <div class="section-shell">
+      <div class="grid md:grid-cols-4 gap-8 text-center">
+        <div>
+          <div class="text-4xl font-bold text-emerald-700 mb-2">80K+</div>
+          <p class="text-gray-600 text-sm">environmental chemicals in commercial use today</p>
+        </div>
+        <div>
+          <div class="text-4xl font-bold text-emerald-700 mb-2">40%</div>
+          <p class="text-gray-600 text-sm">of chronic fatigue cases lack a conventional diagnosis</p>
+        </div>
+        <div>
+          <div class="text-4xl font-bold text-emerald-700 mb-2">75+</div>
+          <p class="text-gray-600 text-sm">metabolic markers measured by organic acids testing</p>
+        </div>
+        <div>
+          <div class="text-4xl font-bold text-emerald-700 mb-2">47%</div>
+          <p class="text-gray-600 text-sm">of Canadians have MTHFR gene variants affecting methylation</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Problem with Standard Testing -->
+  <section class="py-16 lg:py-24 bg-emerald-50">
+    <div class="section-shell">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-6">When Standard Testing Hasn't Given You Answers</h2>
+        <div class="prose prose-lg text-gray-600 mb-8">
+          <p>
+            Some patients have been through rounds of conventional testing — blood work, imaging, specialist referrals — and still don't have answers. <strong>Being told "everything looks normal" when you clearly don't feel normal is one of the most frustrating experiences in healthcare</strong>.
+          </p>
+          <p>
+            The problem isn't that nothing is wrong. It's that standard testing looks at a limited set of markers through a lens designed to detect disease — not dysfunction. Functional medicine testing expands the investigation to include environmental exposures, metabolic pathways, chronic infections, and genetic variants that conventional medicine rarely considers.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 shadow-lg">
+          <h3 class="text-xl font-semibold text-emerald-950 mb-6">What Conventional Testing Often Misses</h3>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-red-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <div>
+                <span class="font-medium text-emerald-950">Toxic burden</span>
+                <p class="text-sm text-gray-600">Heavy metals and environmental toxins accumulating over years</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-red-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <div>
+                <span class="font-medium text-emerald-950">Metabolic bottlenecks</span>
+                <p class="text-sm text-gray-600">Organic acids reveal where energy production and detox stall</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-red-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <div>
+                <span class="font-medium text-emerald-950">Chronic stealth infections</span>
+                <p class="text-sm text-gray-600">Lyme, EBV and other infections that evade standard testing</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-red-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <div>
+                <span class="font-medium text-emerald-950">Methylation issues</span>
+                <p class="text-sm text-gray-600">Genetic variants affecting detox, neurotransmitters and hormone clearance</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Specialized Testing Panel Cards -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Advanced Functional Testing Options</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          These tests are selected based on your history and symptoms — we recommend only what's clinically relevant.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Heavy Metal Assessment -->
+        <div class="bg-emerald-50 rounded-2xl p-6">
+          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-white font-bold text-sm">Hg/Pb</span>
+          </div>
+          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Heavy Metal Assessment</h3>
+          <p class="text-gray-600 text-sm mb-3">Tests for mercury, lead, arsenic, cadmium and other toxic metals. Chronic low-level exposure accumulates over decades from dental fillings, seafood, water and occupational sources.</p>
+          <div class="text-xs text-gray-500">
+            <span class="font-medium">Methods:</span> Urine (provoked and unprovoked), blood, hair<br>
+            <span class="font-medium text-emerald-700">Linked to:</span> Fatigue, neurological symptoms, thyroid issues
+          </div>
+        </div>
+
+        <!-- Organic Acids -->
+        <div class="bg-emerald-50 rounded-2xl p-6">
+          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-white font-bold text-sm">OAT</span>
+          </div>
+          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Organic Acids Test (OAT)</h3>
+          <p class="text-gray-600 text-sm mb-3">A comprehensive metabolic snapshot measuring 75+ markers in urine. Evaluates energy production, neurotransmitter metabolism, detoxification capacity, yeast/bacterial overgrowth and nutritional status.</p>
+          <div class="text-xs text-gray-500">
+            <span class="font-medium">Method:</span> First morning urine sample<br>
+            <span class="font-medium text-emerald-700">Best for:</span> Fatigue, brain fog, mood issues, complex cases
+          </div>
+        </div>
+
+        <!-- Chronic Infection Panels -->
+        <div class="bg-emerald-50 rounded-2xl p-6">
+          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-white font-bold text-sm">Inf</span>
+          </div>
+          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Chronic Infection Panels</h3>
+          <p class="text-gray-600 text-sm mb-3">Testing for reactivated or chronic infections including Epstein-Barr virus (EBV), Lyme disease (Borrelia), co-infections, and other stealth pathogens that drive fatigue and immune dysfunction.</p>
+          <div class="text-xs text-gray-500">
+            <span class="font-medium">Includes:</span> EBV, Lyme (Western Blot), co-infections<br>
+            <span class="font-medium text-emerald-700">Best for:</span> Chronic fatigue, post-viral syndromes, joint pain
+          </div>
+        </div>
+
+        <!-- DUTCH Hormone Test -->
+        <div class="bg-emerald-50 rounded-2xl p-6">
+          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-white font-bold text-xs">DUTCH</span>
+          </div>
+          <h3 class="text-lg font-semibold text-emerald-950 mb-2">DUTCH Hormone Test</h3>
+          <p class="text-gray-600 text-sm mb-3">The most comprehensive hormone test available. Dried urine testing measures hormones <strong>and their metabolites</strong>, revealing how your body processes and clears hormones — not just levels.</p>
+          <div class="text-xs text-gray-500">
+            <span class="font-medium">Method:</span> Dried urine (collected at home)<br>
+            <span class="font-medium text-emerald-700">Reveals:</span> Hormone metabolism, cortisol pattern, methylation
+          </div>
+        </div>
+
+        <!-- Environmental Toxins -->
+        <div class="bg-emerald-50 rounded-2xl p-6">
+          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-white font-bold text-sm">Tox</span>
+          </div>
+          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Environmental Toxins</h3>
+          <p class="text-gray-600 text-sm mb-3">Screens for common environmental chemicals including pesticides, plasticizers (BPA/phthalates), volatile solvents and other toxins that disrupt hormones, immunity and neurological function.</p>
+          <div class="text-xs text-gray-500">
+            <span class="font-medium">Method:</span> Urine testing<br>
+            <span class="font-medium text-emerald-700">Linked to:</span> Hormonal disruption, fertility issues, fatigue
+          </div>
+        </div>
+
+        <!-- Methylation Panel -->
+        <div class="bg-emerald-50 rounded-2xl p-6">
+          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-white font-bold text-sm">MTHF</span>
+          </div>
+          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Methylation Panel</h3>
+          <p class="text-gray-600 text-sm mb-3">Evaluates methylation — a critical biochemical process involved in detoxification, DNA repair, neurotransmitter production and hormone metabolism. Includes genetic variants (MTHFR, COMT) and functional markers.</p>
+          <div class="text-xs text-gray-500">
+            <span class="font-medium">Markers:</span> Homocysteine, MTHFR, COMT, folate, B12<br>
+            <span class="font-medium text-emerald-700">Impacts:</span> Detox capacity, mood, cardiovascular risk
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deep Dive: Root Cause Approach -->
+  <section class="py-16 lg:py-24 bg-emerald-950">
+    <div class="section-shell">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-6">The Root-Cause Approach to Complex Cases</h2>
+          <div class="prose prose-lg prose-invert">
+            <p class="text-white/90">
+              Functional medicine doesn't treat symptoms in isolation — it investigates <strong class="text-white">why</strong> those symptoms exist. When a patient presents with fatigue, brain fog, joint pain, and mood changes, conventional medicine might offer antidepressants, painkillers, and a referral to a sleep clinic.
+            </p>
+            <p class="text-white/90">
+              A functional approach asks: <strong class="text-white">Is there a heavy metal burden?</strong> An undiagnosed chronic infection? A methylation issue affecting neurotransmitter production? A metabolic bottleneck in energy production? These are testable questions with actionable answers.
+            </p>
+            <p class="text-white/90">
+              Specialized testing is not for everyone — and we don't recommend it without clinical justification. But for complex, multi-system cases that haven't responded to conventional approaches, these tests often reveal the missing piece.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur rounded-2xl p-8">
+          <h3 class="text-xl font-semibold text-white mb-6">When to Consider Specialized Testing</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3 text-white/90">
+              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Standard blood work comes back "normal" but you still feel unwell</span>
+            </li>
+            <li class="flex items-start gap-3 text-white/90">
+              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Chronic fatigue that doesn't improve with rest or lifestyle changes</span>
+            </li>
+            <li class="flex items-start gap-3 text-white/90">
+              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Multiple symptoms across different body systems</span>
+            </li>
+            <li class="flex items-start gap-3 text-white/90">
+              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>History of environmental or occupational exposure</span>
+            </li>
+            <li class="flex items-start gap-3 text-white/90">
+              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Post-viral symptoms that haven't resolved (long COVID, post-EBV)</span>
+            </li>
+            <li class="flex items-start gap-3 text-white/90">
+              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Family history of autoimmune, neurological, or metabolic conditions</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Symptoms / Signs -->
+  <section class="py-16 lg:py-24 bg-emerald-50">
+    <div class="section-shell">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Signs That Deeper Testing May Help</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="bg-white rounded-2xl p-8 shadow-lg">
+          <h3 class="text-xl font-semibold text-emerald-950 mb-4">Neurological & Cognitive</h3>
+          <ul class="space-y-2">
+            {['Persistent brain fog or poor memory', 'Numbness, tingling or neuropathy', 'Mood swings, anxiety or depression', 'Difficulty concentrating', 'Headaches or migraines'].map(symptom => (
+              <li class="flex items-center gap-2 text-gray-700">
+                <svg class="w-4 h-4 text-blue-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
+                {symptom}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 shadow-lg">
+          <h3 class="text-xl font-semibold text-emerald-950 mb-4">Systemic & Physical</h3>
+          <ul class="space-y-2">
+            {['Chronic fatigue unresponsive to treatment', 'Joint and muscle pain without clear cause', 'Chemical sensitivities or medication reactions', 'Hormonal issues despite standard treatment', 'Recurrent infections or immune dysfunction', 'Symptoms that started after an illness or exposure'].map(symptom => (
+              <li class="flex items-center gap-2 text-gray-700">
+                <svg class="w-4 h-4 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
+                {symptom}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nova Scotia Context -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-6">Accessing Advanced Testing in Nova Scotia</h2>
+        <div class="prose prose-lg text-gray-600">
+          <p>
+            Functional medicine testing is not available through Nova Scotia's public healthcare system. These specialized panels require laboratories that go beyond standard hospital testing — and that's by design. They investigate root causes that conventional testing wasn't built to find.
+          </p>
+          <ul>
+            <li>Heavy metal testing through MSI is extremely limited and typically requires specialist referral</li>
+            <li>Organic acids testing is not available through conventional channels in NS</li>
+            <li>DUTCH hormone testing provides detail that blood and saliva tests cannot match</li>
+            <li>Lyme disease testing through standard labs uses methodology with known limitations</li>
+          </ul>
+          <p>
+            Through our practice, you can access <strong>these advanced tests directly, without specialist referrals or long waitlists</strong>. Results are interpreted in the context of your full clinical picture, and we develop treatment plans that address root causes — not just manage symptoms.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Getting Started -->
+  <section class="py-16 lg:py-24 bg-emerald-50">
+    <div class="section-shell">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Getting Started</h2>
+
+        <div class="bg-white rounded-2xl shadow-xl p-8 text-center">
+          <p class="text-gray-600 mb-6">Specialized testing is recommended based on your individual case. During your initial consultation, we'll review your history and symptoms to determine which tests — if any — are most likely to provide useful answers. Most extended health insurance plans cover naturopathic consultations.</p>
+          <a
+            href="https://macleodnaturopathic.janeapp.com/"
+            target="_blank"
+            class="bg-emerald-700 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-emerald-800 transition-colors shadow-lg inline-flex items-center justify-center"
+          >
+            Book Online
+            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
+
+        <div class="space-y-4">
+          <details class="bg-emerald-50 rounded-xl shadow-md group">
+            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+              <span class="font-semibold text-emerald-950">Do I need all of these tests?</span>
+              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              No. Specialized testing is selected based on your individual case. Most patients need only one or two of these panels. During your consultation, we'll review your symptoms, history and any previous testing to determine which tests are most likely to provide useful clinical information. We never recommend tests without clear clinical justification.
+            </div>
+          </details>
+
+          <details class="bg-emerald-50 rounded-xl shadow-md group">
+            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+              <span class="font-semibold text-emerald-950">How much do specialized tests cost?</span>
+              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              Costs vary depending on the test. Basic panels may start around $200–300, while comprehensive tests like the DUTCH or organic acids panel can range from $350–500. We're always transparent about costs before ordering and will discuss which tests offer the best value for your specific situation. Some extended health plans provide partial coverage for laboratory testing.
+            </div>
+          </details>
+
+          <details class="bg-emerald-50 rounded-xl shadow-md group">
+            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+              <span class="font-semibold text-emerald-950">Are these tests scientifically valid?</span>
+              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              Yes. We use tests from accredited, CLIA-certified laboratories that meet rigorous quality standards. The organic acids test, DUTCH hormone panel, and GI-MAP, for example, are used by thousands of practitioners worldwide and supported by peer-reviewed research. We prioritize tests with strong clinical evidence and proven utility.
+            </div>
+          </details>
+
+          <details class="bg-emerald-50 rounded-xl shadow-md group">
+            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+              <span class="font-semibold text-emerald-950">Should I start with basic blood work or specialized testing?</span>
+              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              In most cases, we start with comprehensive basic blood work (wellness panel, nutrients, thyroid) before moving to specialized testing. This layered approach ensures we're not over-testing and that we catch common issues first. If your basic work is unremarkable but symptoms persist, specialized testing becomes the logical next step.
+            </div>
+          </details>
+
+          <details class="bg-emerald-50 rounded-xl shadow-md group">
+            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+              <span class="font-semibold text-emerald-950">Can you work with my existing healthcare team?</span>
+              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              Absolutely. Collaborative care leads to better outcomes. If you have a family doctor, specialist, or other healthcare providers, we're happy to share results and coordinate care. Many patients use our specialized testing to complement their conventional medical care, and we work alongside your existing providers — not in place of them.
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 lg:py-24 bg-emerald-950">
+    <div class="section-shell">
+      <div class="text-center max-w-3xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-6">Ready to Dig Deeper?</h2>
+        <p class="text-lg text-white/90 mb-8">
+          When standard testing hasn't given you answers, functional medicine testing can. Let's find out what's really going on.
+        </p>
+        <a
+          href="https://macleodnaturopathic.janeapp.com/"
+          target="_blank"
+          class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center"
+        >
+          Book Online
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Pages -->
+  <section class="py-12 bg-white border-t border-gray-100">
+    <div class="section-shell">
+      <div class="max-w-4xl mx-auto">
+        <h3 class="text-lg font-semibold text-emerald-950 mb-4 text-center">Related Testing</h3>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="/lab-testing" class="text-emerald-700 hover:text-emerald-800 font-medium">&larr; All Lab Testing Services</a>
+          <span class="text-gray-300">|</span>
+          <a href="/digestive-health-testing" class="text-emerald-700 hover:text-emerald-800 font-medium">Digestive Health Testing &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do I need all of these specialized tests?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Specialized testing is selected based on your individual case. Most patients need only one or two panels. We never recommend tests without clear clinical justification."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much do specialized functional medicine tests cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Costs vary depending on the test. Basic panels start around $200-300, while comprehensive tests like DUTCH or organic acids range from $350-500. We're transparent about costs before ordering."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are functional medicine tests scientifically valid?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We use tests from accredited, CLIA-certified laboratories that meet rigorous quality standards and are supported by peer-reviewed research."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I start with basic blood work or specialized testing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In most cases, we start with comprehensive basic blood work before specialized testing. This layered approach ensures we catch common issues first."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you work with my existing healthcare team?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. We're happy to share results and coordinate care with your family doctor, specialists, or other healthcare providers."
+          }
+        }
+      ]
+    }
+  </script>
+</BaseLayout>

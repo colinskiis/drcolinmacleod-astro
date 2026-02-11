@@ -1,0 +1,497 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import CTAButton from '../components/CTAButton.astro';
+---
+
+<BaseLayout
+  title="Wellness Blood Work in Halifax - Comprehensive Health Screening"
+  description="Comprehensive wellness blood work in Halifax including CBC, metabolic panel, lipids, blood sugar and inflammation markers. Proactive health screening without a family doctor requisition."
+  focusKeyword="wellness blood work Halifax"
+>
+  <HeroSection
+    title="Wellness Blood Work"
+    compact
+    image={{ src: "/images/lab-testing/wellness-baseline.webp", alt: "Patient during wellness consultation", aspect: "video" }}
+  >
+    <p>Proactive health screening catches problems <strong class="text-white">years before symptoms appear</strong>. Whether you're between doctors or simply want a deeper look at your health, we offer comprehensive blood work <strong class="text-white">without a family doctor requisition</strong>.</p>
+    <CTAButton slot="cta">Book Online</CTAButton>
+  </HeroSection>
+
+  <!-- Statistics -->
+  <section class="py-12 bg-white">
+    <div class="section-shell">
+      <div class="grid md:grid-cols-4 gap-8 text-center">
+        <div>
+          <div class="text-4xl font-bold text-emerald-700 mb-2">148K+</div>
+          <p class="text-gray-600 text-sm">Nova Scotians without a family doctor</p>
+        </div>
+        <div>
+          <div class="text-4xl font-bold text-emerald-700 mb-2">44%</div>
+          <p class="text-gray-600 text-sm">of Canadians have at least one chronic disease</p>
+        </div>
+        <div>
+          <div class="text-4xl font-bold text-emerald-700 mb-2">90%</div>
+          <p class="text-gray-600 text-sm">of heart disease risk is preventable with early detection</p>
+        </div>
+        <div>
+          <div class="text-4xl font-bold text-emerald-700 mb-2">50%</div>
+          <p class="text-gray-600 text-sm">of type 2 diabetes cases are diagnosed late</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Problem with Standard Testing -->
+  <section class="py-16 lg:py-24 bg-emerald-50">
+    <div class="section-shell">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-6">Why Routine Blood Work Isn't Enough</h2>
+        <div class="prose prose-lg text-gray-600 mb-8">
+          <p>
+            Annual blood work — when you can get it — typically includes only the basics: CBC and maybe a fasting glucose. But <strong>chronic diseases like diabetes, cardiovascular disease, and fatty liver develop silently for years</strong> before standard tests flag a problem.
+          </p>
+          <p>
+            By the time your fasting glucose is flagged as "high," insulin resistance has likely been building for a decade. By the time your cholesterol is concerning, arterial changes may already be underway. Proactive, comprehensive screening catches these trends early — when lifestyle changes and natural interventions are most effective.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 shadow-lg">
+          <h3 class="text-xl font-semibold text-emerald-950 mb-6">What Standard Screening Misses</h3>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-red-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <div>
+                <span class="font-medium text-emerald-950">Early insulin resistance</span>
+                <p class="text-sm text-gray-600">Fasting glucose stays normal until the problem is advanced</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-red-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <div>
+                <span class="font-medium text-emerald-950">Silent inflammation</span>
+                <p class="text-sm text-gray-600">hs-CRP reveals cardiovascular and systemic inflammation risk</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-red-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <div>
+                <span class="font-medium text-emerald-950">Liver stress</span>
+                <p class="text-sm text-gray-600">Fatty liver disease is often undetected until significant damage</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-red-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <div>
+                <span class="font-medium text-emerald-950">Optimal vs. normal ranges</span>
+                <p class="text-sm text-gray-600">"Normal" results may still indicate early dysfunction</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wellness Panel Detail Cards -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">The Comprehensive Wellness Panel</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          A thorough baseline that screens for the most common — and most preventable — health conditions.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- CBC -->
+        <div class="bg-emerald-50 rounded-2xl p-6">
+          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-white font-bold text-sm">CBC</span>
+          </div>
+          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Complete Blood Count</h3>
+          <p class="text-gray-600 text-sm mb-3">Your blood cell overview: red cells, white cells and platelets. Screens for anemia, infection, immune function and blood disorders.</p>
+          <div class="text-xs text-gray-500">
+            <span class="font-medium">Key markers:</span> Hemoglobin, WBC, RBC, MCV, platelets<br>
+            <span class="font-medium text-emerald-700">What we look for:</span> Patterns suggesting B12, iron or folate issues
+          </div>
+        </div>
+
+        <!-- Metabolic Panel -->
+        <div class="bg-emerald-50 rounded-2xl p-6">
+          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-white font-bold text-sm">CMP</span>
+          </div>
+          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Metabolic Panel</h3>
+          <p class="text-gray-600 text-sm mb-3">Kidney function, electrolytes and protein levels. Includes sodium, potassium, creatinine, eGFR and total protein — your body's internal chemistry snapshot.</p>
+          <div class="text-xs text-gray-500">
+            <span class="font-medium">Key markers:</span> Creatinine, eGFR, electrolytes<br>
+            <span class="font-medium text-emerald-700">What we look for:</span> Early kidney stress, dehydration patterns
+          </div>
+        </div>
+
+        <!-- Lipid Panel -->
+        <div class="bg-emerald-50 rounded-2xl p-6">
+          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-white font-bold text-sm">Lipid</span>
+          </div>
+          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Lipid Panel</h3>
+          <p class="text-gray-600 text-sm mb-3">Cardiovascular risk markers including total cholesterol, LDL, HDL and triglycerides. We also calculate important ratios that standard reports often omit.</p>
+          <div class="text-xs text-gray-500">
+            <span class="font-medium">Key markers:</span> Total-C, LDL, HDL, Triglycerides<br>
+            <span class="font-medium text-emerald-700">Key ratio:</span> TG:HDL ratio (insulin resistance indicator)
+          </div>
+        </div>
+
+        <!-- Blood Sugar -->
+        <div class="bg-emerald-50 rounded-2xl p-6">
+          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-white font-bold text-sm">A1C</span>
+          </div>
+          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Blood Sugar (HbA1c)</h3>
+          <p class="text-gray-600 text-sm mb-3">HbA1c shows your average blood sugar over 3 months — far more useful than a single fasting glucose. It catches pre-diabetes years before fasting glucose rises.</p>
+          <div class="text-xs text-gray-500">
+            <span class="font-medium">Standard range:</span> &lt;6.5% (diabetes cutoff)<br>
+            <span class="font-medium text-emerald-700">Optimal range:</span> 4.8–5.3%
+          </div>
+        </div>
+
+        <!-- Liver Function -->
+        <div class="bg-emerald-50 rounded-2xl p-6">
+          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-white font-bold text-sm">LFT</span>
+          </div>
+          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Liver Function</h3>
+          <p class="text-gray-600 text-sm mb-3">AST, ALT, GGT and bilirubin assess liver health. Non-alcoholic fatty liver disease affects an estimated 25% of Canadians — often without any symptoms.</p>
+          <div class="text-xs text-gray-500">
+            <span class="font-medium">Key markers:</span> ALT, AST, GGT, Bilirubin<br>
+            <span class="font-medium text-emerald-700">What we look for:</span> Ratios indicating fatty liver or toxin burden
+          </div>
+        </div>
+
+        <!-- Inflammation -->
+        <div class="bg-emerald-50 rounded-2xl p-6">
+          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-white font-bold text-sm">CRP</span>
+          </div>
+          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Inflammation (hs-CRP)</h3>
+          <p class="text-gray-600 text-sm mb-3">High-sensitivity C-reactive protein measures systemic inflammation — an independent risk factor for cardiovascular disease, diabetes and autoimmune conditions.</p>
+          <div class="text-xs text-gray-500">
+            <span class="font-medium">Standard range:</span> &lt;10 mg/L<br>
+            <span class="font-medium text-emerald-700">Optimal range:</span> &lt;1.0 mg/L
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deep Dive: Proactive Health -->
+  <section class="py-16 lg:py-24 bg-emerald-950">
+    <div class="section-shell">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-6">Your Health Shouldn't Depend on Having a Family Doctor</h2>
+          <div class="prose prose-lg prose-invert">
+            <p class="text-white/90">
+              With over 148,000 Nova Scotians on the family doctor waitlist and wait times stretching years into the future, many people have gone without routine blood work for far too long. <strong class="text-white">Conditions that could have been caught early are being diagnosed late</strong>, when intervention is harder and outcomes are worse.
+            </p>
+            <p class="text-white/90">
+              Even those with family physicians often find that annual blood work covers only the bare minimum. Markers like HbA1c, hs-CRP and liver enzymes are frequently skipped unless there's already a known problem — defeating the purpose of preventive screening.
+            </p>
+            <p class="text-white/90">
+              Comprehensive wellness blood work gives you a clear, actionable picture of your health right now — and a baseline to track changes over time.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur rounded-2xl p-8">
+          <h3 class="text-xl font-semibold text-white mb-6">Who Benefits Most from Wellness Blood Work?</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3 text-white/90">
+              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Anyone without a family doctor who hasn't had blood work in years</span>
+            </li>
+            <li class="flex items-start gap-3 text-white/90">
+              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Family history of heart disease, diabetes or cancer</span>
+            </li>
+            <li class="flex items-start gap-3 text-white/90">
+              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Unexplained fatigue, weight changes, or general feeling of being unwell</span>
+            </li>
+            <li class="flex items-start gap-3 text-white/90">
+              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Proactive individuals who want to track their health over time</span>
+            </li>
+            <li class="flex items-start gap-3 text-white/90">
+              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Those with existing conditions wanting more comprehensive monitoring</span>
+            </li>
+            <li class="flex items-start gap-3 text-white/90">
+              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Anyone turning 40+ who wants a thorough health baseline</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Symptoms / Signs -->
+  <section class="py-16 lg:py-24 bg-emerald-50">
+    <div class="section-shell">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Signs It's Time for Blood Work</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="bg-white rounded-2xl p-8 shadow-lg">
+          <h3 class="text-xl font-semibold text-emerald-950 mb-4">General Symptoms</h3>
+          <ul class="space-y-2">
+            {['Persistent fatigue or low energy', 'Unexplained weight gain or loss', 'Brain fog or poor concentration', 'Frequent infections or slow recovery', 'Joint pain or muscle aches'].map(symptom => (
+              <li class="flex items-center gap-2 text-gray-700">
+                <svg class="w-4 h-4 text-blue-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
+                {symptom}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 shadow-lg">
+          <h3 class="text-xl font-semibold text-emerald-950 mb-4">Risk Factors</h3>
+          <ul class="space-y-2">
+            {['No blood work in 2+ years', 'Family history of chronic disease', 'Sedentary lifestyle or high stress', 'Digestive issues or poor appetite', 'Taking medications that affect blood markers', 'Over 40 without recent comprehensive screening'].map(symptom => (
+              <li class="flex items-center gap-2 text-gray-700">
+                <svg class="w-4 h-4 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
+                {symptom}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nova Scotia Context -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-6">Blood Work Access in Nova Scotia</h2>
+        <div class="prose prose-lg text-gray-600">
+          <p>
+            Nova Scotia's healthcare system is under significant strain. With over <strong>148,000 residents on the family doctor waitlist</strong>, many people simply cannot access routine blood work through conventional channels. Even those with a family doctor often face:
+          </p>
+          <ul>
+            <li>Minimal annual panels that only check the basics</li>
+            <li>Reluctance to order "extra" markers like HbA1c or hs-CRP without existing diagnosis</li>
+            <li>Long wait times between appointments, making proactive screening difficult</li>
+            <li>No access to functional interpretation using optimal ranges</li>
+          </ul>
+          <p>
+            Through our practice, you can access <strong>comprehensive wellness blood work without a family doctor requisition</strong>. Results are reviewed in detail using optimal functional ranges, and we create actionable health plans based on your findings — not just "everything looks normal."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Getting Started -->
+  <section class="py-16 lg:py-24 bg-emerald-50">
+    <div class="section-shell">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Getting Started</h2>
+
+        <div class="bg-white rounded-2xl shadow-xl p-8 text-center">
+          <p class="text-gray-600 mb-6">Comprehensive wellness blood work includes CBC, metabolic panel, lipid panel, HbA1c, liver function and hs-CRP inflammation markers. Most extended health insurance plans cover naturopathic consultations.</p>
+          <a
+            href="https://macleodnaturopathic.janeapp.com/"
+            target="_blank"
+            class="bg-emerald-700 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-emerald-800 transition-colors shadow-lg inline-flex items-center justify-center"
+          >
+            Book Online
+            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
+
+        <div class="space-y-4">
+          <details class="bg-emerald-50 rounded-xl shadow-md group">
+            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+              <span class="font-semibold text-emerald-950">Can I get blood work without a family doctor?</span>
+              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              Yes. As a naturopathic doctor, I can order comprehensive blood work directly. You don't need a family doctor referral or requisition to access testing through our practice.
+            </div>
+          </details>
+
+          <details class="bg-emerald-50 rounded-xl shadow-md group">
+            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+              <span class="font-semibold text-emerald-950">Is wellness blood work covered by MSI?</span>
+              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              Testing ordered through a naturopathic doctor is not covered by MSI. However, many extended health plans cover naturopathic services including consultations. The lab testing itself is an out-of-pocket expense, but provides access to a far more comprehensive panel than what's typically available through conventional channels.
+            </div>
+          </details>
+
+          <details class="bg-emerald-50 rounded-xl shadow-md group">
+            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+              <span class="font-semibold text-emerald-950">Do I need to fast before blood work?</span>
+              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              Yes, a 10–12 hour fast is recommended for the most accurate lipid and blood sugar results. Water and black coffee are fine. We recommend booking morning blood draws for convenience. Specific instructions will be provided when you book.
+            </div>
+          </details>
+
+          <details class="bg-emerald-50 rounded-xl shadow-md group">
+            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+              <span class="font-semibold text-emerald-950">How often should I get wellness blood work?</span>
+              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              For most adults, annual comprehensive blood work is ideal. If we identify areas that need attention, we may retest specific markers at 3–6 month intervals to track progress. Those with known risk factors or active health concerns may benefit from more frequent monitoring.
+            </div>
+          </details>
+
+          <details class="bg-emerald-50 rounded-xl shadow-md group">
+            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+              <span class="font-semibold text-emerald-950">Will you share results with my family doctor?</span>
+              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              Absolutely. If you have a family doctor and would like your results shared, we're happy to provide a copy. Collaborative care leads to better outcomes, and we work alongside your existing healthcare providers — not in place of them.
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 lg:py-24 bg-emerald-950">
+    <div class="section-shell">
+      <div class="text-center max-w-3xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-6">Take Control of Your Health</h2>
+        <p class="text-lg text-white/90 mb-8">
+          Don't wait for symptoms to become serious. Comprehensive blood work gives you the information you need to make smarter health decisions — starting today.
+        </p>
+        <a
+          href="https://macleodnaturopathic.janeapp.com/"
+          target="_blank"
+          class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center"
+        >
+          Book Online
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Pages -->
+  <section class="py-12 bg-white border-t border-gray-100">
+    <div class="section-shell">
+      <div class="max-w-4xl mx-auto">
+        <h3 class="text-lg font-semibold text-emerald-950 mb-4 text-center">Related Testing</h3>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="/lab-testing" class="text-emerald-700 hover:text-emerald-800 font-medium">&larr; All Lab Testing Services</a>
+          <span class="text-gray-300">|</span>
+          <a href="/nutrient-testing" class="text-emerald-700 hover:text-emerald-800 font-medium">Nutrient Testing &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I get blood work without a family doctor in Nova Scotia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. As a naturopathic doctor, I can order comprehensive blood work directly. You don't need a family doctor referral or requisition."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is wellness blood work covered by MSI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Testing ordered through a naturopathic doctor is not covered by MSI. However, many extended health plans cover naturopathic services including consultations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to fast before blood work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, a 10-12 hour fast is recommended for the most accurate lipid and blood sugar results. Water and black coffee are fine."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often should I get wellness blood work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For most adults, annual comprehensive blood work is ideal. If areas need attention, we may retest specific markers at 3-6 month intervals."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will you share results with my family doctor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. If you have a family doctor and would like results shared, we're happy to provide a copy. We work alongside your existing healthcare providers."
+          }
+        }
+      ]
+    }
+  </script>
+</BaseLayout>
