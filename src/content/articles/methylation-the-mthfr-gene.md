@@ -3,9 +3,11 @@ title: "MTHFR Gene Testing: What You Actually Need to Know"
 description: "MTHFR gene variants are common and often overhyped on social media. Learn when genetic testing is helpful, when it isn't, and what evidence-based medicine says about methylation."
 publishDate: 2015-07-07
 modifiedDate: 2026-01-09
+author: "Dr. Colin MacLeod ND"
 heroImage: "/images/charts/methylation-mthfr-brain-mind.webp"
 categories: ["Naturopathic"]
 tags: ["naturopathic", "genetic testing", "methylation"]
+featured: false
 seo:
   description: "Evidence-based guide to MTHFR gene testing. Learn when genetic testing is helpful, when it isn't, and what the research actually shows about methylation."
   focusKeyword: "MTHFR gene testing"
@@ -101,7 +103,7 @@ If you're concerned about methylation, start with a homocysteine blood test. If 
 
 ## Methylation and Genetic Testing in Halifax
 
-If you have questions about methylation, homocysteine levels, or whether genetic testing might be appropriate for your situation, please contact MacLeod Naturopathic to book an initial visit. Dr. MacLeod offers comprehensive [lab testing services](/lab-testing) and can help you navigate this topic with an evidence-based approach. Dr. MacLeod has completed formal training with Dr. Ben Lynch ND, an expert in the field of methylation.
+If you have questions about methylation, homocysteine levels, or whether genetic testing might be appropriate for your situation, please contact Dr. Colin MacLeod ND to book an initial visit. Dr. MacLeod offers comprehensive [lab testing services](/lab-testing) and can help you navigate this topic with an evidence-based approach. Dr. MacLeod has completed formal training with Dr. Ben Lynch ND, an expert in the field of methylation.
 
 ### References
 

@@ -92,7 +92,7 @@ Quality sleep is genuinely important for health, and the growing attention to sl
 
 ## Sleep Support in Halifax
 
-If you're struggling with sleep and want an evidence-based approach to identifying and addressing the underlying causes, please contact MacLeod Naturopathic to book an initial visit. Dr. MacLeod can help evaluate factors affecting your sleep and develop a personalized plan combining lifestyle modifications, natural therapies, and appropriate testing when indicated.
+If you're struggling with sleep and want an evidence-based approach to identifying and addressing the underlying causes, please contact Dr. Colin MacLeod ND to book an initial visit. Dr. MacLeod can help evaluate factors affecting your sleep and develop a personalized plan combining lifestyle modifications, natural therapies, and appropriate testing when indicated.
 
 ### References
 

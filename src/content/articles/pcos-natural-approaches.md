@@ -193,7 +193,7 @@ Conventional treatments including metformin, oral contraceptives, and fertility 
 
 PCOS is complex, but it responds well to a comprehensive approach that addresses the underlying metabolic dysfunction rather than just treating symptoms. Through careful assessment of your individual presentation, targeted dietary and lifestyle recommendations, appropriate supplementation, and ongoing support, significant improvement is possible for most women.
 
-If you are struggling with PCOS and would like to explore naturopathic approaches, please contact MacLeod Naturopathic to book an initial appointment. Dr. MacLeod offers comprehensive hormonal health assessments and individualized treatment plans for women with PCOS and other hormonal conditions.
+If you are struggling with PCOS and would like to explore naturopathic approaches, please contact Dr. Colin MacLeod ND to book an initial appointment. Dr. MacLeod offers comprehensive hormonal health assessments and individualized treatment plans for women with PCOS and other hormonal conditions.
 
 ## References
 

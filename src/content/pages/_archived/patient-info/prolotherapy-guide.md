@@ -1,6 +1,6 @@
 ---
 title: "Prolotherapy Patient Guide" 
-description: "Complete guide to prolotherapy treatment at MacLeod Naturopathic"
+description: "Complete guide to prolotherapy treatment with Dr. Colin MacLeod ND"
 ---
 
 # Prolotherapy Patient Information

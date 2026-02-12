@@ -7,6 +7,7 @@ author: "Dr. Colin MacLeod ND"
 heroImage: "/images/general/weight-management-balance.webp"
 categories: ["Naturopathic", "Weight Management"]
 tags: ["weight loss", "metabolism", "nutrition", "lifestyle", "Halifax"]
+featured: false
 seo:
   title: "Natural Weight Management | Halifax Naturopathic Doctor"
   description: "Evidence-based natural approaches to weight management including metabolic health optimization, appetite regulation, and sustainable lifestyle strategies."
@@ -183,7 +184,7 @@ Better markers of progress include how clothes fit, waist circumference, energy 
 
 Sustainable weight management is rarely about simply eating less—it requires understanding and addressing the factors that drive weight gain and make weight loss difficult. Metabolic health, hormonal balance, sleep, stress, and gut health all play important roles.
 
-If you're interested in a comprehensive naturopathic approach to weight management that addresses root causes rather than just calories, please contact MacLeod Naturopathic to book an initial consultation. Dr. MacLeod provides thorough assessments, appropriate testing, and individualized treatment plans. Learn more about our [clinical nutrition services](/clinical-nutrition).
+If you're interested in a comprehensive naturopathic approach to weight management that addresses root causes rather than just calories, please contact Dr. Colin MacLeod ND to book an initial consultation. Dr. MacLeod provides thorough assessments, appropriate testing, and individualized treatment plans. Learn more about our [clinical nutrition services](/clinical-nutrition).
 
 ## References
 

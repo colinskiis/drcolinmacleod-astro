@@ -7,6 +7,7 @@ author: "Dr. Colin MacLeod ND"
 heroImage: "/images/treatments/lead-toxicity2.webp"
 categories: ["Naturopathic"]
 tags: ["naturopathic"]
+featured: false
 seo:
   description: "Lead toxicity is a common disease which can be difficult to recognize. Chelation treatment and lead avoidance are the two essential weapons against lead."
   focusKeyword: "lead"
@@ -65,7 +66,7 @@ There are a few important ways to reduce your exposure to lead, including avoidi
 If you are in the Halifax area you can contact Halifax Water<sup>23</sup> to have your drinking water tested for the presence of heavy metals.
 
 ## Chelation Therapy in Halifax
-If you are interested in receiving chelation therapy and are located in the Halifax area, please contact MacLeod Naturopathic to book an initial naturopathic visit with Dr. MacLeod to discuss your options.
+If you are interested in receiving chelation therapy and are located in the Halifax area, please contact Dr. Colin MacLeod ND to book an initial naturopathic visit with Dr. MacLeod to discuss your options.
 
 ## Related Resources
 

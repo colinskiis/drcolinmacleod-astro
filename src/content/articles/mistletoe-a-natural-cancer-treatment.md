@@ -7,6 +7,7 @@ author: "Dr. Colin MacLeod ND"
 heroImage: "/images/treatments/mistletoe-viscum-album.webp"
 categories: ["Naturopathic"]
 tags: ["naturopathic"]
+featured: false
 seo:
   description: "Mistletoe extract injections are a natural cancer treatment helpful in improving quality of life and survival in most types of cancer while being very safe."
   focusKeyword: "mistletoe"
@@ -64,7 +65,7 @@ Interest in mistletoe therapy has expanded in North America, with growing recogn
 
 ## Mistletoe Therapy in Halifax
 
-Mistletoe injections in the treatment of cancer are a viable adjunctive natural treatment option to conventional chemotherapy, radiation therapy and/or surgical treatment. If you are in the Halifax area and are interested in trying this treatment please contact MacLeod Naturopathic to book an initial consultation. Learn more about our [herbal medicine services](/herbal-medicine).
+Mistletoe injections in the treatment of cancer are a viable adjunctive natural treatment option to conventional chemotherapy, radiation therapy and/or surgical treatment. If you are in the Halifax area and are interested in trying this treatment please contact Dr. Colin MacLeod ND to book an initial consultation. Learn more about our [herbal medicine services](/herbal-medicine).
 
 ### References
 

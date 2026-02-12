@@ -245,7 +245,7 @@ Testing that may be helpful includes comprehensive stool analysis to assess micr
 
 If you are struggling with IBS, IBD, or other digestive concerns, naturopathic medicine offers effective approaches to identify and address underlying factors. Through comprehensive assessment, dietary guidance, targeted supplementation, and ongoing support, significant improvement is possible for most patients.
 
-Please contact MacLeod Naturopathic to book an initial appointment. Dr. MacLeod provides thorough digestive health assessments and individualized treatment plans, working collaboratively with gastroenterologists and other healthcare providers when appropriate.
+Please contact Dr. Colin MacLeod ND to book an initial appointment. Dr. MacLeod provides thorough digestive health assessments and individualized treatment plans, working collaboratively with gastroenterologists and other healthcare providers when appropriate.
 
 ## References
 

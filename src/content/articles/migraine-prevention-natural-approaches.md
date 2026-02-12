@@ -129,7 +129,7 @@ Many of my patients who initially felt hopeless about their migraines have achie
 
 ## Migraine Support in Halifax
 
-If you are struggling with migraines and looking for a comprehensive, natural approach to prevention, please contact MacLeod Naturopathic to book an initial visit. Through detailed assessment, identification of your individual triggers and contributing factors, and a personalized treatment plan incorporating clinical nutrition, herbal medicine, acupuncture, and lifestyle modification, we can work together to reduce your migraine burden and improve your quality of life.
+If you are struggling with migraines and looking for a comprehensive, natural approach to prevention, please contact Dr. Colin MacLeod ND to book an initial visit. Through detailed assessment, identification of your individual triggers and contributing factors, and a personalized treatment plan incorporating clinical nutrition, herbal medicine, acupuncture, and lifestyle modification, we can work together to reduce your migraine burden and improve your quality of life.
 
 For more information about naturopathic approaches to migraine and headache treatment, please visit my [migraine and headache conditions page](/migraine-headache).
 

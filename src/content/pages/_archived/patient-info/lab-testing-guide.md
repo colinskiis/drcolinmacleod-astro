@@ -1,6 +1,6 @@
 ---
 title: "Lab Testing Preparation Guide"
-description: "How to prepare for your laboratory tests at MacLeod Naturopathic"
+description: "How to prepare for your laboratory tests with Dr. Colin MacLeod ND"
 ---
 
 # Preparing for Your Lab Tests

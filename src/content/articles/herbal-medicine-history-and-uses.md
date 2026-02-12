@@ -7,6 +7,7 @@ author: "Dr. Colin MacLeod ND"
 heroImage: "/images/nutrition/herbal-medicine-2.webp"
 categories: ["Naturopathic", "Herbal Medicine"]
 tags: ["herbal medicine", "botanical medicine", "natural remedies", "Halifax"]
+featured: false
 seo:
   title: "Herbal Medicine Guide | Halifax Naturopathic Doctor"
   description: "A comprehensive guide to herbal medicine covering its rich history, scientific basis, evidence-based applications, and safe usage principles."
@@ -167,7 +168,7 @@ The best outcomes typically come from addressing root causes (diet, lifestyle, u
 
 Herbal medicine offers powerful tools for supporting health—tools refined over millennia and increasingly validated by modern research. When used appropriately, herbs can address numerous conditions safely and effectively.
 
-If you're interested in exploring herbal medicine for your health concerns, please contact MacLeod Naturopathic to book an initial consultation. Dr. MacLeod is trained in botanical medicine and can assess your situation, recommend appropriate herbs, and monitor your progress. Learn more about our [herbal medicine services](/herbal-medicine).
+If you're interested in exploring herbal medicine for your health concerns, please contact Dr. Colin MacLeod ND to book an initial consultation. Dr. MacLeod is trained in botanical medicine and can assess your situation, recommend appropriate herbs, and monitor your progress. Learn more about our [herbal medicine services](/herbal-medicine).
 
 ## References
 

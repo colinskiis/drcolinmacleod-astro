@@ -3,6 +3,7 @@ title: "Berberine: The 'Nature's Ozempic' Claim Examined"
 description: "Berberine has gone viral on TikTok as 'nature's Ozempic.' Here's what the research actually shows about berberine for blood sugar, weight loss, and metabolic health."
 publishDate: 2024-07-23
 modifiedDate: 2026-01-09
+author: "Dr. Colin MacLeod ND"
 heroImage: "/images/treatments/berberine-blood-sugar.webp"
 categories: ["Naturopathic", "Herbal Medicine"]
 tags: ["berberine", "blood sugar", "weight loss", "metabolic health", "naturopathic"]
@@ -82,7 +83,7 @@ The most effective approach to metabolic health remains appropriate diet for you
 
 ## Metabolic Health Support in Halifax
 
-If you're interested in berberine or looking for evidence-based support for blood sugar management, metabolic health, or weight concerns, please contact MacLeod Naturopathic to book an initial visit. Dr. MacLeod provides [herbal medicine consultations](/herbal-medicine) and can help determine whether berberine is appropriate for your situation and how it might fit into a comprehensive treatment plan.
+If you're interested in berberine or looking for evidence-based support for blood sugar management, metabolic health, or weight concerns, please contact Dr. Colin MacLeod ND to book an initial visit. Dr. MacLeod provides [herbal medicine consultations](/herbal-medicine) and can help determine whether berberine is appropriate for your situation and how it might fit into a comprehensive treatment plan.
 
 ### References
 

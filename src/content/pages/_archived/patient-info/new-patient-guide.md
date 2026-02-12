@@ -1,11 +1,11 @@
 ---
 title: "New Patient Guide"
-description: "Essential information for new patients at MacLeod Naturopathic"
+description: "Essential information for new patients of Dr. Colin MacLeod ND"
 ---
 
 # New Patient Guide
 
-Welcome to MacLeod Naturopathic! This guide will help you prepare for your first visit and understand what to expect from your naturopathic care.
+Welcome to Dr. Colin MacLeod ND! This guide will help you prepare for your first visit and understand what to expect from your naturopathic care.
 
 ## Before Your First Visit
 

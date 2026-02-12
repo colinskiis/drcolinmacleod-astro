@@ -191,7 +191,7 @@ Clearing hormonal acne requires addressing root causes rather than just treating
 
 While this approach requires more effort than applying a topical cream, the results are often more lasting and come with additional benefits for overall health.
 
-If you are struggling with hormonal acne and would like to explore naturopathic approaches, please contact MacLeod Naturopathic to book an initial appointment. Dr. MacLeod offers comprehensive hormonal assessments and individualized treatment plans for hormonal acne and other skin conditions.
+If you are struggling with hormonal acne and would like to explore naturopathic approaches, please contact Dr. Colin MacLeod ND to book an initial appointment. Dr. MacLeod offers comprehensive hormonal assessments and individualized treatment plans for hormonal acne and other skin conditions.
 
 ## References
 

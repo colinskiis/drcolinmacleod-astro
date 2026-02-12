@@ -3,9 +3,11 @@ title: "Creatine: Beyond Muscle Building"
 description: "Creatine was named 'supplement of the year' for 2025. Learn about the emerging research on creatine for brain health, women's health, and benefits beyond the gym."
 publishDate: 2024-08-17
 modifiedDate: 2026-01-09
+author: "Dr. Colin MacLeod ND"
 heroImage: "/images/nutrition/creatine-brain-muscle.webp"
 categories: ["Naturopathic", "Sports Medicine"]
 tags: ["creatine", "brain health", "women's health", "supplements", "naturopathic"]
+featured: false
 seo:
   description: "Evidence-based guide to creatine benefits beyond muscle. Learn about creatine for brain health, cognitive function, women's health, and menopause."
   focusKeyword: "creatine benefits"
@@ -87,7 +89,7 @@ For most people, creatine is safe, affordable, and backed by decades of research
 
 ## Creatine and Sports Medicine in Halifax
 
-If you're interested in learning whether creatine supplementation might benefit your specific situation, or if you have questions about optimizing your athletic performance and recovery, please contact MacLeod Naturopathic to book an initial visit. Dr. MacLeod provides [sports medicine services](/sports-medicine) and works with athletes and active individuals to develop evidence-based supplementation and training strategies.
+If you're interested in learning whether creatine supplementation might benefit your specific situation, or if you have questions about optimizing your athletic performance and recovery, please contact Dr. Colin MacLeod ND to book an initial visit. Dr. MacLeod provides [sports medicine services](/sports-medicine) and works with athletes and active individuals to develop evidence-based supplementation and training strategies.
 
 ### References
 

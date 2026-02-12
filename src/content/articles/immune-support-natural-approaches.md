@@ -3,9 +3,11 @@ title: "Strengthening Your Immune System Naturally"
 description: "The immune system is a complex network that can be supported through proper nutrition, lifestyle factors, and naturopathic treatments including IV therapy."
 publishDate: 2024-01-30
 modifiedDate: 2024-12-03
+author: "Dr. Colin MacLeod ND"
 heroImage: "/images/general/immune-health.webp"
 categories: ["Naturopathic", "Immune Health"]
 tags: ["immune system", "vitamin D", "IV therapy", "naturopathic"]
+featured: false
 seo:
   description: "Natural approaches to immune health including key nutrients, lifestyle factors, and IV therapy for optimal immune function."
   focusKeyword: "natural immune support"
@@ -47,7 +49,7 @@ If you experience frequent colds or infections, infections that linger or are di
 
 ## Immune Support in Halifax
 
-If you are interested in optimizing your immune function or are experiencing recurrent infections, please contact MacLeod Naturopathic to book an initial naturopathic visit to discuss your options. If you're struggling with fatigue following a viral illness, see our guide on [post-viral recovery with IV therapy](/articles/post-viral-recovery-iv-therapy).
+If you are interested in optimizing your immune function or are experiencing recurrent infections, please contact Dr. Colin MacLeod ND to book an initial naturopathic visit to discuss your options. If you're struggling with fatigue following a viral illness, see our guide on [post-viral recovery with IV therapy](/articles/post-viral-recovery-iv-therapy).
 
 ### References
 

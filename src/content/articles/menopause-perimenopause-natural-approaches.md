@@ -133,7 +133,7 @@ Menopause is a universal experience for women who live long enough, yet each wom
 
 The naturopathic approach recognizes this complexity. We work with each woman to understand her individual experience, identify the factors contributing to her symptoms, and develop a personalized plan that addresses both immediate comfort and long-term health. This may involve dietary modifications, targeted supplementation, herbal medicines, stress management strategies, and coordination with other healthcare providers when appropriate.
 
-For women in Halifax and throughout Nova Scotia seeking support for perimenopause or menopause, MacLeod Naturopathic offers comprehensive assessment and individualized care. We can evaluate hormonal status through [advanced laboratory testing](/lab-testing), provide guidance on [clinical nutrition](/clinical-nutrition) tailored to hormonal health, and prescribe appropriate [herbal medicines](/herbal-medicine) when indicated. The goal is to help women not merely survive this transition, but to emerge feeling healthy, vital, and empowered.
+For women in Halifax and throughout Nova Scotia seeking support for perimenopause or menopause, Dr. Colin MacLeod ND offers comprehensive assessment and individualized care. We can evaluate hormonal status through [advanced laboratory testing](/lab-testing), provide guidance on [clinical nutrition](/clinical-nutrition) tailored to hormonal health, and prescribe appropriate [herbal medicines](/herbal-medicine) when indicated. The goal is to help women not merely survive this transition, but to emerge feeling healthy, vital, and empowered.
 
 ---
 

@@ -151,7 +151,7 @@ Inhaled ozone is irritating to lung tissue due to it's fragility and susceptibil
 
 ### Are there side effects from ozone therapy?
 
-Side effects are not common with ozone therapy. The ozone treatments offered at MacLeod Naturopathic are administered at a controlled dose and rate to ensure optimal safety and side effects are rare. With this said it is possible to experience light headedness, low blood pressure, nausea or discomfort at the site of IV insertion. These issues are generally self limiting and pass within a short period of time.
+Side effects are not common with ozone therapy. The ozone treatments offered by Dr. Colin MacLeod ND are administered at a controlled dose and rate to ensure optimal safety and side effects are rare. With this said it is possible to experience light headedness, low blood pressure, nausea or discomfort at the site of IV insertion. These issues are generally self limiting and pass within a short period of time.
 
 ### What is the education or training for ozone therapy?
 

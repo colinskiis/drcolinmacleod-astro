@@ -161,7 +161,7 @@ Naturopathic care works well alongside conventional treatments when needed. If y
 
 Anxiety does not have to control your life. While it can feel overwhelming, anxiety is highly treatable, and most people can experience significant improvement with appropriate support. The key is addressing anxiety from multiple angles, including nervous system regulation, lifestyle factors, nutrition, and underlying physiological imbalances, rather than looking for a single quick fix.
 
-If you are struggling with anxiety and are interested in a comprehensive, natural approach to understanding and managing your symptoms, I invite you to book an initial visit at MacLeod Naturopathic. As a naturopathic doctor serving Halifax and the surrounding communities, I am committed to helping you identify the factors contributing to your anxiety and developing an individualized plan to support your mental health and overall wellbeing.
+If you are struggling with anxiety and are interested in a comprehensive, natural approach to understanding and managing your symptoms, I invite you to book an initial visit with Dr. Colin MacLeod ND. As a naturopathic doctor serving Halifax and the surrounding communities, I am committed to helping you identify the factors contributing to your anxiety and developing an individualized plan to support your mental health and overall wellbeing.
 
 ### References
 

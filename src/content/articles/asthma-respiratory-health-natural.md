@@ -207,7 +207,7 @@ Respiratory health is influenced by multiple factors including allergens, irrita
 
 For patients with well-controlled asthma seeking to reduce triggers and support respiratory health naturally, or those with suboptimal control looking for complementary approaches, naturopathic medicine offers evidence-based options. These approaches work alongside conventional care, not in place of it.
 
-If you are interested in exploring natural approaches to respiratory health, please contact MacLeod Naturopathic to book an initial appointment. Dr. MacLeod provides comprehensive assessments and individualized treatment plans for patients with asthma and other respiratory concerns, coordinating with family physicians and specialists as appropriate.
+If you are interested in exploring natural approaches to respiratory health, please contact Dr. Colin MacLeod ND to book an initial appointment. Dr. MacLeod provides comprehensive assessments and individualized treatment plans for patients with asthma and other respiratory concerns, coordinating with family physicians and specialists as appropriate.
 
 ## References
 

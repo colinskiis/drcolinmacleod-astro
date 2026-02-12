@@ -6,6 +6,7 @@ modifiedDate: 2022-07-12
 heroImage: "/images/general/athlete-sleep.webp"
 categories: ["Naturopathic"]
 tags: ["naturopathic"]
+featured: false
 seo:
   description: "Nutrition and training are front and centre in the minds of competitive athletes. However sleep is also an essential factor in performance optimization."
   focusKeyword: "Athlete"
@@ -61,7 +62,7 @@ Optimizing numbers of hours slept and sleep quality should be a goal near the to
 
 ## Halifax Athletic Performance
 
-If you are interested in improving athletic performance and are located in the Halifax area, please contact MacLeod Naturopathic to book an initial naturopathic visit with Dr. MacLeod to discuss your options. Learn more about our [sports medicine services](/sports-medicine) and [nutrients for athletic performance](/articles/nutrients-for-athletic-performance).
+If you are interested in improving athletic performance and are located in the Halifax area, please contact Dr. Colin MacLeod ND to book an initial naturopathic visit with Dr. MacLeod to discuss your options. Learn more about our [sports medicine services](/sports-medicine) and [nutrients for athletic performance](/articles/nutrients-for-athletic-performance).
 
 ### References
 

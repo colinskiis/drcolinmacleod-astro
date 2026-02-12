@@ -1,6 +1,6 @@
 ---
 title: "IV Therapy Patient Guide"
-description: "Complete guide to IV therapy treatments at MacLeod Naturopathic"
+description: "Complete guide to IV therapy treatments with Dr. Colin MacLeod ND"
 ---
 
 # IV Therapy Patient Information

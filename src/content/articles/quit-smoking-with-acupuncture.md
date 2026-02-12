@@ -6,6 +6,7 @@ modifiedDate: 2022-07-12
 heroImage: "/images/reference/services/acupuncture.webp"
 categories: ["Naturopathic"]
 tags: ["naturopathic"]
+featured: false
 seo:
   focusKeyword: "quit smoking acupuncture"
 ---
@@ -40,7 +41,7 @@ As far as conventional treatment for quitting smoking goes, nicotine replacement
 
 ## Acupuncture To Quit Smoking in Halifax
 
-If you are interested in receiving acupuncture to help quit smoking in the Halifax area, please contact MacLeod Naturopathic to book an initial naturopathic visit to discuss your options. Learn more about our [acupuncture services](/acupuncture).
+If you are interested in receiving acupuncture to help quit smoking in the Halifax area, please contact Dr. Colin MacLeod ND to book an initial naturopathic visit to discuss your options. Learn more about our [acupuncture services](/acupuncture).
 
 ### References
 

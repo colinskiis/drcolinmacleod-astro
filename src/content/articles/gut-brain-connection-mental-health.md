@@ -3,9 +3,11 @@ title: "The Gut-Brain Connection: How Your Digestive System Affects Mental Healt
 description: "The gut-brain axis is revolutionizing our understanding of mental health. Learn how your gut microbiome influences mood, anxiety, and cognitive function."
 publishDate: 2024-10-31
 modifiedDate: 2026-01-09
+author: "Dr. Colin MacLeod ND"
 heroImage: "/images/general/gut-brain-connection.webp"
 categories: ["Naturopathic", "Digestive Health", "Mental Health"]
 tags: ["gut-brain axis", "mental health", "microbiome", "digestive health", "naturopathic"]
+featured: false
 seo:
   description: "Evidence-based guide to the gut-brain connection. Learn how your gut microbiome affects mental health and what you can do to support both."
   focusKeyword: "gut brain connection"
@@ -129,7 +131,7 @@ An integrative approach might include dietary optimization for gut-brain health,
 
 ## Gut-Brain Support in Halifax
 
-If you're experiencing digestive symptoms alongside mood concerns, or if you're interested in optimizing your gut health for overall wellbeing, please contact MacLeod Naturopathic to book an initial visit.
+If you're experiencing digestive symptoms alongside mood concerns, or if you're interested in optimizing your gut health for overall wellbeing, please contact Dr. Colin MacLeod ND to book an initial visit.
 
 Dr. MacLeod offers comprehensive [digestive health](/articles/digestive-health-natural-approaches) assessment including stool testing and can help develop a personalized plan addressing both gut function and its effects on whole-body health.
 

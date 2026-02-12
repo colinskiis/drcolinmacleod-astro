@@ -6,6 +6,7 @@ modifiedDate: 2026-01-09
 heroImage: "/images/general/digestive-testing.webp"
 categories: ["Naturopathic", "Digestive Health"]
 tags: ["parasites", "digestive health", "gut health", "naturopathic"]
+featured: false
 seo:
   description: "Evidence-based guide to parasites in Canada. Learn when parasite testing is appropriate and why most people don't need a 'parasite cleanse.'"
   focusKeyword: "parasites Canada"
@@ -87,7 +88,7 @@ Address more common causes of your symptoms through comprehensive evaluation, an
 
 ## Parasite Testing and Digestive Health in Halifax
 
-If you're concerned about parasites or experiencing persistent digestive symptoms, please contact MacLeod Naturopathic to book an initial visit. Dr. MacLeod offers comprehensive [lab testing services](/lab-testing) including stool analysis and can help determine the actual cause of your symptoms rather than guessing based on social media trends.
+If you're concerned about parasites or experiencing persistent digestive symptoms, please contact Dr. Colin MacLeod ND to book an initial visit. Dr. MacLeod offers comprehensive [lab testing services](/lab-testing) including stool analysis and can help determine the actual cause of your symptoms rather than guessing based on social media trends.
 
 A thorough evaluation often reveals that symptoms attributed to parasites have entirely different, and very treatable, causes. Evidence-based naturopathic medicine means identifying what's actually going on in your body, not following internet fads.
 

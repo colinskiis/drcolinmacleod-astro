@@ -53,7 +53,7 @@ The research on neural prolotherapy is still in its infancy. One Korean clinical
 
 ## Neural Prolotherapy in Halifax
 
-If you are interested in having neural prolotherapy treatment and are in the Halifax area, contact MacLeod Naturopathic to book an initial consultation with Dr. MacLeod.
+If you are interested in having neural prolotherapy treatment and are in the Halifax area, contact Dr. Colin MacLeod ND to book an initial consultation with Dr. MacLeod.
 
 ### References
 

@@ -7,6 +7,7 @@ author: "Dr. Colin MacLeod ND"
 heroImage: "/images/general/hockey-player-performance.webp"
 categories: ["Naturopathic", "Athletic Performance"]
 tags: ["athletic performance", "sports nutrition", "IV therapy", "nutrients", "Halifax"]
+featured: false
 seo:
   description: "For competitive athletes, maximized nutrition, training and rest are essential for performance and health; but perfect nutrient status is rare in athletes."
   focusKeyword: "athletic performance nutrition"
@@ -87,7 +88,7 @@ Our athletic performance infusion treatment falls within the guidelines set by t
 
 ## Nutrient Infusions in Halifax
 
-If you are interested in receiving nutrient infusion treatments and are located in the Halifax area, please contact MacLeod Naturopathic to book an initial naturopathic visit to discuss your options. Learn more about our [IV therapy services](/iv-therapy).
+If you are interested in receiving nutrient infusion treatments and are located in the Halifax area, please contact Dr. Colin MacLeod ND to book an initial naturopathic visit to discuss your options. Learn more about our [IV therapy services](/iv-therapy).
 
 ### References
 

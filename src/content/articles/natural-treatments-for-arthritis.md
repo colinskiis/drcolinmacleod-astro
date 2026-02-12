@@ -3,9 +3,11 @@ title: "Arthritis: Understanding the Condition and Natural Treatment Options"
 description: "Comprehensive guide to osteoarthritis causes, why NSAIDs may accelerate joint damage, and effective natural alternatives including prolotherapy, acupuncture, and nutritional interventions."
 publishDate: 2015-11-27
 modifiedDate: 2024-12-06
+author: "Dr. Colin MacLeod ND"
 heroImage: "/images/conditions/knee-injury1.webp"
 categories: ["Pain Management", "Naturopathic"]
 tags: ["arthritis", "osteoarthritis", "joint pain", "prolotherapy", "acupuncture", "natural treatment"]
+featured: false
 seo:
   description: "Natural treatments for arthritis in Halifax. Learn why NSAIDs may worsen joint damage and discover effective alternatives including prolotherapy, prolozone, acupuncture, and nutritional support."
   focusKeyword: "natural arthritis treatment"
