@@ -179,6 +179,7 @@ import { Search as SearchIcon, X } from '@lucide/astro';
         this.clearResults();
         this.selectedIndex = -1;
         document.body.style.overflow = '';
+        searchToggle?.focus();
       };
 
       searchClose?.addEventListener('click', closeSearch);
@@ -194,6 +195,24 @@ import { Search as SearchIcon, X } from '@lucide/astro';
       document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && !searchOverlay?.classList.contains('hidden')) {
           closeSearch();
+        }
+      });
+
+      // Trap focus within search modal
+      searchOverlay?.addEventListener('keydown', (e) => {
+        if (e.key !== 'Tab') return;
+        const focusable = searchOverlay.querySelectorAll<HTMLElement>(
+          'button, input, a[href], [tabindex]:not([tabindex="-1"])'
+        );
+        if (focusable.length === 0) return;
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
         }
       });
 
