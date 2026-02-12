@@ -83,8 +83,6 @@ For athletes looking to optimize their performance through nutrition and lifesty
 
 ## Safe For All Athletes
 
-![Hockey player performance nutrition](/images/general/hockey-player-performance.webp)
-
 Our athletic performance infusion treatment falls within the guidelines set by the World Anti-Doping Agency and is safe for amateur and professional athletes alike.
 
 ## Nutrient Infusions in Halifax
