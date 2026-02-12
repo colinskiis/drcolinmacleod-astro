@@ -357,6 +357,8 @@ import { Search, X } from '@lucide/astro';
     }
   }
 
-  // Initialize search (runs once — header is persisted across page navigations)
-  new SiteSearch();
+  // Initialize search on page load (re-runs on View Transitions navigation)
+  function initSearch() { new SiteSearch(); }
+  initSearch();
+  document.addEventListener('astro:page-load', initSearch);
 </script>
