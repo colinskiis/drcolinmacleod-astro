@@ -288,24 +288,34 @@ const articleSchema = {
 
   <!-- Reading progress script -->
   <script>
-    function initReadingProgress() {
-      const bar = document.getElementById('reading-progress');
-      const article = document.querySelector('article');
-      if (!bar || !article) return;
+    let progressListener: ((e: Event) => void) | null = null;
 
-      function updateProgress() {
-        const articleTop = article.offsetTop;
-        const articleHeight = article.offsetHeight;
-        const scrolled = window.scrollY - articleTop;
-        const progress = Math.min(Math.max(scrolled / (articleHeight - window.innerHeight), 0), 1);
-        bar.style.width = (progress * 100) + '%';
+    function initReadingProgress() {
+      // Remove previous scroll listener if navigating between articles
+      if (progressListener) {
+        window.removeEventListener('scroll', progressListener);
+        progressListener = null;
       }
 
+      const bar = document.getElementById('reading-progress');
+      const article = document.querySelector('article') as HTMLElement | null;
+      if (!bar || !article) return;
+      const progressBar = bar;
+      const articleEl = article;
+
+      function updateProgress() {
+        const articleTop = articleEl.offsetTop;
+        const articleHeight = articleEl.offsetHeight;
+        const scrolled = window.scrollY - articleTop;
+        const progress = Math.min(Math.max(scrolled / (articleHeight - window.innerHeight), 0), 1);
+        progressBar.style.width = (progress * 100) + '%';
+      }
+
+      progressListener = updateProgress;
       window.addEventListener('scroll', updateProgress, { passive: true });
       updateProgress();
     }
 
-    initReadingProgress();
     document.addEventListener('astro:page-load', initReadingProgress);
   </script>
 

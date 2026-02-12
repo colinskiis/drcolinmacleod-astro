@@ -278,8 +278,8 @@ import HeroSection from '../components/HeroSection.astro';
 <script>
   // Form submission handling
   function initContactPage() {
-    const form = document.getElementById('contact-form');
-    const submitBtn = document.getElementById('submit-btn');
+    const form = document.getElementById('contact-form') as HTMLFormElement | null;
+    const submitBtn = document.getElementById('submit-btn') as HTMLButtonElement | null;
     const submitText = document.getElementById('submit-text');
     const submitLoading = document.getElementById('submit-loading');
     const formMessages = document.getElementById('form-messages');
@@ -289,10 +289,11 @@ import HeroSection from '../components/HeroSection.astro';
     // FAQ functionality
     const faqQuestions = document.querySelectorAll('.faq-question');
     faqQuestions.forEach(question => {
-      question.addEventListener('click', function() {
-        const answer = this.nextElementSibling;
-        const icon = this.querySelector('.faq-icon');
-        
+      question.addEventListener('click', () => {
+        const answer = question.nextElementSibling as HTMLElement | null;
+        const icon = question.querySelector('.faq-icon') as HTMLElement | null;
+        if (!answer) return;
+
         if (answer.classList.contains('hidden')) {
           // Close all other answers
           document.querySelectorAll('.faq-answer').forEach(a => a.classList.add('hidden'));
@@ -300,18 +301,20 @@ import HeroSection from '../components/HeroSection.astro';
           
           // Open this answer
           answer.classList.remove('hidden');
-          icon.classList.add('rotate-180');
+          icon?.classList.add('rotate-180');
         } else {
           answer.classList.add('hidden');
-          icon.classList.remove('rotate-180');
+          icon?.classList.remove('rotate-180');
         }
       });
     });
 
     // Form submission
-    form?.addEventListener('submit', function(e) {
+    if (!form || !submitBtn || !submitText || !submitLoading || !formMessages || !successMessage || !errorMessage) return;
+
+    form.addEventListener('submit', function(e) {
       e.preventDefault();
-      
+
       // Show loading state
       submitBtn.disabled = true;
       submitText.classList.add('hidden');
@@ -355,7 +358,6 @@ import HeroSection from '../components/HeroSection.astro';
     });
   }
 
-  initContactPage();
   document.addEventListener('astro:page-load', initContactPage);
 </script>
 

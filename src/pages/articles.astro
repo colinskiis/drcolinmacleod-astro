@@ -175,17 +175,17 @@ allCategories.forEach(cat => {
     const noResults = document.getElementById('no-results');
 
     categoryButtons.forEach(button => {
-      button.addEventListener('click', function() {
-        const category = this.dataset.category;
+      button.addEventListener('click', () => {
+        const category = (button as HTMLElement).dataset.category;
 
         // Update active button
         categoryButtons.forEach(btn => btn.classList.remove('active'));
-        this.classList.add('active');
+        button.classList.add('active');
 
         // Filter articles
         let visibleCount = 0;
         articleCards.forEach(card => {
-          const cardCategories = JSON.parse(card.dataset.categories || '[]');
+          const cardCategories = JSON.parse((card as HTMLElement).dataset.categories || '[]');
 
           if (category === 'all' || cardCategories.includes(category)) {
             card.classList.remove('hidden');
@@ -207,7 +207,7 @@ allCategories.forEach(cat => {
         if (category === 'all') {
           url.searchParams.delete('category');
         } else {
-          url.searchParams.set('category', category);
+          url.searchParams.set('category', category || '');
         }
         history.replaceState({}, '', url);
       });
@@ -219,11 +219,10 @@ allCategories.forEach(cat => {
     if (categoryParam) {
       const matchingButton = document.querySelector(`.category-btn[data-category="${categoryParam}"]`);
       if (matchingButton) {
-        matchingButton.click();
+        (matchingButton as HTMLElement).click();
       }
     }
   }
 
-  initArticleFilters();
   document.addEventListener('astro:page-load', initArticleFilters);
 </script>

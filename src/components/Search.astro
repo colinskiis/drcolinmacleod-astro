@@ -1,5 +1,5 @@
 ---
-import { Search, X } from '@lucide/astro';
+import { Search as SearchIcon, X } from '@lucide/astro';
 // Search component for site-wide search functionality
 ---
 
@@ -10,7 +10,7 @@ import { Search, X } from '@lucide/astro';
     aria-label="Search (Press Ctrl+K)"
     title="Search (Ctrl+K)"
   >
-    <Search class="w-5 h-5" aria-hidden="true" />
+    <SearchIcon class="w-5 h-5" aria-hidden="true" />
   </button>
 
   <!-- Search Overlay -->
@@ -44,7 +44,7 @@ import { Search, X } from '@lucide/astro';
               autocomplete="off"
               aria-describedby="search-help"
             >
-            <Search class="w-5 h-5 text-gray-400 absolute left-3 top-3.5" aria-hidden="true" />
+            <SearchIcon class="w-5 h-5 text-gray-400 absolute left-3 top-3.5" aria-hidden="true" />
           </div>
 
           <!-- Filter Buttons -->
@@ -95,12 +95,13 @@ import { Search, X } from '@lucide/astro';
   import Fuse from 'fuse.js';
 
   class SiteSearch {
+    fuse: any = null;
+    searchData: any[] = [];
+    currentFilter: string = 'all';
+    selectedIndex: number = -1;
+    resultLinks: HTMLElement[] = [];
+
     constructor() {
-      this.fuse = null;
-      this.searchData = [];
-      this.currentFilter = 'all';
-      this.selectedIndex = -1;
-      this.resultLinks = [];
       this.init();
     }
 
@@ -147,7 +148,7 @@ import { Search, X } from '@lucide/astro';
       const searchToggle = document.getElementById('search-toggle');
       const searchOverlay = document.getElementById('search-overlay');
       const searchClose = document.getElementById('search-close');
-      const searchInput = document.getElementById('search-input');
+      const searchInput = document.getElementById('search-input') as HTMLInputElement | null;
       const filterButtons = document.querySelectorAll('.search-filter');
 
       // Open search
@@ -273,7 +274,7 @@ import { Search, X } from '@lucide/astro';
 
       // Filter by type if needed
       if (this.currentFilter !== 'all') {
-        results = results.filter(result => {
+        results = results.filter((result: any) => {
           if (this.currentFilter === 'articles') {
             return result.item.type === 'article';
           } else if (this.currentFilter === 'services') {
@@ -357,8 +358,13 @@ import { Search, X } from '@lucide/astro';
     }
   }
 
-  // Initialize search on page load (re-runs on View Transitions navigation)
-  function initSearch() { new SiteSearch(); }
+  // Initialize search once (header persists across View Transitions)
+  let searchInitialized = false;
+  function initSearch() {
+    if (searchInitialized) return;
+    searchInitialized = true;
+    new SiteSearch();
+  }
   initSearch();
   document.addEventListener('astro:page-load', initSearch);
 </script>

@@ -76,7 +76,7 @@ If tracking your sleep is causing stress, consider taking breaks from monitoring
 
 ### Natural Sleep Supports
 
-Several natural approaches have evidence for sleep improvement, complementing [stress management techniques](/articles/3-tips-for-combating-stress). Magnesium may help with sleep, particularly in those who are deficient. Melatonin is most useful for circadian rhythm issues like jet lag or shift work rather than general insomnia. Herbal options including valerian root, passionflower, and L-theanine have varying degrees of evidence for sleep support.
+Several natural approaches have evidence for sleep improvement, complementing [stress management techniques](/articles/natural-anxiety-management). Magnesium may help with sleep, particularly in those who are deficient. Melatonin is most useful for circadian rhythm issues like jet lag or shift work rather than general insomnia. Herbal options including valerian root, passionflower, and L-theanine have varying degrees of evidence for sleep support.
 
 Supplements should complement, not replace, good sleep habits. They work best when the fundamentals are in place, and your naturopathic doctor can help determine what might be appropriate for your situation through our [herbal medicine services](/herbal-medicine).
 

@@ -324,13 +324,15 @@ const articleSchema = articleData ? JSON.stringify({
     </header>
 
     <script>
+      let menuListenerBound = false;
+
       function initMobileMenu() {
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
         const menuIcon = document.getElementById('menu-icon');
         const closeIcon = document.getElementById('close-icon');
 
-        // Close menu on page navigation
+        // Close menu on page navigation (always runs)
         if (mobileMenu) {
           mobileMenu.style.maxHeight = '0';
           mobileMenu.style.opacity = '0';
@@ -338,6 +340,10 @@ const articleSchema = articleData ? JSON.stringify({
         menuIcon?.classList.remove('hidden');
         closeIcon?.classList.add('hidden');
         mobileMenuButton?.setAttribute('aria-expanded', 'false');
+
+        // Only bind click listener once (header persists)
+        if (menuListenerBound) return;
+        menuListenerBound = true;
 
         mobileMenuButton?.addEventListener('click', () => {
           const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
@@ -441,15 +447,20 @@ const articleSchema = articleData ? JSON.stringify({
         reveals.forEach(el => observer.observe(el));
       }
 
+      let scrollListenerBound = false;
       function initHeaderScroll() {
+        if (scrollListenerBound) return;
+        scrollListenerBound = true;
+
         const header = document.getElementById('site-header');
         if (!header) return;
+        const headerEl = header;
 
         function onScroll() {
           if (window.scrollY > 20) {
-            header.classList.add('scrolled');
+            headerEl.classList.add('scrolled');
           } else {
-            header.classList.remove('scrolled');
+            headerEl.classList.remove('scrolled');
           }
         }
 

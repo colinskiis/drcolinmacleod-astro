@@ -55,7 +55,7 @@ The herb should be avoided during pregnancy due to safety concerns. Rare cases o
 
 ## Rhodiola: The Energy Adaptogen
 
-Rhodiola (*Rhodiola rosea*) has a long history of use in Russian and Scandinavian traditional medicine for fatigue, weakness, and stress. I've written about [Rhodiola's benefits for stress and fatigue](/articles/herbal-spotlight-rhodiola) previously, but let's review the key findings.
+Rhodiola (*Rhodiola rosea*) has a long history of use in Russian and Scandinavian traditional medicine for fatigue, weakness, and stress. I've written about Rhodiola's benefits for stress and fatigue previously, but let's review the key findings.
 
 ### What the Research Shows
 

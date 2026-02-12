@@ -51,7 +51,7 @@ Hormonal factors are particularly significant for women, who experience migraine
 
 Sleep disturbances are among the most consistent migraine triggers. Both too little and too much sleep can provoke attacks. Irregular sleep schedules, such as sleeping late on weekends, often trigger migraines. As I discussed in my article on [sleep optimization](/articles/sleep-optimization-evidence-based-strategies), maintaining consistent sleep and wake times is one of the most practical recommendations for health, and this is particularly true for migraine prevention.
 
-Stress is perhaps the most commonly reported trigger, though it is often during the let-down period after stress rather than during the stressful event itself that migraines occur. This explains the phenomenon of weekend or vacation migraines. Managing stress effectively is crucial, and I have written about [natural approaches to stress management](/articles/3-tips-for-combating-stress) that can help.
+Stress is perhaps the most commonly reported trigger, though it is often during the let-down period after stress rather than during the stressful event itself that migraines occur. This explains the phenomenon of weekend or vacation migraines. Managing stress effectively is crucial, and I have written about [natural approaches to stress management](/articles/natural-anxiety-management) that can help.
 
 Environmental factors include weather changes, particularly drops in barometric pressure, which affect many migraine sufferers in Nova Scotia where our maritime climate brings frequent weather fluctuations. Bright or flickering lights, strong odors such as perfumes, cleaning products, or cigarette smoke, and loud noises can all trigger attacks.
 

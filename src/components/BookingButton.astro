@@ -52,8 +52,9 @@ const widthClass = fullWidth ? 'w-full' : '';
 
 <script>
   // Track booking button clicks via event delegation (works with View Transitions)
+  declare function gtag(...args: any[]): void;
   document.addEventListener('click', function(e) {
-    const button = e.target.closest('.booking-btn');
+    const button = (e.target as HTMLElement)?.closest('.booking-btn');
     if (!button) return;
 
     const source = button.getAttribute('data-booking-source');

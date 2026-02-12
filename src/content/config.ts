@@ -5,6 +5,7 @@ const articles = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
+    draft: z.boolean().default(false),
     publishDate: z.date(),
     modifiedDate: z.date().optional(),
     author: z.string().default('Dr. Colin MacLeod ND'),
