@@ -175,11 +175,11 @@ const faqSchema = {
   <!-- Values Strip -->
   <section class="py-20 sm:py-24 lg:py-28 bg-emerald-50">
     <div class="section-shell">
-        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4 reveal">
           <p class="inline-block px-4 py-1.5 rounded-full bg-emerald-100 text-emerald-800 text-sm font-medium tracking-wide uppercase">About our clinic</p>
           <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-medium text-emerald-900 leading-[1.2]">Elevate your health<br />Address the cause</h2>
         </div>
-        <div class="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div class="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-4 reveal reveal-delay-100">
           <div class="bg-white rounded-2xl px-6 py-8 flex flex-col items-center text-center shadow-sm">
             <div class="mb-6 text-emerald-700">
               <Sprout class="w-12 h-12" strokeWidth={1.5} aria-hidden="true" />
@@ -219,7 +219,7 @@ const faqSchema = {
   <section class="py-16 lg:py-20 bg-white">
     <div class="section-shell">
       <!-- Desktop: 4-column grid with row dividers -->
-      <div class="hidden lg:block">
+      <div class="hidden lg:block reveal">
         <!-- Row 1: Blood Tests -->
         <div class="grid grid-cols-5 gap-x-8 py-5 border-b border-emerald-200/60 items-center">
           <a href="/lab-testing" class="group inline-flex justify-center px-6 py-2 rounded-full border border-emerald-300/50 bg-emerald-50/50 hover:bg-emerald-100 hover:border-emerald-400 transition-all">
@@ -273,7 +273,7 @@ const faqSchema = {
       </div>
 
       <!-- Mobile: Single column with large text -->
-      <div class="lg:hidden space-y-12 px-4">
+      <div class="lg:hidden space-y-12 px-4 reveal">
         <div class="space-y-5">
           <a href="/lab-testing" class="group inline-flex items-center gap-3">
             <h2 class="text-4xl font-serif font-semibold text-emerald-900 tracking-tight border-b-2 border-emerald-400 pb-1 group-hover:text-emerald-700 transition-colors">Blood Tests</h2>
@@ -319,11 +319,11 @@ const faqSchema = {
   <!-- Services Grid (from current homepage) -->
   <section class="py-24 lg:py-32 bg-stone-100">
     <div class="section-shell">
-      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4 reveal">
         <h2 class="text-4xl sm:text-5xl font-serif font-medium text-emerald-950 tracking-tight">Services</h2>
         <p class="text-lg text-slate-600 max-w-2xl mx-auto">Comprehensive natural healthcare solutions tailored to your unique needs.</p>
       </div>
-      <div class="grid gap-8 sm:gap-10 md:grid-cols-2 lg:grid-cols-3">
+      <div class="grid gap-8 sm:gap-10 md:grid-cols-2 lg:grid-cols-3 reveal reveal-delay-100">
         {[
           {
             title: 'IV Therapy',
@@ -391,11 +391,11 @@ const faqSchema = {
   <!-- FAQ (from current homepage) -->
   <section class="py-24 lg:py-32 bg-white">
     <div class="section-shell">
-      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4 reveal">
         <p class="text-emerald-800 font-medium tracking-widest uppercase text-sm">Common Questions</p>
         <h2 class="text-4xl sm:text-5xl font-serif font-medium text-emerald-950">FAQ</h2>
       </div>
-      <div class="max-w-3xl mx-auto space-y-6">
+      <div class="max-w-3xl mx-auto space-y-6 reveal reveal-delay-100">
             <details class="group bg-white rounded-2xl shadow-sm border border-emerald-100/50 overflow-hidden transition-all duration-300 hover:shadow-md open:shadow-lg open:ring-1 open:ring-emerald-500/20">
               <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
                 <h3 class="text-xl font-medium text-emerald-950 pr-8">What makes naturopathic medicine different?</h3>

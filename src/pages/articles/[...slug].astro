@@ -97,6 +97,9 @@ const articleSchema = {
   description={seoDescription}
   focusKeyword={focusKeyword}
 >
+  <!-- Reading Progress Bar -->
+  <div id="reading-progress" class="fixed top-0 left-0 h-[3px] bg-emerald-500 z-50 transition-[width] duration-75 ease-out" style="width: 0%"></div>
+
   <!-- Article Header -->
   <article class="py-16 lg:py-24 bg-white">
     <div class="section-shell">
@@ -282,6 +285,29 @@ const articleSchema = {
       </div>
     </div>
   </section>
+
+  <!-- Reading progress script -->
+  <script>
+    function initReadingProgress() {
+      const bar = document.getElementById('reading-progress');
+      const article = document.querySelector('article');
+      if (!bar || !article) return;
+
+      function updateProgress() {
+        const articleTop = article.offsetTop;
+        const articleHeight = article.offsetHeight;
+        const scrolled = window.scrollY - articleTop;
+        const progress = Math.min(Math.max(scrolled / (articleHeight - window.innerHeight), 0), 1);
+        bar.style.width = (progress * 100) + '%';
+      }
+
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      updateProgress();
+    }
+
+    initReadingProgress();
+    document.addEventListener('astro:page-load', initReadingProgress);
+  </script>
 
   <!-- BreadcrumbList Schema for AI discoverability -->
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />

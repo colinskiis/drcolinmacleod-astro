@@ -37,7 +37,7 @@ Glutathione has several functions that make it an essential tool for fighting ox
 4. Honda Y, Kessoku T, Sumida Y, et al. Efficacy of glutathione for the treatment of nonalcoholic fatty liver disease: an open-label, single-arm, multicenter, pilot study. BMC Gastroenterol. 2017 Aug 8;17(1):96.
 5. Tanzilli G, Truscelli G, Arrivi A, et al. Glutathione infusion before primary percutaneous coronary intervention: a randomised controlled pilot study. BMJ Open. 2019 Aug 8;9(8):e025884.
 6. Berk M, Copolov DL, Dean O, et al. N-acetyl cysteine for depressive symptoms in bipolar disorder–a double-blind randomized placebo- controlled trial. Biol Psychiatry. 2008 Sep 15;64(6):468-75.
-7. Magalhães PV, Dean OM, Bush AI, et al. N-acetylcysteine for major depressive episodes in bipolar disorder. Rev Bras Psiquiatr. 2011 Dec;33(4):374-8.A
+7. Magalhães PV, Dean OM, Bush AI, et al. N-acetylcysteine for major depressive episodes in bipolar disorder. Rev Bras Psiquiatr. 2011 Dec;33(4):374-8.
 8. Afshar H, Roohafza H, Mohammad-Beigi H, et al. N-Acetylcysteine Add-On Treatment in Refractory Obsessive-Compulsive Disorder: A Randomized, Double-Blind, Placebo-Controlled Trial. J Clin Psychopharmacol. 2012 Dec;32(6):797-803.
 9. Carmeli C, Knyazeva MG, Cuénod M, Do KQ. Glutathione precursor N-acetyl-cysteine modulates EEG synchronization in schizophrenia patients: a double-blind, randomized, placebo-controlled trial. PLoS One. 2012;7(2):e29341.
 10. Lavoie S, Murray MM, Deppen P, et al. Glutathione precursor, N-acetyl-cysteine, improves mismatch negativity in schizophrenia patients. Neuropsychopharmacology. 2008 Aug;33(9):2187-99.

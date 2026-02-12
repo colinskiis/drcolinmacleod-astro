@@ -357,8 +357,6 @@ import { Search, X } from '@lucide/astro';
     }
   }
 
-  // Initialize search when DOM is loaded
-  document.addEventListener('DOMContentLoaded', () => {
-    new SiteSearch();
-  });
+  // Initialize search (runs once — header is persisted across page navigations)
+  new SiteSearch();
 </script>

@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import { ClientRouter } from 'astro:transitions';
 import Search from '../components/Search.astro';
 import BookingButton from '../components/BookingButton.astro';
 import MedicalDisclaimer from '../components/MedicalDisclaimer.astro';
@@ -195,12 +196,19 @@ const articleSchema = articleData ? JSON.stringify({
     <link rel="preconnect" href="https://www.googletagmanager.com" />
 
     <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HWHX5T8PEG"></script>
-    <script>
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-HWHX5T8PEG"></script>
+    <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-HWHX5T8PEG');
+
+      // Track page views on client-side navigation (View Transitions)
+      document.addEventListener('astro:page-load', function() {
+        if (typeof gtag !== 'undefined') {
+          gtag('config', 'G-HWHX5T8PEG', { page_path: window.location.pathname });
+        }
+      });
     </script>
 
     <!-- Canonical URL -->
@@ -236,6 +244,7 @@ const articleSchema = articleData ? JSON.stringify({
       <script type="application/ld+json" set:html={articleSchema} />
     )}
     <!-- Fonts loaded via global.css (Manrope, Playfair Display) -->
+    <ClientRouter />
   </head>
   <body class="font-sans antialiased" style="background: var(--color-bg-primary); color: var(--color-text-primary);">
     <!-- Skip to main content link for accessibility -->
@@ -247,7 +256,7 @@ const articleSchema = articleData ? JSON.stringify({
     </a>
 
     <!-- Header Navigation -->
-    <header id="site-header" class="fixed inset-x-0 top-0 z-40 bg-emerald-950 shadow-lg">
+    <header id="site-header" class="fixed inset-x-0 top-0 z-40 bg-emerald-950 shadow-lg" transition:persist>
       <div class="section-shell">
         <nav class="flex items-center justify-between py-4 gap-3 sm:gap-6">
           <!-- Logo with botanical mark -->
@@ -301,7 +310,7 @@ const articleSchema = articleData ? JSON.stringify({
           </div>
         </nav>
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden lg:hidden pb-6" role="navigation" aria-label="Mobile navigation">
+        <div id="mobile-menu" class="lg:hidden pb-6 overflow-hidden transition-all duration-300 ease-out max-h-0 opacity-0" role="navigation" aria-label="Mobile navigation">
           <div class="flex flex-col space-y-1 text-emerald-100 font-semibold">
             <a href="/" class={`hover:text-white hover:bg-emerald-800/50 transition-colors py-4 px-3 text-2xl rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 ${Astro.url.pathname === '/' ? 'text-white bg-emerald-800/30' : ''}`} aria-current={Astro.url.pathname === '/' ? 'page' : undefined}>Home</a>
             <a href="/about" class={`hover:text-white hover:bg-emerald-800/50 transition-colors py-4 px-3 text-2xl rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 ${Astro.url.pathname.startsWith('/about') ? 'text-white bg-emerald-800/30' : ''}`} aria-current={Astro.url.pathname.startsWith('/about') ? 'page' : undefined}>About</a>
@@ -315,18 +324,41 @@ const articleSchema = articleData ? JSON.stringify({
     </header>
 
     <script>
-      const mobileMenuButton = document.getElementById('mobile-menu-button');
-      const mobileMenu = document.getElementById('mobile-menu');
-      const menuIcon = document.getElementById('menu-icon');
-      const closeIcon = document.getElementById('close-icon');
+      function initMobileMenu() {
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        const closeIcon = document.getElementById('close-icon');
 
-      mobileMenuButton?.addEventListener('click', () => {
-        const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
-        mobileMenuButton.setAttribute('aria-expanded', (!isExpanded).toString());
-        mobileMenu?.classList.toggle('hidden');
-        menuIcon?.classList.toggle('hidden');
-        closeIcon?.classList.toggle('hidden');
-      });
+        // Close menu on page navigation
+        if (mobileMenu) {
+          mobileMenu.style.maxHeight = '0';
+          mobileMenu.style.opacity = '0';
+        }
+        menuIcon?.classList.remove('hidden');
+        closeIcon?.classList.add('hidden');
+        mobileMenuButton?.setAttribute('aria-expanded', 'false');
+
+        mobileMenuButton?.addEventListener('click', () => {
+          const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+          mobileMenuButton.setAttribute('aria-expanded', (!isExpanded).toString());
+          menuIcon?.classList.toggle('hidden');
+          closeIcon?.classList.toggle('hidden');
+
+          if (mobileMenu) {
+            if (!isExpanded) {
+              mobileMenu.style.maxHeight = mobileMenu.scrollHeight + 'px';
+              mobileMenu.style.opacity = '1';
+            } else {
+              mobileMenu.style.maxHeight = '0';
+              mobileMenu.style.opacity = '0';
+            }
+          }
+        });
+      }
+
+      initMobileMenu();
+      document.addEventListener('astro:page-load', initMobileMenu);
     </script>
 
     <!-- Main Content -->
@@ -390,6 +422,48 @@ const articleSchema = articleData ? JSON.stringify({
       </div>
     </footer>
 
+
+    <!-- Scroll-triggered reveal animations & header scroll effect -->
+    <script>
+      function initRevealObserver() {
+        const reveals = document.querySelectorAll('.reveal:not(.visible)');
+        if (!reveals.length) return;
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+        reveals.forEach(el => observer.observe(el));
+      }
+
+      function initHeaderScroll() {
+        const header = document.getElementById('site-header');
+        if (!header) return;
+
+        function onScroll() {
+          if (window.scrollY > 20) {
+            header.classList.add('scrolled');
+          } else {
+            header.classList.remove('scrolled');
+          }
+        }
+
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+      }
+
+      initRevealObserver();
+      initHeaderScroll();
+      document.addEventListener('astro:page-load', () => {
+        initRevealObserver();
+        initHeaderScroll();
+      });
+    </script>
 
   </body>
 </html>

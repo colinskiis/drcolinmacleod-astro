@@ -43,7 +43,7 @@ allCategories.forEach(cat => {
     <div class="section-shell">
 
       <!-- Category Navigation -->
-      <div class="flex flex-wrap justify-center gap-3 mb-12">
+      <div class="flex flex-wrap justify-center gap-3 mb-12 reveal">
         <button class="category-btn active" data-category="all">All Articles</button>
         {orderedCategories.map((category) => (
           <button class="category-btn" data-category={category}>{category}</button>
@@ -51,10 +51,11 @@ allCategories.forEach(cat => {
       </div>
 
       <!-- Articles Grid -->
-      <div id="articles-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div id="articles-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 reveal reveal-delay-100">
         {sortedArticles.map((article) => (
-          <article
-            class="article-card bg-gray-50 rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 flex flex-col"
+          <a
+            href={`/articles/${article.slug}`}
+            class="article-card group bg-gray-50 rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 flex flex-col hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
             data-categories={JSON.stringify(article.data.categories || [])}
           >
             {article.data.heroImage && (
@@ -62,7 +63,7 @@ allCategories.forEach(cat => {
                 <img
                   src={article.data.heroImage}
                   alt={article.data.title}
-                  class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   width="800"
                   height="500"
                   loading="lazy"
@@ -82,22 +83,17 @@ allCategories.forEach(cat => {
                   })}
                 </time>
               </div>
-              <h2 class="text-xl font-serif font-semibold mb-3 line-clamp-2">
-                <a href={`/articles/${article.slug}`} class="hover:text-emerald-700 transition-colors">
-                  {article.data.title}
-                </a>
+              <h2 class="text-xl font-serif font-semibold mb-3 line-clamp-2 group-hover:text-emerald-700 transition-colors">
+                {article.data.title}
               </h2>
               <p class="text-gray-600 mb-4 line-clamp-3 flex-1">{article.data.description}</p>
               <div class="flex items-center justify-between mt-auto">
-                <a
-                  href={`/articles/${article.slug}`}
-                  class="text-emerald-700 font-medium hover:text-emerald-800 transition-colors inline-flex items-center"
-                >
+                <span class="text-emerald-700 font-medium group-hover:text-emerald-800 transition-colors inline-flex items-center">
                   Read More
                   <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                   </svg>
-                </a>
+                </span>
                 {article.data.tags && article.data.tags.length > 0 && (
                   <div class="flex gap-1">
                     {article.data.tags.slice(0, 2).map((tag) => (
@@ -109,7 +105,7 @@ allCategories.forEach(cat => {
                 )}
               </div>
             </div>
-          </article>
+          </a>
         ))}
       </div>
 
@@ -173,7 +169,7 @@ allCategories.forEach(cat => {
 </style>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
+  function initArticleFilters() {
     const categoryButtons = document.querySelectorAll('.category-btn');
     const articleCards = document.querySelectorAll('.article-card');
     const noResults = document.getElementById('no-results');
@@ -226,5 +222,8 @@ allCategories.forEach(cat => {
         matchingButton.click();
       }
     }
-  });
+  }
+
+  initArticleFilters();
+  document.addEventListener('astro:page-load', initArticleFilters);
 </script>

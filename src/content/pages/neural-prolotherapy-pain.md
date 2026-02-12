@@ -25,7 +25,7 @@ As is taught by neural prolotherapy experts (Dr. John Lyftogt MD, Dr. Stanley La
 
 ## Why Dextrose Injections For Pain?
 
-The theory behind using 5% dextrose for pain is that dextrose is a direct antagonist of the TRPV-1 receptor. When injected near an inflamed, swollen nerve it is thought that the dextrose downregulates activity of the TRPV-1 receptors and reduces inflammation and pain as a result. The injected fluid also creates a *hydrodissection*, meaning that the injected fluid surrounds the nerve, creating a cushion from any impinging muscles or bursae which may be squeezing the nerve.
+The theory behind using 5% dextrose for pain is that dextrose is a direct antagonist of the TRPV-1 receptor. When injected near an inflamed, swollen nerve it is thought that the dextrose downregulates activity of the TRPV-1 receptors and reduces inflammation and pain as a result. The injected fluid also creates a *hydrodissection*, surrounding the nerve and creating a cushion from any impinging muscles or bursae which may be squeezing the nerve.
 
 ## Is Neural Prolotherapy Similar to Acupuncture?
 

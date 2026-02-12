@@ -51,26 +51,18 @@ const widthClass = fullWidth ? 'w-full' : '';
 </a>
 
 <script>
-  // Track booking button clicks for analytics
-  document.addEventListener('DOMContentLoaded', function() {
-    const bookingButtons = document.querySelectorAll('.booking-btn');
-    
-    bookingButtons.forEach(button => {
-      button.addEventListener('click', function() {
-        const source = this.getAttribute('data-booking-source');
-        
-        // Track with Google Analytics if available
-        if (typeof gtag !== 'undefined') {
-          gtag('event', 'booking_click', {
-            event_category: 'engagement',
-            event_label: source,
-            value: 1
-          });
-        }
-        
-        // Track with other analytics platforms as needed
-        console.log(`Booking button clicked from: ${source}`);
+  // Track booking button clicks via event delegation (works with View Transitions)
+  document.addEventListener('click', function(e) {
+    const button = e.target.closest('.booking-btn');
+    if (!button) return;
+
+    const source = button.getAttribute('data-booking-source');
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'booking_click', {
+        event_category: 'engagement',
+        event_label: source,
+        value: 1
       });
-    });
+    }
   });
 </script>

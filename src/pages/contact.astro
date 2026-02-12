@@ -277,7 +277,7 @@ import HeroSection from '../components/HeroSection.astro';
 
 <script>
   // Form submission handling
-  document.addEventListener('DOMContentLoaded', function() {
+  function initContactPage() {
     const form = document.getElementById('contact-form');
     const submitBtn = document.getElementById('submit-btn');
     const submitText = document.getElementById('submit-text');
@@ -353,7 +353,10 @@ import HeroSection from '../components/HeroSection.astro';
         submitLoading.classList.add('hidden');
       });
     });
-  });
+  }
+
+  initContactPage();
+  document.addEventListener('astro:page-load', initContactPage);
 </script>
 
 <style>
