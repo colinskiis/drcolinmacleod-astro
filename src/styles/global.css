@@ -1,6 +1,9 @@
-/* Brand foundations - Optimized font loading */
-/* Only load weights actually used: Manrope 400,600,700; Playfair 700 */
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Playfair+Display:wght@700&display=swap');
+/* Brand foundations - Self-hosted fonts via Fontsource */
+/* Only load weights actually used: Manrope 400,600,700; Playfair Display 700 */
+@import '@fontsource/manrope/400.css';
+@import '@fontsource/manrope/600.css';
+@import '@fontsource/manrope/700.css';
+@import '@fontsource/playfair-display/700.css';
 
 @tailwind base;
 @tailwind components;
@@ -126,25 +129,6 @@
 
   .btn-secondary {
     @apply border-2 border-emerald-700 text-emerald-700 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-emerald-700 hover:text-white transition-colors;
-  }
-
-  /* WordPress compatibility styles for images */
-  .alignright {
-    @apply float-right ml-4 mb-4;
-  }
-
-  .alignleft {
-    @apply float-left mr-4 mb-4;
-  }
-
-  .aligncenter {
-    @apply mx-auto block;
-  }
-
-  .size-full,
-  .wp-image-2282,
-  .wp-image-2291 {
-    @apply max-w-full h-auto;
   }
 
   .section-shell {
