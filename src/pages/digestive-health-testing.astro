@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
 ---
 
 <BaseLayout
@@ -344,67 +345,13 @@ import CTAButton from '../components/CTAButton.astro';
       <div class="max-w-3xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
 
-        <div class="space-y-4">
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">What's the difference between food allergies and food sensitivities?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Food allergies (IgE) cause immediate reactions — think hives, swelling, or anaphylaxis. Food sensitivities (IgG) cause delayed reactions that can take 24–72 hours to appear, making them nearly impossible to identify without testing. Symptoms include bloating, headaches, fatigue, skin issues and joint pain.
-            </div>
-          </details>
-
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">What is SIBO and how is it tested?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              SIBO (Small Intestinal Bacterial Overgrowth) occurs when bacteria that normally live in the large intestine migrate into the small intestine. It causes bloating, gas, pain and altered bowel habits. Testing involves a take-home breath test where you drink a lactulose solution and collect breath samples over 2–3 hours. The test measures hydrogen and methane gases produced by the bacteria.
-            </div>
-          </details>
-
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Is the GI-MAP stool test different from a regular stool test?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Yes, significantly. Standard stool tests ordered through MSI use culture-based methods that miss most organisms. The GI-MAP uses quantitative PCR (DNA-based) technology, which is far more sensitive and accurate. It tests for over 30 pathogens, parasites, and opportunistic organisms, plus markers for digestion, inflammation, and immune function — all from a single stool sample collected at home.
-            </div>
-          </details>
-
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Do I need a referral for digestive health testing?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              No. You don't need a gastroenterologist or family doctor referral. As a naturopathic doctor, I can order all of these tests directly. Many patients come to us specifically because they've been waiting months for a GI specialist or have been told their standard testing is "normal."
-            </div>
-          </details>
-
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Can gut health really affect mood and anxiety?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Absolutely. Your gut produces approximately 95% of your body's serotonin and communicates directly with your brain through the vagus nerve (the gut-brain axis). Gut dysbiosis, intestinal permeability and inflammation have all been linked to anxiety, depression and cognitive issues. Many patients report significant mood improvements after addressing gut imbalances.
-            </div>
-          </details>
-        </div>
+        <FAQAccordion items={[
+          { question: "What's the difference between food allergies and food sensitivities?", answer: "<p>Food allergies (IgE) cause immediate reactions — think hives, swelling, or anaphylaxis. Food sensitivities (IgG) cause delayed reactions that can take 24–72 hours to appear, making them nearly impossible to identify without testing. Symptoms include bloating, headaches, fatigue, skin issues and joint pain.</p>" },
+          { question: "What is SIBO and how is it tested?", answer: "<p>SIBO (Small Intestinal Bacterial Overgrowth) occurs when bacteria that normally live in the large intestine migrate into the small intestine. It causes bloating, gas, pain and altered bowel habits. Testing involves a take-home breath test where you drink a lactulose solution and collect breath samples over 2–3 hours. The test measures hydrogen and methane gases produced by the bacteria.</p>" },
+          { question: "Is the GI-MAP stool test different from a regular stool test?", answer: "<p>Yes, significantly. Standard stool tests ordered through MSI use culture-based methods that miss most organisms. The GI-MAP uses quantitative PCR (DNA-based) technology, which is far more sensitive and accurate. It tests for over 30 pathogens, parasites, and opportunistic organisms, plus markers for digestion, inflammation, and immune function — all from a single stool sample collected at home.</p>" },
+          { question: "Do I need a referral for digestive health testing?", answer: "<p>No. You don't need a gastroenterologist or family doctor referral. As a naturopathic doctor, I can order all of these tests directly. Many patients come to us specifically because they've been waiting months for a GI specialist or have been told their standard testing is \"normal.\"</p>" },
+          { question: "Can gut health really affect mood and anxiety?", answer: "<p>Absolutely. Your gut produces approximately 95% of your body's serotonin and communicates directly with your brain through the vagus nerve (the gut-brain axis). Gut dysbiosis, intestinal permeability and inflammation have all been linked to anxiety, depression and cognitive issues. Many patients report significant mood improvements after addressing gut imbalances.</p>" },
+        ]} />
       </div>
     </div>
   </section>
@@ -417,16 +364,7 @@ import CTAButton from '../components/CTAButton.astro';
         <p class="text-lg text-white/90 mb-8">
           Stop managing symptoms and start getting answers. Advanced digestive testing reveals what's actually driving your symptoms — so we can fix it.
         </p>
-        <a
-          href="https://macleodnaturopathic.janeapp.com/"
-          target="_blank"
-          class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center"
-        >
-          Book Online
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-          </svg>
-        </a>
+        <CTAButton source="digestive-health-testing-cta" />
       </div>
     </div>
   </section>

@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
 ---
 
 <BaseLayout
@@ -307,67 +308,13 @@ import CTAButton from '../components/CTAButton.astro';
   <section class="py-16 lg:py-24 bg-white">
     <div class="section-shell">
       <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-12 text-center">Frequently Asked Questions</h2>
-      <div class="max-w-3xl mx-auto space-y-6">
-        <details class="group bg-emerald-50 rounded-2xl">
-          <summary class="flex items-center justify-between cursor-pointer p-6 font-serif font-semibold text-emerald-950">
-            How do you determine if my pain is from the SI joint?
-            <svg class="w-5 h-5 text-emerald-700 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </summary>
-          <div class="px-6 pb-6 text-slate-600">
-            History, physical exam tests, imaging (xray or mri).
-          </div>
-        </details>
-
-        <details class="group bg-emerald-50 rounded-2xl">
-          <summary class="flex items-center justify-between cursor-pointer p-6 font-serif font-semibold text-emerald-950">
-            Why does prolotherapy last longer than steroid for SI joint pain?
-            <svg class="w-5 h-5 text-emerald-700 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </summary>
-          <div class="px-6 pb-6 text-slate-600">
-            Steroid injections work by suppressing inflammation. They provide temporary relief but don't address the underlying ligament laxity or joint instability. Prolotherapy stimulates tissue repair and strengthening. Once the supporting structures are stronger, the improvement tends to persist. This is why the Kim study showed such a dramatic difference at 15 months.
-          </div>
-        </details>
-
-        <details class="group bg-emerald-50 rounded-2xl">
-          <summary class="flex items-center justify-between cursor-pointer p-6 font-serif font-semibold text-emerald-950">
-            Can prolotherapy help if I've already had SI joint fusion surgery?
-            <svg class="w-5 h-5 text-emerald-700 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </summary>
-          <div class="px-6 pb-6 text-slate-600">
-            If you've had SI joint fusion, the joint itself is no longer movable, so intra-articular prolotherapy wouldn't be applicable. However, some patients continue to have pain from surrounding ligaments or compensatory stress on other structures, which might still benefit from treatment. We'd need to evaluate your specific situation.
-          </div>
-        </details>
-
-        <details class="group bg-emerald-50 rounded-2xl">
-          <summary class="flex items-center justify-between cursor-pointer p-6 font-serif font-semibold text-emerald-950">
-            Is prolotherapy safe for the spine?
-            <svg class="w-5 h-5 text-emerald-700 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </summary>
-          <div class="px-6 pb-6 text-slate-600">
-            Yes, when performed by a trained practitioner. We inject the ligaments and joint structures, not into the spinal canal. Both the Kim and Yelland studies reported no serious adverse events. Temporary soreness at injection sites is common and expected.
-          </div>
-        </details>
-
-        <details class="group bg-emerald-50 rounded-2xl">
-          <summary class="flex items-center justify-between cursor-pointer p-6 font-serif font-semibold text-emerald-950">
-            Should I try prolotherapy before considering surgery?
-            <svg class="w-5 h-5 text-emerald-700 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </summary>
-          <div class="px-6 pb-6 text-slate-600">
-            For SI joint pain specifically, prolotherapy is a reasonable option to try before considering surgical fusion, given the strong evidence from the Kim study. SI joint fusion is a significant surgery. However, every case is different, and some conditions do require surgical intervention. We can discuss whether prolotherapy is appropriate for your specific situation.
-          </div>
-        </details>
-      </div>
+      <FAQAccordion items={[
+        { question: "How do you determine if my pain is from the SI joint?", answer: "<p>History, physical exam tests, imaging (xray or mri).</p>" },
+        { question: "Why does prolotherapy last longer than steroid for SI joint pain?", answer: "<p>Steroid injections work by suppressing inflammation. They provide temporary relief but don't address the underlying ligament laxity or joint instability. Prolotherapy stimulates tissue repair and strengthening. Once the supporting structures are stronger, the improvement tends to persist. This is why the Kim study showed such a dramatic difference at 15 months.</p>" },
+        { question: "Can prolotherapy help if I've already had SI joint fusion surgery?", answer: "<p>If you've had SI joint fusion, the joint itself is no longer movable, so intra-articular prolotherapy wouldn't be applicable. However, some patients continue to have pain from surrounding ligaments or compensatory stress on other structures, which might still benefit from treatment. We'd need to evaluate your specific situation.</p>" },
+        { question: "Is prolotherapy safe for the spine?", answer: "<p>Yes, when performed by a trained practitioner. We inject the ligaments and joint structures, not into the spinal canal. Both the Kim and Yelland studies reported no serious adverse events. Temporary soreness at injection sites is common and expected.</p>" },
+        { question: "Should I try prolotherapy before considering surgery?", answer: "<p>For SI joint pain specifically, prolotherapy is a reasonable option to try before considering surgical fusion, given the strong evidence from the Kim study. SI joint fusion is a significant surgery. However, every case is different, and some conditions do require surgical intervention. We can discuss whether prolotherapy is appropriate for your specific situation.</p>" },
+      ]} />
     </div>
   </section>
 
@@ -395,16 +342,7 @@ import CTAButton from '../components/CTAButton.astro';
       <p class="text-lg text-emerald-200 max-w-2xl mx-auto mb-8">
         If you've been struggling with SI joint pain or chronic low back pain, schedule a consultation to discuss whether prolotherapy might help. We'll give you an honest assessment based on your specific situation.
       </p>
-      <a
-        href="https://macleodnaturopathic.janeapp.com/"
-        target="_blank"
-        class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center"
-      >
-        Book Online
-        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-        </svg>
-      </a>
+      <CTAButton source="prolotherapy-for-back-pain-cta" />
     </div>
   </section>
 

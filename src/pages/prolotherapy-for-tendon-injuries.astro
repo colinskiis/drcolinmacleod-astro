@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
 ---
 
 <BaseLayout
@@ -262,67 +263,13 @@ import CTAButton from '../components/CTAButton.astro';
   <section class="py-16 lg:py-24 bg-white">
     <div class="section-shell">
       <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-12 text-center">Frequently Asked Questions</h2>
-      <div class="max-w-3xl mx-auto space-y-6">
-        <details class="group bg-emerald-50 rounded-2xl">
-          <summary class="flex items-center justify-between cursor-pointer p-6 font-serif font-semibold text-emerald-950">
-            Will I need to stop exercising during treatment?
-            <svg class="w-5 h-5 text-emerald-700 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </summary>
-          <div class="px-6 pb-6 text-slate-600">
-            No but avoid intense exercise on day of treatment. Return to regular intensity when comfort level allows (day 2 or later).
-          </div>
-        </details>
-
-        <details class="group bg-emerald-50 rounded-2xl">
-          <summary class="flex items-center justify-between cursor-pointer p-6 font-serif font-semibold text-emerald-950">
-            How does prolotherapy compare to cortisone for tendon injuries?
-            <svg class="w-5 h-5 text-emerald-700 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </summary>
-          <div class="px-6 pb-6 text-slate-600">
-            Cortisone can provide quick pain relief but doesn't address the underlying tendon degeneration. Research has shown that repeated cortisone injections can actually weaken tendon tissue and increase the risk of rupture. Prolotherapy takes longer to work but aims to strengthen the damaged tissue. For chronic tendinopathies where the goal is lasting repair, prolotherapy is often the better choice.
-          </div>
-        </details>
-
-        <details class="group bg-emerald-50 rounded-2xl">
-          <summary class="flex items-center justify-between cursor-pointer p-6 font-serif font-semibold text-emerald-950">
-            What if I've already had cortisone injections?
-            <svg class="w-5 h-5 text-emerald-700 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </summary>
-          <div class="px-6 pb-6 text-slate-600">
-            It is ok to have prolotherapy 1 week after cortisone injection.
-          </div>
-        </details>
-
-        <details class="group bg-emerald-50 rounded-2xl">
-          <summary class="flex items-center justify-between cursor-pointer p-6 font-serif font-semibold text-emerald-950">
-            Is prolotherapy effective for partial tendon tears?
-            <svg class="w-5 h-5 text-emerald-700 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </summary>
-          <div class="px-6 pb-6 text-slate-600">
-            Yes. Complete tears can be helped with prolotherapy but take much longer for the body to complete its repair process.
-          </div>
-        </details>
-
-        <details class="group bg-emerald-50 rounded-2xl">
-          <summary class="flex items-center justify-between cursor-pointer p-6 font-serif font-semibold text-emerald-950">
-            Can prolotherapy help if I've had the problem for years?
-            <svg class="w-5 h-5 text-emerald-700 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </summary>
-          <div class="px-6 pb-6 text-slate-600">
-            Yes, prolotherapy is often used specifically for chronic, long-standing tendinopathies that haven't responded to other treatments. The studies included patients with symptoms lasting 6 months to several years. Chronic conditions may require more treatment sessions, but there's no point at which prolotherapy becomes ineffective simply because the problem is old.
-          </div>
-        </details>
-      </div>
+      <FAQAccordion items={[
+        { question: "Will I need to stop exercising during treatment?", answer: "<p>No but avoid intense exercise on day of treatment. Return to regular intensity when comfort level allows (day 2 or later).</p>" },
+        { question: "How does prolotherapy compare to cortisone for tendon injuries?", answer: "<p>Cortisone can provide quick pain relief but doesn't address the underlying tendon degeneration. Research has shown that repeated cortisone injections can actually weaken tendon tissue and increase the risk of rupture. Prolotherapy takes longer to work but aims to strengthen the damaged tissue. For chronic tendinopathies where the goal is lasting repair, prolotherapy is often the better choice.</p>" },
+        { question: "What if I've already had cortisone injections?", answer: "<p>It is ok to have prolotherapy 1 week after cortisone injection.</p>" },
+        { question: "Is prolotherapy effective for partial tendon tears?", answer: "<p>Yes. Complete tears can be helped with prolotherapy but take much longer for the body to complete its repair process.</p>" },
+        { question: "Can prolotherapy help if I've had the problem for years?", answer: "<p>Yes, prolotherapy is often used specifically for chronic, long-standing tendinopathies that haven't responded to other treatments. The studies included patients with symptoms lasting 6 months to several years. Chronic conditions may require more treatment sessions, but there's no point at which prolotherapy becomes ineffective simply because the problem is old.</p>" },
+      ]} />
     </div>
   </section>
 
@@ -354,16 +301,7 @@ import CTAButton from '../components/CTAButton.astro';
       <p class="text-lg text-emerald-200 max-w-2xl mx-auto mb-8">
         If you've been dealing with tennis elbow, plantar fasciitis, or Achilles tendinopathy that won't resolve, prolotherapy may be the answer. Schedule a consultation to discuss your options.
       </p>
-      <a
-        href="https://macleodnaturopathic.janeapp.com/"
-        target="_blank"
-        class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center"
-      >
-        Book Online
-        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-        </svg>
-      </a>
+      <CTAButton source="prolotherapy-for-tendon-injuries-cta" />
     </div>
   </section>
 

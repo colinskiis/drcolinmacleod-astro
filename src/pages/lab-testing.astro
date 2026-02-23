@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import { ClipboardCheck, TestTubes, Clock, Sparkles } from '@lucide/astro';
 import CTAButton from '../components/CTAButton.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
 ---
 
 <BaseLayout
@@ -269,67 +270,13 @@ import CTAButton from '../components/CTAButton.astro';
       <div class="max-w-3xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
 
-        <div class="space-y-4">
-          <details class="bg-white rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Do I need a doctor's referral for blood work?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              No. You can access comprehensive blood work without a family doctor's requisition. Helpful if you don't have a family doctor or want tests your physician doesn't typically order.
-            </div>
-          </details>
-
-          <details class="bg-white rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Is private blood work covered by MSI?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Testing ordered through a naturopathic doctor is not covered by MSI. However, many extended health insurance plans cover naturopathic consultations. Lab tests themselves are out-of-pocket but provide access to markers often unavailable through conventional channels. All expenses are eligible medical expenses for tax purposes.
-            </div>
-          </details>
-
-          <details class="bg-white rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Where is the blood draw performed?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Dr. MacLeod performs blood collection in the clinic. You won't need to visit a separate lab.
-            </div>
-          </details>
-
-          <details class="bg-white rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">How long until I get my results?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Most standard blood tests have results within 5-10 business days. Specialized tests like comprehensive stool analysis, DUTCH hormone panels, or food sensitivity panels may take 2-3 weeks. We'll schedule a follow-up to review your findings once results are available.
-            </div>
-          </details>
-
-          <details class="bg-white rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Do I need to fast before blood tests?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Some tests require fasting, while others don't. Dr. MacLeod will inform you if you will need to fast for your blood work.
-            </div>
-          </details>
-        </div>
+        <FAQAccordion items={[
+          { question: "Do I need a doctor's referral for blood work?", answer: "<p>No. You can access comprehensive blood work without a family doctor's requisition. Helpful if you don't have a family doctor or want tests your physician doesn't typically order.</p>" },
+          { question: "Is private blood work covered by MSI?", answer: "<p>Testing ordered through a naturopathic doctor is not covered by MSI. However, many extended health insurance plans cover naturopathic consultations. Lab tests themselves are out-of-pocket but provide access to markers often unavailable through conventional channels. All expenses are eligible medical expenses for tax purposes.</p>" },
+          { question: "Where is the blood draw performed?", answer: "<p>Dr. MacLeod performs blood collection in the clinic. You won't need to visit a separate lab.</p>" },
+          { question: "How long until I get my results?", answer: "<p>Most standard blood tests have results within 5-10 business days. Specialized tests like comprehensive stool analysis, DUTCH hormone panels, or food sensitivity panels may take 2-3 weeks. We'll schedule a follow-up to review your findings once results are available.</p>" },
+          { question: "Do I need to fast before blood tests?", answer: "<p>Some tests require fasting, while others don't. Dr. MacLeod will inform you if you will need to fast for your blood work.</p>" },
+        ]} />
       </div>
     </div>
   </section>
@@ -342,16 +289,7 @@ import CTAButton from '../components/CTAButton.astro';
         Whether you need routine blood work or specialized functional testing, we can help you access the lab assessments you need, without the barriers of the conventional healthcare system.
       </p>
       <div class="flex justify-center">
-        <a
-          href="https://macleodnaturopathic.janeapp.com/"
-          target="_blank"
-          class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center justify-center"
-        >
-          Book Online
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-          </svg>
-        </a>
+        <CTAButton source="lab-testing-cta" />
       </div>
     </div>
   </section>

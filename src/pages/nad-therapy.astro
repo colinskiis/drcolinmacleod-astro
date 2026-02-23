@@ -2,7 +2,9 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
+import BookingButton from '../components/BookingButton.astro';
 import { Zap, Lightbulb, Heart, Check, FlaskConical, ChevronDown, Calendar } from '@lucide/astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
 ---
 
 <BaseLayout
@@ -235,14 +237,7 @@ import { Zap, Lightbulb, Heart, Check, FlaskConical, ChevronDown, Calendar } fro
             To ensure that NAD+ therapy is appropriate for you, an initial naturopathic consultation is required. This allows us to review your health history, discuss your goals and create a personalized treatment plan.
           </p>
 
-          <a
-            href="https://macleodnaturopathic.janeapp.com/"
-            target="_blank"
-            class="w-full bg-emerald-700 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-emerald-800 transition-colors shadow-lg inline-flex items-center justify-center"
-          >
-            Book Online
-            <Calendar class="w-5 h-5 ml-2" aria-hidden="true" />
-          </a>
+          <BookingButton variant="secondary" size="lg" fullWidth source="nad-therapy-pricing" />
         </div>
       </div>
     </div>
@@ -333,77 +328,26 @@ import { Zap, Lightbulb, Heart, Check, FlaskConical, ChevronDown, Calendar } fro
       <div class="max-w-3xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
 
-        <div class="space-y-4">
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">How long does an NAD+ infusion take?</span>
-              <ChevronDown class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" aria-hidden="true" />
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              NAD+ infusions typically take 1-4 hours depending on the dose and your individual tolerance. The infusion rate is adjusted to ensure comfort throughout the session. We recommend bringing something to read or watch during your treatment.
-            </div>
-          </details>
-
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">How many treatments will I need?</span>
-              <ChevronDown class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" aria-hidden="true" />
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Most people benefit from an initial series of 3 infusions spread over 3-6 weeks. Following this loading phase, maintenance infusions every 4-8 weeks help sustain benefits. Your treatment plan will be personalized based on your health goals and response to therapy.
-            </div>
-          </details>
-
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">What does NAD+ therapy feel like?</span>
-              <ChevronDown class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" aria-hidden="true" />
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              During the infusion, you may feel mild warmth, slight chest tightness or a fluttering sensation. These are normal responses to NAD+ and resolve by slowing the infusion rate. After treatment, many people report feeling more alert, energized and mentally clear.
-            </div>
-          </details>
-
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Is NAD+ therapy different from taking NAD+ supplements?</span>
-              <ChevronDown class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" aria-hidden="true" />
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Yes. Oral NAD+ supplements and precursors (like NMN or NR) must be absorbed through the digestive system, which reduces bioavailability. IV administration delivers NAD+ directly to your bloodstream, achieving therapeutic levels that are not possible with oral supplementation.
-            </div>
-          </details>
-
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Who should not receive NAD+ therapy?</span>
-              <ChevronDown class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" aria-hidden="true" />
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              NAD+ therapy may not be appropriate for pregnant or breastfeeding women, individuals with active cancer or those with certain cardiac conditions. A comprehensive health assessment is completed before treatment to ensure safety.
-            </div>
-          </details>
-        </div>
+        <FAQAccordion items={[
+          { question: "How long does an NAD+ infusion take?", answer: "<p>NAD+ infusions typically take 1-4 hours depending on the dose and your individual tolerance. The infusion rate is adjusted to ensure comfort throughout the session. We recommend bringing something to read or watch during your treatment.</p>" },
+          { question: "How many treatments will I need?", answer: "<p>Most people benefit from an initial series of 3 infusions spread over 3-6 weeks. Following this loading phase, maintenance infusions every 4-8 weeks help sustain benefits. Your treatment plan will be personalized based on your health goals and response to therapy.</p>" },
+          { question: "What does NAD+ therapy feel like?", answer: "<p>During the infusion, you may feel mild warmth, slight chest tightness or a fluttering sensation. These are normal responses to NAD+ and resolve by slowing the infusion rate. After treatment, many people report feeling more alert, energized and mentally clear.</p>" },
+          { question: "Is NAD+ therapy different from taking NAD+ supplements?", answer: "<p>Yes. Oral NAD+ supplements and precursors (like NMN or NR) must be absorbed through the digestive system, which reduces bioavailability. IV administration delivers NAD+ directly to your bloodstream, achieving therapeutic levels that are not possible with oral supplementation.</p>" },
+          { question: "Who should not receive NAD+ therapy?", answer: "<p>NAD+ therapy may not be appropriate for pregnant or breastfeeding women, individuals with active cancer or those with certain cardiac conditions. A comprehensive health assessment is completed before treatment to ensure safety.</p>" },
+        ]} />
       </div>
     </div>
   </section>
 
   <!-- Final CTA -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
+  <section class="py-16 lg:py-24 bg-emerald-950">
     <div class="section-shell">
       <div class="text-center max-w-3xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-6">Ready to Restore Your Cellular Energy?</h2>
-        <p class="text-lg text-gray-600 mb-8">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-6">Ready to Restore Your Cellular Energy?</h2>
+        <p class="text-lg text-white/80 mb-8">
           Book your consultation today and discover how NAD+ IV therapy can support your energy, mental clarity and healthy aging goals.
         </p>
-        <a
-          href="https://macleodnaturopathic.janeapp.com/"
-          target="_blank"
-          class="bg-emerald-700 text-white px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-800 transition-colors shadow-xl inline-flex items-center"
-        >
-          Book Online
-          <Calendar class="w-5 h-5 ml-2" aria-hidden="true" />
-        </a>
+        <CTAButton source="nad-therapy-cta" />
       </div>
     </div>
   </section>

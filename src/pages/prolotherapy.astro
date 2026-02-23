@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
 ---
 
 <BaseLayout
@@ -392,79 +393,14 @@ import CTAButton from '../components/CTAButton.astro';
   <section class="py-16 lg:py-24 bg-white">
     <div class="section-shell">
       <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-12 text-center">Frequently Asked Questions</h2>
-      <div class="max-w-3xl mx-auto space-y-6">
-        <details class="group bg-emerald-50 rounded-2xl">
-          <summary class="flex items-center justify-between cursor-pointer p-6 font-serif font-semibold text-emerald-950">
-            Is prolotherapy painful?
-            <svg class="w-5 h-5 text-emerald-700 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </summary>
-          <div class="px-6 pb-6 text-slate-600">
-            The injections cause brief, mild discomfort. We use a local anesthetic (lidocaine) mixed with the dextrose solution to minimize pain during the procedure. Most patients describe it as a tolerable pressure or aching sensation. After treatment, you may experience soreness similar to a workout for 1-3 days.
-          </div>
-        </details>
-
-        <details class="group bg-emerald-50 rounded-2xl">
-          <summary class="flex items-center justify-between cursor-pointer p-6 font-serif font-semibold text-emerald-950">
-            How many treatments will I need?
-            <svg class="w-5 h-5 text-emerald-700 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </summary>
-          <div class="px-6 pb-6 text-slate-600">
-            Most conditions respond well to 4-6 treatment sessions, spaced 1-2 weeks apart. Some patients notice improvement after the first treatment, though the full benefit typically develops over the course of the treatment series. Chronic or severe conditions may require additional sessions.
-          </div>
-        </details>
-
-        <details class="group bg-emerald-50 rounded-2xl">
-          <summary class="flex items-center justify-between cursor-pointer p-6 font-serif font-semibold text-emerald-950">
-            Can I take pain medication after treatment?
-            <svg class="w-5 h-5 text-emerald-700 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </summary>
-          <div class="px-6 pb-6 text-slate-600">
-            Avoid NSAIDs for 24 hours unless necessary for pain control. Acetaminophen is fine.
-          </div>
-        </details>
-
-        <details class="group bg-emerald-50 rounded-2xl">
-          <summary class="flex items-center justify-between cursor-pointer p-6 font-serif font-semibold text-emerald-950">
-            Is prolotherapy covered by insurance?
-            <svg class="w-5 h-5 text-emerald-700 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </summary>
-          <div class="px-6 pb-6 text-slate-600">
-            MSI does not cover prolotherapy. Most private health insurance plans do. We offer direct billing for many major insurers.
-          </div>
-        </details>
-
-        <details class="group bg-emerald-50 rounded-2xl">
-          <summary class="flex items-center justify-between cursor-pointer p-6 font-serif font-semibold text-emerald-950">
-            How does prolotherapy compare to cortisone injections?
-            <svg class="w-5 h-5 text-emerald-700 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </summary>
-          <div class="px-6 pb-6 text-slate-600">
-            Cortisone injections reduce inflammation and provide quick pain relief, but this relief typically fades over weeks to months, and repeated injections can weaken tissue. Prolotherapy takes longer to work (it's stimulating a healing process), but the goal is lasting tissue repair. For sacroiliac joint pain, one study found prolotherapy provided sustained relief in 58.7% of patients at 15 months compared to only 10.2% with steroid injection.
-          </div>
-        </details>
-
-        <details class="group bg-emerald-50 rounded-2xl">
-          <summary class="flex items-center justify-between cursor-pointer p-6 font-serif font-semibold text-emerald-950">
-            Who is not a good candidate for prolotherapy?
-            <svg class="w-5 h-5 text-emerald-700 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </summary>
-          <div class="px-6 pb-6 text-slate-600">
-            Prolotherapy may not be appropriate for people with active infections, certain bleeding disorders or those taking blood thinners. It's also not recommended for complete tendon or ligament tears that require surgical repair. During your consultation, we'll review your medical history to ensure prolotherapy is safe and appropriate for you.
-          </div>
-        </details>
-      </div>
+      <FAQAccordion items={[
+        { question: "Is prolotherapy painful?", answer: "<p>The injections cause brief, mild discomfort. We use a local anesthetic (lidocaine) mixed with the dextrose solution to minimize pain during the procedure. Most patients describe it as a tolerable pressure or aching sensation. After treatment, you may experience soreness similar to a workout for 1-3 days.</p>" },
+        { question: "How many treatments will I need?", answer: "<p>Most conditions respond well to 4-6 treatment sessions, spaced 1-2 weeks apart. Some patients notice improvement after the first treatment, though the full benefit typically develops over the course of the treatment series. Chronic or severe conditions may require additional sessions.</p>" },
+        { question: "Can I take pain medication after treatment?", answer: "<p>Avoid NSAIDs for 24 hours unless necessary for pain control. Acetaminophen is fine.</p>" },
+        { question: "Is prolotherapy covered by insurance?", answer: "<p>MSI does not cover prolotherapy. Most private health insurance plans do. We offer direct billing for many major insurers.</p>" },
+        { question: "How does prolotherapy compare to cortisone injections?", answer: "<p>Cortisone injections reduce inflammation and provide quick pain relief, but this relief typically fades over weeks to months, and repeated injections can weaken tissue. Prolotherapy takes longer to work (it's stimulating a healing process), but the goal is lasting tissue repair. For sacroiliac joint pain, one study found prolotherapy provided sustained relief in 58.7% of patients at 15 months compared to only 10.2% with steroid injection.</p>" },
+        { question: "Who is not a good candidate for prolotherapy?", answer: "<p>Prolotherapy may not be appropriate for people with active infections, certain bleeding disorders or those taking blood thinners. It's also not recommended for complete tendon or ligament tears that require surgical repair. During your consultation, we'll review your medical history to ensure prolotherapy is safe and appropriate for you.</p>" },
+      ]} />
     </div>
   </section>
 
@@ -475,16 +411,7 @@ import CTAButton from '../components/CTAButton.astro';
       <p class="text-lg text-emerald-200 max-w-2xl mx-auto mb-8">
         Schedule a consultation to discuss whether prolotherapy is right for your condition. We'll review your health history, examine your injury and create a personalized treatment plan.
       </p>
-      <a
-        href="https://macleodnaturopathic.janeapp.com/"
-        target="_blank"
-        class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center"
-      >
-        Book Online
-        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-        </svg>
-      </a>
+      <CTAButton source="prolotherapy-cta" />
     </div>
   </section>
 

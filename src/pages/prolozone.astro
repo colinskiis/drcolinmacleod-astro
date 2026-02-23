@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
 ---
 
 <BaseLayout
@@ -368,56 +369,12 @@ import CTAButton from '../components/CTAButton.astro';
       <div class="max-w-3xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
 
-        <div class="space-y-4">
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Does prolozone hurt?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Prolozone injections are slightly more uncomfortable than an acupuncture needle, but not much more. Most patients tolerate the treatment well. The injection itself is brief, and any discomfort passes quickly.
-            </div>
-          </details>
-
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">How many treatments will I need?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Most conditions respond well within 6 treatments given every 1-2 weeks. After the initial treatment course, maintenance treatments every 6 months help sustain results.
-            </div>
-          </details>
-
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">How quickly will I feel better?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Many patients feel improvement within hours of treatment. Within 24 hours, most people experience decreased pain and often improved range of motion. Some temporary stiffness immediately after treatment is normal but short-lived.
-            </div>
-          </details>
-
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Can I have prolozone if I've had a joint replacement?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              No, prolozone cannot be injected into a joint that has a prosthetic replacement. However, we can treat other joints and areas that are causing pain. Many patients with one joint replacement develop problems in other joints from compensating, and prolozone can help these secondary areas.
-            </div>
-          </details>
-
-                  </div>
+        <FAQAccordion items={[
+          { question: "Does prolozone hurt?", answer: "<p>Prolozone injections are slightly more uncomfortable than an acupuncture needle, but not much more. Most patients tolerate the treatment well. The injection itself is brief, and any discomfort passes quickly.</p>" },
+          { question: "How many treatments will I need?", answer: "<p>Most conditions respond well within 6 treatments given every 1-2 weeks. After the initial treatment course, maintenance treatments every 6 months help sustain results.</p>" },
+          { question: "How quickly will I feel better?", answer: "<p>Many patients feel improvement within hours of treatment. Within 24 hours, most people experience decreased pain and often improved range of motion. Some temporary stiffness immediately after treatment is normal but short-lived.</p>" },
+          { question: "Can I have prolozone if I've had a joint replacement?", answer: "<p>No, prolozone cannot be injected into a joint that has a prosthetic replacement. However, we can treat other joints and areas that are causing pain. Many patients with one joint replacement develop problems in other joints from compensating, and prolozone can help these secondary areas.</p>" },
+        ]} />
       </div>
     </div>
   </section>
@@ -430,16 +387,7 @@ import CTAButton from '../components/CTAButton.astro';
         <p class="text-lg text-white/90 mb-8">
           If you're dealing with joint pain, arthritis, or a chronic musculoskeletal condition, prolozone may help. Book a consultation to find out if it's right for you.
         </p>
-        <a
-          href="https://macleodnaturopathic.janeapp.com/"
-          target="_blank"
-          class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center"
-        >
-          Book Online
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-          </svg>
-        </a>
+        <CTAButton source="prolozone-cta" />
       </div>
     </div>
   </section>

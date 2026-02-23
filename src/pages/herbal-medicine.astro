@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
 ---
 
 <BaseLayout
@@ -212,55 +213,12 @@ import CTAButton from '../components/CTAButton.astro';
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Frequently Asked Questions</h2>
       </div>
 
-      <div class="max-w-3xl mx-auto space-y-4">
-        <details class="group bg-white rounded-2xl shadow-sm border border-emerald-100/50 overflow-hidden transition-all duration-300 hover:shadow-md open:shadow-lg open:ring-1 open:ring-emerald-500/20">
-          <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-            <h3 class="text-lg font-medium text-emerald-950 pr-8">Are herbal medicines safe?</h3>
-            <span class="text-emerald-500 transition-transform duration-300 group-open:rotate-180">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-            </span>
-          </summary>
-          <div class="px-6 pb-6 text-gray-600 leading-relaxed">
-            When prescribed appropriately by a trained practitioner, herbal medicines are generally very safe. However, "natural" doesn't automatically mean safe for everyone. Some herbs can interact with medications, affect certain health conditions, or cause side effects in sensitive individuals. This is why professional guidance is important.
-          </div>
-        </details>
-
-        <details class="group bg-white rounded-2xl shadow-sm border border-emerald-100/50 overflow-hidden transition-all duration-300 hover:shadow-md open:shadow-lg open:ring-1 open:ring-emerald-500/20">
-          <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-            <h3 class="text-lg font-medium text-emerald-950 pr-8">Can I take herbs with my medications?</h3>
-            <span class="text-emerald-500 transition-transform duration-300 group-open:rotate-180">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-            </span>
-          </summary>
-          <div class="px-6 pb-6 text-gray-600 leading-relaxed">
-            Many herbs can be safely combined with medications, but some combinations should be avoided. During your consultation, we review all medications and supplements you're taking and check for potential interactions before recommending any botanical therapies.
-          </div>
-        </details>
-
-        <details class="group bg-white rounded-2xl shadow-sm border border-emerald-100/50 overflow-hidden transition-all duration-300 hover:shadow-md open:shadow-lg open:ring-1 open:ring-emerald-500/20">
-          <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-            <h3 class="text-lg font-medium text-emerald-950 pr-8">How long does herbal treatment take to work?</h3>
-            <span class="text-emerald-500 transition-transform duration-300 group-open:rotate-180">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-            </span>
-          </summary>
-          <div class="px-6 pb-6 text-gray-600 leading-relaxed">
-            This varies depending on the condition and the herbs used. Some effects, like digestive relief from carminative herbs, can be noticed quickly. Other conditions, like hormone balancing or building stress resilience, may take several weeks to months to show full benefit. We'll discuss realistic expectations for your specific situation.
-          </div>
-        </details>
-
-        <details class="group bg-white rounded-2xl shadow-sm border border-emerald-100/50 overflow-hidden transition-all duration-300 hover:shadow-md open:shadow-lg open:ring-1 open:ring-emerald-500/20">
-          <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-            <h3 class="text-lg font-medium text-emerald-950 pr-8">What forms do herbal medicines come in?</h3>
-            <span class="text-emerald-500 transition-transform duration-300 group-open:rotate-180">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-            </span>
-          </summary>
-          <div class="px-6 pb-6 text-gray-600 leading-relaxed">
-            Herbal medicines are available in many forms including tinctures (liquid extracts), capsules, tablets, teas, and topical preparations. The form recommended depends on the herb, the condition being treated, and your personal preferences. We'll work together to find what works best for you.
-          </div>
-        </details>
-      </div>
+      <FAQAccordion items={[
+        { question: "Are herbal medicines safe?", answer: "<p>When prescribed appropriately by a trained practitioner, herbal medicines are generally very safe. However, \"natural\" doesn't automatically mean safe for everyone. Some herbs can interact with medications, affect certain health conditions, or cause side effects in sensitive individuals. This is why professional guidance is important.</p>" },
+        { question: "Can I take herbs with my medications?", answer: "<p>Many herbs can be safely combined with medications, but some combinations should be avoided. During your consultation, we review all medications and supplements you're taking and check for potential interactions before recommending any botanical therapies.</p>" },
+        { question: "How long does herbal treatment take to work?", answer: "<p>This varies depending on the condition and the herbs used. Some effects, like digestive relief from carminative herbs, can be noticed quickly. Other conditions, like hormone balancing or building stress resilience, may take several weeks to months to show full benefit. We'll discuss realistic expectations for your specific situation.</p>" },
+        { question: "What forms do herbal medicines come in?", answer: "<p>Herbal medicines are available in many forms including tinctures (liquid extracts), capsules, tablets, teas, and topical preparations. The form recommended depends on the herb, the condition being treated, and your personal preferences. We'll work together to find what works best for you.</p>" },
+      ]} />
     </div>
   </section>
 
@@ -295,16 +253,7 @@ import CTAButton from '../components/CTAButton.astro';
       <p class="text-lg text-white/80 max-w-2xl mx-auto mb-8">
         Book a consultation to discuss how botanical therapies can support your health goals as part of a comprehensive treatment plan.
       </p>
-      <a
-        href="https://macleodnaturopathic.janeapp.com/"
-        target="_blank"
-        class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center"
-      >
-        Book Online
-        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-        </svg>
-      </a>
+      <CTAButton source="herbal-medicine-cta" />
     </div>
   </section>
 

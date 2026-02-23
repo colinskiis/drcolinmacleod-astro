@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
 ---
 
 <BaseLayout
@@ -392,55 +393,12 @@ import CTAButton from '../components/CTAButton.astro';
       <div class="max-w-3xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
 
-        <div class="space-y-4">
-          <details class="bg-white rounded-xl shadow-md group border border-emerald-100">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Why do I need testing if I eat a healthy diet?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Even with a healthy diet, deficiencies can occur due to soil depletion, digestive issues that impair absorption, medications that deplete nutrients, genetic variations affecting metabolism, or increased needs due to stress or health conditions. Testing removes the guesswork.
-            </div>
-          </details>
-
-          <details class="bg-white rounded-xl shadow-md group border border-emerald-100">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">How is this different from taking a multivitamin?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Multivitamins provide small, generic doses of many nutrients. Clinical nutrition identifies your specific deficiencies and provides therapeutic doses of exactly what you need. This targeted approach is more effective and avoids unnecessary supplementation.
-            </div>
-          </details>
-
-          <details class="bg-white rounded-xl shadow-md group border border-emerald-100">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">When would IV therapy be recommended over oral supplements?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              IV therapy is typically recommended when digestive absorption is compromised, deficiencies are severe and need rapid correction, or when therapeutic doses higher than oral absorption allows are beneficial (such as high-dose vitamin C for immune support).
-            </div>
-          </details>
-
-          <details class="bg-white rounded-xl shadow-md group border border-emerald-100">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Is nutritional testing covered by insurance?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Naturopathic consultations are covered by many extended health plans. Lab testing is typically an out-of-pocket expense but qualifies as a medical expense for tax purposes. We'll discuss costs upfront so you can make informed decisions.
-            </div>
-          </details>
-        </div>
+        <FAQAccordion items={[
+          { question: "Why do I need testing if I eat a healthy diet?", answer: "<p>Even with a healthy diet, deficiencies can occur due to soil depletion, digestive issues that impair absorption, medications that deplete nutrients, genetic variations affecting metabolism, or increased needs due to stress or health conditions. Testing removes the guesswork.</p>" },
+          { question: "How is this different from taking a multivitamin?", answer: "<p>Multivitamins provide small, generic doses of many nutrients. Clinical nutrition identifies your specific deficiencies and provides therapeutic doses of exactly what you need. This targeted approach is more effective and avoids unnecessary supplementation.</p>" },
+          { question: "When would IV therapy be recommended over oral supplements?", answer: "<p>IV therapy is typically recommended when digestive absorption is compromised, deficiencies are severe and need rapid correction, or when therapeutic doses higher than oral absorption allows are beneficial (such as high-dose vitamin C for immune support).</p>" },
+          { question: "Is nutritional testing covered by insurance?", answer: "<p>Naturopathic consultations are covered by many extended health plans. Lab testing is typically an out-of-pocket expense but qualifies as a medical expense for tax purposes. We'll discuss costs upfront so you can make informed decisions.</p>" },
+        ]} />
       </div>
     </div>
   </section>
@@ -477,16 +435,7 @@ import CTAButton from '../components/CTAButton.astro';
         Book a consultation to assess your nutritional status and develop a targeted plan to optimize your nutrient levels and improve your health.
       </p>
       <div class="flex justify-center">
-        <a
-          href="https://macleodnaturopathic.janeapp.com/"
-          target="_blank"
-          class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center justify-center"
-        >
-          Book Online
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-          </svg>
-        </a>
+        <CTAButton source="clinical-nutrition-cta" />
       </div>
     </div>
   </section>

@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
 ---
 
 <BaseLayout
@@ -356,67 +357,13 @@ import CTAButton from '../components/CTAButton.astro';
   <section class="py-16 lg:py-24 bg-emerald-50">
     <div class="section-shell">
       <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-12 text-center">Questions from Parents</h2>
-      <div class="max-w-3xl mx-auto space-y-6">
-        <details class="group bg-white rounded-2xl shadow-lg">
-          <summary class="flex items-center justify-between cursor-pointer p-6 font-serif font-semibold text-emerald-950">
-            Is prolotherapy safe for my child?
-            <svg class="w-5 h-5 text-emerald-700 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </summary>
-          <div class="px-6 pb-6 text-slate-600">
-            The PEDIATRICS study specifically evaluated safety in adolescents ages 10-17. No serious adverse events were reported. The injection uses a small needle (27-gauge) and contains simple dextrose (sugar) mixed with lidocaine, both commonly used and well-understood substances. Temporary soreness at the injection site is normal and typically resolves within a few days.
-          </div>
-        </details>
-
-        <details class="group bg-white rounded-2xl shadow-lg">
-          <summary class="flex items-center justify-between cursor-pointer p-6 font-serif font-semibold text-emerald-950">
-            Will my child be able to play during treatment?
-            <svg class="w-5 h-5 text-emerald-700 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </summary>
-          <div class="px-6 pb-6 text-slate-600">
-            In the study, athletes were allowed to gradually return to activity as tolerated during the treatment period. Unlike strict rest protocols, prolotherapy doesn't require complete sports avoidance. Most young patients can continue participating in their activities, with improvement allowing more comfortable participation as treatment progresses.
-          </div>
-        </details>
-
-        <details class="group bg-white rounded-2xl shadow-lg">
-          <summary class="flex items-center justify-between cursor-pointer p-6 font-serif font-semibold text-emerald-950">
-            How does this compare to just waiting it out?
-            <svg class="w-5 h-5 text-emerald-700 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </summary>
-          <div class="px-6 pb-6 text-slate-600">
-            OSD does eventually resolve for most people once growth is complete, but this can take months to years. The study showed that at one year, only 14% of the usual care group was completely asymptomatic, compared to 84% of those who received dextrose prolotherapy. Additionally, some athletes in the usual care group had to drop out of sports entirely, which didn't happen in the injection groups.
-          </div>
-        </details>
-
-        <details class="group bg-white rounded-2xl shadow-lg">
-          <summary class="flex items-center justify-between cursor-pointer p-6 font-serif font-semibold text-emerald-950">
-            What about surgery for OSD?
-            <svg class="w-5 h-5 text-emerald-700 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </summary>
-          <div class="px-6 pb-6 text-slate-600">
-            Surgery for OSD is rarely needed and typically reserved for severe cases that don't respond to other treatments after skeletal maturity. Given the excellent results with prolotherapy in the PEDIATRICS study (84% complete resolution at one year), it represents a much less invasive option that should be tried before considering surgical intervention.
-          </div>
-        </details>
-
-        <details class="group bg-white rounded-2xl shadow-lg">
-          <summary class="flex items-center justify-between cursor-pointer p-6 font-serif font-semibold text-emerald-950">
-            Will the bump on my child's knee go away?
-            <svg class="w-5 h-5 text-emerald-700 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </summary>
-          <div class="px-6 pb-6 text-slate-600">
-            The bony prominence at the tibial tuberosity often remains even after pain resolves; this is true regardless of treatment. The goal of prolotherapy is to eliminate pain and allow return to full activity, not to change the bone structure. Most adults who had OSD as children have a slightly prominent tibial tuberosity that doesn't cause any symptoms.
-          </div>
-        </details>
-      </div>
+      <FAQAccordion items={[
+        { question: "Is prolotherapy safe for my child?", answer: "<p>The PEDIATRICS study specifically evaluated safety in adolescents ages 10-17. No serious adverse events were reported. The injection uses a small needle (27-gauge) and contains simple dextrose (sugar) mixed with lidocaine, both commonly used and well-understood substances. Temporary soreness at the injection site is normal and typically resolves within a few days.</p>" },
+        { question: "Will my child be able to play during treatment?", answer: "<p>In the study, athletes were allowed to gradually return to activity as tolerated during the treatment period. Unlike strict rest protocols, prolotherapy doesn't require complete sports avoidance. Most young patients can continue participating in their activities, with improvement allowing more comfortable participation as treatment progresses.</p>" },
+        { question: "How does this compare to just waiting it out?", answer: "<p>OSD does eventually resolve for most people once growth is complete, but this can take months to years. The study showed that at one year, only 14% of the usual care group was completely asymptomatic, compared to 84% of those who received dextrose prolotherapy. Additionally, some athletes in the usual care group had to drop out of sports entirely, which didn't happen in the injection groups.</p>" },
+        { question: "What about surgery for OSD?", answer: "<p>Surgery for OSD is rarely needed and typically reserved for severe cases that don't respond to other treatments after skeletal maturity. Given the excellent results with prolotherapy in the PEDIATRICS study (84% complete resolution at one year), it represents a much less invasive option that should be tried before considering surgical intervention.</p>" },
+        { question: "Will the bump on my child's knee go away?", answer: "<p>The bony prominence at the tibial tuberosity often remains even after pain resolves; this is true regardless of treatment. The goal of prolotherapy is to eliminate pain and allow return to full activity, not to change the bone structure. Most adults who had OSD as children have a slightly prominent tibial tuberosity that doesn't cause any symptoms.</p>" },
+      ]} />
     </div>
   </section>
 
@@ -427,16 +374,7 @@ import CTAButton from '../components/CTAButton.astro';
       <p class="text-lg text-emerald-200 max-w-2xl mx-auto mb-8">
         If your child has been struggling with Osgood-Schlatter disease that won't resolve with rest, prolotherapy may be the solution. Schedule a consultation to discuss whether this treatment is right for them.
       </p>
-      <a
-        href="https://macleodnaturopathic.janeapp.com/"
-        target="_blank"
-        class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center"
-      >
-        Book Online
-        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-        </svg>
-      </a>
+      <CTAButton source="prolotherapy-for-osgood-schlatter-cta" />
     </div>
   </section>
 

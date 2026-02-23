@@ -2,7 +2,9 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
+import BookingButton from '../components/BookingButton.astro';
 import { Calendar, Check, ChevronDown, Droplets, Zap, Atom, HeartPulse, Dna } from '@lucide/astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
 ---
 
 <BaseLayout
@@ -89,14 +91,7 @@ import { Calendar, Check, ChevronDown, Droplets, Zap, Atom, HeartPulse, Dna } fr
               A consultation is required before beginning IV therapy. We will evaluate your health, discuss your goals and determine if IV therapy is appropriate for you.
             </p>
 
-            <a
-              href="https://macleodnaturopathic.janeapp.com/"
-              target="_blank"
-              class="w-full bg-emerald-700 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-emerald-800 transition-colors shadow-lg inline-flex items-center justify-center"
-            >
-              Book Online
-              <Calendar class="w-5 h-5 ml-2" aria-hidden="true" />
-            </a>
+            <BookingButton variant="secondary" size="lg" fullWidth source="iv-therapy-pricing" />
           </div>
         </div>
       </div>
@@ -224,57 +219,13 @@ import { Calendar, Check, ChevronDown, Droplets, Zap, Atom, HeartPulse, Dna } fr
       <div class="max-w-3xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
 
-        <div class="space-y-4">
-          <details class="bg-white rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Is IV therapy covered by insurance?</span>
-              <ChevronDown class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" aria-hidden="true" />
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Most insurance plans provide coverage for the administration of an IV therapy treatment which is the majority of the cost of the total treatment.
-            </div>
-          </details>
-
-          <details class="bg-white rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">How often do I need to have IV therapy?</span>
-              <ChevronDown class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" aria-hidden="true" />
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              The frequency of treatment will depend on the health concerns and sensitivity of the individual. Some conditions require more frequent treatment (once per week to start) while other health concerns can be treated less frequently (once per three months).
-            </div>
-          </details>
-
-          <details class="bg-white rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Is IV therapy safe?</span>
-              <ChevronDown class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" aria-hidden="true" />
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Yes. Dr. Colin MacLeod ND has performed thousands of IV nutrient treatments since 2011 with an excellent safety record.
-            </div>
-          </details>
-
-          <details class="bg-white rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">What health problems can IV therapy help?</span>
-              <ChevronDown class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" aria-hidden="true" />
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              IV therapy can help a wide variety of health conditions including anxiety, burnout, digestive issues, fatigue and fibromyalgia, to name a few.
-            </div>
-          </details>
-
-          <details class="bg-white rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Are there side effects from IV therapy?</span>
-              <ChevronDown class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" aria-hidden="true" />
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Side effects are not common with IV therapy. It is possible to experience light headedness, low blood pressure, nausea or discomfort at the site of IV insertion. These issues are generally self limiting and pass within a short period of time.
-            </div>
-          </details>
-        </div>
+        <FAQAccordion items={[
+          { question: "Is IV therapy covered by insurance?", answer: "<p>Most insurance plans provide coverage for the administration of an IV therapy treatment which is the majority of the cost of the total treatment.</p>" },
+          { question: "How often do I need to have IV therapy?", answer: "<p>The frequency of treatment will depend on the health concerns and sensitivity of the individual. Some conditions require more frequent treatment (once per week to start) while other health concerns can be treated less frequently (once per three months).</p>" },
+          { question: "Is IV therapy safe?", answer: "<p>Yes. Dr. Colin MacLeod ND has performed thousands of IV nutrient treatments since 2011 with an excellent safety record.</p>" },
+          { question: "What health problems can IV therapy help?", answer: "<p>IV therapy can help a wide variety of health conditions including anxiety, burnout, digestive issues, fatigue and fibromyalgia, to name a few.</p>" },
+          { question: "Are there side effects from IV therapy?", answer: "<p>Side effects are not common with IV therapy. It is possible to experience light headedness, low blood pressure, nausea or discomfort at the site of IV insertion. These issues are generally self limiting and pass within a short period of time.</p>" },
+        ]} />
       </div>
     </div>
   </section>
@@ -311,16 +262,7 @@ import { Calendar, Check, ChevronDown, Droplets, Zap, Atom, HeartPulse, Dna } fr
         <p class="text-lg text-white/80 mb-8">
           Book your consultation today and discover how IV therapy can help optimize your health and well-being.
         </p>
-        <a
-          href="https://macleodnaturopathic.janeapp.com/"
-          target="_blank"
-          class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center"
-        >
-          Book Online
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-          </svg>
-        </a>
+        <CTAButton source="iv-therapy-cta" />
       </div>
     </div>
   </section>

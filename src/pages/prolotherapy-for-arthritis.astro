@@ -2,6 +2,8 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
+import BookingButton from '../components/BookingButton.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
 ---
 
 <BaseLayout
@@ -249,16 +251,7 @@ import CTAButton from '../components/CTAButton.astro';
             To ensure that prolotherapy will be a safe and effective treatment for you, an initial naturopathic consultation is required prior to starting treatment. The initial prolotherapy treatment is offered at a lesser cost if it is on the same day as the initial consultation.
           </p>
 
-          <a
-            href="https://macleodnaturopathic.janeapp.com/"
-            target="_blank"
-            class="w-full bg-emerald-700 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-emerald-800 transition-colors shadow-lg inline-flex items-center justify-center"
-          >
-            Book Online
-            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-            </svg>
-          </a>
+          <BookingButton variant="secondary" size="lg" fullWidth source="prolotherapy-for-arthritis-pricing" />
         </div>
       </div>
     </div>
@@ -428,67 +421,13 @@ import CTAButton from '../components/CTAButton.astro';
       <div class="max-w-3xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
 
-        <div class="space-y-4">
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Does Prolotherapy Hurt?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              There can be some discomfort associated with prolotherapy but it is typically short-lived. The needle size used in a prolotherapy treatment is smaller than a needle that is used for drawing blood or for giving a cortisone injection. Additionally, a local anesthetic agent is incorporated into the prolotherapy treatment in order to minimize any discomfort experienced.
-            </div>
-          </details>
-
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">How Many Injections Will I Need?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Six treatment sessions at a rate of one injection every 1-2 weeks yields optimal results for osteoarthritis. If there is pain in the region of ligaments or tendons surrounding the joint these can also be treated effectively with prolotherapy.
-            </div>
-          </details>
-
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">What Do I Do After Prolotherapy?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              After a prolotherapy treatment it is best to limit exercise to less intense activities for 1-2 days to allow the treated region to complete the repair process unhindered.
-            </div>
-          </details>
-
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Who Should Not Have Prolotherapy?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              You may not be a candidate for prolotherapy if you are pregnant, have had a knee replacement, or have post-infectious arthritis.
-            </div>
-          </details>
-
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Is Prolotherapy Ok For Diabetics?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Yes. The amount of sugar present in a prolotherapy injection, 1-2 grams, is very small compared to the amount in many sweet foods. For example, an apple has 19g, a Snickers bar has 22g and a 12-oz glass of orange juice has 33g of sugar.
-            </div>
-          </details>
-        </div>
+        <FAQAccordion items={[
+          { question: "Does Prolotherapy Hurt?", answer: "<p>There can be some discomfort associated with prolotherapy but it is typically short-lived. The needle size used in a prolotherapy treatment is smaller than a needle that is used for drawing blood or for giving a cortisone injection. Additionally, a local anesthetic agent is incorporated into the prolotherapy treatment in order to minimize any discomfort experienced.</p>" },
+          { question: "How Many Injections Will I Need?", answer: "<p>Six treatment sessions at a rate of one injection every 1-2 weeks yields optimal results for osteoarthritis. If there is pain in the region of ligaments or tendons surrounding the joint these can also be treated effectively with prolotherapy.</p>" },
+          { question: "What Do I Do After Prolotherapy?", answer: "<p>After a prolotherapy treatment it is best to limit exercise to less intense activities for 1-2 days to allow the treated region to complete the repair process unhindered.</p>" },
+          { question: "Who Should Not Have Prolotherapy?", answer: "<p>You may not be a candidate for prolotherapy if you are pregnant, have had a knee replacement, or have post-infectious arthritis.</p>" },
+          { question: "Is Prolotherapy Ok For Diabetics?", answer: "<p>Yes. The amount of sugar present in a prolotherapy injection, 1-2 grams, is very small compared to the amount in many sweet foods. For example, an apple has 19g, a Snickers bar has 22g and a 12-oz glass of orange juice has 33g of sugar.</p>" },
+        ]} />
       </div>
     </div>
   </section>
@@ -518,23 +457,14 @@ import CTAButton from '../components/CTAButton.astro';
   </section>
 
   <!-- Final CTA -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
+  <section class="py-16 lg:py-24 bg-emerald-950">
     <div class="section-shell">
       <div class="text-center max-w-3xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-6">Ready to Experience Prolotherapy?</h2>
-        <p class="text-lg text-gray-600 mb-8">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-6">Ready to Experience Prolotherapy?</h2>
+        <p class="text-lg text-white/80 mb-8">
           Book your consultation today and discover how prolotherapy can help relieve your arthritis pain and improve your quality of life.
         </p>
-        <a
-          href="https://macleodnaturopathic.janeapp.com/"
-          target="_blank"
-          class="bg-emerald-700 text-white px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-800 transition-colors shadow-xl inline-flex items-center"
-        >
-          Book Online
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-          </svg>
-        </a>
+        <CTAButton source="prolotherapy-for-arthritis-cta" />
       </div>
     </div>
   </section>

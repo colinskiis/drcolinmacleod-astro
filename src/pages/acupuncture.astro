@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
 ---
 
 <BaseLayout
@@ -224,55 +225,12 @@ import CTAButton from '../components/CTAButton.astro';
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Frequently Asked Questions</h2>
       </div>
 
-      <div class="max-w-3xl mx-auto space-y-4">
-        <details class="group bg-white rounded-2xl shadow-sm border border-emerald-100/50 overflow-hidden transition-all duration-300 hover:shadow-md open:shadow-lg open:ring-1 open:ring-emerald-500/20">
-          <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-            <h3 class="text-lg font-medium text-emerald-950 pr-8">Does acupuncture hurt?</h3>
-            <span class="text-emerald-500 transition-transform duration-300 group-open:rotate-180">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-            </span>
-          </summary>
-          <div class="px-6 pb-6 text-gray-600 leading-relaxed">
-            Most patients experience minimal discomfort during acupuncture. The needles used are very fine, much thinner than injection needles. You may feel a brief pinch upon insertion, followed by a sensation of pressure or heaviness at the needle site, which is actually a sign that the treatment is working.
-          </div>
-        </details>
-
-        <details class="group bg-white rounded-2xl shadow-sm border border-emerald-100/50 overflow-hidden transition-all duration-300 hover:shadow-md open:shadow-lg open:ring-1 open:ring-emerald-500/20">
-          <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-            <h3 class="text-lg font-medium text-emerald-950 pr-8">How many treatments will I need?</h3>
-            <span class="text-emerald-500 transition-transform duration-300 group-open:rotate-180">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-            </span>
-          </summary>
-          <div class="px-6 pb-6 text-gray-600 leading-relaxed">
-            The number of treatments varies depending on the condition being treated, how long you've had it, and how your body responds. Acute injuries may improve in 2-4 sessions, while chronic conditions often require 6-10 treatments. Many patients notice improvement after the first session.
-          </div>
-        </details>
-
-        <details class="group bg-white rounded-2xl shadow-sm border border-emerald-100/50 overflow-hidden transition-all duration-300 hover:shadow-md open:shadow-lg open:ring-1 open:ring-emerald-500/20">
-          <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-            <h3 class="text-lg font-medium text-emerald-950 pr-8">Is acupuncture covered by insurance?</h3>
-            <span class="text-emerald-500 transition-transform duration-300 group-open:rotate-180">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-            </span>
-          </summary>
-          <div class="px-6 pb-6 text-gray-600 leading-relaxed">
-            Yes, most extended health insurance plans cover acupuncture when performed by a Naturopathic Doctor. We offer direct billing for many major insurers. Check with your insurance provider to confirm your coverage.
-          </div>
-        </details>
-
-        <details class="group bg-white rounded-2xl shadow-sm border border-emerald-100/50 overflow-hidden transition-all duration-300 hover:shadow-md open:shadow-lg open:ring-1 open:ring-emerald-500/20">
-          <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-            <h3 class="text-lg font-medium text-emerald-950 pr-8">What should I do after an acupuncture treatment?</h3>
-            <span class="text-emerald-500 transition-transform duration-300 group-open:rotate-180">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-            </span>
-          </summary>
-          <div class="px-6 pb-6 text-gray-600 leading-relaxed">
-            After treatment, drink plenty of water, avoid strenuous exercise for 24 hours, and take note of any changes in your symptoms. Some patients feel relaxed or tired after treatment, while others feel energized. Mild soreness at needle sites is normal and typically resolves within a day.
-          </div>
-        </details>
-      </div>
+      <FAQAccordion items={[
+        { question: "Does acupuncture hurt?", answer: "<p>Most patients experience minimal discomfort during acupuncture. The needles used are very fine, much thinner than injection needles. You may feel a brief pinch upon insertion, followed by a sensation of pressure or heaviness at the needle site, which is actually a sign that the treatment is working.</p>" },
+        { question: "How many treatments will I need?", answer: "<p>The number of treatments varies depending on the condition being treated, how long you've had it, and how your body responds. Acute injuries may improve in 2-4 sessions, while chronic conditions often require 6-10 treatments. Many patients notice improvement after the first session.</p>" },
+        { question: "Is acupuncture covered by insurance?", answer: "<p>Yes, most extended health insurance plans cover acupuncture when performed by a Naturopathic Doctor. We offer direct billing for many major insurers. Check with your insurance provider to confirm your coverage.</p>" },
+        { question: "What should I do after an acupuncture treatment?", answer: "<p>After treatment, drink plenty of water, avoid strenuous exercise for 24 hours, and take note of any changes in your symptoms. Some patients feel relaxed or tired after treatment, while others feel energized. Mild soreness at needle sites is normal and typically resolves within a day.</p>" },
+      ]} />
     </div>
   </section>
 
@@ -307,16 +265,7 @@ import CTAButton from '../components/CTAButton.astro';
       <p class="text-lg text-white/80 max-w-2xl mx-auto mb-8">
         Book a consultation to discuss how acupuncture can help you recover from injury, reduce pain, and improve your quality of life.
       </p>
-      <a
-        href="https://macleodnaturopathic.janeapp.com/"
-        target="_blank"
-        class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center"
-      >
-        Book Online
-        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-        </svg>
-      </a>
+      <CTAButton source="acupuncture-cta" />
     </div>
   </section>
 

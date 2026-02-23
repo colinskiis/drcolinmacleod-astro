@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
 ---
 
 <BaseLayout
@@ -344,67 +345,13 @@ import CTAButton from '../components/CTAButton.astro';
       <div class="max-w-3xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
 
-        <div class="space-y-4">
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Do I need a doctor's requisition for nutrient testing?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              No. As a naturopathic doctor, I can order comprehensive nutrient panels directly. You don't need a family doctor or specialist referral to access testing.
-            </div>
-          </details>
-
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Why do you use different "optimal" ranges than the lab?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Standard lab ranges are designed to identify severe deficiency, not optimal health. They're based on the general population, including people who are unwell. Functional optimal ranges reflect the levels at which research shows people feel and function best. For example, a vitamin D of 35 nmol/L is "normal" by lab standards but associated with increased risk of illness and fatigue.
-            </div>
-          </details>
-
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Can't I just take a multivitamin instead of testing?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              A multivitamin provides small, standardized doses that may not address your specific deficiencies. If your ferritin is 15 and your vitamin D is 25, you need targeted therapeutic doses — not the token amounts in a daily multi. Testing tells us exactly what you need and how much, which saves you money on unnecessary supplements and ensures you're actually correcting the problem.
-            </div>
-          </details>
-
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Do I need to fast before nutrient testing?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Fasting is not required for most nutrient tests. However, for the iron panel specifically, morning fasting samples give the most accurate results. If we're combining nutrient testing with other blood work (like a metabolic panel), we may recommend fasting. Specific instructions will be provided at your appointment.
-            </div>
-          </details>
-
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">How long does it take to correct a nutrient deficiency?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              It depends on the nutrient and the severity of deficiency. Iron stores can take 3–6 months to rebuild. Vitamin D levels typically improve within 2–3 months with proper supplementation. B12 deficiency may resolve more quickly with appropriate forms and doses. We retest at intervals to confirm you're on track and adjust doses as needed.
-            </div>
-          </details>
-        </div>
+        <FAQAccordion items={[
+          { question: "Do I need a doctor's requisition for nutrient testing?", answer: "<p>No. As a naturopathic doctor, I can order comprehensive nutrient panels directly. You don't need a family doctor or specialist referral to access testing.</p>" },
+          { question: 'Why do you use different "optimal" ranges than the lab?', answer: '<p>Standard lab ranges are designed to identify severe deficiency, not optimal health. They\'re based on the general population, including people who are unwell. Functional optimal ranges reflect the levels at which research shows people feel and function best. For example, a vitamin D of 35 nmol/L is "normal" by lab standards but associated with increased risk of illness and fatigue.</p>' },
+          { question: "Can't I just take a multivitamin instead of testing?", answer: "<p>A multivitamin provides small, standardized doses that may not address your specific deficiencies. If your ferritin is 15 and your vitamin D is 25, you need targeted therapeutic doses — not the token amounts in a daily multi. Testing tells us exactly what you need and how much, which saves you money on unnecessary supplements and ensures you're actually correcting the problem.</p>" },
+          { question: "Do I need to fast before nutrient testing?", answer: "<p>Fasting is not required for most nutrient tests. However, for the iron panel specifically, morning fasting samples give the most accurate results. If we're combining nutrient testing with other blood work (like a metabolic panel), we may recommend fasting. Specific instructions will be provided at your appointment.</p>" },
+          { question: "How long does it take to correct a nutrient deficiency?", answer: "<p>It depends on the nutrient and the severity of deficiency. Iron stores can take 3–6 months to rebuild. Vitamin D levels typically improve within 2–3 months with proper supplementation. B12 deficiency may resolve more quickly with appropriate forms and doses. We retest at intervals to confirm you're on track and adjust doses as needed.</p>" },
+        ]} />
       </div>
     </div>
   </section>
@@ -417,16 +364,7 @@ import CTAButton from '../components/CTAButton.astro';
         <p class="text-lg text-white/90 mb-8">
           Find out exactly which nutrients your body needs — and in what amounts — so you can feel like yourself again.
         </p>
-        <a
-          href="https://macleodnaturopathic.janeapp.com/"
-          target="_blank"
-          class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center"
-        >
-          Book Online
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-          </svg>
-        </a>
+        <CTAButton source="nutrient-testing-cta" />
       </div>
     </div>
   </section>

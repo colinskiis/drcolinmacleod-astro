@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
 ---
 
 <BaseLayout
@@ -296,67 +297,13 @@ import CTAButton from '../components/CTAButton.astro';
       <div class="max-w-3xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
 
-        <div class="space-y-4">
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">How often will I need IV treatments?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              This varies by individual. Some patients do well with weekly treatments initially, then reduce to every 2-4 weeks for maintenance. Others come in as needed when symptoms flare. We'll work with you to find the frequency that provides the best benefit for your situation.
-            </div>
-          </details>
-
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Can IV therapy replace my medications?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              IV therapy is complementary, not a replacement for medications prescribed by your doctor. Some patients find they can reduce medications over time as symptoms improve, but this should always be done in consultation with your prescribing physician. Never stop or reduce medications without medical guidance.
-            </div>
-          </details>
-
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Is there a cure for fibromyalgia?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              There is currently no cure for fibromyalgia. However, many patients achieve significant improvement in pain, energy and quality of life with comprehensive treatment. Our goal is to help you manage symptoms effectively and improve your daily function.
-            </div>
-          </details>
-
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">What if I also have chronic fatigue syndrome?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Fibromyalgia and ME/CFS frequently overlap and share many features. The good news is that our approach. IV therapy, testing and comprehensive support, addresses both conditions. We'll tailor your treatment plan to address your specific combination of symptoms.
-            </div>
-          </details>
-
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Will I feel worse before I feel better?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Most patients feel better after IV treatments, not worse. Some may experience mild fatigue the day of treatment (from the relaxation response), but this typically gives way to improved energy over the following days. We start gently and adjust based on your response.
-            </div>
-          </details>
-        </div>
+        <FAQAccordion items={[
+          { question: "How often will I need IV treatments?", answer: "<p>This varies by individual. Some patients do well with weekly treatments initially, then reduce to every 2-4 weeks for maintenance. Others come in as needed when symptoms flare. We'll work with you to find the frequency that provides the best benefit for your situation.</p>" },
+          { question: "Can IV therapy replace my medications?", answer: "<p>IV therapy is complementary, not a replacement for medications prescribed by your doctor. Some patients find they can reduce medications over time as symptoms improve, but this should always be done in consultation with your prescribing physician. Never stop or reduce medications without medical guidance.</p>" },
+          { question: "Is there a cure for fibromyalgia?", answer: "<p>There is currently no cure for fibromyalgia. However, many patients achieve significant improvement in pain, energy and quality of life with comprehensive treatment. Our goal is to help you manage symptoms effectively and improve your daily function.</p>" },
+          { question: "What if I also have chronic fatigue syndrome?", answer: "<p>Fibromyalgia and ME/CFS frequently overlap and share many features. The good news is that our approach. IV therapy, testing and comprehensive support, addresses both conditions. We'll tailor your treatment plan to address your specific combination of symptoms.</p>" },
+          { question: "Will I feel worse before I feel better?", answer: "<p>Most patients feel better after IV treatments, not worse. Some may experience mild fatigue the day of treatment (from the relaxation response), but this typically gives way to improved energy over the following days. We start gently and adjust based on your response.</p>" },
+        ]} />
       </div>
     </div>
   </section>
@@ -369,16 +316,7 @@ import CTAButton from '../components/CTAButton.astro';
         <p class="text-lg text-white/90 mb-8">
           Living with fibromyalgia is challenging, but you don't have to face it alone. Let's work together to reduce your pain, improve your energy and enhance your quality of life.
         </p>
-        <a
-          href="https://macleodnaturopathic.janeapp.com/"
-          target="_blank"
-          class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center"
-        >
-          Book Online
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-          </svg>
-        </a>
+        <CTAButton source="fibromyalgia-cta" />
       </div>
     </div>
   </section>

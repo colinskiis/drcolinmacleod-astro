@@ -5,12 +5,14 @@ export interface Props {
   href?: string;
   variant?: 'primary' | 'secondary';
   external?: boolean;
+  source?: string;
 }
 
 const {
   href = "https://macleodnaturopathic.janeapp.com/",
   variant = 'primary',
-  external = true
+  external = true,
+  source = 'unknown'
 } = Astro.props;
 
 const baseClasses = "px-10 py-4 rounded-full text-lg font-semibold transition-colors inline-flex items-center justify-center";
@@ -24,10 +26,31 @@ const variantClasses = {
   href={href}
   target={external ? "_blank" : undefined}
   rel={external ? "noopener noreferrer" : undefined}
-  class:list={[baseClasses, variantClasses[variant]]}
+  class:list={["booking-btn", baseClasses, variantClasses[variant]]}
+  data-booking-source={source}
 >
   <slot>Book Online</slot>
   {variant === 'primary' && (
     <Calendar class="w-5 h-5 ml-2" aria-hidden="true" />
   )}
 </a>
+
+<script>
+  declare function gtag(...args: any[]): void;
+  // Use a flag to avoid registering the listener more than once per page
+  if (!(window as any).__bookingTrackingInit) {
+    (window as any).__bookingTrackingInit = true;
+    document.addEventListener('click', function(e) {
+      const button = (e.target as HTMLElement)?.closest('.booking-btn');
+      if (!button) return;
+      const source = button.getAttribute('data-booking-source');
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'booking_click', {
+          event_category: 'engagement',
+          event_label: source,
+          value: 1
+        });
+      }
+    });
+  }
+</script>

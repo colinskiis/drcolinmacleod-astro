@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
 ---
 
 <BaseLayout
@@ -323,79 +324,14 @@ import CTAButton from '../components/CTAButton.astro';
       <div class="max-w-3xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
 
-        <div class="space-y-4">
-          <details class="bg-white rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">How do you determine what's causing my back pain?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              We use a combination of detailed history, physical examination including specific orthopedic tests and review of any imaging you've already had. Different pain sources have characteristic patterns. For example, sacroiliac pain typically affects one side and is worse with sitting, while facet joint pain is often worse with extension and twisting.
-            </div>
-          </details>
-
-          <details class="bg-white rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Do I need an MRI before treatment?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Not necessarily. While imaging can be helpful in some cases, research shows that MRI findings often don't correlate well with symptoms. Many people have disc bulges or degeneration on imaging but no pain, while others have significant pain with normal-looking scans. Clinical assessment is often more valuable for directing treatment. If you have existing imaging, please bring it to your appointment.
-            </div>
-          </details>
-
-          <details class="bg-white rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">How many prolotherapy treatments will I need?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Most patients require 4-6 treatment sessions, spaced 1-2 weeks apart. Some patients notice improvement after 2-3 treatments, while others need the full course. We assess your response at each visit and adjust the treatment plan accordingly.
-            </div>
-          </details>
-
-          <details class="bg-white rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Can prolotherapy help if I have a disc herniation?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Prolotherapy doesn't directly treat disc herniations, but it can help in several ways. Many patients with disc problems also have ligament laxity and facet joint dysfunction that contribute to their pain. Additionally, research has shown positive outcomes for leg pain caused by degenerative disc disease when surrounding ligaments are treated with prolotherapy.
-            </div>
-          </details>
-
-          <details class="bg-white rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Is prolotherapy painful?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              There is some discomfort with the injections, but it's typically brief. A local anesthetic is included in the solution to minimize pain. Most patients experience some soreness in the treated area for 1-3 days after treatment, which is a normal part of the healing response.
-            </div>
-          </details>
-
-          <details class="bg-white rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Should I stop my other treatments while doing prolotherapy?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Not necessarily. In fact, research shows prolotherapy works best when combined with other therapies like exercise and manual treatment. We encourage continuing with physiotherapy or chiropractic care if you're finding them helpful. We'll discuss any modifications needed around the timing of your treatments.
-            </div>
-          </details>
-        </div>
+        <FAQAccordion items={[
+          { question: "How do you determine what's causing my back pain?", answer: "<p>We use a combination of detailed history, physical examination including specific orthopedic tests and review of any imaging you've already had. Different pain sources have characteristic patterns. For example, sacroiliac pain typically affects one side and is worse with sitting, while facet joint pain is often worse with extension and twisting.</p>" },
+          { question: "Do I need an MRI before treatment?", answer: "<p>Not necessarily. While imaging can be helpful in some cases, research shows that MRI findings often don't correlate well with symptoms. Many people have disc bulges or degeneration on imaging but no pain, while others have significant pain with normal-looking scans. Clinical assessment is often more valuable for directing treatment. If you have existing imaging, please bring it to your appointment.</p>" },
+          { question: "How many prolotherapy treatments will I need?", answer: "<p>Most patients require 4-6 treatment sessions, spaced 1-2 weeks apart. Some patients notice improvement after 2-3 treatments, while others need the full course. We assess your response at each visit and adjust the treatment plan accordingly.</p>" },
+          { question: "Can prolotherapy help if I have a disc herniation?", answer: "<p>Prolotherapy doesn't directly treat disc herniations, but it can help in several ways. Many patients with disc problems also have ligament laxity and facet joint dysfunction that contribute to their pain. Additionally, research has shown positive outcomes for leg pain caused by degenerative disc disease when surrounding ligaments are treated with prolotherapy.</p>" },
+          { question: "Is prolotherapy painful?", answer: "<p>There is some discomfort with the injections, but it's typically brief. A local anesthetic is included in the solution to minimize pain. Most patients experience some soreness in the treated area for 1-3 days after treatment, which is a normal part of the healing response.</p>" },
+          { question: "Should I stop my other treatments while doing prolotherapy?", answer: "<p>Not necessarily. In fact, research shows prolotherapy works best when combined with other therapies like exercise and manual treatment. We encourage continuing with physiotherapy or chiropractic care if you're finding them helpful. We'll discuss any modifications needed around the timing of your treatments.</p>" },
+        ]} />
       </div>
     </div>
   </section>
@@ -408,16 +344,7 @@ import CTAButton from '../components/CTAButton.astro';
         <p class="text-lg text-white/90 mb-8">
           Don't let low back pain limit your life. Book a consultation to discuss your treatment options and develop a plan to get you moving comfortably again.
         </p>
-        <a
-          href="https://macleodnaturopathic.janeapp.com/"
-          target="_blank"
-          class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center"
-        >
-          Book Online
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-          </svg>
-        </a>
+        <CTAButton source="low-back-pain-cta" />
       </div>
     </div>
   </section>

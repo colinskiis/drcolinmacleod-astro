@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
+import BookingButton from '../components/BookingButton.astro';
 ---
 
 <BaseLayout
@@ -152,16 +153,7 @@ import CTAButton from '../components/CTAButton.astro';
             To ensure that chelation therapy will be a safe and effective treatment for you an initial naturopathic consultation is required prior to starting treatment. If you would like to get started with chelation therapy after your initial visit please book an "Initial consultation with IV treatment." The initial chelation therapy treatment is offered at a lesser cost if it is on the same day as the initial consultation.
           </p>
 
-          <a
-            href="https://macleodnaturopathic.janeapp.com/"
-            target="_blank"
-            class="w-full bg-emerald-700 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-emerald-800 transition-colors shadow-lg inline-flex items-center justify-center"
-          >
-            Book Online
-            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-            </svg>
-          </a>
+          <BookingButton variant="secondary" size="lg" fullWidth source="chelation-therapy-pricing" />
         </div>
       </div>
     </div>
@@ -372,23 +364,14 @@ import CTAButton from '../components/CTAButton.astro';
   </section>
 
   <!-- Final CTA -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
+  <section class="py-16 lg:py-24 bg-emerald-950">
     <div class="section-shell">
       <div class="text-center max-w-3xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-6">Ready to Experience Chelation Therapy?</h2>
-        <p class="text-lg text-gray-600 mb-8">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-6">Ready to Experience Chelation Therapy?</h2>
+        <p class="text-lg text-white/80 mb-8">
           Book your consultation today and discover how chelation therapy can help improve your cardiovascular health and remove toxic metals from your body.
         </p>
-        <a
-          href="https://macleodnaturopathic.janeapp.com/"
-          target="_blank"
-          class="bg-emerald-700 text-white px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-800 transition-colors shadow-xl inline-flex items-center"
-        >
-          Book Online
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-          </svg>
-        </a>
+        <CTAButton source="chelation-therapy-cta" />
       </div>
     </div>
   </section>

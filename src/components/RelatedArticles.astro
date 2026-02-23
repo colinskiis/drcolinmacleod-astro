@@ -65,7 +65,7 @@ const relatedArticles = [...scoredArticles, ...recentArticles];
       {relatedArticles.map((article) => (
         <a
           href={`/articles/${article.slug}`}
-          class="group bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-shadow"
+          class="group bg-white border border-gray-200 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
         >
           {article.data.heroImage && (
             <div class="aspect-video overflow-hidden">

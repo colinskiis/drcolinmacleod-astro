@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
 ---
 
 <BaseLayout
@@ -379,67 +380,13 @@ import CTAButton from '../components/CTAButton.astro';
       <div class="max-w-3xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
 
-        <div class="space-y-4">
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Do I need a doctor's requisition for thyroid testing?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              No. As a naturopathic doctor, I can order comprehensive thyroid panels directly. You don't need a family doctor or specialist referral to access complete testing.
-            </div>
-          </details>
-
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Is thyroid testing covered by MSI?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Testing ordered through a naturopathic doctor is not covered by MSI. However, many extended health plans cover naturopathic services. The lab testing itself is an out-of-pocket expense, but provides access to markers that are often not ordered through conventional channels.
-            </div>
-          </details>
-
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">When should I get my blood drawn for thyroid testing?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Thyroid testing is best done in the morning, ideally before 10 AM. If you're taking thyroid medication, draw blood before taking your morning dose. Fasting is not required but is often recommended if we're running other tests at the same time.
-            </div>
-          </details>
-
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">I'm already on thyroid medication. Can you still help?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Yes. Many patients on thyroid medication still don't feel optimal. Comprehensive testing can reveal whether your current medication is working effectively, whether you're converting T4 to T3 properly, and whether there are other factors affecting your thyroid health. I work alongside your prescribing physician, not in place of them.
-            </div>
-          </details>
-
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">What if my antibodies are elevated?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Elevated antibodies indicate autoimmune thyroid activity, but it's not a death sentence. Research shows that addressing underlying factors, including gut health, nutrient deficiencies, gluten sensitivity, and stress, can help reduce antibody levels in many patients. Early detection gives us the opportunity to intervene before significant thyroid damage occurs.
-            </div>
-          </details>
-        </div>
+        <FAQAccordion items={[
+          { question: "Do I need a doctor's requisition for thyroid testing?", answer: "<p>No. As a naturopathic doctor, I can order comprehensive thyroid panels directly. You don't need a family doctor or specialist referral to access complete testing.</p>" },
+          { question: "Is thyroid testing covered by MSI?", answer: "<p>Testing ordered through a naturopathic doctor is not covered by MSI. However, many extended health plans cover naturopathic services. The lab testing itself is an out-of-pocket expense, but provides access to markers that are often not ordered through conventional channels.</p>" },
+          { question: "When should I get my blood drawn for thyroid testing?", answer: "<p>Thyroid testing is best done in the morning, ideally before 10 AM. If you're taking thyroid medication, draw blood before taking your morning dose. Fasting is not required but is often recommended if we're running other tests at the same time.</p>" },
+          { question: "I'm already on thyroid medication. Can you still help?", answer: "<p>Yes. Many patients on thyroid medication still don't feel optimal. Comprehensive testing can reveal whether your current medication is working effectively, whether you're converting T4 to T3 properly, and whether there are other factors affecting your thyroid health. I work alongside your prescribing physician, not in place of them.</p>" },
+          { question: "What if my antibodies are elevated?", answer: "<p>Elevated antibodies indicate autoimmune thyroid activity, but it's not a death sentence. Research shows that addressing underlying factors, including gut health, nutrient deficiencies, gluten sensitivity, and stress, can help reduce antibody levels in many patients. Early detection gives us the opportunity to intervene before significant thyroid damage occurs.</p>" },
+        ]} />
       </div>
     </div>
   </section>
@@ -452,16 +399,7 @@ import CTAButton from '../components/CTAButton.astro';
         <p class="text-lg text-white/90 mb-8">
           Stop wondering if your thyroid is the problem. Comprehensive testing gives you real answers and a path forward.
         </p>
-        <a
-          href="https://macleodnaturopathic.janeapp.com/"
-          target="_blank"
-          class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center"
-        >
-          Book Online
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-          </svg>
-        </a>
+        <CTAButton source="thyroid-testing-cta" />
       </div>
     </div>
   </section>

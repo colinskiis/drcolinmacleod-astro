@@ -1,6 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
+import BookingButton from '../components/BookingButton.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
 ---
 
 <BaseLayout
@@ -196,17 +198,7 @@ import HeroSection from '../components/HeroSection.astro';
             <p class="text-gray-600 mb-4">
               Ready to schedule? Our online booking system is the fastest way to secure your appointment with Dr. MacLeod.
             </p>
-            <a
-              href="https://macleodnaturopathic.janeapp.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="bg-emerald-900 text-white px-6 py-3 rounded-full font-semibold hover:bg-emerald-800 transition-colors inline-flex items-center shadow-lg"
-            >
-              Book Online
-              <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-              </svg>
-            </a>
+            <BookingButton variant="secondary" size="lg" source="contact" />
           </div>
 
         </div>
@@ -222,55 +214,12 @@ import HeroSection from '../components/HeroSection.astro';
         <p class="text-lg text-gray-600">Common questions about naturopathic consultations and treatments</p>
       </div>
 
-      <div class="max-w-3xl mx-auto space-y-6">
-        <div class="bg-white rounded-lg shadow-sm">
-          <button class="faq-question w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors" aria-expanded="false" aria-controls="faq-1">
-            <span class="font-semibold text-gray-800">What should I expect in my first consultation?</span>
-            <svg class="w-5 h-5 text-gray-500 transform transition-transform faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </button>
-          <div id="faq-1" class="faq-answer hidden px-6 pb-4" role="region">
-            <p class="text-gray-600">Your first appointment is comprehensive, typically lasting 60 minutes. Dr. MacLeod will review your health history, current concerns, lifestyle factors and may recommend laboratory testing. This thorough assessment helps create a personalized treatment plan.</p>
-          </div>
-        </div>
-
-        <div class="bg-white rounded-lg shadow-sm">
-          <button class="faq-question w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors" aria-expanded="false" aria-controls="faq-2">
-            <span class="font-semibold text-gray-800">Is naturopathic medicine covered by insurance?</span>
-            <svg class="w-5 h-5 text-gray-500 transform transition-transform faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </button>
-          <div id="faq-2" class="faq-answer hidden px-6 pb-4" role="region">
-            <p class="text-gray-600">Yes, most extended health insurance plans cover naturopathic visits. We offer direct billing for many major insurers to make the process convenient for you.</p>
-          </div>
-        </div>
-
-        <div class="bg-white rounded-lg shadow-sm">
-          <button class="faq-question w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors" aria-expanded="false" aria-controls="faq-3">
-            <span class="font-semibold text-gray-800">How long will it take to see results?</span>
-            <svg class="w-5 h-5 text-gray-500 transform transition-transform faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </button>
-          <div id="faq-3" class="faq-answer hidden px-6 pb-4" role="region">
-            <p class="text-gray-600">Treatment response varies by individual and condition. Some patients notice improvements within days (especially with IV therapy), while chronic conditions may require several weeks to months. Dr. MacLeod monitors progress closely and adjusts treatments as needed.</p>
-          </div>
-        </div>
-
-        <div class="bg-white rounded-lg shadow-sm">
-          <button class="faq-question w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors" aria-expanded="false" aria-controls="faq-4">
-            <span class="font-semibold text-gray-800">Can I combine naturopathic treatment with conventional medicine?</span>
-            <svg class="w-5 h-5 text-gray-500 transform transition-transform faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </button>
-          <div id="faq-4" class="faq-answer hidden px-6 pb-4" role="region">
-            <p class="text-gray-600">Absolutely. Dr. MacLeod works collaboratively with your existing healthcare team. Naturopathic treatments often complement conventional approaches effectively. We always consider medication interactions and communicate with your other healthcare providers when appropriate.</p>
-          </div>
-        </div>
-      </div>
+      <FAQAccordion items={[
+        { question: "What should I expect in my first consultation?", answer: "<p>Your first appointment is comprehensive, typically lasting 60 minutes. Dr. MacLeod will review your health history, current concerns, lifestyle factors and may recommend laboratory testing. This thorough assessment helps create a personalized treatment plan.</p>" },
+        { question: "Is naturopathic medicine covered by insurance?", answer: "<p>Yes, most extended health insurance plans cover naturopathic visits. We offer direct billing for many major insurers to make the process convenient for you.</p>" },
+        { question: "How long will it take to see results?", answer: "<p>Treatment response varies by individual and condition. Some patients notice improvements within days (especially with IV therapy), while chronic conditions may require several weeks to months. Dr. MacLeod monitors progress closely and adjusts treatments as needed.</p>" },
+        { question: "Can I combine naturopathic treatment with conventional medicine?", answer: "<p>Absolutely. Dr. MacLeod works collaboratively with your existing healthcare team. Naturopathic treatments often complement conventional approaches effectively. We always consider medication interactions and communicate with your other healthcare providers when appropriate.</p>" },
+      ]} />
     </div>
   </section>
 </BaseLayout>
@@ -285,32 +234,6 @@ import HeroSection from '../components/HeroSection.astro';
     const formMessages = document.getElementById('form-messages');
     const successMessage = document.getElementById('success-message');
     const errorMessage = document.getElementById('error-message');
-
-    // FAQ functionality
-    const faqQuestions = document.querySelectorAll('.faq-question');
-    faqQuestions.forEach(question => {
-      question.addEventListener('click', () => {
-        const answer = question.nextElementSibling as HTMLElement | null;
-        const icon = question.querySelector('.faq-icon') as HTMLElement | null;
-        if (!answer) return;
-
-        if (answer.classList.contains('hidden')) {
-          // Close all other answers
-          document.querySelectorAll('.faq-answer').forEach(a => a.classList.add('hidden'));
-          document.querySelectorAll('.faq-icon').forEach(i => i.classList.remove('rotate-180'));
-          document.querySelectorAll('.faq-question').forEach(q => q.setAttribute('aria-expanded', 'false'));
-
-          // Open this answer
-          answer.classList.remove('hidden');
-          icon?.classList.add('rotate-180');
-          question.setAttribute('aria-expanded', 'true');
-        } else {
-          answer.classList.add('hidden');
-          icon?.classList.remove('rotate-180');
-          question.setAttribute('aria-expanded', 'false');
-        }
-      });
-    });
 
     // Form submission
     if (!form || !submitBtn || !submitText || !submitLoading || !formMessages || !successMessage || !errorMessage) return;
@@ -364,8 +287,3 @@ import HeroSection from '../components/HeroSection.astro';
   document.addEventListener('astro:page-load', initContactPage);
 </script>
 
-<style>
-  .rotate-180 {
-    transform: rotate(180deg);
-  }
-</style>

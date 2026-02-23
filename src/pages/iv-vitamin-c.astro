@@ -2,7 +2,8 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
-import { Minus, Check, Shield, Zap, RefreshCw, Heart, Sparkles, ChevronRight, ChevronDown, Calendar } from '@lucide/astro';
+import { Minus, Check, Shield, Zap, RefreshCw, Heart, Sparkles, ChevronRight, ChevronDown } from '@lucide/astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
 ---
 
 <BaseLayout
@@ -366,47 +367,12 @@ import { Minus, Check, Shield, Zap, RefreshCw, Heart, Sparkles, ChevronRight, Ch
       <div class="max-w-3xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
 
-        <div class="space-y-4">
-          <details class="bg-white rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">How often should I get IV vitamin C?</span>
-              <ChevronDown class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" aria-hidden="true" />
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              This depends on your goals. For acute illness, treatments may be given daily or every other day until you recover. For general wellness and immune support, weekly or bi-weekly treatments are common. For maintenance, monthly treatments may be sufficient. We'll recommend a schedule based on your individual needs.
-            </div>
-          </details>
-
-          <details class="bg-white rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Can I get IV vitamin C while I'm sick?</span>
-              <ChevronDown class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" aria-hidden="true" />
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Yes. In fact, this is often the best time to get it. Your body's vitamin C requirements increase significantly during infection. IV vitamin C can help support your immune response and may help you recover faster. Please let us know what symptoms you're experiencing when you book.
-            </div>
-          </details>
-
-          <details class="bg-white rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Is IV vitamin C the same as getting a vitamin C shot?</span>
-              <ChevronDown class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" aria-hidden="true" />
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              No. Intramuscular vitamin C "shots" deliver a much smaller amount. IV infusion allows us to deliver significantly higher doses over time, achieving the blood concentrations needed for therapeutic effects.
-            </div>
-          </details>
-
-          <details class="bg-white rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Should I stop taking oral vitamin C if I'm getting IVs?</span>
-              <ChevronDown class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" aria-hidden="true" />
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Not necessarily. Oral vitamin C provides ongoing, low-level support between IV treatments. The two work well together: IV provides periodic high-dose therapy while oral maintains baseline levels. We can discuss the best approach for your situation.
-            </div>
-          </details>
-        </div>
+        <FAQAccordion items={[
+          { question: "How often should I get IV vitamin C?", answer: "<p>This depends on your goals. For acute illness, treatments may be given daily or every other day until you recover. For general wellness and immune support, weekly or bi-weekly treatments are common. For maintenance, monthly treatments may be sufficient. We'll recommend a schedule based on your individual needs.</p>" },
+          { question: "Can I get IV vitamin C while I'm sick?", answer: "<p>Yes. In fact, this is often the best time to get it. Your body's vitamin C requirements increase significantly during infection. IV vitamin C can help support your immune response and may help you recover faster. Please let us know what symptoms you're experiencing when you book.</p>" },
+          { question: "Is IV vitamin C the same as getting a vitamin C shot?", answer: "<p>No. Intramuscular vitamin C \"shots\" deliver a much smaller amount. IV infusion allows us to deliver significantly higher doses over time, achieving the blood concentrations needed for therapeutic effects.</p>" },
+          { question: "Should I stop taking oral vitamin C if I'm getting IVs?", answer: "<p>Not necessarily. Oral vitamin C provides ongoing, low-level support between IV treatments. The two work well together: IV provides periodic high-dose therapy while oral maintains baseline levels. We can discuss the best approach for your situation.</p>" },
+        ]} />
       </div>
     </div>
   </section>
@@ -419,14 +385,7 @@ import { Minus, Check, Shield, Zap, RefreshCw, Heart, Sparkles, ChevronRight, Ch
         <p class="text-lg text-white/90 mb-8">
           Whether you're fighting off an illness, recovering from one or simply want to optimize your health, IV vitamin C can help. Book your treatment today.
         </p>
-        <a
-          href="https://macleodnaturopathic.janeapp.com/"
-          target="_blank"
-          class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center"
-        >
-          Book Online
-          <Calendar class="w-5 h-5 ml-2" aria-hidden="true" />
-        </a>
+        <CTAButton source="iv-vitamin-c-cta" />
         <p class="text-white/70 mt-6 text-sm">Initial consultation required for new patients | Most extended health plans cover naturopathic services</p>
       </div>
     </div>

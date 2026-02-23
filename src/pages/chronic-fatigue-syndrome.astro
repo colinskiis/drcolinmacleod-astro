@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
 ---
 
 <BaseLayout
@@ -318,67 +319,13 @@ import CTAButton from '../components/CTAButton.astro';
       <div class="max-w-3xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
 
-        <div class="space-y-4">
-          <details class="bg-white rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">How quickly will I notice improvement?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Many patients notice improved energy within hours of their first IV treatment, though this effect may be temporary initially. With regular treatment, improvements often become more sustained. Addressing underlying issues like thyroid dysfunction or nutrient deficiencies typically takes weeks to months to show full benefit.
-            </div>
-          </details>
-
-          <details class="bg-white rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">How often will I need IV treatments?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              This varies significantly between patients. Some do well with weekly treatments initially, then transition to every 2-4 weeks for maintenance. Others use IV therapy as needed during flares or particularly demanding periods. We'll work with you to find a frequency that provides benefit while fitting your budget and schedule.
-            </div>
-          </details>
-
-          <details class="bg-white rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Is there a cure for ME/CFS?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              There is currently no known cure for ME/CFS, and we won't promise one. However, many patients can achieve significant improvement in function and quality of life with comprehensive treatment. Some patients do eventually recover, though this isn't predictable. Our goal is to help you function as well as possible while supporting your body's capacity to heal.
-            </div>
-          </details>
-
-          <details class="bg-white rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">I've tried everything. Can you still help?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Many patients come to us after years of unsuccessful treatment. We often find issues that weren't fully addressed, including incomplete thyroid testing, unrecognized nutrient deficiencies, or chronic infections that weren't identified. Even when we can't find new issues, IV therapy provides a different delivery mechanism that may work when oral supplements haven't.
-            </div>
-          </details>
-
-          <details class="bg-white rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Do you treat long COVID fatigue?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Yes. Long COVID shares many features with ME/CFS, including post-exertional malaise and profound fatigue. Our approach (comprehensive testing, IV nutrient therapy, and targeted support) applies equally well to post-viral fatigue from COVID-19 or other infections.
-            </div>
-          </details>
-        </div>
+        <FAQAccordion items={[
+          { question: "How quickly will I notice improvement?", answer: "<p>Many patients notice improved energy within hours of their first IV treatment, though this effect may be temporary initially. With regular treatment, improvements often become more sustained. Addressing underlying issues like thyroid dysfunction or nutrient deficiencies typically takes weeks to months to show full benefit.</p>" },
+          { question: "How often will I need IV treatments?", answer: "<p>This varies significantly between patients. Some do well with weekly treatments initially, then transition to every 2-4 weeks for maintenance. Others use IV therapy as needed during flares or particularly demanding periods. We'll work with you to find a frequency that provides benefit while fitting your budget and schedule.</p>" },
+          { question: "Is there a cure for ME/CFS?", answer: "<p>There is currently no known cure for ME/CFS, and we won't promise one. However, many patients can achieve significant improvement in function and quality of life with comprehensive treatment. Some patients do eventually recover, though this isn't predictable. Our goal is to help you function as well as possible while supporting your body's capacity to heal.</p>" },
+          { question: "I've tried everything. Can you still help?", answer: "<p>Many patients come to us after years of unsuccessful treatment. We often find issues that weren't fully addressed, including incomplete thyroid testing, unrecognized nutrient deficiencies, or chronic infections that weren't identified. Even when we can't find new issues, IV therapy provides a different delivery mechanism that may work when oral supplements haven't.</p>" },
+          { question: "Do you treat long COVID fatigue?", answer: "<p>Yes. Long COVID shares many features with ME/CFS, including post-exertional malaise and profound fatigue. Our approach (comprehensive testing, IV nutrient therapy, and targeted support) applies equally well to post-viral fatigue from COVID-19 or other infections.</p>" },
+        ]} />
       </div>
     </div>
   </section>
@@ -392,16 +339,7 @@ import CTAButton from '../components/CTAButton.astro';
           Living with chronic fatigue is exhausting in every sense. Let's work together to identify what's contributing to your symptoms and develop a plan to help restore your energy and quality of life.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
-            href="https://macleodnaturopathic.janeapp.com/"
-            target="_blank"
-            class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center justify-center"
-          >
-            Book Online
-            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-            </svg>
-          </a>
+          <CTAButton source="chronic-fatigue-syndrome-cta" />
         </div>
         <p class="text-white/70 mt-6 text-sm">Most extended health plans cover naturopathic services</p>
       </div>

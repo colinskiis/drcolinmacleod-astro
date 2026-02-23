@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
 ---
 
 <BaseLayout
@@ -344,67 +345,13 @@ import CTAButton from '../components/CTAButton.astro';
       <div class="max-w-3xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
 
-        <div class="space-y-4">
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">When should hormone testing be done in my cycle?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Timing depends on which hormones are being tested. Progesterone is best measured during the luteal phase (days 19–21 of the cycle). FSH and LH provide more information when tested early in the cycle (days 2–4). Testosterone and DHEA can be tested at any time. We'll guide you on the optimal timing during your consultation.
-            </div>
-          </details>
-
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">What's the difference between blood and DUTCH testing?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Blood testing measures hormone levels at a single point in time and is excellent for sex hormones and DHEA-S. The DUTCH test (dried urine) measures hormones and their metabolites — showing not just how much you produce, but how your body processes and clears hormones. This reveals estrogen metabolism patterns (important for cancer risk), cortisol clearance issues, and methylation pathway function. DUTCH is more comprehensive but also more expensive.
-            </div>
-          </details>
-
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Can men get hormone testing?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Absolutely. Men's hormonal health is often overlooked. We test total and free testosterone, DHEA-S, cortisol and estradiol (yes, men produce estrogen too, and high levels cause problems). Testosterone levels decline 1–2% per year after 30, and many men in their 40s and 50s experience symptoms that are attributed to aging but are actually treatable hormonal changes.
-            </div>
-          </details>
-
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Do I need a referral for hormone testing?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              No. As a naturopathic doctor, I can order comprehensive hormone panels directly — blood, saliva and DUTCH testing. You don't need a family doctor, endocrinologist or any other referral. Many patients come to us specifically because they haven't been able to get the testing they need through conventional channels.
-            </div>
-          </details>
-
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">What is estrogen dominance?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Estrogen dominance occurs when estrogen levels are high relative to progesterone. This can happen when estrogen is truly elevated or when progesterone is low. Symptoms include heavy periods, breast tenderness, weight gain, bloating, mood swings, fibroids and increased cancer risk. It's one of the most common hormonal imbalances we see, and it's rarely tested for through conventional channels because progesterone is often not included in standard panels.
-            </div>
-          </details>
-        </div>
+        <FAQAccordion items={[
+          { question: "When should hormone testing be done in my cycle?", answer: "<p>Timing depends on which hormones are being tested. Progesterone is best measured during the luteal phase (days 19–21 of the cycle). FSH and LH provide more information when tested early in the cycle (days 2–4). Testosterone and DHEA can be tested at any time. We'll guide you on the optimal timing during your consultation.</p>" },
+          { question: "What's the difference between blood and DUTCH testing?", answer: "<p>Blood testing measures hormone levels at a single point in time and is excellent for sex hormones and DHEA-S. The DUTCH test (dried urine) measures hormones and their metabolites — showing not just how much you produce, but how your body processes and clears hormones. This reveals estrogen metabolism patterns (important for cancer risk), cortisol clearance issues, and methylation pathway function. DUTCH is more comprehensive but also more expensive.</p>" },
+          { question: "Can men get hormone testing?", answer: "<p>Absolutely. Men's hormonal health is often overlooked. We test total and free testosterone, DHEA-S, cortisol and estradiol (yes, men produce estrogen too, and high levels cause problems). Testosterone levels decline 1–2% per year after 30, and many men in their 40s and 50s experience symptoms that are attributed to aging but are actually treatable hormonal changes.</p>" },
+          { question: "Do I need a referral for hormone testing?", answer: "<p>No. As a naturopathic doctor, I can order comprehensive hormone panels directly — blood, saliva and DUTCH testing. You don't need a family doctor, endocrinologist or any other referral. Many patients come to us specifically because they haven't been able to get the testing they need through conventional channels.</p>" },
+          { question: "What is estrogen dominance?", answer: "<p>Estrogen dominance occurs when estrogen levels are high relative to progesterone. This can happen when estrogen is truly elevated or when progesterone is low. Symptoms include heavy periods, breast tenderness, weight gain, bloating, mood swings, fibroids and increased cancer risk. It's one of the most common hormonal imbalances we see, and it's rarely tested for through conventional channels because progesterone is often not included in standard panels.</p>" },
+        ]} />
       </div>
     </div>
   </section>
@@ -417,16 +364,7 @@ import CTAButton from '../components/CTAButton.astro';
         <p class="text-lg text-white/90 mb-8">
           Stop wondering and start testing. Comprehensive hormone assessment gives you the information you need to feel like yourself again.
         </p>
-        <a
-          href="https://macleodnaturopathic.janeapp.com/"
-          target="_blank"
-          class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center"
-        >
-          Book Online
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-          </svg>
-        </a>
+        <CTAButton source="hormone-testing-cta" />
       </div>
     </div>
   </section>

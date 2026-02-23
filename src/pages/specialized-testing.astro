@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
 ---
 
 <BaseLayout
@@ -344,67 +345,13 @@ import CTAButton from '../components/CTAButton.astro';
       <div class="max-w-3xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
 
-        <div class="space-y-4">
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Do I need all of these tests?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              No. Specialized testing is selected based on your individual case. Most patients need only one or two of these panels. During your consultation, we'll review your symptoms, history and any previous testing to determine which tests are most likely to provide useful clinical information. We never recommend tests without clear clinical justification.
-            </div>
-          </details>
-
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">How much do specialized tests cost?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Costs vary depending on the test. Basic panels may start around $200–300, while comprehensive tests like the DUTCH or organic acids panel can range from $350–500. We're always transparent about costs before ordering and will discuss which tests offer the best value for your specific situation. Some extended health plans provide partial coverage for laboratory testing.
-            </div>
-          </details>
-
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Are these tests scientifically valid?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Yes. We use tests from accredited, CLIA-certified laboratories that meet rigorous quality standards. The organic acids test, DUTCH hormone panel, and GI-MAP, for example, are used by thousands of practitioners worldwide and supported by peer-reviewed research. We prioritize tests with strong clinical evidence and proven utility.
-            </div>
-          </details>
-
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Should I start with basic blood work or specialized testing?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              In most cases, we start with comprehensive basic blood work (wellness panel, nutrients, thyroid) before moving to specialized testing. This layered approach ensures we're not over-testing and that we catch common issues first. If your basic work is unremarkable but symptoms persist, specialized testing becomes the logical next step.
-            </div>
-          </details>
-
-          <details class="bg-emerald-50 rounded-xl shadow-md group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="font-semibold text-emerald-950">Can you work with my existing healthcare team?</span>
-              <svg class="w-5 h-5 text-emerald-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600">
-              Absolutely. Collaborative care leads to better outcomes. If you have a family doctor, specialist, or other healthcare providers, we're happy to share results and coordinate care. Many patients use our specialized testing to complement their conventional medical care, and we work alongside your existing providers — not in place of them.
-            </div>
-          </details>
-        </div>
+        <FAQAccordion items={[
+          { question: "Do I need all of these tests?", answer: "<p>No. Specialized testing is selected based on your individual case. Most patients need only one or two of these panels. During your consultation, we'll review your symptoms, history and any previous testing to determine which tests are most likely to provide useful clinical information. We never recommend tests without clear clinical justification.</p>" },
+          { question: "How much do specialized tests cost?", answer: "<p>Costs vary depending on the test. Basic panels may start around $200–300, while comprehensive tests like the DUTCH or organic acids panel can range from $350–500. We're always transparent about costs before ordering and will discuss which tests offer the best value for your specific situation. Some extended health plans provide partial coverage for laboratory testing.</p>" },
+          { question: "Are these tests scientifically valid?", answer: "<p>Yes. We use tests from accredited, CLIA-certified laboratories that meet rigorous quality standards. The organic acids test, DUTCH hormone panel, and GI-MAP, for example, are used by thousands of practitioners worldwide and supported by peer-reviewed research. We prioritize tests with strong clinical evidence and proven utility.</p>" },
+          { question: "Should I start with basic blood work or specialized testing?", answer: "<p>In most cases, we start with comprehensive basic blood work (wellness panel, nutrients, thyroid) before moving to specialized testing. This layered approach ensures we're not over-testing and that we catch common issues first. If your basic work is unremarkable but symptoms persist, specialized testing becomes the logical next step.</p>" },
+          { question: "Can you work with my existing healthcare team?", answer: "<p>Absolutely. Collaborative care leads to better outcomes. If you have a family doctor, specialist, or other healthcare providers, we're happy to share results and coordinate care. Many patients use our specialized testing to complement their conventional medical care, and we work alongside your existing providers — not in place of them.</p>" },
+        ]} />
       </div>
     </div>
   </section>
@@ -417,16 +364,7 @@ import CTAButton from '../components/CTAButton.astro';
         <p class="text-lg text-white/90 mb-8">
           When standard testing hasn't given you answers, functional medicine testing can. Let's find out what's really going on.
         </p>
-        <a
-          href="https://macleodnaturopathic.janeapp.com/"
-          target="_blank"
-          class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center"
-        >
-          Book Online
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-          </svg>
-        </a>
+        <CTAButton source="specialized-testing-cta" />
       </div>
     </div>
   </section>
