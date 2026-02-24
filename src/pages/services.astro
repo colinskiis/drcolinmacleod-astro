@@ -27,7 +27,24 @@ import { ChevronRight } from '@lucide/astro';
           </p>
         </div>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 reveal reveal-delay-100">
+        <!-- Mobile: Link list -->
+        <div class="sm:hidden space-y-1 reveal reveal-delay-100">
+          <a href="/lab-testing" class="flex items-center gap-3 py-4 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-100">
+            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" aria-hidden="true" />
+            Laboratory Testing
+          </a>
+          <a href="/clinical-nutrition" class="flex items-center gap-3 py-4 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-100">
+            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" aria-hidden="true" />
+            Clinical Nutrition
+          </a>
+          <a href="/herbal-medicine" class="flex items-center gap-3 py-4 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-100">
+            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" aria-hidden="true" />
+            Herbal Medicine
+          </a>
+        </div>
+
+        <!-- Desktop: Card grid -->
+        <div class="hidden sm:grid md:grid-cols-2 lg:grid-cols-3 gap-8 reveal reveal-delay-100">
           <!-- Lab Testing -->
           <a href="/lab-testing" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
             <div class="aspect-[4/3] overflow-hidden">
@@ -75,7 +92,20 @@ import { ChevronRight } from '@lucide/astro';
           </p>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-8 reveal reveal-delay-100">
+        <!-- Mobile: Link list -->
+        <div class="sm:hidden space-y-1 reveal reveal-delay-100">
+          <a href="/iv-therapy" class="flex items-center gap-3 py-4 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-100">
+            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" aria-hidden="true" />
+            IV Therapy
+          </a>
+          <a href="/sports-medicine" class="flex items-center gap-3 py-4 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-100">
+            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" aria-hidden="true" />
+            Pain Medicine
+          </a>
+        </div>
+
+        <!-- Desktop: Card grid -->
+        <div class="hidden sm:grid md:grid-cols-2 gap-8 reveal reveal-delay-100">
           <!-- IV Therapy -->
           <a href="/iv-therapy" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
             <div class="aspect-[4/3] overflow-hidden">
@@ -107,7 +137,7 @@ import { ChevronRight } from '@lucide/astro';
   </section>
 
   <!-- Pricing Section -->
-  <section id="pricing" class="py-16 lg:py-24 bg-emerald-50">
+  <section id="pricing" class="py-10 sm:py-16 lg:py-24 bg-emerald-50">
     <div class="section-shell">
       <div class="text-center mb-12 reveal">
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Service Pricing</h2>
@@ -119,7 +149,7 @@ import { ChevronRight } from '@lucide/astro';
       <div class="max-w-4xl mx-auto">
         <div class="grid md:grid-cols-2 gap-8 reveal reveal-delay-100">
           <!-- Consultations -->
-          <div class="group bg-white rounded-3xl p-8 shadow-lg border border-emerald-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-emerald-200">
+          <div class="group bg-white rounded-3xl p-5 sm:p-8 shadow-lg border border-emerald-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-emerald-200">
             <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-6 pb-4 border-b border-emerald-100 transition-colors group-hover:text-emerald-700">Consultations</h3>
             <ul class="space-y-4">
               <li class="flex justify-between items-center">
@@ -134,7 +164,7 @@ import { ChevronRight } from '@lucide/astro';
           </div>
 
           <!-- Treatments -->
-          <div class="group bg-white rounded-3xl p-8 shadow-lg border border-emerald-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-emerald-200">
+          <div class="group bg-white rounded-3xl p-5 sm:p-8 shadow-lg border border-emerald-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-emerald-200">
             <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-6 pb-4 border-b border-emerald-100 transition-colors group-hover:text-emerald-700">Treatments</h3>
             <ul class="space-y-4">
               <li class="flex justify-between items-center">
@@ -157,7 +187,7 @@ import { ChevronRight } from '@lucide/astro';
           </div>
 
           <!-- Specialized IV Treatments -->
-          <div class="group bg-white rounded-3xl p-8 shadow-lg border border-emerald-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-emerald-200">
+          <div class="group bg-white rounded-3xl p-5 sm:p-8 shadow-lg border border-emerald-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-emerald-200">
             <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-6 pb-4 border-b border-emerald-100 transition-colors group-hover:text-emerald-700">Specialized IV Treatments</h3>
             <ul class="space-y-4">
               <li class="flex justify-between items-center">
@@ -176,7 +206,7 @@ import { ChevronRight } from '@lucide/astro';
           </div>
 
           <!-- Combined Visits -->
-          <div class="group bg-white rounded-3xl p-8 shadow-lg border border-emerald-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-emerald-200">
+          <div class="group bg-white rounded-3xl p-5 sm:p-8 shadow-lg border border-emerald-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-emerald-200">
             <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-6 pb-4 border-b border-emerald-100 transition-colors group-hover:text-emerald-700">Combined Visits</h3>
             <ul class="space-y-4">
               <li class="flex justify-between items-center">
