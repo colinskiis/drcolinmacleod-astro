@@ -34,16 +34,16 @@ const bloodTests = [
 // FAQ data for schema markup
 const faqItems = [
   {
-    question: "What makes naturopathic medicine different?",
-    answer: "Naturopathic doctors take the time to understand your health and address the root cause. We use natural therapies and lifestyle changes to support your body's innate healing ability."
+    question: "Can naturopathic doctors order blood tests?",
+    answer: "Yes — as a naturopathic doctor, I can order a comprehensive range of blood and laboratory tests through private labs. This includes thyroid panels, hormone levels, nutrient status, inflammatory markers, and more. Private testing often means broader panels and faster turnaround compared to the public system, giving us a clearer picture of your health."
   },
   {
     question: "Is naturopathic medicine covered by insurance?",
     answer: "Yes, most extended health insurance plans cover naturopathic visits. We offer direct billing for many major insurers to make the process convenient for you."
   },
   {
-    question: "How long are appointments?",
-    answer: "Initial consultations are typically 60 minutes to allow for a comprehensive assessment. Follow-up appointments are usually 30 minutes."
+    question: "Do you work alongside my family doctor?",
+    answer: "Absolutely. Naturopathic medicine is most effective as part of a coordinated care approach. I regularly share findings and treatment summaries with family doctors and specialists when patients consent. While naturopathic doctors don't have direct referral privileges in Nova Scotia, I actively communicate with other healthcare providers to help facilitate appropriate referrals where needed."
   }
 ];
 
@@ -82,7 +82,7 @@ const faqSchema = {
         <div class="space-y-8">
           <!-- Mobile Hero Image (circular) -->
           <div class="lg:hidden flex justify-center animate-fade-in-up">
-            <div class="w-36 h-36 rounded-full overflow-hidden border-4 border-white/20 shadow-2xl shadow-black/30">
+            <a href="/about" aria-label="About Dr. Colin MacLeod ND" class="block w-36 h-36 rounded-full overflow-hidden border-4 border-white/20 shadow-2xl shadow-black/30 hover:border-white/40 hover:shadow-black/50 transition-all duration-300">
               <picture>
                 <source srcset="/images/general/colin-hero.avif" type="image/avif" />
                 <source srcset="/images/general/colin-hero.webp" type="image/webp" />
@@ -93,7 +93,7 @@ const faqSchema = {
                   loading="eager"
                 />
               </picture>
-            </div>
+            </a>
           </div>
 
           <!-- Text Content -->
@@ -155,7 +155,7 @@ const faqSchema = {
 
         <!-- Right Column: Hero Image (Circular) -->
         <div class="relative hidden lg:flex justify-center items-start">
-          <div class="w-80 h-80 xl:w-96 xl:h-96 rounded-full overflow-hidden shadow-2xl shadow-black/30 border-4 border-white/20">
+          <a href="/about" aria-label="About Dr. Colin MacLeod ND" class="block w-80 h-80 xl:w-96 xl:h-96 rounded-full overflow-hidden shadow-2xl shadow-black/30 border-4 border-white/20 hover:border-white/40 hover:shadow-black/50 hover:scale-[1.02] transition-all duration-300">
             <picture>
               <source srcset="/images/general/colin-hero.avif" type="image/avif" />
               <source srcset="/images/general/colin-hero.webp" type="image/webp" />
@@ -166,7 +166,7 @@ const faqSchema = {
                 loading="eager"
               />
             </picture>
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -180,7 +180,7 @@ const faqSchema = {
           <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-medium text-emerald-900 leading-[1.2]">Elevate your health<br />Address the cause</h2>
         </div>
         <div class="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-4 reveal reveal-delay-100">
-          <div class="bg-white rounded-2xl px-6 py-8 flex flex-col items-center text-center shadow-sm">
+          <div class="bg-white rounded-2xl px-6 py-8 flex flex-col items-center text-center shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
             <div class="mb-6 text-emerald-700">
               <Sprout class="w-12 h-12" stroke-width={1.5} aria-hidden="true" />
             </div>
@@ -188,7 +188,7 @@ const faqSchema = {
             <p class="text-base leading-relaxed text-emerald-700">Safe, gentle and effective treatment</p>
           </div>
 
-          <div class="bg-white rounded-2xl px-6 py-8 flex flex-col items-center text-center shadow-sm">
+          <div class="bg-white rounded-2xl px-6 py-8 flex flex-col items-center text-center shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
             <div class="mb-6 text-emerald-700">
               <Stethoscope class="w-12 h-12" stroke-width={1.5} aria-hidden="true" />
             </div>
@@ -196,7 +196,7 @@ const faqSchema = {
             <p class="text-base leading-relaxed text-emerald-700">Experienced and rigorously trained</p>
           </div>
 
-          <div class="bg-white rounded-2xl px-6 py-8 flex flex-col items-center text-center shadow-sm">
+          <div class="bg-white rounded-2xl px-6 py-8 flex flex-col items-center text-center shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
             <div class="mb-6 text-emerald-700">
               <Clock class="w-12 h-12" stroke-width={1.5} aria-hidden="true" />
             </div>
@@ -204,7 +204,7 @@ const faqSchema = {
             <p class="text-base leading-relaxed text-emerald-700">Thorough consultations, never rushed</p>
           </div>
 
-          <div class="bg-white rounded-2xl px-6 py-8 flex flex-col items-center text-center shadow-sm">
+          <div class="bg-white rounded-2xl px-6 py-8 flex flex-col items-center text-center shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
             <div class="mb-6 text-emerald-700">
               <Sparkles class="w-12 h-12" stroke-width={1.5} aria-hidden="true" />
             </div>
@@ -218,6 +218,10 @@ const faqSchema = {
   <!-- Navigation Hub (from V2) -->
   <section class="py-16 lg:py-20 bg-white">
     <div class="section-shell">
+      <div class="text-center max-w-3xl mx-auto mb-12 space-y-3 reveal">
+        <p class="text-emerald-800 font-medium tracking-widest uppercase text-sm">Explore the clinic</p>
+        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950">What we offer</h2>
+      </div>
       <!-- Desktop: 4-column grid with row dividers -->
       <div class="hidden lg:block reveal">
         <!-- Row 1: Blood Tests -->
@@ -380,7 +384,7 @@ const faqSchema = {
       <div class="text-center mt-16">
         <a
           href="/services"
-          class="inline-flex items-center bg-emerald-900 text-white px-10 py-4 rounded-full text-base font-medium tracking-wide hover:bg-emerald-800 transition-colors shadow-lg shadow-emerald-900/20"
+          class="inline-flex items-center bg-emerald-900 text-white px-10 py-4 rounded-full text-base font-medium tracking-wide hover:bg-emerald-800 hover:-translate-y-0.5 transition-all duration-200 shadow-lg shadow-emerald-900/20 hover:shadow-xl hover:shadow-emerald-900/25"
         >
           View All Services
         </a>
@@ -398,13 +402,13 @@ const faqSchema = {
       <div class="max-w-3xl mx-auto space-y-6 reveal reveal-delay-100">
             <details class="group bg-white rounded-2xl shadow-sm border border-emerald-100/50 overflow-hidden transition-all duration-300 hover:shadow-md open:shadow-lg open:ring-1 open:ring-emerald-500/20">
               <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-                <h3 class="text-xl font-medium text-emerald-950 pr-8">What makes naturopathic medicine different?</h3>
+                <h3 class="text-xl font-medium text-emerald-950 pr-8">Can naturopathic doctors order blood tests?</h3>
                 <span class="text-emerald-500 transition-transform duration-300 group-open:rotate-180">
                   <ChevronDown class="w-6 h-6" aria-hidden="true" />
                 </span>
               </summary>
               <div class="px-6 pb-6 text-lg text-slate-600 leading-relaxed">
-                Naturopathic doctors take the time to understand your health and address the root cause. We use natural therapies and lifestyle changes to support your body's innate healing ability.
+                Yes — as a naturopathic doctor, I can order a comprehensive range of blood and laboratory tests through private labs. This includes thyroid panels, hormone levels, nutrient status, inflammatory markers, and more. Private testing often means broader panels and faster turnaround compared to the public system, giving us a clearer picture of your health.
               </div>
             </details>
             <details class="group bg-white rounded-2xl shadow-sm border border-emerald-100/50 overflow-hidden transition-all duration-300 hover:shadow-md open:shadow-lg open:ring-1 open:ring-emerald-500/20">
@@ -420,13 +424,13 @@ const faqSchema = {
             </details>
             <details class="group bg-white rounded-2xl shadow-sm border border-emerald-100/50 overflow-hidden transition-all duration-300 hover:shadow-md open:shadow-lg open:ring-1 open:ring-emerald-500/20">
               <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-                <h3 class="text-xl font-medium text-emerald-950 pr-8">How long are appointments?</h3>
+                <h3 class="text-xl font-medium text-emerald-950 pr-8">Do you work alongside my family doctor?</h3>
                 <span class="text-emerald-500 transition-transform duration-300 group-open:rotate-180">
                   <ChevronDown class="w-6 h-6" aria-hidden="true" />
                 </span>
               </summary>
               <div class="px-6 pb-6 text-lg text-slate-600 leading-relaxed">
-                Initial consultations are typically 60 minutes to allow for a comprehensive assessment. Follow-up appointments are usually 30 minutes.
+                Absolutely. Naturopathic medicine is most effective as part of a coordinated care approach. I regularly share findings and treatment summaries with family doctors and specialists when patients consent. While naturopathic doctors don't have direct referral privileges in Nova Scotia, I actively communicate with other healthcare providers to help facilitate appropriate referrals where needed.
               </div>
             </details>
       </div>
