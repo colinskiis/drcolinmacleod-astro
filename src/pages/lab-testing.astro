@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
-import { ClipboardCheck, TestTubes, Clock, Sparkles } from '@lucide/astro';
+import { ClipboardCheck, TestTubes, Clock, Sparkles, ChevronRight } from '@lucide/astro';
 import CTAButton from '../components/CTAButton.astro';
 import FAQAccordion from '../components/FAQAccordion.astro';
 ---
@@ -32,39 +32,39 @@ import FAQAccordion from '../components/FAQAccordion.astro';
   </section>
 
   <!-- Key Benefits -->
-  <section class="py-16 lg:py-20 bg-white">
+  <section class="py-10 sm:py-16 lg:py-20 bg-white">
     <div class="section-shell">
-      <div class="grid md:grid-cols-4 gap-8">
+      <div class="grid grid-cols-2 gap-4 sm:gap-8 md:grid-cols-4">
         <div class="text-center">
-          <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <ClipboardCheck class="w-8 h-8 text-gray-600" stroke-width={1.5} aria-hidden="true" />
+          <div class="w-12 h-12 sm:w-16 sm:h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-4">
+            <ClipboardCheck class="w-6 h-6 sm:w-8 sm:h-8 text-gray-600" stroke-width={1.5} aria-hidden="true" />
           </div>
-          <h3 class="text-lg font-semibold text-emerald-950 mb-2">No Referral Required</h3>
-          <p class="text-gray-600 text-sm">Dr. MacLeod's patients can access testing without a referral</p>
+          <h3 class="text-sm sm:text-lg font-semibold text-emerald-950 mb-1 sm:mb-2">No Referral Required</h3>
+          <p class="text-gray-600 text-xs sm:text-sm">Dr. MacLeod's patients can access testing without a referral</p>
         </div>
 
         <div class="text-center">
-          <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <TestTubes class="w-8 h-8 text-gray-600" stroke-width={1.5} aria-hidden="true" />
+          <div class="w-12 h-12 sm:w-16 sm:h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-4">
+            <TestTubes class="w-6 h-6 sm:w-8 sm:h-8 text-gray-600" stroke-width={1.5} aria-hidden="true" />
           </div>
-          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Comprehensive Panels</h3>
-          <p class="text-gray-600 text-sm">Tests often not covered by provincial health insurance</p>
+          <h3 class="text-sm sm:text-lg font-semibold text-emerald-950 mb-1 sm:mb-2">Comprehensive Panels</h3>
+          <p class="text-gray-600 text-xs sm:text-sm">Tests often not covered by provincial health insurance</p>
         </div>
 
         <div class="text-center">
-          <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <Clock class="w-8 h-8 text-gray-600" stroke-width={1.5} aria-hidden="true" />
+          <div class="w-12 h-12 sm:w-16 sm:h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-4">
+            <Clock class="w-6 h-6 sm:w-8 sm:h-8 text-gray-600" stroke-width={1.5} aria-hidden="true" />
           </div>
-          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Faster Results</h3>
-          <p class="text-gray-600 text-sm">Skip the wait times for standard healthcare appointments</p>
+          <h3 class="text-sm sm:text-lg font-semibold text-emerald-950 mb-1 sm:mb-2">Faster Results</h3>
+          <p class="text-gray-600 text-xs sm:text-sm">Skip the wait times for standard healthcare appointments</p>
         </div>
 
         <div class="text-center">
-          <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <Sparkles class="w-8 h-8 text-gray-600" stroke-width={1.5} aria-hidden="true" />
+          <div class="w-12 h-12 sm:w-16 sm:h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-4">
+            <Sparkles class="w-6 h-6 sm:w-8 sm:h-8 text-gray-600" stroke-width={1.5} aria-hidden="true" />
           </div>
-          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Optimal Range Interpretation</h3>
-          <p class="text-gray-600 text-sm">Results reviewed using functional medicine ranges, not just "normal"</p>
+          <h3 class="text-sm sm:text-lg font-semibold text-emerald-950 mb-1 sm:mb-2">Optimal Range Interpretation</h3>
+          <p class="text-gray-600 text-xs sm:text-sm">Results reviewed using functional medicine ranges, not just "normal"</p>
         </div>
       </div>
     </div>
@@ -79,7 +79,36 @@ import FAQAccordion from '../components/FAQAccordion.astro';
         </p>
       </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Mobile: Link list -->
+      <div class="sm:hidden space-y-1 mb-10">
+        <a href="/thyroid-testing" class="flex items-center gap-3 py-4 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-100">
+          <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" aria-hidden="true" />
+          Complete Thyroid Panel
+        </a>
+        <a href="/hormone-testing" class="flex items-center gap-3 py-4 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-100">
+          <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" aria-hidden="true" />
+          Hormone Testing
+        </a>
+        <a href="/nutrient-testing" class="flex items-center gap-3 py-4 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-100">
+          <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" aria-hidden="true" />
+          Nutrient Status
+        </a>
+        <a href="/wellness-blood-work" class="flex items-center gap-3 py-4 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-100">
+          <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" aria-hidden="true" />
+          Wellness Baseline
+        </a>
+        <a href="/digestive-health-testing" class="flex items-center gap-3 py-4 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-100">
+          <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" aria-hidden="true" />
+          Digestive Health
+        </a>
+        <a href="/specialized-testing" class="flex items-center gap-3 py-4 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-100">
+          <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" aria-hidden="true" />
+          Specialized Testing
+        </a>
+      </div>
+
+      <!-- Desktop: Card grid -->
+      <div class="hidden sm:grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Thyroid Testing - Links to dedicated page -->
         <a href="/thyroid-testing" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 group">
           <div class="aspect-[16/10] overflow-hidden">
@@ -186,43 +215,43 @@ import FAQAccordion from '../components/FAQAccordion.astro';
   </section>
 
   <!-- How It Works -->
-  <section class="py-16 lg:py-24 bg-white">
+  <section class="py-10 sm:py-16 lg:py-24 bg-white">
     <div class="section-shell">
-      <div class="text-center mb-12">
+      <div class="text-center mb-8 sm:mb-12">
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">How It Works</h2>
       </div>
 
-      <div class="grid md:grid-cols-4 gap-8">
+      <div class="grid grid-cols-2 gap-4 sm:gap-8 md:grid-cols-4">
         <div class="text-center">
-          <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4">
-            <span class="text-2xl font-bold text-white">1</span>
+          <div class="w-12 h-12 sm:w-16 sm:h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-4">
+            <span class="text-xl sm:text-2xl font-bold text-white">1</span>
           </div>
-          <h3 class="font-semibold text-emerald-950 mb-2">Book Online or Call</h3>
-          <p class="text-gray-600 text-sm">Schedule an initial appointment to discuss your health concerns and goals.</p>
+          <h3 class="font-semibold text-emerald-950 mb-1 sm:mb-2 text-sm sm:text-base">Book Online or Call</h3>
+          <p class="text-gray-600 text-xs sm:text-sm">Schedule an initial appointment to discuss your health concerns and goals.</p>
         </div>
 
         <div class="text-center">
-          <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4">
-            <span class="text-2xl font-bold text-white">2</span>
+          <div class="w-12 h-12 sm:w-16 sm:h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-4">
+            <span class="text-xl sm:text-2xl font-bold text-white">2</span>
           </div>
-          <h3 class="font-semibold text-emerald-950 mb-2">Consultation</h3>
-          <p class="text-gray-600 text-sm">Dr. MacLeod determines which tests are appropriate for your situation and orders tests.</p>
+          <h3 class="font-semibold text-emerald-950 mb-1 sm:mb-2 text-sm sm:text-base">Consultation</h3>
+          <p class="text-gray-600 text-xs sm:text-sm">Dr. MacLeod determines which tests are appropriate for your situation and orders tests.</p>
         </div>
 
         <div class="text-center">
-          <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4">
-            <span class="text-2xl font-bold text-white">3</span>
+          <div class="w-12 h-12 sm:w-16 sm:h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-4">
+            <span class="text-xl sm:text-2xl font-bold text-white">3</span>
           </div>
-          <h3 class="font-semibold text-emerald-950 mb-2">Get Tested</h3>
-          <p class="text-gray-600 text-sm">Dr. MacLeod will collect your blood sample. You won't need to visit a separate lab.</p>
+          <h3 class="font-semibold text-emerald-950 mb-1 sm:mb-2 text-sm sm:text-base">Get Tested</h3>
+          <p class="text-gray-600 text-xs sm:text-sm">Dr. MacLeod will collect your blood sample. You won't need to visit a separate lab.</p>
         </div>
 
         <div class="text-center">
-          <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4">
-            <span class="text-2xl font-bold text-white">4</span>
+          <div class="w-12 h-12 sm:w-16 sm:h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-4">
+            <span class="text-xl sm:text-2xl font-bold text-white">4</span>
           </div>
-          <h3 class="font-semibold text-emerald-950 mb-2">Review Results</h3>
-          <p class="text-gray-600 text-sm">Review your results using optimal functional ranges and develop recommendations.</p>
+          <h3 class="font-semibold text-emerald-950 mb-1 sm:mb-2 text-sm sm:text-base">Review Results</h3>
+          <p class="text-gray-600 text-xs sm:text-sm">Review your results using optimal functional ranges and develop recommendations.</p>
         </div>
       </div>
 
