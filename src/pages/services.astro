@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
-import { ChevronRight } from '@lucide/astro';
+import { ChevronRight, FlaskConical, Utensils, Leaf, Droplets, Activity } from '@lucide/astro';
 ---
 
 <BaseLayout
@@ -46,39 +46,33 @@ import { ChevronRight } from '@lucide/astro';
         <!-- Desktop: Card grid -->
         <div class="hidden sm:grid md:grid-cols-2 lg:grid-cols-3 gap-8 reveal reveal-delay-100">
           <!-- Lab Testing -->
-          <a href="/lab-testing" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="aspect-[4/3] overflow-hidden">
-              <img src="/images/reference/services/lab-testing.webp" alt="Laboratory diagnostic testing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="600" loading="lazy" />
+          <a href="/lab-testing" class="bg-white border border-emerald-100 rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group text-center focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
+            <div class="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-emerald-200 transition-colors">
+              <FlaskConical class="w-10 h-10 text-emerald-700" aria-hidden="true" />
             </div>
-            <div class="p-6 text-center">
-              <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-3 group-hover:text-emerald-700 transition-colors">Laboratory Testing</h3>
-              <p class="text-gray-600 mb-4">Comprehensive diagnostic testing including functional medicine and nutritional assessments</p>
-              <span class="text-emerald-800 font-semibold group-hover:text-emerald-900">Learn More →</span>
-            </div>
+            <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-3 group-hover:text-emerald-700 transition-colors">Laboratory Testing</h3>
+            <p class="text-gray-600 mb-4">Comprehensive diagnostic testing including functional medicine and nutritional assessments</p>
+            <span class="text-emerald-800 font-semibold group-hover:text-emerald-900">Learn More →</span>
           </a>
 
           <!-- Clinical Nutrition -->
-          <a href="/clinical-nutrition" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="aspect-[4/3] overflow-hidden">
-              <img src="/images/reference/services/clinical-nutrition.webp" alt="Clinical nutrition counseling" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="600" loading="lazy" />
+          <a href="/clinical-nutrition" class="bg-white border border-emerald-100 rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group text-center focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
+            <div class="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-emerald-200 transition-colors">
+              <Utensils class="w-10 h-10 text-emerald-700" aria-hidden="true" />
             </div>
-            <div class="p-6 text-center">
-              <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-3 group-hover:text-emerald-700 transition-colors">Clinical Nutrition</h3>
-              <p class="text-gray-600 mb-4">Evidence-based nutritional assessment and targeted nutrient replenishment for optimal health</p>
-              <span class="text-emerald-800 font-semibold group-hover:text-emerald-900">Learn More →</span>
-            </div>
+            <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-3 group-hover:text-emerald-700 transition-colors">Clinical Nutrition</h3>
+            <p class="text-gray-600 mb-4">Evidence-based nutritional assessment and targeted nutrient replenishment for optimal health</p>
+            <span class="text-emerald-800 font-semibold group-hover:text-emerald-900">Learn More →</span>
           </a>
 
           <!-- Herbal Medicine -->
-          <a href="/herbal-medicine" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="aspect-[4/3] overflow-hidden">
-              <img src="/images/reference/services/herbal-medicine.webp" alt="Herbal medicine remedies" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="600" loading="lazy" />
+          <a href="/herbal-medicine" class="bg-white border border-emerald-100 rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group text-center focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
+            <div class="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-emerald-200 transition-colors">
+              <Leaf class="w-10 h-10 text-emerald-700" aria-hidden="true" />
             </div>
-            <div class="p-6 text-center">
-              <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-3 group-hover:text-emerald-700 transition-colors">Herbal Medicine</h3>
-              <p class="text-gray-600 mb-4">Traditional and modern botanical medicine for therapeutic treatment and health maintenance</p>
-              <span class="text-emerald-800 font-semibold group-hover:text-emerald-900">Learn More →</span>
-            </div>
+            <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-3 group-hover:text-emerald-700 transition-colors">Herbal Medicine</h3>
+            <p class="text-gray-600 mb-4">Traditional and modern botanical medicine for therapeutic treatment and health maintenance</p>
+            <span class="text-emerald-800 font-semibold group-hover:text-emerald-900">Learn More →</span>
           </a>
         </div>
       </div>
@@ -107,27 +101,23 @@ import { ChevronRight } from '@lucide/astro';
         <!-- Desktop: Card grid -->
         <div class="hidden sm:grid md:grid-cols-2 gap-8 reveal reveal-delay-100">
           <!-- IV Therapy -->
-          <a href="/iv-therapy" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="aspect-[4/3] overflow-hidden">
-              <img src="/images/treatments/iv-patient-man.webp" alt="Patient receiving IV therapy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="600" loading="lazy" />
+          <a href="/iv-therapy" class="bg-white border border-emerald-100 rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group text-center focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
+            <div class="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-emerald-200 transition-colors">
+              <Droplets class="w-10 h-10 text-emerald-700" aria-hidden="true" />
             </div>
-            <div class="p-6 text-center">
-              <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-3 group-hover:text-emerald-700 transition-colors">IV Therapy</h3>
-              <p class="text-gray-600 mb-4">Intravenous nutrients for rapid and lasting results: Myers Cocktail, NAD+, Chelation, Glutathione, Vitamin C and more</p>
-              <span class="text-emerald-800 font-semibold group-hover:text-emerald-900">Learn More →</span>
-            </div>
+            <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-3 group-hover:text-emerald-700 transition-colors">IV Therapy</h3>
+            <p class="text-gray-600 mb-4">Intravenous nutrients for rapid and lasting results: Myers Cocktail, NAD+, Chelation, Glutathione, Vitamin C and more</p>
+            <span class="text-emerald-800 font-semibold group-hover:text-emerald-900">Learn More →</span>
           </a>
 
           <!-- Sports Medicine -->
-          <a href="/sports-medicine" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="aspect-[4/3] overflow-hidden">
-              <img src="/images/treatments/prolotherapy-knee-injection.png" alt="Regenerative injection therapy for pain" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="600" loading="lazy" />
+          <a href="/sports-medicine" class="bg-white border border-emerald-100 rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group text-center focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
+            <div class="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-emerald-200 transition-colors">
+              <Activity class="w-10 h-10 text-emerald-700" aria-hidden="true" />
             </div>
-            <div class="p-6 text-center">
-              <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-3 group-hover:text-emerald-700 transition-colors">Sports Medicine</h3>
-              <p class="text-gray-600 mb-4">Regenerative injection therapies for chronic pain, osteoarthritis, sports injuries and optimization of recovery</p>
-              <span class="text-emerald-800 font-semibold group-hover:text-emerald-900">Learn More →</span>
-            </div>
+            <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-3 group-hover:text-emerald-700 transition-colors">Sports Medicine</h3>
+            <p class="text-gray-600 mb-4">Regenerative injection therapies for chronic pain, osteoarthritis, sports injuries and optimization of recovery</p>
+            <span class="text-emerald-800 font-semibold group-hover:text-emerald-900">Learn More →</span>
           </a>
         </div>
       </div>
