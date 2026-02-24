@@ -73,7 +73,7 @@ import { CheckCircle2, MapPin, ShieldCheck, Clock, Quote, Stethoscope, TestTubes
         </div>
 
         <!-- Sidebar -->
-        <div class="space-y-8 reveal reveal-delay-200">
+        <div class="space-y-8 reveal reveal-delay-200 order-first lg:order-none">
 
           <!-- Doctor Photo -->
           <div class="bg-white border border-emerald-100 rounded-2xl overflow-hidden shadow-lg">
@@ -146,46 +146,46 @@ import { CheckCircle2, MapPin, ShieldCheck, Clock, Quote, Stethoscope, TestTubes
   </section>
 
   <!-- Treatment Approach -->
-  <section class="py-16 lg:py-24 bg-cream">
+  <section class="py-10 sm:py-16 lg:py-24 bg-cream">
     <div class="section-shell">
       <div class="max-w-4xl mx-auto">
-        <div class="text-center mb-12 reveal">
+        <div class="text-center mb-8 sm:mb-12 reveal">
           <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">What to Expect</h2>
           <p class="text-lg text-gray-600">
             Your journey to optimal health begins with a comprehensive assessment and personalized treatment plan.
           </p>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-8 reveal reveal-delay-100">
+        <div class="grid grid-cols-3 gap-3 sm:gap-8 reveal reveal-delay-100">
           <!-- Initial Consultation -->
           <div class="text-center">
-            <div class="flex justify-center mb-4">
-              <Stethoscope class="w-12 h-12 text-gray-600" stroke-width={1.5} aria-hidden="true" />
+            <div class="flex justify-center mb-2 sm:mb-4">
+              <Stethoscope class="w-8 h-8 sm:w-12 sm:h-12 text-gray-600" stroke-width={1.5} aria-hidden="true" />
             </div>
-            <h3 class="text-xl font-serif font-bold text-emerald-950 mb-3">Comprehensive Assessment</h3>
-            <p class="text-gray-600">
+            <h3 class="text-sm sm:text-xl font-serif font-bold text-emerald-950 mb-1 sm:mb-3">Comprehensive Assessment</h3>
+            <p class="hidden sm:block text-gray-600">
               In-depth health history, lifestyle analysis and examination to understand your unique health picture.
             </p>
           </div>
 
           <!-- Testing & Analysis -->
           <div class="text-center">
-            <div class="flex justify-center mb-4">
-              <TestTubes class="w-12 h-12 text-gray-600" stroke-width={1.5} aria-hidden="true" />
+            <div class="flex justify-center mb-2 sm:mb-4">
+              <TestTubes class="w-8 h-8 sm:w-12 sm:h-12 text-gray-600" stroke-width={1.5} aria-hidden="true" />
             </div>
-            <h3 class="text-xl font-serif font-bold text-emerald-950 mb-3">Testing & Analysis</h3>
-            <p class="text-gray-600">
+            <h3 class="text-sm sm:text-xl font-serif font-bold text-emerald-950 mb-1 sm:mb-3">Testing & Analysis</h3>
+            <p class="hidden sm:block text-gray-600">
               Advanced laboratory testing and diagnostic assessments to identify imbalances and deficiencies.
             </p>
           </div>
 
           <!-- Treatment Plan -->
           <div class="text-center">
-            <div class="flex justify-center mb-4">
-              <ClipboardCheck class="w-12 h-12 text-gray-600" stroke-width={1.5} aria-hidden="true" />
+            <div class="flex justify-center mb-2 sm:mb-4">
+              <ClipboardCheck class="w-8 h-8 sm:w-12 sm:h-12 text-gray-600" stroke-width={1.5} aria-hidden="true" />
             </div>
-            <h3 class="text-xl font-serif font-bold text-emerald-950 mb-3">Personalized Treatment</h3>
-            <p class="text-gray-600">
+            <h3 class="text-sm sm:text-xl font-serif font-bold text-emerald-950 mb-1 sm:mb-3">Personalized Treatment</h3>
+            <p class="hidden sm:block text-gray-600">
               Customized treatment plan tailored to optimally address your specific state of health and health concerns.
             </p>
           </div>
