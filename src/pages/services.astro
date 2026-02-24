@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
-import { ChevronRight, FlaskConical, Utensils, Leaf, Droplets, Activity } from '@lucide/astro';
+import { ChevronRight, FlaskConical, Leaf, Droplets, Activity } from '@lucide/astro';
 ---
 
 <BaseLayout
@@ -14,212 +14,57 @@ import { ChevronRight, FlaskConical, Utensils, Leaf, Droplets, Activity } from '
     Natural healthcare guided by science and rooted in traditional healing
   </HeroSection>
 
-  <!-- Service Categories -->
+  <!-- Service Cards -->
   <section class="py-16 lg:py-24 bg-white">
     <div class="section-shell">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 reveal">
 
-      <!-- Natural Healthcare -->
-      <div id="natural" class="mb-16">
-        <div class="text-center mb-12 reveal">
-          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Natural Healthcare</h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            Evidence-based naturopathic approaches to health optimization and disease prevention
-          </p>
-        </div>
-
-        <!-- Mobile: Link list -->
-        <div class="sm:hidden space-y-1 reveal reveal-delay-100">
-          <a href="/lab-testing" class="flex items-center gap-3 py-4 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-100">
-            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" aria-hidden="true" />
-            Laboratory Testing
-          </a>
-          <a href="/clinical-nutrition" class="flex items-center gap-3 py-4 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-100">
-            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" aria-hidden="true" />
-            Clinical Nutrition
-          </a>
-          <a href="/herbal-medicine" class="flex items-center gap-3 py-4 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-100">
-            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" aria-hidden="true" />
-            Herbal Medicine
-          </a>
-        </div>
-
-        <!-- Desktop: Card grid -->
-        <div class="hidden sm:grid md:grid-cols-2 lg:grid-cols-3 gap-8 reveal reveal-delay-100">
-          <!-- Lab Testing -->
-          <a href="/lab-testing" class="bg-white border border-emerald-100 rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group text-center focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-emerald-200 transition-colors">
-              <FlaskConical class="w-10 h-10 text-emerald-700" aria-hidden="true" />
-            </div>
-            <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-3 group-hover:text-emerald-700 transition-colors">Laboratory Testing</h3>
-            <p class="text-gray-600 mb-4">Comprehensive diagnostic testing including functional medicine and nutritional assessments</p>
-            <span class="text-emerald-800 font-semibold group-hover:text-emerald-900">Learn More →</span>
-          </a>
-
-          <!-- Clinical Nutrition -->
-          <a href="/clinical-nutrition" class="bg-white border border-emerald-100 rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group text-center focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-emerald-200 transition-colors">
-              <Utensils class="w-10 h-10 text-emerald-700" aria-hidden="true" />
-            </div>
-            <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-3 group-hover:text-emerald-700 transition-colors">Clinical Nutrition</h3>
-            <p class="text-gray-600 mb-4">Evidence-based nutritional assessment and targeted nutrient replenishment for optimal health</p>
-            <span class="text-emerald-800 font-semibold group-hover:text-emerald-900">Learn More →</span>
-          </a>
-
-          <!-- Herbal Medicine -->
-          <a href="/herbal-medicine" class="bg-white border border-emerald-100 rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group text-center focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-emerald-200 transition-colors">
-              <Leaf class="w-10 h-10 text-emerald-700" aria-hidden="true" />
-            </div>
-            <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-3 group-hover:text-emerald-700 transition-colors">Herbal Medicine</h3>
-            <p class="text-gray-600 mb-4">Traditional and modern botanical medicine for therapeutic treatment and health maintenance</p>
-            <span class="text-emerald-800 font-semibold group-hover:text-emerald-900">Learn More →</span>
-          </a>
-        </div>
-      </div>
-
-      <!-- Advanced Therapies -->
-      <div id="advanced">
-        <div class="text-center mb-12 reveal">
-          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Advanced Therapies</h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            Specialized injectable and intravenous treatments offered by Dr. MacLeod
-          </p>
-        </div>
-
-        <!-- Mobile: Link list -->
-        <div class="sm:hidden space-y-1 reveal reveal-delay-100">
-          <a href="/iv-therapy" class="flex items-center gap-3 py-4 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-100">
-            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" aria-hidden="true" />
-            IV Therapy
-          </a>
-          <a href="/sports-medicine" class="flex items-center gap-3 py-4 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-100">
-            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" aria-hidden="true" />
-            Sports Medicine
-          </a>
-        </div>
-
-        <!-- Desktop: Card grid -->
-        <div class="hidden sm:grid md:grid-cols-2 gap-8 reveal reveal-delay-100">
-          <!-- IV Therapy -->
-          <a href="/iv-therapy" class="bg-white border border-emerald-100 rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group text-center focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-emerald-200 transition-colors">
-              <Droplets class="w-10 h-10 text-emerald-700" aria-hidden="true" />
-            </div>
-            <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-3 group-hover:text-emerald-700 transition-colors">IV Therapy</h3>
-            <p class="text-gray-600 mb-4">Intravenous nutrients for rapid and lasting results: Myers Cocktail, NAD+, Chelation, Glutathione, Vitamin C and more</p>
-            <span class="text-emerald-800 font-semibold group-hover:text-emerald-900">Learn More →</span>
-          </a>
-
-          <!-- Sports Medicine -->
-          <a href="/sports-medicine" class="bg-white border border-emerald-100 rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group text-center focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-emerald-200 transition-colors">
-              <Activity class="w-10 h-10 text-emerald-700" aria-hidden="true" />
-            </div>
-            <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-3 group-hover:text-emerald-700 transition-colors">Sports Medicine</h3>
-            <p class="text-gray-600 mb-4">Regenerative injection therapies for chronic pain, osteoarthritis, sports injuries and optimization of recovery</p>
-            <span class="text-emerald-800 font-semibold group-hover:text-emerald-900">Learn More →</span>
-          </a>
-        </div>
-      </div>
-
-
-    </div>
-  </section>
-
-  <!-- Pricing Section -->
-  <section id="pricing" class="py-10 sm:py-16 lg:py-24 bg-emerald-50">
-    <div class="section-shell">
-      <div class="text-center mb-12 reveal">
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Service Pricing</h2>
-        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-          Most services are eligible for insurance direct-billing
-        </p>
-      </div>
-
-      <div class="max-w-4xl mx-auto">
-        <div class="grid md:grid-cols-2 gap-8 reveal reveal-delay-100">
-          <!-- Consultations -->
-          <div class="group bg-white rounded-3xl p-5 sm:p-8 shadow-lg border border-emerald-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-emerald-200">
-            <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-6 pb-4 border-b border-emerald-100 transition-colors group-hover:text-emerald-700">Consultations</h3>
-            <ul class="space-y-4">
-              <li class="flex justify-between items-center">
-                <span class="text-gray-700">Initial Visit</span>
-                <span class="font-semibold text-emerald-950">$200</span>
-              </li>
-              <li class="flex justify-between items-center">
-                <span class="text-gray-700">Follow-up Visit</span>
-                <span class="font-semibold text-emerald-950">$100</span>
-              </li>
-            </ul>
+        <!-- Lab Testing -->
+        <a href="/lab-testing" class="bg-white border border-emerald-100 rounded-3xl p-5 sm:p-8 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group text-center focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
+          <div class="w-14 h-14 sm:w-20 sm:h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:bg-emerald-200 transition-colors">
+            <FlaskConical class="w-7 h-7 sm:w-10 sm:h-10 text-emerald-700" aria-hidden="true" />
           </div>
+          <h3 class="text-base sm:text-xl font-serif font-semibold text-emerald-950 mb-2 sm:mb-3 group-hover:text-emerald-700 transition-colors">Lab Testing</h3>
+          <p class="text-gray-600 text-sm hidden sm:block mb-4">Comprehensive diagnostic testing including functional medicine and nutritional assessments</p>
+          <span class="text-emerald-800 font-semibold group-hover:text-emerald-900 text-sm sm:text-base">Learn More →</span>
+        </a>
 
-          <!-- Treatments -->
-          <div class="group bg-white rounded-3xl p-5 sm:p-8 shadow-lg border border-emerald-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-emerald-200">
-            <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-6 pb-4 border-b border-emerald-100 transition-colors group-hover:text-emerald-700">Treatments</h3>
-            <ul class="space-y-4">
-              <li class="flex justify-between items-center">
-                <span class="text-gray-700">IV Therapy</span>
-                <span class="font-semibold text-emerald-950">$130</span>
-              </li>
-              <li class="flex justify-between items-center">
-                <span class="text-gray-700">Injection Treatments</span>
-                <span class="font-semibold text-emerald-950">$110</span>
-              </li>
-              <li class="flex justify-between items-center">
-                <span class="text-gray-700">Acupuncture</span>
-                <span class="font-semibold text-emerald-950">$75</span>
-              </li>
-              <li class="flex justify-between items-center">
-                <span class="text-gray-700">Vitamin B12 Injection</span>
-                <span class="font-semibold text-emerald-950">$35</span>
-              </li>
-            </ul>
+        <!-- Herbal Medicine -->
+        <a href="/herbal-medicine" class="bg-white border border-emerald-100 rounded-3xl p-5 sm:p-8 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group text-center focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
+          <div class="w-14 h-14 sm:w-20 sm:h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:bg-emerald-200 transition-colors">
+            <Leaf class="w-7 h-7 sm:w-10 sm:h-10 text-emerald-700" aria-hidden="true" />
           </div>
+          <h3 class="text-base sm:text-xl font-serif font-semibold text-emerald-950 mb-2 sm:mb-3 group-hover:text-emerald-700 transition-colors">Herbal Medicine</h3>
+          <p class="text-gray-600 text-sm hidden sm:block mb-4">Traditional and modern botanical medicine for therapeutic treatment and health maintenance</p>
+          <span class="text-emerald-800 font-semibold group-hover:text-emerald-900 text-sm sm:text-base">Learn More →</span>
+        </a>
 
-          <!-- Specialized IV Treatments -->
-          <div class="group bg-white rounded-3xl p-5 sm:p-8 shadow-lg border border-emerald-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-emerald-200">
-            <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-6 pb-4 border-b border-emerald-100 transition-colors group-hover:text-emerald-700">Specialized IV Treatments</h3>
-            <ul class="space-y-4">
-              <li class="flex justify-between items-center">
-                <span class="text-gray-700">NAD+ IV Therapy</span>
-                <span class="font-semibold text-emerald-950">$190</span>
-              </li>
-              <li class="flex justify-between items-center">
-                <span class="text-gray-700">Myers Cocktail</span>
-                <span class="font-semibold text-emerald-950">$130</span>
-              </li>
-              <li class="flex justify-between items-center">
-                <span class="text-gray-700">Chelation Therapy</span>
-                <span class="font-semibold text-emerald-950">$130</span>
-              </li>
-            </ul>
+        <!-- IV Therapy -->
+        <a href="/iv-therapy" class="bg-white border border-emerald-100 rounded-3xl p-5 sm:p-8 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group text-center focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
+          <div class="w-14 h-14 sm:w-20 sm:h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:bg-emerald-200 transition-colors">
+            <Droplets class="w-7 h-7 sm:w-10 sm:h-10 text-emerald-700" aria-hidden="true" />
           </div>
+          <h3 class="text-base sm:text-xl font-serif font-semibold text-emerald-950 mb-2 sm:mb-3 group-hover:text-emerald-700 transition-colors">IV Therapy</h3>
+          <p class="text-gray-600 text-sm hidden sm:block mb-4">Intravenous nutrients for rapid and lasting results: Myers Cocktail, NAD+, Chelation, Glutathione, Vitamin C and more</p>
+          <span class="text-emerald-800 font-semibold group-hover:text-emerald-900 text-sm sm:text-base">Learn More →</span>
+        </a>
 
-          <!-- Combined Visits -->
-          <div class="group bg-white rounded-3xl p-5 sm:p-8 shadow-lg border border-emerald-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-emerald-200">
-            <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-6 pb-4 border-b border-emerald-100 transition-colors group-hover:text-emerald-700">Combined Visits</h3>
-            <ul class="space-y-4">
-              <li class="flex justify-between items-center">
-                <span class="text-gray-700">Initial Visit + IV Treatment</span>
-                <span class="font-semibold text-emerald-950">$260</span>
-              </li>
-              <li class="flex justify-between items-center">
-                <span class="text-gray-700">Initial Visit + Prolotherapy</span>
-                <span class="font-semibold text-emerald-950">$260</span>
-              </li>
-            </ul>
+        <!-- Sports Medicine -->
+        <a href="/sports-medicine" class="bg-white border border-emerald-100 rounded-3xl p-5 sm:p-8 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group text-center focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
+          <div class="w-14 h-14 sm:w-20 sm:h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:bg-emerald-200 transition-colors">
+            <Activity class="w-7 h-7 sm:w-10 sm:h-10 text-emerald-700" aria-hidden="true" />
           </div>
-        </div>
+          <h3 class="text-base sm:text-xl font-serif font-semibold text-emerald-950 mb-2 sm:mb-3 group-hover:text-emerald-700 transition-colors">Sports Medicine</h3>
+          <p class="text-gray-600 text-sm hidden sm:block mb-4">Regenerative injection therapies for chronic pain, osteoarthritis, sports injuries and optimization of recovery</p>
+          <span class="text-emerald-800 font-semibold group-hover:text-emerald-900 text-sm sm:text-base">Learn More →</span>
+        </a>
 
-        <p class="text-center text-gray-500 mt-8 text-sm">
-          Prices subject to change. Please contact us if you have questions about specific treatments.
-        </p>
       </div>
     </div>
   </section>
 
   <!-- All Services -->
-  <section class="py-16 lg:py-24 bg-white">
+  <section class="py-16 lg:py-24 bg-emerald-50">
     <div class="section-shell">
       <div class="text-center mb-10 reveal">
         <h2 class="text-2xl sm:text-3xl font-serif font-bold text-emerald-950 mb-2">All Services</h2>
@@ -342,6 +187,98 @@ import { ChevronRight, FlaskConical, Utensils, Leaf, Droplets, Activity } from '
 
       </div>
 
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="py-10 sm:py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="text-center mb-12 reveal">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Service Pricing</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          Most services are eligible for insurance direct-billing
+        </p>
+      </div>
+
+      <div class="max-w-4xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-8 reveal reveal-delay-100">
+          <!-- Consultations -->
+          <div class="group bg-emerald-50 rounded-3xl p-5 sm:p-8 shadow-lg border border-emerald-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-emerald-200">
+            <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-6 pb-4 border-b border-emerald-100 transition-colors group-hover:text-emerald-700">Consultations</h3>
+            <ul class="space-y-4">
+              <li class="flex justify-between items-center">
+                <span class="text-gray-700">Initial Visit</span>
+                <span class="font-semibold text-emerald-950">$200</span>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="text-gray-700">Follow-up Visit</span>
+                <span class="font-semibold text-emerald-950">$100</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Treatments -->
+          <div class="group bg-emerald-50 rounded-3xl p-5 sm:p-8 shadow-lg border border-emerald-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-emerald-200">
+            <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-6 pb-4 border-b border-emerald-100 transition-colors group-hover:text-emerald-700">Treatments</h3>
+            <ul class="space-y-4">
+              <li class="flex justify-between items-center">
+                <span class="text-gray-700">IV Therapy</span>
+                <span class="font-semibold text-emerald-950">$130</span>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="text-gray-700">Injection Treatments</span>
+                <span class="font-semibold text-emerald-950">$110</span>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="text-gray-700">Acupuncture</span>
+                <span class="font-semibold text-emerald-950">$75</span>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="text-gray-700">Vitamin B12 Injection</span>
+                <span class="font-semibold text-emerald-950">$35</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Specialized IV Treatments -->
+          <div class="group bg-emerald-50 rounded-3xl p-5 sm:p-8 shadow-lg border border-emerald-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-emerald-200">
+            <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-6 pb-4 border-b border-emerald-100 transition-colors group-hover:text-emerald-700">Specialized IV Treatments</h3>
+            <ul class="space-y-4">
+              <li class="flex justify-between items-center">
+                <span class="text-gray-700">NAD+ IV Therapy</span>
+                <span class="font-semibold text-emerald-950">$190</span>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="text-gray-700">Myers Cocktail</span>
+                <span class="font-semibold text-emerald-950">$130</span>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="text-gray-700">Chelation Therapy</span>
+                <span class="font-semibold text-emerald-950">$130</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Combined Visits -->
+          <div class="group bg-emerald-50 rounded-3xl p-5 sm:p-8 shadow-lg border border-emerald-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-emerald-200">
+            <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-6 pb-4 border-b border-emerald-100 transition-colors group-hover:text-emerald-700">Combined Visits</h3>
+            <ul class="space-y-4">
+              <li class="flex justify-between items-center">
+                <span class="text-gray-700">Initial Visit + IV Treatment</span>
+                <span class="font-semibold text-emerald-950">$260</span>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="text-gray-700">Initial Visit + Prolotherapy</span>
+                <span class="font-semibold text-emerald-950">$260</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="text-center text-gray-500 mt-8 text-sm">
+          Prices subject to change. Please contact us if you have questions about specific treatments.
+        </p>
+      </div>
     </div>
   </section>
 
