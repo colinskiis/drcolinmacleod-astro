@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
+import { ChevronRight } from '@lucide/astro';
 ---
 
 <BaseLayout
@@ -13,457 +14,143 @@ import CTAButton from '../components/CTAButton.astro';
     Natural, evidence-based treatments for a wide range of acute and chronic health conditions using naturopathic medicine approaches.
   </HeroSection>
 
-  <!-- Condition Categories -->
   <section class="py-16 lg:py-24 bg-white">
-    <div class="section-shell">
-      
-      <!-- Musculoskeletal Pain -->
-      <div id="musculoskeletal" class="mb-16">
-        <div class="text-center mb-12 reveal">
-          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Musculoskeletal Pain & Injuries</h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            Specialized treatment for chronic pain, sports injuries, and musculoskeletal conditions using regenerative medicine techniques.
-          </p>
-        </div>
-        
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 reveal reveal-delay-100">
-          <!-- Low Back Pain -->
-          <a href="/low-back-pain" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="aspect-[16/10] overflow-hidden">
-              <img src="/images/conditions/low-back-pain-hero.webp" alt="Low back pain treatment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="500" loading="lazy" />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Low Back Pain</h3>
-              <p class="text-gray-600 mb-4">Comprehensive treatment for acute and chronic lower back pain using prolotherapy, acupuncture and natural therapies.</p>
-              <span class="text-emerald-700 font-semibold group-hover:text-emerald-800">Learn More →</span>
-            </div>
+    <div class="section-shell space-y-14">
+
+      <!-- Musculoskeletal Pain & Injuries -->
+      <div class="reveal">
+        <h2 class="text-2xl font-serif font-bold text-emerald-950 pb-4 mb-6 border-b border-emerald-100">Musculoskeletal Pain & Injuries</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10">
+          <a href="/low-back-pain" class="flex items-center gap-2 py-3 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-50">
+            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
+            Low Back Pain
           </a>
-
-          <!-- Osteoarthritis -->
-          <a href="/osteoarthritis" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="aspect-[16/10] overflow-hidden">
-              <img src="/images/conditions/acupuncture-knee-pain-halifax.webp" alt="Knee osteoarthritis treatment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="500" loading="lazy" />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Osteoarthritis</h3>
-              <p class="text-gray-600 mb-4">Natural joint pain relief and cartilage support using prolotherapy and nutritional interventions.</p>
-              <span class="text-emerald-700 font-semibold group-hover:text-emerald-800">Learn More →</span>
-            </div>
+          <a href="/osteoarthritis" class="flex items-center gap-2 py-3 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-50">
+            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
+            Osteoarthritis
           </a>
-
-          <!-- Fibromyalgia -->
-          <a href="/fibromyalgia" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="aspect-[16/10] overflow-hidden">
-              <img src="/images/conditions/woman-fibromyalgia-pain.webp" alt="Fibromyalgia pain management" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="500" loading="lazy" />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Fibromyalgia</h3>
-              <p class="text-gray-600 mb-4">Holistic approach to fibromyalgia management including IV therapy, nutrition and pain management strategies.</p>
-              <span class="text-emerald-700 font-semibold group-hover:text-emerald-800">Learn More →</span>
-            </div>
+          <a href="/fibromyalgia" class="flex items-center gap-2 py-3 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-50">
+            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
+            Fibromyalgia
           </a>
-
-          <!-- Tennis Elbow -->
-          <a href="/tennis-elbow" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="aspect-[16/10] overflow-hidden">
-              <img src="/images/conditions/tennis-elbow.webp" alt="Tennis elbow treatment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="500" loading="lazy" />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Tennis Elbow</h3>
-              <p class="text-gray-600 mb-4">Effective prolotherapy treatment for lateral epicondylitis and elbow tendon injuries.</p>
-              <span class="text-emerald-700 font-semibold group-hover:text-emerald-800">Learn More →</span>
-            </div>
+          <a href="/tennis-elbow" class="flex items-center gap-2 py-3 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-50">
+            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
+            Tennis Elbow
           </a>
-
-          <!-- Plantar Fasciitis -->
-          <a href="/plantar-fasciitis" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="aspect-[16/10] overflow-hidden">
-              <img src="/images/conditions/plantar-fasciitis.webp" alt="Plantar fasciitis treatment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="500" loading="lazy" />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Plantar Fasciitis</h3>
-              <p class="text-gray-600 mb-4">Natural treatment for heel pain and plantar fascia inflammation using injection therapy.</p>
-              <span class="text-emerald-700 font-semibold group-hover:text-emerald-800">Learn More →</span>
-            </div>
+          <a href="/plantar-fasciitis" class="flex items-center gap-2 py-3 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-50">
+            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
+            Plantar Fasciitis
           </a>
-
-          <!-- Additional Conditions -->
-          <div class="bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-lg p-6 transition-shadow hover:shadow-md">
-            <div class="w-12 h-12 bg-emerald-200 rounded-lg flex items-center justify-center mb-4">
-              <svg class="w-6 h-6 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold mb-3">Other Conditions</h3>
-            <ul class="text-gray-600 space-y-2 text-sm">
-              <li>• <a href="/achilles-tendinitis" class="hover:text-emerald-700">Achilles Tendinitis</a></li>
-              <li>• <a href="/carpal-tunnel-syndrome" class="hover:text-emerald-700">Carpal Tunnel Syndrome</a></li>
-              <li>• <a href="/frozen-shoulder" class="hover:text-emerald-700">Frozen Shoulder</a></li>
-              <li>• <a href="/herniated-disc" class="hover:text-emerald-700">Herniated Disc</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Neurological Conditions -->
-      <div id="neurological" class="mb-16">
-        <div class="text-center mb-12 reveal">
-          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Neurological Conditions</h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            Natural approaches to neurological symptoms including headaches, fatigue and nerve-related conditions.
-          </p>
-        </div>
-        
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 reveal reveal-delay-100">
-          <!-- Migraines -->
-          <a href="/migraine-headache" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="aspect-[16/10] overflow-hidden">
-              <img src="/images/conditions/migraine.webp" alt="Migraine headache treatment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="500" loading="lazy" />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Migraine Headaches</h3>
-              <p class="text-gray-600 mb-4">Comprehensive migraine treatment using IV therapy, acupuncture and nutritional interventions.</p>
-              <span class="text-emerald-700 font-semibold group-hover:text-emerald-800">Learn More →</span>
-            </div>
+          <a href="/achilles-tendinitis" class="flex items-center gap-2 py-3 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-50">
+            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
+            Achilles Tendinitis
           </a>
-
-          <!-- TMJ -->
-          <a href="/tmj-dysfunction" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="aspect-[16/10] overflow-hidden">
-              <img src="/images/conditions/tmj-pain-woman-holding-jaw.webp" alt="TMJ jaw pain treatment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="500" loading="lazy" />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">TMJ Dysfunction</h3>
-              <p class="text-gray-600 mb-4">Natural treatment for temporomandibular joint disorders including prolotherapy and acupuncture.</p>
-              <span class="text-emerald-700 font-semibold group-hover:text-emerald-800">Learn More →</span>
-            </div>
+          <a href="/carpal-tunnel-syndrome" class="flex items-center gap-2 py-3 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-50">
+            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
+            Carpal Tunnel Syndrome
           </a>
-
-          <!-- Chronic Fatigue -->
-          <a href="/chronic-fatigue-syndrome" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="aspect-[16/10] overflow-hidden">
-              <img src="/images/conditions/chronic-fatigue-hero.webp" alt="Chronic fatigue treatment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="500" loading="lazy" />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Chronic Fatigue</h3>
-              <p class="text-gray-600 mb-4">Comprehensive approach to chronic fatigue syndrome using IV therapy, nutrition and lifestyle interventions.</p>
-              <span class="text-emerald-700 font-semibold group-hover:text-emerald-800">Learn More →</span>
-            </div>
+          <a href="/frozen-shoulder" class="flex items-center gap-2 py-3 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-50">
+            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
+            Frozen Shoulder
+          </a>
+          <a href="/herniated-disc" class="flex items-center gap-2 py-3 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-50">
+            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
+            Herniated Disc
+          </a>
+          <a href="/tmj-dysfunction" class="flex items-center gap-2 py-3 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-50">
+            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
+            TMJ Dysfunction
           </a>
         </div>
       </div>
 
-      <!-- General Health -->
-      <div id="general" class="mb-16">
-        <div class="text-center mb-12 reveal">
-          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">General Health Conditions</h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            Natural treatment approaches for skin conditions, digestive health, immune support and general wellness concerns.
-          </p>
+      <!-- Neurological & Fatigue | Hormonal Health -->
+      <div class="grid lg:grid-cols-2 gap-14 reveal">
+        <div>
+          <h2 class="text-2xl font-serif font-bold text-emerald-950 pb-4 mb-6 border-b border-emerald-100">Neurological & Fatigue</h2>
+          <a href="/migraine-headache" class="flex items-center gap-2 py-3 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-50">
+            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
+            Migraine Headaches
+          </a>
+          <a href="/chronic-fatigue-syndrome" class="flex items-center gap-2 py-3 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-50">
+            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
+            Chronic Fatigue Syndrome
+          </a>
         </div>
-        
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 reveal reveal-delay-100">
-          <!-- Skin Conditions -->
-          <a href="/articles/acne-eczema-psoriasis-treatments" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="aspect-[16/10] overflow-hidden">
-              <img src="/images/conditions/acne.webp" alt="Skin condition treatment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="500" loading="lazy" />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Skin Conditions</h3>
-              <p class="text-gray-600 mb-4">Natural treatment for acne, eczema, psoriasis and other dermatological conditions.</p>
-              <span class="text-emerald-700 font-semibold group-hover:text-emerald-800">Read Article →</span>
-            </div>
+        <div>
+          <h2 class="text-2xl font-serif font-bold text-emerald-950 pb-4 mb-6 border-b border-emerald-100">Hormonal Health</h2>
+          <a href="/articles/mens-hormonal-health-testosterone" class="flex items-center gap-2 py-3 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-50">
+            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
+            Testosterone & Hormonal Health
           </a>
-
-          <!-- Digestive Health -->
-          <a href="/articles/digestive-health-natural-approaches" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="aspect-[16/10] overflow-hidden">
-              <img src="/images/general/digestive-health.webp" alt="Digestive health treatment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="500" loading="lazy" />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Digestive Health</h3>
-              <p class="text-gray-600 mb-4">Clinical nutrition and herbal approaches for IBS, IBD and other gastrointestinal conditions.</p>
-              <span class="text-emerald-700 font-semibold group-hover:text-emerald-800">Read Article →</span>
-            </div>
+          <a href="/articles/pcos-natural-approaches" class="flex items-center gap-2 py-3 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-50">
+            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
+            PCOS
           </a>
-
-          <!-- Immune Support -->
-          <a href="/articles/immune-support-natural-approaches" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="aspect-[16/10] overflow-hidden">
-              <img src="/images/general/immune-health.webp" alt="Immune support with natural foods and supplements" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="500" loading="lazy" />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Immune Support</h3>
-              <p class="text-gray-600 mb-4">IV therapy, nutritional support and herbal medicine for immune system enhancement.</p>
-              <span class="text-emerald-700 font-semibold group-hover:text-emerald-800">Read Article →</span>
-            </div>
+          <a href="/articles/menopause-perimenopause-natural-approaches" class="flex items-center gap-2 py-3 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-50">
+            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
+            Menopause & Perimenopause
           </a>
         </div>
       </div>
 
-      <!-- Sports & Performance -->
-      <div id="sports" class="mb-16">
-        <div class="text-center mb-12 reveal">
-          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Sports Medicine & Performance</h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            Natural approaches to athletic performance enhancement, sports injury treatment and recovery optimization.
-          </p>
+      <!-- Mental Health & Mood | Metabolic & Cardiovascular Health -->
+      <div class="grid lg:grid-cols-2 gap-14 reveal">
+        <div>
+          <h2 class="text-2xl font-serif font-bold text-emerald-950 pb-4 mb-6 border-b border-emerald-100">Mental Health & Mood</h2>
+          <a href="/articles/natural-anxiety-management" class="flex items-center gap-2 py-3 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-50">
+            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
+            Anxiety
+          </a>
+          <a href="/articles/natural-depression-support" class="flex items-center gap-2 py-3 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-50">
+            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
+            Depression
+          </a>
         </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 reveal reveal-delay-100">
-          <!-- Athletic Performance -->
-          <a href="/articles/nutrients-for-athletic-performance" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="aspect-[16/10] overflow-hidden">
-              <img src="/images/general/running-woman-athletic.webp" alt="Athletic performance and endurance" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="500" loading="lazy" />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Athletic Performance</h3>
-              <p class="text-gray-600 mb-4">Nutritional optimization and IV therapy for enhanced athletic performance and endurance.</p>
-              <span class="text-emerald-700 font-semibold group-hover:text-emerald-800">Read Article →</span>
-            </div>
+        <div>
+          <h2 class="text-2xl font-serif font-bold text-emerald-950 pb-4 mb-6 border-b border-emerald-100">Metabolic & Cardiovascular Health</h2>
+          <a href="/articles/diabetes-prevention-blood-sugar-balance" class="flex items-center gap-2 py-3 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-50">
+            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
+            Blood Sugar & Diabetes Prevention
           </a>
-
-          <!-- Sports Injuries -->
-          <a href="/articles/sports-injuries-natural-treatment" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="aspect-[16/10] overflow-hidden">
-              <img src="/images/general/sports-injury-treatment.webp" alt="Sports injury examination and treatment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="500" loading="lazy" />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Sports Injuries</h3>
-              <p class="text-gray-600 mb-4">Prolotherapy and regenerative medicine for acute and chronic sports-related injuries.</p>
-              <span class="text-emerald-700 font-semibold group-hover:text-emerald-800">Read Article →</span>
-            </div>
+          <a href="/articles/blood-pressure-natural-strategies" class="flex items-center gap-2 py-3 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-50">
+            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
+            Blood Pressure
           </a>
-
-          <!-- Recovery Enhancement -->
-          <a href="/articles/recovery-enhancement-natural-approaches" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="aspect-[16/10] overflow-hidden">
-              <img src="/images/general/athletic-recovery.webp" alt="Athletic recovery with foam rolling and stretching" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="500" loading="lazy" />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Recovery Enhancement</h3>
-              <p class="text-gray-600 mb-4">IV therapy and nutritional protocols for faster recovery and reduced inflammation.</p>
-              <span class="text-emerald-700 font-semibold group-hover:text-emerald-800">Read Article →</span>
-            </div>
+          <a href="/articles/autoimmune-conditions-naturopathic-perspective" class="flex items-center gap-2 py-3 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-50">
+            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
+            Autoimmune Conditions
           </a>
         </div>
       </div>
 
-      <!-- Women's & Men's Health -->
-      <div id="womens-mens-health" class="mb-16">
-        <div class="text-center mb-12 reveal">
-          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Women's & Men's Health</h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            Natural approaches to hormonal balance, reproductive health and wellness through every life stage.
-          </p>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 reveal reveal-delay-100">
-          <!-- Testosterone & Hormonal Health -->
-          <a href="/articles/mens-hormonal-health-testosterone" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="aspect-[16/10] overflow-hidden">
-              <img src="/images/general/mens-health-vitality.webp" alt="Men's hormonal health and vitality" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="500" loading="lazy" />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Testosterone & Hormonal Health</h3>
-              <p class="text-gray-600 mb-4">Natural strategies to optimize testosterone, energy levels and overall vitality.</p>
-              <span class="text-emerald-700 font-semibold group-hover:text-emerald-800">Read Article →</span>
-            </div>
+      <!-- Digestive, Respiratory & General Health -->
+      <div class="reveal">
+        <h2 class="text-2xl font-serif font-bold text-emerald-950 pb-4 mb-6 border-b border-emerald-100">Digestive, Respiratory & General Health</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10">
+          <a href="/articles/ibs-ibd-natural-treatment" class="flex items-center gap-2 py-3 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-50">
+            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
+            IBS & IBD
           </a>
-
-          <!-- PCOS -->
-          <a href="/articles/pcos-natural-approaches" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="aspect-[16/10] overflow-hidden">
-              <img src="/images/general/pcos-hormone-balance.webp" alt="Healthy lifestyle for PCOS management" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="500" loading="lazy" />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">PCOS</h3>
-              <p class="text-gray-600 mb-4">Comprehensive naturopathic approach to polycystic ovary syndrome including diet, supplements and lifestyle.</p>
-              <span class="text-emerald-700 font-semibold group-hover:text-emerald-800">Read Article →</span>
-            </div>
+          <a href="/articles/asthma-respiratory-health-natural" class="flex items-center gap-2 py-3 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-50">
+            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
+            Asthma & Respiratory Health
           </a>
-
-          <!-- Menopause -->
-          <a href="/articles/menopause-perimenopause-natural-approaches" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="aspect-[16/10] overflow-hidden">
-              <img src="/images/general/menopause-woman.webp" alt="Woman in menopause transition" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="500" loading="lazy" />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Menopause & Perimenopause</h3>
-              <p class="text-gray-600 mb-4">Natural support for hormonal transitions including hot flashes, sleep issues and mood changes.</p>
-              <span class="text-emerald-700 font-semibold group-hover:text-emerald-800">Read Article →</span>
-            </div>
+          <a href="/articles/acne-eczema-psoriasis-treatments" class="flex items-center gap-2 py-3 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-50">
+            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
+            Skin Conditions
           </a>
-
-          <!-- PMS -->
-          <a href="/articles/pms-hormonal-balance-natural-approaches" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="aspect-[16/10] overflow-hidden">
-              <img src="/images/general/yoga-stretching-pms.webp" alt="Yoga and stretching for PMS relief" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="500" loading="lazy" />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">PMS & Hormonal Balance</h3>
-              <p class="text-gray-600 mb-4">Natural strategies for premenstrual symptoms, cycle regulation and hormonal health.</p>
-              <span class="text-emerald-700 font-semibold group-hover:text-emerald-800">Read Article →</span>
-            </div>
+          <a href="/articles/digestive-health-natural-approaches" class="flex items-center gap-2 py-3 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-50">
+            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
+            Digestive Health
           </a>
-
-          <!-- Fertility -->
-          <a href="/articles/fertility-preconception-health" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="aspect-[16/10] overflow-hidden">
-              <img src="/images/general/fertility-prenatal-nutrition.webp" alt="Nutrient-rich foods for fertility" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="500" loading="lazy" />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Fertility & Preconception</h3>
-              <p class="text-gray-600 mb-4">Optimizing fertility through nutrition, lifestyle and targeted supplementation for both partners.</p>
-              <span class="text-emerald-700 font-semibold group-hover:text-emerald-800">Read Article →</span>
-            </div>
-          </a>
-
-          <!-- Hormonal Acne -->
-          <a href="/articles/hormonal-acne-natural-treatment" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="aspect-[16/10] overflow-hidden">
-              <img src="/images/conditions/acne.webp" alt="Hormonal acne treatment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="500" loading="lazy" />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Hormonal Acne</h3>
-              <p class="text-gray-600 mb-4">Addressing the root hormonal causes of adult acne through diet, supplements and lifestyle.</p>
-              <span class="text-emerald-700 font-semibold group-hover:text-emerald-800">Read Article →</span>
-            </div>
+          <a href="/articles/immune-support-natural-approaches" class="flex items-center gap-2 py-3 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-50">
+            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
+            Immune Support
           </a>
         </div>
       </div>
 
-      <!-- Mental Health -->
-      <div id="mental-health" class="mb-16">
-        <div class="text-center mb-12 reveal">
-          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Mental Health & Mood</h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            Natural support for anxiety, depression and emotional wellbeing through nutrition, lifestyle and targeted therapies.
-          </p>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 reveal reveal-delay-100">
-          <!-- Anxiety -->
-          <a href="/articles/natural-anxiety-management" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="aspect-[16/10] overflow-hidden">
-              <img src="/images/general/meditation-forest-anxiety.webp" alt="Natural anxiety management through meditation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="500" loading="lazy" />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Anxiety</h3>
-              <p class="text-gray-600 mb-4">Evidence-based natural approaches to managing anxiety including nutrients, herbs and lifestyle.</p>
-              <span class="text-emerald-700 font-semibold group-hover:text-emerald-800">Read Article →</span>
-            </div>
-          </a>
-
-          <!-- Depression -->
-          <a href="/articles/natural-depression-support" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="aspect-[16/10] overflow-hidden">
-              <img src="/images/general/coastal-hiking-depression.webp" alt="Nature and movement for mood support" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="500" loading="lazy" />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Depression</h3>
-              <p class="text-gray-600 mb-4">Naturopathic support for mood including gut-brain connection, nutrients and lifestyle interventions.</p>
-              <span class="text-emerald-700 font-semibold group-hover:text-emerald-800">Read Article →</span>
-            </div>
-          </a>
-
-          <!-- Gut-Brain Connection -->
-          <a href="/articles/gut-brain-connection-mental-health" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="aspect-[16/10] overflow-hidden">
-              <img src="/images/general/gut-brain-connection.webp" alt="Gut-brain connection and mental health" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="500" loading="lazy" />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Gut-Brain Connection</h3>
-              <p class="text-gray-600 mb-4">How digestive health influences mood, cognition and mental wellbeing.</p>
-              <span class="text-emerald-700 font-semibold group-hover:text-emerald-800">Read Article →</span>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <!-- Metabolic Health -->
-      <div id="metabolic-health" class="mb-16">
-        <div class="text-center mb-12 reveal">
-          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Metabolic & Cardiovascular Health</h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            Natural approaches to blood sugar balance, cardiovascular health and metabolic optimization.
-          </p>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 reveal reveal-delay-100">
-          <!-- Diabetes & Blood Sugar -->
-          <a href="/articles/diabetes-prevention-blood-sugar-balance" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="aspect-[16/10] overflow-hidden">
-              <img src="/images/nutrition/balanced-plate-diabetes.webp" alt="Balanced nutrition for blood sugar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="500" loading="lazy" />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Blood Sugar & Diabetes Prevention</h3>
-              <p class="text-gray-600 mb-4">Natural strategies for blood sugar balance, insulin sensitivity and diabetes prevention.</p>
-              <span class="text-emerald-700 font-semibold group-hover:text-emerald-800">Read Article →</span>
-            </div>
-          </a>
-
-          <!-- Blood Pressure -->
-          <a href="/articles/blood-pressure-natural-strategies" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="aspect-[16/10] overflow-hidden">
-              <img src="/images/conditions/chelation-heart-disease.webp" alt="Cardiovascular health" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="500" loading="lazy" />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Blood Pressure</h3>
-              <p class="text-gray-600 mb-4">Evidence-based natural approaches to blood pressure management through diet and lifestyle.</p>
-              <span class="text-emerald-700 font-semibold group-hover:text-emerald-800">Read Article →</span>
-            </div>
-          </a>
-
-          <!-- Autoimmune -->
-          <a href="/articles/autoimmune-conditions-naturopathic-perspective" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="aspect-[16/10] overflow-hidden">
-              <img src="/images/general/autoimmune-balance.webp" alt="Immune system balance" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="500" loading="lazy" />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Autoimmune Conditions</h3>
-              <p class="text-gray-600 mb-4">Naturopathic approach to autoimmune conditions focusing on triggers, gut health and immune modulation.</p>
-              <span class="text-emerald-700 font-semibold group-hover:text-emerald-800">Read Article →</span>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <!-- Digestive & Respiratory -->
-      <div id="digestive-respiratory" class="mb-16">
-        <div class="text-center mb-12 reveal">
-          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Digestive & Respiratory Health</h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            Natural treatment for digestive disorders and respiratory conditions.
-          </p>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 reveal reveal-delay-100">
-          <!-- IBS/IBD -->
-          <a href="/articles/ibs-ibd-natural-treatment" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="aspect-[16/10] overflow-hidden">
-              <img src="/images/general/digestive-testing.webp" alt="Digestive health testing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="500" loading="lazy" />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">IBS & IBD</h3>
-              <p class="text-gray-600 mb-4">Natural approaches to irritable bowel syndrome and inflammatory bowel disease.</p>
-              <span class="text-emerald-700 font-semibold group-hover:text-emerald-800">Read Article →</span>
-            </div>
-          </a>
-
-          <!-- Asthma -->
-          <a href="/articles/asthma-respiratory-health-natural" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block group focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="aspect-[16/10] overflow-hidden">
-              <img src="/images/general/respiratory-health-lungs.webp" alt="Natural respiratory support" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="500" loading="lazy" />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-3 group-hover:text-emerald-700 transition-colors">Asthma & Respiratory Health</h3>
-              <p class="text-gray-600 mb-4">Natural support for asthma and respiratory conditions including triggers, diet and breathing techniques.</p>
-              <span class="text-emerald-700 font-semibold group-hover:text-emerald-800">Read Article →</span>
-            </div>
-          </a>
-        </div>
-      </div>
     </div>
   </section>
 
