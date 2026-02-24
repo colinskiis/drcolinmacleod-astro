@@ -28,7 +28,7 @@ import FAQAccordion from '../components/FAQAccordion.astro';
           
           <form
             id="contact-form"
-            action="https://formspree.io/f/mrbnkoan"
+            action="/contact-handler.php"
             method="POST"
             class="space-y-6"
           >
@@ -99,6 +99,11 @@ import FAQAccordion from '../components/FAQAccordion.astro';
                   <span class="sr-only">(required)</span>
                 </span>
               </label>
+            </div>
+
+            <!-- Honeypot: hidden from real users, traps bots -->
+            <div aria-hidden="true" style="display:none;">
+              <input type="text" name="_gotcha" tabindex="-1" autocomplete="off">
             </div>
 
             <!-- Submit Button -->
@@ -252,7 +257,7 @@ import FAQAccordion from '../components/FAQAccordion.astro';
       // Get form data
       const formData = new FormData(form);
       
-      fetch('https://formspree.io/f/mrbnkoan', {
+      fetch('/contact-handler.php', {
         method: 'POST',
         body: formData,
         headers: {
