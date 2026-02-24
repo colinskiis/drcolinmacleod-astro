@@ -378,7 +378,8 @@ const articleSchema = articleData ? JSON.stringify({
         <div class="absolute -left-10 bottom-0 w-52 h-52 rounded-full bg-emerald-900/10 blur-3xl"></div>
       </div>
       <div class="section-shell py-16 relative z-10">
-        <div class="grid lg:grid-cols-3 gap-10">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-20">
+          <!-- About -->
           <div class="space-y-3">
             <p class="pill">Evidence-Based + Natural</p>
             <h3 class="text-2xl font-semibold">Dr. Colin MacLeod ND</h3>
@@ -387,32 +388,35 @@ const articleSchema = articleData ? JSON.stringify({
             </p>
           </div>
 
-          <div class="space-y-3">
-            <p class="uppercase tracking-[0.2em] text-xs text-emerald-900 font-semibold">Contact</p>
-            <div class="text-slate-800 space-y-2">
-              <div class="space-y-0.5">
-                <p class="font-medium">Optimal Wellbeing Clinic</p>
-                <p>6140 Young Street</p>
-                <p>Halifax, NS B3K 0G2</p>
+          <!-- Contact + Services -->
+          <div class="grid sm:grid-cols-2 gap-8">
+            <div class="space-y-3">
+              <p class="uppercase tracking-[0.2em] text-xs text-emerald-900 font-semibold">Contact</p>
+              <div class="text-slate-800 space-y-2">
+                <div class="space-y-0.5">
+                  <p class="font-medium">Optimal Wellbeing Clinic</p>
+                  <p>6140 Young Street</p>
+                  <p>Halifax, NS B3K 0G2</p>
+                </div>
+                <a href="tel:+19024064424" class="flex items-center text-emerald-800 font-semibold hover:text-emerald-900">
+                  (902) 406-4424
+                </a>
+                <a href="https://macleodnaturopathic.janeapp.com/" target="_blank" rel="noopener noreferrer" class="group flex items-center text-emerald-800 font-semibold hover:text-emerald-700 transition-colors">
+                  Book Online
+                  <ChevronRight class="w-5 h-5 ml-2 group-hover:translate-x-0.5 transition-transform" aria-hidden="true" />
+                </a>
               </div>
-              <a href="tel:+19024064424" class="flex items-center text-emerald-800 font-semibold hover:text-emerald-900">
-                (902) 406-4424
-              </a>
-              <a href="https://macleodnaturopathic.janeapp.com/" target="_blank" rel="noopener noreferrer" class="group flex items-center text-emerald-800 font-semibold hover:text-emerald-700 transition-colors">
-                Book Online
-                <ChevronRight class="w-5 h-5 ml-2 group-hover:translate-x-0.5 transition-transform" aria-hidden="true" />
-              </a>
             </div>
-          </div>
 
-          <div class="space-y-3">
-            <p class="uppercase tracking-[0.2em] text-xs text-emerald-900 font-semibold">Services</p>
-            <div class="text-slate-800 space-y-2">
-              <a href="/lab-testing" class="block hover:text-emerald-800 transition-colors">Private Blood Testing</a>
-              <a href="/services" class="block hover:text-emerald-800 transition-colors">Clinical Nutrition</a>
-              <a href="/iv-therapy" class="block hover:text-emerald-800 transition-colors">IV Therapy</a>
-              <a href="/prolotherapy" class="block hover:text-emerald-800 transition-colors">Prolotherapy</a>
-              <a href="/acupuncture" class="block hover:text-emerald-800 transition-colors">Acupuncture</a>
+            <div class="space-y-3">
+              <p class="uppercase tracking-[0.2em] text-xs text-emerald-900 font-semibold">Services</p>
+              <div class="text-slate-800 space-y-2">
+                <a href="/lab-testing" class="block hover:text-emerald-800 transition-colors">Private Blood Testing</a>
+                <a href="/services" class="block hover:text-emerald-800 transition-colors">Clinical Nutrition</a>
+                <a href="/iv-therapy" class="block hover:text-emerald-800 transition-colors">IV Therapy</a>
+                <a href="/prolotherapy" class="block hover:text-emerald-800 transition-colors">Prolotherapy</a>
+                <a href="/acupuncture" class="block hover:text-emerald-800 transition-colors">Acupuncture</a>
+              </div>
             </div>
           </div>
         </div>
