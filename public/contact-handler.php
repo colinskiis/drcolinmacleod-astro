@@ -115,7 +115,16 @@ $safeEmail = sanitize_header($email);
 $safeMessage = str_replace(["\r\n", "\r"], "\n", $message);
 
 // Send via Resend API
-$apiKey  = 're_75uZZcNA_A5khGobG2jK1owGq2wcSXx4P';
+// Key is stored OUTSIDE web root — never committed to git
+// File: ~/resend_config.php  (one level above public_html on Namecheap)
+// Contents: <?php return 're_YOUR_NEW_API_KEY_HERE';
+$configFile = dirname(__DIR__) . '/resend_config.php';
+if (!file_exists($configFile)) {
+    http_response_code(500);
+    echo json_encode(['error' => 'Server configuration error']);
+    exit;
+}
+$apiKey = require $configFile;
 $payload = json_encode([
     'from'      => 'noreply@drcolinmacleod.com',
     'to'        => ['info@drcolinmacleod.com'],

@@ -82,18 +82,21 @@ const faqSchema = {
         <div class="space-y-8">
           <!-- Mobile Hero Image (circular) -->
           <div class="lg:hidden flex justify-center animate-fade-in-up">
-            <a href="/about" aria-label="About Dr. Colin MacLeod ND" class="block w-36 h-36 rounded-full overflow-hidden border-4 border-white/20 shadow-2xl shadow-black/30 hover:border-white/40 hover:shadow-black/50 transition-all duration-300">
-              <picture>
-                <source srcset="/images/general/colin-hero.avif" type="image/avif" />
-                <source srcset="/images/general/colin-hero.webp" type="image/webp" />
-                <img
-                  src="/images/general/Dr-colin-macleod-ND.jpeg"
-                  alt="Dr. Colin MacLeod ND"
-                  class="w-full h-full object-cover object-top"
-                  loading="eager"
-                />
-              </picture>
-            </a>
+            <div class="relative group">
+              <a href="/about" aria-label="About Dr. Colin MacLeod ND" class="block w-36 h-36 rounded-full overflow-hidden border-4 border-white/20 shadow-2xl shadow-black/30 hover:border-white/40 hover:shadow-black/50 transition-all duration-300">
+                <picture>
+                  <source srcset="/images/general/colin-hero.avif" type="image/avif" />
+                  <source srcset="/images/general/colin-hero.webp" type="image/webp" />
+                  <img
+                    src="/images/general/Dr-colin-macleod-ND.jpeg"
+                    alt="Dr. Colin MacLeod ND"
+                    class="w-full h-full object-cover object-top"
+                    loading="eager"
+                  />
+                </picture>
+              </a>
+              <span class="pointer-events-none absolute -bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-emerald-950/90 px-3 py-1 text-xs font-medium text-white opacity-0 group-hover:opacity-100 transition-opacity duration-200">About Dr. MacLeod</span>
+            </div>
           </div>
 
           <!-- Text Content -->
@@ -155,18 +158,21 @@ const faqSchema = {
 
         <!-- Right Column: Hero Image (Circular) -->
         <div class="relative hidden lg:flex justify-center items-start">
-          <a href="/about" aria-label="About Dr. Colin MacLeod ND" class="block w-80 h-80 xl:w-96 xl:h-96 rounded-full overflow-hidden shadow-2xl shadow-black/30 border-4 border-white/20 hover:border-white/40 hover:shadow-black/50 hover:scale-[1.02] transition-all duration-300">
-            <picture>
-              <source srcset="/images/general/colin-hero.avif" type="image/avif" />
-              <source srcset="/images/general/colin-hero.webp" type="image/webp" />
-              <img
-                src="/images/general/Dr-colin-macleod-ND.jpeg"
-                alt="Dr. Colin MacLeod ND"
-                class="w-full h-full object-cover object-top"
-                loading="eager"
-              />
-            </picture>
-          </a>
+          <div class="relative group">
+            <a href="/about" aria-label="About Dr. Colin MacLeod ND" class="block w-80 h-80 xl:w-96 xl:h-96 rounded-full overflow-hidden shadow-2xl shadow-black/30 border-4 border-white/20 hover:border-white/40 hover:shadow-black/50 hover:scale-[1.02] transition-all duration-300">
+              <picture>
+                <source srcset="/images/general/colin-hero.avif" type="image/avif" />
+                <source srcset="/images/general/colin-hero.webp" type="image/webp" />
+                <img
+                  src="/images/general/Dr-colin-macleod-ND.jpeg"
+                  alt="Dr. Colin MacLeod ND"
+                  class="w-full h-full object-cover object-top"
+                  loading="eager"
+                />
+              </picture>
+            </a>
+            <span class="pointer-events-none absolute -bottom-10 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-emerald-950/90 px-4 py-1.5 text-sm font-medium text-white opacity-0 group-hover:opacity-100 transition-opacity duration-200">About Dr. MacLeod</span>
+          </div>
         </div>
       </div>
     </div>
