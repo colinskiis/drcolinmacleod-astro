@@ -24,35 +24,23 @@ import { Search as SearchIcon, X } from '@lucide/astro';
     <div class="flex items-start justify-center min-h-screen pt-16">
       <div class="bg-white rounded-2xl shadow-2xl shadow-emerald-900/10 w-full max-w-2xl mx-4 border border-emerald-900/10">
         <div class="p-6">
-          <div class="flex items-center justify-between mb-4">
-            <h3 class="text-lg font-semibold" id="search-title">Search Content</h3>
-            <button
-              id="search-close"
-              class="text-gray-400 hover:text-emerald-700 p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 min-w-[44px] min-h-[44px] flex items-center justify-center"
-              aria-label="Close search"
-            >
-              <X class="w-6 h-6" aria-hidden="true" />
-            </button>
-          </div>
-
           <div class="relative mb-4">
             <input
               type="text"
               id="search-input"
               placeholder="Search articles, services, and conditions..."
-              class="w-full px-4 py-3 pl-10 rounded-lg border border-emerald-900/20 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent bg-white"
+              class="w-full px-4 py-3 pl-10 pr-12 rounded-lg border border-emerald-900/20 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent bg-white"
               autocomplete="off"
               aria-describedby="search-help"
             >
             <SearchIcon class="w-5 h-5 text-gray-400 absolute left-3 top-3.5" aria-hidden="true" />
-          </div>
-
-          <!-- Filter Buttons -->
-          <div class="flex flex-wrap gap-2 mb-4" role="group" aria-label="Filter search results">
-            <button class="search-filter active" data-type="all" aria-pressed="true">All</button>
-            <button class="search-filter" data-type="articles" aria-pressed="false">Articles</button>
-            <button class="search-filter" data-type="services" aria-pressed="false">Services</button>
-            <button class="search-filter" data-type="conditions" aria-pressed="false">Conditions</button>
+            <button
+              id="search-close"
+              class="absolute right-2 top-2 text-gray-400 hover:text-emerald-700 p-1.5 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500"
+              aria-label="Close search"
+            >
+              <X class="w-5 h-5" aria-hidden="true" />
+            </button>
           </div>
 
           <!-- Search Results -->
@@ -62,11 +50,7 @@ import { Search as SearchIcon, X } from '@lucide/astro';
             role="region"
             aria-live="polite"
             aria-atomic="false"
-          >
-            <p id="search-help" class="text-gray-500 text-center py-8">
-              Start typing to search articles, services, and conditions...
-            </p>
-          </div>
+          ></div>
         </div>
       </div>
     </div>
@@ -74,19 +58,13 @@ import { Search as SearchIcon, X } from '@lucide/astro';
 </div>
 
 <style>
-  .search-filter {
-    @apply px-4 py-2 text-sm rounded-full border border-emerald-900/20 text-emerald-900 hover:bg-emerald-50 transition-colors min-h-[44px] focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2;
+  /* :global() required — these elements are injected via innerHTML at runtime
+     and don't receive Astro's scoped component attribute */
+  :global(.search-result-link) {
+    @apply block px-3 py-5 border-b border-gray-200 hover:bg-emerald-50/60 transition-colors focus:outline-none focus:bg-emerald-100 focus:ring-2 focus:ring-inset focus:ring-emerald-500;
   }
 
-  .search-filter.active {
-    @apply bg-emerald-900 text-white border-emerald-900;
-  }
-
-  .search-result-link {
-    @apply block p-3 border-b border-emerald-900/10 hover:bg-emerald-50/60 transition-colors focus:outline-none focus:bg-emerald-100 focus:ring-2 focus:ring-inset focus:ring-emerald-500;
-  }
-
-  .search-result-link:last-child {
+  :global(.search-result-link:last-child) {
     @apply border-b-0;
   }
 </style>
@@ -97,29 +75,30 @@ import { Search as SearchIcon, X } from '@lucide/astro';
   class SiteSearch {
     fuse: any = null;
     searchData: any[] = [];
-    currentFilter: string = 'all';
     selectedIndex: number = -1;
     resultLinks: HTMLElement[] = [];
+    abortController: AbortController = new AbortController();
 
     constructor() {
       this.init();
     }
 
-    async init() {
-      // Initialize search data
-      await this.loadSearchData();
+    destroy() {
+      // Cancels all event listeners attached with { signal } so they don't stack
+      // across View Transition navigations.
+      this.abortController.abort();
+    }
 
-      // Set up event listeners
+    async init() {
+      await this.loadSearchData();
       this.setupEventListeners();
     }
 
     async loadSearchData() {
       try {
-        // Load all search data from API
         const response = await fetch('/api/search-data.json');
         if (response.ok) {
           const data = await response.json();
-          // Combine all data types into a single searchable array
           this.searchData = [
             ...(data.articles || []),
             ...(data.services || []),
@@ -130,14 +109,11 @@ import { Search as SearchIcon, X } from '@lucide/astro';
           this.searchData = [];
         }
 
-        // Initialize Fuse search
-        const options = {
+        this.fuse = new Fuse(this.searchData, {
           keys: ['title', 'description', 'category'],
           threshold: 0.3,
           includeScore: true
-        };
-
-        this.fuse = new Fuse(this.searchData, options);
+        });
       } catch (error) {
         console.error('Error loading search data:', error);
         this.searchData = [];
@@ -145,34 +121,18 @@ import { Search as SearchIcon, X } from '@lucide/astro';
     }
 
     setupEventListeners() {
+      const signal = this.abortController.signal;
       const searchToggle = document.getElementById('search-toggle');
       const searchOverlay = document.getElementById('search-overlay');
       const searchClose = document.getElementById('search-close');
       const searchInput = document.getElementById('search-input') as HTMLInputElement | null;
-      const filterButtons = document.querySelectorAll('.search-filter');
 
-      // Open search
       const openSearch = () => {
         searchOverlay?.classList.remove('hidden');
         searchInput?.focus();
         document.body.style.overflow = 'hidden';
       };
 
-      searchToggle?.addEventListener('click', openSearch);
-
-      // Keyboard shortcut: Ctrl+K or Cmd+K
-      document.addEventListener('keydown', (e) => {
-        if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
-          e.preventDefault();
-          if (searchOverlay?.classList.contains('hidden')) {
-            openSearch();
-          } else {
-            closeSearch();
-          }
-        }
-      });
-
-      // Close search
       const closeSearch = () => {
         searchOverlay?.classList.add('hidden');
         if (searchInput) searchInput.value = '';
@@ -182,23 +142,13 @@ import { Search as SearchIcon, X } from '@lucide/astro';
         searchToggle?.focus();
       };
 
-      searchClose?.addEventListener('click', closeSearch);
+      searchToggle?.addEventListener('click', openSearch, { signal });
+      searchClose?.addEventListener('click', closeSearch, { signal });
 
-      // Close on overlay click
       searchOverlay?.addEventListener('click', (e) => {
-        if (e.target === searchOverlay) {
-          closeSearch();
-        }
-      });
+        if (e.target === searchOverlay) closeSearch();
+      }, { signal });
 
-      // Close on Escape key
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && !searchOverlay?.classList.contains('hidden')) {
-          closeSearch();
-        }
-      });
-
-      // Trap focus within search modal
       searchOverlay?.addEventListener('keydown', (e) => {
         if (e.key !== 'Tab') return;
         const focusable = searchOverlay.querySelectorAll<HTMLElement>(
@@ -214,15 +164,25 @@ import { Search as SearchIcon, X } from '@lucide/astro';
           e.preventDefault();
           first.focus();
         }
-      });
+      }, { signal });
 
-      // Search input with keyboard navigation
+      // Keyboard shortcuts (Ctrl+K / Cmd+K and Escape) — on document,
+      // so they must be cleaned up via signal to avoid stacking.
+      document.addEventListener('keydown', (e) => {
+        if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+          e.preventDefault();
+          searchOverlay?.classList.contains('hidden') ? openSearch() : closeSearch();
+        }
+        if (e.key === 'Escape' && !searchOverlay?.classList.contains('hidden')) {
+          closeSearch();
+        }
+      }, { signal });
+
       searchInput?.addEventListener('input', (e) => {
         this.selectedIndex = -1;
         this.performSearch((e.target as HTMLInputElement).value);
-      });
+      }, { signal });
 
-      // Keyboard navigation for results
       searchInput?.addEventListener('keydown', (e) => {
         if (e.key === 'ArrowDown') {
           e.preventDefault();
@@ -234,21 +194,8 @@ import { Search as SearchIcon, X } from '@lucide/astro';
           e.preventDefault();
           this.resultLinks[this.selectedIndex]?.click();
         }
-      });
+      }, { signal });
 
-      // Filter buttons
-      filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-          filterButtons.forEach(btn => {
-            btn.classList.remove('active');
-            btn.setAttribute('aria-pressed', 'false');
-          });
-          button.classList.add('active');
-          button.setAttribute('aria-pressed', 'true');
-          this.currentFilter = (button as HTMLElement).dataset.type || 'all';
-          this.performSearch(searchInput?.value || '');
-        });
-      });
     }
 
     navigateResults(direction: number) {
@@ -289,22 +236,7 @@ import { Search as SearchIcon, X } from '@lucide/astro';
         return;
       }
 
-      let results = this.fuse.search(query);
-
-      // Filter by type if needed
-      if (this.currentFilter !== 'all') {
-        results = results.filter((result: any) => {
-          if (this.currentFilter === 'articles') {
-            return result.item.type === 'article';
-          } else if (this.currentFilter === 'services') {
-            return result.item.type === 'service';
-          } else if (this.currentFilter === 'conditions') {
-            return result.item.type === 'condition';
-          }
-          return true;
-        });
-      }
-
+      const results = this.fuse.search(query);
       this.displayResults(results, query);
     }
 
@@ -321,28 +253,17 @@ import { Search as SearchIcon, X } from '@lucide/astro';
         return;
       }
 
-      const resultsHTML = results.slice(0, 10).map((result, index) => {
+      const resultsHTML = results.slice(0, 10).map((result) => {
         const item = result.item;
-        const typeColor = {
-          'article': 'text-emerald-700 bg-emerald-100',
-          'service': 'text-blue-700 bg-blue-100',
-          'condition': 'text-purple-700 bg-purple-100'
-        }[item.type as string] || 'text-gray-700 bg-gray-100';
 
         return `
           <a href="${this.escapeHtml(item.url)}" class="search-result-link" tabindex="0">
-            <div class="flex items-start justify-between">
-              <div class="flex-1">
-                <div class="flex items-center gap-2 mb-2">
-                  <span class="text-xs px-2 py-1 rounded ${typeColor} font-medium">
-                    ${this.escapeHtml(item.type.toUpperCase())}
-                  </span>
-                  ${item.category ? `<span class="text-xs text-gray-500">${this.escapeHtml(item.category)}</span>` : ''}
-                </div>
-                <h4 class="font-semibold text-gray-900 mb-1">${this.escapeHtml(item.title)}</h4>
-                <p class="text-sm text-gray-600 line-clamp-2">${this.escapeHtml(item.description)}</p>
+            <div class="flex items-center justify-between gap-3">
+              <div class="flex-1 min-w-0">
+                <h4 class="font-semibold text-gray-900 mb-1.5">${this.escapeHtml(item.title)}</h4>
+                <p class="text-sm text-gray-400 line-clamp-1">${this.escapeHtml(item.description)}</p>
               </div>
-              <svg class="w-4 h-4 text-gray-400 ml-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <svg class="w-4 h-4 text-gray-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
               </svg>
             </div>
@@ -366,23 +287,17 @@ import { Search as SearchIcon, X } from '@lucide/astro';
 
     clearResults() {
       const resultsContainer = document.getElementById('search-results');
-      if (resultsContainer) {
-        resultsContainer.innerHTML = `
-          <p id="search-help" class="text-gray-500 text-center py-8">
-            Start typing to search articles, services, and conditions...
-          </p>
-        `;
-      }
+      if (resultsContainer) resultsContainer.innerHTML = '';
       this.resultLinks = [];
     }
   }
 
-  // Initialize search once (header persists across View Transitions)
-  let searchInitialized = false;
+  // Always reinitialize on each navigation — destroy old listeners via AbortController
+  // before creating a new instance so document-level handlers don't stack.
+  let searchInstance: SiteSearch | null = null;
   function initSearch() {
-    if (searchInitialized) return;
-    searchInitialized = true;
-    new SiteSearch();
+    searchInstance?.destroy();
+    searchInstance = new SiteSearch();
   }
   initSearch();
   document.addEventListener('astro:page-load', initSearch);

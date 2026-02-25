@@ -4,29 +4,12 @@ import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
 import { getCollection } from 'astro:content';
 
-// Get all published articles and sort by date
 const allArticles = await getCollection('articles', ({ data }) => {
   return data.draft !== true;
 });
 const sortedArticles = allArticles.sort((a, b) =>
   new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime()
 );
-
-// Extract unique categories from all articles
-const allCategories = new Set<string>();
-sortedArticles.forEach(article => {
-  article.data.categories?.forEach(cat => allCategories.add(cat));
-});
-
-// Define display order for categories
-const categoryOrder = ['Naturopathic', 'Nutrition', 'Herbal Medicine', 'IV Therapy', 'Heart Health', 'Wellness', 'Pain Management'];
-const orderedCategories = categoryOrder.filter(cat => allCategories.has(cat));
-// Add any remaining categories not in the predefined order
-allCategories.forEach(cat => {
-  if (!orderedCategories.includes(cat)) {
-    orderedCategories.push(cat);
-  }
-});
 ---
 
 <BaseLayout
@@ -34,91 +17,40 @@ allCategories.forEach(cat => {
   description="Evidence-based articles on natural health, nutrition, herbal medicine and naturopathic treatments by Dr. Colin MacLeod ND in Halifax, Nova Scotia."
   focusKeyword="naturopathic health articles Halifax"
 >
-  <HeroSection title="Health Articles & Resources" centered compact>
-    <p>Evidence-based articles on natural health, nutrition, and treatment approaches to help you make informed decisions about your healthcare.</p>
-    <p class="text-white/70 text-base">Use the search icon in the header to search across all articles, services and conditions.</p>
+  <HeroSection title="Articles" centered compact>
+    <p>Evidence-based articles on natural health, nutrition, and treatment approaches</p>
   </HeroSection>
 
-  <!-- Article Categories -->
-  <section class="py-16 lg:py-24 bg-white">
+  <section class="py-12 lg:py-20 bg-white">
     <div class="section-shell">
-
-      <!-- Category Navigation -->
-      <div class="flex flex-wrap justify-center gap-3 mb-12 reveal">
-        <button class="category-btn active" data-category="all">All Articles</button>
-        {orderedCategories.map((category) => (
-          <button class="category-btn" data-category={category}>{category}</button>
-        ))}
-      </div>
-
-      <!-- Articles Grid -->
-      <div id="articles-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 reveal reveal-delay-100">
+      <div class="max-w-3xl mx-auto reveal">
         {sortedArticles.map((article) => (
           <a
             href={`/articles/${article.slug}`}
-            class="article-card group bg-gray-50 rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 flex flex-col hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
-            data-categories={JSON.stringify(article.data.categories || [])}
+            class="group flex items-center gap-4 py-5 border-b border-gray-100 last:border-0 -mx-4 px-4 rounded-lg hover:bg-emerald-50/50 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-inset"
           >
-            {article.data.heroImage && (
-              <div class="aspect-[16/10] overflow-hidden">
-                <img
-                  src={article.data.heroImage}
-                  alt={article.data.title}
-                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  width="800"
-                  height="500"
-                  loading="lazy"
-                />
-              </div>
-            )}
-            <div class="p-6 flex-1 flex flex-col">
-              <div class="flex items-center justify-between mb-3">
-                <span class="text-sm text-emerald-700 font-medium bg-emerald-50 px-2 py-1 rounded-full">
-                  {article.data.categories?.[0] || 'Health'}
-                </span>
-                <time class="text-sm text-gray-500">
-                  {new Date(article.data.publishDate).toLocaleDateString('en-US', {
-                    year: 'numeric',
-                    month: 'short',
-                    day: 'numeric'
-                  })}
-                </time>
-              </div>
-              <h2 class="text-xl font-serif font-semibold mb-3 line-clamp-2 group-hover:text-emerald-700 transition-colors">
+            <div class="flex-1 min-w-0">
+              <time class="text-xs text-gray-400 block mb-1">
+                {new Date(article.data.publishDate).toLocaleDateString('en-US', {
+                  year: 'numeric',
+                  month: 'short',
+                  day: 'numeric'
+                })}
+              </time>
+              <h2 class="text-lg sm:text-xl font-serif font-semibold text-gray-900 group-hover:text-emerald-700 transition-colors leading-snug">
                 {article.data.title}
               </h2>
-              <p class="text-gray-600 mb-4 line-clamp-3 flex-1">{article.data.description}</p>
-              <div class="flex items-center justify-between mt-auto">
-                <span class="text-emerald-700 font-medium group-hover:text-emerald-800 transition-colors inline-flex items-center">
-                  Read More
-                  <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                  </svg>
-                </span>
-                {article.data.tags && article.data.tags.length > 0 && (
-                  <div class="flex gap-1">
-                    {article.data.tags.slice(0, 2).map((tag) => (
-                      <span class="text-xs bg-gray-200 text-gray-600 px-2 py-1 rounded">
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                )}
-              </div>
             </div>
+            <svg class="w-5 h-5 text-gray-300 group-hover:text-emerald-600 transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
           </a>
         ))}
       </div>
-
-      <!-- No results message -->
-      <div id="no-results" class="hidden text-center py-12">
-        <p class="text-gray-500 text-lg">No articles found in this category.</p>
-      </div>
-
     </div>
   </section>
 
-  <!-- Newsletter/CTA Section -->
+  <!-- CTA Section -->
   <section class="bg-emerald-950 py-16 lg:py-24">
     <div class="section-shell text-center">
       <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-6">Take Control of Your Health</h2>
@@ -131,90 +63,3 @@ allCategories.forEach(cat => {
     </div>
   </section>
 </BaseLayout>
-
-<style>
-  .category-btn {
-    @apply px-5 py-2 rounded-full border border-emerald-200 text-emerald-800 hover:bg-emerald-50 transition-colors text-sm font-medium;
-  }
-
-  .category-btn.active {
-    @apply bg-emerald-900 text-white border-emerald-900;
-  }
-
-  .line-clamp-2 {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-
-  .line-clamp-3 {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-
-  .article-card.hidden {
-    display: none;
-  }
-</style>
-
-<script>
-  function initArticleFilters() {
-    const categoryButtons = document.querySelectorAll('.category-btn');
-    const articleCards = document.querySelectorAll('.article-card');
-    const noResults = document.getElementById('no-results');
-
-    categoryButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        const category = (button as HTMLElement).dataset.category;
-
-        // Update active button
-        categoryButtons.forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');
-
-        // Filter articles
-        let visibleCount = 0;
-        articleCards.forEach(card => {
-          const cardCategories = JSON.parse((card as HTMLElement).dataset.categories || '[]');
-
-          if (category === 'all' || cardCategories.includes(category)) {
-            card.classList.remove('hidden');
-            visibleCount++;
-          } else {
-            card.classList.add('hidden');
-          }
-        });
-
-        // Show/hide no results message
-        if (visibleCount === 0) {
-          noResults?.classList.remove('hidden');
-        } else {
-          noResults?.classList.add('hidden');
-        }
-
-        // Update URL for shareability
-        const url = new URL(window.location.href);
-        if (category === 'all') {
-          url.searchParams.delete('category');
-        } else {
-          url.searchParams.set('category', category || '');
-        }
-        history.replaceState({}, '', url);
-      });
-    });
-
-    // Check for category in URL on page load
-    const urlParams = new URLSearchParams(window.location.search);
-    const categoryParam = urlParams.get('category');
-    if (categoryParam) {
-      const matchingButton = document.querySelector(`.category-btn[data-category="${categoryParam}"]`);
-      if (matchingButton) {
-        (matchingButton as HTMLElement).click();
-      }
-    }
-  }
-
-  document.addEventListener('astro:page-load', initArticleFilters);
-</script>

@@ -323,8 +323,6 @@ const articleSchema = articleData ? JSON.stringify({
     </header>
 
     <script>
-      let menuListenerBound = false;
-
       function initMobileMenu() {
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -340,11 +338,13 @@ const articleSchema = articleData ? JSON.stringify({
         closeIcon?.classList.add('hidden');
         mobileMenuButton?.setAttribute('aria-expanded', 'false');
 
-        // Only bind click listener once (header persists)
-        if (menuListenerBound) return;
-        menuListenerBound = true;
+        // Only bind click listener once per button element instance.
+        // View Transitions replaces the DOM, so we track per-element rather than
+        // using a module-level boolean (which would prevent rebinding after navigation).
+        if (!mobileMenuButton || mobileMenuButton.dataset.menuBound) return;
+        mobileMenuButton.dataset.menuBound = 'true';
 
-        mobileMenuButton?.addEventListener('click', () => {
+        mobileMenuButton.addEventListener('click', () => {
           const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
           mobileMenuButton.setAttribute('aria-expanded', (!isExpanded).toString());
           menuIcon?.classList.toggle('hidden');
@@ -443,29 +443,30 @@ const articleSchema = articleData ? JSON.stringify({
               observer.unobserve(entry.target);
             }
           });
-        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+        }, { threshold: 0, rootMargin: '0px 0px 50px 0px' });
 
         reveals.forEach(el => observer.observe(el));
       }
 
-      let scrollListenerBound = false;
+      let scrollAbortController: AbortController | null = null;
       function initHeaderScroll() {
-        if (scrollListenerBound) return;
-        scrollListenerBound = true;
+        // Abort previous listener so it doesn't reference a stale header element
+        // after View Transitions replace the DOM.
+        scrollAbortController?.abort();
+        scrollAbortController = new AbortController();
 
         const header = document.getElementById('site-header');
         if (!header) return;
-        const headerEl = header;
 
         function onScroll() {
           if (window.scrollY > 20) {
-            headerEl.classList.add('scrolled');
+            header.classList.add('scrolled');
           } else {
-            headerEl.classList.remove('scrolled');
+            header.classList.remove('scrolled');
           }
         }
 
-        window.addEventListener('scroll', onScroll, { passive: true });
+        window.addEventListener('scroll', onScroll, { passive: true, signal: scrollAbortController.signal });
         onScroll();
       }
 
