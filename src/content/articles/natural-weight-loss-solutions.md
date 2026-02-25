@@ -17,7 +17,7 @@ seo:
 
 Weight management remains one of the most common health concerns in Canada. As of 2022, approximately 27% of Canadian adults are obese, with an additional 35% classified as overweight<sup>1</sup>. This means roughly two-thirds of Canadian adults carry excess weight that increases their risk for cardiovascular disease, type 2 diabetes, certain cancers, and other chronic conditions.
 
-These statistics have increased steadily over recent decades despite enormous public attention to dieting and weight loss. This paradox—more focus on weight loss yet worsening outcomes—suggests that something about our conventional approach isn't working.
+These statistics have increased steadily over recent decades despite enormous public attention to dieting and weight loss. This paradox, more focus on weight loss yet worsening outcomes, suggests that something about our conventional approach isn't working.
 
 ## Beyond "Calories In, Calories Out"
 
@@ -33,7 +33,7 @@ These adaptations explain why initial weight loss often plateaus and why regaini
 
 Weight gain is often a symptom of underlying metabolic dysfunction rather than simply excess calories. Key factors include insulin resistance, where cells become less responsive to insulin, leading to higher insulin levels that promote fat storage. Chronic inflammation disrupts metabolic signaling and promotes weight gain. Hormonal imbalances affect appetite, metabolism, and fat distribution. Gut microbiome disruption influences energy extraction from food and metabolic signaling. Poor sleep and chronic stress promote weight gain through hormonal effects.
 
-Addressing these underlying factors is essential for sustainable weight management. Simply eating less doesn't fix insulin resistance or inflammation—it may even worsen them.
+Addressing these underlying factors is essential for sustainable weight management. Simply eating less doesn't fix insulin resistance or inflammation, it may even worsen them.
 
 ## The Modern Medication Context
 
@@ -41,7 +41,7 @@ GLP-1 receptor agonists like semaglutide (Ozempic, Wegovy) and tirzepatide (Moun
 
 These medications represent an important option for many people, particularly those with obesity-related health conditions like type 2 diabetes. They work through physiological pathways we've long known were important for weight regulation.
 
-However, they also highlight the importance of underlying metabolic factors in weight management. The same physiological processes these medications target can be influenced through lifestyle, nutrition, and natural approaches—often with fewer side effects and lower cost, though typically with less dramatic results.
+However, they also highlight the importance of underlying metabolic factors in weight management. The same physiological processes these medications target can be influenced through lifestyle, nutrition, and natural approaches, often with fewer side effects and lower cost, though typically with less dramatic results.
 
 Natural approaches and medications aren't mutually exclusive. Many people benefit from combining pharmaceutical intervention with lifestyle optimization, and natural approaches can support long-term maintenance after medication-induced weight loss.
 
@@ -53,7 +53,7 @@ Effective naturopathic weight management addresses root causes rather than just 
 
 **Addressing Insulin Resistance**
 
-Insulin resistance is one of the most common drivers of weight gain and difficulty losing weight. When cells don't respond properly to insulin, blood sugar remains elevated, and the body produces more insulin—which promotes fat storage, particularly around the abdomen.
+Insulin resistance is one of the most common drivers of weight gain and difficulty losing weight. When cells don't respond properly to insulin, blood sugar remains elevated, and the body produces more insulin, which promotes fat storage, particularly around the abdomen.
 
 Signs of insulin resistance include difficulty losing weight despite effort, weight concentrated around the midsection, feeling hungry soon after eating, energy crashes after meals, cravings for sweets and carbohydrates, and elevated fasting blood sugar or triglycerides.
 
@@ -115,7 +115,7 @@ Resistance training (weights, resistance bands, bodyweight exercises) is particu
 
 **Cardiovascular Exercise**
 
-Walking, cycling, swimming, and other cardiovascular activities support heart health and calorie expenditure. The best exercise is one you'll actually do consistently—enjoyment matters for long-term adherence.
+Walking, cycling, swimming, and other cardiovascular activities support heart health and calorie expenditure. The best exercise is one you'll actually do consistently, enjoyment matters for long-term adherence.
 
 **Daily Movement**
 
@@ -151,7 +151,7 @@ Always work with a healthcare provider when using herbs and supplements, as inte
 
 The weight loss industry is full of products and programs with little evidence. Approaches to be cautious about include extreme calorie restriction, which leads to metabolic adaptation and muscle loss. Detox cleanses claiming to "flush fat" are not supported by evidence. Most "fat burner" supplements have minimal effects and potential risks. Single-food diets or extreme elimination approaches are unsustainable.
 
-If something sounds too good to be true—rapid weight loss with no effort—it probably is. Sustainable weight management requires addressing underlying factors, not quick fixes.
+If something sounds too good to be true, rapid weight loss with no effort, it probably is. Sustainable weight management requires addressing underlying factors, not quick fixes.
 
 ## Getting Started: A Practical Framework
 
@@ -181,7 +181,7 @@ Better markers of progress include how clothes fit, waist circumference, energy 
 
 ## Weight Management Support in Halifax
 
-Sustainable weight management is rarely about simply eating less—it requires understanding and addressing the factors that drive weight gain and make weight loss difficult. Metabolic health, hormonal balance, sleep, stress, and gut health all play important roles.
+Sustainable weight management is rarely about simply eating less, it requires understanding and addressing the factors that drive weight gain and make weight loss difficult. Metabolic health, hormonal balance, sleep, stress, and gut health all play important roles.
 
 If you're interested in a comprehensive naturopathic approach to weight management that addresses root causes rather than just calories, please contact Dr. Colin MacLeod ND to book an initial consultation. Dr. MacLeod provides thorough assessments, appropriate testing, and individualized treatment plans. Learn more about our [clinical nutrition services](/clinical-nutrition).
 

@@ -129,8 +129,8 @@ If you're interested in whether adaptogens might be helpful for your situation, 
 1. Zahra K, et al. Effects of Ashwagandha (Withania Somnifera) on stress and anxiety: A systematic review and meta-analysis. *Explore*. 2024;20(6):101055.
 2. Akhgarjand C, et al. Effects of Ashwagandha Supplements on Cortisol, Stress, and Anxiety Levels in Adults: A Systematic Review and Meta-Analysis. *BJPsych Open*. 2025.
 3. Bonilla DA, et al. Effects of Ashwagandha (Withania somnifera) on Physical Performance: Systematic Review and Bayesian Meta-Analysis. *J Funct Morphol Kinesiol*. 2021;6(1):20.
-4. Darbinyan V, et al. Rhodiola rosea in stress induced fatigue—a double blind cross-over study. *Phytomedicine*. 2000;7(5):365-71.
+4. Darbinyan V, et al. Rhodiola rosea in stress induced fatigue, a double blind cross-over study. *Phytomedicine*. 2000;7(5):365-71.
 5. Spasov AA, et al. A double-blind, placebo-controlled pilot study of Rhodiola rosea extract on fatigue of students during examination period. *Phytomedicine*. 2000;7(2):85-9.
 6. Olsson EM, et al. A randomised, double-blind, placebo-controlled study of Rhodiola rosea in subjects with stress-related fatigue. *Planta Med*. 2009;75(2):105-12.
 7. Darbinyan V, et al. Clinical trial of Rhodiola rosea extract SHR-5 in the treatment of mild to moderate depression. *Nord J Psychiatry*. 2007;61(5):343-8.
-8. Panossian A, Wikman G. Effects of Adaptogens on the Central Nervous System and the Molecular Mechanisms Associated with Their Stress—Protective Activity. *Pharmaceuticals*. 2010;3(1):188-224.
+8. Panossian A, Wikman G. Effects of Adaptogens on the Central Nervous System and the Molecular Mechanisms Associated with Their Stress, Protective Activity. *Pharmaceuticals*. 2010;3(1):188-224.

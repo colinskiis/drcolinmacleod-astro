@@ -21,7 +21,7 @@ Skin conditions like acne, eczema, and psoriasis are rarely just "skin problems.
 
 ## The Gut-Skin Connection
 
-One of the most important advances in dermatology research has been recognizing the profound connection between gut health and skin conditions. The gut microbiome—the trillions of bacteria living in our digestive tract—influences skin health through several mechanisms.
+One of the most important advances in dermatology research has been recognizing the profound connection between gut health and skin conditions. The gut microbiome, the trillions of bacteria living in our digestive tract, influences skin health through several mechanisms.
 
 **Intestinal Permeability** ("leaky gut") allows partially digested food proteins and bacterial products to enter the bloodstream, triggering immune responses that can manifest as skin inflammation. Research has linked increased intestinal permeability to eczema, psoriasis, and acne<sup>1</sup>.
 
@@ -37,7 +37,7 @@ This gut-skin axis explains why dietary changes and gut-healing protocols are of
 
 Acne develops through a sequence of events. Excess sebum (oil) production provides a medium for bacterial growth. Follicular hyperkeratinization occurs when skin cells don't shed properly and clog pores. Bacterial colonization follows as *Cutibacterium acnes* (formerly *Propionibacterium acnes*) multiplies in clogged pores. Finally, inflammation results as the immune system responds to bacterial products.
 
-While acne is often thought of as a teenage problem, adult acne is increasingly common, particularly among women. Different factors predominate at different life stages—hormones play a larger role in some cases, while diet and gut health may be more significant in others.
+While acne is often thought of as a teenage problem, adult acne is increasingly common, particularly among women. Different factors predominate at different life stages, hormones play a larger role in some cases, while diet and gut health may be more significant in others.
 
 ### Hormonal Influences
 
@@ -85,7 +85,7 @@ While naturopathic approaches address underlying causes, some patients may also 
 
 ### Understanding Eczema
 
-Atopic dermatitis is a chronic inflammatory skin condition characterized by dry, itchy, inflamed skin. It's part of the "atopic triad" along with asthma and allergic rhinitis—many eczema patients have or will develop these related conditions.
+Atopic dermatitis is a chronic inflammatory skin condition characterized by dry, itchy, inflamed skin. It's part of the "atopic triad" along with asthma and allergic rhinitis, many eczema patients have or will develop these related conditions.
 
 Eczema typically begins in early childhood. Approximately 85% of cases develop before age 5, and about half of childhood eczema cases resolve, while the other half experience symptoms into adulthood<sup>11</sup>. Adult-onset eczema also occurs.
 
@@ -109,7 +109,7 @@ Food sensitivities play a significant role in many eczema cases, particularly in
 
 Unlike immediate allergic reactions (IgE-mediated), food sensitivities causing eczema may be delayed (IgG-mediated or other mechanisms), making identification challenging. Symptoms may appear hours to days after consuming the trigger food.
 
-Elimination diets—removing suspected foods for a period and systematically reintroducing them—remain the gold standard for identifying food triggers. Food sensitivity testing can provide guidance but should be interpreted carefully and confirmed with elimination/reintroduction.
+Elimination diets, removing suspected foods for a period and systematically reintroducing them, remain the gold standard for identifying food triggers. Food sensitivity testing can provide guidance but should be interpreted carefully and confirmed with elimination/reintroduction.
 
 Research shows that identifying and avoiding food triggers significantly improves eczema in affected individuals<sup>14</sup>.
 
@@ -145,9 +145,9 @@ These treatments have a place in managing symptoms, but ideally are combined wit
 
 Psoriasis is an immune-mediated inflammatory condition affecting 1-3% of the population. While it primarily manifests as skin symptoms, psoriasis is increasingly recognized as a systemic inflammatory condition with implications beyond the skin.
 
-In psoriasis, immune dysfunction causes skin cells to proliferate much faster than normal—skin cells that normally mature over about a month do so in just days. This results in the characteristic thick, silvery-white, scaly plaques.
+In psoriasis, immune dysfunction causes skin cells to proliferate much faster than normal, skin cells that normally mature over about a month do so in just days. This results in the characteristic thick, silvery-white, scaly plaques.
 
-Common sites include elbows, knees, scalp, lower back, and nails, though any area can be affected. Psoriatic arthritis—joint inflammation associated with psoriasis—affects approximately 30% of psoriasis patients and can cause permanent joint damage if untreated<sup>16</sup>.
+Common sites include elbows, knees, scalp, lower back, and nails, though any area can be affected. Psoriatic arthritis, joint inflammation associated with psoriasis, affects approximately 30% of psoriasis patients and can cause permanent joint damage if untreated<sup>16</sup>.
 
 ### Psoriasis and Systemic Health
 
@@ -163,7 +163,7 @@ Psoriasis is associated with increased risk of metabolic syndrome, cardiovascula
 
 **Pustular Psoriasis** presents as pus-filled blisters surrounded by red skin.
 
-**Erythrodermic Psoriasis** is a severe form covering most of the body surface—requires medical attention.
+**Erythrodermic Psoriasis** is a severe form covering most of the body surface, requires medical attention.
 
 ### Psoriasis Triggers
 
@@ -187,7 +187,7 @@ Dietary factors influence psoriasis through effects on inflammation and gut heal
 
 **Gut Health**: Address intestinal permeability ("leaky gut"), support healthy gut microbiome, address any dysbiosis or SIBO if present, consider digestive support if needed.
 
-**Reduce Systemic Inflammation**: Fish oil (2-4 grams EPA/DHA daily) has evidence for psoriasis improvement<sup>19</sup>. Curcumin (turmeric extract) has anti-inflammatory effects. Vitamin D optimization—deficiency is common in psoriasis and supplementation may help.
+**Reduce Systemic Inflammation**: Fish oil (2-4 grams EPA/DHA daily) has evidence for psoriasis improvement<sup>19</sup>. Curcumin (turmeric extract) has anti-inflammatory effects. Vitamin D optimization, deficiency is common in psoriasis and supplementation may help.
 
 **Stress Management**: Given stress as a major trigger, stress management is therapeutic, not optional. Practices like meditation, yoga, and adequate sleep support psoriasis management.
 
@@ -241,13 +241,13 @@ Regardless of the specific condition, several principles support healthy skin.
 
 ## Finding the Right Approach
 
-Skin conditions vary significantly between individuals. What works for one person may not work for another. This is why a personalized approach—identifying your specific triggers, imbalances, and needs—is more effective than generic advice.
+Skin conditions vary significantly between individuals. What works for one person may not work for another. This is why a personalized approach, identifying your specific triggers, imbalances, and needs, is more effective than generic advice.
 
 The timeline for improvement also varies. While some patients see rapid improvement with dietary changes, others require longer-term gut healing or multiple interventions. Patience and consistency are important.
 
 ## Skin Health Support in Halifax
 
-Chronic skin conditions like acne, eczema, and psoriasis often reflect internal imbalances that can be addressed naturally. By identifying triggers, supporting gut health, reducing inflammation, and optimizing nutrition, many patients achieve significant improvement in their skin—and overall health.
+Chronic skin conditions like acne, eczema, and psoriasis often reflect internal imbalances that can be addressed naturally. By identifying triggers, supporting gut health, reducing inflammation, and optimizing nutrition, many patients achieve significant improvement in their skin, and overall health.
 
 If you're dealing with chronic skin issues and are interested in addressing root causes rather than just suppressing symptoms, please contact Dr. Colin MacLeod ND to book an initial consultation. Dr. MacLeod provides comprehensive assessments, appropriate testing (including food sensitivity testing when indicated), and personalized treatment plans. Learn more about our [clinical nutrition services](/clinical-nutrition) and [lab testing options](/lab-testing).
 

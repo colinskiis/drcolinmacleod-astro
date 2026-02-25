@@ -18,7 +18,7 @@ If you've spent any time on TikTok or Instagram, you've probably seen influencer
 
 ## What Is the MTHFR Gene?
 
-The MTHFR gene provides instructions for producing the methylenetetrahydrofolate reductase enzyme. This enzyme plays a key role in processing folate (vitamin B9) and is involved in the methylation cycle—a biochemical process that affects DNA repair, neurotransmitter production, and detoxification.
+The MTHFR gene provides instructions for producing the methylenetetrahydrofolate reductase enzyme. This enzyme plays a key role in processing folate (vitamin B9) and is involved in the methylation cycle, a biochemical process that affects DNA repair, neurotransmitter production, and detoxification.
 
 ## What Is Methylation?
 
@@ -32,7 +32,7 @@ Methylation is the attachment of a methyl group (one carbon, three hydrogen atom
 
 ## MTHFR Variants Are Extremely Common
 
-Here's something important that often gets lost in the social media conversation: MTHFR variants are not rare mutations—they're extremely common genetic variations.
+Here's something important that often gets lost in the social media conversation: MTHFR variants are not rare mutations, they're extremely common genetic variations.
 
 Studies show that approximately 40-60% of the population carries at least one copy of the C677T variant, and about 85% of people have some form of MTHFR polymorphism<sup>24</sup>. This means having an MTHFR variant puts you in the majority, not the minority.
 

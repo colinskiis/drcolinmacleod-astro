@@ -15,21 +15,21 @@ seo:
 
 ## The Science Behind Plant Medicine
 
-Plants have evolved over millions of years, developing chemical compounds that help them survive—defending against bacteria, fungi, insects, and grazing animals. When consumed by humans, these same compounds can profoundly affect our physiology.
+Plants have evolved over millions of years, developing chemical compounds that help them survive, defending against bacteria, fungi, insects, and grazing animals. When consumed by humans, these same compounds can profoundly affect our physiology.
 
-This isn't coincidental. Many plant compounds are structurally similar to molecules essential for human function—neurotransmitters, hormones, and signaling molecules. This similarity exists because plants and animals have co-evolved over millions of years, sharing fundamental biochemical pathways<sup>1</sup>.
+This isn't coincidental. Many plant compounds are structurally similar to molecules essential for human function, neurotransmitters, hormones, and signaling molecules. This similarity exists because plants and animals have co-evolved over millions of years, sharing fundamental biochemical pathways<sup>1</sup>.
 
 Modern pharmacology has identified many active compounds in traditional medicinal plants. Some have become pharmaceutical drugs; others form the basis of standardized herbal extracts. Understanding these compounds helps bridge traditional knowledge and modern scientific validation.
 
 ## A Rich Historical Foundation
 
-Herbal medicine represents humanity's oldest system of healing. Every culture across history developed sophisticated knowledge of local plants and their medicinal properties—knowledge refined over countless generations of observation and application.
+Herbal medicine represents humanity's oldest system of healing. Every culture across history developed sophisticated knowledge of local plants and their medicinal properties, knowledge refined over countless generations of observation and application.
 
 ### Ancient Traditions
 
 **Egyptian Medicine**: Medical papyri dating to the 17th and 16th centuries BC contained detailed anatomical knowledge along with herbal treatments for specific conditions<sup>2</sup>. The Ebers Papyrus alone describes over 800 herbal formulations.
 
-**Chinese Medicine**: The foundational texts of Traditional Chinese Medicine, including the Huang Di Nei Jing (Yellow Emperor's Classic), date from 500 BC to 200 AD<sup>3</sup>. The Shennong Bencao Jing, an early materia medica, describes 365 medicines—most of them herbs.
+**Chinese Medicine**: The foundational texts of Traditional Chinese Medicine, including the Huang Di Nei Jing (Yellow Emperor's Classic), date from 500 BC to 200 AD<sup>3</sup>. The Shennong Bencao Jing, an early materia medica, describes 365 medicines, most of them herbs.
 
 **Ayurvedic Medicine**: The ancient Indian healing system documented in texts from 500 BC to 500 AD incorporates thousands of medicinal plants<sup>4</sup>. Many of these remain in clinical use today, including turmeric, ashwagandha, and gotu kola.
 
@@ -37,7 +37,7 @@ Herbal medicine represents humanity's oldest system of healing. Every culture ac
 
 ### Traditional Knowledge Validated
 
-What's remarkable is how often modern research validates traditional uses. When scientists study plants used traditionally for specific conditions, they frequently discover mechanisms explaining those uses. This isn't surprising—traditional practitioners were skilled observers who refined their knowledge over generations.
+What's remarkable is how often modern research validates traditional uses. When scientists study plants used traditionally for specific conditions, they frequently discover mechanisms explaining those uses. This isn't surprising, traditional practitioners were skilled observers who refined their knowledge over generations.
 
 ## From Plants to Pharmaceuticals
 
@@ -57,7 +57,7 @@ Approximately 25% of modern pharmaceuticals are derived from plants, with many m
 
 ## Modern Research and Evidence
 
-Today, herbal medicine occupies a middle ground—more researched than many realize, but less studied than synthetic pharmaceuticals due to patent and funding limitations. Several herbs have substantial clinical evidence supporting their use.
+Today, herbal medicine occupies a middle ground, more researched than many realize, but less studied than synthetic pharmaceuticals due to patent and funding limitations. Several herbs have substantial clinical evidence supporting their use.
 
 ### Well-Studied Herbs
 
@@ -75,7 +75,7 @@ Today, herbal medicine occupies a middle ground—more researched than many real
 
 ### Adaptogens: A Growing Research Area
 
-Adaptogens—herbs that help the body adapt to stress—represent a particularly active research area. Modern research on [adaptogens like ashwagandha and rhodiola](/articles/adaptogens-for-stress-ashwagandha-rhodiola-and-beyond) validates traditional uses for stress resilience, energy, and cognitive function.
+Adaptogens, herbs that help the body adapt to stress, represent a particularly active research area. Modern research on [adaptogens like ashwagandha and rhodiola](/articles/adaptogens-for-stress-ashwagandha-rhodiola-and-beyond) validates traditional uses for stress resilience, energy, and cognitive function.
 
 **Ashwagandha** has demonstrated cortisol-lowering effects, anxiety reduction, and improvements in stress-related parameters in multiple clinical trials<sup>16</sup>.
 
@@ -165,7 +165,7 @@ The best outcomes typically come from addressing root causes (diet, lifestyle, u
 
 ## Herbal Medicine in Halifax
 
-Herbal medicine offers powerful tools for supporting health—tools refined over millennia and increasingly validated by modern research. When used appropriately, herbs can address numerous conditions safely and effectively.
+Herbal medicine offers powerful tools for supporting health, tools refined over millennia and increasingly validated by modern research. When used appropriately, herbs can address numerous conditions safely and effectively.
 
 If you're interested in exploring herbal medicine for your health concerns, please contact Dr. Colin MacLeod ND to book an initial consultation. Dr. MacLeod is trained in botanical medicine and can assess your situation, recommend appropriate herbs, and monitor your progress. Learn more about our [herbal medicine services](/herbal-medicine).
 
