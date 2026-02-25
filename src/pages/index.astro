@@ -36,16 +36,13 @@ const allServices = [
   { title: 'Laboratory Testing', description: 'Identify nutrient deficiencies, hormone imbalances and inflammation sources.', img: '/images/reference/services/lab-testing.jpeg', href: '/lab-testing' },
   { title: 'IV Therapy', description: 'Increase energy levels, boost immune function and build resiliency.', img: '/images/treatments/iv-patient-woman.webp', href: '/iv-therapy' },
   { title: 'Prolotherapy', description: 'Relieve joint pain, accelerate tendon healing and strengthen ligaments.', img: '/images/treatments/prolotherapy-knee-injection.png', href: '/prolotherapy' },
-  { title: 'Clinical Nutrition', description: 'Personalized dietary guidance to optimize health and prevent disease.', img: '/images/reference/services/clinical-nutrition.jpeg', href: '/clinical-nutrition' },
-  { title: 'Herbal Medicine', description: 'Harness the healing power of plants with evidence-based botanicals.', img: '/images/reference/services/herbal-medicine.jpeg', href: '/herbal-medicine' },
-  { title: 'Acupuncture', description: 'Reduce pain and restore balance with precise needle therapy techniques.', img: '/images/reference/services/acupuncture.jpeg', href: '/acupuncture' },
 ];
 
 // FAQ data for schema markup
 const faqItems = [
   {
     question: "Can naturopathic doctors order blood tests?",
-    answer: "Yes — as a naturopathic doctor, I can order a comprehensive range of blood and laboratory tests through private labs. This includes thyroid panels, hormone levels, nutrient status, inflammatory markers, and more. Private testing often means broader panels and faster turnaround compared to the public system, giving us a clearer picture of your health."
+    answer: "Yes. As a naturopathic doctor, Dr. MacLeod can order a comprehensive range of blood and laboratory tests through private labs. This includes thyroid panels, hormone levels, nutrient status, inflammatory markers, and more. Private testing often means broader panels and faster turnaround compared to the public system, giving us a clear picture of your health."
   },
   {
     question: "Is naturopathic medicine covered by insurance?",
@@ -192,7 +189,7 @@ const faqSchema = {
   <section class="py-12 sm:py-16 lg:py-20 bg-emerald-50">
     <div class="section-shell">
         <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-16 space-y-4 reveal">
-          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-medium text-emerald-900 leading-[1.2]">Elevate your health<br />Address the cause</h2>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-medium text-emerald-900 leading-[1.2]">Elevate your health</h2>
         </div>
         <div class="grid grid-cols-2 gap-4 sm:gap-8 md:grid-cols-2 lg:grid-cols-4 reveal reveal-delay-100">
           <div class="bg-white rounded-2xl px-4 py-5 sm:px-6 sm:py-8 flex flex-col items-center text-center shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
@@ -230,11 +227,59 @@ const faqSchema = {
       </div>
     </section>
 
-  <!-- Navigation Hub -->
-  <section class="py-16 lg:py-20 bg-white">
+  <!-- Services Grid -->
+  <section class="py-12 sm:py-16 lg:py-20 bg-white">
     <div class="section-shell">
-      <div class="text-center max-w-3xl mx-auto mb-10 space-y-3 reveal">
-        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950">What we offer</h2>
+      <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-16 space-y-4 reveal">
+        <h2 class="text-4xl sm:text-5xl font-serif font-medium text-emerald-950 tracking-tight">Services</h2>
+        <p class="text-lg text-slate-600 max-w-2xl mx-auto">Comprehensive natural healthcare solutions tailored to your unique needs.</p>
+      </div>
+
+      <!-- Mobile: Link list -->
+      <div class="sm:hidden space-y-1 reveal reveal-delay-100 mb-10">
+        {allServices.map((item) => (
+          <a href={item.href} class="flex items-center gap-3 py-4 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-stone-200">
+            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" aria-hidden="true" />
+            {item.title}
+          </a>
+        ))}
+      </div>
+
+      <!-- Desktop: Card grid -->
+      <div class="hidden sm:grid gap-8 sm:gap-10 md:grid-cols-2 lg:grid-cols-3 reveal reveal-delay-100">
+        {allServices.map((item) => (
+          <a href={item.href} class="group block overflow-hidden rounded-3xl bg-white shadow-xl shadow-emerald-900/5 hover:shadow-2xl hover:shadow-emerald-900/10 hover:-translate-y-1 transition-all duration-300 flex flex-col h-full focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
+            <div class="aspect-[4/3] overflow-hidden">
+              <img src={item.img} alt={item.title} class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" width="800" height="600" loading="lazy" />
+            </div>
+            <div class="p-8 space-y-4 flex-1 flex flex-col">
+              <h3 class="text-2xl font-serif font-medium text-emerald-950 leading-tight group-hover:text-emerald-700 transition-colors">{item.title}</h3>
+              <p class="text-base text-slate-600 leading-relaxed flex-1 font-light">{item.description}</p>
+              <div class="flex items-center text-emerald-800 font-medium tracking-wide text-sm uppercase mt-4 group-hover:translate-x-1 transition-transform">
+                Learn more
+                <ArrowRight class="w-4 h-4 ml-2" aria-hidden="true" />
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+
+      <div class="text-center mt-10 sm:mt-16">
+        <a
+          href="/services"
+          class="inline-flex items-center bg-emerald-900 text-white px-10 py-4 rounded-full text-base font-medium tracking-wide hover:bg-emerald-800 hover:-translate-y-0.5 transition-all duration-200 shadow-lg shadow-emerald-900/20 hover:shadow-xl hover:shadow-emerald-900/25"
+        >
+          View All Services
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Navigation Hub -->
+  <section class="py-16 lg:py-20 bg-emerald-50">
+    <div class="section-shell">
+      <div class="text-center max-w-3xl mx-auto mb-14 space-y-3 reveal">
+        <h2 class="text-4xl sm:text-5xl font-serif font-medium text-emerald-950">Learn more</h2>
       </div>
 
       <div class="space-y-4 reveal">
@@ -332,54 +377,6 @@ const faqSchema = {
     </div>
   </section>
 
-  <!-- Services Grid (from current homepage) -->
-  <section class="py-12 sm:py-24 lg:py-32 bg-emerald-50">
-    <div class="section-shell">
-      <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-16 space-y-4 reveal">
-        <h2 class="text-4xl sm:text-5xl font-serif font-medium text-emerald-950 tracking-tight">Services</h2>
-        <p class="text-lg text-slate-600 max-w-2xl mx-auto">Comprehensive natural healthcare solutions tailored to your unique needs.</p>
-      </div>
-
-      <!-- Mobile: Link list -->
-      <div class="sm:hidden space-y-1 reveal reveal-delay-100 mb-10">
-        {allServices.map((item) => (
-          <a href={item.href} class="flex items-center gap-3 py-4 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-stone-200">
-            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" aria-hidden="true" />
-            {item.title}
-          </a>
-        ))}
-      </div>
-
-      <!-- Desktop: Card grid -->
-      <div class="hidden sm:grid gap-8 sm:gap-10 md:grid-cols-2 lg:grid-cols-3 reveal reveal-delay-100">
-        {allServices.map((item) => (
-          <a href={item.href} class="group block overflow-hidden rounded-3xl bg-white shadow-xl shadow-emerald-900/5 hover:shadow-2xl hover:shadow-emerald-900/10 hover:-translate-y-1 transition-all duration-300 flex flex-col h-full focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="aspect-[4/3] overflow-hidden">
-              <img src={item.img} alt={item.title} class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" width="800" height="600" loading="lazy" />
-            </div>
-            <div class="p-8 space-y-4 flex-1 flex flex-col">
-              <h3 class="text-2xl font-serif font-medium text-emerald-950 leading-tight group-hover:text-emerald-700 transition-colors">{item.title}</h3>
-              <p class="text-base text-slate-600 leading-relaxed flex-1 font-light">{item.description}</p>
-              <div class="flex items-center text-emerald-800 font-medium tracking-wide text-sm uppercase mt-4 group-hover:translate-x-1 transition-transform">
-                Learn more
-                <ArrowRight class="w-4 h-4 ml-2" aria-hidden="true" />
-              </div>
-            </div>
-          </a>
-        ))}
-      </div>
-
-      <div class="text-center mt-10 sm:mt-16">
-        <a
-          href="/services"
-          class="inline-flex items-center bg-emerald-900 text-white px-10 py-4 rounded-full text-base font-medium tracking-wide hover:bg-emerald-800 hover:-translate-y-0.5 transition-all duration-200 shadow-lg shadow-emerald-900/20 hover:shadow-xl hover:shadow-emerald-900/25"
-        >
-          View All Services
-        </a>
-      </div>
-    </div>
-  </section>
-
   <!-- FAQ (from current homepage) -->
   <section class="py-16 lg:py-20 bg-white">
     <div class="section-shell">
@@ -395,7 +392,7 @@ const faqSchema = {
                 </span>
               </summary>
               <div class="px-6 pb-6 text-lg text-slate-600 leading-relaxed">
-                Yes — as a naturopathic doctor, I can order a comprehensive range of blood and laboratory tests through private labs. This includes thyroid panels, hormone levels, nutrient status, inflammatory markers, and more. Private testing often means broader panels and faster turnaround compared to the public system, giving us a clearer picture of your health.
+                Yes. As a naturopathic doctor, Dr. MacLeod can order a comprehensive range of blood and laboratory tests through private labs. This includes thyroid panels, hormone levels, nutrient status, inflammatory markers, and more. Private testing often means broader panels and faster turnaround compared to the public system, giving us a clear picture of your health.
               </div>
             </details>
             <details class="group bg-white rounded-2xl shadow-sm border border-emerald-100/50 overflow-hidden transition-all duration-300 hover:shadow-md open:shadow-lg open:ring-1 open:ring-emerald-500/20">
