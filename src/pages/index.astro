@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BookingButton from '../components/BookingButton.astro';
-import { Phone, FlaskConical, ChevronRight, Syringe, Sprout, Stethoscope, Clock, Sparkles, ArrowRight, ChevronDown, Microscope, HeartPulse, BookOpen } from '@lucide/astro';
+import { Phone, FlaskConical, ChevronRight, Syringe, ArrowRight, ChevronDown, Microscope, HeartPulse, BookOpen } from '@lucide/astro';
 
 // Services (top 3 for nav hub)
 const services = [
@@ -26,9 +26,9 @@ const articles = [
 
 // Blood Tests (top 3 for nav hub)
 const bloodTests = [
-  { title: 'Thyroid Panel', href: '/lab-testing' },
-  { title: 'Hormone Panel', href: '/lab-testing' },
-  { title: 'Vitamin D', href: '/lab-testing' },
+  { title: 'Thyroid Panel', href: '/thyroid-testing' },
+  { title: 'Hormone Panel', href: '/hormone-testing' },
+  { title: 'Vitamin D', href: '/nutrient-testing' },
 ];
 
 // All services for Services section
@@ -84,7 +84,7 @@ const faqSchema = {
     </div>
 
     <div class="section-shell py-20 lg:py-24 relative z-10">
-      <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+      <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
         <!-- Left Column: Text + Cards -->
         <div class="space-y-8">
           <!-- Mobile Hero Image (circular) -->
@@ -119,7 +119,7 @@ const faqSchema = {
 
             <!-- Benefit-focused tagline -->
             <p class="text-lg sm:text-xl text-white/95 max-w-lg leading-relaxed mx-auto lg:mx-0 animate-fade-in-up animate-delay-200">
-              Find the <strong class="font-semibold text-emerald-200">root cause</strong>. Restore your health <strong class="font-semibold text-emerald-200">naturally</strong>.
+              Find the <strong class="font-semibold text-emerald-300">root cause</strong>. Restore your health <strong class="font-semibold text-emerald-300">naturally</strong>.
             </p>
 
             <!-- Credentials line -->
@@ -157,10 +157,6 @@ const faqSchema = {
             </a>
           </div>
 
-          <!-- Insurance info -->
-          <p class="mt-6 text-emerald-200/80 text-sm text-center lg:text-left animate-fade-in-up animate-delay-500">
-            Most insurance plans accepted · Direct billing available
-          </p>
         </div>
 
         <!-- Right Column: Hero Image (Circular) -->
@@ -185,54 +181,11 @@ const faqSchema = {
     </div>
   </section>
 
-  <!-- Values Strip -->
-  <section class="py-12 sm:py-16 lg:py-20 bg-emerald-50">
-    <div class="section-shell">
-        <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-16 space-y-4 reveal">
-          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-medium text-emerald-900 leading-[1.2]">Elevate your health</h2>
-        </div>
-        <div class="grid grid-cols-2 gap-4 sm:gap-8 md:grid-cols-2 lg:grid-cols-4 reveal reveal-delay-100">
-          <div class="bg-white rounded-2xl px-4 py-5 sm:px-6 sm:py-8 flex flex-col items-center text-center shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
-            <div class="mb-3 sm:mb-6 text-emerald-700">
-              <Sprout class="w-8 h-8 sm:w-12 sm:h-12" stroke-width={1.5} aria-hidden="true" />
-            </div>
-            <h3 class="text-lg sm:text-2xl font-serif mb-1 sm:mb-3 tracking-tight text-emerald-900">Natural</h3>
-            <p class="text-sm sm:text-base leading-relaxed text-emerald-700">Safe, gentle and effective treatment</p>
-          </div>
-
-          <div class="bg-white rounded-2xl px-4 py-5 sm:px-6 sm:py-8 flex flex-col items-center text-center shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
-            <div class="mb-3 sm:mb-6 text-emerald-700">
-              <Stethoscope class="w-8 h-8 sm:w-12 sm:h-12" stroke-width={1.5} aria-hidden="true" />
-            </div>
-            <h3 class="text-lg sm:text-2xl font-serif mb-1 sm:mb-3 tracking-tight text-emerald-900">Professional</h3>
-            <p class="text-sm sm:text-base leading-relaxed text-emerald-700">Experienced and rigorously trained</p>
-          </div>
-
-          <div class="bg-white rounded-2xl px-4 py-5 sm:px-6 sm:py-8 flex flex-col items-center text-center shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
-            <div class="mb-3 sm:mb-6 text-emerald-700">
-              <Clock class="w-8 h-8 sm:w-12 sm:h-12" stroke-width={1.5} aria-hidden="true" />
-            </div>
-            <h3 class="text-lg sm:text-2xl font-serif mb-1 sm:mb-3 tracking-tight text-emerald-900">No Rush</h3>
-            <p class="text-sm sm:text-base leading-relaxed text-emerald-700">Thorough assessment, no rush</p>
-          </div>
-
-          <div class="bg-white rounded-2xl px-4 py-5 sm:px-6 sm:py-8 flex flex-col items-center text-center shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
-            <div class="mb-3 sm:mb-6 text-emerald-700">
-              <Sparkles class="w-8 h-8 sm:w-12 sm:h-12" stroke-width={1.5} aria-hidden="true" />
-            </div>
-            <h3 class="text-lg sm:text-2xl font-serif mb-1 sm:mb-3 tracking-tight text-emerald-900">Cutting Edge</h3>
-            <p class="text-sm sm:text-base leading-relaxed text-emerald-700">Modern, evidence-based solutions</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
   <!-- Services Grid -->
   <section class="py-12 sm:py-16 lg:py-20 bg-white">
     <div class="section-shell">
       <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-16 space-y-4 reveal">
         <h2 class="text-4xl sm:text-5xl font-serif font-medium text-emerald-950 tracking-tight">Services</h2>
-        <p class="text-lg text-slate-600 max-w-2xl mx-auto">Comprehensive natural healthcare solutions tailored to your unique needs.</p>
       </div>
 
       <!-- Mobile: Link list -->
@@ -255,10 +208,6 @@ const faqSchema = {
             <div class="p-8 space-y-4 flex-1 flex flex-col">
               <h3 class="text-2xl font-serif font-medium text-emerald-950 leading-tight group-hover:text-emerald-700 transition-colors">{item.title}</h3>
               <p class="text-base text-slate-600 leading-relaxed flex-1 font-light">{item.description}</p>
-              <div class="flex items-center text-emerald-800 font-medium tracking-wide text-sm uppercase mt-4 group-hover:translate-x-1 transition-transform">
-                Learn more
-                <ArrowRight class="w-4 h-4 ml-2" aria-hidden="true" />
-              </div>
             </div>
           </a>
         ))}
@@ -276,10 +225,11 @@ const faqSchema = {
   </section>
 
   <!-- Navigation Hub -->
-  <section class="py-16 lg:py-20 bg-emerald-50">
+  <section class="py-10 lg:py-14 bg-emerald-50">
     <div class="section-shell">
-      <div class="text-center max-w-3xl mx-auto mb-14 space-y-3 reveal">
+      <div class="text-center max-w-3xl mx-auto mb-6 sm:mb-8 space-y-3 reveal">
         <h2 class="text-4xl sm:text-5xl font-serif font-medium text-emerald-950">Learn more</h2>
+        <p class="text-lg text-slate-600 max-w-2xl mx-auto">Evidence-based information on conditions, treatments and natural health.</p>
       </div>
 
       <div class="space-y-4 reveal">
@@ -303,7 +253,7 @@ const faqSchema = {
           <!-- Item links -->
           <div class="flex flex-col lg:flex-row lg:items-center border-t border-emerald-100 divide-y divide-emerald-100 lg:divide-y-0 lg:divide-x lg:divide-emerald-100">
             {bloodTests.map((test) => (
-              <a href={test.href} class="group flex items-center gap-2 px-5 py-3 lg:px-7 lg:py-4 text-base text-emerald-950 hover:text-emerald-700 hover:bg-emerald-50/60 transition-all flex-1">
+              <a href={test.href} class="group flex items-center gap-2 px-5 py-3 lg:px-7 lg:py-3 text-base text-emerald-950 hover:text-emerald-700 hover:bg-emerald-50/60 transition-all flex-1">
                 <ChevronRight class="w-4 h-4 text-emerald-300 flex-shrink-0 group-hover:text-emerald-500 group-hover:translate-x-0.5 transition-all" aria-hidden="true" />
                 {test.title}
               </a>
@@ -332,7 +282,7 @@ const faqSchema = {
           </div>
           <div class="flex flex-col lg:flex-row lg:items-center border-t border-emerald-100 divide-y divide-emerald-100 lg:divide-y-0 lg:divide-x lg:divide-emerald-100">
             {conditions.map((condition) => (
-              <a href={condition.href} class="group flex items-center gap-2 px-5 py-3 lg:px-7 lg:py-4 text-base text-emerald-950 hover:text-emerald-700 hover:bg-emerald-50/60 transition-all flex-1">
+              <a href={condition.href} class="group flex items-center gap-2 px-5 py-3 lg:px-7 lg:py-3 text-base text-emerald-950 hover:text-emerald-700 hover:bg-emerald-50/60 transition-all flex-1">
                 <ChevronRight class="w-4 h-4 text-emerald-300 flex-shrink-0 group-hover:text-emerald-500 group-hover:translate-x-0.5 transition-all" aria-hidden="true" />
                 {condition.title}
               </a>
@@ -361,7 +311,7 @@ const faqSchema = {
           </div>
           <div class="flex flex-col lg:flex-row lg:items-center border-t border-emerald-100 divide-y divide-emerald-100 lg:divide-y-0 lg:divide-x lg:divide-emerald-100">
             {articles.map((article) => (
-              <a href={article.href} class="group flex items-center gap-2 px-5 py-3 lg:px-7 lg:py-4 text-base text-emerald-950 hover:text-emerald-700 hover:bg-emerald-50/60 transition-all flex-1">
+              <a href={article.href} class="group flex items-center gap-2 px-5 py-3 lg:px-7 lg:py-3 text-base text-emerald-950 hover:text-emerald-700 hover:bg-emerald-50/60 transition-all flex-1">
                 <ChevronRight class="w-4 h-4 text-emerald-300 flex-shrink-0 group-hover:text-emerald-500 group-hover:translate-x-0.5 transition-all" aria-hidden="true" />
                 {article.title}
               </a>
@@ -380,8 +330,9 @@ const faqSchema = {
   <!-- FAQ (from current homepage) -->
   <section class="py-16 lg:py-20 bg-white">
     <div class="section-shell">
-      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4 reveal">
-        <h2 class="text-4xl sm:text-5xl font-serif font-medium text-emerald-950">FAQ</h2>
+      <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-10 space-y-3 reveal">
+        <h2 class="text-4xl sm:text-5xl font-serif font-medium text-emerald-950">Common Questions</h2>
+        <p class="text-lg text-slate-600 max-w-2xl mx-auto">Answers to what patients most commonly ask before their first visit.</p>
       </div>
       <div class="max-w-3xl mx-auto space-y-6 reveal reveal-delay-100">
             <details class="group bg-white rounded-2xl shadow-sm border border-emerald-100/50 overflow-hidden transition-all duration-300 hover:shadow-md open:shadow-lg open:ring-1 open:ring-emerald-500/20">
@@ -428,6 +379,13 @@ const faqSchema = {
       <p class="text-emerald-200 text-lg max-w-xl mx-auto">Book a consultation and start your journey to better health.</p>
       <div>
         <BookingButton text="Book Online" variant="hero" size="lg" source="bottom-cta" />
+      </div>
+      <div class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm text-emerald-300/80">
+        <span>No referral needed</span>
+        <span aria-hidden="true">·</span>
+        <span>Direct billing available</span>
+        <span aria-hidden="true">·</span>
+        <span>Currently accepting new patients</span>
       </div>
     </div>
   </section>
