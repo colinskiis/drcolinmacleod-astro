@@ -32,7 +32,7 @@ Glutathione has several functions that make it an essential tool for fighting ox
 <div class="wp-block-stackable-heading stk-block-heading stk-block stk-573bec6" id="references" data-block-id="573bec6"><h2 class="stk-block-heading__text">References</h2></div>
 
 1. Pizzorno J. Glutathione! Integr Med (Encinitas). 2014 Feb;13(1):8-12.
-2. Arosio E, De Marchi S, Zannoni M, et al. Effect of glutathione infusion on leg arterial circulation, cutaneous microcirculation, and pain-free walking distance in patients with peripheral obstructive arterial disease: a randomized, double-blind, placebo-controlled trial. Mayo Clin Proc. 2002 Aug;77(8):754-9.
+2. Arosio E, De Marchi S, Zannoni M, et al. Effect of glutathione infusion on leg arterial circulation, cutaneous microcirculation and pain-free walking distance in patients with peripheral obstructive arterial disease: a randomized, double-blind, placebo-controlled trial. Mayo Clin Proc. 2002 Aug;77(8):754-9.
 3. Monti DA, Zabrecky G, Kremens D, et al. N-Acetyl Cysteine Is Associated With Dopaminergic Improvement in Parkinson's Disease. Clin Pharmacol Ther. 2019 Oct;106(4):884-890.
 4. Honda Y, Kessoku T, Sumida Y, et al. Efficacy of glutathione for the treatment of nonalcoholic fatty liver disease: an open-label, single-arm, multicenter, pilot study. BMC Gastroenterol. 2017 Aug 8;17(1):96.
 5. Tanzilli G, Truscelli G, Arrivi A, et al. Glutathione infusion before primary percutaneous coronary intervention: a randomised controlled pilot study. BMJ Open. 2019 Aug 8;9(8):e025884.

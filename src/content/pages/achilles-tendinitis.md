@@ -1,6 +1,6 @@
 ---
 title: "Achilles Tendinitis"
-description: "Achilles tendinitis causes heel pain from inflammation of the largest tendon in the body. Learn about symptoms, causes, and natural treatment options."
+description: "Achilles tendinitis causes heel pain from inflammation of the largest tendon in the body. Learn about symptoms, causes and natural treatment options."
 seo:
   focusKeyword: "Achilles tendinitis treatment"
 ---

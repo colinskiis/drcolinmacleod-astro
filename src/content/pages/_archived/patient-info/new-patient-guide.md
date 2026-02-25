@@ -62,7 +62,7 @@ Dr. MacLeod will conduct a thorough review including:
 | Vitamin B12 Injection | $35 |
 
 ### Payment Options
-- **Cash, check, or credit card** accepted
+- **Cash, check or credit card** accepted
 - **Insurance receipts** provided for potential reimbursement
 - **Payment plans** available for treatment series
 

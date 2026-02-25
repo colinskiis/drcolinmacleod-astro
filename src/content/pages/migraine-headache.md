@@ -1,13 +1,13 @@
 ---
 title: "Migraine Headache"
-description: "Migraines cause throbbing headaches with nausea, light sensitivity, and vision changes. Learn about triggers, symptoms, and natural treatment options."
+description: "Migraines cause throbbing headaches with nausea, light sensitivity and vision changes. Learn about triggers, symptoms and natural treatment options."
 seo:
   focusKeyword: "migraine treatment"
 ---
 
 ![Migraine headache. Woman holding her head.](/images/conditions/migraine.jpeg)
 
-Migraines are a common type of headache characterized by a pulsing or throbbing sensation and often accompanied by nausea, vomiting, and sensitivity to light and sound. Migraines are a very common problem, affecting 12% of the population of the USA, including 17% of women and 6% of men each year<sup>1</sup>. Migraines are the second most common cause of disability, next to low back pain, worldwide<sup>2</sup>.
+Migraines are a common type of headache characterized by a pulsing or throbbing sensation and often accompanied by nausea, vomiting and sensitivity to light and sound. Migraines are a very common problem, affecting 12% of the population of the USA, including 17% of women and 6% of men each year<sup>1</sup>. Migraines are the second most common cause of disability, next to low back pain, worldwide<sup>2</sup>.
 
 This article will provide an overview of migraines, including their causes, symptoms, diagnosis, conventional treatment, naturopathic treatment and prevention.
 
@@ -15,11 +15,11 @@ This article will provide an overview of migraines, including their causes, symp
 
 The exact underlying cause of migraines is not yet known, but they are believed to be related to changes in brain activity. People can have migraine triggers, such as certain foods, stress and changes in sleep, that can set off or worsen a migraine. Genetics may also play a role, as migraines tend to run in families.
 
-Hormonal changes in women, such as those that occur during menopause and regular menstrual cycles, can also play a role in triggering migraines. A medical condition known as "rebound headache" can also occur as a result of taking too many migraine medications. Other potential triggers include changes in weather, bright lights, strong smells, and alcohol or caffeinated beverages.
+Hormonal changes in women, such as those that occur during menopause and regular menstrual cycles, can also play a role in triggering migraines. A medical condition known as "rebound headache" can also occur as a result of taking too many migraine medications. Other potential triggers include changes in weather, bright lights, strong smells and alcohol or caffeinated beverages.
 
 ## Symptoms of Migraines
 
-The primary symptom of a migraine is a severe headache that usually starts as a dull ache and builds up to a throbbing or pulsing sensation on one side of the head. Other symptoms can include nausea, vomiting, sensitivity to light and sound, and temporary vision changes such as blurred vision or blind spots. Some people may also experience aura, which is a sensation of flashing lights or zigzag patterns.
+The primary symptom of a migraine is a severe headache that usually starts as a dull ache and builds up to a throbbing or pulsing sensation on one side of the head. Other symptoms can include nausea, vomiting, sensitivity to light and sound and temporary vision changes such as blurred vision or blind spots. Some people may also experience aura, which is a sensation of flashing lights or zigzag patterns.
 
 Generally, the headache phase of a migraine lasts between 4-72 hours if untreated<sup>3</sup>. Other symptoms may last a few days. Some people may experience only mild symptoms while others may experience more severe symptoms and prolonged periods of pain and discomfort.
 
@@ -28,7 +28,7 @@ Most migraine sufferers (76%) report having triggers that will set off a migrain
 | Trigger | Frequency |
 |---------|-----------|
 | Stress | 80% |
-| Hormonal changes during menstruation, ovulation, and pregnancy | 65% |
+| Hormonal changes during menstruation, ovulation and pregnancy | 65% |
 | Skipped meals | 57% |
 | Weather changes | 53% |
 | Excessive or insufficient sleep | 50% |
@@ -46,7 +46,7 @@ Most migraine sufferers (76%) report having triggers that will set off a migrain
 
 ## Diagnosis Of Migraine
 
-Diagnosis of a migraine is usually made based on a the patient's symptoms and the results of a physical exam. During the exam, the doctor will assess the patient's medical history, do a neurological exam, and do an examination of the eyes, ears, nose, and throat. In some cases an MRI, CT scan or other diagnostic tests may be ordered to rule out other conditions such as a brain tumor, stroke or an infection.
+Diagnosis of a migraine is usually made based on a the patient's symptoms and the results of a physical exam. During the exam, the doctor will assess the patient's medical history, do a neurological exam and do an examination of the eyes, ears, nose and throat. In some cases an MRI, CT scan or other diagnostic tests may be ordered to rule out other conditions such as a brain tumor, stroke or an infection.
 
 You might also be tested for other conditions such as food sensitivities, hormonal fluctuations and vitamin deficiencies which can cause or exacerbate headaches in some cases.
 
@@ -68,7 +68,7 @@ There are also several natural health products including vitamin, mineral and he
 
 ## Prevention of Migraines
 
-There is no one-size-fits-all approach to preventing migraines but making certain lifestyle changes may help reduce their frequency and intensity. For a comprehensive guide to migraine prevention, including trigger identification, food sensitivities, and lifestyle modifications, see my article on [migraine prevention: natural approaches that work](/articles/migraine-prevention-natural-approaches). These include eating a balanced diet low in processed foods, avoiding potential triggers such as alcohol, getting enough sleep and managing stress. In some cases, nutritional and herbal supplements can be used long term to reduce migraine frequency and severity.
+There is no one-size-fits-all approach to preventing migraines but making certain lifestyle changes may help reduce their frequency and intensity. For a comprehensive guide to migraine prevention, including trigger identification, food sensitivities and lifestyle modifications, see my article on [migraine prevention: natural approaches that work](/articles/migraine-prevention-natural-approaches). These include eating a balanced diet low in processed foods, avoiding potential triggers such as alcohol, getting enough sleep and managing stress. In some cases, nutritional and herbal supplements can be used long term to reduce migraine frequency and severity.
 
 Certain medications, such as beta-blockers and calcium channel blockers, may also be used to prevent migraines. These medications help to reduce the number of migraine attacks and prevent them from becoming as severe. They are usually used in combination with lifestyle changes to help give the best results.
 
@@ -76,12 +76,12 @@ It is important to talk to a doctor before taking any preventive medications, as
 
 ## Conclusion
 
-In conclusion, migraines are a common and often debilitating neurologic disorder. Although the exact cause of migraines is still unknown, certain triggers, genetic factors, and hormonal changes can all play a role. Symptoms of migraines typically include headaches, nausea, vomiting, and sensitivity to light and sound. A physical exam and, in some cases, diagnostic tests can help to diagnose migraines. Treatments for migraines include prescription medications, lifestyle changes, and alternative treatments. Adopting certain lifestyle changes and avoiding potential triggers is the best way to prevent migraines and reduce their intensity. If you suffer from migraines, it's important to talk to your doctor about the best treatment for your individual situation.
+In conclusion, migraines are a common and often debilitating neurologic disorder. Although the exact cause of migraines is still unknown, certain triggers, genetic factors and hormonal changes can all play a role. Symptoms of migraines typically include headaches, nausea, vomiting and sensitivity to light and sound. A physical exam and, in some cases, diagnostic tests can help to diagnose migraines. Treatments for migraines include prescription medications, lifestyle changes and alternative treatments. Adopting certain lifestyle changes and avoiding potential triggers is the best way to prevent migraines and reduce their intensity. If you suffer from migraines, it's important to talk to your doctor about the best treatment for your individual situation.
 
 ### References
 
-1. Lipton RB, Bigal ME, Diamond M, et al. Migraine prevalence, disease burden, and the need for preventive therapy. Neurology. 2007 Jan 30;68(5):343-9.
-2. GBD 2016 Headache Collaborators. Global, regional, and national burden of migraine and tension-type headache, 1990-2016: a systematic analysis for the Global Burden of Disease Study 2016. Lancet Neurol. 2018 Nov;17(11):954-976.
+1. Lipton RB, Bigal ME, Diamond M, et al. Migraine prevalence, disease burden and the need for preventive therapy. Neurology. 2007 Jan 30;68(5):343-9.
+2. GBD 2016 Headache Collaborators. Global, regional and national burden of migraine and tension-type headache, 1990-2016: a systematic analysis for the Global Burden of Disease Study 2016. Lancet Neurol. 2018 Nov;17(11):954-976.
 3. Pescador Ruschel MA, De Jesus O. Migraine Headache. [Updated 2022 Nov 27]. In: StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2022 Jan-. Available from: https://www.ncbi.nlm.nih.gov/books/NBK560787/
 4. Kelman L. The triggers or precipitants of the acute migraine attack. Cephalalgia. 2007 May;27(5):394-402.
 5. Naguit N, Laeeq S, Jakkoju R, et al. Is Acupuncture Safe and Effective Treatment for Migraine? A Systematic Review of Randomized Controlled Trials. Cureus. 2022 Jan 3;14(1):e20888.

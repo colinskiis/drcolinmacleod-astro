@@ -1,6 +1,6 @@
 ---
 title: "Carpal Tunnel Syndrome"
-description: "Carpal tunnel syndrome causes wrist, hand, and arm pain from median nerve compression. Learn about symptoms and effective natural treatments."
+description: "Carpal tunnel syndrome causes wrist, hand and arm pain from median nerve compression. Learn about symptoms and effective natural treatments."
 seo:
   focusKeyword: "carpal tunnel syndrome treatment"
 ---

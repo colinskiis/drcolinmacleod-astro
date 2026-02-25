@@ -9,7 +9,7 @@ seo:
 
 ## What Is A Herniated Disc?
 
-An intervertebral disc is made up of rigid, spongy tissue which sits between two vertebral bones (vertebrae) of our spine. This disc allows movement between two vertebrae and serves the important role of being a shock absorber. Mechanical forces that act on the spine are cushioned by the intervertebral discs, limiting excessive movement of the vertebrae, and protecting the spinal cord from damage. Each intervertebral disc is made up of two parts: a tough, rubbery outer portion called the annulus fibrosis; and a gelatinous, soft central portion called the nucleus pulposus.
+An intervertebral disc is made up of rigid, spongy tissue which sits between two vertebral bones (vertebrae) of our spine. This disc allows movement between two vertebrae and serves the important role of being a shock absorber. Mechanical forces that act on the spine are cushioned by the intervertebral discs, limiting excessive movement of the vertebrae and protecting the spinal cord from damage. Each intervertebral disc is made up of two parts: a tough, rubbery outer portion called the annulus fibrosis; and a gelatinous, soft central portion called the nucleus pulposus.
 
 When a disc is "herniated," sometimes also referred to as "slipped," "bulging," or "ruptured," it means that injury or degeneration to the outer portion of the disc has allowed for the inner portion to protrude out.
 
@@ -66,7 +66,7 @@ Research has confirmed the role of various nutraceuticals in helping to prevent 
 
 An integral part of the intervertebral disc herniation injury process is when the posterior longitudinal ligament fails and tears partially or undergoes a significant rupture. This ligament is the rigid structure which keeps the discs from herniating posteriorly (back) and then contacting the spinal nerves. The posterior longitudinal ligament is the last line of defence against a herniated disc.
 
-Prolotherapy is a treatment used to repair ligament damage. This treatment involves injecting a concentrated sugar solution directly at the site of injury. The solution triggers an immune response, increasing local blood flow and stimulating the growth of healthy new ligament tissue. This has a strengthening effect on the ligament, providing increased support for the spine, helping to prevent further herniation, and reducing the chances of a recurrence of disc herniation.
+Prolotherapy is a treatment used to repair ligament damage. This treatment involves injecting a concentrated sugar solution directly at the site of injury. The solution triggers an immune response, increasing local blood flow and stimulating the growth of healthy new ligament tissue. This has a strengthening effect on the ligament, providing increased support for the spine, helping to prevent further herniation and reducing the chances of a recurrence of disc herniation.
 
 Prolotherapy is also effective for treating the pain and disability associated with intervertebral disc herniation. Studies have shown that the strengthening effect of prolotherapy or platelet-rich plasma injections can reduce pain and improve mobility in patients with disc herniation<sup>11</sup>. Prolotherapy is also a safe, non-invasive procedure with minimal discomfort and a quick recovery time. For these reasons, prolotherapy is an increasingly popular treatment option for patients with disc herniation.
 

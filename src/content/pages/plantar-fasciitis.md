@@ -1,6 +1,6 @@
 ---
 title: "Plantar Fasciitis"
-description: "Plantar fasciitis causes heel pain from inflammation of the foot arch ligament. Learn about causes, symptoms, and effective natural treatments."
+description: "Plantar fasciitis causes heel pain from inflammation of the foot arch ligament. Learn about causes, symptoms and effective natural treatments."
 seo:
   focusKeyword: "plantar fasciitis treatment"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Tennis Elbow"
-description: "Tennis elbow (lateral epicondylitis) causes forearm pain from repetitive strain. Learn about causes, risk factors, and effective natural treatments."
+description: "Tennis elbow (lateral epicondylitis) causes forearm pain from repetitive strain. Learn about causes, risk factors and effective natural treatments."
 seo:
   focusKeyword: "tennis elbow treatment"
 ---
@@ -43,5 +43,5 @@ A large body of research has indicated that PRP injections are an excellent trea
 
 ### References
 
-1. Pluim BM, Staal JB, Windler GE, Jayanthi N. Tennis injuries: occurrence, aetiology, and prevention. Br J Sports Med. 2006;40(5):415-423.
+1. Pluim BM, Staal JB, Windler GE, Jayanthi N. Tennis injuries: occurrence, aetiology and prevention. Br J Sports Med. 2006;40(5):415-423.
 2. Kahlenberg CA, Knesek M, Terry MA. New Developments in the Use of Biologics and Other Modalities in the Management of Lateral Epicondylitis. Biomed Res Int. 2015;2015:439309.

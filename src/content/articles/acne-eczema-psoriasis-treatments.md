@@ -1,6 +1,6 @@
 ---
 title: "Acne, Eczema & Psoriasis: Natural Treatment Approaches"
-description: "Comprehensive natural treatment approaches for common skin conditions including acne, eczema, and psoriasis, addressing root causes like gut health, inflammation, and immune function."
+description: "Comprehensive natural treatment approaches for common skin conditions including acne, eczema and psoriasis, addressing root causes like gut health, inflammation and immune function."
 publishDate: 2012-06-13
 modifiedDate: 2026-01-10
 author: "Dr. Colin MacLeod ND"
@@ -9,7 +9,7 @@ categories: ["Naturopathic", "Skin Health"]
 tags: ["acne", "eczema", "psoriasis", "skin health", "natural treatment", "Halifax"]
 seo:
   title: "Acne, Eczema & Psoriasis Treatment | Halifax Naturopathic Doctor"
-  description: "Comprehensive natural treatment approaches for common skin conditions including acne, eczema, and psoriasis, addressing root causes like gut health, inflammation, and immune function."
+  description: "Comprehensive natural treatment approaches for common skin conditions including acne, eczema and psoriasis, addressing root causes like gut health, inflammation and immune function."
   focusKeyword: "natural eczema treatment"
 ---
 
@@ -17,17 +17,17 @@ seo:
 
 The skin is the largest organ of the body, weighing between 6 to 9 pounds with a surface area of approximately 20 square feet. Beyond its role as a protective barrier between our bodies and the external environment, the skin serves as a mirror reflecting our internal health.
 
-Skin conditions like acne, eczema, and psoriasis are rarely just "skin problems." They often indicate underlying imbalances in gut health, immune function, hormonal regulation, or systemic inflammation. This understanding shapes the naturopathic approach: rather than simply suppressing symptoms, we work to identify and address the root causes driving skin conditions.
+Skin conditions like acne, eczema and psoriasis are rarely just "skin problems." They often indicate underlying imbalances in gut health, immune function, hormonal regulation or systemic inflammation. This understanding shapes the naturopathic approach: rather than simply suppressing symptoms, we work to identify and address the root causes driving skin conditions.
 
 ## The Gut-Skin Connection
 
 One of the most important advances in dermatology research has been recognizing the profound connection between gut health and skin conditions. The gut microbiome, the trillions of bacteria living in our digestive tract, influences skin health through several mechanisms.
 
-**Intestinal Permeability** ("leaky gut") allows partially digested food proteins and bacterial products to enter the bloodstream, triggering immune responses that can manifest as skin inflammation. Research has linked increased intestinal permeability to eczema, psoriasis, and acne<sup>1</sup>.
+**Intestinal Permeability** ("leaky gut") allows partially digested food proteins and bacterial products to enter the bloodstream, triggering immune responses that can manifest as skin inflammation. Research has linked increased intestinal permeability to eczema, psoriasis and acne<sup>1</sup>.
 
 **Microbiome Composition** affects systemic inflammation. An imbalanced gut microbiome (dysbiosis) promotes inflammatory processes throughout the body, including in the skin. Conversely, a healthy, diverse microbiome supports immune regulation and reduces inflammation<sup>2</sup>.
 
-**Nutrient Absorption** depends on gut health. Deficiencies in zinc, vitamin A, essential fatty acids, and other nutrients important for skin health can result from poor gut function, even with adequate dietary intake.
+**Nutrient Absorption** depends on gut health. Deficiencies in zinc, vitamin A, essential fatty acids and other nutrients important for skin health can result from poor gut function, even with adequate dietary intake.
 
 This gut-skin axis explains why dietary changes and gut-healing protocols are often effective for skin conditions that seem unrelated to digestion.
 
@@ -49,7 +49,7 @@ For an in-depth exploration of hormonally-driven acne and targeted treatment app
 
 Research has established several dietary connections to acne.
 
-**High Glycemic Index Foods** spike blood sugar and insulin, which increases androgens and sebum production. Studies show that low-glycemic diets improve acne<sup>3</sup>. Reducing refined carbohydrates, sugary foods, and processed snacks often helps acne-prone skin.
+**High Glycemic Index Foods** spike blood sugar and insulin, which increases androgens and sebum production. Studies show that low-glycemic diets improve acne<sup>3</sup>. Reducing refined carbohydrates, sugary foods and processed snacks often helps acne-prone skin.
 
 **Dairy Products** have been associated with increased acne, particularly skim milk<sup>4</sup>. Dairy contains hormones and growth factors that may influence sebum production and skin cell growth. Many patients see improvement when reducing or eliminating dairy.
 
@@ -59,7 +59,7 @@ Research has established several dietary connections to acne.
 
 ### Naturopathic Acne Treatment
 
-**Dietary Modification**: Reducing high-glycemic foods, eliminating or reducing dairy, and emphasizing whole foods forms the foundation of naturopathic acne treatment.
+**Dietary Modification**: Reducing high-glycemic foods, eliminating or reducing dairy and emphasizing whole foods forms the foundation of naturopathic acne treatment.
 
 **Gut Health Support**: Addressing dysbiosis with probiotics, particularly strains like *Lactobacillus rhamnosus* that have been studied for skin health<sup>6</sup>. Healing intestinal permeability with nutrients like L-glutamine and zinc.
 
@@ -79,7 +79,7 @@ While naturopathic approaches address underlying causes, some patients may also 
 
 **Oral Antibiotics** provide temporary improvement but acne typically returns when stopped, and prolonged use affects gut microbiome health.
 
-**Isotretinoin** (Accutane) is effective for severe acne but carries significant risks including liver toxicity, mood changes, and severe birth defects if taken during pregnancy<sup>9,10</sup>. It remains an option for severe, treatment-resistant cases but should be approached with full understanding of risks.
+**Isotretinoin** (Accutane) is effective for severe acne but carries significant risks including liver toxicity, mood changes and severe birth defects if taken during pregnancy<sup>9,10</sup>. It remains an option for severe, treatment-resistant cases but should be approached with full understanding of risks.
 
 ## Eczema (Atopic Dermatitis)
 
@@ -89,11 +89,11 @@ Atopic dermatitis is a chronic inflammatory skin condition characterized by dry,
 
 Eczema typically begins in early childhood. Approximately 85% of cases develop before age 5, and about half of childhood eczema cases resolve, while the other half experience symptoms into adulthood<sup>11</sup>. Adult-onset eczema also occurs.
 
-The primary symptom is intense itching, which leads to scratching, further skin damage, and a worsening cycle of inflammation. Other symptoms include redness, dryness, cracking, weeping, crusting, and scaling of the skin.
+The primary symptom is intense itching, which leads to scratching, further skin damage and a worsening cycle of inflammation. Other symptoms include redness, dryness, cracking, weeping, crusting and scaling of the skin.
 
 ### What Causes Eczema?
 
-Eczema involves a combination of genetic factors, immune dysregulation, and environmental triggers.
+Eczema involves a combination of genetic factors, immune dysregulation and environmental triggers.
 
 **Skin Barrier Dysfunction**: Many eczema patients have mutations affecting filaggrin, a protein crucial for skin barrier function. A compromised skin barrier allows increased water loss (dry skin) and entry of irritants and allergens<sup>12</sup>.
 
@@ -101,11 +101,11 @@ Eczema involves a combination of genetic factors, immune dysregulation, and envi
 
 **Gut-Skin Axis**: Alterations in gut microbiome composition are associated with eczema risk and severity. Early-life factors affecting gut microbiome development influence eczema likelihood<sup>13</sup>.
 
-**Environmental Factors**: Triggers include contact with irritants (soaps, detergents, wool), temperature extremes, low humidity, stress, and infections.
+**Environmental Factors**: Triggers include contact with irritants (soaps, detergents, wool), temperature extremes, low humidity, stress and infections.
 
 ### Food Sensitivities and Eczema
 
-Food sensitivities play a significant role in many eczema cases, particularly in children. Common triggers include cow's milk, eggs, wheat, soy, peanuts, and tree nuts. However, the specific triggers vary considerably between individuals.
+Food sensitivities play a significant role in many eczema cases, particularly in children. Common triggers include cow's milk, eggs, wheat, soy, peanuts and tree nuts. However, the specific triggers vary considerably between individuals.
 
 Unlike immediate allergic reactions (IgE-mediated), food sensitivities causing eczema may be delayed (IgG-mediated or other mechanisms), making identification challenging. Symptoms may appear hours to days after consuming the trigger food.
 
@@ -115,15 +115,15 @@ Research shows that identifying and avoiding food triggers significantly improve
 
 ### Naturopathic Eczema Treatment
 
-**Identify and Remove Triggers**: Working to identify food sensitivities, environmental irritants, and other triggers is foundational. This may involve elimination diets, keeping a symptom diary, and possibly food sensitivity testing.
+**Identify and Remove Triggers**: Working to identify food sensitivities, environmental irritants and other triggers is foundational. This may involve elimination diets, keeping a symptom diary and possibly food sensitivity testing.
 
-**Heal the Gut**: Supporting gut health addresses a root cause of eczema for many patients. This includes probiotics (specific strains like *Lactobacillus rhamnosus GG* and *Bifidobacterium lactis* have the best evidence for eczema)<sup>15</sup>, gut-healing nutrients (L-glutamine, zinc, vitamin A), addressing dysbiosis if present, and supporting digestive function.
+**Heal the Gut**: Supporting gut health addresses a root cause of eczema for many patients. This includes probiotics (specific strains like *Lactobacillus rhamnosus GG* and *Bifidobacterium lactis* have the best evidence for eczema)<sup>15</sup>, gut-healing nutrients (L-glutamine, zinc, vitamin A), addressing dysbiosis if present and supporting digestive function.
 
 **Support Skin Barrier**: Essential fatty acids (omega-3s from fish oil, GLA from evening primrose or borage oil) support skin lipid composition. Topical emollients and moisturizers protect the skin barrier and reduce water loss. Vitamin D supports both immune function and skin barrier integrity.
 
 **Reduce Inflammation**: Anti-inflammatory diet emphasizing omega-3 fatty acids and colorful plant foods. Quercetin and other flavonoids have natural antihistamine effects. Managing stress, which can trigger flares.
 
-**Address Immune Imbalance**: Supporting regulatory T-cells helps balance the Th2-dominant pattern seen in eczema. This involves vitamin D optimization, adequate omega-3 intake, and gut microbiome support.
+**Address Immune Imbalance**: Supporting regulatory T-cells helps balance the Th2-dominant pattern seen in eczema. This involves vitamin D optimization, adequate omega-3 intake and gut microbiome support.
 
 ### Conventional Eczema Treatments
 
@@ -147,11 +147,11 @@ Psoriasis is an immune-mediated inflammatory condition affecting 1-3% of the pop
 
 In psoriasis, immune dysfunction causes skin cells to proliferate much faster than normal, skin cells that normally mature over about a month do so in just days. This results in the characteristic thick, silvery-white, scaly plaques.
 
-Common sites include elbows, knees, scalp, lower back, and nails, though any area can be affected. Psoriatic arthritis, joint inflammation associated with psoriasis, affects approximately 30% of psoriasis patients and can cause permanent joint damage if untreated<sup>16</sup>.
+Common sites include elbows, knees, scalp, lower back and nails, though any area can be affected. Psoriatic arthritis, joint inflammation associated with psoriasis, affects approximately 30% of psoriasis patients and can cause permanent joint damage if untreated<sup>16</sup>.
 
 ### Psoriasis and Systemic Health
 
-Psoriasis is associated with increased risk of metabolic syndrome, cardiovascular disease, and other inflammatory conditions. The chronic inflammation driving psoriasis affects the entire body, not just the skin. This makes addressing systemic inflammation particularly important in psoriasis management.
+Psoriasis is associated with increased risk of metabolic syndrome, cardiovascular disease and other inflammatory conditions. The chronic inflammation driving psoriasis affects the entire body, not just the skin. This makes addressing systemic inflammation particularly important in psoriasis management.
 
 ### Types of Psoriasis
 
@@ -167,7 +167,7 @@ Psoriasis is associated with increased risk of metabolic syndrome, cardiovascula
 
 ### Psoriasis Triggers
 
-Psoriasis tends to follow a pattern of remissions and flares. Common triggers include stress (a major trigger for many), infections (especially streptococcal), skin injury (Koebner phenomenon), certain medications (beta-blockers, lithium, antimalarials), alcohol consumption, and smoking.
+Psoriasis tends to follow a pattern of remissions and flares. Common triggers include stress (a major trigger for many), infections (especially streptococcal), skin injury (Koebner phenomenon), certain medications (beta-blockers, lithium, antimalarials), alcohol consumption and smoking.
 
 ### Food and Psoriasis
 
@@ -177,9 +177,9 @@ Dietary factors influence psoriasis through effects on inflammation and gut heal
 
 **Alcohol**: Even moderate alcohol consumption worsens psoriasis in many patients, both through direct inflammatory effects and by increasing intestinal permeability.
 
-**Inflammatory Foods**: Processed foods, refined sugars, and excessive omega-6 fatty acids promote inflammation.
+**Inflammatory Foods**: Processed foods, refined sugars and excessive omega-6 fatty acids promote inflammation.
 
-**Anti-Inflammatory Foods**: Mediterranean-style diets rich in olive oil, fish, vegetables, and fruits are associated with better psoriasis outcomes<sup>18</sup>.
+**Anti-Inflammatory Foods**: Mediterranean-style diets rich in olive oil, fish, vegetables and fruits are associated with better psoriasis outcomes<sup>18</sup>.
 
 ### Naturopathic Psoriasis Treatment
 
@@ -189,19 +189,19 @@ Dietary factors influence psoriasis through effects on inflammation and gut heal
 
 **Reduce Systemic Inflammation**: Fish oil (2-4 grams EPA/DHA daily) has evidence for psoriasis improvement<sup>19</sup>. Curcumin (turmeric extract) has anti-inflammatory effects. Vitamin D optimization, deficiency is common in psoriasis and supplementation may help.
 
-**Stress Management**: Given stress as a major trigger, stress management is therapeutic, not optional. Practices like meditation, yoga, and adequate sleep support psoriasis management.
+**Stress Management**: Given stress as a major trigger, stress management is therapeutic, not optional. Practices like meditation, yoga and adequate sleep support psoriasis management.
 
 **Topical Support**: Topical vitamin D analogues have good evidence. Aloe vera may provide symptomatic relief. Coal tar preparations remain useful for some patients.
 
-**Address Metabolic Health**: Given the metabolic syndrome association, addressing insulin resistance, maintaining healthy weight, and supporting cardiovascular health benefits psoriasis.
+**Address Metabolic Health**: Given the metabolic syndrome association, addressing insulin resistance, maintaining healthy weight and supporting cardiovascular health benefits psoriasis.
 
 ### Conventional Psoriasis Treatments
 
-**Topical Treatments** include corticosteroids, vitamin D analogues, retinoids, and coal tar preparations for mild-to-moderate disease.
+**Topical Treatments** include corticosteroids, vitamin D analogues, retinoids and coal tar preparations for mild-to-moderate disease.
 
 **Phototherapy** (UVB light therapy) can be effective, particularly for widespread psoriasis.
 
-**Systemic Treatments** for moderate-to-severe psoriasis include methotrexate, cyclosporine, acitretin, and newer biologics targeting specific inflammatory pathways (TNF-alpha inhibitors, IL-17 inhibitors, IL-23 inhibitors).
+**Systemic Treatments** for moderate-to-severe psoriasis include methotrexate, cyclosporine, acitretin and newer biologics targeting specific inflammatory pathways (TNF-alpha inhibitors, IL-17 inhibitors, IL-23 inhibitors).
 
 Biologics have transformed severe psoriasis treatment but come with significant costs and potential risks including immunosuppression.
 
@@ -213,7 +213,7 @@ Regardless of the specific condition, several principles support healthy skin.
 
 - Emphasize whole, unprocessed foods
 - Include fatty fish, olive oil, colorful vegetables and fruits
-- Minimize refined sugars, processed foods, and excess omega-6 fatty acids
+- Minimize refined sugars, processed foods and excess omega-6 fatty acids
 - Consider anti-inflammatory supplements like fish oil and curcumin
 
 ### Gut Health Support
@@ -241,15 +241,15 @@ Regardless of the specific condition, several principles support healthy skin.
 
 ## Finding the Right Approach
 
-Skin conditions vary significantly between individuals. What works for one person may not work for another. This is why a personalized approach, identifying your specific triggers, imbalances, and needs, is more effective than generic advice.
+Skin conditions vary significantly between individuals. What works for one person may not work for another. This is why a personalized approach, identifying your specific triggers, imbalances and needs, is more effective than generic advice.
 
 The timeline for improvement also varies. While some patients see rapid improvement with dietary changes, others require longer-term gut healing or multiple interventions. Patience and consistency are important.
 
 ## Skin Health Support in Halifax
 
-Chronic skin conditions like acne, eczema, and psoriasis often reflect internal imbalances that can be addressed naturally. By identifying triggers, supporting gut health, reducing inflammation, and optimizing nutrition, many patients achieve significant improvement in their skin, and overall health.
+Chronic skin conditions like acne, eczema and psoriasis often reflect internal imbalances that can be addressed naturally. By identifying triggers, supporting gut health, reducing inflammation and optimizing nutrition, many patients achieve significant improvement in their skin and overall health.
 
-If you're dealing with chronic skin issues and are interested in addressing root causes rather than just suppressing symptoms, please contact Dr. Colin MacLeod ND to book an initial consultation. Dr. MacLeod provides comprehensive assessments, appropriate testing (including food sensitivity testing when indicated), and personalized treatment plans. Learn more about our [clinical nutrition services](/clinical-nutrition) and [lab testing options](/lab-testing).
+If you're dealing with chronic skin issues and are interested in addressing root causes rather than just suppressing symptoms, please contact Dr. Colin MacLeod ND to book an initial consultation. Dr. MacLeod provides comprehensive assessments, appropriate testing (including food sensitivity testing when indicated) and personalized treatment plans. Learn more about our [clinical nutrition services](/clinical-nutrition) and [lab testing options](/lab-testing).
 
 ## References
 
@@ -258,14 +258,14 @@ If you're dealing with chronic skin issues and are interested in addressing root
 3. Smith RN, Mann NJ, Braue A, Mäkeläinen H, Varigos GA. A low-glycemic-load diet improves symptoms in acne vulgaris patients: a randomized controlled trial. *Am J Clin Nutr*. 2007;86(1):107-15.
 4. Adebamowo CA, Spiegelman D, Danby FW, Frazier AL, Willett WC, Holmes MD. High school dietary dairy intake and teenage acne. *J Am Acad Dermatol*. 2005;52(2):207-14.
 5. Vongraviopap S, Asawanonda P. Dark chocolate exacerbates acne. *Int J Dermatol*. 2016;55(5):587-91.
-6. Kober MM, Bowe WP. The effect of probiotics on immune regulation, acne, and photoaging. *Int J Womens Dermatol*. 2015;1(2):85-89.
+6. Kober MM, Bowe WP. The effect of probiotics on immune regulation, acne and photoaging. *Int J Womens Dermatol*. 2015;1(2):85-89.
 7. Dreno B, Moyse D, Alirezai M, et al. Multicenter randomized comparative double-blind controlled clinical trial of the safety and efficacy of zinc gluconate versus minocycline hydrochloride in the treatment of inflammatory acne vulgaris. *Dermatology*. 2001;203(2):135-40.
 8. Shalita AR, Smith JG, Parish LC, Sofman MS, Chalker DK. Topical nicotinamide compared with clindamycin gel in the treatment of inflammatory acne vulgaris. *Int J Dermatol*. 1995;34(6):434-7.
 9. Sundström A, Alfredsson L, Sjölin-Forsberg G, Gerdén B, Bergman U, Jokinen J. Association of suicide attempts with acne and treatment with isotretinoin: retrospective Swedish cohort study. *BMJ*. 2010;341:c5812.
 10. Stern RS, Rosa F, Baum C. Isotretinoin and pregnancy. *J Am Acad Dermatol*. 1984;10(5 Pt 1):851-4.
 11. Kim BS. Atopic Dermatitis. Medscape. Updated 2023.
 12. Palmer CN, Irvine AD, Terron-Kwiatkowski A, et al. Common loss-of-function variants of the epidermal barrier protein filaggrin are a major predisposing factor for atopic dermatitis. *Nat Genet*. 2006;38(4):441-6.
-13. Zimmermann P, Messina N, Mohn WW, Finlay BB, Curtis N. Association between the intestinal microbiota and allergic sensitization, eczema, and asthma: A systematic review. *J Allergy Clin Immunol*. 2019;143(2):467-485.
+13. Zimmermann P, Messina N, Mohn WW, Finlay BB, Curtis N. Association between the intestinal microbiota and allergic sensitization, eczema and asthma: A systematic review. *J Allergy Clin Immunol*. 2019;143(2):467-485.
 14. Halken S. Prevention of allergic disease in childhood: clinical and epidemiological aspects of primary and secondary allergy prevention. *Pediatr Allergy Immunol*. 2004;15 Suppl 16:4-5, 9-32.
 15. Makrgeorgou A, Leonardi-Bee J, Bath-Hextall FJ, et al. Probiotics for treating eczema. *Cochrane Database Syst Rev*. 2018;11(11):CD006135.
 16. Ritchlin CT, Colbert RA, Gladman DD. Psoriatic Arthritis. *N Engl J Med*. 2017;376(10):957-970.

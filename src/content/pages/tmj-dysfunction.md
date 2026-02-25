@@ -1,6 +1,6 @@
 ---
 title: "TMJ Dysfunction"
-description: "TMJ dysfunction affects the jaw joint, causing pain in the jaw, face, neck, and head. Learn about symptoms, risk factors, and treatment options."
+description: "TMJ dysfunction affects the jaw joint, causing pain in the jaw, face, neck and head. Learn about symptoms, risk factors and treatment options."
 seo:
   focusKeyword: "TMJ dysfunction treatment"
 ---
@@ -9,11 +9,11 @@ seo:
 
 Temporomandibular joint (TMJ) dysfunction is a disorder that affects the jaw joint, causing pain and discomfort in the jaw, face, neck and head. TMJ dysfunction is a common problem, with an estimated 11 million North Americans affected.
 
-The temporomandibular joint is a hinge joint that connects the lower jaw (mandible) to the temporal bone of the skull. It is a complex joint, with multiple components including muscles, ligaments, bones, and cartilage. The specific components of the joint include the joint capsule, articular disc, mandibular condyles, articular surface of the temporal bone, temporomandibular ligament, sphenomandibular ligament, stylomandibular ligament and the lateral pterygoid muscle.
+The temporomandibular joint is a hinge joint that connects the lower jaw (mandible) to the temporal bone of the skull. It is a complex joint, with multiple components including muscles, ligaments, bones and cartilage. The specific components of the joint include the joint capsule, articular disc, mandibular condyles, articular surface of the temporal bone, temporomandibular ligament, sphenomandibular ligament, stylomandibular ligament and the lateral pterygoid muscle.
 
 ## Symptoms of TMJ Dysfunction
 
-Generally, the most common symptom of TMJ dysfunction is pain and tenderness in the jaw area, especially when opening the mouth or chewing. Other symptoms may include headaches, earaches, clicking or popping noises in the jaw joint, difficulty opening the mouth fully, and locking of the jaw.
+Generally, the most common symptom of TMJ dysfunction is pain and tenderness in the jaw area, especially when opening the mouth or chewing. Other symptoms may include headaches, earaches, clicking or popping noises in the jaw joint, difficulty opening the mouth fully and locking of the jaw.
 
 ## Risk Factors for TMJ Dysfunction
 
@@ -27,9 +27,9 @@ Stress, anxiety and depression are psychological risk factors for TMJ dysfunctio
 
 Treatments for Temporomandibular Joint (TMJ) dysfunction can be divided into two broad categories: conservative treatments and surgical treatments.
 
-Conservative treatments focus on reducing the symptoms of TMJ dysfunction without resorting to surgery. These treatments may include lifestyle changes such as avoiding hard or chewy foods, managing teeth grinding (bruxism), and taking over-the-counter pain medications such as ibuprofen or acetaminophen. Targeted exercise-based treatments can help to condition the muscles surrounding the temporomandibular joint which can help pain and improve the range of motion of the joint.
+Conservative treatments focus on reducing the symptoms of TMJ dysfunction without resorting to surgery. These treatments may include lifestyle changes such as avoiding hard or chewy foods, managing teeth grinding (bruxism) and taking over-the-counter pain medications such as ibuprofen or acetaminophen. Targeted exercise-based treatments can help to condition the muscles surrounding the temporomandibular joint which can help pain and improve the range of motion of the joint.
 
-Surgical treatment may include arthrocentesis, which involves draining excess fluid from the joint; arthroscopy, which involves using a tiny camera and specialized tools to access the joint and make repairs; and joint replacement surgery, which involves removing the damaged joint and replacing it with an artificial joint. No matter which type of treatment is chosen for TMJ dysfunction, the goal is to reduce pain, improve range of motion, and improve overall quality of life.
+Surgical treatment may include arthrocentesis, which involves draining excess fluid from the joint; arthroscopy, which involves using a tiny camera and specialized tools to access the joint and make repairs; and joint replacement surgery, which involves removing the damaged joint and replacing it with an artificial joint. No matter which type of treatment is chosen for TMJ dysfunction, the goal is to reduce pain, improve range of motion and improve overall quality of life.
 
 ## Naturopathic Treatment for TMJ Dysfunction
 

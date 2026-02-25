@@ -9,7 +9,7 @@ Intravenous (IV) therapy delivers nutrients directly into your bloodstream, achi
 
 ## What is IV Therapy?
 
-IV therapy involves the administration of vitamins, minerals, and other nutrients directly into the bloodstream through a small catheter placed in your arm. This method bypasses the digestive system, allowing for:
+IV therapy involves the administration of vitamins, minerals and other nutrients directly into the bloodstream through a small catheter placed in your arm. This method bypasses the digestive system, allowing for:
 
 - **100% absorption** of nutrients
 - **Rapid therapeutic effects** 
@@ -46,7 +46,7 @@ IV therapy involves the administration of vitamins, minerals, and other nutrient
 
 ### Chelation Therapy (EDTA)
 **For heavy metal detoxification:**
-- Lead, mercury, and other toxic metals
+- Lead, mercury and other toxic metals
 - Cardiovascular health support
 - Improved circulation
 
@@ -62,7 +62,7 @@ IV therapy involves the administration of vitamins, minerals, and other nutrient
 - **Eat a light meal** 1-2 hours before treatment
 - **Bring water** to drink during treatment
 - **Wear comfortable clothing** with easy access to your arms
-- **Bring entertainment** - book, tablet, or music (treatment takes 30-90 minutes)
+- **Bring entertainment** - book, tablet or music (treatment takes 30-90 minutes)
 
 ## What to Expect During Treatment
 
@@ -139,7 +139,7 @@ IV therapy involves the administration of vitamins, minerals, and other nutrient
 **IV Treatment Fee:** $130 per session
 
 ### Payment Options
-- Cash, check, or credit card accepted
+- Cash, check or credit card accepted
 - Insurance receipts provided for potential reimbursement
 - Package deals available for treatment series
 

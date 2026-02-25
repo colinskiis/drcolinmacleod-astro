@@ -46,14 +46,14 @@ If you are interested in receiving acupuncture to help quit smoking in the Halif
 
 1. Reid JL, Hammond D, Rynard VL, Burkhalter R. Tobacco Use in Canada: Patterns and Trends, 2014 Edition. Waterloo, ON: Propel Centre for Population Health Impact, University of Waterloo.
 2. Baliunas D, Patra J, Rehm J, Popova S, Kaiserman M, Taylor B. Smoking-attributable mortality and expected years of life lost in Canada 2002: conclusions for prevention and policy. *Chronic Dis Can*. 2007;27(4):154-62.
-3. Bier ID, Wilson J, Studt P, Shakleton M. Auricular acupuncture, education, and smoking cessation: a randomized, sham-controlled trial. *Am J Public Health*. 2002 Oct;92(10):1642-7.
+3. Bier ID, Wilson J, Studt P, Shakleton M. Auricular acupuncture, education and smoking cessation: a randomized, sham-controlled trial. *Am J Public Health*. 2002 Oct;92(10):1642-7.
 4. Courbasson CM, de Sorkin AA, Dullerud B, Van Wyk L. Acupuncture treatment for women with concurrent substance use and anxiety/depression: an effective alternative therapy? *Fam Community Health*. 2007 Apr-Jun;30(2):112-20.
 5. Hecht SS. Tobacco Smoke Carcinogens and Lung Cancer. *JNCI J Natl Cancer Inst*. 1999 91(14):1194-1210.
 6. CDC - Fact Sheet - Health Effects of Cigarette Smoking. Centers for Disease Control and Prevention, 10 Jan. 2012.
-7. Ockene IS, Houston Miller N. Cigarette Smoking, Cardiovascular Disease, and Stroke: A Statement for Healthcare Professionals From the American Heart Association. *Circulation*. 1997;96:3243-3247.
+7. Ockene IS, Houston Miller N. Cigarette Smoking, Cardiovascular Disease and Stroke: A Statement for Healthcare Professionals From the American Heart Association. *Circulation*. 1997;96:3243-3247.
 8. Shinton R, Beevers G. Meta-analysis of relation between cigarette smoking and stroke. *BMJ*. 1989;298(6676):789-794.
 9. The health consequences of smoking: a report of the Surgeon General. U.S. Dept. of Health and Human Services, 2004.
 10. Moore D, Aveyard P, Connock M, Wang D, Fry-Smith A, Barton P. Effectiveness and safety of nicotine replacement therapy assisted reduction to stop smoking: systematic review and meta-analysis. *BMJ*. 2009 Apr 2;338:b1024.
 11. Leung LK, Patafio FM, Rosser WW. Gastrointestinal adverse effects of varenicline at maintenance dose: a meta-analysis. *BMC Clin Pharmacol*. 2011 Sep 28;11:15.
 12. Singh S, Loke YK, Spangler JG, Furberg CD. Risk of serious adverse cardiovascular events associated with varenicline: a systematic review and meta-analysis. *CMAJ*. 2011 Sep 6;183(12):1359-66.
-13. Morales-Suárez-Varela MM, Bille C, Christensen K, Olsen J. Smoking habits, nicotine use, and congenital malformations. *Obstet Gynecol*. 2006 Jan;107(1):51-7.
+13. Morales-Suárez-Varela MM, Bille C, Christensen K, Olsen J. Smoking habits, nicotine use and congenital malformations. *Obstet Gynecol*. 2006 Jan;107(1):51-7.

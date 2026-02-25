@@ -32,9 +32,9 @@ Mistletoe extract has also been studied extensively for its effect on quality of
 
 ## How Does It Work?
 
-Mistletoe acts in several ways to affect cancer cells including inhibition of cancer cell proliferation<sup>12,13</sup>, inhibition of the formation of new blood vessels (angiogenesis)<sup>14</sup> required for cancer spread, and induction of cancer cell apoptosis (programmed cell death)<sup>15,16</sup>.
+Mistletoe acts in several ways to affect cancer cells including inhibition of cancer cell proliferation<sup>12,13</sup>, inhibition of the formation of new blood vessels (angiogenesis)<sup>14</sup> required for cancer spread and induction of cancer cell apoptosis (programmed cell death)<sup>15,16</sup>.
 
-Mistletoe improves and refines the immune system's function towards cancer including increasing release of immune-system enhancing cytokines such as IL-1, IL-6 and TNF alpha<sup>18,19</sup>, increasing white blood cell count and activity<sup>20,21,22,23,24</sup>, and protection of white blood cell DNA against the dangerous effects of chemotherapy<sup>25,26</sup>.
+Mistletoe improves and refines the immune system's function towards cancer including increasing release of immune-system enhancing cytokines such as IL-1, IL-6 and TNF alpha<sup>18,19</sup>, increasing white blood cell count and activity<sup>20,21,22,23,24</sup> and protection of white blood cell DNA against the dangerous effects of chemotherapy<sup>25,26</sup>.
 
 ## Active Components
 
@@ -58,7 +58,7 @@ In Canada injectable mistletoe extract is available under the product names Isca
 
 ## Recent Research Developments
 
-Research on mistletoe therapy continues to grow. A 2020 systematic review and meta-analysis examining mistletoe therapy in cancer patients confirmed improvements in quality of life measures across multiple cancer types<sup>35</sup>. The review found consistent benefits for fatigue, sleep, emotional wellbeing, and tolerance of conventional treatments.
+Research on mistletoe therapy continues to grow. A 2020 systematic review and meta-analysis examining mistletoe therapy in cancer patients confirmed improvements in quality of life measures across multiple cancer types<sup>35</sup>. The review found consistent benefits for fatigue, sleep, emotional wellbeing and tolerance of conventional treatments.
 
 Interest in mistletoe therapy has expanded in North America, with growing recognition from integrative oncology programs. While mistletoe remains primarily an adjunctive therapy used alongside conventional treatment, its safety profile and quality of life benefits make it a valuable option for many cancer patients seeking comprehensive care.
 
@@ -85,7 +85,7 @@ Mistletoe injections in the treatment of cancer are a viable adjunctive natural 
 15. Büssing A, Suzart K, Bergmann J, Pfüller U, Schietzel M, Schweizer K. Induction of apoptosis in human lymphocytes treated with Viscum album L. is mediated by the mistletoe lectins. *Cancer Lett*. 1996 Jan 19;99(1):59-72.
 16. Mengs U, Göthel D, Leng-Peschlow E. Mistletoe extracts standardized to mistletoe lectins in oncology: review on current status of preclinical research. *Anticancer Res*. 2002 May-Jun;22(3):1399-407.
 17. Büssing A, Regnery A, Schweizer K. Effects of Viscum album L. on cyclophosphamide-treated peripheral blood mononuclear cells in vitro: sister chromatid exchanges and activation/proliferation marker expression. *Cancer Lett*. 1995 Aug 1;94(2):199-205.
-18. Hajto T, Hostanska K, Frei K, Rordorf C, Gabius HJ. Increased secretion of tumor necrosis factors alpha, interleukin 1, and interleukin 6 by human mononuclear cells exposed to beta-galactoside-specific lectin from clinically applied mistletoe extract. *Cancer Res*. 1990 Jun 1;50(11):3322-6.
+18. Hajto T, Hostanska K, Frei K, Rordorf C, Gabius HJ. Increased secretion of tumor necrosis factors alpha, interleukin 1 and interleukin 6 by human mononuclear cells exposed to beta-galactoside-specific lectin from clinically applied mistletoe extract. *Cancer Res*. 1990 Jun 1;50(11):3322-6.
 19. Stein G, Berg PA. Non-lectin component in a fermented extract from Viscum album L. grown on pines induces proliferation of lymphocytes from healthy and allergic individuals in vitro. *Eur J Clin Pharmacol*. 1994;47(1):33-8.
 20. Hajto T. Immunomodulatory effects of iscador: a Viscum album preparation. *Oncology*. 1986;43 Suppl 1:51-65.
 21. Hajto T, Lanzrein C. Natural killer and antibody-dependent cell-mediated cytotoxicity activities and large granular lymphocyte frequencies in Viscum album-treated breast cancer patients. *Oncology*. 1986;43(2):93-7.

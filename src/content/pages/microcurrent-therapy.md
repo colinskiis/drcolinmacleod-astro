@@ -1,6 +1,6 @@
 ---
 title: "Microcurrent Therapy"
-description: "Microcurrent therapy uses low-amplitude electricity to promote healing, reduce pain, and preserve muscle function. Effective for wounds, arthritis, and fibromyalgia."
+description: "Microcurrent therapy uses low-amplitude electricity to promote healing, reduce pain and preserve muscle function. Effective for wounds, arthritis and fibromyalgia."
 seo:
   focusKeyword: "microcurrent therapy"
 ---
@@ -73,7 +73,7 @@ If you are interested in receiving microcurrent treatment please contact Dr. Col
 26. Rockstroh G, Schleicher W, Krummenauer F. Der Nutzen der während einer stationären Anschlussheilbehandlung applizierten Mikrostromtherapie bei Patienten nach Implantation einer Knie-Totalendoprothese - eine randomisierte, klinische Studie [Effectiveness of microcurrent therapy as a constituent of post-hospital rehabilitative treatment in patients after total knee alloarthroplasty - a randomized clinical trial]. Rehabilitation (Stuttg). 2010 Jun;49(3):173-9. German.
 27. El-Husseini T, El-Kawy S, Shalaby H, El-Sebai M. Microcurrent skin patches for postoperative pain control in total knee arthroplasty: a pilot study. Int Orthop. 2007 Apr;31(2):229-33. doi: 10.1007/s00264-006-0149-0.
 28. Sarhan TM, Doghem MA. Effect of microcurrent skin patch on the epidural fentanyl requirements for post operative pain relief of total hip arthroplasty. Middle East J Anaesthesiol. 2009 Oct;20(3):411-5.
-29. Yi D, Lim H, Yim J. Effect of Microcurrent Stimulation on Pain, Shoulder Function, and Grip Strength in Early Post-Operative Phase after Rotator Cuff Repair. Medicina (Kaunas). 2021 May 13;57(5):491.
+29. Yi D, Lim H, Yim J. Effect of Microcurrent Stimulation on Pain, Shoulder Function and Grip Strength in Early Post-Operative Phase after Rotator Cuff Repair. Medicina (Kaunas). 2021 May 13;57(5):491.
 30. Taylor AG, Anderson JG, Riedel SL, et al. Cranial electrical stimulation improves symptoms and functional status in individuals with fibromyalgia. Pain Manag Nurs. 2013 Dec;14(4):327-335.
 31. Taylor AG, Anderson JG, Riedel SL, et al. A randomized, controlled, double-blind pilot study of the effects of cranial electrical stimulation on activity in brain pain processing regions in individuals with fibromyalgia. Explore (NY). 2013 Jan-Feb;9(1):32-40.
 32. Toth MJ, Tourville TW, Voigt TB, et al. Utility of Neuromuscular Electrical Stimulation to Preserve Quadriceps Muscle Fiber Size and Contractility After Anterior Cruciate Ligament Injuries and Reconstruction: A Randomized, Sham-Controlled, Blinded Trial. Am J Sports Med. 2020 Aug;48(10):2429-2437.

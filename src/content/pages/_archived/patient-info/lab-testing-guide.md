@@ -35,7 +35,7 @@ Some tests require a 12-hour fast for accurate results. If your requisition indi
 
 ## Hormone Testing
 
-Hormone levels fluctuate based on time of day, menstrual cycle, and other factors. Timing matters for accurate results.
+Hormone levels fluctuate based on time of day, menstrual cycle and other factors. Timing matters for accurate results.
 
 **For menstruating women:**
 - Progesterone: Test on days 19-21 of your cycle (about 7 days after ovulation)

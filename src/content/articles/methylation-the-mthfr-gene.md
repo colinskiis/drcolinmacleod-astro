@@ -1,6 +1,6 @@
 ---
 title: "MTHFR Gene Testing: What You Actually Need to Know"
-description: "MTHFR gene variants are common and often overhyped on social media. Learn when genetic testing is helpful, when it isn't, and what evidence-based medicine says about methylation."
+description: "MTHFR gene variants are common and often overhyped on social media. Learn when genetic testing is helpful, when it isn't and what evidence-based medicine says about methylation."
 publishDate: 2015-07-07
 modifiedDate: 2026-01-09
 author: "Dr. Colin MacLeod ND"
@@ -8,7 +8,7 @@ heroImage: "/images/charts/methylation-mthfr-brain-mind.webp"
 categories: ["Naturopathic"]
 tags: ["naturopathic", "genetic testing", "methylation"]
 seo:
-  description: "Evidence-based guide to MTHFR gene testing. Learn when genetic testing is helpful, when it isn't, and what the research actually shows about methylation."
+  description: "Evidence-based guide to MTHFR gene testing. Learn when genetic testing is helpful, when it isn't and what the research actually shows about methylation."
   focusKeyword: "MTHFR gene testing"
 ---
 
@@ -18,7 +18,7 @@ If you've spent any time on TikTok or Instagram, you've probably seen influencer
 
 ## What Is the MTHFR Gene?
 
-The MTHFR gene provides instructions for producing the methylenetetrahydrofolate reductase enzyme. This enzyme plays a key role in processing folate (vitamin B9) and is involved in the methylation cycle, a biochemical process that affects DNA repair, neurotransmitter production, and detoxification.
+The MTHFR gene provides instructions for producing the methylenetetrahydrofolate reductase enzyme. This enzyme plays a key role in processing folate (vitamin B9) and is involved in the methylation cycle, a biochemical process that affects DNA repair, neurotransmitter production and detoxification.
 
 ## What Is Methylation?
 
@@ -26,7 +26,7 @@ Methylation is the attachment of a methyl group (one carbon, three hydrogen atom
 
 - Turning gene expression on and off as needed<sup>1</sup>
 - Protecting DNA from damage<sup>2,3,4</sup>
-- Recycling neurotransmitters including serotonin, melatonin, and epinephrine
+- Recycling neurotransmitters including serotonin, melatonin and epinephrine
 - Building immune cells, including natural killer cells<sup>5</sup>
 - Maintaining the protective myelin coating on nerve cells<sup>6</sup>
 
@@ -49,7 +49,7 @@ Why would these organizations recommend against testing for something that affec
 
 ## The Better First Step: Homocysteine Testing
 
-If the concern is whether your methylation pathways are functioning properly, there's a simpler, cheaper, and more clinically useful test: measuring homocysteine levels in your blood.
+If the concern is whether your methylation pathways are functioning properly, there's a simpler, cheaper and more clinically useful test: measuring homocysteine levels in your blood.
 
 Homocysteine is an amino acid that accumulates when methylation isn't working well. Here's the practical approach:
 
@@ -71,10 +71,10 @@ There are specific situations where genetic testing for MTHFR can provide useful
 
 While MTHFR variants get most of the attention, methylation can be affected by several factors:
 
-- **Nutrient deficiencies**: Folate, zinc, vitamin B2, B6, B12, magnesium, or cysteine
+- **Nutrient deficiencies**: Folate, zinc, vitamin B2, B6, B12, magnesium or cysteine
 - **Environmental toxins**: Heavy metals, particularly lead<sup>7</sup>
-- **Certain medications**: Including alcohol<sup>8</sup>, nitrous oxide<sup>9</sup>, and proton pump inhibitors (antacids)<sup>10</sup>
-- **Other genetic variants**: Including GSTM1, PEMT, MAT, GAMT, and CBS
+- **Certain medications**: Including alcohol<sup>8</sup>, nitrous oxide<sup>9</sup> and proton pump inhibitors (antacids)<sup>10</sup>
+- **Other genetic variants**: Including GSTM1, PEMT, MAT, GAMT and CBS
 
 ## Supporting Healthy Methylation
 
@@ -102,7 +102,7 @@ If you're concerned about methylation, start with a homocysteine blood test. If 
 
 ## Methylation and Genetic Testing in Halifax
 
-If you have questions about methylation, homocysteine levels, or whether genetic testing might be appropriate for your situation, please contact Dr. Colin MacLeod ND to book an initial visit. Dr. MacLeod offers comprehensive [lab testing services](/lab-testing) and can help you navigate this topic with an evidence-based approach. Dr. MacLeod has completed formal training with Dr. Ben Lynch ND, an expert in the field of methylation.
+If you have questions about methylation, homocysteine levels or whether genetic testing might be appropriate for your situation, please contact Dr. Colin MacLeod ND to book an initial visit. Dr. MacLeod offers comprehensive [lab testing services](/lab-testing) and can help you navigate this topic with an evidence-based approach. Dr. MacLeod has completed formal training with Dr. Ben Lynch ND, an expert in the field of methylation.
 
 ### References
 

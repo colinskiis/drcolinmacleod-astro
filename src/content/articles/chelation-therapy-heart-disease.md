@@ -1,6 +1,6 @@
 ---
 title: "Chelation Therapy for Heart Disease: The TACT Trial and Beyond"
-description: "EDTA chelation therapy has been studied in major NIH-funded trials for cardiovascular disease. Learn about the TACT study results, how chelation may benefit heart health, and what this means for Nova Scotians."
+description: "EDTA chelation therapy has been studied in major NIH-funded trials for cardiovascular disease. Learn about the TACT study results, how chelation may benefit heart health and what this means for Nova Scotians."
 publishDate: 2024-04-14
 modifiedDate: 2024-12-04
 author: "Dr. Colin MacLeod ND"
@@ -8,7 +8,7 @@ heroImage: "/images/conditions/chelation-heart-disease.webp"
 categories: ["Naturopathic", "Heart Health"]
 tags: ["chelation", "cardiovascular", "TACT trial", "heart disease"]
 seo:
-  description: "Explore the science behind EDTA chelation therapy for heart disease, including NIH-funded TACT trial results, mechanisms of action, and treatment options in Halifax, Nova Scotia."
+  description: "Explore the science behind EDTA chelation therapy for heart disease, including NIH-funded TACT trial results, mechanisms of action and treatment options in Halifax, Nova Scotia."
   focusKeyword: "chelation therapy heart disease"
 ---
 
@@ -21,7 +21,7 @@ The Trial to Assess Chelation Therapy (TACT) was a groundbreaking $30 million st
 ### Study Design
 
 Participants were randomly assigned to receive either:
-- **Active treatment**: 40 infusions of a chelation solution containing 3 grams of disodium EDTA, 7 grams of ascorbic acid, 2 grams of magnesium chloride, and other components
+- **Active treatment**: 40 infusions of a chelation solution containing 3 grams of disodium EDTA, 7 grams of ascorbic acid, 2 grams of magnesium chloride and other components
 - **Placebo**: An identical-appearing infusion without the active chelating agent
 
 The study followed patients for up to 5 years, tracking major cardiovascular events including death, heart attack, stroke, coronary revascularization and hospitalization for angina.<sup>4</sup>
@@ -98,7 +98,7 @@ Nova Scotians face particular cardiovascular health challenges. The province has
 
 Common sources of toxic metal exposure vary by metal type. Lead exposure typically comes from older home plumbing (especially pre-1950s homes), lead paint in homes built before 1978, contaminated drinking water, certain occupational settings and some imported goods and cosmetics.
 
-Cadmium exposure occurs primarily through cigarette smoke, but also through contaminated foods such as leafy vegetables and grains, occupational exposure in manufacturing, and some jewelry and pottery glazes.
+Cadmium exposure occurs primarily through cigarette smoke, but also through contaminated foods such as leafy vegetables and grains, occupational exposure in manufacturing and some jewelry and pottery glazes.
 
 Arsenic exposure sources include contaminated well water, some rice products, treated lumber (older pressure-treated wood) and certain occupational settings.
 
@@ -116,7 +116,7 @@ For optimal cardiovascular benefit, most patients receive 15-25 infusions, typic
 
 ### Expected Improvements
 
-Patients may experience reduced chest pain (angina), improved circulation to extremities, increased energy and exercise tolerance, and better overall cardiovascular function.
+Patients may experience reduced chest pain (angina), improved circulation to extremities, increased energy and exercise tolerance and better overall cardiovascular function.
 
 ### Important Precautions
 
@@ -132,11 +132,11 @@ Patients may experience reduced chest pain (angina), improved circulation to ext
 
 When administered by properly trained practitioners following established protocols, EDTA chelation therapy has an excellent safety record. The TACT trial, which provided over 55,000 infusions, confirmed the safety of this approach with no serious adverse events related to chelation.<sup>4</sup>
 
-Common temporary effects may include mild fatigue during or after treatment, a temporary drop in blood pressure, or a burning sensation at the IV site (usually related to infusion rate). These effects are generally manageable and resolve quickly.
+Common temporary effects may include mild fatigue during or after treatment, a temporary drop in blood pressure or a burning sensation at the IV site (usually related to infusion rate). These effects are generally manageable and resolve quickly.
 
 ## Who May Benefit from Chelation?
 
-Based on current evidence, chelation therapy for cardiovascular health may be most appropriate for individuals with documented heavy metal exposure or elevated levels, those with coronary artery disease seeking complementary approaches, patients who have had a heart attack (particularly those with diabetes), people with peripheral artery disease, and those with cardiovascular risk factors who want a comprehensive approach to heart health.
+Based on current evidence, chelation therapy for cardiovascular health may be most appropriate for individuals with documented heavy metal exposure or elevated levels, those with coronary artery disease seeking complementary approaches, patients who have had a heart attack (particularly those with diabetes), people with peripheral artery disease and those with cardiovascular risk factors who want a comprehensive approach to heart health.
 
 ## Chelation Therapy in Halifax
 
@@ -174,19 +174,19 @@ Testing options include blood tests for recent exposure and provoked urine chall
 8. Lamas GA, Bhatnagar A, Jones MR, et al. Contaminant Metals as Cardiovascular Risk Factors: A Scientific Statement From the American Heart Association. J Am Heart Assoc. 2023;12(13):e029852.
 9. Navas-Acien A, Guallar E, Silbergeld EK, Rothenberg SJ. Lead exposure and cardiovascular disease: a systematic review. Environ Health Perspect. 2007;115(3):472-82.
 10. Menke A, Muntner P, Batuman V, et al. Blood lead below 0.48 micromol/L (10 microg/dL) and mortality among US adults. Circulation. 2006;114(13):1388-94.
-11. Navas-Acien A, Selvin E, Sharrett AR, et al. Lead, cadmium, smoking, and increased risk of peripheral arterial disease. Circulation. 2004;109(25):3196-201.
+11. Navas-Acien A, Selvin E, Sharrett AR, et al. Lead, cadmium, smoking and increased risk of peripheral arterial disease. Circulation. 2004;109(25):3196-201.
 12. Lanphear BP, Rauch S, Auinger P, et al. Low-level lead exposure and mortality in US adults: a population-based cohort study. Lancet Public Health. 2018;3(4):e177-e184.
 13. Chowdhury R, Ramond A, O'Keeffe LM, et al. Environmental toxic metal contaminants and risk of cardiovascular disease: systematic review and meta-analysis. BMJ. 2018;362:k3310.
 14. Flora SJ, Pachauri V. Chelation in metal intoxication. Int J Environ Res Public Health. 2010;7(7):2745-88.
 15. Jomova K, Valko M. Advances in metal-induced oxidative stress and human disease. Toxicology. 2011;283(2-3):65-87.
-16. Cranton EM, Brecher A. Bypassing Bypass Surgery: Chelation Therapy: A Non-surgical Treatment for Reversing Arteriosclerosis, Improving Blocked Circulation, and Slowing the Aging Process. Hampton Roads Publishing; 2001.
+16. Cranton EM, Brecher A. Bypassing Bypass Surgery: Chelation Therapy: A Non-surgical Treatment for Reversing Arteriosclerosis, Improving Blocked Circulation and Slowing the Aging Process. Hampton Roads Publishing; 2001.
 17. Vaziri ND. Mechanisms of lead-induced hypertension and cardiovascular disease. Am J Physiol Heart Circ Physiol. 2008;295(2):H454-65.
 18. Ibad A, Khalid A, Ghaloo SK, et al. Chelation Therapy in Patients With Cardiovascular Disease: A Systematic Review. J Am Heart Assoc. 2022;11(5):e024648.
 19. Lamas GA, Anstrom KJ, Navas-Acien A, et al. The Trial to Assess Chelation Therapy 2 (TACT2): Rationale and design. Am Heart J. 2022;252:1-11.
 20. American College of Cardiology. TACT2: Chelation Therapy Does Not Improve Post-MI Outcomes in Patients With DM. ACC.org. 2024.
 21. Kalra S, Kim V, Lee J, et al. Exposure to Lead and Coronary Artery Atherosclerosis: A Swedish Cross-Sectional Population-Based Study. J Am Heart Assoc. 2024;13:e037633.
 22. Nawrot TS, Staessen JA, Roels HA, et al. Cadmium exposure in the population: from health risks to strategies of prevention. Biometals. 2010;23(5):769-82.
-23. Weisskopf MG, Jain N, Nie H, et al. A prospective study of bone lead concentration and death from all causes, cardiovascular diseases, and cancer in the Department of Veterans Affairs Normative Aging Study. Circulation. 2009;120(12):1056-64.
+23. Weisskopf MG, Jain N, Nie H, et al. A prospective study of bone lead concentration and death from all causes, cardiovascular diseases and cancer in the Department of Veterans Affairs Normative Aging Study. Circulation. 2009;120(12):1056-64.
 24. Ma Y, Liu Y, Wu H, et al. Cadmium exposure and cardiovascular disease risk: A systematic review and dose-response meta-analysis. Environ Pollut. 2024;343:123163.
 25. Tellez-Plaza M, Guallar E, Howard BV, et al. Cadmium exposure and incident cardiovascular disease. Epidemiology. 2013;24(3):421-9.
 26. Peters JL, Kubzansky L, McNeely E, et al. Stress as a potential modifier of the impact of lead levels on blood pressure: the normative aging study. Environ Health Perspect. 2007;115(8):1154-9.

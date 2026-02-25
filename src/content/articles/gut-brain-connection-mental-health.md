@@ -1,6 +1,6 @@
 ---
 title: "The Gut-Brain Connection: How Your Digestive System Affects Mental Health"
-description: "The gut-brain axis is revolutionizing our understanding of mental health. Learn how your gut microbiome influences mood, anxiety, and cognitive function."
+description: "The gut-brain axis is revolutionizing our understanding of mental health. Learn how your gut microbiome influences mood, anxiety and cognitive function."
 publishDate: 2024-10-31
 modifiedDate: 2026-01-09
 author: "Dr. Colin MacLeod ND"
@@ -20,7 +20,7 @@ But the connection between gut and brain goes far deeper than metaphor. Research
 
 ## How the Gut and Brain Communicate
 
-The gut and brain are in constant conversation through multiple pathways, including the vagus nerve, the microbiome, the immune system, and the endocrine system.
+The gut and brain are in constant conversation through multiple pathways, including the vagus nerve, the microbiome, the immune system and the endocrine system.
 
 ### The Vagus Nerve
 
@@ -28,7 +28,7 @@ The vagus nerve is a major highway between the gut and brain, transmitting signa
 
 ### The Microbiome
 
-Your gut houses trillions of bacteria, viruses, and fungi collectively known as the microbiome. These organisms produce neurotransmitters including serotonin, dopamine, and GABA. They manufacture vitamins and other compounds, influence inflammation throughout the body, interact with the immune system, and generate metabolites that affect brain function.
+Your gut houses trillions of bacteria, viruses and fungi collectively known as the microbiome. These organisms produce neurotransmitters including serotonin, dopamine and GABA. They manufacture vitamins and other compounds, influence inflammation throughout the body, interact with the immune system and generate metabolites that affect brain function.
 
 ### The Immune System
 
@@ -36,7 +36,7 @@ Approximately 70% of your immune system resides in your gut<sup>1</sup>. Gut bac
 
 ### The Endocrine System
 
-Gut bacteria influence hormone production and metabolism, including stress hormones like cortisol. The gut also produces hormones that affect appetite, satiety, and metabolism.
+Gut bacteria influence hormone production and metabolism, including stress hormones like cortisol. The gut also produces hormones that affect appetite, satiety and metabolism.
 
 ## Serotonin: A Surprising Gut Story
 
@@ -44,7 +44,7 @@ Here's a striking fact: approximately 95% of your body's serotonin is produced i
 
 Serotonin is famous as a "happy chemical" and is what SSRI antidepressants work to increase. Yet the vast majority is made by specialized cells in your digestive tract called enterochromaffin cells.
 
-While gut serotonin doesn't directly enter the brain because it can't cross the blood-brain barrier, it regulates gut motility and function, influences the gut-brain signaling, and may affect brain serotonin production indirectly.
+While gut serotonin doesn't directly enter the brain because it can't cross the blood-brain barrier, it regulates gut motility and function, influences the gut-brain signaling and may affect brain serotonin production indirectly.
 
 This helps explain why digestive symptoms are so common in people with mood disorders and why improving gut health sometimes improves mood.
 
@@ -72,11 +72,11 @@ Emerging research suggests gut bacteria may influence cognitive function, with p
 
 It's important to understand that the gut-brain connection works both ways.
 
-When signals travel from gut to brain, gut bacteria produce neurotransmitters and metabolites, gut inflammation can trigger brain inflammation, and vagal nerve signals influence mood and cognition.
+When signals travel from gut to brain, gut bacteria produce neurotransmitters and metabolites, gut inflammation can trigger brain inflammation and vagal nerve signals influence mood and cognition.
 
-When signals travel from brain to gut, psychological stress alters gut motility and secretion, stress hormones change the gut environment, emotional states affect which foods we crave, and stress can alter microbiome composition directly.
+When signals travel from brain to gut, psychological stress alters gut motility and secretion, stress hormones change the gut environment, emotional states affect which foods we crave and stress can alter microbiome composition directly.
 
-This bidirectionality means that gut problems can cause or worsen mental health symptoms, mental health problems can cause or worsen gut symptoms, and addressing one often helps the other.
+This bidirectionality means that gut problems can cause or worsen mental health symptoms, mental health problems can cause or worsen gut symptoms and addressing one often helps the other.
 
 ## Practical Implications: Supporting the Gut-Brain Axis
 
@@ -86,7 +86,7 @@ While the research is still evolving, several evidence-based strategies support 
 
 Diet is the primary modulator of gut bacteria composition.
 
-Several types of foods are beneficial for gut-brain health. Fiber-rich foods like vegetables, fruits, whole grains, and legumes feed beneficial bacteria. Fermented foods such as yogurt, kefir, sauerkraut, and kimchi provide beneficial bacteria directly. Omega-3 fatty acids found in fatty fish may reduce inflammation and support the microbiome. Polyphenol-rich foods including colorful fruits and vegetables, tea, and coffee support bacterial diversity.
+Several types of foods are beneficial for gut-brain health. Fiber-rich foods like vegetables, fruits, whole grains and legumes feed beneficial bacteria. Fermented foods such as yogurt, kefir, sauerkraut and kimchi provide beneficial bacteria directly. Omega-3 fatty acids found in fatty fish may reduce inflammation and support the microbiome. Polyphenol-rich foods including colorful fruits and vegetables, tea and coffee support bacterial diversity.
 
 On the other hand, certain dietary patterns can be harmful. Highly processed foods may promote inflammatory gut bacteria. Excessive sugar can feed less beneficial bacterial species. Artificial sweeteners may disrupt microbiome composition. Low fiber intake starves beneficial bacteria.
 
@@ -114,9 +114,9 @@ Comprehensive stool testing can help identify these issues.
 
 While the gut-brain research is exciting, some important caveats apply.
 
-Regarding correlation versus causation, we don't yet know whether gut changes cause mental health conditions or result from them, or both. The relationship is complex.
+Regarding correlation versus causation, we don't yet know whether gut changes cause mental health conditions or result from them or both. The relationship is complex.
 
-It's also important to understand that gut interventions are not a replacement for mental health treatment. They complement but don't replace therapy, medication, or other evidence-based mental health treatments.
+It's also important to understand that gut interventions are not a replacement for mental health treatment. They complement but don't replace therapy, medication or other evidence-based mental health treatments.
 
 Individual variation matters as well. What works for one person's microbiome may not work for another. Personalized approaches are often necessary.
 
@@ -124,9 +124,9 @@ Finally, this is an evolving science. This field is developing rapidly. What we 
 
 ## The Integrative Approach
 
-The gut-brain connection highlights why treating the whole person matters. Mental health isn't just "in your head" but is influenced by diet, gut health, inflammation, hormones, and more.
+The gut-brain connection highlights why treating the whole person matters. Mental health isn't just "in your head" but is influenced by diet, gut health, inflammation, hormones and more.
 
-An integrative approach might include dietary optimization for gut-brain health, addressing identified gut dysfunction, stress management and nervous system support, appropriate supplementation such as probiotics and omega-3s, conventional mental health treatment as indicated, and lifestyle factors including sleep, exercise, and social connection.
+An integrative approach might include dietary optimization for gut-brain health, addressing identified gut dysfunction, stress management and nervous system support, appropriate supplementation such as probiotics and omega-3s, conventional mental health treatment as indicated and lifestyle factors including sleep, exercise and social connection.
 
 ## Gut-Brain Support in Halifax
 

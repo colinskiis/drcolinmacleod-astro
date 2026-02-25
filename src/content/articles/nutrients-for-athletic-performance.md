@@ -97,4 +97,4 @@ If you are interested in receiving nutrient infusion treatments and are located 
 4. Volpe S. Vitamins, minerals and exercise. In: Dunford M, editor. Sports Nutrition: A Practice Manual for Professionals. Chicago (IL): American Dietetic Association; 2006. p. 61-3.
 5. Montain S, Cheuvront S, Lukaski H. Sweat mineral-element responses during 7 h of exercise-heat stress. *Int J Sport Nutr Exerc Metab*. 2007 Dec;17(6):574-82.
 6. Woolf K, St Thomas M, Hahn N, Vaughan L, Carlson A, Hinton P. Iron status in highly active and sedentary young women. *Int J Sport Nutr Exerc Metab*. 2009 Oct;19(5):519-35.
-7. Manore M. Effect of physical activity on thiamine, riboflavin, and vitamin B-6 requirements. *Am J Clin Nutr*. 2000 Aug;72(2 Suppl):598S-606S.
+7. Manore M. Effect of physical activity on thiamine, riboflavin and vitamin B-6 requirements. *Am J Clin Nutr*. 2000 Aug;72(2 Suppl):598S-606S.

@@ -1,6 +1,6 @@
 ---
 title: "Neural Prolotherapy & Pain"
-description: "Neural prolotherapy uses shallow dextrose injections to reduce nerve inflammation and pain. Effective for frozen shoulder, sciatica, plantar fasciitis, and more."
+description: "Neural prolotherapy uses shallow dextrose injections to reduce nerve inflammation and pain. Effective for frozen shoulder, sciatica, plantar fasciitis and more."
 seo:
   focusKeyword: "neural prolotherapy"
 ---
@@ -49,7 +49,7 @@ Typically patients will need 5-8 treatments, at a rate of one treatment per week
 
 ## Has Neural Prolotherapy Been Researched?
 
-The research on neural prolotherapy is still in its infancy. One Korean clinical trial<sup>3</sup> found that injections with 5% dextrose were effective for reducing pain associated with myofascial trigger points when compared with saline or 0.5% lidocaine. Most research in this area has been performed on classic prolotherapy, which uses higher concentrations of dextrose (12.5-50%) in order to reduce pain and promote ligament repair. The available research on prolotherapy shows positive results for conditions including Osgood-Schlatter disease, lateral epicondylosis, and chronic musculoskeletal pain<sup>4,5,6</sup>.
+The research on neural prolotherapy is still in its infancy. One Korean clinical trial<sup>3</sup> found that injections with 5% dextrose were effective for reducing pain associated with myofascial trigger points when compared with saline or 0.5% lidocaine. Most research in this area has been performed on classic prolotherapy, which uses higher concentrations of dextrose (12.5-50%) in order to reduce pain and promote ligament repair. The available research on prolotherapy shows positive results for conditions including Osgood-Schlatter disease, lateral epicondylosis and chronic musculoskeletal pain<sup>4,5,6</sup>.
 
 ## Neural Prolotherapy in Halifax
 
@@ -59,7 +59,7 @@ If you are interested in having neural prolotherapy treatment and are in the Hal
 
 1. Caterina MJ, Schumacher MA, Tominaga M, Rosen TA, Levine JD, Julius D. The Capsaicin receptor: A heat-activated ion channel in the pain pathway. Nature 1997; 389:816-824
 2. Magdesian MH, Sanchez FS, Lopez M, Thostrup P, Durisic N, Belkaid W, Liazoghli D, Grütter P, Colman DR. Atomic force microscopy reveals important differences in axonal resistance to injury. Biophys J. 2012 Aug 8;103(3):405-14.
-3. Kim MY, Na YM, Moon JH. Comparison on Treatment Effects of Dextrose Water, Saline, and Lidocaine for Trigger Point Injection. J Korean Acad Rehabil Med. 1997 Oct;21(5):967-973.
+3. Kim MY, Na YM, Moon JH. Comparison on Treatment Effects of Dextrose Water, Saline and Lidocaine for Trigger Point Injection. J Korean Acad Rehabil Med. 1997 Oct;21(5):967-973.
 4. Topol GA, Podesta LA, Reeves KD, Raya MF, Fullerton BD, Yeh HW. Hyperosmolar dextrose injection for recalcitrant Osgood-Schlatter disease. Pediatrics. 2011 Nov;128(5):e1121-8.
 5. Scarpone M, Rabago DP, Zgierska A, Arbogast G, Snell E. The efficacy of prolotherapy for lateral epicondylosis: a pilot study. Clin J Sport Med. 2008 May;18(3):248-54.
 6. Distel LM, Best TM. Prolotherapy: a clinical review of its role in treating chronic musculoskeletal pain. PM R. 2011 Jun;3(6 Suppl 1):S78-81.

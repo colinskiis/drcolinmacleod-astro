@@ -1,6 +1,6 @@
 ---
 title: "Frozen Shoulder"
-description: "Frozen shoulder causes pain and stiffness with limited range of motion. Learn about symptoms, stages, and natural treatments including prolotherapy."
+description: "Frozen shoulder causes pain and stiffness with limited range of motion. Learn about symptoms, stages and natural treatments including prolotherapy."
 seo:
   focusKeyword: "frozen shoulder treatment"
 ---

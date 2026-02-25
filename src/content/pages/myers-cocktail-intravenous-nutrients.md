@@ -33,7 +33,7 @@ Each nutrient in the Myers' Cocktail serves a specific purpose. Here's what you'
 <div style="flex-shrink: 0; width: 48px; height: 48px; background: linear-gradient(135deg, #065f46 0%, #047857 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">Mg</div>
 <div>
 
-**The Relaxation Mineral**: Essential for over 300 enzymatic reactions in the body. Supports muscle relaxation, blood vessel dilation, and nerve function. Many Nova Scotians are deficient in magnesium<sup>3</sup>, contributing to muscle tension, migraines, and cardiovascular issues<sup>4,7</sup>.
+**The Relaxation Mineral**: Essential for over 300 enzymatic reactions in the body. Supports muscle relaxation, blood vessel dilation and nerve function. Many Nova Scotians are deficient in magnesium<sup>3</sup>, contributing to muscle tension, migraines and cardiovascular issues<sup>4,7</sup>.
 </div>
 </div>
 
@@ -42,7 +42,7 @@ Each nutrient in the Myers' Cocktail serves a specific purpose. Here's what you'
 <div style="flex-shrink: 0; width: 48px; height: 48px; background: linear-gradient(135deg, #065f46 0%, #047857 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">B</div>
 <div>
 
-**The Energy Complex**: Six essential B vitamins work together to convert food into cellular energy, support nervous system function, and maintain mental clarity. Critical for anyone experiencing fatigue or brain fog.
+**The Energy Complex**: Six essential B vitamins work together to convert food into cellular energy, support nervous system function and maintain mental clarity. Critical for anyone experiencing fatigue or brain fog.
 </div>
 </div>
 
@@ -53,7 +53,7 @@ Each nutrient in the Myers' Cocktail serves a specific purpose. Here's what you'
 | **B3 (Niacin)** | Hormone balance (testosterone, estrogen) |
 | **B5 (Pantothenic Acid)** | Adrenal support and tissue repair |
 | **B6 (Pyridoxine)** | Mental clarity and neurotransmitter synthesis |
-| **B12 (Cobalamin)** | Energy, mood, and nervous system health |
+| **B12 (Cobalamin)** | Energy, mood and nervous system health |
 
 ### Vitamin C
 <div style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1rem;">
@@ -69,7 +69,7 @@ Each nutrient in the Myers' Cocktail serves a specific purpose. Here's what you'
 <div style="flex-shrink: 0; width: 48px; height: 48px; background: linear-gradient(135deg, #065f46 0%, #047857 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">Ca</div>
 <div>
 
-**The Structural Support**: Beyond bone health, calcium is essential for muscle contraction, nerve transmission, and heart rhythm. Works synergistically with magnesium for optimal effect.
+**The Structural Support**: Beyond bone health, calcium is essential for muscle contraction, nerve transmission and heart rhythm. Works synergistically with magnesium for optimal effect.
 </div>
 </div>
 
@@ -79,7 +79,7 @@ Each nutrient in the Myers' Cocktail serves a specific purpose. Here's what you'
 
 The Myers' Cocktail works by increasing blood concentration of essential vitamins and minerals **beyond what can be achieved through oral supplementation**.
 
-When you take vitamins orally, they must pass through your digestive system where absorption is limited by gut health, enzyme availability, and competition between nutrients. IV administration bypasses these barriers entirely, delivering nutrients directly to your cells.
+When you take vitamins orally, they must pass through your digestive system where absorption is limited by gut health, enzyme availability and competition between nutrients. IV administration bypasses these barriers entirely, delivering nutrients directly to your cells.
 
 > **Example**: Oral vitamin C absorption plateaus at about 200mg; no matter how much more you take, your body can't absorb it. IV vitamin C reaches blood concentrations **50 times higher**<sup>2</sup>, enabling therapeutic effects impossible with oral supplementation.
 
@@ -227,7 +227,7 @@ If you would like the option to receive IV therapy on the same day as your initi
 4. Joosten MM, Gansevoort RT, Mukamal KJ, van der Harst P, Geleijnse JM, Feskens EJ, Navis G, Bakker SJ; for The PREVEND Study Group. Urinary and plasma magnesium and risk of ischemic heart disease. Am J Clin Nutr. 2013 Mar 13.
 5. Samaie A, Asghari N, Ghorbani R, Arda J. Blood Magnesium levels in migraineurs within and between the headache attacks: a case control study. Pan Afr Med J. 2012;11:46.
 6. Kao WH, Folsom AR, Nieto FJ, Mo JP, Watson RL, Brancati FL. Serum and dietary magnesium and the risk for type 2 diabetes mellitus: the Atherosclerosis Risk in Communities Study. Arch Intern Med. 1999 Oct 11;159(18):2151-9.
-7. Kawano Y, Matsuoka H, Takishita S, Omae T. Effects of magnesium supplementation in hypertensive patients: assessment by office, home, and ambulatory blood pressures. Hypertension. 1998 Aug;32(2):260-5.
+7. Kawano Y, Matsuoka H, Takishita S, Omae T. Effects of magnesium supplementation in hypertensive patients: assessment by office, home and ambulatory blood pressures. Hypertension. 1998 Aug;32(2):260-5.
 8. Bigal ME, Bordini CA, Tepper SJ, Speciali JG. Intravenous magnesium sulphate in the acute treatment of migraine without aura and migraine with aura. A randomized, double-blind, placebo-controlled study. Cephalalgia. 2002 Jun;22(5):345-53.
 9. Gyamlani G, Parikh C, Kulkarni AG. Benefits of magnesium in acute myocardial infarction: timing is crucial. Am Heart J. 2000 Apr;139(4):703.
 10. Suh SY, Bae WK, Ahn HY, Choi SE, Jung GC, Yeom CH. Intravenous vitamin C administration reduces fatigue in office workers: a double-blind randomized controlled trial. Nutr J. 2012 Jan 20;11:7.

@@ -5,7 +5,7 @@ description: "Complete guide to prolotherapy treatment with Dr. Colin MacLeod ND
 
 # Prolotherapy Patient Information
 
-Prolotherapy is a proven regenerative injection therapy that stimulates the body's natural healing response to strengthen weakened joints, ligaments, and tendons.
+Prolotherapy is a proven regenerative injection therapy that stimulates the body's natural healing response to strengthen weakened joints, ligaments and tendons.
 
 ## What is Prolotherapy?
 
