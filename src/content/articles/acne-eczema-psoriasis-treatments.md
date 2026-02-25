@@ -7,7 +7,6 @@ author: "Dr. Colin MacLeod ND"
 heroImage: "/images/conditions/acne.webp"
 categories: ["Naturopathic", "Skin Health"]
 tags: ["acne", "eczema", "psoriasis", "skin health", "natural treatment", "Halifax"]
-featured: false
 seo:
   title: "Acne, Eczema & Psoriasis Treatment | Halifax Naturopathic Doctor"
   description: "Comprehensive natural treatment approaches for common skin conditions including acne, eczema, and psoriasis, addressing root causes like gut health, inflammation, and immune function."

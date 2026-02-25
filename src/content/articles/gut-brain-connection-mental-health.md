@@ -7,7 +7,6 @@ author: "Dr. Colin MacLeod ND"
 heroImage: "/images/general/gut-brain-connection.webp"
 categories: ["Naturopathic", "Digestive Health", "Mental Health"]
 tags: ["gut-brain axis", "mental health", "microbiome", "digestive health", "naturopathic"]
-featured: false
 seo:
   description: "Evidence-based guide to the gut-brain connection. Learn how your gut microbiome affects mental health and what you can do to support both."
   focusKeyword: "gut brain connection"

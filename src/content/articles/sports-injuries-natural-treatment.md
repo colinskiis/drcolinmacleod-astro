@@ -6,7 +6,6 @@ modifiedDate: 2024-12-03
 heroImage: "/images/general/sports-injury-treatment.webp"
 categories: ["Pain Management", "Sports Medicine"]
 tags: ["sports injuries", "prolotherapy", "acupuncture", "injury recovery", "naturopathic"]
-featured: false
 seo:
   description: "Naturopathic treatment of sports injuries including prolotherapy, acupuncture, and nutritional support for faster healing."
   focusKeyword: "sports injury natural treatment"

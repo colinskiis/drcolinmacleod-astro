@@ -12,10 +12,6 @@
 
 :root {
   --ink: #0f1b1a;
-  --forest: #0f6f5c;
-  --mint: #9ee0c2;
-  --sand: #f3efe8;
-  --slate: #4c5b59;
 }
 
 
@@ -112,7 +108,7 @@
   }
 
   #site-header.scrolled {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35), 0 1px 0 rgba(255,255,255,0.05);
   }
 }
 

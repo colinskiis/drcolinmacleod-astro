@@ -7,7 +7,6 @@ author: "Dr. Colin MacLeod ND"
 heroImage: "/images/treatments/lead-toxicity2.webp"
 categories: ["Naturopathic"]
 tags: ["naturopathic"]
-featured: false
 seo:
   description: "Lead toxicity is a common disease which can be difficult to recognize. Chelation treatment and lead avoidance are the two essential weapons against lead."
   focusKeyword: "lead"

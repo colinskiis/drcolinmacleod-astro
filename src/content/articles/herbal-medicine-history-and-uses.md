@@ -7,7 +7,6 @@ author: "Dr. Colin MacLeod ND"
 heroImage: "/images/nutrition/herbal-medicine-2.webp"
 categories: ["Naturopathic", "Herbal Medicine"]
 tags: ["herbal medicine", "botanical medicine", "natural remedies", "Halifax"]
-featured: false
 seo:
   title: "Herbal Medicine Guide | Halifax Naturopathic Doctor"
   description: "A comprehensive guide to herbal medicine covering its rich history, scientific basis, evidence-based applications, and safe usage principles."

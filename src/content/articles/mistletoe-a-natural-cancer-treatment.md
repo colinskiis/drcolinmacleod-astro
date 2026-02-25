@@ -7,7 +7,6 @@ author: "Dr. Colin MacLeod ND"
 heroImage: "/images/treatments/mistletoe-viscum-album.webp"
 categories: ["Naturopathic"]
 tags: ["naturopathic"]
-featured: false
 seo:
   description: "Mistletoe extract injections are a natural cancer treatment helpful in improving quality of life and survival in most types of cancer while being very safe."
   focusKeyword: "mistletoe"

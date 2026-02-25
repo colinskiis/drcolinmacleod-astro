@@ -7,7 +7,6 @@ author: "Dr. Colin MacLeod ND"
 heroImage: "/images/nutrition/water-hydration.webp"
 categories: ["Naturopathic", "Nutrition"]
 tags: ["hydration", "electrolytes", "nutrition", "naturopathic"]
-featured: false
 seo:
   description: "Evidence-based guide to electrolytes and hydration. Learn when you actually need electrolyte supplements and whether 'loaded water' lives up to the hype."
   focusKeyword: "electrolytes hydration"

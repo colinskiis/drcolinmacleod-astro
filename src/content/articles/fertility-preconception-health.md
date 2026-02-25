@@ -6,7 +6,6 @@ author: "Dr. Colin MacLeod ND"
 heroImage: "/images/general/fertility-prenatal-nutrition.webp"
 categories: ["Naturopathic", "Women's Health", "Fertility"]
 tags: ["fertility", "preconception", "pregnancy", "women's health", "natural treatment", "Halifax"]
-featured: false
 seo:
   title: "Natural Fertility Support | Halifax Naturopathic Doctor"
   description: "Evidence-based natural approaches to optimize fertility and prepare for a healthy pregnancy, including nutrition, lifestyle, and targeted supplementation."

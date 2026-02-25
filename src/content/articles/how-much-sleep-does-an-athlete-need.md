@@ -6,7 +6,6 @@ modifiedDate: 2022-07-12
 heroImage: "/images/general/athlete-sleep.webp"
 categories: ["Naturopathic"]
 tags: ["naturopathic"]
-featured: false
 seo:
   description: "Nutrition and training are front and centre in the minds of competitive athletes. However sleep is also an essential factor in performance optimization."
   focusKeyword: "Athlete"

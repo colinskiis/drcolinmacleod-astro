@@ -1,0 +1,341 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import BookingButton from '../components/BookingButton.astro';
+import CTAButton from '../components/CTAButton.astro';
+import { FlaskConical, Shield, Activity, Check } from '@lucide/astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
+---
+
+<BaseLayout
+  title="Trace Minerals IV Therapy"
+  description="Trace minerals IV therapy replenishes zinc, selenium, manganese, copper and chromium for optimal enzyme function and metabolic health. Available as an IV booster with Dr. Colin MacLeod ND in Halifax."
+  focusKeyword="trace minerals IV therapy Halifax"
+>
+  <HeroSection
+    title="Trace Minerals IV Therapy"
+    compact
+    image={{ src: "/images/treatments/iv-patient-woman.webp", alt: "Patient receiving IV therapy in Halifax", aspect: "video" }}
+  >
+    <p>Trace minerals — zinc, selenium, manganese, copper and chromium — serve as essential cofactors for hundreds of enzymatic reactions. Even mild deficiencies impair immune function, antioxidant defence and metabolic efficiency.</p>
+  </HeroSection>
+
+  <!-- Three Benefits Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Enzyme Function -->
+        <div class="bg-emerald-700 text-white rounded-2xl p-8 text-center hover:bg-emerald-800 transition-colors">
+          <div class="flex justify-center mb-6">
+            <FlaskConical class="w-16 h-16" stroke-width={1.5} aria-hidden="true" />
+          </div>
+          <h3 class="text-xl font-serif font-semibold mb-3 text-white">Enzyme Function</h3>
+          <p class="text-white/90">Trace minerals activate hundreds of enzymes essential for digestion, detoxification and energy metabolism. Without adequate mineral cofactors, these enzymatic processes slow or fail entirely.</p>
+        </div>
+
+        <!-- Immune & Antioxidant Support -->
+        <div class="bg-emerald-700 text-white rounded-2xl p-8 text-center hover:bg-emerald-800 transition-colors">
+          <div class="flex justify-center mb-6">
+            <Shield class="w-16 h-16" stroke-width={1.5} aria-hidden="true" />
+          </div>
+          <h3 class="text-xl font-serif font-semibold mb-3 text-white">Immune &amp; Antioxidant Support</h3>
+          <p class="text-white/90">Zinc, selenium and copper are critical for immune cell function and antioxidant enzyme activity. Selenium is a core component of glutathione peroxidase — the body's primary antioxidant enzyme.</p>
+        </div>
+
+        <!-- Metabolic Health -->
+        <div class="bg-emerald-700 text-white rounded-2xl p-8 text-center hover:bg-emerald-800 transition-colors">
+          <div class="flex justify-center mb-6">
+            <Activity class="w-16 h-16" stroke-width={1.5} aria-hidden="true" />
+          </div>
+          <h3 class="text-xl font-serif font-semibold mb-3 text-white">Metabolic Health</h3>
+          <p class="text-white/90">Chromium enhances insulin sensitivity and glucose metabolism. Manganese supports bone formation and carbohydrate metabolism. Together, trace minerals underpin metabolic efficiency at the cellular level.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What are Trace Minerals? Section -->
+  <section class="py-16 lg:py-24 bg-emerald-50">
+    <div class="section-shell">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-6">What are Trace Minerals?</h2>
+          <div class="prose prose-lg text-gray-600">
+            <p>
+              Trace minerals are essential minerals required by the body in small (trace) amounts — typically less than 100mg per day. Despite being needed in tiny quantities, they are indispensable for life. They include zinc, selenium, manganese, copper, chromium, molybdenum, and iodine.
+            </p>
+            <p>
+              Modern agriculture, food processing, and soil depletion have dramatically reduced the trace mineral content of food over the past century. Stressful lifestyles, digestive issues, and medications further deplete these essential minerals. The result: widespread subclinical deficiency that standard blood tests rarely detect.
+            </p>
+          </div>
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-xl">
+          <img
+            src="/images/treatments/iv-patient-man.webp"
+            alt="Patient receiving IV therapy treatment"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who Benefits? Section -->
+  <section id="who-benefits" class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Who Benefits From Trace Mineral IV Therapy?</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          Trace mineral IV therapy may help individuals experiencing the following concerns
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-8">
+        <div class="bg-emerald-50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+          <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-6">Immune Concerns</h3>
+          <div class="grid gap-3">
+            {['Frequent infections', 'Slow wound healing', 'Recurrent colds and flus', 'Autoimmune conditions', 'Chronic inflammatory conditions'].map(condition => (
+              <div class="flex items-center">
+                <Check class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" aria-hidden="true" />
+                <span class="text-gray-700">{condition}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div class="bg-emerald-50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+          <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-6">Metabolic Health</h3>
+          <div class="grid gap-3">
+            {['Insulin resistance', 'Blood sugar irregularities', 'Thyroid dysfunction', 'Weight management concerns', 'Energy metabolism issues'].map(condition => (
+              <div class="flex items-center">
+                <Check class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" aria-hidden="true" />
+                <span class="text-gray-700">{condition}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div class="bg-emerald-50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+          <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-6">Antioxidant &amp; Detox</h3>
+          <div class="grid gap-3">
+            {['Oxidative stress', 'Chemical or heavy metal exposure', 'Liver support needs', 'Premature aging', 'Skin and hair concerns'].map(condition => (
+              <div class="flex items-center">
+                <Check class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" aria-hidden="true" />
+                <span class="text-gray-700">{condition}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div class="bg-emerald-50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+          <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-6">General Deficiency</h3>
+          <div class="grid gap-3">
+            {['Vegetarian or vegan diet', 'Malabsorption conditions', 'Post-surgery recovery', 'Chronic stress', 'Restrictive diets'].map(condition => (
+              <div class="flex items-center">
+                <Check class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" aria-hidden="true" />
+                <span class="text-gray-700">{condition}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How Trace Minerals Work Section -->
+  <section id="how-trace-minerals-work" class="py-16 lg:py-24 bg-emerald-950">
+    <div class="section-shell">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-6">How Trace Minerals Work</h2>
+        <div class="prose prose-lg prose-invert">
+          <p class="text-white/90">
+            Each trace mineral serves distinct but overlapping roles. Zinc functions as a structural or catalytic component in over 300 enzymes, playing roles in immune signalling, DNA synthesis, protein folding and wound repair. Selenium is incorporated into selenoproteins — including glutathione peroxidase and thioredoxin reductase — that are central to antioxidant defence and thyroid hormone metabolism.
+          </p>
+          <p class="text-white/90">
+            Copper serves as a cofactor for enzymes involved in iron metabolism, connective tissue synthesis and neurotransmitter production. Manganese activates enzymes for carbohydrate and amino acid metabolism and is required for the mitochondrial superoxide dismutase (SOD2) — a critical antioxidant enzyme. Chromium potentiates insulin action by facilitating glucose uptake into cells.
+          </p>
+          <p class="text-white/90">
+            Because these minerals compete for absorption in the gut, supplementing one orally can deplete others. IV administration bypasses this competition, allowing all minerals to be delivered simultaneously at therapeutic concentrations.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why IV Administration? Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="rounded-2xl overflow-hidden shadow-xl order-2 lg:order-1">
+          <img
+            src="/images/treatments/iv-patient-woman.webp"
+            alt="Patient receiving IV therapy in Halifax"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="order-1 lg:order-2">
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-6">Why IV Administration?</h2>
+          <div class="prose prose-lg text-gray-600">
+            <p>
+              Oral mineral supplements face significant absorption limitations. Competing minerals reduce uptake (zinc competes with copper; copper competes with zinc). High-fibre diets, phytates, and oxalates further bind minerals in the gut and prevent absorption.
+            </p>
+            <p>
+              IV delivery ensures precise dosing of each mineral without competition or digestive interference. All trace minerals are delivered simultaneously, achieving tissue concentrations that oral supplementation cannot reliably produce. Sessions are typically 30–60 minutes when added as a booster.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Getting Started Section -->
+  <section class="py-16 lg:py-24 bg-emerald-50">
+    <div class="section-shell">
+      <div class="grid lg:grid-cols-2 gap-12">
+        <div class="bg-white rounded-3xl shadow-xl p-8 lg:p-10">
+          <h2 class="text-2xl font-serif font-bold text-emerald-950 mb-6">Getting Started with Trace Mineral IV Therapy</h2>
+          <p class="text-gray-600 mb-8">
+            A naturopathic consultation is required before adding trace minerals to your IV regimen. Where appropriate, baseline serum levels of specific minerals (zinc, selenium, copper) can be ordered to guide dosing.
+          </p>
+          <BookingButton variant="secondary" size="lg" fullWidth source="trace-minerals-booking" />
+        </div>
+        <div class="bg-white rounded-3xl shadow-xl p-8 lg:p-10 flex flex-col justify-center">
+          <h2 class="text-2xl font-serif font-bold text-emerald-950 mb-6">What's Included</h2>
+          <ul class="space-y-3">
+            <li class="flex items-center">
+              <Check class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" aria-hidden="true" />
+              <span>Zinc, selenium, manganese, copper and chromium</span>
+            </li>
+            <li class="flex items-center">
+              <Check class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" aria-hidden="true" />
+              <span>Balanced formulation to avoid mineral competition</span>
+            </li>
+            <li class="flex items-center">
+              <Check class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" aria-hidden="true" />
+              <span>30–60 minute booster session</span>
+            </li>
+            <li class="flex items-center">
+              <Check class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" aria-hidden="true" />
+              <span>Can be added to Myers Cocktail or standalone</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What to Expect Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">What to Expect</h2>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl font-bold text-white">1</span>
+            </div>
+            <h3 class="font-semibold text-emerald-950 mb-2">Before Your Infusion</h3>
+            <p class="text-gray-600">No special preparation required. Stay hydrated. Trace minerals can be added to the Myers Cocktail or administered as a standalone booster.</p>
+          </div>
+
+          <div class="text-center">
+            <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl font-bold text-white">2</span>
+            </div>
+            <h3 class="font-semibold text-emerald-950 mb-2">During Your Infusion</h3>
+            <p class="text-gray-600">Sessions last 30–60 minutes as a booster. Trace mineral infusions are generally well-tolerated with few side effects. You may notice a mild metallic taste during the infusion — this is normal.</p>
+          </div>
+
+          <div class="text-center">
+            <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl font-bold text-white">3</span>
+            </div>
+            <h3 class="font-semibold text-emerald-950 mb-2">After Your Infusion</h3>
+            <p class="text-gray-600">Effects are often felt gradually as mineral stores replenish over days to weeks. For best results, trace minerals are typically administered monthly as a maintenance booster following an initial series of treatments.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 lg:py-24 bg-emerald-50">
+    <div class="section-shell">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
+
+        <FAQAccordion items={[
+          { question: "Can I get trace minerals tested before starting IV therapy?", answer: "<p>Yes. We can order specific mineral panels — including zinc, selenium, and copper — through private lab testing before your first infusion. This allows us to tailor the mineral mix to your specific needs and track your progress.</p>" },
+          { question: "Is it safe to receive multiple trace minerals together by IV?", answer: "<p>Yes. Our trace mineral formulation is carefully balanced to avoid the competitive absorption issues seen with oral supplementation. IV delivery ensures each mineral reaches therapeutic tissue levels safely.</p>" },
+          { question: "How does IV trace mineral therapy differ from taking a mineral supplement?", answer: "<p>Oral mineral supplements face significant absorption limitations including gut competition and binding by dietary compounds like phytates. IV delivery achieves tissue concentrations that oral supplementation cannot reliably produce.</p>" },
+          { question: "How often should I receive trace mineral IV therapy?", answer: "<p>Most patients benefit from monthly trace mineral boosters added to regular IV therapy. If initial testing reveals significant deficiency, a more intensive initial series may be recommended.</p>" },
+          { question: "Who should avoid trace mineral IV therapy?", answer: "<p>Patients with Wilson's disease (copper accumulation disorder), haemochromatosis (iron overload), or certain kidney conditions may not be suitable candidates. A thorough health assessment is completed before treatment.</p>" },
+        ]} />
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="py-16 lg:py-24 bg-emerald-950">
+    <div class="section-shell">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-6">Add Trace Minerals to Your IV Treatment</h2>
+        <p class="text-lg text-white/80 mb-8">
+          Book a consultation to discuss whether trace mineral IV therapy is right for you.
+        </p>
+        <CTAButton source="trace-minerals-cta" />
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Schema Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I get trace minerals tested before starting IV therapy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We can order specific mineral panels — including zinc, selenium, and copper — through private lab testing before your first infusion. This allows us to tailor the mineral mix to your specific needs and track your progress."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it safe to receive multiple trace minerals together by IV?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Our trace mineral formulation is carefully balanced to avoid the competitive absorption issues seen with oral supplementation. IV delivery ensures each mineral reaches therapeutic tissue levels safely."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does IV trace mineral therapy differ from taking a mineral supplement?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oral mineral supplements face significant absorption limitations including gut competition and binding by dietary compounds like phytates. IV delivery achieves tissue concentrations that oral supplementation cannot reliably produce."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often should I receive trace mineral IV therapy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most patients benefit from monthly trace mineral boosters added to regular IV therapy. If initial testing reveals significant deficiency, a more intensive initial series may be recommended."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who should avoid trace mineral IV therapy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Patients with Wilson's disease (copper accumulation disorder), haemochromatosis (iron overload), or certain kidney conditions may not be suitable candidates. A thorough health assessment is completed before treatment."
+          }
+        }
+      ]
+    }
+  </script>
+</BaseLayout>

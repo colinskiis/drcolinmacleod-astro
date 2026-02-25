@@ -7,7 +7,6 @@ author: "Dr. Colin MacLeod ND"
 heroImage: "/images/conditions/knee-injury1.webp"
 categories: ["Pain Management", "Naturopathic"]
 tags: ["arthritis", "osteoarthritis", "joint pain", "prolotherapy", "acupuncture", "natural treatment"]
-featured: false
 seo:
   description: "Natural treatments for arthritis in Halifax. Learn why NSAIDs may worsen joint damage and discover effective alternatives including prolotherapy, prolozone, acupuncture, and nutritional support."
   focusKeyword: "natural arthritis treatment"

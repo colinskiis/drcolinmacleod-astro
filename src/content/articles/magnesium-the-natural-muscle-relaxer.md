@@ -7,7 +7,6 @@ author: "Dr. Colin MacLeod ND"
 heroImage: "/images/nutrition/magnesium-muscle-foods.webp"
 categories: ["Naturopathic"]
 tags: ["naturopathic"]
-featured: false
 seo:
   focusKeyword: "magnesium deficiency"
 ---

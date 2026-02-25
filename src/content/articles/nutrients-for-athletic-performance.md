@@ -7,7 +7,6 @@ author: "Dr. Colin MacLeod ND"
 heroImage: "/images/general/hockey-player-performance.webp"
 categories: ["Naturopathic", "Athletic Performance"]
 tags: ["athletic performance", "sports nutrition", "IV therapy", "nutrients", "Halifax"]
-featured: false
 seo:
   description: "For competitive athletes, maximized nutrition, training and rest are essential for performance and health; but perfect nutrient status is rare in athletes."
   focusKeyword: "athletic performance nutrition"

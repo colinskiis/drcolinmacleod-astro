@@ -7,7 +7,6 @@ author: "Dr. Colin MacLeod ND"
 heroImage: "/images/general/weight-management-balance.webp"
 categories: ["Naturopathic", "Weight Management"]
 tags: ["weight loss", "metabolism", "nutrition", "lifestyle", "Halifax"]
-featured: false
 seo:
   title: "Natural Weight Management | Halifax Naturopathic Doctor"
   description: "Evidence-based natural approaches to weight management including metabolic health optimization, appetite regulation, and sustainable lifestyle strategies."

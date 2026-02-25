@@ -6,7 +6,6 @@ author: "Dr. Colin MacLeod ND"
 heroImage: "/images/nutrition/mediterranean-spread.webp"
 categories: ["Naturopathic", "Heart Health"]
 tags: ["blood pressure", "hypertension", "cardiovascular", "heart health", "Halifax", "natural treatment"]
-featured: false
 seo:
   title: "Blood Pressure Natural Strategies | Halifax Naturopathic Doctor"
   description: "Discover evidence-based natural approaches to blood pressure management. Learn how diet, lifestyle, and naturopathic care support cardiovascular health."

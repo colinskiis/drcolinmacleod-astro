@@ -6,7 +6,6 @@ author: "Dr. Colin MacLeod ND"
 heroImage: "/images/general/pcos-hormone-balance.webp"
 categories: ["Naturopathic", "Women's Health", "Hormonal Health"]
 tags: ["PCOS", "women's health", "hormones", "insulin resistance", "natural treatment", "Halifax"]
-featured: false
 seo:
   title: "PCOS Natural Treatment | Halifax Naturopathic Doctor"
   description: "Evidence-based natural approaches to managing PCOS including diet, lifestyle, and targeted supplementation from a Halifax naturopathic doctor."

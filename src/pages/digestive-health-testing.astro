@@ -4,6 +4,7 @@ import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
 import BookingButton from '../components/BookingButton.astro';
 import FAQAccordion from '../components/FAQAccordion.astro';
+import { X, Check } from '@lucide/astro';
 ---
 
 <BaseLayout
@@ -62,36 +63,28 @@ import FAQAccordion from '../components/FAQAccordion.astro';
           <h3 class="text-xl font-semibold text-emerald-950 mb-6">What Standard Testing Misses</h3>
           <div class="grid md:grid-cols-2 gap-6">
             <div class="flex items-start gap-3">
-              <svg class="w-6 h-6 text-red-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-              </svg>
+              <X class="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" aria-hidden="true" />
               <div>
                 <span class="font-medium text-emerald-950">Small intestinal bacterial overgrowth (SIBO)</span>
                 <p class="text-sm text-gray-600">Present in up to 50% of IBS patients, rarely tested</p>
               </div>
             </div>
             <div class="flex items-start gap-3">
-              <svg class="w-6 h-6 text-red-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-              </svg>
+              <X class="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" aria-hidden="true" />
               <div>
                 <span class="font-medium text-emerald-950">Gut microbiome imbalances</span>
                 <p class="text-sm text-gray-600">Dysbiosis, parasites and opportunistic organisms</p>
               </div>
             </div>
             <div class="flex items-start gap-3">
-              <svg class="w-6 h-6 text-red-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-              </svg>
+              <X class="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" aria-hidden="true" />
               <div>
                 <span class="font-medium text-emerald-950">Food sensitivities (IgG)</span>
                 <p class="text-sm text-gray-600">Delayed reactions that are impossible to identify by symptoms alone</p>
               </div>
             </div>
             <div class="flex items-start gap-3">
-              <svg class="w-6 h-6 text-red-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-              </svg>
+              <X class="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" aria-hidden="true" />
               <div>
                 <span class="font-medium text-emerald-950">Digestive enzyme deficiency</span>
                 <p class="text-sm text-gray-600">Low pancreatic elastase means poor breakdown of food</p>
@@ -272,7 +265,7 @@ import FAQAccordion from '../components/FAQAccordion.astro';
           <ul class="space-y-2">
             {['Chronic bloating or gas', 'Constipation, diarrhea or alternating both', 'Abdominal pain or cramping', 'Acid reflux or heartburn', 'Nausea after eating', 'Undigested food in stool'].map(symptom => (
               <li class="flex items-center gap-2 text-gray-700">
-                <svg class="w-4 h-4 text-blue-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
+                <Check class="w-4 h-4 text-emerald-600 flex-shrink-0" aria-hidden="true" />
                 {symptom}
               </li>
             ))}
@@ -284,7 +277,7 @@ import FAQAccordion from '../components/FAQAccordion.astro';
           <ul class="space-y-2">
             {['Skin issues (eczema, acne, rashes)', 'Brain fog and fatigue after meals', 'Anxiety or mood changes', 'Joint pain or body aches', 'Frequent colds or infections', 'IBS diagnosis without clear answers'].map(symptom => (
               <li class="flex items-center gap-2 text-gray-700">
-                <svg class="w-4 h-4 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
+                <Check class="w-4 h-4 text-emerald-600 flex-shrink-0" aria-hidden="true" />
                 {symptom}
               </li>
             ))}

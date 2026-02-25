@@ -6,7 +6,6 @@ modifiedDate: 2022-07-12
 heroImage: "/images/reference/services/acupuncture.webp"
 categories: ["Naturopathic"]
 tags: ["naturopathic"]
-featured: false
 seo:
   focusKeyword: "quit smoking acupuncture"
 ---

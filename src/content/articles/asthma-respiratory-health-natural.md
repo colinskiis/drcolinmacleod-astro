@@ -6,7 +6,6 @@ author: "Dr. Colin MacLeod ND"
 heroImage: "/images/general/respiratory-health-lungs.webp"
 categories: ["Naturopathic", "Respiratory Health"]
 tags: ["asthma", "respiratory health", "allergies", "inflammation", "natural treatment", "Halifax"]
-featured: false
 seo:
   title: "Natural Asthma Treatment | Halifax Naturopathic Doctor"
   description: "Evidence-based natural approaches to supporting respiratory health, managing asthma triggers, and reducing inflammation for easier breathing."

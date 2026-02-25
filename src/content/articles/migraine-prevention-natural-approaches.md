@@ -6,7 +6,6 @@ author: "Dr. Colin MacLeod ND"
 heroImage: "/images/general/peaceful-sleep-migraine.webp"
 categories: ["Naturopathic", "Pain Management"]
 tags: ["migraine", "headache", "pain", "natural treatment", "Halifax", "prevention"]
-featured: false
 seo:
   title: "Migraine Prevention Natural Approaches | Halifax ND"
   description: "Discover evidence-based natural approaches to migraine prevention. Learn about triggers, dietary factors, lifestyle changes, and how naturopathic medicine can help reduce migraine frequency."

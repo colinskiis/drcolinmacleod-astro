@@ -6,7 +6,6 @@ author: "Dr. Colin MacLeod ND"
 heroImage: "/images/general/yoga-stretching-pms.webp"
 categories: ["Naturopathic", "Hormones"]
 tags: ["PMS", "hormones", "women's health", "menstrual health", "Halifax", "natural treatment"]
-featured: false
 seo:
   title: "PMS and Hormonal Balance | Halifax Naturopathic Doctor"
   description: "Understand the hormonal shifts behind PMS and learn evidence-based natural approaches to support menstrual health, mood, and overall hormonal balance."

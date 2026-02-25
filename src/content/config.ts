@@ -12,7 +12,6 @@ const articles = defineCollection({
     heroImage: z.string().optional(),
     categories: z.array(z.string()).default([]),
     tags: z.array(z.string()).default([]),
-    featured: z.boolean().default(false),
     seo: z.object({
       title: z.string().optional(),
       description: z.string().optional(),

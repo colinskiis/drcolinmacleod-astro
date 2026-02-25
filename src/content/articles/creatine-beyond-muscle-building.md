@@ -7,7 +7,6 @@ author: "Dr. Colin MacLeod ND"
 heroImage: "/images/nutrition/creatine-brain-muscle.webp"
 categories: ["Naturopathic", "Sports Medicine"]
 tags: ["creatine", "brain health", "women's health", "supplements", "naturopathic"]
-featured: false
 seo:
   description: "Evidence-based guide to creatine benefits beyond muscle. Learn about creatine for brain health, cognitive function, women's health, and menopause."
   focusKeyword: "creatine benefits"

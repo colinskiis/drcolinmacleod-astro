@@ -7,7 +7,6 @@ author: "Dr. Colin MacLeod ND"
 heroImage: "/images/nutrition/fruits-vegetables.webp"
 categories: ["Naturopathic", "Nutrition", "Digestive Health"]
 tags: ["fiber", "gut health", "nutrition", "digestive health", "naturopathic"]
-featured: false
 seo:
   description: "Evidence-based guide to dietary fiber. Learn why 95% of people don't get enough fiber and how this simple nutrient supports gut health, weight management, and disease prevention."
   focusKeyword: "dietary fiber benefits"

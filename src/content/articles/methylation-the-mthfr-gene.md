@@ -7,7 +7,6 @@ author: "Dr. Colin MacLeod ND"
 heroImage: "/images/charts/methylation-mthfr-brain-mind.webp"
 categories: ["Naturopathic"]
 tags: ["naturopathic", "genetic testing", "methylation"]
-featured: false
 seo:
   description: "Evidence-based guide to MTHFR gene testing. Learn when genetic testing is helpful, when it isn't, and what the research actually shows about methylation."
   focusKeyword: "MTHFR gene testing"

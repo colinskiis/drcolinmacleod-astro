@@ -6,7 +6,6 @@ author: "Dr. Colin MacLeod ND"
 heroImage: "/images/general/meditation-forest-anxiety.webp"
 categories: ["Naturopathic", "Mental Health"]
 tags: ["anxiety", "stress", "mental health", "natural treatment", "Halifax"]
-featured: false
 seo:
   title: "Natural Anxiety Management | Halifax Naturopathic Doctor"
   description: "Discover evidence-based natural approaches to anxiety management including lifestyle, nutrition, and nervous system support from a Halifax naturopathic doctor."

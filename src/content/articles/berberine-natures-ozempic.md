@@ -7,7 +7,6 @@ author: "Dr. Colin MacLeod ND"
 heroImage: "/images/treatments/berberine-blood-sugar.webp"
 categories: ["Naturopathic", "Herbal Medicine"]
 tags: ["berberine", "blood sugar", "weight loss", "metabolic health", "naturopathic"]
-featured: true
 seo:
   description: "Evidence-based guide to berberine. Learn what the research shows about berberine for blood sugar, weight loss, and whether it really is 'nature's Ozempic.'"
   focusKeyword: "berberine benefits"

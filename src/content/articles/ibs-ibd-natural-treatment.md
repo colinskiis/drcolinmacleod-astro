@@ -6,7 +6,6 @@ author: "Dr. Colin MacLeod ND"
 heroImage: "/images/general/gut-health-probiotics.webp"
 categories: ["Naturopathic", "Digestive Health"]
 tags: ["IBS", "IBD", "digestive health", "gut health", "natural treatment", "Halifax"]
-featured: false
 seo:
   title: "IBS and IBD Natural Treatment | Halifax Naturopathic Doctor"
   description: "Understanding the differences between IBS and IBD, and evidence-based natural approaches to managing these common digestive conditions."

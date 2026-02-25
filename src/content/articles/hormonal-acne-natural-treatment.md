@@ -6,7 +6,6 @@ author: "Dr. Colin MacLeod ND"
 heroImage: "/images/general/healthy-lifestyle.webp"
 categories: ["Naturopathic", "Women's Health", "Skin Health"]
 tags: ["acne", "hormones", "skin health", "natural treatment", "women's health", "Halifax"]
-featured: false
 seo:
   title: "Hormonal Acne Natural Treatment | Halifax Naturopathic Doctor"
   description: "Learn about the root causes of hormonal acne and evidence-based natural approaches to clearing skin from the inside out."

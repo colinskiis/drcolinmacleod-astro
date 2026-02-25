@@ -6,7 +6,6 @@ author: "Dr. Colin MacLeod ND"
 heroImage: "/images/nutrition/balanced-plate-diabetes.webp"
 categories: ["Naturopathic", "Nutrition"]
 tags: ["diabetes", "blood sugar", "insulin resistance", "prediabetes", "Halifax", "prevention"]
-featured: false
 seo:
   title: "Diabetes Prevention Blood Sugar Balance | Halifax ND"
   description: "Learn evidence-based natural strategies for preventing type 2 diabetes and maintaining healthy blood sugar. Naturopathic approaches to metabolic health in Halifax."

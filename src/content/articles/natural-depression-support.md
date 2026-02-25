@@ -6,7 +6,6 @@ author: "Dr. Colin MacLeod ND"
 heroImage: "/images/general/coastal-hiking-depression.webp"
 categories: ["Naturopathic", "Mental Health"]
 tags: ["depression", "mental health", "mood", "natural treatment", "Halifax"]
-featured: false
 seo:
   title: "Natural Depression Support | Halifax Naturopathic Doctor"
   description: "Evidence-based natural approaches to supporting mental health and mood. Learn how nutrition, lifestyle, and naturopathic care can complement depression treatment."

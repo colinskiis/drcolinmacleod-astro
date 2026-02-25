@@ -6,7 +6,6 @@ author: "Dr. Colin MacLeod ND"
 heroImage: "/images/general/autoimmune-balance.webp"
 categories: ["Naturopathic", "Immune Health"]
 tags: ["autoimmune", "immune system", "inflammation", "natural treatment", "Halifax"]
-featured: false
 seo:
   title: "Autoimmune Conditions Naturopathic Approach | Halifax ND"
   description: "Explore how naturopathic medicine addresses autoimmune conditions through gut health, diet, and lifestyle alongside conventional care for better outcomes."

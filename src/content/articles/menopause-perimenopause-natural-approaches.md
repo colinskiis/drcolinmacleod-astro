@@ -6,7 +6,6 @@ author: "Dr. Colin MacLeod ND"
 heroImage: "/images/general/menopause-woman.webp"
 categories: ["Naturopathic", "Hormones"]
 tags: ["menopause", "perimenopause", "hormones", "women's health", "Halifax", "natural treatment"]
-featured: false
 seo:
   title: "Menopause and Perimenopause: Natural Approaches | Halifax ND"
   description: "Learn how naturopathic medicine supports women through perimenopause and menopause with evidence-based natural approaches including nutrition, lifestyle, and herbal therapies."

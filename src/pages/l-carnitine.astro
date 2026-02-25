@@ -1,0 +1,328 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import CTAButton from '../components/CTAButton.astro';
+import BookingButton from '../components/BookingButton.astro';
+import { Flame, Heart, Dumbbell, Check } from '@lucide/astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
+---
+
+<BaseLayout
+  title="L-Carnitine IV Therapy"
+  description="L-Carnitine IV therapy supports fat metabolism, cardiovascular health and athletic recovery. Add L-Carnitine to your IV drip with Dr. Colin MacLeod ND in Halifax, Nova Scotia."
+  focusKeyword="L-Carnitine IV therapy Halifax"
+>
+  <HeroSection
+    title="L-Carnitine IV Therapy"
+    compact
+    image={{ src: "/images/treatments/iv-patient-woman.webp", alt: "Patient receiving IV therapy in Halifax", aspect: "video" }}
+  >
+    <p>L-Carnitine is an amino acid that plays a central role in energy production by transporting fatty acids into the mitochondria where they are burned for fuel. IV delivery ensures optimal absorption and immediate cellular availability.</p>
+  </HeroSection>
+
+  <!-- Three Benefits Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Fat Metabolism -->
+        <div class="bg-emerald-700 text-white rounded-2xl p-8 text-center hover:bg-emerald-800 transition-colors">
+          <div class="flex justify-center mb-6">
+            <Flame class="w-16 h-16" stroke-width={1.5} aria-hidden="true" />
+          </div>
+          <h3 class="text-xl font-serif font-semibold mb-3 text-white">Fat Metabolism</h3>
+          <p class="text-white/90">L-Carnitine transports long-chain fatty acids into mitochondria for energy production. Without adequate L-Carnitine, fatty acids cannot enter the mitochondria and accumulate in tissues.</p>
+        </div>
+
+        <!-- Cardiovascular Support -->
+        <div class="bg-emerald-700 text-white rounded-2xl p-8 text-center hover:bg-emerald-800 transition-colors">
+          <div class="flex justify-center mb-6">
+            <Heart class="w-16 h-16" stroke-width={1.5} aria-hidden="true" />
+          </div>
+          <h3 class="text-xl font-serif font-semibold mb-3 text-white">Cardiovascular Support</h3>
+          <p class="text-white/90">L-Carnitine supports heart muscle function by ensuring cardiac cells have access to fatty acid fuel. Research shows L-Carnitine improves outcomes in heart failure and angina.</p>
+        </div>
+
+        <!-- Athletic Recovery -->
+        <div class="bg-emerald-700 text-white rounded-2xl p-8 text-center hover:bg-emerald-800 transition-colors">
+          <div class="flex justify-center mb-6">
+            <Dumbbell class="w-16 h-16" stroke-width={1.5} aria-hidden="true" />
+          </div>
+          <h3 class="text-xl font-serif font-semibold mb-3 text-white">Athletic Recovery</h3>
+          <p class="text-white/90">Athletes use L-Carnitine to reduce exercise-induced muscle damage, decrease lactic acid accumulation and accelerate post-exercise recovery.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What is L-Carnitine? Section -->
+  <section class="py-16 lg:py-24 bg-emerald-50">
+    <div class="section-shell">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-6">What is L-Carnitine?</h2>
+          <div class="prose prose-lg text-gray-600">
+            <p>
+              L-Carnitine (levocarnitine) is a naturally occurring amino acid derivative synthesized primarily in the liver and kidneys from lysine and methionine. It is concentrated in tissues with high energy demand — particularly the heart and skeletal muscle.
+            </p>
+            <p>
+              Despite being synthesized endogenously, many people have suboptimal L-Carnitine levels due to poor diet (vegetarians/vegans are at particular risk), genetic factors, certain medications, or increased metabolic demand. IV administration bypasses digestive absorption limitations and delivers therapeutic amounts directly to tissues.
+            </p>
+          </div>
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-xl">
+          <img
+            src="/images/treatments/iv-patient-man.webp"
+            alt="Patient receiving IV therapy treatment"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who Benefits? Section -->
+  <section id="who-benefits" class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Who Benefits From L-Carnitine?</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          L-Carnitine IV therapy may help individuals experiencing the following conditions
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-12 items-start">
+        <div class="bg-emerald-50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+          <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-6">Energy &amp; Fatigue</h3>
+          <div class="grid gap-3">
+            {['Chronic fatigue', 'Low energy despite adequate sleep', 'Post-viral fatigue', 'Muscle weakness', 'Poor exercise tolerance'].map(condition => (
+              <div class="flex items-center">
+                <Check class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" aria-hidden="true" />
+                <span class="text-gray-700">{condition}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div class="bg-emerald-50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+          <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-6">Cardiovascular</h3>
+          <div class="grid gap-3">
+            {['Heart failure support', 'Angina', 'Peripheral artery disease', 'Cardiac recovery', 'Metabolic syndrome'].map(condition => (
+              <div class="flex items-center">
+                <Check class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" aria-hidden="true" />
+                <span class="text-gray-700">{condition}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div class="bg-emerald-50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+          <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-6">Athletic Performance</h3>
+          <div class="grid gap-3">
+            {['Enhanced fat burning', 'Faster recovery', 'Reduced muscle soreness', 'Improved exercise capacity', 'Lactic acid clearance'].map(condition => (
+              <div class="flex items-center">
+                <Check class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" aria-hidden="true" />
+                <span class="text-gray-700">{condition}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div class="bg-emerald-50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+          <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-6">Metabolic Health</h3>
+          <div class="grid gap-3">
+            {['Weight management support', 'Insulin resistance', 'Type 2 diabetes support', 'Non-alcoholic fatty liver disease', 'Vegetarian/vegan deficiency'].map(condition => (
+              <div class="flex items-center">
+                <Check class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" aria-hidden="true" />
+                <span class="text-gray-700">{condition}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How L-Carnitine Works Section -->
+  <section id="how-l-carnitine-works" class="py-16 lg:py-24 bg-emerald-950">
+    <div class="section-shell">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-6">How L-Carnitine Works</h2>
+        <div class="prose prose-lg prose-invert">
+          <p class="text-white/90">
+            L-Carnitine functions as a molecular shuttle, binding to long-chain fatty acids and transporting them across the inner mitochondrial membrane — a barrier that fatty acids cannot cross unassisted. Once inside the mitochondria, these fatty acids undergo beta-oxidation to generate ATP.
+          </p>
+          <p class="text-white/90">
+            This transport function is rate-limiting for fat metabolism. When L-Carnitine is deficient, fatty acid oxidation slows, energy production falls, and fatty acids accumulate in tissues including the liver and muscle. Restoring L-Carnitine levels reactivates this metabolic pathway.
+          </p>
+          <p class="text-white/90">
+            Beyond energy metabolism, L-Carnitine plays roles in clearing toxic metabolites from the mitochondria, modulating gene expression related to fatty acid oxidation, and protecting against oxidative stress.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why IV Administration? Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="rounded-2xl overflow-hidden shadow-xl order-2 lg:order-1">
+          <img
+            src="/images/treatments/iv-patient-woman.webp"
+            alt="Patient receiving IV therapy in Halifax"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="order-1 lg:order-2">
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-6">Why IV Administration?</h2>
+          <div class="prose prose-lg text-gray-600">
+            <p>
+              Oral L-Carnitine has approximately 15–20% bioavailability — the majority is broken down by intestinal bacteria or metabolized during first-pass hepatic processing. IV delivery bypasses these limitations entirely, achieving serum concentrations up to 10 times higher than equivalent oral doses.
+            </p>
+            <p>
+              IV administration is particularly valuable for clinical applications where therapeutic tissue concentrations are required — such as cardiac support, fatty liver, or severe deficiency states. Sessions are typically 30–60 minutes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Getting Started Section -->
+  <section class="py-16 lg:py-24 bg-emerald-50">
+    <div class="section-shell">
+      <div class="grid lg:grid-cols-2 gap-12">
+        <div>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-6">Getting Started</h2>
+          <div class="prose prose-lg text-gray-600">
+            <p>
+              A naturopathic consultation is required before adding L-Carnitine to your IV regimen. This allows us to assess your health history, review relevant lab work and determine the appropriate dose and frequency for your needs.
+            </p>
+          </div>
+        </div>
+        <div class="bg-white rounded-3xl shadow-xl p-8 lg:p-10 flex flex-col justify-center">
+          <h3 class="text-2xl font-serif font-bold text-emerald-950 mb-6">Book a Consultation</h3>
+          <p class="text-gray-600 mb-8">
+            Ready to add L-Carnitine to your IV treatment plan? Book your naturopathic consultation with Dr. Colin MacLeod ND in Halifax.
+          </p>
+          <BookingButton variant="secondary" size="lg" fullWidth source="l-carnitine-booking" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What to Expect Section -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="section-shell">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">What to Expect</h2>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl font-bold text-white">1</span>
+            </div>
+            <h3 class="font-semibold text-emerald-950 mb-2">Before Your Infusion</h3>
+            <p class="text-gray-600">Stay well hydrated. No special fasting required. Wear comfortable clothing with easy arm access.</p>
+          </div>
+
+          <div class="text-center">
+            <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl font-bold text-white">2</span>
+            </div>
+            <h3 class="font-semibold text-emerald-950 mb-2">During Your Infusion</h3>
+            <p class="text-gray-600">Sessions last 30–60 minutes. L-Carnitine is generally well-tolerated. You may notice a mild sensation of warmth or a slight fish-like odour at high doses — both are harmless.</p>
+          </div>
+
+          <div class="text-center">
+            <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl font-bold text-white">3</span>
+            </div>
+            <h3 class="font-semibold text-emerald-950 mb-2">After Your Infusion</h3>
+            <p class="text-gray-600">Energy improvements are often felt within hours to days. For best results, L-Carnitine is frequently added as a booster to the Myers Cocktail or administered as a standalone infusion in a series of 4–6 treatments.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 lg:py-24 bg-emerald-50">
+    <div class="section-shell">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
+
+        <FAQAccordion items={[
+          { question: "Is L-Carnitine appropriate as an add-on to the Myers Cocktail?", answer: "<p>Yes. L-Carnitine is one of our most popular IV boosters and pairs well with the Myers Cocktail. Adding L-Carnitine enhances the energy-supporting properties of the infusion, particularly for fatigue and athletic recovery.</p>" },
+          { question: "How does IV L-Carnitine differ from oral supplements?", answer: "<p>Oral L-Carnitine supplements have approximately 15–20% bioavailability. IV delivery achieves serum concentrations up to 10 times higher, making it significantly more effective for clinical applications.</p>" },
+          { question: "Is L-Carnitine safe?", answer: "<p>L-Carnitine has an excellent safety profile and has been used clinically for decades. IV administration is well-tolerated. At higher doses, a mild fish-like odour may occur transiently — this is harmless.</p>" },
+          { question: "Who should avoid L-Carnitine IV therapy?", answer: "<p>L-Carnitine therapy may not be appropriate for individuals with hypothyroidism (untreated), seizure disorders, or those taking certain medications including blood thinners. A health assessment is completed before treatment.</p>" },
+          { question: "How often should I receive L-Carnitine IV therapy?", answer: "<p>Frequency depends on your health goals. For athletic performance, monthly sessions are common. For fatigue or cardiovascular support, an initial series of 4–6 weekly sessions followed by monthly maintenance is typical.</p>" },
+        ]} />
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="py-16 lg:py-24 bg-emerald-950">
+    <div class="section-shell">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-6">Add L-Carnitine to Your IV Treatment</h2>
+        <p class="text-lg text-white/80 mb-10">
+          Book a consultation to discuss whether L-Carnitine IV therapy is right for you.
+        </p>
+        <CTAButton source="l-carnitine-cta" />
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Schema Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is L-Carnitine appropriate as an add-on to the Myers Cocktail?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. L-Carnitine is one of our most popular IV boosters and pairs well with the Myers Cocktail. Adding L-Carnitine enhances the energy-supporting properties of the infusion, particularly for fatigue and athletic recovery."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does IV L-Carnitine differ from oral supplements?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oral L-Carnitine supplements have approximately 15-20% bioavailability. IV delivery achieves serum concentrations up to 10 times higher, making it significantly more effective for clinical applications."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is L-Carnitine safe?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "L-Carnitine has an excellent safety profile and has been used clinically for decades. IV administration is well-tolerated. At higher doses, a mild fish-like odour may occur transiently — this is harmless."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who should avoid L-Carnitine IV therapy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "L-Carnitine therapy may not be appropriate for individuals with hypothyroidism (untreated), seizure disorders, or those taking certain medications including blood thinners. A health assessment is completed before treatment."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often should I receive L-Carnitine IV therapy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Frequency depends on your health goals. For athletic performance, monthly sessions are common. For fatigue or cardiovascular support, an initial series of 4-6 weekly sessions followed by monthly maintenance is typical."
+          }
+        }
+      ]
+    }
+  </script>
+</BaseLayout>

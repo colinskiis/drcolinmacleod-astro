@@ -7,7 +7,6 @@ author: "Dr. Colin MacLeod ND"
 heroImage: "/images/general/immune-health.webp"
 categories: ["Naturopathic", "Immune Health"]
 tags: ["immune system", "vitamin D", "IV therapy", "naturopathic"]
-featured: false
 seo:
   description: "Natural approaches to immune health including key nutrients, lifestyle factors, and IV therapy for optimal immune function."
   focusKeyword: "natural immune support"

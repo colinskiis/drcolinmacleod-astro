@@ -7,7 +7,6 @@ author: "Dr. Colin MacLeod ND"
 heroImage: "/images/general/digestive-health.webp"
 categories: ["Naturopathic", "Digestive Health"]
 tags: ["digestive health", "IBS", "SIBO", "gut health", "naturopathic"]
-featured: false
 seo:
   description: "Naturopathic treatments for digestive issues including IBS, SIBO, food sensitivities, and gut microbiome imbalances."
   focusKeyword: "digestive health naturopathic"

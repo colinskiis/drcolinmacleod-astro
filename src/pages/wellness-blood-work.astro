@@ -4,6 +4,7 @@ import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
 import BookingButton from '../components/BookingButton.astro';
 import FAQAccordion from '../components/FAQAccordion.astro';
+import { X, Check } from '@lucide/astro';
 ---
 
 <BaseLayout
@@ -62,36 +63,28 @@ import FAQAccordion from '../components/FAQAccordion.astro';
           <h3 class="text-xl font-semibold text-emerald-950 mb-6">What Standard Screening Misses</h3>
           <div class="grid md:grid-cols-2 gap-6">
             <div class="flex items-start gap-3">
-              <svg class="w-6 h-6 text-red-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-              </svg>
+              <X class="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" aria-hidden="true" />
               <div>
                 <span class="font-medium text-emerald-950">Early insulin resistance</span>
                 <p class="text-sm text-gray-600">Fasting glucose stays normal until the problem is advanced</p>
               </div>
             </div>
             <div class="flex items-start gap-3">
-              <svg class="w-6 h-6 text-red-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-              </svg>
+              <X class="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" aria-hidden="true" />
               <div>
                 <span class="font-medium text-emerald-950">Silent inflammation</span>
                 <p class="text-sm text-gray-600">hs-CRP reveals cardiovascular and systemic inflammation risk</p>
               </div>
             </div>
             <div class="flex items-start gap-3">
-              <svg class="w-6 h-6 text-red-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-              </svg>
+              <X class="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" aria-hidden="true" />
               <div>
                 <span class="font-medium text-emerald-950">Liver stress</span>
                 <p class="text-sm text-gray-600">Fatty liver disease is often undetected until significant damage</p>
               </div>
             </div>
             <div class="flex items-start gap-3">
-              <svg class="w-6 h-6 text-red-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-              </svg>
+              <X class="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" aria-hidden="true" />
               <div>
                 <span class="font-medium text-emerald-950">Optimal vs. normal ranges</span>
                 <p class="text-sm text-gray-600">"Normal" results may still indicate early dysfunction</p>
@@ -272,7 +265,7 @@ import FAQAccordion from '../components/FAQAccordion.astro';
           <ul class="space-y-2">
             {['Persistent fatigue or low energy', 'Unexplained weight gain or loss', 'Brain fog or poor concentration', 'Frequent infections or slow recovery', 'Joint pain or muscle aches'].map(symptom => (
               <li class="flex items-center gap-2 text-gray-700">
-                <svg class="w-4 h-4 text-blue-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
+                <Check class="w-4 h-4 text-emerald-600 flex-shrink-0" aria-hidden="true" />
                 {symptom}
               </li>
             ))}
@@ -284,7 +277,7 @@ import FAQAccordion from '../components/FAQAccordion.astro';
           <ul class="space-y-2">
             {['No blood work in 2+ years', 'Family history of chronic disease', 'Sedentary lifestyle or high stress', 'Digestive issues or poor appetite', 'Taking medications that affect blood markers', 'Over 40 without recent comprehensive screening'].map(symptom => (
               <li class="flex items-center gap-2 text-gray-700">
-                <svg class="w-4 h-4 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/></svg>
+                <Check class="w-4 h-4 text-emerald-600 flex-shrink-0" aria-hidden="true" />
                 {symptom}
               </li>
             ))}

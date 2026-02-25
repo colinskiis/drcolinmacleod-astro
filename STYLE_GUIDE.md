@@ -29,8 +29,10 @@ This document defines the visual and code standards for the website. The homepag
 | `white` | `#ffffff` | Card backgrounds, body sections |
 | `cream` | `#FDFBF7` | Warm section backgrounds |
 | `stone-100` | `#f5f5f4` | Services grid background |
-| `gray-600` / `slate-600` | `#4b5563` / `#475569` | Body text |
-| `gray-700` / `slate-700` | `#374151` / `#334155` | Secondary text |
+| `gray-600` | `#4b5563` | Body text (preferred) |
+| `slate-600` | `#475569` | Body text (acceptable — visually identical to gray-600) |
+| `gray-700` | `#374151` | Secondary text (preferred) |
+| `slate-700` | `#334155` | Secondary text (acceptable) |
 
 ### CSS Custom Properties (global.css)
 ```css
@@ -206,34 +208,46 @@ Used for benefits/highlights:
 
 ## Button Styles
 
-### Primary Button (Green)
-```html
-<a class="bg-emerald-700 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-emerald-800 transition-colors shadow-lg inline-flex items-center">
-  Book Online
-  <Calendar class="w-5 h-5 ml-2" />
-</a>
+### BookingButton Component (preferred for all booking CTAs)
+`BookingButton` handles the JaneApp link, GA tracking, and all variants. Always use this instead of raw `<a>` tags for booking.
+
+```astro
+import BookingButton from '../components/BookingButton.astro';
+
+<!-- Hero CTA (white solid button on dark background) -->
+<BookingButton text="Book Online" variant="hero" size="lg" source="hero" />
+
+<!-- Primary (frosted glass, for dark section backgrounds) -->
+<BookingButton text="Book Online" variant="primary" source="section-name" />
+
+<!-- Secondary (dark green solid, for light backgrounds) -->
+<BookingButton text="Book Online" variant="secondary" source="section-name" />
+
+<!-- Outline (transparent with dark border) -->
+<BookingButton text="Book Online" variant="outline" source="section-name" />
+
+<!-- Full width -->
+<BookingButton text="Book Online" fullWidth source="section-name" />
 ```
 
-### Secondary Button (White on Dark)
-```html
-<a class="bg-white text-emerald-950 px-10 py-4 rounded-full text-lg font-semibold hover:bg-emerald-50 transition-colors shadow-xl inline-flex items-center">
-  Book Online
-</a>
+Props: `text` (default "Book Online"), `variant` (primary/secondary/outline/hero), `size` (sm/md/lg), `source` (for GA tracking), `icon` (boolean, default true), `fullWidth` (boolean).
+
+### CTAButton Component (simpler alternative)
+Used in some interior pages. Has fewer variants but accepts a custom `href`.
+
+```astro
+import CTAButton from '../components/CTAButton.astro';
+
+<CTAButton source="about-cta" />                    <!-- primary (white on dark) -->
+<CTAButton variant="secondary" source="cta" />      <!-- secondary (white border) -->
 ```
 
-### Outline Button
+### Pill Link (on dark hero backgrounds)
 ```html
-<a class="border-2 border-emerald-700 text-emerald-700 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-emerald-700 hover:text-white transition-colors">
-  Learn More
-</a>
-```
-
-### Pill Link
-```html
-<a class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 bg-white/5 backdrop-blur-sm text-white text-sm font-medium hover:bg-white/10 hover:border-white/30 transition-all">
-  <Icon class="w-4 h-4 text-emerald-300" />
+<a class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 bg-white/5 backdrop-blur-sm text-white text-sm font-medium hover:bg-white/10 hover:border-white/30 transition-all group">
+  <Icon class="w-4 h-4 text-emerald-300" aria-hidden="true" />
   Label
-  <ChevronRight class="w-3.5 h-3.5 text-emerald-400" />
+  <ChevronRight class="w-3.5 h-3.5 text-emerald-400 group-hover:translate-x-0.5 transition-transform" aria-hidden="true" />
 </a>
 ```
 
@@ -241,8 +255,27 @@ Used for benefits/highlights:
 
 ## Hero Sections
 
-### Standard Hero (with HeroSection component)
+### Homepage Hero (custom, no component)
+The homepage uses a bespoke hero with a `hero-gradient` dark background, ambient blur shapes, a 2-column grid (text left, circular portrait right), and inline `BookingButton`. Do not use `HeroSection` on the homepage.
+
+```html
+<section class="hero-gradient -mt-24 pt-24 relative overflow-hidden">
+  <div class="section-shell py-20 lg:py-24 relative z-10">
+    <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+      <!-- Left: heading, tagline, BookingButton, pill links -->
+      <!-- Right: circular portrait image -->
+    </div>
+  </div>
+</section>
+```
+
+### Interior Page Hero (HeroSection component)
+All non-homepage pages use `<HeroSection>` from `src/components/HeroSection.astro`:
+
 ```astro
+import HeroSection from '../components/HeroSection.astro';
+import CTAButton from '../components/CTAButton.astro';
+
 <HeroSection
   title="Page Title"
   image={{ src: "/images/...", alt: "Description" }}
@@ -252,7 +285,7 @@ Used for benefits/highlights:
 </HeroSection>
 ```
 
-### Hero Props
+### HeroSection Props
 - `title` - Page heading (required)
 - `centered` - Center-aligned text layout
 - `compact` - Reduced padding
@@ -437,13 +470,15 @@ focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2
 ## Reference Pages
 
 **Homepage (`src/pages/index.astro`)**
-- Hero with circular portrait
-- Values strip with Lucide icons
-- Services grid with image cards
-- FAQ accordion
+- Custom `hero-gradient` hero (no HeroSection component) with circular portrait
+- Nav hub cards (services, conditions, articles, blood tests)
+- Services grid with image cards (`Service Card` pattern)
+- FAQ accordion using native `<details>`
+- Uses `BookingButton` (not CTAButton)
 
 **About Page (`src/pages/about.astro`)**
-- HeroSection component usage
+- Best reference for `HeroSection` component usage
 - 2-column layout with sidebar
 - Education list with checkmarks
 - Professional details card
+- Uses `CTAButton` for CTA

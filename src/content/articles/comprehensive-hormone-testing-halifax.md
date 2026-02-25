@@ -6,7 +6,6 @@ modifiedDate: 2024-12-06
 heroImage: "/images/lab-testing/hormone-testing-consult.webp"
 categories: ["Lab Testing", "Hormones"]
 tags: ["hormone testing", "Halifax", "Nova Scotia", "cortisol", "testosterone", "estrogen", "DHEA"]
-featured: false
 seo:
   description: "Get comprehensive hormone testing in Halifax without a doctor's requisition. Test estrogen, testosterone, progesterone, cortisol, and DHEA through private lab services."
   focusKeyword: "hormone testing Halifax"

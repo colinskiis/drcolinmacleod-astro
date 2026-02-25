@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
 import FAQAccordion from '../components/FAQAccordion.astro';
+import { X } from '@lucide/astro';
 ---
 
 <BaseLayout
@@ -339,21 +340,15 @@ import FAQAccordion from '../components/FAQAccordion.astro';
             <h3 class="text-lg font-semibold text-emerald-950 mb-4">Contraindications</h3>
             <ul class="space-y-2 text-gray-600 text-sm">
               <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                </svg>
+                <X class="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
                 <span><strong>Prosthetic joint replacement</strong>,cannot inject into a joint with a prosthesis</span>
               </li>
               <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                </svg>
+                <X class="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
                 <span><strong>Active infection</strong> at the injection site</span>
               </li>
               <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                </svg>
+                <X class="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
                 <span><strong>Bleeding disorders</strong> or anticoagulant therapy (discuss during consultation)</span>
               </li>
             </ul>

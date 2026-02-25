@@ -2,7 +2,6 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import BookingButton from '../components/BookingButton.astro';
-import CTAButton from '../components/CTAButton.astro';
 import { CheckCircle2, MapPin, ShieldCheck, Clock, Quote, Stethoscope, TestTubes, ClipboardCheck } from '@lucide/astro';
 ---
 
@@ -265,7 +264,7 @@ import { CheckCircle2, MapPin, ShieldCheck, Clock, Quote, Stethoscope, TestTubes
         Dr. MacLeod is accepting new patients and looks forward to helping you achieve your health goals.
       </p>
       <div class="flex justify-center">
-        <CTAButton source="about-cta" />
+        <BookingButton text="Book Online" source="about-cta" />
       </div>
     </div>
   </section>
