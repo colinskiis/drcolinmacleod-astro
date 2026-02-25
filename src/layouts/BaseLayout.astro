@@ -2,7 +2,6 @@
 import '../styles/global.css';
 import { ClientRouter } from 'astro:transitions';
 import Search from '../components/Search.astro';
-import BookingButton from '../components/BookingButton.astro';
 import MedicalDisclaimer from '../components/MedicalDisclaimer.astro';
 import { Calendar, Menu, X, ChevronRight } from '@lucide/astro';
 
@@ -277,6 +276,7 @@ const articleSchema = articleData ? JSON.stringify({
           <div class="hidden lg:flex items-center justify-center flex-1 gap-8 text-sm font-medium text-white" role="navigation" aria-label="Main navigation">
             <a href="/" class={`hover:text-emerald-200 transition-colors duration-200 pb-1 border-b-2 ${Astro.url.pathname === '/' ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={Astro.url.pathname === '/' ? 'page' : undefined}>Home</a>
             <a href="/about" class={`hover:text-emerald-200 transition-colors duration-200 pb-1 border-b-2 ${Astro.url.pathname.startsWith('/about') ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={Astro.url.pathname.startsWith('/about') ? 'page' : undefined}>About</a>
+            <a href="/new-patients" class={`hover:text-emerald-200 transition-colors duration-200 pb-1 border-b-2 ${Astro.url.pathname.startsWith('/new-patients') ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={Astro.url.pathname.startsWith('/new-patients') ? 'page' : undefined}>New Patients</a>
             <a href="/services" class={`hover:text-emerald-200 transition-colors duration-200 pb-1 border-b-2 ${Astro.url.pathname.startsWith('/services') ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={Astro.url.pathname.startsWith('/services') ? 'page' : undefined}>Services</a>
             <a href="/conditions" class={`hover:text-emerald-200 transition-colors duration-200 pb-1 border-b-2 ${Astro.url.pathname.startsWith('/conditions') ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={Astro.url.pathname.startsWith('/conditions') ? 'page' : undefined}>Conditions</a>
             <a href="/contact" class={`hover:text-emerald-200 transition-colors duration-200 pb-1 border-b-2 ${Astro.url.pathname.startsWith('/contact') ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={Astro.url.pathname.startsWith('/contact') ? 'page' : undefined}>Contact</a>
@@ -313,6 +313,7 @@ const articleSchema = articleData ? JSON.stringify({
           <div class="flex flex-col space-y-1 text-emerald-100 font-semibold">
             <a href="/" class={`hover:text-white hover:bg-emerald-700/20 transition-colors py-4 px-3 text-2xl rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 ${Astro.url.pathname === '/' ? 'text-white bg-emerald-800/30' : ''}`} aria-current={Astro.url.pathname === '/' ? 'page' : undefined}>Home</a>
             <a href="/about" class={`hover:text-white hover:bg-emerald-700/20 transition-colors py-4 px-3 text-2xl rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 ${Astro.url.pathname.startsWith('/about') ? 'text-white bg-emerald-800/30' : ''}`} aria-current={Astro.url.pathname.startsWith('/about') ? 'page' : undefined}>About</a>
+            <a href="/new-patients" class={`hover:text-white hover:bg-emerald-700/20 transition-colors py-4 px-3 text-2xl rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 ${Astro.url.pathname.startsWith('/new-patients') ? 'text-white bg-emerald-800/30' : ''}`} aria-current={Astro.url.pathname.startsWith('/new-patients') ? 'page' : undefined}>New Patients</a>
             <a href="/services" class={`hover:text-white hover:bg-emerald-700/20 transition-colors py-4 px-3 text-2xl rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 ${Astro.url.pathname.startsWith('/services') ? 'text-white bg-emerald-800/30' : ''}`} aria-current={Astro.url.pathname.startsWith('/services') ? 'page' : undefined}>Services</a>
             <a href="/conditions" class={`hover:text-white hover:bg-emerald-700/20 transition-colors py-4 px-3 text-2xl rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 ${Astro.url.pathname.startsWith('/conditions') ? 'text-white bg-emerald-800/30' : ''}`} aria-current={Astro.url.pathname.startsWith('/conditions') ? 'page' : undefined}>Conditions</a>
             <a href="/contact" class={`hover:text-white hover:bg-emerald-700/20 transition-colors py-4 px-3 text-2xl rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 ${Astro.url.pathname.startsWith('/contact') ? 'text-white bg-emerald-800/30' : ''}`} aria-current={Astro.url.pathname.startsWith('/contact') ? 'page' : undefined}>Contact</a>
@@ -459,6 +460,7 @@ const articleSchema = articleData ? JSON.stringify({
         if (!header) return;
 
         function onScroll() {
+          if (!header) return;
           if (window.scrollY > 20) {
             header.classList.add('scrolled');
           } else {

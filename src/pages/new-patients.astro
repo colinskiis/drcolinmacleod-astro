@@ -5,13 +5,33 @@ import BookingButton from '../components/BookingButton.astro';
 ---
 
 <BaseLayout
-  title="Book Online"
-  description="Schedule your naturopathic consultation with Dr. Colin MacLeod in Halifax. Learn what to expect at your first visit and how to prepare."
-  focusKeyword="book naturopathic appointment Halifax"
+  title="New Patients"
+  description="Everything you need to know before your first visit with Dr. Colin MacLeod ND in Halifax. What to expect, what to bring, and how to book your appointment."
+  focusKeyword="new patient naturopathic appointment Halifax"
 >
-  <HeroSection title="Book Online" centered compact>
-    Schedule your consultation with Dr. Colin MacLeod and take the first step toward better health through naturopathic medicine.
+  <HeroSection title="Your First Visit" centered compact>
+    Here's everything you need to know before you come in — what to expect, what to bring, and how to book.
   </HeroSection>
+
+  <!-- How to Book -->
+  <section class="py-16 lg:py-20 bg-emerald-950">
+    <div class="section-shell">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-4">Ready to Book?</h2>
+        <p class="text-lg text-emerald-100 mb-8">Book online anytime through our secure patient portal, or give us a call during office hours.</p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <BookingButton text="Book Online" variant="hero" size="lg" source="new-patients" />
+          <a href="tel:+19024064424" class="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-white/30 text-white hover:bg-white/10 transition-all font-semibold text-base">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+            </svg>
+            (902) 406-4424
+          </a>
+        </div>
+        <p class="text-emerald-300/70 text-sm mt-4">Mon, Wed–Fri: 7:30 AM – 3:30 PM &bull; Optimal Wellbeing Clinic, Halifax</p>
+      </div>
+    </div>
+  </section>
 
   <!-- What to Expect -->
   <section class="py-16 lg:py-24 bg-white">
@@ -22,7 +42,7 @@ import BookingButton from '../components/BookingButton.astro';
           <p class="text-lg text-gray-600">Your first appointment is a comprehensive assessment designed to understand your health fully.</p>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-8 mb-12">
+        <div class="grid md:grid-cols-2 gap-8">
           <!-- Initial Consultation -->
           <div class="bg-emerald-50/50 border border-emerald-100 rounded-2xl p-6">
             <div class="flex items-center mb-4">
@@ -33,7 +53,7 @@ import BookingButton from '../components/BookingButton.astro';
               </div>
               <h3 class="text-xl font-serif font-bold text-emerald-950">Initial Consultation</h3>
             </div>
-            <p class="text-gray-600 mb-4">60 minutes</p>
+            <p class="text-sm font-medium text-emerald-700 mb-3">60 minutes</p>
             <p class="text-gray-700">A thorough assessment of your health history, current concerns, lifestyle, and goals. Dr. MacLeod will take the time to understand your unique situation and develop a personalized treatment plan.</p>
           </div>
 
@@ -47,51 +67,8 @@ import BookingButton from '../components/BookingButton.astro';
               </div>
               <h3 class="text-xl font-serif font-bold text-emerald-950">Follow-up Visits</h3>
             </div>
-            <p class="text-gray-600 mb-4">30 minutes</p>
+            <p class="text-sm font-medium text-emerald-700 mb-3">30 minutes</p>
             <p class="text-gray-700">Subsequent appointments to monitor progress, review lab results, adjust treatments, and address any new concerns. Frequency depends on your individual needs and treatment plan.</p>
-          </div>
-        </div>
-
-        <!-- Treatment Visits -->
-        <div class="bg-white border border-emerald-100 rounded-2xl p-6 mb-12">
-          <h3 class="text-xl font-serif font-bold text-emerald-950 mb-4">Specialized Treatment Appointments</h3>
-          <div class="grid sm:grid-cols-2 gap-4">
-            <div class="flex items-start">
-              <svg class="w-5 h-5 text-emerald-600 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <div>
-                <p class="font-medium text-gray-800">IV Therapy</p>
-                <p class="text-sm text-gray-600">45-90 minutes depending on infusion</p>
-              </div>
-            </div>
-            <div class="flex items-start">
-              <svg class="w-5 h-5 text-emerald-600 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <div>
-                <p class="font-medium text-gray-800">Prolotherapy</p>
-                <p class="text-sm text-gray-600">30-45 minutes per session</p>
-              </div>
-            </div>
-            <div class="flex items-start">
-              <svg class="w-5 h-5 text-emerald-600 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <div>
-                <p class="font-medium text-gray-800">Acupuncture</p>
-                <p class="text-sm text-gray-600">45-60 minutes per session</p>
-              </div>
-            </div>
-            <div class="flex items-start">
-              <svg class="w-5 h-5 text-emerald-600 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <div>
-                <p class="font-medium text-gray-800">Chelation Therapy</p>
-                <p class="text-sm text-gray-600">2-3 hours per session</p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -145,7 +122,7 @@ import BookingButton from '../components/BookingButton.astro';
               </div>
               <div>
                 <h3 class="font-semibold text-gray-800 mb-2">Recent Lab Work</h3>
-                <p class="text-gray-600 text-sm">Bring copies of any recent blood tests, imaging, or diagnostic reports from the past 1-2 years.</p>
+                <p class="text-gray-600 text-sm">Bring copies of any recent blood tests, imaging, or diagnostic reports from the past 1–2 years.</p>
               </div>
             </div>
           </div>
@@ -177,36 +154,36 @@ import BookingButton from '../components/BookingButton.astro';
         </div>
 
         <div class="grid md:grid-cols-2 gap-8">
-          <div class="bg-emerald-50/50 border border-emerald-100 rounded-2xl p-6">
+          <div class="bg-white border border-emerald-100 rounded-2xl p-6">
             <h3 class="text-xl font-serif font-bold text-emerald-950 mb-4">Insurance Coverage</h3>
-            <p class="text-gray-700 mb-4">Most extended health insurance plans in Canada cover naturopathic visits. Coverage typically ranges from $300-$1000 annually depending on your plan.</p>
+            <p class="text-gray-700 mb-4">Most extended health insurance plans in Canada cover naturopathic visits. Coverage typically ranges from $300–$1,000 annually depending on your plan.</p>
             <p class="text-gray-700 mb-4">We offer <strong>direct billing</strong> to many major insurers, so you only pay your portion at the time of service.</p>
-            <p class="text-sm text-gray-600">Check with your insurance provider to confirm your naturopathic coverage and annual limit.</p>
+            <p class="text-sm text-gray-500">Check with your insurance provider to confirm your naturopathic coverage and annual limit.</p>
           </div>
 
           <div class="bg-white border border-emerald-100 rounded-2xl p-6">
             <h3 class="text-xl font-serif font-bold text-emerald-950 mb-4">Payment Options</h3>
             <ul class="space-y-3 text-gray-700">
               <li class="flex items-center">
-                <svg class="w-5 h-5 text-emerald-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
                 Credit and debit cards
               </li>
               <li class="flex items-center">
-                <svg class="w-5 h-5 text-emerald-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
                 Cash and e-transfer
               </li>
               <li class="flex items-center">
-                <svg class="w-5 h-5 text-emerald-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
                 Direct insurance billing (where available)
               </li>
               <li class="flex items-center">
-                <svg class="w-5 h-5 text-emerald-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
                 Receipts for insurance reimbursement
@@ -218,30 +195,24 @@ import BookingButton from '../components/BookingButton.astro';
     </div>
   </section>
 
-  <!-- CTA Section -->
-  <section class="py-16 lg:py-24 bg-emerald-950">
+  <!-- Location + Final CTA -->
+  <section class="py-16 lg:py-24 bg-white">
     <div class="section-shell">
       <div class="max-w-3xl mx-auto text-center">
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-6">Ready to Get Started?</h2>
-        <p class="text-xl text-emerald-100 mb-8">Book your appointment online and take the first step toward better health.</p>
-        <BookingButton
-          text="Book Online"
-          size="lg"
-          source="book-page"
-        />
-        <p class="text-emerald-200 mt-6 text-sm">Or call us at <a href="tel:+19024064424" class="underline hover:text-white">(902) 406-4424</a></p>
-      </div>
-    </div>
-  </section>
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-3">Find Us</h2>
+        <p class="text-gray-700 mb-1"><strong>Optimal Wellbeing Clinic</strong></p>
+        <p class="text-gray-600 mb-1">6140 Young Street, Halifax, NS B3K 0G2</p>
+        <p class="text-gray-600 mb-10"><strong>Hours:</strong> Mon, Wed–Fri: 7:30 AM – 3:30 PM</p>
 
-  <!-- Location Reminder -->
-  <section class="py-12 bg-emerald-50">
-    <div class="section-shell">
-      <div class="max-w-2xl mx-auto text-center">
-        <h3 class="text-xl font-serif font-bold text-emerald-950 mb-3">Location</h3>
-        <p class="text-gray-700 mb-2"><strong>Optimal Wellbeing Clinic</strong></p>
-        <p class="text-gray-600 mb-4">6140 Young Street, Halifax, NS B3K 0G2</p>
-        <p class="text-gray-600"><strong>Hours:</strong> Mon, Wed-Fri: 7:30 AM - 3:30 PM</p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <BookingButton text="Book Online" variant="secondary" size="lg" source="new-patients-footer" />
+          <a href="tel:+19024064424" class="inline-flex items-center gap-2 text-emerald-700 hover:text-emerald-900 font-semibold transition-colors">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+            </svg>
+            (902) 406-4424
+          </a>
+        </div>
       </div>
     </div>
   </section>

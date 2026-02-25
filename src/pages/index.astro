@@ -3,13 +3,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import BookingButton from '../components/BookingButton.astro';
 import { Phone, FlaskConical, ChevronRight, Syringe, ArrowRight, ChevronDown, Microscope, HeartPulse, BookOpen } from '@lucide/astro';
 
-// Services (top 3 for nav hub)
-const services = [
-  { title: 'IV Therapy', href: '/iv-therapy' },
-  { title: 'Blood Testing', href: '/lab-testing' },
-  { title: 'Prolotherapy', href: '/prolotherapy' },
-];
-
 // Conditions (top 3 for nav hub)
 const conditions = [
   { title: 'Low Back Pain', href: '/low-back-pain' },
@@ -136,6 +129,9 @@ const faqSchema = {
               (902) 406-4424
             </a>
           </div>
+          <p class="text-center lg:text-left text-sm text-emerald-300/70 animate-fade-in-up animate-delay-500">
+            First visit? <a href="/new-patients" class="text-emerald-300 hover:text-white underline underline-offset-2 transition-colors">Learn what to expect →</a>
+          </p>
 
           <!-- Featured Services - Simplified Badges -->
           <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 animate-fade-in-up animate-delay-500">
