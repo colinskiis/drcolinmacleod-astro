@@ -19,7 +19,7 @@ export interface Props {
 }
 
 const { title, description, focusKeyword, image, articleData } = Astro.props;
-const fullTitle = title === 'Home' ? 'Dr. Colin MacLeod ND - Halifax Naturopathic Doctor' : `${title} | Dr. Colin MacLeod ND`;
+const fullTitle = title === 'Home' ? 'Dr. Colin MacLeod ND - Bedford Naturopathic Doctor' : `${title} | Dr. Colin MacLeod ND`;
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 const ogImage = image || '/images/reference/home-background.webp';
 
@@ -28,7 +28,7 @@ const medicalBusinessSchema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "MedicalBusiness",
   "name": "Dr. Colin MacLeod ND",
-  "description": "Halifax Naturopathic Doctor providing comprehensive natural healthcare solutions including IV therapy, prolotherapy, acupuncture and clinical nutrition.",
+  "description": "Bedford, NS Naturopathic Doctor providing comprehensive natural healthcare solutions including IV therapy, prolotherapy, acupuncture and clinical nutrition.",
   "url": "https://drcolinmacleod.com",
   "logo": "https://drcolinmacleod.com/favicon.svg",
   "image": "https://drcolinmacleod.com/images/general/colin-hero.webp",
@@ -42,20 +42,20 @@ const medicalBusinessSchema = JSON.stringify({
   },
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "6140 Young Street",
-    "addressLocality": "Halifax",
+    "streetAddress": "1378 Bedford Highway",
+    "addressLocality": "Bedford",
     "addressRegion": "Nova Scotia",
-    "postalCode": "B3K 0G2",
+    "postalCode": "B4A 1E2",
     "addressCountry": "CA"
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": "44.6488",
-    "longitude": "-63.6046"
+    "latitude": "44.7258",
+    "longitude": "-63.6540"
   },
   "areaServed": {
     "@type": "City",
-    "name": "Halifax",
+    "name": "Bedford",
     "containedInPlace": {
       "@type": "State",
       "name": "Nova Scotia"
@@ -95,7 +95,7 @@ const personSchema = JSON.stringify({
   "honorificPrefix": "Dr.",
   "honorificSuffix": "ND",
   "jobTitle": "Naturopathic Doctor",
-  "description": "Naturopathic Doctor in Halifax, Nova Scotia specializing in IV therapy, prolotherapy, sports medicine and herbal medicine.",
+  "description": "Naturopathic Doctor in Bedford, Nova Scotia specializing in IV therapy, prolotherapy, sports medicine and herbal medicine.",
   "url": "https://drcolinmacleod.com/about",
   "image": "https://drcolinmacleod.com/images/general/colin-hero.webp",
   "alumniOf": {
@@ -130,10 +130,10 @@ const personSchema = JSON.stringify({
     "url": "https://drcolinmacleod.com",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "6140 Young Street",
-      "addressLocality": "Halifax",
+      "streetAddress": "1378 Bedford Highway",
+      "addressLocality": "Bedford",
       "addressRegion": "Nova Scotia",
-      "postalCode": "B3K 0G2",
+      "postalCode": "B4A 1E2",
       "addressCountry": "CA"
     }
   },
@@ -142,10 +142,10 @@ const personSchema = JSON.stringify({
     "name": "Optimal Wellbeing Clinic",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "6140 Young Street",
-      "addressLocality": "Halifax",
+      "streetAddress": "1378 Bedford Highway",
+      "addressLocality": "Bedford",
       "addressRegion": "Nova Scotia",
-      "postalCode": "B3K 0G2",
+      "postalCode": "B4A 1E2",
       "addressCountry": "CA"
     }
   }
@@ -385,7 +385,7 @@ const articleSchema = articleData ? JSON.stringify({
             <p class="pill">Evidence-Based + Natural</p>
             <h3 class="text-2xl font-semibold">Dr. Colin MacLeod ND</h3>
             <p class="text-slate-700 leading-relaxed">
-              Halifax-based naturopathic doctor combining clinical nutrition, lifestyle modification, regenerative injections, IV nutrient therapy, herbal medicine and acupuncture for long-term health results.
+              Bedford-based naturopathic doctor combining clinical nutrition, lifestyle modification, regenerative injections, IV nutrient therapy, herbal medicine and acupuncture for long-term health results.
             </p>
           </div>
 
@@ -396,8 +396,8 @@ const articleSchema = articleData ? JSON.stringify({
               <div class="text-emerald-800 space-y-2">
                 <div class="space-y-0.5">
                   <p class="font-medium">Optimal Wellbeing Clinic</p>
-                  <p>6140 Young Street</p>
-                  <p>Halifax, NS B3K 0G2</p>
+                  <p>1378 Bedford Highway</p>
+                  <p>Bedford, NS B4A 1E2</p>
                 </div>
                 <a href="tel:+19024064424" class="flex items-center text-emerald-800 font-semibold hover:text-emerald-900">
                   (902) 406-4424
