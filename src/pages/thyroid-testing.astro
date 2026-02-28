@@ -59,7 +59,7 @@ import { X, Circle } from '@lucide/astro';
           </p>
         </div>
 
-        <div class="bg-white rounded-2xl p-8 shadow-lg">
+        <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
           <h3 class="text-xl font-semibold text-emerald-950 mb-6">What Standard Testing Misses</h3>
           <div class="grid md:grid-cols-2 gap-6">
             <div class="flex items-start gap-3">
@@ -108,7 +108,7 @@ import { X, Circle } from '@lucide/astro';
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- TSH -->
-        <div class="bg-emerald-50 rounded-2xl p-6">
+        <div class="bg-emerald-50 rounded-2xl p-6 card-hover">
           <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
             <span class="text-white font-bold text-sm">TSH</span>
           </div>
@@ -121,7 +121,7 @@ import { X, Circle } from '@lucide/astro';
         </div>
 
         <!-- Free T4 -->
-        <div class="bg-emerald-50 rounded-2xl p-6">
+        <div class="bg-emerald-50 rounded-2xl p-6 card-hover">
           <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
             <span class="text-white font-bold text-sm">FT4</span>
           </div>
@@ -134,7 +134,7 @@ import { X, Circle } from '@lucide/astro';
         </div>
 
         <!-- Free T3 -->
-        <div class="bg-emerald-50 rounded-2xl p-6">
+        <div class="bg-emerald-50 rounded-2xl p-6 card-hover">
           <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
             <span class="text-white font-bold text-sm">FT3</span>
           </div>
@@ -147,7 +147,7 @@ import { X, Circle } from '@lucide/astro';
         </div>
 
         <!-- Reverse T3 -->
-        <div class="bg-emerald-50 rounded-2xl p-6">
+        <div class="bg-emerald-50 rounded-2xl p-6 card-hover">
           <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
             <span class="text-white font-bold text-sm">rT3</span>
           </div>
@@ -160,7 +160,7 @@ import { X, Circle } from '@lucide/astro';
         </div>
 
         <!-- TPO Antibodies -->
-        <div class="bg-emerald-50 rounded-2xl p-6">
+        <div class="bg-emerald-50 rounded-2xl p-6 card-hover">
           <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
             <span class="text-white font-bold text-sm">TPO</span>
           </div>
@@ -173,7 +173,7 @@ import { X, Circle } from '@lucide/astro';
         </div>
 
         <!-- TG Antibodies -->
-        <div class="bg-emerald-50 rounded-2xl p-6">
+        <div class="bg-emerald-50 rounded-2xl p-6 card-hover">
           <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
             <span class="text-white font-bold text-sm">TgAb</span>
           </div>
@@ -263,10 +263,10 @@ import { X, Circle } from '@lucide/astro';
           </p>
         </div>
 
-        <div class="bg-emerald-50 rounded-2xl p-8">
+        <div class="bg-emerald-50 rounded-2xl p-8 card-hover">
           <h3 class="text-xl font-semibold text-emerald-950 mb-6">TSH Example</h3>
           <div class="grid md:grid-cols-2 gap-8">
-            <div class="bg-white rounded-xl p-6">
+            <div class="bg-white rounded-xl p-6 card-hover">
               <h4 class="font-medium text-gray-500 mb-2">Standard Lab Range</h4>
               <div class="text-3xl font-bold text-gray-700 mb-2">0.4 – 4.5 mIU/L</div>
               <p class="text-sm text-gray-600">A TSH of 4.0 would be considered "normal"</p>
@@ -294,7 +294,7 @@ import { X, Circle } from '@lucide/astro';
 
       <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
         <!-- Hypothyroid -->
-        <div class="bg-white rounded-2xl p-8 shadow-lg">
+        <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
           <h3 class="text-xl font-semibold text-emerald-950 mb-4">Underactive Thyroid (Hypothyroidism)</h3>
           <ul class="space-y-2">
             {['Fatigue and low energy', 'Weight gain or difficulty losing weight', 'Cold intolerance', 'Constipation', 'Dry skin and hair', 'Hair loss', 'Brain fog and poor concentration', 'Depression', 'Muscle weakness', 'Heavy or irregular periods'].map(symptom => (
@@ -307,7 +307,7 @@ import { X, Circle } from '@lucide/astro';
         </div>
 
         <!-- Hyperthyroid -->
-        <div class="bg-white rounded-2xl p-8 shadow-lg">
+        <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
           <h3 class="text-xl font-semibold text-emerald-950 mb-4">Overactive Thyroid (Hyperthyroidism)</h3>
           <ul class="space-y-2">
             {['Unexplained weight loss', 'Rapid or irregular heartbeat', 'Anxiety and nervousness', 'Tremors', 'Heat intolerance', 'Increased sweating', 'Difficulty sleeping', 'Frequent bowel movements', 'Muscle weakness', 'Light or missed periods'].map(symptom => (
@@ -351,7 +351,7 @@ import { X, Circle } from '@lucide/astro';
       <div class="max-w-3xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Getting Started</h2>
 
-        <div class="bg-white rounded-2xl shadow-xl p-8 text-center">
+        <div class="bg-white rounded-2xl shadow-xl p-8 text-center card-hover">
           <p class="text-gray-600 mb-6">Complete thyroid testing includes TSH, Free T3, Free T4, Reverse T3 and thyroid antibodies (TPO and TgAb). Most extended health insurance plans cover naturopathic consultations.</p>
           <BookingButton variant="secondary" size="lg" source="thyroid-testing" />
         </div>

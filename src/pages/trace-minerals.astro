@@ -81,7 +81,7 @@ import FAQAccordion from '../components/FAQAccordion.astro';
       </div>
 
       <div class="grid lg:grid-cols-2 gap-8">
-        <div class="bg-emerald-50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+        <div class="bg-emerald-50 rounded-2xl p-8 card-hover">
           <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-6">Immune Concerns</h3>
           <div class="grid gap-3">
             {['Frequent infections', 'Slow wound healing', 'Recurrent colds and flus', 'Autoimmune conditions', 'Chronic inflammatory conditions'].map(condition => (
@@ -93,7 +93,7 @@ import FAQAccordion from '../components/FAQAccordion.astro';
           </div>
         </div>
 
-        <div class="bg-emerald-50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+        <div class="bg-emerald-50 rounded-2xl p-8 card-hover">
           <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-6">Metabolic Health</h3>
           <div class="grid gap-3">
             {['Insulin resistance', 'Blood sugar irregularities', 'Thyroid dysfunction', 'Weight management concerns', 'Energy metabolism issues'].map(condition => (
@@ -105,7 +105,7 @@ import FAQAccordion from '../components/FAQAccordion.astro';
           </div>
         </div>
 
-        <div class="bg-emerald-50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+        <div class="bg-emerald-50 rounded-2xl p-8 card-hover">
           <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-6">Antioxidant &amp; Detox</h3>
           <div class="grid gap-3">
             {['Oxidative stress', 'Chemical or heavy metal exposure', 'Liver support needs', 'Premature aging', 'Skin and hair concerns'].map(condition => (
@@ -117,7 +117,7 @@ import FAQAccordion from '../components/FAQAccordion.astro';
           </div>
         </div>
 
-        <div class="bg-emerald-50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+        <div class="bg-emerald-50 rounded-2xl p-8 card-hover">
           <h3 class="text-xl font-serif font-semibold text-emerald-950 mb-6">General Deficiency</h3>
           <div class="grid gap-3">
             {['Vegetarian or vegan diet', 'Malabsorption conditions', 'Post-surgery recovery', 'Chronic stress', 'Restrictive diets'].map(condition => (
@@ -173,14 +173,14 @@ import FAQAccordion from '../components/FAQAccordion.astro';
   <section class="py-16 lg:py-24 bg-emerald-50">
     <div class="section-shell">
       <div class="grid lg:grid-cols-2 gap-12">
-        <div class="bg-white rounded-3xl shadow-xl p-8 lg:p-10">
+        <div class="bg-white rounded-3xl shadow-xl p-8 lg:p-10 card-hover">
           <h2 class="text-2xl font-serif font-bold text-emerald-950 mb-6">Getting Started with Trace Mineral IV Therapy</h2>
           <p class="text-gray-600 mb-8">
             A naturopathic consultation is required before adding trace minerals to your IV regimen. Where appropriate, baseline serum levels of specific minerals (zinc, selenium, copper) can be ordered to guide dosing.
           </p>
           <BookingButton variant="secondary" size="lg" fullWidth source="trace-minerals-booking" />
         </div>
-        <div class="bg-white rounded-3xl shadow-xl p-8 lg:p-10 flex flex-col justify-center">
+        <div class="bg-white rounded-3xl shadow-xl p-8 lg:p-10 flex flex-col justify-center card-hover">
           <h2 class="text-2xl font-serif font-bold text-emerald-950 mb-6">What's Included</h2>
           <ul class="space-y-3">
             <li class="flex items-center">

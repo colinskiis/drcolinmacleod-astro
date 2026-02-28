@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
 import FAQAccordion from '../components/FAQAccordion.astro';
+import ServiceArticles from '../components/ServiceArticles.astro';
 ---
 
 <BaseLayout
@@ -43,7 +44,7 @@ import FAQAccordion from '../components/FAQAccordion.astro';
           </p>
         </div>
         <div class="grid grid-cols-2 gap-6">
-          <div class="bg-emerald-50 rounded-2xl p-6 text-center">
+          <div class="bg-emerald-50 rounded-2xl p-6 text-center card-hover">
             <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4">
               <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
@@ -52,7 +53,7 @@ import FAQAccordion from '../components/FAQAccordion.astro';
             <h3 class="font-semibold text-emerald-950 mb-2">Muscle Relaxation</h3>
             <p class="text-sm text-gray-600">Releases tension in tight, spasmed muscles</p>
           </div>
-          <div class="bg-emerald-50 rounded-2xl p-6 text-center">
+          <div class="bg-emerald-50 rounded-2xl p-6 text-center card-hover">
             <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4">
               <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
@@ -61,7 +62,7 @@ import FAQAccordion from '../components/FAQAccordion.astro';
             <h3 class="font-semibold text-emerald-950 mb-2">Improved Blood Flow</h3>
             <p class="text-sm text-gray-600">Enhances circulation to injured areas</p>
           </div>
-          <div class="bg-emerald-50 rounded-2xl p-6 text-center">
+          <div class="bg-emerald-50 rounded-2xl p-6 text-center card-hover">
             <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4">
               <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
@@ -70,7 +71,7 @@ import FAQAccordion from '../components/FAQAccordion.astro';
             <h3 class="font-semibold text-emerald-950 mb-2">Reduced Inflammation</h3>
             <p class="text-sm text-gray-600">Decreases swelling and irritation</p>
           </div>
-          <div class="bg-emerald-50 rounded-2xl p-6 text-center">
+          <div class="bg-emerald-50 rounded-2xl p-6 text-center card-hover">
             <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4">
               <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
@@ -95,35 +96,35 @@ import FAQAccordion from '../components/FAQAccordion.astro';
       </div>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+        <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
           <h3 class="font-semibold text-emerald-950 mb-3">Osteoarthritis</h3>
           <p class="text-sm text-gray-600">Joint pain and stiffness from wear and tear</p>
         </div>
-        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+        <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
           <h3 class="font-semibold text-emerald-950 mb-3">Plantar Fasciitis</h3>
           <p class="text-sm text-gray-600">Heel and foot pain affecting mobility</p>
         </div>
-        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+        <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
           <h3 class="font-semibold text-emerald-950 mb-3">Low Back Pain</h3>
           <p class="text-sm text-gray-600">Chronic or acute lumbar discomfort</p>
         </div>
-        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+        <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
           <h3 class="font-semibold text-emerald-950 mb-3">Neck Pain</h3>
           <p class="text-sm text-gray-600">Cervical tension and restricted movement</p>
         </div>
-        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+        <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
           <h3 class="font-semibold text-emerald-950 mb-3">Migraines</h3>
           <p class="text-sm text-gray-600">Chronic headaches and migraine prevention</p>
         </div>
-        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+        <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
           <h3 class="font-semibold text-emerald-950 mb-3">Tension Headaches</h3>
           <p class="text-sm text-gray-600">Muscle tension-related head pain</p>
         </div>
-        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+        <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
           <h3 class="font-semibold text-emerald-950 mb-3">Joint Pain</h3>
           <p class="text-sm text-gray-600">Shoulder, knee, hip and other joints</p>
         </div>
-        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+        <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
           <h3 class="font-semibold text-emerald-950 mb-3">Sports Injuries</h3>
           <p class="text-sm text-gray-600">Athletic strains, sprains and overuse</p>
         </div>
@@ -143,7 +144,7 @@ import FAQAccordion from '../components/FAQAccordion.astro';
           <p class="text-gray-600 leading-relaxed mb-6">
             The electrical pulses are similar to transcutaneous electrical nerve stimulation (TENS) but act deeper and closer to the problem area. The current is low enough to cause a gentle twitch of the affected muscle fibers while preventing muscle spasm.
           </p>
-          <div class="bg-emerald-50 rounded-2xl p-6">
+          <div class="bg-emerald-50 rounded-2xl p-6 card-hover">
             <h3 class="font-semibold text-emerald-950 mb-3">Benefits of Electroacupuncture</h3>
             <ul class="space-y-2">
               <li class="flex items-center text-gray-600">
@@ -234,29 +235,10 @@ import FAQAccordion from '../components/FAQAccordion.astro';
     </div>
   </section>
 
-  <!-- Related Articles -->
-  <section class="py-16 lg:py-24 bg-white">
-    <div class="section-shell">
-      <div class="text-center mb-10">
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Learn More</h2>
-        <p class="text-lg text-gray-600">Explore related articles on pain management and natural health.</p>
-      </div>
-      <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-        <a href="/articles/sports-injuries-natural-treatment" class="bg-emerald-50 rounded-xl p-6 hover:bg-emerald-100 transition-colors group">
-          <h3 class="font-serif font-bold text-emerald-950 mb-2 group-hover:text-emerald-700">Sports Injuries: Natural Treatment</h3>
-          <p class="text-gray-600 text-sm">How acupuncture and naturopathic approaches accelerate sports injury recovery.</p>
-        </a>
-        <a href="/articles/natural-anxiety-management" class="bg-emerald-50 rounded-xl p-6 hover:bg-emerald-100 transition-colors group">
-          <h3 class="font-serif font-bold text-emerald-950 mb-2 group-hover:text-emerald-700">Natural Anxiety Management</h3>
-          <p class="text-gray-600 text-sm">Evidence-based approaches to anxiety, including acupuncture's calming effects.</p>
-        </a>
-        <a href="/articles/quit-smoking-with-acupuncture" class="bg-emerald-50 rounded-xl p-6 hover:bg-emerald-100 transition-colors group">
-          <h3 class="font-serif font-bold text-emerald-950 mb-2 group-hover:text-emerald-700">Quit Smoking with Acupuncture</h3>
-          <p class="text-gray-600 text-sm">How acupuncture helps manage cravings and withdrawal symptoms.</p>
-        </a>
-      </div>
-    </div>
-  </section>
+  <ServiceArticles
+    slugs={["sports-injuries-natural-treatment", "natural-anxiety-management", "quit-smoking-with-acupuncture"]}
+    subtitle="Explore related articles on pain management and natural health."
+  />
 
   <!-- CTA Section -->
   <section class="py-16 lg:py-24 bg-emerald-950">

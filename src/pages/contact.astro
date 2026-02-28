@@ -28,10 +28,12 @@ import FAQAccordion from '../components/FAQAccordion.astro';
           
           <form
             id="contact-form"
-            action="/contact-handler.php"
-            method="POST"
             class="space-y-6"
           >
+            <!-- Web3Forms access key - get yours free at web3forms.com -->
+            <input type="hidden" name="access_key" value="77afa6a0-adee-4b16-ac00-52b5472b2fdd">
+            <input type="hidden" name="subject" value="New Contact Form Submission - drcolinmacleod.com">
+            <input type="hidden" name="from_name" value="Dr. Colin MacLeod Website">
             <!-- Name -->
             <div>
               <label for="name" class="block text-sm font-medium text-gray-700 mb-2">
@@ -136,7 +138,7 @@ import FAQAccordion from '../components/FAQAccordion.astro';
         <div class="space-y-6">
 
           <!-- Location -->
-          <div class="bg-white border border-emerald-100 rounded-2xl p-6 shadow-sm">
+          <div class="bg-white border border-emerald-100 rounded-2xl p-6 shadow-sm card-hover">
             <h3 class="text-xl font-serif font-bold text-emerald-950 mb-4">Visit Us</h3>
             <div class="flex items-start mb-4">
               <svg class="w-5 h-5 text-emerald-700 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -184,21 +186,21 @@ import FAQAccordion from '../components/FAQAccordion.astro';
           </div>
 
           <!-- Hours -->
-          <div class="bg-white border border-emerald-100 rounded-2xl p-6 shadow-sm">
+          <div class="bg-white border border-emerald-100 rounded-2xl p-6 shadow-sm card-hover">
             <h3 class="text-xl font-serif font-bold text-emerald-950 mb-4">Hours</h3>
             <div class="flex items-start">
               <svg class="w-5 h-5 text-emerald-700 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
               </svg>
               <div class="space-y-1 text-gray-600">
-                <p><span class="font-medium text-gray-800">Mon, Wed - Fri:</span> 7:30 AM - 3:30 PM</p>
-                <p><span class="font-medium text-gray-800">Tue, Sat, Sun:</span> Closed</p>
+                <p><span class="font-medium text-gray-800">Mon - Fri:</span> 7:30 AM - 3:30 PM</p>
+                <p><span class="font-medium text-gray-800">Sat, Sun:</span> Closed</p>
               </div>
             </div>
           </div>
 
           <!-- Book Online -->
-          <div class="bg-emerald-50/50 border border-emerald-100 rounded-2xl p-6 shadow-sm">
+          <div class="bg-emerald-50/50 border border-emerald-100 rounded-2xl p-6 shadow-sm card-hover">
             <h3 class="text-xl font-serif font-bold text-emerald-950 mb-3">Book Online</h3>
             <p class="text-gray-600 mb-4">
               Ready to schedule? Our online booking system is the fastest way to secure your appointment with Dr. MacLeod.
@@ -256,22 +258,23 @@ import FAQAccordion from '../components/FAQAccordion.astro';
 
       // Get form data
       const formData = new FormData(form);
-      
-      fetch('/contact-handler.php', {
+
+      fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         body: formData,
         headers: {
           'Accept': 'application/json'
         }
       })
-      .then(response => {
-        if (response.ok) {
+      .then(response => response.json())
+      .then(data => {
+        if (data.success) {
           // Success
           formMessages.classList.remove('hidden');
           successMessage.classList.remove('hidden');
           form.reset();
         } else {
-          throw new Error('Network response was not ok');
+          throw new Error(data.message || 'Submission failed');
         }
       })
       .catch(error => {

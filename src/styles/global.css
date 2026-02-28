@@ -105,6 +105,11 @@
     @apply w-full h-px bg-gradient-to-r from-transparent via-emerald-800/20 to-transparent my-12;
   }
 
+  /* Standard card hover: subtle lift + shadow elevation */
+  .card-hover {
+    @apply transition-all duration-200 hover:-translate-y-1 hover:shadow-lg;
+  }
+
   /* Header styling - solid emerald background for readability */
   #site-header {
     background: rgb(6, 78, 59); /* emerald-900 */

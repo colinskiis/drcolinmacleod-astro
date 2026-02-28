@@ -31,7 +31,7 @@ import FAQAccordion from '../components/FAQAccordion.astro';
 
       <div class="grid md:grid-cols-3 gap-8">
         <!-- Heal the Source -->
-        <div class="bg-emerald-50 rounded-2xl p-8 text-center">
+        <div class="bg-emerald-50 rounded-2xl p-8 text-center card-hover">
           <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-6">
             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
@@ -42,7 +42,7 @@ import FAQAccordion from '../components/FAQAccordion.astro';
         </div>
 
         <!-- Avoid Surgery -->
-        <div class="bg-emerald-50 rounded-2xl p-8 text-center">
+        <div class="bg-emerald-50 rounded-2xl p-8 text-center card-hover">
           <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-6">
             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
@@ -53,7 +53,7 @@ import FAQAccordion from '../components/FAQAccordion.astro';
         </div>
 
         <!-- Return to Activity -->
-        <div class="bg-emerald-50 rounded-2xl p-8 text-center">
+        <div class="bg-emerald-50 rounded-2xl p-8 text-center card-hover">
           <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-6">
             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
@@ -78,7 +78,7 @@ import FAQAccordion from '../components/FAQAccordion.astro';
 
       <div class="grid lg:grid-cols-2 gap-8">
         <!-- Prolotherapy Card -->
-        <div class="bg-white rounded-3xl shadow-xl overflow-hidden">
+        <div class="bg-white rounded-3xl shadow-xl overflow-hidden card-hover">
           <div class="bg-emerald-700 p-6">
             <h3 class="text-2xl font-serif font-bold text-white">Prolotherapy</h3>
             <p class="text-emerald-100 mt-2">Concentrated dextrose injections for tissue regeneration</p>
@@ -128,7 +128,7 @@ import FAQAccordion from '../components/FAQAccordion.astro';
         </div>
 
         <!-- Prolozone Card -->
-        <div class="bg-white rounded-3xl shadow-xl overflow-hidden">
+        <div class="bg-white rounded-3xl shadow-xl overflow-hidden card-hover">
           <div class="bg-emerald-700 p-6">
             <h3 class="text-2xl font-serif font-bold text-white">Prolozone Therapy</h3>
             <p class="text-emerald-100 mt-2">Ozone-enhanced regenerative injections</p>
@@ -192,23 +192,23 @@ import FAQAccordion from '../components/FAQAccordion.astro';
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Knee Injuries -->
-        <div class="bg-gray-50 rounded-xl p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+        <div class="bg-gray-50 rounded-xl p-6 card-hover">
           <h3 class="text-lg font-semibold text-emerald-950 mb-3">Knee Injuries</h3>
           <ul class="space-y-2 text-gray-600">
             <li>• ACL/MCL sprains and laxity</li>
             <li>• Patellar tendinitis (jumper's knee)</li>
             <li>• Meniscus injuries</li>
-            <li>• Runner's knee</li>
+            <li>• <a href="/runners-knee" class="text-emerald-700 hover:text-emerald-800 font-medium">Runner's knee</a></li>
             <li>• Osgood-Schlatter disease</li>
           </ul>
         </div>
 
         <!-- Shoulder Injuries -->
-        <div class="bg-gray-50 rounded-xl p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+        <div class="bg-gray-50 rounded-xl p-6 card-hover">
           <h3 class="text-lg font-semibold text-emerald-950 mb-3">Shoulder Injuries</h3>
           <ul class="space-y-2 text-gray-600">
-            <li>• Rotator cuff tendinitis/tears</li>
-            <li>• Shoulder impingement</li>
+            <li>• <a href="/rotator-cuff-shoulder-impingement" class="text-emerald-700 hover:text-emerald-800 font-medium">Rotator cuff tendinitis/tears</a></li>
+            <li>• <a href="/rotator-cuff-shoulder-impingement" class="text-emerald-700 hover:text-emerald-800 font-medium">Shoulder impingement</a></li>
             <li>• AC joint injuries</li>
             <li>• Labral tears</li>
             <li>• Chronic instability</li>
@@ -216,48 +216,48 @@ import FAQAccordion from '../components/FAQAccordion.astro';
         </div>
 
         <!-- Elbow & Wrist -->
-        <div class="bg-gray-50 rounded-xl p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+        <div class="bg-gray-50 rounded-xl p-6 card-hover">
           <h3 class="text-lg font-semibold text-emerald-950 mb-3">Elbow & Wrist</h3>
           <ul class="space-y-2 text-gray-600">
-            <li>• Tennis elbow (lateral epicondylitis)</li>
-            <li>• Golfer's elbow (medial epicondylitis)</li>
+            <li>• <a href="/tennis-elbow" class="text-emerald-700 hover:text-emerald-800 font-medium">Tennis elbow (lateral epicondylitis)</a></li>
+            <li>• <a href="/golfers-elbow" class="text-emerald-700 hover:text-emerald-800 font-medium">Golfer's elbow (medial epicondylitis)</a></li>
             <li>• Wrist sprains</li>
             <li>• TFCC injuries</li>
           </ul>
         </div>
 
         <!-- Hip & Pelvis -->
-        <div class="bg-gray-50 rounded-xl p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+        <div class="bg-gray-50 rounded-xl p-6 card-hover">
           <h3 class="text-lg font-semibold text-emerald-950 mb-3">Hip & Pelvis</h3>
           <ul class="space-y-2 text-gray-600">
             <li>• Hip labral tears</li>
             <li>• Hip flexor strains</li>
-            <li>• SI joint dysfunction</li>
+            <li>• <a href="/si-joint-dysfunction" class="text-emerald-700 hover:text-emerald-800 font-medium">SI joint dysfunction</a></li>
             <li>• Greater trochanteric bursitis</li>
             <li>• Groin strains</li>
           </ul>
         </div>
 
         <!-- Ankle & Foot -->
-        <div class="bg-gray-50 rounded-xl p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+        <div class="bg-gray-50 rounded-xl p-6 card-hover">
           <h3 class="text-lg font-semibold text-emerald-950 mb-3">Ankle & Foot</h3>
           <ul class="space-y-2 text-gray-600">
-            <li>• Achilles tendinitis/tendinosis</li>
+            <li>• <a href="/achilles-tendinitis" class="text-emerald-700 hover:text-emerald-800 font-medium">Achilles tendinitis/tendinosis</a></li>
             <li>• Ankle sprains (chronic)</li>
-            <li>• Plantar fasciitis</li>
+            <li>• <a href="/plantar-fasciitis" class="text-emerald-700 hover:text-emerald-800 font-medium">Plantar fasciitis</a></li>
             <li>• Peroneal tendinitis</li>
           </ul>
         </div>
 
         <!-- Back & Spine -->
-        <div class="bg-gray-50 rounded-xl p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+        <div class="bg-gray-50 rounded-xl p-6 card-hover">
           <h3 class="text-lg font-semibold text-emerald-950 mb-3">Back & Spine</h3>
           <ul class="space-y-2 text-gray-600">
-            <li>• Low back pain</li>
+            <li>• <a href="/low-back-pain" class="text-emerald-700 hover:text-emerald-800 font-medium">Low back pain</a></li>
             <li>• Facet joint syndrome</li>
-            <li>• Sacroiliac dysfunction</li>
-            <li>• Whiplash injuries</li>
-            <li>• Disc-related pain</li>
+            <li>• <a href="/si-joint-dysfunction" class="text-emerald-700 hover:text-emerald-800 font-medium">Sacroiliac dysfunction</a></li>
+            <li>• <a href="/whiplash-neck-pain" class="text-emerald-700 hover:text-emerald-800 font-medium">Whiplash injuries</a></li>
+            <li>• <a href="/herniated-disc" class="text-emerald-700 hover:text-emerald-800 font-medium">Disc-related pain</a></li>
           </ul>
         </div>
       </div>
@@ -270,7 +270,7 @@ import FAQAccordion from '../components/FAQAccordion.astro';
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-6 text-center">For Active Nova Scotians</h2>
         <p class="text-white/90 text-lg text-center mb-12">
-          Whether you're training for the Bluenose Marathon, playing in a rec hockey league, hitting the trails at Keppoch or simply staying active with your family, injuries can derail your goals. Our regenerative therapies help you get back to the activities that matter to you.
+          Whether you're training for the Bluenose Marathon, playing in a rec hockey league or simply staying active with your family, injuries can derail your goals. Our regenerative therapies help you get back to the activities that matter to you.
         </p>
 
         <div class="grid md:grid-cols-2 gap-8">

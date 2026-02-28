@@ -5,6 +5,7 @@ import CTAButton from '../components/CTAButton.astro';
 import BookingButton from '../components/BookingButton.astro';
 import { Calendar, Check, ChevronDown, Droplets, Zap, Atom, HeartPulse, Dna } from '@lucide/astro';
 import FAQAccordion from '../components/FAQAccordion.astro';
+import ServiceArticles from '../components/ServiceArticles.astro';
 ---
 
 <BaseLayout
@@ -72,7 +73,7 @@ import FAQAccordion from '../components/FAQAccordion.astro';
         </div>
 
         <!-- Content -->
-        <div class="bg-white rounded-3xl shadow-xl p-8 lg:p-10">
+        <div class="bg-white rounded-3xl shadow-xl p-8 lg:p-10 card-hover">
           <h2 class="text-2xl font-serif font-bold text-emerald-950 mb-2">The Myers Cocktail</h2>
           <p class="text-gray-600 mb-4">Our foundational IV nutrient infusion for energy, immunity and overall wellness.</p>
 
@@ -229,29 +230,10 @@ import FAQAccordion from '../components/FAQAccordion.astro';
     </div>
   </section>
 
-  <!-- Related Articles -->
-  <section class="py-16 lg:py-24 bg-white">
-    <div class="section-shell">
-      <div class="text-center mb-10">
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Learn More</h2>
-        <p class="text-lg text-gray-600">Explore related topics on nutrients, performance and natural health.</p>
-      </div>
-      <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-        <a href="/articles/nutrients-for-athletic-performance" class="bg-emerald-50 rounded-xl p-6 hover:bg-emerald-100 transition-colors group">
-          <h3 class="font-serif font-bold text-emerald-950 mb-2 group-hover:text-emerald-700">Nutrients for Athletic Performance</h3>
-          <p class="text-gray-600 text-sm">How IV nutrient infusions support competitive athletes with energy and recovery.</p>
-        </a>
-        <a href="/articles/immune-support-natural-approaches" class="bg-emerald-50 rounded-xl p-6 hover:bg-emerald-100 transition-colors group">
-          <h3 class="font-serif font-bold text-emerald-950 mb-2 group-hover:text-emerald-700">Immune Support: Natural Approaches</h3>
-          <p class="text-gray-600 text-sm">Evidence-based strategies for supporting immune function naturally.</p>
-        </a>
-        <a href="/articles/magnesium-the-natural-muscle-relaxer" class="bg-emerald-50 rounded-xl p-6 hover:bg-emerald-100 transition-colors group">
-          <h3 class="font-serif font-bold text-emerald-950 mb-2 group-hover:text-emerald-700">Magnesium: The Natural Muscle Relaxer</h3>
-          <p class="text-gray-600 text-sm">Why magnesium is essential and how IV delivery ensures optimal levels.</p>
-        </a>
-      </div>
-    </div>
-  </section>
+  <ServiceArticles
+    slugs={["nutrients-for-athletic-performance", "immune-support-natural-approaches", "magnesium-the-natural-muscle-relaxer"]}
+    subtitle="Explore related topics on nutrients, performance and natural health."
+  />
 
   <!-- Final CTA -->
   <section class="py-16 lg:py-24 bg-emerald-950">
