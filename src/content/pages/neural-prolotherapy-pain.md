@@ -19,7 +19,7 @@ The perception of pain begins in the peripheral sensory nerves of the body. When
 
 ## What Conditions Does Neural Prolotherapy Help?
 
-As is taught by neural prolotherapy experts (Dr. John Lyftogt MD, Dr. Stanley Lam MD) and as I have seen in practice, this treatment helps most painful conditions of the body. If a peripheral nerve is being affected, neural prolotherapy can help. Frozen shoulder, low back pain, sciatica, Osgood-Schlatter disease, Achilles tendinitis, plantar fasciitis, osteoarthritis, temporomandibular joint dysfunction, tension headaches and migraines are just a few of the conditions which neural prolotherapy can help.
+Neural prolotherapy has been studied and applied clinically for a range of conditions involving peripheral nerve irritation and pain. If a peripheral nerve is being affected, it may be a candidate for this treatment. Conditions with published evidence or established clinical use include: frozen shoulder, low back pain, sciatica, Osgood-Schlatter disease, Achilles tendinitis, plantar fasciitis, osteoarthritis, temporomandibular joint dysfunction, tension headaches and migraines.
 
 ![Neural prolotherapy for back pain](/images/treatments/neural-prolotherapy-back.jpg)
 
@@ -33,15 +33,15 @@ Yes, in some ways. Neural prolotherapy is similar to acupuncture in that the nee
 
 ## Do Neural Prolotherapy Injections Hurt?
 
-Not much. Neural prolotherapy hurts no more than acupuncture (which doesn't hurt much). Neural prolotherapy is a walk in the park compared to the pain of a cortisone injection, which can be very painful.
+Not much. Neural prolotherapy uses very fine needles, similar in size to acupuncture needles, and is significantly less uncomfortable than cortisone injections. Most patients tolerate it well.
 
 ## Are Neural Prolotherapy Injections Safe?
 
-Neural Prolotherapy injections are remarkably safe when given by a properly trained practitioner. Subcutaneous injections in general are safe as they are deposited just under the skin and are absorbed slowly. Dextrose is something we consume in our diets daily and dextrose has also been used safely at the 5% concentration intravenously for decades.
+Neural prolotherapy injections are safe when given by a properly trained practitioner. Subcutaneous injections in general are safe as they are deposited just under the skin and are absorbed slowly. Dextrose is something we consume in our diets daily and dextrose has also been used safely at the 5% concentration intravenously for decades.
 
 ## How Will I Feel After a Neural Prolotherapy Session?
 
-Often, immediately after a neural prolotherapy session patients will have pain relief. The injection may act very quickly and within seconds the patient's pain will be less. Some patients may take several treatments to reduce their pain.
+Some patients notice pain relief shortly after a neural prolotherapy session. The injection may act quickly, with some patients noticing improvement within the same session. Others require several treatments before experiencing a reduction in pain.
 
 ## How Many Treatments Will I Need?
 

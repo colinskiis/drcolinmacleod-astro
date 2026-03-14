@@ -124,7 +124,7 @@ import ServiceArticles from '../components/ServiceArticles.astro';
             <HeartPulse class="w-10 h-10 text-emerald-700" aria-hidden="true" />
           </div>
           <h3 class="text-lg font-semibold text-emerald-950 mb-2 group-hover:text-emerald-700 transition-colors">Glutathione</h3>
-          <p class="text-gray-600 text-sm">Energy boosting, detoxification and cardiovascular protection.</p>
+          <p class="text-gray-600 text-sm">Antioxidant support, energy support and cardiovascular protection.</p>
         </a>
 
         <!-- L-Carnitine -->
@@ -156,12 +156,16 @@ import ServiceArticles from '../components/ServiceArticles.astro';
         <div>
           <h2 class="text-2xl font-serif font-bold text-emerald-950 mb-6">Nutrients Used in IV Therapy</h2>
           <div class="grid grid-cols-2 gap-3">
-            {['Amino Acid Complex', 'Chelation (EDTA, DMPS)', 'Glutathione', 'Glycine', 'Magnesium', 'Methylfolate', 'NAD', 'Selenium', 'Trace Minerals', 'Taurine', 'Vitamin B1', 'Vitamin B2', 'Vitamin B3', 'Vitamin B5', 'Vitamin B6', 'Vitamin B12', 'Vitamin C', 'Zinc'].map(nutrient => (
+            {['Amino Acid Complex', 'Glutathione', 'Glycine', 'Magnesium', 'Methylfolate', 'NAD', 'Selenium', 'Trace Minerals', 'Taurine', 'Vitamin B1', 'Vitamin B2', 'Vitamin B3', 'Vitamin B5', 'Vitamin B6', 'Vitamin B12', 'Vitamin C', 'Zinc'].map(nutrient => (
               <div class="flex items-center">
                 <Check class="w-4 h-4 text-emerald-600 mr-2 flex-shrink-0" aria-hidden="true" />
                 <span class="text-gray-700 text-sm">{nutrient}</span>
               </div>
             ))}
+            <div class="flex items-center col-span-2 pt-1">
+              <Check class="w-4 h-4 text-emerald-600 mr-2 flex-shrink-0" aria-hidden="true" />
+              <span class="text-gray-700 text-sm"><a href="/chelation-therapy" class="text-emerald-700 hover:text-emerald-800 underline">Chelation (EDTA, DMPS)</a></span>
+            </div>
           </div>
         </div>
 
