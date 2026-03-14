@@ -27,7 +27,7 @@ Carpal tunnel syndrome is diagnosed clinically with an evaluation of symptoms, h
 
 ## Alternative Treatment - Neural Prolotherapy
 
-Neural prolotherapy is a treatment which involves a shallow (subcutaneous) injection of a 5% dextrose (sugar) solution under the skin. This treatment focuses on relieving pressure on an impinged nerve by creating a hydrodissection (water pillow) in the surrounding area. The dextrose solution also downregulates the TRPV1 receptors on the surface of the nerve. These are the receptors which sense pain on the surface of the nerve. Neural prolotherapy is a treatment which can achieve excellent results for the pain and disability associated with carpal tunnel syndrome. Read more on [neural prolotherapy](/neural-prolotherapy-pain).
+Neural prolotherapy is a treatment which involves a shallow (subcutaneous) injection of a 5% dextrose (sugar) solution under the skin. This treatment focuses on relieving pressure on an impinged nerve by creating a hydrodissection (water pillow) in the surrounding area. The dextrose solution also downregulates the TRPV1 receptors on the surface of the nerve. These are the receptors which sense pain on the surface of the nerve. Neural prolotherapy is a treatment which can be effective for the pain and disability associated with carpal tunnel syndrome. Read more on [neural prolotherapy](/neural-prolotherapy-pain).
 
 ## Conventional Treatment
 

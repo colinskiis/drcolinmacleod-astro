@@ -107,7 +107,7 @@ Ozone gas can also be introduced into the body through the digestive tract. Rect
 
 ### Musculoskeletal Conditions
 
-Many musculoskeletal conditions have shown excellent results when treated with ozone. Clinical research with ozone in the treatment of herniated discs<sup>12-22</sup> has yielded overwhelmingly positive results in reduction of associated pain and improved healing. Fracture and displacement of the lumbar vertebrae (spondylolysis and spondylolisthesis) have also responded well to treatment with ozone, with a significant reduction of pain<sup>23</sup>. Patients with temporomandibular joint (TMJ) dysfunction<sup>24</sup> and osteoarthritis (arthritis)<sup>25-27</sup> have shown positive results with ozone treatment in clinical trials. Low back pain in general has responded well to treatment with ozone therapy<sup>28-29</sup>. Fibromyalgia, a classically difficult condition to treat, also showed improvement in associated pain and depression<sup>30</sup>.
+Many musculoskeletal conditions have responded well to ozone treatment. Clinical research with ozone in the treatment of herniated discs<sup>12-22</sup> has yielded consistently positive results in reduction of associated pain and improved healing. Fracture and displacement of the lumbar vertebrae (spondylolysis and spondylolisthesis) have also responded well to treatment with ozone, with a significant reduction of pain<sup>23</sup>. Patients with temporomandibular joint (TMJ) dysfunction<sup>24</sup> and osteoarthritis (arthritis)<sup>25-27</sup> have shown positive results with ozone treatment in clinical trials. Low back pain in general has responded well to treatment with ozone therapy<sup>28-29</sup>. Fibromyalgia, a classically difficult condition to treat, also showed improvement in associated pain and depression<sup>30</sup>.
 
 Adding on to the above, I have seen very encouraging results in patients with painful conditions, especially osteoarthritis. In treating an osteoarthritic joint, ozone gas is injected directly into the affected joint space. I have found this treatment to be quite effective for treating the pain associated with osteoarthritis and promoting healing. The injection itself ranges from not painful at all to mildly uncomfortable.
 
@@ -129,7 +129,7 @@ Ozone's anti-microbial effects have also been found to be quite effective for tr
 
 ### Other Infections
 
-Ozone has also been researched in the treatment of several other infection-associated health conditions. Treatment of pneumonia<sup>51</sup>, chlamydia<sup>52</sup>, fistulas<sup>53</sup> and gastric ulcers<sup>54</sup> have all shown excellent results. Ozone has also been effective in preventing infection when given as a pre-treatment for men undergoing prostate surgery<sup>55</sup>.
+Ozone has also been researched in the treatment of several other infection-associated health conditions. Treatment of pneumonia<sup>51</sup>, chlamydia<sup>52</sup>, fistulas<sup>53</sup> and gastric ulcers<sup>54</sup> have all shown positive results in clinical research. Ozone has also been effective in preventing infection when given as a pre-treatment for men undergoing prostate surgery<sup>55</sup>.
 
 ### Other Conditions
 

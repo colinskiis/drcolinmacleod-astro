@@ -60,11 +60,11 @@ There is no cure for migraines, but there are several treatments available that 
 
 In addition to medications, lifestyle changes can also help to reduce the frequency and severity of migraines. These include getting regular exercise, eating a balanced diet, reducing stress and avoiding known triggers.
 
-Acupuncture has been found in a large-scale review study to reduce to frequency and intensity of migraine attacks<sup>5</sup>. In practice I have seen excellent results with acupuncture for managing the pain and disability associated with migraines.
+Acupuncture has been found in a large-scale review study to reduce the frequency and intensity of migraine attacks<sup>5</sup>. In practice I have found acupuncture to be effective for managing the pain and disability associated with migraines.
 
 The Myers cocktail is another useful tool in preventing and managing migraines. Two of the ingredients of the Myers' cocktail have been independently shown to be helpful in reducing frequency and intensity of migraines: magnesium and specific B vitamins<sup>6-8</sup>. Using the intravenous route for these nutrients leads to higher blood concentration and rapid nutrient repletion. This combination can help to head off the symptoms of a migraine quickly in many cases.
 
-There are also several natural health products including vitamin, mineral and herbal medicines which limit the intensity and frequency of migraines. There is a good research basis for these treatments and I have seen excellent results in migraine patients over the years with these treatments.
+There are also several natural health products including vitamin, mineral and herbal medicines which limit the intensity and frequency of migraines. There is a good research basis for these treatments and I have seen consistent improvement in migraine patients over the years with these treatments.
 
 ## Prevention of Migraines
 

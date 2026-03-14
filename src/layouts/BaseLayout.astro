@@ -19,7 +19,7 @@ export interface Props {
 }
 
 const { title, description, focusKeyword, image, articleData } = Astro.props;
-const fullTitle = title === 'Home' ? 'Dr. Colin MacLeod ND - Bedford Naturopathic Doctor' : `${title} | Dr. Colin MacLeod ND`;
+const fullTitle = title === 'Home' ? 'Dr. Colin MacLeod ND | Halifax Naturopathic Doctor | Bedford, NS' : `${title} | Dr. Colin MacLeod ND`;
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 const ogImage = image || '/images/reference/home-background.webp';
 
@@ -64,7 +64,7 @@ const medicalBusinessSchema = JSON.stringify({
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Wednesday", "Thursday", "Friday"],
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
       "opens": "07:30",
       "closes": "15:30"
     }

@@ -217,6 +217,8 @@ To ensure that IV nutrient therapy will be safe and effective for you, an **init
 
 If you would like the option to receive IV therapy on the same day as your initial consultation, please book an **"Initial consultation with IV treatment"**. IV therapy will only be administered if Dr. MacLeod determines it is appropriate for your individual health needs.
 
+> **Explore all IV therapy options:** The Myers' Cocktail is one of several IV nutrient formulas available. Visit the [IV Nutrient Therapy hub](/iv-therapy) to learn about Glutathione, high-dose Vitamin C, NAD+ and customized IV treatments.
+
 ---
 
 ### References

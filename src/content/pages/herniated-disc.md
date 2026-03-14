@@ -56,7 +56,7 @@ Exercise based rehabilitation is an important part of the recovery process for m
 
 ### Acupuncture
 
-In a meta-analysis performed on the use of acupuncture in the treatment of disc herniation acupuncture demonstrated a more favourable effect than ibuprofen and multiple other pain-relieving drugs<sup>8</sup>. In practice I have seen excellent results with acupuncture for herniated disc management in many cases.
+In a meta-analysis performed on the use of acupuncture in the treatment of disc herniation acupuncture demonstrated a more favourable effect than ibuprofen and multiple other pain-relieving drugs<sup>8</sup>. In practice I have found acupuncture to be effective for herniated disc management in many cases.
 
 ### Natural Health Products
 

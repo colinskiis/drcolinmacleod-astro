@@ -58,8 +58,8 @@ import { Search as SearchIcon, X } from '@lucide/astro';
 </div>
 
 <style>
-  /* :global() required — these elements are injected via innerHTML at runtime
-     and don't receive Astro's scoped component attribute */
+  /* :global() required (these elements are injected via innerHTML at runtime
+     and don't receive Astro's scoped component attribute) */
   :global(.search-result-link) {
     @apply block px-3 py-5 border-b border-gray-200 hover:bg-emerald-50/60 transition-colors focus:outline-none focus:bg-emerald-100 focus:ring-2 focus:ring-inset focus:ring-emerald-500;
   }
@@ -166,7 +166,7 @@ import { Search as SearchIcon, X } from '@lucide/astro';
         }
       }, { signal });
 
-      // Keyboard shortcuts (Ctrl+K / Cmd+K and Escape) — on document,
+      // Keyboard shortcuts (Ctrl+K / Cmd+K and Escape), on document,
       // so they must be cleaned up via signal to avoid stacking.
       document.addEventListener('keydown', (e) => {
         if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
@@ -292,7 +292,7 @@ import { Search as SearchIcon, X } from '@lucide/astro';
     }
   }
 
-  // Always reinitialize on each navigation — destroy old listeners via AbortController
+  // Always reinitialize on each navigation; destroy old listeners via AbortController
   // before creating a new instance so document-level handlers don't stack.
   let searchInstance: SiteSearch | null = null;
   function initSearch() {

@@ -17,7 +17,7 @@ Generally, the most common symptom of TMJ dysfunction is pain and tenderness in 
 
 ## Risk Factors for TMJ Dysfunction
 
-Risk factors for TMJ dysfunction can be divided into two categories – physical and psychological. Physical risk factors for TMJ dysfunction include malocclusion of the teeth (not having the top and bottom teeth fit together correctly), grinding of the teeth, trauma to the jaw, arthritis and wearing a dental appliance such as a mouthguard.
+Risk factors for TMJ dysfunction can be divided into two categories: physical and psychological. Physical risk factors for TMJ dysfunction include malocclusion of the teeth (not having the top and bottom teeth fit together correctly), grinding of the teeth, trauma to the jaw, arthritis and wearing a dental appliance such as a mouthguard.
 
 Stress, anxiety and depression are psychological risk factors for TMJ dysfunction. Psychological stress and mental health problems can lead to clenching and grinding of the teeth, which can cause wear and tear on the temporomandibular joint. It is important to note that not everyone with these risk factors will develop TMJ dysfunction. If you are experiencing any of the symptoms of TMJ dysfunction, it is important to seek medical attention to get an accurate diagnosis and appropriate treatment.
 
