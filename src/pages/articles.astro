@@ -47,20 +47,27 @@ const collectionSchema = {
     <div class="section-shell">
       <div class="max-w-4xl mx-auto reveal">
         <div class="mb-8 sm:mb-10">
-          <div class="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:gap-3" role="list" aria-label="Filter articles by topic">
+          <nav class="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:gap-3" aria-label="Browse articles by topic">
             {articleTopicFilters.map((topic) => (
-              <button
-                type="button"
-                class="article-filter rounded-full border border-emerald-100 bg-white px-3 py-2 text-sm font-medium text-emerald-900 transition-colors hover:border-emerald-300 hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 sm:px-4"
-                data-topic={topic.id}
-                aria-pressed={topic.id === 'all' ? 'true' : 'false'}
+              <a
+                href={topic.id === 'all' ? '/articles/' : `/articles/${topic.id}/`}
+                aria-current={topic.id === 'all' ? 'page' : undefined}
+                class:list={[
+                  'rounded-full border px-3 py-2 text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 sm:px-4',
+                  topic.id === 'all'
+                    ? 'border-emerald-900 bg-emerald-900 text-white'
+                    : 'border-emerald-100 bg-white text-emerald-900 hover:border-emerald-300 hover:bg-emerald-50'
+                ]}
               >
                 <span>{topic.label}</span>
-                <span class="ml-1 text-xs text-gray-400" aria-hidden="true">{topicCounts[topic.id]}</span>
-              </button>
+                <span class:list={[
+                  'ml-1 text-xs',
+                  topic.id === 'all' ? 'text-white/70' : 'text-gray-400'
+                ]} aria-hidden="true">{topicCounts[topic.id]}</span>
+              </a>
             ))}
-          </div>
-          <p id="article-filter-summary" class="mt-4 text-sm text-gray-500" aria-live="polite">
+          </nav>
+          <p class="mt-4 text-sm text-gray-500">
             Showing all {sortedArticles.length} articles.
           </p>
         </div>
@@ -69,7 +76,6 @@ const collectionSchema = {
         {sortedArticles.map((article) => (
           <a
             href={`/articles/${article.slug}`}
-            data-topics={getArticleTopics(article).join(' ')}
             class="group flex items-center gap-4 py-5 border-b border-gray-100 last:border-0 -mx-4 px-4 rounded-lg hover:bg-emerald-50/50 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-inset"
           >
             <div class="flex-1 min-w-0">
@@ -91,24 +97,6 @@ const collectionSchema = {
           </a>
         ))}
         </div>
-
-        <p id="article-filter-empty" class="hidden rounded-2xl border border-emerald-100 bg-emerald-50/40 p-6 text-center text-gray-600">
-          No articles match this topic yet.
-        </p>
-
-        <nav class="mt-12 border-t border-gray-100 pt-8" aria-label="Article topic pages">
-          <h2 class="text-xl font-serif font-semibold text-emerald-950 mb-4">Browse Articles by Topic</h2>
-          <div class="flex flex-wrap gap-3">
-            {articleTopics.map((topic) => (
-              <a
-                href={`/articles/${topic.id}/`}
-                class="rounded-full border border-emerald-100 bg-white px-4 py-2 text-sm font-medium text-emerald-900 transition-colors hover:border-emerald-300 hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
-              >
-                {topic.label}
-              </a>
-            ))}
-          </div>
-        </nav>
       </div>
     </div>
   </section>
@@ -126,69 +114,4 @@ const collectionSchema = {
     </div>
   </section>
 
-  <script>
-    function initArticleFilters() {
-      const filters = Array.from(document.querySelectorAll<HTMLButtonElement>('.article-filter'));
-      const articles = Array.from(document.querySelectorAll<HTMLElement>('#article-list [data-topics]'));
-      const summary = document.getElementById('article-filter-summary');
-      const empty = document.getElementById('article-filter-empty');
-      const topicLabels = new Map(filters.map((filter) => [filter.dataset.topic, filter.querySelector('span')?.textContent ?? 'All']));
-
-      if (!filters.length || !articles.length || !summary || !empty) return;
-
-      const params = new URLSearchParams(window.location.search);
-      const initialTopic = params.get('topic');
-      const validTopics = new Set(filters.map((filter) => filter.dataset.topic));
-
-      function setActiveTopic(topic: string, updateUrl = true) {
-        const nextTopic = validTopics.has(topic) ? topic : 'all';
-        let visibleCount = 0;
-
-        filters.forEach((filter) => {
-          const isActive = filter.dataset.topic === nextTopic;
-          filter.setAttribute('aria-pressed', isActive.toString());
-          filter.classList.toggle('bg-emerald-900', isActive);
-          filter.classList.toggle('border-emerald-900', isActive);
-          filter.classList.toggle('text-white', isActive);
-          filter.classList.toggle('bg-white', !isActive);
-          filter.classList.toggle('border-emerald-100', !isActive);
-          filter.classList.toggle('text-emerald-900', !isActive);
-        });
-
-        articles.forEach((article) => {
-          const topics = (article.dataset.topics ?? '').split(' ');
-          const shouldShow = nextTopic === 'all' || topics.includes(nextTopic);
-          article.classList.toggle('hidden', !shouldShow);
-          if (shouldShow) visibleCount += 1;
-        });
-
-        empty.classList.toggle('hidden', visibleCount !== 0);
-        const label = topicLabels.get(nextTopic) ?? 'All';
-        summary.textContent = nextTopic === 'all'
-          ? `Showing all ${visibleCount} articles.`
-          : `Showing ${visibleCount} ${visibleCount === 1 ? 'article' : 'articles'} in ${label}.`;
-
-        if (updateUrl) {
-          const url = new URL(window.location.href);
-          if (nextTopic === 'all') {
-            url.searchParams.delete('topic');
-          } else {
-            url.searchParams.set('topic', nextTopic);
-          }
-          window.history.replaceState({}, '', url);
-        }
-      }
-
-      filters.forEach((filter) => {
-        if (filter.dataset.filterBound === 'true') return;
-        filter.dataset.filterBound = 'true';
-        filter.addEventListener('click', () => setActiveTopic(filter.dataset.topic ?? 'all'));
-      });
-
-      setActiveTopic(initialTopic ?? 'all', false);
-    }
-
-    initArticleFilters();
-    document.addEventListener('astro:page-load', initArticleFilters);
-  </script>
 </BaseLayout>
