@@ -10,6 +10,48 @@ const allArticles = await getCollection('articles', ({ data }) => {
 const sortedArticles = allArticles.sort((a, b) =>
   new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime()
 );
+
+const topicFilters = [
+  { id: 'all', label: 'All' },
+  { id: 'pain-injuries', label: 'Pain & Injuries' },
+  { id: 'digestive-health', label: 'Digestive Health' },
+  { id: 'hormones', label: 'Hormones' },
+  { id: 'mental-health', label: 'Mental Health' },
+  { id: 'nutrition', label: 'Nutrition' },
+  { id: 'iv-therapy', label: 'IV Therapy' },
+  { id: 'heart-metabolic', label: 'Heart & Metabolic' },
+  { id: 'immune-health', label: 'Immune Health' },
+] as const;
+
+const topicMatchers: Record<string, string[]> = {
+  'pain-injuries': ['pain management', 'sports medicine', 'athletic performance', 'sports injuries', 'prolotherapy', 'arthritis', 'injury', 'athletic recovery'],
+  'digestive-health': ['digestive health', 'gut', 'ibs', 'ibd', 'fiber', 'parasites'],
+  'hormones': ['hormones', 'hormonal health', "women's health", "men's health", 'fertility', 'pcos', 'pms', 'menopause', 'testosterone', 'acne'],
+  'mental-health': ['mental health', 'anxiety', 'depression', 'stress', 'sleep'],
+  'nutrition': ['nutrition', 'herbal medicine', 'adaptogens', 'magnesium', 'creatine', 'electrolytes', 'nutrients', 'diet'],
+  'iv-therapy': ['iv therapy', 'post-viral recovery', 'myers cocktail', 'vitamin c', 'glutathione'],
+  'heart-metabolic': ['heart health', 'weight management', 'blood pressure', 'blood sugar', 'diabetes', 'berberine', 'metabolic', 'cardiovascular'],
+  'immune-health': ['immune health', 'autoimmune', 'respiratory health', 'asthma', 'post-viral recovery', 'mistletoe'],
+};
+
+const getArticleTopics = (article: typeof sortedArticles[number]) => {
+  const searchable = [
+    article.data.title,
+    ...(article.data.categories ?? []),
+    ...(article.data.tags ?? []),
+  ].join(' ').toLowerCase();
+
+  return topicFilters
+    .filter((topic) => topic.id === 'all' || topicMatchers[topic.id]?.some((term) => searchable.includes(term)))
+    .map((topic) => topic.id);
+};
+
+const topicCounts = topicFilters.reduce((counts, topic) => {
+  counts[topic.id] = topic.id === 'all'
+    ? sortedArticles.length
+    : sortedArticles.filter((article) => getArticleTopics(article).includes(topic.id)).length;
+  return counts;
+}, {} as Record<string, number>);
 ---
 
 <BaseLayout
@@ -23,10 +65,31 @@ const sortedArticles = allArticles.sort((a, b) =>
 
   <section class="py-12 lg:py-20 bg-white">
     <div class="section-shell">
-      <div class="max-w-3xl mx-auto reveal">
+      <div class="max-w-4xl mx-auto reveal">
+        <div class="mb-8 sm:mb-10">
+          <div class="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:gap-3" role="list" aria-label="Filter articles by topic">
+            {topicFilters.map((topic) => (
+              <button
+                type="button"
+                class="article-filter rounded-full border border-emerald-100 bg-white px-3 py-2 text-sm font-medium text-emerald-900 transition-colors hover:border-emerald-300 hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 sm:px-4"
+                data-topic={topic.id}
+                aria-pressed={topic.id === 'all' ? 'true' : 'false'}
+              >
+                <span>{topic.label}</span>
+                <span class="ml-1 text-xs text-gray-400" aria-hidden="true">{topicCounts[topic.id]}</span>
+              </button>
+            ))}
+          </div>
+          <p id="article-filter-summary" class="mt-4 text-sm text-gray-500" aria-live="polite">
+            Showing all {sortedArticles.length} articles.
+          </p>
+        </div>
+
+        <div id="article-list">
         {sortedArticles.map((article) => (
           <a
             href={`/articles/${article.slug}`}
+            data-topics={getArticleTopics(article).join(' ')}
             class="group flex items-center gap-4 py-5 border-b border-gray-100 last:border-0 -mx-4 px-4 rounded-lg hover:bg-emerald-50/50 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-inset"
           >
             <div class="flex-1 min-w-0">
@@ -47,6 +110,11 @@ const sortedArticles = allArticles.sort((a, b) =>
             </svg>
           </a>
         ))}
+        </div>
+
+        <p id="article-filter-empty" class="hidden rounded-2xl border border-emerald-100 bg-emerald-50/40 p-6 text-center text-gray-600">
+          No articles match this topic yet.
+        </p>
       </div>
     </div>
   </section>
@@ -63,4 +131,70 @@ const sortedArticles = allArticles.sort((a, b) =>
       </div>
     </div>
   </section>
+
+  <script>
+    function initArticleFilters() {
+      const filters = Array.from(document.querySelectorAll<HTMLButtonElement>('.article-filter'));
+      const articles = Array.from(document.querySelectorAll<HTMLElement>('#article-list [data-topics]'));
+      const summary = document.getElementById('article-filter-summary');
+      const empty = document.getElementById('article-filter-empty');
+      const topicLabels = new Map(filters.map((filter) => [filter.dataset.topic, filter.querySelector('span')?.textContent ?? 'All']));
+
+      if (!filters.length || !articles.length || !summary || !empty) return;
+
+      const params = new URLSearchParams(window.location.search);
+      const initialTopic = params.get('topic');
+      const validTopics = new Set(filters.map((filter) => filter.dataset.topic));
+
+      function setActiveTopic(topic: string, updateUrl = true) {
+        const nextTopic = validTopics.has(topic) ? topic : 'all';
+        let visibleCount = 0;
+
+        filters.forEach((filter) => {
+          const isActive = filter.dataset.topic === nextTopic;
+          filter.setAttribute('aria-pressed', isActive.toString());
+          filter.classList.toggle('bg-emerald-900', isActive);
+          filter.classList.toggle('border-emerald-900', isActive);
+          filter.classList.toggle('text-white', isActive);
+          filter.classList.toggle('bg-white', !isActive);
+          filter.classList.toggle('border-emerald-100', !isActive);
+          filter.classList.toggle('text-emerald-900', !isActive);
+        });
+
+        articles.forEach((article) => {
+          const topics = (article.dataset.topics ?? '').split(' ');
+          const shouldShow = nextTopic === 'all' || topics.includes(nextTopic);
+          article.classList.toggle('hidden', !shouldShow);
+          if (shouldShow) visibleCount += 1;
+        });
+
+        empty.classList.toggle('hidden', visibleCount !== 0);
+        const label = topicLabels.get(nextTopic) ?? 'All';
+        summary.textContent = nextTopic === 'all'
+          ? `Showing all ${visibleCount} articles.`
+          : `Showing ${visibleCount} ${visibleCount === 1 ? 'article' : 'articles'} in ${label}.`;
+
+        if (updateUrl) {
+          const url = new URL(window.location.href);
+          if (nextTopic === 'all') {
+            url.searchParams.delete('topic');
+          } else {
+            url.searchParams.set('topic', nextTopic);
+          }
+          window.history.replaceState({}, '', url);
+        }
+      }
+
+      filters.forEach((filter) => {
+        if (filter.dataset.filterBound === 'true') return;
+        filter.dataset.filterBound = 'true';
+        filter.addEventListener('click', () => setActiveTopic(filter.dataset.topic ?? 'all'));
+      });
+
+      setActiveTopic(initialTopic ?? 'all', false);
+    }
+
+    initArticleFilters();
+    document.addEventListener('astro:page-load', initArticleFilters);
+  </script>
 </BaseLayout>

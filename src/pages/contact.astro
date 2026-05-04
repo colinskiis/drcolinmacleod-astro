@@ -3,6 +3,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import BookingButton from '../components/BookingButton.astro';
 import FAQAccordion from '../components/FAQAccordion.astro';
+
+const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? '';
 ---
 
 <BaseLayout
@@ -30,10 +32,7 @@ import FAQAccordion from '../components/FAQAccordion.astro';
             id="contact-form"
             class="space-y-6"
           >
-            <!-- Web3Forms access key - get yours free at web3forms.com -->
-            <input type="hidden" name="access_key" value="77afa6a0-adee-4b16-ac00-52b5472b2fdd">
             <input type="hidden" name="subject" value="New Contact Form Submission - drcolinmacleod.com">
-            <input type="hidden" name="from_name" value="Dr. Colin MacLeod Website">
             <!-- Name -->
             <div>
               <label for="name" class="block text-sm font-medium text-gray-700 mb-2">
@@ -83,30 +82,17 @@ import FAQAccordion from '../components/FAQAccordion.astro';
               ></textarea>
             </div>
 
-            <!-- Privacy Notice -->
-            <div class="bg-gray-50 p-4 rounded-lg">
-              <label for="privacy" class="flex items-start cursor-pointer group">
-                <span class="flex items-center justify-center w-6 h-6 mr-3 mt-0.5 flex-shrink-0">
-                  <input
-                    type="checkbox"
-                    id="privacy"
-                    name="privacy"
-                    required
-                    aria-required="true"
-                    class="w-5 h-5 text-emerald-600 focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 border-gray-300 rounded cursor-pointer"
-                  >
-                </span>
-                <span class="text-sm text-gray-600 group-hover:text-gray-800">
-                  I understand that this form is for general inquiries only and not for medical emergencies. Any health information shared will be kept confidential and used only to provide appropriate resources and scheduling information. <span class="text-red-600" aria-hidden="true">*</span>
-                  <span class="sr-only">(required)</span>
-                </span>
-              </label>
+            <div class="rounded-lg bg-gray-50 p-4 text-sm leading-relaxed text-gray-700">
+              This form is for general inquiries only and is not monitored for medical emergencies. Please avoid sending detailed personal health information here.
             </div>
 
             <!-- Honeypot: hidden from real users, traps bots -->
             <div aria-hidden="true" style="display:none;">
               <input type="text" name="_gotcha" tabindex="-1" autocomplete="off">
             </div>
+
+            <!-- Turnstile bot protection (only appears when Cloudflare needs interaction) -->
+            <div class="cf-turnstile" data-sitekey={turnstileSiteKey} data-theme="light" data-appearance="interaction-only"></div>
 
             <!-- Submit Button -->
             <div>
@@ -231,6 +217,8 @@ import FAQAccordion from '../components/FAQAccordion.astro';
   </section>
 </BaseLayout>
 
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
 <script>
   // Form submission handling
   function initContactPage() {
@@ -259,32 +247,45 @@ import FAQAccordion from '../components/FAQAccordion.astro';
       // Get form data
       const formData = new FormData(form);
 
-      fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        body: formData,
-        headers: {
-          'Accept': 'application/json'
-        }
+      // Wait up to 5s for Turnstile to complete its silent background check
+      const waitForTurnstile = () => new Promise((resolve, reject) => {
+        const start = Date.now();
+        const check = () => {
+          const el = document.querySelector('[name="cf-turnstile-response"]');
+          const token = el ? el.value : '';
+          if (token && token.trim() !== '') return resolve(null);
+          if (Date.now() - start > 5000) return reject(new Error('Turnstile timeout'));
+          setTimeout(check, 100);
+        };
+        check();
+      });
+
+      waitForTurnstile()
+      .then(() => {
+        const freshFormData = new FormData(form);
+        return fetch('/contact-handler.php', {
+          method: 'POST',
+          body: freshFormData,
+          headers: { 'Accept': 'application/json' }
+        });
       })
       .then(response => response.json())
       .then(data => {
         if (data.success) {
-          // Success
           formMessages.classList.remove('hidden');
           successMessage.classList.remove('hidden');
           form.reset();
+          if (window.turnstile) window.turnstile.reset();
         } else {
           throw new Error(data.message || 'Submission failed');
         }
       })
       .catch(error => {
-        // Error
         console.error('Form submission error:', error);
         formMessages.classList.remove('hidden');
         errorMessage.classList.remove('hidden');
       })
       .finally(() => {
-        // Reset button state
         submitBtn.disabled = false;
         submitText.classList.remove('hidden');
         submitLoading.classList.add('hidden');
@@ -294,4 +295,3 @@ import FAQAccordion from '../components/FAQAccordion.astro';
 
   document.addEventListener('astro:page-load', initContactPage);
 </script>
-

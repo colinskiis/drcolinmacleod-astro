@@ -3,7 +3,6 @@ Allow: /
 
 # Block access to admin areas and private files
 Disallow: /admin/
-Disallow: /_astro/
 Disallow: /.well-known/
 Disallow: /api/
 

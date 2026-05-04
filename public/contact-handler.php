@@ -20,6 +20,59 @@ if ($origin !== '') {
     }
 }
 
+// Cloudflare Turnstile validation (free anti-bot protection)
+$turnstileToken = trim($_POST['cf-turnstile-response'] ?? '');
+if ($turnstileToken === '') {
+    http_response_code(422);
+    echo json_encode(['error' => 'Bot check required']);
+    exit;
+}
+
+// Secret is stored OUTSIDE web root — never committed to git
+// File: ~/turnstile_config.php
+// Contents: <?php return '0x4AAAA...';
+$turnstileConfigFile = dirname(__DIR__) . '/turnstile_config.php';
+if (!file_exists($turnstileConfigFile)) {
+    http_response_code(500);
+    echo json_encode(['error' => 'Server configuration error']);
+    exit;
+}
+
+$turnstileSecret = require $turnstileConfigFile;
+
+$turnstilePayload = http_build_query([
+    'secret'   => $turnstileSecret,
+    'response' => $turnstileToken,
+    'remoteip' => $_SERVER['REMOTE_ADDR'] ?? '',
+]);
+
+$turnstileCh = curl_init('https://challenges.cloudflare.com/turnstile/v0/siteverify');
+curl_setopt_array($turnstileCh, [
+    CURLOPT_POST           => true,
+    CURLOPT_POSTFIELDS     => $turnstilePayload,
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_HTTPHEADER     => [
+        'Content-Type: application/x-www-form-urlencoded',
+    ],
+]);
+
+$turnstileResponseRaw = curl_exec($turnstileCh);
+$turnstileHttpCode    = curl_getinfo($turnstileCh, CURLINFO_HTTP_CODE);
+curl_close($turnstileCh);
+
+if ($turnstileHttpCode !== 200 || $turnstileResponseRaw === false) {
+    http_response_code(500);
+    echo json_encode(['error' => 'Bot verification unavailable']);
+    exit;
+}
+
+$turnstileResponse = json_decode($turnstileResponseRaw, true);
+if (!is_array($turnstileResponse) || empty($turnstileResponse['success'])) {
+    http_response_code(422);
+    echo json_encode(['error' => 'Bot verification failed']);
+    exit;
+}
+
 // Rate limit: max 5 submissions per IP per hour
 // Stored OUTSIDE web root (parent of public_html) — not browser-accessible
 // On Namecheap: __DIR__ = ~/public_html/, dirname(__DIR__) = ~/
@@ -78,11 +131,9 @@ if (!empty($_POST['_gotcha'])) {
 $name    = trim($_POST['name']    ?? '');
 $email   = trim($_POST['email']   ?? '');
 $message = trim($_POST['message'] ?? '');
-$privacy = $_POST['privacy']      ?? '';
 
-// Presence + privacy checkbox validation
-// The form's checkbox has no value attr, so browsers send 'on' by default (HTML spec)
-if (!$name || !$email || !$message || $privacy !== 'on') {
+// Presence validation
+if (!$name || !$email || !$message) {
     http_response_code(422);
     echo json_encode(['error' => 'All fields are required']);
     exit;
