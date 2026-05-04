@@ -1,0 +1,163 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import HeroSection from '../../components/HeroSection.astro';
+import CTAButton from '../../components/CTAButton.astro';
+import { articleTopics, getArticleTopic, getArticleTopics } from '../../lib/articleTopics';
+
+export async function getStaticPaths() {
+  return articleTopics.map((topic) => ({
+    params: { topic: topic.id },
+    props: { topicId: topic.id },
+  }));
+}
+
+const { topicId } = Astro.props;
+const topic = getArticleTopic(topicId);
+
+if (!topic) {
+  return Astro.redirect('/articles/');
+}
+
+const allArticles = await getCollection('articles', ({ data }) => {
+  return data.draft !== true;
+});
+
+const articles = allArticles
+  .filter((article) => getArticleTopics(article).includes(topic.id))
+  .sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime());
+
+const collectionSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": topic.title,
+  "description": topic.description,
+  "url": `https://drcolinmacleod.com/articles/${topic.id}/`,
+  "isPartOf": {
+    "@type": "CollectionPage",
+    "name": "Health Articles & Resources",
+    "url": "https://drcolinmacleod.com/articles/"
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": articles.length,
+    "itemListElement": articles.map((article, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "url": `https://drcolinmacleod.com/articles/${article.slug}/`,
+      "name": article.data.title
+    }))
+  }
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://drcolinmacleod.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Articles",
+      "item": "https://drcolinmacleod.com/articles/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": topic.label,
+      "item": `https://drcolinmacleod.com/articles/${topic.id}/`
+    }
+  ]
+};
+---
+
+<BaseLayout
+  title={topic.title}
+  description={topic.description}
+  focusKeyword={topic.focusKeyword}
+  customSchemas={[collectionSchema, breadcrumbSchema]}
+>
+  <HeroSection title={topic.title} centered compact>
+    <p>{topic.intro}</p>
+  </HeroSection>
+
+  <section class="py-12 lg:py-20 bg-white">
+    <div class="section-shell">
+      <div class="max-w-4xl mx-auto">
+        <nav class="flex items-center gap-2 text-sm mb-8" aria-label="Breadcrumb">
+          <a href="/" class="text-emerald-800 hover:text-emerald-900 font-medium">Home</a>
+          <span class="text-gray-400" aria-hidden="true">/</span>
+          <a href="/articles/" class="text-emerald-800 hover:text-emerald-900 font-medium">Articles</a>
+          <span class="text-gray-400" aria-hidden="true">/</span>
+          <span class="text-gray-500">{topic.label}</span>
+        </nav>
+
+        <div class="mb-8 flex flex-wrap gap-3">
+          <a
+            href="/articles/"
+            class="rounded-full border border-emerald-100 bg-white px-4 py-2 text-sm font-medium text-emerald-900 transition-colors hover:border-emerald-300 hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
+          >
+            All Articles
+          </a>
+          {articleTopics.map((item) => (
+            <a
+              href={`/articles/${item.id}/`}
+              aria-current={item.id === topic.id ? 'page' : undefined}
+              class:list={[
+                'rounded-full border px-4 py-2 text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2',
+                item.id === topic.id
+                  ? 'border-emerald-900 bg-emerald-900 text-white'
+                  : 'border-emerald-100 bg-white text-emerald-900 hover:border-emerald-300 hover:bg-emerald-50'
+              ]}
+            >
+              {item.label}
+            </a>
+          ))}
+        </div>
+
+        <div>
+          {articles.map((article) => (
+            <a
+              href={`/articles/${article.slug}/`}
+              class="group flex items-center gap-4 py-5 border-b border-gray-100 last:border-0 -mx-4 px-4 rounded-lg hover:bg-emerald-50/50 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-inset"
+            >
+              <div class="flex-1 min-w-0">
+                <time class="text-xs text-gray-400 block mb-1">
+                  {new Date(article.data.publishDate).toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'short',
+                    day: 'numeric'
+                  })}
+                </time>
+                <h2 class="text-lg sm:text-xl font-serif font-semibold text-gray-900 group-hover:text-emerald-700 transition-colors leading-snug">
+                  {article.data.title}
+                </h2>
+                <p class="text-xs text-gray-400 mt-1">By {article.data.author}</p>
+              </div>
+              <svg class="w-5 h-5 text-gray-300 group-hover:text-emerald-600 transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-emerald-950 py-16 lg:py-24">
+    <div class="section-shell text-center">
+      <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-6">Questions About Your Health?</h2>
+      <p class="text-lg sm:text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
+        Book an appointment to discuss whether naturopathic care is appropriate for your concerns.
+      </p>
+      <div class="flex justify-center">
+        <CTAButton source={`articles-topic-${topic.id}`} />
+      </div>
+    </div>
+  </section>
+</BaseLayout>

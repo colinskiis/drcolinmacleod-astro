@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
 import { getCollection } from 'astro:content';
+import { articleTopicFilters, articleTopics, getArticleTopics } from '../lib/articleTopics';
 
 const allArticles = await getCollection('articles', ({ data }) => {
   return data.draft !== true;
@@ -11,53 +12,32 @@ const sortedArticles = allArticles.sort((a, b) =>
   new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime()
 );
 
-const topicFilters = [
-  { id: 'all', label: 'All' },
-  { id: 'pain-injuries', label: 'Pain & Injuries' },
-  { id: 'digestive-health', label: 'Digestive Health' },
-  { id: 'hormones', label: 'Hormones' },
-  { id: 'mental-health', label: 'Mental Health' },
-  { id: 'nutrition', label: 'Nutrition' },
-  { id: 'iv-therapy', label: 'IV Therapy' },
-  { id: 'heart-metabolic', label: 'Heart & Metabolic' },
-  { id: 'immune-health', label: 'Immune Health' },
-] as const;
-
-const topicMatchers: Record<string, string[]> = {
-  'pain-injuries': ['pain management', 'sports medicine', 'athletic performance', 'sports injuries', 'prolotherapy', 'arthritis', 'injury', 'athletic recovery'],
-  'digestive-health': ['digestive health', 'gut', 'ibs', 'ibd', 'fiber', 'parasites'],
-  'hormones': ['hormones', 'hormonal health', "women's health", "men's health", 'fertility', 'pcos', 'pms', 'menopause', 'testosterone', 'acne'],
-  'mental-health': ['mental health', 'anxiety', 'depression', 'stress', 'sleep'],
-  'nutrition': ['nutrition', 'herbal medicine', 'adaptogens', 'magnesium', 'creatine', 'electrolytes', 'nutrients', 'diet'],
-  'iv-therapy': ['iv therapy', 'post-viral recovery', 'myers cocktail', 'vitamin c', 'glutathione'],
-  'heart-metabolic': ['heart health', 'weight management', 'blood pressure', 'blood sugar', 'diabetes', 'berberine', 'metabolic', 'cardiovascular'],
-  'immune-health': ['immune health', 'autoimmune', 'respiratory health', 'asthma', 'post-viral recovery', 'mistletoe'],
-};
-
-const getArticleTopics = (article: typeof sortedArticles[number]) => {
-  const searchable = [
-    article.data.title,
-    ...(article.data.categories ?? []),
-    ...(article.data.tags ?? []),
-  ].join(' ').toLowerCase();
-
-  return topicFilters
-    .filter((topic) => topic.id === 'all' || topicMatchers[topic.id]?.some((term) => searchable.includes(term)))
-    .map((topic) => topic.id);
-};
-
-const topicCounts = topicFilters.reduce((counts, topic) => {
+const topicCounts = articleTopicFilters.reduce((counts, topic) => {
   counts[topic.id] = topic.id === 'all'
     ? sortedArticles.length
     : sortedArticles.filter((article) => getArticleTopics(article).includes(topic.id)).length;
   return counts;
 }, {} as Record<string, number>);
+
+const collectionSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Health Articles & Resources",
+  "description": "Evidence-based articles on natural health, nutrition, herbal medicine and naturopathic treatments by Dr. Colin MacLeod ND in Halifax, Nova Scotia.",
+  "url": "https://drcolinmacleod.com/articles/",
+  "hasPart": articleTopics.map((topic) => ({
+    "@type": "CollectionPage",
+    "name": topic.title,
+    "url": `https://drcolinmacleod.com/articles/${topic.id}/`
+  }))
+};
 ---
 
 <BaseLayout
   title="Health Articles & Resources"
   description="Evidence-based articles on natural health, nutrition, herbal medicine and naturopathic treatments by Dr. Colin MacLeod ND in Halifax, Nova Scotia."
   focusKeyword="naturopathic health articles Halifax"
+  customSchemas={[collectionSchema]}
 >
   <HeroSection title="Articles" centered compact>
     <p>Evidence-based articles on natural health, nutrition and treatment approaches</p>
@@ -68,7 +48,7 @@ const topicCounts = topicFilters.reduce((counts, topic) => {
       <div class="max-w-4xl mx-auto reveal">
         <div class="mb-8 sm:mb-10">
           <div class="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:gap-3" role="list" aria-label="Filter articles by topic">
-            {topicFilters.map((topic) => (
+            {articleTopicFilters.map((topic) => (
               <button
                 type="button"
                 class="article-filter rounded-full border border-emerald-100 bg-white px-3 py-2 text-sm font-medium text-emerald-900 transition-colors hover:border-emerald-300 hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 sm:px-4"
@@ -115,6 +95,20 @@ const topicCounts = topicFilters.reduce((counts, topic) => {
         <p id="article-filter-empty" class="hidden rounded-2xl border border-emerald-100 bg-emerald-50/40 p-6 text-center text-gray-600">
           No articles match this topic yet.
         </p>
+
+        <nav class="mt-12 border-t border-gray-100 pt-8" aria-label="Article topic pages">
+          <h2 class="text-xl font-serif font-semibold text-emerald-950 mb-4">Browse Articles by Topic</h2>
+          <div class="flex flex-wrap gap-3">
+            {articleTopics.map((topic) => (
+              <a
+                href={`/articles/${topic.id}/`}
+                class="rounded-full border border-emerald-100 bg-white px-4 py-2 text-sm font-medium text-emerald-900 transition-colors hover:border-emerald-300 hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
+              >
+                {topic.label}
+              </a>
+            ))}
+          </div>
+        </nav>
       </div>
     </div>
   </section>

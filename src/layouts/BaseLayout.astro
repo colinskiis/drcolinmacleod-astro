@@ -16,9 +16,10 @@ export interface Props {
     author?: string;
     tags?: string[];
   };
+  customSchemas?: Record<string, unknown> | Record<string, unknown>[];
 }
 
-const { title, description, focusKeyword, image, articleData } = Astro.props;
+const { title, description, focusKeyword, image, articleData, customSchemas = [] } = Astro.props;
 const fullTitle = title === 'Home' ? 'Dr. Colin MacLeod ND | Halifax Naturopathic Doctor | Bedford, NS' : `${title} | Dr. Colin MacLeod ND`;
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 const ogImage = image || '/images/reference/home-background.webp';
@@ -27,18 +28,29 @@ const ogImage = image || '/images/reference/home-background.webp';
 const medicalBusinessSchema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "MedicalBusiness",
+  "@id": "https://drcolinmacleod.com/#medicalbusiness",
   "name": "Dr. Colin MacLeod ND",
+  "alternateName": [
+    "Dr. Colin MacLeod",
+    "Colin MacLeod ND",
+    "Optimal Wellbeing Clinic"
+  ],
   "description": "Bedford, NS Naturopathic Doctor providing comprehensive natural healthcare solutions including IV therapy, prolotherapy, acupuncture and clinical nutrition.",
   "url": "https://drcolinmacleod.com",
   "logo": "https://drcolinmacleod.com/favicon.svg",
   "image": "https://drcolinmacleod.com/images/general/colin-hero.webp",
   "priceRange": "$$",
+  "currenciesAccepted": "CAD",
+  "paymentAccepted": "Cash, Credit Card, Debit Card",
   "medicalSpecialty": "Naturopathic Medicine",
+  "telephone": "+1-902-406-4424",
   "contactPoint": {
     "@type": "ContactPoint",
     "contactType": "appointment booking",
     "url": "https://macleodnaturopathic.janeapp.com/",
-    "telephone": "+1-902-406-4424"
+    "telephone": "+1-902-406-4424",
+    "areaServed": "CA-NS",
+    "availableLanguage": "English"
   },
   "address": {
     "@type": "PostalAddress",
@@ -53,14 +65,32 @@ const medicalBusinessSchema = JSON.stringify({
     "latitude": "44.7258",
     "longitude": "-63.6540"
   },
-  "areaServed": {
-    "@type": "City",
-    "name": "Bedford",
-    "containedInPlace": {
-      "@type": "State",
-      "name": "Nova Scotia"
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Bedford",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Nova Scotia"
+      }
+    },
+    {
+      "@type": "City",
+      "name": "Halifax",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Nova Scotia"
+      }
+    },
+    {
+      "@type": "City",
+      "name": "Dartmouth",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Nova Scotia"
+      }
     }
-  },
+  ],
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
@@ -81,6 +111,21 @@ const medicalBusinessSchema = JSON.stringify({
       {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Chelation Therapy"}}
     ]
   },
+  "potentialAction": {
+    "@type": "ReserveAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://macleodnaturopathic.janeapp.com/",
+      "actionPlatform": [
+        "https://schema.org/DesktopWebPlatform",
+        "https://schema.org/MobileWebPlatform"
+      ]
+    },
+    "result": {
+      "@type": "Reservation",
+      "name": "Naturopathic appointment"
+    }
+  },
   "sameAs": [
     "https://macleodnaturopathic.janeapp.com/"
   ]
@@ -89,6 +134,7 @@ const medicalBusinessSchema = JSON.stringify({
 const personSchema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "Person",
+  "@id": "https://drcolinmacleod.com/#colin-macleod",
   "name": "Dr. Colin MacLeod",
   "givenName": "Colin",
   "familyName": "MacLeod",
@@ -126,6 +172,7 @@ const personSchema = JSON.stringify({
   ],
   "worksFor": {
     "@type": "MedicalBusiness",
+    "@id": "https://drcolinmacleod.com/#medicalbusiness",
     "name": "Dr. Colin MacLeod ND",
     "url": "https://drcolinmacleod.com",
     "address": {
@@ -148,6 +195,34 @@ const personSchema = JSON.stringify({
       "postalCode": "B4A 1E2",
       "addressCountry": "CA"
     }
+  }
+});
+
+const websiteSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://drcolinmacleod.com/#website",
+  "name": "Dr. Colin MacLeod ND",
+  "url": "https://drcolinmacleod.com/",
+  "inLanguage": "en-CA",
+  "publisher": {
+    "@id": "https://drcolinmacleod.com/#medicalbusiness"
+  }
+});
+
+const pageSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": canonicalUrl.toString(),
+  "url": canonicalUrl.toString(),
+  "name": fullTitle,
+  "description": description,
+  "inLanguage": "en-CA",
+  "isPartOf": {
+    "@id": "https://drcolinmacleod.com/#website"
+  },
+  "about": {
+    "@id": "https://drcolinmacleod.com/#colin-macleod"
   }
 });
 
@@ -176,6 +251,9 @@ const articleSchema = articleData ? JSON.stringify({
   },
   "image": new URL(ogImage, Astro.site).toString()
 }) : null;
+
+const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [customSchemas])
+  .map((schema) => JSON.stringify(schema));
 ---
 
 <!doctype html>
@@ -238,9 +316,16 @@ const articleSchema = articleData ? JSON.stringify({
     <!-- Structured Data: Person (Practitioner) -->
     <script type="application/ld+json" set:html={personSchema} />
 
+    <!-- Structured Data: Website and Page -->
+    <script type="application/ld+json" set:html={websiteSchema} />
+    <script type="application/ld+json" set:html={pageSchema} />
+
     {articleSchema && (
       <script type="application/ld+json" set:html={articleSchema} />
     )}
+    {customSchemaJson.map((schema) => (
+      <script type="application/ld+json" set:html={schema} />
+    ))}
     <!-- Fonts loaded via global.css (Manrope, Playfair Display) -->
     <ClientRouter />
   </head>
