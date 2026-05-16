@@ -15,6 +15,14 @@ Peptides have moved from a specialized area of pharmaceutical research into main
 
 The problem is that the word "peptide" now covers very different things: approved prescription medicines, investigational compounds, compounded preparations, cosmetic ingredients, oral collagen products and unapproved injectable products sold online as research chemicals. These categories are often blurred in social media, podcast and YouTube video presentations. Health Canada has warned Canadians not to buy or inject unauthorized peptide medicines sold online, noting that many are marketed for anti-aging, bodybuilding, wellness, athletic performance, weight loss and injury recovery despite not being assessed for safety, effectiveness or quality.<sup>1</sup>
 
+| Peptide category | Examples | Evidence level | Canadian regulatory status | Main safety concern |
+| --- | --- | --- | --- | --- |
+| Approved peptide medicines | Insulin, GLP-1 receptor agonists, desmopressin | Strongest when used for approved indications | Reviewed and authorized for specific uses | Known adverse effects, contraindications and monitoring needs |
+| Investigational peptides | Compounds being studied in clinical trials | Variable; depends on trial stage and indication | Not approved for routine clinical use unless authorized through a formal pathway | Unknown benefit-risk balance outside research settings |
+| Compounded peptide preparations | Patient-specific sterile preparations | Depends on the active ingredient and reason for compounding | Regulated differently than approved manufactured medicines | Sterility, dosing accuracy and whether compounding is clinically justified |
+| Online research chemicals | BPC-157, TB-500, CJC-1295, ipamorelin and similar products sold online | Often preclinical, limited or anecdotal for promoted claims | Not authorized for human use when sold as research chemicals | Product quality, contamination, mislabelling and unverified dosing |
+| Cosmetic or supplement-adjacent products | Cosmetic peptides, oral collagen peptides | Depends on product and claim | Usually regulated according to the product type and claim | Overstated marketing claims and confusion with injectable medicines |
+
 ## What Are Peptides?
 
 Peptides are short chains of amino acids. Proteins are also made of amino acids, but peptides are smaller. In the body, peptides often act as hormones, neurotransmitters, growth factors or signalling molecules. Because they can interact with specific receptors, they can have strong biological effects even at low doses.
@@ -37,9 +45,30 @@ In April 2026, Health Canada issued a public advisory warning people not to buy 
 
 Health Canada stated that peptides are generally regulated as prescription medicines in Canada, and that authorized medicines for sale in Canada have an eight-digit Drug Identification Number (DIN). Products labelled "For Research Use Only" are not made legal for human use by that label. Health Canada's concern is not only whether the peptide itself might work; it is also whether the product has been assessed for safety, efficacy and quality.
 
+<div class="not-prose my-8 rounded-xl border border-emerald-100 bg-emerald-50/60 p-6">
+  <h3 class="mb-4 text-xl font-serif font-semibold text-emerald-950">Canadian Regulation Snapshot</h3>
+  <ol class="space-y-3 text-gray-700">
+    <li><strong>1. Has it been authorized for sale in Canada?</strong> Authorized medicines have a Drug Identification Number (DIN).</li>
+    <li><strong>2. Is it prescribed and dispensed through a legitimate Canadian pathway?</strong> The source matters as much as the molecule.</li>
+    <li><strong>3. Is it compounded for a patient-specific reason?</strong> Compounding is not the same as federal market authorization.</li>
+    <li><strong>4. Is it sold online as research use only?</strong> That label does not make it legal or appropriate for human use.</li>
+  </ol>
+</div>
+
 Health Canada has also addressed GLP-1 compounding specifically. In a June 2025 position document, the regulator noted the rise of unauthorized and counterfeit semaglutide products and stated that sterile compounding is a high-risk activity that should generally be reserved for exceptional circumstances, such as a patient-specific need that cannot be met by an approved drug or a true shortage. Health Canada also expressed concern about compounded GLP-1 products mixed with other active ingredients without scientific justification.<sup>3</sup> A peptide being "available" online does not mean it is authorized, legal for sale, sterile, accurately dosed or appropriate for human use.
 
 ## Evidence: Where Peptide Claims Are Strong, Weak or Unknown
+
+<div class="not-prose my-8 rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
+  <h3 class="mb-4 text-xl font-serif font-semibold text-emerald-950">Evidence Ladder for Peptide Claims</h3>
+  <div class="space-y-3">
+    <div class="rounded-lg border border-emerald-200 bg-emerald-50 px-4 py-3"><strong>Highest confidence:</strong> approved medicine used for an approved indication with clinical trial evidence.</div>
+    <div class="rounded-lg border border-emerald-100 bg-white px-4 py-3"><strong>Moderate confidence:</strong> human clinical evidence exists, but the specific use may be narrower or off-label.</div>
+    <div class="rounded-lg border border-amber-100 bg-amber-50 px-4 py-3"><strong>Lower confidence:</strong> early human, animal or laboratory data with limited clinical translation.</div>
+    <div class="rounded-lg border border-orange-100 bg-orange-50 px-4 py-3"><strong>Very low confidence:</strong> mechanism-based claims without meaningful human outcome data.</div>
+    <div class="rounded-lg border border-red-100 bg-red-50 px-4 py-3"><strong>Lowest confidence:</strong> influencer, forum or anecdote-driven claims without reliable evidence or quality control.</div>
+  </div>
+</div>
 
 **Approved peptide medicines:** This is the strongest category. These medicines have defined indications, regulatory review and clinical trial data. GLP-1 receptor agonists are the obvious current example. Their benefits and risks are still individualized, but the evidence base is much stronger than for most wellness peptides.
 
@@ -56,6 +85,18 @@ Health Canada has also addressed GLP-1 compounding specifically. In a June 2025 
 Many peptide products are injected subcutaneously. Injection changes the risk profile. A contaminated oral supplement is concerning; a contaminated injectable is more concerning because it bypasses several normal barriers. Sterility, endotoxin control, particulate contamination, solvent residues, accurate concentration and cold-chain storage all matter.
 
 Health Canada specifically warned that unauthorized peptide products may contain too much, too little or none of the active ingredient. They also may contain unlisted or dangerous ingredients, such as solvents, heavy metals, glass, plastic, fibers, bacteria, fungi or endotoxins. They also may be poorly labelled, improperly manufactured or improperly stored.<sup>1</sup>
+
+<div class="not-prose my-8 rounded-xl border-l-4 border-amber-500 bg-amber-50 p-6">
+  <h3 class="mb-3 text-xl font-serif font-semibold text-amber-950">Health Canada Warning Summary</h3>
+  <ul class="grid gap-2 text-gray-800 sm:grid-cols-2">
+    <li>Wrong amount of active ingredient</li>
+    <li>No active ingredient</li>
+    <li>Unlisted or dangerous ingredients</li>
+    <li>Solvent, heavy metal or particulate contamination</li>
+    <li>Bacteria, fungi or endotoxin contamination</li>
+    <li>Poor labelling, manufacturing or storage</li>
+  </ul>
+</div>
 
 This is one of the central problems with the research chemical market. A certificate of analysis posted by a vendor is not the same thing as independent pharmaceutical quality assurance. It may not apply to the actual vial received. It may not include sterility or endotoxin testing. It may not detect all impurities. It may also be fabricated or selectively presented. For an injectable medicine, quality control is not a minor detail.
 
@@ -76,6 +117,14 @@ Anecdotes are not worthless. They can generate hypotheses and point to areas wor
 Peptides are prominent in bodybuilding because many are marketed for muscle gain, fat loss, recovery, appetite control or injury repair. Competitive athletes have another issue: anti-doping rules.
 
 The World Anti-Doping Agency's 2026 Prohibited List includes multiple peptide-related categories. Growth hormone, growth hormone fragments, growth-hormone-releasing hormone analogues such as CJC-1295 and sermorelin, growth hormone secretagogues such as ipamorelin and ibutamoren, and GH-releasing peptides such as GHRP-2 and GHRP-6 are prohibited at all times.<sup>5</sup> The list also includes other growth factors and hormone-modulating substances. Athletes subject to anti-doping rules should not assume that a clinic, supplement store, online vendor or influencer has checked the current prohibited list.
+
+| WADA-related category | Examples named in the WADA list | Practical implication |
+| --- | --- | --- |
+| Growth hormone and fragments | Growth hormone, growth hormone fragments | Prohibited at all times for athletes subject to anti-doping rules |
+| GHRH analogues | CJC-1295, sermorelin | Prohibited at all times |
+| Growth hormone secretagogues | Ipamorelin, ibutamoren | Prohibited at all times |
+| GH-releasing peptides | GHRP-2, GHRP-6, hexarelin | Prohibited at all times |
+| Growth factors and related modulators | Multiple growth factor categories | Requires careful review of the current prohibited list |
 
 For recreational bodybuilders, the issue is less about sanctions and more about risk normalization. Communities that are comfortable with anabolic steroids, growth hormone, insulin or research chemicals may understate the medical uncertainty of peptides. The fact that a compound is commonly used in a community does not establish safety.
 
