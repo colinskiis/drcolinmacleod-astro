@@ -2,7 +2,7 @@
 title: "Peptide Evidence, Safety and Regulation in Canadians"
 description: "A review of peptide therapies, approved peptide drugs, peptide marketing, safety and Canadian regulation."
 publishDate: 2026-05-16
-heroImage: "/images/reference/services/lab-testing.webp"
+heroImage: "/images/general/peptide-evidence-safety-canada.png"
 categories: ["Nutrition", "Health Policy"]
 tags: ["peptides", "Canada", "Health Canada", "bodybuilding", "anti-aging", "regulation", "evidence-based medicine"]
 seo:
