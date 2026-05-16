@@ -197,7 +197,7 @@ const topicMatchers: Record<string, string[]> = {
   'digestive-health': ['digestive health', 'gut', 'ibs', 'ibd', 'fiber', 'parasites'],
   'hormones': ['hormones', 'hormonal health', "women's health", "men's health", 'fertility', 'pcos', 'pms', 'menopause', 'testosterone', 'acne'],
   'mental-health': ['mental health', 'anxiety', 'depression', 'stress', 'sleep'],
-  'nutrition': ['nutrition', 'herbal medicine', 'adaptogens', 'magnesium', 'creatine', 'electrolytes', 'nutrients', 'diet'],
+  'nutrition': ['nutrition', 'herbal medicine', 'adaptogens', 'magnesium', 'creatine', 'electrolytes', 'nutrients', 'diet', 'peptides'],
   'iv-therapy': ['iv therapy', 'post-viral recovery', 'myers cocktail', 'vitamin c', 'glutathione'],
   'heart-metabolic': ['heart health', 'weight management', 'blood pressure', 'blood sugar', 'diabetes', 'berberine', 'metabolic', 'cardiovascular'],
   'immune-health': ['immune health', 'autoimmune', 'respiratory health', 'asthma', 'post-viral recovery', 'mistletoe'],
