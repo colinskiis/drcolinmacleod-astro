@@ -364,13 +364,14 @@ const articleSchema = {
   :global(.prose sub) {
     font-size: 0.7em;
     line-height: 0;
-    color: #059669;
+    color: inherit;
   }
 
   :global(.prose sup a),
   :global(.prose sub a) {
     color: #059669;
-    text-decoration: none;
+    text-decoration: underline;
+    text-underline-offset: 0.12em;
   }
 
   :global(.prose hr) {
