@@ -64,27 +64,6 @@ In April 2026, Health Canada issued a public advisory warning people not to buy 
 
 Health Canada stated that peptides are generally regulated as prescription medicines in Canada, and that authorized medicines for sale in Canada have an eight-digit Drug Identification Number (DIN). Products labelled "For Research Use Only" are not made legal for human use by that label. Health Canada's concern is not only whether the peptide itself might work; it is also whether the product has been assessed for safety, efficacy and quality.
 
-<div class="article-steps">
-  <p class="article-summary__eyebrow">Canadian Regulation Snapshot</p>
-  <h3>Four practical checks</h3>
-  <div class="article-step">
-    <span>1</span>
-    <p><strong>Has it been authorized for sale in Canada?</strong> Authorized medicines have a Drug Identification Number (DIN).</p>
-  </div>
-  <div class="article-step">
-    <span>2</span>
-    <p><strong>Is it prescribed and dispensed through a legitimate Canadian pathway?</strong> The source matters as much as the molecule.</p>
-  </div>
-  <div class="article-step">
-    <span>3</span>
-    <p><strong>Is it compounded for a patient-specific reason?</strong> Compounding is not the same as federal market authorization.</p>
-  </div>
-  <div class="article-step">
-    <span>4</span>
-    <p><strong>Is it sold online as research use only?</strong> That label does not make it legal or appropriate for human use.</p>
-  </div>
-</div>
-
 Health Canada has also addressed GLP-1 compounding specifically. In a June 2025 position document, the regulator noted the rise of unauthorized and counterfeit semaglutide products and stated that sterile compounding is a high-risk activity that should generally be reserved for exceptional circumstances, such as a patient-specific need that cannot be met by an approved drug or a true shortage. Health Canada also expressed concern about compounded GLP-1 products mixed with other active ingredients without scientific justification.<sup>3</sup> A peptide being "available" online does not mean it is authorized, legal for sale, sterile, accurately dosed or appropriate for human use.
 
 ## Evidence: Where Peptide Claims Are Strong, Weak or Unknown

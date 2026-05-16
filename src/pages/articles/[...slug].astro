@@ -405,7 +405,6 @@ const articleSchema = {
   }
 
   :global(.prose .article-summary),
-  :global(.prose .article-steps),
   :global(.prose .article-note) {
     margin: 2.5rem 0;
     padding: 1.5rem;
@@ -420,12 +419,6 @@ const articleSchema = {
     border-color: #e5e7eb;
   }
 
-  :global(.prose .article-note) {
-    background: #fffbeb;
-    border-color: #fde68a;
-    border-left: 4px solid #d97706;
-  }
-
   :global(.prose .article-summary__eyebrow) {
     margin: 0 0 0.5rem !important;
     color: #047857;
@@ -436,12 +429,7 @@ const articleSchema = {
     text-transform: uppercase;
   }
 
-  :global(.prose .article-note .article-summary__eyebrow) {
-    color: #92400e;
-  }
-
   :global(.prose .article-summary h3),
-  :global(.prose .article-steps h3),
   :global(.prose .article-note h3) {
     margin: 0 0 1rem !important;
     color: var(--ink) !important;
@@ -484,41 +472,11 @@ const articleSchema = {
     line-height: 1.65;
   }
 
-  :global(.prose .article-step) {
-    display: flex;
-    gap: 1rem;
-    align-items: flex-start;
-    padding: 0.8rem 0;
-    border-top: 1px solid rgba(6, 95, 70, 0.12);
-  }
-
-  :global(.prose .article-step span) {
-    display: inline-flex;
-    flex: 0 0 auto;
-    width: 2rem;
-    height: 2rem;
-    align-items: center;
-    justify-content: center;
-    border-radius: 9999px;
-    background: #047857;
-    color: white;
-    font-size: 0.85rem;
-    font-weight: 700;
-    line-height: 1;
-  }
-
-  :global(.prose .article-step p) {
-    margin: 0 !important;
-    color: #4b5563;
-    font-size: 0.95rem !important;
-    line-height: 1.65 !important;
-  }
-
   :global(.prose .article-note__grid) {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0.75rem 1.25rem;
-    border-top: 1px solid rgba(146, 64, 14, 0.16);
+    border-top: 1px solid rgba(6, 95, 70, 0.12);
     padding-top: 1rem;
   }
 
@@ -538,12 +496,11 @@ const articleSchema = {
     width: 0.35rem;
     height: 0.35rem;
     border-radius: 9999px;
-    background: #d97706;
+    background: #047857;
   }
 
   @media (max-width: 640px) {
     :global(.prose .article-summary),
-    :global(.prose .article-steps),
     :global(.prose .article-note) {
       padding: 1.25rem;
       border-radius: 0.75rem;
