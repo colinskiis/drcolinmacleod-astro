@@ -3,7 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
 import BookingButton from '../components/BookingButton.astro';
-import FAQAccordion from '../components/FAQAccordion.astro';
+import FAQSection from '../components/FAQSection.astro';
 ---
 
 <BaseLayout
@@ -310,13 +310,7 @@ import FAQAccordion from '../components/FAQAccordion.astro';
     </div>
   </section>
 
-  <!-- FAQ Section -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
-    <div class="section-shell">
-      <div class="max-w-3xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
-
-        <FAQAccordion items={[
+  <FAQSection items={[
           { question: "How do you determine what's causing my back pain?", answer: "<p>We use a combination of detailed history, physical examination including specific orthopedic tests and review of any imaging you've already had. Different pain sources have characteristic patterns. For example, sacroiliac pain typically affects one side and is worse with sitting, while facet joint pain is often worse with extension and twisting.</p>" },
           { question: "Do I need an MRI before treatment?", answer: "<p>Not necessarily. While imaging can be helpful in some cases, research shows that MRI findings often don't correlate well with symptoms. Many people have disc bulges or degeneration on imaging but no pain, while others have significant pain with normal-looking scans. Clinical assessment is often more valuable for directing treatment. If you have existing imaging, please bring it to your appointment.</p>" },
           { question: "How many prolotherapy treatments will I need?", answer: "<p>Most patients require 4-6 treatment sessions, spaced 1-2 weeks apart. Some patients notice improvement after 2-3 treatments, while others need the full course. We assess your response at each visit and adjust the treatment plan accordingly.</p>" },
@@ -324,9 +318,6 @@ import FAQAccordion from '../components/FAQAccordion.astro';
           { question: "Is prolotherapy painful?", answer: "<p>There is some discomfort with the injections, but it's typically brief. A local anesthetic is included in the solution to minimize pain. Most patients experience some soreness in the treated area for 1-3 days after treatment, which is a normal part of the healing response.</p>" },
           { question: "Should I stop my other treatments while doing prolotherapy?", answer: "<p>Not necessarily. In fact, research shows prolotherapy works best when combined with other therapies like exercise and manual treatment. We encourage continuing with physiotherapy or chiropractic care if you're finding them helpful. We'll discuss any modifications needed around the timing of your treatments.</p>" },
         ]} />
-      </div>
-    </div>
-  </section>
 
   <!-- CTA Section -->
   <section class="py-16 lg:py-24 bg-emerald-950">
@@ -357,46 +348,4 @@ import FAQAccordion from '../components/FAQAccordion.astro';
       </div>
     </div>
   </section>
-
-  <!-- FAQ Schema -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How do you determine what's causing my back pain?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We use a combination of detailed history, physical examination including specific orthopedic tests and review of any imaging you've already had. Different pain sources have characteristic patterns. For example, sacroiliac pain typically affects one side and is worse with sitting, while facet joint pain is often worse with extension and twisting."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do I need an MRI before treatment?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Not necessarily. While imaging can be helpful in some cases, research shows that MRI findings often don't correlate well with symptoms. Clinical assessment is often more valuable for directing treatment."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How many prolotherapy treatments will I need?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Most patients require 4-6 treatment sessions, spaced 1-2 weeks apart. Some patients notice improvement after 2-3 treatments, while others need the full course."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is prolotherapy painful?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "There is some discomfort with the injections, but it's typically brief. A local anesthetic is included in the solution to minimize pain. Most patients experience some soreness for 1-3 days after treatment."
-          }
-        }
-      ]
-    }
-  </script>
 </BaseLayout>

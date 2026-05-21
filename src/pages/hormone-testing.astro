@@ -3,7 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
 import BookingButton from '../components/BookingButton.astro';
-import FAQAccordion from '../components/FAQAccordion.astro';
+import FAQSection from '../components/FAQSection.astro';
 import { X, Check } from '@lucide/astro';
 ---
 
@@ -323,22 +323,13 @@ import { X, Check } from '@lucide/astro';
     </div>
   </section>
 
-  <!-- FAQ Section -->
-  <section class="py-16 lg:py-24 bg-white">
-    <div class="section-shell">
-      <div class="max-w-3xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
-
-        <FAQAccordion items={[
+  <FAQSection bg="white" items={[
           { question: "When should hormone testing be done in my cycle?", answer: "<p>Timing depends on which hormones are being tested. Progesterone is best measured during the luteal phase (days 19–21 of the cycle). FSH and LH provide more information when tested early in the cycle (days 2–4). Testosterone and DHEA can be tested at any time. We'll guide you on the optimal timing during your consultation.</p>" },
           { question: "What's the difference between blood and DUTCH testing?", answer: "<p>Blood testing measures hormone levels at a single point in time and is excellent for sex hormones and DHEA-S. The DUTCH test (dried urine) measures hormones and their metabolites, showing not just how much you produce, but how your body processes and clears hormones. This reveals estrogen metabolism patterns (important for cancer risk), cortisol clearance issues and methylation pathway function. DUTCH is more comprehensive but also more expensive.</p>" },
           { question: "Can men get hormone testing?", answer: "<p>Absolutely. Men's hormonal health is often overlooked. We test total and free testosterone, DHEA-S, cortisol and estradiol (yes, men produce estrogen too and high levels cause problems). Testosterone levels decline 1–2% per year after 30, and many men in their 40s and 50s experience symptoms that are attributed to aging but are actually treatable hormonal changes.</p>" },
           { question: "Do I need a referral for hormone testing?", answer: "<p>No. As a naturopathic doctor, I can order comprehensive hormone panels directly, blood, saliva and DUTCH testing. You don't need a family doctor, endocrinologist or any other referral. Many patients come to us specifically because they haven't been able to get the testing they need through conventional channels.</p>" },
           { question: "What is estrogen dominance?", answer: "<p>Estrogen dominance occurs when estrogen levels are high relative to progesterone. This can happen when estrogen is truly elevated or when progesterone is low. Symptoms include heavy periods, breast tenderness, weight gain, bloating, mood swings, fibroids and increased cancer risk. It's one of the most common hormonal imbalances we see, and it's rarely tested for through conventional channels because progesterone is often not included in standard panels.</p>" },
         ]} />
-      </div>
-    </div>
-  </section>
 
   <!-- CTA Section -->
   <section class="py-16 lg:py-24 bg-emerald-950">
@@ -368,54 +359,4 @@ import { X, Check } from '@lucide/astro';
       </div>
     </div>
   </section>
-
-  <!-- FAQ Schema -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "When should hormone testing be done in my menstrual cycle?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Progesterone is best measured days 19-21. FSH and LH on days 2-4. Testosterone and DHEA can be tested any time. We guide you on optimal timing during consultation."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What's the difference between blood and DUTCH hormone testing?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Blood measures hormone levels at a single point. The DUTCH test measures hormones and their metabolites, showing how your body processes and clears hormones. DUTCH is more comprehensive but also more expensive."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can men get hormone testing?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Absolutely. We test total and free testosterone, DHEA-S, cortisol and estradiol in men. Testosterone declines 1-2% per year after 30, and many symptoms attributed to aging are treatable hormonal changes."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do I need a referral for hormone testing in Nova Scotia?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. As a naturopathic doctor, I can order comprehensive hormone panels directly including blood, saliva and DUTCH testing. No family doctor or specialist referral needed."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is estrogen dominance?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Estrogen dominance occurs when estrogen is high relative to progesterone. Symptoms include heavy periods, breast tenderness, weight gain, mood swings and increased cancer risk. It's one of the most common hormonal imbalances but rarely tested for conventionally."
-          }
-        }
-      ]
-    }
-  </script>
 </BaseLayout>

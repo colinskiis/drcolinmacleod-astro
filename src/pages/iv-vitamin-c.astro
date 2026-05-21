@@ -3,7 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
 import { Minus, Check, Shield, Zap, RefreshCw, Heart, Sparkles, ChevronRight, ChevronDown } from '@lucide/astro';
-import FAQAccordion from '../components/FAQAccordion.astro';
+import FAQSection from '../components/FAQSection.astro';
 ---
 
 <BaseLayout
@@ -361,21 +361,12 @@ import FAQAccordion from '../components/FAQAccordion.astro';
     </div>
   </section>
 
-  <!-- FAQ Section -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
-    <div class="section-shell">
-      <div class="max-w-3xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
-
-        <FAQAccordion items={[
+  <FAQSection items={[
           { question: "How often should I get IV vitamin C?", answer: "<p>This depends on your goals. For acute illness, treatments may be given daily or every other day until you recover. For general wellness and immune support, weekly or bi-weekly treatments are common. For maintenance, monthly treatments may be sufficient. We'll recommend a schedule based on your individual needs.</p>" },
           { question: "Can I get IV vitamin C while I'm sick?", answer: "<p>Yes. In fact, this is often the best time to get it. Your body's vitamin C requirements increase significantly during infection. IV vitamin C can help support your immune response and may help you recover faster. Please let us know what symptoms you're experiencing when you book.</p>" },
           { question: "Is IV vitamin C the same as getting a vitamin C shot?", answer: "<p>No. Intramuscular vitamin C \"shots\" deliver a much smaller amount. IV infusion allows us to deliver significantly higher doses over time, achieving the blood concentrations needed for therapeutic effects.</p>" },
           { question: "Should I stop taking oral vitamin C if I'm getting IVs?", answer: "<p>Not necessarily. Oral vitamin C provides ongoing, low-level support between IV treatments. The two work well together: IV provides periodic high-dose therapy while oral maintains baseline levels. We can discuss the best approach for your situation.</p>" },
         ]} />
-      </div>
-    </div>
-  </section>
 
   <!-- CTA Section -->
   <section class="py-16 lg:py-24 bg-emerald-950">
@@ -390,38 +381,4 @@ import FAQAccordion from '../components/FAQAccordion.astro';
       </div>
     </div>
   </section>
-
-  <!-- FAQ Schema -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How often should I get IV vitamin C?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "This depends on your goals. For acute illness, treatments may be given daily or every other day. For general wellness, weekly or bi-weekly treatments are common. For maintenance, monthly treatments may be sufficient."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I get IV vitamin C while I'm sick?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. In fact, this is often the best time to get it. Your body's vitamin C requirements increase significantly during infection. IV vitamin C can help support your immune response."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is IV vitamin C safe?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "IV vitamin C is generally very safe when administered by a trained practitioner. G6PD deficiency screening is required before high-dose treatments. People with kidney disease should discuss with their practitioner first."
-          }
-        }
-      ]
-    }
-  </script>
 </BaseLayout>

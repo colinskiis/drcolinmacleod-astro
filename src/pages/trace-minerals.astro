@@ -4,7 +4,7 @@ import HeroSection from '../components/HeroSection.astro';
 import BookingButton from '../components/BookingButton.astro';
 import CTAButton from '../components/CTAButton.astro';
 import { FlaskConical, Shield, Activity, Check } from '@lucide/astro';
-import FAQAccordion from '../components/FAQAccordion.astro';
+import FAQSection from '../components/FAQSection.astro';
 ---
 
 <BaseLayout
@@ -240,22 +240,13 @@ import FAQAccordion from '../components/FAQAccordion.astro';
     </div>
   </section>
 
-  <!-- FAQ Section -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
-    <div class="section-shell">
-      <div class="max-w-3xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
-
-        <FAQAccordion items={[
+  <FAQSection items={[
           { question: "Can I get trace minerals tested before starting IV therapy?", answer: "<p>Yes. We can order specific mineral panels, including zinc, selenium and copper, through private lab testing before your first infusion. This allows us to tailor the mineral mix to your specific needs and track your progress.</p>" },
           { question: "Is it safe to receive multiple trace minerals together by IV?", answer: "<p>Yes. Our trace mineral formulation is carefully balanced to avoid the competitive absorption issues seen with oral supplementation. IV delivery ensures each mineral reaches therapeutic tissue levels safely.</p>" },
           { question: "How does IV trace mineral therapy differ from taking a mineral supplement?", answer: "<p>Oral mineral supplements face significant absorption limitations including gut competition and binding by dietary compounds like phytates. IV delivery achieves tissue concentrations that oral supplementation cannot reliably produce.</p>" },
           { question: "How often should I receive trace mineral IV therapy?", answer: "<p>Most patients benefit from monthly trace mineral boosters added to regular IV therapy. If initial testing reveals significant deficiency, a more intensive initial series may be recommended.</p>" },
           { question: "Who should avoid trace mineral IV therapy?", answer: "<p>Patients with Wilson's disease (copper accumulation disorder), haemochromatosis (iron overload) or certain kidney conditions may not be suitable candidates. A thorough health assessment is completed before treatment.</p>" },
         ]} />
-      </div>
-    </div>
-  </section>
 
   <!-- Final CTA Section -->
   <section class="py-16 lg:py-24 bg-emerald-950">
@@ -269,54 +260,4 @@ import FAQAccordion from '../components/FAQAccordion.astro';
       </div>
     </div>
   </section>
-
-  <!-- FAQ Schema Structured Data -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Can I get trace minerals tested before starting IV therapy?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. We can order specific mineral panels, including zinc, selenium and copper, through private lab testing before your first infusion. This allows us to tailor the mineral mix to your specific needs and track your progress."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is it safe to receive multiple trace minerals together by IV?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Our trace mineral formulation is carefully balanced to avoid the competitive absorption issues seen with oral supplementation. IV delivery ensures each mineral reaches therapeutic tissue levels safely."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How does IV trace mineral therapy differ from taking a mineral supplement?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Oral mineral supplements face significant absorption limitations including gut competition and binding by dietary compounds like phytates. IV delivery achieves tissue concentrations that oral supplementation cannot reliably produce."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How often should I receive trace mineral IV therapy?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Most patients benefit from monthly trace mineral boosters added to regular IV therapy. If initial testing reveals significant deficiency, a more intensive initial series may be recommended."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Who should avoid trace mineral IV therapy?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Patients with Wilson's disease (copper accumulation disorder), haemochromatosis (iron overload) or certain kidney conditions may not be suitable candidates. A thorough health assessment is completed before treatment."
-          }
-        }
-      ]
-    }
-  </script>
 </BaseLayout>

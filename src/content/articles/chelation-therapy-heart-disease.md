@@ -10,6 +10,15 @@ tags: ["chelation", "cardiovascular", "TACT trial", "heart disease"]
 seo:
   description: "Explore the science behind EDTA chelation therapy for heart disease, including NIH-funded TACT trial results, mechanisms of action and treatment options in Halifax, Nova Scotia."
   focusKeyword: "chelation therapy heart disease"
+faq:
+  - question: "Is chelation therapy a replacement for conventional heart treatments?"
+    answer: "<p>No. Chelation therapy should be considered a complementary approach, not a replacement for medications, procedures or lifestyle modifications recommended by your cardiologist. Always discuss any new treatments with your healthcare team.</p>"
+  - question: "How many treatments will I need?"
+    answer: "<p>For cardiovascular health benefits, most patients require 15-25 treatments. The exact number depends on individual factors including baseline toxic metal levels and cardiovascular status.</p>"
+  - question: "Is chelation covered by insurance?"
+    answer: "<p>Most extended health insurance plans in Nova Scotia cover naturopathic services, which includes chelation therapy administration. Coverage for supplies varies by plan.</p>"
+  - question: "How do I know if I have elevated heavy metal levels?"
+    answer: "<p>Testing options include blood tests for recent exposure and provoked urine challenge tests for total body burden. These can be arranged as part of your initial consultation.</p>"
 ---
 
 Heart disease remains the second leading cause of death in Canada, claiming thousands of lives each year.<sup>1</sup> Nova Scotia has among the highest rates of ischemic heart disease in the country, with prevalence reaching 9.7%, the highest of any Canadian province.<sup>2</sup> While conventional treatments like medications, stents and bypass surgery remain important, many patients are seeking additional options to improve their cardiovascular health. EDTA chelation therapy has emerged as a promising complementary approach, backed by the largest NIH-funded trial ever conducted on this treatment.
@@ -143,24 +152,6 @@ Based on current evidence, chelation therapy for cardiovascular health may be mo
 If you're interested in exploring chelation therapy for cardiovascular health, Dr. Colin MacLeod ND offers comprehensive evaluation and treatment. Dr. MacLeod has been trained in the proper administration of chelation therapy and follows established safety protocols.
 
 An initial naturopathic consultation is required before starting treatment to ensure chelation is appropriate for your individual situation and health goals. You can learn more about our [chelation therapy services](/chelation-therapy).
-
-## Frequently Asked Questions
-
-### Is chelation therapy a replacement for conventional heart treatments?
-
-No. Chelation therapy should be considered a complementary approach, not a replacement for medications, procedures or lifestyle modifications recommended by your cardiologist. Always discuss any new treatments with your healthcare team.
-
-### How many treatments will I need?
-
-For cardiovascular health benefits, most patients require 15-25 treatments. The exact number depends on individual factors including baseline toxic metal levels and cardiovascular status.
-
-### Is chelation covered by insurance?
-
-Most extended health insurance plans in Nova Scotia cover naturopathic services, which includes chelation therapy administration. Coverage for supplies varies by plan.
-
-### How do I know if I have elevated heavy metal levels?
-
-Testing options include blood tests for recent exposure and provoked urine challenge tests for total body burden. These can be arranged as part of your initial consultation.
 
 ## References
 

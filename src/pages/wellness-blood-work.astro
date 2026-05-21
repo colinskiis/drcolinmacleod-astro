@@ -3,7 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
 import BookingButton from '../components/BookingButton.astro';
-import FAQAccordion from '../components/FAQAccordion.astro';
+import FAQSection from '../components/FAQSection.astro';
 import { X, Check } from '@lucide/astro';
 ---
 
@@ -323,22 +323,13 @@ import { X, Check } from '@lucide/astro';
     </div>
   </section>
 
-  <!-- FAQ Section -->
-  <section class="py-16 lg:py-24 bg-white">
-    <div class="section-shell">
-      <div class="max-w-3xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
-
-        <FAQAccordion items={[
+  <FAQSection bg="white" items={[
           { question: "Can I get blood work without a family doctor?", answer: "<p>Yes. As a naturopathic doctor, I can order comprehensive blood work directly. You don't need a family doctor referral or requisition to access testing through our practice.</p>" },
           { question: "Is wellness blood work covered by MSI?", answer: "<p>Testing ordered through a naturopathic doctor is not covered by MSI. However, many extended health plans cover naturopathic services including consultations. The lab testing itself is an out-of-pocket expense, but provides access to a far more comprehensive panel than what's typically available through conventional channels.</p>" },
           { question: "Do I need to fast before blood work?", answer: "<p>Yes, a 10–12 hour fast is recommended for the most accurate lipid and blood sugar results. Water and black coffee are fine. We recommend booking morning blood draws for convenience. Specific instructions will be provided when you book.</p>" },
           { question: "How often should I get wellness blood work?", answer: "<p>For most adults, annual comprehensive blood work is ideal. If we identify areas that need attention, we may retest specific markers at 3–6 month intervals to track progress. Those with known risk factors or active health concerns may benefit from more frequent monitoring.</p>" },
           { question: "Will you share results with my family doctor?", answer: "<p>Absolutely. If you have a family doctor and would like your results shared, we're happy to provide a copy. Collaborative care leads to better outcomes, and we work alongside your existing healthcare providers, not in place of them.</p>" },
         ]} />
-      </div>
-    </div>
-  </section>
 
   <!-- CTA Section -->
   <section class="py-16 lg:py-24 bg-emerald-950">
@@ -366,54 +357,4 @@ import { X, Check } from '@lucide/astro';
       </div>
     </div>
   </section>
-
-  <!-- FAQ Schema -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Can I get blood work without a family doctor in Nova Scotia?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. As a naturopathic doctor, I can order comprehensive blood work directly. You don't need a family doctor referral or requisition."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is wellness blood work covered by MSI?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Testing ordered through a naturopathic doctor is not covered by MSI. However, many extended health plans cover naturopathic services including consultations."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do I need to fast before blood work?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, a 10-12 hour fast is recommended for the most accurate lipid and blood sugar results. Water and black coffee are fine."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How often should I get wellness blood work?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "For most adults, annual comprehensive blood work is ideal. If areas need attention, we may retest specific markers at 3-6 month intervals."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Will you share results with my family doctor?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Absolutely. If you have a family doctor and would like results shared, we're happy to provide a copy. We work alongside your existing healthcare providers."
-          }
-        }
-      ]
-    }
-  </script>
 </BaseLayout>

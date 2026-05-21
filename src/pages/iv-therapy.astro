@@ -4,7 +4,7 @@ import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
 import BookingButton from '../components/BookingButton.astro';
 import { Calendar, Check, ChevronDown, Droplets, Zap, Atom, HeartPulse, Dna } from '@lucide/astro';
-import FAQAccordion from '../components/FAQAccordion.astro';
+import FAQSection from '../components/FAQSection.astro';
 import ServiceArticles from '../components/ServiceArticles.astro';
 ---
 
@@ -226,13 +226,7 @@ import ServiceArticles from '../components/ServiceArticles.astro';
     </div>
   </section>
 
-  <!-- FAQ Section -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
-    <div class="section-shell">
-      <div class="max-w-3xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
-
-        <FAQAccordion items={[
+  <FAQSection items={[
           { question: "What happens at my first IV therapy visit?", answer: "<p>Your first visit includes a health review, discussion of your goals and a decision about whether IV therapy is appropriate. If treatment proceeds, we select nutrients for your needs and monitor you throughout the infusion. Many patients schedule a consultation before their first drip.</p>" },
           { question: "Is IV therapy covered by insurance?", answer: "<p>Most insurance plans provide coverage for the administration of an IV therapy treatment which is the majority of the cost of the total treatment.</p>" },
           { question: "How often do I need to have IV therapy?", answer: "<p>The frequency of treatment will depend on the health concerns and sensitivity of the individual. Some conditions require more frequent treatment (once per week to start) while other health concerns can be treated less frequently (once per three months).</p>" },
@@ -240,9 +234,6 @@ import ServiceArticles from '../components/ServiceArticles.astro';
           { question: "What health problems can IV therapy help?", answer: "<p>IV therapy can help a wide variety of health conditions including anxiety, burnout, digestive issues, fatigue and fibromyalgia, to name a few.</p>" },
           { question: "Are there side effects from IV therapy?", answer: "<p>Side effects are not common with IV therapy. It is possible to experience light headedness, low blood pressure, nausea or discomfort at the site of IV insertion. These issues are generally self limiting and pass within a short period of time.</p>" },
         ]} />
-      </div>
-    </div>
-  </section>
 
   <ServiceArticles
     slugs={["post-viral-recovery-iv-therapy", "immune-support-natural-approaches", "magnesium-the-natural-muscle-relaxer"]}
@@ -299,64 +290,6 @@ import ServiceArticles from '../components/ServiceArticles.astro';
           }
         }
       }
-    }
-  </script>
-
-  <!-- FAQ Schema Structured Data -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What happens at my first IV therapy visit?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Your first visit includes a health review, discussion of your goals and a decision about whether IV therapy is appropriate. If treatment proceeds, we select nutrients for your needs and monitor you throughout the infusion. Many patients schedule a consultation before their first drip."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is IV therapy covered by insurance?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Most insurance plans provide coverage for the administration of an IV therapy treatment which is the majority of the cost of the total treatment."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How often do I need to have IV therapy?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The frequency of treatment will depend on the health concerns and sensitivity of the individual. Some conditions require more frequent treatment (once per week to start) while other health concerns can be treated less frequently (once per three months)."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is IV therapy safe?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Dr. Colin MacLeod ND has performed thousands of IV nutrient treatments since 2011 with an excellent safety record."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What health problems can IV therapy help?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "IV therapy can help a wide variety of health conditions including anxiety, burnout, digestive issues, fatigue and fibromyalgia, to name a few."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Are there side effects from IV therapy?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Side effects are not common with IV therapy. It is possible to experience light headedness, low blood pressure, nausea or discomfort at the site of IV insertion. These issues are generally self limiting and pass within a short period of time."
-          }
-        }
-      ]
     }
   </script>
 </BaseLayout>

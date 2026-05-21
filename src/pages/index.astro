@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BookingButton from '../components/BookingButton.astro';
-import FAQAccordion from '../components/FAQAccordion.astro';
+import FAQSection from '../components/FAQSection.astro';
 import { Phone, FlaskConical, ChevronRight, Syringe, ArrowRight, Microscope, HeartPulse, BookOpen } from '@lucide/astro';
 
 // Conditions (top 3 for nav hub)
@@ -328,33 +328,28 @@ const faqSchema = {
     </div>
   </section>
 
-  <!-- FAQ (from current homepage) -->
-  <section class="py-16 lg:py-20 bg-white">
-    <div class="section-shell">
-      <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-10 space-y-3 reveal">
-        <h2 class="text-4xl sm:text-5xl font-serif font-medium text-emerald-950">Common Questions</h2>
-        <p class="text-lg text-slate-600 max-w-2xl mx-auto">Answers to what patients most commonly ask before their first visit.</p>
-      </div>
-      <div class="reveal reveal-delay-100">
-        <FAQAccordion
-          items={[
-            {
-              question: 'Can naturopathic doctors order blood tests?',
-              answer: '<p>Yes. As a naturopathic doctor, Dr. MacLeod can order a comprehensive range of blood and laboratory tests through private labs. This includes thyroid panels, hormone levels, nutrient status, inflammatory markers and more. Private testing often means broader panels and faster turnaround compared to the public system, giving us a clear picture of your health.</p>',
-            },
-            {
-              question: 'Is naturopathic medicine covered by insurance?',
-              answer: '<p>Yes, most extended health insurance plans cover naturopathic visits. We offer direct billing for many major insurers to make the process convenient for you.</p>',
-            },
-            {
-              question: 'Do you work alongside my family doctor?',
-              answer: "<p>Absolutely. Naturopathic medicine is most effective as part of a coordinated care approach. I regularly share findings and treatment summaries with family doctors and specialists when patients consent. While naturopathic doctors don't have direct referral privileges in Nova Scotia, I actively communicate with other healthcare providers to help facilitate appropriate referrals where needed.</p>",
-            },
-          ]}
-        />
-      </div>
-    </div>
-  </section>
+  <FAQSection
+    bg="white"
+    sectionClass="py-16 lg:py-20 bg-white"
+    title="Common Questions"
+    subtitle="Answers to what patients most commonly ask before their first visit."
+    headingClass="text-4xl sm:text-5xl font-serif font-medium text-emerald-950"
+    includeSchema={false}
+    items={[
+      {
+        question: 'Can naturopathic doctors order blood tests?',
+        answer: '<p>Yes. As a naturopathic doctor, Dr. MacLeod can order a comprehensive range of blood and laboratory tests through private labs. This includes thyroid panels, hormone levels, nutrient status, inflammatory markers and more. Private testing often means broader panels and faster turnaround compared to the public system, giving us a clear picture of your health.</p>',
+      },
+      {
+        question: 'Is naturopathic medicine covered by insurance?',
+        answer: '<p>Yes, most extended health insurance plans cover naturopathic visits. We offer direct billing for many major insurers to make the process convenient for you.</p>',
+      },
+      {
+        question: 'Do you work alongside my family doctor?',
+        answer: "<p>Absolutely. Naturopathic medicine is most effective as part of a coordinated care approach. I regularly share findings and treatment summaries with family doctors and specialists when patients consent. While naturopathic doctors don't have direct referral privileges in Nova Scotia, I actively communicate with other healthcare providers to help facilitate appropriate referrals where needed.</p>",
+      },
+    ]}
+  />
 
   <!-- Closing CTA -->
   <section class="py-20 lg:py-24 bg-emerald-900">

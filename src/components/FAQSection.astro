@@ -1,0 +1,46 @@
+---
+import FAQAccordion, { type FAQItem } from './FAQAccordion.astro';
+import { faqPageSchema } from '../lib/faqSchema';
+
+interface Props {
+  items: FAQItem[];
+  title?: string;
+  subtitle?: string;
+  bg?: 'white' | 'emerald' | 'gray';
+  includeSchema?: boolean;
+  sectionClass?: string;
+  headingClass?: string;
+}
+
+const {
+  items,
+  title = 'Frequently Asked Questions',
+  subtitle,
+  bg = 'emerald',
+  includeSchema = true,
+  sectionClass,
+  headingClass = 'text-3xl sm:text-4xl font-serif font-bold text-emerald-950',
+} = Astro.props;
+
+const bgClass = {
+  white: 'bg-white',
+  emerald: 'bg-emerald-50',
+  gray: 'bg-gray-50',
+}[bg];
+
+const sectionClasses = sectionClass ?? `py-16 lg:py-24 ${bgClass}`;
+---
+
+<section class={sectionClasses}>
+  <div class="section-shell">
+    <div class="text-center max-w-3xl mx-auto mb-8 space-y-3">
+      <h2 class:list={[headingClass, 'text-center']}>{title}</h2>
+      {subtitle && <p class="text-lg text-gray-600 max-w-2xl mx-auto">{subtitle}</p>}
+    </div>
+    <FAQAccordion items={items} />
+  </div>
+</section>
+
+{includeSchema && items.length > 0 && (
+  <script type="application/ld+json" set:html={JSON.stringify(faqPageSchema(items))} />
+)}

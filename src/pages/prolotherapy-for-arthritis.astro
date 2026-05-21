@@ -3,7 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
 import BookingButton from '../components/BookingButton.astro';
-import FAQAccordion from '../components/FAQAccordion.astro';
+import FAQSection from '../components/FAQSection.astro';
 ---
 
 <BaseLayout
@@ -415,22 +415,13 @@ import FAQAccordion from '../components/FAQAccordion.astro';
     </div>
   </section>
 
-  <!-- FAQ Section -->
-  <section class="py-16 lg:py-24 bg-white">
-    <div class="section-shell">
-      <div class="max-w-3xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
-
-        <FAQAccordion items={[
+  <FAQSection bg="white" items={[
           { question: "Does Prolotherapy Hurt?", answer: "<p>There can be some discomfort associated with prolotherapy but it is typically short-lived. The needle size used is smaller than a needle for drawing blood or a cortisone injection, and a local anesthetic is included in the solution. After treatment, it is normal to experience temporary soreness, stiffness or mild swelling at the injection site for 1-4 days as part of the healing response. Bruising is possible. Infection is a rare risk with any injection procedure. Serious complications are rare and have not been reported in published clinical trials of dextrose prolotherapy.</p>" },
           { question: "How Many Injections Will I Need?", answer: "<p>Six treatment sessions at a rate of one injection every 1-2 weeks yields optimal results for osteoarthritis. If there is pain in the region of ligaments or tendons surrounding the joint these can also be treated effectively with prolotherapy.</p>" },
           { question: "What Do I Do After Prolotherapy?", answer: "<p>After a prolotherapy treatment it is best to limit exercise to less intense activities for 1-2 days to allow the treated region to complete the repair process unhindered.</p>" },
           { question: "Who Should Not Have Prolotherapy?", answer: "<p>Prolotherapy is not appropriate if you are pregnant, have had a joint replacement at the affected site, have post-infectious arthritis, active infection or are on blood thinners. A full health history is reviewed before treatment to confirm suitability.</p>" },
           { question: "Is Prolotherapy Ok For Diabetics?", answer: "<p>Yes. The amount of sugar present in a prolotherapy injection, 1-2 grams, is very small compared to the amount in many sweet foods. For example, an apple has 19g, a Snickers bar has 22g and a 12-oz glass of orange juice has 33g of sugar.</p>" },
         ]} />
-      </div>
-    </div>
-  </section>
 
   <!-- Other Conditions Section -->
   <section class="py-16 lg:py-24 bg-white">
@@ -523,54 +514,4 @@ import FAQAccordion from '../components/FAQAccordion.astro';
       </div>
     </div>
   </section>
-
-  <!-- FAQ Schema Structured Data -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Does Prolotherapy Hurt?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "There can be some discomfort associated with prolotherapy but it is typically short-lived. The needle size used in a prolotherapy treatment is smaller than a needle that is used for drawing blood or for giving a cortisone injection. Additionally, a local anesthetic agent is incorporated into the prolotherapy treatment in order to minimize any discomfort experienced."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How Many Injections Will I Need?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Six treatment sessions at a rate of one injection every 1-2 weeks yields optimal results for osteoarthritis. If there is pain in the region of ligaments or tendons surrounding the joint these can also be treated effectively with prolotherapy."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What Do I Do After Prolotherapy?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "After a prolotherapy treatment it is best to limit exercise to less intense activities for 1-2 days to allow the treated region to complete the repair process unhindered."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Who Should Not Have Prolotherapy?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "You may not be a candidate for prolotherapy if you are pregnant, have had a knee replacement or have post-infectious arthritis."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is Prolotherapy Ok For Diabetics?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. The amount of sugar present in a prolotherapy injection, 1-2 grams, is very small compared to the amount in many sweet foods. For example, an apple has 19g, a Snickers bar has 22g and a 12-oz glass of orange juice has 33g of sugar."
-          }
-        }
-      ]
-    }
-  </script>
 </BaseLayout>

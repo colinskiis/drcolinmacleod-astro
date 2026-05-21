@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
-import FAQAccordion from '../components/FAQAccordion.astro';
+import FAQSection from '../components/FAQSection.astro';
 import ServiceArticles from '../components/ServiceArticles.astro';
 ---
 
@@ -207,21 +207,12 @@ import ServiceArticles from '../components/ServiceArticles.astro';
     </div>
   </section>
 
-  <!-- FAQ Section -->
-  <section class="py-16 lg:py-24 bg-white">
-    <div class="section-shell">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Frequently Asked Questions</h2>
-      </div>
-
-      <FAQAccordion items={[
+  <FAQSection bg="white" items={[
         { question: "Are herbal medicines safe?", answer: "<p>When prescribed appropriately by a trained practitioner, herbal medicines are generally very safe. However, \"natural\" doesn't automatically mean safe for everyone. Some herbs can interact with medications, affect certain health conditions or cause side effects in sensitive individuals. This is why professional guidance is important.</p>" },
         { question: "Can I take herbs with my medications?", answer: "<p>Many herbs can be safely combined with medications, but some combinations should be avoided. During your consultation, we review all medications and supplements you're taking and check for potential interactions before recommending any botanical therapies.</p>" },
         { question: "How long does herbal treatment take to work?", answer: "<p>This varies depending on the condition and the herbs used. Some effects, like digestive relief from carminative herbs, can be noticed quickly. Other conditions, like hormone balancing or building stress resilience, may take several weeks to months to show full benefit. We'll discuss realistic expectations for your specific situation.</p>" },
         { question: "What forms do herbal medicines come in?", answer: "<p>Herbal medicines are available in many forms including tinctures (liquid extracts), capsules, tablets, teas and topical preparations. The form recommended depends on the herb, the condition being treated and your personal preferences. We'll work together to find what works best for you.</p>" },
       ]} />
-    </div>
-  </section>
 
   <ServiceArticles
     slugs={["herbal-medicine-history-and-uses", "adaptogens-for-stress-ashwagandha-rhodiola-and-beyond", "immune-support-natural-approaches"]}

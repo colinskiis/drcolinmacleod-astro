@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import BookingButton from '../components/BookingButton.astro';
-import FAQAccordion from '../components/FAQAccordion.astro';
+import FAQSection from '../components/FAQSection.astro';
 
 const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? '';
 ---
@@ -208,22 +208,12 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? '';
     </div>
   </section>
 
-  <!-- FAQ Section -->
-  <section class="py-16 bg-gray-50">
-    <div class="section-shell">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Frequently Asked Questions</h2>
-        <p class="text-lg text-gray-600">Common questions about naturopathic consultations and treatments</p>
-      </div>
-
-      <FAQAccordion items={[
+  <FAQSection bg="gray" items={[
         { question: "What should I expect in my first consultation?", answer: "<p>Your first appointment is comprehensive, typically lasting 60 minutes. Dr. MacLeod will review your health history, current concerns, lifestyle factors and may recommend laboratory testing. This thorough assessment helps create a personalized treatment plan.</p>" },
         { question: "Is naturopathic medicine covered by insurance?", answer: "<p>Yes, most extended health insurance plans cover naturopathic visits. We offer direct billing for many major insurers to make the process convenient for you.</p>" },
         { question: "How long will it take to see results?", answer: "<p>Treatment response varies by individual and condition. Some patients notice improvements within days (especially with IV therapy), while chronic conditions may require several weeks to months. Dr. MacLeod monitors progress closely and adjusts treatments as needed.</p>" },
         { question: "Can I combine naturopathic treatment with conventional medicine?", answer: "<p>Absolutely. Dr. MacLeod works collaboratively with your existing healthcare team. Naturopathic treatments often complement conventional approaches effectively. We always consider medication interactions and communicate with your other healthcare providers when appropriate.</p>" },
       ]} />
-    </div>
-  </section>
 </BaseLayout>
 
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>

@@ -3,7 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
 import BookingButton from '../components/BookingButton.astro';
-import FAQAccordion from '../components/FAQAccordion.astro';
+import FAQSection from '../components/FAQSection.astro';
 import { X, Circle } from '@lucide/astro';
 ---
 
@@ -358,22 +358,13 @@ import { X, Circle } from '@lucide/astro';
     </div>
   </section>
 
-  <!-- FAQ Section -->
-  <section class="py-16 lg:py-24 bg-white">
-    <div class="section-shell">
-      <div class="max-w-3xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
-
-        <FAQAccordion items={[
+  <FAQSection bg="white" items={[
           { question: "Do I need a doctor's requisition for thyroid testing?", answer: "<p>No. As a naturopathic doctor, I can order comprehensive thyroid panels directly. You don't need a family doctor or specialist referral to access complete testing.</p>" },
           { question: "Is thyroid testing covered by MSI?", answer: "<p>Testing ordered through a naturopathic doctor is not covered by MSI. However, many extended health plans cover naturopathic services. The lab testing itself is an out-of-pocket expense, but provides access to markers that are often not ordered through conventional channels.</p>" },
           { question: "When should I get my blood drawn for thyroid testing?", answer: "<p>Thyroid testing is best done in the morning, ideally before 10 AM. If you're taking thyroid medication, draw blood before taking your morning dose. Fasting is not required but is often recommended if we're running other tests at the same time.</p>" },
           { question: "I'm already on thyroid medication. Can you still help?", answer: "<p>Yes. Many patients on thyroid medication still don't feel optimal. Comprehensive testing can reveal whether your current medication is working effectively, whether you're converting T4 to T3 properly and whether there are other factors affecting your thyroid health. I work alongside your prescribing physician, not in place of them.</p>" },
           { question: "What if my antibodies are elevated?", answer: "<p>Elevated antibodies indicate autoimmune thyroid activity, but it's not a death sentence. Research shows that addressing underlying factors, including gut health, nutrient deficiencies, gluten sensitivity and stress, can help reduce antibody levels in many patients. Early detection gives us the opportunity to intervene before significant thyroid damage occurs.</p>" },
         ]} />
-      </div>
-    </div>
-  </section>
 
   <!-- CTA Section -->
   <section class="py-16 lg:py-24 bg-emerald-950">
@@ -405,46 +396,4 @@ import { X, Circle } from '@lucide/astro';
       </div>
     </div>
   </section>
-
-  <!-- FAQ Schema -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Do I need a doctor's requisition for thyroid testing?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. As a naturopathic doctor, I can order comprehensive thyroid panels directly. You don't need a family doctor or specialist referral."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is thyroid testing covered by MSI in Nova Scotia?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Testing ordered through a naturopathic doctor is not covered by MSI. However, many extended health plans cover naturopathic services."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "When should I get my blood drawn for thyroid testing?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Thyroid testing is best done in the morning, ideally before 10 AM. If you're taking thyroid medication, draw blood before taking your morning dose."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What if my thyroid antibodies are elevated?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Elevated antibodies indicate autoimmune thyroid activity. Research shows that addressing underlying triggers can help reduce antibody levels. Early detection gives us the opportunity to intervene before significant thyroid damage occurs."
-          }
-        }
-      ]
-    }
-  </script>
 </BaseLayout>

@@ -3,7 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import { ClipboardCheck, TestTubes, Clock, Sparkles, ChevronRight } from '@lucide/astro';
 import CTAButton from '../components/CTAButton.astro';
-import FAQAccordion from '../components/FAQAccordion.astro';
+import FAQSection from '../components/FAQSection.astro';
 ---
 
 <BaseLayout
@@ -292,22 +292,13 @@ import FAQAccordion from '../components/FAQAccordion.astro';
     </div>
   </section>
 
-  <!-- FAQ Section -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
-    <div class="section-shell">
-      <div class="max-w-3xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
-
-        <FAQAccordion items={[
+  <FAQSection items={[
           { question: "Do I need a doctor's referral for blood work?", answer: "<p>No. You can access comprehensive blood work without a family doctor's requisition. Helpful if you don't have a family doctor or want tests your physician doesn't typically order.</p>" },
           { question: "Is private blood work covered by MSI?", answer: "<p>Testing ordered through a naturopathic doctor is not covered by MSI. However, many extended health insurance plans cover naturopathic consultations. Lab tests themselves are out-of-pocket but provide access to markers often unavailable through conventional channels. All expenses are eligible medical expenses for tax purposes.</p>" },
           { question: "Where is the blood draw performed?", answer: "<p>Dr. MacLeod performs blood collection in the clinic. You won't need to visit a separate lab.</p>" },
           { question: "How long until I get my results?", answer: "<p>Most standard blood tests have results within 5-10 business days. Specialized tests like comprehensive stool analysis, DUTCH hormone panels or food sensitivity panels may take 2-3 weeks. We'll schedule a follow-up to review your findings once results are available.</p>" },
           { question: "Do I need to fast before blood tests?", answer: "<p>Some tests require fasting, while others don't. Dr. MacLeod will inform you if you will need to fast for your blood work.</p>" },
         ]} />
-      </div>
-    </div>
-  </section>
 
   <!-- CTA Section -->
   <section class="bg-emerald-950 py-16 lg:py-24">
@@ -321,39 +312,4 @@ import FAQAccordion from '../components/FAQAccordion.astro';
       </div>
     </div>
   </section>
-
-  
-  <!-- FAQ Schema -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Do I need a doctor's referral for blood work in Nova Scotia?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. You can access comprehensive blood work without a family doctor's requisition. Helpful if you don't have a family doctor or want tests your physician doesn't typically order."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is private blood work covered by MSI?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Testing ordered through a naturopathic doctor is not covered by MSI. However, many extended health plans cover naturopathic consultations and all expenses are eligible medical expenses for tax purposes."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How long until I get my lab results?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Most standard blood tests have results within 5-10 business days. Specialized tests may take 2-3 weeks."
-          }
-        }
-      ]
-    }
-  </script>
 </BaseLayout>

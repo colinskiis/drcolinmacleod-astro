@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
-import FAQAccordion from '../components/FAQAccordion.astro';
+import FAQSection from '../components/FAQSection.astro';
 import { X } from '@lucide/astro';
 ---
 
@@ -358,21 +358,12 @@ import { X } from '@lucide/astro';
     </div>
   </section>
 
-  <!-- FAQ Section -->
-  <section class="py-16 lg:py-24 bg-white">
-    <div class="section-shell">
-      <div class="max-w-3xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
-
-        <FAQAccordion items={[
+  <FAQSection bg="white" items={[
           { question: "Does prolozone hurt?", answer: "<p>Prolozone injections are slightly more uncomfortable than an acupuncture needle, but not much more. Most patients tolerate the treatment well. The injection itself is brief, and any discomfort passes quickly.</p>" },
           { question: "How many treatments will I need?", answer: "<p>Most conditions respond well within 6 treatments given every 1-2 weeks. After the initial treatment course, maintenance treatments every 6 months help sustain results.</p>" },
           { question: "How quickly will I feel better?", answer: "<p>Many patients feel improvement within hours of treatment. Within 24 hours, most people experience decreased pain and often improved range of motion. Some temporary stiffness immediately after treatment is normal but short-lived.</p>" },
           { question: "Can I have prolozone if I've had a joint replacement?", answer: "<p>No, prolozone cannot be injected into a joint that has a prosthetic replacement. However, we can treat other joints and areas that are causing pain. Many patients with one joint replacement develop problems in other joints from compensating, and prolozone can help these secondary areas.</p>" },
         ]} />
-      </div>
-    </div>
-  </section>
 
   <!-- CTA Section -->
   <section class="py-16 lg:py-24 bg-emerald-950">
@@ -409,38 +400,4 @@ import { X } from '@lucide/astro';
       </div>
     </div>
   </section>
-
-  <!-- FAQ Schema -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Does prolozone hurt?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Prolozone injections are slightly more uncomfortable than an acupuncture needle, but not much more. Most patients tolerate the treatment well. The injection is brief and any discomfort passes quickly."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How many prolozone treatments will I need?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Most conditions respond well within 6 treatments given every 2-4 weeks. After the initial treatment course, maintenance treatments every 1-3 months help sustain results."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How quickly will I feel better after prolozone?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Many patients feel improvement within hours of treatment. Within 24 hours, most people experience decreased pain and often improved range of motion."
-          }
-        }
-      ]
-    }
-  </script>
 </BaseLayout>

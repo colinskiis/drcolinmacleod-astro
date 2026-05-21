@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
-import FAQAccordion from '../components/FAQAccordion.astro';
+import FAQSection from '../components/FAQSection.astro';
 import ServiceArticles from '../components/ServiceArticles.astro';
 ---
 
@@ -241,21 +241,12 @@ import ServiceArticles from '../components/ServiceArticles.astro';
     </div>
   </section>
 
-  <!-- FAQ Section -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
-    <div class="section-shell">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Frequently Asked Questions</h2>
-      </div>
-
-      <FAQAccordion items={[
+  <FAQSection items={[
         { question: "Does acupuncture hurt?", answer: "<p>Most patients experience minimal discomfort during acupuncture. The needles used are very fine, much thinner than injection needles. You may feel a brief pinch upon insertion, followed by a sensation of pressure or heaviness at the needle site, which is actually a sign that the treatment is working.</p>" },
         { question: "How many treatments will I need?", answer: "<p>The number of treatments varies depending on the condition being treated, how long you've had it and how your body responds. Acute injuries may improve in 2-4 sessions, while chronic conditions often require 6-10 treatments. Many patients notice improvement after the first session.</p>" },
         { question: "Is acupuncture covered by insurance?", answer: "<p>Yes, most extended health insurance plans cover acupuncture when performed by a Naturopathic Doctor. We offer direct billing for many major insurers. Check with your insurance provider to confirm your coverage.</p>" },
         { question: "What should I do after an acupuncture treatment?", answer: "<p>After treatment, drink plenty of water, avoid strenuous exercise for 24 hours and take note of any changes in your symptoms. Some patients feel relaxed or tired after treatment, while others feel energized. Mild soreness at needle sites is normal and typically resolves within a day.</p>" },
       ]} />
-    </div>
-  </section>
 
   <ServiceArticles
     slugs={["sports-injuries-natural-treatment", "natural-anxiety-management", "quit-smoking-with-acupuncture"]}

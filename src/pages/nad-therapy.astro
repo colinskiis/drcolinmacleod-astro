@@ -4,7 +4,7 @@ import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
 import BookingButton from '../components/BookingButton.astro';
 import { Zap, Lightbulb, Heart, Check, FlaskConical, ChevronDown, Calendar } from '@lucide/astro';
-import FAQAccordion from '../components/FAQAccordion.astro';
+import FAQSection from '../components/FAQSection.astro';
 ---
 
 <BaseLayout
@@ -322,22 +322,13 @@ import FAQAccordion from '../components/FAQAccordion.astro';
     </div>
   </section>
 
-  <!-- FAQ Section -->
-  <section class="py-16 lg:py-24 bg-white">
-    <div class="section-shell">
-      <div class="max-w-3xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
-
-        <FAQAccordion items={[
+  <FAQSection bg="white" items={[
           { question: "How long does an NAD+ infusion take?", answer: "<p>NAD+ infusions typically take 1-4 hours depending on the dose and your individual tolerance. The infusion rate is adjusted to ensure comfort throughout the session. We recommend bringing something to read or watch during your treatment.</p>" },
           { question: "How many treatments will I need?", answer: "<p>Most people benefit from an initial series of 3 infusions spread over 3-6 weeks. Following this loading phase, maintenance infusions every 4-8 weeks help sustain benefits. Your treatment plan will be personalized based on your health goals and response to therapy.</p>" },
           { question: "What does NAD+ therapy feel like?", answer: "<p>During the infusion, you may feel mild warmth, slight chest tightness or a fluttering sensation. These are normal responses to NAD+ and resolve by slowing the infusion rate. After treatment, many people report feeling more alert, energized and mentally clear.</p>" },
           { question: "Is NAD+ therapy different from taking NAD+ supplements?", answer: "<p>Yes. Oral NAD+ supplements and precursors (like NMN or NR) must be absorbed through the digestive system, which reduces bioavailability. IV administration delivers NAD+ directly to your bloodstream, achieving therapeutic levels that are not possible with oral supplementation.</p>" },
           { question: "Who should not receive NAD+ therapy?", answer: "<p>NAD+ therapy may not be appropriate for pregnant or breastfeeding women, individuals with active cancer or those with certain cardiac conditions. A comprehensive health assessment is completed before treatment to ensure safety.</p>" },
         ]} />
-      </div>
-    </div>
-  </section>
 
   <!-- References Section -->
   <section class="py-16 lg:py-24 bg-emerald-950">
@@ -382,54 +373,4 @@ import FAQAccordion from '../components/FAQAccordion.astro';
       </div>
     </div>
   </section>
-
-  <!-- FAQ Schema Structured Data -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How long does an NAD+ infusion take?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "NAD+ infusions typically take 2-4 hours depending on the dose and your individual tolerance. The infusion rate is adjusted to ensure comfort throughout the session."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How many treatments will I need?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Most people benefit from an initial series of 4 infusions spread over 2-4 weeks. Following this loading phase, maintenance infusions every 4-8 weeks help sustain benefits."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What does NAD+ therapy feel like?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "During the infusion, you may feel mild warmth, slight chest tightness or a fluttering sensation. These are normal responses to NAD+ and resolve by slowing the infusion rate. After treatment, many people report feeling more alert, energized and mentally clear."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is NAD+ therapy different from taking NAD+ supplements?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Oral NAD+ supplements and precursors must be absorbed through the digestive system, which reduces bioavailability. IV administration delivers NAD+ directly to your bloodstream, achieving therapeutic levels that are not possible with oral supplementation."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Who should not receive NAD+ therapy?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "NAD+ therapy may not be appropriate for pregnant or breastfeeding women, individuals with active cancer or those with certain cardiac conditions. A comprehensive health assessment is completed before treatment to ensure safety."
-          }
-        }
-      ]
-    }
-  </script>
 </BaseLayout>

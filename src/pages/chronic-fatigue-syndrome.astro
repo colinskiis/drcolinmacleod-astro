@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
-import FAQAccordion from '../components/FAQAccordion.astro';
+import FAQSection from '../components/FAQSection.astro';
 ---
 
 <BaseLayout
@@ -313,22 +313,13 @@ import FAQAccordion from '../components/FAQAccordion.astro';
     </div>
   </section>
 
-  <!-- FAQ Section -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
-    <div class="section-shell">
-      <div class="max-w-3xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
-
-        <FAQAccordion items={[
+  <FAQSection items={[
           { question: "How quickly will I notice improvement?", answer: "<p>Many patients notice improved energy within hours of their first IV treatment, though this effect may be temporary initially. With regular treatment, improvements often become more sustained. Addressing underlying issues like thyroid dysfunction or nutrient deficiencies typically takes weeks to months to show full benefit.</p>" },
           { question: "How often will I need IV treatments?", answer: "<p>This varies significantly between patients. Some do well with weekly treatments initially, then transition to every 2-4 weeks for maintenance. Others use IV therapy as needed during flares or particularly demanding periods. We'll work with you to find a frequency that provides benefit while fitting your budget and schedule.</p>" },
           { question: "Is there a cure for ME/CFS?", answer: "<p>There is currently no known cure for ME/CFS, and we won't promise one. However, many patients can achieve significant improvement in function and quality of life with comprehensive treatment. Some patients do eventually recover, though this isn't predictable. Our goal is to help you function as well as possible while supporting your body's capacity to heal.</p>" },
           { question: "I've tried everything. Can you still help?", answer: "<p>Many patients come to us after years of unsuccessful treatment. We often find issues that weren't fully addressed, including incomplete thyroid testing, unrecognized nutrient deficiencies or chronic infections that weren't identified. Even when we can't find new issues, IV therapy provides a different delivery mechanism that may work when oral supplements haven't.</p>" },
           { question: "Do you treat long COVID fatigue?", answer: "<p>Yes. Long COVID shares many features with ME/CFS, including post-exertional malaise and profound fatigue. Our approach (comprehensive testing, IV nutrient therapy and targeted support) applies equally well to post-viral fatigue from COVID-19 or other infections.</p>" },
         ]} />
-      </div>
-    </div>
-  </section>
 
   <!-- CTA Section -->
   <section class="py-16 lg:py-24 bg-emerald-950">
@@ -359,46 +350,4 @@ import FAQAccordion from '../components/FAQAccordion.astro';
       </div>
     </div>
   </section>
-
-  <!-- FAQ Schema -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How quickly will I notice improvement with ME/CFS treatment?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Many patients notice improved energy within hours of their first IV treatment, though this effect may be temporary initially. With regular treatment, improvements often become more sustained."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How often will I need IV treatments for chronic fatigue?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "This varies between patients. Some do well with weekly treatments initially, then transition to every 2-4 weeks for maintenance. Others use IV therapy as needed during flares."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is there a cure for ME/CFS?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "There is currently no known cure for ME/CFS. However, many patients can achieve significant improvement in function and quality of life with comprehensive treatment."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you treat long COVID fatigue?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Long COVID shares many features with ME/CFS, including post-exertional malaise and profound fatigue. Our approach applies equally well to post-viral fatigue from COVID-19."
-          }
-        }
-      ]
-    }
-  </script>
 </BaseLayout>

@@ -3,6 +3,17 @@ title: "Ozone Therapy"
 description: "Ozone therapy is a natural treatment that uses ozone gas to increase oxygen saturation, oxygen utilization and tissue oxygen delivery with anti-microbial benefits."
 seo:
   focusKeyword: "ozone therapy"
+faq:
+  - question: "Is ozone therapy covered by insurance?"
+    answer: "<p>Most insurance plans provide coverage for the administration of ozone therapy which is the majority of the cost of the total treatment. If your insurance provider covers naturopathic services then they should cover the administration of ozone treatment. Some insurance companies will also cover the cost of the supplies used in the treatment, while some do not.</p>"
+  - question: "How often do I need to have ozone therapy?"
+    answer: "<p>How often you need ozone therapy will depend on your overall health and which health issues are being treated. Some conditions require more frequent treatment (once per week to start) while other health concerns can be treated less frequently (once per three months).</p>"
+  - question: "Is ozone therapy safe?"
+    answer: "<p>Inhaled ozone is irritating to lung tissue due to it's fragility and susceptibility to oxidation. Ozone gas is non-toxic when used in physiologic doses in the medical applications discussed on this page. A properly trained practitioner applies ozone in a safe and controlled manner with a high quality generator and medical grade oxygen. Inhaled ozone is not used in ozone therapy.</p>"
+  - question: "Are there side effects from ozone therapy?"
+    answer: "<p>Side effects are not common with ozone therapy. The ozone treatments offered by Dr. Colin MacLeod ND are administered at a controlled dose and rate to ensure optimal safety and side effects are rare. With this said it is possible to experience light headedness, low blood pressure, nausea or discomfort at the site of IV insertion. These issues are generally self limiting and pass within a short period of time.</p>"
+  - question: "What is the education or training for ozone therapy?"
+    answer: "<p>I have been trained in the use of ozone therapy with Dr. Frank Shallenberger MD of Reno, Nevada. Dr. Shallenberger is recognized as the foremost educator on the use of ozone therapy in North America. Dr. Shallenberger's training includes clinical indications, safety and methods of application of ozone therapy, as well as practical applications.</p>"
 ---
 
 ![Ozone therapy](/images/treatments/ozone-therapy.jpg)
@@ -135,29 +146,7 @@ Ozone has also been researched in the treatment of several other infection-assoc
 
 Ozone therapy has also shown promise in treatment of a variety of other conditions in clinical trials including pancreatitis<sup>56</sup>, vestibulocochlear syndrome<sup>57</sup> (a condition characterized by vertigo, nystagmus, tinnitus and hearing loss), sudden sensory-neural hearing loss<sup>58</sup>, macular degeneration<sup>59</sup>, emphysema<sup>60</sup> and osteonecrosis<sup>61</sup>.
 
-## Frequently Asked Questions
-
-### Is ozone therapy covered by insurance?
-
-Most insurance plans provide coverage for the administration of ozone therapy which is the majority of the cost of the total treatment. If your insurance provider covers naturopathic services then they should cover the administration of ozone treatment. Some insurance companies will also cover the cost of the supplies used in the treatment, while some do not.
-
-### How often do I need to have ozone therapy?
-
-How often you need ozone therapy will depend on your overall health and which health issues are being treated. Some conditions require more frequent treatment (once per week to start) while other health concerns can be treated less frequently (once per three months).
-
-### Is ozone therapy safe?
-
-Inhaled ozone is irritating to lung tissue due to it's fragility and susceptibility to oxidation. Ozone gas is non-toxic when used in physiologic doses in the medical applications discussed on this page. A properly trained practitioner applies ozone in a safe and controlled manner with a high quality generator and medical grade oxygen. Inhaled ozone is not used in ozone therapy.
-
-### Are there side effects from ozone therapy?
-
-Side effects are not common with ozone therapy. The ozone treatments offered by Dr. Colin MacLeod ND are administered at a controlled dose and rate to ensure optimal safety and side effects are rare. With this said it is possible to experience light headedness, low blood pressure, nausea or discomfort at the site of IV insertion. These issues are generally self limiting and pass within a short period of time.
-
-### What is the education or training for ozone therapy?
-
-I have been trained in the use of ozone therapy with Dr. Frank Shallenberger MD of Reno, Nevada. Dr. Shallenberger is recognized as the foremost educator on the use of ozone therapy in North America. Dr. Shallenberger's training includes clinical indications, safety and methods of application of ozone therapy, as well as practical applications.
-
-### References
+## References
 
 1. Sunnen G. Ozone in medicine: Overview and future directions. J Adv Med. 1988;1:159–74.
 2. Stoker G (1916). "The Surgical Uses of Ozone". Lancet II: 712.

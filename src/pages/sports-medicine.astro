@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
-import FAQAccordion from '../components/FAQAccordion.astro';
+import FAQSection from '../components/FAQSection.astro';
 ---
 
 <BaseLayout
@@ -468,13 +468,7 @@ import FAQAccordion from '../components/FAQAccordion.astro';
     </div>
   </section>
 
-  <!-- FAQ Section -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
-    <div class="section-shell">
-      <div class="max-w-3xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
-
-        <FAQAccordion items={[
+  <FAQSection items={[
           { question: "How long until I can return to my sport?", answer: "<p>Most patients can return to light activity within 2-3 days and gradually increase intensity over the following weeks. Full return to sport typically occurs after completing the treatment series (4-6 weeks), though this varies based on injury severity and individual healing response. We'll provide specific guidance based on your situation.</p>" },
           { question: "Should I stop physiotherapy during treatment?", answer: "<p>Not necessarily. Regenerative injections and physiotherapy often work well together. We recommend avoiding aggressive manipulation or deep tissue work for 48-72 hours after treatment, but gentle exercises and stretching can continue. We're happy to coordinate with your physiotherapist to optimize your care.</p>" },
           { question: "Can I take anti-inflammatories?", answer: "<p>We recommend avoiding NSAIDs (ibuprofen, naproxen, etc.) for 48-72 hours before and after treatment, as they can interfere with the inflammatory healing response we're trying to stimulate. Acetaminophen (Tylenol) is acceptable if needed for discomfort. We'll discuss pain management strategies during your consultation.</p>" },
@@ -482,9 +476,6 @@ import FAQAccordion from '../components/FAQAccordion.astro';
           { question: "What's the difference between prolotherapy and cortisone?", answer: "<p>Cortisone suppresses inflammation and can provide short-term pain relief, but doesn't promote tissue healing and may actually weaken tendons with repeated use. Prolotherapy works differently: it stimulates a controlled healing response to strengthen and repair damaged tissue. Research comparing the two found both effective short-term, but prolotherapy showed superior results at 6 months.</p>" },
           { question: "Do you treat youth athletes?", answer: "<p>Yes, we treat adolescent athletes with certain conditions like Osgood-Schlatter disease, where prolotherapy has shown excellent results in research. Treatment decisions for youth are made carefully with parental involvement, considering the specific condition and growth plate status. We'll discuss whether treatment is appropriate during the initial consultation.</p>" },
         ]} />
-      </div>
-    </div>
-  </section>
 
   <!-- Related Conditions Section -->
   <section class="py-16 lg:py-24 bg-white">
@@ -524,62 +515,4 @@ import FAQAccordion from '../components/FAQAccordion.astro';
       </div>
     </div>
   </section>
-
-  <!-- FAQ Schema Structured Data -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How long until I can return to my sport?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Most patients can return to light activity within 2-3 days and gradually increase intensity over the following weeks. Full return to sport typically occurs after completing the treatment series (4-6 weeks), though this varies based on injury severity and individual healing response."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Should I stop physiotherapy during treatment?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Not necessarily. Regenerative injections and physiotherapy often work well together. We recommend avoiding aggressive manipulation or deep tissue work for 48-72 hours after treatment, but gentle exercises and stretching can continue."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I take anti-inflammatories?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We recommend avoiding NSAIDs (ibuprofen, naproxen, etc.) for 48-72 hours before and after treatment, as they can interfere with the inflammatory healing response we're trying to stimulate. Acetaminophen (Tylenol) is acceptable if needed for discomfort."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is this covered by insurance?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Most extended health benefit plans cover naturopathic medicine, which includes our regenerative injection therapies. Coverage varies by plan. Check with your provider for your specific naturopathic medicine benefits."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What's the difference between prolotherapy and cortisone?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Cortisone suppresses inflammation and can provide short-term pain relief, but doesn't promote tissue healing and may actually weaken tendons with repeated use. Prolotherapy stimulates a controlled healing response to strengthen and repair damaged tissue. Research comparing the two found both effective short-term, but prolotherapy showed superior results at 6 months."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you treat youth athletes?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, we treat adolescent athletes with certain conditions like Osgood-Schlatter disease, where prolotherapy has shown excellent results in research. Treatment decisions for youth are made carefully with parental involvement."
-          }
-        }
-      ]
-    }
-  </script>
 </BaseLayout>

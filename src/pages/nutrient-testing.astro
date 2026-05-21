@@ -3,7 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
 import BookingButton from '../components/BookingButton.astro';
-import FAQAccordion from '../components/FAQAccordion.astro';
+import FAQSection from '../components/FAQSection.astro';
 import { X, Check } from '@lucide/astro';
 ---
 
@@ -323,22 +323,13 @@ import { X, Check } from '@lucide/astro';
     </div>
   </section>
 
-  <!-- FAQ Section -->
-  <section class="py-16 lg:py-24 bg-white">
-    <div class="section-shell">
-      <div class="max-w-3xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
-
-        <FAQAccordion items={[
+  <FAQSection bg="white" items={[
           { question: "Do I need a doctor's requisition for nutrient testing?", answer: "<p>No. As a naturopathic doctor, I can order comprehensive nutrient panels directly. You don't need a family doctor or specialist referral to access testing.</p>" },
           { question: 'Why do you use different "optimal" ranges than the lab?', answer: '<p>Standard lab ranges are designed to identify severe deficiency, not optimal health. They\'re based on the general population, including people who are unwell. Functional optimal ranges reflect the levels at which research shows people feel and function best. For example, a vitamin D of 35 nmol/L is "normal" by lab standards but associated with increased risk of illness and fatigue.</p>' },
           { question: "Can't I just take a multivitamin instead of testing?", answer: "<p>A multivitamin provides small, standardized doses that may not address your specific deficiencies. If your ferritin is 15 and your vitamin D is 25, you need targeted therapeutic doses, not the token amounts in a daily multi. Testing tells us exactly what you need and how much, which saves you money on unnecessary supplements and ensures you're actually correcting the problem.</p>" },
           { question: "Do I need to fast before nutrient testing?", answer: "<p>Fasting is not required for most nutrient tests. However, for the iron panel specifically, morning fasting samples give the most accurate results. If we're combining nutrient testing with other blood work (like a metabolic panel), we may recommend fasting. Specific instructions will be provided at your appointment.</p>" },
           { question: "How long does it take to correct a nutrient deficiency?", answer: "<p>It depends on the nutrient and the severity of deficiency. Iron stores can take 3–6 months to rebuild. Vitamin D levels typically improve within 2–3 months with proper supplementation. B12 deficiency may resolve more quickly with appropriate forms and doses. We retest at intervals to confirm you're on track and adjust doses as needed.</p>" },
         ]} />
-      </div>
-    </div>
-  </section>
 
   <!-- CTA Section -->
   <section class="py-16 lg:py-24 bg-emerald-950">
@@ -366,54 +357,4 @@ import { X, Check } from '@lucide/astro';
       </div>
     </div>
   </section>
-
-  <!-- FAQ Schema -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Do I need a doctor's requisition for nutrient testing?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. As a naturopathic doctor, I can order comprehensive nutrient panels directly. You don't need a family doctor or specialist referral."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Why do you use different optimal ranges than the lab?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Standard lab ranges identify severe deficiency, not optimal health. Functional optimal ranges reflect levels where research shows people feel and function best."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can't I just take a multivitamin instead of testing?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A multivitamin provides small standardized doses that may not address your specific deficiencies. Testing tells us exactly what you need and how much."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do I need to fast before nutrient testing?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Fasting is not required for most nutrient tests. For the iron panel specifically, morning fasting samples give the most accurate results."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How long does it take to correct a nutrient deficiency?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "It depends on the nutrient and severity. Iron stores can take 3-6 months to rebuild. Vitamin D typically improves within 2-3 months with proper supplementation."
-          }
-        }
-      ]
-    }
-  </script>
 </BaseLayout>

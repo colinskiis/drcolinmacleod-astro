@@ -3,6 +3,17 @@ title: "Myers' Cocktail: Intravenous Nutrients"
 description: "The Myers' Cocktail is an IV vitamin infusion containing B vitamins, vitamin C, magnesium and calcium. Used for fatigue, migraines, fibromyalgia, immune support and athletic performance in Halifax."
 seo:
   focusKeyword: "Myers Cocktail IV therapy Halifax"
+faq:
+  - question: "How long does a Myers' Cocktail take?"
+    answer: "<p>A typical infusion takes <strong>30-45 minutes</strong>. Plan for about an hour for your appointment to allow time for setup and monitoring.</p>"
+  - question: "How often should I get a Myers' Cocktail?"
+    answer: "<p>This depends on your health goals: acute illness (1-2 treatments close together), chronic conditions such as fibromyalgia or CFS (weekly for 4-6 weeks, then as needed), wellness maintenance (monthly or as desired), or athletic performance (before events or during heavy training).</p>"
+  - question: "Will I feel different immediately?"
+    answer: "<p>Most patients notice increased energy within hours of treatment. Some feel the effects during the infusion itself, particularly the relaxing warmth from magnesium.</p>"
+  - question: "Can I drive after treatment?"
+    answer: "<p>Yes, most patients can drive immediately after. If you experience lightheadedness, we'll have you rest until it passes (usually just a few minutes).</p>"
+  - question: "Is fasting required?"
+    answer: "<p>No fasting is required. In fact, eating a light meal before your appointment helps prevent lightheadedness.</p>"
 ---
 
 ![Patient receiving Myers' Cocktail IV therapy](/images/treatments/nad-patient.webp)
@@ -176,34 +187,6 @@ The Myers' Cocktail is very safe for most people. However, it may not be appropr
 - Severe kidney disease
 - Certain heart conditions (discuss during consultation)
 - Allergy to any component
-
----
-
-## Frequently Asked Questions
-
-### How long does a Myers' Cocktail take?
-
-A typical infusion takes **30-45 minutes**. Plan for about an hour for your appointment to allow time for setup and monitoring.
-
-### How often should I get a Myers' Cocktail?
-
-This depends on your health goals:
-- **Acute illness**: 1-2 treatments close together
-- **Chronic conditions** (fibromyalgia, CFS): Weekly for 4-6 weeks, then as needed
-- **Wellness maintenance**: Monthly or as desired
-- **Athletic performance**: Before events or during heavy training
-
-### Will I feel different immediately?
-
-Most patients notice increased energy within hours of treatment. Some feel the effects during the infusion itself, particularly the relaxing warmth from magnesium.
-
-### Can I drive after treatment?
-
-Yes, most patients can drive immediately after. If you experience lightheadedness, we'll have you rest until it passes (usually just a few minutes).
-
-### Is fasting required?
-
-No fasting is required. In fact, eating a light meal before your appointment helps prevent lightheadedness.
 
 ---
 

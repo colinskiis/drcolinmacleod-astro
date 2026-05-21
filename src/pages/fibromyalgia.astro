@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
-import FAQAccordion from '../components/FAQAccordion.astro';
+import FAQSection from '../components/FAQSection.astro';
 ---
 
 <BaseLayout
@@ -291,22 +291,13 @@ import FAQAccordion from '../components/FAQAccordion.astro';
     </div>
   </section>
 
-  <!-- FAQ Section -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
-    <div class="section-shell">
-      <div class="max-w-3xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
-
-        <FAQAccordion items={[
+  <FAQSection items={[
           { question: "How often will I need IV treatments?", answer: "<p>This varies by individual. Some patients do well with weekly treatments initially, then reduce to every 2-4 weeks for maintenance. Others come in as needed when symptoms flare. We'll work with you to find the frequency that provides the best benefit for your situation.</p>" },
           { question: "Can IV therapy replace my medications?", answer: "<p>IV therapy is complementary, not a replacement for medications prescribed by your doctor. Some patients find they can reduce medications over time as symptoms improve, but this should always be done in consultation with your prescribing physician. Never stop or reduce medications without medical guidance.</p>" },
           { question: "Is there a cure for fibromyalgia?", answer: "<p>There is currently no cure for fibromyalgia. However, many patients achieve significant improvement in pain, energy and quality of life with comprehensive treatment. Our goal is to help you manage symptoms effectively and improve your daily function.</p>" },
           { question: "What if I also have chronic fatigue syndrome?", answer: "<p>Fibromyalgia and ME/CFS frequently overlap and share many features. The good news is that our approach (IV therapy, testing and comprehensive support) addresses both conditions. We'll tailor your treatment plan to address your specific combination of symptoms.</p>" },
           { question: "Will I feel worse before I feel better?", answer: "<p>Many patients report feeling better after IV treatments rather than worse. Some may experience mild fatigue the day of treatment (from the relaxation response), but this typically gives way to improved energy over the following days. We start gently and adjust based on your response.</p>" },
         ]} />
-      </div>
-    </div>
-  </section>
 
   <!-- CTA Section -->
   <section class="py-16 lg:py-24 bg-emerald-950">
@@ -335,38 +326,4 @@ import FAQAccordion from '../components/FAQAccordion.astro';
       </div>
     </div>
   </section>
-
-  <!-- FAQ Schema -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How often will I need IV treatments for fibromyalgia?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "This varies by individual. Some patients do well with weekly treatments initially, then reduce to every 2-4 weeks for maintenance. Others come in as needed when symptoms flare."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can IV therapy replace my fibromyalgia medications?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "IV therapy is complementary, not a replacement for medications prescribed by your doctor. Some patients find they can reduce medications over time as symptoms improve, but this should always be done in consultation with your prescribing physician."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is there a cure for fibromyalgia?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "There is currently no cure for fibromyalgia. However, many patients achieve significant improvement in pain, energy and quality of life with comprehensive treatment."
-          }
-        }
-      ]
-    }
-  </script>
 </BaseLayout>

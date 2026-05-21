@@ -2,6 +2,7 @@
 import { type CollectionEntry, getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BookingButton from '../components/BookingButton.astro';
+import FAQSection from '../components/FAQSection.astro';
 
 export async function getStaticPaths() {
   const pages = await getCollection('pages');
@@ -71,6 +72,12 @@ const modifiedDate = page.data.modifiedDate
         <div class="prose prose-lg max-w-none">
           <Content />
         </div>
+
+        {page.data.faq && page.data.faq.length > 0 && (
+          <div class="-mx-4 sm:mx-0 mt-12">
+            <FAQSection items={page.data.faq} />
+          </div>
+        )}
 
         <!-- Page Footer -->
         <footer class="mt-12 pt-8 border-t border-gray-200">

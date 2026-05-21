@@ -233,9 +233,10 @@ Static site risk = broken links and bad redirects, not runtime bugs.
 ## Phase 4 — Polish (optional)
 
 - ~~Testimonials on key service pages~~ (declined)
-- Hero WebP + lazy-load audit
-- Design audit follow-ups (homepage FAQ component, hero loading)
-- Articles search: `?q=` URL param + match highlighting
+- [x] Hero WebP + lazy-load audit
+- [x] Design audit follow-ups — site-wide FAQ via `FAQSection` + `FAQAccordion`; hero loading
+- [x] Articles search: `?q=` URL param + match highlighting
+- [x] FAQ unification — `FAQSection.astro`, 26 `.astro` pages migrated; content `faq` frontmatter on ozone, Myers', chelation article
 
 ---
 
@@ -273,8 +274,9 @@ Static site risk = broken links and bad redirects, not runtime bugs.
 
 ### Phase 4
 - [x] Hero WebP (peptide article) + lazy/eager loading on article & service heroes
-- [x] Design audit — homepage FAQ uses `FAQAccordion`
+- [x] Design audit — site-wide FAQ uses `FAQSection` + `FAQAccordion` (May 21, 2026)
 - [x] Articles search `?q=` param + match highlighting
+- [x] FAQ unification — markdown/content pages wired via `faq` frontmatter
 - [ ] Testimonials (out of scope)
 
 ---

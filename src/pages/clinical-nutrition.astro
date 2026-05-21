@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
-import FAQAccordion from '../components/FAQAccordion.astro';
+import FAQSection from '../components/FAQSection.astro';
 import ServiceArticles from '../components/ServiceArticles.astro';
 ---
 
@@ -388,21 +388,12 @@ import ServiceArticles from '../components/ServiceArticles.astro';
     </div>
   </section>
 
-  <!-- FAQ Section -->
-  <section class="py-16 lg:py-24 bg-white">
-    <div class="section-shell">
-      <div class="max-w-3xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
-
-        <FAQAccordion items={[
+  <FAQSection bg="white" items={[
           { question: "Why do I need testing if I eat a healthy diet?", answer: "<p>Even with a healthy diet, deficiencies can occur due to soil depletion, digestive issues that impair absorption, medications that deplete nutrients, genetic variations affecting metabolism or increased needs due to stress or health conditions. Testing removes the guesswork.</p>" },
           { question: "How is this different from taking a multivitamin?", answer: "<p>Multivitamins provide small, generic doses of many nutrients. Clinical nutrition identifies your specific deficiencies and provides therapeutic doses of exactly what you need. This targeted approach is more effective and avoids unnecessary supplementation.</p>" },
           { question: "When would IV therapy be recommended over oral supplements?", answer: "<p>IV therapy is typically recommended when digestive absorption is compromised, deficiencies are severe and need rapid correction or when therapeutic doses higher than oral absorption allows are beneficial (such as high-dose vitamin C for immune support).</p>" },
           { question: "Is nutritional testing covered by insurance?", answer: "<p>Naturopathic consultations are covered by many extended health plans. Lab testing is typically an out-of-pocket expense but qualifies as a medical expense for tax purposes. We'll discuss costs upfront so you can make informed decisions.</p>" },
         ]} />
-      </div>
-    </div>
-  </section>
 
   <ServiceArticles
     slugs={["fiber-the-underrated-nutrient", "digestive-health-natural-approaches", "natural-weight-loss-solutions"]}
@@ -421,40 +412,6 @@ import ServiceArticles from '../components/ServiceArticles.astro';
       </div>
     </div>
   </section>
-
-  <!-- FAQ Schema -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Why do I need nutritional testing if I eat a healthy diet?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Even with a healthy diet, deficiencies can occur due to soil depletion, digestive issues, medications that deplete nutrients, genetic variations or increased needs due to stress or health conditions."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How is clinical nutrition different from taking a multivitamin?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Clinical nutrition identifies your specific deficiencies and provides therapeutic doses of exactly what you need, rather than small generic doses of many nutrients."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "When would IV therapy be recommended over oral supplements?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "IV therapy is recommended when digestive absorption is compromised, deficiencies are severe and need rapid correction or when therapeutic doses higher than oral absorption allows are beneficial."
-          }
-        }
-      ]
-    }
-  </script>
 
   <!-- Service Schema Structured Data -->
   <script type="application/ld+json">
