@@ -258,14 +258,18 @@ Static site risk = broken links and bad redirects, not runtime bugs.
 - [x] 1.2 Draft filter in `articles/[...slug].astro`
 - [x] 1.3 Articles search + shared list markup on topic pages
 - [x] 1.4 Lab testing — Optimal Wellbeing wording
-- [ ] 1.5 Conditions audit
+- [x] 1.5 Conditions audit (27/27 links valid, May 21, 2026)
 - [x] 1.6 `npm run build` + link/redirect validation (build passed May 21, 2026)
 
 ### Phase 2
-- [ ] IV content · Acupuncture · Article CTAs
+- [x] IV content — vitamin C booster, first-visit FAQ, related articles
+- [x] Acupuncture — linked condition cards, wellness section, quit-smoking link
+- [x] Article CTAs — verified on all articles via `[...slug].astro` layout
 
 ### Phase 3
-- [ ] Peptide images · `npm run check` · Search index docs
+- [x] Peptide images — removed duplicate PNGs; hero uses `peptide-evidence-safety-canada-20260516.png`
+- [x] `npm run check` script
+- [x] Search index maintenance note in `search-data.json.ts`
 
 ### Phase 4
 - [ ] Polish items

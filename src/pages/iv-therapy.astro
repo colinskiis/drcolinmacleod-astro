@@ -108,7 +108,7 @@ import ServiceArticles from '../components/ServiceArticles.astro';
         </p>
       </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
         <!-- NAD+ - Lightning/Energy icon -->
         <a href="/nad-therapy" class="bg-white border border-emerald-100 rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-shadow block group">
           <div class="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-emerald-200 transition-colors">
@@ -116,6 +116,15 @@ import ServiceArticles from '../components/ServiceArticles.astro';
           </div>
           <h3 class="text-lg font-semibold text-emerald-950 mb-2 group-hover:text-emerald-700 transition-colors">NAD+</h3>
           <p class="text-gray-600 text-sm">Cellular energy, mental clarity and healthy aging support.</p>
+        </a>
+
+        <!-- High-Dose Vitamin C -->
+        <a href="/iv-vitamin-c" class="bg-white border border-emerald-100 rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-shadow block group">
+          <div class="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-emerald-200 transition-colors">
+            <Droplets class="w-10 h-10 text-emerald-700" aria-hidden="true" />
+          </div>
+          <h3 class="text-lg font-semibold text-emerald-950 mb-2 group-hover:text-emerald-700 transition-colors">High-Dose Vitamin C</h3>
+          <p class="text-gray-600 text-sm">Immune support, recovery and antioxidant therapy when clinically appropriate.</p>
         </a>
 
         <!-- Glutathione - Heart with EKG line -->
@@ -224,6 +233,7 @@ import ServiceArticles from '../components/ServiceArticles.astro';
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">Frequently Asked Questions</h2>
 
         <FAQAccordion items={[
+          { question: "What happens at my first IV therapy visit?", answer: "<p>Your first visit includes a health review, discussion of your goals and a decision about whether IV therapy is appropriate. If treatment proceeds, we select nutrients for your needs and monitor you throughout the infusion. Many patients schedule a consultation before their first drip.</p>" },
           { question: "Is IV therapy covered by insurance?", answer: "<p>Most insurance plans provide coverage for the administration of an IV therapy treatment which is the majority of the cost of the total treatment.</p>" },
           { question: "How often do I need to have IV therapy?", answer: "<p>The frequency of treatment will depend on the health concerns and sensitivity of the individual. Some conditions require more frequent treatment (once per week to start) while other health concerns can be treated less frequently (once per three months).</p>" },
           { question: "Is IV therapy safe?", answer: "<p>Yes. Dr. Colin MacLeod ND has performed thousands of IV nutrient treatments since 2011 with an excellent safety record.</p>" },
@@ -235,8 +245,8 @@ import ServiceArticles from '../components/ServiceArticles.astro';
   </section>
 
   <ServiceArticles
-    slugs={["nutrients-for-athletic-performance", "immune-support-natural-approaches", "magnesium-the-natural-muscle-relaxer"]}
-    subtitle="Explore related topics on nutrients, performance and natural health."
+    slugs={["post-viral-recovery-iv-therapy", "immune-support-natural-approaches", "magnesium-the-natural-muscle-relaxer"]}
+    subtitle="Explore related topics on recovery, immunity and natural health."
   />
 
   <!-- Final CTA -->
@@ -298,6 +308,14 @@ import ServiceArticles from '../components/ServiceArticles.astro';
       "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What happens at my first IV therapy visit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your first visit includes a health review, discussion of your goals and a decision about whether IV therapy is appropriate. If treatment proceeds, we select nutrients for your needs and monitor you throughout the infusion. Many patients schedule a consultation before their first drip."
+          }
+        },
         {
           "@type": "Question",
           "name": "Is IV therapy covered by insurance?",

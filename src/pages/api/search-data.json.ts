@@ -1,6 +1,9 @@
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
 
+// Site-wide search index (header overlay). When adding a new service or condition
+// page under src/pages/, add an entry to `services` or `conditions` below so it appears in search.
+
 // Static services data (from src/pages/*.astro service pages)
 const services = [
   {
