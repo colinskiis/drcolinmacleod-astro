@@ -17,7 +17,7 @@ The problem is that the word "peptide" now covers very different things: approve
 
 <div class="article-summary">
   <p class="article-summary__eyebrow">Key Distinction</p>
-  <h3>Peptide products are not one category</h3>
+  <h3>Not all peptides are the same</h3>
   <div class="article-summary__rows">
     <div class="article-summary__row">
       <strong>Approved peptide medicines</strong>

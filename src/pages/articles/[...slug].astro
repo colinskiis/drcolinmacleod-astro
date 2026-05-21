@@ -5,7 +5,7 @@ import CTAButton from '../../components/CTAButton.astro';
 import RelatedArticles from '../../components/RelatedArticles.astro';
 
 export async function getStaticPaths() {
-  const articles = await getCollection('articles');
+  const articles = await getCollection('articles', ({ data }) => data.draft !== true);
   return articles.map((article) => ({
     params: { slug: article.slug },
     props: article,
