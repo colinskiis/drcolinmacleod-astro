@@ -71,6 +71,9 @@ const imageDimensions = imageAspect === 'square'
               class={`w-full h-full object-cover ${imageClasses}`}
               width={imageDimensions.width}
               height={imageDimensions.height}
+              loading="eager"
+              fetchpriority="high"
+              decoding="async"
             />
           </div>
         )}

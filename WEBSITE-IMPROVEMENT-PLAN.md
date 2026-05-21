@@ -232,10 +232,10 @@ Static site risk = broken links and bad redirects, not runtime bugs.
 
 ## Phase 4 — Polish (optional)
 
-- Testimonials on key service pages
+- ~~Testimonials on key service pages~~ (declined)
 - Hero WebP + lazy-load audit
-- Design audit follow-ups
-- Post–v1: `?q=` on articles index; match highlighting
+- Design audit follow-ups (homepage FAQ component, hero loading)
+- Articles search: `?q=` URL param + match highlighting
 
 ---
 
@@ -272,7 +272,10 @@ Static site risk = broken links and bad redirects, not runtime bugs.
 - [x] Search index maintenance note in `search-data.json.ts`
 
 ### Phase 4
-- [ ] Polish items
+- [x] Hero WebP (peptide article) + lazy/eager loading on article & service heroes
+- [x] Design audit — homepage FAQ uses `FAQAccordion`
+- [x] Articles search `?q=` param + match highlighting
+- [ ] Testimonials (out of scope)
 
 ---
 

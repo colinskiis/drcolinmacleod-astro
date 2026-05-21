@@ -1,7 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BookingButton from '../components/BookingButton.astro';
-import { Phone, FlaskConical, ChevronRight, Syringe, ArrowRight, ChevronDown, Microscope, HeartPulse, BookOpen } from '@lucide/astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
+import { Phone, FlaskConical, ChevronRight, Syringe, ArrowRight, Microscope, HeartPulse, BookOpen } from '@lucide/astro';
 
 // Conditions (top 3 for nav hub)
 const conditions = [
@@ -334,40 +335,23 @@ const faqSchema = {
         <h2 class="text-4xl sm:text-5xl font-serif font-medium text-emerald-950">Common Questions</h2>
         <p class="text-lg text-slate-600 max-w-2xl mx-auto">Answers to what patients most commonly ask before their first visit.</p>
       </div>
-      <div class="max-w-3xl mx-auto space-y-6 reveal reveal-delay-100">
-            <details class="group bg-white rounded-2xl shadow-sm border border-emerald-100/50 overflow-hidden transition-all duration-300 hover:shadow-md open:shadow-lg open:ring-1 open:ring-emerald-500/20">
-              <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-                <h3 class="text-xl font-medium text-emerald-950 pr-8">Can naturopathic doctors order blood tests?</h3>
-                <span class="text-emerald-500 transition-transform duration-300 group-open:rotate-180">
-                  <ChevronDown class="w-6 h-6" aria-hidden="true" />
-                </span>
-              </summary>
-              <div class="px-6 pb-6 text-base text-slate-600 leading-relaxed">
-                Yes. As a naturopathic doctor, Dr. MacLeod can order a comprehensive range of blood and laboratory tests through private labs. This includes thyroid panels, hormone levels, nutrient status, inflammatory markers and more. Private testing often means broader panels and faster turnaround compared to the public system, giving us a clear picture of your health.
-              </div>
-            </details>
-            <details class="group bg-white rounded-2xl shadow-sm border border-emerald-100/50 overflow-hidden transition-all duration-300 hover:shadow-md open:shadow-lg open:ring-1 open:ring-emerald-500/20">
-              <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-                <h3 class="text-xl font-medium text-emerald-950 pr-8">Is naturopathic medicine covered by insurance?</h3>
-                <span class="text-emerald-500 transition-transform duration-300 group-open:rotate-180">
-                  <ChevronDown class="w-6 h-6" aria-hidden="true" />
-                </span>
-              </summary>
-              <div class="px-6 pb-6 text-base text-slate-600 leading-relaxed">
-                Yes, most extended health insurance plans cover naturopathic visits. We offer direct billing for many major insurers to make the process convenient for you.
-              </div>
-            </details>
-            <details class="group bg-white rounded-2xl shadow-sm border border-emerald-100/50 overflow-hidden transition-all duration-300 hover:shadow-md open:shadow-lg open:ring-1 open:ring-emerald-500/20">
-              <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-                <h3 class="text-xl font-medium text-emerald-950 pr-8">Do you work alongside my family doctor?</h3>
-                <span class="text-emerald-500 transition-transform duration-300 group-open:rotate-180">
-                  <ChevronDown class="w-6 h-6" aria-hidden="true" />
-                </span>
-              </summary>
-              <div class="px-6 pb-6 text-base text-slate-600 leading-relaxed">
-                Absolutely. Naturopathic medicine is most effective as part of a coordinated care approach. I regularly share findings and treatment summaries with family doctors and specialists when patients consent. While naturopathic doctors don't have direct referral privileges in Nova Scotia, I actively communicate with other healthcare providers to help facilitate appropriate referrals where needed.
-              </div>
-            </details>
+      <div class="reveal reveal-delay-100">
+        <FAQAccordion
+          items={[
+            {
+              question: 'Can naturopathic doctors order blood tests?',
+              answer: '<p>Yes. As a naturopathic doctor, Dr. MacLeod can order a comprehensive range of blood and laboratory tests through private labs. This includes thyroid panels, hormone levels, nutrient status, inflammatory markers and more. Private testing often means broader panels and faster turnaround compared to the public system, giving us a clear picture of your health.</p>',
+            },
+            {
+              question: 'Is naturopathic medicine covered by insurance?',
+              answer: '<p>Yes, most extended health insurance plans cover naturopathic visits. We offer direct billing for many major insurers to make the process convenient for you.</p>',
+            },
+            {
+              question: 'Do you work alongside my family doctor?',
+              answer: "<p>Absolutely. Naturopathic medicine is most effective as part of a coordinated care approach. I regularly share findings and treatment summaries with family doctors and specialists when patients consent. While naturopathic doctors don't have direct referral privileges in Nova Scotia, I actively communicate with other healthcare providers to help facilitate appropriate referrals where needed.</p>",
+            },
+          ]}
+        />
       </div>
     </div>
   </section>

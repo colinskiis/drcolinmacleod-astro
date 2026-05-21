@@ -17,6 +17,11 @@ type Props = CollectionEntry<'articles'>;
 const article = Astro.props;
 const { Content } = await article.render();
 
+const heroImage = article.data.heroImage;
+const heroWebp =
+  heroImage?.replace(/\.(png|jpe?g)$/i, '.webp') ?? null;
+const heroUsesWebp = heroImage?.endsWith('.webp') ?? false;
+
 // SEO preparation
 const seoTitle = article.data.seo?.title || article.data.title;
 const seoDescription = article.data.seo?.description || article.data.description;
@@ -136,6 +141,8 @@ const articleSchema = {
               class="w-10 h-10 rounded-full object-cover object-top flex-shrink-0"
               width="40"
               height="40"
+              loading="lazy"
+              decoding="async"
             />
             <div>
               <span class="text-sm font-semibold text-gray-900">{article.data.author}</span>
@@ -148,13 +155,23 @@ const articleSchema = {
         </header>
 
         <!-- Hero Image -->
-        {article.data.heroImage && (
+        {heroImage && (
           <div class="mb-12 -mx-4 sm:mx-0">
-            <img
-              src={article.data.heroImage}
-              alt={article.data.title}
-              class="w-full h-auto rounded-xl shadow-lg object-cover max-h-96"
-            />
+            <picture>
+              {heroWebp && !heroUsesWebp && (
+                <source srcset={heroWebp} type="image/webp" />
+              )}
+              <img
+                src={heroImage}
+                alt={article.data.title}
+                class="w-full h-auto rounded-xl shadow-lg object-cover max-h-96"
+                width="1536"
+                height="1024"
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </picture>
           </div>
         )}
 
@@ -183,6 +200,8 @@ const articleSchema = {
                 class="w-16 h-16 rounded-full object-cover object-top flex-shrink-0 shadow-lg"
                 width="64"
                 height="64"
+                loading="lazy"
+                decoding="async"
               />
               <div class="flex-1">
                 <h3 class="text-xl font-serif font-bold text-emerald-950 mb-2">About the Author</h3>
