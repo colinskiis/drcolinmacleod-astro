@@ -57,8 +57,6 @@ When runner's knee becomes a persistent, chronic problem despite physiotherapy a
 
 **Prolotherapy** involves the injection of a concentrated dextrose (sugar) solution into the affected joint and surrounding ligamentous or tendinous attachments. The solution triggers a controlled local healing response, promoting the repair of weakened connective tissue and restoring mechanical stability to the patellofemoral joint. Read more about [prolotherapy and regenerative injection therapy](/prolotherapy-for-arthritis).
 
-**Prolozone therapy** combines ozone gas with proliferative nutrients and is injected into the joint and surrounding soft tissues. Ozone is a potent stimulator of tissue oxygenation and antioxidant defences, and has been shown to reduce pain and improve joint function in chronic musculoskeletal conditions. Read more about [prolozone therapy](/prolozone).
-
 **Platelet-rich plasma (PRP)** therapy involves drawing a small sample of a patient's blood, concentrating the platelet-rich fraction by centrifugation and injecting it at the site of injury. Platelets carry a rich array of growth factors that directly stimulate cartilage repair and soft-tissue regeneration. Research supports the use of PRP for knee pain associated with cartilage pathology, with studies demonstrating improvements in pain and function that are sustained over time<sup>4</sup>. Read more about [PRP therapy](/prolotherapy-for-arthritis).
 
 **Acupuncture** is a well-established complementary treatment for musculoskeletal pain. By stimulating local tissue blood flow and modulating pain signalling pathways, [acupuncture](/acupuncture) can serve as an effective adjunct to rehabilitation, helping to reduce pain and improve function during the recovery process.

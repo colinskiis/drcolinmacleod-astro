@@ -43,6 +43,8 @@ RewriteRule ^migraine/?$ /migraine-headache/ [L,R=301]
 RewriteRule ^prolotherapy-arthritis/?$ /prolotherapy-for-arthritis/ [L,R=301]
 RewriteRule ^chelation-therapy-heart-disease/?$ /chelation-therapy/ [L,R=301]
 RewriteRule ^natural-pain-solutions/?$ /conditions/ [L,R=301]
+RewriteRule ^ozone-therapy/?$ /prolotherapy/ [L,R=301]
+RewriteRule ^prolozone/?$ /prolotherapy/ [L,R=301]
 
 # Patient info redirects
 RewriteRule ^patient-info/new-patient-guide/?$ /patient-resources/ [L,R=301]

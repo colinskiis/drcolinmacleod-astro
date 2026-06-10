@@ -51,7 +51,7 @@ Because medial epicondylitis is fundamentally a degenerative tendinopathy rather
 
 **Platelet-Rich Plasma (PRP)** involves concentrating the growth-factor-rich platelet fraction from a patient's own blood and injecting it at the site of tendon degeneration. PRP has been studied specifically for medial epicondylitis and has shown promising results in promoting tendon healing and providing durable pain relief<sup>3</sup>. Because PRP is derived from the patient's own blood, its safety profile is excellent.
 
-**Prolotherapy and Prolozone therapy** are injection-based regenerative treatments that use a proliferant solution (prolotherapy) or ozone combined with nutrients (prolozone) to stimulate the body's natural healing response in chronically degenerated tendons and ligaments. Both approaches have been used in the treatment of elbow tendinopathies and form part of an integrated [sports medicine](/sports-medicine) approach at the clinic. More information on prolotherapy and prolozone can be found on the [prolotherapy](/prolotherapy-for-arthritis) and [prolozone](/prolozone) pages.
+**Prolotherapy** is an injection-based regenerative treatment that uses a proliferant solution to stimulate the body's natural healing response in chronically degenerated tendons and ligaments. It has been used in the treatment of elbow tendinopathies and forms part of an integrated [sports medicine](/sports-medicine) approach at the clinic. More information can be found on the [prolotherapy](/prolotherapy-for-arthritis) page.
 
 Patients with lateral elbow pain may also be interested in the related page on [tennis elbow](/tennis-elbow).
 

@@ -36,13 +36,6 @@ const services = [
   },
   {
     type: 'service',
-    title: 'Prolozone Therapy',
-    description: 'Ozone injection therapy combining prolotherapy with medical ozone for enhanced tissue healing.',
-    url: '/prolozone',
-    category: 'Pain Management'
-  },
-  {
-    type: 'service',
     title: 'Acupuncture',
     description: 'Traditional Chinese medicine acupuncture for pain relief, stress reduction, and overall wellness.',
     url: '/acupuncture',

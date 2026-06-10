@@ -74,10 +74,6 @@ Cervical ligament laxity following whiplash is an established and treatable cond
 
 Prolotherapy involves the injection of a concentrated dextrose (sugar) solution at the sites of damaged ligaments and joint capsules. This triggers a controlled healing response, increasing local blood flow and stimulating the production of new, stronger collagen tissue. In the cervical spine, prolotherapy targets the posterior cervical ligaments and facet joint capsules, the structures most commonly damaged in whiplash. Research has demonstrated that prolotherapy injections for chronic neck pain and cervical instability produce significant and lasting reductions in pain and improvements in function<sup>5</sup>. For patients whose chronic neck pain, headaches and arm symptoms have not responded to physiotherapy or medication, prolotherapy offers a mechanism-directed approach that addresses the root structural cause. Learn more about [prolotherapy and regenerative injection therapy](/prolotherapy-for-arthritis).
 
-### Prolozone Therapy
-
-Prolozone therapy combines ozone gas with regenerative injection technique to stimulate tissue repair and reduce inflammation in damaged joints and ligaments. The ozone component improves oxygen utilization in the injured tissue, supporting cellular repair alongside the proliferative effect of the injected solution. Learn more about [prolozone therapy](/prolozone).
-
 ### Acupuncture
 
 Acupuncture is an effective complementary treatment for the muscle pain, headaches and cervicogenic symptoms associated with whiplash. By targeting trigger points in the cervical paraspinal muscles and upper trapezius, acupuncture provides meaningful pain relief and helps restore range of motion. It is particularly useful for managing the occipital headaches and referred pain patterns that accompany chronic whiplash. Learn more about [acupuncture](/acupuncture).

@@ -8,7 +8,7 @@ heroImage: "/images/conditions/knee-injury1.webp"
 categories: ["Pain Management", "Naturopathic"]
 tags: ["arthritis", "osteoarthritis", "joint pain", "prolotherapy", "acupuncture", "natural treatment"]
 seo:
-  description: "Natural treatments for arthritis in Halifax. Learn why NSAIDs may worsen joint damage and discover effective alternatives including prolotherapy, prolozone, acupuncture and nutritional support."
+  description: "Natural treatments for arthritis in Halifax. Learn why NSAIDs may worsen joint damage and discover effective alternatives including prolotherapy, acupuncture and nutritional support."
   focusKeyword: "natural arthritis treatment"
 ---
 
@@ -40,11 +40,9 @@ This doesn't mean pain management isn't important. Chronic pain significantly im
 
 Naturopathic medicine offers several effective treatments for osteoarthritis that address both symptoms and underlying causes. Most patients achieve significant improvement in pain, stiffness and function through a combination approach using two or three complementary treatments.
 
-### Prolotherapy and Prolozone
+### Prolotherapy
 
 [Prolotherapy](/prolotherapy-for-arthritis) involves injecting a solution (typically dextrose) into damaged ligaments, tendons and joint spaces to stimulate the body's natural healing response. The controlled inflammation triggered by the injection initiates a repair cascade that strengthens weakened structures and can improve joint stability. For osteoarthritis, prolotherapy addresses the ligament laxity that often accompanies and accelerates joint degeneration.
-
-[Prolozone](/prolozone) combines prolotherapy principles with ozone therapy. Ozone gas injected into the joint increases oxygen utilization in damaged tissues, reduces inflammation and promotes healing. Many patients with osteoarthritis respond remarkably well to prolozone, experiencing significant pain reduction and improved function. The treatment is particularly effective for knee, hip and shoulder arthritis where joint accessibility allows direct treatment.
 
 ### Acupuncture
 
@@ -72,7 +70,7 @@ However, supplement protocols should be individualized based on your specific si
 
 ## A Comprehensive Approach
 
-The most effective arthritis treatment combines multiple modalities addressing different aspects of the condition. A typical treatment plan might include prolozone injections to directly treat joint damage, acupuncture for pain management and healing support, dietary modifications to reduce inflammatory burden, appropriate exercise to maintain function and targeted supplementation to support joint health.
+The most effective arthritis treatment combines multiple modalities addressing different aspects of the condition. A typical treatment plan might include prolotherapy to address ligament laxity and joint mechanics, acupuncture for pain management and healing support, dietary modifications to reduce inflammatory burden, appropriate exercise to maintain function and targeted supplementation to support joint health.
 
 This comprehensive approach recognizes that osteoarthritis results from multiple factors and responds best to treatment that addresses those factors simultaneously. Rather than simply masking pain while the underlying condition progresses, naturopathic treatment aims to reduce symptoms, slow progression and in some cases achieve meaningful improvement in joint function.
 
@@ -87,7 +85,6 @@ Many patients come to naturopathic treatment after years of NSAID use with progr
 ## Related Resources
 
 - [Prolotherapy for Arthritis](/prolotherapy-for-arthritis)
-- [Prolozone Therapy](/prolozone)
 - [Sports Medicine](/sports-medicine)
 - [Conditions We Treat](/conditions)
 

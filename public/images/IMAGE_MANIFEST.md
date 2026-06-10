@@ -10,7 +10,6 @@ Medical conditions and symptoms:
 - `knee-injury1.jpg` - Knee injury illustrations
 - `low-back-pain.jpeg` - Lower back pain visuals
 - `migraine.jpeg` - Migraine/headache imagery
-- `prolozone-knee-pain.jpeg` - Prolozone therapy for knee pain
 - `tmj-pain-woman-holding-jaw.jpeg` - TMJ dysfunction imagery (OPTIMIZED)  
 - `woman-fibromyalgia-pain.jpeg` - Fibromyalgia pain illustration (OPTIMIZED)
 - `woman-pain-in-bed.jpeg` - General pain/discomfort imagery (OPTIMIZED)
@@ -31,7 +30,6 @@ Food, supplements, and nutritional therapy:
 - `haddock.jpg` - Fish/protein sources
 - `herbal-medicine-2.jpeg` - Herbal medicine preparations
 - `nicotine-gum.png` - Smoking cessation aids
-- `ozone-olive-oil.jpg` - Ozone therapy with olive oil
 - `pour-oil.jpg` - Oil pouring/cooking imagery
 
 ### Anatomy (1 image)
