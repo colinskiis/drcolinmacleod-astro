@@ -1,5 +1,7 @@
 ---
 import '../styles/global.css';
+import manropeWoff2 from '@fontsource/manrope/files/manrope-latin-400-normal.woff2?url';
+import playfairWoff2 from '@fontsource/playfair-display/files/playfair-display-latin-700-normal.woff2?url';
 import { ClientRouter } from 'astro:transitions';
 import Search from '../components/Search.astro';
 import MedicalDisclaimer from '../components/MedicalDisclaimer.astro';
@@ -267,10 +269,13 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
     <meta name="generator" content={Astro.generator} />
     <title>{fullTitle}</title>
 
+    <!-- Marks JS availability so reveal animations only hide content when they can run -->
+    <script is:inline>document.documentElement.classList.add('js');</script>
+
     <!-- Resource hints for faster loading -->
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preload" href={manropeWoff2} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={playfairWoff2} as="font" type="font/woff2" crossorigin />
 
     <!-- Google Analytics -->
     <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-HWHX5T8PEG"></script>
