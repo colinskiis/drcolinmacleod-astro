@@ -15,8 +15,9 @@ RSYNC_SSH=(ssh "${SSH_OPTS[@]}")
 
 preflight_rsync() {
   echo "🔍 Preflight: clearing stuck rsync on server..."
+  # [r] bracket prevents pkill from matching (and killing) the shell running this command
   ssh "${SSH_OPTS[@]}" drcohmrh@business81.web-hosting.com \
-    "pkill -f 'rsync --server' 2>/dev/null || true"
+    "pkill -f 'rsync --serve[r]' 2>/dev/null || true"
 }
 
 echo "🔨 Building site..."
@@ -25,7 +26,7 @@ npm run build
 preflight_rsync
 
 echo "🚀 Deploying to Namecheap..."
-if rsync -avz --delete --timeout=300 --info=stats2 \
+if rsync -avz --delete --timeout=300 --stats \
     --exclude '.well-known/' \
     -e "${RSYNC_SSH[*]}" \
     dist/ \
