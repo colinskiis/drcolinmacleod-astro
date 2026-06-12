@@ -18,8 +18,8 @@ const articles = slugs
 
 const sectionClass = bg === 'emerald' ? 'py-16 lg:py-24 bg-emerald-50' : 'py-16 lg:py-24 bg-white';
 const cardClass = bg === 'emerald'
-  ? 'bg-white rounded-xl p-6 hover:shadow-lg transition-shadow group'
-  : 'bg-emerald-50 rounded-xl p-6 hover:bg-emerald-100 transition-colors group';
+  ? 'bg-white rounded-2xl p-6 ring-1 ring-emerald-200/60 shadow-sm card-hover group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500'
+  : 'bg-emerald-50 rounded-2xl p-6 ring-1 ring-emerald-200/60 shadow-sm card-hover group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500';
 ---
 
 {articles.length > 0 && (
@@ -27,13 +27,13 @@ const cardClass = bg === 'emerald'
     <div class="section-shell">
       <div class="text-center mb-10">
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">{title}</h2>
-        {subtitle && <p class="text-lg text-gray-600">{subtitle}</p>}
+        {subtitle && <p class="text-lg text-slate-600">{subtitle}</p>}
       </div>
-      <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-5xl mx-auto">
         {articles.map(article => (
           <a href={`/articles/${article!.slug}`} class={cardClass}>
-            <h3 class="font-serif font-bold text-emerald-950 mb-2 group-hover:text-emerald-700">{article!.data.title}</h3>
-            <p class="text-gray-600 text-sm">{article!.data.description}</p>
+            <h3 class="font-serif font-bold text-emerald-950 mb-2 group-hover:text-emerald-700 transition-colors">{article!.data.title}</h3>
+            <p class="text-slate-600 text-sm">{article!.data.description}</p>
           </a>
         ))}
       </div>

@@ -25,7 +25,7 @@ const {
 const bgClass = {
   white: 'bg-white',
   emerald: 'bg-emerald-50',
-  gray: 'bg-gray-50',
+  gray: 'bg-slate-50',
 }[bg];
 
 const sectionClasses = sectionClass ?? `py-16 lg:py-24 ${bgClass}`;
@@ -35,7 +35,7 @@ const sectionClasses = sectionClass ?? `py-16 lg:py-24 ${bgClass}`;
   <div class="section-shell">
     <div class="text-center max-w-3xl mx-auto mb-8 space-y-3">
       <h2 class:list={[headingClass, 'text-center']}>{title}</h2>
-      {subtitle && <p class="text-lg text-gray-600 max-w-2xl mx-auto">{subtitle}</p>}
+      {subtitle && <p class="text-lg text-slate-600 max-w-2xl mx-auto">{subtitle}</p>}
     </div>
     <FAQAccordion items={items} />
   </div>

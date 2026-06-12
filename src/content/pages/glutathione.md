@@ -1,37 +1,42 @@
 ---
 title: "Glutathione"
 description: "Glutathione is the body's master antioxidant, essential for fighting oxidative stress and supporting cellular health. Learn about IV glutathione therapy benefits."
+type: treatment
 seo:
   focusKeyword: "glutathione IV therapy"
 ---
 
-<div class="wp-block-stackable-image stk-block-image stk-block stk-8cbc70b" data-block-id="8cbc70b"><figure class="stk-img-wrapper stk-image--shape-stretch"><img class="stk-img wp-image-6605" src="/images/treatments/glutathione-iv.webp" width="1000" height="588" alt="Glutathione bottle. For IV use."/></figure></div>
+![Glutathione bottle. For IV use.](/images/treatments/glutathione-iv.webp)
 
-<div class="wp-block-stackable-heading stk-block-heading stk-block stk-eb8fc6e" id="what-is-glutathione" data-block-id="eb8fc6e"><h2 class="stk-block-heading__text">What is Glutathione</h2></div>
+## What is Glutathione
 
-<div class="wp-block-stackable-text stk-block-text stk-block stk-10486dd" data-block-id="10486dd"><p class="stk-block-text__text">Glutathione is a potent antioxidant that the body produces naturally from three amino acid starting materials: glycine, glutamine and cysteine. Most cells within the body have a 5 mmol concentration of glutathione. This is a high cellular concentration considering that magnesium (<1 mmol), cholesterol (1.5 mmol), hemoglobin (1.5 mmol) and calcium (2 mmol) all have a significantly lower concentration within our cells than glutathione<sup>1</sup>.</p></div>
+Glutathione is a potent antioxidant that the body produces naturally from three amino acid starting materials: glycine, glutamine and cysteine. Most cells within the body have a 5 mmol concentration of glutathione. This is a high cellular concentration considering that magnesium (<1 mmol), cholesterol (1.5 mmol), hemoglobin (1.5 mmol) and calcium (2 mmol) all have a significantly lower concentration within our cells than glutathione<sup>1</sup>.
 
-<div class="wp-block-stackable-heading stk-block-heading stk-block stk-c39e3ed" id="what-is-oxidation" data-block-id="c39e3ed"><h2 class="stk-block-heading__text">What Is Oxidation?</h2></div>
+## What Is Oxidation?
 
 Oxidation is a natural chemical process where an electron is donated from one substance to another. The substance which loses an electron is said to have been oxidized. Examples of oxidation are when an apple starts turning brown after it is cut or rust accumulating on a something made from iron, like the body of a car. Oxidation is everywhere and is responsible for the degrading and break down of most things in our world.
 
-<div class="wp-block-stackable-heading stk-block-heading stk-block stk-6d47687" id="is-oxidation-harmful" data-block-id="6d47687"><h2 class="stk-block-heading__text">Is Oxidation Harmful</h2></div>
+## Is Oxidation Harmful
 
 Oxidation is a destructive process and is implicated as an important factor in almost all chronic diseases including cancer, heart disease, infections and dementia. Controlling and combatting oxidative stress is an important goal for treating and preventing major chronic disease.
 
-<div class="wp-block-stackable-heading stk-block-heading stk-block stk-07098cc" id="how-does-glutathione-help" data-block-id="07098cc"><h2 class="stk-block-heading__text">How Does Glutathione Help?</h2></div>
+## How Does Glutathione Help?
 
 Glutathione has several functions that make it an essential tool for fighting oxidative stress<sup>1</sup>.
 
-<ol type="1"><li>Direct chemical neutralization of free radicals</li><li>Cofactor for antioxidant enzymes</li><li>Regeneration of vitamins C and E</li><li>Conjugates intermediates produced by Phase I, prepares for kidney excretion</li><li>Vital to mitochondrial function and maintenance of mitochondrial DNA (mtDNA)<sup>1</sup></li></ol>
+1. Direct chemical neutralization of free radicals
+2. Cofactor for antioxidant enzymes
+3. Regeneration of vitamins C and E
+4. Conjugates intermediates produced by Phase I, prepares for kidney excretion
+5. Vital to mitochondrial function and maintenance of mitochondrial DNA (mtDNA)<sup>1</sup>
 
-<div class="wp-block-stackable-heading stk-block-heading stk-block stk-61694c1" id="who-does-glutathione-help" data-block-id="61694c1"><h2 class="stk-block-heading__text">Who Does Glutathione Help?</h2></div>
+## Who Does Glutathione Help?
 
-<div class="wp-block-stackable-text stk-block-text stk-block stk-703930d" data-block-id="703930d"><p class="stk-block-text__text">Glutathione has the potential to help many different health conditions because of it’s broad activity throughout the body. Research has examined glutathione and its precursor N-acetyl cysteine (NAC) and found clinical benefit in treating peripheral artery disease<sup>2</sup>, Parkinson’s disease<sup>3</sup>, fatty liver<sup>4</sup>, coronary reperfusion injury<sup>5</sup>, bipolar disorder<sup>6-7</sup> obsessive compulsive disorder<sup>8</sup>, schizophrenia<sup>6,9,10</sup>, addiction treatment<sup>11-12</sup>, autism<sup>13</sup> and flu prevention<sup>14</sup>.</p></div>
+Glutathione has the potential to help many different health conditions because of it's broad activity throughout the body. Research has examined glutathione and its precursor N-acetyl cysteine (NAC) and found clinical benefit in treating peripheral artery disease<sup>2</sup>, Parkinson's disease<sup>3</sup>, fatty liver<sup>4</sup>, coronary reperfusion injury<sup>5</sup>, bipolar disorder<sup>6-7</sup> obsessive compulsive disorder<sup>8</sup>, schizophrenia<sup>6,9,10</sup>, addiction treatment<sup>11-12</sup>, autism<sup>13</sup> and flu prevention<sup>14</sup>.
 
-<div style="background: #f0fdf4; border: 1px solid #a7f3d0; border-left: 4px solid #059669; border-radius: 0.75rem; padding: 1.25rem 1.5rem; margin: 2rem 0;"><p style="margin: 0;">Glutathione is one of several powerful IV nutrient therapies offered at Dr. MacLeod's Bedford clinic. Learn about the full range of <a href="/iv-therapy">IV Nutrient Therapy</a> options, including the Myers' Cocktail, high-dose Vitamin C and NAD+.</p></div>
+> Glutathione is one of several powerful IV nutrient therapies offered at Dr. MacLeod's Bedford clinic. Learn about the full range of [IV Nutrient Therapy](/iv-therapy) options, including the Myers' Cocktail, high-dose Vitamin C and NAD+.
 
-<div class="wp-block-stackable-heading stk-block-heading stk-block stk-573bec6" id="references" data-block-id="573bec6"><h2 class="stk-block-heading__text">References</h2></div>
+## References
 
 1. Pizzorno J. Glutathione! Integr Med (Encinitas). 2014 Feb;13(1):8-12.
 2. Arosio E, De Marchi S, Zannoni M, et al. Effect of glutathione infusion on leg arterial circulation, cutaneous microcirculation and pain-free walking distance in patients with peripheral obstructive arterial disease: a randomized, double-blind, placebo-controlled trial. Mayo Clin Proc. 2002 Aug;77(8):754-9.
@@ -46,4 +51,4 @@ Glutathione has several functions that make it an essential tool for fighting ox
 11. Larowe SD, Mardikian P, Malcolm R, et al. Safety and tolerability of N-acetylcysteine in cocaine-dependent individuals. Am J Addict. 2006 Jan-Feb;15(1):105-10.
 12. LaRowe SD, Myrick H, Hedden S, et al. Is cocaine desire reduced by N-acetylcysteine? Am J Psychiatry. 2007 Jul;164(7):1115-7.
 13. Hardan AY, Fung LK, Libove RA, et al. A randomized controlled pilot trial of oral N-acetylcysteine in children with autism. Biol Psychiatry. 2012 Jun 1;71(11):956-61.
-14. De Flora S, Grassi C, Carati L. Attenuation of influenza-like symptomatology and improvement of cell-mediated immunity with long-term N-acetylcysteine treatment. Eur Respir J. 1997 J u l ;10 ( 7 ):1535 – 41.
+14. De Flora S, Grassi C, Carati L. Attenuation of influenza-like symptomatology and improvement of cell-mediated immunity with long-term N-acetylcysteine treatment. Eur Respir J. 1997 Jul;10(7):1535–41.

@@ -1,6 +1,7 @@
 ---
 title: "Myers' Cocktail: Intravenous Nutrients"
 description: "The Myers' Cocktail is an IV vitamin infusion containing B vitamins, vitamin C, magnesium and calcium. Used for fatigue, migraines, fibromyalgia, immune support and athletic performance in Halifax."
+type: treatment
 seo:
   focusKeyword: "Myers Cocktail IV therapy Halifax"
 faq:

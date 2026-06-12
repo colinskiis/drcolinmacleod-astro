@@ -6,6 +6,12 @@ import ArticleSearch from '../components/ArticleSearch.astro';
 import { getCollection } from 'astro:content';
 import { articleTopicFilters, articleTopics, getArticleTopics } from '../lib/articleTopics';
 import { toArticleSearchIndex } from '../lib/articleSearchIndex';
+import { readingTime } from '../lib/readingTime';
+
+const topicLabel = (article: (typeof allArticles)[number]) => {
+  const id = getArticleTopics(article)[0];
+  return articleTopics.find((t) => t.id === id)?.label;
+};
 
 const allArticles = await getCollection('articles', ({ data }) => {
   return data.draft !== true;
@@ -47,7 +53,7 @@ const collectionSchema = {
     <p>Evidence-based articles on natural health, nutrition and treatment approaches</p>
   </HeroSection>
 
-  <section class="py-12 lg:py-20 bg-white">
+  <section class="py-16 lg:py-24 bg-white">
     <div class="section-shell">
       <div class="max-w-4xl mx-auto reveal">
         <div class="mb-8 sm:mb-10">
@@ -66,7 +72,7 @@ const collectionSchema = {
                 <span>{topic.label}</span>
                 <span class:list={[
                   'ml-1 text-xs',
-                  topic.id === 'all' ? 'text-white/70' : 'text-gray-400'
+                  topic.id === 'all' ? 'text-white/70' : 'text-slate-400'
                 ]} aria-hidden="true">{topicCounts[topic.id]}</span>
               </a>
             ))}
@@ -81,22 +87,45 @@ const collectionSchema = {
             href={`/articles/${article.slug}`}
             data-article-search-item
             data-article-slug={article.slug}
-            class="group flex items-center gap-4 py-5 border-b border-gray-100 last:border-0 -mx-4 px-4 rounded-lg hover:bg-emerald-50/50 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-inset"
+            class="group flex items-center gap-4 py-5 border-b border-slate-100 last:border-0 -mx-4 px-4 rounded-lg hover:bg-emerald-50/50 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-inset"
           >
+            {article.data.heroImage && (
+              <div class="hidden sm:block w-24 h-16 rounded-lg overflow-hidden flex-shrink-0 bg-emerald-50">
+                <img
+                  src={article.data.heroImage}
+                  alt=""
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  width="96"
+                  height="64"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            )}
             <div class="flex-1 min-w-0">
-              <time class="text-xs text-gray-400 block mb-1">
-                {new Date(article.data.publishDate).toLocaleDateString('en-US', {
-                  year: 'numeric',
-                  month: 'short',
-                  day: 'numeric'
-                })}
-              </time>
-              <h2 class="article-search-title text-lg sm:text-xl font-serif font-semibold text-gray-900 group-hover:text-emerald-700 transition-colors leading-snug">
+              <div class="flex flex-wrap items-center gap-x-2 text-xs text-slate-500 mb-1">
+                <time>
+                  {new Date(article.data.publishDate).toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'short',
+                    day: 'numeric'
+                  })}
+                </time>
+                <span aria-hidden="true">&middot;</span>
+                <span>{readingTime(article.body)} min read</span>
+                {topicLabel(article) && (
+                  <>
+                    <span aria-hidden="true">&middot;</span>
+                    <span class="text-emerald-700 font-medium">{topicLabel(article)}</span>
+                  </>
+                )}
+              </div>
+              <h2 class="article-search-title text-lg sm:text-xl font-serif font-semibold text-slate-900 group-hover:text-emerald-700 transition-colors leading-snug">
                 {article.data.title}
               </h2>
-              <p class="article-search-description text-sm text-gray-500 mt-1 line-clamp-2">{article.data.description}</p>
+              <p class="article-search-description text-sm text-slate-500 mt-1 line-clamp-2">{article.data.description}</p>
             </div>
-            <svg class="w-5 h-5 text-gray-300 group-hover:text-emerald-600 transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <svg class="w-5 h-5 text-slate-300 group-hover:text-emerald-600 transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
             </svg>
           </a>

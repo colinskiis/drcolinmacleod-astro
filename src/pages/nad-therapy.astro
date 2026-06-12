@@ -15,7 +15,7 @@ import FAQSection from '../components/FAQSection.astro';
   <HeroSection
     title="NAD+ IV Therapy"
     compact
-    image={{ src: "/images/treatments/nad-iv-therapy-session.png", alt: "Patient receiving NAD+ IV therapy in Halifax", aspect: "video" }}
+    image={{ src: "/images/treatments/nad-iv-therapy-session.webp", alt: "Patient receiving NAD+ IV therapy in Halifax", aspect: "video" }}
   >
     <p>NAD+ (nicotinamide adenine dinucleotide) is a coenzyme essential for cellular energy production, DNA repair and healthy aging. IV administration delivers NAD+ directly to your cells for optimal absorption.</p>
   </HeroSection>
@@ -23,7 +23,7 @@ import FAQSection from '../components/FAQSection.astro';
   <!-- Three Benefits Section -->
   <section class="py-16 lg:py-24 bg-white">
     <div class="section-shell">
-      <div class="grid md:grid-cols-3 gap-8">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
         <!-- Cellular Energy -->
         <div class="bg-emerald-700 text-white rounded-2xl p-8 text-center hover:bg-emerald-800 transition-colors">
           <div class="flex justify-center mb-6">
@@ -60,7 +60,7 @@ import FAQSection from '../components/FAQSection.astro';
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         <div>
           <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-6">What is NAD+?</h2>
-          <div class="prose prose-lg text-gray-600">
+          <div class="prose prose-lg text-slate-600">
             <p>
               NAD+ (nicotinamide adenine dinucleotide) is a coenzyme found in every cell of your body. It plays a critical role in hundreds of metabolic processes, including energy production, DNA repair and cellular signaling.
             </p>
@@ -75,6 +75,10 @@ import FAQSection from '../components/FAQSection.astro';
         <div class="rounded-2xl overflow-hidden shadow-xl">
           <img
             src="/images/treatments/nad-cellular-energy.webp"
+            width="1200"
+            height="654"
+            loading="lazy"
+            decoding="async"
             alt="Active woman enjoying outdoor activities with renewed energy from NAD+ therapy"
             class="w-full h-full object-cover"
           />
@@ -88,7 +92,7 @@ import FAQSection from '../components/FAQSection.astro';
     <div class="section-shell">
       <div class="text-center mb-12">
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Who Benefits From NAD+ Therapy?</h2>
-        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+        <p class="text-lg text-slate-600 max-w-3xl mx-auto">
           NAD+ therapy may help individuals experiencing the following conditions
         </p>
       </div>
@@ -100,7 +104,7 @@ import FAQSection from '../components/FAQSection.astro';
             {['Chronic fatigue', 'Low energy levels', 'Post-viral fatigue', 'Athletic recovery', 'Jet lag recovery'].map(condition => (
               <div class="flex items-center">
                 <Check class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" aria-hidden="true" />
-                <span class="text-gray-700">{condition}</span>
+                <span class="text-slate-700">{condition}</span>
               </div>
             ))}
           </div>
@@ -112,7 +116,7 @@ import FAQSection from '../components/FAQSection.astro';
             {['Brain fog', 'Memory concerns', 'Mental fatigue', 'Focus difficulties', 'Age-related cognitive changes'].map(condition => (
               <div class="flex items-center">
                 <Check class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" aria-hidden="true" />
-                <span class="text-gray-700">{condition}</span>
+                <span class="text-slate-700">{condition}</span>
               </div>
             ))}
           </div>
@@ -124,7 +128,7 @@ import FAQSection from '../components/FAQSection.astro';
             {['Metabolic support', 'Healthy aging support', 'Cellular regeneration', 'Oxidative stress', 'Inflammation support'].map(condition => (
               <div class="flex items-center">
                 <Check class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" aria-hidden="true" />
-                <span class="text-gray-700">{condition}</span>
+                <span class="text-slate-700">{condition}</span>
               </div>
             ))}
           </div>
@@ -136,11 +140,11 @@ import FAQSection from '../components/FAQSection.astro';
             {['Addiction recovery support', 'Alcohol withdrawal support', 'Stress resilience', 'Sleep quality', 'Overall vitality'].map(condition => (
               <div class="flex items-center">
                 <Check class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" aria-hidden="true" />
-                <span class="text-gray-700">{condition}</span>
+                <span class="text-slate-700">{condition}</span>
               </div>
             ))}
           </div>
-          <p class="text-sm text-gray-500 mt-4">Addiction recovery and alcohol withdrawal require medical evaluation and supervision. NAD+ therapy is used as a supportive treatment alongside appropriate medical care, not as a standalone intervention.</p>
+          <p class="text-sm text-slate-500 mt-4">Addiction recovery and alcohol withdrawal require medical evaluation and supervision. NAD+ therapy is used as a supportive treatment alongside appropriate medical care, not as a standalone intervention.</p>
         </div>
       </div>
     </div>
@@ -173,13 +177,17 @@ import FAQSection from '../components/FAQSection.astro';
         <div class="rounded-2xl overflow-hidden shadow-xl order-2 lg:order-1">
           <img
             src="/images/treatments/nad-brain-clarity.webp"
+            width="1200"
+            height="821"
+            loading="lazy"
+            decoding="async"
             alt="Brain fog to mental clarity transformation with NAD+ therapy"
             class="w-full h-full object-cover"
           />
         </div>
         <div class="order-1 lg:order-2">
           <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-6">Why IV Administration?</h2>
-          <div class="prose prose-lg text-gray-600">
+          <div class="prose prose-lg text-slate-600">
             <p>
               While oral NAD+ precursors like NMN (nicotinamide mononucleotide) and NR (nicotinamide riboside) are available as supplements, IV administration offers distinct advantages for therapeutic applications.
             </p>
@@ -206,7 +214,7 @@ import FAQSection from '../components/FAQSection.astro';
             <div class="flex justify-center mb-4">
               <FlaskConical class="w-20 h-20 text-emerald-950" stroke-width={1.5} aria-hidden="true" />
             </div>
-            <p class="text-gray-600">Cellular energy and regeneration support</p>
+            <p class="text-slate-600">Cellular energy and regeneration support</p>
           </div>
 
           <ul class="space-y-3 mb-8">
@@ -233,7 +241,7 @@ import FAQSection from '../components/FAQSection.astro';
         <div class="bg-white rounded-3xl shadow-xl p-8 lg:p-10 card-hover">
           <h2 class="text-2xl font-serif font-bold text-emerald-950 mb-6">Getting Started with NAD+ Therapy</h2>
 
-          <p class="text-gray-600 mb-8">
+          <p class="text-slate-600 mb-8">
             To ensure that NAD+ therapy is appropriate for you, an initial naturopathic consultation is required. This allows us to review your health history, discuss your goals and create a personalized treatment plan.
           </p>
 
@@ -248,7 +256,7 @@ import FAQSection from '../components/FAQSection.astro';
     <div class="section-shell">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-6">The Science Behind NAD+</h2>
-        <div class="prose prose-lg text-gray-600">
+        <div class="prose prose-lg text-slate-600">
           <p>
             Research into NAD+ has expanded dramatically since Dr. David Sinclair and other longevity researchers highlighted its role in aging. Key findings include:
           </p>
@@ -273,13 +281,13 @@ import FAQSection from '../components/FAQSection.astro';
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">What to Expect</h2>
 
-        <div class="grid md:grid-cols-3 gap-8">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           <div class="text-center">
             <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4">
               <span class="text-2xl font-bold text-white">1</span>
             </div>
             <h3 class="font-semibold text-emerald-950 mb-2">Before Your Infusion</h3>
-            <p class="text-gray-600">Eat a light meal and stay well hydrated. Avoid caffeine and alcohol for 24 hours prior. Wear comfortable clothing with easy arm access.</p>
+            <p class="text-slate-600">Eat a light meal and stay well hydrated. Avoid caffeine and alcohol for 24 hours prior. Wear comfortable clothing with easy arm access.</p>
           </div>
 
           <div class="text-center">
@@ -287,7 +295,7 @@ import FAQSection from '../components/FAQSection.astro';
               <span class="text-2xl font-bold text-white">2</span>
             </div>
             <h3 class="font-semibold text-emerald-950 mb-2">During Your Infusion</h3>
-            <p class="text-gray-600">Sessions last 2-4 hours depending on dose. You may experience mild chest tightness, nausea or warmth - these are normal and manageable by adjusting the drip rate.</p>
+            <p class="text-slate-600">Sessions last 2-4 hours depending on dose. You may experience mild chest tightness, nausea or warmth - these are normal and manageable by adjusting the drip rate.</p>
           </div>
 
           <div class="text-center">
@@ -295,7 +303,7 @@ import FAQSection from '../components/FAQSection.astro';
               <span class="text-2xl font-bold text-white">3</span>
             </div>
             <h3 class="font-semibold text-emerald-950 mb-2">After Your Infusion</h3>
-            <p class="text-gray-600">Most people feel increased energy and mental clarity within hours to days. Optimal results are typically seen after a series of 4 infusions over 2-4 weeks.</p>
+            <p class="text-slate-600">Most people feel increased energy and mental clarity within hours to days. Optimal results are typically seen after a series of 4 infusions over 2-4 weeks.</p>
           </div>
         </div>
       </div>
@@ -331,12 +339,12 @@ import FAQSection from '../components/FAQSection.astro';
         ]} />
 
   <!-- References Section -->
-  <section class="py-16 lg:py-24 bg-emerald-950">
+  <section class="py-12 lg:py-16 bg-white">
     <div class="section-shell">
       <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-8">References</h2>
-        <div class="text-white/80 text-sm space-y-2">
-          <ol class="list-decimal list-inside space-y-1">
+        <h2 class="text-xl font-serif font-bold text-emerald-950 mb-6">References</h2>
+        <div class="text-slate-600 text-sm space-y-2">
+          <ol class="list-decimal pl-5 space-y-1">
             <li>Yoshino J, Baur JA, Imai SI. NAD+ Intermediates: The Biology and Therapeutic Potential of NMN and NR. Cell Metab. 2018;27(3):513-528.</li>
             <li>Cantó C, Menzies KJ, Auwerx J. NAD(+) Metabolism and the Control of Energy Homeostasis: A Balancing Act between Mitochondria and the Nucleus. Cell Metab. 2015;22(1):31-53.</li>
             <li>Verdin E. NAD+ in aging, metabolism and neurodegeneration. Science. 2015;350(6265):1208-1213.</li>
@@ -371,6 +379,17 @@ import FAQSection from '../components/FAQSection.astro';
           </ol>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 lg:py-24 bg-emerald-950">
+    <div class="section-shell text-center">
+      <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-6">Ready to Experience NAD+ Therapy?</h2>
+      <p class="text-lg text-emerald-200 max-w-2xl mx-auto mb-8">
+        Schedule a consultation to discuss whether NAD+ IV therapy is right for your health goals.
+      </p>
+      <CTAButton source="nad-therapy-cta" />
     </div>
   </section>
 </BaseLayout>

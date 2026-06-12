@@ -1,45 +1,48 @@
 ---
 title: "Microcurrent Therapy"
 description: "Microcurrent therapy uses low-amplitude electricity to promote healing, reduce pain and preserve muscle function. Effective for wounds, arthritis and fibromyalgia."
+type: treatment
 seo:
   focusKeyword: "microcurrent therapy"
 ---
 
-<div class="wp-block-stackable-image stk-block-image stk-block stk-23a6288" data-block-id="23a6288"><figure class="stk-img-wrapper stk-image--shape-stretch"><img class="stk-img wp-image-7411" src="/images/treatments/microcurrent-therapy.webp" width="1000" height="667" alt="Microcurrent therapy treatment on man's knee"/></figure></div>
+![Microcurrent therapy treatment on man's knee](/images/treatments/microcurrent-therapy.webp)
 
-<div class="wp-block-stackable-heading stk-block-heading stk-block stk-98d1b76" id="what-is-microcurrent-therapy" data-block-id="98d1b76"><h3 class="stk-block-heading__text">What Is Microcurrent Therapy?</h3></div>
+## What Is Microcurrent Therapy?
 
 Microcurrent therapy is a treatment that applies electricity to affected areas of the body at a low amplitude (microamps) rather than the more commonly used high amplitude (milliamps) treatments.
 
 While transcutaneous electrical nerve stimulation (TENS) applies short bursts of electricity at a high amplitude, microcurrent treatment opts for longer bursts of low amplitude electricity. A microcurrent device uses an electric current with an amplitude that is 1,000 times lower than that of TENS. The total electrical current (volume of electrons) being administered per second of treatment is similar in milliamp and microamp devices because of the longer bursts of electricity of microcurrent devices.
 
-<div class="wp-block-stackable-heading stk-block-heading stk-block stk-da467a6" id="how-does-microcurrent-therapy-work" data-block-id="da467a6"><h3 class="stk-block-heading__text">How Does Microcurrent Therapy Work?</h3></div>
+## How Does Microcurrent Therapy Work?
 
-<div class="wp-block-stackable-text stk-block-text stk-block stk-c26bab5" data-block-id="c26bab5"><p class="stk-block-text__text">Microcurrents employ electricity at a low amplitude and frequencies of 0.5-10Hz. These frequency and amplitude combinations are closely in line with the electrical activity of the cells of the body. Microcurrent therapy helps to heal wounds, repair injuries, improve surgery recovery, improve energy and pain in fibromyalgia, improve the pain associated with arthritis and other painful conditions. Research has also shown that microcurrent treatment can help prevent muscle loss and preserve muscle function.</p></div>
+Microcurrents employ electricity at a low amplitude and frequencies of 0.5-10Hz. These frequency and amplitude combinations are closely in line with the electrical activity of the cells of the body. Microcurrent therapy helps to heal wounds, repair injuries, improve surgery recovery, improve energy and pain in fibromyalgia, improve the pain associated with arthritis and other painful conditions. Research has also shown that microcurrent treatment can help prevent muscle loss and preserve muscle function.
 
-<div class="wp-block-stackable-heading stk-block-heading stk-block stk-0b26aa5" id="microcurrent-for-skin-conditions" data-block-id="0b26aa5"><h3 class="stk-block-heading__text">Microcurrent For Skin Conditions</h3></div>
+## Microcurrent For Skin Conditions
 
-<div class="wp-block-stackable-text stk-block-text stk-block stk-bc9dc17" data-block-id="bc9dc17"><p class="stk-block-text__text">Microcurrent therapy has been found to be helpful in healing many skin conditions including improving healing of wounds caused by acne<sup>1</sup>, pressure ulcers<sup>2-4</sup>, diabetic ulcers<sup>5-7</sup>, burns<sup>8</sup> and several other skin conditions<sup>9-14</sup>. One study found that microcurrent treatment was not effective for healing time in patients with skin burns that had skin donor sites<sup>15</sup>.</p></div>
+Microcurrent therapy has been found to be helpful in healing many skin conditions including improving healing of wounds caused by acne<sup>1</sup>, pressure ulcers<sup>2-4</sup>, diabetic ulcers<sup>5-7</sup>, burns<sup>8</sup> and several other skin conditions<sup>9-14</sup>. One study found that microcurrent treatment was not effective for healing time in patients with skin burns that had skin donor sites<sup>15</sup>.
 
-<div class="wp-block-stackable-heading stk-block-heading stk-block stk-8121173" id="microcurrent-for-pain" data-block-id="8121173"><h3 class="stk-block-heading__text">Microcurrent For Pain</h3></div>
+## Microcurrent For Pain
 
-<div class="wp-block-stackable-text stk-block-text stk-block stk-3c94b36" data-block-id="3c94b36"><p class="stk-block-text__text">Microcurrent treatment has been studied for a range of painful conditions. Tension headache<sup>16</sup>, acute knee pain<sup>17</sup>, osteoarthritis<sup>18</sup>, temporomandibular joint disorder (TMJ)<sup>19-21</sup>, tennis elbow<sup>22</sup>, chronic back pain<sup>23</sup> and sinus pain<sup>24</sup>. One study found that microcurrent treatment was not helpful for pain associated with spinal cord injury<sup>25</sup>.<br><br>Several studies have also found that microcurrent treatment is helpful in treating the pain and poor mobility that can follow joint replacement surgery of the knee<sup>26-27</sup> and hip<sup>28</sup>. Microcurrent also is helpful for recovery after rotator cuff repair surgery<sup>29</sup>. Lastly, microcurrent is helpful in managing the pain and fatigue associated with fibromyalgia<sup>30-31</sup>.</p></div>
+Microcurrent treatment has been studied for a range of painful conditions. Tension headache<sup>16</sup>, acute knee pain<sup>17</sup>, osteoarthritis<sup>18</sup>, temporomandibular joint disorder (TMJ)<sup>19-21</sup>, tennis elbow<sup>22</sup>, chronic back pain<sup>23</sup> and sinus pain<sup>24</sup>. One study found that microcurrent treatment was not helpful for pain associated with spinal cord injury<sup>25</sup>.
 
-<div class="wp-block-stackable-heading stk-block-heading stk-block stk-085dc12" id="microcurrent-for-preserving-muscle" data-block-id="085dc12"><h3 class="stk-block-heading__text">Microcurrent For Preserving Muscle</h3></div>
+Several studies have also found that microcurrent treatment is helpful in treating the pain and poor mobility that can follow joint replacement surgery of the knee<sup>26-27</sup> and hip<sup>28</sup>. Microcurrent also is helpful for recovery after rotator cuff repair surgery<sup>29</sup>. Lastly, microcurrent is helpful in managing the pain and fatigue associated with fibromyalgia<sup>30-31</sup>.
 
-<div class="wp-block-stackable-text stk-block-text stk-block stk-f1321ee" data-block-id="f1321ee"><p class="stk-block-text__text">Microcurrent therapy also has the ability to help maintain muscle size, strength and protect against muscle damage<sup>32-34</sup>. These muscle protecting effects are a key part of why microcurrent is helpful for people recovering from surgery and those in pain as it protects against muscle wasting and muscular damage. Healthy muscle tone is an important part of recovering from painful conditions and surgical procedures. </p></div>
+## Microcurrent For Preserving Muscle
 
-<div class="wp-block-stackable-heading stk-block-heading stk-block stk-fde224f" id="will-i-feel-anything" data-block-id="fde224f"><h3 class="stk-block-heading__text">Will I Feel Anything?</h3></div>
+Microcurrent therapy also has the ability to help maintain muscle size, strength and protect against muscle damage<sup>32-34</sup>. These muscle protecting effects are a key part of why microcurrent is helpful for people recovering from surgery and those in pain as it protects against muscle wasting and muscular damage. Healthy muscle tone is an important part of recovering from painful conditions and surgical procedures. 
 
-<div class="wp-block-stackable-text stk-block-text stk-block stk-dee8f53" data-block-id="dee8f53"><p class="stk-block-text__text">Not much. Microcurrent treatment can be either felt just faintly or not at all. Unlike TENS, there will also be no tensing or spasming of the muscles in the area of treatment.</p></div>
+## Will I Feel Anything?
 
-<div class="wp-block-stackable-heading stk-block-heading stk-block stk-6ba8c8b" id="is-microcurrent-safe" data-block-id="6ba8c8b"><h3 class="stk-block-heading__text">Is Microcurrent Safe?</h3></div>
+Not much. Microcurrent treatment can be either felt just faintly or not at all. Unlike TENS, there will also be no tensing or spasming of the muscles in the area of treatment.
+
+## Is Microcurrent Safe?
 
 Yes, microcurrent has been found to be safe over the course of 50+ peer reviewed studies. Recent review studies have concluded that Microcurrent treatment is safe with adverse effects being quite rare.
 
 In some cases tingling, skin sensitivity or muscle twitching can occur during treatment but this can be managed easily by reducing the treatment intensity. People with epilepsy, certain heart conditions or those with a pacemaker should not use microcurrent therapy. Pregnant women are also not treated with microcurrent treatment out of an abundance of caution.
 
-<div class="wp-block-stackable-heading stk-block-heading stk-block stk-cdd96b8" id="microcurrent-therapy-in-halifax" data-block-id="cdd96b8"><h3 class="stk-block-heading__text">Microcurrent Therapy in Halifax</h3></div>
+## Microcurrent Therapy in Halifax
 
 If you are interested in receiving microcurrent treatment please contact Dr. Colin MacLeod ND at (902) 406-4424 to book an initial naturopathic visit to discuss your options.
 

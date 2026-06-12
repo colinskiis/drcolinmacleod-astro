@@ -24,7 +24,8 @@ export interface Props {
 const { title, description, focusKeyword, image, articleData, customSchemas = [] } = Astro.props;
 const fullTitle = title === 'Home' ? 'Dr. Colin MacLeod ND | Halifax Naturopathic Doctor | Bedford, NS' : `${title} | Dr. Colin MacLeod ND`;
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
-const ogImage = image || '/images/reference/home-background.webp';
+// Dedicated 1200x630 JPG (some scrapers reject webp and large images)
+const ogImage = image || '/images/og-image.jpg';
 
 // Schema definitions (pre-stringified for proper output)
 const medicalBusinessSchema = JSON.stringify({
@@ -266,11 +267,18 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <meta name="generator" content={Astro.generator} />
     <title>{fullTitle}</title>
 
     <!-- Marks JS availability so reveal animations only hide content when they can run -->
-    <script is:inline>document.documentElement.classList.add('js');</script>
+    <script is:inline>
+      document.documentElement.classList.add('js');
+      // Mark client-side navigations so entrance animations only play on first load
+      document.addEventListener('astro:after-swap', function () {
+        document.documentElement.classList.add('astro-navigated');
+      }, { once: true });
+    </script>
 
     <!-- Resource hints for faster loading -->
     <link rel="preconnect" href="https://www.googletagmanager.com" />
@@ -351,27 +359,27 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
           <!-- Logo with botanical mark -->
           <a href="/" class="flex items-center gap-3 text-white flex-shrink-0 group">
             <!-- CSS Logo Mark - Leaf icon -->
-            <div class="relative w-10 h-10 flex items-center justify-center flex-shrink-0">
+            <div class="relative w-10 h-10 hidden sm:flex items-center justify-center flex-shrink-0">
               <div class="absolute inset-0 rounded-full border-2 border-emerald-400/50 group-hover:border-emerald-300 transition-colors"></div>
               <svg class="w-5 h-5 text-emerald-300" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z"/>
               </svg>
             </div>
             <div class="leading-tight">
-              <p class="text-[10px] uppercase tracking-[0.25em] text-emerald-300/80 font-medium">Naturopathic Doctor</p>
-              <p class="text-lg font-semibold text-white tracking-tight">Dr. Colin MacLeod <span class="text-emerald-300 font-normal">ND</span></p>
+              <p class="hidden sm:block text-[10px] uppercase tracking-[0.25em] text-emerald-300/80 font-medium">Naturopathic Doctor</p>
+              <p class="text-base sm:text-lg font-semibold text-white tracking-tight">Dr. Colin MacLeod <span class="text-emerald-300 font-normal">ND</span></p>
             </div>
           </a>
 
           <!-- Centered Navigation -->
           <div class="hidden lg:flex items-center justify-center flex-1 gap-8 text-sm font-medium text-white" role="navigation" aria-label="Main navigation">
-            <a href="/" class={`hover:text-emerald-200 transition-colors duration-200 pb-1 border-b-2 ${Astro.url.pathname === '/' ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={Astro.url.pathname === '/' ? 'page' : undefined}>Home</a>
-            <a href="/about" class={`hover:text-emerald-200 transition-colors duration-200 pb-1 border-b-2 ${Astro.url.pathname.startsWith('/about') ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={Astro.url.pathname.startsWith('/about') ? 'page' : undefined}>About</a>
-            <a href="/new-patients" class={`hover:text-emerald-200 transition-colors duration-200 pb-1 border-b-2 ${Astro.url.pathname.startsWith('/new-patients') ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={Astro.url.pathname.startsWith('/new-patients') ? 'page' : undefined}>New Patients</a>
-            <a href="/services" class={`hover:text-emerald-200 transition-colors duration-200 pb-1 border-b-2 ${Astro.url.pathname.startsWith('/services') ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={Astro.url.pathname.startsWith('/services') ? 'page' : undefined}>Services</a>
-            <a href="/conditions" class={`hover:text-emerald-200 transition-colors duration-200 pb-1 border-b-2 ${Astro.url.pathname.startsWith('/conditions') ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={Astro.url.pathname.startsWith('/conditions') ? 'page' : undefined}>Conditions</a>
-            <a href="/contact" class={`hover:text-emerald-200 transition-colors duration-200 pb-1 border-b-2 ${Astro.url.pathname.startsWith('/contact') ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={Astro.url.pathname.startsWith('/contact') ? 'page' : undefined}>Contact</a>
-            <a href="/articles" class={`hover:text-emerald-200 transition-colors duration-200 pb-1 border-b-2 ${Astro.url.pathname.startsWith('/articles') ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={Astro.url.pathname.startsWith('/articles') ? 'page' : undefined}>Articles</a>
+            <a href="/" class={`hover:text-emerald-200 hover:border-emerald-400/50 transition-colors duration-200 pb-1 border-b-2 ${Astro.url.pathname === '/' ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={Astro.url.pathname === '/' ? 'page' : undefined}>Home</a>
+            <a href="/about" class={`hover:text-emerald-200 hover:border-emerald-400/50 transition-colors duration-200 pb-1 border-b-2 ${Astro.url.pathname.startsWith('/about') ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={Astro.url.pathname.startsWith('/about') ? 'page' : undefined}>About</a>
+            <a href="/new-patients" class={`hover:text-emerald-200 hover:border-emerald-400/50 transition-colors duration-200 pb-1 border-b-2 ${Astro.url.pathname.startsWith('/new-patients') ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={Astro.url.pathname.startsWith('/new-patients') ? 'page' : undefined}>New Patients</a>
+            <a href="/services" class={`hover:text-emerald-200 hover:border-emerald-400/50 transition-colors duration-200 pb-1 border-b-2 ${Astro.url.pathname.startsWith('/services') ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={Astro.url.pathname.startsWith('/services') ? 'page' : undefined}>Services</a>
+            <a href="/conditions" class={`hover:text-emerald-200 hover:border-emerald-400/50 transition-colors duration-200 pb-1 border-b-2 ${Astro.url.pathname.startsWith('/conditions') ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={Astro.url.pathname.startsWith('/conditions') ? 'page' : undefined}>Conditions</a>
+            <a href="/contact" class={`hover:text-emerald-200 hover:border-emerald-400/50 transition-colors duration-200 pb-1 border-b-2 ${Astro.url.pathname.startsWith('/contact') ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={Astro.url.pathname.startsWith('/contact') ? 'page' : undefined}>Contact</a>
+            <a href="/articles" class={`hover:text-emerald-200 hover:border-emerald-400/50 transition-colors duration-200 pb-1 border-b-2 ${Astro.url.pathname.startsWith('/articles') ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={Astro.url.pathname.startsWith('/articles') ? 'page' : undefined}>Articles</a>
           </div>
 
           <!-- Right Side: Search + Book Button + Mobile Menu -->
@@ -381,7 +389,7 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
               href="https://macleodnaturopathic.janeapp.com/"
               target="_blank"
               rel="noopener noreferrer"
-              class="hidden sm:inline-flex items-center gap-2 px-3 sm:px-5 py-2 sm:py-2.5 rounded-full bg-emerald-400 text-emerald-950 font-semibold hover:bg-emerald-300 hover:-translate-y-0.5 transition-all duration-200 shadow-lg shadow-emerald-500/20 hover:shadow-emerald-400/30 text-sm sm:text-base whitespace-nowrap"
+              class="inline-flex items-center gap-2 px-3 sm:px-5 py-2 sm:py-2.5 rounded-full bg-emerald-400 text-emerald-950 font-semibold hover:bg-emerald-300 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 shadow-lg shadow-emerald-500/20 hover:shadow-emerald-400/30 text-sm sm:text-base whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300 focus-visible:ring-offset-2 focus-visible:ring-offset-emerald-950"
             >
               <span class="sm:hidden">Book</span>
               <span class="hidden sm:inline">Book Online</span>
@@ -402,13 +410,13 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="lg:hidden pb-6 overflow-hidden transition-all duration-300 ease-out max-h-0 opacity-0" role="navigation" aria-label="Mobile navigation">
           <div class="flex flex-col space-y-1 text-emerald-100 font-semibold">
-            <a href="/" class={`hover:text-white hover:bg-emerald-700/20 transition-colors py-4 px-3 text-2xl rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 ${Astro.url.pathname === '/' ? 'text-white bg-emerald-800/30' : ''}`} aria-current={Astro.url.pathname === '/' ? 'page' : undefined}>Home</a>
-            <a href="/about" class={`hover:text-white hover:bg-emerald-700/20 transition-colors py-4 px-3 text-2xl rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 ${Astro.url.pathname.startsWith('/about') ? 'text-white bg-emerald-800/30' : ''}`} aria-current={Astro.url.pathname.startsWith('/about') ? 'page' : undefined}>About</a>
-            <a href="/new-patients" class={`hover:text-white hover:bg-emerald-700/20 transition-colors py-4 px-3 text-2xl rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 ${Astro.url.pathname.startsWith('/new-patients') ? 'text-white bg-emerald-800/30' : ''}`} aria-current={Astro.url.pathname.startsWith('/new-patients') ? 'page' : undefined}>New Patients</a>
-            <a href="/services" class={`hover:text-white hover:bg-emerald-700/20 transition-colors py-4 px-3 text-2xl rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 ${Astro.url.pathname.startsWith('/services') ? 'text-white bg-emerald-800/30' : ''}`} aria-current={Astro.url.pathname.startsWith('/services') ? 'page' : undefined}>Services</a>
-            <a href="/conditions" class={`hover:text-white hover:bg-emerald-700/20 transition-colors py-4 px-3 text-2xl rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 ${Astro.url.pathname.startsWith('/conditions') ? 'text-white bg-emerald-800/30' : ''}`} aria-current={Astro.url.pathname.startsWith('/conditions') ? 'page' : undefined}>Conditions</a>
-            <a href="/contact" class={`hover:text-white hover:bg-emerald-700/20 transition-colors py-4 px-3 text-2xl rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 ${Astro.url.pathname.startsWith('/contact') ? 'text-white bg-emerald-800/30' : ''}`} aria-current={Astro.url.pathname.startsWith('/contact') ? 'page' : undefined}>Contact</a>
-            <a href="/articles" class={`hover:text-white hover:bg-emerald-700/20 transition-colors py-4 px-3 text-2xl rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 ${Astro.url.pathname.startsWith('/articles') ? 'text-white bg-emerald-800/30' : ''}`} aria-current={Astro.url.pathname.startsWith('/articles') ? 'page' : undefined}>Articles</a>
+            <a href="/" class={`hover:text-white hover:bg-emerald-700/20 transition-colors py-3 px-3 text-xl rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 ${Astro.url.pathname === '/' ? 'text-white bg-emerald-800/30' : ''}`} aria-current={Astro.url.pathname === '/' ? 'page' : undefined}>Home</a>
+            <a href="/about" class={`hover:text-white hover:bg-emerald-700/20 transition-colors py-3 px-3 text-xl rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 ${Astro.url.pathname.startsWith('/about') ? 'text-white bg-emerald-800/30' : ''}`} aria-current={Astro.url.pathname.startsWith('/about') ? 'page' : undefined}>About</a>
+            <a href="/new-patients" class={`hover:text-white hover:bg-emerald-700/20 transition-colors py-3 px-3 text-xl rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 ${Astro.url.pathname.startsWith('/new-patients') ? 'text-white bg-emerald-800/30' : ''}`} aria-current={Astro.url.pathname.startsWith('/new-patients') ? 'page' : undefined}>New Patients</a>
+            <a href="/services" class={`hover:text-white hover:bg-emerald-700/20 transition-colors py-3 px-3 text-xl rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 ${Astro.url.pathname.startsWith('/services') ? 'text-white bg-emerald-800/30' : ''}`} aria-current={Astro.url.pathname.startsWith('/services') ? 'page' : undefined}>Services</a>
+            <a href="/conditions" class={`hover:text-white hover:bg-emerald-700/20 transition-colors py-3 px-3 text-xl rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 ${Astro.url.pathname.startsWith('/conditions') ? 'text-white bg-emerald-800/30' : ''}`} aria-current={Astro.url.pathname.startsWith('/conditions') ? 'page' : undefined}>Conditions</a>
+            <a href="/contact" class={`hover:text-white hover:bg-emerald-700/20 transition-colors py-3 px-3 text-xl rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 ${Astro.url.pathname.startsWith('/contact') ? 'text-white bg-emerald-800/30' : ''}`} aria-current={Astro.url.pathname.startsWith('/contact') ? 'page' : undefined}>Contact</a>
+            <a href="/articles" class={`hover:text-white hover:bg-emerald-700/20 transition-colors py-3 px-3 text-xl rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 ${Astro.url.pathname.startsWith('/articles') ? 'text-white bg-emerald-800/30' : ''}`} aria-current={Astro.url.pathname.startsWith('/articles') ? 'page' : undefined}>Articles</a>
           </div>
         </div>
       </div>
@@ -444,10 +452,14 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
 
           if (mobileMenu) {
             if (!isExpanded) {
-              mobileMenu.style.maxHeight = mobileMenu.scrollHeight + 'px';
+              // Cap to viewport so the menu scrolls instead of overflowing in landscape
+              const cap = window.innerHeight - 88;
+              mobileMenu.style.maxHeight = Math.min(mobileMenu.scrollHeight, cap) + 'px';
+              mobileMenu.style.overflowY = mobileMenu.scrollHeight > cap ? 'auto' : '';
               mobileMenu.style.opacity = '1';
             } else {
               mobileMenu.style.maxHeight = '0';
+              mobileMenu.style.overflowY = '';
               mobileMenu.style.opacity = '0';
             }
           }
@@ -490,7 +502,7 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
                   <p>1378 Bedford Highway</p>
                   <p>Bedford, NS B4A 1E2</p>
                 </div>
-                <a href="tel:+19024064424" class="flex items-center text-emerald-800 font-semibold hover:text-emerald-900">
+                <a href="tel:+19024064424" class="inline-flex items-center py-2 -my-1 text-emerald-800 font-semibold hover:text-emerald-950">
                   (902) 406-4424
                 </a>
                 <p class="text-emerald-800">
@@ -500,18 +512,18 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
                   Book Online
                   <ChevronRight class="w-5 h-5 ml-2 group-hover:translate-x-0.5 transition-transform" aria-hidden="true" />
                 </a>
-                <a href="/new-patients" class="block hover:text-emerald-800 transition-colors">New Patient Guide</a>
+                <a href="/new-patients" class="block hover:text-emerald-950 hover:underline underline-offset-4 transition-colors">New Patient Guide</a>
               </div>
             </div>
 
             <div class="space-y-3">
               <p class="uppercase tracking-[0.2em] text-xs text-emerald-900 font-semibold">Services</p>
               <div class="text-emerald-800 space-y-2">
-                <a href="/lab-testing" class="block hover:text-emerald-800 transition-colors">Private Blood Testing</a>
-                <a href="/services" class="block hover:text-emerald-800 transition-colors">Clinical Nutrition</a>
-                <a href="/iv-therapy" class="block hover:text-emerald-800 transition-colors">IV Therapy</a>
-                <a href="/prolotherapy" class="block hover:text-emerald-800 transition-colors">Prolotherapy</a>
-                <a href="/acupuncture" class="block hover:text-emerald-800 transition-colors">Acupuncture</a>
+                <a href="/lab-testing" class="block hover:text-emerald-950 hover:underline underline-offset-4 transition-colors">Private Blood Testing</a>
+                <a href="/services" class="block hover:text-emerald-950 hover:underline underline-offset-4 transition-colors">Clinical Nutrition</a>
+                <a href="/iv-therapy" class="block hover:text-emerald-950 hover:underline underline-offset-4 transition-colors">IV Therapy</a>
+                <a href="/prolotherapy" class="block hover:text-emerald-950 hover:underline underline-offset-4 transition-colors">Prolotherapy</a>
+                <a href="/acupuncture" class="block hover:text-emerald-950 hover:underline underline-offset-4 transition-colors">Acupuncture</a>
               </div>
             </div>
           </div>

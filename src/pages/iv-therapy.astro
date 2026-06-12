@@ -25,7 +25,7 @@ import ServiceArticles from '../components/ServiceArticles.astro';
   <!-- Three Benefits Section -->
   <section class="py-16 lg:py-24 bg-white">
     <div class="section-shell">
-      <div class="grid md:grid-cols-3 gap-8">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
         <!-- 100% Absorption -->
         <div class="bg-emerald-700 text-white rounded-2xl p-8 text-center hover:bg-emerald-800 transition-colors">
           <div class="flex justify-center mb-6">
@@ -75,7 +75,7 @@ import ServiceArticles from '../components/ServiceArticles.astro';
         <!-- Content -->
         <div class="bg-white rounded-3xl shadow-xl p-8 lg:p-10 card-hover">
           <h2 class="text-2xl font-serif font-bold text-emerald-950 mb-2">The Myers Cocktail</h2>
-          <p class="text-gray-600 mb-4">Our foundational IV nutrient infusion for energy, immunity and overall wellness.</p>
+          <p class="text-slate-600 mb-4">Our foundational IV nutrient infusion for energy, immunity and overall wellness.</p>
 
           <div class="flex flex-wrap gap-2 mb-6">
             <span class="px-3 py-1.5 bg-emerald-100 text-emerald-800 rounded-full text-sm font-medium">Calcium</span>
@@ -85,9 +85,9 @@ import ServiceArticles from '../components/ServiceArticles.astro';
             <span class="px-3 py-1.5 bg-emerald-100 text-emerald-800 rounded-full text-sm font-medium">Vitamin C</span>
           </div>
 
-          <div class="border-t border-gray-200 pt-6">
+          <div class="border-t border-slate-200 pt-6">
             <h3 class="text-lg font-semibold text-emerald-950 mb-3">Getting Started</h3>
-            <p class="text-gray-600 mb-6">
+            <p class="text-slate-600 mb-6">
               A consultation is required before beginning IV therapy. We will evaluate your health, discuss your goals and determine if IV therapy is appropriate for you.
             </p>
 
@@ -103,19 +103,19 @@ import ServiceArticles from '../components/ServiceArticles.astro';
     <div class="section-shell">
       <div class="text-center mb-12">
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">IV Therapy Boosters</h2>
-        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+        <p class="text-lg text-slate-600 max-w-3xl mx-auto">
           Additional nutrients can be added to your IV treatment to target specific health concerns.
         </p>
       </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
         <!-- NAD+ - Lightning/Energy icon -->
         <a href="/nad-therapy" class="bg-white border border-emerald-100 rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-shadow block group">
           <div class="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-emerald-200 transition-colors">
             <Zap class="w-10 h-10 text-emerald-700" aria-hidden="true" />
           </div>
           <h3 class="text-lg font-semibold text-emerald-950 mb-2 group-hover:text-emerald-700 transition-colors">NAD+</h3>
-          <p class="text-gray-600 text-sm">Cellular energy, mental clarity and healthy aging support.</p>
+          <p class="text-slate-600 text-sm">Cellular energy, mental clarity and healthy aging support.</p>
         </a>
 
         <!-- High-Dose Vitamin C -->
@@ -124,7 +124,7 @@ import ServiceArticles from '../components/ServiceArticles.astro';
             <Droplets class="w-10 h-10 text-emerald-700" aria-hidden="true" />
           </div>
           <h3 class="text-lg font-semibold text-emerald-950 mb-2 group-hover:text-emerald-700 transition-colors">High-Dose Vitamin C</h3>
-          <p class="text-gray-600 text-sm">Immune support, recovery and antioxidant therapy when clinically appropriate.</p>
+          <p class="text-slate-600 text-sm">Immune support, recovery and antioxidant therapy when clinically appropriate.</p>
         </a>
 
         <!-- Glutathione - Heart with EKG line -->
@@ -133,7 +133,7 @@ import ServiceArticles from '../components/ServiceArticles.astro';
             <HeartPulse class="w-10 h-10 text-emerald-700" aria-hidden="true" />
           </div>
           <h3 class="text-lg font-semibold text-emerald-950 mb-2 group-hover:text-emerald-700 transition-colors">Glutathione</h3>
-          <p class="text-gray-600 text-sm">Antioxidant support, energy support and cardiovascular protection.</p>
+          <p class="text-slate-600 text-sm">Antioxidant support, energy support and cardiovascular protection.</p>
         </a>
 
         <!-- L-Carnitine -->
@@ -142,7 +142,7 @@ import ServiceArticles from '../components/ServiceArticles.astro';
             <Dna class="w-10 h-10 text-emerald-700" aria-hidden="true" />
           </div>
           <h3 class="text-lg font-semibold text-emerald-950 mb-2 group-hover:text-emerald-700 transition-colors">L-Carnitine</h3>
-          <p class="text-gray-600 text-sm">Amino acid supporting fat metabolism and cardiovascular health.</p>
+          <p class="text-slate-600 text-sm">Amino acid supporting fat metabolism and cardiovascular health.</p>
         </a>
 
         <!-- Trace Minerals -->
@@ -151,7 +151,7 @@ import ServiceArticles from '../components/ServiceArticles.astro';
             <Atom class="w-10 h-10 text-emerald-700" aria-hidden="true" />
           </div>
           <h3 class="text-lg font-semibold text-emerald-950 mb-2 group-hover:text-emerald-700 transition-colors">Trace Minerals</h3>
-          <p class="text-gray-600 text-sm">Essential minerals for enzyme function and overall metabolic health.</p>
+          <p class="text-slate-600 text-sm">Essential minerals for enzyme function and overall metabolic health.</p>
         </a>
       </div>
     </div>
@@ -168,12 +168,12 @@ import ServiceArticles from '../components/ServiceArticles.astro';
             {['Amino Acid Complex', 'Glutathione', 'Glycine', 'Magnesium', 'Methylfolate', 'NAD', 'Selenium', 'Trace Minerals', 'Taurine', 'Vitamin B1', 'Vitamin B2', 'Vitamin B3', 'Vitamin B5', 'Vitamin B6', 'Vitamin B12', 'Vitamin C', 'Zinc'].map(nutrient => (
               <div class="flex items-center">
                 <Check class="w-4 h-4 text-emerald-600 mr-2 flex-shrink-0" aria-hidden="true" />
-                <span class="text-gray-700 text-sm">{nutrient}</span>
+                <span class="text-slate-700 text-sm">{nutrient}</span>
               </div>
             ))}
             <div class="flex items-center col-span-2 pt-1">
               <Check class="w-4 h-4 text-emerald-600 mr-2 flex-shrink-0" aria-hidden="true" />
-              <span class="text-gray-700 text-sm"><a href="/chelation-therapy" class="text-emerald-700 hover:text-emerald-800 underline">Chelation (EDTA, DMPS)</a></span>
+              <span class="text-slate-700 text-sm"><a href="/chelation-therapy" class="text-emerald-700 hover:text-emerald-800 underline">Chelation (EDTA, DMPS)</a></span>
             </div>
           </div>
         </div>
@@ -185,7 +185,7 @@ import ServiceArticles from '../components/ServiceArticles.astro';
             {['Acne', 'Anxiety', 'Asthma', 'Burnout', 'Chronic Fatigue Syndrome', 'Chronic Infections', 'Colds and Flus', 'Eczema', 'Fatigue', 'Fibromyalgia', 'Irritable Bowel Disease', 'Irritable Bowel Syndrome', 'Lyme Disease', 'Migraines', 'Neuropathy', 'Nutrient Deficiency', 'Pain', 'Seasonal Allergies'].map(condition => (
               <div class="flex items-center">
                 <Check class="w-4 h-4 text-emerald-600 mr-2 flex-shrink-0" aria-hidden="true" />
-                <span class="text-gray-700 text-sm">{condition}</span>
+                <span class="text-slate-700 text-sm">{condition}</span>
               </div>
             ))}
           </div>
@@ -200,7 +200,7 @@ import ServiceArticles from '../components/ServiceArticles.astro';
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         <div>
           <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-6">Why Choose IV Therapy?</h2>
-          <div class="prose prose-lg text-gray-600">
+          <div class="prose prose-lg text-slate-600">
             <p>
               Many people struggle to absorb nutrients efficiently through the digestive system. Factors such as gut inflammation, food sensitivities, low stomach acid and enzyme deficiencies can all impair nutrient absorption.
             </p>

@@ -29,7 +29,7 @@ const bloodTests = [
 const allServices = [
   { title: 'Laboratory Testing', description: 'Identify nutrient deficiencies, hormone imbalances and inflammation sources.', img: '/images/reference/services/lab-testing.jpeg', href: '/lab-testing' },
   { title: 'IV Therapy', description: 'Increase energy levels, boost immune function and build resiliency.', img: '/images/treatments/iv-patient-woman.webp', href: '/iv-therapy' },
-  { title: 'Prolotherapy', description: 'Relieve joint pain, accelerate tendon healing and strengthen ligaments.', img: '/images/treatments/prolotherapy-knee-injection.png', href: '/prolotherapy' },
+  { title: 'Prolotherapy', description: 'Relieve joint pain, accelerate tendon healing and strengthen ligaments.', img: '/images/treatments/prolotherapy-knee-injection.webp', href: '/prolotherapy' },
 ];
 
 // FAQ data for schema markup
@@ -66,7 +66,7 @@ const faqSchema = {
   title="Home"
   description="Dr. Colin MacLeod ND in Halifax, NS. Evidence-based naturopathic medicine, IV therapy, prolotherapy, acupuncture, nutrition."
   focusKeyword="Dr. Colin MacLeod ND, Halifax naturopathic doctor, IV therapy, prolotherapy, acupuncture"
-  image="/images/reference/home-background.webp"
+  image="/images/og-image.jpg"
 >
   <!-- Hero (V2 style with circular portrait) -->
   <section class="hero-gradient -mt-24 pt-24 relative overflow-hidden">
@@ -107,7 +107,7 @@ const faqSchema = {
               Halifax Naturopathic Doctor
             </p>
 
-            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-serif leading-[1.1] tracking-tight text-white animate-fade-in-up animate-delay-100">
+            <h1 class="text-4xl sm:text-5xl font-bold font-serif leading-[1.1] tracking-tight text-white animate-fade-in-up animate-delay-100">
               Find the root cause.<br />Restore your health&nbsp;naturally.
             </h1>
 
@@ -125,7 +125,7 @@ const faqSchema = {
           <!-- Primary CTA - Positioned prominently -->
           <div class="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start animate-fade-in-up animate-delay-400">
             <BookingButton text="Book Online" variant="hero" size="lg" source="hero" />
-            <a href="tel:+19024064424" class="inline-flex items-center gap-2 text-emerald-200 hover:text-white hover:-translate-y-0.5 transition-all font-medium">
+            <a href="tel:+19024064424" class="inline-flex items-center gap-2 py-2 text-emerald-200 hover:text-white hover:-translate-y-0.5 transition-all font-medium">
               <Phone class="w-5 h-5" aria-hidden="true" />
               (902) 406-4424
             </a>
@@ -135,7 +135,7 @@ const faqSchema = {
           </p>
 
           <!-- Featured Services - Simplified Badges -->
-          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 animate-fade-in-up animate-delay-500">
+          <div class="hidden sm:flex flex-wrap items-center justify-center lg:justify-start gap-3 animate-fade-in-up animate-delay-500">
             <a
               href="/lab-testing"
               class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 bg-white/5 backdrop-blur-sm text-white text-sm font-medium hover:bg-white/10 hover:border-white/30 transition-all group"
@@ -179,16 +179,17 @@ const faqSchema = {
   </section>
 
   <!-- Services Grid -->
-  <section class="py-12 sm:py-16 lg:py-20 bg-white">
+  <section class="py-16 lg:py-24 bg-white">
     <div class="section-shell">
-      <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-16 space-y-4 reveal">
-        <h2 class="text-4xl sm:text-5xl font-serif font-medium text-emerald-950 tracking-tight">Services</h2>
+      <div class="text-center max-w-3xl mx-auto mb-10 lg:mb-14 space-y-4 reveal">
+        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 tracking-tight">Services</h2>
+        <p class="text-lg text-slate-600 max-w-2xl mx-auto">Targeted treatments guided by testing, focused on finding and fixing the root cause.</p>
       </div>
 
       <!-- Mobile: Link list -->
       <div class="sm:hidden space-y-1 reveal reveal-delay-100 mb-10">
         {allServices.map((item) => (
-          <a href={item.href} class="flex items-center gap-3 py-4 text-gray-700 hover:text-emerald-700 font-medium transition-colors group border-b border-stone-200">
+          <a href={item.href} class="flex items-center gap-3 py-4 text-slate-700 hover:text-emerald-700 font-medium transition-colors group border-b border-stone-200">
             <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" aria-hidden="true" />
             {item.title}
           </a>
@@ -204,7 +205,7 @@ const faqSchema = {
             </div>
             <div class="p-8 space-y-4 flex-1 flex flex-col">
               <h3 class="text-2xl font-serif font-medium text-emerald-950 leading-tight group-hover:text-emerald-700 transition-colors">{item.title}</h3>
-              <p class="text-base text-slate-600 leading-relaxed flex-1 font-light">{item.description}</p>
+              <p class="text-base text-slate-600 leading-relaxed flex-1 font-normal">{item.description}</p>
             </div>
           </a>
         ))}
@@ -222,17 +223,17 @@ const faqSchema = {
   </section>
 
   <!-- Navigation Hub -->
-  <section class="py-10 lg:py-14 bg-emerald-50">
+  <section class="py-12 lg:py-16 bg-emerald-50">
     <div class="section-shell">
-      <div class="text-center max-w-3xl mx-auto mb-6 sm:mb-8 space-y-3 reveal">
-        <h2 class="text-4xl sm:text-5xl font-serif font-medium text-emerald-950">Learn more</h2>
+      <div class="text-center max-w-3xl mx-auto mb-8 lg:mb-10 space-y-3 reveal">
+        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950">Learn more</h2>
         <p class="text-lg text-slate-600 max-w-2xl mx-auto">Evidence-based information on conditions, treatments and natural health.</p>
       </div>
 
       <div class="space-y-4 reveal">
 
         <!-- Card 1: Blood Tests -->
-        <div class="bg-white rounded-2xl shadow-sm ring-1 ring-emerald-200 overflow-hidden card-hover">
+        <div class="bg-white rounded-2xl shadow-sm ring-1 ring-emerald-200 overflow-hidden">
           <!-- Card header row -->
           <div class="flex items-center justify-between px-5 pt-5 pb-3 lg:px-7 lg:pt-6 lg:pb-4">
             <a href="/lab-testing" class="group flex items-center gap-3 min-w-0">
@@ -263,7 +264,7 @@ const faqSchema = {
         </div>
 
         <!-- Card 2: Conditions -->
-        <div class="bg-white rounded-2xl shadow-sm ring-1 ring-emerald-200 overflow-hidden card-hover">
+        <div class="bg-white rounded-2xl shadow-sm ring-1 ring-emerald-200 overflow-hidden">
           <div class="flex items-center justify-between px-5 pt-5 pb-3 lg:px-7 lg:pt-6 lg:pb-4">
             <a href="/conditions" class="group flex items-center gap-3 min-w-0">
               <span class="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-xl bg-emerald-100 text-emerald-800 group-hover:bg-emerald-200 transition-colors">
@@ -292,7 +293,7 @@ const faqSchema = {
         </div>
 
         <!-- Card 3: Articles -->
-        <div class="bg-white rounded-2xl shadow-sm ring-1 ring-emerald-200 overflow-hidden card-hover">
+        <div class="bg-white rounded-2xl shadow-sm ring-1 ring-emerald-200 overflow-hidden">
           <div class="flex items-center justify-between px-5 pt-5 pb-3 lg:px-7 lg:pt-6 lg:pb-4">
             <a href="/articles" class="group flex items-center gap-3 min-w-0">
               <span class="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-xl bg-emerald-100 text-emerald-900 group-hover:bg-emerald-200 transition-colors">
@@ -326,10 +327,10 @@ const faqSchema = {
 
   <FAQSection
     bg="white"
-    sectionClass="py-16 lg:py-20 bg-white"
+    sectionClass="py-16 lg:py-24 bg-white"
     title="Common Questions"
     subtitle="Answers to what patients most commonly ask before their first visit."
-    headingClass="text-4xl sm:text-5xl font-serif font-medium text-emerald-950"
+    headingClass="text-3xl sm:text-4xl font-serif font-medium text-emerald-950"
     includeSchema={false}
     items={[
       {
@@ -348,7 +349,7 @@ const faqSchema = {
   />
 
   <!-- Closing CTA -->
-  <section class="py-20 lg:py-24 bg-emerald-900">
+  <section class="py-16 lg:py-24 bg-emerald-950">
     <div class="section-shell text-center space-y-6 reveal">
       <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white">Ready to take the first step?</h2>
       <p class="text-emerald-200 text-lg max-w-xl mx-auto">Book a consultation and find out what naturopathic medicine can do for you.</p>

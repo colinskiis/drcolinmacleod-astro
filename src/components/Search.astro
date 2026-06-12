@@ -16,13 +16,13 @@ import { Search as SearchIcon, X } from '@lucide/astro';
   <!-- Search Overlay -->
   <div
     id="search-overlay"
-    class="fixed inset-0 bg-black bg-opacity-40 z-50 hidden"
+    class="fixed inset-0 bg-black/40 backdrop-blur-sm z-50 hidden"
     role="dialog"
     aria-modal="true"
     aria-label="Site search"
   >
     <div class="flex items-start justify-center min-h-screen pt-16">
-      <div class="bg-white rounded-2xl shadow-2xl shadow-emerald-900/10 w-full max-w-2xl mx-4 border border-emerald-900/10">
+      <div class="search-panel bg-white rounded-2xl shadow-2xl shadow-emerald-900/10 w-full max-w-2xl mx-4 border border-emerald-900/10">
         <div class="p-6">
           <div class="relative mb-4">
             <input
@@ -33,10 +33,10 @@ import { Search as SearchIcon, X } from '@lucide/astro';
               autocomplete="off"
               aria-describedby="search-help"
             >
-            <SearchIcon class="w-5 h-5 text-gray-400 absolute left-3 top-3.5" aria-hidden="true" />
+            <SearchIcon class="w-5 h-5 text-slate-400 absolute left-3 top-3.5" aria-hidden="true" />
             <button
               id="search-close"
-              class="absolute right-2 top-2 text-gray-400 hover:text-emerald-700 p-1.5 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500"
+              class="absolute right-2 top-2 text-slate-400 hover:text-emerald-700 p-1.5 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500"
               aria-label="Close search"
             >
               <X class="w-5 h-5" aria-hidden="true" />
@@ -61,11 +61,43 @@ import { Search as SearchIcon, X } from '@lucide/astro';
   /* :global() required (these elements are injected via innerHTML at runtime
      and don't receive Astro's scoped component attribute) */
   :global(.search-result-link) {
-    @apply block px-3 py-5 border-b border-gray-200 hover:bg-emerald-50/60 transition-colors focus:outline-none focus:bg-emerald-100 focus:ring-2 focus:ring-inset focus:ring-emerald-500;
+    @apply block px-3 py-5 border-b border-slate-200 hover:bg-emerald-50/60 transition-colors focus:outline-none focus:bg-emerald-100 focus:ring-2 focus:ring-inset focus:ring-emerald-500;
   }
 
   :global(.search-result-link:last-child) {
     @apply border-b-0;
+  }
+
+  /* Entrance animation replays each time the overlay leaves display:none */
+  #search-overlay:not(.hidden) {
+    animation: search-overlay-in 0.15s ease-out;
+  }
+
+  #search-overlay:not(.hidden) .search-panel {
+    animation: search-panel-in 0.2s ease-out;
+  }
+
+  @keyframes search-overlay-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes search-panel-in {
+    from {
+      opacity: 0;
+      transform: translateY(-8px) scale(0.98);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    #search-overlay:not(.hidden),
+    #search-overlay:not(.hidden) .search-panel {
+      animation: none;
+    }
   }
 </style>
 
@@ -246,7 +278,7 @@ import { Search as SearchIcon, X } from '@lucide/astro';
 
       if (results.length === 0) {
         resultsContainer.innerHTML = `
-          <p class="text-gray-500 text-center py-8">
+          <p class="text-slate-500 text-center py-8">
             No results found for "${this.escapeHtml(query)}"
           </p>
         `;
@@ -260,10 +292,10 @@ import { Search as SearchIcon, X } from '@lucide/astro';
           <a href="${this.escapeHtml(item.url)}" class="search-result-link" tabindex="0">
             <div class="flex items-center justify-between gap-3">
               <div class="flex-1 min-w-0">
-                <h4 class="font-semibold text-gray-900 mb-1.5">${this.escapeHtml(item.title)}</h4>
-                <p class="text-sm text-gray-400 line-clamp-1">${this.escapeHtml(item.description)}</p>
+                <h4 class="font-semibold text-slate-900 mb-1.5">${this.escapeHtml(item.title)}</h4>
+                <p class="text-sm text-slate-500 line-clamp-1">${this.escapeHtml(item.description)}</p>
               </div>
-              <svg class="w-4 h-4 text-gray-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <svg class="w-4 h-4 text-slate-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
               </svg>
             </div>

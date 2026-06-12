@@ -33,6 +33,7 @@ const pages = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
+    type: z.enum(['condition', 'treatment']).default('condition'),
     modifiedDate: z.date().optional(),
     seo: z.object({
       title: z.string().optional(),

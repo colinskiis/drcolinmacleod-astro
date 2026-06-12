@@ -1,9 +1,12 @@
 /* Brand foundations - Self-hosted fonts via Fontsource */
-/* Only load weights actually used: Manrope 400,600,700; Playfair Display 700 */
+/* Only load weights actually used: Manrope 300,400,500,600,700; Playfair Display 500,600,700 */
+@import '@fontsource/manrope/300.css';
 @import '@fontsource/manrope/400.css';
+@import '@fontsource/manrope/500.css';
 @import '@fontsource/manrope/600.css';
 @import '@fontsource/manrope/700.css';
 @import '@fontsource/playfair-display/500.css';
+@import '@fontsource/playfair-display/600.css';
 @import '@fontsource/playfair-display/700.css';
 
 @tailwind base;
@@ -74,14 +77,6 @@
 
 /* Custom component styles */
 @layer components {
-  .btn-primary {
-    @apply bg-emerald-700 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-emerald-800 transition-colors shadow-md shadow-emerald-900/10;
-  }
-
-  .btn-secondary {
-    @apply border-2 border-emerald-700 text-emerald-700 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-emerald-700 hover:text-white transition-colors;
-  }
-
   .section-shell {
     @apply mx-auto px-5 relative w-full max-w-6xl;
   }
@@ -101,18 +96,15 @@
     letter-spacing: 0.04em;
   }
 
-  .soft-divider {
-    @apply w-full h-px bg-gradient-to-r from-transparent via-emerald-800/20 to-transparent my-12;
-  }
-
   /* Standard card hover: subtle lift + shadow elevation */
   .card-hover {
     @apply transition-all duration-200 hover:-translate-y-1 hover:shadow-lg;
   }
 
-  /* Header styling - solid emerald background for readability */
+  /* Header styling - matches emerald-950 hero backgrounds (no color seam) */
   #site-header {
-    background: rgb(6, 78, 59); /* emerald-900 */
+    background: rgb(2, 44, 34); /* emerald-950 */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
   }
@@ -216,29 +208,355 @@ html.js .reveal.visible {
     transform: none;
     transition: none;
   }
+
+  /* opacity: 1 is required — these animations start from opacity: 0,
+     so animation: none alone would leave content invisible */
+  .animate-fade-in-up,
+  .animate-fade-in {
+    opacity: 1;
+    animation: none;
+  }
+
+  .animate-float,
+  .animate-float-delayed {
+    animation: none;
+  }
+
+  details::details-content {
+    transition: none;
+  }
 }
 
-/* FAQ accordion smooth open/close */
+/* Entrance animations play on first load only; client-side navigations
+   (View Transitions) skip them so revisits don't replay the hero */
+html.astro-navigated .animate-fade-in-up,
+html.astro-navigated .animate-fade-in {
+  opacity: 1;
+  animation: none;
+}
+
+html.astro-navigated.js footer.reveal {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
+/* FAQ accordion smooth open/close.
+   Animates the ::details-content height in supporting browsers
+   (Chrome 131+); elsewhere details simply opens instantly. */
 details {
   interpolate-size: allow-keywords;
 }
 
-details > *:not(summary) {
-  overflow: hidden;
-  transition: content-visibility 0.3s ease, opacity 0.3s ease;
+details::details-content {
+  block-size: 0;
+  overflow-y: clip;
+  opacity: 0;
+  transition:
+    block-size 0.3s ease-out,
+    opacity 0.3s ease-out,
+    content-visibility 0.3s allow-discrete;
 }
 
-details[open] > *:not(summary) {
+details[open]::details-content {
+  block-size: auto;
   opacity: 1;
 }
 
-details:not([open]) > *:not(summary) {
-  opacity: 0;
+/* ----------------------------------------------------------------
+   Markdown prose - single source of truth for articles and pages.
+   (The @tailwindcss/typography plugin is not installed; the .prose
+   class is styled entirely here.)
+   ---------------------------------------------------------------- */
+.prose h2,
+.prose h3,
+.prose h4 {
+  font-family: 'Playfair Display', serif;
+  color: var(--ink);
+  line-height: 1.2;
 }
 
-@supports not (interpolate-size: allow-keywords) {
-  details > *:not(summary) {
-    transition: none;
+.prose h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 3.5rem 0 1.25rem;
+}
+
+.prose h3 {
+  font-weight: 600;
+  font-size: 1.625rem;
+  line-height: 1.3;
+  margin: 3rem 0 1.25rem;
+}
+
+.prose h4 {
+  font-weight: 600;
+  font-size: 1.375rem;
+  margin: 2.5rem 0 1rem;
+}
+
+.prose p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.prose ul {
+  margin: 1.5rem 0;
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.prose ol {
+  margin: 1.5rem 0;
+  padding-left: 1.5rem;
+  list-style-type: decimal;
+}
+
+.prose li {
+  margin-bottom: 0.5rem;
+  display: list-item;
+}
+
+.prose a {
+  color: #047857; /* emerald-700: 5.6:1 on white, WCAG AA */
+  text-decoration: underline;
+  text-decoration-color: rgba(4, 120, 87, 0.35);
+  text-underline-offset: 0.15em;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.prose a:hover {
+  color: #065f46;
+  text-decoration-color: currentColor;
+}
+
+.prose blockquote {
+  border-left: 4px solid #10b981;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  background-color: #f0fdf4;
+  border-radius: 0.5rem;
+}
+
+.prose strong {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.prose em {
+  font-style: italic;
+}
+
+.prose img {
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  height: auto;
+  margin: 2rem auto;
+}
+
+.prose hr {
+  border: none;
+  border-top: 1px solid #d1fae5;
+  margin: 2.5rem 0;
+}
+
+.prose sup,
+.prose sub {
+  font-size: 0.7em;
+  line-height: 0;
+  color: inherit;
+}
+
+.prose code {
+  background: #f0fdf4;
+  color: #065f46;
+  padding: 0.2em 0.4em;
+  border-radius: 0.25rem;
+  font-size: 0.875em;
+}
+
+.prose pre {
+  background: #064e3b;
+  color: #a7f3d0;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.prose pre code {
+  background: none;
+  color: inherit;
+  padding: 0;
+  font-size: inherit;
+}
+
+/* Tables scroll horizontally on small screens instead of overflowing */
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.prose thead {
+  border-bottom: 2px solid var(--color-brand-primary);
+}
+
+.prose th {
+  background-color: var(--color-bg-accent);
+  font-weight: 600;
+  color: var(--color-brand-primary);
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.prose td {
+  border-bottom: 1px solid var(--color-border-default);
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.prose tbody tr:hover {
+  background-color: var(--color-bg-accent);
+}
+
+/* Citations (tagged by rehype-references) render compact */
+.prose .references-heading {
+  font-size: 1.125rem;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #334155;
+  margin: 3.5rem 0 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #d1fae5;
+}
+
+.prose .references-list {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: #475569;
+  margin: 1rem 0;
+}
+
+.prose .references-list li {
+  margin-bottom: 0.375rem;
+}
+
+/* Article callout components (article-summary / article-note) */
+.prose .article-summary,
+.prose .article-note {
+  margin: 2.5rem 0;
+  padding: 1.5rem;
+  border: 1px solid #d1fae5;
+  border-radius: 1rem;
+  background: #f0fdf4;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+
+.prose .article-summary--plain {
+  background: #fff;
+  border-color: #e5e7eb;
+}
+
+.prose .article-summary__eyebrow {
+  margin: 0 0 0.5rem;
+  color: #047857;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.prose .article-summary h3,
+.prose .article-note h3 {
+  margin: 0 0 1rem;
+  color: var(--ink);
+  font-size: 1.35rem;
+  line-height: 1.2;
+}
+
+.prose .article-summary__rows {
+  border-top: 1px solid rgba(6, 95, 70, 0.12);
+}
+
+.prose .article-summary__row {
+  display: grid;
+  grid-template-columns: minmax(8rem, 0.38fr) 1fr;
+  gap: 1rem;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid rgba(6, 95, 70, 0.12);
+  align-items: start;
+}
+
+.prose .article-summary--plain .article-summary__rows,
+.prose .article-summary--plain .article-summary__row {
+  border-color: #e5e7eb;
+}
+
+.prose .article-summary__row:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.prose .article-summary__row strong {
+  color: #064e3b;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.prose .article-summary__row span {
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.prose .article-note__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem 1.25rem;
+  border-top: 1px solid rgba(6, 95, 70, 0.12);
+  padding-top: 1rem;
+}
+
+.prose .article-note__grid span {
+  position: relative;
+  padding-left: 1rem;
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.prose .article-note__grid span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  width: 0.35rem;
+  height: 0.35rem;
+  border-radius: 9999px;
+  background: #047857;
+}
+
+@media (max-width: 640px) {
+  .prose .article-summary,
+  .prose .article-note {
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+  }
+
+  .prose .article-summary__row,
+  .prose .article-note__grid {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
   }
 }
 

@@ -33,23 +33,23 @@ const configId = `article-search-config-${listId}`;
 
   <label for="article-search-input" class="sr-only">Search articles</label>
   <div class="relative">
-    <SearchIcon class="w-5 h-5 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" aria-hidden="true" />
+    <SearchIcon class="w-5 h-5 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" aria-hidden="true" />
     <input
       type="search"
       id="article-search-input"
-      class="w-full pl-10 pr-4 py-3 rounded-lg border border-emerald-100 bg-white text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+      class="w-full pl-10 pr-4 py-3 rounded-lg border border-emerald-900/15 hover:border-emerald-900/30 transition-colors bg-white text-slate-900 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
       placeholder="Search articles…"
       autocomplete="off"
       aria-controls={listId}
       aria-describedby={`${statusId} ${emptyId}`}
     />
   </div>
-  <p id={statusId} class="mt-3 text-sm text-gray-500" aria-live="polite">
+  <p id={statusId} class="mt-3 text-sm text-slate-500" aria-live="polite">
     Showing all {totalCount} articles.
   </p>
   <p
     id={emptyId}
-    class="mt-3 text-sm text-gray-500 hidden"
+    class="mt-3 text-sm text-slate-500 hidden"
     role="status"
   >
     No articles match your search. Try a different keyword.

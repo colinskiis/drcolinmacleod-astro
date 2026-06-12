@@ -22,7 +22,7 @@ import FAQSection from '../components/FAQSection.astro';
   <!-- Three Benefits Section -->
   <section class="py-16 lg:py-24 bg-white">
     <div class="section-shell">
-      <div class="grid md:grid-cols-3 gap-8">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
         <!-- Enzyme Function -->
         <div class="bg-emerald-700 text-white rounded-2xl p-8 text-center hover:bg-emerald-800 transition-colors">
           <div class="flex justify-center mb-6">
@@ -58,7 +58,7 @@ import FAQSection from '../components/FAQSection.astro';
     <div class="section-shell">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-6">What are Trace Minerals?</h2>
-        <div class="prose prose-lg text-gray-600">
+        <div class="prose prose-lg text-slate-600">
           <p>
             Trace minerals are essential minerals required by the body in small (trace) amounts, typically less than 100mg per day. Despite being needed in tiny quantities, they are indispensable for life. They include zinc, selenium, manganese, copper, chromium, molybdenum and iodine.
           </p>
@@ -75,7 +75,7 @@ import FAQSection from '../components/FAQSection.astro';
     <div class="section-shell">
       <div class="text-center mb-12">
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Who Benefits From Trace Mineral IV Therapy?</h2>
-        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+        <p class="text-lg text-slate-600 max-w-3xl mx-auto">
           Trace mineral IV therapy may help individuals experiencing the following concerns
         </p>
       </div>
@@ -87,7 +87,7 @@ import FAQSection from '../components/FAQSection.astro';
             {['Frequent infections', 'Slow wound healing', 'Recurrent colds and flus', 'Autoimmune conditions', 'Chronic inflammatory conditions'].map(condition => (
               <div class="flex items-center">
                 <Check class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" aria-hidden="true" />
-                <span class="text-gray-700">{condition}</span>
+                <span class="text-slate-700">{condition}</span>
               </div>
             ))}
           </div>
@@ -99,7 +99,7 @@ import FAQSection from '../components/FAQSection.astro';
             {['Insulin resistance', 'Blood sugar irregularities', 'Thyroid dysfunction', 'Weight management concerns', 'Energy metabolism issues'].map(condition => (
               <div class="flex items-center">
                 <Check class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" aria-hidden="true" />
-                <span class="text-gray-700">{condition}</span>
+                <span class="text-slate-700">{condition}</span>
               </div>
             ))}
           </div>
@@ -111,7 +111,7 @@ import FAQSection from '../components/FAQSection.astro';
             {['Oxidative stress', 'Chemical or heavy metal exposure', 'Liver support needs', 'Premature aging', 'Skin and hair concerns'].map(condition => (
               <div class="flex items-center">
                 <Check class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" aria-hidden="true" />
-                <span class="text-gray-700">{condition}</span>
+                <span class="text-slate-700">{condition}</span>
               </div>
             ))}
           </div>
@@ -123,7 +123,7 @@ import FAQSection from '../components/FAQSection.astro';
             {['Vegetarian or vegan diet', 'Malabsorption conditions', 'Post-surgery recovery', 'Chronic stress', 'Restrictive diets'].map(condition => (
               <div class="flex items-center">
                 <Check class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" aria-hidden="true" />
-                <span class="text-gray-700">{condition}</span>
+                <span class="text-slate-700">{condition}</span>
               </div>
             ))}
           </div>
@@ -157,7 +157,7 @@ import FAQSection from '../components/FAQSection.astro';
     <div class="section-shell">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-6">Why IV Administration?</h2>
-        <div class="prose prose-lg text-gray-600">
+        <div class="prose prose-lg text-slate-600">
           <p>
             Oral mineral supplements face significant absorption limitations. Competing minerals reduce uptake (zinc competes with copper; copper competes with zinc). High-fibre diets, phytates and oxalates further bind minerals in the gut and prevent absorption.
           </p>
@@ -175,7 +175,7 @@ import FAQSection from '../components/FAQSection.astro';
       <div class="grid lg:grid-cols-2 gap-12">
         <div class="bg-white rounded-3xl shadow-xl p-8 lg:p-10 card-hover">
           <h2 class="text-2xl font-serif font-bold text-emerald-950 mb-6">Getting Started with Trace Mineral IV Therapy</h2>
-          <p class="text-gray-600 mb-8">
+          <p class="text-slate-600 mb-8">
             A naturopathic consultation is required before adding trace minerals to your IV regimen. Where appropriate, baseline serum levels of specific minerals (zinc, selenium, copper) can be ordered to guide dosing.
           </p>
           <BookingButton variant="secondary" size="lg" fullWidth source="trace-minerals-booking" />
@@ -211,13 +211,13 @@ import FAQSection from '../components/FAQSection.astro';
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-8 text-center">What to Expect</h2>
 
-        <div class="grid md:grid-cols-3 gap-8">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           <div class="text-center">
             <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4">
               <span class="text-2xl font-bold text-white">1</span>
             </div>
             <h3 class="font-semibold text-emerald-950 mb-2">Before Your Infusion</h3>
-            <p class="text-gray-600">No special preparation required. Stay hydrated. Trace minerals can be added to the Myers Cocktail or administered as a standalone booster.</p>
+            <p class="text-slate-600">No special preparation required. Stay hydrated. Trace minerals can be added to the Myers Cocktail or administered as a standalone booster.</p>
           </div>
 
           <div class="text-center">
@@ -225,7 +225,7 @@ import FAQSection from '../components/FAQSection.astro';
               <span class="text-2xl font-bold text-white">2</span>
             </div>
             <h3 class="font-semibold text-emerald-950 mb-2">During Your Infusion</h3>
-            <p class="text-gray-600">Sessions last 30–60 minutes as a booster. Trace mineral infusions are generally well-tolerated with few side effects. You may notice a mild metallic taste during the infusion, this is normal.</p>
+            <p class="text-slate-600">Sessions last 30–60 minutes as a booster. Trace mineral infusions are generally well-tolerated with few side effects. You may notice a mild metallic taste during the infusion, this is normal.</p>
           </div>
 
           <div class="text-center">
@@ -233,7 +233,7 @@ import FAQSection from '../components/FAQSection.astro';
               <span class="text-2xl font-bold text-white">3</span>
             </div>
             <h3 class="font-semibold text-emerald-950 mb-2">After Your Infusion</h3>
-            <p class="text-gray-600">Effects are often felt gradually as mineral stores replenish over days to weeks. For best results, trace minerals are typically administered monthly as a maintenance booster following an initial series of treatments.</p>
+            <p class="text-slate-600">Effects are often felt gradually as mineral stores replenish over days to weeks. For best results, trace minerals are typically administered monthly as a maintenance booster following an initial series of treatments.</p>
           </div>
         </div>
       </div>
