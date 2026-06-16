@@ -97,10 +97,10 @@ If you're struggling to recover from a viral infection, you don't have to simply
 
 ## Related Resources
 
-- [Myers' Cocktail IV Therapy](/myers-cocktail-intravenous-nutrients)
-- [IV Vitamin C](/iv-vitamin-c)
+- [Myers' Cocktail IV Therapy](/myers-cocktail-intravenous-nutrients/)
+- [IV Vitamin C](/iv-vitamin-c/)
 - [Chronic Fatigue Syndrome](/chronic-fatigue-syndrome)
-- [Lab Testing](/lab-testing)
+- [Lab Testing](/lab-testing/)
 
 ## References
 

@@ -42,11 +42,11 @@ Naturopathic medicine offers several effective treatments for osteoarthritis tha
 
 ### Prolotherapy
 
-[Prolotherapy](/prolotherapy-for-arthritis) involves injecting a solution (typically dextrose) into damaged ligaments, tendons and joint spaces to stimulate the body's natural healing response. The controlled inflammation triggered by the injection initiates a repair cascade that strengthens weakened structures and can improve joint stability. For osteoarthritis, prolotherapy addresses the ligament laxity that often accompanies and accelerates joint degeneration.
+[Prolotherapy](/prolotherapy-for-arthritis/) involves injecting a solution (typically dextrose) into damaged ligaments, tendons and joint spaces to stimulate the body's natural healing response. The controlled inflammation triggered by the injection initiates a repair cascade that strengthens weakened structures and can improve joint stability. For osteoarthritis, prolotherapy addresses the ligament laxity that often accompanies and accelerates joint degeneration.
 
 ### Acupuncture
 
-[Acupuncture](/acupuncture) has strong research support for arthritis pain management. The treatment reduces inflammation and swelling, decreases pain signaling and promotes healing in affected tissues. Unlike NSAIDs, acupuncture achieves pain relief through mechanisms that support rather than impair joint health. Studies comparing acupuncture to NSAIDs for osteoarthritis pain have found similar efficacy without the adverse effects on cartilage.<sup>7</sup>
+[Acupuncture](/acupuncture/) has strong research support for arthritis pain management. The treatment reduces inflammation and swelling, decreases pain signaling and promotes healing in affected tissues. Unlike NSAIDs, acupuncture achieves pain relief through mechanisms that support rather than impair joint health. Studies comparing acupuncture to NSAIDs for osteoarthritis pain have found similar efficacy without the adverse effects on cartilage.<sup>7</sup>
 
 Regular acupuncture sessions can provide cumulative benefits, with many patients achieving lasting improvement that persists between treatments. For those seeking to reduce or eliminate NSAID use, acupuncture offers a viable alternative for ongoing pain management.
 
@@ -60,7 +60,7 @@ Low-impact exercise such as swimming, cycling and walking maintains joint mobili
 
 Immune reactions to specific foods can amplify inflammation and worsen arthritis symptoms. Some patients experience significant reduction in joint pain and stiffness after identifying and eliminating problematic foods. Common culprits include gluten, dairy, nightshade vegetables and various food additives, though individual patterns vary widely.
 
-[Food sensitivity testing](/lab-testing) can identify specific triggers, allowing targeted dietary modification rather than broad elimination diets. For patients whose arthritis has an inflammatory component beyond simple mechanical wear, addressing food sensitivities can provide meaningful relief.
+[Food sensitivity testing](/lab-testing/) can identify specific triggers, allowing targeted dietary modification rather than broad elimination diets. For patients whose arthritis has an inflammatory component beyond simple mechanical wear, addressing food sensitivities can provide meaningful relief.
 
 ### Nutritional Support
 
@@ -84,9 +84,9 @@ Many patients come to naturopathic treatment after years of NSAID use with progr
 
 ## Related Resources
 
-- [Prolotherapy for Arthritis](/prolotherapy-for-arthritis)
-- [Sports Medicine](/sports-medicine)
-- [Conditions We Treat](/conditions)
+- [Prolotherapy for Arthritis](/prolotherapy-for-arthritis/)
+- [Sports Medicine](/sports-medicine/)
+- [Conditions We Treat](/conditions/)
 
 ## References
 

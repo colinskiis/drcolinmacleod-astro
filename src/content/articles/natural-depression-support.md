@@ -60,7 +60,7 @@ More importantly, intervention studies have demonstrated that dietary change can
 
 Several mechanisms may explain how diet affects mood. Nutrient-dense whole foods provide the building blocks for neurotransmitter synthesis. Anti-inflammatory dietary patterns reduce the systemic inflammation associated with depression. Fiber-rich plant foods support a healthy gut microbiome and the gut-brain axis. Stable blood sugar from complex carbohydrates and adequate protein prevents the mood crashes associated with refined carbohydrate consumption. Adequate omega-3 fatty acids support brain structure and function while reducing inflammation.
 
-Working with a practitioner trained in [clinical nutrition](/clinical-nutrition) can help you identify dietary patterns that may be contributing to mood symptoms and develop sustainable changes that support mental health alongside physical wellbeing.
+Working with a practitioner trained in [clinical nutrition](/clinical-nutrition/) can help you identify dietary patterns that may be contributing to mood symptoms and develop sustainable changes that support mental health alongside physical wellbeing.
 
 ## Lifestyle Factors: The Foundation of Mental Health
 
@@ -84,7 +84,7 @@ Naturopathic medicine offers a whole-person approach to supporting mental health
 
 A naturopathic approach to depression support typically begins with a thorough assessment to understand the individual's unique presentation. This includes detailed history-taking to understand the onset, course and context of symptoms, as well as exploration of potential contributing factors like diet, sleep, stress and medical history. Laboratory testing may be recommended to evaluate nutritional status, thyroid function, inflammatory markers or other relevant parameters.
 
-[Herbal medicine](/herbal-medicine) has a long tradition of use for mood support, and modern research has validated the efficacy of several botanical medicines for depression. Some herbs have been studied in rigorous clinical trials and shown benefits comparable to pharmaceutical antidepressants for mild to moderate depression, typically with fewer side effects. A qualified practitioner can help determine whether herbal support is appropriate for your situation and ensure safe use alongside any other medications.
+[Herbal medicine](/herbal-medicine/) has a long tradition of use for mood support, and modern research has validated the efficacy of several botanical medicines for depression. Some herbs have been studied in rigorous clinical trials and shown benefits comparable to pharmaceutical antidepressants for mild to moderate depression, typically with fewer side effects. A qualified practitioner can help determine whether herbal support is appropriate for your situation and ensure safe use alongside any other medications.
 
 Nutritional optimization addresses deficiencies that may be contributing to mood symptoms while ensuring the brain has adequate building blocks for neurotransmitter synthesis and healthy function. This may involve dietary modification, targeted nutrient repletion based on individual assessment or both.
 

@@ -64,7 +64,7 @@ Food sensitivities involve a delayed immune response that can cause inflammation
 
 An elimination diet, where suspect foods are removed for a period of time and then systematically reintroduced while monitoring symptoms, remains one of the most reliable ways to identify food sensitivities. This process requires patience and careful tracking but can be transformative for those whose migraines are connected to their diet.
 
-Research supports the connection between food sensitivities and migraines. Studies have found that identifying and eliminating trigger foods can significantly reduce migraine frequency in many patients<sup>5</sup>. This is an area where [clinical nutrition](/clinical-nutrition) plays a vital role, as working with someone experienced in elimination protocols and food sensitivity identification can make the process more effective and less overwhelming.
+Research supports the connection between food sensitivities and migraines. Studies have found that identifying and eliminating trigger foods can significantly reduce migraine frequency in many patients<sup>5</sup>. This is an area where [clinical nutrition](/clinical-nutrition/) plays a vital role, as working with someone experienced in elimination protocols and food sensitivity identification can make the process more effective and less overwhelming.
 
 ## Lifestyle Modifications for Prevention
 
@@ -90,7 +90,7 @@ Addressing underlying imbalances is central to the naturopathic approach. This m
 
 Nutritional support plays an important role, as several nutrients have research supporting their use in migraine prevention. Rather than recommending specific supplements without proper assessment, I evaluate each patient's individual needs through detailed history and sometimes laboratory testing. This ensures that any nutritional interventions are appropriate and effective for that person's unique situation.
 
-[Herbal medicine](/herbal-medicine) offers various options for migraine prevention and support. Botanical medicines can address underlying contributors such as stress, hormonal imbalances or inflammation. The specific herbs used depend on the individual's presentation and overall health picture, which is why working with a qualified practitioner is important rather than self-prescribing based on general recommendations.
+[Herbal medicine](/herbal-medicine/) offers various options for migraine prevention and support. Botanical medicines can address underlying contributors such as stress, hormonal imbalances or inflammation. The specific herbs used depend on the individual's presentation and overall health picture, which is why working with a qualified practitioner is important rather than self-prescribing based on general recommendations.
 
 ## Acupuncture for Migraine Prevention
 
@@ -98,7 +98,7 @@ Acupuncture has accumulated substantial evidence for migraine prevention. A Coch
 
 The mechanisms by which acupuncture helps prevent migraines are not fully understood but likely involve modulation of pain pathways in the nervous system, effects on neurotransmitter balance, reduction in inflammation and promotion of endorphin release. Acupuncture also promotes relaxation and can help address muscle tension in the neck and shoulders that often accompanies or contributes to migraines.
 
-In my practice, I use [acupuncture](/acupuncture) as part of a comprehensive migraine prevention strategy. Treatment typically involves regular sessions initially, gradually reducing frequency as improvement occurs. Many patients find that acupuncture not only reduces their migraine frequency but also helps them feel more relaxed and resilient overall.
+In my practice, I use [acupuncture](/acupuncture/) as part of a comprehensive migraine prevention strategy. Treatment typically involves regular sessions initially, gradually reducing frequency as improvement occurs. Many patients find that acupuncture not only reduces their migraine frequency but also helps them feel more relaxed and resilient overall.
 
 The research on acupuncture for migraine prevention is encouraging. Studies have shown that regular acupuncture treatment can reduce both the frequency and intensity of migraine attacks<sup>8</sup>. For patients who prefer to minimize medication use, or for whom medications are contraindicated or ineffective, acupuncture offers a valuable alternative or complementary approach.
 

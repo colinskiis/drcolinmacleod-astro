@@ -13,7 +13,7 @@ seo:
 
 If you've been experiencing fatigue, mood changes, weight fluctuations, low libido or simply don't feel like yourself, your hormones may hold the answers. Yet getting comprehensive hormone testing in Nova Scotia can be frustrating. Many family doctors order only basic panels, MSI coverage restricts which tests can be requisitioned and with physician shortages across the province, getting any testing at all presents a challenge for many.
 
-The good news is that you can access comprehensive hormone testing in Halifax without a family doctor's requisition through [private lab testing services](/lab-testing).
+The good news is that you can access comprehensive hormone testing in Halifax without a family doctor's requisition through [private lab testing services](/lab-testing/).
 
 ## Sex Hormones: Beyond Reproductive Function
 
@@ -79,7 +79,7 @@ Once results are available, we schedule a follow-up to review findings together.
 
 ## Related Resources
 
-- [Laboratory Testing Services](/lab-testing): Overview of all available testing
+- [Laboratory Testing Services](/lab-testing/): Overview of all available testing
 - [Complete Thyroid Testing](/thyroid-testing): Comprehensive thyroid assessment
 
 ## References

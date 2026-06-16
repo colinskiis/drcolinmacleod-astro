@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import BookingButton from '../components/BookingButton.astro';
 import CTAButton from '../components/CTAButton.astro';
+import BenefitCard from '../components/BenefitCard.astro';
 import { FlaskConical, Shield, Activity, Check } from '@lucide/astro';
 import FAQSection from '../components/FAQSection.astro';
 ---
@@ -20,35 +21,26 @@ import FAQSection from '../components/FAQSection.astro';
   </HeroSection>
 
   <!-- Three Benefits Section -->
-  <section class="py-16 lg:py-24 bg-white">
+  <section class="py-16 lg:py-24 bg-[#f7f7f5]">
     <div class="section-shell">
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
         <!-- Enzyme Function -->
-        <div class="bg-emerald-700 text-white rounded-2xl p-8 text-center hover:bg-emerald-800 transition-colors">
-          <div class="flex justify-center mb-6">
-            <FlaskConical class="w-16 h-16" stroke-width={1.5} aria-hidden="true" />
-          </div>
-          <h3 class="text-xl font-serif font-semibold mb-3 text-white">Enzyme Function</h3>
-          <p class="text-white/90">Trace minerals activate hundreds of enzymes essential for digestion, detoxification and energy metabolism. Without adequate mineral cofactors, these enzymatic processes slow or fail entirely.</p>
-        </div>
+        <BenefitCard title="Enzyme Function">
+          <FlaskConical slot="icon" class="h-6 w-6" stroke-width={1.75} aria-hidden="true" />
+          <p>Trace minerals activate hundreds of enzymes essential for digestion, detoxification and energy metabolism. Without adequate mineral cofactors, these enzymatic processes slow or fail entirely.</p>
+        </BenefitCard>
 
         <!-- Immune & Antioxidant Support -->
-        <div class="bg-emerald-700 text-white rounded-2xl p-8 text-center hover:bg-emerald-800 transition-colors">
-          <div class="flex justify-center mb-6">
-            <Shield class="w-16 h-16" stroke-width={1.5} aria-hidden="true" />
-          </div>
-          <h3 class="text-xl font-serif font-semibold mb-3 text-white">Immune &amp; Antioxidant Support</h3>
-          <p class="text-white/90">Zinc, selenium and copper are critical for immune cell function and antioxidant enzyme activity. Selenium is a core component of glutathione peroxidase, the body's primary antioxidant enzyme.</p>
-        </div>
+        <BenefitCard title="Immune &amp; Antioxidant Support">
+          <Shield slot="icon" class="h-6 w-6" stroke-width={1.75} aria-hidden="true" />
+          <p>Zinc, selenium and copper are critical for immune cell function and antioxidant enzyme activity. Selenium is a core component of glutathione peroxidase, the body's primary antioxidant enzyme.</p>
+        </BenefitCard>
 
         <!-- Metabolic Health -->
-        <div class="bg-emerald-700 text-white rounded-2xl p-8 text-center hover:bg-emerald-800 transition-colors">
-          <div class="flex justify-center mb-6">
-            <Activity class="w-16 h-16" stroke-width={1.5} aria-hidden="true" />
-          </div>
-          <h3 class="text-xl font-serif font-semibold mb-3 text-white">Metabolic Health</h3>
-          <p class="text-white/90">Chromium enhances insulin sensitivity and glucose metabolism. Manganese supports bone formation and carbohydrate metabolism. Together, trace minerals underpin metabolic efficiency at the cellular level.</p>
-        </div>
+        <BenefitCard title="Metabolic Health">
+          <Activity slot="icon" class="h-6 w-6" stroke-width={1.75} aria-hidden="true" />
+          <p>Chromium enhances insulin sensitivity and glucose metabolism. Manganese supports bone formation and carbohydrate metabolism. Together, trace minerals underpin metabolic efficiency at the cellular level.</p>
+        </BenefitCard>
       </div>
     </div>
   </section>

@@ -51,13 +51,13 @@ When conservative measures fail to provide adequate relief, corticosteroid injec
 
 Regenerative injection therapies offer an evidence-based approach to shoulder pain that works with the body's own healing mechanisms rather than simply suppressing symptoms.
 
-[Prolotherapy](/prolotherapy-for-arthritis) involves the injection of a concentrated dextrose solution at sites of tendon and ligament injury. This mildly irritating solution triggers a controlled healing response, promoting the laying down of new collagen and improving tissue integrity over time. Prolotherapy has been used for decades to treat tendinopathies and joint instability, including injuries of the rotator cuff.
+[Prolotherapy](/prolotherapy-for-arthritis/) involves the injection of a concentrated dextrose solution at sites of tendon and ligament injury. This mildly irritating solution triggers a controlled healing response, promoting the laying down of new collagen and improving tissue integrity over time. Prolotherapy has been used for decades to treat tendinopathies and joint instability, including injuries of the rotator cuff.
 
 Platelet-rich plasma (PRP) is one of the most researched regenerative treatments for rotator cuff injuries. PRP is prepared by drawing a small sample of the patient's own blood and concentrating the platelet fraction, which is rich in growth factors. When injected into the site of tendon injury, PRP has been shown to promote tendon healing and reduce pain, with evidence supporting its use for both partial tears and tendinopathy<sup>4</sup>. Because PRP is derived entirely from the patient's own blood, its safety profile is excellent.
 
-[Acupuncture](/acupuncture) is a valuable adjunct therapy for shoulder pain. By stimulating specific points, acupuncture promotes local circulation, reduces muscle tension, and modulates pain signalling, all of which can support recovery alongside regenerative treatments.
+[Acupuncture](/acupuncture/) is a valuable adjunct therapy for shoulder pain. By stimulating specific points, acupuncture promotes local circulation, reduces muscle tension, and modulates pain signalling, all of which can support recovery alongside regenerative treatments.
 
-For patients with shoulder pain, a comprehensive assessment and individualized treatment plan is available through the [sports medicine](/sports-medicine) program at Optimal Wellbeing Clinic in Bedford, Nova Scotia.
+For patients with shoulder pain, a comprehensive assessment and individualized treatment plan is available through the [sports medicine](/sports-medicine/) program at Optimal Wellbeing Clinic in Bedford, Nova Scotia.
 
 ### References
 

@@ -122,7 +122,7 @@ The most effective approach combines lifestyle modification including [quality s
 
 ## Adaptogen Support in Halifax
 
-If you're interested in whether adaptogens might be helpful for your situation, please contact Dr. Colin MacLeod ND to book an initial visit. Dr. MacLeod provides [herbal medicine consultations](/herbal-medicine) and can help determine which adaptogenic herbs (if any) are appropriate for your individual needs and ensure they're used safely alongside any medications or other treatments.
+If you're interested in whether adaptogens might be helpful for your situation, please contact Dr. Colin MacLeod ND to book an initial visit. Dr. MacLeod provides [herbal medicine consultations](/herbal-medicine/) and can help determine which adaptogenic herbs (if any) are appropriate for your individual needs and ensure they're used safely alongside any medications or other treatments.
 
 ### References
 

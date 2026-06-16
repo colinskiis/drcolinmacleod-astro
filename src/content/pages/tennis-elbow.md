@@ -39,7 +39,7 @@ Treatment of lateral epicondylitis typically begins with rest, bracing and oral 
 
 A platelet-rich plasma (PRP) injection involves collecting a sample of a person's blood and using the platelet-rich portion of this blood to treat their pain. The concentrated solution of PRP collected from this blood is injected at the site of injury and stimulates tissue repair and healing through its high concentration of growth factors which are naturally present in platelets. PRP promotes repair and can give lasting relief in many painful conditions, including tennis elbow. The safety of PRP treatment is excellent as it uses simply a component of a person’s own blood.
 
-A large body of research has indicated that PRP injections are an excellent treatment for tennis elbow. The research has shown that PRP injections are more effective and have better safety that corticosteroid injections. For a more detailed look at this topic see this review article on the topic of [PRP for tennis elbow](/prolotherapy-for-arthritis).
+A large body of research has indicated that PRP injections are an excellent treatment for tennis elbow. The research has shown that PRP injections are more effective and have better safety that corticosteroid injections. For a more detailed look at this topic see this review article on the topic of [PRP for tennis elbow](/prolotherapy-for-arthritis/).
 
 ### References
 

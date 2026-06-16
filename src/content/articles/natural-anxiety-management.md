@@ -126,7 +126,7 @@ Based on assessment findings, naturopathic treatment for anxiety typically combi
 
 Dietary interventions form the foundation of treatment. This might involve addressing blood sugar instability through dietary modifications, identifying and removing food sensitivities that may be contributing to inflammation or digestive symptoms, emphasizing anti-inflammatory and nutrient-dense foods, ensuring adequate intake of nutrients important for nervous system function and considering targeted nutritional supplementation when deficiencies are identified.
 
-I offer [clinical nutrition services](/clinical-nutrition) that can help identify dietary factors contributing to anxiety and develop a personalized eating plan to support mental health.
+I offer [clinical nutrition services](/clinical-nutrition/) that can help identify dietary factors contributing to anxiety and develop a personalized eating plan to support mental health.
 
 ### Herbal Medicine
 
@@ -134,7 +134,7 @@ Botanical medicines have been used for centuries to calm the nervous system and 
 
 Different herbs work through different mechanisms. Some have calming effects on the nervous system, some support healthy cortisol levels and HPA axis function and some work on neurotransmitter systems. The choice of which herbs to use depends on the individual's specific pattern of symptoms and underlying factors.
 
-[Adaptogenic herbs](/articles/adaptogens-for-stress-ashwagandha-rhodiola-and-beyond), which help the body adapt to stress and maintain balance, can be particularly helpful for anxiety that is accompanied by fatigue or exhaustion. Our [herbal medicine services](/herbal-medicine) can help determine which botanical approaches are most appropriate for your situation.
+[Adaptogenic herbs](/articles/adaptogens-for-stress-ashwagandha-rhodiola-and-beyond), which help the body adapt to stress and maintain balance, can be particularly helpful for anxiety that is accompanied by fatigue or exhaustion. Our [herbal medicine services](/herbal-medicine/) can help determine which botanical approaches are most appropriate for your situation.
 
 ### Acupuncture
 
@@ -142,7 +142,7 @@ Acupuncture has been used in Traditional Chinese Medicine for thousands of years
 
 Clinical trials have found acupuncture effective for reducing anxiety symptoms in various contexts, including generalized anxiety, pre-operative anxiety and anxiety associated with other medical conditions<sup>15</sup>. Many patients find acupuncture deeply relaxing and appreciate having a treatment approach that does not involve taking anything by mouth.
 
-I offer [acupuncture services](/acupuncture) as part of an integrative approach to anxiety management. Sessions are typically relaxing, and many patients report feeling calmer even after a single treatment.
+I offer [acupuncture services](/acupuncture/) as part of an integrative approach to anxiety management. Sessions are typically relaxing, and many patients report feeling calmer even after a single treatment.
 
 ### Mind-Body Counseling
 

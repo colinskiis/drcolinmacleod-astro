@@ -36,7 +36,7 @@ A whole-foods diet rich in colorful vegetables and fruits, quality proteins and 
 
 ## IV Therapy for Immune Support
 
-[Intravenous nutrient therapy](/iv-therapy) allows for therapeutic doses that cannot be achieved through oral supplementation. The Myers' Cocktail, which includes B vitamins, vitamin C, magnesium and calcium, can replenish nutrient stores and support energy production needed for immune function. High-dose intravenous vitamin C achieves blood levels with direct antimicrobial activity and may be particularly beneficial for those with compromised immune systems or during acute illness.
+[Intravenous nutrient therapy](/iv-therapy/) allows for therapeutic doses that cannot be achieved through oral supplementation. The Myers' Cocktail, which includes B vitamins, vitamin C, magnesium and calcium, can replenish nutrient stores and support energy production needed for immune function. High-dose intravenous vitamin C achieves blood levels with direct antimicrobial activity and may be particularly beneficial for those with compromised immune systems or during acute illness.
 
 ## Herbal Medicine and Immunity
 

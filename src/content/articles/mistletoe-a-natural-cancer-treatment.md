@@ -42,7 +42,7 @@ Mistletoe contains two major compounds which have regulatory effects on cancer c
 
 ## How Is Mistletoe Used?
 
-Mistletoe is given by subcutaneous injection, just under the skin, typically nearby the site of a known cancerous growth. While it differs from [IV therapy](/iv-therapy), both are forms of injectable treatments we offer. Injections of the mistletoe extract are minimally painful and are given every other day. Injecting mistletoe, rather than taking it orally allows it to act more directly on the immune system without being limited by digestive absorption or the liver's "first pass effect". Injecting mistletoe allows for a targeted treatment since it can be injected near the site of a known tumor or cancerous lesion.
+Mistletoe is given by subcutaneous injection, just under the skin, typically nearby the site of a known cancerous growth. While it differs from [IV therapy](/iv-therapy/), both are forms of injectable treatments we offer. Injections of the mistletoe extract are minimally painful and are given every other day. Injecting mistletoe, rather than taking it orally allows it to act more directly on the immune system without being limited by digestive absorption or the liver's "first pass effect". Injecting mistletoe allows for a targeted treatment since it can be injected near the site of a known tumor or cancerous lesion.
 
 <img src="/images/general/mistletoe-injection.webp" alt="Mistletoe injection technique" style="max-width: 100%; height: auto;">
 
@@ -64,7 +64,7 @@ Interest in mistletoe therapy has expanded in North America, with growing recogn
 
 ## Mistletoe Therapy in Halifax
 
-Mistletoe injections in the treatment of cancer are a viable adjunctive natural treatment option to conventional chemotherapy, radiation therapy and/or surgical treatment. If you are in the Halifax area and are interested in trying this treatment please contact Dr. Colin MacLeod ND to book an initial consultation. Learn more about our [herbal medicine services](/herbal-medicine).
+Mistletoe injections in the treatment of cancer are a viable adjunctive natural treatment option to conventional chemotherapy, radiation therapy and/or surgical treatment. If you are in the Halifax area and are interested in trying this treatment please contact Dr. Colin MacLeod ND to book an initial consultation. Learn more about our [herbal medicine services](/herbal-medicine/).
 
 ### References
 

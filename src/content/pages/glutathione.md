@@ -34,7 +34,7 @@ Glutathione has several functions that make it an essential tool for fighting ox
 
 Glutathione has the potential to help many different health conditions because of it's broad activity throughout the body. Research has examined glutathione and its precursor N-acetyl cysteine (NAC) and found clinical benefit in treating peripheral artery disease<sup>2</sup>, Parkinson's disease<sup>3</sup>, fatty liver<sup>4</sup>, coronary reperfusion injury<sup>5</sup>, bipolar disorder<sup>6-7</sup> obsessive compulsive disorder<sup>8</sup>, schizophrenia<sup>6,9,10</sup>, addiction treatment<sup>11-12</sup>, autism<sup>13</sup> and flu prevention<sup>14</sup>.
 
-> Glutathione is one of several powerful IV nutrient therapies offered at Dr. MacLeod's Bedford clinic. Learn about the full range of [IV Nutrient Therapy](/iv-therapy) options, including the Myers' Cocktail, high-dose Vitamin C and NAD+.
+> Glutathione is one of several powerful IV nutrient therapies offered at Dr. MacLeod's Bedford clinic. Learn about the full range of [IV Nutrient Therapy](/iv-therapy/) options, including the Myers' Cocktail, high-dose Vitamin C and NAD+.
 
 ## References
 

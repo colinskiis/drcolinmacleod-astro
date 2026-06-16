@@ -88,7 +88,7 @@ For most people, creatine is safe, affordable and backed by decades of research.
 
 ## Creatine and Sports Medicine in Halifax
 
-If you're interested in learning whether creatine supplementation might benefit your specific situation, or if you have questions about optimizing your athletic performance and recovery, please contact Dr. Colin MacLeod ND to book an initial visit. Dr. MacLeod provides [sports medicine services](/sports-medicine) and works with athletes and active individuals to develop evidence-based supplementation and training strategies.
+If you're interested in learning whether creatine supplementation might benefit your specific situation, or if you have questions about optimizing your athletic performance and recovery, please contact Dr. Colin MacLeod ND to book an initial visit. Dr. MacLeod provides [sports medicine services](/sports-medicine/) and works with athletes and active individuals to develop evidence-based supplementation and training strategies.
 
 ### References
 

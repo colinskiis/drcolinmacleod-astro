@@ -151,7 +151,7 @@ Based on current evidence, chelation therapy for cardiovascular health may be mo
 
 If you're interested in exploring chelation therapy for cardiovascular health, Dr. Colin MacLeod ND offers comprehensive evaluation and treatment. Dr. MacLeod has been trained in the proper administration of chelation therapy and follows established safety protocols.
 
-An initial naturopathic consultation is required before starting treatment to ensure chelation is appropriate for your individual situation and health goals. You can learn more about our [chelation therapy services](/chelation-therapy).
+An initial naturopathic consultation is required before starting treatment to ensure chelation is appropriate for your individual situation and health goals. You can learn more about our [chelation therapy services](/chelation-therapy/).
 
 ## References
 

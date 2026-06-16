@@ -60,7 +60,7 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 2,
       "name": "Articles",
-      "item": "https://drcolinmacleod.com/articles"
+      "item": "https://drcolinmacleod.com/articles/"
     },
     {
       "@type": "ListItem",
@@ -80,7 +80,7 @@ const articleSchema = {
   "author": {
     "@type": "Person",
     "name": article.data.author,
-    "url": "https://drcolinmacleod.com/about"
+    "url": "https://drcolinmacleod.com/about/"
   },
   "publisher": {
     "@type": "Organization",
@@ -119,7 +119,7 @@ const articleSchema = {
           <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
           </svg>
-          <a href="/articles" class="text-emerald-800 hover:text-emerald-900 font-medium">Articles</a>
+          <a href="/articles/" class="text-emerald-800 hover:text-emerald-900 font-medium">Articles</a>
           <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
           </svg>
@@ -219,7 +219,7 @@ const articleSchema = {
                   Dr. Colin MacLeod ND is a licensed naturopathic doctor in Halifax, Nova Scotia. He has a special interest in blood test interpretation, natural pain solutions, IV therapy and the many benefits of exercise.
                 </p>
                 <a
-                  href="/about"
+                  href="/about/"
                   class="inline-flex items-center text-emerald-800 hover:text-emerald-900 font-medium text-sm"
                 >
                   Learn More About Dr. MacLeod
@@ -233,7 +233,7 @@ const articleSchema = {
 
           <!-- Back link -->
           <a
-            href="/articles"
+            href="/articles/"
             class="inline-flex items-center text-emerald-800 hover:text-emerald-900 font-medium"
           >
             <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -298,4 +298,3 @@ const articleSchema = {
   <!-- Article Schema for Google rich results -->
   <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
 </BaseLayout>
-

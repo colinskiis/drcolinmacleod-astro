@@ -55,13 +55,13 @@ Oral non-steroidal anti-inflammatory drugs (NSAIDs) are frequently used for shor
 
 When runner's knee becomes a persistent, chronic problem despite physiotherapy and rest, regenerative injection therapies can support tissue healing and provide lasting pain relief. These treatments aim to address the underlying structural and cellular dysfunction rather than simply suppressing symptoms.
 
-**Prolotherapy** involves the injection of a concentrated dextrose (sugar) solution into the affected joint and surrounding ligamentous or tendinous attachments. The solution triggers a controlled local healing response, promoting the repair of weakened connective tissue and restoring mechanical stability to the patellofemoral joint. Read more about [prolotherapy and regenerative injection therapy](/prolotherapy-for-arthritis).
+**Prolotherapy** involves the injection of a concentrated dextrose (sugar) solution into the affected joint and surrounding ligamentous or tendinous attachments. The solution triggers a controlled local healing response, promoting the repair of weakened connective tissue and restoring mechanical stability to the patellofemoral joint. Read more about [prolotherapy and regenerative injection therapy](/prolotherapy-for-arthritis/).
 
-**Platelet-rich plasma (PRP)** therapy involves drawing a small sample of a patient's blood, concentrating the platelet-rich fraction by centrifugation and injecting it at the site of injury. Platelets carry a rich array of growth factors that directly stimulate cartilage repair and soft-tissue regeneration. Research supports the use of PRP for knee pain associated with cartilage pathology, with studies demonstrating improvements in pain and function that are sustained over time<sup>4</sup>. Read more about [PRP therapy](/prolotherapy-for-arthritis).
+**Platelet-rich plasma (PRP)** therapy involves drawing a small sample of a patient's blood, concentrating the platelet-rich fraction by centrifugation and injecting it at the site of injury. Platelets carry a rich array of growth factors that directly stimulate cartilage repair and soft-tissue regeneration. Research supports the use of PRP for knee pain associated with cartilage pathology, with studies demonstrating improvements in pain and function that are sustained over time<sup>4</sup>. Read more about [PRP therapy](/prolotherapy-for-arthritis/).
 
-**Acupuncture** is a well-established complementary treatment for musculoskeletal pain. By stimulating local tissue blood flow and modulating pain signalling pathways, [acupuncture](/acupuncture) can serve as an effective adjunct to rehabilitation, helping to reduce pain and improve function during the recovery process.
+**Acupuncture** is a well-established complementary treatment for musculoskeletal pain. By stimulating local tissue blood flow and modulating pain signalling pathways, [acupuncture](/acupuncture/) can serve as an effective adjunct to rehabilitation, helping to reduce pain and improve function during the recovery process.
 
-To learn more about how these treatments are applied to knee and sports-related injuries, visit the [sports medicine page](/sports-medicine).
+To learn more about how these treatments are applied to knee and sports-related injuries, visit the [sports medicine page](/sports-medicine/).
 
 ### References
 

@@ -78,10 +78,10 @@ import FAQSection from '../components/FAQSection.astro';
 
       <div class="grid lg:grid-cols-2 gap-8">
         <!-- Prolotherapy Card -->
-        <div class="bg-white rounded-3xl shadow-xl overflow-hidden card-hover">
-          <div class="bg-emerald-700 p-6">
-            <h3 class="text-2xl font-serif font-bold text-white">Prolotherapy</h3>
-            <p class="text-emerald-100 mt-2">Concentrated dextrose injections for tissue regeneration</p>
+        <div class="bg-white rounded-2xl border border-emerald-100 shadow-sm overflow-hidden card-hover">
+          <div class="bg-emerald-50 p-6 border-b border-emerald-100">
+            <h3 class="text-2xl font-serif font-bold text-emerald-950">Prolotherapy</h3>
+            <p class="text-slate-600 mt-2">Concentrated dextrose injections for tissue regeneration</p>
           </div>
           <div class="p-8">
             <p class="text-slate-600 mb-6">
@@ -117,7 +117,7 @@ import FAQSection from '../components/FAQSection.astro';
             </ul>
 
             <div class="flex items-center justify-end border-t border-slate-100 pt-6">
-              <a href="/prolotherapy-for-arthritis" class="text-emerald-700 font-semibold hover:text-emerald-800 transition-colors inline-flex items-center">
+              <a href="/prolotherapy/" class="text-emerald-700 font-semibold hover:text-emerald-800 transition-colors inline-flex items-center">
                 Learn More
                 <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -128,10 +128,10 @@ import FAQSection from '../components/FAQSection.astro';
         </div>
 
         <!-- PRP Card -->
-        <div class="bg-white rounded-3xl shadow-xl overflow-hidden card-hover">
-          <div class="bg-emerald-700 p-6">
-            <h3 class="text-2xl font-serif font-bold text-white">Platelet-Rich Plasma</h3>
-            <p class="text-emerald-100 mt-2">Growth-factor-rich injections using your own blood</p>
+        <div id="prp" class="bg-white rounded-2xl border border-emerald-100 shadow-sm overflow-hidden card-hover scroll-mt-32">
+          <div class="bg-emerald-50 p-6 border-b border-emerald-100">
+            <h3 class="text-2xl font-serif font-bold text-emerald-950">Platelet-Rich Plasma</h3>
+            <p class="text-slate-600 mt-2">Growth-factor-rich injections using your own blood</p>
           </div>
           <div class="p-8">
             <p class="text-slate-600 mb-6">
@@ -167,12 +167,7 @@ import FAQSection from '../components/FAQSection.astro';
             </ul>
 
             <div class="flex items-center justify-end border-t border-slate-100 pt-6">
-              <a href="/prolotherapy-for-arthritis" class="text-emerald-700 font-semibold hover:text-emerald-800 transition-colors inline-flex items-center">
-                Learn More
-                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
-              </a>
+              <span class="text-sm font-semibold text-emerald-700">Discuss PRP options during consultation</span>
             </div>
           </div>
         </div>
@@ -490,12 +485,12 @@ import FAQSection from '../components/FAQSection.astro';
           <p class="text-slate-600 text-sm">Learn how regenerative injections can address chronic low back pain from sports or daily activities.</p>
         </a>
 
-        <a href="/prolotherapy-for-arthritis" class="bg-emerald-50 rounded-xl p-6 hover:shadow-lg transition-shadow group">
+        <a href="/prolotherapy-for-arthritis/" class="bg-emerald-50 rounded-xl p-6 hover:shadow-lg transition-shadow group">
           <h3 class="text-lg font-semibold text-emerald-950 mb-2 group-hover:text-emerald-700">Prolotherapy for Arthritis</h3>
           <p class="text-slate-600 text-sm">Detailed information on prolotherapy research and its effectiveness for osteoarthritis.</p>
         </a>
 
-        <a href="/iv-therapy" class="bg-emerald-50 rounded-xl p-6 hover:shadow-lg transition-shadow group">
+        <a href="/iv-therapy/" class="bg-emerald-50 rounded-xl p-6 hover:shadow-lg transition-shadow group">
           <h3 class="text-lg font-semibold text-emerald-950 mb-2 group-hover:text-emerald-700">IV Nutrient Therapy</h3>
           <p class="text-slate-600 text-sm">Support your recovery and athletic performance with targeted nutrient infusions.</p>
         </a>

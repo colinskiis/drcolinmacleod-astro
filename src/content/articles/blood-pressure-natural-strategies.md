@@ -56,7 +56,7 @@ Mediterranean dietary patterns show similar benefits, emphasizing olive oil, nut
 
 Beyond specific nutrients, overall dietary patterns and eating behaviors influence blood pressure. Regular meal timing, adequate hydration and mindful eating all contribute to metabolic health. Excessive caffeine intake can acutely raise blood pressure, though habitual moderate consumption appears well-tolerated by most people. Alcohol should be limited, as consumption beyond modest amounts elevates pressure and adds cardiovascular risk through other mechanisms.
 
-Working with a practitioner trained in [clinical nutrition](/clinical-nutrition) can help identify specific dietary modifications appropriate for your individual circumstances, taking into account food preferences, cultural considerations and coexisting health conditions.
+Working with a practitioner trained in [clinical nutrition](/clinical-nutrition/) can help identify specific dietary modifications appropriate for your individual circumstances, taking into account food preferences, cultural considerations and coexisting health conditions.
 
 ## Lifestyle Factors: Exercise, Stress, Sleep and Weight
 
@@ -78,7 +78,7 @@ Naturopathic medicine takes a comprehensive view of cardiovascular health, looki
 
 A thorough naturopathic cardiovascular assessment begins with detailed history taking, exploring not just current symptoms but also lifestyle factors, stress patterns, sleep quality, dietary habits and family history. Physical examination includes careful blood pressure measurement using proper technique, as inaccurate readings can lead to inappropriate treatment decisions. Home blood pressure monitoring often provides more representative data than office measurements, which can be artificially elevated due to "white coat" effects.
 
-[Laboratory testing](/lab-testing) provides objective data to guide treatment decisions. Beyond standard lipid panels, testing may include inflammatory markers such as high-sensitivity C-reactive protein, which predicts cardiovascular risk independently of cholesterol levels. Fasting glucose and hemoglobin A1c reveal metabolic health, as insulin resistance frequently accompanies hypertension. Kidney function tests assess both underlying causes and potential consequences of elevated pressure. In some cases, testing for specific nutrients, hormones or toxic elements may be indicated based on individual circumstances.
+[Laboratory testing](/lab-testing/) provides objective data to guide treatment decisions. Beyond standard lipid panels, testing may include inflammatory markers such as high-sensitivity C-reactive protein, which predicts cardiovascular risk independently of cholesterol levels. Fasting glucose and hemoglobin A1c reveal metabolic health, as insulin resistance frequently accompanies hypertension. Kidney function tests assess both underlying causes and potential consequences of elevated pressure. In some cases, testing for specific nutrients, hormones or toxic elements may be indicated based on individual circumstances.
 
 Assessment of vascular health may include arterial stiffness measurements, which provide information about blood vessel flexibility that blood pressure alone cannot capture. Understanding an individual's complete cardiovascular risk profile allows for appropriately targeted interventions rather than one-size-fits-all approaches.
 
@@ -108,7 +108,7 @@ Here in Halifax, Nova Scotia, our maritime climate offers wonderful opportunitie
 
 If you are concerned about your blood pressure or interested in natural approaches to cardiovascular health, Dr. Colin MacLeod ND offers comprehensive assessment and individualized treatment planning. Dr. MacLeod can help identify factors contributing to elevated blood pressure, recommend appropriate lifestyle modifications and coordinate care with your other healthcare providers.
 
-An initial naturopathic visit allows time to thoroughly review your health history, current medications and lifestyle factors. Based on this assessment, we can develop a personalized plan incorporating dietary guidance, stress management strategies and other evidence-based natural approaches appropriate for your individual situation. Laboratory testing through our [comprehensive testing services](/lab-testing) can provide additional insight when indicated.
+An initial naturopathic visit allows time to thoroughly review your health history, current medications and lifestyle factors. Based on this assessment, we can develop a personalized plan incorporating dietary guidance, stress management strategies and other evidence-based natural approaches appropriate for your individual situation. Laboratory testing through our [comprehensive testing services](/lab-testing/) can provide additional insight when indicated.
 
 Blood pressure management is a long-term endeavor, and ongoing support helps maintain motivation and adjust strategies as circumstances change. Whether you are looking to prevent hypertension, reduce reliance on medications or simply optimize your cardiovascular health, naturopathic medicine offers valuable tools to support your goals.
 

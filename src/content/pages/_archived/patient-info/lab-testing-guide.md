@@ -5,7 +5,7 @@ description: "How to prepare for your laboratory tests with Dr. Colin MacLeod ND
 
 # Preparing for Your Lab Tests
 
-This guide covers what you need to know before your blood draw or sample collection. For information about available tests and what they reveal, see our [Laboratory Testing](/lab-testing) page.
+This guide covers what you need to know before your blood draw or sample collection. For information about available tests and what they reveal, see our [Laboratory Testing](/lab-testing/) page.
 
 ## General Preparation
 
@@ -97,4 +97,4 @@ If you're unsure about preparation requirements for your specific tests, contact
 
 **Ready to book your lab work?** [Schedule your appointment →](https://macleodnaturopathic.janeapp.com/)
 
-**Learn more about available testing:** [Laboratory Testing Services](/lab-testing)
+**Learn more about available testing:** [Laboratory Testing Services](/lab-testing/)

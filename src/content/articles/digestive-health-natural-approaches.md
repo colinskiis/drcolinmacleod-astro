@@ -30,7 +30,7 @@ The trillions of bacteria living in your digestive tract, collectively known as 
 
 ## Naturopathic Assessment and Treatment
 
-A comprehensive approach to digestive health begins with proper assessment. [Laboratory testing](/lab-testing) such as comprehensive stool analysis can provide valuable insight into beneficial and harmful bacteria populations, digestive enzyme function, inflammation markers and intestinal immune function. This testing guides targeted treatment protocols for optimal results.
+A comprehensive approach to digestive health begins with proper assessment. [Laboratory testing](/lab-testing/) such as comprehensive stool analysis can provide valuable insight into beneficial and harmful bacteria populations, digestive enzyme function, inflammation markers and intestinal immune function. This testing guides targeted treatment protocols for optimal results.
 
 Diet is the foundation of digestive treatment, with [adequate fiber intake](/articles/fiber-the-underrated-nutrient) playing a central role. Depending on the individual case, elimination diets, low-FODMAP protocols or anti-inflammatory approaches may be recommended. The gut-brain connection must also be addressed, as chronic stress impairs digestive function by reducing enzyme production, slowing gut motility and altering microbiome composition.
 

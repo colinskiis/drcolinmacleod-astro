@@ -20,7 +20,7 @@ For competitive athletes, maximized nutrition, training and rest are essential f
 
 Working hard, sweating and pushing your muscles and nervous system hard are all taxing on the body. It is clear that intense physical activity actively depletes nutrients from the body, including zinc, magnesium, potassium, iron<sup>6</sup>, vitamin B1, vitamin B2 and vitamin B6<sup>7</sup>.
 
-While diet is pivotal for ensuring proper nutrient intake, [intravenous nutrient infusions](/iv-therapy) are a helpful way to rapidly resolve nutrient deficiencies. Intravenous nutrient infusions also typically increase energy levels and can help athletes maintain a competitive edge.
+While diet is pivotal for ensuring proper nutrient intake, [intravenous nutrient infusions](/iv-therapy/) are a helpful way to rapidly resolve nutrient deficiencies. Intravenous nutrient infusions also typically increase energy levels and can help athletes maintain a competitive edge.
 
 ## Athletic Performance Infusion
 
@@ -87,7 +87,7 @@ Our athletic performance infusion treatment falls within the guidelines set by t
 
 ## Nutrient Infusions in Halifax
 
-If you are interested in receiving nutrient infusion treatments and are located in the Halifax area, please contact Dr. Colin MacLeod ND to book an initial naturopathic visit to discuss your options. Learn more about our [IV therapy services](/iv-therapy).
+If you are interested in receiving nutrient infusion treatments and are located in the Halifax area, please contact Dr. Colin MacLeod ND to book an initial naturopathic visit to discuss your options. Learn more about our [IV therapy services](/iv-therapy/).
 
 ### References
 

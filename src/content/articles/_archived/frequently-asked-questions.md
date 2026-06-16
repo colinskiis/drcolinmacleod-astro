@@ -37,4 +37,4 @@ Naturopathic doctors offer a range of specialized lab tests including saliva hor
 
 ## Do Naturopathic Doctors Work With Medical Doctors?
 Yes, naturopathic doctors often work with a patient’s medical doctor to ensure that an appropriate diagnosis has been made and that all necessary laboratory testing has been performed. Naturopathic doctors are trained to recognize drug-nutrient and drug-herb interactions to ensure safe integrative treatment.
-Still have questions? [Contact Dr. MacLeod](https://drcolinmacleod.com/contact)
+Still have questions? [Contact Dr. MacLeod](https://drcolinmacleod.com/contact/)

@@ -82,7 +82,7 @@ The most effective approach to metabolic health remains appropriate diet for you
 
 ## Metabolic Health Support in Halifax
 
-If you're interested in berberine or looking for evidence-based support for blood sugar management, metabolic health or weight concerns, please contact Dr. Colin MacLeod ND to book an initial visit. Dr. MacLeod provides [herbal medicine consultations](/herbal-medicine) and can help determine whether berberine is appropriate for your situation and how it might fit into a comprehensive treatment plan.
+If you're interested in berberine or looking for evidence-based support for blood sugar management, metabolic health or weight concerns, please contact Dr. Colin MacLeod ND to book an initial visit. Dr. MacLeod provides [herbal medicine consultations](/herbal-medicine/) and can help determine whether berberine is appropriate for your situation and how it might fit into a comprehensive treatment plan.
 
 ### References
 

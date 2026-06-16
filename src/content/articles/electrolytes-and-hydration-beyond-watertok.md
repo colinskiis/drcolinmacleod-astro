@@ -94,7 +94,7 @@ Focus on the fundamentals: drink when thirsty, eat a varied diet with plenty of 
 
 ## Hydration and Nutrition Support in Halifax
 
-If you have questions about hydration, electrolytes or how to optimize your nutrition for your activity level and health goals, please contact Dr. Colin MacLeod ND to book an initial visit. Dr. MacLeod provides [clinical nutrition services](/clinical-nutrition) and can help you cut through the social media hype and develop an evidence-based approach to your nutrition needs.
+If you have questions about hydration, electrolytes or how to optimize your nutrition for your activity level and health goals, please contact Dr. Colin MacLeod ND to book an initial visit. Dr. MacLeod provides [clinical nutrition services](/clinical-nutrition/) and can help you cut through the social media hype and develop an evidence-based approach to your nutrition needs.
 
 ### References
 

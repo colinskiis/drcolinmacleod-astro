@@ -3,7 +3,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
 import BookingButton from '../components/BookingButton.astro';
-import { Calendar, Check, ChevronDown, Droplets, Zap, Atom, HeartPulse, Dna } from '@lucide/astro';
+import BenefitCard from '../components/BenefitCard.astro';
+import { Check, Droplets, Zap, Atom, HeartPulse, Dna } from '@lucide/astro';
 import FAQSection from '../components/FAQSection.astro';
 import ServiceArticles from '../components/ServiceArticles.astro';
 ---
@@ -23,35 +24,26 @@ import ServiceArticles from '../components/ServiceArticles.astro';
   </HeroSection>
 
   <!-- Three Benefits Section -->
-  <section class="py-16 lg:py-24 bg-white">
+  <section class="py-16 lg:py-24 bg-[#f7f7f5]">
     <div class="section-shell">
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
         <!-- 100% Absorption -->
-        <div class="bg-emerald-700 text-white rounded-2xl p-8 text-center hover:bg-emerald-800 transition-colors">
-          <div class="flex justify-center mb-6">
-            <Droplets class="w-16 h-16" stroke-width={1.5} aria-hidden="true" />
-          </div>
-          <h3 class="text-xl font-serif font-semibold mb-3 text-white">100% Absorption</h3>
-          <p class="text-white/90">IV therapy introduces nutrients directly into the bloodstream and skips the digestive system where many nutrients can be lost or degraded. It is truly 100% absorption.</p>
-        </div>
+        <BenefitCard title="100% Absorption">
+          <Droplets slot="icon" class="h-6 w-6" stroke-width={1.75} aria-hidden="true" />
+          <p>IV therapy introduces nutrients directly into the bloodstream and skips the digestive system where many nutrients can be lost or degraded. It is truly 100% absorption.</p>
+        </BenefitCard>
 
         <!-- Quick Acting -->
-        <div class="bg-emerald-700 text-white rounded-2xl p-8 text-center hover:bg-emerald-800 transition-colors">
-          <div class="flex justify-center mb-6">
-            <Zap class="w-16 h-16" stroke-width={1.5} aria-hidden="true" />
-          </div>
-          <h3 class="text-xl font-serif font-semibold mb-3 text-white">Quick Acting</h3>
-          <p class="text-white/90">No waiting for absorption, no "first-pass" effect by the liver means your nutrients get directly into your bloodstream, tissues and cells. No waiting around for results.</p>
-        </div>
+        <BenefitCard title="Quick Acting">
+          <Zap slot="icon" class="h-6 w-6" stroke-width={1.75} aria-hidden="true" />
+          <p>No waiting for absorption, no "first-pass" effect by the liver means your nutrients get directly into your bloodstream, tissues and cells. No waiting around for results.</p>
+        </BenefitCard>
 
         <!-- Nutrient-Packed -->
-        <div class="bg-emerald-700 text-white rounded-2xl p-8 text-center hover:bg-emerald-800 transition-colors">
-          <div class="flex justify-center mb-6">
-            <Atom class="w-16 h-16" stroke-width={1.5} aria-hidden="true" />
-          </div>
-          <h3 class="text-xl font-serif font-semibold mb-3 text-white">Nutrient-Packed</h3>
-          <p class="text-white/90">We offer a variety of intravenous vitamins, minerals, trace elements, amino acids and other co-factors. Your IV treatment is selected specifically for you.</p>
-        </div>
+        <BenefitCard title="Nutrient-Packed">
+          <Atom slot="icon" class="h-6 w-6" stroke-width={1.75} aria-hidden="true" />
+          <p>We offer a variety of intravenous vitamins, minerals, trace elements, amino acids and other co-factors. Your IV treatment is selected specifically for you.</p>
+        </BenefitCard>
       </div>
     </div>
   </section>
@@ -110,7 +102,7 @@ import ServiceArticles from '../components/ServiceArticles.astro';
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
         <!-- NAD+ - Lightning/Energy icon -->
-        <a href="/nad-therapy" class="bg-white border border-emerald-100 rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-shadow block group">
+        <a href="/nad-therapy/" class="bg-white border border-emerald-100 rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-shadow block group">
           <div class="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-emerald-200 transition-colors">
             <Zap class="w-10 h-10 text-emerald-700" aria-hidden="true" />
           </div>
@@ -119,7 +111,7 @@ import ServiceArticles from '../components/ServiceArticles.astro';
         </a>
 
         <!-- High-Dose Vitamin C -->
-        <a href="/iv-vitamin-c" class="bg-white border border-emerald-100 rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-shadow block group">
+        <a href="/iv-vitamin-c/" class="bg-white border border-emerald-100 rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-shadow block group">
           <div class="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-emerald-200 transition-colors">
             <Droplets class="w-10 h-10 text-emerald-700" aria-hidden="true" />
           </div>
@@ -128,7 +120,7 @@ import ServiceArticles from '../components/ServiceArticles.astro';
         </a>
 
         <!-- Glutathione - Heart with EKG line -->
-        <a href="/glutathione" class="bg-white border border-emerald-100 rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-shadow block group">
+        <a href="/glutathione/" class="bg-white border border-emerald-100 rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-shadow block group">
           <div class="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-emerald-200 transition-colors">
             <HeartPulse class="w-10 h-10 text-emerald-700" aria-hidden="true" />
           </div>
@@ -137,7 +129,7 @@ import ServiceArticles from '../components/ServiceArticles.astro';
         </a>
 
         <!-- L-Carnitine -->
-        <a href="/l-carnitine" class="bg-white border border-emerald-100 rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-shadow block group">
+        <a href="/l-carnitine/" class="bg-white border border-emerald-100 rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-shadow block group">
           <div class="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-emerald-200 transition-colors">
             <Dna class="w-10 h-10 text-emerald-700" aria-hidden="true" />
           </div>
@@ -146,7 +138,7 @@ import ServiceArticles from '../components/ServiceArticles.astro';
         </a>
 
         <!-- Trace Minerals -->
-        <a href="/trace-minerals" class="bg-white border border-emerald-100 rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-shadow block group">
+        <a href="/trace-minerals/" class="bg-white border border-emerald-100 rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-shadow block group">
           <div class="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-emerald-200 transition-colors">
             <Atom class="w-10 h-10 text-emerald-700" aria-hidden="true" />
           </div>
@@ -173,7 +165,7 @@ import ServiceArticles from '../components/ServiceArticles.astro';
             ))}
             <div class="flex items-center col-span-2 pt-1">
               <Check class="w-4 h-4 text-emerald-600 mr-2 flex-shrink-0" aria-hidden="true" />
-              <span class="text-slate-700 text-sm"><a href="/chelation-therapy" class="text-emerald-700 hover:text-emerald-800 underline">Chelation (EDTA, DMPS)</a></span>
+              <span class="text-slate-700 text-sm"><a href="/chelation-therapy/" class="text-emerald-700 hover:text-emerald-800 underline">Chelation (EDTA, DMPS)</a></span>
             </div>
           </div>
         </div>
@@ -276,7 +268,7 @@ import ServiceArticles from '../components/ServiceArticles.astro';
       },
       "availableChannel": {
         "@type": "ServiceChannel",
-        "serviceUrl": "https://drcolinmacleod.com/iv-therapy",
+        "serviceUrl": "https://drcolinmacleod.com/iv-therapy/",
         "serviceLocation": {
           "@type": "Place",
           "name": "Optimal Wellbeing Clinic",

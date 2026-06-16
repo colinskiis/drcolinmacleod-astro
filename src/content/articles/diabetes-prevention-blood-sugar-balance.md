@@ -88,7 +88,7 @@ Standard screening tests include fasting blood glucose, which measures blood sug
 
 I find that comprehensive metabolic testing often reveals important information beyond basic glucose and HbA1c. Fasting insulin levels, while not routinely measured in conventional screening, can detect hyperinsulinemia (elevated insulin) that may precede blood sugar abnormalities by years. This early marker of insulin resistance provides an earlier warning and more time for intervention.
 
-Advanced lipid testing often shows characteristic patterns in metabolic dysfunction, including elevated triglycerides and small, dense LDL particles that are more strongly associated with cardiovascular risk. Inflammatory markers like C-reactive protein may also be elevated. Through our [lab testing services](/lab-testing), we can evaluate these and other markers to build a comprehensive picture of metabolic health.
+Advanced lipid testing often shows characteristic patterns in metabolic dysfunction, including elevated triglycerides and small, dense LDL particles that are more strongly associated with cardiovascular risk. Inflammatory markers like C-reactive protein may also be elevated. Through our [lab testing services](/lab-testing/), we can evaluate these and other markers to build a comprehensive picture of metabolic health.
 
 For those with known prediabetes or diabetes, regular monitoring helps track progress and guide treatment decisions. Home glucose monitoring, continuous glucose monitors and periodic lab testing all have roles depending on individual circumstances and treatment goals.
 
@@ -98,7 +98,7 @@ Research continues to explore how various natural compounds affect blood sugar r
 
 Various nutrients play roles in blood sugar regulation. Chromium participates in insulin signaling, and some research suggests supplementation may benefit those with deficiency. Magnesium is involved in hundreds of enzymatic reactions including those related to glucose metabolism, and inadequate magnesium status is associated with increased diabetes risk<sup>11</sup>. Alpha-lipoic acid, bitter melon and cinnamon have all been studied for potential blood sugar effects, with varying levels of evidence.
 
-The naturopathic approach emphasizes identifying and addressing individual needs rather than applying a standard protocol to everyone. What someone needs depends on their current metabolic status, dietary patterns, lifestyle factors and other health considerations. Through [clinical nutrition consultations](/clinical-nutrition), we can assess individual factors and develop targeted recommendations.
+The naturopathic approach emphasizes identifying and addressing individual needs rather than applying a standard protocol to everyone. What someone needs depends on their current metabolic status, dietary patterns, lifestyle factors and other health considerations. Through [clinical nutrition consultations](/clinical-nutrition/), we can assess individual factors and develop targeted recommendations.
 
 It bears emphasizing that natural approaches complement rather than replace foundational lifestyle changes. No supplement can compensate for a poor diet, sedentary lifestyle, inadequate sleep or chronic stress. The research on diabetes prevention is clear that comprehensive lifestyle modification remains the most powerful intervention available<sup>2</sup>.
 

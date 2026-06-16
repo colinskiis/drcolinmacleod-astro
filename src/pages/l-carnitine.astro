@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
 import BookingButton from '../components/BookingButton.astro';
+import BenefitCard from '../components/BenefitCard.astro';
 import { Flame, Heart, Dumbbell, Check } from '@lucide/astro';
 import FAQSection from '../components/FAQSection.astro';
 ---
@@ -20,35 +21,26 @@ import FAQSection from '../components/FAQSection.astro';
   </HeroSection>
 
   <!-- Three Benefits Section -->
-  <section class="py-16 lg:py-24 bg-white">
+  <section class="py-16 lg:py-24 bg-[#f7f7f5]">
     <div class="section-shell">
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
         <!-- Fat Metabolism -->
-        <div class="bg-emerald-700 text-white rounded-2xl p-8 text-center hover:bg-emerald-800 transition-colors">
-          <div class="flex justify-center mb-6">
-            <Flame class="w-16 h-16" stroke-width={1.5} aria-hidden="true" />
-          </div>
-          <h3 class="text-xl font-serif font-semibold mb-3 text-white">Fat Metabolism</h3>
-          <p class="text-white/90">L-Carnitine transports long-chain fatty acids into mitochondria for energy production. Without adequate L-Carnitine, fatty acids cannot enter the mitochondria and accumulate in tissues.</p>
-        </div>
+        <BenefitCard title="Fat Metabolism">
+          <Flame slot="icon" class="h-6 w-6" stroke-width={1.75} aria-hidden="true" />
+          <p>L-Carnitine transports long-chain fatty acids into mitochondria for energy production. Without adequate L-Carnitine, fatty acids cannot enter the mitochondria and accumulate in tissues.</p>
+        </BenefitCard>
 
         <!-- Cardiovascular Support -->
-        <div class="bg-emerald-700 text-white rounded-2xl p-8 text-center hover:bg-emerald-800 transition-colors">
-          <div class="flex justify-center mb-6">
-            <Heart class="w-16 h-16" stroke-width={1.5} aria-hidden="true" />
-          </div>
-          <h3 class="text-xl font-serif font-semibold mb-3 text-white">Cardiovascular Support</h3>
-          <p class="text-white/90">L-Carnitine supports heart muscle function by ensuring cardiac cells have access to fatty acid fuel. Research shows L-Carnitine improves outcomes in heart failure and angina.</p>
-        </div>
+        <BenefitCard title="Cardiovascular Support">
+          <Heart slot="icon" class="h-6 w-6" stroke-width={1.75} aria-hidden="true" />
+          <p>L-Carnitine supports heart muscle function by ensuring cardiac cells have access to fatty acid fuel. Research shows L-Carnitine improves outcomes in heart failure and angina.</p>
+        </BenefitCard>
 
         <!-- Athletic Recovery -->
-        <div class="bg-emerald-700 text-white rounded-2xl p-8 text-center hover:bg-emerald-800 transition-colors">
-          <div class="flex justify-center mb-6">
-            <Dumbbell class="w-16 h-16" stroke-width={1.5} aria-hidden="true" />
-          </div>
-          <h3 class="text-xl font-serif font-semibold mb-3 text-white">Athletic Recovery</h3>
-          <p class="text-white/90">Athletes use L-Carnitine to reduce exercise-induced muscle damage, decrease lactic acid accumulation and accelerate post-exercise recovery.</p>
-        </div>
+        <BenefitCard title="Athletic Recovery">
+          <Dumbbell slot="icon" class="h-6 w-6" stroke-width={1.75} aria-hidden="true" />
+          <p>Athletes use L-Carnitine to reduce exercise-induced muscle damage, decrease lactic acid accumulation and accelerate post-exercise recovery.</p>
+        </BenefitCard>
       </div>
     </div>
   </section>

@@ -102,7 +102,7 @@ If you're concerned about methylation, start with a homocysteine blood test. If 
 
 ## Methylation and Genetic Testing in Halifax
 
-If you have questions about methylation, homocysteine levels or whether genetic testing might be appropriate for your situation, please contact Dr. Colin MacLeod ND to book an initial visit. Dr. MacLeod offers comprehensive [lab testing services](/lab-testing) and can help you navigate this topic with an evidence-based approach. Dr. MacLeod has completed formal training with Dr. Ben Lynch ND, an expert in the field of methylation.
+If you have questions about methylation, homocysteine levels or whether genetic testing might be appropriate for your situation, please contact Dr. Colin MacLeod ND to book an initial visit. Dr. MacLeod offers comprehensive [lab testing services](/lab-testing/) and can help you navigate this topic with an evidence-based approach. Dr. MacLeod has completed formal training with Dr. Ben Lynch ND, an expert in the field of methylation.
 
 ### References
 

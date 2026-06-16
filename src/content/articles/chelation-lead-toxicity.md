@@ -29,7 +29,7 @@ Significant sources of lead exposure to Nova Scotians include contaminated drink
 
 ## Chelation Therapy
 
-The standard and only proven effective treatment for lead toxicity is [chelation therapy](/chelation-therapy). Chelation involves giving a medicine (chelator) which latches onto a specific compound and allows it to be mobilized and removed from the body. The standard chelating agent used for removing lead is intravenous EDTA (Ethylene diamine tetraacetic acid), with oral DMSA (Dimercaptosuccinic acid) being used in some cases. Because lead binds very tightly within our tissues, especially bone, chelation is necessary to dislodge and remove it from the body.
+The standard and only proven effective treatment for lead toxicity is [chelation therapy](/chelation-therapy/). Chelation involves giving a medicine (chelator) which latches onto a specific compound and allows it to be mobilized and removed from the body. The standard chelating agent used for removing lead is intravenous EDTA (Ethylene diamine tetraacetic acid), with oral DMSA (Dimercaptosuccinic acid) being used in some cases. Because lead binds very tightly within our tissues, especially bone, chelation is necessary to dislodge and remove it from the body.
 The number of chelation treatments required to reduce heavy metals down to a healthy level depends on the total body burden of the metal, i.e.: the total amount of the metal within the body. Treatments are typically given once every 1-2 weeks for 10-20 treatments to sufficiently reduce the total body level of the target heavy metal.
 
 ### Safety of Chelation

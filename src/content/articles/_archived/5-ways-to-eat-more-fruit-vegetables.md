@@ -37,4 +37,4 @@ seo:
 - A mixture of cold pressed extra virgin olive oil and balsamic vinegar is the ideal dressing for salads. The magic ratio of olive oil to vinegar is 3:1 to achieve the optimal sweetness and tartness. Olive oil is great for the heart and balsamic vinegar can help control blood sugar.
 - Blueberries, mango, sliced pear, sliced almonds, romaine lettuce, red leaf lettuce and arugula should be cycled in or combined to add variety.
 
-Learn more about our [clinical nutrition services](/clinical-nutrition) for personalized dietary guidance.
+Learn more about our [clinical nutrition services](/clinical-nutrition/) for personalized dietary guidance.
