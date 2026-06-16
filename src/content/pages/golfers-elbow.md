@@ -49,9 +49,7 @@ Initial management of medial epicondylitis typically involves activity modificat
 
 Because medial epicondylitis is fundamentally a degenerative tendinopathy rather than an inflammatory condition, treatments that stimulate tissue repair rather than suppress inflammation offer a logical and evidence-supported approach.
 
-**Platelet-Rich Plasma (PRP)** involves concentrating the growth-factor-rich platelet fraction from a patient's own blood and injecting it at the site of tendon degeneration. PRP has been studied specifically for medial epicondylitis and has shown promising results in promoting tendon healing and providing durable pain relief<sup>3</sup>. Because PRP is derived from the patient's own blood, its safety profile is excellent.
-
-**Prolotherapy** is an injection-based regenerative treatment that uses a proliferant solution to stimulate the body's natural healing response in chronically degenerated tendons and ligaments. It has been used in the treatment of elbow tendinopathies and forms part of an integrated [sports medicine](/sports-medicine/) approach at the clinic. More information can be found on the [prolotherapy](/prolotherapy-for-arthritis/) page.
+**Prolotherapy** is an injection-based regenerative treatment that uses a proliferant solution to stimulate the body's natural healing response in chronically degenerated tendons and ligaments. It has been used in the treatment of elbow tendinopathies and forms part of an integrated [sports medicine](/sports-medicine/) approach at the clinic<sup>3</sup>. More information can be found on the [prolotherapy](/prolotherapy-for-arthritis/) page.
 
 Patients with lateral elbow pain may also be interested in the related page on [tennis elbow](/tennis-elbow).
 
@@ -59,5 +57,4 @@ Patients with lateral elbow pain may also be interested in the related page on [
 
 1. Nirschl RP, Pettrone FA. Tennis elbow: the surgical treatment of lateral epicondylitis. J Bone Joint Surg Am. 1979;61(6A):832-839.
 2. Coombes BK, Bisset L, Vicenzino B. Efficacy and safety of corticosteroid injections and other injections for management of tendinopathy: a systematic review of randomised controlled trials. Lancet. 2010;376(9754):1751-1767.
-3. Palacio EP, Schiavetti RR, Kanunfre M, Ikeda TM, Mizobuchi RR, Galbiatti JA. Effects of platelet-rich plasma on lateral epicondylitis of the elbow: prospective randomized controlled trial. Rev Bras Ortop. 2016;51(1):90-95.
-4. Carayannopoulos A, Borg-Stein J, Vad V. Medial epicondylitis and the role of regenerative injection therapy. Curr Rev Musculoskelet Med. 2012;5(2):101-106.
+3. Carayannopoulos A, Borg-Stein J, Vad V. Medial epicondylitis and the role of regenerative injection therapy. Curr Rev Musculoskelet Med. 2012;5(2):101-106.

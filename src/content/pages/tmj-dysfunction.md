@@ -33,11 +33,9 @@ Surgical treatment may include arthrocentesis, which involves draining excess fl
 
 ## Naturopathic Treatment for TMJ Dysfunction
 
-Prolotherapy and platelet-rich plasma (PRP) have both been used as treatment for temporomandibular joint (TMJ) dysfunction. Prolotherapy is an injection of a concentrated dextrose (sugar) solution into an affected joint, which stimulates the body to repair connective tissue and strengthen the joint. It can be used to reduce pain and improve joint function. PRP is an injection of a concentrated solution of a person's own platelets and blood plasma, which encourages the repair process of the affected joint.
+Prolotherapy has been used as a treatment for temporomandibular joint (TMJ) dysfunction. Prolotherapy is an injection of a concentrated dextrose (sugar) solution into an affected joint, which stimulates the body to repair connective tissue and strengthen the joint. It can be used to reduce pain and improve joint function.
 
-Prolotherapy is an effective treatment for reducing pain and improving range of motion in TMJ dysfunction and has an excellent safety profile<sup>1-5</sup>. PRP is also been used to treat TMJ dysfunction and has been shown in several studies to improve the associated pain and limited range of motion<sup>6-10</sup>.
-
-Both prolotherapy and PRP are safe, minimally invasive treatments and excellent options for people with TMJ dysfunction.
+Prolotherapy is an effective treatment for reducing pain and improving range of motion in TMJ dysfunction and has an excellent safety profile<sup>1-5</sup>.
 
 ### References
 
@@ -46,8 +44,3 @@ Both prolotherapy and PRP are safe, minimally invasive treatments and excellent 
 3. Zarate MA, Frusso RD, Reeves KD, et al. Dextrose Prolotherapy Versus Lidocaine Injection for Temporomandibular Dysfunction: A Pragmatic Randomized Controlled Trial. J Altern Complement Med. 2020 Nov;26(11):1064-1073.
 4. Louw WF, Reeves KD, Lam SKH, et al. Treatment of Temporomandibular Dysfunction With Hypertonic Dextrose Injection (Prolotherapy): A Randomized Controlled Trial With Long-term Partial Crossover. Mayo Clin Proc. 2019 May;94(5):820-832.
 5. Mustafa R, Güngörmüş M, Mollaoğlu N. Evaluation of the Efficacy of Different Concentrations of Dextrose Prolotherapy in Temporomandibular Joint Hypermobility Treatment. J Craniofac Surg. 2018 Jul;29(5):e461-e465.
-6. Sousa BM, López-Valverde N, López-Valverde A, et al. Different Treatments in Patients with Temporomandibular Joint Disorders: A Comparative Randomized Study. Medicina (Kaunas). 2020 Mar 5;56(3):113.
-7. Fernández-Ferro M, Fernández-Sanromán J, Blanco-Carrión A, et al. Comparison of intra-articular injection of plasma rich in growth factors versus hyaluronic acid following arthroscopy in the treatment of temporomandibular dysfunction: A randomised prospective study. J Craniomaxillofac Surg. 2017 Apr;45(4):449-454.
-8. Hancı M, Karamese M, Tosun Z, et al. Intra-articular platelet-rich plasma injection for the treatment of temporomandibular disorders and a comparison with arthrocentesis. J Craniomaxillofac Surg. 2015 Jan;43(1):162-6.
-9. Pihut M, Szuta M, Ferendiuk E, et al. Evaluation of pain regression in patients with temporomandibular dysfunction treated by intra-articular platelet-rich plasma injections: a preliminary report. Biomed Res Int. 2014;2014:132369.
-10. Dasukil S, Arora G, Boyina KK, et al. Intra-articular injection of hyaluronic acid versus platelet-rich plasma following single puncture arthrocentesis for the management of internal derangement of TMJ: A double-blinded randomised controlled trial. J Craniomaxillofac Surg. 2022 Nov;50(11):825-830.

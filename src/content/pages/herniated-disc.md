@@ -68,7 +68,7 @@ An integral part of the intervertebral disc herniation injury process is when th
 
 Prolotherapy is a treatment used to repair ligament damage. This treatment involves injecting a concentrated sugar solution directly at the site of injury. The solution triggers an immune response, increasing local blood flow and stimulating the growth of healthy new ligament tissue. This has a strengthening effect on the ligament, providing increased support for the spine, helping to prevent further herniation and reducing the chances of a recurrence of disc herniation.
 
-Prolotherapy is also effective for treating the pain and disability associated with intervertebral disc herniation. Studies have shown that the strengthening effect of prolotherapy or platelet-rich plasma injections can reduce pain and improve mobility in patients with disc herniation<sup>11</sup>. Prolotherapy is also a safe, non-invasive procedure with minimal discomfort and a quick recovery time. For these reasons, prolotherapy is an increasingly popular treatment option for patients with disc herniation.
+Prolotherapy is also effective for treating the pain and disability associated with intervertebral disc herniation. Studies have shown that the strengthening effect of prolotherapy injections can reduce pain and improve mobility in patients with disc herniation<sup>11</sup>. Prolotherapy is also a safe, non-invasive procedure with minimal discomfort and a quick recovery time. For these reasons, prolotherapy is an increasingly popular treatment option for patients with disc herniation.
 
 ## References
 

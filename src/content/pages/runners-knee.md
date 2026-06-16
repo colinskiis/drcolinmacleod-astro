@@ -57,8 +57,6 @@ When runner's knee becomes a persistent, chronic problem despite physiotherapy a
 
 **Prolotherapy** involves the injection of a concentrated dextrose (sugar) solution into the affected joint and surrounding ligamentous or tendinous attachments. The solution triggers a controlled local healing response, promoting the repair of weakened connective tissue and restoring mechanical stability to the patellofemoral joint. Read more about [prolotherapy and regenerative injection therapy](/prolotherapy-for-arthritis/).
 
-**Platelet-rich plasma (PRP)** therapy involves drawing a small sample of a patient's blood, concentrating the platelet-rich fraction by centrifugation and injecting it at the site of injury. Platelets carry a rich array of growth factors that directly stimulate cartilage repair and soft-tissue regeneration. Research supports the use of PRP for knee pain associated with cartilage pathology, with studies demonstrating improvements in pain and function that are sustained over time<sup>4</sup>. Read more about [PRP therapy](/prolotherapy-for-arthritis/).
-
 **Acupuncture** is a well-established complementary treatment for musculoskeletal pain. By stimulating local tissue blood flow and modulating pain signalling pathways, [acupuncture](/acupuncture/) can serve as an effective adjunct to rehabilitation, helping to reduce pain and improve function during the recovery process.
 
 To learn more about how these treatments are applied to knee and sports-related injuries, visit the [sports medicine page](/sports-medicine/).
@@ -68,4 +66,3 @@ To learn more about how these treatments are applied to knee and sports-related 
 1. Petersen W, Ellermann A, Gösele-Koppenburg A, et al. Patellofemoral pain syndrome. Knee Surg Sports Traumatol Arthrosc. 2014;22(10):2264-2274.
 2. Crossley KM, Stefanik JJ, Selfe J, et al. 2016 Patellofemoral pain consensus statement from the 4th International Patellofemoral Pain Research Retreat. Br J Sports Med. 2016;50(14):839-843.
 3. Warden SJ, Metcalf BR, Kiss ZS, et al. Low-intensity pulsed ultrasound for chronic patellar tendinopathy: a randomized, double-blind, placebo-controlled trial. Rheumatology (Oxford). 2008;47(4):467-471.
-4. Kon E, Buda R, Filardo G, et al. Platelet-rich plasma: intra-articular knee injections produced favorable results on degenerative cartilage lesions. Knee Surg Sports Traumatol Arthrosc. 2010;18(4):472-479.

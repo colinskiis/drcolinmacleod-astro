@@ -45,8 +45,8 @@ The goals when treating plantar fasciitis are to:
 
 The vast majority of cases of plantar fasciitis do not require surgical treatment. Conventional treatment for plantar fasciitis may involve a rehabilitative exercise protocol, wearing supportive footwear and improving ergonomics.
 
-## Platelet-Rich Plasma Injections
+## Prolotherapy Injections
 
-Platelet-rich plasma (PRP) is a treatment which uses a component of a person's own blood in order to initiate healing of injuries and painful chronic conditions. A person's blood is collected and centrifuged on the day of treatment. The platelet-rich layer of the centrifuged blood is collected and used for injection. PRP is a safe treatment which can provide significant relief to people with plantar fasciitis including reductions in pain, improved mobility and a return to usual daily activities.
+Prolotherapy is an injection-based treatment that uses a concentrated dextrose solution to stimulate a local healing response in injured or chronically irritated connective tissue. For plantar fasciitis, treatment is directed at the plantar fascia and related ligament attachments that contribute to persistent heel pain.
 
-PRP injections contain a high concentration of growth factors which are naturally present in our platelets. Our natural response to injury includes directing platelets rich in growth factors to the site of injury. These growth factors are released from the platelets and trigger our healing response, initiating repair of damaged tissue. In cases of plantar fasciitis the damaged or partially torn plantar fascia can be repaired with the use of PRP injections. Read more on [platelet-rich plasma therapy](/prolotherapy-for-arthritis/).
+Prolotherapy can be considered when plantar fasciitis has not improved with footwear changes, stretching, strengthening and activity modification. Read more about [prolotherapy](/prolotherapy-for-arthritis/).

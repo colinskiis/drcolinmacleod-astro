@@ -42,11 +42,3 @@ Conventional treatment of frozen shoulder typically involves anti-inflammatory m
 ### Neural Prolotherapy
 
 Neural prolotherapy is a treatment which involves a shallow (subcutaneous) injection of a 5% dextrose (sugar) solution under the skin. This treatment focuses on relieving pressure on an impinged nerve by creating a hydrodissection (water pillow) in the surrounding area. The dextrose solution also downregulates the TRPV1 receptors on the surface of the nerve. These are the receptors which sense pain on the surface of the nerve. In my experience neural prolotherapy has been an excellent treatment for the pain and lack of mobility of frozen shoulder. Read more on [neural prolotherapy](/neural-prolotherapy-pain/).
-
-### Platelet-Rich Plasma
-
-Platelet-rich plasma uses platelets from a person's own blood to treat painful conditions. The natural abundance of growth factors in platelets are the trigger which induces and encourages healing in platelet-rich plasma treatment. Although no clinical trials have investigated the use of platelet-rich plasma for frozen shoulder a case report has been published showing encouraging results with improved mobility and pain<sup>1</sup>.
-
-### References
-
-1. Aslani H, Nourbakhsh ST, Zafarani Z, Ahmadi-Bani M, Ananloo ME, Beigy M, Salehi S. Platelet-Rich Plasma for Frozen Shoulder: A Case Report. *Arch Bone Jt Surg*. 2016 Jan;4(1):90-3.
