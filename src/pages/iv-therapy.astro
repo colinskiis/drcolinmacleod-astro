@@ -3,7 +3,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
 import BookingButton from '../components/BookingButton.astro';
-import BenefitCard from '../components/BenefitCard.astro';
 import { Check, Droplets, Zap, Atom, HeartPulse, Dna } from '@lucide/astro';
 import FAQSection from '../components/FAQSection.astro';
 import ServiceArticles from '../components/ServiceArticles.astro';
@@ -22,31 +21,6 @@ import ServiceArticles from '../components/ServiceArticles.astro';
     <p>IV vitamin and mineral drips are an increasingly popular way to boost mood, energy and nutrient status. Results can be felt the same day in some cases and can last upwards of 4-8 weeks.</p>
     <p class="text-white/80">Dr. MacLeod uses IV therapy to treat a variety of health concerns including anxiety, burnout, digestive issues and more.</p>
   </HeroSection>
-
-  <!-- Three Benefits Section -->
-  <section class="py-16 lg:py-24 bg-[#f7f7f5]">
-    <div class="section-shell">
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-        <!-- 100% Absorption -->
-        <BenefitCard title="100% Absorption">
-          <Droplets slot="icon" class="h-6 w-6" stroke-width={1.75} aria-hidden="true" />
-          <p>IV therapy introduces nutrients directly into the bloodstream and skips the digestive system where many nutrients can be lost or degraded. It is truly 100% absorption.</p>
-        </BenefitCard>
-
-        <!-- Quick Acting -->
-        <BenefitCard title="Quick Acting">
-          <Zap slot="icon" class="h-6 w-6" stroke-width={1.75} aria-hidden="true" />
-          <p>No waiting for absorption, no "first-pass" effect by the liver means your nutrients get directly into your bloodstream, tissues and cells. No waiting around for results.</p>
-        </BenefitCard>
-
-        <!-- Nutrient-Packed -->
-        <BenefitCard title="Nutrient-Packed">
-          <Atom slot="icon" class="h-6 w-6" stroke-width={1.75} aria-hidden="true" />
-          <p>We offer a variety of intravenous vitamins, minerals, trace elements, amino acids and other co-factors. Your IV treatment is selected specifically for you.</p>
-        </BenefitCard>
-      </div>
-    </div>
-  </section>
 
   <!-- Myers Cocktail & Getting Started -->
   <section class="py-16 lg:py-24 bg-emerald-50">
