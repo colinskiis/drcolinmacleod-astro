@@ -591,8 +591,8 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
           </div>
         </nav>
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="lg:hidden pb-6 overflow-hidden transition-all duration-300 ease-out max-h-0 opacity-0" role="navigation" aria-label="Mobile navigation">
-          <div class="flex flex-col space-y-1 text-emerald-100 font-semibold">
+        <div id="mobile-menu" class="lg:hidden fixed inset-x-0 bottom-0 z-30 bg-emerald-950 overflow-y-auto overscroll-contain opacity-0 invisible pointer-events-none transition-opacity duration-300 ease-out" role="navigation" aria-label="Mobile navigation">
+          <div class="flex flex-col space-y-1 px-4 pt-2 pb-10 text-emerald-100 font-semibold">
             <a href="/" class={`hover:text-white hover:bg-emerald-700/20 transition-colors py-3 px-3 text-xl rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 ${currentPath === '/' ? 'text-white bg-emerald-800/30' : ''}`} aria-current={currentPath === '/' ? 'page' : undefined}>Home</a>
             <a href="/about/" class={`hover:text-white hover:bg-emerald-700/20 transition-colors py-3 px-3 text-xl rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 ${currentPath.startsWith('/about') ? 'text-white bg-emerald-800/30' : ''}`} aria-current={currentPath.startsWith('/about') ? 'page' : undefined}>About</a>
             <a href="/new-patients/" class={`hover:text-white hover:bg-emerald-700/20 transition-colors py-3 px-3 text-xl rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 ${currentPath.startsWith('/new-patients') ? 'text-white bg-emerald-800/30' : ''}`} aria-current={currentPath.startsWith('/new-patients') ? 'page' : undefined}>New Patients</a>
@@ -636,36 +636,42 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
         const mobileMenu = document.getElementById('mobile-menu');
         const menuIcon = document.getElementById('menu-icon');
         const closeIcon = document.getElementById('close-icon');
+        const bookBar = document.getElementById('mobile-book-bar');
+        const headerNav = document.querySelector('#site-header nav');
 
-        // Close menu on page navigation (always runs)
-        if (mobileMenu) {
-          mobileMenu.style.maxHeight = '0';
-          mobileMenu.style.opacity = '0';
+        const openClasses = ['opacity-0', 'invisible', 'pointer-events-none'];
+
+        function closeMenu() {
+          if (mobileMenu) {
+            mobileMenu.classList.add(...openClasses);
+            mobileMenu.scrollTop = 0;
+            // Collapse any expanded accordions so it reopens tidy
+            mobileMenu.querySelectorAll('details[open]').forEach((d) => d.removeAttribute('open'));
+          }
+          menuIcon?.classList.remove('hidden');
+          closeIcon?.classList.add('hidden');
+          mobileMenuButton?.setAttribute('aria-expanded', 'false');
+          document.body.style.overflow = '';
+          if (bookBar) bookBar.style.display = '';
         }
-        menuIcon?.classList.remove('hidden');
-        closeIcon?.classList.add('hidden');
-        mobileMenuButton?.setAttribute('aria-expanded', 'false');
 
-        // Size the open menu to its content, capped to the viewport so it
-        // scrolls instead of overflowing (e.g. when an accordion expands).
-        function openMenuToContent() {
+        function openMenu() {
           if (!mobileMenu) return;
-          const cap = window.innerHeight - 88;
-          mobileMenu.style.maxHeight = Math.min(mobileMenu.scrollHeight, cap) + 'px';
-          mobileMenu.style.overflowY = mobileMenu.scrollHeight > cap ? 'auto' : '';
-          mobileMenu.style.opacity = '1';
+          // Anchor the panel just below the header bar and fill to the bottom.
+          const navBottom = headerNav ? Math.round(headerNav.getBoundingClientRect().bottom) : 64;
+          mobileMenu.style.top = navBottom + 'px';
+          mobileMenu.classList.remove(...openClasses);
+          menuIcon?.classList.add('hidden');
+          closeIcon?.classList.remove('hidden');
+          mobileMenuButton?.setAttribute('aria-expanded', 'true');
+          document.body.style.overflow = 'hidden';
+          if (bookBar) bookBar.style.display = 'none';
         }
 
-        // Recompute height when a Services/Conditions accordion is toggled.
-        mobileMenu?.querySelectorAll('details').forEach((d) => {
-          if ((d as HTMLElement).dataset.accordionBound) return;
-          (d as HTMLElement).dataset.accordionBound = 'true';
-          d.addEventListener('toggle', () => {
-            if (mobileMenuButton?.getAttribute('aria-expanded') === 'true') openMenuToContent();
-          });
-        });
+        // Always start closed (also resets state after View Transitions)
+        closeMenu();
 
-        // Only bind click listener once per button element instance.
+        // Only bind listeners once per button element instance.
         // View Transitions replaces the DOM, so we track per-element rather than
         // using a module-level boolean (which would prevent rebinding after navigation).
         if (!mobileMenuButton || mobileMenuButton.dataset.menuBound) return;
@@ -673,20 +679,23 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
 
         mobileMenuButton.addEventListener('click', () => {
           const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
-          mobileMenuButton.setAttribute('aria-expanded', (!isExpanded).toString());
-          menuIcon?.classList.toggle('hidden');
-          closeIcon?.classList.toggle('hidden');
-
-          if (mobileMenu) {
-            if (!isExpanded) {
-              openMenuToContent();
-            } else {
-              mobileMenu.style.maxHeight = '0';
-              mobileMenu.style.overflowY = '';
-              mobileMenu.style.opacity = '0';
-            }
-          }
+          if (isExpanded) closeMenu();
+          else openMenu();
         });
+
+        // Escape closes the menu. Bound once on document (which survives View
+        // Transitions); re-clicks the live toggle so the current handler runs.
+        if (!(window as any).__menuEscBound) {
+          (window as any).__menuEscBound = true;
+          document.addEventListener('keydown', (e) => {
+            if (e.key !== 'Escape') return;
+            const btn = document.getElementById('mobile-menu-button');
+            if (btn && btn.getAttribute('aria-expanded') === 'true') {
+              btn.click();
+              btn.focus();
+            }
+          });
+        }
       }
 
       initMobileMenu();
@@ -762,6 +771,7 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
 
     <!-- Mobile sticky booking bar -->
     <div
+      id="mobile-book-bar"
       class="lg:hidden fixed inset-x-0 bottom-0 z-40 border-t border-emerald-200/70 bg-white/95 backdrop-blur px-4 py-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] shadow-[0_-4px_20px_rgba(2,44,34,0.10)]"
       transition:persist
     >
