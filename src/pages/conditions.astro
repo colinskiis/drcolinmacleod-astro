@@ -3,237 +3,223 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
 import { ChevronRight } from '@lucide/astro';
+
+const conditionPages = [
+  {
+    title: 'Achilles Tendinitis',
+    href: '/achilles-tendinitis/',
+    description: 'Regenerative injection therapy to support tendon repair and address chronic heel and ankle pain.',
+  },
+  {
+    title: 'Carpal Tunnel Syndrome',
+    href: '/carpal-tunnel-syndrome/',
+    description: 'Neural prolotherapy and injection therapies for nerve compression, pain and hand weakness.',
+  },
+  {
+    title: 'Chronic Fatigue Syndrome',
+    href: '/chronic-fatigue-syndrome/',
+    description: 'Comprehensive assessment of fatigue patterns, recovery capacity, hormones, nutrients and immune function.',
+  },
+  {
+    title: 'Fibromyalgia',
+    href: '/fibromyalgia/',
+    description: 'Multi-modal care for widespread pain, fatigue, sleep disruption and nervous system sensitivity.',
+  },
+  {
+    title: 'Frozen Shoulder',
+    href: '/frozen-shoulder/',
+    description: 'Regenerative injection therapy to support range of motion and recovery from adhesive capsulitis.',
+  },
+  {
+    title: "Golfer's Elbow",
+    href: '/golfers-elbow/',
+    description: 'Assessment and regenerative care for persistent medial elbow tendon pain.',
+  },
+  {
+    title: 'Herniated Disc',
+    href: '/herniated-disc/',
+    description: 'Supportive care for disc-related pain, nerve irritation and recovery planning.',
+  },
+  {
+    title: 'Low Back Pain',
+    href: '/low-back-pain/',
+    description: 'Regenerative injection therapies targeting disc, facet joint and ligament sources of back pain.',
+  },
+  {
+    title: 'Migraine Headaches',
+    href: '/migraine-headache/',
+    description: 'Supportive care for migraine patterns, triggers, prevention and nervous system recovery.',
+  },
+  {
+    title: 'Osteoarthritis',
+    href: '/osteoarthritis/',
+    description: 'Prolotherapy-based care for joint pain, stiffness and mobility limitations.',
+  },
+  {
+    title: 'Plantar Fasciitis',
+    href: '/plantar-fasciitis/',
+    description: 'Regenerative injections to support plantar fascia healing and address persistent heel pain.',
+  },
+  {
+    title: 'Rotator Cuff & Shoulder Impingement',
+    href: '/rotator-cuff-shoulder-impingement/',
+    description: 'Regenerative and supportive care for shoulder pain, tendon irritation and restricted motion.',
+  },
+  {
+    title: "Runner's Knee",
+    href: '/runners-knee/',
+    description: 'Assessment and care options for patellofemoral pain, tracking issues and chronic knee irritation.',
+  },
+  {
+    title: 'SI Joint Dysfunction',
+    href: '/si-joint-dysfunction/',
+    description: 'Evaluation and regenerative treatment for one-sided low back, buttock and pelvic pain.',
+  },
+  {
+    title: 'Tennis Elbow',
+    href: '/tennis-elbow/',
+    description: 'Prolotherapy to support tendon repair and address chronic lateral elbow pain.',
+  },
+  {
+    title: 'TMJ Dysfunction',
+    href: '/tmj-dysfunction/',
+    description: 'Neural prolotherapy and injection therapy for jaw pain, clicking, locking and restricted movement.',
+  },
+  {
+    title: 'Whiplash & Neck Pain',
+    href: '/whiplash-neck-pain/',
+    description: 'Supportive care for neck pain, soft tissue injury and post-whiplash recovery.',
+  },
+];
+
+const relatedGuides = [
+  {
+    title: 'Anxiety',
+    href: '/articles/natural-anxiety-management/',
+    description: 'A guide to root-cause factors that can influence anxiety, including nutrition, hormones and nervous system regulation.',
+  },
+  {
+    title: 'Asthma & Respiratory Health',
+    href: '/articles/asthma-respiratory-health-natural/',
+    description: 'Evidence-informed ways to support respiratory health, manage triggers and reduce inflammatory burden.',
+  },
+  {
+    title: 'Autoimmune Conditions',
+    href: '/articles/autoimmune-conditions-naturopathic-perspective/',
+    description: 'A broader naturopathic perspective on inflammation, immune regulation and contributing factors.',
+  },
+  {
+    title: 'Blood Pressure',
+    href: '/articles/blood-pressure-natural-strategies/',
+    description: 'Lifestyle and root-cause strategies that can support cardiometabolic health alongside medical care.',
+  },
+  {
+    title: 'Blood Sugar & Diabetes',
+    href: '/articles/diabetes-prevention-blood-sugar-balance/',
+    description: 'Natural strategies for blood sugar stability, insulin sensitivity and long-term metabolic health.',
+  },
+  {
+    title: 'Depression',
+    href: '/articles/natural-depression-support/',
+    description: 'A guide to nutrition, sleep, inflammation, gut-brain factors and other contributors to mood.',
+  },
+  {
+    title: 'Digestive Health',
+    href: '/articles/digestive-health-natural-approaches/',
+    description: 'A guide to IBS, IBD, dysbiosis, food sensitivities and digestive function.',
+  },
+  {
+    title: 'IBS & IBD',
+    href: '/articles/ibs-ibd-natural-treatment/',
+    description: 'Testing and supportive strategies for inflammatory and functional bowel conditions.',
+  },
+  {
+    title: 'Immune Support',
+    href: '/articles/immune-support-natural-approaches/',
+    description: 'A guide to resilience, recovery and immune health fundamentals.',
+  },
+  {
+    title: 'Menopause & Perimenopause',
+    href: '/articles/menopause-perimenopause-natural-approaches/',
+    description: 'A guide to hot flashes, mood changes, sleep disruption and hormonal transition support.',
+  },
+  {
+    title: "Men's Hormonal Health",
+    href: '/articles/mens-hormonal-health-testosterone/',
+    description: 'A guide to testosterone, DHEA, energy, mood and vitality assessment.',
+  },
+  {
+    title: 'PCOS',
+    href: '/articles/pcos-natural-approaches/',
+    description: 'A guide to insulin resistance, hormonal imbalance and ovarian health.',
+  },
+  {
+    title: 'Skin Conditions',
+    href: '/articles/acne-eczema-psoriasis-treatments/',
+    description: 'A guide to acne, eczema and psoriasis through gut, hormone and nutrition factors.',
+  },
+];
 ---
 
 <BaseLayout
   title="Conditions We Treat"
-  description="Natural treatment options for musculoskeletal pain, neurological conditions, chronic fatigue and general health concerns using naturopathic medicine in Halifax, Nova Scotia."
+  description="Naturopathic support for musculoskeletal pain, chronic fatigue, digestive health, hormones, mood, respiratory health and other concerns in Bedford and Halifax, Nova Scotia."
   focusKeyword="conditions treated Halifax naturopathic"
 >
   <HeroSection title="Conditions" centered compact>
-    Natural, evidence-based treatments for a wide range of acute and chronic health conditions using naturopathic medicine approaches.
+    Support for acute and chronic health concerns using naturopathic assessment, lifestyle medicine, nutrition, IV therapy and regenerative injection approaches where appropriate.
   </HeroSection>
 
   <section class="py-16 lg:py-24 bg-white">
     <div class="section-shell">
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 reveal">
+      <div class="max-w-3xl mb-10 reveal">
+        <p class="pill mb-4">Condition Pages</p>
+        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">Care Information by Condition</h2>
+        <p class="text-lg text-slate-600">
+          These pages describe specific conditions seen in practice and the types of assessment or care that may be considered.
+        </p>
+      </div>
 
-        <a href="/achilles-tendinitis" class="group flex flex-col gap-1 p-4 rounded-xl border border-emerald-50 hover:border-emerald-200 hover:bg-emerald-50/40 transition-all">
-          <span class="flex items-center gap-2 font-semibold text-emerald-950 group-hover:text-emerald-700 transition-colors">
-            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
-            Achilles Tendinitis
-          </span>
-          <span class="text-sm text-slate-500 pl-6">Regenerative injection therapy to repair tendon damage and resolve chronic heel and ankle pain.</span>
-        </a>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 reveal reveal-delay-100">
+        {conditionPages.map((condition) => (
+          <a href={condition.href} class="site-card-interactive group flex h-full flex-col gap-3 p-5 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
+            <span class="inline-flex w-fit items-center rounded-full bg-emerald-50 px-2.5 py-1 text-xs font-semibold uppercase tracking-wide text-emerald-800">
+              Condition page
+            </span>
+            <span class="flex items-start gap-2 text-lg font-semibold text-emerald-950 group-hover:text-emerald-700 transition-colors">
+              <ChevronRight class="mt-1 w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" aria-hidden="true" />
+              {condition.title}
+            </span>
+            <span class="text-sm text-slate-600 leading-relaxed">{condition.description}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
 
-        <a href="/articles/natural-anxiety-management" class="group flex flex-col gap-1 p-4 rounded-xl border border-emerald-50 hover:border-emerald-200 hover:bg-emerald-50/40 transition-all">
-          <span class="flex items-center gap-2 font-semibold text-emerald-950 group-hover:text-emerald-700 transition-colors">
-            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
-            Anxiety
-          </span>
-          <span class="text-sm text-slate-500 pl-6">Natural treatment addressing root causes including nutrient deficiencies, hormonal imbalances and nervous system dysregulation.</span>
-        </a>
+  <section class="py-16 lg:py-24 bg-emerald-50">
+    <div class="section-shell">
+      <div class="max-w-3xl mb-10 reveal">
+        <p class="pill mb-4">Related Guides</p>
+        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">Broader Health Topics</h2>
+        <p class="text-lg text-slate-600">
+          These are educational article guides, not condition landing pages. They are useful when a concern overlaps with hormones, mood, digestion, immunity or cardiometabolic health.
+        </p>
+      </div>
 
-        <a href="/articles/asthma-respiratory-health-natural" class="group flex flex-col gap-1 p-4 rounded-xl border border-emerald-50 hover:border-emerald-200 hover:bg-emerald-50/40 transition-all">
-          <span class="flex items-center gap-2 font-semibold text-emerald-950 group-hover:text-emerald-700 transition-colors">
-            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
-            Asthma & Respiratory Health
-          </span>
-          <span class="text-sm text-slate-500 pl-6">Natural approaches to reduce airway inflammation and improve lung function.</span>
-        </a>
-
-        <a href="/articles/autoimmune-conditions-naturopathic-perspective" class="group flex flex-col gap-1 p-4 rounded-xl border border-emerald-50 hover:border-emerald-200 hover:bg-emerald-50/40 transition-all">
-          <span class="flex items-center gap-2 font-semibold text-emerald-950 group-hover:text-emerald-700 transition-colors">
-            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
-            Autoimmune Conditions
-          </span>
-          <span class="text-sm text-slate-500 pl-6">Naturopathic protocols to modulate immune function, reduce inflammation and address dietary and environmental triggers.</span>
-        </a>
-
-        <a href="/articles/blood-pressure-natural-strategies" class="group flex flex-col gap-1 p-4 rounded-xl border border-emerald-50 hover:border-emerald-200 hover:bg-emerald-50/40 transition-all">
-          <span class="flex items-center gap-2 font-semibold text-emerald-950 group-hover:text-emerald-700 transition-colors">
-            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
-            Blood Pressure
-          </span>
-          <span class="text-sm text-slate-500 pl-6">Evidence-based natural interventions including dietary modification, targeted nutrients and herbal medicine.</span>
-        </a>
-
-        <a href="/articles/diabetes-prevention-blood-sugar-balance" class="group flex flex-col gap-1 p-4 rounded-xl border border-emerald-50 hover:border-emerald-200 hover:bg-emerald-50/40 transition-all">
-          <span class="flex items-center gap-2 font-semibold text-emerald-950 group-hover:text-emerald-700 transition-colors">
-            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
-            Blood Sugar & Diabetes
-          </span>
-          <span class="text-sm text-slate-500 pl-6">Natural strategies to stabilize blood sugar, improve insulin sensitivity and reduce long-term cardiovascular risk.</span>
-        </a>
-
-        <a href="/carpal-tunnel-syndrome" class="group flex flex-col gap-1 p-4 rounded-xl border border-emerald-50 hover:border-emerald-200 hover:bg-emerald-50/40 transition-all">
-          <span class="flex items-center gap-2 font-semibold text-emerald-950 group-hover:text-emerald-700 transition-colors">
-            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
-            Carpal Tunnel Syndrome
-          </span>
-          <span class="text-sm text-slate-500 pl-6">Neural prolotherapy and injection therapies to reduce nerve compression, pain and hand weakness.</span>
-        </a>
-
-        <a href="/chronic-fatigue-syndrome" class="group flex flex-col gap-1 p-4 rounded-xl border border-emerald-50 hover:border-emerald-200 hover:bg-emerald-50/40 transition-all">
-          <span class="flex items-center gap-2 font-semibold text-emerald-950 group-hover:text-emerald-700 transition-colors">
-            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
-            Chronic Fatigue Syndrome
-          </span>
-          <span class="text-sm text-slate-500 pl-6">Comprehensive assessment and treatment targeting mitochondrial dysfunction, hormonal imbalances and immune dysregulation.</span>
-        </a>
-
-        <a href="/articles/natural-depression-support" class="group flex flex-col gap-1 p-4 rounded-xl border border-emerald-50 hover:border-emerald-200 hover:bg-emerald-50/40 transition-all">
-          <span class="flex items-center gap-2 font-semibold text-emerald-950 group-hover:text-emerald-700 transition-colors">
-            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
-            Depression
-          </span>
-          <span class="text-sm text-slate-500 pl-6">Natural mood support through nutritional medicine, gut-brain axis optimization and herbal medicine.</span>
-        </a>
-
-        <a href="/articles/digestive-health-natural-approaches" class="group flex flex-col gap-1 p-4 rounded-xl border border-emerald-50 hover:border-emerald-200 hover:bg-emerald-50/40 transition-all">
-          <span class="flex items-center gap-2 font-semibold text-emerald-950 group-hover:text-emerald-700 transition-colors">
-            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
-            Digestive Health
-          </span>
-          <span class="text-sm text-slate-500 pl-6">Testing and treatment for IBS, IBD, dysbiosis, food sensitivities and digestive enzyme insufficiency.</span>
-        </a>
-
-        <a href="/fibromyalgia" class="group flex flex-col gap-1 p-4 rounded-xl border border-emerald-50 hover:border-emerald-200 hover:bg-emerald-50/40 transition-all">
-          <span class="flex items-center gap-2 font-semibold text-emerald-950 group-hover:text-emerald-700 transition-colors">
-            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
-            Fibromyalgia
-          </span>
-          <span class="text-sm text-slate-500 pl-6">Multi-modal treatment including IV therapy, nutritional medicine and pain management for widespread pain and fatigue.</span>
-        </a>
-
-        <a href="/frozen-shoulder" class="group flex flex-col gap-1 p-4 rounded-xl border border-emerald-50 hover:border-emerald-200 hover:bg-emerald-50/40 transition-all">
-          <span class="flex items-center gap-2 font-semibold text-emerald-950 group-hover:text-emerald-700 transition-colors">
-            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
-            Frozen Shoulder
-          </span>
-          <span class="text-sm text-slate-500 pl-6">Regenerative injection therapy to restore range of motion and resolve chronic adhesive capsulitis.</span>
-        </a>
-
-        <a href="/herniated-disc" class="group flex flex-col gap-1 p-4 rounded-xl border border-emerald-50 hover:border-emerald-200 hover:bg-emerald-50/40 transition-all">
-          <span class="flex items-center gap-2 font-semibold text-emerald-950 group-hover:text-emerald-700 transition-colors">
-            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
-            Herniated Disc
-          </span>
-          <span class="text-sm text-slate-500 pl-6">Regenerative injection therapy and supportive care to reduce nerve compression, relieve radiating pain and support recovery.</span>
-        </a>
-
-        <a href="/articles/ibs-ibd-natural-treatment" class="group flex flex-col gap-1 p-4 rounded-xl border border-emerald-50 hover:border-emerald-200 hover:bg-emerald-50/40 transition-all">
-          <span class="flex items-center gap-2 font-semibold text-emerald-950 group-hover:text-emerald-700 transition-colors">
-            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
-            IBS & IBD
-          </span>
-          <span class="text-sm text-slate-500 pl-6">Targeted testing and natural treatment protocols for inflammatory and functional bowel conditions.</span>
-        </a>
-
-        <a href="/articles/immune-support-natural-approaches" class="group flex flex-col gap-1 p-4 rounded-xl border border-emerald-50 hover:border-emerald-200 hover:bg-emerald-50/40 transition-all">
-          <span class="flex items-center gap-2 font-semibold text-emerald-950 group-hover:text-emerald-700 transition-colors">
-            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
-            Immune Support
-          </span>
-          <span class="text-sm text-slate-500 pl-6">Nutritional medicine, IV therapy and herbal medicine to build immune resilience and reduce vulnerability to illness.</span>
-        </a>
-
-        <a href="/low-back-pain" class="group flex flex-col gap-1 p-4 rounded-xl border border-emerald-50 hover:border-emerald-200 hover:bg-emerald-50/40 transition-all">
-          <span class="flex items-center gap-2 font-semibold text-emerald-950 group-hover:text-emerald-700 transition-colors">
-            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
-            Low Back Pain
-          </span>
-          <span class="text-sm text-slate-500 pl-6">Regenerative injection therapies targeting disc, facet joint and ligament sources of acute and chronic low back pain.</span>
-        </a>
-
-        <a href="/articles/menopause-perimenopause-natural-approaches" class="group flex flex-col gap-1 p-4 rounded-xl border border-emerald-50 hover:border-emerald-200 hover:bg-emerald-50/40 transition-all">
-          <span class="flex items-center gap-2 font-semibold text-emerald-950 group-hover:text-emerald-700 transition-colors">
-            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
-            Menopause & Perimenopause
-          </span>
-          <span class="text-sm text-slate-500 pl-6">Natural hormone-balancing strategies for hot flashes, mood changes, sleep disruption and bone health.</span>
-        </a>
-
-        <a href="/articles/mens-hormonal-health-testosterone" class="group flex flex-col gap-1 p-4 rounded-xl border border-emerald-50 hover:border-emerald-200 hover:bg-emerald-50/40 transition-all">
-          <span class="flex items-center gap-2 font-semibold text-emerald-950 group-hover:text-emerald-700 transition-colors">
-            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
-            Men's Hormonal Health
-          </span>
-          <span class="text-sm text-slate-500 pl-6">Comprehensive testosterone and DHEA assessment with natural treatment for energy, mood and vitality.</span>
-        </a>
-
-        <a href="/migraine-headache" class="group flex flex-col gap-1 p-4 rounded-xl border border-emerald-50 hover:border-emerald-200 hover:bg-emerald-50/40 transition-all">
-          <span class="flex items-center gap-2 font-semibold text-emerald-950 group-hover:text-emerald-700 transition-colors">
-            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
-            Migraine Headaches
-          </span>
-          <span class="text-sm text-slate-500 pl-6">IV therapy, neural prolotherapy and nutritional medicine for migraine prevention and frequency reduction.</span>
-        </a>
-
-        <a href="/osteoarthritis" class="group flex flex-col gap-1 p-4 rounded-xl border border-emerald-50 hover:border-emerald-200 hover:bg-emerald-50/40 transition-all">
-          <span class="flex items-center gap-2 font-semibold text-emerald-950 group-hover:text-emerald-700 transition-colors">
-            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
-            Osteoarthritis
-          </span>
-          <span class="text-sm text-slate-500 pl-6">Prolotherapy injections to stimulate cartilage repair, reduce joint pain and improve mobility.</span>
-        </a>
-
-        <a href="/articles/pcos-natural-approaches" class="group flex flex-col gap-1 p-4 rounded-xl border border-emerald-50 hover:border-emerald-200 hover:bg-emerald-50/40 transition-all">
-          <span class="flex items-center gap-2 font-semibold text-emerald-950 group-hover:text-emerald-700 transition-colors">
-            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
-            PCOS
-          </span>
-          <span class="text-sm text-slate-500 pl-6">Naturopathic treatment addressing insulin resistance, hormonal imbalances and ovarian health.</span>
-        </a>
-
-        <a href="/plantar-fasciitis" class="group flex flex-col gap-1 p-4 rounded-xl border border-emerald-50 hover:border-emerald-200 hover:bg-emerald-50/40 transition-all">
-          <span class="flex items-center gap-2 font-semibold text-emerald-950 group-hover:text-emerald-700 transition-colors">
-            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
-            Plantar Fasciitis
-          </span>
-          <span class="text-sm text-slate-500 pl-6">Regenerative injections to stimulate healing of the plantar fascia and eliminate persistent heel pain.</span>
-        </a>
-
-        <a href="/runners-knee" class="group flex flex-col gap-1 p-4 rounded-xl border border-emerald-50 hover:border-emerald-200 hover:bg-emerald-50/40 transition-all">
-          <span class="flex items-center gap-2 font-semibold text-emerald-950 group-hover:text-emerald-700 transition-colors">
-            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
-            Runner's Knee
-          </span>
-          <span class="text-sm text-slate-500 pl-6">Assessment and regenerative treatment options for patellofemoral pain, tracking issues and chronic knee irritation.</span>
-        </a>
-
-        <a href="/articles/acne-eczema-psoriasis-treatments" class="group flex flex-col gap-1 p-4 rounded-xl border border-emerald-50 hover:border-emerald-200 hover:bg-emerald-50/40 transition-all">
-          <span class="flex items-center gap-2 font-semibold text-emerald-950 group-hover:text-emerald-700 transition-colors">
-            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
-            Skin Conditions
-          </span>
-          <span class="text-sm text-slate-500 pl-6">Natural treatment for acne, eczema and psoriasis through gut health optimization, hormonal balancing and targeted nutrition.</span>
-        </a>
-
-        <a href="/si-joint-dysfunction" class="group flex flex-col gap-1 p-4 rounded-xl border border-emerald-50 hover:border-emerald-200 hover:bg-emerald-50/40 transition-all">
-          <span class="flex items-center gap-2 font-semibold text-emerald-950 group-hover:text-emerald-700 transition-colors">
-            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
-            SI Joint Dysfunction
-          </span>
-          <span class="text-sm text-slate-500 pl-6">Evaluation and regenerative treatment for one-sided low back, buttock and pelvic pain from sacroiliac joint dysfunction.</span>
-        </a>
-
-        <a href="/tennis-elbow" class="group flex flex-col gap-1 p-4 rounded-xl border border-emerald-50 hover:border-emerald-200 hover:bg-emerald-50/40 transition-all">
-          <span class="flex items-center gap-2 font-semibold text-emerald-950 group-hover:text-emerald-700 transition-colors">
-            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
-            Tennis Elbow
-          </span>
-          <span class="text-sm text-slate-500 pl-6">Prolotherapy to accelerate tendon repair and resolve chronic lateral elbow pain that hasn't responded to other treatments.</span>
-        </a>
-
-        <a href="/tmj-dysfunction" class="group flex flex-col gap-1 p-4 rounded-xl border border-emerald-50 hover:border-emerald-200 hover:bg-emerald-50/40 transition-all">
-          <span class="flex items-center gap-2 font-semibold text-emerald-950 group-hover:text-emerald-700 transition-colors">
-            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" />
-            TMJ Dysfunction
-          </span>
-          <span class="text-sm text-slate-500 pl-6">Neural prolotherapy and injection therapy for jaw pain, clicking, locking and restricted jaw movement.</span>
-        </a>
-
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 reveal reveal-delay-100">
+        {relatedGuides.map((guide) => (
+          <a href={guide.href} class="site-card-interactive group flex h-full flex-col gap-3 p-5 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
+            <span class="inline-flex w-fit items-center rounded-full bg-white px-2.5 py-1 text-xs font-semibold uppercase tracking-wide text-emerald-800 ring-1 ring-emerald-100">
+              Article guide
+            </span>
+            <span class="flex items-start gap-2 text-lg font-semibold text-emerald-950 group-hover:text-emerald-700 transition-colors">
+              <ChevronRight class="mt-1 w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" aria-hidden="true" />
+              {guide.title}
+            </span>
+            <span class="text-sm text-slate-600 leading-relaxed">{guide.description}</span>
+          </a>
+        ))}
       </div>
     </div>
   </section>
@@ -241,9 +227,9 @@ import { ChevronRight } from '@lucide/astro';
   <!-- CTA Section -->
   <section class="bg-emerald-950 py-16 lg:py-24">
     <div class="section-shell text-center">
-      <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-6">Don't See Your Condition Listed?</h2>
+      <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">Don't See Your Condition Listed?</h2>
       <p class="text-lg sm:text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-        Dr. MacLeod treats a wide range of health conditions using naturopathic medicine. Contact us to discuss how natural therapies can help with your specific health concerns.
+        Dr. MacLeod works with a wide range of health concerns. Contact us to discuss whether naturopathic care is a fit for your specific situation.
       </p>
       <div class="flex justify-center">
         <CTAButton source="conditions-cta" />

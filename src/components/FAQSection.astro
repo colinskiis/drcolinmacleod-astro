@@ -19,13 +19,13 @@ const {
   bg = 'emerald',
   includeSchema = true,
   sectionClass,
-  headingClass = 'text-3xl sm:text-4xl font-serif font-bold text-emerald-950',
+  headingClass = 'text-3xl sm:text-4xl font-serif font-medium text-emerald-950',
 } = Astro.props;
 
 const bgClass = {
   white: 'bg-white',
   emerald: 'bg-emerald-50',
-  gray: 'bg-slate-50',
+  gray: 'bg-emerald-50',
 }[bg];
 
 const sectionClasses = sectionClass ?? `py-16 lg:py-24 ${bgClass}`;

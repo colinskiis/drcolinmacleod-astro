@@ -1,10 +1,10 @@
 ---
 import { type CollectionEntry, getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import CTAButton from '../../components/CTAButton.astro';
 import FAQSection from '../../components/FAQSection.astro';
 import RelatedArticles from '../../components/RelatedArticles.astro';
 import { readingTime } from '../../lib/readingTime';
+import GithubSlugger from 'github-slugger';
 
 export async function getStaticPaths() {
   const articles = await getCollection('articles', ({ data }) => data.draft !== true);
@@ -24,6 +24,15 @@ const heroImage = article.data.heroImage;
 const heroWebp =
   heroImage?.replace(/\.(png|jpe?g)$/i, '.webp') ?? null;
 const heroUsesWebp = heroImage?.endsWith('.webp') ?? false;
+const slugger = new GithubSlugger();
+const tocItems = Array.from(article.body.matchAll(/^##\s+(.+)$/gm))
+  .map((match) => match[1].replace(/<\/?[^>]+>/g, '').replace(/[*_`]/g, '').trim())
+  .filter((heading) => heading && heading.toLowerCase() !== 'references')
+  .map((heading) => ({
+    title: heading,
+    id: slugger.slug(heading),
+  }));
+const showToc = tocItems.length >= 4;
 
 // SEO preparation
 const seoTitle = article.data.seo?.title || article.data.title;
@@ -128,7 +137,7 @@ const articleSchema = {
 
         <!-- Article Header -->
         <header class="mb-12 max-w-[70ch]">
-          <h1 class="text-4xl sm:text-5xl font-serif font-bold text-emerald-950 mb-6 leading-tight tracking-tight">
+          <h1 class="text-4xl sm:text-5xl font-serif font-medium text-emerald-950 mb-6 leading-tight tracking-tight">
             {article.data.title}
           </h1>
           
@@ -179,9 +188,37 @@ const articleSchema = {
           </div>
         )}
 
+        {showToc && (
+          <details class="site-card mb-8 p-5 lg:hidden">
+            <summary class="cursor-pointer text-sm font-semibold text-emerald-950">On This Page</summary>
+            <nav class="mt-4 space-y-2" aria-label="Article sections">
+              {tocItems.map((item) => (
+                <a href={`#${item.id}`} class="block text-sm text-slate-600 hover:text-emerald-700 transition-colors">
+                  {item.title}
+                </a>
+              ))}
+            </nav>
+          </details>
+        )}
+
         <!-- Article Content -->
-        <div class="prose max-w-[70ch]">
-          <Content />
+        <div class={showToc ? 'grid lg:grid-cols-[minmax(0,1fr)_16rem] gap-10 items-start' : ''}>
+          <div class="prose max-w-[70ch]">
+            <Content />
+          </div>
+
+          {showToc && (
+            <aside class="site-card sticky top-32 hidden p-5 lg:block">
+              <p class="text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-4">On This Page</p>
+              <nav class="space-y-2" aria-label="Article sections">
+                {tocItems.map((item) => (
+                  <a href={`#${item.id}`} class="block text-sm leading-snug text-slate-600 hover:text-emerald-700 transition-colors">
+                    {item.title}
+                  </a>
+                ))}
+              </nav>
+            </aside>
+          )}
         </div>
 
         {article.data.faq && article.data.faq.length > 0 && (
@@ -214,7 +251,7 @@ const articleSchema = {
                 decoding="async"
               />
               <div class="flex-1">
-                <h3 class="text-xl font-serif font-bold text-emerald-950 mb-2">About the Author</h3>
+                <h3 class="text-xl font-serif font-medium text-emerald-950 mb-2">About the Author</h3>
                 <p class="text-slate-600 mb-4">
                   Dr. Colin MacLeod ND is a licensed naturopathic doctor in Halifax, Nova Scotia. He has a special interest in blood test interpretation, natural pain solutions, IV therapy and the many benefits of exercise.
                 </p>
@@ -245,19 +282,6 @@ const articleSchema = {
       </div>
     </div>
   </article>
-
-  <!-- Related Content CTA -->
-  <section class="bg-emerald-950 py-16 lg:py-24">
-    <div class="section-shell">
-      <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-6">Ready to Explore Natural Health Solutions?</h2>
-        <p class="text-lg sm:text-xl text-white/90 mb-8 leading-relaxed">
-          Dr. MacLeod can help you understand how naturopathic approaches might benefit your specific health concerns.
-        </p>
-        <CTAButton source={`article-cta-${article.slug}`} />
-      </div>
-    </div>
-  </section>
 
   <!-- Reading progress script -->
   <script>

@@ -111,7 +111,7 @@ const pricingGroups = [
     <div class="section-shell">
       <div class="mb-8 max-w-2xl reveal">
         <p class="pill mb-4">Major Service Areas</p>
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Find the right starting point</h2>
+        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">Find the right starting point</h2>
         <p class="text-lg text-slate-600">
           Start with one of the main service areas below, or browse the full service directory.
         </p>
@@ -127,7 +127,7 @@ const pricingGroups = [
             <div class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-50 text-emerald-700 ring-1 ring-emerald-100 transition-colors group-hover:bg-emerald-100">
               <Icon class="h-6 w-6" aria-hidden="true" />
             </div>
-            <h3 class="mb-3 text-xl font-serif font-semibold text-emerald-950 group-hover:text-emerald-700 transition-colors">{title}</h3>
+            <h3 class="mb-3 text-xl font-serif font-medium text-emerald-950 group-hover:text-emerald-700 transition-colors">{title}</h3>
             <p class="text-sm text-slate-600 leading-relaxed">{description}</p>
             <span class="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-emerald-700">
               View service
@@ -143,7 +143,7 @@ const pricingGroups = [
   <section class="py-14 lg:py-20 bg-[#f7f7f5]">
     <div class="section-shell">
       <div class="mb-8 text-center reveal">
-        <h2 class="text-2xl sm:text-3xl font-serif font-bold text-emerald-950 mb-2">All Services</h2>
+        <h2 class="text-2xl sm:text-3xl font-serif font-medium text-emerald-950 mb-2">All Services</h2>
         <p class="text-slate-600">Browse our complete list of treatments and services</p>
       </div>
 
@@ -151,7 +151,7 @@ const pricingGroups = [
         <div class="grid divide-y divide-emerald-100 md:grid-cols-3 md:divide-x md:divide-y-0">
           {serviceGroups.map((group) => (
             <div class="p-6">
-              <h3 class="mb-4 text-base font-serif font-semibold text-emerald-950">{group.title}</h3>
+              <h3 class="mb-4 text-base font-serif font-medium text-emerald-950">{group.title}</h3>
               <ul class="space-y-1">
                 {group.items.map((item) => (
                   <li>
@@ -176,7 +176,7 @@ const pricingGroups = [
   <section id="pricing" class="py-14 sm:py-16 lg:py-20 bg-white">
     <div class="section-shell">
       <div class="text-center mb-10 reveal">
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">Service Pricing</h2>
+        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">Service Pricing</h2>
         <p class="text-lg text-slate-600 max-w-3xl mx-auto">
           Most services are eligible for insurance direct-billing
         </p>
@@ -189,7 +189,7 @@ const pricingGroups = [
             groupIndex !== pricingGroups.length - 1 && 'border-b border-emerald-100',
           ]}>
             <div class="bg-emerald-50/70 px-5 py-4 md:px-6">
-              <h3 class="font-serif font-semibold text-emerald-950">{group.title}</h3>
+              <h3 class="font-serif font-medium text-emerald-950">{group.title}</h3>
             </div>
             <ul class="divide-y divide-slate-100">
               {group.rows.map(([label, price]) => (
@@ -209,7 +209,7 @@ const pricingGroups = [
   <section class="py-16 lg:py-24 bg-emerald-950">
     <div class="section-shell">
       <div class="text-center max-w-3xl mx-auto reveal">
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-6">Not Sure Where to Start?</h2>
+        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">Not Sure Where to Start?</h2>
         <p class="text-lg text-white/80 mb-8">
           Book an initial consultation to discuss your health concerns and determine which services are right for you.
         </p>

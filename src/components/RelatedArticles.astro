@@ -60,14 +60,14 @@ const heading = scoredArticles.length > 0 ? 'Related Articles' : 'More from Dr. 
 
 {relatedArticles.length > 0 && (
   <div>
-    <h3 class="text-2xl font-serif font-bold text-emerald-950 mb-4">{heading}</h3>
+    <h3 class="text-2xl font-serif font-medium text-emerald-950 mb-4">{heading}</h3>
     <div>
       {relatedArticles.map((article) => (
         <a
           href={`/articles/${article.slug}`}
           class="group flex items-center gap-4 py-4 border-b border-slate-100 last:border-0 hover:text-emerald-700 transition-colors"
         >
-          <span class="flex-1 font-serif font-semibold text-slate-900 group-hover:text-emerald-700 transition-colors leading-snug">
+          <span class="flex-1 font-serif font-medium text-slate-900 group-hover:text-emerald-700 transition-colors leading-snug">
             {article.data.title}
           </span>
           <svg class="w-4 h-4 text-slate-300 group-hover:text-emerald-600 transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">

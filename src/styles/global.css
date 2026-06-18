@@ -1,13 +1,11 @@
 /* Brand foundations - Self-hosted fonts via Fontsource */
-/* Only load weights actually used: Manrope 300,400,500,600,700; Playfair Display 500,600,700 */
+/* Only load weights actually used: Manrope 300,400,500,600,700; Playfair Display 500 */
 @import '@fontsource/manrope/300.css';
 @import '@fontsource/manrope/400.css';
 @import '@fontsource/manrope/500.css';
 @import '@fontsource/manrope/600.css';
 @import '@fontsource/manrope/700.css';
 @import '@fontsource/playfair-display/500.css';
-@import '@fontsource/playfair-display/600.css';
-@import '@fontsource/playfair-display/700.css';
 
 @tailwind base;
 @tailwind components;
@@ -58,7 +56,7 @@
     font-family: 'Playfair Display', 'Libre Baskerville', serif;
     color: var(--ink);
     letter-spacing: -0.02em;
-    font-weight: 700;
+    font-weight: 500;
   }
 
   h1 {
@@ -81,14 +79,12 @@
     @apply mx-auto px-5 relative w-full max-w-6xl;
   }
 
-  .card-glass {
-    background: linear-gradient(135deg,
-        rgba(236, 253, 245, 0.98) 0%,
-        rgba(220, 252, 231, 0.95) 25%,
-        rgba(254, 249, 239, 0.92) 50%,
-        rgba(253, 242, 233, 0.95) 75%,
-        rgba(254, 243, 239, 0.98) 100%);
-    @apply border border-white/60 shadow-xl shadow-slate-900/5 backdrop-blur-xl rounded-3xl;
+  .site-card {
+    @apply rounded-2xl border border-emerald-100 bg-white shadow-sm shadow-emerald-900/5;
+  }
+
+  .site-card-interactive {
+    @apply rounded-2xl border border-emerald-100 bg-white shadow-sm shadow-emerald-900/5 transition-all duration-200 hover:-translate-y-0.5 hover:border-emerald-200 hover:shadow-lg hover:shadow-emerald-900/10;
   }
 
   .pill {
@@ -568,4 +564,3 @@ details[open]::details-content {
     radial-gradient(ellipse 50% 30% at 50% 80%, rgba(16, 185, 129, 0.06) 0%, transparent 50%),
     linear-gradient(180deg, #022c22 0%, #064e3b 40%, #065f46 100%);
 }
-

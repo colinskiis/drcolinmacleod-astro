@@ -23,7 +23,7 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? '';
         
         <!-- Contact Form -->
         <div>
-          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-6">Send Us a Message</h2>
+          <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6">Send Us a Message</h2>
           <p class="text-slate-600 mb-8">
             Use this form to ask questions about treatments, scheduling or general inquiries. We'll respond within 1-2 business days.
           </p>
@@ -82,7 +82,7 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? '';
               ></textarea>
             </div>
 
-            <div class="rounded-lg bg-slate-50 p-4 text-sm leading-relaxed text-slate-700">
+            <div class="rounded-lg bg-emerald-50 p-4 text-sm leading-relaxed text-slate-700">
               This form is for general inquiries only and is not monitored for medical emergencies. Please avoid sending detailed personal health information here.
             </div>
 
@@ -123,9 +123,18 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? '';
         <!-- Contact Info & Booking -->
         <div class="space-y-6">
 
+          <!-- Book Online -->
+          <div class="bg-emerald-950 rounded-2xl p-6 shadow-lg text-white">
+            <h3 class="text-xl font-serif font-medium text-white mb-3">Book Online</h3>
+            <p class="text-emerald-100 mb-5">
+              Ready to schedule? Online booking is the fastest way to secure your appointment with Dr. MacLeod.
+            </p>
+            <BookingButton variant="hero" size="lg" source="contact" />
+          </div>
+
           <!-- Location -->
           <div class="bg-white border border-emerald-100 rounded-2xl p-6 shadow-sm card-hover">
-            <h3 class="text-xl font-serif font-bold text-emerald-950 mb-4">Visit Us</h3>
+            <h3 class="text-xl font-serif font-medium text-emerald-950 mb-4">Visit Us</h3>
             <div class="flex items-start mb-4">
               <svg class="w-5 h-5 text-emerald-700 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
@@ -182,7 +191,7 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? '';
 
           <!-- Hours -->
           <div class="bg-white border border-emerald-100 rounded-2xl p-6 shadow-sm card-hover">
-            <h3 class="text-xl font-serif font-bold text-emerald-950 mb-4">Hours</h3>
+            <h3 class="text-xl font-serif font-medium text-emerald-950 mb-4">Hours</h3>
             <div class="flex items-start">
               <svg class="w-5 h-5 text-emerald-700 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
@@ -192,15 +201,6 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? '';
                 <p><span class="font-medium text-slate-800">Sat, Sun:</span> Closed</p>
               </div>
             </div>
-          </div>
-
-          <!-- Book Online -->
-          <div class="bg-emerald-50/50 border border-emerald-100 rounded-2xl p-6 shadow-sm card-hover">
-            <h3 class="text-xl font-serif font-bold text-emerald-950 mb-3">Book Online</h3>
-            <p class="text-slate-600 mb-4">
-              Ready to schedule? Our online booking system is the fastest way to secure your appointment with Dr. MacLeod.
-            </p>
-            <BookingButton variant="secondary" size="lg" source="contact" />
           </div>
 
         </div>
@@ -214,6 +214,16 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? '';
         { question: "How long will it take to see results?", answer: "<p>Treatment response varies by individual and condition. Some patients notice improvements within days (especially with IV therapy), while chronic conditions may require several weeks to months. Dr. MacLeod monitors progress closely and adjusts treatments as needed.</p>" },
         { question: "Can I combine naturopathic treatment with conventional medicine?", answer: "<p>Absolutely. Dr. MacLeod works collaboratively with your existing healthcare team. Naturopathic treatments often complement conventional approaches effectively. We always consider medication interactions and communicate with your other healthcare providers when appropriate.</p>" },
       ]} />
+
+  <section class="py-16 lg:py-24 bg-emerald-950">
+    <div class="section-shell text-center">
+      <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">Ready to Book?</h2>
+      <p class="text-lg sm:text-xl text-emerald-100 mb-8 max-w-2xl mx-auto">
+        Choose a time online, or send a message if you have a general question before booking.
+      </p>
+      <BookingButton variant="hero" size="lg" source="contact-bottom" />
+    </div>
+  </section>
 </BaseLayout>
 
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>

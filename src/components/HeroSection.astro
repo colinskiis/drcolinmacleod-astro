@@ -17,6 +17,60 @@ export interface Props {
 
 const { title, centered = false, compact = false, textOnly = false, image, video } = Astro.props;
 const hasMedia = image || video;
+const currentPath = Astro.url.pathname;
+const hasBreadcrumbSlot = Astro.slots.has('breadcrumb');
+const servicePagePaths = [
+  '/acupuncture/',
+  '/chelation-therapy/',
+  '/clinical-nutrition/',
+  '/digestive-health-testing/',
+  '/glutathione/',
+  '/herbal-medicine/',
+  '/hormone-testing/',
+  '/iv-therapy/',
+  '/iv-vitamin-c/',
+  '/l-carnitine/',
+  '/lab-testing/',
+  '/microcurrent-therapy/',
+  '/myers-cocktail-intravenous-nutrients/',
+  '/nad-therapy/',
+  '/neural-prolotherapy-pain/',
+  '/nutrient-testing/',
+  '/prolotherapy/',
+  '/prolotherapy-for-arthritis/',
+  '/prolotherapy-for-back-pain/',
+  '/prolotherapy-for-osgood-schlatter/',
+  '/prolotherapy-for-tendon-injuries/',
+  '/specialized-testing/',
+  '/sports-medicine/',
+  '/thyroid-testing/',
+  '/trace-minerals/',
+  '/wellness-blood-work/',
+];
+const conditionPagePaths = [
+  '/achilles-tendinitis/',
+  '/carpal-tunnel-syndrome/',
+  '/chronic-fatigue-syndrome/',
+  '/fibromyalgia/',
+  '/frozen-shoulder/',
+  '/golfers-elbow/',
+  '/herniated-disc/',
+  '/low-back-pain/',
+  '/migraine-headache/',
+  '/osteoarthritis/',
+  '/plantar-fasciitis/',
+  '/rotator-cuff-shoulder-impingement/',
+  '/runners-knee/',
+  '/si-joint-dysfunction/',
+  '/tennis-elbow/',
+  '/tmj-dysfunction/',
+  '/whiplash-neck-pain/',
+];
+const defaultBreadcrumb = servicePagePaths.includes(currentPath)
+  ? { href: '/services/', label: 'Services' }
+  : conditionPagePaths.includes(currentPath)
+    ? { href: '/conditions/', label: 'Conditions' }
+    : null;
 
 // Padding classes based on compact prop
 const sectionPadding = compact
@@ -37,8 +91,16 @@ const imageDimensions = imageAspect === 'square'
   <div class="section-shell">
     {centered ? (
       <div class="text-center max-w-4xl mx-auto space-y-6">
-        <slot name="breadcrumb" />
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-white mb-6 tracking-tight">{title}</h1>
+        {hasBreadcrumbSlot ? (
+          <slot name="breadcrumb" />
+        ) : defaultBreadcrumb && (
+          <nav class="text-emerald-300 text-sm mb-4" aria-label="Breadcrumb">
+            <a href={defaultBreadcrumb.href} class="hover:text-white transition-colors">{defaultBreadcrumb.label}</a>
+            <span class="mx-2" aria-hidden="true">/</span>
+            <span class="text-white">{title}</span>
+          </nav>
+        )}
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-medium text-white mb-6 tracking-tight">{title}</h1>
         <div class="text-lg sm:text-xl text-emerald-100 mb-8 leading-relaxed font-light">
           <slot />
         </div>
@@ -46,8 +108,16 @@ const imageDimensions = imageAspect === 'square'
       </div>
     ) : textOnly ? (
       <div class="max-w-4xl">
-        <slot name="breadcrumb" />
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-white tracking-tight mb-6">{title}</h1>
+        {hasBreadcrumbSlot ? (
+          <slot name="breadcrumb" />
+        ) : defaultBreadcrumb && (
+          <nav class="text-emerald-300 text-sm mb-4" aria-label="Breadcrumb">
+            <a href={defaultBreadcrumb.href} class="hover:text-white transition-colors">{defaultBreadcrumb.label}</a>
+            <span class="mx-2" aria-hidden="true">/</span>
+            <span class="text-white">{title}</span>
+          </nav>
+        )}
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-medium text-white tracking-tight mb-6">{title}</h1>
         <div class="text-lg sm:text-xl text-white/90 leading-relaxed font-light space-y-4 mb-8">
           <slot />
         </div>
@@ -56,8 +126,16 @@ const imageDimensions = imageAspect === 'square'
     ) : (
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         <div class="space-y-6">
-          <slot name="breadcrumb" />
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-white tracking-tight">{title}</h1>
+          {hasBreadcrumbSlot ? (
+            <slot name="breadcrumb" />
+          ) : defaultBreadcrumb && (
+            <nav class="text-emerald-300 text-sm mb-4" aria-label="Breadcrumb">
+              <a href={defaultBreadcrumb.href} class="hover:text-white transition-colors">{defaultBreadcrumb.label}</a>
+              <span class="mx-2" aria-hidden="true">/</span>
+              <span class="text-white">{title}</span>
+            </nav>
+          )}
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-medium text-white tracking-tight">{title}</h1>
           <div class="text-lg sm:text-xl text-white/90 leading-relaxed font-light space-y-4">
             <slot />
           </div>

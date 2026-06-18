@@ -28,7 +28,7 @@ The vast majority of studies performed on mistletoe in the treatment of cancer h
 
 Mistletoe extract has also been studied extensively for its effect on quality of life in patients with cancer. The research shows that mistletoe improves many aspects of quality of life in patients with cancer including fatigue, sleep, exhaustion, nausea, vomiting, appetite, emotional well-being, depression, anxiety, concentration, ability to work, pain, diarrhea and adverse effects to conventional treatments<sup>11</sup>.
 
-<img src="/images/general/mistletoe-quality-life.webp" alt="Mistletoe improves quality of life in cancer patients" style="max-width: 100%; height: auto;">
+<img src="/images/general/mistletoe-quality-life.webp" alt="Mistletoe improves quality of life in cancer patients" width="609" height="281" style="max-width: 100%; height: auto;">
 
 ## How Does It Work?
 
@@ -44,7 +44,7 @@ Mistletoe contains two major compounds which have regulatory effects on cancer c
 
 Mistletoe is given by subcutaneous injection, just under the skin, typically nearby the site of a known cancerous growth. While it differs from [IV therapy](/iv-therapy/), both are forms of injectable treatments we offer. Injections of the mistletoe extract are minimally painful and are given every other day. Injecting mistletoe, rather than taking it orally allows it to act more directly on the immune system without being limited by digestive absorption or the liver's "first pass effect". Injecting mistletoe allows for a targeted treatment since it can be injected near the site of a known tumor or cancerous lesion.
 
-<img src="/images/general/mistletoe-injection.webp" alt="Mistletoe injection technique" style="max-width: 100%; height: auto;">
+<img src="/images/general/mistletoe-injection.webp" alt="Mistletoe injection technique" width="1732" height="820" style="max-width: 100%; height: auto;">
 
 ## Safety Of Mistletoe
 

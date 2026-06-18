@@ -26,13 +26,13 @@ const cardClass = bg === 'emerald'
   <section class={sectionClass}>
     <div class="section-shell">
       <div class="text-center mb-10">
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 mb-4">{title}</h2>
+        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">{title}</h2>
         {subtitle && <p class="text-lg text-slate-600">{subtitle}</p>}
       </div>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-5xl mx-auto">
         {articles.map(article => (
           <a href={`/articles/${article!.slug}`} class={cardClass}>
-            <h3 class="font-serif font-bold text-emerald-950 mb-2 group-hover:text-emerald-700 transition-colors">{article!.data.title}</h3>
+            <h3 class="font-serif font-medium text-emerald-950 mb-2 group-hover:text-emerald-700 transition-colors">{article!.data.title}</h3>
             <p class="text-slate-600 text-sm">{article!.data.description}</p>
           </a>
         ))}
