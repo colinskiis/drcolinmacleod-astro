@@ -183,9 +183,6 @@ const relatedGuides = [
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 reveal reveal-delay-100">
         {conditionPages.map((condition) => (
           <a href={condition.href} class="site-card-interactive group flex h-full flex-col gap-3 p-5 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <span class="inline-flex w-fit items-center rounded-full bg-emerald-50 px-2.5 py-1 text-xs font-semibold uppercase tracking-wide text-emerald-800">
-              Condition page
-            </span>
             <span class="flex items-start gap-2 text-lg font-semibold text-emerald-950 group-hover:text-emerald-700 transition-colors">
               <ChevronRight class="mt-1 w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" aria-hidden="true" />
               {condition.title}
@@ -210,9 +207,6 @@ const relatedGuides = [
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 reveal reveal-delay-100">
         {relatedGuides.map((guide) => (
           <a href={guide.href} class="site-card-interactive group flex h-full flex-col gap-3 p-5 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <span class="inline-flex w-fit items-center rounded-full bg-white px-2.5 py-1 text-xs font-semibold uppercase tracking-wide text-emerald-800 ring-1 ring-emerald-100">
-              Article guide
-            </span>
             <span class="flex items-start gap-2 text-lg font-semibold text-emerald-950 group-hover:text-emerald-700 transition-colors">
               <ChevronRight class="mt-1 w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" aria-hidden="true" />
               {guide.title}
