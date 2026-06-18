@@ -5,7 +5,7 @@ import playfairWoff2 from '@fontsource/playfair-display/files/playfair-display-l
 import { ClientRouter } from 'astro:transitions';
 import Search from '../components/Search.astro';
 import MedicalDisclaimer from '../components/MedicalDisclaimer.astro';
-import { Calendar, Menu, X, ChevronDown, ChevronRight } from '@lucide/astro';
+import { Calendar, Menu, X, ChevronDown, ChevronRight, Phone } from '@lucide/astro';
 
 export interface Props {
   title: string;
@@ -575,7 +575,7 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
               rel="noopener noreferrer"
               class="inline-flex items-center gap-2 px-3 sm:px-5 py-2 sm:py-2.5 rounded-full bg-emerald-400 text-emerald-950 font-semibold hover:bg-emerald-300 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 shadow-lg shadow-emerald-500/20 hover:shadow-emerald-400/30 text-sm sm:text-base whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300 focus-visible:ring-offset-2 focus-visible:ring-offset-emerald-950"
             >
-              <span>Book<span class="sr-only sm:not-sr-only"> Online</span></span>
+              <span>Book Online</span>
               <Calendar class="hidden sm:block w-5 h-5" aria-hidden="true" />
             </a>
             <!-- Mobile Menu Button -->
@@ -596,8 +596,33 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
             <a href="/" class={`hover:text-white hover:bg-emerald-700/20 transition-colors py-3 px-3 text-xl rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 ${currentPath === '/' ? 'text-white bg-emerald-800/30' : ''}`} aria-current={currentPath === '/' ? 'page' : undefined}>Home</a>
             <a href="/about/" class={`hover:text-white hover:bg-emerald-700/20 transition-colors py-3 px-3 text-xl rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 ${currentPath.startsWith('/about') ? 'text-white bg-emerald-800/30' : ''}`} aria-current={currentPath.startsWith('/about') ? 'page' : undefined}>About</a>
             <a href="/new-patients/" class={`hover:text-white hover:bg-emerald-700/20 transition-colors py-3 px-3 text-xl rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 ${currentPath.startsWith('/new-patients') ? 'text-white bg-emerald-800/30' : ''}`} aria-current={currentPath.startsWith('/new-patients') ? 'page' : undefined}>New Patients</a>
-            <a href="/services/" class={`hover:text-white hover:bg-emerald-700/20 transition-colors py-3 px-3 text-xl rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 ${isServicePath ? 'text-white bg-emerald-800/30' : ''}`} aria-current={isServicePath ? 'page' : undefined}>Services</a>
-            <a href="/conditions/" class={`hover:text-white hover:bg-emerald-700/20 transition-colors py-3 px-3 text-xl rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 ${isConditionPath ? 'text-white bg-emerald-800/30' : ''}`} aria-current={isConditionPath ? 'page' : undefined}>Conditions</a>
+
+            <details class="group">
+              <summary class={`list-none [&::-webkit-details-marker]:hidden flex items-center justify-between cursor-pointer hover:text-white hover:bg-emerald-700/20 transition-colors py-3 px-3 text-xl rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 ${isServicePath ? 'text-white bg-emerald-800/30' : ''}`}>
+                Services
+                <ChevronDown class="w-5 h-5 transition-transform group-open:rotate-180" aria-hidden="true" />
+              </summary>
+              <div class="mt-1 mb-2 ml-3 pl-3 border-l border-emerald-700/40 space-y-0.5">
+                {serviceMenuGroups.flatMap((g) => g.links).map((link) => (
+                  <a href={link.href} class="block py-2.5 px-3 text-base font-medium text-emerald-100 hover:text-white hover:bg-emerald-700/20 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-400">{link.label}</a>
+                ))}
+                <a href="/services/" class="block py-2.5 px-3 text-base font-semibold text-emerald-300 hover:text-white transition-colors">View all services →</a>
+              </div>
+            </details>
+
+            <details class="group">
+              <summary class={`list-none [&::-webkit-details-marker]:hidden flex items-center justify-between cursor-pointer hover:text-white hover:bg-emerald-700/20 transition-colors py-3 px-3 text-xl rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 ${isConditionPath ? 'text-white bg-emerald-800/30' : ''}`}>
+                Conditions
+                <ChevronDown class="w-5 h-5 transition-transform group-open:rotate-180" aria-hidden="true" />
+              </summary>
+              <div class="mt-1 mb-2 ml-3 pl-3 border-l border-emerald-700/40 space-y-0.5">
+                {conditionMenuGroups.flatMap((g) => g.links).map((link) => (
+                  <a href={link.href} class="block py-2.5 px-3 text-base font-medium text-emerald-100 hover:text-white hover:bg-emerald-700/20 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-400">{link.label}</a>
+                ))}
+                <a href="/conditions/" class="block py-2.5 px-3 text-base font-semibold text-emerald-300 hover:text-white transition-colors">View all conditions →</a>
+              </div>
+            </details>
+
             <a href="/contact/" class={`hover:text-white hover:bg-emerald-700/20 transition-colors py-3 px-3 text-xl rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 ${currentPath.startsWith('/contact') ? 'text-white bg-emerald-800/30' : ''}`} aria-current={currentPath.startsWith('/contact') ? 'page' : undefined}>Contact</a>
             <a href="/articles/" class={`hover:text-white hover:bg-emerald-700/20 transition-colors py-3 px-3 text-xl rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 ${currentPath.startsWith('/articles') ? 'text-white bg-emerald-800/30' : ''}`} aria-current={currentPath.startsWith('/articles') ? 'page' : undefined}>Articles</a>
           </div>
@@ -621,6 +646,25 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
         closeIcon?.classList.add('hidden');
         mobileMenuButton?.setAttribute('aria-expanded', 'false');
 
+        // Size the open menu to its content, capped to the viewport so it
+        // scrolls instead of overflowing (e.g. when an accordion expands).
+        function openMenuToContent() {
+          if (!mobileMenu) return;
+          const cap = window.innerHeight - 88;
+          mobileMenu.style.maxHeight = Math.min(mobileMenu.scrollHeight, cap) + 'px';
+          mobileMenu.style.overflowY = mobileMenu.scrollHeight > cap ? 'auto' : '';
+          mobileMenu.style.opacity = '1';
+        }
+
+        // Recompute height when a Services/Conditions accordion is toggled.
+        mobileMenu?.querySelectorAll('details').forEach((d) => {
+          if ((d as HTMLElement).dataset.accordionBound) return;
+          (d as HTMLElement).dataset.accordionBound = 'true';
+          d.addEventListener('toggle', () => {
+            if (mobileMenuButton?.getAttribute('aria-expanded') === 'true') openMenuToContent();
+          });
+        });
+
         // Only bind click listener once per button element instance.
         // View Transitions replaces the DOM, so we track per-element rather than
         // using a module-level boolean (which would prevent rebinding after navigation).
@@ -635,11 +679,7 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
 
           if (mobileMenu) {
             if (!isExpanded) {
-              // Cap to viewport so the menu scrolls instead of overflowing in landscape
-              const cap = window.innerHeight - 88;
-              mobileMenu.style.maxHeight = Math.min(mobileMenu.scrollHeight, cap) + 'px';
-              mobileMenu.style.overflowY = mobileMenu.scrollHeight > cap ? 'auto' : '';
-              mobileMenu.style.opacity = '1';
+              openMenuToContent();
             } else {
               mobileMenu.style.maxHeight = '0';
               mobileMenu.style.overflowY = '';
@@ -659,7 +699,7 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
     </main>
 
     <!-- Footer -->
-    <footer class="reveal bg-emerald-50 border-t border-emerald-200/60 relative overflow-hidden">
+    <footer class="reveal bg-emerald-50 border-t border-emerald-200/60 relative overflow-hidden pb-24 lg:pb-0">
       <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
         <div class="absolute -right-16 -top-16 w-64 h-64 rounded-full bg-emerald-200/30 blur-3xl"></div>
         <div class="absolute -left-10 bottom-0 w-52 h-52 rounded-full bg-emerald-900/10 blur-3xl"></div>
@@ -720,6 +760,31 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
       </div>
     </footer>
 
+    <!-- Mobile sticky booking bar -->
+    <div
+      class="lg:hidden fixed inset-x-0 bottom-0 z-40 border-t border-emerald-200/70 bg-white/95 backdrop-blur px-4 py-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] shadow-[0_-4px_20px_rgba(2,44,34,0.10)]"
+      transition:persist
+    >
+      <div class="flex items-center gap-3">
+        <a
+          href="tel:+19024064424"
+          aria-label="Call (902) 406-4424"
+          class="flex items-center justify-center w-12 h-12 flex-shrink-0 rounded-full border border-emerald-200 text-emerald-800 hover:bg-emerald-50 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2"
+        >
+          <Phone class="w-5 h-5" aria-hidden="true" />
+        </a>
+        <a
+          href="https://macleodnaturopathic.janeapp.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="booking-btn flex-1 inline-flex items-center justify-center gap-2 rounded-full bg-emerald-400 text-emerald-950 font-semibold py-3 px-5 shadow-lg shadow-emerald-500/20 hover:bg-emerald-300 active:scale-[0.98] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2"
+          data-booking-source="mobile-sticky"
+        >
+          <Calendar class="w-5 h-5" aria-hidden="true" />
+          Book Online
+        </a>
+      </div>
+    </div>
 
     <!-- Scroll-triggered reveal animations & header scroll effect -->
     <script>

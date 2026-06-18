@@ -285,6 +285,7 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? '';
           successMessage.classList.remove('hidden');
           form.reset();
           if (window.turnstile) window.turnstile.reset();
+          successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
         } else {
           throw new Error(data.message || 'Submission failed');
         }

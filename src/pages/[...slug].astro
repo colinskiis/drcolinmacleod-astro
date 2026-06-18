@@ -24,19 +24,119 @@ const seoDescription = page.data.seo?.description || page.data.description;
 const focusKeyword = page.data.seo?.focusKeyword || '';
 
 const isTreatment = page.data.type === 'treatment';
-const hubHref = isTreatment ? '/services' : '/conditions';
+const hubHref = isTreatment ? '/services/' : '/conditions/';
 const hubLabel = isTreatment ? 'Services' : 'Conditions';
-const relatedLinks = isTreatment
+
+// Curated, page-specific cross-links so each page points to genuinely
+// relevant treatments/conditions rather than the same generic set.
+const relatedLinksMap: Record<string, { title: string; href: string }[]> = {
+  // Conditions
+  'achilles-tendinitis': [
+    { title: 'Prolotherapy for Tendons', href: '/prolotherapy-for-tendon-injuries/' },
+    { title: 'Plantar Fasciitis', href: '/plantar-fasciitis/' },
+    { title: 'Sports Medicine', href: '/sports-medicine/' },
+  ],
+  'carpal-tunnel-syndrome': [
+    { title: 'Neural Prolotherapy', href: '/neural-prolotherapy-pain/' },
+    { title: 'Prolotherapy', href: '/prolotherapy/' },
+    { title: "Golfer's Elbow", href: '/golfers-elbow/' },
+  ],
+  'frozen-shoulder': [
+    { title: 'Prolotherapy', href: '/prolotherapy/' },
+    { title: 'Rotator Cuff & Shoulder', href: '/rotator-cuff-shoulder-impingement/' },
+    { title: 'Sports Medicine', href: '/sports-medicine/' },
+  ],
+  'golfers-elbow': [
+    { title: 'Prolotherapy for Tendons', href: '/prolotherapy-for-tendon-injuries/' },
+    { title: 'Tennis Elbow', href: '/tennis-elbow/' },
+    { title: 'Sports Medicine', href: '/sports-medicine/' },
+  ],
+  'herniated-disc': [
+    { title: 'Prolotherapy for Back Pain', href: '/prolotherapy-for-back-pain/' },
+    { title: 'Low Back Pain', href: '/low-back-pain/' },
+    { title: 'SI Joint Dysfunction', href: '/si-joint-dysfunction/' },
+  ],
+  'migraine-headache': [
+    { title: 'Neural Prolotherapy', href: '/neural-prolotherapy-pain/' },
+    { title: 'Acupuncture', href: '/acupuncture/' },
+    { title: 'TMJ Dysfunction', href: '/tmj-dysfunction/' },
+  ],
+  'osteoarthritis': [
+    { title: 'Prolotherapy for Arthritis', href: '/prolotherapy-for-arthritis/' },
+    { title: 'Prolotherapy', href: '/prolotherapy/' },
+    { title: 'Sports Medicine', href: '/sports-medicine/' },
+  ],
+  'plantar-fasciitis': [
+    { title: 'Prolotherapy for Tendons', href: '/prolotherapy-for-tendon-injuries/' },
+    { title: 'Achilles Tendinitis', href: '/achilles-tendinitis/' },
+    { title: 'Sports Medicine', href: '/sports-medicine/' },
+  ],
+  'rotator-cuff-shoulder-impingement': [
+    { title: 'Prolotherapy', href: '/prolotherapy/' },
+    { title: 'Frozen Shoulder', href: '/frozen-shoulder/' },
+    { title: 'Sports Medicine', href: '/sports-medicine/' },
+  ],
+  'runners-knee': [
+    { title: 'Prolotherapy', href: '/prolotherapy/' },
+    { title: 'Osteoarthritis', href: '/osteoarthritis/' },
+    { title: 'Sports Medicine', href: '/sports-medicine/' },
+  ],
+  'si-joint-dysfunction': [
+    { title: 'Prolotherapy for Back Pain', href: '/prolotherapy-for-back-pain/' },
+    { title: 'Low Back Pain', href: '/low-back-pain/' },
+    { title: 'Herniated Disc', href: '/herniated-disc/' },
+  ],
+  'tennis-elbow': [
+    { title: 'Prolotherapy for Tendons', href: '/prolotherapy-for-tendon-injuries/' },
+    { title: "Golfer's Elbow", href: '/golfers-elbow/' },
+    { title: 'Sports Medicine', href: '/sports-medicine/' },
+  ],
+  'tmj-dysfunction': [
+    { title: 'Neural Prolotherapy', href: '/neural-prolotherapy-pain/' },
+    { title: 'Acupuncture', href: '/acupuncture/' },
+    { title: 'Migraine Headaches', href: '/migraine-headache/' },
+  ],
+  'whiplash-neck-pain': [
+    { title: 'Prolotherapy', href: '/prolotherapy/' },
+    { title: 'Neural Prolotherapy', href: '/neural-prolotherapy-pain/' },
+    { title: 'Low Back Pain', href: '/low-back-pain/' },
+  ],
+  // Treatments
+  'glutathione': [
+    { title: 'IV Therapy', href: '/iv-therapy/' },
+    { title: 'Myers Cocktail', href: '/myers-cocktail-intravenous-nutrients/' },
+    { title: 'NAD+ Therapy', href: '/nad-therapy/' },
+  ],
+  'microcurrent-therapy': [
+    { title: 'Sports Medicine', href: '/sports-medicine/' },
+    { title: 'Prolotherapy', href: '/prolotherapy/' },
+    { title: 'Acupuncture', href: '/acupuncture/' },
+  ],
+  'myers-cocktail-intravenous-nutrients': [
+    { title: 'IV Therapy', href: '/iv-therapy/' },
+    { title: 'NAD+ Therapy', href: '/nad-therapy/' },
+    { title: 'IV Vitamin C', href: '/iv-vitamin-c/' },
+  ],
+  'neural-prolotherapy-pain': [
+    { title: 'Prolotherapy', href: '/prolotherapy/' },
+    { title: 'Sports Medicine', href: '/sports-medicine/' },
+    { title: 'Carpal Tunnel Syndrome', href: '/carpal-tunnel-syndrome/' },
+  ],
+};
+
+const fallbackLinks = isTreatment
   ? [
-      { title: 'All Services', href: '/services/' },
       { title: 'IV Therapy', href: '/iv-therapy/' },
       { title: 'Prolotherapy', href: '/prolotherapy/' },
+      { title: 'Clinical Nutrition', href: '/clinical-nutrition/' },
     ]
   : [
-      { title: 'All Conditions', href: '/conditions/' },
       { title: 'Sports Medicine', href: '/sports-medicine/' },
       { title: 'Prolotherapy', href: '/prolotherapy/' },
+      { title: 'Lab Testing', href: '/lab-testing/' },
     ];
+
+const relatedLinks = page.data.relatedLinks ?? relatedLinksMap[page.slug] ?? fallbackLinks;
 
 // Format modified date if exists
 const modifiedDate = page.data.modifiedDate
@@ -91,6 +191,12 @@ const modifiedDate = page.data.modifiedDate
                   </a>
                 ))}
               </div>
+              <a href={hubHref} class="mt-3 inline-flex items-center gap-1 border-t border-emerald-100 pt-3 text-sm font-semibold text-emerald-700 hover:text-emerald-900 transition-colors w-full">
+                View all {hubLabel.toLowerCase()}
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </a>
             </div>
 
             <div class="site-card p-5">
