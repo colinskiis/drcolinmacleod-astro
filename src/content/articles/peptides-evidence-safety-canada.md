@@ -64,7 +64,7 @@ In April 2026, Health Canada issued a public advisory warning people not to buy 
 
 Health Canada stated that peptides are generally regulated as prescription medicines in Canada, and that authorized medicines for sale in Canada have an eight-digit Drug Identification Number (DIN). Products labelled "For Research Use Only" are not made legal for human use by that label. Health Canada's concern is not only whether the peptide itself might work; it is also whether the product has been assessed for safety, efficacy and quality.
 
-Health Canada has also addressed GLP-1 compounding specifically. In a June 2025 position document, the regulator noted the rise of unauthorized and counterfeit semaglutide products and stated that sterile compounding is a high-risk activity that should generally be reserved for exceptional circumstances, such as a patient-specific need that cannot be met by an approved drug or a true shortage. Health Canada also expressed concern about compounded GLP-1 products mixed with other active ingredients without scientific justification.<sup>3</sup> A peptide being "available" online does not mean it is authorized, legal for sale, sterile, accurately dosed or appropriate for human use.
+Health Canada has also addressed GLP-1 compounding specifically. In a June 2025 position document, the regulator noted the rise of unauthorized and counterfeit semaglutide products and stated that sterile compounding is a high-risk activity that should generally be reserved for exceptional circumstances, such as a patient-specific need that cannot be met by an approved drug or a true shortage. Health Canada also expressed concern about compounded GLP-1 products mixed with other active ingredients without scientific justification.<sup>3</sup> In April 2026, Health Canada authorized a generic semaglutide injection, which is a useful reminder that an approved synthetic peptide medicine is very different from an unauthorized compounded or online product.<sup>4</sup> A peptide being "available" online does not mean it is authorized, legal for sale, sterile, accurately dosed or appropriate for human use.
 
 ## Evidence: Where Peptide Claims Are Strong, Weak or Unknown
 
@@ -88,7 +88,7 @@ Health Canada has also addressed GLP-1 compounding specifically. In a June 2025 
 
 **Growth hormone secretagogues:** CJC-1295, ipamorelin, GHRP-2, GHRP-6, hexarelin and related compounds are promoted for body composition, recovery, sleep and anti-aging. Their mechanisms are plausible because they can influence growth hormone and insulin-like growth factor-1 signalling. But changing this axis can also create side effects, including fluid retention, changes in glucose regulation, carpal tunnel-like symptoms, headaches and theoretical concerns in people with cancer risk or proliferative disease. Long-term safety for broad wellness use is not well established.
 
-**Melanotan products:** Melanotan II is promoted for tanning and libido. It has been associated with nausea, flushing, changes in moles, priapism and case reports of more serious events, including renal infarction.<sup>4</sup> It is a good example of how a product marketed as cosmetic or lifestyle-oriented can still have systemic medicine effects.
+**Melanotan products:** Melanotan II is promoted for tanning and libido. It has been associated with nausea, flushing, changes in moles, priapism and case reports of more serious events, including renal infarction.<sup>5</sup> It is a good example of how a product marketed as cosmetic or lifestyle-oriented can still have systemic medicine effects.
 
 ## Why Online Peptide Products Are Riskier Than They Look
 
@@ -127,7 +127,7 @@ Anecdotes are not worthless. They can generate hypotheses and point to areas wor
 
 Peptides are prominent in bodybuilding because many are marketed for muscle gain, fat loss, recovery, appetite control or injury repair. Competitive athletes have another issue: anti-doping rules.
 
-The World Anti-Doping Agency's 2026 Prohibited List includes multiple peptide-related categories. Growth hormone, growth hormone fragments, growth-hormone-releasing hormone analogues such as CJC-1295 and sermorelin, growth hormone secretagogues such as ipamorelin and ibutamoren, and GH-releasing peptides such as GHRP-2 and GHRP-6 are prohibited at all times.<sup>5</sup> The list also includes other growth factors and hormone-modulating substances. Athletes subject to anti-doping rules should not assume that a clinic, supplement store, online vendor or influencer has checked the current prohibited list.
+The World Anti-Doping Agency's 2026 Prohibited List includes multiple peptide-related categories. Growth hormone, growth hormone fragments, growth-hormone-releasing hormone analogues such as CJC-1295 and sermorelin, growth hormone secretagogues such as ipamorelin and ibutamoren, and GH-releasing peptides such as GHRP-2 and GHRP-6 are prohibited at all times.<sup>6</sup> The list also includes other growth factors and hormone-modulating substances. Athletes subject to anti-doping rules should not assume that a clinic, supplement store, online vendor or influencer has checked the current prohibited list.
 
 <div class="article-summary article-summary--plain">
   <p class="article-summary__eyebrow">Anti-Doping Snapshot</p>
@@ -168,12 +168,13 @@ The most useful conversation is not whether peptides are good or bad. It is whet
 1. Health Canada. Think twice before injecting peptides bought online: unauthorized products can seriously harm you. Public advisory. April 9, 2026.
 2. Muttenthaler M, King GF, Adams DJ, Alewood PF. Trends in peptide drug discovery. *Nature Reviews Drug Discovery*. 2021;20:309-325.
 3. Health Canada. Health Canada's position on the unauthorized manufacturing of products sold as compounded glucagon like peptide 1 (GLP-1) receptor agonists. June 2, 2025.
-4. Peters B, Hadimeri H, Wahlberg R, Afghahi H. Melanotan II: a possible cause of renal infarction: review of the literature and case report. *CEN Case Reports*. 2020;9(2):159-161.
-5. World Anti-Doping Agency. The 2026 Prohibited List: International Standard. In force January 1, 2026.
-6. Lau JL, Dunn MK. Therapeutic peptides: historical perspectives, current development trends, and future directions. *Bioorganic & Medicinal Chemistry*. 2018;26(10):2700-2707.
-7. Drucker DJ. Mechanisms of action and therapeutic application of glucagon-like peptide-1. *Cell Metabolism*. 2018;27(4):740-756.
-8. Wilding JPH, Batterham RL, Calanna S, et al. Once-weekly semaglutide in adults with overweight or obesity. *New England Journal of Medicine*. 2021;384:989-1002.
-9. Jastreboff AM, Aronne LJ, Ahmad NN, et al. Tirzepatide once weekly for the treatment of obesity. *New England Journal of Medicine*. 2022;387:205-216.
-10. Teichman SL, Neale A, Lawrence B, et al. Prolonged stimulation of growth hormone and insulin-like growth factor I secretion by CJC-1295, a long-acting analog of growth hormone-releasing hormone, in healthy adults. *Journal of Clinical Endocrinology & Metabolism*. 2006;91(3):799-805.
-11. Raun K, Hansen BS, Johansen NL, et al. Ipamorelin, the first selective growth hormone secretagogue. *European Journal of Endocrinology*. 1998;139(5):552-561.
-12. U.S. Food and Drug Administration. Certain Bulk Drug Substances for Use in Compounding that May Present Significant Safety Risks. Updated 2026.
+4. Health Canada. Canada becomes the first G7 country to approve a generic version of semaglutide. News release. April 28, 2026.
+5. Peters B, Hadimeri H, Wahlberg R, Afghahi H. Melanotan II: a possible cause of renal infarction: review of the literature and case report. *CEN Case Reports*. 2020;9(2):159-161.
+6. World Anti-Doping Agency. The 2026 Prohibited List: International Standard. In force January 1, 2026.
+7. Lau JL, Dunn MK. Therapeutic peptides: historical perspectives, current development trends, and future directions. *Bioorganic & Medicinal Chemistry*. 2018;26(10):2700-2707.
+8. Drucker DJ. Mechanisms of action and therapeutic application of glucagon-like peptide-1. *Cell Metabolism*. 2018;27(4):740-756.
+9. Wilding JPH, Batterham RL, Calanna S, et al. Once-weekly semaglutide in adults with overweight or obesity. *New England Journal of Medicine*. 2021;384:989-1002.
+10. Jastreboff AM, Aronne LJ, Ahmad NN, et al. Tirzepatide once weekly for the treatment of obesity. *New England Journal of Medicine*. 2022;387:205-216.
+11. Teichman SL, Neale A, Lawrence B, et al. Prolonged stimulation of growth hormone and insulin-like growth factor I secretion by CJC-1295, a long-acting analog of growth hormone-releasing hormone, in healthy adults. *Journal of Clinical Endocrinology & Metabolism*. 2006;91(3):799-805.
+12. Raun K, Hansen BS, Johansen NL, et al. Ipamorelin, the first selective growth hormone secretagogue. *European Journal of Endocrinology*. 1998;139(5):552-561.
+13. U.S. Food and Drug Administration. Certain Bulk Drug Substances for Use in Compounding that May Present Significant Safety Risks. Updated 2026.
