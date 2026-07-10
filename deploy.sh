@@ -21,7 +21,13 @@ preflight_rsync() {
 }
 
 echo "🔨 Building site..."
+npm run check
 npm run build
+
+if ! grep -Eq 'data-sitekey="[^"]+"' dist/contact/index.html; then
+  echo "❌ Contact form is missing PUBLIC_TURNSTILE_SITE_KEY; deployment stopped."
+  exit 1
+fi
 
 preflight_rsync
 

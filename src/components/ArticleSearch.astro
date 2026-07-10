@@ -29,7 +29,7 @@ const configId = `article-search-config-${listId}`;
   data-empty-id={emptyId}
   data-total-count={totalCount}
 >
-  <script id={configId} type="application/json" set:html={searchIndexJson}></script>
+  <script is:inline id={configId} type="application/json" set:html={searchIndexJson}></script>
 
   <label for="article-search-input" class="sr-only">Search articles</label>
   <div class="relative">

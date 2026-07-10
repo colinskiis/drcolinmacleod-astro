@@ -27,9 +27,9 @@ const bloodTests = [
 
 // All services for Services section
 const allServices = [
-  { title: 'Laboratory Testing', description: 'Identify nutrient deficiencies, hormone imbalances and inflammation sources.', img: '/images/reference/services/lab-testing.jpeg', href: '/lab-testing/' },
-  { title: 'IV Therapy', description: 'Increase energy levels, boost immune function and build resiliency.', img: '/images/treatments/iv-patient-woman.webp', href: '/iv-therapy/' },
-  { title: 'Prolotherapy', description: 'Relieve joint pain, accelerate tendon healing and strengthen ligaments.', img: '/images/treatments/prolotherapy-knee-injection.webp', href: '/prolotherapy/' },
+  { title: 'Laboratory Testing', description: 'Assess nutrient status, hormones and selected markers of inflammation.', img: '/images/reference/services/lab-testing.jpeg', href: '/lab-testing/' },
+  { title: 'IV Therapy', description: 'Individualized intravenous nutrient therapy with clinical screening and monitoring.', img: '/images/treatments/iv-patient-woman.webp', href: '/iv-therapy/' },
+  { title: 'Prolotherapy', description: 'An injection-based option used in the management of selected joint and tendon concerns.', img: '/images/treatments/prolotherapy-knee-injection.webp', href: '/prolotherapy/' },
 ];
 
 // FAQ data for schema markup
@@ -110,7 +110,7 @@ const faqSchema = {
             </p>
 
             <h1 class="text-4xl sm:text-5xl font-medium font-serif leading-[1.1] tracking-tight text-white animate-fade-in-up animate-delay-100">
-              Find the root cause.<br />Restore your health&nbsp;naturally.
+              Look beyond symptoms.<br />Build a plan for better&nbsp;health.
             </h1>
 
             <p class="text-base sm:text-lg text-emerald-100 max-w-xl mx-auto lg:mx-0 leading-relaxed animate-fade-in-up animate-delay-200">
@@ -191,7 +191,7 @@ const faqSchema = {
     <div class="section-shell">
       <div class="text-center max-w-3xl mx-auto mb-10 lg:mb-14 space-y-4 reveal">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 tracking-tight">Services</h2>
-        <p class="text-lg text-slate-600 max-w-2xl mx-auto">Targeted treatments guided by testing, focused on finding and fixing the root cause.</p>
+        <p class="text-lg text-slate-600 max-w-2xl mx-auto">Targeted care guided by clinical assessment, testing and your individual health goals.</p>
       </div>
 
       <!-- Mobile: Link list -->
@@ -373,5 +373,5 @@ const faqSchema = {
   </section>
 
   <!-- FAQ Schema for AI discoverability -->
-  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
 </BaseLayout>

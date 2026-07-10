@@ -7,7 +7,7 @@ heroImage: "/images/general/respiratory-health-lungs.webp"
 categories: ["Naturopathic", "Respiratory Health"]
 tags: ["asthma", "respiratory health", "allergies", "inflammation", "Halifax"]
 seo:
-  title: "Asthma & Respiratory Health Support | Halifax Naturopathic Doctor"
+  title: "Asthma and Respiratory Health: Evidence-Informed Support"
   description: "Evidence-informed ways to support respiratory health, manage asthma triggers and reduce inflammatory burden alongside appropriate medical care."
   focusKeyword: "respiratory health support"
 ---

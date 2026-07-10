@@ -1,6 +1,6 @@
 ---
 title: "Arthritis: Understanding the Condition and Natural Treatment Options"
-description: "Comprehensive guide to osteoarthritis causes, why NSAIDs may accelerate joint damage and effective natural alternatives including prolotherapy, acupuncture and nutritional interventions."
+description: "An evidence-informed guide to osteoarthritis and adjunct options including exercise, nutrition, acupuncture and prolotherapy."
 publishDate: 2015-11-27
 modifiedDate: 2024-12-06
 author: "Dr. Colin MacLeod ND"
@@ -8,11 +8,12 @@ heroImage: "/images/conditions/knee-injury1.webp"
 categories: ["Pain Management", "Naturopathic"]
 tags: ["arthritis", "osteoarthritis", "joint pain", "prolotherapy", "acupuncture", "natural treatment"]
 seo:
-  description: "Natural treatments for arthritis in Halifax. Learn why NSAIDs may worsen joint damage and discover effective alternatives including prolotherapy, acupuncture and nutritional support."
+  title: "Arthritis: Evidence and Natural Treatment Options"
+  description: "Review osteoarthritis care and the evidence, limitations and safety considerations for exercise, nutrition, acupuncture and prolotherapy."
   focusKeyword: "natural arthritis treatment"
 ---
 
-Arthritis affects millions of Canadians, and osteoarthritis (the "wear and tear" form) is by far the most common. If you're dealing with joint pain, stiffness and limited mobility, you've likely been offered anti-inflammatory medications as a first-line treatment. While these drugs effectively reduce pain, emerging research suggests they may actually accelerate the very joint destruction they're meant to treat. Understanding both the condition and the full range of treatment options allows you to make informed decisions about your care.
+Arthritis affects millions of Canadians, and osteoarthritis is by far the most common form. Anti-inflammatory medications can reduce symptoms and remain part of standard care for many people, although their risks and benefits depend on the individual, dose and duration of use. Understanding the condition and the evidence for medication, exercise, rehabilitation and adjunct options supports an informed discussion with your healthcare team.
 
 ## What Causes Osteoarthritis?
 

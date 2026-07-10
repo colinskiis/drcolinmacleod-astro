@@ -42,5 +42,5 @@ const sectionClasses = sectionClass ?? `py-16 lg:py-24 ${bgClass}`;
 </section>
 
 {includeSchema && items.length > 0 && (
-  <script type="application/ld+json" set:html={JSON.stringify(faqPageSchema(items))} />
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(faqPageSchema(items))} />
 )}

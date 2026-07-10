@@ -8,6 +8,7 @@ heroImage: "/images/conditions/chelation-heart-disease.webp"
 categories: ["Naturopathic", "Heart Health"]
 tags: ["chelation", "cardiovascular", "TACT trial", "heart disease"]
 seo:
+  title: "Chelation and Heart Disease: What the TACT Trials Found"
   description: "Explore the science behind EDTA chelation therapy for heart disease, including NIH-funded TACT trial results, mechanisms of action and treatment options in Halifax, Nova Scotia."
   focusKeyword: "chelation therapy heart disease"
 faq:

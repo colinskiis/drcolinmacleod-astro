@@ -8,6 +8,7 @@ heroImage: "/images/general/gut-brain-connection.webp"
 categories: ["Naturopathic", "Digestive Health", "Mental Health"]
 tags: ["gut-brain axis", "mental health", "microbiome", "digestive health", "naturopathic"]
 seo:
+  title: "The Gut-Brain Connection and Mental Health"
   description: "Evidence-based guide to the gut-brain connection. Learn how your gut microbiome affects mental health and what you can do to support both."
   focusKeyword: "gut brain connection"
 ---

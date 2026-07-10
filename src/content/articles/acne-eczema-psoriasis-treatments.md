@@ -8,7 +8,7 @@ heroImage: "/images/conditions/acne.webp"
 categories: ["Naturopathic", "Skin Health"]
 tags: ["acne", "eczema", "psoriasis", "skin health", "natural treatment", "Halifax"]
 seo:
-  title: "Acne, Eczema & Psoriasis Treatment | Halifax Naturopathic Doctor"
+  title: "Natural Approaches to Acne, Eczema and Psoriasis"
   description: "Comprehensive natural treatment approaches for common skin conditions including acne, eczema and psoriasis, addressing root causes like gut health, inflammation and immune function."
   focusKeyword: "natural eczema treatment"
 ---

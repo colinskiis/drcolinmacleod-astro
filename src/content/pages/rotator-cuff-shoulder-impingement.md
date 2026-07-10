@@ -2,6 +2,7 @@
 title: "Rotator Cuff & Shoulder Impingement"
 description: "Rotator cuff injuries and shoulder impingement cause persistent shoulder pain and weakness. Learn about causes, risk factors and regenerative treatment options in Halifax."
 seo:
+  title: "Rotator Cuff and Shoulder Impingement"
   focusKeyword: "rotator cuff treatment Halifax"
 ---
 

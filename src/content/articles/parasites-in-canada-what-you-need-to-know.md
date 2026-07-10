@@ -7,6 +7,7 @@ heroImage: "/images/general/digestive-testing.webp"
 categories: ["Naturopathic", "Digestive Health"]
 tags: ["parasites", "digestive health", "gut health", "naturopathic"]
 seo:
+  title: "Parasites in Canada: Hype Versus Science"
   description: "Evidence-based guide to parasites in Canada. Learn when parasite testing is appropriate and why most people don't need a 'parasite cleanse.'"
   focusKeyword: "parasites Canada"
 ---

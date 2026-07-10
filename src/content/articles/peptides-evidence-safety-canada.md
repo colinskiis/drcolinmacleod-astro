@@ -7,7 +7,7 @@ categories: ["Nutrition", "Health Policy"]
 tags: ["peptides", "Canada", "Health Canada", "bodybuilding", "anti-aging", "regulation", "evidence-based medicine"]
 seo:
   title: "Peptide Evidence, Safety and Regulation in Canada"
-  description: "Peptides are promoted for injury recovery, weight loss, anti-aging and performance, but the evidence and legal status vary widely. A Canadian review of benefits, risks and regulation."
+  description: "Peptide medicines and online research chemicals differ in evidence, quality and regulation. A Canadian review of benefits, risks and legal status."
   focusKeyword: "peptides Canada safety evidence"
 ---
 

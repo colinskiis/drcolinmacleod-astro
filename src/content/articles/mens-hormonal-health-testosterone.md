@@ -7,7 +7,7 @@ heroImage: "/images/general/mens-health-vitality.webp"
 categories: ["Naturopathic", "Men's Health", "Hormonal Health"]
 tags: ["testosterone", "men's health", "hormones", "natural treatment", "Halifax"]
 seo:
-  title: "Low Testosterone Natural Treatment | Halifax Naturopathic Doctor"
+  title: "Low Testosterone: Testing and Natural Approaches"
   description: "Evidence-based natural approaches to supporting healthy testosterone levels, addressing symptoms of hormonal imbalance and optimizing men's health."
   focusKeyword: "low testosterone natural treatment"
 ---

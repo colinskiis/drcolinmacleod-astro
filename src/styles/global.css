@@ -180,6 +180,17 @@
 .animate-delay-500 { animation-delay: 500ms; }
 .animate-delay-600 { animation-delay: 600ms; }
 
+/* Keep the mobile hero responsive without making users wait through a long
+   stagger before the primary message becomes readable. */
+@media (max-width: 640px) {
+  .animate-delay-100 { animation-delay: 0ms; }
+  .animate-delay-200 { animation-delay: 50ms; }
+  .animate-delay-300 { animation-delay: 100ms; }
+  .animate-delay-400 { animation-delay: 150ms; }
+  .animate-delay-500 { animation-delay: 200ms; }
+  .animate-delay-600 { animation-delay: 250ms; }
+}
+
 /* Scroll-triggered reveal animations.
    Hidden state is scoped to html.js (set by an inline script in BaseLayout)
    so content stays visible when JavaScript is unavailable. */

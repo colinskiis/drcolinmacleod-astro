@@ -7,13 +7,14 @@ heroImage: "/images/treatments/iv-patient-man.webp"
 categories: ["IV Therapy", "Post-Viral Recovery"]
 tags: ["long COVID", "post-viral fatigue", "IV therapy", "Myers Cocktail", "vitamin C", "Halifax", "Nova Scotia"]
 seo:
-  description: "Post-viral recovery support in Halifax with IV therapy. Address lingering fatigue, brain fog and weakness after COVID, flu and other infections with evidence-based nutrient infusions."
+  title: "Post-Viral Recovery and IV Therapy: Evidence and Limits"
+  description: "A cautious review of post-viral symptoms, appropriate assessment and the limited evidence for IV nutrient therapy during recovery."
   focusKeyword: "post-viral recovery IV therapy"
 ---
 
 The infection is over, but you still don't feel right. Weeks or months after a viral illness, you're exhausted, foggy and nothing like your pre-illness self. If this sounds familiar, you're experiencing post-viral syndrome, a frustrating condition that affects millions following COVID-19, influenza, Epstein-Barr virus and other infections.
 
-Post-viral syndrome occurs when symptoms persist long after the acute infection has resolved. Your body fought off the virus, but the battle left lasting effects that don't simply resolve with time and rest. The good news is that targeted nutritional support, including intravenous therapy, can help your body complete its recovery.
+Post-viral syndrome occurs when symptoms persist after the acute infection has resolved. Recovery patterns vary, and persistent or worsening symptoms warrant appropriate medical assessment. Nutritional support and intravenous therapy are sometimes discussed in this setting, but evidence for IV therapy as a post-viral treatment remains limited and it should not replace established evaluation or care.
 
 ## Understanding Post-Viral Syndrome
 

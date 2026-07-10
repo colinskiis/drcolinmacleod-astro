@@ -12,7 +12,6 @@ RewriteRule ^(.*)$ https://drcolinmacleod.com/$1 [L,R=301]
 # Article redirects (old root URLs to new /articles/ paths)
 # Note: Some old articles were archived - redirecting to closest relevant page
 RewriteRule ^osteoarthritis-medication-natural-alternatives/?$ /articles/natural-treatments-for-arthritis/ [L,R=301]
-RewriteRule ^herbal-medicine/?$ /articles/herbal-medicine-history-and-uses/ [L,R=301]
 RewriteRule ^nutrition-healthy-life/?$ /clinical-nutrition/ [L,R=301]
 RewriteRule ^fatigue-causes-treatment/?$ /chronic-fatigue-syndrome/ [L,R=301]
 RewriteRule ^skin-acne-eczema-psoriasis-treatments/?$ /articles/acne-eczema-psoriasis-treatments/ [L,R=301]
@@ -84,6 +83,8 @@ Options -Indexes
     Header set X-Frame-Options "SAMEORIGIN"
     Header set X-XSS-Protection "1; mode=block"
     Header set Referrer-Policy "strict-origin-when-cross-origin"
+    Header set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+    Header set Content-Security-Policy "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://challenges.cloudflare.com; frame-src https://www.google.com https://maps.google.com https://www.youtube.com https://challenges.cloudflare.com; upgrade-insecure-requests"
 </IfModule>
 
 # Cache static assets
@@ -95,6 +96,7 @@ Options -Indexes
     ExpiresByType image/gif "access plus 1 year"
     ExpiresByType image/svg+xml "access plus 1 year"
     ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/avif "access plus 1 year"
     ExpiresByType text/css "access plus 1 month"
     ExpiresByType application/javascript "access plus 1 month"
     ExpiresByType text/javascript "access plus 1 month"

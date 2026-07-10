@@ -7,7 +7,7 @@ heroImage: "/images/nutrition/mediterranean-spread.webp"
 categories: ["Naturopathic", "Heart Health"]
 tags: ["blood pressure", "hypertension", "cardiovascular", "heart health", "Halifax", "natural treatment"]
 seo:
-  title: "Blood Pressure Natural Strategies | Halifax Naturopathic Doctor"
+  title: "Natural Strategies for Healthy Blood Pressure"
   description: "Discover evidence-based natural approaches to blood pressure management. Learn how diet, lifestyle and naturopathic care support cardiovascular health."
   focusKeyword: "natural blood pressure treatment Halifax"
 ---

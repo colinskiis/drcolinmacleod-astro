@@ -80,39 +80,19 @@ const breadcrumbSchema = {
   ]
 };
 
-// Article schema for Google rich results
-const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": article.data.title,
-  "description": article.data.description,
-  "author": {
-    "@type": "Person",
-    "name": article.data.author,
-    "url": "https://drcolinmacleod.com/about/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Dr. Colin MacLeod ND",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://drcolinmacleod.com/favicon.svg"
-    }
-  },
-  "datePublished": article.data.publishDate,
-  "dateModified": article.data.modifiedDate || article.data.publishDate,
-  "image": article.data.heroImage ? `https://drcolinmacleod.com${article.data.heroImage}` : "https://drcolinmacleod.com/images/reference/home-background.webp",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": `https://drcolinmacleod.com/articles/${article.slug}`
-  }
-};
 ---
 
 <BaseLayout 
   title={seoTitle}
   description={seoDescription}
   focusKeyword={focusKeyword}
+  image={heroImage}
+  articleData={{
+    publishDate: article.data.publishDate.toISOString(),
+    modifiedDate: article.data.modifiedDate?.toISOString(),
+    author: article.data.author,
+    tags: article.data.tags,
+  }}
 >
   <!-- Reading Progress Bar -->
   <div id="reading-progress" class="fixed top-0 left-0 h-[3px] bg-emerald-500 z-50 transition-[width] duration-75 ease-out" style="width: 0%"></div>
@@ -317,8 +297,6 @@ const articleSchema = {
   </script>
 
   <!-- BreadcrumbList Schema for AI discoverability -->
-  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 
-  <!-- Article Schema for Google rich results -->
-  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
 </BaseLayout>

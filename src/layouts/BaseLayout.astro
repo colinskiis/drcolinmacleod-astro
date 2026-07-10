@@ -21,8 +21,31 @@ export interface Props {
   customSchemas?: Record<string, unknown> | Record<string, unknown>[];
 }
 
-const { title, description, focusKeyword, image, articleData, customSchemas = [] } = Astro.props;
-const fullTitle = title === 'Home' ? 'Dr. Colin MacLeod ND | Halifax Naturopathic Doctor | Bedford, NS' : `${title} | Dr. Colin MacLeod ND`;
+const { title, description, image, articleData, customSchemas = [] } = Astro.props;
+const titleSuffix = ' | Dr. Colin MacLeod ND';
+const fullTitle = title === 'Home'
+  ? 'Dr. Colin MacLeod ND | Naturopathic Doctor in Halifax'
+  : title.length + titleSuffix.length <= 60
+    ? `${title}${titleSuffix}`
+    : title;
+const metaDescription = (() => {
+  if (description.length <= 160) return description;
+
+  const excerpt = description.slice(0, 160);
+  const sentenceEnd = Math.max(
+    excerpt.lastIndexOf('. '),
+    excerpt.lastIndexOf('? '),
+    excerpt.lastIndexOf('! '),
+  );
+  if (sentenceEnd >= 100) return excerpt.slice(0, sentenceEnd + 1);
+
+  const wordSafeExcerpt = excerpt
+    .slice(0, 157)
+    .replace(/\s+\S*$/, '')
+    .replace(/[,:;.]$/, '')
+    .trimEnd();
+  return `${wordSafeExcerpt}…`;
+})();
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 const currentPath = Astro.url.pathname;
 const conditionPaths = [
@@ -336,7 +359,7 @@ const pageSchema = JSON.stringify({
   "@id": canonicalUrl.toString(),
   "url": canonicalUrl.toString(),
   "name": fullTitle,
-  "description": description,
+  "description": metaDescription,
   "inLanguage": "en-CA",
   "isPartOf": {
     "@id": "https://drcolinmacleod.com/#website"
@@ -350,7 +373,7 @@ const articleSchema = articleData ? JSON.stringify({
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": title,
-  "description": description,
+  "description": metaDescription,
   "author": {
     "@type": "Person",
     "name": articleData.author || "Dr. Colin MacLeod ND"
@@ -380,7 +403,7 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content={description} />
+    <meta name="description" content={metaDescription} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -422,7 +445,7 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
     
     <!-- SEO Meta Tags -->
     <meta property="og:title" content={fullTitle} />
-    <meta property="og:description" content={description} />
+    <meta property="og:description" content={metaDescription} />
     <meta property="og:type" content={articleData ? "article" : "website"} />
     <meta property="og:site_name" content="Dr. Colin MacLeod ND" />
     <meta property="og:url" content={canonicalUrl} />
@@ -433,28 +456,27 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
     
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={fullTitle} />
-    <meta name="twitter:description" content={description} />
+    <meta name="twitter:description" content={metaDescription} />
     <meta name="twitter:image" content={new URL(ogImage, Astro.site)} />
     
-    {focusKeyword && <meta name="keywords" content={focusKeyword} />}
     <meta name="author" content="Dr. Colin MacLeod ND" />
     <meta name="robots" content="index, follow" />
     
     <!-- Structured Data: MedicalBusiness -->
-    <script type="application/ld+json" set:html={medicalBusinessSchema} />
+    <script is:inline type="application/ld+json" set:html={medicalBusinessSchema} />
 
     <!-- Structured Data: Person (Practitioner) -->
-    <script type="application/ld+json" set:html={personSchema} />
+    <script is:inline type="application/ld+json" set:html={personSchema} />
 
     <!-- Structured Data: Website and Page -->
-    <script type="application/ld+json" set:html={websiteSchema} />
-    <script type="application/ld+json" set:html={pageSchema} />
+    <script is:inline type="application/ld+json" set:html={websiteSchema} />
+    <script is:inline type="application/ld+json" set:html={pageSchema} />
 
     {articleSchema && (
-      <script type="application/ld+json" set:html={articleSchema} />
+      <script is:inline type="application/ld+json" set:html={articleSchema} />
     )}
     {customSchemaJson.map((schema) => (
-      <script type="application/ld+json" set:html={schema} />
+      <script is:inline type="application/ld+json" set:html={schema} />
     ))}
     <!-- Fonts loaded via global.css (Manrope, Playfair Display) -->
     <ClientRouter />
@@ -638,6 +660,8 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
         const closeIcon = document.getElementById('close-icon');
         const bookBar = document.getElementById('mobile-book-bar');
         const headerNav = document.querySelector('#site-header nav');
+        const mainContent = document.getElementById('main-content');
+        const footer = document.querySelector('footer');
 
         const openClasses = ['opacity-0', 'invisible', 'pointer-events-none'];
 
@@ -651,7 +675,10 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
           menuIcon?.classList.remove('hidden');
           closeIcon?.classList.add('hidden');
           mobileMenuButton?.setAttribute('aria-expanded', 'false');
+          mobileMenuButton?.setAttribute('aria-label', 'Open menu');
           document.body.style.overflow = '';
+          mainContent?.removeAttribute('inert');
+          footer?.removeAttribute('inert');
           if (bookBar) bookBar.style.display = '';
         }
 
@@ -664,8 +691,14 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
           menuIcon?.classList.add('hidden');
           closeIcon?.classList.remove('hidden');
           mobileMenuButton?.setAttribute('aria-expanded', 'true');
+          mobileMenuButton?.setAttribute('aria-label', 'Close menu');
           document.body.style.overflow = 'hidden';
+          mainContent?.setAttribute('inert', '');
+          footer?.setAttribute('inert', '');
           if (bookBar) bookBar.style.display = 'none';
+
+          const firstLink = mobileMenu.querySelector<HTMLElement>('a[href]');
+          firstLink?.focus();
         }
 
         // Always start closed (also resets state after View Transitions)
@@ -683,16 +716,37 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
           else openMenu();
         });
 
-        // Escape closes the menu. Bound once on document (which survives View
-        // Transitions); re-clicks the live toggle so the current handler runs.
+        // Keyboard handling is bound once on document, which survives View
+        // Transitions. Resolve live elements each time because page DOM is replaced.
         if (!(window as any).__menuEscBound) {
           (window as any).__menuEscBound = true;
           document.addEventListener('keydown', (e) => {
-            if (e.key !== 'Escape') return;
             const btn = document.getElementById('mobile-menu-button');
-            if (btn && btn.getAttribute('aria-expanded') === 'true') {
+            if (!btn || btn.getAttribute('aria-expanded') !== 'true') return;
+
+            if (e.key === 'Escape') {
               btn.click();
               btn.focus();
+              return;
+            }
+
+            if (e.key === 'Tab') {
+              const menu = document.getElementById('mobile-menu');
+              if (!menu) return;
+              const menuItems = Array.from(menu.querySelectorAll<HTMLElement>(
+                'a[href], summary, button, [tabindex]:not([tabindex="-1"])'
+              )).filter((item) => item.getClientRects().length > 0);
+              const focusable = [btn, ...menuItems];
+              const first = focusable[0];
+              const last = focusable[focusable.length - 1];
+
+              if (e.shiftKey && document.activeElement === first) {
+                e.preventDefault();
+                last?.focus();
+              } else if (!e.shiftKey && document.activeElement === last) {
+                e.preventDefault();
+                first?.focus();
+              }
             }
           });
         }
