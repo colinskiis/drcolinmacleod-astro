@@ -1,0 +1,87 @@
+name: Deploy production site
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: production-deployment
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: vars.NAMECHEAP_DEPLOY_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment:
+      name: production
+      url: https://drcolinmacleod.com
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check project
+        run: npm run check
+
+      - name: Build site
+        run: npm run build
+        env:
+          PUBLIC_TURNSTILE_SITE_KEY: ${{ vars.PUBLIC_TURNSTILE_SITE_KEY }}
+
+      - name: Configure SSH
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.NAMECHEAP_SSH_PRIVATE_KEY }}
+          SSH_KNOWN_HOSTS: ${{ secrets.NAMECHEAP_KNOWN_HOSTS }}
+        run: |
+          install -d -m 700 ~/.ssh
+          printf '%s\n' "$SSH_PRIVATE_KEY" > ~/.ssh/namecheap_deploy
+          chmod 600 ~/.ssh/namecheap_deploy
+          printf '%s\n' "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          chmod 600 ~/.ssh/known_hosts
+
+      - name: Clear interrupted rsync processes
+        run: |
+          ssh -i ~/.ssh/namecheap_deploy \
+            -o BatchMode=yes \
+            -o IdentitiesOnly=yes \
+            -p 21098 \
+            drcohmrh@business81.web-hosting.com \
+            "pkill -f 'rsync --serve[r]' 2>/dev/null || true"
+
+      - name: Deploy with rsync
+        run: |
+          rsync -az --delete --timeout=300 --stats \
+            --exclude '.well-known/' \
+            -e "ssh -i ~/.ssh/namecheap_deploy -o BatchMode=yes -o IdentitiesOnly=yes -p 21098" \
+            dist/ \
+            drcohmrh@business81.web-hosting.com:~/public_html/
+
+      - name: Verify production
+        run: |
+          for attempt in {1..12}; do
+            if curl -fsS https://drcolinmacleod.com/ | grep -q 'Look beyond symptoms' \
+              && curl -fsS https://drcolinmacleod.com/editorial-policy/ | grep -q 'Editorial and Evidence Policy' \
+              && [[ "$(curl -sS -o /dev/null -w '%{http_code}' https://drcolinmacleod.com/herbal-medicine/)" == "200" ]]; then
+              echo "Production verification passed."
+              exit 0
+            fi
+            echo "Waiting for production to serve the new build (attempt $attempt/12)..."
+            sleep 10
+          done
+          echo "Production verification did not observe the new build."
+          exit 1
