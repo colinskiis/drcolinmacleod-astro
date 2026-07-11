@@ -13,7 +13,7 @@ The deployment is intentionally disabled until its public key is authorized.
 1. Sign in to Namecheap cPanel.
 2. Open **Security > SSH Access**.
 3. Choose **Manage SSH Keys**.
-4. Import a public key named `github-actions-drcolinmacleod-astro` using the
+4. Import the RSA public key with a name such as `gh_rsa` using the
    contents of `docs/namecheap-github-actions.pub`.
 5. Return to **Manage SSH Keys**, select the imported key and choose
    **Authorize**.
