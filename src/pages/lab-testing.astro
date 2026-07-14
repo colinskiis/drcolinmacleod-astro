@@ -1,18 +1,31 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
-import ClinicalContentLayout from '../components/ClinicalContentLayout.astro';
-import ClinicalPageCTA from '../components/ClinicalPageCTA.astro';
+import CTAButton from '../components/CTAButton.astro';
 import FAQSection from '../components/FAQSection.astro';
-import RelatedCare from '../components/RelatedCare.astro';
 import { ClipboardCheck, TestTubes, Clock, Sparkles, ChevronRight } from '@lucide/astro';
 
-const tocItems = [
-  { id: 'overview', title: 'Private Testing Overview' },
-  { id: 'available-testing', title: 'Available Testing' },
-  { id: 'how-it-works', title: 'How It Works' },
-  { id: 'understanding-results', title: 'Understanding Results' },
-  { id: 'frequently-asked-questions', title: 'Frequently Asked Questions' },
+const benefits = [
+  {
+    title: 'No Family-Doctor Requisition',
+    description: 'Dr. MacLeod can order appropriate testing for patients of the practice.',
+    icon: ClipboardCheck,
+  },
+  {
+    title: 'Broad Testing Options',
+    description: 'Options range from general wellness blood work to selected specialized panels.',
+    icon: TestTubes,
+  },
+  {
+    title: 'In-Office Collection',
+    description: 'Blood collection is performed in the clinic for tests available through the practice.',
+    icon: Clock,
+  },
+  {
+    title: 'Clinical Interpretation',
+    description: 'Results are reviewed in the context of your symptoms, history and other clinical information.',
+    icon: Sparkles,
+  },
 ];
 
 const testingOptions = [
@@ -60,6 +73,13 @@ const testingOptions = [
   },
 ];
 
+const steps = [
+  ['1', 'Initial Consultation', 'Discuss your health concerns, history and goals with Dr. MacLeod.'],
+  ['2', 'Select Testing', 'Choose clinically relevant tests and review the expected costs before ordering.'],
+  ['3', 'Sample Collection', 'Complete blood collection in the clinic with preparation instructions provided in advance.'],
+  ['4', 'Review Results', 'Review the complete pattern and determine practical recommendations or next steps.'],
+];
+
 const faqs = [
   { question: "Do I need a doctor's referral for blood work?", answer: "<p>No. You can access comprehensive blood work without a family doctor's requisition. This can be helpful if you do not have a family doctor or want to discuss testing that is not routinely ordered.</p>" },
   { question: 'Is private blood work covered by MSI?', answer: '<p>Testing ordered through a naturopathic doctor is not covered by MSI. Many extended health insurance plans cover naturopathic consultations, while laboratory costs are generally paid out of pocket. Check your individual plan for details.</p>' },
@@ -86,120 +106,117 @@ const faqs = [
     <p>Get the blood work and laboratory testing you need without a family doctor's requisition. Testing and in-office blood collection are available through Dr. MacLeod's practice at Optimal Wellbeing Clinic in Bedford.</p>
   </HeroSection>
 
-  <ClinicalContentLayout tocItems={tocItems} prose={false}>
-    <div class="space-y-16 lg:space-y-20">
-      <section id="overview">
-        <h2 class="sr-only">Private Testing Overview</h2>
-        <p class="mb-8 text-lg leading-relaxed text-slate-700">
+  <section class="border-b border-slate-100 bg-white py-12">
+    <div class="section-shell">
+      <div class="mx-auto max-w-4xl text-center">
+        <p class="text-lg leading-relaxed text-slate-700">
           Private testing can provide access to routine and specialized laboratory assessments when you do not have a family physician, when provincial testing is difficult to access or when a broader clinical picture would be useful. Tests are selected during a consultation based on your symptoms, medical history and goals.
         </p>
-
-        <div class="grid gap-4 sm:grid-cols-2">
-          <div class="site-card p-5">
-            <ClipboardCheck class="mb-3 h-7 w-7 text-emerald-700" stroke-width={1.5} aria-hidden="true" />
-            <h3 class="mb-2 text-lg font-serif font-medium text-emerald-950">No Family-Doctor Requisition</h3>
-            <p class="text-sm leading-relaxed text-slate-600">Dr. MacLeod can order appropriate testing for patients of the practice.</p>
-          </div>
-          <div class="site-card p-5">
-            <TestTubes class="mb-3 h-7 w-7 text-emerald-700" stroke-width={1.5} aria-hidden="true" />
-            <h3 class="mb-2 text-lg font-serif font-medium text-emerald-950">Broad Testing Options</h3>
-            <p class="text-sm leading-relaxed text-slate-600">Options range from general wellness blood work to selected specialized panels.</p>
-          </div>
-          <div class="site-card p-5">
-            <Clock class="mb-3 h-7 w-7 text-emerald-700" stroke-width={1.5} aria-hidden="true" />
-            <h3 class="mb-2 text-lg font-serif font-medium text-emerald-950">In-Office Collection</h3>
-            <p class="text-sm leading-relaxed text-slate-600">Blood collection is performed in the clinic for tests available through the practice.</p>
-          </div>
-          <div class="site-card p-5">
-            <Sparkles class="mb-3 h-7 w-7 text-emerald-700" stroke-width={1.5} aria-hidden="true" />
-            <h3 class="mb-2 text-lg font-serif font-medium text-emerald-950">Clinical Interpretation</h3>
-            <p class="text-sm leading-relaxed text-slate-600">Results are reviewed in the context of your symptoms, history and other clinical information.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="available-testing">
-        <div class="mb-7">
-          <h2 class="mb-3 text-3xl font-serif font-medium text-emerald-950">Available Testing</h2>
-          <p class="text-lg text-slate-600">Testing is individualized; these are common categories available through the practice.</p>
-        </div>
-
-        <div class="grid gap-5 sm:grid-cols-2">
-          {testingOptions.map((option) => (
-            <a href={option.href} class="site-card-interactive group overflow-hidden">
-              <div class="aspect-[16/9] overflow-hidden">
-                <img
-                  src={option.image}
-                  alt={option.alt}
-                  class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                  width="800"
-                  height="450"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-              <div class="p-5">
-                <h3 class="mb-2 text-xl font-serif font-medium text-emerald-950 group-hover:text-emerald-700">{option.title}</h3>
-                <p class="text-sm leading-relaxed text-slate-600">{option.description}</p>
-                <span class="mt-4 inline-flex items-center text-sm font-semibold text-emerald-700">
-                  Learn more <ChevronRight class="ml-1 h-4 w-4" aria-hidden="true" />
-                </span>
-              </div>
-            </a>
-          ))}
-        </div>
-      </section>
-
-      <section id="how-it-works">
-        <h2 class="mb-7 text-3xl font-serif font-medium text-emerald-950">How It Works</h2>
-        <ol class="grid gap-5 sm:grid-cols-2">
-          {[
-            ['1', 'Initial Consultation', 'Discuss your health concerns, history and goals with Dr. MacLeod.'],
-            ['2', 'Select Testing', 'Dr. MacLeod determines which tests are appropriate and explains the expected costs.'],
-            ['3', 'Sample Collection', 'Blood collection is performed in the clinic, with preparation instructions provided in advance.'],
-            ['4', 'Review Results', 'Results are reviewed in context and used to guide practical recommendations or further assessment.'],
-          ].map(([number, title, description]) => (
-            <li class="site-card flex gap-4 p-5">
-              <span class="flex h-10 w-10 flex-none items-center justify-center rounded-full bg-emerald-800 font-semibold text-white">{number}</span>
-              <div>
-                <h3 class="mb-1 text-lg font-serif font-medium text-emerald-950">{title}</h3>
-                <p class="text-sm leading-relaxed text-slate-600">{description}</p>
-              </div>
-            </li>
-          ))}
-        </ol>
-      </section>
-
-      <section id="understanding-results">
-        <h2 class="mb-4 text-3xl font-serif font-medium text-emerald-950">Understanding Your Results</h2>
-        <div class="space-y-5 text-lg leading-relaxed text-slate-700">
-          <p>Laboratory reference ranges are useful for identifying values outside the expected population range, but a number should not be interpreted in isolation. Symptoms, medications, health history, trends over time and relationships between markers can all affect what a result means for an individual patient.</p>
-          <p>Dr. MacLeod reviews the complete pattern rather than treating a single result as a diagnosis. When appropriate, recommendations may include follow-up testing, nutrition or lifestyle changes, supplementation or coordination with another healthcare provider.</p>
-        </div>
-        <div class="mt-7 rounded-2xl border border-emerald-100 bg-emerald-50 p-6">
-          <h3 class="mb-2 text-xl font-serif font-medium text-emerald-950">Testing should answer a clinical question</h3>
-          <p class="leading-relaxed text-slate-600">More testing is not automatically better. The goal is to choose assessments that are relevant to your situation and likely to influence care.</p>
-        </div>
-      </section>
+      </div>
     </div>
-  </ClinicalContentLayout>
+  </section>
 
-  <FAQSection id="frequently-asked-questions" bg="emerald" items={faqs} />
+  <section class="bg-white py-10 sm:py-16 lg:py-20" aria-label="Laboratory testing benefits">
+    <div class="section-shell">
+      <div class="grid grid-cols-2 gap-5 sm:gap-8 lg:grid-cols-4">
+        {benefits.map(({ title, description, icon: Icon }) => (
+          <div class="text-center">
+            <div class="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-emerald-100 sm:mb-4 sm:h-16 sm:w-16">
+              <Icon class="h-6 w-6 text-emerald-700 sm:h-8 sm:w-8" stroke-width={1.5} aria-hidden="true" />
+            </div>
+            <h2 class="mb-2 text-base font-serif font-medium text-emerald-950 sm:text-lg">{title}</h2>
+            <p class="text-xs leading-relaxed text-slate-600 sm:text-sm">{description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
 
-  <RelatedCare
-    title="Related Testing"
-    hubHref="/services/"
-    hubLabel="Services"
-    links={[
-      { title: 'Thyroid Testing', href: '/thyroid-testing/', description: 'A broader assessment of thyroid function and antibodies.' },
-      { title: 'Digestive Health Testing', href: '/digestive-health-testing/', description: 'Selected testing for persistent digestive symptoms.' },
-      { title: 'Wellness Blood Work', href: '/wellness-blood-work/', description: 'Baseline blood work and preventive health assessment.' },
-    ]}
-  />
+  <section class="bg-emerald-50 py-16 lg:py-24">
+    <div class="section-shell">
+      <div class="mb-10 text-center sm:mb-12">
+        <h2 class="mb-4 text-3xl font-serif font-medium text-emerald-950 sm:text-4xl">Available Testing</h2>
+        <p class="mx-auto max-w-3xl text-lg text-slate-600">Testing is individualized; these are common categories available through the practice.</p>
+      </div>
 
-  <ClinicalPageCTA
-    title="Ready to Discuss Laboratory Testing?"
-    description="Book an initial consultation to review your concerns and determine which testing, if any, is appropriate for you."
-    source="clinical-page-cta-lab-testing"
-  />
+      <div class="space-y-1 sm:hidden">
+        {testingOptions.map((option) => (
+          <a href={option.href} class="group flex items-center gap-3 border-b border-emerald-100 py-4 font-medium text-slate-700 transition-colors hover:text-emerald-700">
+            <ChevronRight class="h-4 w-4 flex-none text-emerald-500 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
+            {option.title}
+          </a>
+        ))}
+      </div>
+
+      <div class="hidden gap-7 sm:grid sm:grid-cols-2 lg:grid-cols-3">
+        {testingOptions.map((option) => (
+          <a href={option.href} class="site-card-interactive group overflow-hidden">
+            <div class="aspect-[16/10] overflow-hidden">
+              <img
+                src={option.image}
+                alt={option.alt}
+                class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                width="800"
+                height="500"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="mb-3 text-xl font-serif font-medium text-emerald-950 transition-colors group-hover:text-emerald-700">{option.title}</h3>
+              <p class="mb-4 leading-relaxed text-slate-600">{option.description}</p>
+              <span class="inline-flex items-center text-sm font-semibold text-emerald-700">
+                Learn more <ChevronRight class="ml-1 h-4 w-4" aria-hidden="true" />
+              </span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white py-16 lg:py-24">
+    <div class="section-shell">
+      <h2 class="mb-10 text-center text-3xl font-serif font-medium text-emerald-950 sm:text-4xl">How It Works</h2>
+      <ol class="grid grid-cols-2 gap-5 sm:gap-8 lg:grid-cols-4">
+        {steps.map(([number, title, description]) => (
+          <li class="text-center">
+            <span class="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-emerald-700 text-xl font-semibold text-white sm:mb-4 sm:h-16 sm:w-16 sm:text-2xl">{number}</span>
+            <h3 class="mb-2 text-base font-serif font-medium text-emerald-950 sm:text-lg">{title}</h3>
+            <p class="text-xs leading-relaxed text-slate-600 sm:text-sm">{description}</p>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <section class="bg-emerald-950 py-16 lg:py-24">
+    <div class="section-shell">
+      <div class="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-14">
+        <div>
+          <h2 class="mb-6 text-3xl font-serif font-medium text-white sm:text-4xl">Understanding Your Results</h2>
+          <div class="space-y-5 text-lg leading-relaxed text-white/85">
+            <p>Laboratory reference ranges help identify results outside the expected population range, but a number should not be interpreted in isolation.</p>
+            <p>Dr. MacLeod reviews symptoms, medications, health history, trends over time and relationships between markers to understand what the complete pattern may mean for an individual patient.</p>
+          </div>
+        </div>
+        <div class="rounded-2xl border border-white/15 bg-white/10 p-7 sm:p-8">
+          <h3 class="mb-3 text-xl font-serif font-medium text-white">Testing should answer a clinical question</h3>
+          <p class="leading-relaxed text-white/75">More testing is not automatically better. The goal is to choose assessments that are relevant to your situation and likely to influence care.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <FAQSection bg="white" items={faqs} />
+
+  <section class="bg-emerald-950 py-16 lg:py-20">
+    <div class="section-shell text-center">
+      <div class="mx-auto max-w-3xl">
+        <h2 class="mb-5 text-3xl font-serif font-medium text-white sm:text-4xl">Ready to Discuss Laboratory Testing?</h2>
+        <p class="mb-8 text-lg leading-relaxed text-white/85">Book an initial consultation to review your concerns and determine which testing, if any, is appropriate for you.</p>
+        <CTAButton source="lab-testing-cta" />
+      </div>
+    </div>
+  </section>
 </BaseLayout>

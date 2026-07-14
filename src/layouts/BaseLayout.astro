@@ -96,8 +96,9 @@ const servicePaths = [
   '/trace-minerals/',
   '/wellness-blood-work/',
 ];
+const isLabTestingPath = currentPath.startsWith('/lab-testing');
 const isConditionPath = currentPath.startsWith('/conditions') || conditionPaths.includes(currentPath);
-const isServicePath = currentPath.startsWith('/services') || servicePaths.includes(currentPath);
+const isServicePath = !isLabTestingPath && (currentPath.startsWith('/services') || servicePaths.includes(currentPath));
 
 const serviceMenuGroups = [
   {
@@ -478,6 +479,16 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
               destination_path: relatedLink.getAttribute('href') || '',
               page_path: window.location.pathname
             });
+            return;
+          }
+
+          const navigationLink = target.closest('[data-navigation-source]');
+          if (navigationLink) {
+            gtag('event', 'navigation_click', {
+              navigation_source: navigationLink.getAttribute('data-navigation-source') || 'unknown',
+              destination_path: navigationLink.getAttribute('href') || '',
+              page_path: window.location.pathname
+            });
           }
         });
       }
@@ -553,14 +564,14 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
           </a>
 
           <!-- Centered Navigation -->
-          <div class="hidden lg:flex items-center justify-center flex-1 gap-8 text-sm font-medium text-white" role="navigation" aria-label="Main navigation">
-            <a href="/" class={`hover:text-emerald-200 hover:border-emerald-400/50 transition-colors duration-200 pb-1 border-b-2 ${currentPath === '/' ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={currentPath === '/' ? 'page' : undefined}>Home</a>
-            <a href="/about/" class={`hover:text-emerald-200 hover:border-emerald-400/50 transition-colors duration-200 pb-1 border-b-2 ${currentPath.startsWith('/about') ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={currentPath.startsWith('/about') ? 'page' : undefined}>About</a>
-            <a href="/new-patients/" class={`hover:text-emerald-200 hover:border-emerald-400/50 transition-colors duration-200 pb-1 border-b-2 ${currentPath.startsWith('/new-patients') ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={currentPath.startsWith('/new-patients') ? 'page' : undefined}>New Patients</a>
+          <div class="hidden xl:flex items-center justify-center flex-1 gap-4 text-sm font-medium text-white" role="navigation" aria-label="Main navigation">
+            <a href="/lab-testing/" data-navigation-source="desktop-main-nav-lab-testing" class={`whitespace-nowrap hover:text-emerald-200 hover:border-emerald-400/50 transition-colors duration-200 pb-1 border-b-2 ${isLabTestingPath ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={isLabTestingPath ? 'page' : undefined}>Lab Testing</a>
+            <a href="/about/" class={`whitespace-nowrap hover:text-emerald-200 hover:border-emerald-400/50 transition-colors duration-200 pb-1 border-b-2 ${currentPath.startsWith('/about') ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={currentPath.startsWith('/about') ? 'page' : undefined}>About</a>
+            <a href="/new-patients/" class={`whitespace-nowrap hover:text-emerald-200 hover:border-emerald-400/50 transition-colors duration-200 pb-1 border-b-2 ${currentPath.startsWith('/new-patients') ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={currentPath.startsWith('/new-patients') ? 'page' : undefined}>New Patients</a>
             <div class="relative group">
               <a
                 href="/services/"
-                class={`inline-flex items-center gap-1 hover:text-emerald-200 hover:border-emerald-400/50 transition-colors duration-200 pb-1 border-b-2 ${isServicePath ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`}
+                class={`inline-flex items-center gap-1 whitespace-nowrap hover:text-emerald-200 hover:border-emerald-400/50 transition-colors duration-200 pb-1 border-b-2 ${isServicePath ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`}
                 aria-current={isServicePath ? 'page' : undefined}
                 aria-haspopup="true"
               >
@@ -595,7 +606,7 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
             <div class="relative group">
               <a
                 href="/conditions/"
-                class={`inline-flex items-center gap-1 hover:text-emerald-200 hover:border-emerald-400/50 transition-colors duration-200 pb-1 border-b-2 ${isConditionPath ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`}
+                class={`inline-flex items-center gap-1 whitespace-nowrap hover:text-emerald-200 hover:border-emerald-400/50 transition-colors duration-200 pb-1 border-b-2 ${isConditionPath ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`}
                 aria-current={isConditionPath ? 'page' : undefined}
                 aria-haspopup="true"
               >
@@ -627,8 +638,8 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
                 </div>
               </div>
             </div>
-            <a href="/contact/" class={`hover:text-emerald-200 hover:border-emerald-400/50 transition-colors duration-200 pb-1 border-b-2 ${currentPath.startsWith('/contact') ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={currentPath.startsWith('/contact') ? 'page' : undefined}>Contact</a>
-            <a href="/articles/" class={`hover:text-emerald-200 hover:border-emerald-400/50 transition-colors duration-200 pb-1 border-b-2 ${currentPath.startsWith('/articles') ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={currentPath.startsWith('/articles') ? 'page' : undefined}>Articles</a>
+            <a href="/contact/" class={`whitespace-nowrap hover:text-emerald-200 hover:border-emerald-400/50 transition-colors duration-200 pb-1 border-b-2 ${currentPath.startsWith('/contact') ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={currentPath.startsWith('/contact') ? 'page' : undefined}>Contact</a>
+            <a href="/articles/" class={`whitespace-nowrap hover:text-emerald-200 hover:border-emerald-400/50 transition-colors duration-200 pb-1 border-b-2 ${currentPath.startsWith('/articles') ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={currentPath.startsWith('/articles') ? 'page' : undefined}>Articles</a>
           </div>
 
           <!-- Right Side: Search + Book Button + Mobile Menu -->
@@ -638,7 +649,7 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
               href="https://macleodnaturopathic.janeapp.com/"
               target="_blank"
               rel="noopener noreferrer"
-              class="hidden lg:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-emerald-400 text-emerald-950 font-semibold hover:bg-emerald-300 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 shadow-lg shadow-emerald-500/20 hover:shadow-emerald-400/30 text-base whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300 focus-visible:ring-offset-2 focus-visible:ring-offset-emerald-950"
+              class="hidden xl:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-emerald-400 text-emerald-950 font-semibold hover:bg-emerald-300 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 shadow-lg shadow-emerald-500/20 hover:shadow-emerald-400/30 text-base whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300 focus-visible:ring-offset-2 focus-visible:ring-offset-emerald-950"
             >
               <span>Book Online</span>
               <Calendar class="hidden sm:block w-5 h-5" aria-hidden="true" />
@@ -646,7 +657,7 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
             <!-- Mobile Menu Button -->
             <button
               id="mobile-menu-button"
-              class="lg:hidden p-3 text-white hover:text-white/80 transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
+              class="xl:hidden p-3 text-white hover:text-white/80 transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
               aria-label="Toggle menu"
               aria-expanded="false"
             >
@@ -656,9 +667,9 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
           </div>
         </nav>
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="lg:hidden fixed inset-x-0 bottom-0 z-30 bg-emerald-950 overflow-y-auto overscroll-contain opacity-0 invisible pointer-events-none transition-opacity duration-300 ease-out" role="navigation" aria-label="Mobile navigation">
+        <div id="mobile-menu" class="xl:hidden fixed inset-x-0 bottom-0 z-30 bg-emerald-950 overflow-y-auto overscroll-contain opacity-0 invisible pointer-events-none transition-opacity duration-300 ease-out" role="navigation" aria-label="Mobile navigation">
           <div class="flex flex-col space-y-1 px-4 pt-2 pb-10 text-emerald-100 font-semibold">
-            <a href="/" class={`hover:text-white hover:bg-emerald-700/20 transition-colors py-3 px-3 text-xl rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 ${currentPath === '/' ? 'text-white bg-emerald-800/30' : ''}`} aria-current={currentPath === '/' ? 'page' : undefined}>Home</a>
+            <a href="/lab-testing/" data-navigation-source="mobile-main-nav-lab-testing" class={`hover:text-white hover:bg-emerald-700/20 transition-colors py-3 px-3 text-xl rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 ${isLabTestingPath ? 'text-white bg-emerald-800/30' : ''}`} aria-current={isLabTestingPath ? 'page' : undefined}>Lab Testing</a>
             <a href="/about/" class={`hover:text-white hover:bg-emerald-700/20 transition-colors py-3 px-3 text-xl rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 ${currentPath.startsWith('/about') ? 'text-white bg-emerald-800/30' : ''}`} aria-current={currentPath.startsWith('/about') ? 'page' : undefined}>About</a>
             <a href="/new-patients/" class={`hover:text-white hover:bg-emerald-700/20 transition-colors py-3 px-3 text-xl rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 ${currentPath.startsWith('/new-patients') ? 'text-white bg-emerald-800/30' : ''}`} aria-current={currentPath.startsWith('/new-patients') ? 'page' : undefined}>New Patients</a>
 
@@ -869,7 +880,7 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
     <!-- Mobile sticky booking bar -->
     <div
       id="mobile-book-bar"
-      class="lg:hidden fixed inset-x-0 bottom-0 z-40 border-t border-emerald-200/70 bg-white/95 backdrop-blur px-4 py-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] shadow-[0_-4px_20px_rgba(2,44,34,0.10)]"
+      class="xl:hidden fixed inset-x-0 bottom-0 z-40 border-t border-emerald-200/70 bg-white/95 backdrop-blur px-4 py-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] shadow-[0_-4px_20px_rgba(2,44,34,0.10)]"
       transition:persist
     >
       <div class="flex items-center gap-3">
