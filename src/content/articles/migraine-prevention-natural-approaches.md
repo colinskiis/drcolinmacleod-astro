@@ -2,7 +2,7 @@
 title: "Migraine Prevention: Natural Approaches That Work"
 description: "Discover evidence-based natural approaches to migraine prevention. Learn about triggers, dietary factors, lifestyle changes and how naturopathic medicine can help reduce migraine frequency."
 publishDate: 2025-08-27
-author: "Dr. Colin MacLeod ND"
+author: "Dr. Colin MacLeod, ND"
 heroImage: "/images/general/peaceful-sleep-migraine.webp"
 categories: ["Naturopathic", "Pain Management"]
 tags: ["migraine", "headache", "pain", "natural treatment", "Halifax", "prevention"]
@@ -128,7 +128,7 @@ Many of my patients who initially felt hopeless about their migraines have achie
 
 ## Migraine Support in Halifax
 
-If you are struggling with migraines and looking for a comprehensive, natural approach to prevention, please contact Dr. Colin MacLeod ND to book an initial visit. Through detailed assessment, identification of your individual triggers and contributing factors and a personalized treatment plan incorporating clinical nutrition, herbal medicine, acupuncture and lifestyle modification, we can work together to reduce your migraine burden and improve your quality of life.
+If you are struggling with migraines and looking for a comprehensive, natural approach to prevention, please contact Dr. Colin MacLeod, ND to book an initial visit. Through detailed assessment, identification of your individual triggers and contributing factors and a personalized treatment plan incorporating clinical nutrition, herbal medicine, acupuncture and lifestyle modification, we can work together to reduce your migraine burden and improve your quality of life.
 
 For more information about naturopathic approaches to migraine and headache treatment, please visit my [migraine and headache conditions page](/migraine-headache).
 

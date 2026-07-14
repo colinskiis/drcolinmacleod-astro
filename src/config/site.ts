@@ -5,7 +5,7 @@
 
 export const siteConfig = {
   // Site Info
-  name: "Dr. Colin MacLeod ND",
+  name: "Dr. Colin MacLeod, ND",
   tagline: "Naturopathic Doctor",
   description: "Halifax Naturopathic Doctor providing comprehensive natural healthcare solutions including IV therapy, prolotherapy, acupuncture, and clinical nutrition.",
 

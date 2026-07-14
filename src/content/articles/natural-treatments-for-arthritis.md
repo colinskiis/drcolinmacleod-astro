@@ -3,7 +3,7 @@ title: "Arthritis: Understanding the Condition and Natural Treatment Options"
 description: "An evidence-informed guide to osteoarthritis and adjunct options including exercise, nutrition, acupuncture and prolotherapy."
 publishDate: 2015-11-27
 modifiedDate: 2024-12-06
-author: "Dr. Colin MacLeod ND"
+author: "Dr. Colin MacLeod, ND"
 heroImage: "/images/conditions/knee-injury1.webp"
 categories: ["Pain Management", "Naturopathic"]
 tags: ["arthritis", "osteoarthritis", "joint pain", "prolotherapy", "acupuncture", "natural treatment"]

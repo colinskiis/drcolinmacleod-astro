@@ -49,7 +49,7 @@ Successful treatment goes beyond pain relief to address the factors that contrib
 
 ## Sports Injury Treatment in Halifax
 
-If you are experiencing pain that limits your training or competition, injuries that have not responded to rest alone, recurring injuries in the same area or chronic joint instability, please contact Dr. Colin MacLeod ND to book an initial naturopathic visit to discuss your options. Learn more about our [sports medicine services](/sports-medicine/).
+If you are experiencing pain that limits your training or competition, injuries that have not responded to rest alone, recurring injuries in the same area or chronic joint instability, please contact Dr. Colin MacLeod, ND to book an initial naturopathic visit to discuss your options. Learn more about our [sports medicine services](/sports-medicine/).
 
 ### References
 

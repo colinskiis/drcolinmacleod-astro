@@ -2,7 +2,7 @@
 title: "PMS and Hormonal Balance: A Naturopathic Perspective"
 description: "Understand the hormonal shifts behind PMS and learn evidence-based natural approaches to support menstrual health, mood and overall hormonal balance."
 publishDate: 2025-12-05
-author: "Dr. Colin MacLeod ND"
+author: "Dr. Colin MacLeod, ND"
 heroImage: "/images/general/yoga-stretching-pms.webp"
 categories: ["Naturopathic", "Hormones"]
 tags: ["PMS", "hormones", "women's health", "menstrual health", "Halifax", "natural treatment"]

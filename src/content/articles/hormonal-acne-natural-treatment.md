@@ -2,7 +2,7 @@
 title: "Hormonal Acne: Understanding and Treating Adult Breakouts Naturally"
 description: "Learn about the root causes of hormonal acne and evidence-based natural approaches to clearing skin from the inside out."
 publishDate: 2025-05-19
-author: "Dr. Colin MacLeod ND"
+author: "Dr. Colin MacLeod, ND"
 heroImage: "/images/general/healthy-lifestyle.webp"
 categories: ["Naturopathic", "Women's Health", "Skin Health"]
 tags: ["acne", "hormones", "skin health", "natural treatment", "women's health", "Halifax"]
@@ -190,7 +190,7 @@ Clearing hormonal acne requires addressing root causes rather than just treating
 
 While this approach requires more effort than applying a topical cream, the results are often more lasting and come with additional benefits for overall health.
 
-If you are struggling with hormonal acne and would like to explore naturopathic approaches, please contact Dr. Colin MacLeod ND to book an initial appointment. Dr. MacLeod offers comprehensive hormonal assessments and individualized treatment plans for hormonal acne and other skin conditions.
+If you are struggling with hormonal acne and would like to explore naturopathic approaches, please contact Dr. Colin MacLeod, ND to book an initial appointment. Dr. MacLeod offers comprehensive hormonal assessments and individualized treatment plans for hormonal acne and other skin conditions.
 
 ## References
 

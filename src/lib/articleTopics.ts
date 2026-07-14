@@ -5,7 +5,7 @@ export const articleTopics = [
     id: 'pain-injuries',
     label: 'Pain & Injuries',
     title: 'Pain & Injury Articles',
-    description: 'Articles on pain, sports injuries, prolotherapy and recovery from Dr. Colin MacLeod ND in Bedford, Nova Scotia.',
+    description: 'Articles on pain, sports injuries, prolotherapy and recovery from Dr. Colin MacLeod, ND in Bedford, Nova Scotia.',
     intro: 'Articles on pain, sports injuries, prolotherapy and recovery.',
     overview: [
       'Pain and injury care often benefits from a clear diagnosis, a realistic recovery plan and attention to the tissues involved. These articles focus on musculoskeletal pain, sports injuries and regenerative approaches such as prolotherapy.',
@@ -28,7 +28,7 @@ export const articleTopics = [
     id: 'digestive-health',
     label: 'Digestive Health',
     title: 'Digestive Health Articles',
-    description: 'Articles on digestive health, gut health, IBS, IBD and nutrition from Dr. Colin MacLeod ND in Bedford, Nova Scotia.',
+    description: 'Articles on digestive health, gut health, IBS, IBD and nutrition from Dr. Colin MacLeod, ND in Bedford, Nova Scotia.',
     intro: 'Articles on digestive health, gut health, IBS, IBD and nutrition.',
     overview: [
       'Digestive health can affect comfort, energy, mood and day-to-day quality of life. These articles organize information on gut symptoms, IBS and IBD, parasites, fiber and the gut-brain connection.',
@@ -51,7 +51,7 @@ export const articleTopics = [
     id: 'hormones',
     label: 'Hormones',
     title: 'Hormone Health Articles',
-    description: 'Articles on hormone health, PCOS, PMS, acne and related naturopathic care from Dr. Colin MacLeod ND.',
+    description: 'Articles on hormone health, PCOS, PMS, acne and related naturopathic care from Dr. Colin MacLeod, ND.',
     intro: 'Articles on hormone health, PCOS, PMS, acne and related care.',
     overview: [
       'Hormone concerns are often best understood by looking at symptoms, cycle patterns, metabolic health and appropriate lab testing together. These articles cover PCOS, PMS, acne, menopause, testosterone and fertility-related topics.',
@@ -74,7 +74,7 @@ export const articleTopics = [
     id: 'mental-health',
     label: 'Mental Health',
     title: 'Mental Health Articles',
-    description: 'Articles on stress, sleep, anxiety, depression and the gut-brain connection from Dr. Colin MacLeod ND.',
+    description: 'Articles on stress, sleep, anxiety, depression and the gut-brain connection from Dr. Colin MacLeod, ND.',
     intro: 'Articles on stress, sleep, mood and the gut-brain connection.',
     overview: [
       'Mental health is influenced by sleep, stress physiology, nutrition, digestion, movement and the broader medical picture. These articles cover anxiety, depression, sleep, stress and the gut-brain connection.',
@@ -97,7 +97,7 @@ export const articleTopics = [
     id: 'nutrition',
     label: 'Nutrition',
     title: 'Nutrition Articles',
-    description: 'Articles on clinical nutrition, supplements, herbal medicine and evidence-informed natural health from Dr. Colin MacLeod ND.',
+    description: 'Articles on clinical nutrition, supplements, herbal medicine and evidence-informed natural health from Dr. Colin MacLeod, ND.',
     intro: 'Articles on clinical nutrition, supplements, herbal medicine and natural health.',
     overview: [
       'Nutrition and natural health recommendations work best when they are specific enough to matter and simple enough to follow. These articles cover food, supplements, herbal medicine, nutrient status and practical prevention.',
@@ -120,7 +120,7 @@ export const articleTopics = [
     id: 'iv-therapy',
     label: 'IV Therapy',
     title: 'IV Therapy Articles',
-    description: 'Articles on IV therapy, vitamin C, glutathione, Myers cocktail and post-viral recovery from Dr. Colin MacLeod ND.',
+    description: 'Articles on IV therapy, vitamin C, glutathione, Myers cocktail and post-viral recovery from Dr. Colin MacLeod, ND.',
     intro: 'Articles on IV therapy, vitamin C, glutathione and post-viral recovery.',
     overview: [
       'IV therapy is sometimes considered when oral nutrition is not enough, when higher nutrient dosing is being considered or when recovery support needs to be individualized. These articles cover IV nutrients, vitamin C, glutathione and post-viral recovery.',
@@ -143,7 +143,7 @@ export const articleTopics = [
     id: 'heart-metabolic',
     label: 'Heart & Metabolic',
     title: 'Heart & Metabolic Health Articles',
-    description: 'Articles on blood pressure, blood sugar, weight, cardiovascular and metabolic health from Dr. Colin MacLeod ND.',
+    description: 'Articles on blood pressure, blood sugar, weight, cardiovascular and metabolic health from Dr. Colin MacLeod, ND.',
     intro: 'Articles on blood pressure, blood sugar, cardiovascular and metabolic health.',
     overview: [
       'Heart and metabolic health are strongly shaped by blood pressure, blood sugar, lipids, inflammation, exercise, nutrition and long-term risk patterns. These articles collect practical information on cardiovascular and metabolic topics.',
@@ -166,7 +166,7 @@ export const articleTopics = [
     id: 'immune-health',
     label: 'Immune Health',
     title: 'Immune Health Articles',
-    description: 'Articles on immune health, autoimmune conditions, respiratory health and post-viral recovery from Dr. Colin MacLeod ND.',
+    description: 'Articles on immune health, autoimmune conditions, respiratory health and post-viral recovery from Dr. Colin MacLeod, ND.',
     intro: 'Articles on immune health, autoimmune conditions, respiratory health and recovery.',
     overview: [
       'Immune health involves infection recovery, inflammation, respiratory health, autoimmune patterns and overall resilience. These articles bring together immune-related topics in a practical, non-alarmist way.',

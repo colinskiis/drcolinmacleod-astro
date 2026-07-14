@@ -3,7 +3,7 @@ title: "Fiber: The Boring Nutrient That Actually Works"
 description: "While social media promotes miracle supplements and detox cleanses, fiber remains the most underconsumed and underappreciated nutrient. Here's why it deserves your attention."
 publishDate: 2024-10-06
 modifiedDate: 2026-01-09
-author: "Dr. Colin MacLeod ND"
+author: "Dr. Colin MacLeod, ND"
 heroImage: "/images/nutrition/fruits-vegetables.webp"
 categories: ["Naturopathic", "Nutrition", "Digestive Health"]
 tags: ["fiber", "gut health", "nutrition", "digestive health", "naturopathic"]
@@ -134,7 +134,7 @@ The unglamorous truth? Sometimes the most powerful health intervention is also t
 
 ## Digestive Health Support in Halifax
 
-If you're experiencing digestive issues, want guidance on optimizing your fiber intake or need help identifying which foods work best for your individual situation, please contact Dr. Colin MacLeod ND to book an initial visit. Dr. MacLeod offers [clinical nutrition services](/clinical-nutrition/) and comprehensive [digestive health assessments](/articles/digestive-health-natural-approaches) to help you develop an eating pattern that supports your gut health and overall wellness.
+If you're experiencing digestive issues, want guidance on optimizing your fiber intake or need help identifying which foods work best for your individual situation, please contact Dr. Colin MacLeod, ND to book an initial visit. Dr. MacLeod offers [clinical nutrition services](/clinical-nutrition/) and comprehensive [digestive health assessments](/articles/digestive-health-natural-approaches) to help you develop an eating pattern that supports your gut health and overall wellness.
 
 ### References
 

@@ -44,7 +44,7 @@ In some cases tingling, skin sensitivity or muscle twitching can occur during tr
 
 ## Microcurrent Therapy in Halifax
 
-If you are interested in receiving microcurrent treatment please contact Dr. Colin MacLeod ND at (902) 406-4424 to book an initial naturopathic visit to discuss your options.
+If you are interested in receiving microcurrent treatment please contact Dr. Colin MacLeod, ND at (902) 406-4424 to book an initial naturopathic visit to discuss your options.
 
 ## References
 

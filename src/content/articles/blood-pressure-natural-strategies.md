@@ -2,7 +2,7 @@
 title: "Blood Pressure: Natural Strategies for Cardiovascular Health"
 description: "Discover evidence-based natural approaches to blood pressure management. Learn how diet, lifestyle and naturopathic care support cardiovascular health."
 publishDate: 2025-03-05
-author: "Dr. Colin MacLeod ND"
+author: "Dr. Colin MacLeod, ND"
 heroImage: "/images/nutrition/mediterranean-spread.webp"
 categories: ["Naturopathic", "Heart Health"]
 tags: ["blood pressure", "hypertension", "cardiovascular", "heart health", "Halifax", "natural treatment"]
@@ -106,7 +106,7 @@ Here in Halifax, Nova Scotia, our maritime climate offers wonderful opportunitie
 
 ## Blood Pressure Support in Halifax
 
-If you are concerned about your blood pressure or interested in natural approaches to cardiovascular health, Dr. Colin MacLeod ND offers comprehensive assessment and individualized treatment planning. Dr. MacLeod can help identify factors contributing to elevated blood pressure, recommend appropriate lifestyle modifications and coordinate care with your other healthcare providers.
+If you are concerned about your blood pressure or interested in natural approaches to cardiovascular health, Dr. Colin MacLeod, ND offers comprehensive assessment and individualized treatment planning. Dr. MacLeod can help identify factors contributing to elevated blood pressure, recommend appropriate lifestyle modifications and coordinate care with your other healthcare providers.
 
 An initial naturopathic visit allows time to thoroughly review your health history, current medications and lifestyle factors. Based on this assessment, we can develop a personalized plan incorporating dietary guidance, stress management strategies and other evidence-based natural approaches appropriate for your individual situation. Laboratory testing through our [comprehensive testing services](/lab-testing/) can provide additional insight when indicated.
 

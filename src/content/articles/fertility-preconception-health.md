@@ -2,7 +2,7 @@
 title: "Fertility and Preconception Health: Preparing Your Body for Pregnancy"
 description: "Evidence-based natural approaches to optimize fertility and prepare for a healthy pregnancy, including nutrition, lifestyle and targeted supplementation."
 publishDate: 2025-04-24
-author: "Dr. Colin MacLeod ND"
+author: "Dr. Colin MacLeod, ND"
 heroImage: "/images/general/fertility-prenatal-nutrition.webp"
 categories: ["Naturopathic", "Women's Health", "Fertility"]
 tags: ["fertility", "preconception", "pregnancy", "women's health", "natural treatment", "Halifax"]
@@ -178,7 +178,7 @@ Naturopathic approaches can work alongside conventional fertility evaluation and
 
 The preconception period offers a unique opportunity to optimize health for both parents and create the best possible foundation for a healthy pregnancy. Through nutrition optimization, lifestyle modifications, appropriate supplementation and addressing any underlying health concerns, many couples significantly improve their chances of conception and healthy pregnancy outcomes.
 
-If you are planning pregnancy and would like support with preconception optimization, or if you have been struggling with fertility and want to explore natural approaches, please contact Dr. Colin MacLeod ND to book an initial appointment. Dr. MacLeod provides comprehensive preconception and fertility assessments, working alongside reproductive endocrinologists and other fertility specialists when appropriate to provide integrative care.
+If you are planning pregnancy and would like support with preconception optimization, or if you have been struggling with fertility and want to explore natural approaches, please contact Dr. Colin MacLeod, ND to book an initial appointment. Dr. MacLeod provides comprehensive preconception and fertility assessments, working alongside reproductive endocrinologists and other fertility specialists when appropriate to provide integrative care.
 
 ## References
 

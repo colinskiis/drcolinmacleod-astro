@@ -2,7 +2,7 @@
 title: "IBS and IBD: Natural Approaches to Digestive Disorders"
 description: "Understanding the differences between IBS and IBD, and evidence-based natural approaches to managing these common digestive conditions."
 publishDate: 2025-06-13
-author: "Dr. Colin MacLeod ND"
+author: "Dr. Colin MacLeod, ND"
 heroImage: "/images/general/gut-health-probiotics.webp"
 categories: ["Naturopathic", "Digestive Health"]
 tags: ["IBS", "IBD", "digestive health", "gut health", "natural treatment", "Halifax"]
@@ -244,7 +244,7 @@ Testing that may be helpful includes comprehensive stool analysis to assess micr
 
 If you are struggling with IBS, IBD or other digestive concerns, naturopathic medicine offers effective approaches to identify and address underlying factors. Through comprehensive assessment, dietary guidance, targeted supplementation and ongoing support, significant improvement is possible for most patients.
 
-Please contact Dr. Colin MacLeod ND to book an initial appointment. Dr. MacLeod provides thorough digestive health assessments and individualized treatment plans, working collaboratively with gastroenterologists and other healthcare providers when appropriate.
+Please contact Dr. Colin MacLeod, ND to book an initial appointment. Dr. MacLeod provides thorough digestive health assessments and individualized treatment plans, working collaboratively with gastroenterologists and other healthcare providers when appropriate.
 
 ## References
 

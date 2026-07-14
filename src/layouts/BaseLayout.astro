@@ -22,9 +22,9 @@ export interface Props {
 }
 
 const { title, description, image, articleData, customSchemas = [] } = Astro.props;
-const titleSuffix = ' | Dr. Colin MacLeod ND';
+const titleSuffix = ' | Dr. Colin MacLeod, ND';
 const fullTitle = title === 'Home'
-  ? 'Dr. Colin MacLeod ND | Naturopathic Doctor in Halifax'
+  ? 'Dr. Colin MacLeod, ND | Naturopathic Doctor in Halifax'
   : title.length + titleSuffix.length <= 60
     ? `${title}${titleSuffix}`
     : title;
@@ -171,10 +171,10 @@ const medicalBusinessSchema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "MedicalBusiness",
   "@id": "https://drcolinmacleod.com/#medicalbusiness",
-  "name": "Dr. Colin MacLeod ND",
+  "name": "Dr. Colin MacLeod, ND",
   "alternateName": [
     "Dr. Colin MacLeod",
-    "Colin MacLeod ND",
+    "Colin MacLeod, ND",
     "Optimal Wellbeing Clinic"
   ],
   "description": "Bedford, NS Naturopathic Doctor providing comprehensive natural healthcare solutions including IV therapy, prolotherapy, acupuncture and clinical nutrition.",
@@ -316,7 +316,7 @@ const personSchema = JSON.stringify({
   "worksFor": {
     "@type": "MedicalBusiness",
     "@id": "https://drcolinmacleod.com/#medicalbusiness",
-    "name": "Dr. Colin MacLeod ND",
+    "name": "Dr. Colin MacLeod, ND",
     "url": "https://drcolinmacleod.com",
     "address": {
       "@type": "PostalAddress",
@@ -345,7 +345,7 @@ const websiteSchema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "WebSite",
   "@id": "https://drcolinmacleod.com/#website",
-  "name": "Dr. Colin MacLeod ND",
+  "name": "Dr. Colin MacLeod, ND",
   "url": "https://drcolinmacleod.com/",
   "inLanguage": "en-CA",
   "publisher": {
@@ -376,11 +376,11 @@ const articleSchema = articleData ? JSON.stringify({
   "description": metaDescription,
   "author": {
     "@type": "Person",
-    "name": articleData.author || "Dr. Colin MacLeod ND"
+    "name": articleData.author || "Dr. Colin MacLeod, ND"
   },
   "publisher": {
     "@type": "Organization",
-    "name": "Dr. Colin MacLeod ND",
+    "name": "Dr. Colin MacLeod, ND",
     "logo": {
       "@type": "ImageObject",
       "url": "https://drcolinmacleod.com/favicon.svg"
@@ -447,7 +447,7 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={metaDescription} />
     <meta property="og:type" content={articleData ? "article" : "website"} />
-    <meta property="og:site_name" content="Dr. Colin MacLeod ND" />
+    <meta property="og:site_name" content="Dr. Colin MacLeod, ND" />
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:image" content={new URL(ogImage, Astro.site)} />
     <meta property="og:image:width" content="1200" />
@@ -459,7 +459,7 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
     <meta name="twitter:description" content={metaDescription} />
     <meta name="twitter:image" content={new URL(ogImage, Astro.site)} />
     
-    <meta name="author" content="Dr. Colin MacLeod ND" />
+    <meta name="author" content="Dr. Colin MacLeod, ND" />
     <meta name="robots" content="index, follow" />
     
     <!-- Structured Data: MedicalBusiness -->
@@ -772,7 +772,7 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
           <!-- About -->
           <div class="space-y-3">
             <p class="pill">Evidence-Based + Natural</p>
-            <h3 class="text-2xl font-semibold">Dr. Colin MacLeod ND</h3>
+            <h3 class="text-2xl font-semibold">Dr. Colin MacLeod, ND</h3>
             <p class="text-slate-700 leading-relaxed">
               Bedford-based naturopathic doctor combining clinical nutrition, lifestyle modification, regenerative injections, IV nutrient therapy, herbal medicine and acupuncture for long-term health results.
             </p>
@@ -817,7 +817,7 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
         <div class="mt-8">
           <MedicalDisclaimer />
           <div class="mt-4">
-            <p class="text-sm text-slate-600">&copy; {new Date().getFullYear()} Dr. Colin MacLeod ND. All rights reserved.</p>
+            <p class="text-sm text-slate-600">&copy; {new Date().getFullYear()} Dr. Colin MacLeod, ND. All rights reserved.</p>
           </div>
         </div>
       </div>

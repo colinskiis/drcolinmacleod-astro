@@ -3,7 +3,7 @@ title: "Acne, Eczema & Psoriasis: Natural Treatment Approaches"
 description: "Comprehensive natural treatment approaches for common skin conditions including acne, eczema and psoriasis, addressing root causes like gut health, inflammation and immune function."
 publishDate: 2012-06-13
 modifiedDate: 2026-01-10
-author: "Dr. Colin MacLeod ND"
+author: "Dr. Colin MacLeod, ND"
 heroImage: "/images/conditions/acne.webp"
 categories: ["Naturopathic", "Skin Health"]
 tags: ["acne", "eczema", "psoriasis", "skin health", "natural treatment", "Halifax"]
@@ -249,7 +249,7 @@ The timeline for improvement also varies. While some patients see rapid improvem
 
 Chronic skin conditions like acne, eczema and psoriasis often reflect internal imbalances that can be addressed naturally. By identifying triggers, supporting gut health, reducing inflammation and optimizing nutrition, many patients achieve significant improvement in their skin and overall health.
 
-If you're dealing with chronic skin issues and are interested in addressing root causes rather than just suppressing symptoms, please contact Dr. Colin MacLeod ND to book an initial consultation. Dr. MacLeod provides comprehensive assessments, appropriate testing (including food sensitivity testing when indicated) and personalized treatment plans. Learn more about our [clinical nutrition services](/clinical-nutrition/) and [lab testing options](/lab-testing/).
+If you're dealing with chronic skin issues and are interested in addressing root causes rather than just suppressing symptoms, please contact Dr. Colin MacLeod, ND to book an initial consultation. Dr. MacLeod provides comprehensive assessments, appropriate testing (including food sensitivity testing when indicated) and personalized treatment plans. Learn more about our [clinical nutrition services](/clinical-nutrition/) and [lab testing options](/lab-testing/).
 
 ## References
 

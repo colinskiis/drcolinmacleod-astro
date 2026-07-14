@@ -2,7 +2,7 @@
 title: "Natural Approaches to Depression Support"
 description: "Evidence-based natural approaches to supporting mental health and mood. Learn how nutrition, lifestyle and naturopathic care can complement depression treatment."
 publishDate: 2025-10-16
-author: "Dr. Colin MacLeod ND"
+author: "Dr. Colin MacLeod, ND"
 heroImage: "/images/general/coastal-hiking-depression.webp"
 categories: ["Naturopathic", "Mental Health"]
 tags: ["depression", "mental health", "mood", "natural treatment", "Halifax"]
@@ -108,7 +108,7 @@ Mental health exists on a continuum, and most of us will experience periods of l
 
 For those currently struggling with depression, know that effective help is available. The condition is highly treatable, and most people who receive appropriate care experience significant improvement. A combination of approaches often works best, and finding the right combination may take some time and experimentation.
 
-If you are interested in exploring how naturopathic approaches might support your mental health, please contact Dr. Colin MacLeod ND to book an initial visit. Dr. MacLeod can help evaluate factors that may be contributing to your symptoms, coordinate with your mental health team and develop a personalized plan incorporating nutrition, lifestyle modification and other natural therapies appropriate to your situation. Serving Halifax, Nova Scotia and surrounding communities, the practice offers comprehensive assessment and individualized care for those seeking to support their mental health naturally.
+If you are interested in exploring how naturopathic approaches might support your mental health, please contact Dr. Colin MacLeod, ND to book an initial visit. Dr. MacLeod can help evaluate factors that may be contributing to your symptoms, coordinate with your mental health team and develop a personalized plan incorporating nutrition, lifestyle modification and other natural therapies appropriate to your situation. Serving Halifax, Nova Scotia and surrounding communities, the practice offers comprehensive assessment and individualized care for those seeking to support their mental health naturally.
 
 ### References
 

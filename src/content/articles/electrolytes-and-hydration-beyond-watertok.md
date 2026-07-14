@@ -3,7 +3,7 @@ title: "Electrolytes and Hydration: Beyond the #WaterTok Trend"
 description: "Loaded water and electrolyte drinks are trending on social media. Here's what you actually need to know about hydration, electrolytes and whether fancy water is worth it."
 publishDate: 2024-09-11
 modifiedDate: 2026-01-09
-author: "Dr. Colin MacLeod ND"
+author: "Dr. Colin MacLeod, ND"
 heroImage: "/images/nutrition/water-hydration.webp"
 categories: ["Naturopathic", "Nutrition"]
 tags: ["hydration", "electrolytes", "nutrition", "naturopathic"]
@@ -94,7 +94,7 @@ Focus on the fundamentals: drink when thirsty, eat a varied diet with plenty of 
 
 ## Hydration and Nutrition Support in Halifax
 
-If you have questions about hydration, electrolytes or how to optimize your nutrition for your activity level and health goals, please contact Dr. Colin MacLeod ND to book an initial visit. Dr. MacLeod provides [clinical nutrition services](/clinical-nutrition/) and can help you cut through the social media hype and develop an evidence-based approach to your nutrition needs.
+If you have questions about hydration, electrolytes or how to optimize your nutrition for your activity level and health goals, please contact Dr. Colin MacLeod, ND to book an initial visit. Dr. MacLeod provides [clinical nutrition services](/clinical-nutrition/) and can help you cut through the social media hype and develop an evidence-based approach to your nutrition needs.
 
 ### References
 

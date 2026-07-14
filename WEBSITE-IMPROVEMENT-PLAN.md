@@ -1,6 +1,6 @@
 # Website Improvement Plan — Complete Review Document
 
-**Dr. Colin MacLeod ND · [drcolinmacleod.com](https://drcolinmacleod.com)**
+**Dr. Colin MacLeod, ND · [drcolinmacleod.com](https://drcolinmacleod.com)**
 
 | | |
 |---|---|

@@ -2,7 +2,7 @@
 title: "Men's Hormonal Health: Understanding and Optimizing Testosterone Naturally"
 description: "Evidence-based natural approaches to supporting healthy testosterone levels, addressing symptoms of hormonal imbalance and optimizing men's health."
 publishDate: 2025-08-02
-author: "Dr. Colin MacLeod ND"
+author: "Dr. Colin MacLeod, ND"
 heroImage: "/images/general/mens-health-vitality.webp"
 categories: ["Naturopathic", "Men's Health", "Hormonal Health"]
 tags: ["testosterone", "men's health", "hormones", "natural treatment", "Halifax"]
@@ -220,7 +220,7 @@ Male hormonal health is influenced by multiple factors including body compositio
 
 For men with symptoms of hormonal imbalance, proper evaluation is important to identify underlying causes and guide treatment. A naturopathic approach focuses on understanding why levels may be suboptimal and addressing those root causes, whether through lifestyle modification, targeted supplementation or appropriate referral for medical management.
 
-If you are experiencing symptoms of low testosterone or want to optimize your hormonal health naturally, please contact Dr. Colin MacLeod ND to book an initial appointment. Dr. MacLeod provides comprehensive men's health assessments and individualized treatment plans.
+If you are experiencing symptoms of low testosterone or want to optimize your hormonal health naturally, please contact Dr. Colin MacLeod, ND to book an initial appointment. Dr. MacLeod provides comprehensive men's health assessments and individualized treatment plans.
 
 ## References
 

@@ -8,7 +8,7 @@ const articles = defineCollection({
     draft: z.boolean().default(false),
     publishDate: z.date(),
     modifiedDate: z.date().optional(),
-    author: z.string().default('Dr. Colin MacLeod ND'),
+    author: z.string().default('Dr. Colin MacLeod, ND'),
     heroImage: z.string().optional(),
     categories: z.array(z.string()).default([]),
     tags: z.array(z.string()).default([]),

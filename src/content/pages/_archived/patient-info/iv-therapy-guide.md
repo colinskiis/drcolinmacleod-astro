@@ -1,6 +1,6 @@
 ---
 title: "IV Therapy Patient Guide"
-description: "Complete guide to IV therapy treatments with Dr. Colin MacLeod ND"
+description: "Complete guide to IV therapy treatments with Dr. Colin MacLeod, ND"
 ---
 
 # IV Therapy Patient Information

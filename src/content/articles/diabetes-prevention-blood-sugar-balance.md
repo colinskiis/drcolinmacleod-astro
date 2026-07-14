@@ -2,7 +2,7 @@
 title: "Diabetes Prevention and Blood Sugar Balance"
 description: "Learn evidence-based natural strategies for preventing type 2 diabetes and maintaining healthy blood sugar. Naturopathic approaches to metabolic health in Halifax."
 publishDate: 2025-03-30
-author: "Dr. Colin MacLeod ND"
+author: "Dr. Colin MacLeod, ND"
 heroImage: "/images/nutrition/balanced-plate-diabetes.webp"
 categories: ["Naturopathic", "Nutrition"]
 tags: ["diabetes", "blood sugar", "insulin resistance", "prediabetes", "Halifax", "prevention"]
@@ -130,7 +130,7 @@ Pay attention to how you feel. Beyond lab numbers, notice your energy levels, me
 
 Seek appropriate testing and guidance. Understanding your current metabolic status through proper testing allows targeted interventions and provides a baseline for measuring progress. Working with healthcare providers who understand metabolic health can help you navigate the sometimes confusing landscape of nutrition and lifestyle recommendations.
 
-If you're concerned about your blood sugar, have risk factors for diabetes or want to take a proactive approach to metabolic health, I invite you to schedule a consultation with Dr. Colin MacLeod ND. Together we can assess your individual situation, identify the factors most relevant to your metabolic health and develop a practical plan that fits your life. Prevention is always preferable to treatment, and when it comes to type 2 diabetes, we have powerful tools for prevention that deserve to be used.
+If you're concerned about your blood sugar, have risk factors for diabetes or want to take a proactive approach to metabolic health, I invite you to schedule a consultation with Dr. Colin MacLeod, ND. Together we can assess your individual situation, identify the factors most relevant to your metabolic health and develop a practical plan that fits your life. Prevention is always preferable to treatment, and when it comes to type 2 diabetes, we have powerful tools for prevention that deserve to be used.
 
 ### References
 

@@ -2,7 +2,7 @@
 title: "PCOS: Natural Approaches to Polycystic Ovary Syndrome"
 description: "Evidence-based natural approaches to managing PCOS including diet, lifestyle and targeted supplementation from a Halifax naturopathic doctor."
 publishDate: 2025-11-10
-author: "Dr. Colin MacLeod ND"
+author: "Dr. Colin MacLeod, ND"
 heroImage: "/images/general/pcos-hormone-balance.webp"
 categories: ["Naturopathic", "Women's Health", "Hormonal Health"]
 tags: ["PCOS", "women's health", "hormones", "insulin resistance", "natural treatment", "Halifax"]
@@ -192,7 +192,7 @@ Conventional treatments including metformin, oral contraceptives and fertility m
 
 PCOS is complex, but it responds well to a comprehensive approach that addresses the underlying metabolic dysfunction rather than just treating symptoms. Through careful assessment of your individual presentation, targeted dietary and lifestyle recommendations, appropriate supplementation and ongoing support, significant improvement is possible for most women.
 
-If you are struggling with PCOS and would like to explore naturopathic approaches, please contact Dr. Colin MacLeod ND to book an initial appointment. Dr. MacLeod offers comprehensive hormonal health assessments and individualized treatment plans for women with PCOS and other hormonal conditions.
+If you are struggling with PCOS and would like to explore naturopathic approaches, please contact Dr. Colin MacLeod, ND to book an initial appointment. Dr. MacLeod offers comprehensive hormonal health assessments and individualized treatment plans for women with PCOS and other hormonal conditions.
 
 ## References
 

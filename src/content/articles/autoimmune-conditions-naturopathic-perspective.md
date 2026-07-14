@@ -2,7 +2,7 @@
 title: "Autoimmune Conditions: A Naturopathic Perspective"
 description: "Explore how naturopathic medicine addresses autoimmune conditions through gut health, diet and lifestyle alongside conventional care for better outcomes."
 publishDate: 2025-02-08
-author: "Dr. Colin MacLeod ND"
+author: "Dr. Colin MacLeod, ND"
 heroImage: "/images/general/autoimmune-balance.webp"
 categories: ["Naturopathic", "Immune Health"]
 tags: ["autoimmune", "immune system", "inflammation", "natural treatment", "Halifax"]
