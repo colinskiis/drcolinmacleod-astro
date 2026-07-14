@@ -96,7 +96,15 @@ const servicePaths = [
   '/trace-minerals/',
   '/wellness-blood-work/',
 ];
-const isLabTestingPath = currentPath.startsWith('/lab-testing');
+const labTestingPaths = [
+  '/digestive-health-testing/',
+  '/hormone-testing/',
+  '/nutrient-testing/',
+  '/specialized-testing/',
+  '/thyroid-testing/',
+  '/wellness-blood-work/',
+];
+const isLabTestingPath = currentPath.startsWith('/lab-testing') || labTestingPaths.includes(currentPath);
 const isConditionPath = currentPath.startsWith('/conditions') || conditionPaths.includes(currentPath);
 const isServicePath = !isLabTestingPath && (currentPath.startsWith('/services') || servicePaths.includes(currentPath));
 
