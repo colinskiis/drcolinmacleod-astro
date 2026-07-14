@@ -2,8 +2,8 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
-import BookingButton from '../components/BookingButton.astro';
 import FAQSection from '../components/FAQSection.astro';
+import RelatedCare from '../components/RelatedCare.astro';
 import { X, Check } from '@lucide/astro';
 ---
 
@@ -19,30 +19,6 @@ import { X, Check } from '@lucide/astro';
   >
     <p>Fatigue, mood changes, weight gain and low libido can trace back to hormonal imbalances that standard testing <strong class="text-white">often does not include</strong>. We offer comprehensive sex hormone and adrenal testing with blood, saliva and urine options, <strong class="text-white">without a family doctor requisition</strong>.</p>
   </HeroSection>
-
-  <!-- Statistics -->
-  <section class="py-12 bg-white">
-    <div class="section-shell">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-        <div>
-          <div class="text-4xl font-bold text-emerald-700 mb-2">80%</div>
-          <p class="text-slate-600 text-sm">of women experience hormonal symptoms by age 50</p>
-        </div>
-        <div>
-          <div class="text-4xl font-bold text-emerald-700 mb-2">1–2%</div>
-          <p class="text-slate-600 text-sm">annual testosterone decline in men after age 30</p>
-        </div>
-        <div>
-          <div class="text-4xl font-bold text-emerald-700 mb-2">75%</div>
-          <p class="text-slate-600 text-sm">of adults experience chronic stress affecting hormones</p>
-        </div>
-        <div>
-          <div class="text-4xl font-bold text-emerald-700 mb-2">10%</div>
-          <p class="text-slate-600 text-sm">of women of reproductive age have PCOS</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- The Problem with Standard Testing -->
   <section class="py-16 lg:py-24 bg-emerald-50">
@@ -309,19 +285,16 @@ import { X, Check } from '@lucide/astro';
     </div>
   </section>
 
-  <!-- Getting Started -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
-    <div class="section-shell">
-      <div class="max-w-3xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-8 text-center">Getting Started</h2>
-
-        <div class="bg-white rounded-2xl shadow-xl p-8 text-center card-hover">
-          <p class="text-slate-600 mb-6">Hormone testing begins with a consultation to review your symptoms and determine the most appropriate testing method. Blood, saliva and dried urine options are available. Most extended health insurance plans cover naturopathic consultations.</p>
-          <BookingButton variant="secondary" size="lg" source="hormone-testing" />
-        </div>
-      </div>
-    </div>
-  </section>
+  <RelatedCare
+    title="Related Testing"
+    hubHref="/lab-testing/"
+    hubLabel="Lab Testing"
+    links={[
+      { title: 'Complete Thyroid Panel', href: '/thyroid-testing/' },
+      { title: 'Nutrient Status', href: '/nutrient-testing/' },
+      { title: 'Specialized Testing', href: '/specialized-testing/' },
+    ]}
+  />
 
   <FAQSection bg="white" items={[
           { question: "When should hormone testing be done in my cycle?", answer: "<p>Timing depends on which hormones are being tested. Progesterone is best measured during the luteal phase (days 19–21 of the cycle). FSH and LH provide more information when tested early in the cycle (days 2–4). Testosterone and DHEA can be tested at any time. We'll guide you on the optimal timing during your consultation.</p>" },
@@ -335,28 +308,13 @@ import { X, Check } from '@lucide/astro';
   <section class="py-16 lg:py-24 bg-emerald-950">
     <div class="section-shell">
       <div class="text-center max-w-3xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">Get Answers About Your Hormones</h2>
+        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">Ready to Discuss Hormone Testing?</h2>
         <p class="text-lg text-white/90 mb-8">
-          Stop wondering and start testing. Comprehensive hormone assessment gives you the information you need to feel like yourself again.
+          Book an initial consultation to review your concerns and determine which testing method, if any, is appropriate for you.
         </p>
         <CTAButton source="hormone-testing-cta" />
       </div>
     </div>
   </section>
 
-  <!-- Related Pages -->
-  <section class="py-12 bg-white border-t border-slate-100">
-    <div class="section-shell">
-      <div class="max-w-4xl mx-auto">
-        <h3 class="text-lg font-semibold text-emerald-950 mb-4 text-center">Related Testing</h3>
-        <div class="flex flex-wrap justify-center gap-4">
-          <a href="/lab-testing/" class="text-emerald-700 hover:text-emerald-800 font-medium">&larr; All Lab Testing Services</a>
-          <span class="text-slate-300">|</span>
-          <a href="/thyroid-testing" class="text-emerald-700 hover:text-emerald-800 font-medium">Thyroid Testing</a>
-          <span class="text-slate-300">|</span>
-          <a href="/nutrient-testing" class="text-emerald-700 hover:text-emerald-800 font-medium">Nutrient Testing &rarr;</a>
-        </div>
-      </div>
-    </div>
-  </section>
 </BaseLayout>

@@ -66,11 +66,21 @@ const conditionPagePaths = [
   '/tmj-dysfunction/',
   '/whiplash-neck-pain/',
 ];
-const defaultBreadcrumb = servicePagePaths.includes(currentPath)
-  ? { href: '/services/', label: 'Services' }
-  : conditionPagePaths.includes(currentPath)
-    ? { href: '/conditions/', label: 'Conditions' }
-    : null;
+const labTestingPagePaths = [
+  '/digestive-health-testing/',
+  '/hormone-testing/',
+  '/nutrient-testing/',
+  '/specialized-testing/',
+  '/thyroid-testing/',
+  '/wellness-blood-work/',
+];
+const defaultBreadcrumb = labTestingPagePaths.includes(currentPath)
+  ? { href: '/lab-testing/', label: 'Lab Testing' }
+  : servicePagePaths.includes(currentPath)
+    ? { href: '/services/', label: 'Services' }
+    : conditionPagePaths.includes(currentPath)
+      ? { href: '/conditions/', label: 'Conditions' }
+      : null;
 
 // Padding classes based on compact prop
 const sectionPadding = compact

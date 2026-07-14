@@ -142,6 +142,12 @@ const fallbackLinks = isTreatment
 
 const relatedLinks = page.data.relatedLinks ?? relatedLinksMap[page.slug] ?? fallbackLinks;
 const useClinicalLayout = page.data.pageTemplate === 'clinical';
+const ctaTitle = page.data.cta?.title ?? (isTreatment
+  ? `Considering ${page.data.title}?`
+  : `Looking for Help With ${page.data.title}?`);
+const ctaDescription = page.data.cta?.description ?? (isTreatment
+  ? 'Book a consultation to discuss whether this treatment is appropriate for your symptoms, health history and goals.'
+  : 'A consultation can help clarify what may be contributing to your symptoms and which treatment options fit your situation.');
 const slugger = new GithubSlugger();
 const tocItems = Array.from(page.body.matchAll(/^##\s+(.+)$/gm))
   .map((match) => match[1].replace(/<\/?[^>]+>/g, '').replace(/[*_`]/g, '').trim())
@@ -193,10 +199,8 @@ const modifiedDate = page.data.modifiedDate
       />
 
       <ClinicalPageCTA
-        title={isTreatment ? 'Considering Neural Prolotherapy?' : 'Need Help With Persistent SI Joint Pain?'}
-        description={isTreatment
-          ? 'Book a consultation to discuss whether neural prolotherapy is appropriate for your symptoms and health history.'
-          : 'A consultation can help clarify whether the sacroiliac joint may be contributing to your symptoms and which treatment options fit your situation.'}
+        title={ctaTitle}
+        description={ctaDescription}
         source={`clinical-page-cta-${page.slug}`}
       />
     </>

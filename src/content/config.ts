@@ -44,6 +44,12 @@ const pages = defineCollection({
         })
       )
       .optional(),
+    cta: z
+      .object({
+        title: z.string(),
+        description: z.string(),
+      })
+      .optional(),
     seo: z.object({
       title: z.string().optional(),
       description: z.string().optional(),

@@ -2,6 +2,10 @@
 title: "Microcurrent Therapy"
 description: "Microcurrent therapy uses low-amplitude electrical stimulation. Research has examined its use for selected pain, wound and rehabilitation concerns."
 type: treatment
+pageTemplate: clinical
+cta:
+  title: "Considering Microcurrent Therapy?"
+  description: "Book a consultation to discuss whether microcurrent therapy is appropriate for your symptoms, health history and rehabilitation plan."
 seo:
   focusKeyword: "microcurrent therapy"
 ---

@@ -2,6 +2,10 @@
 title: "Glutathione"
 description: "Glutathione is the body's master antioxidant, essential for fighting oxidative stress and supporting cellular health. Learn about IV glutathione therapy benefits."
 type: treatment
+pageTemplate: clinical
+cta:
+  title: "Considering Glutathione Therapy?"
+  description: "Book a consultation to discuss the evidence, safety and whether glutathione therapy is appropriate for your health history and goals."
 seo:
   focusKeyword: "glutathione IV therapy"
 ---

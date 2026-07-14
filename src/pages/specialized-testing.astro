@@ -2,8 +2,8 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
-import BookingButton from '../components/BookingButton.astro';
 import FAQSection from '../components/FAQSection.astro';
+import RelatedCare from '../components/RelatedCare.astro';
 import { X, Check } from '@lucide/astro';
 ---
 
@@ -19,30 +19,6 @@ import { X, Check } from '@lucide/astro';
   >
     <p>When standard testing hasn't provided answers, <strong class="text-white">functional medicine testing investigates further</strong>. These advanced panels assess areas that standard testing typically does not include.</p>
   </HeroSection>
-
-  <!-- Statistics -->
-  <section class="py-12 bg-white">
-    <div class="section-shell">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-        <div>
-          <div class="text-4xl font-bold text-emerald-700 mb-2">80K+</div>
-          <p class="text-slate-600 text-sm">environmental chemicals in commercial use today</p>
-        </div>
-        <div>
-          <div class="text-4xl font-bold text-emerald-700 mb-2">40%</div>
-          <p class="text-slate-600 text-sm">of chronic fatigue cases lack a conventional diagnosis</p>
-        </div>
-        <div>
-          <div class="text-4xl font-bold text-emerald-700 mb-2">75+</div>
-          <p class="text-slate-600 text-sm">metabolic markers measured by organic acids testing</p>
-        </div>
-        <div>
-          <div class="text-4xl font-bold text-emerald-700 mb-2">47%</div>
-          <p class="text-slate-600 text-sm">of Canadians have MTHFR gene variants affecting methylation</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- The Problem with Standard Testing -->
   <section class="py-16 lg:py-24 bg-emerald-50">
@@ -309,19 +285,16 @@ import { X, Check } from '@lucide/astro';
     </div>
   </section>
 
-  <!-- Getting Started -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
-    <div class="section-shell">
-      <div class="max-w-3xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-8 text-center">Getting Started</h2>
-
-        <div class="bg-white rounded-2xl shadow-xl p-8 text-center card-hover">
-          <p class="text-slate-600 mb-6">Specialized testing is recommended based on your individual case. During your initial consultation, we'll review your history and symptoms to determine which tests, if any, are most likely to provide useful answers. Most extended health insurance plans cover naturopathic consultations.</p>
-          <BookingButton variant="secondary" size="lg" source="specialized-testing" />
-        </div>
-      </div>
-    </div>
-  </section>
+  <RelatedCare
+    title="Related Testing"
+    hubHref="/lab-testing/"
+    hubLabel="Lab Testing"
+    links={[
+      { title: 'Digestive Health Testing', href: '/digestive-health-testing/' },
+      { title: 'Hormone Testing', href: '/hormone-testing/' },
+      { title: 'Wellness Blood Work', href: '/wellness-blood-work/' },
+    ]}
+  />
 
   <FAQSection bg="white" items={[
           { question: "Do I need all of these tests?", answer: "<p>No. Specialized testing is selected based on your individual case. Most patients need only one or two of these panels. During your consultation, we'll review your symptoms, history and any previous testing to determine which tests are most likely to provide useful clinical information. We never recommend tests without clear clinical justification.</p>" },
@@ -335,26 +308,13 @@ import { X, Check } from '@lucide/astro';
   <section class="py-16 lg:py-24 bg-emerald-950">
     <div class="section-shell">
       <div class="text-center max-w-3xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">Ready to Dig Deeper?</h2>
+        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">Ready to Discuss Specialized Testing?</h2>
         <p class="text-lg text-white/90 mb-8">
-          When standard testing hasn't given you answers, functional medicine testing can. Let's find out what's really going on.
+          Book an initial consultation to review previous results and determine whether specialized testing is likely to provide useful clinical information.
         </p>
         <CTAButton source="specialized-testing-cta" />
       </div>
     </div>
   </section>
 
-  <!-- Related Pages -->
-  <section class="py-12 bg-white border-t border-slate-100">
-    <div class="section-shell">
-      <div class="max-w-4xl mx-auto">
-        <h3 class="text-lg font-semibold text-emerald-950 mb-4 text-center">Related Testing</h3>
-        <div class="flex flex-wrap justify-center gap-4">
-          <a href="/lab-testing/" class="text-emerald-700 hover:text-emerald-800 font-medium">&larr; All Lab Testing Services</a>
-          <span class="text-slate-300">|</span>
-          <a href="/digestive-health-testing" class="text-emerald-700 hover:text-emerald-800 font-medium">Digestive Health Testing &rarr;</a>
-        </div>
-      </div>
-    </div>
-  </section>
 </BaseLayout>

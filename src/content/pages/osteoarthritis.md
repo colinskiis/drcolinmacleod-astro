@@ -1,6 +1,10 @@
 ---
 title: "Osteoarthritis"
 description: "Osteoarthritis causes joint pain and stiffness from cartilage degradation. Learn about causes, symptoms and natural treatments including prolotherapy."
+pageTemplate: clinical
+cta:
+  title: "Looking for Help With Osteoarthritis?"
+  description: "A consultation can help clarify what may be contributing to your joint symptoms and which treatment options fit your situation."
 seo:
   focusKeyword: "osteoarthritis treatment"
 ---

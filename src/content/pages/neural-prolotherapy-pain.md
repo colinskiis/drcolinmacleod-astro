@@ -3,6 +3,9 @@ title: "Neural Prolotherapy & Pain"
 description: "Neural prolotherapy uses shallow dextrose injections to reduce nerve inflammation and pain. Effective for frozen shoulder, sciatica, plantar fasciitis and more."
 type: treatment
 pageTemplate: clinical
+cta:
+  title: "Considering Neural Prolotherapy?"
+  description: "Book a consultation to discuss whether neural prolotherapy is appropriate for your symptoms and health history."
 seo:
   focusKeyword: "neural prolotherapy"
 ---
