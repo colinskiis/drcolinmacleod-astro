@@ -1,0 +1,60 @@
+---
+import { ChevronRight } from '@lucide/astro';
+
+export interface RelatedLink {
+  title: string;
+  href: string;
+  description?: string;
+}
+
+export interface Props {
+  title?: string;
+  links: RelatedLink[];
+  hubHref: string;
+  hubLabel: string;
+}
+
+const {
+  title = 'Related Care',
+  links,
+  hubHref,
+  hubLabel,
+} = Astro.props;
+---
+
+<section class="border-t border-emerald-100 bg-emerald-50/50 py-14 lg:py-18">
+  <div class="section-shell">
+    <div class="mx-auto max-w-5xl">
+      <div class="mb-7 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+          <p class="mb-2 text-xs font-semibold uppercase tracking-wide text-emerald-700">Explore next</p>
+          <h2 class="text-3xl font-serif font-medium text-emerald-950">{title}</h2>
+        </div>
+        <a href={hubHref} class="inline-flex items-center gap-1 text-sm font-semibold text-emerald-700 hover:text-emerald-900">
+          View all {hubLabel.toLowerCase()}
+          <ChevronRight class="h-4 w-4" aria-hidden="true" />
+        </a>
+      </div>
+
+      <div class="grid gap-4 md:grid-cols-3">
+        {links.map((link) => (
+          <a
+            href={link.href}
+            data-related-care
+            class="site-card-interactive group flex min-h-28 flex-col justify-between p-5"
+          >
+            <div>
+              <h3 class="text-lg font-serif font-medium text-emerald-950 group-hover:text-emerald-700">
+                {link.title}
+              </h3>
+              {link.description && (
+                <p class="mt-2 text-sm leading-relaxed text-slate-600">{link.description}</p>
+              )}
+            </div>
+            <ChevronRight class="mt-4 h-4 w-4 text-emerald-500 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

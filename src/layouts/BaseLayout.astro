@@ -48,6 +48,7 @@ const metaDescription = (() => {
 })();
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 const currentPath = Astro.url.pathname;
+const analyticsEnabled = ['drcolinmacleod.com', 'www.drcolinmacleod.com'].includes(Astro.url.hostname);
 const conditionPaths = [
   '/achilles-tendinitis/',
   '/carpal-tunnel-syndrome/',
@@ -424,21 +425,63 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
     <link rel="preload" href={manropeWoff2} as="font" type="font/woff2" crossorigin />
     <link rel="preload" href={playfairWoff2} as="font" type="font/woff2" crossorigin />
 
-    <!-- Google Analytics -->
-    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-HWHX5T8PEG"></script>
-    <script is:inline>
+    <!-- Google Analytics (production only) -->
+    {analyticsEnabled && <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-HWHX5T8PEG"></script>}
+    {analyticsEnabled && <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-HWHX5T8PEG');
 
-      // Track page views on client-side navigation (View Transitions)
-      document.addEventListener('astro:page-load', function() {
-        if (typeof gtag !== 'undefined') {
-          gtag('config', 'G-HWHX5T8PEG', { page_path: window.location.pathname });
-        }
-      });
-    </script>
+      if (!window.__siteAnalyticsInit) {
+        window.__siteAnalyticsInit = true;
+        gtag('js', new Date());
+        // Astro's client router manages page changes. Disable the automatic
+        // page_view so the initial load and subsequent navigations use the same
+        // explicit event and cannot be counted twice.
+        gtag('config', 'G-HWHX5T8PEG', { send_page_view: false });
+
+        document.addEventListener('astro:page-load', function() {
+          gtag('event', 'page_view', {
+            page_title: document.title,
+            page_location: window.location.href,
+            page_path: window.location.pathname
+          });
+        });
+
+        // One delegated listener covers booking buttons and the shared
+        // clinical-page navigation across Astro view transitions.
+        document.addEventListener('click', function(event) {
+          const target = event.target instanceof Element ? event.target : null;
+          if (!target) return;
+
+          const bookingLink = target.closest('[data-booking-source]');
+          if (bookingLink) {
+            gtag('event', 'booking_click', {
+              button_source: bookingLink.getAttribute('data-booking-source') || 'unknown',
+              page_path: window.location.pathname,
+              link_url: bookingLink.getAttribute('href') || ''
+            });
+            return;
+          }
+
+          const tocLink = target.closest('[data-toc-section]');
+          if (tocLink) {
+            gtag('event', 'toc_click', {
+              section_id: tocLink.getAttribute('data-toc-section') || 'unknown',
+              page_path: window.location.pathname
+            });
+            return;
+          }
+
+          const relatedLink = target.closest('[data-related-care]');
+          if (relatedLink) {
+            gtag('event', 'related_care_click', {
+              destination_path: relatedLink.getAttribute('href') || '',
+              page_path: window.location.pathname
+            });
+          }
+        });
+      }
+    </script>}
 
     <!-- Canonical URL -->
     <link rel="canonical" href={canonicalUrl} />
@@ -505,7 +548,7 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
             </div>
             <div class="leading-tight">
               <p class="hidden sm:block text-[10px] uppercase tracking-[0.25em] text-emerald-300/80 font-medium">Naturopathic Doctor</p>
-              <p class="text-base sm:text-lg font-semibold text-white tracking-tight">Dr. Colin MacLeod <span class="text-emerald-300 font-normal">ND</span></p>
+              <p class="text-base sm:text-lg font-semibold text-white tracking-tight">Dr. Colin MacLeod,<span class="text-emerald-300 font-normal"> ND</span></p>
             </div>
           </a>
 

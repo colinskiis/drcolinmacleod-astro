@@ -1,0 +1,51 @@
+---
+export interface TocItem {
+  id: string;
+  title: string;
+}
+
+export interface Props {
+  items: TocItem[];
+  display: 'mobile' | 'desktop';
+}
+
+const { items, display } = Astro.props;
+---
+
+{items.length >= 4 && display === 'mobile' && (
+  <details class="site-card mb-8 p-5 lg:hidden">
+    <summary class="cursor-pointer text-sm font-semibold text-emerald-950">
+      On This Page
+    </summary>
+    <nav class="mt-4 space-y-1" aria-label="Page sections">
+      {items.map((item) => (
+        <a
+          href={`#${item.id}`}
+          data-toc-section={item.id}
+          class="block rounded-lg px-2 py-2 text-sm leading-snug text-slate-600 transition-colors hover:bg-emerald-50 hover:text-emerald-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+        >
+          {item.title}
+        </a>
+      ))}
+    </nav>
+  </details>
+)}
+
+{items.length >= 4 && display === 'desktop' && (
+  <aside class="site-card sticky top-32 hidden max-h-[calc(100vh-10rem)] overflow-y-auto p-5 lg:block">
+    <p class="mb-4 text-xs font-semibold uppercase tracking-wide text-emerald-700">
+      On This Page
+    </p>
+    <nav class="space-y-1" aria-label="Page sections">
+      {items.map((item) => (
+        <a
+          href={`#${item.id}`}
+          data-toc-section={item.id}
+          class="block rounded-lg px-2 py-2 text-sm leading-snug text-slate-600 transition-colors hover:bg-emerald-50 hover:text-emerald-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+        >
+          {item.title}
+        </a>
+      ))}
+    </nav>
+  </aside>
+)}

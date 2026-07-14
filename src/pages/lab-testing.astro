@@ -1,9 +1,72 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
-import { ClipboardCheck, TestTubes, Clock, Sparkles, ChevronRight } from '@lucide/astro';
-import CTAButton from '../components/CTAButton.astro';
+import ClinicalContentLayout from '../components/ClinicalContentLayout.astro';
+import ClinicalPageCTA from '../components/ClinicalPageCTA.astro';
 import FAQSection from '../components/FAQSection.astro';
+import RelatedCare from '../components/RelatedCare.astro';
+import { ClipboardCheck, TestTubes, Clock, Sparkles, ChevronRight } from '@lucide/astro';
+
+const tocItems = [
+  { id: 'overview', title: 'Private Testing Overview' },
+  { id: 'available-testing', title: 'Available Testing' },
+  { id: 'how-it-works', title: 'How It Works' },
+  { id: 'understanding-results', title: 'Understanding Results' },
+  { id: 'frequently-asked-questions', title: 'Frequently Asked Questions' },
+];
+
+const testingOptions = [
+  {
+    title: 'Complete Thyroid Panel',
+    description: 'Go beyond standard TSH testing with Free T3, Free T4, Reverse T3 and thyroid antibodies.',
+    href: '/thyroid-testing/',
+    image: '/images/lab-testing/thyroid-panel.webp',
+    alt: 'Thyroid gland anatomy illustration',
+  },
+  {
+    title: 'Hormone Testing',
+    description: 'Assessment of sex hormones, cortisol and DHEA using blood, saliva or urine when appropriate.',
+    href: '/hormone-testing/',
+    image: '/images/lab-testing/hormone-testing.webp',
+    alt: 'Hormone testing blood vials',
+  },
+  {
+    title: 'Nutrient Status',
+    description: 'Assess vitamin D, B12, iron, magnesium, zinc and other nutrients that may affect health.',
+    href: '/nutrient-testing/',
+    image: '/images/lab-testing/nutrient-status.webp',
+    alt: 'Nutritious foods associated with nutrient status',
+  },
+  {
+    title: 'Wellness Baseline',
+    description: 'Comprehensive screening that may include blood counts, metabolic markers, lipids and blood sugar.',
+    href: '/wellness-blood-work/',
+    image: '/images/lab-testing/in-office-wellness-blood-work.webp',
+    alt: 'Dr. Colin MacLeod preparing a patient for in-office blood work',
+  },
+  {
+    title: 'Digestive Health',
+    description: 'Stool analysis and other assessments selected according to symptoms and clinical history.',
+    href: '/digestive-health-testing/',
+    image: '/images/lab-testing/digestive-health.webp',
+    alt: 'Digestive system illustration',
+  },
+  {
+    title: 'Specialized Testing',
+    description: 'Selected assessments for complex cases, including heavy metals, organic acids and other panels.',
+    href: '/specialized-testing/',
+    image: '/images/lab-testing/specialized-testing.webp',
+    alt: 'Blood draw preparation for specialized testing',
+  },
+];
+
+const faqs = [
+  { question: "Do I need a doctor's referral for blood work?", answer: "<p>No. You can access comprehensive blood work without a family doctor's requisition. This can be helpful if you do not have a family doctor or want to discuss testing that is not routinely ordered.</p>" },
+  { question: 'Is private blood work covered by MSI?', answer: '<p>Testing ordered through a naturopathic doctor is not covered by MSI. Many extended health insurance plans cover naturopathic consultations, while laboratory costs are generally paid out of pocket. Check your individual plan for details.</p>' },
+  { question: 'Where is the blood draw performed?', answer: "<p>Dr. MacLeod performs blood collection in the clinic, so you generally will not need to visit a separate laboratory.</p>" },
+  { question: 'How long until I get my results?', answer: '<p>Many standard blood tests return within 5–10 business days. Specialized tests such as comprehensive stool analysis or hormone panels may take 2–3 weeks. A follow-up is arranged once the relevant results are available.</p>' },
+  { question: 'Do I need to fast before blood tests?', answer: '<p>Some tests require fasting and others do not. You will receive preparation instructions for the tests being ordered.</p>' },
+];
 ---
 
 <BaseLayout
@@ -14,302 +77,129 @@ import FAQSection from '../components/FAQSection.astro';
   <HeroSection
     title="Laboratory Testing"
     compact
-    image={{ src: "/images/lab-testing/in-office-blood-draw.webp", alt: "Dr. Colin MacLeod performing an in-office blood draw", aspect: "square" }}
+    image={{
+      src: '/images/lab-testing/in-office-blood-draw.webp',
+      alt: 'Dr. Colin MacLeod performing an in-office blood draw',
+      aspect: 'square',
+    }}
   >
-    <p>Get the blood work and lab tests you need without a family doctor's requisition. Testing is available through Dr. MacLeod's practice at Optimal Wellbeing Clinic in Bedford — comprehensive panels even if you do not have a family physician.</p>
+    <p>Get the blood work and laboratory testing you need without a family doctor's requisition. Testing and in-office blood collection are available through Dr. MacLeod's practice at Optimal Wellbeing Clinic in Bedford.</p>
   </HeroSection>
 
-  <!-- Healthcare Access Context -->
-  <section class="py-12 bg-white border-b border-slate-100">
-    <div class="section-shell">
-      <div class="max-w-4xl mx-auto text-center">
-        <p class="text-lg text-slate-700 leading-relaxed">
-          More than 148,000 Nova Scotians lack a family physician and provincial waitlists stretch years into the future. Even those with doctors often face limited testing options through MSI. Private comprehensive blood work allows you to get the results you need without the usual barriers.
+  <ClinicalContentLayout tocItems={tocItems} prose={false}>
+    <div class="space-y-16 lg:space-y-20">
+      <section id="overview">
+        <h2 class="sr-only">Private Testing Overview</h2>
+        <p class="mb-8 text-lg leading-relaxed text-slate-700">
+          Private testing can provide access to routine and specialized laboratory assessments when you do not have a family physician, when provincial testing is difficult to access or when a broader clinical picture would be useful. Tests are selected during a consultation based on your symptoms, medical history and goals.
         </p>
-      </div>
+
+        <div class="grid gap-4 sm:grid-cols-2">
+          <div class="site-card p-5">
+            <ClipboardCheck class="mb-3 h-7 w-7 text-emerald-700" stroke-width={1.5} aria-hidden="true" />
+            <h3 class="mb-2 text-lg font-serif font-medium text-emerald-950">No Family-Doctor Requisition</h3>
+            <p class="text-sm leading-relaxed text-slate-600">Dr. MacLeod can order appropriate testing for patients of the practice.</p>
+          </div>
+          <div class="site-card p-5">
+            <TestTubes class="mb-3 h-7 w-7 text-emerald-700" stroke-width={1.5} aria-hidden="true" />
+            <h3 class="mb-2 text-lg font-serif font-medium text-emerald-950">Broad Testing Options</h3>
+            <p class="text-sm leading-relaxed text-slate-600">Options range from general wellness blood work to selected specialized panels.</p>
+          </div>
+          <div class="site-card p-5">
+            <Clock class="mb-3 h-7 w-7 text-emerald-700" stroke-width={1.5} aria-hidden="true" />
+            <h3 class="mb-2 text-lg font-serif font-medium text-emerald-950">In-Office Collection</h3>
+            <p class="text-sm leading-relaxed text-slate-600">Blood collection is performed in the clinic for tests available through the practice.</p>
+          </div>
+          <div class="site-card p-5">
+            <Sparkles class="mb-3 h-7 w-7 text-emerald-700" stroke-width={1.5} aria-hidden="true" />
+            <h3 class="mb-2 text-lg font-serif font-medium text-emerald-950">Clinical Interpretation</h3>
+            <p class="text-sm leading-relaxed text-slate-600">Results are reviewed in the context of your symptoms, history and other clinical information.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="available-testing">
+        <div class="mb-7">
+          <h2 class="mb-3 text-3xl font-serif font-medium text-emerald-950">Available Testing</h2>
+          <p class="text-lg text-slate-600">Testing is individualized; these are common categories available through the practice.</p>
+        </div>
+
+        <div class="grid gap-5 sm:grid-cols-2">
+          {testingOptions.map((option) => (
+            <a href={option.href} class="site-card-interactive group overflow-hidden">
+              <div class="aspect-[16/9] overflow-hidden">
+                <img
+                  src={option.image}
+                  alt={option.alt}
+                  class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                  width="800"
+                  height="450"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="p-5">
+                <h3 class="mb-2 text-xl font-serif font-medium text-emerald-950 group-hover:text-emerald-700">{option.title}</h3>
+                <p class="text-sm leading-relaxed text-slate-600">{option.description}</p>
+                <span class="mt-4 inline-flex items-center text-sm font-semibold text-emerald-700">
+                  Learn more <ChevronRight class="ml-1 h-4 w-4" aria-hidden="true" />
+                </span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <section id="how-it-works">
+        <h2 class="mb-7 text-3xl font-serif font-medium text-emerald-950">How It Works</h2>
+        <ol class="grid gap-5 sm:grid-cols-2">
+          {[
+            ['1', 'Initial Consultation', 'Discuss your health concerns, history and goals with Dr. MacLeod.'],
+            ['2', 'Select Testing', 'Dr. MacLeod determines which tests are appropriate and explains the expected costs.'],
+            ['3', 'Sample Collection', 'Blood collection is performed in the clinic, with preparation instructions provided in advance.'],
+            ['4', 'Review Results', 'Results are reviewed in context and used to guide practical recommendations or further assessment.'],
+          ].map(([number, title, description]) => (
+            <li class="site-card flex gap-4 p-5">
+              <span class="flex h-10 w-10 flex-none items-center justify-center rounded-full bg-emerald-800 font-semibold text-white">{number}</span>
+              <div>
+                <h3 class="mb-1 text-lg font-serif font-medium text-emerald-950">{title}</h3>
+                <p class="text-sm leading-relaxed text-slate-600">{description}</p>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      <section id="understanding-results">
+        <h2 class="mb-4 text-3xl font-serif font-medium text-emerald-950">Understanding Your Results</h2>
+        <div class="space-y-5 text-lg leading-relaxed text-slate-700">
+          <p>Laboratory reference ranges are useful for identifying values outside the expected population range, but a number should not be interpreted in isolation. Symptoms, medications, health history, trends over time and relationships between markers can all affect what a result means for an individual patient.</p>
+          <p>Dr. MacLeod reviews the complete pattern rather than treating a single result as a diagnosis. When appropriate, recommendations may include follow-up testing, nutrition or lifestyle changes, supplementation or coordination with another healthcare provider.</p>
+        </div>
+        <div class="mt-7 rounded-2xl border border-emerald-100 bg-emerald-50 p-6">
+          <h3 class="mb-2 text-xl font-serif font-medium text-emerald-950">Testing should answer a clinical question</h3>
+          <p class="leading-relaxed text-slate-600">More testing is not automatically better. The goal is to choose assessments that are relevant to your situation and likely to influence care.</p>
+        </div>
+      </section>
     </div>
-  </section>
+  </ClinicalContentLayout>
 
-  <!-- Key Benefits -->
-  <section class="py-10 sm:py-16 lg:py-20 bg-white">
-    <div class="section-shell">
-      <div class="grid grid-cols-2 gap-4 sm:gap-8 md:grid-cols-4">
-        <div class="text-center">
-          <div class="w-12 h-12 sm:w-16 sm:h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-4">
-            <ClipboardCheck class="w-6 h-6 sm:w-8 sm:h-8 text-emerald-700" stroke-width={1.5} aria-hidden="true" />
-          </div>
-          <h3 class="text-sm sm:text-lg font-semibold text-emerald-950 mb-1 sm:mb-2">No Referral Required</h3>
-          <p class="text-slate-600 text-xs sm:text-sm">Dr. MacLeod's patients can access testing without a referral</p>
-        </div>
+  <FAQSection id="frequently-asked-questions" bg="emerald" items={faqs} />
 
-        <div class="text-center">
-          <div class="w-12 h-12 sm:w-16 sm:h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-4">
-            <TestTubes class="w-6 h-6 sm:w-8 sm:h-8 text-emerald-700" stroke-width={1.5} aria-hidden="true" />
-          </div>
-          <h3 class="text-sm sm:text-lg font-semibold text-emerald-950 mb-1 sm:mb-2">Comprehensive Panels</h3>
-          <p class="text-slate-600 text-xs sm:text-sm">Tests often not covered by provincial health insurance</p>
-        </div>
+  <RelatedCare
+    title="Related Testing"
+    hubHref="/services/"
+    hubLabel="Services"
+    links={[
+      { title: 'Thyroid Testing', href: '/thyroid-testing/', description: 'A broader assessment of thyroid function and antibodies.' },
+      { title: 'Digestive Health Testing', href: '/digestive-health-testing/', description: 'Selected testing for persistent digestive symptoms.' },
+      { title: 'Wellness Blood Work', href: '/wellness-blood-work/', description: 'Baseline blood work and preventive health assessment.' },
+    ]}
+  />
 
-        <div class="text-center">
-          <div class="w-12 h-12 sm:w-16 sm:h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-4">
-            <Clock class="w-6 h-6 sm:w-8 sm:h-8 text-emerald-700" stroke-width={1.5} aria-hidden="true" />
-          </div>
-          <h3 class="text-sm sm:text-lg font-semibold text-emerald-950 mb-1 sm:mb-2">Faster Results</h3>
-          <p class="text-slate-600 text-xs sm:text-sm">Skip the wait times for standard healthcare appointments</p>
-        </div>
-
-        <div class="text-center">
-          <div class="w-12 h-12 sm:w-16 sm:h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-4">
-            <Sparkles class="w-6 h-6 sm:w-8 sm:h-8 text-emerald-700" stroke-width={1.5} aria-hidden="true" />
-          </div>
-          <h3 class="text-sm sm:text-lg font-semibold text-emerald-950 mb-1 sm:mb-2">Optimal Range Interpretation</h3>
-          <p class="text-slate-600 text-xs sm:text-sm">Results reviewed using functional medicine ranges, not just "normal"</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Test Categories Grid -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
-    <div class="section-shell">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">Available Testing</h2>
-        <p class="text-lg text-slate-600 max-w-3xl mx-auto">
-          From routine wellness panels to specialized functional testing
-        </p>
-      </div>
-
-      <!-- Mobile: Link list -->
-      <div class="sm:hidden space-y-1 mb-10">
-        <a href="/thyroid-testing" class="flex items-center gap-3 py-4 text-slate-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-100">
-          <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" aria-hidden="true" />
-          Complete Thyroid Panel
-        </a>
-        <a href="/hormone-testing" class="flex items-center gap-3 py-4 text-slate-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-100">
-          <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" aria-hidden="true" />
-          Hormone Testing
-        </a>
-        <a href="/nutrient-testing" class="flex items-center gap-3 py-4 text-slate-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-100">
-          <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" aria-hidden="true" />
-          Nutrient Status
-        </a>
-        <a href="/wellness-blood-work" class="flex items-center gap-3 py-4 text-slate-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-100">
-          <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" aria-hidden="true" />
-          Wellness Baseline
-        </a>
-        <a href="/digestive-health-testing" class="flex items-center gap-3 py-4 text-slate-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-100">
-          <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" aria-hidden="true" />
-          Digestive Health
-        </a>
-        <a href="/specialized-testing" class="flex items-center gap-3 py-4 text-slate-700 hover:text-emerald-700 font-medium transition-colors group border-b border-emerald-100">
-          <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" aria-hidden="true" />
-          Specialized Testing
-        </a>
-      </div>
-
-      <!-- Desktop: Card grid -->
-      <div class="hidden sm:grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Thyroid Testing - Links to dedicated page -->
-        <a href="/thyroid-testing" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 group">
-          <div class="aspect-[16/10] overflow-hidden">
-            <img src="/images/lab-testing/thyroid-panel.webp" alt="Thyroid gland anatomy illustration" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="800" height="600" loading="lazy" />
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-semibold text-emerald-950 mb-3 group-hover:text-emerald-700 transition-colors">Complete Thyroid Panel</h3>
-            <p class="text-slate-600 mb-4">Go beyond standard TSH testing. We test Free T3, Free T4, Reverse T3 and thyroid antibodies to catch dysfunction that standard testing misses.</p>
-            <span class="text-emerald-700 font-medium inline-flex items-center">
-              Learn more
-              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-              </svg>
-            </span>
-          </div>
-        </a>
-
-        <!-- Hormone Testing - Links to dedicated page -->
-        <a href="/hormone-testing" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 group">
-          <div class="aspect-[16/10] overflow-hidden">
-            <img src="/images/lab-testing/hormone-testing.webp" alt="Hormone testing blood vials" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="800" height="600" loading="lazy" />
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-semibold text-emerald-950 mb-3 group-hover:text-emerald-700 transition-colors">Hormone Testing</h3>
-            <p class="text-slate-600 mb-4">Comprehensive assessment of sex hormones, cortisol and DHEA. Blood, saliva and urine testing options available.</p>
-            <span class="text-emerald-700 font-medium inline-flex items-center">
-              Learn more
-              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-              </svg>
-            </span>
-          </div>
-        </a>
-
-        <!-- Nutrient Testing - Links to dedicated page -->
-        <a href="/nutrient-testing" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 group">
-          <div class="aspect-[16/10] overflow-hidden">
-            <img src="/images/lab-testing/nutrient-status.webp" alt="Healthy woman with nutritious food" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="800" height="600" loading="lazy" />
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-semibold text-emerald-950 mb-3 group-hover:text-emerald-700 transition-colors">Nutrient Status</h3>
-            <p class="text-slate-600 mb-4">Identify deficiencies affecting energy, mood and immune function: Vitamin D, B12, iron, magnesium, zinc and more.</p>
-            <span class="text-emerald-700 font-medium inline-flex items-center">
-              Learn more
-              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-              </svg>
-            </span>
-          </div>
-        </a>
-
-        <!-- Health Baseline - Links to dedicated page -->
-        <a href="/wellness-blood-work" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 group">
-          <div class="aspect-[16/10] overflow-hidden">
-            <img src="/images/lab-testing/in-office-wellness-blood-work.webp" alt="Dr. Colin MacLeod preparing a patient for in-office blood work" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style="object-position: center 22%" width="800" height="600" loading="lazy" />
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-semibold text-emerald-950 mb-3 group-hover:text-emerald-700 transition-colors">Wellness Baseline</h3>
-            <p class="text-slate-600 mb-4">Comprehensive screening including CBC, metabolic panel, lipids, blood sugar markers and inflammation markers.</p>
-            <span class="text-emerald-700 font-medium inline-flex items-center">
-              Learn more
-              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-              </svg>
-            </span>
-          </div>
-        </a>
-
-        <!-- Digestive Health - Links to dedicated page -->
-        <a href="/digestive-health-testing" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 group">
-          <div class="aspect-[16/10] overflow-hidden">
-            <img src="/images/lab-testing/digestive-health.webp" alt="Digestive system illustration" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="800" height="600" loading="lazy" />
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-semibold text-emerald-950 mb-3 group-hover:text-emerald-700 transition-colors">Digestive Health</h3>
-            <p class="text-slate-600 mb-4">Comprehensive stool analysis, food sensitivity panels and gut health assessment for digestive symptoms.</p>
-            <span class="text-emerald-700 font-medium inline-flex items-center">
-              Learn more
-              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-              </svg>
-            </span>
-          </div>
-        </a>
-
-        <!-- Specialized Testing - Links to dedicated page -->
-        <a href="/specialized-testing" class="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 group">
-          <div class="aspect-[16/10] overflow-hidden">
-            <img src="/images/lab-testing/specialized-testing.webp" alt="Blood draw preparation for specialized testing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="800" height="600" loading="lazy" />
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-semibold text-emerald-950 mb-3 group-hover:text-emerald-700 transition-colors">Specialized Testing</h3>
-            <p class="text-slate-600 mb-4">Heavy metal assessment, chronic infection panels, organic acids testing and advanced functional medicine panels.</p>
-            <span class="text-emerald-700 font-medium inline-flex items-center">
-              Learn more
-              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-              </svg>
-            </span>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- How It Works -->
-  <section class="py-10 sm:py-16 lg:py-24 bg-white">
-    <div class="section-shell">
-      <div class="text-center mb-8 sm:mb-12">
-        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">How It Works</h2>
-      </div>
-
-      <div class="grid grid-cols-2 gap-4 sm:gap-8 md:grid-cols-4">
-        <div class="text-center">
-          <div class="w-12 h-12 sm:w-16 sm:h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-4">
-            <span class="text-xl sm:text-2xl font-bold text-white">1</span>
-          </div>
-          <h3 class="font-semibold text-emerald-950 mb-1 sm:mb-2 text-sm sm:text-base">Book Online or Call</h3>
-          <p class="text-slate-600 text-xs sm:text-sm">Schedule an initial appointment to discuss your health concerns and goals.</p>
-        </div>
-
-        <div class="text-center">
-          <div class="w-12 h-12 sm:w-16 sm:h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-4">
-            <span class="text-xl sm:text-2xl font-bold text-white">2</span>
-          </div>
-          <h3 class="font-semibold text-emerald-950 mb-1 sm:mb-2 text-sm sm:text-base">Consultation</h3>
-          <p class="text-slate-600 text-xs sm:text-sm">Dr. MacLeod determines which tests are appropriate for your situation and orders tests.</p>
-        </div>
-
-        <div class="text-center">
-          <div class="w-12 h-12 sm:w-16 sm:h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-4">
-            <span class="text-xl sm:text-2xl font-bold text-white">3</span>
-          </div>
-          <h3 class="font-semibold text-emerald-950 mb-1 sm:mb-2 text-sm sm:text-base">Get Tested</h3>
-          <p class="text-slate-600 text-xs sm:text-sm">Dr. MacLeod will collect your blood sample. You won't need to visit a separate lab.</p>
-        </div>
-
-        <div class="text-center">
-          <div class="w-12 h-12 sm:w-16 sm:h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-4">
-            <span class="text-xl sm:text-2xl font-bold text-white">4</span>
-          </div>
-          <h3 class="font-semibold text-emerald-950 mb-1 sm:mb-2 text-sm sm:text-base">Review Results</h3>
-          <p class="text-slate-600 text-xs sm:text-sm">Review your results using optimal functional ranges and develop recommendations.</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Functional vs Standard Ranges -->
-  <section class="py-16 lg:py-24 bg-emerald-950">
-    <div class="section-shell">
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
-        <div>
-          <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">Beyond "Normal" Ranges</h2>
-          <div class="prose prose-lg prose-invert">
-            <p class="text-white/90">
-              Standard lab reference ranges are based on the average population. A "normal" result doesn't necessarily mean optimal function for you.
-            </p>
-            <p class="text-white/90">
-              Dr. MacLeod will interpret results using optimal functional ranges, identifying imbalances before they become problems. A TSH of 3.5 may be "normal" by standard ranges, but functional medicine considers values above 3.0 potentially problematic. This proactive approach helps you optimize your health, not just avoid disease.
-            </p>
-          </div>
-        </div>
-        <div class="bg-white/10 rounded-2xl p-8">
-          <h3 class="text-xl font-semibold text-white mb-6">Example: Vitamin B12</h3>
-          <div class="space-y-4">
-            <div class="flex justify-between items-center pb-4 border-b border-white/20">
-              <span class="text-white/80">Standard "Normal" Range</span>
-              <span class="text-white font-semibold">170-600 pg/mL</span>
-            </div>
-            <div class="flex justify-between items-center pb-4 border-b border-white/20">
-              <span class="text-white/80">Optimal Functional Range</span>
-              <span class="text-emerald-400 font-semibold">500-800 pg/mL</span>
-            </div>
-            <p class="text-white/70 text-sm">
-              A level of 250 pg/mL is considered "normal" but may cause symptoms for some people. Functional medicine aims for optimal, not just acceptable.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <FAQSection bg="white" items={[
-          { question: "Do I need a doctor's referral for blood work?", answer: "<p>No. You can access comprehensive blood work without a family doctor's requisition. Helpful if you don't have a family doctor or want tests your physician doesn't typically order.</p>" },
-          { question: "Is private blood work covered by MSI?", answer: "<p>Testing ordered through a naturopathic doctor is not covered by MSI. However, many extended health insurance plans cover naturopathic consultations. Lab tests themselves are out-of-pocket but provide access to markers often unavailable through conventional channels. All expenses are eligible medical expenses for tax purposes.</p>" },
-          { question: "Where is the blood draw performed?", answer: "<p>Dr. MacLeod performs blood collection in the clinic. You won't need to visit a separate lab.</p>" },
-          { question: "How long until I get my results?", answer: "<p>Most standard blood tests have results within 5-10 business days. Specialized tests like comprehensive stool analysis, DUTCH hormone panels or food sensitivity panels may take 2-3 weeks. We'll schedule a follow-up to review your findings once results are available.</p>" },
-          { question: "Do I need to fast before blood tests?", answer: "<p>Some tests require fasting, while others don't. Dr. MacLeod will inform you if you will need to fast for your blood work.</p>" },
-        ]} />
-
-  <!-- CTA Section -->
-  <section class="bg-emerald-950 py-16 lg:py-24">
-    <div class="section-shell text-center">
-      <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">Ready to Get Tested?</h2>
-      <p class="text-lg sm:text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-        Whether you need routine blood work or specialized functional testing, we can help you access the lab assessments you need, without the barriers of the conventional healthcare system.
-      </p>
-      <div class="flex justify-center">
-        <CTAButton source="lab-testing-cta" />
-      </div>
-    </div>
-  </section>
+  <ClinicalPageCTA
+    title="Ready to Discuss Laboratory Testing?"
+    description="Book an initial consultation to review your concerns and determine which testing, if any, is appropriate for you."
+    source="clinical-page-cta-lab-testing"
+  />
 </BaseLayout>

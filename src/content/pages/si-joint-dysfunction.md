@@ -1,6 +1,7 @@
 ---
 title: "Sacroiliac Joint Dysfunction"
 description: "Sacroiliac (SI) joint dysfunction is a common but often misdiagnosed cause of low back and buttock pain. Learn about causes, symptoms and effective natural treatments in Bedford, NS."
+pageTemplate: clinical
 seo:
   focusKeyword: "SI joint dysfunction treatment Halifax"
 ---

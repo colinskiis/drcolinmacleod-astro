@@ -1,0 +1,32 @@
+---
+import OnThisPage, { type TocItem } from './OnThisPage.astro';
+
+export interface Props {
+  tocItems: TocItem[];
+  modifiedDate?: string | null;
+  prose?: boolean;
+}
+
+const { tocItems, modifiedDate = null, prose = true } = Astro.props;
+const showToc = tocItems.length >= 4;
+---
+
+<article class="bg-white py-16 lg:py-24">
+  <div class="section-shell">
+    <div class="mx-auto max-w-5xl">
+      {modifiedDate && (
+        <p class="mb-8 text-sm text-slate-500">Last updated {modifiedDate}</p>
+      )}
+
+      {showToc && <OnThisPage items={tocItems} display="mobile" />}
+
+      <div class:list={[showToc && 'grid items-start gap-10 lg:grid-cols-[minmax(0,1fr)_16rem]']}>
+        <div class:list={[prose && 'prose', 'max-w-[70ch] min-w-0']}>
+          <slot />
+        </div>
+
+        {showToc && <OnThisPage items={tocItems} display="desktop" />}
+      </div>
+    </div>
+  </div>
+</article>

@@ -49,24 +49,3 @@ const widthClass = fullWidth ? 'w-full' : '';
     <Calendar class="w-5 h-5 ml-2" aria-hidden="true" />
   )}
 </a>
-
-<script>
-  // Track booking button clicks via event delegation (works with View Transitions)
-  declare function gtag(...args: any[]): void;
-  if (!(window as any).__bookingTrackingInit) {
-    (window as any).__bookingTrackingInit = true;
-    document.addEventListener('click', function(e) {
-      const button = (e.target as HTMLElement)?.closest('.booking-btn');
-      if (!button) return;
-
-      const source = button.getAttribute('data-booking-source');
-      if (typeof gtag !== 'undefined') {
-        gtag('event', 'booking_click', {
-          event_category: 'engagement',
-          event_label: source,
-          value: 1
-        });
-      }
-    });
-  }
-</script>

@@ -10,6 +10,7 @@ interface Props {
   includeSchema?: boolean;
   sectionClass?: string;
   headingClass?: string;
+  id?: string;
 }
 
 const {
@@ -20,6 +21,7 @@ const {
   includeSchema = true,
   sectionClass,
   headingClass = 'text-3xl sm:text-4xl font-serif font-medium text-emerald-950',
+  id,
 } = Astro.props;
 
 const bgClass = {
@@ -31,7 +33,7 @@ const bgClass = {
 const sectionClasses = sectionClass ?? `py-16 lg:py-24 ${bgClass}`;
 ---
 
-<section class={sectionClasses}>
+<section id={id} class:list={[sectionClasses, id && 'scroll-mt-32']}>
   <div class="section-shell">
     <div class="text-center max-w-3xl mx-auto mb-8 space-y-3">
       <h2 class:list={[headingClass, 'text-center']}>{title}</h2>
