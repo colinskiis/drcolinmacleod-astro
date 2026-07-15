@@ -1,67 +1,58 @@
 ---
-title: "Glutathione IV Therapy"
-description: "Glutathione is an antioxidant produced naturally in the body. Learn how IV glutathione is used in the practice, what research has examined and what to expect."
+title: "Glutathione"
+description: "Glutathione is the body's master antioxidant, essential for fighting oxidative stress and supporting cellular health. Learn about IV glutathione therapy benefits."
 type: treatment
 pageTemplate: clinical
 cta:
-  title: "Interested in Glutathione Therapy?"
-  description: "Book a consultation to discuss your goals, the available evidence and whether a monitored glutathione infusion is appropriate for you."
+  title: "Considering Glutathione Therapy?"
+  description: "Book a consultation to discuss the evidence, safety and whether glutathione therapy is appropriate for your health history and goals."
 seo:
-  focusKeyword: "glutathione IV therapy Halifax"
+  focusKeyword: "glutathione IV therapy"
 ---
 
-![Glutathione prepared for IV use](/images/treatments/glutathione-iv.webp)
+![Glutathione bottle. For IV use.](/images/treatments/glutathione-iv.webp)
 
-## What Is Glutathione?
+## What is Glutathione
 
-Glutathione is a small molecule made from the amino acids glutamate, cysteine and glycine. It is produced throughout the body and helps cells manage oxidation, maintain proteins and process certain compounds for elimination.<sup>1</sup>
+Glutathione is a potent antioxidant that the body produces naturally from three amino acid starting materials: glycine, glutamine and cysteine. Most cells within the body have a 5 mmol concentration of glutathione. This is a high cellular concentration considering that magnesium (<1 mmol), cholesterol (1.5 mmol), hemoglobin (1.5 mmol) and calcium (2 mmol) all have a significantly lower concentration within our cells than glutathione<sup>1</sup>.
 
-The body continually makes and recycles glutathione. Levels can vary with genetics, nutrition, illness, medication use and oxidative stress. Measuring or changing glutathione is not a universal solution to chronic disease, but its central role in cellular antioxidant systems has made it an area of ongoing clinical research.
+## What Is Oxidation?
 
-## What Is IV Glutathione Therapy?
+Oxidation is a natural chemical process where an electron is donated from one substance to another. The substance which loses an electron is said to have been oxidized. Examples of oxidation are when an apple starts turning brown after it is cut or rust accumulating on a something made from iron, like the body of a car. Oxidation is everywhere and is responsible for the degrading and break down of most things in our world.
 
-IV glutathione delivers glutathione into the bloodstream during a monitored infusion. In the practice, it is used for selected patients who are interested in a focused antioxidant infusion after their health history, medications and goals have been reviewed.
+## Is Oxidation Harmful
 
-Some people report feeling clearer, more energetic or better recovered after treatment; others do not notice a distinct change. These experiences are individual and should not be treated as proof that glutathione is correcting an underlying disease process.
+Oxidation is a destructive process and is implicated as an important factor in almost all chronic diseases including cancer, heart disease, infections and dementia. Controlling and combatting oxidative stress is an important goal for treating and preventing major chronic disease.
 
-## Why Might Someone Consider It?
+## How Does Glutathione Help?
 
-Patients commonly ask about glutathione when they are exploring:
+Glutathione has several functions that make it an essential tool for fighting oxidative stress<sup>1</sup>.
 
-- a focused antioxidant option rather than a multinutrient formula
-- support during a period of increased physical or metabolic demand
-- an IV option that can be combined with selected nutrients when appropriate
-- a monitored trial after reviewing the limits of the available evidence
+1. Direct chemical neutralization of free radicals
+2. Cofactor for antioxidant enzymes
+3. Regeneration of vitamins C and E
+4. Conjugates intermediates produced by Phase I, prepares for kidney excretion
+5. Vital to mitochondrial function and maintenance of mitochondrial DNA (mtDNA)<sup>1</sup>
 
-The decision is individualized. IV glutathione is not a replacement for established treatment of neurological, cardiovascular, liver, psychiatric, infectious or other medical conditions.
+## Who Does Glutathione Help?
 
-## What Does the Research Show?
+Glutathione has the potential to help many different health conditions because of it's broad activity throughout the body. Research has examined glutathione and its precursor N-acetyl cysteine (NAC) and found clinical benefit in treating peripheral artery disease<sup>2</sup>, Parkinson's disease<sup>3</sup>, fatty liver<sup>4</sup>, coronary reperfusion injury<sup>5</sup>, bipolar disorder<sup>6-7</sup> obsessive compulsive disorder<sup>8</sup>, schizophrenia<sup>6,9,10</sup>, addiction treatment<sup>11-12</sup>, autism<sup>13</sup> and flu prevention<sup>14</sup>.
 
-Research on glutathione biology is extensive, but research on **IV glutathione as a treatment** is much smaller. Studies of oral glutathione or N-acetylcysteine (NAC) cannot be assumed to show the effects of an IV glutathione infusion because they are different interventions.
-
-A small randomized placebo-controlled pilot study evaluated IV glutathione in 21 people with Parkinson's disease. Treatment was well tolerated, but the study did not find a statistically significant improvement in its clinical outcome scores. The authors considered a possible mild symptomatic effect worth studying further, not an established treatment effect.<sup>2</sup>
-
-Small studies have also examined IV glutathione in peripheral arterial disease and around certain hospital procedures.<sup>3,4</sup> These findings are preliminary and do not establish IV glutathione as routine treatment for cardiovascular disease.
-
-The most accurate conclusion is that IV glutathione is biologically interesting and has some early human research, while condition-specific benefits remain uncertain. This makes clear expectations and an individualized, time-limited trial important.
-
-## What to Expect
-
-Before treatment, Dr. MacLeod reviews your health history, medications, supplements, previous results and the reason you are interested in glutathione. The infusion may be given on its own or incorporated into another IV formula when appropriate.
-
-During the appointment, an IV is placed and the solution is infused gradually. Most patients can resume their usual activities afterward. If treatment is continued, the schedule is based on tolerability and your own response rather than a universal protocol.
-
-## Safety and Limitations
-
-Possible effects include discomfort or bruising at the IV site, nausea, headache, flushing or an uncommon allergic reaction. Any IV treatment also carries a small risk of infection. People who are pregnant or breastfeeding, have significant kidney or cardiac disease or have other complex medical conditions require additional assessment and may not be candidates.
-
-Glutathione therapy should complement—not delay or replace—appropriate medical investigation and treatment. If your symptoms suggest an undiagnosed condition, that assessment takes priority.
-
-> Glutathione is one of several IV nutrient options available through the practice. Visit the [IV Nutrient Therapy page](/iv-therapy/) to compare the available approaches.
+> Glutathione is one of several powerful IV nutrient therapies offered at Dr. MacLeod's Bedford clinic. Learn about the full range of [IV Nutrient Therapy](/iv-therapy/) options, including the Myers' Cocktail, high-dose Vitamin C and NAD+.
 
 ## References
 
-1. Forman HJ, Zhang H, Rinna A. Glutathione: overview of its protective roles, measurement and biosynthesis. Mol Aspects Med. 2009;30(1-2):1-12.
-2. Hauser RA, Lyons KE, McClain T, Carter S, Perlmutter D. Randomized, double-blind, pilot evaluation of intravenous glutathione in Parkinson's disease. Mov Disord. 2009;24(7):979-983.
-3. Arosio E, De Marchi S, Zannoni M, et al. Effect of glutathione infusion on leg arterial circulation, cutaneous microcirculation and pain-free walking distance in patients with peripheral obstructive arterial disease. Mayo Clin Proc. 2002;77(8):754-759.
-4. Tanzilli G, Truscelli G, Arrivi A, et al. Glutathione infusion before primary percutaneous coronary intervention: a randomised controlled pilot study. BMJ Open. 2019;9:e025884.
+1. Pizzorno J. Glutathione! Integr Med (Encinitas). 2014 Feb;13(1):8-12.
+2. Arosio E, De Marchi S, Zannoni M, et al. Effect of glutathione infusion on leg arterial circulation, cutaneous microcirculation and pain-free walking distance in patients with peripheral obstructive arterial disease: a randomized, double-blind, placebo-controlled trial. Mayo Clin Proc. 2002 Aug;77(8):754-9.
+3. Monti DA, Zabrecky G, Kremens D, et al. N-Acetyl Cysteine Is Associated With Dopaminergic Improvement in Parkinson's Disease. Clin Pharmacol Ther. 2019 Oct;106(4):884-890.
+4. Honda Y, Kessoku T, Sumida Y, et al. Efficacy of glutathione for the treatment of nonalcoholic fatty liver disease: an open-label, single-arm, multicenter, pilot study. BMC Gastroenterol. 2017 Aug 8;17(1):96.
+5. Tanzilli G, Truscelli G, Arrivi A, et al. Glutathione infusion before primary percutaneous coronary intervention: a randomised controlled pilot study. BMJ Open. 2019 Aug 8;9(8):e025884.
+6. Berk M, Copolov DL, Dean O, et al. N-acetyl cysteine for depressive symptoms in bipolar disorder–a double-blind randomized placebo- controlled trial. Biol Psychiatry. 2008 Sep 15;64(6):468-75.
+7. Magalhães PV, Dean OM, Bush AI, et al. N-acetylcysteine for major depressive episodes in bipolar disorder. Rev Bras Psiquiatr. 2011 Dec;33(4):374-8.
+8. Afshar H, Roohafza H, Mohammad-Beigi H, et al. N-Acetylcysteine Add-On Treatment in Refractory Obsessive-Compulsive Disorder: A Randomized, Double-Blind, Placebo-Controlled Trial. J Clin Psychopharmacol. 2012 Dec;32(6):797-803.
+9. Carmeli C, Knyazeva MG, Cuénod M, Do KQ. Glutathione precursor N-acetyl-cysteine modulates EEG synchronization in schizophrenia patients: a double-blind, randomized, placebo-controlled trial. PLoS One. 2012;7(2):e29341.
+10. Lavoie S, Murray MM, Deppen P, et al. Glutathione precursor, N-acetyl-cysteine, improves mismatch negativity in schizophrenia patients. Neuropsychopharmacology. 2008 Aug;33(9):2187-99.
+11. Larowe SD, Mardikian P, Malcolm R, et al. Safety and tolerability of N-acetylcysteine in cocaine-dependent individuals. Am J Addict. 2006 Jan-Feb;15(1):105-10.
+12. LaRowe SD, Myrick H, Hedden S, et al. Is cocaine desire reduced by N-acetylcysteine? Am J Psychiatry. 2007 Jul;164(7):1115-7.
+13. Hardan AY, Fung LK, Libove RA, et al. A randomized controlled pilot trial of oral N-acetylcysteine in children with autism. Biol Psychiatry. 2012 Jun 1;71(11):956-61.
+14. De Flora S, Grassi C, Carati L. Attenuation of influenza-like symptomatology and improvement of cell-mediated immunity with long-term N-acetylcysteine treatment. Eur Respir J. 1997 Jul;10(7):1535–41.
