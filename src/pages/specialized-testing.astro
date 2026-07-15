@@ -4,12 +4,12 @@ import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
 import FAQSection from '../components/FAQSection.astro';
 import RelatedCare from '../components/RelatedCare.astro';
-import { X, Check } from '@lucide/astro';
+import { Check } from '@lucide/astro';
 ---
 
 <BaseLayout
-  title="Specialized Functional Medicine Testing in Halifax"
-  description="Functional medicine testing in Halifax, including selected heavy metal, organic acid, chronic infection and methylation assessments for complex cases."
+  title="Specialized Laboratory Testing in Halifax"
+  description="Private specialized laboratory testing in Halifax, including selected heavy metal, organic acid, infection, environmental exposure and genetic assessments."
   focusKeyword="functional medicine testing Halifax"
 >
   <HeroSection
@@ -17,52 +17,52 @@ import { X, Check } from '@lucide/astro';
     compact
     image={{ src: "/images/lab-testing/specialized-testing.webp", alt: "Blood draw preparation for specialized testing", aspect: "video" }}
   >
-    <p>When standard testing hasn't provided answers, <strong class="text-white">functional medicine testing investigates further</strong>. These advanced panels assess areas that standard testing typically does not include.</p>
+    <p>Specialized laboratory testing can extend an assessment beyond routine blood work. Available options include selected exposure, metabolic, infection and genetic tests, with <strong class="text-white">no specialist referral required</strong>.</p>
   </HeroSection>
 
   <!-- The Problem with Standard Testing -->
   <section class="py-16 lg:py-24 bg-emerald-50">
     <div class="section-shell">
       <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6">When Standard Testing Hasn't Given You Answers</h2>
+        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6">A Broader Range of Testing Options</h2>
         <div class="prose prose-lg text-slate-600 mb-8">
           <p>
-            Some patients have been through rounds of conventional testing, blood work, imaging, specialist referrals and still don't have answers. <strong>Being told "everything looks normal" when you clearly don't feel normal is one of the most frustrating experiences in healthcare</strong>.
+            Some patients want to investigate concerns that are not included in routine blood work, or have persistent symptoms despite previous medical assessment. Private testing offers access to additional laboratory options and more time to review what each test measures.
           </p>
           <p>
-            The problem isn't that nothing is wrong. It's that standard testing looks at a limited set of markers through a lens designed to detect disease, not dysfunction. Functional medicine testing expands the investigation to include environmental exposures, metabolic pathways, chronic infections and genetic variants that conventional medicine rarely considers.
+            Routine medical testing remains important and should not be replaced when primary care, imaging or specialist assessment is needed. Specialized panels can be considered alongside that care, with their costs, evidence and limitations explained before ordering.
           </p>
         </div>
 
         <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
-          <h3 class="text-xl font-semibold text-emerald-950 mb-6">What Conventional Testing Often Misses</h3>
+          <h3 class="text-xl font-semibold text-emerald-950 mb-6">What Specialized Testing May Assess</h3>
           <div class="grid md:grid-cols-2 gap-6">
             <div class="flex items-start gap-3">
-              <X class="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" aria-hidden="true" />
+              <Check class="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" aria-hidden="true" />
               <div>
-                <span class="font-medium text-emerald-950">Toxic burden</span>
-                <p class="text-sm text-slate-600">Heavy metals and environmental toxins accumulating over years</p>
+                <span class="font-medium text-emerald-950">Selected exposures</span>
+                <p class="text-sm text-slate-600">Specific metals or environmental chemicals when there is a relevant exposure history</p>
               </div>
             </div>
             <div class="flex items-start gap-3">
-              <X class="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" aria-hidden="true" />
+              <Check class="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" aria-hidden="true" />
               <div>
-                <span class="font-medium text-emerald-950">Metabolic bottlenecks</span>
-                <p class="text-sm text-slate-600">Organic acids reveal where energy production and detox stall</p>
+                <span class="font-medium text-emerald-950">Urinary metabolites</span>
+                <p class="text-sm text-slate-600">Organic acid measurements that provide a descriptive metabolic profile</p>
               </div>
             </div>
             <div class="flex items-start gap-3">
-              <X class="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" aria-hidden="true" />
+              <Check class="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" aria-hidden="true" />
               <div>
-                <span class="font-medium text-emerald-950">Chronic stealth infections</span>
-                <p class="text-sm text-slate-600">Lyme, EBV and other infections that evade standard testing</p>
+                <span class="font-medium text-emerald-950">Selected infections</span>
+                <p class="text-sm text-slate-600">Targeted antibody, antigen or molecular testing based on symptoms and exposure history</p>
               </div>
             </div>
             <div class="flex items-start gap-3">
-              <X class="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" aria-hidden="true" />
+              <Check class="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" aria-hidden="true" />
               <div>
-                <span class="font-medium text-emerald-950">Methylation issues</span>
-                <p class="text-sm text-slate-600">Genetic variants affecting detox, neurotransmitters and hormone clearance</p>
+                <span class="font-medium text-emerald-950">Selected genetic variants</span>
+                <p class="text-sm text-slate-600">Variants such as MTHFR, interpreted with health history and related blood markers</p>
               </div>
             </div>
           </div>
@@ -75,9 +75,9 @@ import { X, Check } from '@lucide/astro';
   <section class="py-16 lg:py-24 bg-white">
     <div class="section-shell">
       <div class="text-center mb-12">
-        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">Advanced Functional Testing Options</h2>
+        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">Specialized Testing Options</h2>
         <p class="text-lg text-slate-600 max-w-3xl mx-auto">
-          These tests are selected based on your history and symptoms, we recommend only what's clinically relevant.
+          Dr. MacLeod reviews your previous results, health history and testing priorities, recommends suitable options and discusses any additional panels you want to consider.
         </p>
       </div>
 
@@ -88,10 +88,10 @@ import { X, Check } from '@lucide/astro';
             <span class="text-white font-bold text-sm">Hg/Pb</span>
           </div>
           <h3 class="text-lg font-semibold text-emerald-950 mb-2">Heavy Metal Assessment</h3>
-          <p class="text-slate-600 text-sm mb-3">Tests for mercury, lead, arsenic, cadmium and other toxic metals. Chronic low-level exposure accumulates over decades from dental fillings, seafood, water and occupational sources.</p>
+          <p class="text-slate-600 text-sm mb-3">Measures selected elements such as mercury, lead, arsenic or cadmium. The specimen and interpretation depend on the element, the suspected source and the timing of exposure.</p>
           <div class="text-xs text-slate-600">
-            <span class="font-medium">Methods:</span> Urine (provoked and unprovoked), blood, hair<br>
-            <span class="font-medium text-emerald-700">Linked to:</span> Fatigue, neurological symptoms, thyroid issues
+            <span class="font-medium">Methods:</span> Blood or urine, depending on the assessment<br>
+            <span class="font-medium text-emerald-700">Consider when:</span> There is a relevant environmental or occupational exposure
           </div>
         </div>
 
@@ -101,10 +101,10 @@ import { X, Check } from '@lucide/astro';
             <span class="text-white font-bold text-sm">OAT</span>
           </div>
           <h3 class="text-lg font-semibold text-emerald-950 mb-2">Organic Acids Test (OAT)</h3>
-          <p class="text-slate-600 text-sm mb-3">A comprehensive metabolic snapshot measuring 75+ markers in urine. Evaluates energy production, neurotransmitter metabolism, detoxification capacity, yeast/bacterial overgrowth and nutritional status.</p>
+          <p class="text-slate-600 text-sm mb-3">Measures a range of metabolites in urine. The pattern may provide supplementary information about metabolic pathways, but it does not diagnose a specific cause of fatigue or other symptoms on its own.</p>
           <div class="text-xs text-slate-600">
             <span class="font-medium">Method:</span> First morning urine sample<br>
-            <span class="font-medium text-emerald-700">Best for:</span> Fatigue, brain fog, mood issues, complex cases
+            <span class="font-medium text-emerald-700">Consider when:</span> A broader metabolic profile is requested after initial assessment
           </div>
         </div>
 
@@ -114,10 +114,10 @@ import { X, Check } from '@lucide/astro';
             <span class="text-white font-bold text-sm">Inf</span>
           </div>
           <h3 class="text-lg font-semibold text-emerald-950 mb-2">Chronic Infection Panels</h3>
-          <p class="text-slate-600 text-sm mb-3">Testing for reactivated or chronic infections including Epstein-Barr virus (EBV), Lyme disease (Borrelia), co-infections and other stealth pathogens that drive fatigue and immune dysfunction.</p>
+          <p class="text-slate-600 text-sm mb-3">Targeted testing may include Epstein-Barr virus, Lyme disease or other infections. The type of test and timing are selected according to symptoms, exposure history and previous results.</p>
           <div class="text-xs text-slate-600">
-            <span class="font-medium">Includes:</span> EBV, Lyme (Western Blot), co-infections<br>
-            <span class="font-medium text-emerald-700">Best for:</span> Chronic fatigue, post-viral syndromes, joint pain
+            <span class="font-medium">May include:</span> Antibody, antigen or molecular testing<br>
+            <span class="font-medium text-emerald-700">Important:</span> Positive and negative results require clinical interpretation
           </div>
         </div>
 
@@ -127,10 +127,10 @@ import { X, Check } from '@lucide/astro';
             <span class="text-white font-bold text-sm">Tox</span>
           </div>
           <h3 class="text-lg font-semibold text-emerald-950 mb-2">Environmental Toxins</h3>
-          <p class="text-slate-600 text-sm mb-3">Screens for common environmental chemicals including pesticides, plasticizers (BPA/phthalates), volatile solvents and other toxins that disrupt hormones, immunity and neurological function.</p>
+          <p class="text-slate-600 text-sm mb-3">Some private laboratories measure metabolites associated with selected pesticides, plasticizers or solvents. Availability and the clinical usefulness of individual markers vary.</p>
           <div class="text-xs text-slate-600">
             <span class="font-medium">Method:</span> Urine testing<br>
-            <span class="font-medium text-emerald-700">Linked to:</span> Hormonal disruption, fertility issues, fatigue
+            <span class="font-medium text-emerald-700">Consider when:</span> There is a specific exposure concern to investigate
           </div>
         </div>
 
@@ -140,31 +140,31 @@ import { X, Check } from '@lucide/astro';
             <span class="text-white font-bold text-sm">MTHF</span>
           </div>
           <h3 class="text-lg font-semibold text-emerald-950 mb-2">Methylation Panel</h3>
-          <p class="text-slate-600 text-sm mb-3">Evaluates methylation, a critical biochemical process involved in detoxification, DNA repair, neurotransmitter production and hormone metabolism. Includes genetic variants (MTHFR, COMT) and functional markers.</p>
+          <p class="text-slate-600 text-sm mb-3">May combine selected genetic variants with blood markers such as homocysteine, folate and vitamin B12. A genetic variant does not by itself diagnose impaired metabolism or determine treatment.</p>
           <div class="text-xs text-slate-600">
             <span class="font-medium">Markers:</span> Homocysteine, MTHFR, COMT, folate, B12<br>
-            <span class="font-medium text-emerald-700">Impacts:</span> Detox capacity, mood, cardiovascular risk
+            <span class="font-medium text-emerald-700">Interpretation:</span> Results are reviewed with related blood work and health history
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Deep Dive: Root Cause Approach -->
+  <!-- Broader assessment -->
   <section class="py-16 lg:py-24 bg-emerald-950">
     <div class="section-shell">
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         <div>
-          <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">The Root-Cause Approach to Complex Cases</h2>
+          <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">A Broader Assessment for Complex Histories</h2>
           <div class="prose prose-lg prose-invert">
             <p class="text-white/90">
-              Functional medicine doesn't treat symptoms in isolation, it investigates <strong class="text-white">why</strong> those symptoms exist. When a patient presents with fatigue, brain fog, joint pain and mood changes, conventional medicine might offer antidepressants, painkillers and a referral to a sleep clinic.
+              Persistent or multi-system symptoms often require information from several sources: medical history, physical examination, routine laboratory work, imaging or specialist assessment, and sometimes additional private testing.
             </p>
             <p class="text-white/90">
-              A functional approach asks: <strong class="text-white">Is there a heavy metal burden?</strong> An undiagnosed chronic infection? A methylation issue affecting neurotransmitter production? A metabolic bottleneck in energy production? These are testable questions with actionable answers.
+              Specialized tests can add another layer when you want to investigate a particular exposure, infection, metabolic profile or genetic variant. Their findings are reviewed alongside established tests rather than treated as a complete explanation on their own.
             </p>
             <p class="text-white/90">
-              Specialized testing is not for everyone, and we don't recommend it without clinical justification. But for complex, multi-system cases that haven't responded to conventional approaches, these tests often reveal the missing piece.
+              Dr. MacLeod will explain which options fit your priorities, what the results can and cannot establish, and the cost before you decide how broad you want the assessment to be.
             </p>
           </div>
         </div>
@@ -176,7 +176,7 @@ import { X, Check } from '@lucide/astro';
               <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
-              <span>Standard blood work comes back "normal" but you still feel unwell</span>
+              <span>Routine blood work has not explained persistent symptoms</span>
             </li>
             <li class="flex items-start gap-3 text-white/90">
               <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -214,11 +214,11 @@ import { X, Check } from '@lucide/astro';
     </div>
   </section>
 
-  <!-- Symptoms / Signs -->
+  <!-- Information to review -->
   <section class="py-16 lg:py-24 bg-emerald-50">
     <div class="section-shell">
       <div class="text-center mb-12">
-        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">Signs That Deeper Testing May Help</h2>
+        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">Concerns to Review During Your Consultation</h2>
       </div>
 
       <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -253,18 +253,18 @@ import { X, Check } from '@lucide/astro';
   <section class="py-16 lg:py-24 bg-white">
     <div class="section-shell">
       <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6">Accessing Advanced Testing in Nova Scotia</h2>
+        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6">Accessing Specialized Testing in Nova Scotia</h2>
         <div class="prose prose-lg text-slate-600">
           <p>
-            Functional medicine testing is not available through Nova Scotia's public healthcare system. These specialized panels require laboratories that go beyond standard hospital testing, and that's by design. They investigate root causes that conventional testing wasn't built to find.
+            Publicly funded testing and private laboratory testing serve different roles. Primary care and specialist pathways provide essential diagnostic assessment, while private laboratories can offer additional tests that are not routinely funded or are difficult to access through the public system.
           </p>
           <ul>
-            <li>Heavy metal testing through MSI is extremely limited and typically requires specialist referral</li>
-            <li>Organic acids testing is not available through conventional channels in NS</li>
-            <li>Lyme disease testing through standard labs uses methodology with known limitations</li>
+            <li>No family doctor or specialist referral is required to discuss private testing through the practice</li>
+            <li>Available options, expected costs and collection instructions are reviewed before ordering</li>
+            <li>Additional tests you want to explore can be discussed as part of the testing plan</li>
           </ul>
           <p>
-            Through our practice, you can access <strong>these advanced tests directly, without specialist referrals or long waitlists</strong>. Results are interpreted in the context of your full clinical picture, and we develop treatment plans that address root causes, not just manage symptoms.
+            Specialized testing complements rather than replaces conventional care. Results that require medical diagnosis, imaging, urgent assessment or specialist treatment are directed to the appropriate healthcare service, and copies can be shared with your existing providers.
           </p>
         </div>
       </div>
@@ -283,20 +283,20 @@ import { X, Check } from '@lucide/astro';
   />
 
   <FAQSection bg="white" items={[
-          { question: "Do I need all of these tests?", answer: "<p>No. Specialized testing is selected based on your individual case. Most patients need only one or two of these panels. During your consultation, we'll review your symptoms, history and any previous testing to determine which tests are most likely to provide useful clinical information. We never recommend tests without clear clinical justification.</p>" },
-          { question: "How much do specialized tests cost?", answer: "<p>Costs vary depending on the test. Pricing is reviewed before anything is ordered, along with whether the result is likely to provide useful information for the question being investigated. Some extended health plans may provide partial laboratory coverage.</p>" },
-          { question: "Are these tests scientifically valid?", answer: "<p>Laboratory accreditation and analytical accuracy do not automatically establish that every marker has proven clinical utility. Each test should be assessed according to the question it is intended to answer, the evidence supporting that use and whether the result is likely to change management.</p>" },
-          { question: "Should I start with basic blood work or specialized testing?", answer: "<p>In most cases, we start with comprehensive basic blood work (wellness panel, nutrients, thyroid) before moving to specialized testing. This layered approach ensures we're not over-testing and that we catch common issues first. If your basic work is unremarkable but symptoms persist, specialized testing becomes the logical next step.</p>" },
-          { question: "Can you work with my existing healthcare team?", answer: "<p>Absolutely. Collaborative care leads to better outcomes. If you have a family doctor, specialist or other healthcare providers, we're happy to share results and coordinate care. Many patients use our specialized testing to complement their conventional medical care, and we work alongside your existing providers, not in place of them.</p>" },
+          { question: "Can I request a specific specialized test?", answer: "<p>Yes. Bring the name of the test or the area you want investigated to your consultation. I will explain the available options, recommend a suitable testing plan and review the cost and limitations with you before anything is ordered.</p>" },
+          { question: "How much do specialized tests cost?", answer: "<p>Costs vary by laboratory and panel. The complete price is reviewed before ordering so you can decide whether to proceed with a focused test or a broader assessment. Some extended health plans may provide partial laboratory coverage.</p>" },
+          { question: "How reliable are specialized tests?", answer: "<p>Reliability and clinical usefulness vary by test. Laboratory accuracy does not always mean that every reported marker has a well-established role in diagnosis or treatment. I will explain the evidence and limitations that apply to the testing you are considering.</p>" },
+          { question: "Should I start with routine blood work or specialized testing?", answer: "<p>Routine blood work often provides important baseline information and may be completed before or alongside specialized testing. The order depends on your previous results, symptoms, exposure history and the testing you want to pursue.</p>" },
+          { question: "Can you work with my existing healthcare team?", answer: "<p>Yes. Specialized testing can complement care from your family doctor, specialist or other healthcare providers. You can receive copies of your results, and findings that require medical investigation or treatment can be shared with the appropriate provider.</p>" },
         ]} />
 
   <!-- CTA Section -->
   <section class="py-16 lg:py-24 bg-emerald-950">
     <div class="section-shell">
       <div class="text-center max-w-3xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">Ready to Discuss Specialized Testing?</h2>
+        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">Plan Your Specialized Testing</h2>
         <p class="text-lg text-white/90 mb-8">
-          Book an initial consultation to review previous results and determine whether specialized testing is likely to provide useful clinical information.
+          Book an initial consultation to review your concerns, previous results and the specialized tests you would like to explore.
         </p>
         <CTAButton source="specialized-testing-cta" />
       </div>
