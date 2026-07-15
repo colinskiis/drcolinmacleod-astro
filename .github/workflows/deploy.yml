@@ -73,14 +73,35 @@ jobs:
 
       - name: Verify production
         run: |
+          curl_args=(
+            --silent
+            --show-error
+            --location
+            --connect-timeout 10
+            --max-time 30
+            --user-agent "Mozilla/5.0 (compatible; DrColinMacleod-Deployment-Check/1.0)"
+            --header "Accept: text/html,application/xhtml+xml"
+            --header "Accept-Language: en-CA,en;q=0.9"
+            --header "Cache-Control: no-cache"
+          )
+
           for attempt in {1..12}; do
-            if curl -fsS https://drcolinmacleod.com/ | grep -q 'Look beyond symptoms' \
-              && curl -fsS https://drcolinmacleod.com/editorial-policy/ | grep -q 'Editorial and Evidence Policy' \
-              && [[ "$(curl -sS -o /dev/null -w '%{http_code}' https://drcolinmacleod.com/herbal-medicine/)" == "200" ]]; then
+            home_status="$(curl "${curl_args[@]}" --output /tmp/home.html --write-out '%{http_code}' https://drcolinmacleod.com/ || true)"
+            policy_status="$(curl "${curl_args[@]}" --output /tmp/editorial-policy.html --write-out '%{http_code}' https://drcolinmacleod.com/editorial-policy/ || true)"
+            herbal_status="$(curl "${curl_args[@]}" --output /tmp/herbal-medicine.html --write-out '%{http_code}' https://drcolinmacleod.com/herbal-medicine/ || true)"
+
+            echo "Verification attempt $attempt/12: home=$home_status editorial-policy=$policy_status herbal-medicine=$herbal_status"
+
+            if [[ "$home_status" == "200" ]] \
+              && grep -q 'Look beyond symptoms' /tmp/home.html \
+              && [[ "$policy_status" == "200" ]] \
+              && grep -q 'Editorial and Evidence Policy' /tmp/editorial-policy.html \
+              && [[ "$herbal_status" == "200" ]]; then
               echo "Production verification passed."
               exit 0
             fi
-            echo "Waiting for production to serve the new build (attempt $attempt/12)..."
+
+            echo "Waiting for production to serve the new build..."
             sleep 10
           done
           echo "Production verification did not observe the new build."
