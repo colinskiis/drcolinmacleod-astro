@@ -171,7 +171,7 @@ const faqSchema = {
       <div class="space-y-6 sm:space-y-8 reveal reveal-delay-100">
         <!-- Featured laboratory testing -->
         <a href={featuredService.href} class="group grid overflow-hidden rounded-3xl border border-emerald-100 bg-emerald-50 shadow-xl shadow-emerald-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-emerald-900/10 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 sm:grid-cols-[1.15fr_0.85fr] sm:items-stretch">
-          <div class="aspect-[16/10] overflow-hidden sm:aspect-auto sm:min-h-[22rem]">
+          <div class="aspect-[16/10] overflow-hidden sm:aspect-auto sm:min-h-[22rem] xl:aspect-[4/3] xl:min-h-0">
             <img src={featuredService.img} alt="Dr. Colin MacLeod performing an in-office blood draw" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" width="800" height="600" loading="lazy" />
           </div>
           <div class="flex flex-col justify-center p-7 sm:p-9 lg:p-12">
@@ -189,8 +189,18 @@ const faqSchema = {
         <div class="grid gap-4 sm:grid-cols-2 sm:gap-8">
           {secondaryServices.map((item) => (
             <a href={item.href} class="group grid min-h-32 grid-cols-[7.5rem_1fr] overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-lg shadow-emerald-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-emerald-900/10 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 sm:block sm:rounded-3xl">
-              <div class="overflow-hidden sm:aspect-[16/8]">
-                <img src={item.img} alt={item.title} class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" width="800" height="450" loading="lazy" />
+              <div class="overflow-hidden sm:aspect-[4/3]">
+                <img
+                  src={item.img}
+                  alt={item.title}
+                  class:list={[
+                    'h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]',
+                    item.title === 'Prolotherapy' ? 'object-top' : 'object-center',
+                  ]}
+                  width="800"
+                  height="450"
+                  loading="lazy"
+                />
               </div>
               <div class="flex flex-col justify-center p-5 sm:p-7">
                 <h3 class="mb-2 text-xl font-serif font-medium leading-tight text-emerald-950 transition-colors group-hover:text-emerald-700 sm:text-2xl">{item.title}</h3>
