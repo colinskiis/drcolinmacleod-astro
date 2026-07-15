@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BookingButton from '../components/BookingButton.astro';
 import FAQSection from '../components/FAQSection.astro';
-import { Phone, FlaskConical, ChevronRight } from '@lucide/astro';
+import { Phone, MessageCircle, FlaskConical, ChevronRight } from '@lucide/astro';
 
 // All services for Services section
 const allServices = [
@@ -109,7 +109,11 @@ const faqSchema = {
           <div class="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-sm text-emerald-200 lg:justify-start animate-fade-in-up animate-delay-400">
             <a href="tel:+19024064424" class="inline-flex items-center gap-2 transition-colors hover:text-white">
               <Phone class="h-4 w-4" aria-hidden="true" />
-              (902) 406-4424
+              Call (902) 406-4424
+            </a>
+            <a href="sms:+19027070230" data-text-source="homepage-hero" class="inline-flex items-center gap-2 transition-colors hover:text-white">
+              <MessageCircle class="h-4 w-4" aria-hidden="true" />
+              Text (902) 707-0230
             </a>
             <a href="/new-patients/" class="text-emerald-300 underline underline-offset-2 transition-colors hover:text-white">First visit? Learn what to expect →</a>
           </div>
