@@ -4,7 +4,7 @@ import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
 import FAQSection from '../components/FAQSection.astro';
 import RelatedCare from '../components/RelatedCare.astro';
-import { ArrowRight, Check, Info } from '@lucide/astro';
+import { Check, Info } from '@lucide/astro';
 
 const nutrientMarkers = [
   {
@@ -220,9 +220,8 @@ const resultConsiderations = [
           </li>
         </ol>
 
-        <div class="mt-8 flex items-start gap-4 rounded-2xl bg-emerald-50 p-6 sm:items-center sm:justify-between">
-          <p class="max-w-2xl text-sm leading-relaxed text-slate-600">Laboratory testing ordered through a naturopathic doctor is not covered by MSI. Some extended health plans may cover naturopathic appointments, but laboratory coverage varies.</p>
-          <ArrowRight class="hidden h-6 w-6 flex-none text-emerald-700 sm:block" aria-hidden="true" />
+        <div class="mt-8 rounded-2xl bg-emerald-50 p-6">
+          <p class="text-sm leading-relaxed text-slate-600">Laboratory testing ordered through a naturopathic doctor is not covered by MSI. Some extended health plans may cover naturopathic appointments, but laboratory coverage varies.</p>
         </div>
       </div>
     </div>
