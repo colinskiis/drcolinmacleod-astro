@@ -10,7 +10,7 @@ import FAQSection from '../components/FAQSection.astro';
 
 <BaseLayout
   title="NAD+ IV Therapy"
-  description="NAD+ IV therapy supports cellular energy, mental clarity and healthy aging. Learn about NAD+ infusions with Dr. Colin MacLeod, ND in Halifax, Nova Scotia."
+  description="NAD+ is a coenzyme involved in cellular energy metabolism. Learn how monitored NAD+ IV therapy is used for selected patients in Halifax."
   focusKeyword="NAD therapy Halifax"
 >
   <HeroSection
@@ -18,29 +18,26 @@ import FAQSection from '../components/FAQSection.astro';
     compact
     image={{ src: "/images/treatments/nad-iv-therapy-session.webp", alt: "Patient receiving NAD+ IV therapy in Halifax", aspect: "video" }}
   >
-    <p>NAD+ (nicotinamide adenine dinucleotide) is a coenzyme essential for cellular energy production, DNA repair and healthy aging. IV administration delivers NAD+ directly to your cells for optimal absorption.</p>
+    <p>NAD+ (nicotinamide adenine dinucleotide) is a coenzyme involved in energy metabolism and cellular signaling. NAD+ IV therapy is available in the practice for selected patients interested in a monitored infusion while the clinical research continues to develop.</p>
   </HeroSection>
 
   <!-- Three Benefits Section -->
   <section class="py-16 lg:py-24 bg-[#f7f7f5]">
     <div class="section-shell">
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-        <!-- Cellular Energy -->
-        <BenefitCard title="Cellular Energy">
+        <BenefitCard title="Established Biology">
           <Zap slot="icon" class="h-6 w-6" stroke-width={1.75} aria-hidden="true" />
-          <p>NAD+ is essential for mitochondrial function and ATP production. Research shows NAD+ levels decline with age, contributing to fatigue and reduced cellular function.<sup>1-5</sup></p>
+          <p>NAD+ participates in the reactions cells use to transfer energy from nutrients. It is also a substrate for enzymes involved in cellular signaling and DNA repair.<sup>1-3</sup></p>
         </BenefitCard>
 
-        <!-- Cognitive Function -->
-        <BenefitCard title="Mental Clarity">
+        <BenefitCard title="A Focused Infusion">
           <Lightbulb slot="icon" class="h-6 w-6" stroke-width={1.75} aria-hidden="true" />
-          <p>NAD+ supports neuronal health and neurotransmitter synthesis. Studies demonstrate improvements in cognitive function and mental clarity with NAD+ supplementation.<sup>6-10</sup></p>
+          <p>NAD+ is infused gradually under clinical supervision. The rate can be adjusted throughout the appointment in response to comfort and tolerability.</p>
         </BenefitCard>
 
-        <!-- Healthy Aging -->
-        <BenefitCard title="Healthy Aging">
+        <BenefitCard title="Individual Assessment">
           <Heart slot="icon" class="h-6 w-6" stroke-width={1.75} aria-hidden="true" />
-          <p>NAD+ activates sirtuins, the "longevity genes" that regulate cellular repair, metabolism and stress resistance. Declining NAD+ is a hallmark of aging.<sup>11-15</sup></p>
+          <p>The service is used for selected patients after reviewing health history, medications, goals and the important limits of current human evidence.</p>
         </BenefitCard>
       </div>
     </div>
@@ -54,13 +51,13 @@ import FAQSection from '../components/FAQSection.astro';
           <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6">What is NAD+?</h2>
           <div class="prose prose-lg text-slate-600">
             <p>
-              NAD+ (nicotinamide adenine dinucleotide) is a coenzyme found in every cell of your body. It plays a critical role in hundreds of metabolic processes, including energy production, DNA repair and cellular signaling.
+              NAD+ (nicotinamide adenine dinucleotide) is a coenzyme present throughout the body. It helps transfer electrons during energy metabolism and is used by enzymes involved in cellular signaling and DNA repair.
             </p>
             <p>
-              As we age, NAD+ levels naturally decline - by age 50, most people have approximately half the NAD+ they had in their youth.<sup>16</sup> This decline is associated with many age-related conditions including fatigue, cognitive decline and metabolic dysfunction.
+              NAD+ metabolism changes with age and with a number of health conditions, although levels differ between tissues and cannot be inferred from symptoms alone.<sup>1-4</sup> Much of the enthusiasm around NAD+ comes from laboratory and animal research. Human trials have focused mainly on oral precursors such as nicotinamide riboside and nicotinamide mononucleotide rather than IV NAD+ itself.<sup>4,5</sup>
             </p>
             <p>
-              IV administration of NAD+ bypasses the digestive system, delivering this essential coenzyme directly into your bloodstream for optimal cellular absorption and utilization.
+              IV administration places NAD+ directly into the bloodstream and avoids intestinal absorption. It does not yet follow that more NAD+ reaches every target tissue or that the infusion produces a particular clinical outcome; those questions require better human studies.
             </p>
           </div>
         </div>
@@ -79,64 +76,35 @@ import FAQSection from '../components/FAQSection.astro';
     </div>
   </section>
 
-  <!-- Conditions Treated Section -->
+  <!-- Reasons patients ask section -->
   <section id="conditions-treated" class="py-16 lg:py-24 bg-white">
     <div class="section-shell">
       <div class="text-center mb-12">
-        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">Who Benefits From NAD+ Therapy?</h2>
+        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">Why Patients Ask About NAD+ Therapy</h2>
         <p class="text-lg text-slate-600 max-w-3xl mx-auto">
-          NAD+ therapy may help individuals experiencing the following conditions
+          Interest is often connected to energy, cognition, recovery or healthy aging. These goals are reviewed without assuming that one infusion can explain or resolve the underlying concern.
         </p>
       </div>
 
       <div class="grid lg:grid-cols-2 gap-12 items-start">
         <div class="bg-emerald-50 rounded-2xl p-8 card-hover">
-          <h3 class="text-xl font-serif font-medium text-emerald-950 mb-6">Energy & Fatigue</h3>
-          <div class="grid gap-3">
-            {['Chronic fatigue', 'Low energy levels', 'Post-viral fatigue', 'Athletic recovery', 'Jet lag recovery'].map(condition => (
-              <div class="flex items-center">
-                <Check class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" aria-hidden="true" />
-                <span class="text-slate-700">{condition}</span>
-              </div>
-            ))}
-          </div>
+          <h3 class="text-xl font-serif font-medium text-emerald-950 mb-4">Energy and Recovery</h3>
+          <p class="text-slate-600 leading-relaxed">Some patients are curious about NAD+ during periods of persistent fatigue, demanding schedules or recovery. Fatigue has many possible causes, so appropriate investigation and established treatment remain important.</p>
         </div>
 
         <div class="bg-emerald-50 rounded-2xl p-8 card-hover">
-          <h3 class="text-xl font-serif font-medium text-emerald-950 mb-6">Cognitive & Neurological</h3>
-          <div class="grid gap-3">
-            {['Brain fog', 'Memory concerns', 'Mental fatigue', 'Focus difficulties', 'Age-related cognitive changes'].map(condition => (
-              <div class="flex items-center">
-                <Check class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" aria-hidden="true" />
-                <span class="text-slate-700">{condition}</span>
-              </div>
-            ))}
-          </div>
+          <h3 class="text-xl font-serif font-medium text-emerald-950 mb-4">Mental Clarity</h3>
+          <p class="text-slate-600 leading-relaxed">Brain fog and reduced concentration are common reasons for interest. Clinical trials have not established IV NAD+ as a treatment for cognitive impairment, and new or progressive neurological symptoms require medical assessment.</p>
         </div>
 
         <div class="bg-emerald-50 rounded-2xl p-8 card-hover">
-          <h3 class="text-xl font-serif font-medium text-emerald-950 mb-6">Metabolic & Aging</h3>
-          <div class="grid gap-3">
-            {['Metabolic support', 'Healthy aging support', 'Cellular regeneration', 'Oxidative stress', 'Inflammation support'].map(condition => (
-              <div class="flex items-center">
-                <Check class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" aria-hidden="true" />
-                <span class="text-slate-700">{condition}</span>
-              </div>
-            ))}
-          </div>
+          <h3 class="text-xl font-serif font-medium text-emerald-950 mb-4">Healthy-Aging Interest</h3>
+          <p class="text-slate-600 leading-relaxed">NAD+ biology is closely studied in aging research. Most outcome data are preclinical or involve oral precursors, so IV NAD+ should not be described as reversing aging or preventing age-related disease.</p>
         </div>
 
         <div class="bg-emerald-50 rounded-2xl p-8 card-hover">
-          <h3 class="text-xl font-serif font-medium text-emerald-950 mb-6">Recovery & Wellness</h3>
-          <div class="grid gap-3">
-            {['Addiction recovery support', 'Alcohol withdrawal support', 'Stress resilience', 'Sleep quality', 'Overall vitality'].map(condition => (
-              <div class="flex items-center">
-                <Check class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" aria-hidden="true" />
-                <span class="text-slate-700">{condition}</span>
-              </div>
-            ))}
-          </div>
-          <p class="text-sm text-slate-500 mt-4">Addiction recovery and alcohol withdrawal require medical evaluation and supervision. NAD+ therapy is used as a supportive treatment alongside appropriate medical care, not as a standalone intervention.</p>
+          <h3 class="text-xl font-serif font-medium text-emerald-950 mb-4">A Supervised Trial</h3>
+          <p class="text-slate-600 leading-relaxed">For a suitable patient who understands the uncertainty, a monitored and time-limited trial can provide a practical way to assess personal tolerability and response without committing to a predetermined series.</p>
         </div>
       </div>
     </div>
@@ -152,10 +120,10 @@ import FAQSection from '../components/FAQSection.astro';
             NAD+ functions as a critical coenzyme in cellular metabolism, shuttling electrons between molecules during energy production in the mitochondria. Without adequate NAD+, your cells cannot efficiently convert nutrients into usable energy (ATP).<sup>17-19</sup>
           </p>
           <p class="text-white/90">
-            Beyond energy production, NAD+ is essential for activating sirtuins - a family of proteins that regulate cellular health, DNA repair and longevity pathways. Research has identified seven sirtuin proteins (SIRT1-7), each dependent on NAD+ for their function.<sup>20-22</sup>
+            NAD+ is also consumed by sirtuins and PARP enzymes involved in cellular signaling and DNA repair. These mechanisms are scientifically important, but demonstrating a pathway is different from demonstrating that an IV infusion improves a symptom or health outcome.<sup>1-3</sup>
           </p>
           <p class="text-white/90">
-            NAD+ also serves as a substrate for enzymes called PARPs (poly ADP-ribose polymerases), which are critical for DNA repair. When DNA damage occurs, PARPs consume NAD+ to facilitate repair, which is why maintaining adequate NAD+ levels is essential for genomic stability.<sup>23-25</sup>
+            The central question for patients is not whether NAD+ matters—it does—but whether administering additional NAD+ intravenously provides a useful clinical benefit. Human evidence for IV NAD+ is still limited, so the service is offered with measured expectations and professional monitoring.
           </p>
         </div>
       </div>
@@ -181,13 +149,13 @@ import FAQSection from '../components/FAQSection.astro';
           <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6">Why IV Administration?</h2>
           <div class="prose prose-lg text-slate-600">
             <p>
-              While oral NAD+ precursors like NMN (nicotinamide mononucleotide) and NR (nicotinamide riboside) are available as supplements, IV administration offers distinct advantages for therapeutic applications.
+              Oral NAD+ precursors such as NMN and NR and intravenous NAD+ are different interventions. IV administration avoids intestinal absorption and creates immediate systemic exposure, while oral precursors rely on absorption and metabolism.
             </p>
             <p>
-              Intravenous delivery bypasses the digestive system entirely, avoiding the breakdown of NAD+ by digestive enzymes and ensuring 100% bioavailability. This allows for therapeutic concentrations that cannot be achieved through oral supplementation.
+              It is not yet clear which route is best for a given goal or how much intact IV NAD+ reaches specific tissues. Studies of oral precursors should not be used as proof of IV NAD+ effectiveness, and higher blood exposure should not be equated automatically with a better outcome.
             </p>
             <p>
-              NAD+ infusions are typically administered over 2-4 hours, allowing your body to gradually absorb and utilize the coenzyme. This controlled delivery minimizes potential side effects and optimizes cellular uptake.
+              A practical advantage of the IV route is that treatment takes place in a supervised setting and the rate can be adjusted. NAD+ is infused gradually because faster rates can cause nausea, abdominal cramping, warmth, increased heart rate or chest pressure in some people.<sup>6</sup>
             </p>
           </div>
         </div>
@@ -206,7 +174,7 @@ import FAQSection from '../components/FAQSection.astro';
             <div class="flex justify-center mb-4">
               <FlaskConical class="w-20 h-20 text-emerald-950" stroke-width={1.5} aria-hidden="true" />
             </div>
-            <p class="text-slate-600">Cellular energy and regeneration support</p>
+            <p class="text-slate-600">A gradual, professionally monitored infusion</p>
           </div>
 
           <ul class="space-y-3 mb-8">
@@ -216,11 +184,11 @@ import FAQSection from '../components/FAQSection.astro';
             </li>
             <li class="flex items-center">
               <Check class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" aria-hidden="true" />
-              <span>100% bioavailability</span>
+              <span>Direct bloodstream administration</span>
             </li>
             <li class="flex items-center">
               <Check class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" aria-hidden="true" />
-              <span>Comfortable 2-3 hour session</span>
+              <span>Rate adjusted for tolerability</span>
             </li>
             <li class="flex items-center">
               <Check class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" aria-hidden="true" />
@@ -250,17 +218,16 @@ import FAQSection from '../components/FAQSection.astro';
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6">The Science Behind NAD+</h2>
         <div class="prose prose-lg text-slate-600">
           <p>
-            Research into NAD+ has expanded dramatically since Dr. David Sinclair and other longevity researchers highlighted its role in aging. Key findings include:
+            Research has established the importance of NAD+ metabolism and has generated considerable interest in ways to influence it. The strength of evidence depends on what is being studied:
           </p>
           <ul>
-            <li><strong>Age-related decline:</strong> NAD+ levels decrease by approximately 50% between ages 40 and 60, correlating with mitochondrial dysfunction and metabolic decline.<sup>16</sup></li>
-            <li><strong>Sirtuin activation:</strong> NAD+ is required for all seven sirtuin proteins, which regulate metabolism, inflammation, DNA repair and stress resistance.<sup>20-22</sup></li>
-            <li><strong>Mitochondrial function:</strong> NAD+ is essential for the electron transport chain and ATP production. Restoring NAD+ levels has been shown to improve mitochondrial function in animal studies.<sup>26-28</sup></li>
-            <li><strong>Neuroprotection:</strong> NAD+ supports neuronal health and has shown promise in preclinical studies for neurodegenerative conditions.<sup>6-10</sup></li>
-            <li><strong>Addiction recovery:</strong> NAD+ therapy has been used clinically for addiction recovery since the 1960s, with practitioners reporting reduced cravings and withdrawal symptoms.<sup>29-31</sup></li>
+            <li><strong>Cell biology:</strong> NAD+ has well-established roles in energy metabolism, sirtuin activity and PARP-dependent processes.<sup>1-3</sup></li>
+            <li><strong>Animal research:</strong> Raising NAD+ or providing precursors has produced interesting metabolic and aging-related findings in several models, but animal results do not establish human treatment effects.<sup>2,3</sup></li>
+            <li><strong>Human precursor trials:</strong> Oral NR and NMN can alter NAD-related biomarkers and have generally been tolerated in short trials. Clinical benefits have been variable and are not evidence for IV NAD+ itself.<sup>4,5</sup></li>
+            <li><strong>IV NAD+:</strong> Direct human research remains sparse. A small 2026 retrospective commercial-clinic study focused mainly on tolerability and short-term laboratory markers; it was not designed to establish symptom improvement or long-term effectiveness.<sup>6</sup></li>
           </ul>
           <p>
-            While much of the research is preclinical or observational, the growing body of evidence supports NAD+ as a promising intervention for cellular health and healthy aging.
+            This is a promising research area, but the evidence does not yet support claims that IV NAD+ reliably improves energy, cognition, addiction outcomes or longevity. In the practice, it is used for selected patients who remain interested after those limitations are discussed.
           </p>
         </div>
       </div>
@@ -279,7 +246,7 @@ import FAQSection from '../components/FAQSection.astro';
               <span class="text-2xl font-bold text-white">1</span>
             </div>
             <h3 class="font-semibold text-emerald-950 mb-2">Before Your Infusion</h3>
-            <p class="text-slate-600">Eat a light meal and stay well hydrated. Avoid caffeine and alcohol for 24 hours prior. Wear comfortable clothing with easy arm access.</p>
+            <p class="text-slate-600">Eat a light meal, stay hydrated and follow the instructions provided for your formula. Wear comfortable clothing with easy arm access.</p>
           </div>
 
           <div class="text-center">
@@ -287,7 +254,7 @@ import FAQSection from '../components/FAQSection.astro';
               <span class="text-2xl font-bold text-white">2</span>
             </div>
             <h3 class="font-semibold text-emerald-950 mb-2">During Your Infusion</h3>
-            <p class="text-slate-600">Sessions last 2-4 hours depending on dose. You may experience mild chest tightness, nausea or warmth - these are normal and manageable by adjusting the drip rate.</p>
+            <p class="text-slate-600">The infusion is given gradually. Tell the clinician immediately about nausea, cramping, warmth, a racing heart, chest pressure or any other discomfort so the infusion can be paused or adjusted.</p>
           </div>
 
           <div class="text-center">
@@ -295,7 +262,7 @@ import FAQSection from '../components/FAQSection.astro';
               <span class="text-2xl font-bold text-white">3</span>
             </div>
             <h3 class="font-semibold text-emerald-950 mb-2">After Your Infusion</h3>
-            <p class="text-slate-600">Most people feel increased energy and mental clarity within hours to days. Optimal results are typically seen after a series of 4 infusions over 2-4 weeks.</p>
+            <p class="text-slate-600">Most people resume their usual activities if they feel well. Note any changes in symptoms or function afterward; benefit is not assumed and a predetermined series is not required.</p>
           </div>
         </div>
       </div>
@@ -309,13 +276,13 @@ import FAQSection from '../components/FAQSection.astro';
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">Safety of NAD+ Therapy</h2>
         <div class="prose prose-lg prose-invert">
           <p class="text-white/90">
-            NAD+ IV therapy has been used clinically for decades with a strong safety profile. NAD+ is a naturally occurring molecule in your body, and IV supplementation simply provides additional amounts to support cellular function.
+            Published safety information for commercial IV NAD+ remains limited. Being naturally present in the body does not make an intravenous dose automatically risk-free, which is why screening, gradual administration and monitoring matter.
           </p>
           <p class="text-white/90">
-            The most common side effects are related to the infusion rate rather than NAD+ itself. These may include mild chest tightness, abdominal discomfort or a feeling of warmth. These sensations typically resolve quickly when the infusion rate is slowed.
+            Reported infusion effects include nausea, abdominal cramping, diarrhea, warmth, increased heart rate and chest or throat pressure. In a small retrospective study these symptoms resolved when infusions ended, but the study was too small to define uncommon or long-term risks.<sup>6</sup>
           </p>
           <p class="text-white/90">
-            NAD+ therapy may not be appropriate for individuals who are pregnant, breastfeeding, or have active cardiac conditions, active cancer or other significant medical conditions. A thorough health assessment is completed before treatment to ensure safety.
+            Treatment may not be appropriate during pregnancy or breastfeeding or with certain cardiac, kidney, cancer-related or other significant medical considerations. A health assessment and medication review are completed before treatment. New or concerning symptoms should be medically evaluated rather than attributed to low NAD+.
           </p>
         </div>
       </div>
@@ -323,11 +290,11 @@ import FAQSection from '../components/FAQSection.astro';
   </section>
 
   <FAQSection bg="white" items={[
-          { question: "How long does an NAD+ infusion take?", answer: "<p>NAD+ infusions typically take 1-4 hours depending on the dose and your individual tolerance. The infusion rate is adjusted to ensure comfort throughout the session. We recommend bringing something to read or watch during your treatment.</p>" },
-          { question: "How many treatments will I need?", answer: "<p>Most people benefit from an initial series of 3 infusions spread over 3-6 weeks. Following this loading phase, maintenance infusions every 4-8 weeks help sustain benefits. Your treatment plan will be personalized based on your health goals and response to therapy.</p>" },
-          { question: "What does NAD+ therapy feel like?", answer: "<p>During the infusion, you may feel mild warmth, slight chest tightness or a fluttering sensation. These are normal responses to NAD+ and resolve by slowing the infusion rate. After treatment, many people report feeling more alert, energized and mentally clear.</p>" },
-          { question: "Is NAD+ therapy different from taking NAD+ supplements?", answer: "<p>Yes. Oral NAD+ supplements and precursors (like NMN or NR) must be absorbed through the digestive system, which reduces bioavailability. IV administration delivers NAD+ directly to your bloodstream, achieving therapeutic levels that are not possible with oral supplementation.</p>" },
-          { question: "Who should not receive NAD+ therapy?", answer: "<p>NAD+ therapy may not be appropriate for pregnant or breastfeeding women, individuals with active cancer or those with certain cardiac conditions. A comprehensive health assessment is completed before treatment to ensure safety.</p>" },
+          { question: "How long does an NAD+ infusion take?", answer: "<p>NAD+ infusions are administered gradually and may take approximately 1–4 hours depending on the dose and individual tolerability. The rate is adjusted throughout the appointment.</p>" },
+          { question: "How many treatments will I need?", answer: "<p>There is no evidence-based universal series. If you are a suitable candidate, the initial plan can be kept limited and reassessed according to tolerability, cost and whether you notice a meaningful change.</p>" },
+          { question: "What does NAD+ therapy feel like?", answer: "<p>Some people tolerate the infusion comfortably, while others experience nausea, cramping, warmth, increased heart rate or chest pressure. These symptoms must be reported promptly and often improve when the infusion is slowed or stopped. Experiences after treatment vary.</p>" },
+          { question: "Is NAD+ therapy different from taking NAD+ supplements?", answer: "<p>Yes. IV NAD+, oral NAD+ and precursors such as NMN or NR use different routes and are metabolized differently. Direct bloodstream administration does not by itself prove better cellular uptake or better clinical results.</p>" },
+          { question: "Who should not receive NAD+ therapy?", answer: "<p>It may not be appropriate during pregnancy or breastfeeding or for people with certain cardiac, kidney, cancer-related or other significant medical conditions. Suitability is determined only after an individual assessment.</p>" },
         ]} />
 
   <!-- References Section -->
@@ -340,34 +307,9 @@ import FAQSection from '../components/FAQSection.astro';
             <li>Yoshino J, Baur JA, Imai SI. NAD+ Intermediates: The Biology and Therapeutic Potential of NMN and NR. Cell Metab. 2018;27(3):513-528.</li>
             <li>Cantó C, Menzies KJ, Auwerx J. NAD(+) Metabolism and the Control of Energy Homeostasis: A Balancing Act between Mitochondria and the Nucleus. Cell Metab. 2015;22(1):31-53.</li>
             <li>Verdin E. NAD+ in aging, metabolism and neurodegeneration. Science. 2015;350(6265):1208-1213.</li>
-            <li>Fang EF, Lautrup S, Hou Y, et al. NAD+ in Aging: Molecular Mechanisms and Translational Implications. Trends Mol Med. 2017;23(10):899-916.</li>
-            <li>Rajman L, Chwalek K, Sinclair DA. Therapeutic Potential of NAD-Boosting Molecules: The In Vivo Evidence. Cell Metab. 2018;27(3):529-547.</li>
-            <li>Lautrup S, Sinclair DA, Mattson MP, Fang EF. NAD+ in Brain Aging and Neurodegenerative Disorders. Cell Metab. 2019;30(4):630-655.</li>
-            <li>Hou Y, Lautrup S, Cordonnier S, et al. NAD+ supplementation normalizes key Alzheimer's features and DNA damage responses in a new AD mouse model with introduced DNA repair deficiency. Proc Natl Acad Sci U S A. 2018;115(8):E1876-E1885.</li>
-            <li>Gong B, Pan Y, Vempati P, et al. Nicotinamide riboside restores cognition through an upregulation of proliferator-activated receptor-γ coactivator 1α regulated β-secretase 1 degradation and mitochondrial gene expression in Alzheimer's mouse models. Neurobiol Aging. 2013;34(6):1581-1588.</li>
-            <li>Wang X, Hu X, Yang Y, Takata T, Bhattacharyya R. Nicotinamide mononucleotide protects against β-amyloid oligomer-induced cognitive impairment and neuronal death. Brain Res. 2016;1643:1-9.</li>
-            <li>Braidy N, Guillemin GJ, Mansour H, Chan-Ling T, Poljak A, Grant R. Age related changes in NAD+ metabolism oxidative stress and Sirt1 activity in wistar rats. PLoS One. 2011;6(4):e19194.</li>
-            <li>Imai S, Guarente L. NAD+ and sirtuins in aging and disease. Trends Cell Biol. 2014;24(8):464-471.</li>
-            <li>Bonkowski MS, Sinclair DA. Slowing ageing by design: the rise of NAD+ and sirtuin-activating compounds. Nat Rev Mol Cell Biol. 2016;17(11):679-690.</li>
-            <li>Sinclair DA, Guarente L. Extrachromosomal rDNA circles--a cause of aging in yeast. Cell. 1997;91(7):1033-1042.</li>
-            <li>Haigis MC, Sinclair DA. Mammalian sirtuins: biological insights and disease relevance. Annu Rev Pathol. 2010;5:253-295.</li>
-            <li>Guarente L. Sirtuins, aging and medicine. N Engl J Med. 2011;364(23):2235-2244.</li>
-            <li>Massudi H, Grant R, Braidy N, et al. Age-associated changes in oxidative stress and NAD+ metabolism in human tissue. PLoS One. 2012;7(7):e42357.</li>
-            <li>Mouchiroud L, Houtkooper RH, Moullan N, et al. The NAD(+)/Sirtuin Pathway Modulates Longevity through Activation of Mitochondrial UPR and FOXO Signaling. Cell. 2013;154(2):430-441.</li>
-            <li>Gomes AP, Price NL, Ling AJ, et al. Declining NAD(+) induces a pseudohypoxic state disrupting nuclear-mitochondrial communication during aging. Cell. 2013;155(7):1624-1638.</li>
-            <li>Frederick DW, Loro E, Liu L, et al. Loss of NAD Homeostasis Leads to Progressive and Reversible Degeneration of Skeletal Muscle. Cell Metab. 2016;24(2):269-282.</li>
-            <li>Guarente L. Sirtuins in aging and disease. Cold Spring Harb Symp Quant Biol. 2007;72:483-488.</li>
-            <li>Satoh A, Stein L, Imai S. The role of mammalian sirtuins in the regulation of metabolism, aging and longevity. Handb Exp Pharmacol. 2011;206:125-162.</li>
-            <li>Houtkooper RH, Pirinen E, Auwerx J. Sirtuins as regulators of metabolism and healthspan. Nat Rev Mol Cell Biol. 2012;13(4):225-238.</li>
-            <li>Fang EF, Scheibye-Knudsen M, Brace LE, et al. Defective mitophagy in XPA via PARP-1 hyperactivation and NAD(+)/SIRT1 reduction. Cell. 2014;157(4):882-896.</li>
-            <li>Bai P, Cantó C, Oudart H, et al. PARP-1 inhibition increases mitochondrial metabolism through SIRT1 activation. Cell Metab. 2011;13(4):461-468.</li>
-            <li>Pirinen E, Cantó C, Jo YS, et al. Pharmacological Inhibition of poly(ADP-ribose) polymerases improves fitness and mitochondrial function in skeletal muscle. Cell Metab. 2014;19(6):1034-1041.</li>
-            <li>Mills KF, Yoshida S, Stein LR, et al. Long-Term Administration of Nicotinamide Mononucleotide Mitigates Age-Associated Physiological Decline in Mice. Cell Metab. 2016;24(6):795-806.</li>
-            <li>Zhang H, Ryu D, Wu Y, et al. NAD+ repletion improves mitochondrial and stem cell function and enhances life span in mice. Science. 2016;352(6292):1436-1443.</li>
-            <li>Yoshino J, Mills KF, Yoon MJ, Imai S. Nicotinamide mononucleotide, a key NAD(+) intermediate, treats the pathophysiology of diet- and age-induced diabetes in mice. Cell Metab. 2011;14(4):528-536.</li>
-            <li>O'Hollaren P. Diphosphopyridine nucleotide in the prevention, diagnosis and treatment of drug addiction. West J Surg Obstet Gynecol. 1961;69:213-215.</li>
-            <li>Mestayer PN. Addiction: The Dark Night of the Soul/NAD+: The Light of Hope. 2019. Balboa Press.</li>
-            <li>Grant R, Whittaker M. Nicotinamide Adenine Dinucleotide (NAD) Therapy in Substance Use Disorder. J Reward Defic Syndr Addict Sci. 2021;7(1):1-5.</li>
+            <li>Gindri IM, Ferrari G, Pinto LPS, et al. Evaluation of safety and effectiveness of NAD in different clinical conditions: a systematic review. Am J Physiol Endocrinol Metab. 2024;326(4):E417-E427.</li>
+            <li>Li Y, et al. The therapeutic perspective of NAD+ precursors in age-related diseases. Cell Commun Signal. 2024;22:70.</li>
+            <li>Reyna K, Heinzen G, Patel N, et al. Intravenous infusion of nicotinamide adenine dinucleotide (NAD+) versus nicotinamide riboside (NR): a retrospective tolerability pilot study in a real-world setting. Front Aging. 2026;7:1652582.</li>
           </ol>
         </div>
       </div>
@@ -377,9 +319,9 @@ import FAQSection from '../components/FAQSection.astro';
   <!-- CTA Section -->
   <section class="py-16 lg:py-24 bg-emerald-950">
     <div class="section-shell text-center">
-      <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">Ready to Experience NAD+ Therapy?</h2>
+      <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">Interested in NAD+ Therapy?</h2>
       <p class="text-lg text-emerald-200 max-w-2xl mx-auto mb-8">
-        Schedule a consultation to discuss whether NAD+ IV therapy is right for your health goals.
+        Book a consultation to review your goals, the current evidence and whether a monitored NAD+ infusion is a reasonable option for you.
       </p>
       <CTAButton source="nad-therapy-cta" />
     </div>
