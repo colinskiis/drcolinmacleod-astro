@@ -575,8 +575,6 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
           <!-- Centered Navigation -->
           <div class="hidden xl:flex items-center justify-center flex-1 gap-4 text-sm font-medium text-white" role="navigation" aria-label="Main navigation">
             <a href="/lab-testing/" data-navigation-source="desktop-main-nav-lab-testing" class={`whitespace-nowrap hover:text-emerald-200 hover:border-emerald-400/50 transition-colors duration-200 pb-1 border-b-2 ${isLabTestingPath ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={isLabTestingPath ? 'page' : undefined}>Lab Testing</a>
-            <a href="/about/" class={`whitespace-nowrap hover:text-emerald-200 hover:border-emerald-400/50 transition-colors duration-200 pb-1 border-b-2 ${currentPath.startsWith('/about') ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={currentPath.startsWith('/about') ? 'page' : undefined}>About</a>
-            <a href="/new-patients/" class={`whitespace-nowrap hover:text-emerald-200 hover:border-emerald-400/50 transition-colors duration-200 pb-1 border-b-2 ${currentPath.startsWith('/new-patients') ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={currentPath.startsWith('/new-patients') ? 'page' : undefined}>New Patients</a>
             <div class="relative group">
               <a
                 href="/services/"
@@ -647,8 +645,9 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
                 </div>
               </div>
             </div>
+            <a href="/new-patients/" class={`whitespace-nowrap hover:text-emerald-200 hover:border-emerald-400/50 transition-colors duration-200 pb-1 border-b-2 ${currentPath.startsWith('/new-patients') ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={currentPath.startsWith('/new-patients') ? 'page' : undefined}>New Patients</a>
+            <a href="/about/" class={`whitespace-nowrap hover:text-emerald-200 hover:border-emerald-400/50 transition-colors duration-200 pb-1 border-b-2 ${currentPath.startsWith('/about') ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={currentPath.startsWith('/about') ? 'page' : undefined}>About</a>
             <a href="/contact/" class={`whitespace-nowrap hover:text-emerald-200 hover:border-emerald-400/50 transition-colors duration-200 pb-1 border-b-2 ${currentPath.startsWith('/contact') ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={currentPath.startsWith('/contact') ? 'page' : undefined}>Contact</a>
-            <a href="/articles/" class={`whitespace-nowrap hover:text-emerald-200 hover:border-emerald-400/50 transition-colors duration-200 pb-1 border-b-2 ${currentPath.startsWith('/articles') ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={currentPath.startsWith('/articles') ? 'page' : undefined}>Articles</a>
           </div>
 
           <!-- Right Side: Search + Book Button + Mobile Menu -->
@@ -854,50 +853,61 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
         <div class="absolute -left-10 bottom-0 w-52 h-52 rounded-full bg-emerald-900/10 blur-3xl"></div>
       </div>
       <div class="section-shell py-16 relative z-10">
-        <div class="grid lg:grid-cols-2 gap-12 lg:gap-20">
-          <!-- About -->
-          <div class="space-y-3">
+        <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-[1.25fr_1fr_0.8fr] lg:gap-16">
+          <!-- Practice -->
+          <div class="space-y-4 md:col-span-2 lg:col-span-1">
             <p class="pill">Evidence-Based + Natural</p>
             <h3 class="text-2xl font-semibold">Dr. Colin MacLeod, ND</h3>
-            <p class="text-slate-700 leading-relaxed">
-              Bedford-based naturopathic doctor with an emphasis on private laboratory testing, clinical nutrition, IV nutrient therapy and prolotherapy, coordinated with your broader healthcare team.
+            <p class="max-w-xl text-slate-700 leading-relaxed">
+              Naturopathic care in Bedford, serving Halifax and surrounding communities, with an emphasis on private laboratory testing, clinical nutrition, IV nutrient therapy and prolotherapy.
             </p>
+            <a href="/about/" class="group inline-flex items-center font-semibold text-emerald-800 transition-colors hover:text-emerald-950">
+              About the practice
+              <ChevronRight class="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
+            </a>
           </div>
 
-          <!-- Contact + Services -->
-          <div class="grid sm:grid-cols-2 gap-8">
-            <div class="space-y-3">
-              <p class="uppercase tracking-[0.2em] text-xs text-emerald-900 font-semibold">Contact</p>
-              <div class="text-emerald-800 space-y-2">
-                <div class="space-y-0.5">
-                  <p class="font-medium">Optimal Wellbeing Clinic</p>
-                  <p>1378 Bedford Highway, Unit 1</p>
-                  <p>Bedford, NS B4A 1E2</p>
-                </div>
-                <a href="tel:+19024064424" class="inline-flex items-center py-2 -my-1 text-emerald-800 font-semibold hover:text-emerald-950">
-                  (902) 406-4424
-                </a>
-                <p class="text-emerald-800">
-                  <span class="font-semibold">Fax:</span> 1-800-689-8264
-                </p>
-                <a href="https://macleodnaturopathic.janeapp.com/" target="_blank" rel="noopener noreferrer" class="group flex items-center text-emerald-800 font-semibold hover:text-emerald-700 transition-colors">
-                  Book Online
-                  <ChevronRight class="w-5 h-5 ml-2 group-hover:translate-x-0.5 transition-transform" aria-hidden="true" />
-                </a>
-                <a href="/new-patients/" class="block hover:text-emerald-950 hover:underline underline-offset-4 transition-colors">New Patient Guide</a>
-              </div>
+          <!-- Visit and contact -->
+          <div class="space-y-4">
+            <p class="uppercase tracking-[0.2em] text-xs text-emerald-900 font-semibold">Visit &amp; Contact</p>
+            <div class="space-y-2 text-emerald-800">
+              <a href="/contact/" class="group block rounded-xl transition-colors hover:text-emerald-950">
+                <span class="block font-semibold">Optimal Wellbeing Clinic</span>
+                <span class="block">1378 Bedford Highway, Unit 1</span>
+                <span class="block">Bedford, NS B4A 1E2</span>
+                <span class="mt-1 inline-flex items-center text-sm font-semibold text-emerald-700">
+                  Contact and directions
+                  <ChevronRight class="ml-1 h-4 w-4 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
+                </span>
+              </a>
+              <a href="tel:+19024064424" class="inline-flex py-1 font-semibold transition-colors hover:text-emerald-950">
+                (902) 406-4424
+              </a>
+              <p><span class="font-semibold">Fax:</span> 1-800-689-8264</p>
             </div>
+            <a
+              href="https://macleodnaturopathic.janeapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="booking-btn inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-emerald-900 px-5 py-2.5 font-semibold text-white shadow-sm transition-all hover:-translate-y-0.5 hover:bg-emerald-800 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-700 focus-visible:ring-offset-2"
+              data-booking-source="footer"
+            >
+              <Calendar class="h-4 w-4" aria-hidden="true" />
+              Book Online
+            </a>
+          </div>
 
-            <div class="space-y-3">
-              <p class="uppercase tracking-[0.2em] text-xs text-emerald-900 font-semibold">Services</p>
-              <div class="text-emerald-800 space-y-2">
-                <a href="/lab-testing/" class="block hover:text-emerald-950 hover:underline underline-offset-4 transition-colors">Private Blood Testing</a>
-                <a href="/clinical-nutrition/" class="block hover:text-emerald-950 hover:underline underline-offset-4 transition-colors">Clinical Nutrition</a>
-                <a href="/iv-therapy/" class="block hover:text-emerald-950 hover:underline underline-offset-4 transition-colors">IV Therapy</a>
-                <a href="/prolotherapy/" class="block hover:text-emerald-950 hover:underline underline-offset-4 transition-colors">Prolotherapy</a>
-                <a href="/acupuncture/" class="block hover:text-emerald-950 hover:underline underline-offset-4 transition-colors">Acupuncture</a>
-              </div>
-            </div>
+          <!-- Secondary navigation -->
+          <div class="space-y-4">
+            <p class="uppercase tracking-[0.2em] text-xs text-emerald-900 font-semibold">Explore</p>
+            <nav aria-label="Footer navigation" class="space-y-2 text-emerald-800">
+              <a href="/lab-testing/" class="block transition-colors hover:text-emerald-950 hover:underline underline-offset-4">Lab Testing</a>
+              <a href="/services/" class="block transition-colors hover:text-emerald-950 hover:underline underline-offset-4">Services</a>
+              <a href="/conditions/" class="block transition-colors hover:text-emerald-950 hover:underline underline-offset-4">Conditions</a>
+              <a href="/new-patients/" class="block transition-colors hover:text-emerald-950 hover:underline underline-offset-4">New Patients</a>
+              <a href="/articles/" class="block transition-colors hover:text-emerald-950 hover:underline underline-offset-4">Articles</a>
+              <a href="/patient-resources/" class="block transition-colors hover:text-emerald-950 hover:underline underline-offset-4">Patient Resources</a>
+            </nav>
           </div>
         </div>
         <div class="mt-8">
