@@ -19,9 +19,10 @@ export interface Props {
     tags?: string[];
   };
   customSchemas?: Record<string, unknown> | Record<string, unknown>[];
+  noindex?: boolean;
 }
 
-const { title, description, image, articleData, customSchemas = [] } = Astro.props;
+const { title, description, image, articleData, customSchemas = [], noindex = false } = Astro.props;
 const titleSuffix = ' | Dr. Colin MacLeod, ND';
 const fullTitle = title === 'Home'
   ? 'Dr. Colin MacLeod, ND | Naturopathic Doctor in Halifax'
@@ -503,7 +504,7 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
     </script>}
 
     <!-- Canonical URL -->
-    <link rel="canonical" href={canonicalUrl} />
+    {!noindex && <link rel="canonical" href={canonicalUrl} />}
     
     <!-- SEO Meta Tags -->
     <meta property="og:title" content={fullTitle} />
@@ -522,7 +523,7 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
     <meta name="twitter:image" content={new URL(ogImage, Astro.site)} />
     
     <meta name="author" content="Dr. Colin MacLeod, ND" />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow'} />
     
     <!-- Structured Data: MedicalBusiness -->
     <script is:inline type="application/ld+json" set:html={medicalBusinessSchema} />

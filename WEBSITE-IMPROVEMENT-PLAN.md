@@ -5,7 +5,7 @@
 | | |
 |---|---|
 | Created | December 2, 2025 |
-| Last updated | May 21, 2026 |
+| Last updated | July 14, 2026 |
 | Purpose | Single source of truth for what’s done, what’s next, and what we’re not doing |
 
 ---
@@ -29,7 +29,7 @@ The site is in **strong shape**: professional design, ~41 published articles, so
 
 | Area | Status |
 |------|--------|
-| Stack | Astro 5, Tailwind, content collections, static deploy via `./deploy.sh` |
+| Stack | Astro 5, Tailwind, content collections, automatic GitHub Actions deployment from `main` |
 | Published articles | 41 (5 archived drafts in `_archived/`) |
 | Topic hubs | 8 (`/articles/{topic}/`) |
 | Site-wide search | Header overlay, Fuse.js, `/api/search-data.json` |
@@ -157,8 +157,8 @@ For v1, either:
 
 **Priority:** Low · **Effort:** Small (~30 min)
 
-- [ ] Click through every card on `conditions.astro` — confirm 200
-- [ ] Fix any stragglers
+- [x] Click through every card on `conditions.astro` — 27/27 confirmed valid May 21, 2026
+- [x] Fix any stragglers
 
 **Files:** `src/pages/conditions.astro`
 
@@ -171,11 +171,11 @@ For v1, either:
 Static site risk = broken links and bad redirects, not runtime bugs.
 
 **Action items:**
-- [ ] `npm run build` — must pass clean
-- [ ] Check `dist/` for absent draft article paths
-- [ ] Manually verify known legacy redirects (patient-info → patient-resources)
-- [ ] Spot-check: `/articles/`, one topic hub, `/lab-testing/`, `/patient-resources/`
-- [ ] Optional: link crawl of `dist/` (local script or checker) before `./deploy.sh`
+- [x] `npm run build` — passed May 21 and July 14, 2026
+- [x] Check `dist/` for absent draft article paths
+- [x] Manually verify known legacy redirects (patient-info → patient-resources)
+- [x] Spot-check: `/articles/`, one topic hub, `/lab-testing/`, `/patient-resources/`
+- [x] Link crawl of `dist/` — 103 generated HTML pages checked July 14, 2026
 
 ---
 
@@ -183,31 +183,31 @@ Static site risk = broken links and bad redirects, not runtime bugs.
 
 ### 2.1 IV therapy page
 
-**File:** `src/content/pages/iv-therapy.md` (Markdown content page at `/iv-therapy/` via `[...slug].astro` — confirm route; service may also be `src/pages/iv-therapy.astro`)
+**File:** `src/pages/iv-therapy.astro`
 
 **Action items:**
-- [ ] Remove legacy WordPress Stackable markup in content if present
-- [ ] Add treatments if offered (NAD+, high-dose vitamin C, glutathione)
-- [ ] FAQ section
-- [ ] Optional article: first IV visit
+- [x] Confirm standalone Astro page; no legacy WordPress Stackable markup applies
+- [x] Add related treatment paths for NAD+, high-dose vitamin C and glutathione
+- [x] Add first-visit FAQ content
+- [x] Keep a separate first-visit article optional; the page FAQ currently covers this need
 
 ---
 
 ### 2.2 Acupuncture content
 
-**File:** `src/content/pages/acupuncture-for-injury-pain.md` and/or `src/pages/acupuncture.astro`
+**File:** `src/pages/acupuncture.astro`
 
-- [ ] Expand beyond injury/pain
-- [ ] Link `quit-smoking-with-acupuncture.md`
-- [ ] Optional general overview
+- [x] Expand beyond injury/pain
+- [x] Link `quit-smoking-with-acupuncture.md`
+- [x] Add general overview content
 
 ---
 
 ### 2.3 Cross-linking & article CTAs
 
-- [ ] Verify end-of-post CTAs on newer articles
-- [ ] Related services where appropriate
-- [ ] **Book Online** only; no inline booking links in article body
+- [x] Verify end-of-post CTAs on newer articles
+- [x] Add related services where appropriate
+- [x] **Book Online** only; no inline booking links in article body
 
 ---
 
@@ -215,17 +215,17 @@ Static site risk = broken links and bad redirects, not runtime bugs.
 
 ### 3.1 Peptide article images
 
-- [ ] One optimized WebP/PNG; delete duplicate ~2MB PNGs (`peptide-evidence-safety-canada.png`, `-v2.png`)
-- [ ] Keep referenced `peptide-evidence-safety-canada-20260516.png` or replace with WebP
+- [x] Keep one optimized hero and delete duplicate ~2MB PNGs
+- [x] Keep referenced `peptide-evidence-safety-canada-20260516.png`
 
 ### 3.2 `astro check` script
 
 - [x] Add to `package.json`: `"check": "astro check"`
-- [ ] Run before deploy (script added; not yet routine)
+- [x] Run before every automatic deployment in `.github/workflows/deploy.yml`
 
 ### 3.3 Site-wide search index
 
-- [ ] Document: update `search-data.json.ts` when adding service/condition pages
+- [x] Document: update `search-data.json.ts` when adding service/condition pages
 - [ ] Optional later: shared config for entries
 
 ---
@@ -277,7 +277,7 @@ Static site risk = broken links and bad redirects, not runtime bugs.
 - [x] Design audit — site-wide FAQ uses `FAQSection` + `FAQAccordion` (May 21, 2026)
 - [x] Articles search `?q=` param + match highlighting
 - [x] FAQ unification — markdown/content pages wired via `faq` frontmatter
-- [ ] Testimonials (out of scope)
+- [x] Testimonials and social proof intentionally excluded from the site
 
 ---
 
@@ -314,8 +314,8 @@ Static site risk = broken links and bad redirects, not runtime bugs.
 
 - Booking buttons: **Book Online**
 - No inline booking links in article markdown body
-- Deploy: `./deploy.sh`
+- Deploy: push to `main`; GitHub Actions checks, builds, deploys to Namecheap and verifies production
 
 ---
 
-*End of plan — May 21, 2026 (revised per Codex review)*
+*End of plan — July 14, 2026 (revised after homepage, lab-testing and deployment work)*
