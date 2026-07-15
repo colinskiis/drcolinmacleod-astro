@@ -2,28 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BookingButton from '../components/BookingButton.astro';
 import FAQSection from '../components/FAQSection.astro';
-import { Phone, FlaskConical, ChevronRight, ArrowRight, Microscope, HeartPulse, BookOpen } from '@lucide/astro';
-
-// Conditions (top 3 for nav hub)
-const conditions = [
-  { title: 'Low Back Pain', href: '/low-back-pain/' },
-  { title: 'Osteoarthritis', href: '/osteoarthritis/' },
-  { title: 'Fibromyalgia', href: '/fibromyalgia/' },
-];
-
-// Articles (top 3 for nav hub - short titles to fit on one line)
-const articles = [
-  { title: 'Better Sleep', href: '/articles/sleep-optimization-evidence-based-strategies/' },
-  { title: 'Gut Health', href: '/articles/digestive-health-natural-approaches/' },
-  { title: 'Anxiety', href: '/articles/natural-anxiety-management/' },
-];
-
-// Blood Tests (top 3 for nav hub)
-const bloodTests = [
-  { title: 'Thyroid Panel', href: '/thyroid-testing/' },
-  { title: 'Hormone Panel', href: '/hormone-testing/' },
-  { title: 'Vitamin D', href: '/nutrient-testing/' },
-];
+import { Phone, FlaskConical, ChevronRight } from '@lucide/astro';
 
 // All services for Services section
 const allServices = [
@@ -225,112 +204,9 @@ const faqSchema = {
     </div>
   </section>
 
-  <!-- Navigation Hub -->
-  <section class="py-12 lg:py-16 bg-emerald-50">
-    <div class="section-shell">
-      <div class="text-center max-w-3xl mx-auto mb-8 lg:mb-10 space-y-3 reveal">
-        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950">Explore Your Options</h2>
-        <p class="text-lg text-slate-600 max-w-2xl mx-auto">Start with blood testing, a health concern or evidence-based articles.</p>
-      </div>
-
-      <div class="space-y-4 reveal">
-
-        <!-- Card 1: Blood Tests -->
-        <div class="bg-white rounded-2xl shadow-sm ring-1 ring-emerald-200 overflow-hidden">
-          <!-- Card header row -->
-          <div class="flex items-center justify-between px-5 pt-5 pb-3 lg:px-7 lg:pt-6 lg:pb-4">
-            <a href="/lab-testing/" class="group flex items-center gap-3 min-w-0">
-              <span class="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-xl bg-emerald-100 text-emerald-700 group-hover:bg-emerald-200 transition-colors">
-                <Microscope class="w-5 h-5" stroke-width={1.75} aria-hidden="true" />
-              </span>
-              <span class="text-xl lg:text-2xl font-serif font-medium text-emerald-900 tracking-tight group-hover:text-emerald-700 transition-colors">Blood Tests</span>
-              <ChevronRight class="w-4 h-4 text-emerald-400 flex-shrink-0 group-hover:text-emerald-600 group-hover:translate-x-0.5 transition-all" aria-hidden="true" />
-            </a>
-            <a href="/lab-testing/" class="hidden lg:inline-flex items-center gap-1.5 text-sm font-medium text-emerald-700 hover:text-emerald-900 transition-colors flex-shrink-0 ml-4">
-              See all
-              <ArrowRight class="w-3.5 h-3.5" aria-hidden="true" />
-            </a>
-          </div>
-          <!-- Item links -->
-          <div class="flex flex-col lg:flex-row lg:items-center border-t border-emerald-100 divide-y divide-emerald-100 lg:divide-y-0 lg:divide-x lg:divide-emerald-100">
-            {bloodTests.map((test) => (
-              <a href={test.href} class="group flex items-center gap-2 px-5 py-3 lg:px-7 lg:py-3 text-base text-emerald-950 hover:text-emerald-700 hover:bg-emerald-50/60 transition-all flex-1">
-                <ChevronRight class="w-4 h-4 text-emerald-300 flex-shrink-0 group-hover:text-emerald-500 group-hover:translate-x-0.5 transition-all" aria-hidden="true" />
-                {test.title}
-              </a>
-            ))}
-            <a href="/lab-testing/" class="lg:hidden group flex items-center gap-2 px-5 py-3 text-sm font-medium text-emerald-700 hover:text-emerald-900 hover:bg-emerald-50/60 transition-all">
-              <ArrowRight class="w-4 h-4 flex-shrink-0" aria-hidden="true" />
-              See all blood tests
-            </a>
-          </div>
-        </div>
-
-        <!-- Card 2: Conditions -->
-        <div class="bg-white rounded-2xl shadow-sm ring-1 ring-emerald-200 overflow-hidden">
-          <div class="flex items-center justify-between px-5 pt-5 pb-3 lg:px-7 lg:pt-6 lg:pb-4">
-            <a href="/conditions/" class="group flex items-center gap-3 min-w-0">
-              <span class="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-xl bg-emerald-100 text-emerald-800 group-hover:bg-emerald-200 transition-colors">
-                <HeartPulse class="w-5 h-5" stroke-width={1.75} aria-hidden="true" />
-              </span>
-              <span class="text-xl lg:text-2xl font-serif font-medium text-emerald-900 tracking-tight group-hover:text-emerald-700 transition-colors">Conditions</span>
-              <ChevronRight class="w-4 h-4 text-emerald-400 flex-shrink-0 group-hover:text-emerald-600 group-hover:translate-x-0.5 transition-all" aria-hidden="true" />
-            </a>
-            <a href="/conditions/" class="hidden lg:inline-flex items-center gap-1.5 text-sm font-medium text-emerald-700 hover:text-emerald-900 transition-colors flex-shrink-0 ml-4">
-              See all
-              <ArrowRight class="w-3.5 h-3.5" aria-hidden="true" />
-            </a>
-          </div>
-          <div class="flex flex-col lg:flex-row lg:items-center border-t border-emerald-100 divide-y divide-emerald-100 lg:divide-y-0 lg:divide-x lg:divide-emerald-100">
-            {conditions.map((condition) => (
-              <a href={condition.href} class="group flex items-center gap-2 px-5 py-3 lg:px-7 lg:py-3 text-base text-emerald-950 hover:text-emerald-700 hover:bg-emerald-50/60 transition-all flex-1">
-                <ChevronRight class="w-4 h-4 text-emerald-300 flex-shrink-0 group-hover:text-emerald-500 group-hover:translate-x-0.5 transition-all" aria-hidden="true" />
-                {condition.title}
-              </a>
-            ))}
-            <a href="/conditions/" class="lg:hidden group flex items-center gap-2 px-5 py-3 text-sm font-medium text-emerald-700 hover:text-emerald-900 hover:bg-emerald-50/60 transition-all">
-              <ArrowRight class="w-4 h-4 flex-shrink-0" aria-hidden="true" />
-              See all conditions
-            </a>
-          </div>
-        </div>
-
-        <!-- Card 3: Articles -->
-        <div class="bg-white rounded-2xl shadow-sm ring-1 ring-emerald-200 overflow-hidden">
-          <div class="flex items-center justify-between px-5 pt-5 pb-3 lg:px-7 lg:pt-6 lg:pb-4">
-            <a href="/articles/" class="group flex items-center gap-3 min-w-0">
-              <span class="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-xl bg-emerald-100 text-emerald-900 group-hover:bg-emerald-200 transition-colors">
-                <BookOpen class="w-5 h-5" stroke-width={1.75} aria-hidden="true" />
-              </span>
-              <span class="text-xl lg:text-2xl font-serif font-medium text-emerald-900 tracking-tight group-hover:text-emerald-700 transition-colors">Articles</span>
-              <ChevronRight class="w-4 h-4 text-emerald-400 flex-shrink-0 group-hover:text-emerald-600 group-hover:translate-x-0.5 transition-all" aria-hidden="true" />
-            </a>
-            <a href="/articles/" class="hidden lg:inline-flex items-center gap-1.5 text-sm font-medium text-emerald-700 hover:text-emerald-900 transition-colors flex-shrink-0 ml-4">
-              See all
-              <ArrowRight class="w-3.5 h-3.5" aria-hidden="true" />
-            </a>
-          </div>
-          <div class="flex flex-col lg:flex-row lg:items-center border-t border-emerald-100 divide-y divide-emerald-100 lg:divide-y-0 lg:divide-x lg:divide-emerald-100">
-            {articles.map((article) => (
-              <a href={article.href} class="group flex items-center gap-2 px-5 py-3 lg:px-7 lg:py-3 text-base text-emerald-950 hover:text-emerald-700 hover:bg-emerald-50/60 transition-all flex-1">
-                <ChevronRight class="w-4 h-4 text-emerald-300 flex-shrink-0 group-hover:text-emerald-500 group-hover:translate-x-0.5 transition-all" aria-hidden="true" />
-                {article.title}
-              </a>
-            ))}
-            <a href="/articles/" class="lg:hidden group flex items-center gap-2 px-5 py-3 text-sm font-medium text-emerald-700 hover:text-emerald-900 hover:bg-emerald-50/60 transition-all">
-              <ArrowRight class="w-4 h-4 flex-shrink-0" aria-hidden="true" />
-              See all articles
-            </a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
   <FAQSection
     bg="white"
-    sectionClass="py-16 lg:py-24 bg-white"
+    sectionClass="pt-0 pb-16 lg:pt-0 lg:pb-24 bg-white"
     title="Common Questions"
     subtitle="Answers to what patients most commonly ask before their first visit."
     headingClass="text-3xl sm:text-4xl font-serif font-medium text-emerald-950"
