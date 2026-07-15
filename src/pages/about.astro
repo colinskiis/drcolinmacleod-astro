@@ -2,243 +2,271 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import BookingButton from '../components/BookingButton.astro';
-import { CircleCheckBig, MapPin, ShieldCheck, Clock, Quote } from '@lucide/astro';
+import { CircleCheckBig, MapPin, ShieldCheck, Clock, ChevronRight } from '@lucide/astro';
 ---
 
 <BaseLayout
   title="About Dr. Colin MacLeod, ND"
-  description="Learn about Dr. Colin MacLeod, naturopathic doctor in Halifax, Nova Scotia. Professional background, treatment philosophy and approach to naturopathic medicine."
+  description="Learn about Dr. Colin MacLeod, a naturopathic doctor in Bedford, Nova Scotia, including his professional background, clinical approach and more than 15 years of practice."
   focusKeyword="Dr Colin MacLeod naturopathic doctor Halifax"
 >
-  <HeroSection title="About Dr. Colin MacLeod, ND" centered compact>
-    Naturopathic doctor in Bedford, Nova Scotia. Over 15 years of clinical practice.
+  <HeroSection title="Meet Dr. Colin MacLeod, ND" centered compact>
+    Naturopathic doctor in Bedford, Nova Scotia, with more than 15 years of clinical experience.
   </HeroSection>
 
-  <!-- Main About Content -->
-  <section class="py-16 lg:py-24 bg-white">
+  <section class="bg-white py-14 lg:py-24">
     <div class="section-shell">
-      <div class="grid lg:grid-cols-3 gap-12">
+      <div class="about-grid">
+        <article class="story-content reveal reveal-delay-100">
+          <div class="max-w-3xl">
+            <p class="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-emerald-700">Background</p>
+            <h2 class="mb-6 text-3xl font-medium text-emerald-950 sm:text-4xl font-serif">The Story Behind the Practice</h2>
 
-        <!-- Profile Information -->
-        <div class="lg:col-span-2 reveal">
+            <div class="space-y-5 text-lg leading-relaxed text-slate-600">
+              <p>
+                Dr. Colin MacLeod grew up in Judique, a small community on the western shore of Cape Breton Island. At 18, a prolonged bout of mononucleosis interrupted his final year of high school. Recovery was slow, and repeated medical appointments did not provide the clarity or improvement he hoped for.
+              </p>
 
-          <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6">The Story Behind the Practice</h2>
+              <p>
+                Working with a naturopathic doctor was a turning point. The appointments were thorough and unhurried, with time to review his symptoms, health history and day-to-day experience together. That period shaped his interest in a style of healthcare that gives patients room to explain what has been happening and considers the full clinical picture before deciding what to investigate or address.
+              </p>
 
-          <p class="text-slate-600 mb-5 text-lg leading-relaxed">
-            Dr. Colin MacLeod grew up in Judique, a small community on the western shore of Cape Breton Island. At 18, a serious bout of mononucleosis prevented him from finishing his final year of high school. He saw doctor after doctor without a clear diagnosis or a treatment that made any real difference. It was a frustrating and isolating experience. Then a naturopathic doctor entered the picture. The approach was different: thorough, unhurried, and genuinely curious about the whole person. It worked. That experience didn't just restore his health; it pointed his life in a new direction.
-          </p>
+              <p>
+                He completed prerequisite studies in biology at Saint Mary's University in Halifax and the University of Calgary, then earned his Doctor of Naturopathic Medicine from the Canadian College of Naturopathic Medicine in Toronto, a four-year professional program with clinical training.
+              </p>
 
-          <p class="text-slate-600 mb-10 leading-relaxed">
-            He went on to complete prerequisite studies in biology at Saint Mary's University in Halifax and the University of Calgary, then earned his Doctor of Naturopathic Medicine from the Canadian College of Naturopathic Medicine in Toronto, a rigorous four-year clinical program.
-          </p>
+              <p>
+                After graduating, Dr. MacLeod returned to Nova Scotia and spent six years practising across the Halifax Regional Municipality. He later established MacLeod Naturopathic Health Clinic in Tantallon, which he operated for seven years.
+              </p>
 
-          <!-- Career narrative -->
-          <p class="text-slate-600 mb-5 leading-relaxed">
-            After graduating from CCNM, Dr. MacLeod returned to Nova Scotia and spent six years building clinical experience working with patients across the Halifax Regional Municipality. He then took the step of establishing his own independent practice in Tantallon (MacLeod Naturopathic Health Clinic), which he ran for seven years.
-          </p>
-
-          <p class="text-slate-600 mb-10 leading-relaxed">
-            Throughout much of that period, he also maintained a part-time practice in Cape Breton, first in Port Hood and then in Sydney, returning regularly to serve the communities that raised him. The people there are, in his words, just incredible. He kept it up for nearly a decade, until the arrival of his second son made the travel impractical. Today, Dr. MacLeod practices out of Optimal Wellbeing Clinic on the Bedford Highway in Bedford, alongside fellow health professionals.
-          </p>
-
-          <!-- Pain philosophy pull quote -->
-          <blockquote class="border-l-4 border-emerald-600 bg-emerald-50 rounded-r-2xl px-6 py-5 my-8 card-hover">
-            <p class="text-emerald-900 italic text-lg leading-relaxed">"Physical pain is a unique equalizer. We can all be as mentally tough as we want, but pain levels the playing field. You can't be tough enough to overcome pain that limits your daily life. Understanding that is what drew me to prolotherapy: it doesn't just manage the pain, it addresses the underlying damage driving it."</p>
-            <cite class="text-sm font-semibold text-emerald-700 mt-3 block not-italic">Dr. Colin MacLeod, ND</cite>
-          </blockquote>
-
-          <p class="text-slate-600 mb-10 leading-relaxed">
-            IV nutrient therapy is another area of Dr. MacLeod's practice. When it is clinically appropriate, intravenous delivery can be considered for selected nutrients when oral intake or absorption is not meeting an individual's needs. Recommendations are based on health history, assessment, relevant testing, potential risks and the evidence for the specific indication.
-          </p>
-
-          <!-- Education & Training -->
-          <h3 class="text-2xl sm:text-3xl font-serif font-medium text-emerald-950 mb-4">Education & Training</h3>
-          <div class="bg-emerald-50/30 border border-emerald-100 rounded-2xl p-6 mb-8 card-hover">
-            <ul class="space-y-3">
-              <li class="flex items-start">
-                <CircleCheckBig class="w-5 h-5 text-emerald-800 mt-1 mr-3 flex-shrink-0" aria-hidden="true" />
-                <span class="text-slate-700">Doctor of Naturopathic Medicine (ND), Canadian College of Naturopathic Medicine, Toronto</span>
-              </li>
-              <li class="flex items-start">
-                <CircleCheckBig class="w-5 h-5 text-emerald-700 mt-1 mr-3 flex-shrink-0" aria-hidden="true" />
-                <span class="text-slate-700">Prerequisite studies in biology, Saint Mary's University (Halifax) and University of Calgary</span>
-              </li>
-              <li class="flex items-start">
-                <CircleCheckBig class="w-5 h-5 text-emerald-700 mt-1 mr-3 flex-shrink-0" aria-hidden="true" />
-                <span class="text-slate-700">Licensed to practice naturopathic medicine in Nova Scotia</span>
-              </li>
-              <li class="flex items-start">
-                <CircleCheckBig class="w-5 h-5 text-emerald-700 mt-1 mr-3 flex-shrink-0" aria-hidden="true" />
-                <span class="text-slate-700">Advanced training in prolotherapy and regenerative injection therapies</span>
-              </li>
-              <li class="flex items-start">
-                <CircleCheckBig class="w-5 h-5 text-emerald-700 mt-1 mr-3 flex-shrink-0" aria-hidden="true" />
-                <span class="text-slate-700">Certified in intravenous therapy</span>
-              </li>
-            </ul>
+              <p>
+                For nearly a decade, he also returned regularly to Cape Breton to maintain part-time practices in Port Hood and Sydney. Today, he practises at Optimal Wellbeing Clinic in Bedford alongside other health professionals.
+              </p>
+            </div>
           </div>
 
-          <!-- Treatment Philosophy -->
-          <h3 class="text-2xl sm:text-3xl font-serif font-medium text-emerald-950 mb-4">Treatment Philosophy</h3>
-          <p class="text-slate-600 mb-6 leading-relaxed">
-            Dr. MacLeod's approach is rooted in the naturopathic principle of finding and treating the underlying cause, not just managing symptoms. He builds individualized treatment plans that combine the best of traditional wisdom with current scientific evidence, and he works collaboratively with each patient's existing healthcare team rather than in isolation from it.
-          </p>
+          <div class="my-12 border-y border-emerald-100 py-10">
+            <p class="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-emerald-700">Present-day care</p>
+            <h2 class="mb-5 text-3xl font-medium text-emerald-950 sm:text-4xl font-serif">How I Practise Today</h2>
 
+            <div class="space-y-5 text-lg leading-relaxed text-slate-600">
+              <p>
+                Many patients come to me with persistent symptoms, previous results they would like reviewed, or a desire for broader private blood work. I begin by reviewing their health history, current care, medications, previous testing and priorities. When additional information would be useful, I can arrange private laboratory testing and in-office blood collection without requiring a family-doctor requisition.
+              </p>
 
-        </div>
+              <p>
+                I select testing according to the patient's circumstances rather than relying on a fixed panel. Results are considered alongside symptoms, examination findings and previous medical assessments, then used to guide a practical plan and determine whether conventional medical follow-up is appropriate.
+              </p>
 
-        <!-- Sidebar -->
-        <div class="space-y-8 reveal reveal-delay-200 order-first lg:order-none">
-
-          <!-- Doctor Photo -->
-          <div class="bg-white border border-emerald-100 rounded-2xl overflow-hidden shadow-lg card-hover">
-            <img
-              src="/images/general/dr-colin-macleod-nd.webp"
-              alt="Dr. Colin MacLeod, ND - Naturopathic Doctor Bedford NS"
-              class="w-full aspect-[3/4] object-cover object-top"
-              width="600"
-              height="800"
-            />
+              <p>
+                Care may also include clinical nutrition, lifestyle changes, standardized supplements or herbal products, acupuncture, IV nutrient therapy, or prolotherapy for selected musculoskeletal concerns. I discuss recommendations openly and design each plan to complement the patient's broader healthcare team.
+              </p>
+            </div>
           </div>
 
-          <!-- Quick Facts -->
-          <div class="bg-white border border-emerald-100 rounded-2xl p-6 shadow-sm card-hover">
-            <h3 class="text-xl font-serif font-medium text-emerald-950 mb-4">Professional Details</h3>
-            <div class="space-y-3">
-              <div class="flex items-center">
-                <MapPin class="w-5 h-5 text-emerald-800 mr-3" aria-hidden="true" />
+          <div>
+            <p class="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-emerald-700">Qualifications</p>
+            <h2 class="mb-5 text-3xl font-medium text-emerald-950 sm:text-4xl font-serif">Education & Training</h2>
+            <div class="rounded-2xl border border-emerald-100 bg-emerald-50/40 p-6 sm:p-7">
+              <ul class="space-y-4">
+                <li class="flex items-start gap-3">
+                  <CircleCheckBig class="mt-0.5 h-5 w-5 flex-none text-emerald-700" aria-hidden="true" />
+                  <span class="text-slate-700">Doctor of Naturopathic Medicine (ND), Canadian College of Naturopathic Medicine, Toronto</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <CircleCheckBig class="mt-0.5 h-5 w-5 flex-none text-emerald-700" aria-hidden="true" />
+                  <span class="text-slate-700">Prerequisite studies in biology, Saint Mary's University and the University of Calgary</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <CircleCheckBig class="mt-0.5 h-5 w-5 flex-none text-emerald-700" aria-hidden="true" />
+                  <span class="text-slate-700">Licensed to practise naturopathic medicine in Nova Scotia</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <CircleCheckBig class="mt-0.5 h-5 w-5 flex-none text-emerald-700" aria-hidden="true" />
+                  <span class="text-slate-700">Advanced training in prolotherapy and injection therapies</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <CircleCheckBig class="mt-0.5 h-5 w-5 flex-none text-emerald-700" aria-hidden="true" />
+                  <span class="text-slate-700">Certified in intravenous therapy</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <aside class="profile-sidebar" aria-label="Professional details">
+          <div class="profile-photo reveal">
+            <div class="overflow-hidden rounded-3xl border border-emerald-100 bg-white shadow-lg shadow-emerald-950/5">
+              <img
+                src="/images/general/dr-colin-macleod-nd.webp"
+                alt="Dr. Colin MacLeod, ND, naturopathic doctor in Bedford, Nova Scotia"
+                class="aspect-[3/4] w-full object-cover object-top"
+                width="600"
+                height="800"
+              />
+            </div>
+          </div>
+
+          <div class="profile-details space-y-6 reveal reveal-delay-200">
+            <div class="rounded-2xl border border-emerald-100 bg-white p-6 shadow-sm">
+            <h2 class="mb-4 text-xl font-medium text-emerald-950 font-serif">Professional Details</h2>
+            <div class="space-y-4">
+              <div class="flex items-start gap-3">
+                <MapPin class="mt-0.5 h-5 w-5 flex-none text-emerald-700" aria-hidden="true" />
                 <span class="text-slate-700">Bedford, Nova Scotia</span>
               </div>
-              <div class="flex items-center">
-                <ShieldCheck class="w-5 h-5 text-emerald-700 mr-3" aria-hidden="true" />
+              <div class="flex items-start gap-3">
+                <ShieldCheck class="mt-0.5 h-5 w-5 flex-none text-emerald-700" aria-hidden="true" />
                 <span class="text-slate-700">Licensed ND in Nova Scotia</span>
               </div>
-              <div class="flex items-center">
-                <Clock class="w-5 h-5 text-emerald-700 mr-3" aria-hidden="true" />
-                <span class="text-slate-700">15 Years of Clinical Experience</span>
+              <div class="flex items-start gap-3">
+                <Clock class="mt-0.5 h-5 w-5 flex-none text-emerald-700" aria-hidden="true" />
+                <span class="text-slate-700">More than 15 years of clinical experience</span>
               </div>
             </div>
           </div>
 
-          <!-- Insurance -->
-          <div class="bg-white border border-emerald-100 rounded-2xl p-6 shadow-sm card-hover">
-            <h3 class="text-xl font-serif font-medium text-emerald-950 mb-3">Insurance & Billing</h3>
-            <p class="text-slate-700 text-sm leading-relaxed">Most extended health plans cover naturopathic visits. Direct billing is available for many major insurers including Sun Life, Great-West Life, Manulife and Blue Cross.</p>
+            <div class="rounded-2xl border border-emerald-100 bg-white p-6 shadow-sm">
+            <h2 class="mb-3 text-xl font-medium text-emerald-950 font-serif">Insurance & Billing</h2>
+            <p class="text-sm leading-relaxed text-slate-700">Many extended health plans cover naturopathic visits. Direct billing is available for many insurers; coverage varies by individual plan.</p>
           </div>
 
-          <!-- Specializations -->
-          <div class="bg-emerald-50/50 border border-emerald-100 rounded-2xl p-6 card-hover">
-            <h3 class="text-xl font-serif font-medium text-emerald-950 mb-4">Clinical Focus</h3>
-            <ul class="space-y-2 text-slate-700">
-              <li class="flex items-start">
-                <span class="w-2 h-2 bg-emerald-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                Chronic Pain Management
-              </li>
-              <li class="flex items-start">
-                <span class="w-2 h-2 bg-emerald-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                Musculoskeletal Injuries
-              </li>
-              <li class="flex items-start">
-                <span class="w-2 h-2 bg-emerald-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                IV Nutrient Therapy
-              </li>
-              <li class="flex items-start">
-                <span class="w-2 h-2 bg-emerald-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                Regenerative Medicine
-              </li>
-              <li class="flex items-start">
-                <span class="w-2 h-2 bg-emerald-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                Fatigue & Energy Disorders
-              </li>
-              <li class="flex items-start">
-                <span class="w-2 h-2 bg-emerald-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                Digestive Health
-              </li>
-              <li class="flex items-start">
-                <span class="w-2 h-2 bg-emerald-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                Stress & Sleep Disorders
-              </li>
-            </ul>
+            <div class="overflow-hidden rounded-2xl border border-emerald-100 bg-emerald-50/50">
+            <div class="border-b border-emerald-100 px-6 py-5">
+              <h2 class="text-xl font-medium text-emerald-950 font-serif">Practice at a Glance</h2>
+            </div>
+            <nav aria-label="Primary areas of practice" class="divide-y divide-emerald-100">
+              <a href="/lab-testing/" class="group flex items-center justify-between gap-4 px-6 py-4 text-emerald-900 transition-colors hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-emerald-500">
+                <span>Private Laboratory Testing</span>
+                <ChevronRight class="h-4 w-4 flex-none text-emerald-600 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
+              </a>
+              <a href="/clinical-nutrition/" class="group flex items-center justify-between gap-4 px-6 py-4 text-emerald-900 transition-colors hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-emerald-500">
+                <span>Clinical Nutrition</span>
+                <ChevronRight class="h-4 w-4 flex-none text-emerald-600 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
+              </a>
+              <a href="/iv-therapy/" class="group flex items-center justify-between gap-4 px-6 py-4 text-emerald-900 transition-colors hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-emerald-500">
+                <span>IV Therapy</span>
+                <ChevronRight class="h-4 w-4 flex-none text-emerald-600 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
+              </a>
+              <a href="/prolotherapy/" class="group flex items-center justify-between gap-4 px-6 py-4 text-emerald-900 transition-colors hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-emerald-500">
+                <span>Prolotherapy</span>
+                <ChevronRight class="h-4 w-4 flex-none text-emerald-600 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
+              </a>
+              <a href="/acupuncture/" class="group flex items-center justify-between gap-4 px-6 py-4 text-emerald-900 transition-colors hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-emerald-500">
+                <span>Acupuncture</span>
+                <ChevronRight class="h-4 w-4 flex-none text-emerald-600 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
+              </a>
+            </nav>
+            </div>
           </div>
-
-        </div>
+        </aside>
       </div>
     </div>
   </section>
 
-  <!-- Marathon Running -->
-  <section class="py-16 lg:py-24 bg-white">
+  <section class="border-y border-emerald-100 bg-emerald-50/50 py-16 lg:py-24">
     <div class="section-shell">
-      <div class="max-w-5xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4 text-center reveal">Beyond the Clinic</h2>
-        <div class="max-w-3xl mx-auto mb-10 mt-6 flex gap-4 reveal reveal-delay-100">
-          <Quote class="w-10 h-10 text-emerald-400 flex-shrink-0 mt-1" aria-hidden="true" />
-          <p class="text-lg text-slate-600">
-            <span class="italic">I started running in 2023, completing my first 10K that May. I enjoy setting running goals for myself and I'm gradually learning what it takes to achieve them. The physical and mental benefits of exercise are truly amazing. I hope to keep active and continue running for many years to come.</span> <span class="font-medium text-slate-700 ml-8">Dr. MacLeod</span>
-          </p>
+      <div class="mx-auto max-w-5xl">
+        <div class="mx-auto mb-10 max-w-3xl text-center reveal">
+          <p class="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-emerald-700">Outside the clinic</p>
+          <h2 class="mb-5 text-3xl font-medium text-emerald-950 sm:text-4xl font-serif">Beyond the Clinic</h2>
+          <blockquote class="text-lg leading-relaxed text-slate-600">
+            <p>“I started running in 2023, completing my first 10K that May. Running has become a way to set goals, stay active and keep learning what consistent effort can accomplish. I hope to remain active and continue running for many years to come.”</p>
+            <cite class="mt-4 block text-sm font-semibold not-italic text-emerald-800">— Dr. MacLeod</cite>
+          </blockquote>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-8 items-center reveal reveal-delay-200">
-          <!-- Image -->
-          <div class="rounded-2xl overflow-hidden shadow-lg card-hover">
+        <div class="grid items-center gap-8 md:grid-cols-2 reveal reveal-delay-100">
+          <div class="overflow-hidden rounded-3xl border border-emerald-100 bg-white shadow-lg shadow-emerald-950/5">
             <img
               src="/images/general/bluenose-marathon.webp"
               alt="Dr. Colin MacLeod running the Bluenose Marathon in Halifax"
-              class="w-full h-auto object-cover"
+              class="h-auto w-full object-cover"
               width="800"
               height="600"
               loading="lazy"
             />
           </div>
 
-          <!-- Results Table -->
-          <div class="bg-emerald-50/30 border border-emerald-100 rounded-2xl overflow-hidden h-fit card-hover">
-            <div class="px-6 py-4 bg-emerald-100/50 border-b border-emerald-100">
-              <h3 class="text-xl font-serif font-medium text-emerald-950">Running Results</h3>
+          <div class="overflow-hidden rounded-2xl border border-emerald-100 bg-white shadow-sm">
+            <div class="border-b border-emerald-100 bg-emerald-100/50 px-6 py-4">
+              <h3 class="text-xl font-medium text-emerald-950 font-serif">Recent Running Milestones</h3>
             </div>
-            <table class="w-full">
-              <thead>
-                <tr class="border-b border-emerald-100">
-                  <th class="px-4 py-3 text-left text-sm font-semibold text-emerald-900">Year</th>
-                  <th class="px-4 py-3 text-left text-sm font-semibold text-emerald-900">Event</th>
-                  <th class="px-4 py-3 text-left text-sm font-semibold text-emerald-900">Result</th>
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-emerald-50">
-                <tr>
-                  <td class="px-4 py-4 text-slate-700">2026</td>
-                  <td class="px-4 py-4 text-slate-700">Keji's Backyard Ultra</td>
-                  <td class="px-4 py-4 text-slate-700 font-medium">12 laps (80.4 km)</td>
-                </tr>
-                <tr>
-                  <td class="px-4 py-4 text-slate-700">2026</td>
-                  <td class="px-4 py-4 text-slate-700">Bluenose Marathon</td>
-                  <td class="px-4 py-4 text-slate-700 font-medium">3:48:36</td>
-                </tr>
-                <tr>
-                  <td class="px-4 py-4 text-slate-700">2025</td>
-                  <td class="px-4 py-4 text-slate-700">Bluenose Marathon</td>
-                  <td class="px-4 py-4 text-slate-700 font-medium">4:21:21</td>
-                </tr>
-                <tr>
-                  <td class="px-4 py-4 text-slate-700">2024</td>
-                  <td class="px-4 py-4 text-slate-700">Bluenose Marathon</td>
-                  <td class="px-4 py-4 text-slate-700 font-medium">3:57:14</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="divide-y divide-emerald-100 md:hidden">
+              <div class="px-5 py-4">
+                <p class="text-xs font-semibold uppercase tracking-[0.16em] text-emerald-700">2026</p>
+                <div class="mt-1 flex items-start justify-between gap-4">
+                  <p class="text-slate-700">Keji's Backyard Ultra</p>
+                  <p class="whitespace-nowrap font-medium text-slate-700">12 laps (80.4 km)</p>
+                </div>
+              </div>
+              <div class="px-5 py-4">
+                <p class="text-xs font-semibold uppercase tracking-[0.16em] text-emerald-700">2026</p>
+                <div class="mt-1 flex items-start justify-between gap-4">
+                  <p class="text-slate-700">Bluenose Marathon</p>
+                  <p class="whitespace-nowrap font-medium text-slate-700">3:48:36</p>
+                </div>
+              </div>
+              <div class="px-5 py-4">
+                <p class="text-xs font-semibold uppercase tracking-[0.16em] text-emerald-700">2025</p>
+                <div class="mt-1 flex items-start justify-between gap-4">
+                  <p class="text-slate-700">Bluenose Marathon</p>
+                  <p class="whitespace-nowrap font-medium text-slate-700">4:21:21</p>
+                </div>
+              </div>
+              <div class="px-5 py-4">
+                <p class="text-xs font-semibold uppercase tracking-[0.16em] text-emerald-700">2024</p>
+                <div class="mt-1 flex items-start justify-between gap-4">
+                  <p class="text-slate-700">Bluenose Marathon</p>
+                  <p class="whitespace-nowrap font-medium text-slate-700">3:57:14</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="hidden md:block">
+              <table class="w-full">
+                <thead>
+                  <tr class="border-b border-emerald-100">
+                    <th class="px-4 py-3 text-left text-sm font-semibold text-emerald-900">Year</th>
+                    <th class="px-4 py-3 text-left text-sm font-semibold text-emerald-900">Event</th>
+                    <th class="px-4 py-3 text-left text-sm font-semibold text-emerald-900">Result</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-emerald-50">
+                  <tr>
+                    <td class="px-4 py-4 text-slate-700">2026</td>
+                    <td class="px-4 py-4 text-slate-700">Keji's Backyard Ultra</td>
+                    <td class="px-4 py-4 font-medium text-slate-700">12 laps (80.4 km)</td>
+                  </tr>
+                  <tr>
+                    <td class="px-4 py-4 text-slate-700">2026</td>
+                    <td class="px-4 py-4 text-slate-700">Bluenose Marathon</td>
+                    <td class="px-4 py-4 font-medium text-slate-700">3:48:36</td>
+                  </tr>
+                  <tr>
+                    <td class="px-4 py-4 text-slate-700">2025</td>
+                    <td class="px-4 py-4 text-slate-700">Bluenose Marathon</td>
+                    <td class="px-4 py-4 font-medium text-slate-700">4:21:21</td>
+                  </tr>
+                  <tr>
+                    <td class="px-4 py-4 text-slate-700">2024</td>
+                    <td class="px-4 py-4 text-slate-700">Bluenose Marathon</td>
+                    <td class="px-4 py-4 font-medium text-slate-700">3:57:14</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact CTA -->
   <section class="bg-emerald-950 py-16 lg:py-24">
     <div class="section-shell text-center">
-      <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">Ready to Begin Your Health Journey?</h2>
-      <p class="text-lg sm:text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-        Dr. MacLeod is accepting new patients. Visit the <a href="/new-patients/" class="text-emerald-300 hover:text-white underline underline-offset-2 transition-colors">New Patients page</a> to learn what to expect and what to bring to your first appointment.
+      <h2 class="mb-6 text-3xl font-medium text-white sm:text-4xl font-serif">Interested in Working Together?</h2>
+      <p class="mx-auto mb-8 max-w-3xl text-lg leading-relaxed text-white/90 sm:text-xl">
+        If you are looking for private laboratory testing or naturopathic care in Bedford, visit the <a href="/new-patients/" class="text-emerald-300 underline underline-offset-2 transition-colors hover:text-white">New Patients page</a> to learn what to expect and what to bring to your first appointment.
       </p>
       <div class="flex justify-center">
         <BookingButton text="Book Online" source="about-cta" />
@@ -246,3 +274,51 @@ import { CircleCheckBig, MapPin, ShieldCheck, Clock, Quote } from '@lucide/astro
     </div>
   </section>
 </BaseLayout>
+
+<style>
+  .about-grid {
+    display: grid;
+    grid-template-areas:
+      "photo"
+      "story"
+      "details";
+    gap: 3rem;
+  }
+
+  .profile-photo {
+    grid-area: photo;
+  }
+
+  .story-content {
+    grid-area: story;
+  }
+
+  .profile-sidebar {
+    display: contents;
+  }
+
+  .profile-details {
+    grid-area: details;
+  }
+
+  @media (min-width: 1024px) {
+    .about-grid {
+      grid-template-columns: minmax(0, 2fr) minmax(17rem, 1fr);
+      grid-template-areas: "story sidebar";
+      column-gap: 3rem;
+      align-items: start;
+    }
+
+    .profile-sidebar {
+      display: flex;
+      grid-area: sidebar;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .profile-photo,
+    .profile-details {
+      grid-area: auto;
+    }
+  }
+</style>
