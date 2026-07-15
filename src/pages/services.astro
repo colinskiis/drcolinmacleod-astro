@@ -2,34 +2,34 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
-import { Activity, ChevronRight, Droplets, FlaskConical, Utensils } from '@lucide/astro';
+import { ChevronRight } from '@lucide/astro';
 
 const featuredServices = [
   {
     title: 'Lab Testing',
     href: '/lab-testing/',
-    description: 'Comprehensive diagnostic testing including functional medicine and nutritional assessments.',
-    Icon: FlaskConical,
+    description: 'Access private blood work, in-office collection and broader testing without a family-doctor requisition.',
+    image: '/images/lab-testing/in-office-blood-draw.webp',
+    alt: 'Dr. Colin MacLeod performing an in-office blood draw',
   },
   {
     title: 'IV Therapy',
     href: '/iv-therapy/',
-    description: 'Intravenous nutrients including Myers Cocktail, NAD+, chelation, glutathione, vitamin C and more.',
-    Icon: Droplets,
+    description: 'Individualized intravenous nutrient therapy with clinical screening, preparation and monitoring.',
+    image: '/images/treatments/iv-patient-woman.webp',
+    alt: 'Patient receiving IV nutrient therapy in the clinic',
   },
   {
-    title: 'Sports Medicine',
-    href: '/sports-medicine/',
-    description: 'Regenerative injection therapies for chronic pain, osteoarthritis, sports injuries and recovery.',
-    Icon: Activity,
-  },
-  {
-    title: 'Clinical Nutrition',
-    href: '/clinical-nutrition/',
-    description: 'Evidence-based dietary and nutritional medicine targeting root causes of chronic health concerns.',
-    Icon: Utensils,
+    title: 'Prolotherapy',
+    href: '/prolotherapy/',
+    description: 'Dextrose injection treatment used in the practice for selected joint, tendon and ligament concerns.',
+    image: '/images/treatments/prolotherapy-knee-injection.webp',
+    alt: 'Dr. Colin MacLeod performing a prolotherapy knee injection',
   },
 ];
+
+const primaryService = featuredServices[0];
+const secondaryServices = featuredServices.slice(1);
 
 const serviceGroups = [
   {
@@ -103,38 +103,76 @@ const pricingGroups = [
   focusKeyword="naturopathic services Halifax"
 >
   <HeroSection title="Naturopathic Services" centered compact>
-    Natural healthcare guided by science and rooted in traditional healing
+    Private testing, clinical consultations and in-office treatments selected according to your health history, priorities and goals.
   </HeroSection>
 
   <!-- Featured Service Areas -->
   <section class="py-14 lg:py-20 bg-white">
     <div class="section-shell">
-      <div class="mb-8 max-w-2xl reveal">
+      <div class="mb-10 max-w-3xl reveal">
         <p class="pill mb-4">Major Service Areas</p>
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">Find the right starting point</h2>
         <p class="text-lg text-slate-600">
-          Start with one of the main service areas below, or browse the full service directory.
+          Laboratory testing is the most common reason patients contact the practice. IV therapy and prolotherapy are also available for selected patients after an appropriate assessment.
         </p>
       </div>
 
-      <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4 reveal reveal-delay-100">
-        {featuredServices.map(({ title, href, description, Icon }) => (
-          <a
-            href={href}
-            data-astro-reload
-            class="group flex h-full flex-col rounded-2xl border border-emerald-100 bg-white p-5 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-emerald-200 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
-          >
-            <div class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-50 text-emerald-700 ring-1 ring-emerald-100 transition-colors group-hover:bg-emerald-100">
-              <Icon class="h-6 w-6" aria-hidden="true" />
-            </div>
-            <h3 class="mb-3 text-xl font-serif font-medium text-emerald-950 group-hover:text-emerald-700 transition-colors">{title}</h3>
-            <p class="text-sm text-slate-600 leading-relaxed">{description}</p>
-            <span class="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-emerald-700">
-              View service
+      <div class="space-y-6 reveal reveal-delay-100">
+        <a
+          href={primaryService.href}
+          class="group grid overflow-hidden rounded-3xl border border-emerald-100 bg-emerald-50 shadow-xl shadow-emerald-900/5 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-2xl hover:shadow-emerald-900/10 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 sm:grid-cols-[1.1fr_0.9fr]"
+        >
+          <div class="aspect-[16/10] overflow-hidden sm:min-h-[23rem] sm:aspect-auto">
+            <img
+              src={primaryService.image}
+              alt={primaryService.alt}
+              class="h-full w-full object-cover object-[center_20%] transition-transform duration-500 group-hover:scale-[1.02] sm:object-center"
+              width="800"
+              height="600"
+              loading="lazy"
+            />
+          </div>
+          <div class="flex flex-col justify-center p-7 sm:p-10 lg:p-12">
+            <p class="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-emerald-700">Private Laboratory Access</p>
+            <h3 class="mb-4 text-3xl font-serif font-medium text-emerald-950 transition-colors group-hover:text-emerald-700 sm:text-4xl">{primaryService.title}</h3>
+            <p class="mb-6 text-base leading-relaxed text-slate-600 sm:text-lg">{primaryService.description}</p>
+            <span class="inline-flex items-center gap-1.5 font-semibold text-emerald-800">
+              Explore Lab Testing
               <ChevronRight class="h-4 w-4 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
             </span>
-          </a>
-        ))}
+          </div>
+        </a>
+
+        <div class="grid gap-4 sm:grid-cols-2 sm:gap-6">
+          {secondaryServices.map(({ title, href, description, image, alt }) => (
+            <a
+              href={href}
+              class="group grid min-h-36 grid-cols-[8rem_1fr] overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-md shadow-emerald-900/5 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 sm:block"
+            >
+              <div class="overflow-hidden sm:aspect-[16/9]">
+                <img
+                  src={image}
+                  alt={alt}
+                  class:list={[
+                    'h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]',
+                    title === 'Prolotherapy' ? 'object-top' : 'object-center',
+                  ]}
+                  width="800"
+                  height="450"
+                  loading="lazy"
+                />
+              </div>
+              <div class="flex flex-col justify-center p-5 sm:p-7">
+                <h3 class="mb-2 text-xl font-serif font-medium text-emerald-950 transition-colors group-hover:text-emerald-700 sm:text-2xl">{title}</h3>
+                <p class="hidden leading-relaxed text-slate-600 sm:block">{description}</p>
+                <span class="mt-2 inline-flex items-center gap-1 text-sm font-semibold text-emerald-700 sm:mt-4">
+                  View service
+                  <ChevronRight class="h-4 w-4 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
+                </span>
+              </div>
+            </a>
+          ))}
+        </div>
       </div>
     </div>
   </section>

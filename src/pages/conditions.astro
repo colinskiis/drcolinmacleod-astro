@@ -92,73 +92,6 @@ const conditionPages = [
   },
 ];
 
-const relatedGuides = [
-  {
-    title: 'Anxiety',
-    href: '/articles/natural-anxiety-management/',
-    description: 'A guide to root-cause factors that can influence anxiety, including nutrition, hormones and nervous system regulation.',
-  },
-  {
-    title: 'Asthma & Respiratory Health',
-    href: '/articles/asthma-respiratory-health-natural/',
-    description: 'Evidence-informed ways to support respiratory health, manage triggers and reduce inflammatory burden.',
-  },
-  {
-    title: 'Autoimmune Conditions',
-    href: '/articles/autoimmune-conditions-naturopathic-perspective/',
-    description: 'A broader naturopathic perspective on inflammation, immune regulation and contributing factors.',
-  },
-  {
-    title: 'Blood Pressure',
-    href: '/articles/blood-pressure-natural-strategies/',
-    description: 'Lifestyle and root-cause strategies that can support cardiometabolic health alongside medical care.',
-  },
-  {
-    title: 'Blood Sugar & Diabetes',
-    href: '/articles/diabetes-prevention-blood-sugar-balance/',
-    description: 'Natural strategies for blood sugar stability, insulin sensitivity and long-term metabolic health.',
-  },
-  {
-    title: 'Depression',
-    href: '/articles/natural-depression-support/',
-    description: 'A guide to nutrition, sleep, inflammation, gut-brain factors and other contributors to mood.',
-  },
-  {
-    title: 'Digestive Health',
-    href: '/articles/digestive-health-natural-approaches/',
-    description: 'A guide to IBS, IBD, dysbiosis, food sensitivities and digestive function.',
-  },
-  {
-    title: 'IBS & IBD',
-    href: '/articles/ibs-ibd-natural-treatment/',
-    description: 'Testing and supportive strategies for inflammatory and functional bowel conditions.',
-  },
-  {
-    title: 'Immune Support',
-    href: '/articles/immune-support-natural-approaches/',
-    description: 'A guide to resilience, recovery and immune health fundamentals.',
-  },
-  {
-    title: 'Menopause & Perimenopause',
-    href: '/articles/menopause-perimenopause-natural-approaches/',
-    description: 'A guide to hot flashes, mood changes, sleep disruption and hormonal transition support.',
-  },
-  {
-    title: "Men's Hormonal Health",
-    href: '/articles/mens-hormonal-health-testosterone/',
-    description: 'A guide to testosterone, DHEA, energy, mood and vitality assessment.',
-  },
-  {
-    title: 'PCOS',
-    href: '/articles/pcos-natural-approaches/',
-    description: 'A guide to insulin resistance, hormonal imbalance and ovarian health.',
-  },
-  {
-    title: 'Skin Conditions',
-    href: '/articles/acne-eczema-psoriasis-treatments/',
-    description: 'A guide to acne, eczema and psoriasis through gut, hormone and nutrition factors.',
-  },
-];
 ---
 
 <BaseLayout
@@ -188,30 +121,6 @@ const relatedGuides = [
               {condition.title}
             </span>
             <span class="text-sm text-slate-600 leading-relaxed">{condition.description}</span>
-          </a>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <section class="py-16 lg:py-24 bg-emerald-50">
-    <div class="section-shell">
-      <div class="max-w-3xl mb-10 reveal">
-        <p class="pill mb-4">Related Guides</p>
-        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">Broader Health Topics</h2>
-        <p class="text-lg text-slate-600">
-          These are educational article guides, not condition landing pages. They are useful when a concern overlaps with hormones, mood, digestion, immunity or cardiometabolic health.
-        </p>
-      </div>
-
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 reveal reveal-delay-100">
-        {relatedGuides.map((guide) => (
-          <a href={guide.href} class="site-card-interactive group flex h-full flex-col gap-3 p-5 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <span class="flex items-start gap-2 text-lg font-semibold text-emerald-950 group-hover:text-emerald-700 transition-colors">
-              <ChevronRight class="mt-1 w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" aria-hidden="true" />
-              {guide.title}
-            </span>
-            <span class="text-sm text-slate-600 leading-relaxed">{guide.description}</span>
           </a>
         ))}
       </div>

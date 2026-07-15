@@ -1,351 +1,282 @@
 ---
+import { Activity, ArrowRight, ClipboardCheck, FlaskConical, HeartHandshake, Moon, TestTubes } from '@lucide/astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
 import FAQSection from '../components/FAQSection.astro';
+
+const coreSymptoms = [
+  {
+    title: 'Reduced capacity and profound fatigue',
+    text: 'A substantial reduction in the ability to complete usual activities, lasting more than six months and accompanied by fatigue that is not relieved by rest.'
+  },
+  {
+    title: 'Post-exertional malaise',
+    text: 'A delayed worsening of symptoms after physical, cognitive, emotional or social activity that was previously tolerated.'
+  },
+  {
+    title: 'Unrefreshing sleep',
+    text: 'Sleep that does not restore energy or function, even when the duration appears adequate.'
+  },
+  {
+    title: 'Cognitive or upright symptoms',
+    text: 'Difficulty thinking or concentrating, orthostatic intolerance, or both.'
+  }
+];
+
+const assessmentAreas = [
+  {
+    title: 'General laboratory assessment',
+    text: 'A blood count, ferritin and iron studies, vitamin B12, folate, glucose, electrolytes, kidney and liver markers may be useful depending on what has already been assessed.'
+  },
+  {
+    title: 'Thyroid assessment',
+    text: 'TSH is usually the starting test. Free T4, thyroid antibodies or other markers may be added when symptoms, history or previous results provide a reason.'
+  },
+  {
+    title: 'Sleep and autonomic symptoms',
+    text: 'Unrefreshing sleep, sleep apnea symptoms, dizziness, palpitations and difficulty remaining upright may require focused assessment or referral.'
+  },
+  {
+    title: 'Medication and nutrition review',
+    text: 'Medications, restrictive diets, gastrointestinal symptoms and supplement use can all affect fatigue, nutrient status or sleep.'
+  }
+];
 ---
 
 <BaseLayout
-  title="Chronic Fatigue Syndrome Treatment in Halifax"
-  description="Naturopathic treatment for Chronic Fatigue Syndrome (ME/CFS) in Halifax. IV nutrient therapy, testing and comprehensive support for fatigue recovery."
+  title="ME/CFS Care and Assessment | Halifax"
+  description="Patient-centred ME/CFS care in Halifax with pacing, symptom management, assessment for overlapping conditions and selected supportive services."
   focusKeyword="chronic fatigue syndrome treatment Halifax"
 >
   <HeroSection
-    title="Chronic Fatigue Syndrome"
+    title="ME/CFS and Chronic Fatigue"
     compact
-    image={{ src: "/images/conditions/chronic-fatigue-hero.webp", alt: "Chronic fatigue syndrome treatment", aspect: "video" }}
+    image={{ src: '/images/conditions/chronic-fatigue-hero.webp', alt: 'Person resting while living with persistent fatigue', aspect: 'video' }}
   >
-    <p>Chronic Fatigue Syndrome (ME/CFS) is more than just being tired. It's a complex, debilitating condition that affects every aspect of life. We offer comprehensive testing and treatment approaches including <strong class="text-white">IV nutrient therapy</strong> to help restore your energy and quality of life.</p>
-    <CTAButton slot="cta" />
+    <p>Myalgic encephalomyelitis/chronic fatigue syndrome is a serious, complex illness in which symptoms can worsen substantially after even modest activity.</p>
+    <p class="text-white/80">Care centres on respecting energy limits, managing the most disruptive symptoms and assessing other conditions that may be adding to the fatigue.</p>
+    <CTAButton slot="cta" source="me-cfs-hero" />
   </HeroSection>
 
-  <!-- What is CFS Section -->
-  <section class="py-16 lg:py-24 bg-white">
+  <section class="bg-white py-16 lg:py-24">
     <div class="section-shell">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6">Understanding Chronic Fatigue Syndrome</h2>
-        <div class="prose prose-lg text-slate-600 mb-8">
+      <div class="mx-auto max-w-4xl">
+        <p class="eyebrow mb-4">Understanding the condition</p>
+        <h2 class="text-3xl font-serif font-medium text-emerald-950 sm:text-4xl">ME/CFS is more than persistent tiredness</h2>
+        <div class="mt-6 space-y-5 text-lg leading-relaxed text-slate-600">
           <p>
-            Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS) is a serious, long-term illness characterized by profound fatigue that isn't improved by rest and is worsened by physical or mental exertion, a hallmark symptom called <strong>post-exertional malaise</strong>.
+            ME/CFS affects multiple body systems and can substantially limit work, school, household tasks and social activity. Its defining feature is <strong class="font-semibold text-slate-800">post-exertional malaise (PEM)</strong>: a worsening of symptoms after activity that may begin hours or days later and last for days or longer.
           </p>
           <p>
-            Unlike ordinary tiredness, ME/CFS can make even simple activities like showering or preparing a meal feel insurmountable. Fewer than 5% of patients return to their pre-illness activity levels with conventional care alone.
+            There is no single laboratory test that confirms ME/CFS. Diagnosis is based on the pattern, duration and severity of symptoms, together with an assessment for other explanations. There is currently no cure or treatment that works reliably for everyone, but individual symptoms and overlapping conditions can often be managed.
           </p>
         </div>
 
-        <div class="bg-emerald-50 rounded-2xl p-8 card-hover">
-          <h3 class="text-xl font-semibold text-emerald-950 mb-4">Core Symptoms of ME/CFS</h3>
-          <div class="grid md:grid-cols-2 gap-4">
-            <div class="flex items-start gap-3">
-              <svg class="w-5 h-5 text-emerald-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-              <div>
-                <span class="font-medium text-emerald-950">Severe fatigue</span>
-                <p class="text-sm text-slate-600">Lasting 6+ months, not improved by rest</p>
-              </div>
-            </div>
-            <div class="flex items-start gap-3">
-              <svg class="w-5 h-5 text-emerald-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-              <div>
-                <span class="font-medium text-emerald-950">Post-exertional malaise</span>
-                <p class="text-sm text-slate-600">"Crash" after activity, lasting days or weeks</p>
-              </div>
-            </div>
-            <div class="flex items-start gap-3">
-              <svg class="w-5 h-5 text-emerald-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-              <div>
-                <span class="font-medium text-emerald-950">Unrefreshing sleep</span>
-                <p class="text-sm text-slate-600">Waking exhausted despite adequate sleep</p>
-              </div>
-            </div>
-            <div class="flex items-start gap-3">
-              <svg class="w-5 h-5 text-emerald-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-              <div>
-                <span class="font-medium text-emerald-950">Cognitive dysfunction</span>
-                <p class="text-sm text-slate-600">"Brain fog," difficulty concentrating, memory issues</p>
-              </div>
-            </div>
-            <div class="flex items-start gap-3">
-              <svg class="w-5 h-5 text-emerald-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-              <div>
-                <span class="font-medium text-emerald-950">Orthostatic intolerance</span>
-                <p class="text-sm text-slate-600">Dizziness or worsening symptoms when upright</p>
-              </div>
-            </div>
-            <div class="flex items-start gap-3">
-              <svg class="w-5 h-5 text-emerald-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-              <div>
-                <span class="font-medium text-emerald-950">Pain</span>
-                <p class="text-sm text-slate-600">Muscle pain, joint pain, headaches</p>
-              </div>
-            </div>
-          </div>
+        <div class="mt-10 grid gap-4 md:grid-cols-2">
+          {coreSymptoms.map(({ title, text }) => (
+            <article class="rounded-2xl border border-emerald-100 bg-emerald-50 p-6">
+              <h3 class="font-serif text-xl text-emerald-950">{title}</h3>
+              <p class="mt-2 leading-relaxed text-slate-600">{text}</p>
+            </article>
+          ))}
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Our Approach -->
-  <section class="py-16 lg:py-24 bg-emerald-950">
+  <section class="bg-emerald-950 py-16 text-white lg:py-24">
     <div class="section-shell">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-4">Our Approach to ME/CFS</h2>
-        <p class="text-lg text-white/80 max-w-3xl mx-auto">
-          There is no single treatment that works for everyone with ME/CFS. We take a comprehensive approach, addressing multiple contributing factors while respecting your energy limits.
-        </p>
-      </div>
-
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-        <!-- Testing -->
-        <div class="bg-white/10 backdrop-blur rounded-2xl p-8">
-          <div class="w-14 h-14 bg-emerald-400/20 rounded-xl flex items-center justify-center mb-4">
-            <svg class="w-7 h-7 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
-            </svg>
-          </div>
-          <h3 class="text-xl font-semibold text-white mb-3">Comprehensive Testing</h3>
-          <p class="text-white/80 mb-4">Identify underlying factors that may be contributing to your fatigue or that could be addressed to improve your function.</p>
-          <ul class="text-white/70 text-sm space-y-1">
-            <li>• Thyroid panel (full, not just TSH)</li>
-            <li>• Adrenal function (cortisol, DHEA)</li>
-            <li>• Nutrient status (B12, iron, vitamin D)</li>
-            <li>• Inflammatory markers</li>
-            <li>• Chronic infection screening</li>
-          </ul>
-        </div>
-
-        <!-- IV Therapy -->
-        <div class="bg-white/10 backdrop-blur rounded-2xl p-8">
-          <div class="w-14 h-14 bg-emerald-400/20 rounded-xl flex items-center justify-center mb-4">
-            <svg class="w-7 h-7 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
-            </svg>
-          </div>
-          <h3 class="text-xl font-semibold text-white mb-3">IV Nutrient Therapy</h3>
-          <p class="text-white/80 mb-4">Bypass digestive absorption issues and deliver nutrients directly to cells for more immediate support.</p>
-          <ul class="text-white/70 text-sm space-y-1">
-            <li>• Myers' Cocktail</li>
-            <li>• High-dose vitamin C</li>
-            <li>• Magnesium</li>
-            <li>• B vitamins</li>
-            <li>• Customized formulas</li>
-          </ul>
-        </div>
-
-        <!-- Support -->
-        <div class="bg-white/10 backdrop-blur rounded-2xl p-8">
-          <div class="w-14 h-14 bg-emerald-400/20 rounded-xl flex items-center justify-center mb-4">
-            <svg class="w-7 h-7 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-            </svg>
-          </div>
-          <h3 class="text-xl font-semibold text-white mb-3">Targeted Support</h3>
-          <p class="text-white/80 mb-4">Address specific issues identified through testing and clinical assessment.</p>
-          <ul class="text-white/70 text-sm space-y-1">
-            <li>• Mitochondrial support</li>
-            <li>• Adrenal support</li>
-            <li>• Sleep optimization</li>
-            <li>• Anti-inflammatory strategies</li>
-            <li>• Pacing guidance</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Myers' Cocktail Section -->
-  <section id="iv-therapy" class="py-16 lg:py-24 bg-white">
-    <div class="section-shell">
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
         <div>
-          <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6">IV Nutrient Therapy for Chronic Fatigue</h2>
-          <div class="prose prose-lg text-slate-600">
-            <p>
-              The Myers' Cocktail is an intravenous infusion of B vitamins, vitamin C, magnesium and calcium that has been used for decades to treat chronic fatigue. Dr. Alan Gaby reported treating hundreds of ME/CFS patients with this therapy over 11 years, finding it frequently effective for improving fatigue.<sup>1</sup>
-            </p>
-            <p>
-              IV administration bypasses digestive absorption, which is often impaired in ME/CFS and delivers nutrients directly into the bloodstream at concentrations far higher than achievable with oral supplements. Many patients experience noticeable improvement in energy within hours of treatment.
-            </p>
-            <p>
-              Research has shown that <strong>NADH and magnesium</strong> are among the nutrients most likely to benefit CFS patients.<sup>2</sup> Both are included in our IV protocols.
-            </p>
+          <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-400/15 text-emerald-300">
+            <Activity class="h-6 w-6" aria-hidden="true" />
           </div>
-
-          <div class="mt-8 flex flex-col sm:flex-row gap-4">
-            <a href="/myers-cocktail-intravenous-nutrients/" class="text-emerald-700 font-semibold hover:text-emerald-800 transition-colors inline-flex items-center">
-              Learn more about Myers' Cocktail
-              <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-              </svg>
-            </a>
-          </div>
+          <p class="eyebrow mb-4 mt-6 text-emerald-300">Protecting against symptom crashes</p>
+          <h2 class="text-3xl font-serif font-medium !text-white sm:text-4xl">Pacing is a central part of ME/CFS management</h2>
+          <p class="mt-6 text-lg leading-relaxed text-white/75">
+            Pacing means balancing activity and rest so that physical, cognitive, emotional and social demands remain within your current limits. It is not a fixed exercise program and it does not mean pushing through symptoms.
+          </p>
         </div>
 
-        <div class="bg-emerald-50 rounded-2xl p-8 card-hover">
-          <h3 class="text-xl font-semibold text-emerald-950 mb-6">What Patients Typically Experience</h3>
-          <div class="space-y-4">
-            <div class="flex gap-4">
-              <div class="flex-shrink-0 w-10 h-10 bg-emerald-700 rounded-full flex items-center justify-center text-white font-bold">1</div>
-              <div>
-                <h4 class="font-medium text-emerald-950">During Treatment</h4>
-                <p class="text-slate-600 text-sm">Relaxing warmth from magnesium, 30-45 minutes</p>
-              </div>
-            </div>
-            <div class="flex gap-4">
-              <div class="flex-shrink-0 w-10 h-10 bg-emerald-700 rounded-full flex items-center justify-center text-white font-bold">2</div>
-              <div>
-                <h4 class="font-medium text-emerald-950">Hours After</h4>
-                <p class="text-slate-600 text-sm">Increased energy, improved mental clarity</p>
-              </div>
-            </div>
-            <div class="flex gap-4">
-              <div class="flex-shrink-0 w-10 h-10 bg-emerald-700 rounded-full flex items-center justify-center text-white font-bold">3</div>
-              <div>
-                <h4 class="font-medium text-emerald-950">Days to Weeks</h4>
-                <p class="text-slate-600 text-sm">Benefits typically last 1-3 weeks between treatments</p>
-              </div>
-            </div>
-            <div class="flex gap-4">
-              <div class="flex-shrink-0 w-10 h-10 bg-emerald-700 rounded-full flex items-center justify-center text-white font-bold">4</div>
-              <div>
-                <h4 class="font-medium text-emerald-950">With Regular Treatment</h4>
-                <p class="text-slate-600 text-sm">Some patients achieve lasting improvement, others use as maintenance</p>
-              </div>
-            </div>
-          </div>
-
+        <div class="grid gap-5 sm:grid-cols-2">
+          <article class="rounded-2xl border border-white/10 bg-white/5 p-6">
+            <h3 class="font-serif text-xl !text-white">Recognize patterns</h3>
+            <p class="mt-2 leading-relaxed text-white/70">A brief activity-and-symptom record can help identify delayed crashes and less obvious forms of exertion.</p>
+          </article>
+          <article class="rounded-2xl border border-white/10 bg-white/5 p-6">
+            <h3 class="font-serif text-xl !text-white">Plan before symptoms rise</h3>
+            <p class="mt-2 leading-relaxed text-white/70">Break tasks into smaller parts, alternate demanding and restorative activities, and include rest proactively.</p>
+          </article>
+          <article class="rounded-2xl border border-white/10 bg-white/5 p-6">
+            <h3 class="font-serif text-xl !text-white">Include mental exertion</h3>
+            <p class="mt-2 leading-relaxed text-white/70">Conversation, screens, concentration, noise and emotional stress can all use limited energy.</p>
+          </article>
+          <article class="rounded-2xl border border-white/10 bg-white/5 p-6">
+            <h3 class="font-serif text-xl !text-white">Adjust as capacity changes</h3>
+            <p class="mt-2 leading-relaxed text-white/70">Energy limits can fluctuate. The plan should respond to the patient’s present capacity rather than a predetermined progression.</p>
+          </article>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Testing Section -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
+  <section class="bg-[#f7f7f5] py-16 lg:py-24">
     <div class="section-shell">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">Finding the Underlying Causes</h2>
-        <p class="text-lg text-slate-600 max-w-3xl mx-auto">
-          ME/CFS often has multiple contributing factors. Comprehensive testing helps identify issues that can be specifically addressed.
-        </p>
+      <div class="mx-auto max-w-3xl text-center">
+        <p class="eyebrow mb-4">A practical clinical approach</p>
+        <h2 class="text-3xl font-serif font-medium text-emerald-950 sm:text-4xl">Care is built around the symptoms affecting you most</h2>
+        <p class="mt-5 text-lg leading-relaxed text-slate-600">The plan begins with what is most disruptive and what can be addressed safely, without assuming that every symptom has one underlying cause.</p>
       </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Thyroid -->
-        <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
-          <h3 class="text-lg font-semibold text-emerald-950 mb-3">Thyroid Function</h3>
-          <p class="text-slate-600 text-sm mb-3">Standard TSH testing misses many thyroid problems. A complete panel including Free T3, Free T4, Reverse T3 and antibodies gives a more complete picture.</p>
-          <a href="/lab-testing/" class="text-emerald-700 text-sm font-medium hover:text-emerald-800">Learn about thyroid testing →</a>
-        </div>
-
-        <!-- Adrenal -->
-        <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
-          <h3 class="text-lg font-semibold text-emerald-950 mb-3">Adrenal Function</h3>
-          <p class="text-slate-600 text-sm mb-3">Chronic illness and stress can deplete adrenal function. Testing cortisol and DHEA helps identify adrenal dysfunction that contributes to fatigue.</p>
-          <a href="/articles/comprehensive-hormone-testing-halifax" class="text-emerald-700 text-sm font-medium hover:text-emerald-800">Learn about hormone testing →</a>
-        </div>
-
-        <!-- Nutrients -->
-        <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
-          <h3 class="text-lg font-semibold text-emerald-950 mb-3">Nutrient Status</h3>
-          <p class="text-slate-600 text-sm mb-3">Deficiencies in B12, iron, vitamin D and magnesium can all cause or worsen fatigue. Testing identifies specific deficiencies to address.</p>
-          <a href="/lab-testing/" class="text-emerald-700 text-sm font-medium hover:text-emerald-800">Learn about nutrient testing →</a>
-        </div>
-
-        <!-- Inflammation -->
-        <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
-          <h3 class="text-lg font-semibold text-emerald-950 mb-3">Inflammation</h3>
-          <p class="text-slate-600 text-sm mb-3">Chronic inflammation is common in ME/CFS and may drive symptoms. Testing inflammatory markers helps guide anti-inflammatory strategies.</p>
-        </div>
-
-        <!-- Infections -->
-        <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
-          <h3 class="text-lg font-semibold text-emerald-950 mb-3">Chronic Infections</h3>
-          <p class="text-slate-600 text-sm mb-3">Reactivated viruses (EBV, HHV-6) and other chronic infections may contribute to ME/CFS. Testing can identify infections that may benefit from treatment.</p>
-        </div>
-
-        <!-- Gut Health -->
-        <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
-          <h3 class="text-lg font-semibold text-emerald-950 mb-3">Gut Health</h3>
-          <p class="text-slate-600 text-sm mb-3">Gut dysfunction is common in ME/CFS and affects nutrient absorption and immune function. Stool testing can identify imbalances to address.</p>
-        </div>
-      </div>
-
-      <div class="mt-12 text-center">
-        <p class="text-slate-600 mb-4">Testing available without a family doctor requisition</p>
-        <a href="/lab-testing/" class="bg-emerald-700 text-white px-8 py-3 rounded-full font-semibold hover:bg-emerald-800 transition-colors inline-flex items-center">
-          Learn About Lab Testing
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-          </svg>
-        </a>
+      <div class="mt-12 grid gap-6 lg:grid-cols-3">
+        <article class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+          <ClipboardCheck class="h-7 w-7 text-emerald-700" aria-hidden="true" />
+          <h3 class="mt-5 font-serif text-2xl text-emerald-950">Clarify the symptom pattern</h3>
+          <p class="mt-3 leading-relaxed text-slate-600">Review onset, PEM, sleep, pain, cognition, upright symptoms, infections, medications and the investigations already completed.</p>
+        </article>
+        <article class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+          <TestTubes class="h-7 w-7 text-emerald-700" aria-hidden="true" />
+          <h3 class="mt-5 font-serif text-2xl text-emerald-950">Assess treatable contributors</h3>
+          <p class="mt-3 leading-relaxed text-slate-600">Testing is selected to look for anemia, nutrient deficiencies, thyroid disease, metabolic issues or other conditions that can coexist with ME/CFS.</p>
+        </article>
+        <article class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+          <HeartHandshake class="h-7 w-7 text-emerald-700" aria-hidden="true" />
+          <h3 class="mt-5 font-serif text-2xl text-emerald-950">Choose manageable supports</h3>
+          <p class="mt-3 leading-relaxed text-slate-600">Prioritize pacing and the most troublesome symptoms, then consider nutrition or other supportive services when the expected benefit justifies the effort and cost.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- Pacing Section -->
-  <section class="py-16 lg:py-24 bg-white">
+  <section class="bg-white py-16 lg:py-24">
     <div class="section-shell">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6">We Understand Pacing</h2>
-        <div class="prose prose-lg text-slate-600">
-          <p>
-            If you have ME/CFS, you know that pushing through fatigue makes things worse, sometimes much worse. Post-exertional malaise can set you back for days, weeks or longer.
+      <div class="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+        <div>
+          <p class="eyebrow mb-4">Laboratory assessment</p>
+          <h2 class="text-3xl font-serif font-medium text-emerald-950 sm:text-4xl">Testing looks for conditions that may overlap with ME/CFS</h2>
+          <p class="mt-6 text-lg leading-relaxed text-slate-600">
+            Laboratory testing does not diagnose ME/CFS. It can, however, help identify a separate or additional problem that has a specific treatment. The selection should reflect your symptoms, history and previous results rather than a fixed panel ordered for everyone.
           </p>
-          <p>
-            We understand this. Our approach respects your energy limits while working to expand them over time. We won't recommend exercise programs that could trigger crashes, and we'll work within your current capacity to make gradual improvements.
-          </p>
-          <p>
-            IV therapy can be particularly helpful because it provides support without requiring energy expenditure from you. You simply rest during the infusion while your body receives the nutrients it needs.
-          </p>
+          <a href="/lab-testing/" class="mt-7 inline-flex items-center gap-2 font-semibold text-emerald-700 hover:text-emerald-900">
+            Explore laboratory testing <ArrowRight class="h-4 w-4" aria-hidden="true" />
+          </a>
+        </div>
+
+        <div class="grid gap-4 sm:grid-cols-2">
+          {assessmentAreas.map(({ title, text }) => (
+            <article class="rounded-2xl border border-emerald-100 bg-emerald-50 p-6">
+              <h3 class="font-serif text-xl text-emerald-950">{title}</h3>
+              <p class="mt-2 leading-relaxed text-slate-600">{text}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-emerald-50 py-16 lg:py-24">
+    <div class="section-shell">
+      <div class="grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+        <div>
+          <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-white text-emerald-800 shadow-sm">
+            <FlaskConical class="h-6 w-6" aria-hidden="true" />
+          </div>
+          <p class="eyebrow mb-4 mt-6">IV nutrient therapy</p>
+          <h2 class="text-3xl font-serif font-medium text-emerald-950 sm:text-4xl">An optional service for selected patients—not a cure for ME/CFS</h2>
+          <div class="mt-6 space-y-5 text-lg leading-relaxed text-slate-600">
+            <p>
+              IV nutrient therapy delivers vitamins and minerals directly into the bloodstream. It is used in the practice for selected patients after clinical screening, particularly when there is a clear nutritional or clinical reason to consider an intravenous route.
+            </p>
+            <p>
+              Evidence that IV nutrient mixtures improve ME/CFS itself is limited. Treatment is therefore individualized, with the expected benefit, demands of attending the clinic, cost and potential risks discussed before proceeding. It should not replace pacing, medical assessment or treatment of an identified condition.
+            </p>
+          </div>
+          <a href="/iv-therapy/" class="mt-7 inline-flex items-center gap-2 font-semibold text-emerald-700 hover:text-emerald-900">
+            Learn about IV therapy <ArrowRight class="h-4 w-4" aria-hidden="true" />
+          </a>
+        </div>
+
+        <aside class="rounded-3xl border border-emerald-100 bg-white p-8 shadow-sm sm:p-10">
+          <h3 class="font-serif text-2xl text-emerald-950">What the published evidence shows</h3>
+          <div class="mt-5 space-y-5 leading-relaxed text-slate-600">
+            <p>
+              A 2002 paper described the author’s clinical experience using a Myers’ Cocktail for several conditions, including fatigue. It was not a controlled ME/CFS trial.<sup>1</sup>
+            </p>
+            <p>
+              A systematic review found limited signals for NADH and magnesium, but the underlying studies used oral NADH and injected magnesium—not a Myers’ Cocktail or an IV ME/CFS protocol. The reviewers could not draw firm conclusions because the studies were small and at high risk of bias.<sup>2</sup>
+            </p>
+            <p>
+              A small controlled Myers’ Cocktail study involved people with fibromyalgia, not ME/CFS. Outcomes improved in both the treatment and placebo groups, with no statistically significant difference between them.<sup>3</sup>
+            </p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white py-16 lg:py-24">
+    <div class="section-shell">
+      <div class="mx-auto max-w-4xl">
+        <div class="grid gap-8 rounded-3xl border border-emerald-100 bg-[#f7f7f5] p-8 sm:p-10 lg:grid-cols-[auto_1fr]">
+          <div class="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-800">
+            <Moon class="h-7 w-7" aria-hidden="true" />
+          </div>
+          <div>
+            <h2 class="text-3xl font-serif font-medium text-emerald-950">Symptom management remains important</h2>
+            <p class="mt-4 text-lg leading-relaxed text-slate-600">
+              Sleep problems, pain, headaches, dizziness, gastrointestinal symptoms and mood changes can each deserve focused attention. Addressing one symptom may make daily life more manageable even when it does not change the underlying ME/CFS. Referrals or coordination with other healthcare providers are recommended when appropriate.
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <FAQSection items={[
-          { question: "How quickly will I notice improvement?", answer: "<p>Many patients notice improved energy within hours of their first IV treatment, though this effect may be temporary initially. With regular treatment, improvements often become more sustained. Addressing underlying issues like thyroid dysfunction or nutrient deficiencies typically takes weeks to months to show full benefit.</p>" },
-          { question: "How often will I need IV treatments?", answer: "<p>This varies significantly between patients. Some do well with weekly treatments initially, then transition to every 2-4 weeks for maintenance. Others use IV therapy as needed during flares or particularly demanding periods. We'll work with you to find a frequency that provides benefit while fitting your budget and schedule.</p>" },
-          { question: "Is there a cure for ME/CFS?", answer: "<p>There is currently no known cure for ME/CFS, and we won't promise one. However, many patients can achieve significant improvement in function and quality of life with comprehensive treatment. Some patients do eventually recover, though this isn't predictable. Our goal is to help you function as well as possible while supporting your body's capacity to heal.</p>" },
-          { question: "I've tried everything. Can you still help?", answer: "<p>Many patients come to us after years of unsuccessful treatment. We often find issues that weren't fully addressed, including incomplete thyroid testing, unrecognized nutrient deficiencies or chronic infections that weren't identified. Even when we can't find new issues, IV therapy provides a different delivery mechanism that may work when oral supplements haven't.</p>" },
-          { question: "Do you treat long COVID fatigue?", answer: "<p>Yes. Long COVID shares many features with ME/CFS, including post-exertional malaise and profound fatigue. Our approach (comprehensive testing, IV nutrient therapy and targeted support) applies equally well to post-viral fatigue from COVID-19 or other infections.</p>" },
-        ]} />
+    {
+      question: 'Is there a cure for ME/CFS?',
+      answer: '<p>There is currently no cure or approved treatment that reliably resolves ME/CFS. Care focuses on preventing post-exertional crashes, managing the most disruptive symptoms and treating any separate conditions found during assessment.</p>'
+    },
+    {
+      question: 'Can blood testing diagnose ME/CFS?',
+      answer: '<p>No. ME/CFS is diagnosed from the clinical pattern and after considering other explanations. Blood work can identify conditions such as anemia, iron or vitamin B12 deficiency, thyroid disease, diabetes, liver or kidney problems that may cause or add to fatigue.</p>'
+    },
+    {
+      question: 'Should I exercise to build my energy?',
+      answer: '<p>Standard exercise programs can worsen post-exertional malaise. Activity should stay within your current limits and be adjusted according to symptoms. Pacing is individualized and does not require steadily increasing activity.</p>'
+    },
+    {
+      question: 'Is IV nutrient therapy required?',
+      answer: '<p>No. IV nutrient therapy is optional and is not a cure for ME/CFS. It is used in the practice for selected patients after screening and a discussion of the evidence, expected benefit, effort, cost and risks.</p>'
+    },
+    {
+      question: 'What if I also have long COVID?',
+      answer: '<p>Long COVID and ME/CFS can share symptoms, including post-exertional malaise. The history, timing and full symptom pattern should be reviewed carefully. Pacing may be important, while other symptoms or complications may require assessment through your broader healthcare team.</p>'
+    }
+  ]} />
 
-  <!-- CTA Section -->
-  <section class="py-16 lg:py-24 bg-emerald-950">
+  <section class="bg-emerald-950 py-16 lg:py-24">
     <div class="section-shell">
-      <div class="text-center max-w-3xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">Ready to Address Your Fatigue?</h2>
-        <p class="text-lg text-white/90 mb-8">
-          Living with chronic fatigue is exhausting in every sense. Let's work together to identify what's contributing to your symptoms and develop a plan to help restore your energy and quality of life.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <CTAButton source="chronic-fatigue-syndrome-cta" />
+      <div class="mx-auto max-w-3xl text-center">
+        <h2 class="text-3xl font-serif font-medium !text-white sm:text-4xl">Discuss your fatigue and current limits</h2>
+        <p class="mt-5 text-lg leading-relaxed text-white/80">Book a consultation to review your symptom pattern, previous investigations and the most manageable next steps.</p>
+        <div class="mt-8">
+          <CTAButton source="me-cfs-final" />
         </div>
-        <p class="text-white/70 mt-6 text-sm">Most extended health plans cover naturopathic services</p>
       </div>
     </div>
   </section>
 
-  <!-- References -->
-  <section class="py-12 bg-emerald-50">
+  <section class="bg-white py-12 lg:py-16">
     <div class="section-shell">
-      <div class="max-w-4xl mx-auto">
-        <h3 class="text-lg font-semibold text-slate-700 mb-4">References</h3>
-        <ol class="text-sm text-slate-600 space-y-2 list-decimal list-inside">
-          <li>Gaby AR. Intravenous nutrient therapy: the "Myers' cocktail". Altern Med Rev. 2002;7(5):389-403.</li>
-          <li>Alraek T, Lee MS, Choi TY, Cao H, Liu J. Complementary and alternative medicine for patients with chronic fatigue syndrome: a systematic review. BMC Complement Altern Med. 2011;11:87.</li>
-          <li>Ali A, Njike VY, Northrup V, et al. Intravenous micronutrient therapy (Myers' Cocktail) for fibromyalgia: a placebo-controlled pilot study. J Altern Complement Med. 2009;15(3):247-57.</li>
+      <div class="mx-auto max-w-4xl border-t border-slate-200 pt-8">
+        <h2 class="text-sm font-semibold uppercase tracking-[0.16em] text-slate-700">Selected references</h2>
+        <ol class="mt-5 list-decimal space-y-3 pl-5 text-sm leading-relaxed text-slate-500">
+          <li>Gaby AR. Intravenous nutrient therapy: the “Myers’ cocktail.” <em>Altern Med Rev</em>. 2002;7(5):389–403.</li>
+          <li>Alraek T, Lee MS, Choi TY, Cao H, Liu J. Complementary and alternative medicine for patients with chronic fatigue syndrome: a systematic review. <em>BMC Complement Altern Med</em>. 2011;11:87.</li>
+          <li>Ali A, Njike VY, Northrup V, et al. Intravenous micronutrient therapy for fibromyalgia: a placebo-controlled pilot study. <em>J Altern Complement Med</em>. 2009;15(3):247–257.</li>
+          <li>Centers for Disease Control and Prevention. Manage ME/CFS: treatment and symptom management guidance. Updated May 2024.</li>
         </ol>
       </div>
     </div>
