@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BookingButton from '../components/BookingButton.astro';
 import FAQSection from '../components/FAQSection.astro';
-import { Phone, FlaskConical, ChevronRight, Syringe, ArrowRight, Microscope, HeartPulse, BookOpen } from '@lucide/astro';
+import { Phone, FlaskConical, ChevronRight, ArrowRight, Microscope, HeartPulse, BookOpen } from '@lucide/astro';
 
 // Conditions (top 3 for nav hub)
 const conditions = [
@@ -27,10 +27,13 @@ const bloodTests = [
 
 // All services for Services section
 const allServices = [
-  { title: 'Laboratory Testing', description: 'Assess nutrient status, hormones and selected markers of inflammation.', img: '/images/lab-testing/in-office-blood-draw.webp', href: '/lab-testing/' },
+  { title: 'Laboratory Testing', description: 'Access private blood work, in-office collection and broader testing without a family-doctor requisition.', img: '/images/lab-testing/in-office-blood-draw.webp', href: '/lab-testing/' },
   { title: 'IV Therapy', description: 'Individualized intravenous nutrient therapy with clinical screening and monitoring.', img: '/images/treatments/iv-patient-woman.webp', href: '/iv-therapy/' },
   { title: 'Prolotherapy', description: 'An injection-based option used in the management of selected joint and tendon concerns.', img: '/images/treatments/prolotherapy-knee-injection.webp', href: '/prolotherapy/' },
 ];
+
+const featuredService = allServices[0];
+const secondaryServices = allServices.slice(1);
 
 // FAQ data for schema markup
 const faqItems = [
@@ -68,7 +71,7 @@ const faqSchema = {
   focusKeyword="Dr. Colin MacLeod, ND, Halifax naturopathic doctor, IV therapy, prolotherapy, acupuncture"
   image="/images/og-image.jpg"
 >
-  <!-- Hero (V2 style with circular portrait) -->
+  <!-- Homepage hero -->
   <section class="hero-gradient -mt-24 pt-24 relative overflow-hidden">
     <!-- Ambient background shapes -->
     <div class="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
@@ -77,109 +80,80 @@ const faqSchema = {
       <div class="absolute bottom-0 right-1/4 w-80 h-80 bg-emerald-600/10 rounded-full blur-3xl"></div>
     </div>
 
-    <div class="section-shell py-20 lg:py-24 relative z-10">
-      <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-        <!-- Left Column: Text + Cards -->
-        <div class="space-y-8">
-          <!-- Mobile Hero Image (circular) -->
-          <div class="lg:hidden flex justify-center animate-fade-in-up">
-            <div class="relative group">
-              <a href="/about/" aria-label="About Dr. Colin MacLeod, ND" class="block w-36 h-36 rounded-full overflow-hidden border-4 border-white/20 shadow-2xl shadow-black/30 hover:border-white/40 hover:shadow-black/50 transition-all duration-300">
-                <picture>
-                  <source srcset="/images/general/colin-hero.avif" type="image/avif" />
-                  <source srcset="/images/general/colin-hero.webp" type="image/webp" />
-                  <img
-                    src="/images/general/Dr-colin-macleod-ND.jpeg"
-                    alt="Dr. Colin MacLeod, ND"
-                    class="w-full h-full object-cover object-top"
-                    width="609"
-                    height="1050"
-                    loading="eager"
-                  />
-                </picture>
-              </a>
-              <span class="pointer-events-none absolute -bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-emerald-950/90 px-3 py-1 text-xs font-medium text-white opacity-0 group-hover:opacity-100 transition-opacity duration-200">About Dr. MacLeod</span>
-            </div>
-          </div>
-
-          <!-- Text Content -->
-          <div class="space-y-5 text-center lg:text-left">
-            <!-- Trust Badge -->
-            <p class="text-emerald-300 uppercase tracking-[0.2em] text-xs sm:text-sm font-medium animate-fade-in-up">
-              Halifax Naturopathic Doctor
-            </p>
-
-            <h1 class="text-4xl sm:text-5xl font-medium font-serif leading-[1.1] tracking-tight text-white animate-fade-in-up animate-delay-100">
-              Look beyond symptoms.<br />Build a plan for better&nbsp;health.
-            </h1>
-
-            <p class="text-base sm:text-lg text-emerald-100 max-w-xl mx-auto lg:mx-0 leading-relaxed animate-fade-in-up animate-delay-200">
-              Naturopathic care in Bedford, serving Halifax, with private lab testing, IV therapy and prolotherapy coordinated around your broader healthcare team.
-            </p>
-
-            <!-- Name lockup -->
-            <p class="text-xl sm:text-2xl font-serif font-medium text-emerald-100 animate-fade-in-up animate-delay-300">
-              Dr. Colin MacLeod <span class="text-emerald-300">ND</span>
-            </p>
-
-            <!-- Credentials + location -->
-            <p class="text-sm text-emerald-200 animate-fade-in-up animate-delay-400">
-              CCNM Graduate &bull; 15 Years Experience &bull; Optimal Wellbeing Clinic, Bedford, NS
-            </p>
-          </div>
-
-          <!-- Primary CTA - Positioned prominently -->
-          <div class="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start animate-fade-in-up animate-delay-500">
-            <BookingButton text="Book Online" variant="hero" size="lg" source="hero" />
-            <a href="tel:+19024064424" class="inline-flex items-center gap-2 py-2 text-emerald-200 hover:text-white hover:-translate-y-0.5 transition-all font-medium">
-              <Phone class="w-5 h-5" aria-hidden="true" />
-              (902) 406-4424
-            </a>
-          </div>
-          <p class="text-center lg:text-left text-sm text-emerald-200 animate-fade-in-up animate-delay-600">
-            First visit? <a href="/new-patients/" class="text-emerald-300 hover:text-white underline underline-offset-2 transition-colors">Learn what to expect →</a>
-          </p>
-
-          <!-- Featured Services - Simplified Badges -->
-          <div class="hidden sm:flex flex-wrap items-center justify-center lg:justify-start gap-3 animate-fade-in-up animate-delay-600">
-            <a
-              href="/lab-testing/"
-              class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 bg-white/5 backdrop-blur-sm text-white text-sm font-medium hover:bg-white/10 hover:border-white/30 transition-all group"
-            >
-              <FlaskConical class="w-4 h-4 text-emerald-300" aria-hidden="true" />
-              Private Blood Testing
-              <ChevronRight class="w-3.5 h-3.5 text-emerald-400 group-hover:translate-x-0.5 transition-transform" aria-hidden="true" />
-            </a>
-            <a
-              href="/iv-therapy/"
-              class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 bg-white/5 backdrop-blur-sm text-white text-sm font-medium hover:bg-white/10 hover:border-white/30 transition-all group"
-            >
-              <Syringe class="w-4 h-4 text-emerald-300" aria-hidden="true" />
-              IV Therapy
-              <ChevronRight class="w-3.5 h-3.5 text-emerald-400 group-hover:translate-x-0.5 transition-transform" aria-hidden="true" />
-            </a>
-          </div>
-
-        </div>
-
-        <!-- Right Column: Hero Image (Circular) -->
-        <div class="relative hidden lg:flex justify-center items-start">
-          <div class="relative group">
-            <a href="/about/" aria-label="About Dr. Colin MacLeod, ND" class="block w-80 h-80 xl:w-96 xl:h-96 rounded-full overflow-hidden shadow-2xl shadow-black/30 border-4 border-white/20 hover:border-white/40 hover:shadow-black/50 hover:scale-[1.02] transition-all duration-300">
+    <div class="section-shell relative z-10 py-10 sm:py-14 lg:py-20">
+      <div class="grid items-center gap-8 lg:grid-cols-[1.08fr_0.92fr] lg:gap-16">
+        <div class="space-y-6 lg:space-y-7">
+          <!-- Compact mobile portrait -->
+          <div class="flex justify-center lg:hidden animate-fade-in-up">
+            <a href="/about/" aria-label="About Dr. Colin MacLeod, ND" class="block h-28 w-24 overflow-hidden rounded-2xl border-2 border-white/20 shadow-xl shadow-black/25 transition-all duration-300 hover:border-white/40">
               <picture>
                 <source srcset="/images/general/colin-hero.avif" type="image/avif" />
                 <source srcset="/images/general/colin-hero.webp" type="image/webp" />
                 <img
                   src="/images/general/Dr-colin-macleod-ND.jpeg"
                   alt="Dr. Colin MacLeod, ND"
-                  class="w-full h-full object-cover object-top"
+                  class="h-full w-full object-cover object-top"
                   width="609"
                   height="1050"
                   loading="eager"
                 />
               </picture>
             </a>
-            <span class="pointer-events-none absolute -bottom-10 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-emerald-950/90 px-4 py-1.5 text-sm font-medium text-white opacity-0 group-hover:opacity-100 transition-opacity duration-200">About Dr. MacLeod</span>
+          </div>
+
+          <div class="space-y-4 text-center lg:text-left">
+            <p class="text-xs font-medium uppercase tracking-[0.2em] text-emerald-300 sm:text-sm animate-fade-in-up">
+              Halifax Naturopathic Doctor
+            </p>
+
+            <h1 class="text-[2.55rem] font-medium font-serif leading-[1.06] tracking-tight text-white sm:text-5xl lg:text-6xl animate-fade-in-up animate-delay-100">
+              Look beyond symptoms. Build a plan for better health.
+            </h1>
+
+            <p class="mx-auto max-w-xl text-base leading-relaxed text-emerald-100 sm:text-lg lg:mx-0 animate-fade-in-up animate-delay-200">
+              Naturopathic care in Bedford, serving Halifax, with private lab testing, IV therapy and prolotherapy coordinated around your broader healthcare team.
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center justify-center gap-3 sm:flex-row lg:justify-start animate-fade-in-up animate-delay-300">
+            <BookingButton text="Book Online" variant="hero" size="lg" source="hero" />
+            <a
+              href="/lab-testing/"
+              class="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/25 bg-white/5 px-6 py-3 font-medium text-white transition-all hover:-translate-y-0.5 hover:border-white/40 hover:bg-white/10"
+            >
+              <FlaskConical class="h-4 w-4 text-emerald-300" aria-hidden="true" />
+              Explore Lab Testing
+              <ChevronRight class="h-4 w-4 text-emerald-300" aria-hidden="true" />
+            </a>
+          </div>
+
+          <div class="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-sm text-emerald-200 lg:justify-start animate-fade-in-up animate-delay-400">
+            <a href="tel:+19024064424" class="inline-flex items-center gap-2 transition-colors hover:text-white">
+              <Phone class="h-4 w-4" aria-hidden="true" />
+              (902) 406-4424
+            </a>
+            <a href="/new-patients/" class="text-emerald-300 underline underline-offset-2 transition-colors hover:text-white">First visit? Learn what to expect →</a>
+          </div>
+        </div>
+
+        <!-- Desktop portrait -->
+        <div class="relative hidden justify-center lg:flex">
+          <div class="relative group">
+            <a href="/about/" aria-label="About Dr. Colin MacLeod, ND" class="block h-[27rem] w-[21rem] overflow-hidden rounded-[2rem] border-2 border-white/20 shadow-2xl shadow-black/30 transition-all duration-300 hover:scale-[1.01] hover:border-white/40 hover:shadow-black/45 xl:h-[30rem] xl:w-[23rem]">
+                <picture>
+                  <source srcset="/images/general/colin-hero.avif" type="image/avif" />
+                  <source srcset="/images/general/colin-hero.webp" type="image/webp" />
+                  <img
+                    src="/images/general/Dr-colin-macleod-ND.jpeg"
+                    alt="Dr. Colin MacLeod, ND"
+                    class="h-full w-full object-cover object-top"
+                    width="609"
+                    height="1050"
+                    loading="eager"
+                  />
+                </picture>
+            </a>
+            <span class="pointer-events-none absolute -bottom-9 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-emerald-950/90 px-4 py-1.5 text-sm font-medium text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100">About Dr. MacLeod</span>
           </div>
         </div>
       </div>
@@ -191,32 +165,43 @@ const faqSchema = {
     <div class="section-shell">
       <div class="text-center max-w-3xl mx-auto mb-10 lg:mb-14 space-y-4 reveal">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 tracking-tight">Services</h2>
-        <p class="text-lg text-slate-600 max-w-2xl mx-auto">Targeted care guided by clinical assessment, testing and your individual health goals.</p>
+        <p class="text-lg text-slate-600 max-w-2xl mx-auto">Private testing and treatments tailored to your concerns, health history and goals.</p>
       </div>
 
-      <!-- Mobile: Link list -->
-      <div class="sm:hidden space-y-1 reveal reveal-delay-100 mb-10">
-        {allServices.map((item) => (
-          <a href={item.href} class="flex items-center gap-3 py-4 text-slate-700 hover:text-emerald-700 font-medium transition-colors group border-b border-stone-200">
-            <ChevronRight class="w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" aria-hidden="true" />
-            {item.title}
-          </a>
-        ))}
-      </div>
+      <div class="space-y-6 sm:space-y-8 reveal reveal-delay-100">
+        <!-- Featured laboratory testing -->
+        <a href={featuredService.href} class="group grid overflow-hidden rounded-3xl border border-emerald-100 bg-emerald-50 shadow-xl shadow-emerald-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-emerald-900/10 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 sm:grid-cols-[1.15fr_0.85fr] sm:items-stretch">
+          <div class="aspect-[16/10] overflow-hidden sm:aspect-auto sm:min-h-[22rem]">
+            <img src={featuredService.img} alt="Dr. Colin MacLeod performing an in-office blood draw" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" width="800" height="600" loading="lazy" />
+          </div>
+          <div class="flex flex-col justify-center p-7 sm:p-9 lg:p-12">
+            <p class="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-emerald-700">Private laboratory access</p>
+            <h3 class="mb-4 text-3xl font-serif font-medium leading-tight text-emerald-950 transition-colors group-hover:text-emerald-700 sm:text-4xl">{featuredService.title}</h3>
+            <p class="mb-6 text-base leading-relaxed text-slate-600 sm:text-lg">{featuredService.description}</p>
+            <span class="inline-flex items-center gap-1.5 font-semibold text-emerald-800">
+              Explore Lab Testing
+              <ChevronRight class="h-4 w-4 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
+            </span>
+          </div>
+        </a>
 
-      <!-- Desktop: Card grid -->
-      <div class="hidden sm:grid gap-8 sm:gap-10 md:grid-cols-2 lg:grid-cols-3 reveal reveal-delay-100">
-        {allServices.map((item) => (
-          <a href={item.href} class="group block overflow-hidden rounded-3xl bg-white shadow-xl shadow-emerald-900/5 hover:shadow-2xl hover:shadow-emerald-900/10 hover:-translate-y-1 transition-all duration-300 flex flex-col h-full focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <div class="aspect-[4/3] overflow-hidden">
-              <img src={item.img} alt={item.title} class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" width="800" height="600" loading="lazy" />
-            </div>
-            <div class="p-8 space-y-4 flex-1 flex flex-col">
-              <h3 class="text-2xl font-serif font-medium text-emerald-950 leading-tight group-hover:text-emerald-700 transition-colors">{item.title}</h3>
-              <p class="text-base text-slate-600 leading-relaxed flex-1 font-normal">{item.description}</p>
-            </div>
-          </a>
-        ))}
+        <!-- Secondary services retain authentic imagery at every breakpoint -->
+        <div class="grid gap-4 sm:grid-cols-2 sm:gap-8">
+          {secondaryServices.map((item) => (
+            <a href={item.href} class="group grid min-h-32 grid-cols-[7.5rem_1fr] overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-lg shadow-emerald-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-emerald-900/10 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 sm:block sm:rounded-3xl">
+              <div class="overflow-hidden sm:aspect-[16/8]">
+                <img src={item.img} alt={item.title} class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" width="800" height="450" loading="lazy" />
+              </div>
+              <div class="flex flex-col justify-center p-5 sm:p-7">
+                <h3 class="mb-2 text-xl font-serif font-medium leading-tight text-emerald-950 transition-colors group-hover:text-emerald-700 sm:text-2xl">{item.title}</h3>
+                <p class="hidden text-base leading-relaxed text-slate-600 sm:block">{item.description}</p>
+                <span class="mt-2 inline-flex items-center gap-1 text-sm font-semibold text-emerald-700 sm:mt-4">
+                  Learn more <ChevronRight class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
+                </span>
+              </div>
+            </a>
+          ))}
+        </div>
       </div>
 
       <div class="text-center mt-10 sm:mt-16">
@@ -234,8 +219,8 @@ const faqSchema = {
   <section class="py-12 lg:py-16 bg-emerald-50">
     <div class="section-shell">
       <div class="text-center max-w-3xl mx-auto mb-8 lg:mb-10 space-y-3 reveal">
-        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950">Learn more</h2>
-        <p class="text-lg text-slate-600 max-w-2xl mx-auto">Evidence-based information on conditions, treatments and natural health.</p>
+        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950">Explore Your Options</h2>
+        <p class="text-lg text-slate-600 max-w-2xl mx-auto">Start with blood testing, a health concern or evidence-based articles.</p>
       </div>
 
       <div class="space-y-4 reveal">
@@ -359,8 +344,8 @@ const faqSchema = {
   <!-- Closing CTA -->
   <section class="py-16 lg:py-24 bg-emerald-950">
     <div class="section-shell text-center space-y-6 reveal">
-      <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white">Ready to take the first step?</h2>
-      <p class="text-emerald-200 text-lg max-w-xl mx-auto">Book a consultation and find out what naturopathic medicine can do for you.</p>
+      <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white">Ready to discuss your health and testing needs?</h2>
+      <p class="text-emerald-200 text-lg max-w-2xl mx-auto">Book a consultation to discuss your concerns, previous results and the testing or treatment options you would like to explore.</p>
       <div>
         <BookingButton text="Book Online" variant="hero" size="lg" source="bottom-cta" />
       </div>
