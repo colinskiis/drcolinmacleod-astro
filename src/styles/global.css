@@ -83,6 +83,16 @@
     @apply mx-auto px-5 relative w-full max-w-6xl;
   }
 
+  /* Preserve the established laptop layout while giving ultra-wide displays
+     a more proportional canvas and slightly larger reading scale. */
+  @media (min-width: 1920px) {
+    .section-shell {
+      max-width: 96rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
   .site-card {
     @apply rounded-2xl border border-emerald-100 bg-white shadow-sm shadow-emerald-900/5;
   }
@@ -111,6 +121,12 @@
 
   #site-header.scrolled {
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35), 0 1px 0 rgba(255,255,255,0.05);
+  }
+}
+
+@media (min-width: 1920px) {
+  html {
+    font-size: 17px;
   }
 }
 
