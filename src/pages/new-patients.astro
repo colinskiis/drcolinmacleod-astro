@@ -6,241 +6,232 @@ import BookingButton from '../components/BookingButton.astro';
 
 <BaseLayout
   title="New Patients"
-  description="Everything you need to know before your first visit with Dr. Colin MacLeod, ND in Bedford. What to expect, what to bring and how to book your appointment."
+  description="Plan your first visit with Dr. Colin MacLeod, ND in Bedford. Learn how appointments and private blood testing work, what to prepare, current fees and how to book."
   focusKeyword="new patient naturopathic appointment Bedford NS"
 >
   <HeroSection title="Your First Visit" centered compact>
-    What to expect, what to bring and how to book.
+    How the first appointment works, what to prepare and what your options may cost.
+    <div slot="cta" class="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
+      <BookingButton text="Book Online" variant="hero" size="lg" source="new-patients-hero" />
+      <a
+        href="#blood-testing"
+        class="inline-flex items-center justify-center rounded-full border border-white/30 px-6 py-3 text-base font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-white/10"
+      >
+        Coming for Blood Work?
+        <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </a>
+    </div>
   </HeroSection>
 
-  <!-- What to Expect -->
-  <section class="py-16 lg:py-24 bg-white">
+  <!-- Private blood testing pathway -->
+  <section id="blood-testing" class="scroll-mt-28 bg-emerald-50 py-16 lg:py-20">
     <div class="section-shell">
-      <div class="max-w-4xl mx-auto reveal">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">What to Expect</h2>
-          <p class="text-lg text-slate-600">Your first appointment is a thorough conversation, not a quick once-over. Dr. MacLeod takes time to understand your full health picture before recommending anything.</p>
+      <div class="mx-auto grid max-w-5xl gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-center reveal">
+        <div>
+          <p class="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-emerald-700">Private Laboratory Access</p>
+          <h2 class="mb-5 text-3xl font-serif font-medium text-emerald-950 sm:text-4xl">Coming for Blood Work?</h2>
+          <p class="mb-5 text-lg leading-relaxed text-slate-700">
+            Book an initial consultation if you would like private blood testing. The appointment provides time to review your concerns, previous results, medications and the tests you would like to explore.
+          </p>
+          <p class="leading-relaxed text-slate-600">
+            Dr. MacLeod can help select a broad set of relevant markers, explain what each test can and cannot show, and arrange a private laboratory requisition and in-office collection. Testing costs are separate from the consultation fee and are confirmed before proceeding.
+          </p>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-8">
-          <!-- Initial Consultation -->
-          <div class="bg-white border border-emerald-100 rounded-2xl p-6 card-hover">
-            <div class="flex items-center mb-4">
-              <div class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mr-4">
-                <svg class="w-6 h-6 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
+        <div class="rounded-3xl border border-emerald-200 bg-white p-6 shadow-sm sm:p-8">
+          <h3 class="mb-5 text-xl font-serif font-medium text-emerald-950">A simple place to start</h3>
+          <ol class="space-y-5">
+            <li class="flex gap-4">
+              <span class="flex h-8 w-8 flex-none items-center justify-center rounded-full bg-emerald-100 text-sm font-bold text-emerald-800">1</span>
+              <div>
+                <p class="font-semibold text-emerald-950">Book an initial consultation</p>
+                <p class="mt-1 text-sm leading-relaxed text-slate-600">No family-doctor or specialist referral is required for private testing.</p>
               </div>
-              <h3 class="text-xl font-serif font-medium text-emerald-950">Initial Consultation</h3>
-            </div>
-            <p class="text-sm font-medium text-emerald-700 mb-3">60 minutes</p>
-            <p class="text-slate-700">A thorough review of your health history, current concerns, lifestyle and goals. Dr. MacLeod will take the time to understand your unique situation and develop a personalized treatment plan.</p>
-          </div>
-
-          <!-- Follow-up Visits -->
-          <div class="bg-white border border-emerald-100 rounded-2xl p-6 card-hover">
-            <div class="flex items-center mb-4">
-              <div class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mr-4">
-                <svg class="w-6 h-6 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
-                </svg>
+            </li>
+            <li class="flex gap-4">
+              <span class="flex h-8 w-8 flex-none items-center justify-center rounded-full bg-emerald-100 text-sm font-bold text-emerald-800">2</span>
+              <div>
+                <p class="font-semibold text-emerald-950">Bring any previous results</p>
+                <p class="mt-1 text-sm leading-relaxed text-slate-600">Existing blood work and reports help identify what has already been assessed and where broader testing may be useful.</p>
               </div>
-              <h3 class="text-xl font-serif font-medium text-emerald-950">Follow-up Visits</h3>
-            </div>
-            <p class="text-sm font-medium text-emerald-700 mb-3">30 minutes</p>
-            <p class="text-slate-700">Subsequent appointments to monitor progress, review lab results, adjust treatments and address any new concerns. Frequency depends on your individual needs and treatment plan.</p>
-          </div>
+            </li>
+            <li class="flex gap-4">
+              <span class="flex h-8 w-8 flex-none items-center justify-center rounded-full bg-emerald-100 text-sm font-bold text-emerald-800">3</span>
+              <div>
+                <p class="font-semibold text-emerald-950">Review the plan and costs</p>
+                <p class="mt-1 text-sm leading-relaxed text-slate-600">The selected tests, preparation instructions and laboratory fees are reviewed before collection is arranged.</p>
+              </div>
+            </li>
+          </ol>
+          <a href="/lab-testing/" class="mt-6 inline-flex items-center gap-2 font-semibold text-emerald-700 transition-colors hover:text-emerald-950">
+            Explore Lab Testing
+            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- What to Bring -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
+  <!-- Visit process -->
+  <section class="bg-white py-16 lg:py-24">
     <div class="section-shell">
-      <div class="max-w-4xl mx-auto reveal">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">What to Bring</h2>
-          <p class="text-lg text-slate-600">Help us make the most of your appointment by coming prepared.</p>
+      <div class="mx-auto max-w-5xl reveal">
+        <div class="mx-auto mb-12 max-w-3xl text-center">
+          <h2 class="mb-4 text-3xl font-serif font-medium text-emerald-950 sm:text-4xl">How Your First Visit Works</h2>
+          <p class="text-lg leading-relaxed text-slate-600">The initial appointment is a 60-minute review of your health concerns, history, previous results, medications and priorities.</p>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-6">
-          <div class="bg-white rounded-2xl p-6 shadow-sm card-hover">
-            <div class="flex items-start">
-              <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-                <svg class="w-5 h-5 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                </svg>
-              </div>
-              <div>
-                <h3 class="font-serif font-medium text-emerald-950 mb-2">Health History</h3>
-                <p class="text-slate-600 text-sm">A list of past health conditions, surgeries and hospitalizations. Include approximate dates if possible.</p>
-              </div>
-            </div>
-          </div>
+        <ol class="grid gap-8 md:grid-cols-3">
+          <li class="relative border-t border-emerald-200 pt-7">
+            <span class="absolute -top-5 left-0 flex h-10 w-10 items-center justify-center rounded-full bg-emerald-900 text-sm font-bold text-white ring-8 ring-white">1</span>
+            <h3 class="mb-3 text-xl font-serif font-medium text-emerald-950">Prepare</h3>
+            <p class="leading-relaxed text-slate-600">Complete the requested intake information and gather any previous laboratory results, imaging or reports you would like reviewed.</p>
+          </li>
+          <li class="relative border-t border-emerald-200 pt-7">
+            <span class="absolute -top-5 left-0 flex h-10 w-10 items-center justify-center rounded-full bg-emerald-900 text-sm font-bold text-white ring-8 ring-white">2</span>
+            <h3 class="mb-3 text-xl font-serif font-medium text-emerald-950">Meet</h3>
+            <p class="leading-relaxed text-slate-600">Discuss your symptoms, health history, current care and goals. There is time to address the concerns and testing priorities that brought you in.</p>
+          </li>
+          <li class="relative border-t border-emerald-200 pt-7">
+            <span class="absolute -top-5 left-0 flex h-10 w-10 items-center justify-center rounded-full bg-emerald-900 text-sm font-bold text-white ring-8 ring-white">3</span>
+            <h3 class="mb-3 text-xl font-serif font-medium text-emerald-950">Plan the Next Step</h3>
+            <p class="leading-relaxed text-slate-600">Review appropriate testing or treatment options, their limitations and costs. Follow-up visits are used to review results and adjust the plan when needed.</p>
+          </li>
+        </ol>
 
-          <div class="bg-white rounded-2xl p-6 shadow-sm card-hover">
-            <div class="flex items-start">
-              <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-                <svg class="w-5 h-5 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
-                </svg>
-              </div>
-              <div>
-                <h3 class="font-serif font-medium text-emerald-950 mb-2">Current Medications</h3>
-                <p class="text-slate-600 text-sm">All prescription medications, over-the-counter drugs, vitamins and supplements you currently take.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="bg-white rounded-2xl p-6 shadow-sm card-hover">
-            <div class="flex items-start">
-              <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-                <svg class="w-5 h-5 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                </svg>
-              </div>
-              <div>
-                <h3 class="font-serif font-medium text-emerald-950 mb-2">Recent Lab Work</h3>
-                <p class="text-slate-600 text-sm">Bring copies of any recent blood tests, imaging or diagnostic reports from the past 1-2 years.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="bg-white rounded-2xl p-6 shadow-sm card-hover">
-            <div class="flex items-start">
-              <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-                <svg class="w-5 h-5 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
-                </svg>
-              </div>
-              <div>
-                <h3 class="font-serif font-medium text-emerald-950 mb-2">Insurance Information</h3>
-                <p class="text-slate-600 text-sm">Your extended health insurance card if you have coverage for naturopathic medicine.</p>
-              </div>
-            </div>
-          </div>
+        <div class="mt-12 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 border-t border-emerald-100 pt-7 text-sm text-slate-600">
+          <span><strong class="font-semibold text-emerald-950">Initial consultation:</strong> 60 minutes</span>
+          <span><strong class="font-semibold text-emerald-950">Follow-up visit:</strong> 30 minutes</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Finding the Clinic -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
+  <!-- Preparation checklist -->
+  <section class="bg-emerald-950 py-16 lg:py-20">
     <div class="section-shell">
-      <div class="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center max-w-5xl mx-auto reveal">
-        <div class="rounded-3xl overflow-hidden shadow-xl border border-emerald-100">
+      <div class="mx-auto grid max-w-5xl gap-10 lg:grid-cols-[0.7fr_1.3fr] lg:items-start reveal">
+        <div>
+          <p class="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-emerald-300">Before Your Appointment</p>
+          <h2 class="mb-4 text-3xl font-serif font-medium text-white sm:text-4xl">What to Prepare</h2>
+          <p class="leading-relaxed text-emerald-100">Bring what you have access to. You do not need a perfectly organized medical file before booking.</p>
+        </div>
+
+        <ul class="grid gap-x-10 gap-y-6 sm:grid-cols-2">
+          <li class="flex gap-3">
+            <svg class="mt-0.5 h-5 w-5 flex-none text-emerald-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            <div><h3 class="font-semibold text-white">Health history</h3><p class="mt-1 text-sm leading-relaxed text-emerald-100">Past conditions, surgeries and hospitalizations, with approximate dates when possible.</p></div>
+          </li>
+          <li class="flex gap-3">
+            <svg class="mt-0.5 h-5 w-5 flex-none text-emerald-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            <div><h3 class="font-semibold text-white">Medications and supplements</h3><p class="mt-1 text-sm leading-relaxed text-emerald-100">A current list of prescriptions, over-the-counter medications, vitamins and supplements.</p></div>
+          </li>
+          <li class="flex gap-3">
+            <svg class="mt-0.5 h-5 w-5 flex-none text-emerald-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            <div><h3 class="font-semibold text-white">Previous results</h3><p class="mt-1 text-sm leading-relaxed text-emerald-100">Relevant blood work, imaging and diagnostic reports you already have available.</p></div>
+          </li>
+          <li class="flex gap-3">
+            <svg class="mt-0.5 h-5 w-5 flex-none text-emerald-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            <div><h3 class="font-semibold text-white">Insurance details</h3><p class="mt-1 text-sm leading-relaxed text-emerald-100">Your extended health insurance information if you would like the clinic to attempt direct billing.</p></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fees and insurance -->
+  <section class="bg-white py-16 lg:py-24">
+    <div class="section-shell">
+      <div class="mx-auto max-w-5xl reveal">
+        <div class="mb-12 text-center">
+          <h2 class="mb-4 text-3xl font-serif font-medium text-emerald-950 sm:text-4xl">Fees & Insurance</h2>
+          <p class="mx-auto max-w-3xl text-lg leading-relaxed text-slate-600">Consultation fees, private laboratory charges and treatment costs are billed separately.</p>
+        </div>
+
+        <div class="overflow-hidden rounded-3xl border border-emerald-100 bg-emerald-50/50">
+          <div class="grid md:grid-cols-2">
+            <div class="p-6 sm:p-8 md:border-r md:border-emerald-100">
+              <h3 class="mb-5 text-xl font-serif font-medium text-emerald-950">Visit Fees</h3>
+              <dl class="space-y-4 text-slate-700">
+                <div class="flex items-center justify-between gap-4 border-b border-emerald-100 pb-4">
+                  <dt>Initial consultation <span class="block text-sm text-slate-500">60 minutes</span></dt>
+                  <dd class="font-semibold text-emerald-950">$200</dd>
+                </div>
+                <div class="flex items-center justify-between gap-4">
+                  <dt>Follow-up visit <span class="block text-sm text-slate-500">30 minutes</span></dt>
+                  <dd class="font-semibold text-emerald-950">$100</dd>
+                </div>
+              </dl>
+              <p class="mt-6 text-sm leading-relaxed text-slate-600">Laboratory, IV therapy, prolotherapy and other treatment costs vary. Any additional costs are reviewed before testing or treatment proceeds.</p>
+            </div>
+
+            <div class="border-t border-emerald-100 p-6 sm:p-8 md:border-t-0">
+              <h3 class="mb-5 text-xl font-serif font-medium text-emerald-950">Insurance & Payment</h3>
+              <p class="mb-5 leading-relaxed text-slate-700">Many extended health plans include naturopathic services. Coverage limits and eligibility vary, so please confirm the details of your individual plan.</p>
+              <ul class="space-y-3 text-sm text-slate-600">
+                <li class="flex gap-3"><svg class="mt-0.5 h-5 w-5 flex-none text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Direct insurance billing is available where supported.</li>
+                <li class="flex gap-3"><svg class="mt-0.5 h-5 w-5 flex-none text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Credit and debit cards, cash and e-transfer are accepted.</li>
+                <li class="flex gap-3"><svg class="mt-0.5 h-5 w-5 flex-none text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Receipts are provided for reimbursement claims.</li>
+              </ul>
+            </div>
+          </div>
+          <p class="border-t border-emerald-100 bg-white px-6 py-4 text-center text-sm text-slate-500">Please provide at least <strong class="font-semibold text-slate-700">24 hours' notice</strong> to cancel or reschedule an appointment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Finding the clinic -->
+  <section class="bg-emerald-50 py-16 lg:py-24">
+    <div class="section-shell">
+      <div class="mx-auto grid max-w-5xl gap-10 lg:grid-cols-2 lg:items-center lg:gap-14 reveal">
+        <div class="overflow-hidden rounded-3xl border border-emerald-100 shadow-xl">
           <img
             src="/images/general/ihpc-building.webp"
             alt="Integrated Health Professional Centre at 1378 Bedford Highway, Unit 1"
-            class="w-full aspect-[16/10] object-cover"
+            class="aspect-[16/10] w-full object-cover"
             width="1600"
             height="972"
             loading="lazy"
           />
         </div>
         <div>
-          <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">Finding the Clinic</h2>
-          <p class="text-lg text-slate-700 leading-relaxed mb-4">
-            Optimal Wellbeing Clinic is located inside the Integrated Health Professional Centre at 1378 Bedford Highway, Unit 1, in Bedford.
-          </p>
-          <p class="text-slate-600 leading-relaxed mb-6">
-            The building has accessible facilities and on-site parking. Look for the Integrated Health Professional Centre signage when you arrive.
-          </p>
+          <p class="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-emerald-700">Plan Your Arrival</p>
+          <h2 class="mb-4 text-3xl font-serif font-medium text-emerald-950 sm:text-4xl">Finding the Clinic</h2>
+          <p class="mb-4 text-lg leading-relaxed text-slate-700">Optimal Wellbeing Clinic is located inside the Integrated Health Professional Centre at 1378 Bedford Highway, Unit 1, in Bedford.</p>
+          <p class="mb-6 leading-relaxed text-slate-600">The building has accessible facilities and on-site parking. Look for the Integrated Health Professional Centre signage when you arrive.</p>
           <a
             href="https://www.google.com/maps/dir/?api=1&destination=1378+Bedford+Highway,+Unit+1,Bedford,NS,Canada"
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-flex items-center gap-2 font-semibold text-emerald-700 hover:text-emerald-900 transition-colors"
+            class="inline-flex items-center gap-2 font-semibold text-emerald-700 transition-colors hover:text-emerald-950"
           >
             Get Directions
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-            </svg>
+            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
           </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Insurance & Payment -->
-  <section class="py-16 lg:py-24 bg-white">
-    <div class="section-shell">
-      <div class="max-w-4xl mx-auto reveal">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">Fees & Insurance</h2>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-8">
-          <div class="bg-white border border-emerald-100 rounded-2xl p-6 card-hover">
-            <h3 class="text-xl font-serif font-medium text-emerald-950 mb-4">Visit Fees</h3>
-            <ul class="space-y-3 text-slate-700 mb-4">
-              <li class="flex items-center justify-between border-b border-emerald-100 pb-3">
-                <span>Initial Consultation (60 min)</span>
-                <span class="font-semibold text-emerald-900">$200</span>
-              </li>
-              <li class="flex items-center justify-between border-b border-emerald-100 pb-3">
-                <span>Follow-up Visit (30 min)</span>
-                <span class="font-semibold text-emerald-900">$100</span>
-              </li>
-            </ul>
-            <p class="text-sm text-slate-500">Specialized treatment fees (IV therapy, prolotherapy, etc.) vary by service. Ask at booking.</p>
-            <p class="text-sm text-slate-500 mt-2">Please give at least <strong>24 hours notice</strong> to cancel or reschedule your appointment.</p>
-          </div>
-
-          <div class="bg-white border border-emerald-100 rounded-2xl p-6 card-hover">
-            <h3 class="text-xl font-serif font-medium text-emerald-950 mb-4">Insurance & Payment</h3>
-            <p class="text-slate-700 mb-4">Most extended health plans cover naturopathic visits ($300–$1,000 annually). We offer <strong>direct billing</strong> to many major insurers.</p>
-            <ul class="space-y-3 text-slate-700">
-              <li class="flex items-center">
-                <svg class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                Credit and debit cards
-              </li>
-              <li class="flex items-center">
-                <svg class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                Cash and e-transfer
-              </li>
-              <li class="flex items-center">
-                <svg class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                Direct insurance billing (where available)
-              </li>
-              <li class="flex items-center">
-                <svg class="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                Receipts for insurance reimbursement
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Closing CTA -->
-  <section class="py-16 lg:py-24 bg-emerald-950">
+  <section class="bg-emerald-950 py-16 lg:py-24">
     <div class="section-shell">
-      <div class="max-w-3xl mx-auto text-center reveal">
-        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-4">Ready to Book?</h2>
-        <p class="text-lg text-emerald-100 mb-8">Book online anytime through our secure patient portal, or give us a call during office hours.</p>
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
+      <div class="mx-auto max-w-3xl text-center reveal">
+        <h2 class="mb-4 text-3xl font-serif font-medium text-white sm:text-4xl">Ready to Book?</h2>
+        <p class="mb-8 text-lg text-emerald-100">Book online anytime through the secure patient portal, or call the clinic during office hours.</p>
+        <div class="mb-6 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <BookingButton text="Book Online" variant="hero" size="lg" source="new-patients" />
-          <a href="tel:+19024064424" class="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-white/30 text-white hover:bg-white/10 hover:-translate-y-0.5 transition-all font-semibold text-base">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-            </svg>
+          <a href="tel:+19024064424" class="inline-flex items-center gap-3 rounded-full border border-white/30 px-6 py-3 text-base font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-white/10">
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
             (902) 406-4424
           </a>
         </div>
-        <p class="text-emerald-200 text-sm">
-          <strong class="text-emerald-200">Optimal Wellbeing Clinic</strong> &bull; 1378 Bedford Highway, Unit 1, Bedford &bull; Mon-Fri: 7:30 AM-3:30 PM
-        </p>
+        <p class="text-sm text-emerald-200"><strong>Optimal Wellbeing Clinic</strong> &bull; 1378 Bedford Highway, Unit 1, Bedford &bull; Mon-Fri: 7:30 AM-3:30 PM</p>
       </div>
     </div>
   </section>
