@@ -4,282 +4,260 @@ import HeroSection from '../components/HeroSection.astro';
 import CTAButton from '../components/CTAButton.astro';
 import FAQSection from '../components/FAQSection.astro';
 import RelatedCare from '../components/RelatedCare.astro';
-import { X, Check } from '@lucide/astro';
+import { ArrowRight, Check, Info } from '@lucide/astro';
+
+const hormoneMarkers = [
+  {
+    abbreviation: 'E2',
+    name: 'Estradiol',
+    description: 'Estradiol is the principal circulating estrogen during the reproductive years. Its concentration varies across the menstrual cycle and changes substantially during the transition to menopause.',
+  },
+  {
+    abbreviation: 'P4',
+    name: 'Progesterone',
+    description: 'Progesterone rises after ovulation. A correctly timed serum measurement can provide evidence that ovulation recently occurred, but a single value cannot assess the overall quality of the luteal phase.',
+  },
+  {
+    abbreviation: 'T',
+    name: 'Testosterone and SHBG',
+    description: 'Total testosterone is usually the initial measurement. Sex hormone-binding globulin and calculated or measured free testosterone may add information when binding-protein changes affect interpretation.',
+  },
+  {
+    abbreviation: 'FSH/LH',
+    name: 'Gonadotropins',
+    description: 'Follicle-stimulating hormone and luteinizing hormone are produced by the pituitary gland. They are interpreted with sex hormones, menstrual status and the reason for testing.',
+  },
+  {
+    abbreviation: 'PRL',
+    name: 'Prolactin',
+    description: 'Prolactin can be relevant to absent or irregular periods, infertility, unexpected breast milk production and some testosterone concerns. Stress, exercise and medications can affect the result.',
+  },
+  {
+    abbreviation: 'DHEA-S',
+    name: 'DHEA sulfate',
+    description: 'DHEA-S is an androgen produced mainly by the adrenal glands. It may be included when assessing androgen excess or particular adrenal questions, but it is not a general measure of vitality or biological ageing.',
+  },
+];
+
+const testingMethods = [
+  {
+    method: 'Blood',
+    role: 'The usual starting point',
+    description: 'Serum testing is the established method for most reproductive and androgen assessments, including estradiol, progesterone, testosterone, SHBG, FSH, LH, prolactin and DHEA-S.',
+  },
+  {
+    method: 'Saliva',
+    role: 'A limited, question-specific role',
+    description: 'Salivary cortisol has validated uses in particular endocrine evaluations, such as late-night testing for suspected cortisol excess. A multi-point profile does not diagnose “adrenal fatigue” or measure a person’s ability to cope with stress.',
+  },
+];
+
+const timingFactors = [
+  {
+    title: 'Menstrual-cycle timing',
+    text: 'Estradiol, LH, FSH and progesterone change across the cycle. If progesterone is being used to assess recent ovulation, collection is generally timed about one week before the expected next period rather than assigned to cycle day 21 for everyone.',
+  },
+  {
+    title: 'Time of day and confirmation',
+    text: 'Testosterone in men is generally measured in the morning. A low result should be confirmed on a separate morning sample and interpreted together with compatible symptoms and signs.',
+  },
+  {
+    title: 'Medication and health status',
+    text: 'Hormonal contraception, menopausal hormone therapy, testosterone, corticosteroids and several other medications can alter results. Acute illness, pregnancy and postpartum status also change interpretation.',
+  },
+];
+
+const reasonsToConsider = [
+  'Absent, infrequent or irregular menstrual periods that require assessment',
+  'Possible ovulatory dysfunction or a fertility evaluation',
+  'Clinical signs of androgen excess, such as new hirsutism or persistent acne',
+  'Symptoms and signs compatible with testosterone deficiency in men',
+  'A previous hormone result that was abnormal or requires confirmation',
+  'Monitoring prescribed hormone treatment when laboratory follow-up is indicated',
+];
 ---
 
 <BaseLayout
-  title="Hormone Testing in Halifax | Naturopath"
-  description="Sex hormone and adrenal testing in Halifax: estrogen, progesterone, testosterone, cortisol, DHEA. Blood, saliva and DUTCH urine options. No requisition needed."
+  title="Hormone Testing in Halifax | Reproductive Hormone Assessment"
+  description="Private hormone testing in Halifax, including estradiol, progesterone, testosterone, FSH, LH, prolactin and DHEA-S when clinically appropriate."
   focusKeyword="hormone testing Halifax"
 >
   <HeroSection
     title="Hormone Testing"
     compact
-    image={{ src: "/images/lab-testing/hormone-testing.webp", alt: "Hormone testing blood vials", aspect: "video" }}
+    image={{ src: '/images/lab-testing/hormone-testing.webp', alt: 'Blood samples prepared for laboratory hormone testing', aspect: 'video' }}
   >
-    <p>Fatigue, mood changes, weight gain and low libido can trace back to hormonal imbalances that standard testing <strong class="text-white">often does not include</strong>. We offer comprehensive sex hormone and adrenal testing with blood, saliva and urine options, <strong class="text-white">without a family doctor requisition</strong>.</p>
+    <p>
+      Hormone testing can help investigate menstrual changes, ovulation, androgen concerns and suspected hormone deficiency. The tests and their timing are selected for the clinical question and can be arranged <strong class="text-white">without a family doctor requisition</strong>.
+    </p>
   </HeroSection>
 
-  <!-- The Problem with Standard Testing -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
+  <section class="bg-white py-16 lg:py-24">
     <div class="section-shell">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6">Why Standard Hormone Testing Falls Short</h2>
-        <div class="prose prose-lg text-slate-600 mb-8">
-          <p>
-            Most family doctors order only basic hormone panels, if they order any at all. A single testosterone or estrogen level without context tells you very little. <strong>Hormones fluctuate throughout the day, the month and your life</strong> and their interactions matter as much as individual levels.
-          </p>
-          <p>
-            Cortisol tested with a single morning blood draw misses the daily rhythm that determines whether you can wake up, stay alert or fall asleep. Estrogen tested without progesterone misses the balance that drives PMS, heavy periods and mood changes. And standard lab ranges simply avoid disease cutoffs, they don't tell you where you'd feel your best.
-          </p>
-        </div>
-
-        <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
-          <h3 class="text-xl font-semibold text-emerald-950 mb-6">What Standard Testing Misses</h3>
-          <div class="grid md:grid-cols-2 gap-6">
-            <div class="flex items-start gap-3">
-              <X class="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" aria-hidden="true" />
-              <div>
-                <span class="font-medium text-emerald-950">Cortisol rhythm</span>
-                <p class="text-sm text-slate-600">A single blood draw misses the daily pattern that drives energy and sleep</p>
-              </div>
-            </div>
-            <div class="flex items-start gap-3">
-              <X class="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" aria-hidden="true" />
-              <div>
-                <span class="font-medium text-emerald-950">Hormone metabolism</span>
-                <p class="text-sm text-slate-600">How your body processes and clears hormones affects cancer risk</p>
-              </div>
-            </div>
-            <div class="flex items-start gap-3">
-              <X class="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" aria-hidden="true" />
-              <div>
-                <span class="font-medium text-emerald-950">Estrogen-progesterone balance</span>
-                <p class="text-sm text-slate-600">Estrogen dominance is common but rarely tested for directly</p>
-              </div>
-            </div>
-            <div class="flex items-start gap-3">
-              <X class="w-6 h-6 text-emerald-600 mt-1 flex-shrink-0" aria-hidden="true" />
-              <div>
-                <span class="font-medium text-emerald-950">DHEA and cortisol-to-DHEA ratio</span>
-                <p class="text-sm text-slate-600">This ratio reveals stress-driven aging and vitality decline</p>
-              </div>
-            </div>
+      <div class="mx-auto max-w-5xl">
+        <div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+          <div>
+            <p class="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-emerald-700">A clinical, stepwise approach</p>
+            <h2 class="mb-5 text-3xl font-medium text-emerald-950 sm:text-4xl font-serif">Testing begins with a defined endocrine question</h2>
+            <p class="text-lg leading-relaxed text-slate-600">
+              Fatigue, mood changes, weight changes and low libido have many possible causes. Hormone tests are most informative when the history and clinical findings indicate which hormone system should be assessed.
+            </p>
           </div>
+
+          <ol class="divide-y divide-emerald-100 rounded-2xl border border-emerald-200 bg-emerald-50/60 px-6 sm:px-8">
+            <li class="grid grid-cols-[2.5rem_1fr] gap-4 py-6">
+              <span class="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-950 text-sm font-semibold text-white">1</span>
+              <div>
+                <h3 class="mb-1 font-semibold text-emerald-950">Clarify the concern</h3>
+                <p class="leading-relaxed text-slate-600">Symptoms, menstrual or reproductive history, medications and previous results help identify the question being investigated.</p>
+              </div>
+            </li>
+            <li class="grid grid-cols-[2.5rem_1fr] gap-4 py-6">
+              <span class="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-950 text-sm font-semibold text-white">2</span>
+              <div>
+                <h3 class="mb-1 font-semibold text-emerald-950">Select and time the tests</h3>
+                <p class="leading-relaxed text-slate-600">The markers, specimen and collection time are chosen according to physiology and the intended use of the result.</p>
+              </div>
+            </li>
+            <li class="grid grid-cols-[2.5rem_1fr] gap-4 py-6">
+              <span class="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-950 text-sm font-semibold text-white">3</span>
+              <div>
+                <h3 class="mb-1 font-semibold text-emerald-950">Interpret the pattern</h3>
+                <p class="leading-relaxed text-slate-600">Results are interpreted together and may require confirmation or additional assessment before a diagnosis can be made.</p>
+              </div>
+            </li>
+          </ol>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Hormone Panel Detail Cards -->
-  <section class="py-16 lg:py-24 bg-white">
+  <section class="bg-emerald-50 py-16 lg:py-24">
     <div class="section-shell">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">Comprehensive Hormone Testing</h2>
-        <p class="text-lg text-slate-600 max-w-3xl mx-auto">
-          We test the full picture, sex hormones, adrenal hormones and their metabolites, to understand how your hormones are actually functioning.
-        </p>
-      </div>
-
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Estrogen -->
-        <div class="bg-emerald-50 rounded-2xl p-6 card-hover">
-          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
-            <span class="text-white font-bold text-sm">E2</span>
-          </div>
-          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Estrogen (Estradiol)</h3>
-          <p class="text-slate-600 text-sm mb-3">The primary female sex hormone. Maintains bone density, cardiovascular health, brain function and tissue integrity. Both excess and deficiency cause significant symptoms.</p>
-          <div class="text-xs text-slate-600">
-            <span class="font-medium">Varies by:</span> Menstrual phase, age, menopause status<br>
-            <span class="font-medium text-emerald-700">We assess:</span> Level, balance with progesterone, metabolism
-          </div>
+      <div class="mx-auto max-w-6xl">
+        <div class="mb-10 max-w-3xl">
+          <p class="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-emerald-700">Common blood markers</p>
+          <h2 class="mb-4 text-3xl font-medium text-emerald-950 sm:text-4xl font-serif">What reproductive hormone tests measure</h2>
+          <p class="text-lg leading-relaxed text-slate-600">Each marker answers a different question. A comprehensive assessment does not necessarily mean ordering every hormone listed here.</p>
         </div>
 
-        <!-- Progesterone -->
-        <div class="bg-emerald-50 rounded-2xl p-6 card-hover">
-          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
-            <span class="text-white font-bold text-sm">P4</span>
-          </div>
-          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Progesterone</h3>
-          <p class="text-slate-600 text-sm mb-3">Estrogen's balancing partner. Promotes calm, restful sleep and protects against certain cancers. Low progesterone drives anxiety, insomnia, PMS and irregular periods.</p>
-          <div class="text-xs text-slate-600">
-            <span class="font-medium">Best tested:</span> Day 19–21 of cycle (luteal phase)<br>
-            <span class="font-medium text-emerald-700">Key pattern:</span> Estrogen dominance (low P4 relative to E2)
-          </div>
-        </div>
-
-        <!-- Testosterone -->
-        <div class="bg-emerald-50 rounded-2xl p-6 card-hover">
-          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
-            <span class="text-white font-bold text-sm">T</span>
-          </div>
-          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Testosterone</h3>
-          <p class="text-slate-600 text-sm mb-3">Essential for both sexes. Maintains muscle mass, bone density, libido, energy and mood. Declines 1–2% per year in men after 30. In women, both high and low levels cause problems.</p>
-          <div class="text-xs text-slate-600">
-            <span class="font-medium">Includes:</span> Total and free testosterone<br>
-            <span class="font-medium text-emerald-700">High in women:</span> May indicate PCOS
-          </div>
-        </div>
-
-        <!-- Cortisol -->
-        <div class="bg-emerald-50 rounded-2xl p-6 card-hover">
-          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
-            <span class="text-white font-bold text-sm">Cort</span>
-          </div>
-          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Cortisol (4-Point)</h3>
-          <p class="text-slate-600 text-sm mb-3">Your primary stress hormone follows a daily rhythm, highest in the morning, lowest at night. We test 4 points throughout the day to map your actual cortisol pattern, not just a snapshot.</p>
-          <div class="text-xs text-slate-600">
-            <span class="font-medium">Method:</span> Saliva or dried urine (at home)<br>
-            <span class="font-medium text-emerald-700">Reveals:</span> Burnout, insomnia patterns, stress response
-          </div>
-        </div>
-
-        <!-- DHEA -->
-        <div class="bg-emerald-50 rounded-2xl p-6 card-hover">
-          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
-            <span class="text-white font-bold text-sm">DHEA</span>
-          </div>
-          <h3 class="text-lg font-semibold text-emerald-950 mb-2">DHEA-S</h3>
-          <p class="text-slate-600 text-sm mb-3">The "vitality hormone" and precursor to testosterone and estrogen. Declines with age and chronic stress. The cortisol-to-DHEA ratio reveals stress-driven hormonal aging.</p>
-          <div class="text-xs text-slate-600">
-            <span class="font-medium">Key ratio:</span> Cortisol:DHEA<br>
-            <span class="font-medium text-emerald-700">High ratio:</span> Stress aging, immune suppression, fatigue
-          </div>
-        </div>
-
-        <!-- DUTCH Test -->
-        <div class="bg-emerald-50 rounded-2xl p-6 card-hover">
-          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
-            <span class="text-white font-bold text-xs">DUTCH</span>
-          </div>
-          <h3 class="text-lg font-semibold text-emerald-950 mb-2">DUTCH Complete</h3>
-          <p class="text-slate-600 text-sm mb-3">The most comprehensive hormone test available. Dried urine measures hormones <strong>and their metabolites</strong>, revealing how your body processes estrogen, testosterone and cortisol, not just levels.</p>
-          <div class="text-xs text-slate-600">
-            <span class="font-medium">Method:</span> Dried urine (collected at home)<br>
-            <span class="font-medium text-emerald-700">Reveals:</span> Metabolism pathways, methylation, cancer risk
-          </div>
+        <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          {hormoneMarkers.map((marker) => (
+            <article class="rounded-2xl border border-emerald-200 bg-white p-7 shadow-sm">
+              <div class="mb-6 flex items-center gap-4">
+                <span class="flex h-12 min-w-12 items-center justify-center rounded-xl bg-emerald-950 px-2 text-xs font-bold text-white">{marker.abbreviation}</span>
+                <h3 class="text-xl font-semibold leading-tight text-emerald-950">{marker.name}</h3>
+              </div>
+              <p class="leading-relaxed text-slate-600">{marker.description}</p>
+            </article>
+          ))}
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Deep Dive: Testing Methods -->
-  <section class="py-16 lg:py-24 bg-emerald-950">
+  <section class="bg-white py-16 lg:py-24">
     <div class="section-shell">
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="mx-auto max-w-5xl">
+        <div class="mb-10 max-w-3xl">
+          <p class="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-emerald-700">Choosing a specimen</p>
+          <h2 class="mb-4 text-3xl font-medium text-emerald-950 sm:text-4xl font-serif">Blood and saliva answer different questions</h2>
+          <p class="text-lg leading-relaxed text-slate-600">The collection method is selected according to the established or intended use of the result. Convenience or the number of values on a report does not make one method inherently better.</p>
+        </div>
+
+        <div class="overflow-hidden rounded-2xl border border-emerald-200">
+          {testingMethods.map((item, index) => (
+            <div class:list={['grid gap-4 p-6 sm:grid-cols-[8rem_11rem_1fr] sm:gap-8 sm:p-7', index !== testingMethods.length - 1 && 'border-b border-emerald-100']}>
+              <p class="text-xl font-semibold text-emerald-950">{item.method}</p>
+              <p class="font-medium text-emerald-800">{item.role}</p>
+              <p class="leading-relaxed text-slate-600">{item.description}</p>
+            </div>
+          ))}
+        </div>
+
+        <div class="mt-6 flex gap-3 rounded-xl bg-amber-50 p-5 text-sm leading-relaxed text-amber-950 ring-1 ring-amber-200">
+          <Info class="mt-0.5 h-5 w-5 flex-none" aria-hidden="true" />
+          <p>Salivary cortisol testing should not be used to diagnose “adrenal fatigue,” burnout or a person's ability to cope with stress. Suspected adrenal insufficiency or cortisol excess requires established endocrine testing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-slate-50 py-16 lg:py-24">
+    <div class="section-shell">
+      <div class="mx-auto max-w-5xl">
+        <div class="mb-10 max-w-3xl">
+          <p class="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-emerald-700">Collection and interpretation</p>
+          <h2 class="mb-4 text-3xl font-medium text-emerald-950 sm:text-4xl font-serif">Timing can materially change the result</h2>
+          <p class="text-lg leading-relaxed text-slate-600">Hormones vary with normal physiology. The date, time and circumstances of collection need to match the reason the test was ordered.</p>
+        </div>
+
+        <div class="grid gap-5 md:grid-cols-3">
+          {timingFactors.map((factor) => (
+            <article class="rounded-2xl border border-slate-200 bg-white p-7">
+              <h3 class="mb-3 text-lg font-semibold text-emerald-950">{factor.title}</h3>
+              <p class="text-sm leading-relaxed text-slate-600">{factor.text}</p>
+            </article>
+          ))}
+        </div>
+
+        <div class="mt-6 rounded-xl border border-emerald-200 bg-emerald-50 p-5 text-sm leading-relaxed text-slate-700">
+          In otherwise healthy people aged 45 or older with typical perimenopause or menopause symptoms, the diagnosis is often based on clinical history rather than estradiol or FSH testing because hormone concentrations fluctuate and may not change management.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-emerald-950 py-16 lg:py-20">
+    <div class="section-shell">
+      <div class="mx-auto grid max-w-5xl gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
         <div>
-          <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">Blood, Saliva or Urine: Which Test Is Right for You?</h2>
-          <div class="prose prose-lg prose-invert">
-            <p class="text-white/90">
-              Different testing methods answer different questions, and the right choice depends on your symptoms and goals. <strong class="text-white">Blood testing</strong> is the gold standard for sex hormones (estrogen, progesterone, testosterone) and DHEA-S, providing well-validated results with established reference ranges.
-            </p>
-            <p class="text-white/90">
-              <strong class="text-white">Saliva testing</strong> excels for cortisol because it allows multiple collections throughout the day, morning, midday, evening and bedtime, mapping your stress response in a way a single blood draw cannot.
-            </p>
-            <p class="text-white/90">
-              <strong class="text-white">The DUTCH test</strong> (dried urine) provides the most complete picture, measuring hormones and their metabolites. It reveals how your body processes estrogen (important for cancer risk), whether cortisol is being produced but not cleared and how your methylation pathways are functioning. It's the test of choice for complex hormonal cases.
-            </p>
-          </div>
+          <p class="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-emerald-300">Selecting tests</p>
+          <h2 class="mb-5 text-3xl font-medium text-white sm:text-4xl font-serif">When hormone testing may be considered</h2>
+          <p class="leading-relaxed text-emerald-50/85">These circumstances can justify a focused assessment. They do not automatically require every hormone marker or a specialized urine panel.</p>
         </div>
-
-        <div class="bg-white/10 backdrop-blur rounded-2xl p-8">
-          <h3 class="text-xl font-semibold text-white mb-6">Who Should Consider Hormone Testing?</h3>
-          <ul class="space-y-4">
-            <li class="flex items-start gap-3 text-white/90">
-              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span>Fatigue that doesn't improve with rest or lifestyle changes</span>
+        <ul class="grid gap-3 sm:grid-cols-2">
+          {reasonsToConsider.map((reason) => (
+            <li class="flex gap-3 rounded-xl border border-white/15 bg-white/10 p-4 text-sm leading-relaxed text-white">
+              <Check class="mt-0.5 h-5 w-5 flex-none text-emerald-300" aria-hidden="true" />
+              <span>{reason}</span>
             </li>
-            <li class="flex items-start gap-3 text-white/90">
-              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span>Menstrual irregularities, severe PMS or heavy periods</span>
-            </li>
-            <li class="flex items-start gap-3 text-white/90">
-              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span>Perimenopause or menopause symptoms (hot flashes, night sweats)</span>
-            </li>
-            <li class="flex items-start gap-3 text-white/90">
-              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span>Low libido or sexual dysfunction in men or women</span>
-            </li>
-            <li class="flex items-start gap-3 text-white/90">
-              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span>Feeling "burned out", chronic stress, poor sleep, difficulty coping</span>
-            </li>
-            <li class="flex items-start gap-3 text-white/90">
-              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span>Suspected PCOS, fertility concerns or hair loss</span>
-            </li>
-          </ul>
-        </div>
+          ))}
+        </ul>
       </div>
     </div>
   </section>
 
-  <!-- Symptoms / Signs -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
+  <section class="bg-white py-16 lg:py-24">
     <div class="section-shell">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">Signs Your Hormones May Need Attention</h2>
-      </div>
-
-      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-        <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
-          <h3 class="text-xl font-semibold text-emerald-950 mb-4">Women</h3>
-          <ul class="space-y-2">
-            {['Hot flashes or night sweats', 'Severe PMS or PMDD', 'Heavy or irregular periods', 'Anxiety, irritability or mood swings', 'Insomnia or unrefreshing sleep', 'Weight gain especially around the middle', 'Acne, facial hair or hair thinning', 'Low libido or vaginal dryness'].map(symptom => (
-              <li class="flex items-center gap-2 text-slate-700">
-                <Check class="w-4 h-4 text-emerald-600 flex-shrink-0" aria-hidden="true" />
-                {symptom}
-              </li>
-            ))}
-          </ul>
+      <div class="mx-auto max-w-5xl">
+        <div class="mb-10 max-w-3xl">
+          <p class="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-emerald-700">Private testing in Nova Scotia</p>
+          <h2 class="mb-4 text-3xl font-medium text-emerald-950 sm:text-4xl font-serif">How the testing process works</h2>
+          <p class="text-lg leading-relaxed text-slate-600">A family doctor or specialist referral is not required. Testing is selected and reviewed through the naturopathic appointment process.</p>
         </div>
 
-        <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
-          <h3 class="text-xl font-semibold text-emerald-950 mb-4">Men</h3>
-          <ul class="space-y-2">
-            {['Fatigue and low motivation', 'Decreased libido or erectile dysfunction', 'Loss of muscle mass and strength', 'Increased body fat especially abdominal', 'Brain fog and poor concentration', 'Depression or irritability', 'Poor recovery from exercise', 'Sleep disturbances'].map(symptom => (
-              <li class="flex items-center gap-2 text-slate-700">
-                <Check class="w-4 h-4 text-emerald-600 flex-shrink-0" aria-hidden="true" />
-                {symptom}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+        <ol class="grid gap-5 md:grid-cols-3">
+          <li class="rounded-2xl border border-emerald-200 p-6">
+            <span class="mb-5 flex h-10 w-10 items-center justify-center rounded-full bg-emerald-100 font-semibold text-emerald-800">1</span>
+            <h3 class="mb-2 text-lg font-semibold text-emerald-950">Clinical review</h3>
+            <p class="text-sm leading-relaxed text-slate-600">Symptoms, reproductive history, medications, treatment and previous results are reviewed.</p>
+          </li>
+          <li class="rounded-2xl border border-emerald-200 p-6">
+            <span class="mb-5 flex h-10 w-10 items-center justify-center rounded-full bg-emerald-100 font-semibold text-emerald-800">2</span>
+            <h3 class="mb-2 text-lg font-semibold text-emerald-950">Requisition and collection</h3>
+            <p class="text-sm leading-relaxed text-slate-600">A private requisition or collection kit is provided. Costs and timing instructions are confirmed in advance.</p>
+          </li>
+          <li class="rounded-2xl border border-emerald-200 p-6">
+            <span class="mb-5 flex h-10 w-10 items-center justify-center rounded-full bg-emerald-100 font-semibold text-emerald-800">3</span>
+            <h3 class="mb-2 text-lg font-semibold text-emerald-950">Results and follow-up</h3>
+            <p class="text-sm leading-relaxed text-slate-600">Results are reviewed with their limitations. Abnormal findings may require confirmation or referral for medical evaluation.</p>
+          </li>
+        </ol>
 
-  <!-- Nova Scotia Context -->
-  <section class="py-16 lg:py-24 bg-white">
-    <div class="section-shell">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6">Hormone Testing Access in Nova Scotia</h2>
-        <div class="prose prose-lg text-slate-600">
-          <p>
-            Getting comprehensive hormone testing through conventional channels in Nova Scotia is challenging. MSI restricts which hormones can be ordered, endocrinology referrals can take months and many family doctors are limited to basic panels that don't tell the full story.
-          </p>
-          <ul>
-            <li>Progesterone is rarely tested, leaving estrogen dominance undiagnosed</li>
-            <li>Cortisol is tested with a single morning blood draw, missing the daily rhythm</li>
-            <li>Free testosterone and DHEA-S are often not included in standard panels</li>
-            <li>DUTCH testing and advanced hormone metabolite testing are unavailable through MSI</li>
-          </ul>
-          <p>
-            Through our practice, you can access <strong>comprehensive hormone testing without a family doctor requisition</strong>. We help you choose the right testing method, blood, saliva or DUTCH, based on your symptoms and goals and interpret results using optimal functional ranges.
-          </p>
+        <div class="mt-8 flex items-start gap-4 rounded-2xl bg-emerald-50 p-6 sm:items-center sm:justify-between">
+          <p class="max-w-2xl text-sm leading-relaxed text-slate-600">Laboratory testing ordered through a naturopathic doctor is not covered by MSI. Some extended health plans may cover naturopathic appointments, but laboratory coverage varies.</p>
+          <ArrowRight class="hidden h-6 w-6 flex-none text-emerald-700 sm:block" aria-hidden="true" />
         </div>
       </div>
     </div>
@@ -297,24 +275,39 @@ import { X, Check } from '@lucide/astro';
   />
 
   <FAQSection bg="white" items={[
-          { question: "When should hormone testing be done in my cycle?", answer: "<p>Timing depends on which hormones are being tested. Progesterone is best measured during the luteal phase (days 19–21 of the cycle). FSH and LH provide more information when tested early in the cycle (days 2–4). Testosterone and DHEA can be tested at any time. We'll guide you on the optimal timing during your consultation.</p>" },
-          { question: "What's the difference between blood and DUTCH testing?", answer: "<p>Blood testing measures hormone levels at a single point in time and is excellent for sex hormones and DHEA-S. The DUTCH test (dried urine) measures hormones and their metabolites, showing not just how much you produce, but how your body processes and clears hormones. This reveals estrogen metabolism patterns (important for cancer risk), cortisol clearance issues and methylation pathway function. DUTCH is more comprehensive but also more expensive.</p>" },
-          { question: "Can men get hormone testing?", answer: "<p>Absolutely. Men's hormonal health is often overlooked. We test total and free testosterone, DHEA-S, cortisol and estradiol (yes, men produce estrogen too and high levels cause problems). Testosterone levels decline 1–2% per year after 30, and many men in their 40s and 50s experience symptoms that are attributed to aging but are actually treatable hormonal changes.</p>" },
-          { question: "Do I need a referral for hormone testing?", answer: "<p>No. As a naturopathic doctor, I can order comprehensive hormone panels directly, blood, saliva and DUTCH testing. You don't need a family doctor, endocrinologist or any other referral. Many patients come to us specifically because they haven't been able to get the testing they need through conventional channels.</p>" },
-          { question: "What is estrogen dominance?", answer: "<p>Estrogen dominance occurs when estrogen levels are high relative to progesterone. This can happen when estrogen is truly elevated or when progesterone is low. Symptoms include heavy periods, breast tenderness, weight gain, bloating, mood swings, fibroids and increased cancer risk. It's one of the most common hormonal imbalances we see, and it's rarely tested for through conventional channels because progesterone is often not included in standard panels.</p>" },
-        ]} />
+    {
+      question: 'When should hormone testing be done in my menstrual cycle?',
+      answer: '<p>It depends on the question and the marker. If progesterone is being used to assess whether ovulation recently occurred, collection is generally timed about one week before the expected next period, not automatically on days 19–21. FSH, LH and estradiol may require different timing. Instructions are provided before collection.</p>',
+    },
+    {
+      question: 'Do I need a comprehensive hormone panel?',
+      answer: '<p>Usually not. The tests should be selected to answer a defined clinical question. A focused blood panel, collected at the appropriate time and interpreted with the clinical history, is generally more useful than ordering every available hormone marker.</p>',
+    },
+    {
+      question: 'Can hormone testing diagnose adrenal fatigue?',
+      answer: '<p>No. Adrenal fatigue is not a recognized medical diagnosis, and multi-point salivary cortisol profiles have not been validated to diagnose it. Suspected adrenal insufficiency or cortisol excess requires an appropriate medical assessment and established endocrine testing.</p>',
+    },
+    {
+      question: 'How is low testosterone assessed in men?',
+      answer: '<p>A diagnosis requires compatible symptoms or signs together with consistently low testosterone concentrations. Testing generally begins with a morning total testosterone measurement, and a low result is confirmed on a separate morning sample. Additional markers may be needed to investigate the cause.</p>',
+    },
+    {
+      question: 'Do menopause symptoms require hormone testing?',
+      answer: '<p>Often they do not. In otherwise healthy people aged 45 or older with typical symptoms, perimenopause or menopause is usually diagnosed from the clinical history because hormone levels fluctuate. Testing may still be appropriate when the age, symptoms, menstrual history or another possible diagnosis makes the situation less clear.</p>',
+    },
+    {
+      question: 'Do I need a referral for hormone testing?',
+      answer: '<p>No family doctor or specialist referral is required. After reviewing the clinical question, I can arrange appropriate private blood testing or, when justified, a specialized collection kit. Costs are reviewed before proceeding.</p>',
+    },
+  ]} />
 
-  <!-- CTA Section -->
-  <section class="py-16 lg:py-24 bg-emerald-950">
+  <section class="bg-emerald-950 py-16 lg:py-24">
     <div class="section-shell">
-      <div class="text-center max-w-3xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">Ready to Discuss Hormone Testing?</h2>
-        <p class="text-lg text-white/90 mb-8">
-          Book an initial consultation to review your concerns and determine which testing method, if any, is appropriate for you.
-        </p>
+      <div class="mx-auto max-w-3xl text-center">
+        <h2 class="mb-6 text-3xl font-medium text-white sm:text-4xl font-serif">Discuss Whether Hormone Testing Is Appropriate</h2>
+        <p class="mb-8 text-lg leading-relaxed text-white/90">Book an initial consultation to review your concerns, previous results and which hormone markers or testing method, if any, would provide useful information.</p>
         <CTAButton source="hormone-testing-cta" />
       </div>
     </div>
   </section>
-
 </BaseLayout>

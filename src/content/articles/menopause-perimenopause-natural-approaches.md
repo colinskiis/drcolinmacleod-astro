@@ -108,8 +108,6 @@ Blood testing for estradiol, progesterone, FSH and LH can help clarify where a w
 
 Beyond sex hormones, comprehensive assessment often includes thyroid function, as thyroid disorders are common in midlife women and can cause symptoms that overlap with menopause. Adrenal function assessment through cortisol and DHEA testing helps evaluate stress response and adrenal reserve. Metabolic markers including fasting glucose, insulin and lipid panels provide information about cardiovascular and metabolic risk, which increase after menopause.
 
-More detailed hormone testing, such as the DUTCH test (Dried Urine Test for Comprehensive Hormones), can reveal how hormones are being metabolized. This information can identify patterns associated with increased health risks and guide more targeted interventions. For example, certain estrogen metabolites are associated with increased breast cancer risk and identifying unfavorable metabolism patterns allows for dietary and supplement interventions that support healthier metabolism.
-
 Through our [laboratory testing services](/lab-testing/), women in Halifax can access comprehensive hormone assessment without requiring a family doctor's requisition. Results are interpreted not just in terms of whether values fall within laboratory reference ranges, but in terms of what would be optimal for health and symptom relief.
 
 ## When to Seek Help

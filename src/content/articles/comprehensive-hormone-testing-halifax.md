@@ -38,15 +38,13 @@ The cortisol-to-DHEA ratio provides particularly valuable clinical information. 
 
 Testing cortisol presents unique challenges because a single blood draw provides only a snapshot of a hormone that should vary throughout the day. Saliva testing allows for multiple collections (typically upon waking, late morning, afternoon and evening) to assess the cortisol rhythm. This reveals patterns that single-point testing misses: the person whose cortisol is low in the morning (explaining why they can't wake up) but elevated at night (explaining why they can't sleep), or the person with a blunted cortisol response who lacks the normal morning peak that provides energy and alertness.
 
-## Testing Methods: Blood, Saliva and Urine
+## Testing Methods: Blood and Saliva
 
 Different testing methods offer different advantages, and the best choice depends on which hormones are being assessed and what clinical questions need answering.
 
 Blood testing remains the gold standard for most hormones, particularly sex hormones and DHEA-S (the sulfated, storage form of DHEA). Blood tests measure total hormone levels, are widely validated and allow easy comparison to established reference ranges. The limitation is that blood tests provide only a single point-in-time measurement, which matters less for relatively stable hormones but more for cortisol with its daily rhythm.
 
 Saliva testing excels for cortisol assessment because samples can be collected at multiple points throughout the day without requiring repeated blood draws. Saliva also measures "free" (unbound) hormones rather than total levels, which may better reflect what's actually available to tissues. For cortisol rhythm assessment, saliva testing is generally preferable to blood.
-
-Urine testing, particularly the DUTCH (Dried Urine Test for Comprehensive Hormones) test, provides the most detailed hormone assessment available. Beyond measuring hormone levels, it reveals how the body metabolizes hormones. This information can identify cancer-risk pathways in estrogen metabolism, explain why someone with "normal" hormone levels still has symptoms and guide more targeted interventions. The tradeoff is greater complexity and cost.<sup>5</sup>
 
 We discuss the advantages and limitations of each approach during consultation, helping you determine which testing method best fits your clinical situation and budget.
 
@@ -72,7 +70,7 @@ Testing is particularly valuable when symptoms have been dismissed or attributed
 
 Comprehensive hormone testing begins with an initial consultation where we review your symptoms, health history and goals. This conversation guides which tests will be most informative for your situation. Hormone imbalances rarely occur in isolation. Understanding the full picture often requires considering sex hormones, adrenal function, thyroid status and sometimes related factors like blood sugar regulation and inflammation.
 
-After determining appropriate testing, you receive requisitions for sample collection. Blood tests are collected at partner laboratories in Halifax. Saliva and urine tests are collected at home following specific instructions regarding timing. Results typically return within five to seven business days for standard blood work, or two to three weeks for specialty panels like the DUTCH test.
+After determining appropriate testing, you receive a requisition or collection instructions. Blood tests are collected at partner laboratories in Halifax, while saliva samples are collected at home when there is a specific indication for that method. Turnaround time depends on the tests ordered and is reviewed before proceeding.
 
 Once results are available, we schedule a follow-up to review findings together. You'll understand not just what your numbers are, but what they mean in the context of your symptoms and health goals. From this understanding, we develop actionable recommendations, whether dietary changes, targeted supplementation, stress management strategies or in some cases referral for hormone replacement therapy.
 

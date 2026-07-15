@@ -63,16 +63,6 @@ For comprehensive stool analysis:
 - Follow collection kit instructions carefully
 - Samples must be collected and returned within the timeframe specified
 
-## At-Home Collection Tests
-
-For saliva or urine hormone tests (like the DUTCH test):
-
-- Read all instructions before beginning collection
-- Note the specific timing requirements for each sample
-- Store samples as directed (some require refrigeration)
-- Complete the collection within the specified timeframe
-- Ship samples promptly using the provided materials
-
 ## After Your Blood Draw
 
 - Keep the bandage on for at least 15-30 minutes
@@ -83,7 +73,6 @@ For saliva or urine hormone tests (like the DUTCH test):
 ## Results Timeline
 
 - **Standard blood work:** 5-7 business days
-- **Specialty hormone panels (DUTCH):** 2-3 weeks
 - **Comprehensive stool analysis:** 2-3 weeks
 - **Food sensitivity panels:** 2-3 weeks
 
