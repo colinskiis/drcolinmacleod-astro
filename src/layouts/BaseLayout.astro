@@ -5,7 +5,7 @@ import playfairWoff2 from '@fontsource/playfair-display/files/playfair-display-l
 import { ClientRouter } from 'astro:transitions';
 import Search from '../components/Search.astro';
 import MedicalDisclaimer from '../components/MedicalDisclaimer.astro';
-import { Calendar, Menu, X, ChevronDown, ChevronRight, MapPin, Phone } from '@lucide/astro';
+import { Calendar, Menu, X, ChevronDown, ChevronRight, MapPin, Phone, Search as SearchIcon } from '@lucide/astro';
 
 export interface Props {
   title: string;
@@ -208,7 +208,7 @@ const medicalBusinessSchema = JSON.stringify({
   },
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "1378 Bedford Highway",
+    "streetAddress": "1378 Bedford Highway, Unit 1",
     "addressLocality": "Bedford",
     "addressRegion": "Nova Scotia",
     "postalCode": "B4A 1E2",
@@ -331,7 +331,7 @@ const personSchema = JSON.stringify({
     "url": "https://drcolinmacleod.com",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "1378 Bedford Highway",
+      "streetAddress": "1378 Bedford Highway, Unit 1",
       "addressLocality": "Bedford",
       "addressRegion": "Nova Scotia",
       "postalCode": "B4A 1E2",
@@ -343,7 +343,7 @@ const personSchema = JSON.stringify({
     "name": "Optimal Wellbeing Clinic",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "1378 Bedford Highway",
+      "streetAddress": "1378 Bedford Highway, Unit 1",
       "addressLocality": "Bedford",
       "addressRegion": "Nova Scotia",
       "postalCode": "B4A 1E2",
@@ -705,7 +705,17 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
               </a>
             </div>
 
-            <div class="mt-6 border-t border-emerald-800/70 pt-6">
+            <button
+              type="button"
+              data-search-toggle
+              class="mt-4 flex min-h-12 w-full items-center gap-3 rounded-lg border border-emerald-800/70 px-3 py-3 text-left text-base font-medium text-emerald-100 transition-colors hover:border-emerald-700 hover:bg-emerald-700/20 hover:text-white focus:outline-none focus:ring-2 focus:ring-emerald-400"
+              aria-label="Search this site"
+            >
+              <SearchIcon class="w-5 h-5 flex-none text-emerald-300" aria-hidden="true" />
+              <span>Search this site</span>
+            </button>
+
+            <div class="mt-5 border-t border-emerald-800/70 pt-5">
               <a
                 href="https://macleodnaturopathic.janeapp.com/"
                 target="_blank"
@@ -724,7 +734,7 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
                 </a>
                 <a href="/contact/" class="flex min-h-11 items-start gap-3 rounded-lg px-3 py-2 transition-colors hover:bg-emerald-700/20 hover:text-white focus:outline-none focus:ring-2 focus:ring-emerald-400">
                   <MapPin class="mt-0.5 w-5 h-5 flex-none text-emerald-300" aria-hidden="true" />
-                  <span>1378 Bedford Highway, Bedford</span>
+                  <span>1378 Bedford Highway, Unit 1, Bedford</span>
                 </a>
               </div>
             </div>
@@ -739,7 +749,6 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
         const mobileMenu = document.getElementById('mobile-menu');
         const menuIcon = document.getElementById('menu-icon');
         const closeIcon = document.getElementById('close-icon');
-        const bookBar = document.getElementById('mobile-book-bar');
         const headerNav = document.querySelector('#site-header nav');
         const mainContent = document.getElementById('main-content');
         const footer = document.querySelector('footer');
@@ -758,7 +767,6 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
           document.body.style.overflow = '';
           mainContent?.removeAttribute('inert');
           footer?.removeAttribute('inert');
-          if (bookBar) bookBar.style.display = '';
         }
 
         function openMenu() {
@@ -774,7 +782,6 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
           document.body.style.overflow = 'hidden';
           mainContent?.setAttribute('inert', '');
           footer?.setAttribute('inert', '');
-          if (bookBar) bookBar.style.display = 'none';
 
           const firstLink = mobileMenu.querySelector<HTMLElement>('a[href]');
           firstLink?.focus();
@@ -864,7 +871,7 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
               <div class="text-emerald-800 space-y-2">
                 <div class="space-y-0.5">
                   <p class="font-medium">Optimal Wellbeing Clinic</p>
-                  <p>1378 Bedford Highway</p>
+                  <p>1378 Bedford Highway, Unit 1</p>
                   <p>Bedford, NS B4A 1E2</p>
                 </div>
                 <a href="tel:+19024064424" class="inline-flex items-center py-2 -my-1 text-emerald-800 font-semibold hover:text-emerald-950">
@@ -902,26 +909,6 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
       </div>
     </footer>
 
-    <!-- Context-aware mobile booking shortcut -->
-    <div
-      id="mobile-book-bar"
-      class="xl:hidden fixed left-1/2 bottom-[calc(0.75rem+env(safe-area-inset-bottom))] z-40 -translate-x-1/2 translate-y-4 opacity-0 pointer-events-none transition-all duration-300 ease-out"
-      transition:persist
-      aria-hidden="true"
-      inert
-    >
-      <a
-        href="https://macleodnaturopathic.janeapp.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="booking-btn inline-flex min-h-12 items-center justify-center gap-2 whitespace-nowrap rounded-full border border-white/70 bg-emerald-400 px-7 py-3 text-emerald-950 font-semibold shadow-[0_8px_28px_rgba(2,44,34,0.22)] hover:bg-emerald-300 active:scale-[0.98] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2"
-        data-booking-source="mobile-sticky"
-      >
-        <Calendar class="w-5 h-5" aria-hidden="true" />
-        Book Online
-      </a>
-    </div>
-
     <!-- Scroll-triggered reveal animations & header scroll effect -->
     <script>
       function initRevealObserver() {
@@ -941,68 +928,6 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
       }
 
       let scrollAbortController: AbortController | null = null;
-      let mobileBookAbortController: AbortController | null = null;
-      let mobileBookObserver: IntersectionObserver | null = null;
-
-      function initMobileBookBar() {
-        mobileBookAbortController?.abort();
-        mobileBookObserver?.disconnect();
-        mobileBookAbortController = new AbortController();
-
-        const bar = document.getElementById('mobile-book-bar');
-        if (!bar) return;
-
-        const pageBookingLinks = Array.from(document.querySelectorAll(
-          '[data-booking-source]:not([data-booking-source="mobile-sticky"])'
-        ));
-        const competingElements = Array.from(new Set([
-          ...pageBookingLinks.map((link) => link.closest('section') || link),
-          document.getElementById('site-footer'),
-        ].filter((element): element is Element => element instanceof Element)));
-        const visibleCompetingElements = new Set<Element>();
-        let observerReady = competingElements.length === 0;
-
-        function updateBookBar() {
-          const menuOpen = document.getElementById('mobile-menu-button')?.getAttribute('aria-expanded') === 'true';
-          const pastOpeningArea = window.scrollY > Math.max(320, window.innerHeight * 0.55);
-          const shouldShow = observerReady && pastOpeningArea && !menuOpen && visibleCompetingElements.size === 0;
-
-          bar?.classList.toggle('opacity-100', shouldShow);
-          bar?.classList.toggle('translate-y-0', shouldShow);
-          bar?.classList.toggle('pointer-events-auto', shouldShow);
-          bar?.classList.toggle('opacity-0', !shouldShow);
-          bar?.classList.toggle('translate-y-4', !shouldShow);
-          bar?.classList.toggle('pointer-events-none', !shouldShow);
-          bar?.setAttribute('aria-hidden', shouldShow ? 'false' : 'true');
-          bar?.toggleAttribute('inert', !shouldShow);
-        }
-
-        if (competingElements.length) {
-          mobileBookObserver = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) visibleCompetingElements.add(entry.target);
-              else visibleCompetingElements.delete(entry.target);
-            });
-            observerReady = true;
-            updateBookBar();
-          }, { threshold: 0.05 });
-          competingElements.forEach((element) => mobileBookObserver?.observe(element));
-        }
-
-        window.addEventListener('scroll', updateBookBar, {
-          passive: true,
-          signal: mobileBookAbortController.signal,
-        });
-        window.addEventListener('resize', updateBookBar, {
-          passive: true,
-          signal: mobileBookAbortController.signal,
-        });
-        document.getElementById('mobile-menu-button')?.addEventListener('click', () => {
-          requestAnimationFrame(updateBookBar);
-        }, { signal: mobileBookAbortController.signal });
-        updateBookBar();
-      }
-
       function initHeaderScroll() {
         // Abort previous listener so it doesn't reference a stale header element
         // after View Transitions replace the DOM.
@@ -1027,11 +952,9 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
 
       initRevealObserver();
       initHeaderScroll();
-      initMobileBookBar();
       document.addEventListener('astro:page-load', () => {
         initRevealObserver();
         initHeaderScroll();
-        initMobileBookBar();
       });
     </script>
 

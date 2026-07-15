@@ -6,7 +6,8 @@ import { Search as SearchIcon, X } from '@lucide/astro';
 <div class="relative" id="search-container">
   <button
     id="search-toggle"
-    class="p-3 rounded-full border border-white/25 text-white hover:bg-white/10 transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-emerald-950"
+    data-search-toggle
+    class="hidden xl:flex p-3 rounded-full border border-white/25 text-white hover:bg-white/10 transition-colors min-w-[44px] min-h-[44px] items-center justify-center focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-emerald-950"
     aria-label="Search (Press Ctrl+K)"
     title="Search (Ctrl+K)"
   >
@@ -154,12 +155,18 @@ import { Search as SearchIcon, X } from '@lucide/astro';
 
     setupEventListeners() {
       const signal = this.abortController.signal;
-      const searchToggle = document.getElementById('search-toggle');
+      const searchToggles = Array.from(document.querySelectorAll<HTMLElement>('[data-search-toggle]'));
       const searchOverlay = document.getElementById('search-overlay');
       const searchClose = document.getElementById('search-close');
       const searchInput = document.getElementById('search-input') as HTMLInputElement | null;
+      let activeToggle: HTMLElement | null = null;
 
-      const openSearch = () => {
+      const openSearch = (toggle?: HTMLElement | null) => {
+        activeToggle = toggle || activeToggle;
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        if (mobileMenuButton?.getAttribute('aria-expanded') === 'true') {
+          mobileMenuButton.click();
+        }
         searchOverlay?.classList.remove('hidden');
         searchInput?.focus();
         document.body.style.overflow = 'hidden';
@@ -171,10 +178,16 @@ import { Search as SearchIcon, X } from '@lucide/astro';
         this.clearResults();
         this.selectedIndex = -1;
         document.body.style.overflow = '';
-        searchToggle?.focus();
+        if (activeToggle?.closest('#mobile-menu')) {
+          document.getElementById('mobile-menu-button')?.focus();
+        } else {
+          activeToggle?.focus();
+        }
       };
 
-      searchToggle?.addEventListener('click', openSearch, { signal });
+      searchToggles.forEach((toggle) => {
+        toggle.addEventListener('click', () => openSearch(toggle), { signal });
+      });
       searchClose?.addEventListener('click', closeSearch, { signal });
 
       searchOverlay?.addEventListener('click', (e) => {
@@ -203,7 +216,7 @@ import { Search as SearchIcon, X } from '@lucide/astro';
       document.addEventListener('keydown', (e) => {
         if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
           e.preventDefault();
-          searchOverlay?.classList.contains('hidden') ? openSearch() : closeSearch();
+          searchOverlay?.classList.contains('hidden') ? openSearch(document.getElementById('search-toggle')) : closeSearch();
         }
         if (e.key === 'Escape' && !searchOverlay?.classList.contains('hidden')) {
           closeSearch();
