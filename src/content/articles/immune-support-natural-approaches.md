@@ -48,7 +48,7 @@ If you experience frequent colds or infections, infections that linger or are di
 
 ## Immune Support in Halifax
 
-If you are interested in optimizing your immune function or are experiencing recurrent infections, please contact Dr. Colin MacLeod, ND to book an initial naturopathic visit to discuss your options. If you're struggling with fatigue following a viral illness, see our guide on [post-viral recovery with IV therapy](/articles/post-viral-recovery-iv-therapy).
+If you are interested in optimizing your immune function or are experiencing recurrent infections, please contact Dr. Colin MacLeod, ND to book an initial naturopathic visit to discuss your options. If you're struggling with fatigue following a viral illness, see our guide on [post-viral recovery with IV therapy](/articles/post-viral-recovery-iv-therapy/).
 
 ### References
 

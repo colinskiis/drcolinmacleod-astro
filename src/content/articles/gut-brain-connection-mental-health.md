@@ -103,7 +103,7 @@ Probiotics show the most promise as part of a comprehensive approach rather than
 
 ### Stress Management
 
-Given the bidirectional relationship, stress management supports gut health just as gut support aids stress resilience. Chronic stress disrupts gut barrier function, sometimes called "leaky gut." Stress also alters gut bacteria composition. Mind-body practices like meditation may benefit gut health, and [adequate sleep](/articles/sleep-optimization-evidence-based-strategies) supports a healthy microbiome.
+Given the bidirectional relationship, stress management supports gut health just as gut support aids stress resilience. Chronic stress disrupts gut barrier function, sometimes called "leaky gut." Stress also alters gut bacteria composition. Mind-body practices like meditation may benefit gut health, and [adequate sleep](/articles/sleep-optimization-evidence-based-strategies/) supports a healthy microbiome.
 
 ### Addressing Gut Dysfunction
 
@@ -133,7 +133,7 @@ An integrative approach might include dietary optimization for gut-brain health,
 
 If you're experiencing digestive symptoms alongside mood concerns, or if you're interested in optimizing your gut health for overall wellbeing, please contact Dr. Colin MacLeod, ND to book an initial visit.
 
-Dr. MacLeod offers comprehensive [digestive health](/articles/digestive-health-natural-approaches) assessment including stool testing and can help develop a personalized plan addressing both gut function and its effects on whole-body health.
+Dr. MacLeod offers comprehensive [digestive health](/articles/digestive-health-natural-approaches/) assessment including stool testing and can help develop a personalized plan addressing both gut function and its effects on whole-body health.
 
 ### References
 

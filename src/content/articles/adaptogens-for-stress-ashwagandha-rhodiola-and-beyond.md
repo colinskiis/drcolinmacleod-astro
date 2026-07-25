@@ -118,7 +118,7 @@ Give adaptogens time to work. They typically work gradually rather than immediat
 
 Adaptogens can be helpful tools for stress management, but they're not a replacement for addressing the sources of stress or building sustainable coping strategies.
 
-The most effective approach combines lifestyle modification including [quality sleep](/articles/sleep-optimization-evidence-based-strategies), exercise and nutrition with stress management practices such as meditation, breathing exercises and time in nature. Appropriate supplementation when indicated and professional support for significant stress or anxiety round out a comprehensive approach.
+The most effective approach combines lifestyle modification including [quality sleep](/articles/sleep-optimization-evidence-based-strategies/), exercise and nutrition with stress management practices such as meditation, breathing exercises and time in nature. Appropriate supplementation when indicated and professional support for significant stress or anxiety round out a comprehensive approach.
 
 ## Adaptogen Support in Halifax
 

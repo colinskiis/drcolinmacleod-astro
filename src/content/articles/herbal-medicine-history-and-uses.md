@@ -75,7 +75,7 @@ Today, herbal medicine occupies a middle ground, more researched than many reali
 
 ### Adaptogens: A Growing Research Area
 
-Adaptogens, herbs that help the body adapt to stress, represent a particularly active research area. Modern research on [adaptogens like ashwagandha and rhodiola](/articles/adaptogens-for-stress-ashwagandha-rhodiola-and-beyond) validates traditional uses for stress resilience, energy and cognitive function.
+Adaptogens, herbs that help the body adapt to stress, represent a particularly active research area. Modern research on [adaptogens like ashwagandha and rhodiola](/articles/adaptogens-for-stress-ashwagandha-rhodiola-and-beyond/) validates traditional uses for stress resilience, energy and cognitive function.
 
 **Ashwagandha** has demonstrated cortisol-lowering effects, anxiety reduction and improvements in stress-related parameters in multiple clinical trials<sup>16</sup>.
 

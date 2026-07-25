@@ -72,7 +72,7 @@ Emerging research has identified significant differences in gut bacteria composi
 
 Gut bacteria affect how we metabolize and recycle hormones, including estrogens and androgens. Dysbiosis (imbalanced gut bacteria) promotes intestinal permeability, sometimes called "leaky gut," which drives inflammation. The microbiome also influences insulin sensitivity and metabolic health. Certain gut bacteria produce compounds that affect appetite, blood sugar regulation and fat storage.
 
-This gut-hormone connection explains why women with PCOS often experience digestive symptoms and why addressing gut health can improve hormonal balance. For more on this topic, see my article on [the gut-brain connection](/articles/gut-brain-connection-mental-health).
+This gut-hormone connection explains why women with PCOS often experience digestive symptoms and why addressing gut health can improve hormonal balance. For more on this topic, see my article on [the gut-brain connection](/articles/gut-brain-connection-mental-health/).
 
 ### Adrenal Androgen Production
 
@@ -108,13 +108,13 @@ Good protein sources include fish and seafood, poultry, eggs, legumes (lentils, 
 
 Dietary fiber is particularly important in PCOS for several reasons. Fiber slows glucose absorption, improving blood sugar control. Soluble fiber binds excess hormones in the gut, aiding their elimination. Fiber feeds beneficial gut bacteria, supporting microbiome health. High-fiber foods are typically lower glycemic and more satiating.
 
-Most women should aim for at least 25-30 grams of fiber daily from vegetables, legumes, whole grains, nuts, seeds and fruits. For more on fiber's benefits, see my article on [fiber and gut health](/articles/fiber-the-underrated-nutrient).
+Dietary guidelines encourage fiber-rich foods such as vegetables, legumes, whole grains, nuts, seeds and fruit. Individual needs vary, particularly where digestive conditions are present. For more on fiber's benefits, see my article on [fiber and gut health](/articles/fiber-the-underrated-nutrient/).
 
 ### Dairy Considerations
 
 The relationship between dairy and PCOS is complex. Some research suggests dairy may worsen insulin resistance and androgen levels in some women, possibly due to hormones present in milk or dairy's effects on insulin-like growth factor (IGF-1)<sup>8</sup>.
 
-I recommend an individualized approach. Some women with PCOS do well with moderate dairy consumption, while others notice improvement in their skin and cycles when they reduce or eliminate it. A trial elimination period of 3-4 weeks can help determine your individual response.
+Some women report differences in symptoms when changing dairy intake, but evidence does not justify a routine elimination diet for everyone with PCOS. Dietary changes should consider nutritional adequacy and the individual's overall pattern.
 
 ## Lifestyle Interventions
 
@@ -124,7 +124,7 @@ Regular physical activity is one of the most effective interventions for PCOS. E
 
 Both aerobic exercise and resistance training provide benefits. Resistance training builds muscle mass, which improves metabolic rate and insulin sensitivity. Aerobic exercise directly improves cardiovascular health and insulin sensitivity. High-intensity interval training (HIIT) has shown particularly promising results for improving insulin sensitivity in women with PCOS, though any sustainable exercise routine is beneficial.
 
-The key is consistency. Aim for at least 150 minutes of moderate exercise weekly, including both cardiovascular and strength components. Find activities you enjoy, as you are more likely to maintain them long-term.
+General physical-activity guidelines commonly include both aerobic and strengthening activity, but the appropriate amount and intensity depend on current health, fitness and any medical limitations.
 
 ### Sleep and Circadian Health
 
@@ -132,7 +132,7 @@ Sleep quality significantly affects PCOS. Poor sleep worsens insulin resistance,
 
 Prioritize 7-9 hours of quality sleep nightly. Maintain consistent sleep and wake times. Limit screen exposure in the evening. Keep the bedroom cool and dark. Address sleep apnea if present, as treatment can improve PCOS symptoms.
 
-For more on optimizing sleep, see my article on [evidence-based sleep strategies](/articles/sleep-optimization-evidence-based-strategies).
+For more on optimizing sleep, see my article on [evidence-based sleep strategies](/articles/sleep-optimization-evidence-based-strategies/).
 
 ### Stress Management
 
@@ -156,13 +156,13 @@ Inositol, particularly myo-inositol and D-chiro-inositol, has become one of the 
 
 Research shows inositol supplementation can improve insulin sensitivity, reduce androgens, promote more regular ovulation and support fertility<sup>12</sup>. A combination of myo-inositol and D-chiro-inositol in a 40:1 ratio appears to be most effective, as this mimics the physiological ratio found in the body.
 
-Typical dosing is 2-4 grams of myo-inositol daily, often combined with 50-100mg of D-chiro-inositol. Benefits typically emerge within 2-3 months of consistent use.
+Trials have used different inositol forms, ratios and doses, and results are not uniform. Product selection should account for the person's goals, other treatment and the limitations of the evidence.
 
 ### Berberine
 
-Berberine is a plant compound with remarkable insulin-sensitizing effects. Studies have found it comparable to metformin for improving insulin sensitivity and metabolic markers in PCOS<sup>13</sup>. I have written more extensively about [berberine's metabolic effects](/articles/berberine-natures-ozempic) in another article.
+Berberine is a plant compound with remarkable insulin-sensitizing effects. Studies have found it comparable to metformin for improving insulin sensitivity and metabolic markers in PCOS<sup>13</sup>. I have written more extensively about [berberine's metabolic effects](/articles/berberine-natures-ozempic/) in another article.
 
-Berberine may reduce fasting glucose and insulin levels, improve lipid profiles, support weight management and reduce androgen levels. Typical dosing is 500mg two to three times daily with meals. Berberine can interact with certain medications, so professional guidance is recommended.
+Berberine has been studied for metabolic outcomes, but study quality and product formulations vary. It can interact with medications and is not suitable in some circumstances, so the evidence does not support a general public dosing instruction.
 
 ### N-Acetyl Cysteine (NAC)
 
@@ -170,7 +170,7 @@ NAC is an antioxidant that also improves insulin sensitivity and reduces androge
 
 ### Omega-3 Fatty Acids
 
-Fish oil supplementation reduces inflammation, improves insulin sensitivity and may help with the depression and anxiety that often accompany PCOS<sup>15</sup>. Aim for 2-3 grams of combined EPA and DHA daily from quality fish oil.
+Omega-3 supplements have been studied for metabolic and inflammatory markers in PCOS, with mixed results.<sup>15</sup> Suitability and dose depend on dietary intake, medications, bleeding risk and the formulation.
 
 ### Vitamin D
 
@@ -178,7 +178,7 @@ Vitamin D deficiency is common in women with PCOS and associated with worse meta
 
 ### Magnesium
 
-Magnesium is involved in glucose metabolism and is often depleted in insulin-resistant states. Supplementation may improve insulin sensitivity and reduce inflammation. For more on [magnesium's benefits](/articles/magnesium-the-natural-muscle-relaxer), see my related article.
+Magnesium is involved in glucose metabolism and is often depleted in insulin-resistant states. Supplementation may improve insulin sensitivity and reduce inflammation. For more on [magnesium's benefits](/articles/magnesium-the-natural-muscle-relaxer/), see my related article.
 
 ## When to Seek Additional Support
 

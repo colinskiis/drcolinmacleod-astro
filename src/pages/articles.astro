@@ -84,7 +84,7 @@ const collectionSchema = {
         <div id="article-list">
         {sortedArticles.map((article) => (
           <a
-            href={`/articles/${article.slug}`}
+            href={`/articles/${article.slug}/`}
             data-article-search-item
             data-article-slug={article.slug}
             class="group flex items-center gap-4 py-5 border-b border-slate-100 last:border-0 -mx-4 px-4 rounded-lg hover:bg-emerald-50/50 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-inset"

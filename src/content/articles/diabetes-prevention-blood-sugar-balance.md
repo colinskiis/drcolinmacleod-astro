@@ -94,7 +94,7 @@ For those with known prediabetes or diabetes, regular monitoring helps track pro
 
 ## Natural Compounds and Metabolic Support
 
-Research continues to explore how various natural compounds affect blood sugar regulation. I've written previously about [berberine, which has received attention for its effects on blood sugar and metabolic health](/articles/berberine-natures-ozempic). This research into plant compounds illustrates both the potential and limitations of natural approaches, showing meaningful effects in studies while also highlighting that such compounds work best as part of comprehensive lifestyle strategies rather than as standalone interventions.
+Research continues to explore how various natural compounds affect blood sugar regulation. I've written previously about [berberine, which has received attention for its effects on blood sugar and metabolic health](/articles/berberine-natures-ozempic/). This research into plant compounds illustrates both the potential and limitations of natural approaches, showing meaningful effects in studies while also highlighting that such compounds work best as part of comprehensive lifestyle strategies rather than as standalone interventions.
 
 Various nutrients play roles in blood sugar regulation. Chromium participates in insulin signaling, and some research suggests supplementation may benefit those with deficiency. Magnesium is involved in hundreds of enzymatic reactions including those related to glucose metabolism, and inadequate magnesium status is associated with increased diabetes risk<sup>11</sup>. Alpha-lipoic acid, bitter melon and cinnamon have all been studied for potential blood sugar effects, with varying levels of evidence.
 

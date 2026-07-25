@@ -35,7 +35,7 @@ Surgical treatment may include arthrocentesis, which involves draining excess fl
 
 Prolotherapy has been used as a treatment for temporomandibular joint (TMJ) dysfunction. Prolotherapy is an injection of a concentrated dextrose (sugar) solution into an affected joint, which stimulates the body to repair connective tissue and strengthen the joint. It can be used to reduce pain and improve joint function.
 
-Prolotherapy is an effective treatment for reducing pain and improving range of motion in TMJ dysfunction and has an excellent safety profile<sup>1-5</sup>.
+Prolotherapy has been studied for TMJ pain and range of motion, but the evidence is limited and does not guarantee individual benefit.<sup>1-5</sup> Injection-related and anatomical-area-specific risks require assessment and informed consent.
 
 ### References
 

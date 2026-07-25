@@ -11,7 +11,7 @@ seo:
 
 ![Sacroiliac joint pain](/images/conditions/low-back-pain.webp)
 
-Sacroiliac (SI) joint dysfunction is one of the most frequently overlooked causes of low back and buttock pain, estimated to account for 15 to 30% of chronic low back pain cases.<sup>1</sup> The sacroiliac joints connect the sacrum (the triangular bone at the base of the spine) to the ilium bones of the pelvis on each side. These joints are held together primarily by strong ligaments and bear the significant task of transferring load between the spine and the lower limbs. When the ligaments supporting the SI joint become lax or damaged, or when the joint itself becomes inflamed or degenerated, pain and instability can result. Because SI joint pain can mimic disc herniation, hip pathology and other causes of [low back pain](/low-back-pain), it is commonly missed in conventional diagnostic workups.
+Sacroiliac (SI) joint dysfunction is one of the most frequently overlooked causes of low back and buttock pain, estimated to account for 15 to 30% of chronic low back pain cases.<sup>1</sup> The sacroiliac joints connect the sacrum (the triangular bone at the base of the spine) to the ilium bones of the pelvis on each side. These joints are held together primarily by strong ligaments and bear the significant task of transferring load between the spine and the lower limbs. When the ligaments supporting the SI joint become lax or damaged, or when the joint itself becomes inflamed or degenerated, pain and instability can result. Because SI joint pain can mimic disc herniation, hip pathology and other causes of [low back pain](/low-back-pain/), it is commonly missed in conventional diagnostic workups.
 
 ## Causes of SI Joint Dysfunction
 
@@ -77,7 +77,7 @@ Because ligament laxity is a primary driver of SI joint dysfunction in many pati
 
 **Prolotherapy** involves injecting a concentrated dextrose solution at the ligament attachment sites around the SI joint. This triggers a controlled healing response, promoting the proliferation of new collagen and strengthening the ligamentous support of the joint. Prolotherapy for SI joint dysfunction is among the more thoroughly studied applications of this treatment. Clinical research has demonstrated significant and sustained improvements in pain and function following a course of SI joint prolotherapy.<sup>3,4</sup> For patients whose primary problem is instability rather than degeneration alone, this addresses the root cause rather than simply masking symptoms. Learn more about [prolotherapy and its applications](/prolotherapy-for-arthritis/).
 
-If you are experiencing one-sided low back or buttock pain that has not responded to standard treatment, or if you have been told your imaging is normal despite ongoing pain, SI joint dysfunction may be the underlying cause. This condition is also discussed in the context of broader [low back pain](/low-back-pain) management and [sports medicine](/sports-medicine/) care at Optimal Wellbeing Clinic.
+If you are experiencing one-sided low back or buttock pain that has not responded to standard treatment, or if you have been told your imaging is normal despite ongoing pain, SI joint dysfunction may be the underlying cause. This condition is also discussed in the context of broader [low back pain](/low-back-pain/) management and [sports medicine](/sports-medicine/) care at Optimal Wellbeing Clinic.
 
 ### References
 

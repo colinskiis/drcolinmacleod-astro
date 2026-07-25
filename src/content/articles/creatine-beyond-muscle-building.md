@@ -34,7 +34,7 @@ Creatine is one of the most studied supplements in sports nutrition, with decade
 
 Here's where things get interesting. Creatine can cross the blood-brain barrier, and your brain requires significant amounts of energy to function optimally. Researchers have begun exploring whether creatine supplementation might benefit cognitive function.
 
-A 2024 meta-analysis of 16 studies published in *Frontiers in Nutrition* concluded that creatine supplementation may improve memory, attention and information processing in adults<sup>2</sup>. One particularly interesting study found that a single dose of creatine improved cognitive performance in [sleep-deprived](/articles/sleep-optimization-evidence-based-strategies) individuals<sup>3</sup>. When you haven't slept well, your brain's energy reserves are depleted and creatine appears to help compensate.
+A 2024 meta-analysis of 16 studies published in *Frontiers in Nutrition* concluded that creatine supplementation may improve memory, attention and information processing in adults<sup>2</sup>. One particularly interesting study found that a single dose of creatine improved cognitive performance in [sleep-deprived](/articles/sleep-optimization-evidence-based-strategies/) individuals<sup>3</sup>. When you haven't slept well, your brain's energy reserves are depleted and creatine appears to help compensate.
 
 The mechanism involves creatine helping to regenerate ATP in neurons with increased energy demands. When your brain is working hard, whether solving complex problems, dealing with stress or functioning on inadequate sleep, creatine may help maintain the energy supply your neurons need.
 

@@ -42,7 +42,7 @@ Factors that lower SHBG include insulin resistance, high sugar intake, obesity, 
 
 Insulin resistance is a major contributor to hormonal acne that is often overlooked. When cells become resistant to insulin, the body produces more insulin to compensate. Elevated insulin directly stimulates androgen production from the ovaries, reduces SHBG levels (increasing free testosterone), stimulates sebum production directly and promotes inflammation.
 
-This insulin-acne connection explains why dietary changes can be so effective for hormonal acne, and why women with polycystic ovary syndrome (PCOS), characterized by insulin resistance, so frequently struggle with acne. For more on the PCOS connection, see my article on [natural approaches to PCOS](/articles/pcos-natural-approaches).
+This insulin-acne connection explains why dietary changes can be so effective for hormonal acne, and why women with polycystic ovary syndrome (PCOS), characterized by insulin resistance, so frequently struggle with acne. For more on the PCOS connection, see my article on [natural approaches to PCOS](/articles/pcos-natural-approaches/).
 
 ### Estrogen and Progesterone
 
@@ -114,11 +114,11 @@ Beyond high glycemic foods and dairy, other dietary factors may worsen acne for 
 
 Zinc is one of the most well-studied nutrients for acne. It reduces inflammation, inhibits the growth of acne-causing bacteria, reduces androgen effects and supports skin healing. Multiple studies show zinc supplementation reduces acne lesions<sup>7</sup>.
 
-Zinc picolinate or zinc citrate are well-absorbed forms. Typical doses range from 30-50mg daily. Taking zinc with food reduces nausea, a common side effect. Long-term zinc supplementation should be balanced with copper to prevent deficiency.
+Zinc has been studied in several forms and doses, but supplementation can cause nausea, interact with other minerals and produce copper deficiency when used excessively or long term. Product choice and dose require individual review rather than a website recommendation.
 
 ### Omega-3 Fatty Acids
 
-Fish oil reduces inflammation and may help modulate sebum composition. Some studies show improvement in acne with omega-3 supplementation<sup>8</sup>. Typical doses are 2-3 grams of combined EPA and DHA daily.
+Fish oil has anti-inflammatory effects, and small studies have examined omega-3 supplementation for acne.<sup>8</sup> The evidence is preliminary, and suitability depends on diet, medications, bleeding risk and the product used.
 
 ### Probiotics
 
@@ -128,23 +128,21 @@ Strains studied for skin health include Lactobacillus rhamnosus, Lactobacillus a
 
 ### DIM (Diindolylmethane)
 
-DIM is a compound derived from cruciferous vegetables that supports healthy estrogen metabolism and may help reduce androgen activity. It is particularly useful for women whose acne worsens premenstrually or who have signs of estrogen dominance.
-
-Typical doses are 100-200mg daily. DIM is best taken with food for absorption.
+DIM is a compound derived from cruciferous vegetables that is marketed for estrogen metabolism and androgen-related symptoms. Direct evidence for acne is limited, and it should not be recommended from symptoms alone without reviewing hormone-related concerns and potential interactions.
 
 ### Spearmint Tea
 
-Spearmint has anti-androgen effects. Studies show that drinking spearmint tea twice daily can reduce free testosterone levels and improve symptoms of excess androgens, including acne and hirsutism<sup>10</sup>. This is a simple, safe intervention worth trying.
+Small studies have examined spearmint tea and androgen measures, but they do not establish it as an acne treatment.<sup>10</sup> “Natural” products can still have adverse effects or be inappropriate for some people.
 
 ### Vitamin A
 
 Vitamin A regulates skin cell turnover and sebum production. While prescription retinoids are powerful acne treatments, oral vitamin A supplementation may provide milder benefits. However, vitamin A must be used cautiously as it can be toxic in excess and is contraindicated in pregnancy.
 
-For most people, eating vitamin A-rich foods (liver, egg yolks, orange vegetables) and taking moderate-dose supplements (5,000-10,000 IU daily) is safe and potentially helpful.
+Food sources of vitamin A contribute to normal skin function. Supplemental vitamin A can accumulate and cause toxicity, and it presents particular risks during pregnancy; no dose should be selected from general website information.
 
 ### Berberine
 
-For acne driven by insulin resistance, berberine is a powerful insulin-sensitizing supplement. By improving insulin sensitivity and reducing insulin levels, berberine can decrease androgen production and improve acne. For more on berberine, see my article on [berberine's metabolic effects](/articles/berberine-natures-ozempic).
+Berberine affects glucose metabolism and can interact with medications, but direct evidence for treating acne is insufficient. It should not be inferred to be appropriate from an acne pattern alone. For more context, see my article on [berberine's metabolic effects](/articles/berberine-natures-ozempic/).
 
 ## Lifestyle Factors
 
@@ -156,7 +154,7 @@ Given cortisol's effects on skin, stress management is not optional for those wi
 
 Poor sleep worsens insulin resistance, increases inflammation and elevates cortisol, all of which promote acne. Prioritizing seven to nine hours of quality sleep supports skin health along with overall wellbeing.
 
-For more on optimizing sleep, see my article on [evidence-based sleep strategies](/articles/sleep-optimization-evidence-based-strategies).
+For more on optimizing sleep, see my article on [evidence-based sleep strategies](/articles/sleep-optimization-evidence-based-strategies/).
 
 ### Exercise
 

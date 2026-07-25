@@ -48,17 +48,17 @@ A Mediterranean-style diet, rich in vegetables, fruits, whole grains, legumes, f
 
 Certain nutrients are particularly important during the preconception period.
 
-**Folate** is essential for DNA synthesis and neural tube development. Adequate folate before conception dramatically reduces the risk of neural tube defects. While folic acid is the synthetic form found in most supplements and fortified foods, some women with MTHFR gene variants may benefit from methylfolate, the active form. Aim for at least 400-800mcg daily, starting at least one month (ideally three) before conception.
+**Folate** is essential for DNA synthesis and neural tube development. Adequate folic acid before conception reduces the risk of neural tube defects. Canadian public-health guidance should be followed when selecting a prenatal supplement; individual needs can differ with medications, health history and previous pregnancy outcomes. Common MTHFR variants do not, by themselves, establish a need to replace folic acid with methylfolate.
 
 **Iron** supports oxygen delivery and is needed in increased amounts during pregnancy. Many women enter pregnancy already iron-deficient. Testing and optimizing iron status before conception is wise, particularly for women with heavy periods or vegetarian diets.
 
-**Vitamin D** influences hormone production, immune function and pregnancy outcomes. Deficiency is common, especially in northern climates like Nova Scotia and has been associated with reduced fertility and increased pregnancy complications<sup>3</sup>. Testing and optimizing vitamin D levels (typically aiming for 75-125 nmol/L) before conception is recommended.
+**Vitamin D** influences bone and immune health. Deficiency is more common in northern climates and has been studied in relation to fertility and pregnancy outcomes.<sup>3</sup> Testing or supplementation decisions depend on clinical circumstances and current prenatal guidance; this article does not set a target blood level.
 
-**Omega-3 fatty acids** are critical for fetal brain and eye development. They also reduce inflammation and may improve egg quality. Most people do not consume adequate omega-3s from diet alone. Supplementing with fish oil (or algae-based omega-3s for vegetarians) is often beneficial.
+**Omega-3 fatty acids** contribute to fetal brain and eye development and have been studied in fertility. Intake can come from food or supplements, but product quality, dietary pattern and contaminant exposure should be considered individually.
 
 **Zinc** is essential for both male and female fertility. It supports hormone production, egg maturation and embryo development. Zinc needs increase during pregnancy, so starting with adequate stores is important.
 
-**Iodine** is critical for thyroid function and fetal brain development. Iodine deficiency has reemerged as a concern as table salt (iodized) consumption has decreased. Pregnant women need approximately 220mcg daily, making preconception optimization important.
+**Iodine** is important for thyroid function and fetal brain development. Needs change during pregnancy, but excessive intake can also affect thyroid function. Prenatal guidance and individual thyroid history should inform supplementation.
 
 **Choline** supports fetal brain development and may be as important as folate for neural tube closure. Most prenatal vitamins do not contain adequate choline. Good food sources include eggs, liver and soybeans.
 
@@ -68,13 +68,13 @@ Building a fertility-supporting diet means emphasizing colorful vegetables and f
 
 ### Foods to Limit or Avoid
 
-Certain foods and substances should be minimized when preparing for pregnancy. Trans fats from fried foods, processed baked goods and some margarines should be avoided. Excessive sugar and refined carbohydrates impair insulin sensitivity and hormone balance. Excessive caffeine should be limited, as while moderate caffeine is likely fine, high intake may impair fertility; keeping consumption under 200mg daily (about one to two cups of coffee) is advisable. Alcohol should be eliminated or limited, as even moderate alcohol consumption may reduce fertility and complete avoidance is recommended once trying to conceive and during pregnancy. High-mercury fish such as shark, swordfish, king mackerel and tilefish should be avoided.
+Food-safety, alcohol, caffeine and fish-consumption recommendations change when preparing for pregnancy and during pregnancy. Readers should use current Health Canada prenatal guidance and discuss individual concerns with their prenatal clinician rather than relying on a fixed list or threshold in this article.
 
 ## Lifestyle Factors Affecting Fertility
 
 ### Body Weight and Composition
 
-Both underweight and overweight status can impair fertility. Excessive body fat is associated with hormonal imbalances including elevated estrogen, insulin resistance and irregular ovulation. Polycystic ovary syndrome (PCOS), a leading cause of infertility, is strongly linked to insulin resistance and often improves with weight loss. For more on this topic, see my article on [natural approaches to PCOS](/articles/pcos-natural-approaches).
+Both underweight and overweight status can impair fertility. Excessive body fat is associated with hormonal imbalances including elevated estrogen, insulin resistance and irregular ovulation. Polycystic ovary syndrome (PCOS), a leading cause of infertility, is strongly linked to insulin resistance and often improves with weight loss. For more on this topic, see my article on [natural approaches to PCOS](/articles/pcos-natural-approaches/).
 
 Conversely, being significantly underweight can shut down ovulation entirely. Very low body fat signals to the body that conditions are not optimal for pregnancy, suppressing reproductive hormones.
 
@@ -92,7 +92,7 @@ Aim for 150 minutes of moderate exercise weekly, including both cardiovascular a
 
 Sleep quality and quantity affect reproductive hormones. Disrupted circadian rhythms, from shift work, jet lag or irregular sleep schedules, can impair ovulation. Poor sleep also affects insulin sensitivity and stress hormones<sup>4</sup>.
 
-Prioritize seven to nine hours of quality sleep nightly. Maintain consistent sleep and wake times. Limit screen exposure in the evening. For more on optimizing sleep, see my article on [evidence-based sleep strategies](/articles/sleep-optimization-evidence-based-strategies).
+Prioritize seven to nine hours of quality sleep nightly. Maintain consistent sleep and wake times. Limit screen exposure in the evening. For more on optimizing sleep, see my article on [evidence-based sleep strategies](/articles/sleep-optimization-evidence-based-strategies/).
 
 ### Stress and Fertility
 
@@ -120,23 +120,21 @@ Modern life exposes us to numerous chemicals that can act as endocrine disruptor
 
 ### Prenatal Vitamins
 
-Starting a high-quality prenatal vitamin before conception ensures adequate levels of critical nutrients when they matter most, during the earliest weeks of pregnancy (often before pregnancy is even confirmed).
-
-Look for a prenatal that contains methylfolate or folinic acid (active forms of folate), adequate iron (unless iron stores are already high), iodine, choline and vitamin D. Many prenatals are inadequate in one or more of these nutrients.
+Prenatal supplementation is generally discussed before conception because early fetal development occurs before many pregnancies are recognized. The appropriate product depends on current Canadian guidance, diet, medications, laboratory findings and pregnancy history; more is not necessarily better.
 
 ### CoQ10
 
 Coenzyme Q10 is essential for cellular energy production. Egg cells are among the most energy-demanding cells in the body, and CoQ10 levels decline with age. Supplementation may improve egg quality, particularly in women over 35 or those with diminished ovarian reserve<sup>7</sup>.
 
-The ubiquinol form is better absorbed than ubiquinone. Typical doses for fertility range from 200-600mg daily.
+Studies use different CoQ10 forms and doses, and evidence has not established a universal fertility regimen. Product selection and suitability require individual review.
 
 ### Omega-3 Fatty Acids
 
-Fish oil provides EPA and DHA, which are critical for fetal development and may improve egg quality. Doses of one to two grams of combined EPA and DHA daily are typically recommended. Choose a quality product tested for purity.
+Fish oil provides EPA and DHA, which contribute to fetal development and have been studied in fertility. Evidence does not establish a single dose for all patients, and purity, dietary intake, medications and bleeding risk matter.
 
 ### Vitamin D
 
-Given the prevalence of deficiency, particularly in northern climates, vitamin D supplementation is often needed to achieve optimal levels. Doses of 1,000-4,000 IU daily are common, though the optimal dose depends on current levels and should ideally be guided by testing.
+Vitamin D supplementation may be appropriate based on prenatal guidance, measured status and individual risk factors. A dose should not be selected from general website information.
 
 ### N-Acetyl Cysteine (NAC)
 
@@ -144,7 +142,7 @@ NAC is an antioxidant that may improve egg quality and support ovulation, partic
 
 ### Myo-Inositol
 
-For women with PCOS or insulin resistance, myo-inositol can improve insulin sensitivity, support ovulation and enhance egg quality. It is often used in combination with D-chiro-inositol. For more on inositol and PCOS, see my article on [natural PCOS management](/articles/pcos-natural-approaches).
+For women with PCOS or insulin resistance, myo-inositol can improve insulin sensitivity, support ovulation and enhance egg quality. It is often used in combination with D-chiro-inositol. For more on inositol and PCOS, see my article on [natural PCOS management](/articles/pcos-natural-approaches/).
 
 ### For Men: Sperm-Supporting Supplements
 

@@ -43,7 +43,7 @@ The relationship between alcohol consumption and athletic recovery deserves part
 
 Sleep is perhaps the single most important recovery modality available to athletes, yet it is frequently undervalued. The majority of physical recovery occurs during sleep, when growth hormone secretion peaks and drives tissue repair. Protein synthesis accelerates, glycogen stores are replenished and both the nervous system and immune function undergo restoration<sup>9</sup>.
 
-Research consistently demonstrates that [athletes require more sleep](/articles/how-much-sleep-does-an-athlete-need) than the general population, typically 8 to 10 hours nightly for optimal recovery. Studies of elite athletes show that many sleep 10 or more hours when naps are included. The consequences of inadequate sleep extend beyond subjective fatigue to measurable decrements in reaction time, accuracy, strength and endurance<sup>10</sup>.
+Research consistently demonstrates that [athletes require more sleep](/articles/how-much-sleep-does-an-athlete-need/) than the general population, typically 8 to 10 hours nightly for optimal recovery. Studies of elite athletes show that many sleep 10 or more hours when naps are included. The consequences of inadequate sleep extend beyond subjective fatigue to measurable decrements in reaction time, accuracy, strength and endurance<sup>10</sup>.
 
 Sleep quality matters as much as duration. Environmental factors including room temperature, light exposure and noise levels all influence sleep architecture and the proportion of time spent in restorative deep sleep stages. Behavioral factors such as consistent sleep and wake times, limiting screen exposure before bed and avoiding caffeine late in the day can substantially improve sleep quality.
 

@@ -40,6 +40,8 @@ RewriteRule ^acupuncture-for-injury-pain/?$ /acupuncture/ [L,R=301]
 RewriteRule ^microcurrent/?$ /microcurrent-therapy/ [L,R=301]
 RewriteRule ^migraine/?$ /migraine-headache/ [L,R=301]
 RewriteRule ^prolotherapy-arthritis/?$ /prolotherapy-for-arthritis/ [L,R=301]
+# Retired page — folded into the tendon injuries page
+RewriteRule ^prolotherapy-for-osgood-schlatter/?$ /prolotherapy-for-tendon-injuries/ [L,R=301]
 RewriteRule ^chelation-therapy-heart-disease/?$ /chelation-therapy/ [L,R=301]
 RewriteRule ^natural-pain-solutions/?$ /conditions/ [L,R=301]
 RewriteRule ^ozone-therapy/?$ /prolotherapy/ [L,R=301]
@@ -103,6 +105,17 @@ Options -Indexes
     ExpiresByType application/pdf "access plus 1 month"
     ExpiresByType font/woff "access plus 1 year"
     ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>
+
+# Astro emits every CSS/JS/font into /_astro/ with a content hash in the
+# filename, so a changed file always gets a new URL and these can be cached
+# permanently. Overrides the 1-month CSS/JS rule above.
+# NOTE: this matches by extension, not path — it stays correct only while all
+# CSS/JS/fonts are build output. Don't add hand-written .css/.js to public/.
+<IfModule mod_headers.c>
+    <FilesMatch "\.(css|js|woff|woff2)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
 </IfModule>
 
 # Gzip compression

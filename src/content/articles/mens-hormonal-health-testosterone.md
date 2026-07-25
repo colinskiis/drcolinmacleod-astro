@@ -70,7 +70,7 @@ Chronic stress elevates cortisol, which directly suppresses the HPG axis and tes
 
 Sleep deprivation has a dramatic effect on testosterone. Studies show that one week of sleeping only 5 hours per night can reduce testosterone levels by 10-15%, equivalent to 10-15 years of aging<sup>3</sup>. Most testosterone is produced during sleep, particularly during REM sleep.
 
-For more on optimizing sleep, see my article on [evidence-based sleep strategies](/articles/sleep-optimization-evidence-based-strategies).
+For more on optimizing sleep, see my article on [evidence-based sleep strategies](/articles/sleep-optimization-evidence-based-strategies/).
 
 ### Environmental Factors
 
@@ -188,13 +188,13 @@ Excessive alcohol suppresses testosterone. Soy in very large quantities may have
 
 ### Evidence-Based Options
 
-**Vitamin D** supplementation improves testosterone in deficient men. Testing and optimizing levels is recommended. Most men in northern climates need 2,000-4,000 IU daily to maintain optimal levels.
+**Vitamin D** supplementation can correct a confirmed deficiency, but evidence that it increases testosterone is inconsistent. Need and dose depend on measured status, diet, sun exposure and health history.
 
-**Zinc** supplementation benefits men who are deficient, which is common. Typical doses are 25-50mg daily. Zinc should be balanced with copper for long-term use.
+**Zinc** is required for normal physiology, but supplementation is most supportable where intake or status is inadequate. Excessive or prolonged use can cause copper deficiency and other adverse effects.
 
-**Magnesium** may support testosterone, particularly in deficient individuals. Forms like magnesium glycinate are well-absorbed. Typical doses are 200-400mg daily.
+**Magnesium** has been studied in relation to metabolic and hormone measures, but it is not an established testosterone treatment. Supplemental forms differ and may be inappropriate with some health conditions or medications.
 
-**Ashwagandha** (Withania somnifera) is an adaptogenic herb that reduces cortisol and may modestly increase testosterone. A 2019 systematic review found consistent evidence for improvements in testosterone and sperm quality<sup>7</sup>. Typical doses are 300-600mg daily of root extract.
+**Ashwagandha** (*Withania somnifera*) has been studied for stress, fertility and hormone outcomes, but trials are generally small and use different extracts.<sup>7</sup> Results cannot be generalized to every product or person, and adverse effects and interactions are possible.
 
 **Fenugreek** contains compounds that may inhibit aromatase and support free testosterone. Some studies show modest benefits for testosterone and sexual function<sup>8</sup>.
 
@@ -204,15 +204,15 @@ Excessive alcohol suppresses testosterone. Soy in very large quantities may have
 
 Many supplements marketed for testosterone have limited human evidence. These include tribulus terrestris (popular but evidence is weak), tongkat ali (some positive studies but quality varies), maca (may improve libido without changing testosterone levels) and boron (may modestly increase free testosterone).
 
-I recommend focusing on well-researched options and addressing foundational factors before experimenting with unproven supplements.
+The limited evidence does not justify selecting these products from general website information. Potential causes of symptoms, medications, adverse effects and product quality need to be considered first.
 
-## When to Consider Testosterone Replacement Therapy
+## Medical Assessment and Testosterone Therapy
 
-Testosterone replacement therapy (TRT) may be appropriate when testosterone levels are clearly low (not just borderline), when symptoms are present and affecting quality of life, when reversible causes have been addressed or ruled out, when the patient understands the commitments and risks and when supervised by a knowledgeable physician.
+Testosterone therapy is a prescription treatment requiring medical diagnosis and supervision. Symptoms alone are insufficient; assessment typically considers repeated laboratory measurements, possible causes, fertility goals, contraindications and the benefits and risks of available options.
 
-TRT has genuine benefits for men with true hypogonadism but is not without risks and considerations. It typically requires lifelong commitment (stopping can leave you worse than baseline). It suppresses natural production and can impair fertility. There are ongoing debates about cardiovascular risks. Regular monitoring is required.
+For appropriately diagnosed hypogonadism, testosterone therapy may provide benefit, but it can suppress endogenous production, impair fertility and cause other adverse effects. Monitoring requirements and cardiovascular, hematological and prostate considerations should be discussed with the prescribing physician.
 
-Natural approaches should generally be tried first for men with borderline levels and mild symptoms. For men with clearly deficient levels and significant symptoms, TRT may be the most appropriate option, ideally combined with lifestyle optimization.
+Supplements or “natural” approaches should not be presented as a required first step or as substitutes for medical assessment. The appropriate pathway depends on the diagnosis and the individual's circumstances.
 
 ## Comprehensive Men's Health in Halifax
 

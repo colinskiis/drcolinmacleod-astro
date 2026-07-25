@@ -8,9 +8,9 @@ faq:
   - question: "How long does a Myers' Cocktail take?"
     answer: "<p>A typical appointment takes approximately <strong>45–60 minutes</strong>, including setup and monitoring. The infusion rate can be adjusted for comfort.</p>"
   - question: "How often can I receive a Myers' Cocktail?"
-    answer: "<p>Some patients start with one infusion, while others use a short series or occasional maintenance treatments. The frequency is personalized according to your health goals and how you respond.</p>"
+    answer: "<p>There is no general schedule appropriate for website readers. Whether an infusion is offered or repeated depends on a supportable indication, response, risks and alternatives.</p>"
   - question: "Will I feel different immediately?"
-    answer: "<p>Many patients report feeling refreshed or more energetic within hours of an infusion. The timing and degree of response vary from person to person.</p>"
+    answer: "<p>Response is uncertain and cannot be predicted. Some people notice no benefit, and adverse effects are possible. Treatment goals and a plan for reassessment are discussed before proceeding.</p>"
   - question: "Can I drive after treatment?"
     answer: "<p>Most patients can drive afterward if they feel well. If you feel lightheaded or unwell, you will be asked to rest and should arrange another way home if needed.</p>"
   - question: "Is fasting required?"
@@ -68,7 +68,7 @@ The Myers' Cocktail has a long history of use in integrative practice. Dr. Alan 
 
 A randomized placebo-controlled pilot study enrolled 34 adults with fibromyalgia. Participants receiving the Myers' Cocktail experienced improvements from baseline in tender points, pain, mood and quality of life, with several effects persisting after treatment. The study was small and did not find a statistically significant difference between the infusion and placebo groups, but it supported the treatment's feasibility and tolerability and identified encouraging findings for further study.<sup>3</sup>
 
-The published clinical research is still relatively small, so the Myers' Cocktail is not presented as a cure or a replacement for treatment of a diagnosed condition. It remains a popular and generally well-tolerated IV option, and many patients find that a short trial is the most useful way to determine how they personally respond.
+The published clinical research is still relatively small, so the Myers' Cocktail is not presented as a cure or a replacement for treatment of a diagnosed condition. Popularity does not establish effectiveness, and a trial of treatment still requires a supportable rationale, consent and measurable goals.
 
 ---
 
@@ -96,7 +96,7 @@ Most people resume their usual activities afterward. Some feel refreshed the sam
 
 ## Safety and Screening
 
-Myers-style infusions are generally well tolerated. Temporary warmth, flushing or lightheadedness can occur and is usually managed by adjusting the infusion rate. Mild discomfort or bruising at the IV site is also possible.
+Potential effects include warmth, flushing, nausea, light-headedness, changes in blood pressure, fluid or electrolyte problems, reactions to ingredients and IV-site pain, bruising, inflammation or infection. Risks vary by formulation and individual health.
 
 Treatment may not be appropriate with significant kidney impairment, certain cardiac conditions, fluid restrictions or an allergy to an ingredient. Your medications and supplements are reviewed before the formula is prepared.
 

@@ -6,14 +6,23 @@ DrColinMacleod.com - Naturopathic medicine practice website built with Astro.
 
 ## Deployment
 
-**To deploy changes:**
+**Deployment is automatic: push to `main`.** The `Deploy production site`
+GitHub Actions workflow builds, rsyncs to Namecheap, and verifies production.
+This is the normal path — check `gh run list` after pushing.
+
+**Manual fallback:**
 ```bash
-./deploy.sh
+PUBLIC_TURNSTILE_SITE_KEY=<site key> ./deploy.sh
 ```
 
 This script:
-1. Builds the site (`npm run build`)
-2. Syncs `dist/` to Namecheap via rsync over SSH
+1. Runs `npm run check` and builds the site (`npm run build`)
+2. Aborts if the contact form has no Turnstile site key baked in
+3. Syncs `dist/` to Namecheap via rsync over SSH
+
+The env var is required — without it the build produces a contact form with no
+bot protection and the script's preflight check stops the deploy. CI supplies
+it from the `PUBLIC_TURNSTILE_SITE_KEY` repository variable.
 
 **SSH Details:**
 - Host: `business81.web-hosting.com`
@@ -30,6 +39,17 @@ Manual SSH: `ssh namecheap`
 - `src/components/` - Reusable components
 - `src/layouts/` - Page layouts
 - `public/images/` - Static images
+
+## Conventions
+
+- **Routes**: `trailingSlash: 'always'`. Every internal link must end in `/` —
+  without one the request costs a 301 redirect.
+- **Nav/breadcrumb page lists** live only in `src/config/routes.ts`. Adding or
+  retiring a page means editing that file, not BaseLayout/HeroSection.
+- **Retiring a page**: add a 301 in `public/.htaccess` before deleting it, or
+  the live URL becomes a 404.
+- **Markdown images** get width/height/lazy-loading injected automatically by
+  `src/lib/rehype-image-attrs.mjs` — don't hand-write them.
 
 ## Button Text Standards
 

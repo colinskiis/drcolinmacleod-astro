@@ -1,4 +1,6 @@
 ---
+import { isConditionPath, isLabTestingPath, isServicePath } from '../config/routes';
+
 export interface Props {
   title: string;
   centered?: boolean;
@@ -19,66 +21,11 @@ const { title, centered = false, compact = false, textOnly = false, image, video
 const hasMedia = image || video;
 const currentPath = Astro.url.pathname;
 const hasBreadcrumbSlot = Astro.slots.has('breadcrumb');
-const servicePagePaths = [
-  '/acupuncture/',
-  '/chelation-therapy/',
-  '/clinical-nutrition/',
-  '/digestive-health-testing/',
-  '/glutathione/',
-  '/herbal-medicine/',
-  '/hormone-testing/',
-  '/iv-therapy/',
-  '/iv-vitamin-c/',
-  '/l-carnitine/',
-  '/lab-testing/',
-  '/microcurrent-therapy/',
-  '/myers-cocktail-intravenous-nutrients/',
-  '/nad-therapy/',
-  '/neural-prolotherapy-pain/',
-  '/nutrient-testing/',
-  '/prolotherapy/',
-  '/prolotherapy-for-arthritis/',
-  '/prolotherapy-for-back-pain/',
-  '/prolotherapy-for-osgood-schlatter/',
-  '/prolotherapy-for-tendon-injuries/',
-  '/specialized-testing/',
-  '/sports-medicine/',
-  '/thyroid-testing/',
-  '/trace-minerals/',
-  '/wellness-blood-work/',
-];
-const conditionPagePaths = [
-  '/achilles-tendinitis/',
-  '/carpal-tunnel-syndrome/',
-  '/chronic-fatigue-syndrome/',
-  '/fibromyalgia/',
-  '/frozen-shoulder/',
-  '/golfers-elbow/',
-  '/herniated-disc/',
-  '/low-back-pain/',
-  '/migraine-headache/',
-  '/osteoarthritis/',
-  '/plantar-fasciitis/',
-  '/rotator-cuff-shoulder-impingement/',
-  '/runners-knee/',
-  '/si-joint-dysfunction/',
-  '/tennis-elbow/',
-  '/tmj-dysfunction/',
-  '/whiplash-neck-pain/',
-];
-const labTestingPagePaths = [
-  '/digestive-health-testing/',
-  '/hormone-testing/',
-  '/nutrient-testing/',
-  '/specialized-testing/',
-  '/thyroid-testing/',
-  '/wellness-blood-work/',
-];
-const defaultBreadcrumb = labTestingPagePaths.includes(currentPath)
+const defaultBreadcrumb = isLabTestingPath(currentPath)
   ? { href: '/lab-testing/', label: 'Lab Testing' }
-  : servicePagePaths.includes(currentPath)
+  : isServicePath(currentPath)
     ? { href: '/services/', label: 'Services' }
-    : conditionPagePaths.includes(currentPath)
+    : isConditionPath(currentPath)
       ? { href: '/conditions/', label: 'Conditions' }
       : null;
 

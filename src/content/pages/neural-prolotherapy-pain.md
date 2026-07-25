@@ -22,9 +22,9 @@ This treatment was originated by Dr. John Lyftogt MD of New Zealand in an attemp
 
 The perception of pain begins in the peripheral sensory nerves of the body. When the TRPV-1 receptor (aka: capsaicin receptor) of sensory nerve fibers is activated, internal changes occur<sup>1</sup>. As inflammatory changes progress in the nerve, swelling and internal pressure increase. Internal nerve "flow" is slowed by this process and will even come to a halt at a pressure of approximately 30mmHg<sup>2</sup>. New injuries, old injuries and overuse are all contributing factors to excessive activation of the neural TRPV-1 receptor, nerve compression, inflammation and pain.
 
-## What Conditions Does Neural Prolotherapy Help?
+## What Has Neural Prolotherapy Been Studied For?
 
-Neural prolotherapy has been studied and applied clinically for a range of conditions involving peripheral nerve irritation and pain. If a peripheral nerve is being affected, it may be a candidate for this treatment. Conditions with published evidence or established clinical use include: frozen shoulder, low back pain, sciatica, Osgood-Schlatter disease, Achilles tendinitis, plantar fasciitis, osteoarthritis, temporomandibular joint dysfunction, tension headaches and migraines.
+Perineural dextrose injection has been studied for selected peripheral nerve and musculoskeletal pain conditions, but evidence varies substantially by diagnosis and technique. Findings from one condition cannot establish that it is appropriate for another, and symptoms alone do not determine candidacy.
 
 ![Neural prolotherapy for back pain](/images/treatments/neural-prolotherapy-back.jpg)
 
@@ -38,23 +38,23 @@ Yes, in some ways. Neural prolotherapy is similar to acupuncture in that the nee
 
 ## Do Neural Prolotherapy Injections Hurt?
 
-Not much. Neural prolotherapy uses very fine needles, similar in size to acupuncture needles, and is significantly less uncomfortable than cortisone injections. Most patients tolerate it well.
+Discomfort varies by location, technique and individual sensitivity. Pain, bruising, bleeding, infection, nerve injury and other anatomical-area-specific complications are part of the consent discussion.
 
 ## Are Neural Prolotherapy Injections Safe?
 
-Neural prolotherapy injections are safe when given by a properly trained practitioner. Subcutaneous injections in general are safe as they are deposited just under the skin and are absorbed slowly. Dextrose is something we consume in our diets daily and dextrose has also been used safely at the 5% concentration intravenously for decades.
+No injection is risk-free. Safety depends on the diagnosis, anatomical area, technique, sterility, formulation, clinician authorization and individual health. The fact that dextrose is also present in food does not establish injection safety.
 
 ## How Will I Feel After a Neural Prolotherapy Session?
 
-Some patients notice pain relief shortly after a neural prolotherapy session. The injection may act quickly, with some patients noticing improvement within the same session. Others require several treatments before experiencing a reduction in pain.
+Response is uncertain. Short-term change after an injection does not establish durable benefit, and some people may not improve.
 
-## How Many Treatments Will I Need?
+## How Is Treatment Planned?
 
-Typically patients will need 5-8 treatments, at a rate of one treatment per week, in order to achieve resolution of their symptoms.
+There is no general treatment count or interval appropriate for website readers. Whether a procedure is offered or repeated depends on the diagnosis, evidence, response, risks and alternatives.
 
 ## Has Neural Prolotherapy Been Researched?
 
-The research on neural prolotherapy is still in its infancy. One Korean clinical trial<sup>3</sup> found that injections with 5% dextrose were effective for reducing pain associated with myofascial trigger points when compared with saline or 0.5% lidocaine. Most research in this area has been performed on classic prolotherapy, which uses higher concentrations of dextrose (12.5-50%) in order to reduce pain and promote ligament repair. The available research on prolotherapy shows positive results for conditions including Osgood-Schlatter disease, lateral epicondylosis and chronic musculoskeletal pain<sup>4,5,6</sup>.
+The research remains limited. One small trial compared dextrose with saline and lidocaine for myofascial trigger points,<sup>3</sup> while much of the broader literature concerns different prolotherapy concentrations, techniques and conditions. Those studies cannot be treated as direct evidence for every use of perineural injection.
 
 ## Neural Prolotherapy in Halifax
 
@@ -65,6 +65,5 @@ If you are interested in having neural prolotherapy treatment and are in the Hal
 1. Caterina MJ, Schumacher MA, Tominaga M, Rosen TA, Levine JD, Julius D. The Capsaicin receptor: A heat-activated ion channel in the pain pathway. Nature 1997; 389:816-824
 2. Magdesian MH, Sanchez FS, Lopez M, Thostrup P, Durisic N, Belkaid W, Liazoghli D, Grütter P, Colman DR. Atomic force microscopy reveals important differences in axonal resistance to injury. Biophys J. 2012 Aug 8;103(3):405-14.
 3. Kim MY, Na YM, Moon JH. Comparison on Treatment Effects of Dextrose Water, Saline and Lidocaine for Trigger Point Injection. J Korean Acad Rehabil Med. 1997 Oct;21(5):967-973.
-4. Topol GA, Podesta LA, Reeves KD, Raya MF, Fullerton BD, Yeh HW. Hyperosmolar dextrose injection for recalcitrant Osgood-Schlatter disease. Pediatrics. 2011 Nov;128(5):e1121-8.
-5. Scarpone M, Rabago DP, Zgierska A, Arbogast G, Snell E. The efficacy of prolotherapy for lateral epicondylosis: a pilot study. Clin J Sport Med. 2008 May;18(3):248-54.
-6. Distel LM, Best TM. Prolotherapy: a clinical review of its role in treating chronic musculoskeletal pain. PM R. 2011 Jun;3(6 Suppl 1):S78-81.
+4. Scarpone M, Rabago DP, Zgierska A, Arbogast G, Snell E. The efficacy of prolotherapy for lateral epicondylosis: a pilot study. Clin J Sport Med. 2008 May;18(3):248-54.
+5. Distel LM, Best TM. Prolotherapy: a clinical review of its role in treating chronic musculoskeletal pain. PM R. 2011 Jun;3(6 Suppl 1):S78-81.

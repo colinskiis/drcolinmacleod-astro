@@ -50,7 +50,7 @@ The bottom line is that berberine is not a direct substitute for GLP-1 medicatio
 
 Some studies suggest berberine can support modest weight loss, but the evidence is mixed. Many studies are small and of limited quality, and weight loss appears to be secondary to blood sugar improvements rather than direct fat loss.
 
-Berberine may be most helpful for weight management when blood sugar dysregulation is contributing to weight gain, when used as part of a [comprehensive approach to weight loss](/articles/natural-weight-loss-solutions) including diet and exercise and when expectations are realistic about what it can achieve.
+Berberine may be most helpful for weight management when blood sugar dysregulation is contributing to weight gain, when used as part of a [comprehensive approach to weight loss](/articles/natural-weight-loss-solutions/) including diet and exercise and when expectations are realistic about what it can achieve.
 
 ## Who Might Benefit from Berberine?
 

@@ -57,7 +57,7 @@ Insulin resistance is one of the most common drivers of weight gain and difficul
 
 Signs of insulin resistance include difficulty losing weight despite effort, weight concentrated around the midsection, feeling hungry soon after eating, energy crashes after meals, cravings for sweets and carbohydrates and elevated fasting blood sugar or triglycerides.
 
-Strategies to improve insulin sensitivity include prioritizing protein and fiber at meals to slow glucose absorption, including strength training to improve muscle glucose uptake, managing stress which worsens insulin resistance, ensuring adequate sleep (poor sleep impairs insulin sensitivity) and considering targeted supplements like berberine, which has shown benefits comparable to some diabetes medications<sup>3</sup>. For more on berberine, see our article on [berberine as nature's blood sugar regulator](/articles/berberine-natures-ozempic).
+Strategies to improve insulin sensitivity include prioritizing protein and fiber at meals to slow glucose absorption, including strength training to improve muscle glucose uptake, managing stress which worsens insulin resistance, ensuring adequate sleep (poor sleep impairs insulin sensitivity) and considering targeted supplements like berberine, which has shown benefits comparable to some diabetes medications<sup>3</sup>. For more on berberine, see our article on [berberine as nature's blood sugar regulator](/articles/berberine-natures-ozempic/).
 
 **Supporting Thyroid Function**
 
@@ -77,11 +77,11 @@ Understanding and optimizing the hormones that regulate hunger and fullness is c
 
 **Protein Prioritization**
 
-Protein is the most satiating macronutrient, reducing hunger and supporting muscle mass during weight loss. Aim for 25-30 grams of protein at each meal. Higher protein intakes (1.2-1.6 g/kg body weight) during weight loss help preserve muscle mass, which is important for maintaining metabolic rate<sup>4</sup>.
+Protein can support satiety and preservation of muscle mass during weight loss. Research has examined a range of higher-protein dietary patterns, but an appropriate intake depends on total diet, body size, activity, kidney health and individual goals.<sup>4</sup>
 
 **Fiber for Fullness**
 
-Fiber slows digestion, promotes fullness and feeds beneficial gut bacteria. Most Canadians consume far less than the recommended 25-38 grams daily. Increasing fiber intake through vegetables, fruits, legumes and whole grains supports weight management through multiple mechanisms. For more details, see our article on [fiber as an underrated nutrient](/articles/fiber-the-underrated-nutrient).
+Fiber slows digestion, promotes fullness and feeds beneficial gut bacteria. Most Canadians consume far less than the recommended 25-38 grams daily. Increasing fiber intake through vegetables, fruits, legumes and whole grains supports weight management through multiple mechanisms. For more details, see our article on [fiber as an underrated nutrient](/articles/fiber-the-underrated-nutrient/).
 
 **Blood Sugar Stability**
 
@@ -95,7 +95,7 @@ Eating slowly and mindfully allows satiety signals time to register. It takes ap
 
 Sleep deprivation is strongly linked to weight gain through multiple mechanisms. Poor sleep increases ghrelin (hunger hormone) and decreases leptin (satiety hormone). It impairs insulin sensitivity, increases cortisol, reduces motivation for exercise and impairs decision-making around food choices.
 
-Studies show that inadequate sleep can increase calorie intake by 200-500 calories daily<sup>5</sup>. Optimizing sleep is often one of the most impactful interventions for weight management. For evidence-based sleep strategies, see our article on [sleep optimization](/articles/sleep-optimization-evidence-based-strategies).
+Studies show that inadequate sleep can increase calorie intake by 200-500 calories daily<sup>5</sup>. Optimizing sleep is often one of the most impactful interventions for weight management. For evidence-based sleep strategies, see our article on [sleep optimization](/articles/sleep-optimization-evidence-based-strategies/).
 
 ### Stress Management
 
@@ -103,7 +103,7 @@ Chronic stress promotes weight gain, particularly abdominal fat, through elevate
 
 Effective stress management practices include regular physical activity, meditation or mindfulness practices, adequate sleep, social connection, time in nature and addressing underlying stressors when possible.
 
-For more on managing stress naturally, including adaptogenic herbs, see our article on [adaptogens for stress](/articles/adaptogens-for-stress-ashwagandha-rhodiola-and-beyond).
+For more on managing stress naturally, including adaptogenic herbs, see our article on [adaptogens for stress](/articles/adaptogens-for-stress-ashwagandha-rhodiola-and-beyond/).
 
 ### Movement and Exercise
 
@@ -127,7 +127,7 @@ Beyond structured exercise, increasing overall daily movement (taking stairs, wa
 
 Several supplements have evidence supporting their use in weight management.
 
-**Berberine** activates AMPK (an enzyme involved in metabolic regulation), improving insulin sensitivity and blood sugar control. Some studies show effects comparable to metformin for blood sugar management<sup>3</sup>. Typical dose is 500mg two to three times daily with meals.
+**Berberine** affects metabolic pathways and has been studied for glucose and lipid outcomes, but it should not be described as equivalent to prescription treatment. Study formulations vary, and adverse effects and medication interactions require individual review.<sup>3</sup>
 
 **Fiber Supplements** like psyllium, glucomannan or konjac can help increase fiber intake and promote fullness when dietary intake is insufficient.
 

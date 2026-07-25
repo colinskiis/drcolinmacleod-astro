@@ -63,7 +63,7 @@ Vitamin C is important for maintenance of joint cartilage integrity and for heal
 
 #### Magnesium
 
-Magnesium is an important mineral for muscle function, cramp prevention and lactate excretion. Having optimum amounts of magnesium also helps to prevent asthma, depression, cardiovascular disease and diabetes. Magnesium can be obtained through leafy greens such as spinach, nuts/seeds, fish, beans/lentils, whole grains, figs and avocados. Magnesium is depleted by physical activity. For more on magnesium's benefits, see our article on [magnesium as a natural muscle relaxer](/articles/magnesium-the-natural-muscle-relaxer).
+Magnesium is an important mineral for muscle function, cramp prevention and lactate excretion. Having optimum amounts of magnesium also helps to prevent asthma, depression, cardiovascular disease and diabetes. Magnesium can be obtained through leafy greens such as spinach, nuts/seeds, fish, beans/lentils, whole grains, figs and avocados. Magnesium is depleted by physical activity. For more on magnesium's benefits, see our article on [magnesium as a natural muscle relaxer](/articles/magnesium-the-natural-muscle-relaxer/).
 
 #### Calcium
 
@@ -77,9 +77,9 @@ Zinc is found throughout every cell in our bodies and many functions. Zinc helps
 
 For athletes looking to optimize their performance through nutrition and lifestyle, consider exploring these related articles:
 
-- [Creatine: Beyond Muscle Building](/articles/creatine-beyond-muscle-building) - The science behind one of the most studied sports supplements
-- [How Much Sleep Does an Athlete Need?](/articles/how-much-sleep-does-an-athlete-need) - Sleep optimization for recovery and performance
-- [Recovery Enhancement: Natural Approaches](/articles/recovery-enhancement-natural-approaches) - Strategies for faster recovery between training sessions
+- [Creatine: Beyond Muscle Building](/articles/creatine-beyond-muscle-building/) - The science behind one of the most studied sports supplements
+- [How Much Sleep Does an Athlete Need?](/articles/how-much-sleep-does-an-athlete-need/) - Sleep optimization for recovery and performance
+- [Recovery Enhancement: Natural Approaches](/articles/recovery-enhancement-natural-approaches/) - Strategies for faster recovery between training sessions
 
 ## Safe For All Athletes
 

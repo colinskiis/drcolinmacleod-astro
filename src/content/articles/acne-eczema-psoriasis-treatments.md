@@ -43,7 +43,7 @@ While acne is often thought of as a teenage problem, adult acne is increasingly 
 
 Androgens (including testosterone and its more potent metabolite DHT) increase sebum production and influence acne development. This explains why acne often worsens around puberty and why it commonly flares with menstrual cycles in women.
 
-For an in-depth exploration of hormonally-driven acne and targeted treatment approaches, see our dedicated article on [hormonal acne natural treatment](/articles/hormonal-acne-natural-treatment).
+For an in-depth exploration of hormonally-driven acne and targeted treatment approaches, see our dedicated article on [hormonal acne natural treatment](/articles/hormonal-acne-natural-treatment/).
 
 ### Dietary Factors in Acne
 
@@ -59,11 +59,11 @@ Research has established several dietary connections to acne.
 
 ### Naturopathic Acne Treatment
 
-**Dietary Modification**: Reducing high-glycemic foods, eliminating or reducing dairy and emphasizing whole foods forms the foundation of naturopathic acne treatment.
+**Dietary Patterns**: Research has examined associations between acne, high-glycemic diets and dairy intake. Individual responses vary, and restrictive diets should not be assumed necessary without assessment.
 
-**Gut Health Support**: Addressing dysbiosis with probiotics, particularly strains like *Lactobacillus rhamnosus* that have been studied for skin health<sup>6</sup>. Healing intestinal permeability with nutrients like L-glutamine and zinc.
+**Gut Health Research**: Probiotics, including some *Lactobacillus* strains, have been studied for skin health, but evidence does not support diagnosing “dysbiosis” or intestinal permeability from acne alone.<sup>6</sup>
 
-**Targeted Nutrients**: Zinc has extensive evidence for acne treatment, with some studies showing effectiveness comparable to antibiotics<sup>7</sup>. Typical doses range from 30-50mg daily of zinc picolinate or citrate. Vitamin A supports healthy skin cell turnover. Omega-3 fatty acids reduce inflammation.
+**Nutrients Under Study**: Zinc, vitamin A and omega-3 fatty acids have biological roles relevant to skin, and supplements have been studied for acne.<sup>7</sup> Results, formulations and risks vary; the research does not provide a universal public dosing recommendation.
 
 **Topical Support**: Topical niacinamide (vitamin B3) gel has research supporting its effectiveness for inflammatory acne, with one study showing comparable results to topical clindamycin antibiotic without the downsides of antibiotic resistance<sup>8</sup>. Tea tree oil has antimicrobial properties against acne-causing bacteria.
 

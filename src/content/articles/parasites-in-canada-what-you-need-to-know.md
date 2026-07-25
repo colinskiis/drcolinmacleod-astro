@@ -72,7 +72,7 @@ Small Intestinal Bacterial Overgrowth (SIBO) involves bacteria in the small inte
 
 Food sensitivities to foods like dairy, gluten or FODMAPs can cause bloating, fatigue, brain fog and many other symptoms.
 
-Gut dysbiosis refers to imbalanced gut bacteria without actual parasites, influenced by diet, stress, medications and other factors. For more information on common digestive issues, see our guide to [natural approaches to digestive health](/articles/digestive-health-natural-approaches).
+Gut dysbiosis refers to imbalanced gut bacteria without actual parasites, influenced by diet, stress, medications and other factors. For more information on common digestive issues, see our guide to [natural approaches to digestive health](/articles/digestive-health-natural-approaches/).
 
 Thyroid dysfunction can cause fatigue, brain fog, weight changes and digestive issues, and a simple blood test can rule this out.
 

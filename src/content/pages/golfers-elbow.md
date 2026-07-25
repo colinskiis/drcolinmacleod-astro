@@ -7,7 +7,7 @@ seo:
 
 ![Golfer's elbow treatment](/images/conditions/tennis-elbow.webp)
 
-Medial epicondylitis, commonly known as golfer's elbow, is a condition that causes pain and tenderness on the inside of the elbow where the forearm flexor muscles attach to the medial epicondyle. It is the inside-of-elbow counterpart to [tennis elbow (lateral epicondylitis)](/tennis-elbow), which affects the outside. Despite the name, golfer's elbow is not limited to golfers: it affects climbers, throwing athletes, manual labourers, and anyone whose activities involve repeated gripping, flexing, or rotating of the forearm.
+Medial epicondylitis, commonly known as golfer's elbow, is a condition that causes pain and tenderness on the inside of the elbow where the forearm flexor muscles attach to the medial epicondyle. It is the inside-of-elbow counterpart to [tennis elbow (lateral epicondylitis)](/tennis-elbow/), which affects the outside. Despite the name, golfer's elbow is not limited to golfers: it affects climbers, throwing athletes, manual labourers, and anyone whose activities involve repeated gripping, flexing, or rotating of the forearm.
 
 ## Causes of Golfer's Elbow
 
@@ -51,7 +51,7 @@ Because medial epicondylitis is fundamentally a degenerative tendinopathy rather
 
 **Prolotherapy** is an injection-based regenerative treatment that uses a proliferant solution to stimulate the body's natural healing response in chronically degenerated tendons and ligaments. It has been used in the treatment of elbow tendinopathies and forms part of an integrated [sports medicine](/sports-medicine/) approach at the clinic<sup>3</sup>. More information can be found on the [prolotherapy](/prolotherapy-for-arthritis/) page.
 
-Patients with lateral elbow pain may also be interested in the related page on [tennis elbow](/tennis-elbow).
+Patients with lateral elbow pain may also be interested in the related page on [tennis elbow](/tennis-elbow/).
 
 ### References
 

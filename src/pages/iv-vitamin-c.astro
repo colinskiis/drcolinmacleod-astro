@@ -8,7 +8,7 @@ import FAQSection from '../components/FAQSection.astro';
 
 <BaseLayout
   title="IV Vitamin C Therapy in Halifax"
-  description="High-dose IV vitamin C therapy in Halifax for immune support, post-viral recovery, fatigue and wellness. Achieve blood levels 50x higher than oral supplements."
+  description="IV vitamin C therapy in Halifax with individual assessment, screening, informed consent and a balanced discussion of evidence and risks."
   focusKeyword="IV vitamin C Halifax"
 >
   <HeroSection
@@ -16,7 +16,7 @@ import FAQSection from '../components/FAQSection.astro';
     compact
     image={{ src: "/images/services/iv-therapy.webp", alt: "IV vitamin C therapy", aspect: "video" }}
   >
-    <p>When given intravenously, vitamin C reaches blood concentrations <strong class="text-white">50 times higher</strong> than oral supplements, enabling therapeutic effects impossible with pills alone. Support your immune system, recover faster and optimize your health.</p>
+    <p>Intravenous vitamin C produces different blood concentrations than oral vitamin C, but that pharmacological difference does not establish benefit for every symptom or condition. Assessment, screening and informed consent come first.</p>
     <CTAButton slot="cta">Book Online</CTAButton>
   </HeroSection>
 
@@ -25,20 +25,20 @@ import FAQSection from '../components/FAQSection.astro';
     <div class="section-shell">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
         <div>
-          <div class="text-4xl font-bold text-emerald-700 mb-2">50x</div>
-          <p class="text-slate-600 text-sm">higher blood levels than oral vitamin C</p>
+          <div class="text-2xl font-bold text-emerald-700 mb-2">Direct</div>
+          <p class="text-slate-600 text-sm">intravenous administration</p>
         </div>
         <div>
-          <div class="text-4xl font-bold text-emerald-700 mb-2">100%</div>
-          <p class="text-slate-600 text-sm">absorption (bypasses digestive limits)</p>
+          <div class="text-2xl font-bold text-emerald-700 mb-2">Individual</div>
+          <p class="text-slate-600 text-sm">indication and formulation review</p>
         </div>
         <div>
           <div class="text-4xl font-bold text-emerald-700 mb-2">45-90</div>
           <p class="text-slate-600 text-sm">minutes per treatment session</p>
         </div>
         <div>
-          <div class="text-4xl font-bold text-emerald-700 mb-2">Safe</div>
-          <p class="text-slate-600 text-sm">well-tolerated with minimal side effects</p>
+          <div class="text-2xl font-bold text-emerald-700 mb-2">Screened</div>
+          <p class="text-slate-600 text-sm">for contraindications and risks</p>
         </div>
       </div>
     </div>
@@ -48,13 +48,13 @@ import FAQSection from '../components/FAQSection.astro';
   <section class="py-16 lg:py-24 bg-emerald-50">
     <div class="section-shell">
       <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6">Why IV Instead of Oral Vitamin C?</h2>
+        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6">IV and Oral Vitamin C Are Different</h2>
         <div class="prose prose-lg text-slate-600 mb-8">
           <p>
-            No matter how much vitamin C you take orally, your body can only absorb so much. Intestinal absorption plateaus at around <strong>200mg</strong>. Take more, and it simply passes through unabsorbed (often causing digestive upset).
+            Oral absorption is regulated by the gastrointestinal tract, and the fraction absorbed decreases as oral doses increase. Higher oral intake can also cause digestive effects.
           </p>
           <p>
-            IV administration completely bypasses this limitation. By delivering vitamin C directly into your bloodstream, we can achieve therapeutic concentrations that enable effects impossible with oral supplementation:
+            IV administration bypasses gastrointestinal absorption and produces higher circulating concentrations. Higher concentration is a pharmacological fact, not proof of a better clinical outcome. The relevance depends on the indication and supporting evidence.
           </p>
         </div>
 
@@ -67,7 +67,7 @@ import FAQSection from '../components/FAQSection.astro';
             <ul class="space-y-3 text-slate-600">
               <li class="flex items-start gap-2">
                 <Minus class="w-5 h-5 text-slate-400 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                <span>Absorption limited to ~200mg at a time</span>
+                <span>Absorption is regulated and dose-dependent</span>
               </li>
               <li class="flex items-start gap-2">
                 <Minus class="w-5 h-5 text-slate-400 mt-0.5 flex-shrink-0" aria-hidden="true" />
@@ -75,11 +75,11 @@ import FAQSection from '../components/FAQSection.astro';
               </li>
               <li class="flex items-start gap-2">
                 <Minus class="w-5 h-5 text-slate-400 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                <span>Peak blood levels: ~220 μmol/L</span>
+                <span>Produces lower circulating concentrations than IV administration</span>
               </li>
               <li class="flex items-start gap-2">
                 <Minus class="w-5 h-5 text-slate-400 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                <span>Good for maintenance, not therapeutic</span>
+                <span>Often the less invasive route when supplementation is indicated</span>
               </li>
             </ul>
           </div>
@@ -92,7 +92,7 @@ import FAQSection from '../components/FAQSection.astro';
             <ul class="space-y-3 text-slate-600">
               <li class="flex items-start gap-2">
                 <Check class="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                <span>No absorption limit (100% bioavailable)</span>
+                <span>Enters the circulation directly</span>
               </li>
               <li class="flex items-start gap-2">
                 <Check class="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
@@ -100,11 +100,11 @@ import FAQSection from '../components/FAQSection.astro';
               </li>
               <li class="flex items-start gap-2">
                 <Check class="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                <span>Peak blood levels: 13,000+ μmol/L</span>
+                <span>Produces higher circulating concentrations</span>
               </li>
               <li class="flex items-start gap-2">
                 <Check class="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                <span>Therapeutic effects at high concentrations</span>
+                <span>Clinical benefit must be established separately for each use</span>
               </li>
             </ul>
           </div>
@@ -129,8 +129,8 @@ import FAQSection from '../components/FAQSection.astro';
           <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
             <Shield class="w-6 h-6 text-white" aria-hidden="true" />
           </div>
-          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Immune Support</h3>
-          <p class="text-slate-600 text-sm">Vitamin C accumulates in immune cells and enhances their ability to fight infection. It supports both innate and adaptive immunity, including neutrophil function and antibody production.</p>
+          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Immune Function</h3>
+          <p class="text-slate-600 text-sm">Vitamin C has established biological roles in immune function. This does not establish IV vitamin C as a treatment for acute infection.</p>
         </div>
 
         <!-- Acute Illness -->
@@ -138,8 +138,8 @@ import FAQSection from '../components/FAQSection.astro';
           <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
             <Zap class="w-6 h-6 text-white" aria-hidden="true" />
           </div>
-          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Fighting Acute Illness</h3>
-          <p class="text-slate-600 text-sm">When you're fighting an infection, your vitamin C requirements increase dramatically. IV administration helps meet this increased demand when you need it most.</p>
+          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Acute Illness Evidence</h3>
+          <p class="text-slate-600 text-sm">Research in acute illness is condition- and setting-specific. It does not support routine IV treatment for common infections.</p>
         </div>
 
         <!-- Post-Viral Recovery -->
@@ -147,8 +147,8 @@ import FAQSection from '../components/FAQSection.astro';
           <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
             <RefreshCw class="w-6 h-6 text-white" aria-hidden="true" />
           </div>
-          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Post-Viral Recovery</h3>
-          <p class="text-slate-600 text-sm">Lingering fatigue after illness? IV vitamin C can help accelerate recovery by reducing oxidative stress and supporting tissue repair. Particularly helpful for post-COVID fatigue.</p>
+          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Post-Viral Symptoms</h3>
+          <p class="text-slate-600 text-sm">Evidence does not establish IV vitamin C as a treatment for Long COVID or post-viral fatigue. Persistent symptoms require appropriate assessment.</p>
         </div>
 
         <!-- Fatigue -->
@@ -156,8 +156,8 @@ import FAQSection from '../components/FAQSection.astro';
           <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
             <Zap class="w-6 h-6 text-white" aria-hidden="true" />
           </div>
-          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Fatigue Reduction</h3>
-          <p class="text-slate-600 text-sm">Research shows IV vitamin C can significantly reduce fatigue, particularly in people with low baseline vitamin C levels or chronic health conditions.</p>
+          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Fatigue</h3>
+          <p class="text-slate-600 text-sm">Fatigue has many possible causes. Limited studies do not justify presenting IV vitamin C as a general fatigue treatment.</p>
         </div>
 
         <!-- Stress -->
@@ -165,8 +165,8 @@ import FAQSection from '../components/FAQSection.astro';
           <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
             <Heart class="w-6 h-6 text-white" aria-hidden="true" />
           </div>
-          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Stress & Adrenal Support</h3>
-          <p class="text-slate-600 text-sm">The adrenal glands have among the highest concentrations of vitamin C in the body. Chronic stress depletes these stores. IV vitamin C helps replenish them.</p>
+          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Stress Claims</h3>
+          <p class="text-slate-600 text-sm">The presence of vitamin C in adrenal tissue does not establish that IV vitamin C treats stress or “adrenal depletion.”</p>
         </div>
 
         <!-- Skin & Collagen -->
@@ -174,8 +174,8 @@ import FAQSection from '../components/FAQSection.astro';
           <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
             <Sparkles class="w-6 h-6 text-white" aria-hidden="true" />
           </div>
-          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Skin & Collagen</h3>
-          <p class="text-slate-600 text-sm">Vitamin C is essential for collagen synthesis. High-dose IV vitamin C supports wound healing, skin health and connective tissue repair.</p>
+          <h3 class="text-lg font-semibold text-emerald-950 mb-2">Collagen Biology</h3>
+          <p class="text-slate-600 text-sm">Vitamin C is required for normal collagen synthesis, but this does not establish high-dose IV treatment for skin or connective-tissue concerns.</p>
         </div>
       </div>
     </div>
@@ -205,25 +205,25 @@ import FAQSection from '../components/FAQSection.astro';
         </div>
 
         <div class="bg-white/10 backdrop-blur rounded-2xl p-8">
-          <h3 class="text-xl font-semibold text-white mb-6">Research Highlights</h3>
+          <h3 class="text-xl font-semibold text-white mb-6">How to Read the Research</h3>
           <div class="space-y-6">
             <div class="border-b border-white/20 pb-4">
               <p class="text-white/90 text-sm mb-2">
-                "Vitamin C contributes to immune defense by supporting various cellular functions of both the innate and adaptive immune system."
+                Biological roles of vitamin C do not by themselves demonstrate that an IV infusion improves clinical outcomes.
               </p>
-              <p class="text-emerald-400 text-xs">(Nutrients, 2017)</p>
+              <p class="text-emerald-400 text-xs">Biological plausibility is not treatment evidence</p>
             </div>
             <div class="border-b border-white/20 pb-4">
               <p class="text-white/90 text-sm mb-2">
-                "IV vitamin C can enhance quality of life and alleviate symptoms in patients with various conditions compared to oral intake."
+                Findings from one condition, dose or hospital setting should not be generalized to routine wellness or unrelated symptoms.
               </p>
-              <p class="text-emerald-400 text-xs">(Multiple clinical studies)</p>
+              <p class="text-emerald-400 text-xs">Indication-specific evidence matters</p>
             </div>
             <div>
               <p class="text-white/90 text-sm mb-2">
-                "High-dose IV vitamin C showed reduction in organ dysfunction scores and decreased vascular injury in sepsis patients."
+                Early or exploratory findings need confirmation in adequately powered trials before being advertised as patient benefit.
               </p>
-              <p class="text-emerald-400 text-xs">(Fowler et al., Phase I Trial)</p>
+              <p class="text-emerald-400 text-xs">Study quality and endpoints matter</p>
             </div>
           </div>
         </div>
@@ -241,7 +241,7 @@ import FAQSection from '../components/FAQSection.astro';
           <!-- Myers with extra C -->
           <div class="bg-emerald-50 rounded-2xl p-8 card-hover">
             <h3 class="text-xl font-semibold text-emerald-950 mb-4">Myers' Cocktail + Vitamin C</h3>
-            <p class="text-slate-600 mb-4">Our standard Myers' Cocktail contains vitamin C along with B vitamins, magnesium and calcium. Great for general wellness, fatigue and immune support.</p>
+            <p class="text-slate-600 mb-4">A Myers' Cocktail generally combines vitamin C with B vitamins, magnesium and calcium. Formulations vary, and evidence for broad wellness, fatigue or immune claims is limited.</p>
             <a href="/myers-cocktail-intravenous-nutrients/" class="text-emerald-700 text-sm font-medium mt-4 inline-flex items-center hover:text-emerald-800">
               Learn more about Myers' Cocktail
               <ChevronRight class="w-4 h-4 ml-1" aria-hidden="true" />
@@ -251,7 +251,7 @@ import FAQSection from '../components/FAQSection.astro';
           <!-- High-dose C -->
           <div class="bg-emerald-50 rounded-2xl p-8 card-hover">
             <h3 class="text-xl font-semibold text-emerald-950 mb-4">High-Dose Vitamin C</h3>
-            <p class="text-slate-600 mb-4">Higher concentrations of vitamin C for acute illness, post-viral recovery or when more intensive support is needed. Dose determined based on your needs.</p>
+            <p class="text-slate-600 mb-4">Higher-dose vitamin C requires a clear, evidence-informed rationale and additional screening. It is not presented as routine care for acute illness or post-viral recovery.</p>
             <p class="text-xs text-slate-500 mt-4">G6PD screening required before first high-dose treatment</p>
           </div>
         </div>
@@ -270,7 +270,7 @@ import FAQSection from '../components/FAQSection.astro';
             <div class="flex-shrink-0 w-12 h-12 bg-emerald-700 rounded-full flex items-center justify-center text-white font-bold text-lg">1</div>
             <div>
               <h3 class="text-xl font-semibold text-emerald-950 mb-2">Initial Consultation</h3>
-              <p class="text-slate-600">We'll review your health history, discuss your goals and determine the appropriate treatment protocol. For high-dose vitamin C, G6PD screening (a simple blood test) is required before your first treatment.</p>
+              <p class="text-slate-600">We'll review your health history, discuss the proposed indication and determine whether treatment is appropriate. For high-dose vitamin C, G6PD screening is required before treatment.</p>
             </div>
           </div>
 
@@ -324,7 +324,7 @@ import FAQSection from '../components/FAQSection.astro';
 
         <div class="prose prose-lg text-slate-600 mb-8">
           <p>
-            IV vitamin C is generally very safe when administered by a trained practitioner. Thousands of treatments are given safely every year. However, there are some important considerations:
+            IV vitamin C is an invasive treatment with formulation- and dose-dependent risks. Screening reduces risk but does not eliminate it. Important considerations include:
           </p>
         </div>
 
@@ -346,7 +346,7 @@ import FAQSection from '../components/FAQSection.astro';
           <div class="bg-emerald-50 rounded-2xl p-6 card-hover">
             <h3 class="text-lg font-semibold text-emerald-950 mb-4">Common Side Effects</h3>
             <p class="text-slate-600 text-sm">
-              Most people tolerate IV vitamin C very well. Some may experience mild thirst, temporary coolness at the IV site or need to urinate more frequently after treatment. These effects are temporary and resolve quickly.
+              Potential effects include pain, bruising, inflammation or infection at the IV site, thirst, nausea, light-headedness, fluid or electrolyte changes and reactions to an ingredient. Serious risks vary with dose and health history.
             </p>
           </div>
 
@@ -362,19 +362,19 @@ import FAQSection from '../components/FAQSection.astro';
   </section>
 
   <FAQSection items={[
-          { question: "How often should I get IV vitamin C?", answer: "<p>This depends on your goals. For acute illness, treatments may be given daily or every other day until you recover. For general wellness and immune support, weekly or bi-weekly treatments are common. For maintenance, monthly treatments may be sufficient. We'll recommend a schedule based on your individual needs.</p>" },
-          { question: "Can I get IV vitamin C while I'm sick?", answer: "<p>Yes. In fact, this is often the best time to get it. Your body's vitamin C requirements increase significantly during infection. IV vitamin C can help support your immune response and may help you recover faster. Please let us know what symptoms you're experiencing when you book.</p>" },
+          { question: "How often is IV vitamin C given?", answer: "<p>There is no general schedule appropriate for website readers. Whether it is offered or repeated depends on a supportable indication, response, risks and alternatives. Some proposed uses do not justify treatment.</p>" },
+          { question: "Can I get IV vitamin C while I'm sick?", answer: "<p>Acute symptoms should first be assessed to determine whether medical testing, isolation precautions or another form of care is needed. IV vitamin C has not been established as routine treatment for common viral infections or as a way to recover faster.</p>" },
           { question: "Is IV vitamin C the same as getting a vitamin C shot?", answer: "<p>No. Intramuscular vitamin C \"shots\" deliver a much smaller amount. IV infusion allows us to deliver significantly higher doses over time, achieving the blood concentrations needed for therapeutic effects.</p>" },
-          { question: "Should I stop taking oral vitamin C if I'm getting IVs?", answer: "<p>Not necessarily. Oral vitamin C provides ongoing, low-level support between IV treatments. The two work well together: IV provides periodic high-dose therapy while oral maintains baseline levels. We can discuss the best approach for your situation.</p>" },
+          { question: "Should I combine oral and IV vitamin C?", answer: "<p>Do not add or change supplements based on this page. Total intake, diet, kidney function, medications and the reason for treatment should be reviewed individually.</p>" },
         ]} />
 
   <!-- CTA Section -->
   <section class="py-16 lg:py-24 bg-emerald-950">
     <div class="section-shell">
       <div class="text-center max-w-3xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">Ready to Support Your Immune System?</h2>
+        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">Considering IV Vitamin C?</h2>
         <p class="text-lg text-white/90 mb-8">
-          Whether you're fighting off an illness, recovering from one or simply want to optimize your health, IV vitamin C can help. Book your treatment today.
+          Book a consultation to review the proposed indication, evidence, alternatives, screening requirements and potential risks. An assessment does not mean treatment will be recommended.
         </p>
         <CTAButton source="iv-vitamin-c-cta" />
         <p class="text-white/70 mt-6 text-sm">Initial consultation required for new patients | Most extended health plans cover naturopathic services</p>

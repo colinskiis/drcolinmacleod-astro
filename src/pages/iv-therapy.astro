@@ -41,7 +41,7 @@ import ServiceArticles from '../components/ServiceArticles.astro';
         <!-- Content -->
         <div class="bg-white rounded-3xl shadow-xl p-8 lg:p-10 card-hover">
           <h2 class="text-2xl font-serif font-medium text-emerald-950 mb-2">The Myers Cocktail</h2>
-          <p class="text-slate-600 mb-4">Our foundational IV nutrient infusion for energy, immunity and overall wellness.</p>
+          <p class="text-slate-600 mb-4">A commonly used IV nutrient formulation containing vitamins and minerals. Its suitability and composition are assessed individually.</p>
 
           <div class="flex flex-wrap gap-2 mb-6">
             <span class="px-3 py-1.5 bg-emerald-100 text-emerald-800 rounded-full text-sm font-medium">Calcium</span>
@@ -68,9 +68,9 @@ import ServiceArticles from '../components/ServiceArticles.astro';
   <section class="py-16 lg:py-24 bg-white">
     <div class="section-shell">
       <div class="text-center mb-12">
-        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">IV Therapy Boosters</h2>
+        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">Nutrients and Formulations</h2>
         <p class="text-lg text-slate-600 max-w-3xl mx-auto">
-          Additional nutrients can be added to your IV treatment to target specific health concerns.
+          Different nutrients and formulations may be discussed after reviewing clinical need, available evidence, contraindications and potential interactions.
         </p>
       </div>
 
@@ -81,7 +81,7 @@ import ServiceArticles from '../components/ServiceArticles.astro';
             <Zap class="w-10 h-10 text-emerald-700" aria-hidden="true" />
           </div>
           <h3 class="text-lg font-semibold text-emerald-950 mb-2 group-hover:text-emerald-700 transition-colors">NAD+</h3>
-          <p class="text-slate-600 text-sm">Cellular energy, mental clarity and healthy aging support.</p>
+          <p class="text-slate-600 text-sm">A coenzyme involved in cellular energy metabolism. Evidence for IV use varies by indication.</p>
         </a>
 
         <!-- High-Dose Vitamin C -->
@@ -90,7 +90,7 @@ import ServiceArticles from '../components/ServiceArticles.astro';
             <Droplets class="w-10 h-10 text-emerald-700" aria-hidden="true" />
           </div>
           <h3 class="text-lg font-semibold text-emerald-950 mb-2 group-hover:text-emerald-700 transition-colors">High-Dose Vitamin C</h3>
-          <p class="text-slate-600 text-sm">Immune support, recovery and antioxidant therapy when clinically appropriate.</p>
+          <p class="text-slate-600 text-sm">An antioxidant nutrient whose IV use requires individual screening and indication-specific consideration.</p>
         </a>
 
         <!-- Glutathione - Heart with EKG line -->
@@ -99,7 +99,7 @@ import ServiceArticles from '../components/ServiceArticles.astro';
             <HeartPulse class="w-10 h-10 text-emerald-700" aria-hidden="true" />
           </div>
           <h3 class="text-lg font-semibold text-emerald-950 mb-2 group-hover:text-emerald-700 transition-colors">Glutathione</h3>
-          <p class="text-slate-600 text-sm">Antioxidant support, energy support and cardiovascular protection.</p>
+          <p class="text-slate-600 text-sm">An antioxidant compound. The evidence and relevance of IV use depend on the clinical context.</p>
         </a>
 
         <!-- L-Carnitine -->
@@ -108,7 +108,7 @@ import ServiceArticles from '../components/ServiceArticles.astro';
             <Dna class="w-10 h-10 text-emerald-700" aria-hidden="true" />
           </div>
           <h3 class="text-lg font-semibold text-emerald-950 mb-2 group-hover:text-emerald-700 transition-colors">L-Carnitine</h3>
-          <p class="text-slate-600 text-sm">Amino acid supporting fat metabolism and cardiovascular health.</p>
+          <p class="text-slate-600 text-sm">A nutrient involved in fatty-acid transport and energy metabolism.</p>
         </a>
 
         <!-- Trace Minerals -->
@@ -117,13 +117,13 @@ import ServiceArticles from '../components/ServiceArticles.astro';
             <Atom class="w-10 h-10 text-emerald-700" aria-hidden="true" />
           </div>
           <h3 class="text-lg font-semibold text-emerald-950 mb-2 group-hover:text-emerald-700 transition-colors">Trace Minerals</h3>
-          <p class="text-slate-600 text-sm">Essential minerals for enzyme function and overall metabolic health.</p>
+          <p class="text-slate-600 text-sm">Minerals involved in normal enzyme and metabolic functions.</p>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- Nutrients Used & Conditions Treated -->
+  <!-- Nutrients Used & Clinical Considerations -->
   <section class="py-16 lg:py-24 bg-emerald-50">
     <div class="section-shell">
       <div class="grid lg:grid-cols-2 gap-12">
@@ -144,16 +144,16 @@ import ServiceArticles from '../components/ServiceArticles.astro';
           </div>
         </div>
 
-        <!-- Conditions Treated -->
+        <!-- Clinical considerations -->
         <div>
-          <h2 class="text-2xl font-serif font-medium text-emerald-950 mb-6">Conditions Treated with IV Therapy</h2>
-          <div class="grid grid-cols-2 gap-3">
-            {['Acne', 'Anxiety', 'Asthma', 'Burnout', 'Chronic Fatigue Syndrome', 'Chronic Infections', 'Colds and Flus', 'Eczema', 'Fatigue', 'Fibromyalgia', 'Irritable Bowel Disease', 'Irritable Bowel Syndrome', 'Lyme Disease', 'Migraines', 'Neuropathy', 'Nutrient Deficiency', 'Pain', 'Seasonal Allergies'].map(condition => (
-              <div class="flex items-center">
-                <Check class="w-4 h-4 text-emerald-600 mr-2 flex-shrink-0" aria-hidden="true" />
-                <span class="text-slate-700 text-sm">{condition}</span>
-              </div>
-            ))}
+          <h2 class="text-2xl font-serif font-medium text-emerald-950 mb-6">Clinical Assessment Comes First</h2>
+          <div class="prose prose-lg text-slate-600">
+            <p>
+              IV therapy is not a general treatment for every symptom or diagnosis. A consultation is used to review medical history, medications, previous testing, hydration status and relevant risks.
+            </p>
+            <p>
+              Where a nutrient deficiency or other clinical indication is identified, oral treatment, dietary changes, referral or conventional medical care may be more appropriate. The expected benefits, uncertainties, alternatives and costs of IV therapy are discussed before consent.
+            </p>
           </div>
         </div>
       </div>
@@ -165,16 +165,16 @@ import ServiceArticles from '../components/ServiceArticles.astro';
     <div class="section-shell">
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         <div>
-          <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6">Why Choose IV Therapy?</h2>
+          <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6">How IV Delivery Differs</h2>
           <div class="prose prose-lg text-slate-600">
             <p>
-              Many people struggle to absorb nutrients efficiently through the digestive system. Factors such as gut inflammation, food sensitivities, low stomach acid and enzyme deficiencies can all impair nutrient absorption.
+              IV administration delivers a substance directly into the bloodstream and avoids gastrointestinal absorption. That difference in delivery does not, by itself, establish that an IV will improve a particular symptom or condition.
             </p>
             <p>
-              IV therapy bypasses these limitations entirely. By delivering nutrients directly into the bloodstream, we can achieve therapeutic blood levels that would be impossible with oral supplementation alone.
+              The decision to use an IV depends on whether there is a reasonable clinical indication, whether the proposed formulation is supported for that purpose and whether the potential benefit outweighs the risks and burden of treatment.
             </p>
             <p>
-              Whether you are dealing with chronic fatigue, recovering from illness, preparing for athletic performance or simply looking to optimize your health, IV therapy offers a powerful and efficient solution.
+              Some people will not be suitable candidates. Screening, informed consent and monitoring are required, and response cannot be predicted or guaranteed.
             </p>
           </div>
         </div>
@@ -194,11 +194,10 @@ import ServiceArticles from '../components/ServiceArticles.astro';
 
   <FAQSection items={[
           { question: "What happens at my first IV therapy visit?", answer: "<p>Your first visit includes a health review, discussion of your goals and a decision about whether IV therapy is appropriate. If treatment proceeds, we select nutrients for your needs and monitor you throughout the infusion. Many patients schedule a consultation before their first drip.</p>" },
-          { question: "Is IV therapy covered by insurance?", answer: "<p>Most insurance plans provide coverage for the administration of an IV therapy treatment which is the majority of the cost of the total treatment.</p>" },
-          { question: "How often do I need to have IV therapy?", answer: "<p>The frequency of treatment will depend on the health concerns and sensitivity of the individual. Some conditions require more frequent treatment (once per week to start) while other health concerns can be treated less frequently (once per three months).</p>" },
-          { question: "Is IV therapy safe?", answer: "<p>Yes. Dr. Colin MacLeod, ND has performed thousands of IV nutrient treatments since 2011 with an excellent safety record.</p>" },
-          { question: "What health problems can IV therapy help?", answer: "<p>IV therapy can help a wide variety of health conditions including anxiety, burnout, digestive issues, fatigue and fibromyalgia, to name a few.</p>" },
-          { question: "Are there side effects from IV therapy?", answer: "<p>Side effects are not common with IV therapy. It is possible to experience light headedness, low blood pressure, nausea or discomfort at the site of IV insertion. These issues are generally self limiting and pass within a short period of time.</p>" },
+          { question: "Is IV therapy covered by insurance?", answer: "<p>Coverage varies by insurer and plan. Ask your insurer whether naturopathic IV administration and treatment supplies are eligible under your specific policy before proceeding.</p>" },
+          { question: "How often is IV therapy given?", answer: "<p>There is no standard schedule suitable for everyone. Whether treatment is offered at all, and whether it is repeated, depends on the indication, response, risks and available alternatives. This is decided through individual assessment rather than from website information.</p>" },
+          { question: "What are the risks of IV therapy?", answer: "<p>Potential effects include discomfort, bruising or infection at the insertion site, light-headedness, changes in blood pressure, nausea, fluid or electrolyte problems and reactions to an ingredient. Additional risks and contraindications depend on the formulation and the person's health history. These are reviewed before consent.</p>" },
+          { question: "What health problems can IV therapy help?", answer: "<p>Evidence differs substantially between formulations and health conditions. IV therapy is not presented as a treatment for a broad list of diagnoses. A consultation determines whether there is a specific, supportable indication or whether another form of care is more appropriate.</p>" },
         ]} />
 
   <ServiceArticles
@@ -210,9 +209,9 @@ import ServiceArticles from '../components/ServiceArticles.astro';
   <section class="py-16 lg:py-24 bg-emerald-950">
     <div class="section-shell">
       <div class="text-center max-w-3xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">Ready to Experience IV Therapy?</h2>
+        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">Considering IV Therapy?</h2>
         <p class="text-lg text-white/80 mb-8">
-          Book your consultation today and discover how IV therapy can help optimize your health and well-being.
+          Book a consultation to review whether IV therapy is appropriate for your circumstances, including potential benefits, limitations, alternatives and risks.
         </p>
         <CTAButton source="iv-therapy-cta" />
       </div>
@@ -226,7 +225,7 @@ import ServiceArticles from '../components/ServiceArticles.astro';
       "@type": "Service",
       "name": "IV Therapy",
       "serviceType": "Intravenous Nutrient Therapy",
-      "description": "IV vitamin and mineral drips deliver nutrients directly into the bloodstream for 100% absorption. Treats fatigue, anxiety, burnout, digestive issues and more.",
+      "description": "Individually assessed IV nutrient therapy with clinical screening, informed consent and monitoring in Bedford, Nova Scotia.",
       "provider": {
         "@type": "Person",
         "name": "Dr. Colin MacLeod",

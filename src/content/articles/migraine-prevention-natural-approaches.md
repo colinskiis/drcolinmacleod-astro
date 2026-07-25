@@ -48,9 +48,9 @@ Dietary triggers represent one of the most studied and modifiable categories. Al
 
 Hormonal factors are particularly significant for women, who experience migraines at three times the rate of men<sup>4</sup>. The menstrual cycle, particularly the drop in estrogen that occurs just before and during menstruation, is a well-established trigger. Many women notice their migraines begin at puberty and may improve or worsen during pregnancy and menopause. Hormonal contraceptives and hormone replacement therapy can affect migraine patterns in either direction.
 
-Sleep disturbances are among the most consistent migraine triggers. Both too little and too much sleep can provoke attacks. Irregular sleep schedules, such as sleeping late on weekends, often trigger migraines. As I discussed in my article on [sleep optimization](/articles/sleep-optimization-evidence-based-strategies), maintaining consistent sleep and wake times is one of the most practical recommendations for health and this is particularly true for migraine prevention.
+Sleep disturbances are among the most consistent migraine triggers. Both too little and too much sleep can provoke attacks. Irregular sleep schedules, such as sleeping late on weekends, often trigger migraines. As I discussed in my article on [sleep optimization](/articles/sleep-optimization-evidence-based-strategies/), maintaining consistent sleep and wake times is one of the most practical recommendations for health and this is particularly true for migraine prevention.
 
-Stress is perhaps the most commonly reported trigger, though it is often during the let-down period after stress rather than during the stressful event itself that migraines occur. This explains the phenomenon of weekend or vacation migraines. Managing stress effectively is crucial, and I have written about [natural approaches to stress management](/articles/natural-anxiety-management) that can help.
+Stress is perhaps the most commonly reported trigger, though it is often during the let-down period after stress rather than during the stressful event itself that migraines occur. This explains the phenomenon of weekend or vacation migraines. Managing stress effectively is crucial, and I have written about [natural approaches to stress management](/articles/natural-anxiety-management/) that can help.
 
 Environmental factors include weather changes, particularly drops in barometric pressure, which affect many migraine sufferers in Nova Scotia where our maritime climate brings frequent weather fluctuations. Bright or flickering lights, strong odors such as perfumes, cleaning products or cigarette smoke and loud noises can all trigger attacks.
 
@@ -130,7 +130,7 @@ Many of my patients who initially felt hopeless about their migraines have achie
 
 If you are struggling with migraines and looking for a comprehensive, natural approach to prevention, please contact Dr. Colin MacLeod, ND to book an initial visit. Through detailed assessment, identification of your individual triggers and contributing factors and a personalized treatment plan incorporating clinical nutrition, herbal medicine, acupuncture and lifestyle modification, we can work together to reduce your migraine burden and improve your quality of life.
 
-For more information about naturopathic approaches to migraine and headache treatment, please visit my [migraine and headache conditions page](/migraine-headache).
+For more information about naturopathic approaches to migraine and headache treatment, please visit my [migraine and headache conditions page](/migraine-headache/).
 
 ### References
 

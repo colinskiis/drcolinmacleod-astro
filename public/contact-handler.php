@@ -87,6 +87,16 @@ if (!is_dir($cacheDir)) {
     }
 }
 
+// Sweep expired counters occasionally (~1% of requests). Each visitor IP
+// leaves a file behind, so without this the directory grows without bound.
+if (random_int(1, 100) === 1) {
+    foreach (glob($cacheDir . 'rate_*.json') ?: [] as $stale) {
+        if (filemtime($stale) < time() - 86400) {
+            @unlink($stale);
+        }
+    }
+}
+
 $rateFile     = $cacheDir . 'rate_' . md5($ip) . '.json';
 $window       = 3600;
 $maxPerWindow = 5;

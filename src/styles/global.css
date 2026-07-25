@@ -1,11 +1,20 @@
 /* Brand foundations - Self-hosted fonts via Fontsource */
 /* Only load weights actually used: Manrope 300,400,500,600,700; Playfair Display 500 */
-@import '@fontsource/manrope/300.css';
-@import '@fontsource/manrope/400.css';
-@import '@fontsource/manrope/500.css';
-@import '@fontsource/manrope/600.css';
-@import '@fontsource/manrope/700.css';
-@import '@fontsource/playfair-display/500.css';
+/* latin + latin-ext only. latin-ext is needed for diacritics in cited author
+   names (ć ğ ł ń ş); cyrillic/greek/vietnamese subsets are never used, and the
+   bare `300.css` etc. entrypoints would ship all of them. */
+@import '@fontsource/manrope/latin-300.css';
+@import '@fontsource/manrope/latin-400.css';
+@import '@fontsource/manrope/latin-500.css';
+@import '@fontsource/manrope/latin-600.css';
+@import '@fontsource/manrope/latin-700.css';
+@import '@fontsource/manrope/latin-ext-300.css';
+@import '@fontsource/manrope/latin-ext-400.css';
+@import '@fontsource/manrope/latin-ext-500.css';
+@import '@fontsource/manrope/latin-ext-600.css';
+@import '@fontsource/manrope/latin-ext-700.css';
+@import '@fontsource/playfair-display/latin-500.css';
+@import '@fontsource/playfair-display/latin-ext-500.css';
 
 @tailwind base;
 @tailwind components;

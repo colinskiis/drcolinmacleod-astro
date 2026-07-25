@@ -46,7 +46,7 @@ Understanding these neurochemical factors helps explain why nutritional and life
 
 ## The Gut-Brain Connection
 
-One of the most significant advances in our understanding of anxiety over the past decade has been the recognition of the profound connection between gut health and mental health. I have written extensively about [the gut-brain connection](/articles/gut-brain-connection-mental-health) elsewhere, but its relevance to anxiety warrants discussion here.
+One of the most significant advances in our understanding of anxiety over the past decade has been the recognition of the profound connection between gut health and mental health. I have written extensively about [the gut-brain connection](/articles/gut-brain-connection-mental-health/) elsewhere, but its relevance to anxiety warrants discussion here.
 
 Your gut contains its own nervous system, the enteric nervous system, with over 100 million neurons. It communicates constantly with your brain through multiple pathways, including the vagus nerve, the immune system and the production of neurotransmitters and other signaling molecules.
 
@@ -88,7 +88,7 @@ The relationship between sleep and anxiety is bidirectional and powerful. Anxiet
 
 Research demonstrates that even modest sleep deprivation amplifies anxiety-related activity in brain regions including the amygdala while reducing activity in prefrontal areas that normally regulate emotional responses<sup>10</sup>. Sleep-deprived individuals show heightened physiological stress responses and report more anxiety in response to challenges.
 
-Prioritizing sleep hygiene is therefore essential for anxiety management. I have written more extensively about [evidence-based sleep optimization strategies](/articles/sleep-optimization-evidence-based-strategies) elsewhere. Key principles include maintaining consistent sleep and wake times, creating a dark and cool sleep environment, limiting screen exposure before bed, avoiding caffeine after early afternoon and addressing any underlying sleep disorders such as sleep apnea.
+Prioritizing sleep hygiene is therefore essential for anxiety management. I have written more extensively about [evidence-based sleep optimization strategies](/articles/sleep-optimization-evidence-based-strategies/) elsewhere. Key principles include maintaining consistent sleep and wake times, creating a dark and cool sleep environment, limiting screen exposure before bed, avoiding caffeine after early afternoon and addressing any underlying sleep disorders such as sleep apnea.
 
 ### Exercise and Movement
 
@@ -134,7 +134,7 @@ Botanical medicines have been used for centuries to calm the nervous system and 
 
 Different herbs work through different mechanisms. Some have calming effects on the nervous system, some support healthy cortisol levels and HPA axis function and some work on neurotransmitter systems. The choice of which herbs to use depends on the individual's specific pattern of symptoms and underlying factors.
 
-[Adaptogenic herbs](/articles/adaptogens-for-stress-ashwagandha-rhodiola-and-beyond), which help the body adapt to stress and maintain balance, can be particularly helpful for anxiety that is accompanied by fatigue or exhaustion. Our [herbal medicine services](/herbal-medicine/) can help determine which botanical approaches are most appropriate for your situation.
+[Adaptogenic herbs](/articles/adaptogens-for-stress-ashwagandha-rhodiola-and-beyond/), which help the body adapt to stress and maintain balance, can be particularly helpful for anxiety that is accompanied by fatigue or exhaustion. Our [herbal medicine services](/herbal-medicine/) can help determine which botanical approaches are most appropriate for your situation.
 
 ### Acupuncture
 

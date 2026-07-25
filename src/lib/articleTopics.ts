@@ -135,7 +135,7 @@ export const articleTopics = [
     featuredSlugs: [
       'post-viral-recovery-iv-therapy',
       'chelation-therapy-heart-disease',
-      'mistletoe-a-natural-cancer-treatment',
+      'magnesium-the-natural-muscle-relaxer',
     ],
     focusKeyword: 'IV therapy articles Halifax Bedford',
   },

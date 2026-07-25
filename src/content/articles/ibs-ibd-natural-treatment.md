@@ -76,7 +76,7 @@ The gut and brain communicate bidirectionally through neural, hormonal and immun
 
 Patients with IBS frequently have visceral hypersensitivity, meaning their gut nervous system is overly reactive, perceiving normal sensations as painful. Stress amplifies this sensitivity. Many IBS patients have histories of anxiety, depression or trauma and psychological interventions such as cognitive behavioral therapy and gut-directed hypnotherapy are among the most effective treatments for IBS<sup>6</sup>.
 
-For more on the gut-brain connection, see my article on [how gut health affects mental health](/articles/gut-brain-connection-mental-health).
+For more on the gut-brain connection, see my article on [how gut health affects mental health](/articles/gut-brain-connection-mental-health/).
 
 ### Intestinal Permeability
 
@@ -128,7 +128,7 @@ Fiber can be both helpful and harmful in IBS, depending on the type. Soluble fib
 
 For those with IBS, I typically recommend increasing soluble fiber gradually while being cautious with insoluble fiber. Psyllium husk is particularly well-studied and effective for IBS<sup>9</sup>.
 
-For general fiber information, see my article on [fiber's importance for gut health](/articles/fiber-the-underrated-nutrient).
+For general fiber information, see my article on [fiber's importance for gut health](/articles/fiber-the-underrated-nutrient/).
 
 ## Dietary Approaches to IBD
 
@@ -184,7 +184,7 @@ This German herbal formula contains nine plant extracts including bitter candytu
 
 ### Herbal Antimicrobials for SIBO
 
-When SIBO is present, herbal antimicrobials can be as effective as antibiotic treatment. Effective herbs include oregano oil, berberine-containing plants (goldenseal, Oregon grape), neem and allicin from garlic. These are typically used in combination for 4-6 weeks. SIBO treatment is best guided by a healthcare provider, as die-off reactions and retreatment may be necessary.
+Herbal antimicrobial combinations have been studied for suspected SIBO, but the evidence is limited and does not establish equivalence to antibiotics. Products such as oregano oil, berberine-containing plants, neem and allicin can cause adverse effects and interactions. Diagnosis and treatment require individualized clinical assessment.
 
 ### L-Glutamine
 
@@ -196,11 +196,11 @@ Natural therapies for IBD should complement, not replace, appropriate medical tr
 
 ### Curcumin
 
-Curcumin, the active compound in turmeric, has potent anti-inflammatory effects. Several studies show curcumin can help maintain remission in ulcerative colitis when added to standard therapy<sup>16</sup>. Doses of 2-3 grams daily, often in enhanced-absorption formulations, are typically used.
+Curcumin, a constituent of turmeric, has been studied as an adjunct to standard therapy for maintaining remission in ulcerative colitis.<sup>16</sup> Trials use different products and doses, and supplementation should be discussed with the treating team rather than selected from website information.
 
 ### Omega-3 Fatty Acids
 
-Fish oil has anti-inflammatory effects and may help reduce inflammation in IBD. Research results are mixed, but omega-3s are generally safe and have other health benefits. Doses of 2-4 grams of EPA/DHA daily are commonly used.
+Fish oil has anti-inflammatory effects, but research results in IBD are mixed. Supplements can cause adverse effects and interact with medications; there is no single dose appropriate for all readers.
 
 ### Vitamin D
 

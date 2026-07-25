@@ -85,18 +85,29 @@ jobs:
             --header "Cache-Control: no-cache"
           )
 
+          # Astro fingerprints its CSS bundle, so the filename changes whenever
+          # the build does. Serving THIS build's asset is proof the deploy
+          # landed — unlike grepping page copy, which fails on routine edits.
+          expected_asset="$(grep -o '/_astro/[^"]*\.css' dist/index.html | head -1)"
+          if [[ -z "$expected_asset" ]]; then
+            echo "Could not determine the built asset to verify against."
+            exit 1
+          fi
+          echo "Expecting production to serve: $expected_asset"
+
           for attempt in {1..12}; do
             home_status="$(curl "${curl_args[@]}" --output /tmp/home.html --write-out '%{http_code}' https://drcolinmacleod.com/ || true)"
-            policy_status="$(curl "${curl_args[@]}" --output /tmp/editorial-policy.html --write-out '%{http_code}' https://drcolinmacleod.com/editorial-policy/ || true)"
-            herbal_status="$(curl "${curl_args[@]}" --output /tmp/herbal-medicine.html --write-out '%{http_code}' https://drcolinmacleod.com/herbal-medicine/ || true)"
+            policy_status="$(curl "${curl_args[@]}" --output /dev/null --write-out '%{http_code}' https://drcolinmacleod.com/editorial-policy/ || true)"
+            herbal_status="$(curl "${curl_args[@]}" --output /dev/null --write-out '%{http_code}' https://drcolinmacleod.com/herbal-medicine/ || true)"
+            asset_status="$(curl "${curl_args[@]}" --output /dev/null --write-out '%{http_code}' "https://drcolinmacleod.com${expected_asset}" || true)"
 
-            echo "Verification attempt $attempt/12: home=$home_status editorial-policy=$policy_status herbal-medicine=$herbal_status"
+            echo "Verification attempt $attempt/12: home=$home_status editorial-policy=$policy_status herbal-medicine=$herbal_status asset=$asset_status"
 
             if [[ "$home_status" == "200" ]] \
-              && grep -q 'Look beyond symptoms' /tmp/home.html \
               && [[ "$policy_status" == "200" ]] \
-              && grep -q 'Editorial and Evidence Policy' /tmp/editorial-policy.html \
-              && [[ "$herbal_status" == "200" ]]; then
+              && [[ "$herbal_status" == "200" ]] \
+              && [[ "$asset_status" == "200" ]] \
+              && grep -q "$expected_asset" /tmp/home.html; then
               echo "Production verification passed."
               exit 0
             fi
