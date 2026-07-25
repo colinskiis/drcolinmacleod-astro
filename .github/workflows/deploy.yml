@@ -85,37 +85,41 @@ jobs:
             --header "Cache-Control: no-cache"
           )
 
-          # /build-id.txt carries the commit this build came from, so matching it
-          # proves THIS build is live. Previously we grepped the homepage for the
-          # hashed CSS path; that fails whenever Cloudflare answers a request with
-          # a 200 challenge page, which has the right status but none of the markup.
-          echo "Expecting production to serve build ${GITHUB_SHA}"
+          echo "Expecting build ${GITHUB_SHA}"
 
-          for attempt in {1..12}; do
-            # ?sha= makes each request unique so no cache layer can answer it.
-            build_id="$(curl "${curl_args[@]}" --max-time 20 "https://drcolinmacleod.com/build-id.txt?sha=${GITHUB_SHA}" || true)"
-            build_id="$(printf '%s' "$build_id" | tr -d '[:space:]')"
+          # Authoritative check, over SSH straight to the origin.
+          # Fetching build-id.txt over HTTPS is not reliable from CI: Cloudflare
+          # intermittently answers runner IPs with a bot-challenge page, which is
+          # a 200 full of HTML rather than the file. That produced two red builds
+          # on deploys that had actually succeeded. Reading the file on the server
+          # tests what we care about — that these bytes are deployed — and cannot
+          # be confounded by the edge.
+          deployed_id="$(ssh -i ~/.ssh/namecheap_deploy \
+            -o BatchMode=yes -o IdentitiesOnly=yes -p 21098 \
+            drcohmrh@business81.web-hosting.com \
+            "cat ~/public_html/build-id.txt" 2>/dev/null | tr -d '[:space:]' || true)"
+
+          if [[ "$deployed_id" != "$GITHUB_SHA" ]]; then
+            echo "Origin is serving build '${deployed_id:-<empty>}', expected ${GITHUB_SHA}."
+            exit 1
+          fi
+          echo "Origin confirmed serving ${GITHUB_SHA}."
+
+          # Public reachability. Only status codes — a challenge page also returns
+          # 200, so this catches an outage or a broken route, not content drift.
+          for attempt in {1..6}; do
             home_status="$(curl "${curl_args[@]}" --output /dev/null --write-out '%{http_code}' https://drcolinmacleod.com/ || true)"
             policy_status="$(curl "${curl_args[@]}" --output /dev/null --write-out '%{http_code}' https://drcolinmacleod.com/editorial-policy/ || true)"
             herbal_status="$(curl "${curl_args[@]}" --output /dev/null --write-out '%{http_code}' https://drcolinmacleod.com/herbal-therapy/ || true)"
 
-            echo "Attempt $attempt/12: home=$home_status editorial-policy=$policy_status herbal-therapy=$herbal_status build-id=${build_id:0:12}"
+            echo "Attempt $attempt/6: home=$home_status editorial-policy=$policy_status herbal-therapy=$herbal_status"
 
-            if [[ "$home_status" == "200" ]] \
-              && [[ "$policy_status" == "200" ]] \
-              && [[ "$herbal_status" == "200" ]] \
-              && [[ "$build_id" == "$GITHUB_SHA" ]]; then
+            if [[ "$home_status" == "200" && "$policy_status" == "200" && "$herbal_status" == "200" ]]; then
               echo "Production verification passed."
               exit 0
             fi
-
-            echo "Waiting for production to serve the new build..."
             sleep 10
           done
 
-          # Make the failure diagnosable instead of guessing next time.
-          echo "Production verification did not observe the new build."
-          echo "--- last /build-id.txt response (first 300 bytes) ---"
-          curl "${curl_args[@]}" --max-time 20 "https://drcolinmacleod.com/build-id.txt?sha=${GITHUB_SHA}" | head -c 300 || true
-          echo
+          echo "Origin has the new build but the site is not publicly reachable."
           exit 1
