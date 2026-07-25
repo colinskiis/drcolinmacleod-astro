@@ -79,39 +79,31 @@ jobs:
             --location
             --connect-timeout 10
             --max-time 30
-            --user-agent "Mozilla/5.0 (compatible; DrColinMacleod-Deployment-Check/1.0)"
+            --user-agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
             --header "Accept: text/html,application/xhtml+xml"
             --header "Accept-Language: en-CA,en;q=0.9"
             --header "Cache-Control: no-cache"
           )
 
-          # Astro fingerprints its CSS bundle, so the filename changes whenever
-          # the build does. Serving THIS build's asset is proof the deploy
-          # landed — unlike grepping page copy, which fails on routine edits.
-          expected_asset="$(grep -o '/_astro/[^"]*\.css' dist/index.html | head -1)"
-          if [[ -z "$expected_asset" ]]; then
-            echo "Could not determine the built asset to verify against."
-            exit 1
-          fi
-          echo "Expecting production to serve: $expected_asset"
+          # /build-id.txt carries the commit this build came from, so matching it
+          # proves THIS build is live. Previously we grepped the homepage for the
+          # hashed CSS path; that fails whenever Cloudflare answers a request with
+          # a 200 challenge page, which has the right status but none of the markup.
+          echo "Expecting production to serve build ${GITHUB_SHA}"
 
           for attempt in {1..12}; do
-            # Cloudflare can serve cached HTML that still references the previous
-            # build's asset, which fails the grep below even though the deploy
-            # landed. A unique query string forces an origin fetch.
-            cache_bust="${GITHUB_RUN_ID}-${attempt}-${RANDOM}"
-            home_status="$(curl "${curl_args[@]}" --output /tmp/home.html --write-out '%{http_code}' "https://drcolinmacleod.com/?cb=${cache_bust}" || true)"
+            build_id="$(curl "${curl_args[@]}" --max-time 20 https://drcolinmacleod.com/build-id.txt || true)"
+            build_id="$(printf '%s' "$build_id" | tr -d '[:space:]')"
+            home_status="$(curl "${curl_args[@]}" --output /dev/null --write-out '%{http_code}' https://drcolinmacleod.com/ || true)"
             policy_status="$(curl "${curl_args[@]}" --output /dev/null --write-out '%{http_code}' https://drcolinmacleod.com/editorial-policy/ || true)"
             herbal_status="$(curl "${curl_args[@]}" --output /dev/null --write-out '%{http_code}' https://drcolinmacleod.com/herbal-therapy/ || true)"
-            asset_status="$(curl "${curl_args[@]}" --output /dev/null --write-out '%{http_code}' "https://drcolinmacleod.com${expected_asset}" || true)"
 
-            echo "Verification attempt $attempt/12: home=$home_status editorial-policy=$policy_status herbal-therapy=$herbal_status asset=$asset_status"
+            echo "Attempt $attempt/12: home=$home_status editorial-policy=$policy_status herbal-therapy=$herbal_status build-id=${build_id:0:12}"
 
             if [[ "$home_status" == "200" ]] \
               && [[ "$policy_status" == "200" ]] \
               && [[ "$herbal_status" == "200" ]] \
-              && [[ "$asset_status" == "200" ]] \
-              && grep -q "$expected_asset" /tmp/home.html; then
+              && [[ "$build_id" == "$GITHUB_SHA" ]]; then
               echo "Production verification passed."
               exit 0
             fi
@@ -119,5 +111,10 @@ jobs:
             echo "Waiting for production to serve the new build..."
             sleep 10
           done
+
+          # Make the failure diagnosable instead of guessing next time.
           echo "Production verification did not observe the new build."
+          echo "--- last /build-id.txt response (first 300 bytes) ---"
+          curl "${curl_args[@]}" --max-time 20 https://drcolinmacleod.com/build-id.txt | head -c 300 || true
+          echo
           exit 1
