@@ -6,6 +6,10 @@ import type { APIRoute } from 'astro';
 // challenge page, which passes a status check but contains none of the markup.
 const buildId = process.env.GITHUB_SHA ?? 'local-dev';
 
+// NOTE: this is a static build, so these headers are NOT sent in production —
+// Astro writes the body to dist/build-id.txt and Apache serves it with its own
+// headers. The real no-store rule lives in public/.htaccess; keep the two in
+// sync. The headers below only apply to `astro dev`.
 export const GET: APIRoute = async () =>
   new Response(`${buildId}\n`, {
     status: 200,

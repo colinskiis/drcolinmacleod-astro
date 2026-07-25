@@ -92,7 +92,8 @@ jobs:
           echo "Expecting production to serve build ${GITHUB_SHA}"
 
           for attempt in {1..12}; do
-            build_id="$(curl "${curl_args[@]}" --max-time 20 https://drcolinmacleod.com/build-id.txt || true)"
+            # ?sha= makes each request unique so no cache layer can answer it.
+            build_id="$(curl "${curl_args[@]}" --max-time 20 "https://drcolinmacleod.com/build-id.txt?sha=${GITHUB_SHA}" || true)"
             build_id="$(printf '%s' "$build_id" | tr -d '[:space:]')"
             home_status="$(curl "${curl_args[@]}" --output /dev/null --write-out '%{http_code}' https://drcolinmacleod.com/ || true)"
             policy_status="$(curl "${curl_args[@]}" --output /dev/null --write-out '%{http_code}' https://drcolinmacleod.com/editorial-policy/ || true)"
@@ -115,6 +116,6 @@ jobs:
           # Make the failure diagnosable instead of guessing next time.
           echo "Production verification did not observe the new build."
           echo "--- last /build-id.txt response (first 300 bytes) ---"
-          curl "${curl_args[@]}" --max-time 20 https://drcolinmacleod.com/build-id.txt | head -c 300 || true
+          curl "${curl_args[@]}" --max-time 20 "https://drcolinmacleod.com/build-id.txt?sha=${GITHUB_SHA}" | head -c 300 || true
           echo
           exit 1

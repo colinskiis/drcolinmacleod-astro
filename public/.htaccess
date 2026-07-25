@@ -121,6 +121,16 @@ Options -Indexes
     ExpiresByType font/woff2 "access plus 1 year"
 </IfModule>
 
+# Deploy verification reads this to confirm production is serving the commit
+# that was just built. It must never be cached, at the edge or in a browser —
+# a stale copy would report the previous deploy as current.
+<IfModule mod_headers.c>
+    <Files "build-id.txt">
+        Header set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+        Header set Pragma "no-cache"
+    </Files>
+</IfModule>
+
 # Astro emits every CSS/JS/font into /_astro/ with a content hash in the
 # filename, so a changed file always gets a new URL and these can be cached
 # permanently. Overrides the 1-month CSS/JS rule above.
