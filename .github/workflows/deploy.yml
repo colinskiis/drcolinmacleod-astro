@@ -96,7 +96,11 @@ jobs:
           echo "Expecting production to serve: $expected_asset"
 
           for attempt in {1..12}; do
-            home_status="$(curl "${curl_args[@]}" --output /tmp/home.html --write-out '%{http_code}' https://drcolinmacleod.com/ || true)"
+            # Cloudflare can serve cached HTML that still references the previous
+            # build's asset, which fails the grep below even though the deploy
+            # landed. A unique query string forces an origin fetch.
+            cache_bust="${GITHUB_RUN_ID}-${attempt}-${RANDOM}"
+            home_status="$(curl "${curl_args[@]}" --output /tmp/home.html --write-out '%{http_code}' "https://drcolinmacleod.com/?cb=${cache_bust}" || true)"
             policy_status="$(curl "${curl_args[@]}" --output /dev/null --write-out '%{http_code}' https://drcolinmacleod.com/editorial-policy/ || true)"
             herbal_status="$(curl "${curl_args[@]}" --output /dev/null --write-out '%{http_code}' https://drcolinmacleod.com/herbal-therapy/ || true)"
             asset_status="$(curl "${curl_args[@]}" --output /dev/null --write-out '%{http_code}' "https://drcolinmacleod.com${expected_asset}" || true)"
