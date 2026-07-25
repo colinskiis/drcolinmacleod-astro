@@ -51,6 +51,11 @@ RewriteRule ^articles/herbal-medicine-history-and-uses/?$ /articles/herbal-thera
 RewriteRule ^images/general/herbal-medicine\.webp$ /images/general/herbal-therapy.webp [L,R=301]
 RewriteRule ^images/reference/services/herbal-medicine\.jpeg$ /images/reference/services/herbal-therapy.jpeg [L,R=301]
 RewriteRule ^images/services/sports-medicine-hero\.jpg$ /images/services/sports-performance-hero.jpg [L,R=301]
+# These three were in use on the site before being renamed, so they may be in
+# Google's image index; without these rules they 404.
+RewriteRule ^images/nutrition/herbal-medicine-2\.webp$ /images/nutrition/herbal-therapy-2.webp [L,R=301]
+RewriteRule ^images/reference/services/herbal-medicine\.webp$ /images/reference/services/herbal-therapy.webp [L,R=301]
+RewriteRule ^images/services/sports-medicine-hero\.webp$ /images/services/sports-performance-hero.webp [L,R=301]
 RewriteRule ^chelation-therapy-heart-disease/?$ /chelation-therapy/ [L,R=301]
 RewriteRule ^natural-pain-solutions/?$ /conditions/ [L,R=301]
 RewriteRule ^ozone-therapy/?$ /prolotherapy/ [L,R=301]
