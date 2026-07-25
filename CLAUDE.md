@@ -51,6 +51,24 @@ Manual SSH: `ssh namecheap`
 - **Markdown images** get width/height/lazy-loading injected automatically by
   `src/lib/rehype-image-attrs.mjs` — don't hand-write them.
 
+### Protected terms (regulatory — do not regress)
+
+Following a July 2026 letter from counsel for the College of Physicians and
+Surgeons of NS citing s.22(1) of the *Medical Act*, the site must not describe
+this practice as "medicine". When writing new content:
+
+- Use "naturopathic care", "herbal therapy", "sports performance and injury
+  care", "regenerative therapy" — never "naturopathic/herbal/sports/
+  regenerative medicine", and never "medical" to describe services offered here.
+- The credential is "Naturopathic Doctor (ND)" — the title authorised by s.19 of
+  the Chiropractic and Naturopathy Regulations. Do not write "Doctor of
+  Naturopathic Medicine".
+- Legitimate and intentionally kept: journal/organisation names in citations,
+  the Canadian College of Naturopathic Medicine as the school's name, historical
+  traditions (TCM, Ayurvedic), drug products, and language directing patients to
+  a physician. Don't "clean these up" — altering them falsifies sources or
+  weakens patient-safety guidance.
+
 ## Button Text Standards
 
 - All booking buttons: "Book Online"
