@@ -5,8 +5,8 @@ publishDate: 2024-06-28
 modifiedDate: 2026-01-09
 author: "Dr. Colin MacLeod, ND"
 heroImage: "/images/nutrition/adaptogens-herbs.webp"
-categories: ["Naturopathic", "Herbal Medicine"]
-tags: ["adaptogens", "ashwagandha", "rhodiola", "stress", "herbal medicine", "naturopathic"]
+categories: ["Naturopathic", "Herbal Therapy"]
+tags: ["adaptogens", "ashwagandha", "rhodiola", "stress", "herbal therapy", "naturopathic"]
 seo:
   description: "Evidence-based guide to adaptogens including ashwagandha and rhodiola. Learn what the research shows about these herbs for stress, fatigue and cortisol."
   focusKeyword: "adaptogens stress"
@@ -122,7 +122,7 @@ The most effective approach combines lifestyle modification including [quality s
 
 ## Adaptogen Support in Halifax
 
-If you're interested in whether adaptogens might be helpful for your situation, please contact Dr. Colin MacLeod, ND to book an initial visit. Dr. MacLeod provides [herbal medicine consultations](/herbal-medicine/) and can help determine which adaptogenic herbs (if any) are appropriate for your individual needs and ensure they're used safely alongside any medications or other treatments.
+If you're interested in whether adaptogens might be helpful for your situation, please contact Dr. Colin MacLeod, ND to book an initial visit. Dr. MacLeod provides [herbal therapy consultations](/herbal-therapy/) and can help determine which adaptogenic herbs (if any) are appropriate for your individual needs and ensure they're used safely alongside any medications or other treatments.
 
 ### References
 

@@ -39,7 +39,7 @@ This doesn't mean pain management isn't important. Chronic pain significantly im
 
 ## Natural Treatment Approaches
 
-Naturopathic medicine offers several effective treatments for osteoarthritis that address both symptoms and underlying causes. Most patients achieve significant improvement in pain, stiffness and function through a combination approach using two or three complementary treatments.
+Naturopathic care offers several effective treatments for osteoarthritis that address both symptoms and underlying causes. Most patients achieve significant improvement in pain, stiffness and function through a combination approach using two or three complementary treatments.
 
 ### Prolotherapy
 
@@ -86,7 +86,7 @@ Many patients come to naturopathic treatment after years of NSAID use with progr
 ## Related Resources
 
 - [Prolotherapy for Arthritis](/prolotherapy-for-arthritis/)
-- [Sports Medicine](/sports-medicine/)
+- [Sports Performance & Injury](/sports-performance-injury/)
 - [Conditions We Treat](/conditions/)
 
 ## References

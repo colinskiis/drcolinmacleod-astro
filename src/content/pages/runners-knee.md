@@ -59,7 +59,7 @@ When runner's knee becomes a persistent, chronic problem despite physiotherapy a
 
 **Acupuncture** is a well-established complementary treatment for musculoskeletal pain. By stimulating local tissue blood flow and modulating pain signalling pathways, [acupuncture](/acupuncture/) can serve as an effective adjunct to rehabilitation, helping to reduce pain and improve function during the recovery process.
 
-To learn more about how these treatments are applied to knee and sports-related injuries, visit the [sports medicine page](/sports-medicine/).
+To learn more about how these treatments are applied to knee and sports-related injuries, visit the [sports performance and injury care page](/sports-performance-injury/).
 
 ### References
 

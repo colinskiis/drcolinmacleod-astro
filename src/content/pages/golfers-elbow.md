@@ -49,7 +49,7 @@ Initial management of medial epicondylitis typically involves activity modificat
 
 Because medial epicondylitis is fundamentally a degenerative tendinopathy rather than an inflammatory condition, treatments that stimulate tissue repair rather than suppress inflammation offer a logical and evidence-supported approach.
 
-**Prolotherapy** is an injection-based regenerative treatment that uses a proliferant solution to stimulate the body's natural healing response in chronically degenerated tendons and ligaments. It has been used in the treatment of elbow tendinopathies and forms part of an integrated [sports medicine](/sports-medicine/) approach at the clinic<sup>3</sup>. More information can be found on the [prolotherapy](/prolotherapy-for-arthritis/) page.
+**Prolotherapy** is an injection-based regenerative treatment that uses a proliferant solution to stimulate the body's natural healing response in chronically degenerated tendons and ligaments. It has been used in the treatment of elbow tendinopathies and forms part of an integrated [sports performance and injury care](/sports-performance-injury/) approach at the clinic<sup>3</sup>. More information can be found on the [prolotherapy](/prolotherapy-for-arthritis/) page.
 
 Patients with lateral elbow pain may also be interested in the related page on [tennis elbow](/tennis-elbow/).
 

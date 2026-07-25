@@ -18,7 +18,7 @@ Digestive problems have become remarkably common. Irritable bowel syndrome (IBS)
 
 These conditions significantly impact quality of life. Beyond the physical discomfort of pain, bloating and altered bowel habits, they affect work productivity, social activities, mental health and overall wellbeing. Many patients feel their concerns have been dismissed or that conventional approaches have failed to adequately address their symptoms.
 
-The good news is that naturopathic medicine offers effective approaches to both IBS and IBD. By addressing underlying factors such as gut microbiome dysfunction, food sensitivities, stress and inflammation, many patients experience substantial improvement in their symptoms and quality of life.
+The good news is that naturopathic care offers effective approaches to both IBS and IBD. By addressing underlying factors such as gut microbiome dysfunction, food sensitivities, stress and inflammation, many patients experience substantial improvement in their symptoms and quality of life.
 
 ## IBS vs. IBD: Understanding the Difference
 
@@ -242,7 +242,7 @@ Testing that may be helpful includes comprehensive stool analysis to assess micr
 
 ## Digestive Health Support in Halifax
 
-If you are struggling with IBS, IBD or other digestive concerns, naturopathic medicine offers effective approaches to identify and address underlying factors. Through comprehensive assessment, dietary guidance, targeted supplementation and ongoing support, significant improvement is possible for most patients.
+If you are struggling with IBS, IBD or other digestive concerns, naturopathic care offers effective approaches to identify and address underlying factors. Through comprehensive assessment, dietary guidance, targeted supplementation and ongoing support, significant improvement is possible for most patients.
 
 Please contact Dr. Colin MacLeod, ND to book an initial appointment. Dr. MacLeod provides thorough digestive health assessments and individualized treatment plans, working collaboratively with gastroenterologists and other healthcare providers when appropriate.
 

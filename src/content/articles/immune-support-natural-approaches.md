@@ -38,7 +38,7 @@ A whole-foods diet rich in colorful vegetables and fruits, quality proteins and 
 
 [Intravenous nutrient therapy](/iv-therapy/) allows for therapeutic doses that cannot be achieved through oral supplementation. The Myers' Cocktail, which includes B vitamins, vitamin C, magnesium and calcium, can replenish nutrient stores and support energy production needed for immune function. High-dose intravenous vitamin C achieves blood levels with direct antimicrobial activity and may be particularly beneficial for those with compromised immune systems or during acute illness.
 
-## Herbal Medicine and Immunity
+## Herbal Therapy and Immunity
 
 Botanical medicines have been used for centuries to support immune function, and modern research continues to validate their effectiveness<sup>8</sup>. Although there are several herbal medicines which are helpful in supporting immune health, it is best to consult a naturopathic doctor to have an individualized plan and to avoid any possible interactions with medications or contraindications.
 

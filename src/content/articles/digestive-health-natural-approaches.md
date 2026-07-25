@@ -1,6 +1,6 @@
 ---
 title: "Natural Approaches to Digestive Health"
-description: "Digestive health is foundational to overall wellness. Naturopathic medicine offers effective approaches for IBS, SIBO, food sensitivities and gut microbiome imbalances."
+description: "Digestive health is foundational to overall wellness. Naturopathic care offers effective approaches for IBS, SIBO, food sensitivities and gut microbiome imbalances."
 publishDate: 2024-01-05
 modifiedDate: 2024-12-03
 author: "Dr. Colin MacLeod, ND"
@@ -34,7 +34,7 @@ A comprehensive approach to digestive health begins with proper assessment. [Lab
 
 Diet is the foundation of digestive treatment, with [adequate fiber intake](/articles/fiber-the-underrated-nutrient/) playing a central role. Depending on the individual case, elimination diets, low-FODMAP protocols or anti-inflammatory approaches may be recommended. The gut-brain connection must also be addressed, as chronic stress impairs digestive function by reducing enzyme production, slowing gut motility and altering microbiome composition.
 
-Natural treatments including herbal medicine, probiotics and digestive enzyme support can be very effective when properly matched to the individual's specific condition. Due to the complex nature of digestive disorders and the many potential underlying causes, it is best to work with a naturopathic doctor who can design an optimal treatment plan based on your specific needs.
+Natural treatments including herbal therapy, probiotics and digestive enzyme support can be very effective when properly matched to the individual's specific condition. Due to the complex nature of digestive disorders and the many potential underlying causes, it is best to work with a naturopathic doctor who can design an optimal treatment plan based on your specific needs.
 
 ## Digestive Health Treatment in Halifax
 

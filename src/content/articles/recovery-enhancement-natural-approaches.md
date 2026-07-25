@@ -4,7 +4,7 @@ description: "Evidence-based strategies to enhance athletic recovery including I
 publishDate: 2024-02-24
 modifiedDate: 2024-12-03
 heroImage: "/images/general/athletic-recovery.webp"
-categories: ["Sports Medicine", "Naturopathic"]
+categories: ["Sports Performance & Injury", "Naturopathic"]
 tags: ["athletic recovery", "IV therapy", "sports nutrition", "sleep", "naturopathic"]
 seo:
   description: "Evidence-based strategies to enhance athletic recovery including IV therapy, nutrition, sleep optimization and natural anti-inflammatory support."
@@ -53,7 +53,7 @@ Inflammation following exercise is a double-edged sword. Some degree of inflamma
 
 Natural approaches to managing inflammation focus on supporting the body's resolution pathways rather than simply suppressing the inflammatory response. Dietary strategies, particularly adequate intake of omega-3 fatty acids from fish or other sources, help maintain appropriate inflammatory balance. Various botanical medicines and natural compounds have demonstrated anti-inflammatory effects in research settings, though the optimal approach varies by individual and should be discussed with a healthcare provider.
 
-It is worth noting that while non-steroidal anti-inflammatory drugs such as ibuprofen effectively reduce pain and inflammation, research suggests that regular use may impair training adaptations and slow the healing of bone and tendon tissue<sup>12</sup>. This has led many sports medicine practitioners to recommend natural alternatives when ongoing anti-inflammatory support is needed.
+It is worth noting that while non-steroidal anti-inflammatory drugs such as ibuprofen effectively reduce pain and inflammation, research suggests that regular use may impair training adaptations and slow the healing of bone and tendon tissue<sup>12</sup>. This has led many sports performance and injury care practitioners to recommend natural alternatives when ongoing anti-inflammatory support is needed.
 
 ## Active Recovery and Monitoring
 
@@ -65,7 +65,7 @@ Monitoring recovery status helps athletes optimize their training loads. Subject
 
 Certain signs suggest that recovery may require more than basic strategies. Persistent fatigue despite adequate sleep, declining performance despite consistent training, frequent illness or infection, nagging injuries that fail to resolve, difficulty sleeping and mood changes or loss of motivation may all indicate overtraining or suboptimal recovery that warrants assessment<sup>13</sup>.
 
-A naturopathic approach to athletic recovery considers training demands and competition schedules, individual nutritional needs, sleep optimization and strategic use of treatments such as IV therapy. If you are experiencing symptoms of inadequate recovery or are interested in optimizing your performance through enhanced recovery strategies, please contact Dr. Colin MacLeod, ND to book an initial naturopathic visit. Learn more about our [sports medicine services](/sports-medicine/).
+A naturopathic approach to athletic recovery considers training demands and competition schedules, individual nutritional needs, sleep optimization and strategic use of treatments such as IV therapy. If you are experiencing symptoms of inadequate recovery or are interested in optimizing your performance through enhanced recovery strategies, please contact Dr. Colin MacLeod, ND to book an initial naturopathic visit. Learn more about our [sports performance and injury care](/sports-performance-injury/).
 
 ### References
 

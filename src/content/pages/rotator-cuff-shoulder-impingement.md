@@ -56,7 +56,7 @@ Regenerative injection therapies offer an evidence-based approach to shoulder pa
 
 [Acupuncture](/acupuncture/) is a valuable adjunct therapy for shoulder pain. By stimulating specific points, acupuncture promotes local circulation, reduces muscle tension, and modulates pain signalling, all of which can support recovery alongside regenerative treatments.
 
-For patients with shoulder pain, a comprehensive assessment and individualized treatment plan is available through the [sports medicine](/sports-medicine/) program at Optimal Wellbeing Clinic in Bedford, Nova Scotia.
+For patients with shoulder pain, a comprehensive assessment and individualized treatment plan is available through the [sports performance and injury care](/sports-performance-injury/) program at Optimal Wellbeing Clinic in Bedford, Nova Scotia.
 
 ### References
 

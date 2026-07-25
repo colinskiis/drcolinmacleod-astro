@@ -23,7 +23,7 @@ People suffering from osteoarthritis typically have limited range of motion, sti
 
 ## Natural Treatments for Osteoarthritis
 
-Naturopathic medicine offers effective treatments for osteoarthritis. Typically a patient undergoing a combination approach with two or three natural supportive treatments has a significant improvement in the pain, stiffness and disability associated with their osteoarthritis.
+Naturopathic care offers effective treatments for osteoarthritis. Typically a patient undergoing a combination approach with two or three natural supportive treatments has a significant improvement in the pain, stiffness and disability associated with their osteoarthritis.
 
 - Diet & Lifestyle: Keeping a healthy body weight through diet modification and low-impact exercise is an important factor in reducing the progression, easing pain and promoting recovery in osteoarthritis.
 - Prolotherapy: Dextrose prolotherapy has been studied for osteoarthritis, with mixed evidence and variable individual response. It is an invasive procedure with potential risks and should be considered alongside established options rather than presented as predictably safe or effective.

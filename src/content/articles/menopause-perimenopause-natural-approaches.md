@@ -1,6 +1,6 @@
 ---
 title: "Menopause and Perimenopause: Natural Approaches"
-description: "Learn how naturopathic medicine supports women through perimenopause and menopause with evidence-based natural approaches including nutrition, lifestyle and herbal therapies."
+description: "Learn how naturopathic care supports women through perimenopause and menopause with evidence-based natural approaches including nutrition, lifestyle and herbal therapies."
 publishDate: 2025-07-08
 author: "Dr. Colin MacLeod, ND"
 heroImage: "/images/general/menopause-woman.webp"
@@ -8,7 +8,7 @@ categories: ["Naturopathic", "Hormones"]
 tags: ["menopause", "perimenopause", "hormones", "women's health", "Halifax", "natural treatment"]
 seo:
   title: "Menopause and Perimenopause: Natural Approaches | Halifax ND"
-  description: "Learn how naturopathic medicine supports women through perimenopause and menopause with evidence-based natural approaches including nutrition, lifestyle and herbal therapies."
+  description: "Learn how naturopathic care supports women through perimenopause and menopause with evidence-based natural approaches including nutrition, lifestyle and herbal therapies."
   focusKeyword: "menopause natural treatment Halifax"
 ---
 
@@ -54,7 +54,7 @@ Joint pain and stiffness affect a significant proportion of menopausal women, li
 
 ## The Naturopathic Approach
 
-Naturopathic medicine offers a comprehensive framework for supporting women through the menopausal transition. Rather than viewing menopause as a disease requiring treatment, we approach it as a natural life transition that may benefit from thoughtful support. The goal is to minimize uncomfortable symptoms, protect long-term health and help women emerge from this transition feeling well.
+Naturopathic care offers a comprehensive framework for supporting women through the menopausal transition. Rather than viewing menopause as a disease requiring treatment, we approach it as a natural life transition that may benefit from thoughtful support. The goal is to minimize uncomfortable symptoms, protect long-term health and help women emerge from this transition feeling well.
 
 This approach begins with thorough assessment. Understanding a woman's complete health picture, her symptom patterns, her health history, her lifestyle factors and her individual goals, allows for truly personalized recommendations. What works well for one woman may not be appropriate for another. Through [comprehensive hormone testing](/articles/comprehensive-hormone-testing-halifax/), we can assess not just whether hormones are declining, but how they're metabolizing and interacting with each other, providing insights that guide more targeted interventions.
 
@@ -92,7 +92,7 @@ Alcohol consumption, even at moderate levels, can worsen hot flashes and disrupt
 
 ## Herbal and Natural Therapies
 
-Herbal medicine has a long history of use for menopausal symptoms, and modern research has begun to validate many traditional approaches. Through [herbal medicine consultation](/herbal-medicine/), we can identify which herbs may be most appropriate for each woman's individual symptom pattern and health circumstances.
+Herbal therapy has a long history of use for menopausal symptoms, and modern research has begun to validate many traditional approaches. Through [herbal therapy consultation](/herbal-therapy/), we can identify which herbs may be most appropriate for each woman's individual symptom pattern and health circumstances.
 
 Several categories of herbs offer support during the menopausal transition. Phytoestrogenic herbs contain compounds that interact with estrogen receptors, providing gentle hormonal support. Adaptogenic herbs help the body manage stress and support adrenal function, which becomes increasingly important as ovarian hormone production declines. I've written about [adaptogens for stress](/articles/adaptogens-for-stress-ashwagandha-rhodiola-and-beyond/), many of which are also relevant during perimenopause and menopause. Other herbs address specific symptoms like sleep disturbance, mood changes or hot flashes through various mechanisms.
 
@@ -130,7 +130,7 @@ Menopause is a universal experience for women who live long enough, yet each wom
 
 The naturopathic approach recognizes this complexity. We work with each woman to understand her individual experience, identify the factors contributing to her symptoms and develop a personalized plan that addresses both immediate comfort and long-term health. This may involve dietary modifications, targeted supplementation, herbal medicines, stress management strategies and coordination with other healthcare providers when appropriate.
 
-For women in Halifax and throughout Nova Scotia seeking support for perimenopause or menopause, Dr. Colin MacLeod, ND offers comprehensive assessment and individualized care. We can evaluate hormonal status through [advanced laboratory testing](/lab-testing/), provide guidance on [clinical nutrition](/clinical-nutrition/) tailored to hormonal health and prescribe appropriate [herbal medicines](/herbal-medicine/) when indicated. The goal is to help women not merely survive this transition, but to emerge feeling healthy, vital and empowered.
+For women in Halifax and throughout Nova Scotia seeking support for perimenopause or menopause, Dr. Colin MacLeod, ND offers comprehensive assessment and individualized care. We can evaluate hormonal status through [advanced laboratory testing](/lab-testing/), provide guidance on [clinical nutrition](/clinical-nutrition/) tailored to hormonal health and prescribe appropriate [herbal medicines](/herbal-therapy/) when indicated. The goal is to help women not merely survive this transition, but to emerge feeling healthy, vital and empowered.
 
 ---
 

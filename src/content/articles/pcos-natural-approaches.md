@@ -203,7 +203,7 @@ If you are struggling with PCOS and would like to explore naturopathic approache
 5. Escobar-Morreale HF, Luque-Ramirez M, Gonzalez F. Circulating inflammatory markers in polycystic ovary syndrome: a systematic review and metaanalysis. *Fertil Steril*. 2011;95(3):1048-1058.
 6. Tremellen K, Pearce K. Dysbiosis of gut microbiota (DOGMA): a novel theory for the development of polycystic ovarian syndrome. *Med Hypotheses*. 2012;79(1):104-112.
 7. Marsh KA, Steinbeck KS, Atkinson FS, et al. Effect of a low glycemic index compared with a conventional healthy diet on polycystic ovary syndrome. *Am J Clin Nutr*. 2010;92(1):83-92.
-8. Arentz S, Abbott JA, Smith CA, Bensoussan A. Herbal medicine for the management of polycystic ovary syndrome (PCOS) and associated oligo/amenorrhoea and hyperandrogenism; a review of the laboratory evidence for effects with corroborative clinical findings. *BMC Complement Altern Med*. 2014;14:511.
+8. Arentz S, Abbott JA, Smith CA, Bensoussan A. Herbal therapy for the management of polycystic ovary syndrome (PCOS) and associated oligo/amenorrhoea and hyperandrogenism; a review of the laboratory evidence for effects with corroborative clinical findings. *BMC Complement Altern Med*. 2014;14:511.
 9. Harrison CL, Lombard CB, Moran LJ, Teede HJ. Exercise therapy in polycystic ovary syndrome: a systematic review. *Hum Reprod Update*. 2011;17(2):171-183.
 10. Tasali E, Van Cauter E, Ehrmann DA. Polycystic ovary syndrome and obstructive sleep apnea. *Sleep Med Clin*. 2008;3(1):37-46.
 11. Moran LJ, Pasquali R, Teede HJ, et al. Treatment of obesity in polycystic ovary syndrome: a position statement of the Androgen Excess and Polycystic Ovary Syndrome Society. *Fertil Steril*. 2009;92(6):1966-1982.

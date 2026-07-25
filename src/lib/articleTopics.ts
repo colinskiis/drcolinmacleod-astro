@@ -12,7 +12,7 @@ export const articleTopics = [
       'The goal is to help readers understand when conservative care may be appropriate, when a more detailed assessment is useful and how recovery can be supported without unnecessary treatment.'
     ],
     relatedServices: [
-      { label: 'Sports Medicine', href: '/sports-medicine/' },
+      { label: 'Sports Performance & Injury', href: '/sports-performance-injury/' },
       { label: 'Prolotherapy', href: '/prolotherapy/' },
       { label: 'Prolotherapy for Tendon Injuries', href: '/prolotherapy-for-tendon-injuries/' },
       { label: 'Low Back Pain', href: '/low-back-pain/' },
@@ -97,22 +97,22 @@ export const articleTopics = [
     id: 'nutrition',
     label: 'Nutrition',
     title: 'Nutrition Articles',
-    description: 'Articles on clinical nutrition, supplements, herbal medicine and evidence-informed natural health from Dr. Colin MacLeod, ND.',
-    intro: 'Articles on clinical nutrition, supplements, herbal medicine and natural health.',
+    description: 'Articles on clinical nutrition, supplements, herbal therapy and evidence-informed natural health from Dr. Colin MacLeod, ND.',
+    intro: 'Articles on clinical nutrition, supplements, herbal therapy and natural health.',
     overview: [
-      'Nutrition and natural health recommendations work best when they are specific enough to matter and simple enough to follow. These articles cover food, supplements, herbal medicine, nutrient status and practical prevention.',
+      'Nutrition and natural health recommendations work best when they are specific enough to matter and simple enough to follow. These articles cover food, supplements, herbal therapy, nutrient status and practical prevention.',
       'The emphasis is on useful information that can support better decisions without turning health into a collection of trends.'
     ],
     relatedServices: [
       { label: 'Clinical Nutrition', href: '/clinical-nutrition/' },
       { label: 'Nutrient Testing', href: '/nutrient-testing/' },
-      { label: 'Herbal Medicine', href: '/herbal-medicine/' },
+      { label: 'Herbal Therapy', href: '/herbal-therapy/' },
       { label: 'Wellness Blood Work', href: '/wellness-blood-work/' },
     ],
     featuredSlugs: [
       'fiber-the-underrated-nutrient',
       'creatine-beyond-muscle-building',
-      'herbal-medicine-history-and-uses',
+      'herbal-therapy-history-and-uses',
     ],
     focusKeyword: 'clinical nutrition naturopathic articles Halifax Bedford',
   },
@@ -193,11 +193,11 @@ export const articleTopicFilters = [
 ] as const;
 
 const topicMatchers: Record<string, string[]> = {
-  'pain-injuries': ['pain management', 'sports medicine', 'athletic performance', 'sports injuries', 'prolotherapy', 'arthritis', 'injury', 'athletic recovery'],
+  'pain-injuries': ['pain management', 'sports performance and injury care', 'athletic performance', 'sports injuries', 'prolotherapy', 'arthritis', 'injury', 'athletic recovery'],
   'digestive-health': ['digestive health', 'gut', 'ibs', 'ibd', 'fiber', 'parasites'],
   'hormones': ['hormones', 'hormonal health', "women's health", "men's health", 'fertility', 'pcos', 'pms', 'menopause', 'testosterone', 'acne'],
   'mental-health': ['mental health', 'anxiety', 'depression', 'stress', 'sleep'],
-  'nutrition': ['nutrition', 'herbal medicine', 'adaptogens', 'magnesium', 'creatine', 'electrolytes', 'nutrients', 'diet', 'peptides'],
+  'nutrition': ['nutrition', 'herbal therapy', 'adaptogens', 'magnesium', 'creatine', 'electrolytes', 'nutrients', 'diet', 'peptides'],
   'iv-therapy': ['iv therapy', 'post-viral recovery', 'myers cocktail', 'vitamin c', 'glutathione'],
   'heart-metabolic': ['heart health', 'weight management', 'blood pressure', 'blood sugar', 'diabetes', 'berberine', 'metabolic', 'cardiovascular'],
   'immune-health': ['immune health', 'autoimmune', 'respiratory health', 'asthma', 'post-viral recovery', 'mistletoe'],

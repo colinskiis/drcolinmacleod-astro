@@ -1,19 +1,19 @@
 ---
-title: "Herbal Medicine: History, Science and Modern Applications"
-description: "A comprehensive guide to herbal medicine covering its rich history, scientific basis, evidence-based applications and safe usage principles."
+title: "Herbal Therapy: History, Science and Modern Applications"
+description: "A comprehensive guide to herbal therapy covering its rich history, scientific basis, evidence-based applications and safe usage principles."
 publishDate: 2012-02-01
 modifiedDate: 2026-01-10
 author: "Dr. Colin MacLeod, ND"
-heroImage: "/images/nutrition/herbal-medicine-2.webp"
-categories: ["Naturopathic", "Herbal Medicine"]
-tags: ["herbal medicine", "botanical medicine", "natural remedies", "Halifax"]
+heroImage: "/images/nutrition/herbal-therapy-2.webp"
+categories: ["Naturopathic", "Herbal Therapy"]
+tags: ["herbal therapy", "botanical therapy", "natural remedies", "Halifax"]
 seo:
-  title: "Herbal Medicine Guide | Halifax Naturopathic Doctor"
-  description: "A comprehensive guide to herbal medicine covering its rich history, scientific basis, evidence-based applications and safe usage principles."
-  focusKeyword: "herbal medicine"
+  title: "Herbal Therapy Guide | Halifax Naturopathic Doctor"
+  description: "A comprehensive guide to herbal therapy covering its rich history, scientific basis, evidence-based applications and safe usage principles."
+  focusKeyword: "herbal therapy"
 ---
 
-## The Science Behind Plant Medicine
+## The Science Behind Plant Compounds
 
 Plants have evolved over millions of years, developing chemical compounds that help them survive, defending against bacteria, fungi, insects and grazing animals. When consumed by humans, these same compounds can profoundly affect our physiology.
 
@@ -23,7 +23,7 @@ Modern pharmacology has identified many active compounds in traditional medicina
 
 ## A Rich Historical Foundation
 
-Herbal medicine represents humanity's oldest system of healing. Every culture across history developed sophisticated knowledge of local plants and their medicinal properties, knowledge refined over countless generations of observation and application.
+Herbal therapy represents humanity's oldest system of healing. Every culture across history developed sophisticated knowledge of local plants and their medicinal properties, knowledge refined over countless generations of observation and application.
 
 ### Ancient Traditions
 
@@ -33,7 +33,7 @@ Herbal medicine represents humanity's oldest system of healing. Every culture ac
 
 **Ayurvedic Medicine**: The ancient Indian healing system documented in texts from 500 BC to 500 AD incorporates thousands of medicinal plants<sup>4</sup>. Many of these remain in clinical use today, including turmeric, ashwagandha and gotu kola.
 
-**European Herbalism**: Herbal medicine flourished in Europe during the 1500s-1600s, with detailed herbals describing medicinal plants<sup>5</sup>. This tradition continued through physicians and apothecaries until the rise of synthetic pharmaceuticals in the 20th century.
+**European Herbalism**: Herbal therapy flourished in Europe during the 1500s-1600s, with detailed herbals describing medicinal plants<sup>5</sup>. This tradition continued through physicians and apothecaries until the rise of synthetic pharmaceuticals in the 20th century.
 
 ### Traditional Knowledge Validated
 
@@ -57,7 +57,7 @@ Approximately 25% of modern pharmaceuticals are derived from plants, with many m
 
 ## Modern Research and Evidence
 
-Today, herbal medicine occupies a middle ground, more researched than many realize, but less studied than synthetic pharmaceuticals due to patent and funding limitations. Several herbs have substantial clinical evidence supporting their use.
+Today, herbal therapy occupies a middle ground, more researched than many realize, but less studied than synthetic pharmaceuticals due to patent and funding limitations. Several herbs have substantial clinical evidence supporting their use.
 
 ### Well-Studied Herbs
 
@@ -157,22 +157,22 @@ Herbs come in various forms, each with advantages.
 
 **Topical Preparations**: Creams, salves and oils for local application. Appropriate for skin conditions, muscle pain and some joint conditions.
 
-## Integrating Herbal Medicine
+## Integrating Herbal Therapy
 
-Herbal medicine works well as part of a comprehensive health approach. Rather than replacing other treatments, herbs often complement dietary changes, lifestyle modifications and conventional treatments when appropriate.
+Herbal therapy works well as part of a comprehensive health approach. Rather than replacing other treatments, herbs often complement dietary changes, lifestyle modifications and conventional treatments when appropriate.
 
 The best outcomes typically come from addressing root causes (diet, lifestyle, underlying conditions), using herbs targeted to individual patterns and needs, working with qualified practitioners for complex situations and maintaining communication with all healthcare providers.
 
-## Herbal Medicine in Halifax
+## Herbal Therapy in Halifax
 
-Herbal medicine offers powerful tools for supporting health, tools refined over millennia and increasingly validated by modern research. When used appropriately, herbs can address numerous conditions safely and effectively.
+Herbal therapy offers powerful tools for supporting health, tools refined over millennia and increasingly validated by modern research. When used appropriately, herbs can address numerous conditions safely and effectively.
 
-If you're interested in exploring herbal medicine for your health concerns, please contact Dr. Colin MacLeod, ND to book an initial consultation. Dr. MacLeod is trained in botanical medicine and can assess your situation, recommend appropriate herbs and monitor your progress. Learn more about our [herbal medicine services](/herbal-medicine/).
+If you're interested in exploring herbal therapy for your health concerns, please contact Dr. Colin MacLeod, ND to book an initial consultation. Dr. MacLeod is trained in botanical therapy and can assess your situation, recommend appropriate herbs and monitor your progress. Learn more about our [herbal therapy services](/herbal-therapy/).
 
 ## References
 
 1. Smallwood P. An Integrative Approach to the Study of Plant-Animal Interactions. *Amer Zool*. 2001;41:807-809.
-2. Aboelsoud N. Herbal medicine in ancient Egypt. *J Med Plants Res*. 2010;4(2):82-86.
+2. Aboelsoud N. Herbal therapy in ancient Egypt. *J Med Plants Res*. 2010;4(2):82-86.
 3. Unschuld P. Medicine in China: A History of Ideas. Berkeley: University of California Press, 1985.
 4. Wujastyk D. The Roots of Ayurveda: selections from Sanskrit medical writings. London: Penguin Books, 2003.
 5. Barlow H. Old English Herbals, 1525-1640. *Proc R Soc Med*. 1913;6(Sect Hist Med):108-149.

@@ -104,7 +104,7 @@ It bears emphasizing that natural approaches complement rather than replace foun
 
 ## The Naturopathic Approach to Metabolic Health
 
-Naturopathic medicine brings a distinct perspective to diabetes prevention and blood sugar balance. Rather than waiting for disease to develop and then managing symptoms, the emphasis falls on identifying and addressing the factors driving metabolic dysfunction before irreversible changes occur.
+Naturopathic care brings a distinct perspective to diabetes prevention and blood sugar balance. Rather than waiting for disease to develop and then managing symptoms, the emphasis falls on identifying and addressing the factors driving metabolic dysfunction before irreversible changes occur.
 
 This approach begins with thorough assessment. Understanding someone's complete health history, current symptoms, dietary patterns, activity level, sleep quality, stress factors and relevant family history provides essential context. Laboratory testing adds objective data about current metabolic function and helps identify areas requiring attention.
 

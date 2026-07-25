@@ -42,6 +42,12 @@ RewriteRule ^migraine/?$ /migraine-headache/ [L,R=301]
 RewriteRule ^prolotherapy-arthritis/?$ /prolotherapy-for-arthritis/ [L,R=301]
 # Retired page — folded into the tendon injuries page
 RewriteRule ^prolotherapy-for-osgood-schlatter/?$ /prolotherapy-for-tendon-injuries/ [L,R=301]
+
+# Renamed to remove the protected term "medicine" (Medical Act s.22(1));
+# these URLs are indexed, so they must keep resolving.
+RewriteRule ^sports-medicine/?$ /sports-performance-injury/ [L,R=301]
+RewriteRule ^herbal-medicine/?$ /herbal-therapy/ [L,R=301]
+RewriteRule ^articles/herbal-medicine-history-and-uses/?$ /articles/herbal-therapy-history-and-uses/ [L,R=301]
 RewriteRule ^chelation-therapy-heart-disease/?$ /chelation-therapy/ [L,R=301]
 RewriteRule ^natural-pain-solutions/?$ /conditions/ [L,R=301]
 RewriteRule ^ozone-therapy/?$ /prolotherapy/ [L,R=301]

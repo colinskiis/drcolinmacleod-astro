@@ -128,13 +128,13 @@ Dietary interventions form the foundation of treatment. This might involve addre
 
 I offer [clinical nutrition services](/clinical-nutrition/) that can help identify dietary factors contributing to anxiety and develop a personalized eating plan to support mental health.
 
-### Herbal Medicine
+### Herbal Therapy
 
 Botanical medicines have been used for centuries to calm the nervous system and support stress resilience. Many herbs have accumulated research demonstrating their effectiveness for anxiety and stress-related conditions.
 
 Different herbs work through different mechanisms. Some have calming effects on the nervous system, some support healthy cortisol levels and HPA axis function and some work on neurotransmitter systems. The choice of which herbs to use depends on the individual's specific pattern of symptoms and underlying factors.
 
-[Adaptogenic herbs](/articles/adaptogens-for-stress-ashwagandha-rhodiola-and-beyond/), which help the body adapt to stress and maintain balance, can be particularly helpful for anxiety that is accompanied by fatigue or exhaustion. Our [herbal medicine services](/herbal-medicine/) can help determine which botanical approaches are most appropriate for your situation.
+[Adaptogenic herbs](/articles/adaptogens-for-stress-ashwagandha-rhodiola-and-beyond/), which help the body adapt to stress and maintain balance, can be particularly helpful for anxiety that is accompanied by fatigue or exhaustion. Our [herbal therapy services](/herbal-therapy/) can help determine which botanical approaches are most appropriate for your situation.
 
 ### Acupuncture
 

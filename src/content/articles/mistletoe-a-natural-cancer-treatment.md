@@ -23,7 +23,7 @@ In short, mistletoe is not a cure for cancer although it does have an inhibitory
 
 ## Effect On Survival
 
-The vast majority of studies performed on mistletoe in the treatment of cancer have found that it increases survival time in cancer patients. This is a big deal, for an herbal medicine with very little side effects to have such a profound effect. Patients with pancreatic cancer<sup>1,2</sup>, ovarian cancer<sup>3,4</sup>, cervical cancer<sup>5</sup>, breast cancer<sup>6</sup>, liver cancer<sup>7</sup>, colorectal cancer<sup>8</sup>, brain cancer (glioma)<sup>9</sup> and melanoma<sup>10</sup> have all shown an increased survival when studied with mistletoe, compared to similar cancer patients not being treated with mistletoe.
+The vast majority of studies performed on mistletoe in the treatment of cancer have found that it increases survival time in cancer patients. This is a big deal, for an herbal therapy with very little side effects to have such a profound effect. Patients with pancreatic cancer<sup>1,2</sup>, ovarian cancer<sup>3,4</sup>, cervical cancer<sup>5</sup>, breast cancer<sup>6</sup>, liver cancer<sup>7</sup>, colorectal cancer<sup>8</sup>, brain cancer (glioma)<sup>9</sup> and melanoma<sup>10</sup> have all shown an increased survival when studied with mistletoe, compared to similar cancer patients not being treated with mistletoe.
 
 ## Mistletoe And Quality Of Life
 
@@ -65,7 +65,7 @@ Interest in mistletoe therapy has expanded in North America, with growing recogn
 
 ## Mistletoe Therapy in Halifax
 
-Mistletoe injections in the treatment of cancer are a viable adjunctive natural treatment option to conventional chemotherapy, radiation therapy and/or surgical treatment. If you are in the Halifax area and are interested in trying this treatment please contact Dr. Colin MacLeod, ND to book an initial consultation. Learn more about our [herbal medicine services](/herbal-medicine/).
+Mistletoe injections in the treatment of cancer are a viable adjunctive natural treatment option to conventional chemotherapy, radiation therapy and/or surgical treatment. If you are in the Halifax area and are interested in trying this treatment please contact Dr. Colin MacLeod, ND to book an initial consultation. Learn more about our [herbal therapy services](/herbal-therapy/).
 
 ### References
 

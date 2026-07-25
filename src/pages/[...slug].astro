@@ -38,7 +38,7 @@ const relatedLinksMap: Record<string, { title: string; href: string }[]> = {
   'achilles-tendinitis': [
     { title: 'Prolotherapy for Tendons', href: '/prolotherapy-for-tendon-injuries/' },
     { title: 'Plantar Fasciitis', href: '/plantar-fasciitis/' },
-    { title: 'Sports Medicine', href: '/sports-medicine/' },
+    { title: 'Sports Performance & Injury', href: '/sports-performance-injury/' },
   ],
   'carpal-tunnel-syndrome': [
     { title: 'Neural Prolotherapy', href: '/neural-prolotherapy-pain/' },
@@ -48,12 +48,12 @@ const relatedLinksMap: Record<string, { title: string; href: string }[]> = {
   'frozen-shoulder': [
     { title: 'Prolotherapy', href: '/prolotherapy/' },
     { title: 'Rotator Cuff & Shoulder', href: '/rotator-cuff-shoulder-impingement/' },
-    { title: 'Sports Medicine', href: '/sports-medicine/' },
+    { title: 'Sports Performance & Injury', href: '/sports-performance-injury/' },
   ],
   'golfers-elbow': [
     { title: 'Prolotherapy for Tendons', href: '/prolotherapy-for-tendon-injuries/' },
     { title: 'Tennis Elbow', href: '/tennis-elbow/' },
-    { title: 'Sports Medicine', href: '/sports-medicine/' },
+    { title: 'Sports Performance & Injury', href: '/sports-performance-injury/' },
   ],
   'herniated-disc': [
     { title: 'Prolotherapy for Back Pain', href: '/prolotherapy-for-back-pain/' },
@@ -68,22 +68,22 @@ const relatedLinksMap: Record<string, { title: string; href: string }[]> = {
   'osteoarthritis': [
     { title: 'Prolotherapy for Arthritis', href: '/prolotherapy-for-arthritis/' },
     { title: 'Prolotherapy', href: '/prolotherapy/' },
-    { title: 'Sports Medicine', href: '/sports-medicine/' },
+    { title: 'Sports Performance & Injury', href: '/sports-performance-injury/' },
   ],
   'plantar-fasciitis': [
     { title: 'Prolotherapy for Tendons', href: '/prolotherapy-for-tendon-injuries/' },
     { title: 'Achilles Tendinitis', href: '/achilles-tendinitis/' },
-    { title: 'Sports Medicine', href: '/sports-medicine/' },
+    { title: 'Sports Performance & Injury', href: '/sports-performance-injury/' },
   ],
   'rotator-cuff-shoulder-impingement': [
     { title: 'Prolotherapy', href: '/prolotherapy/' },
     { title: 'Frozen Shoulder', href: '/frozen-shoulder/' },
-    { title: 'Sports Medicine', href: '/sports-medicine/' },
+    { title: 'Sports Performance & Injury', href: '/sports-performance-injury/' },
   ],
   'runners-knee': [
     { title: 'Prolotherapy', href: '/prolotherapy/' },
     { title: 'Osteoarthritis', href: '/osteoarthritis/' },
-    { title: 'Sports Medicine', href: '/sports-medicine/' },
+    { title: 'Sports Performance & Injury', href: '/sports-performance-injury/' },
   ],
   'si-joint-dysfunction': [
     { title: 'Prolotherapy for Back Pain', href: '/prolotherapy-for-back-pain/' },
@@ -93,7 +93,7 @@ const relatedLinksMap: Record<string, { title: string; href: string }[]> = {
   'tennis-elbow': [
     { title: 'Prolotherapy for Tendons', href: '/prolotherapy-for-tendon-injuries/' },
     { title: "Golfer's Elbow", href: '/golfers-elbow/' },
-    { title: 'Sports Medicine', href: '/sports-medicine/' },
+    { title: 'Sports Performance & Injury', href: '/sports-performance-injury/' },
   ],
   'tmj-dysfunction': [
     { title: 'Neural Prolotherapy', href: '/neural-prolotherapy-pain/' },
@@ -112,7 +112,7 @@ const relatedLinksMap: Record<string, { title: string; href: string }[]> = {
     { title: 'NAD+ Therapy', href: '/nad-therapy/' },
   ],
   'microcurrent-therapy': [
-    { title: 'Sports Medicine', href: '/sports-medicine/' },
+    { title: 'Sports Performance & Injury', href: '/sports-performance-injury/' },
     { title: 'Prolotherapy', href: '/prolotherapy/' },
     { title: 'Acupuncture', href: '/acupuncture/' },
   ],
@@ -123,7 +123,7 @@ const relatedLinksMap: Record<string, { title: string; href: string }[]> = {
   ],
   'neural-prolotherapy-pain': [
     { title: 'Prolotherapy', href: '/prolotherapy/' },
-    { title: 'Sports Medicine', href: '/sports-medicine/' },
+    { title: 'Sports Performance & Injury', href: '/sports-performance-injury/' },
     { title: 'Carpal Tunnel Syndrome', href: '/carpal-tunnel-syndrome/' },
   ],
 };
@@ -135,7 +135,7 @@ const fallbackLinks = isTreatment
       { title: 'Clinical Nutrition', href: '/clinical-nutrition/' },
     ]
   : [
-      { title: 'Sports Medicine', href: '/sports-medicine/' },
+      { title: 'Sports Performance & Injury', href: '/sports-performance-injury/' },
       { title: 'Prolotherapy', href: '/prolotherapy/' },
       { title: 'Lab Testing', href: '/lab-testing/' },
     ];
@@ -334,7 +334,7 @@ const modifiedDate = page.data.modifiedDate
       <div class="max-w-4xl mx-auto text-center">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">Ready to Start Your Health Journey?</h2>
         <p class="text-lg sm:text-xl text-white/90 mb-8 leading-relaxed">
-          Schedule a consultation to learn how naturopathic medicine can support your health goals.
+          Schedule a consultation to learn how naturopathic care can support your health goals.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <BookingButton

@@ -74,7 +74,7 @@ Achieving and maintaining a healthy body weight offers substantial blood pressur
 
 ## The Naturopathic Approach to Cardiovascular Assessment
 
-Naturopathic medicine takes a comprehensive view of cardiovascular health, looking beyond blood pressure numbers alone to understand the underlying factors driving elevated readings. This approach recognizes that hypertension rarely exists in isolation and often reflects broader metabolic, inflammatory or stress-related imbalances.
+Naturopathic care takes a comprehensive view of cardiovascular health, looking beyond blood pressure numbers alone to understand the underlying factors driving elevated readings. This approach recognizes that hypertension rarely exists in isolation and often reflects broader metabolic, inflammatory or stress-related imbalances.
 
 A thorough naturopathic cardiovascular assessment begins with detailed history taking, exploring not just current symptoms but also lifestyle factors, stress patterns, sleep quality, dietary habits and family history. Physical examination includes careful blood pressure measurement using proper technique, as inaccurate readings can lead to inappropriate treatment decisions. Home blood pressure monitoring often provides more representative data than office measurements, which can be artificially elevated due to "white coat" effects.
 
@@ -110,7 +110,7 @@ If you are concerned about your blood pressure or interested in natural approach
 
 An initial naturopathic visit allows time to thoroughly review your health history, current medications and lifestyle factors. Based on this assessment, we can develop a personalized plan incorporating dietary guidance, stress management strategies and other evidence-based natural approaches appropriate for your individual situation. Laboratory testing through our [comprehensive testing services](/lab-testing/) can provide additional insight when indicated.
 
-Blood pressure management is a long-term endeavor, and ongoing support helps maintain motivation and adjust strategies as circumstances change. Whether you are looking to prevent hypertension, reduce reliance on medications or simply optimize your cardiovascular health, naturopathic medicine offers valuable tools to support your goals.
+Blood pressure management is a long-term endeavor, and ongoing support helps maintain motivation and adjust strategies as circumstances change. Whether you are looking to prevent hypertension, reduce reliance on medications or simply optimize your cardiovascular health, naturopathic care offers valuable tools to support your goals.
 
 ### References
 

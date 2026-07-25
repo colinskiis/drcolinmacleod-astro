@@ -18,7 +18,7 @@ Asthma affects approximately 10% of Canadians, making it one of the most common 
 
 For many people with asthma and respiratory conditions, conventional treatments provide good control. Inhaled corticosteroids and bronchodilators can be effective and, when needed, potentially lifesaving. However, some patients experience incomplete symptom control, medication side effects or simply want to better understand the factors that influence their breathing.
 
-Naturopathic medicine does not replace appropriate medical management of asthma. Asthma can be a serious, even life-threatening condition and patients should maintain their rescue medications and follow their physician's guidance. What naturopathic care can offer is a broader look at triggers, diet, environment, stress, allergic load and related conditions that may be affecting respiratory health.
+Naturopathic care does not replace appropriate medical management of asthma. Asthma can be a serious, even life-threatening condition and patients should maintain their rescue medications and follow their physician's guidance. What naturopathic care can offer is a broader look at triggers, diet, environment, stress, allergic load and related conditions that may be affecting respiratory health.
 
 ## Understanding Asthma
 
@@ -156,7 +156,7 @@ Severe or poorly controlled asthma requires medical management. Supportive appro
 
 Respiratory health is influenced by multiple factors including allergens, irritants, diet, stress and overall inflammation. A comprehensive approach addresses these underlying factors while supporting optimal lung function.
 
-For patients with well-controlled asthma seeking to reduce triggers and support respiratory health naturally, or those with suboptimal control looking for complementary care, naturopathic medicine can help identify contributing factors. These approaches work alongside conventional care, not in place of it.
+For patients with well-controlled asthma seeking to reduce triggers and support respiratory health naturally, or those with suboptimal control looking for complementary care, naturopathic care can help identify contributing factors. These approaches work alongside conventional care, not in place of it.
 
 If you are interested in exploring natural approaches to respiratory health, please contact Dr. Colin MacLeod, ND to book an initial appointment. Dr. MacLeod provides comprehensive assessments and individualized treatment plans for patients with asthma and other respiratory concerns, coordinating with family physicians and specialists as appropriate.
 

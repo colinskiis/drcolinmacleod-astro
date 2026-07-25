@@ -78,7 +78,7 @@ Prolotherapy involves the injection of a concentrated dextrose (sugar) solution 
 
 Acupuncture is an effective complementary treatment for the muscle pain, headaches and cervicogenic symptoms associated with whiplash. By targeting trigger points in the cervical paraspinal muscles and upper trapezius, acupuncture provides meaningful pain relief and helps restore range of motion. It is particularly useful for managing the occipital headaches and referred pain patterns that accompany chronic whiplash. Learn more about [acupuncture](/acupuncture/).
 
-For a broader overview of how these treatments fit into a comprehensive approach to musculoskeletal and sports injuries, visit the [sports medicine](/sports-medicine/) page.
+For a broader overview of how these treatments fit into a comprehensive approach to musculoskeletal and sports injuries, visit the [sports performance and injury care](/sports-performance-injury/) page.
 
 ### References
 

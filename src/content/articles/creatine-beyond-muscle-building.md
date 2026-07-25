@@ -5,7 +5,7 @@ publishDate: 2024-08-17
 modifiedDate: 2026-01-09
 author: "Dr. Colin MacLeod, ND"
 heroImage: "/images/nutrition/creatine-brain-muscle.webp"
-categories: ["Naturopathic", "Sports Medicine"]
+categories: ["Naturopathic", "Sports Performance & Injury"]
 tags: ["creatine", "brain health", "women's health", "supplements", "naturopathic"]
 seo:
   description: "Evidence-based guide to creatine benefits beyond muscle. Learn about creatine for brain health, cognitive function, women's health and menopause."
@@ -86,9 +86,9 @@ Creatine has evolved from a bodybuilding supplement to a compound with genuinely
 
 For most people, creatine is safe, affordable and backed by decades of research. Whether you're an athlete looking to optimize performance, a woman navigating perimenopause or someone interested in supporting cognitive health, creatine deserves consideration.
 
-## Creatine and Sports Medicine in Halifax
+## Creatine and Sports Performance & Injury in Halifax
 
-If you're interested in learning whether creatine supplementation might benefit your specific situation, or if you have questions about optimizing your athletic performance and recovery, please contact Dr. Colin MacLeod, ND to book an initial visit. Dr. MacLeod provides [sports medicine services](/sports-medicine/) and works with athletes and active individuals to develop evidence-based supplementation and training strategies.
+If you're interested in learning whether creatine supplementation might benefit your specific situation, or if you have questions about optimizing your athletic performance and recovery, please contact Dr. Colin MacLeod, ND to book an initial visit. Dr. MacLeod provides [sports performance and injury care](/sports-performance-injury/) and works with athletes and active individuals to develop evidence-based supplementation and training strategies.
 
 ### References
 

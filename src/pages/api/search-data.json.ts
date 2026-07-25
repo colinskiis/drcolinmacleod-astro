@@ -46,14 +46,14 @@ const services = [
     title: 'Clinical Nutrition',
     description: 'Evidence-based nutritional counseling and dietary planning for optimal health and disease prevention.',
     url: '/clinical-nutrition/',
-    category: 'Naturopathic Medicine'
+    category: 'Naturopathic Care'
   },
   {
     type: 'service',
-    title: 'Herbal Medicine',
-    description: 'Traditional and modern herbal medicine for natural treatment of various health conditions.',
-    url: '/herbal-medicine/',
-    category: 'Naturopathic Medicine'
+    title: 'Herbal Therapy',
+    description: 'Traditional and modern herbal therapy for natural treatment of various health conditions.',
+    url: '/herbal-therapy/',
+    category: 'Naturopathic Care'
   },
   {
     type: 'service',
@@ -103,9 +103,9 @@ const conditions = [
   },
   {
     type: 'condition',
-    title: 'Sports Medicine',
-    description: 'Natural sports medicine approaches for injury recovery, performance optimization, and athletic health.',
-    url: '/sports-medicine/',
+    title: 'Sports Performance & Injury',
+    description: 'Natural approaches to sports injury recovery, performance optimization and athletic health.',
+    url: '/sports-performance-injury/',
     category: 'Sports & Performance'
   },
   {

@@ -57,11 +57,11 @@ An excellent guide for athlete sleep requirements<sup>19</sup> was released by C
 
 ## Improving Sleep
 
-Optimizing numbers of hours slept and sleep quality should be a goal near the top of the list for competitive athletes. Sleep can often be improved by making small changes in sleep hygiene such as keeping the bedroom dark, avoiding screen time before bedtime and decluttering the bedroom. Naturopathic treatments such as clinical nutrition, herbal medicine and acupuncture also offer an excellent means of improving sleep beyond basic sleep hygiene changes. For more on optimizing sleep, see our guide to [evidence-based sleep strategies](/articles/sleep-optimization-evidence-based-strategies/).
+Optimizing numbers of hours slept and sleep quality should be a goal near the top of the list for competitive athletes. Sleep can often be improved by making small changes in sleep hygiene such as keeping the bedroom dark, avoiding screen time before bedtime and decluttering the bedroom. Naturopathic treatments such as clinical nutrition, herbal therapy and acupuncture also offer an excellent means of improving sleep beyond basic sleep hygiene changes. For more on optimizing sleep, see our guide to [evidence-based sleep strategies](/articles/sleep-optimization-evidence-based-strategies/).
 
 ## Halifax Athletic Performance
 
-If you are interested in improving athletic performance and are located in the Halifax area, please contact Dr. Colin MacLeod, ND to book an initial naturopathic visit with Dr. MacLeod to discuss your options. Learn more about our [sports medicine services](/sports-medicine/) and [nutrients for athletic performance](/articles/nutrients-for-athletic-performance/).
+If you are interested in improving athletic performance and are located in the Halifax area, please contact Dr. Colin MacLeod, ND to book an initial naturopathic visit with Dr. MacLeod to discuss your options. Learn more about our [sports performance and injury care](/sports-performance-injury/) and [nutrients for athletic performance](/articles/nutrients-for-athletic-performance/).
 
 ### References
 

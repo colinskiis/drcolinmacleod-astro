@@ -98,10 +98,10 @@ jobs:
           for attempt in {1..12}; do
             home_status="$(curl "${curl_args[@]}" --output /tmp/home.html --write-out '%{http_code}' https://drcolinmacleod.com/ || true)"
             policy_status="$(curl "${curl_args[@]}" --output /dev/null --write-out '%{http_code}' https://drcolinmacleod.com/editorial-policy/ || true)"
-            herbal_status="$(curl "${curl_args[@]}" --output /dev/null --write-out '%{http_code}' https://drcolinmacleod.com/herbal-medicine/ || true)"
+            herbal_status="$(curl "${curl_args[@]}" --output /dev/null --write-out '%{http_code}' https://drcolinmacleod.com/herbal-therapy/ || true)"
             asset_status="$(curl "${curl_args[@]}" --output /dev/null --write-out '%{http_code}' "https://drcolinmacleod.com${expected_asset}" || true)"
 
-            echo "Verification attempt $attempt/12: home=$home_status editorial-policy=$policy_status herbal-medicine=$herbal_status asset=$asset_status"
+            echo "Verification attempt $attempt/12: home=$home_status editorial-policy=$policy_status herbal-therapy=$herbal_status asset=$asset_status"
 
             if [[ "$home_status" == "200" ]] \
               && [[ "$policy_status" == "200" ]] \
