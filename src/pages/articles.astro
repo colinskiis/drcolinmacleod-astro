@@ -20,7 +20,10 @@ const sortedArticles = allArticles.sort((a, b) =>
   new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime()
 );
 
-const articleSearchIndex = toArticleSearchIndex(sortedArticles);
+const featuredArticles = sortedArticles.slice(0, 3);
+const browseArticles = sortedArticles;
+const initiallyVisibleArticles = 12;
+const articleSearchIndex = toArticleSearchIndex(browseArticles);
 
 const topicCounts = articleTopicFilters.reduce((counts, topic) => {
   counts[topic.id] = topic.id === 'all'
@@ -56,6 +59,61 @@ const collectionSchema = {
   <section class="py-16 lg:py-24 bg-white">
     <div class="section-shell">
       <div class="max-w-4xl mx-auto reveal">
+        <section aria-labelledby="featured-articles-heading" class="mb-14">
+          <div class="mb-6 flex items-end justify-between gap-6">
+            <div>
+              <p class="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-emerald-700">New and noteworthy</p>
+              <h2 id="featured-articles-heading" class="text-3xl font-serif font-medium text-emerald-950 sm:text-4xl">Featured &amp; Recent</h2>
+            </div>
+          </div>
+          <div class="grid gap-5 md:grid-cols-3">
+            {featuredArticles.map((article, index) => (
+              <a
+                href={`/articles/${article.slug}/`}
+                class:list={[
+                  'group overflow-hidden rounded-2xl border border-emerald-100 bg-white shadow-sm shadow-emerald-950/5 transition-all duration-200 hover:-translate-y-0.5 hover:border-emerald-200 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2',
+                  index > 0 && 'hidden md:block',
+                ]}
+              >
+                {article.data.heroImage && (
+                  <div class="aspect-[16/10] overflow-hidden bg-emerald-50">
+                    <img
+                      src={article.data.heroImage}
+                      alt=""
+                      class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                )}
+                <div class="p-5">
+                  <div class="mb-2 flex flex-wrap items-center gap-x-2 text-xs text-slate-600">
+                    <time>
+                      {new Date(article.data.publishDate).toLocaleDateString('en-US', {
+                        year: 'numeric',
+                        month: 'short',
+                        day: 'numeric'
+                      })}
+                    </time>
+                    <span aria-hidden="true">&middot;</span>
+                    <span>{readingTime(article.body)} min read</span>
+                  </div>
+                  <h3 class="text-xl font-serif font-medium leading-snug text-emerald-950 transition-colors group-hover:text-emerald-700">
+                    {article.data.title}
+                  </h3>
+                  <p class="mt-2 line-clamp-2 text-sm leading-relaxed text-slate-600">{article.data.description}</p>
+                </div>
+              </a>
+            ))}
+          </div>
+        </section>
+
+        <section aria-labelledby="browse-articles-heading" class="border-t border-emerald-100 pt-12">
+          <div class="mb-7">
+            <h2 id="browse-articles-heading" class="text-3xl font-serif font-medium text-emerald-950">Browse All Articles</h2>
+            <p class="mt-2 text-slate-600">Filter by topic or search for a specific concern.</p>
+          </div>
+
         <div class="mb-8 sm:mb-10">
           <nav class="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:gap-3" aria-label="Browse articles by topic">
             {articleTopicFilters.map((topic) => (
@@ -72,22 +130,26 @@ const collectionSchema = {
                 <span>{topic.label}</span>
                 <span class:list={[
                   'ml-1 text-xs',
-                  topic.id === 'all' ? 'text-white/70' : 'text-slate-400'
+                  topic.id === 'all' ? 'text-white/80' : 'text-slate-600'
                 ]} aria-hidden="true">{topicCounts[topic.id]}</span>
               </a>
             ))}
           </nav>
         </div>
 
-        <ArticleSearch articles={articleSearchIndex} />
+        <ArticleSearch articles={articleSearchIndex} initialVisibleCount={initiallyVisibleArticles} />
 
         <div id="article-list">
-        {sortedArticles.map((article) => (
+        {browseArticles.map((article, index) => (
           <a
             href={`/articles/${article.slug}/`}
             data-article-search-item
             data-article-slug={article.slug}
-            class="group flex items-center gap-4 py-5 border-b border-slate-100 last:border-0 -mx-4 px-4 rounded-lg hover:bg-emerald-50/50 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-inset"
+            data-default-hidden={index >= initiallyVisibleArticles ? 'true' : undefined}
+            class:list={[
+              'group flex items-center gap-4 py-5 border-b border-slate-100 last:border-0 -mx-4 px-4 rounded-lg hover:bg-emerald-50/50 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-inset',
+              index >= initiallyVisibleArticles && 'article-overflow',
+            ]}
           >
             {article.data.heroImage && (
               <div class="hidden sm:block w-24 h-16 rounded-lg overflow-hidden flex-shrink-0 bg-emerald-50">
@@ -95,8 +157,6 @@ const collectionSchema = {
                   src={article.data.heroImage}
                   alt=""
                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  width="96"
-                  height="64"
                   loading="lazy"
                   decoding="async"
                 />
@@ -132,9 +192,22 @@ const collectionSchema = {
         ))}
         </div>
 
+        {browseArticles.length > initiallyVisibleArticles && (
+          <div class="mt-8 text-center">
+            <button
+              type="button"
+              data-article-show-more
+              class="article-show-more min-h-12 items-center justify-center rounded-full border border-emerald-900 bg-white px-7 py-3 font-semibold text-emerald-900 transition-colors hover:bg-emerald-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2"
+            >
+              Show all {browseArticles.length} articles
+            </button>
+          </div>
+        )}
+
         <script>
           import '../scripts/articleListSearch.ts';
         </script>
+        </section>
       </div>
     </div>
   </section>

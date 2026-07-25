@@ -612,6 +612,15 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
               href="https://macleodnaturopathic.janeapp.com/"
               target="_blank"
               rel="noopener noreferrer"
+              class="booking-btn hidden min-[380px]:inline-flex xl:hidden min-h-10 items-center justify-center rounded-full bg-emerald-400 px-3.5 py-2 text-sm font-semibold text-emerald-950 shadow-md shadow-black/15 transition-colors hover:bg-emerald-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300 focus-visible:ring-offset-2 focus-visible:ring-offset-emerald-950"
+              data-booking-source="mobile-header"
+            >
+              Book Online
+            </a>
+            <a
+              href="https://macleodnaturopathic.janeapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
               class="hidden xl:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-emerald-400 text-emerald-950 font-semibold hover:bg-emerald-300 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 shadow-lg shadow-emerald-500/20 hover:shadow-emerald-400/30 text-base whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300 focus-visible:ring-offset-2 focus-visible:ring-offset-emerald-950"
             >
               <span>Book Online</span>
@@ -620,7 +629,7 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
             <!-- Mobile Menu Button -->
             <button
               id="mobile-menu-button"
-              class="xl:hidden p-3 text-white hover:text-white/80 transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
+              class="xl:hidden flex min-h-[44px] min-w-[44px] items-center justify-center rounded-lg p-3 text-white transition-colors hover:text-white/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300 focus-visible:ring-offset-2 focus-visible:ring-offset-emerald-950"
               aria-label="Toggle menu"
               aria-expanded="false"
             >
@@ -633,27 +642,27 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
         <div id="mobile-menu" class="xl:hidden fixed inset-x-0 bottom-0 z-30 bg-emerald-950 overflow-y-auto overscroll-contain opacity-0 invisible pointer-events-none transition-opacity duration-300 ease-out" role="navigation" aria-label="Mobile navigation">
           <div class="mx-auto flex max-w-xl flex-col px-5 pt-3 pb-[calc(2.5rem+env(safe-area-inset-bottom))] text-emerald-100 font-semibold">
             <div class="divide-y divide-emerald-800/60">
-              <a href="/lab-testing/" data-navigation-source="mobile-main-nav-lab-testing" class={`group flex items-center justify-between rounded-lg px-3 py-3.5 text-xl transition-colors hover:bg-emerald-700/20 hover:text-white focus:outline-none focus:ring-2 focus:ring-emerald-400 ${onLabTestingPath ? 'text-white bg-emerald-800/30' : ''}`} aria-current={onLabTestingPath ? 'page' : undefined}>
+              <a href="/lab-testing/" data-navigation-source="mobile-main-nav-lab-testing" class={`group flex items-center justify-between rounded-lg px-3 py-3.5 text-xl transition-colors hover:bg-emerald-700/20 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 ${onLabTestingPath ? 'text-white bg-emerald-800/30' : ''}`} aria-current={onLabTestingPath ? 'page' : undefined}>
                 Lab Testing
                 <ChevronRight class="w-5 h-5 text-emerald-300 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
               </a>
-              <a href="/services/" class={`group flex items-center justify-between rounded-lg px-3 py-3.5 text-xl transition-colors hover:bg-emerald-700/20 hover:text-white focus:outline-none focus:ring-2 focus:ring-emerald-400 ${onServicePath ? 'text-white bg-emerald-800/30' : ''}`} aria-current={onServicePath ? 'page' : undefined}>
+              <a href="/services/" class={`group flex items-center justify-between rounded-lg px-3 py-3.5 text-xl transition-colors hover:bg-emerald-700/20 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 ${onServicePath ? 'text-white bg-emerald-800/30' : ''}`} aria-current={onServicePath ? 'page' : undefined}>
                 Services
                 <ChevronRight class="w-5 h-5 text-emerald-300 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
               </a>
-              <a href="/conditions/" class={`group flex items-center justify-between rounded-lg px-3 py-3.5 text-xl transition-colors hover:bg-emerald-700/20 hover:text-white focus:outline-none focus:ring-2 focus:ring-emerald-400 ${onConditionPath ? 'text-white bg-emerald-800/30' : ''}`} aria-current={onConditionPath ? 'page' : undefined}>
+              <a href="/conditions/" class={`group flex items-center justify-between rounded-lg px-3 py-3.5 text-xl transition-colors hover:bg-emerald-700/20 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 ${onConditionPath ? 'text-white bg-emerald-800/30' : ''}`} aria-current={onConditionPath ? 'page' : undefined}>
                 Conditions
                 <ChevronRight class="w-5 h-5 text-emerald-300 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
               </a>
-              <a href="/new-patients/" class={`group flex items-center justify-between rounded-lg px-3 py-3.5 text-xl transition-colors hover:bg-emerald-700/20 hover:text-white focus:outline-none focus:ring-2 focus:ring-emerald-400 ${currentPath.startsWith('/new-patients') ? 'text-white bg-emerald-800/30' : ''}`} aria-current={currentPath.startsWith('/new-patients') ? 'page' : undefined}>
+              <a href="/new-patients/" class={`group flex items-center justify-between rounded-lg px-3 py-3.5 text-xl transition-colors hover:bg-emerald-700/20 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 ${currentPath.startsWith('/new-patients') ? 'text-white bg-emerald-800/30' : ''}`} aria-current={currentPath.startsWith('/new-patients') ? 'page' : undefined}>
                 New Patients
                 <ChevronRight class="w-5 h-5 text-emerald-300 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
               </a>
-              <a href="/about/" class={`group flex items-center justify-between rounded-lg px-3 py-3.5 text-xl transition-colors hover:bg-emerald-700/20 hover:text-white focus:outline-none focus:ring-2 focus:ring-emerald-400 ${currentPath.startsWith('/about') ? 'text-white bg-emerald-800/30' : ''}`} aria-current={currentPath.startsWith('/about') ? 'page' : undefined}>
+              <a href="/about/" class={`group flex items-center justify-between rounded-lg px-3 py-3.5 text-xl transition-colors hover:bg-emerald-700/20 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 ${currentPath.startsWith('/about') ? 'text-white bg-emerald-800/30' : ''}`} aria-current={currentPath.startsWith('/about') ? 'page' : undefined}>
                 About
                 <ChevronRight class="w-5 h-5 text-emerald-300 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
               </a>
-              <a href="/contact/" class={`group flex items-center justify-between rounded-lg px-3 py-3.5 text-xl transition-colors hover:bg-emerald-700/20 hover:text-white focus:outline-none focus:ring-2 focus:ring-emerald-400 ${currentPath.startsWith('/contact') ? 'text-white bg-emerald-800/30' : ''}`} aria-current={currentPath.startsWith('/contact') ? 'page' : undefined}>
+              <a href="/contact/" class={`group flex items-center justify-between rounded-lg px-3 py-3.5 text-xl transition-colors hover:bg-emerald-700/20 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 ${currentPath.startsWith('/contact') ? 'text-white bg-emerald-800/30' : ''}`} aria-current={currentPath.startsWith('/contact') ? 'page' : undefined}>
                 Contact
                 <ChevronRight class="w-5 h-5 text-emerald-300 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
               </a>
@@ -741,8 +750,11 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
           mainContent?.setAttribute('inert', '');
           footer?.setAttribute('inert', '');
 
-          const firstLink = mobileMenu.querySelector<HTMLElement>('a[href]');
-          firstLink?.focus();
+          // Keep focus on the menu button, which has become the close control.
+          // Keyboard users reach the first menu item with the next Tab press;
+          // touch users do not see the first link styled as though it were the
+          // current page.
+          mobileMenuButton?.focus();
         }
 
         // Always start closed (also resets state after View Transitions)

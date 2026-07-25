@@ -7,6 +7,7 @@ interface Props {
   listId?: string;
   statusId?: string;
   emptyId?: string;
+  initialVisibleCount?: number;
 }
 
 const {
@@ -14,9 +15,11 @@ const {
   listId = 'article-list',
   statusId = 'article-search-status',
   emptyId = 'article-search-empty',
+  initialVisibleCount,
 } = Astro.props;
 
 const totalCount = articles.length;
+const visibleCount = Math.min(initialVisibleCount ?? totalCount, totalCount);
 const searchIndexJson = JSON.stringify(articles);
 const configId = `article-search-config-${listId}`;
 ---
@@ -45,7 +48,9 @@ const configId = `article-search-config-${listId}`;
     />
   </div>
   <p id={statusId} class="mt-3 text-sm text-slate-500" aria-live="polite">
-    Showing all {totalCount} articles.
+    {visibleCount === totalCount
+      ? `Showing all ${totalCount} articles.`
+      : `Showing ${visibleCount} of ${totalCount} articles.`}
   </p>
   <p
     id={emptyId}

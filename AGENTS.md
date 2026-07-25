@@ -2,30 +2,14 @@
 
 ## Project Overview
 
-DrColinMacleod.com - Naturopathic medicine practice website built with Astro.
+DrColinMacleod.com - Naturopathic care practice website built with Astro.
 
 ## Deployment
 
-**Deployment is automatic: push to `main`.** The `Deploy production site`
-GitHub Actions workflow builds, rsyncs to Namecheap, and verifies production.
-
-**Manual fallback:**
-```bash
-PUBLIC_TURNSTILE_SITE_KEY=<site key> ./deploy.sh
-```
-
-This script:
-1. Runs `npm run check` and builds the site (`npm run build`)
-2. Aborts if the contact form has no Turnstile site key baked in
-3. Syncs `dist/` to Namecheap via rsync over SSH
-
-**SSH Details:**
-- Host: `business81.web-hosting.com`
-- Port: `21098`
-- User: `drcohmrh`
-- Key: `~/.ssh/namecheap_rsa`
-
-Manual SSH: `ssh namecheap`
+**Deployment is handled only through GitHub.** Push to `main` and let the
+`Deploy production site` GitHub Actions workflow build, publish and verify the
+production site. Do not use the legacy `deploy.sh` script or deploy directly
+over SSH.
 
 ## Key Directories
 
@@ -45,6 +29,17 @@ Manual SSH: `ssh namecheap`
   the live URL becomes a 404.
 - **Markdown images** get width/height/lazy-loading injected automatically by
   `src/lib/rehype-image-attrs.mjs` — don't hand-write them.
+- **Image dimensions**: `width` and `height` attributes must preserve the
+  source asset's intrinsic aspect ratio. Intentional crops must use a stable
+  fixed-size or `aspect-ratio` wrapper with `overflow-hidden` and
+  `object-cover`.
+- **Photography**: prefer authentic practitioner and clinic photography with
+  consistent, natural colour treatment. Use stock imagery only when a suitable
+  authentic image is unavailable, and avoid mixing several illustration or
+  photography styles within one card group.
+- **Trust signals**: favour verifiable facts such as licensure, experience,
+  billing and location. Do not add testimonials or review claims without a
+  separate advertising-rules review.
 
 ### Protected terms (regulatory — do not regress)
 

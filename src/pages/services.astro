@@ -122,13 +122,13 @@ const pricingGroups = [
           href={primaryService.href}
           class="group grid overflow-hidden rounded-3xl border border-emerald-100 bg-emerald-50 shadow-xl shadow-emerald-900/5 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-2xl hover:shadow-emerald-900/10 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 sm:grid-cols-[1.1fr_0.9fr]"
         >
-          <div class="aspect-[16/10] overflow-hidden sm:min-h-[23rem] sm:aspect-auto">
+          <div class="aspect-[16/10] overflow-hidden sm:aspect-[4/3]">
             <img
               src={primaryService.image}
               alt={primaryService.alt}
               class="h-full w-full object-cover object-[center_20%] transition-transform duration-500 group-hover:scale-[1.02] sm:object-center"
-              width="800"
-              height="600"
+              width="768"
+              height="1024"
               loading="lazy"
             />
           </div>
@@ -157,8 +157,8 @@ const pricingGroups = [
                     'h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]',
                     title === 'Prolotherapy' ? 'object-top' : 'object-center',
                   ]}
-                  width="800"
-                  height="450"
+                  width={title === 'IV Therapy' ? 1200 : 1024}
+                  height={title === 'IV Therapy' ? 896 : 1024}
                   loading="lazy"
                 />
               </div>

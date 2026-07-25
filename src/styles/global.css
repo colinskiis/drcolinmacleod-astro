@@ -277,6 +277,24 @@ html.astro-navigated.js footer.reveal {
   transition: none;
 }
 
+/* Progressive article disclosure is an enhancement. Without JavaScript all
+   article rows remain available and the inert show-more control stays hidden. */
+.article-show-more {
+  display: none;
+}
+
+html.js .article-show-more {
+  display: inline-flex;
+}
+
+html.js .article-show-more.hidden {
+  display: none;
+}
+
+html.js .article-overflow {
+  display: none;
+}
+
 /* FAQ accordion smooth open/close.
    Animates the ::details-content height in supporting browsers
    (Chrome 131+); elsewhere details simply opens instantly. */

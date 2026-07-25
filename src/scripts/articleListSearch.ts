@@ -16,6 +16,8 @@ class ArticleListSearch {
   statusId: string;
   emptyId: string;
   totalCount: number;
+  expanded = false;
+  showMoreButton: HTMLButtonElement | null;
 
   constructor(root: HTMLElement) {
     const configEl = root.querySelector('script[type="application/json"]');
@@ -27,6 +29,7 @@ class ArticleListSearch {
     this.statusId = root.dataset.statusId || 'article-search-status';
     this.emptyId = root.dataset.emptyId || 'article-search-empty';
     this.totalCount = Number(root.dataset.totalCount || entries.length);
+    this.showMoreButton = document.querySelector<HTMLButtonElement>('[data-article-show-more]');
 
     this.fuse = new Fuse(entries, {
       keys: ['title', 'description', 'tags', 'categories'],
@@ -79,6 +82,15 @@ class ArticleListSearch {
       { signal }
     );
 
+    this.showMoreButton?.addEventListener(
+      'click',
+      () => {
+        this.expanded = true;
+        this.applyFilter(input.value.trim(), false);
+      },
+      { signal }
+    );
+
     document.addEventListener('astro:before-swap', () => this.destroy(), { signal });
   }
 
@@ -113,14 +125,23 @@ class ArticleListSearch {
 
     if (!query) {
       items.forEach((item) => {
+        const shouldHide = item.dataset.defaultHidden === 'true' && !this.expanded;
         item.classList.remove('hidden');
+        item.classList.toggle('article-overflow', shouldHide);
         this.clearHighlight(item);
       });
-      if (status) status.textContent = `Showing all ${this.totalCount} articles.`;
+      const visibleCount = items.filter((item) => !item.classList.contains('article-overflow')).length;
+      if (status) {
+        status.textContent = visibleCount === this.totalCount
+          ? `Showing all ${this.totalCount} articles.`
+          : `Showing ${visibleCount} of ${this.totalCount} additional articles.`;
+      }
+      this.showMoreButton?.classList.toggle('hidden', this.expanded);
       empty?.classList.add('hidden');
       return;
     }
 
+    this.showMoreButton?.classList.add('hidden');
     const results = this.fuse.search(query);
     const visibleSlugs = new Set(results.map((result) => result.item.slug));
 
@@ -129,9 +150,11 @@ class ArticleListSearch {
       const visible = Boolean(slug && visibleSlugs.has(slug));
       if (visible) {
         item.classList.remove('hidden');
+        item.classList.remove('article-overflow');
         this.applyHighlight(item, query);
       } else {
         item.classList.add('hidden');
+        item.classList.remove('article-overflow');
         this.clearHighlight(item);
       }
     });

@@ -92,6 +92,49 @@ const conditionPages = [
   },
 ];
 
+const conditionGroups = [
+  {
+    title: 'Joints, Tendons & Mobility',
+    description: 'Care information for common joint, tendon and activity-related concerns.',
+    paths: [
+      '/achilles-tendinitis/',
+      '/frozen-shoulder/',
+      '/golfers-elbow/',
+      '/osteoarthritis/',
+      '/plantar-fasciitis/',
+      '/rotator-cuff-shoulder-impingement/',
+      '/runners-knee/',
+      '/tennis-elbow/',
+    ],
+  },
+  {
+    title: 'Spine, Nerve & Jaw',
+    description: 'Pages addressing back, neck, nerve and jaw-related pain patterns.',
+    paths: [
+      '/carpal-tunnel-syndrome/',
+      '/herniated-disc/',
+      '/low-back-pain/',
+      '/si-joint-dysfunction/',
+      '/tmj-dysfunction/',
+      '/whiplash-neck-pain/',
+    ],
+  },
+  {
+    title: 'Persistent & Whole-Body Concerns',
+    description: 'Information for concerns that can affect energy, sleep, pain sensitivity and daily function.',
+    paths: [
+      '/chronic-fatigue-syndrome/',
+      '/fibromyalgia/',
+      '/migraine-headache/',
+    ],
+  },
+].map((group) => ({
+  ...group,
+  conditions: group.paths
+    .map((path) => conditionPages.find((condition) => condition.href === path))
+    .filter((condition): condition is (typeof conditionPages)[number] => Boolean(condition)),
+}));
+
 ---
 
 <BaseLayout
@@ -105,23 +148,40 @@ const conditionPages = [
 
   <section class="py-16 lg:py-24 bg-white">
     <div class="section-shell">
-      <div class="max-w-3xl mb-10 reveal">
+      <div class="max-w-3xl mb-12 reveal">
         <p class="pill mb-4">Condition Pages</p>
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">Care Information by Condition</h2>
         <p class="text-lg text-slate-600">
-          These pages describe specific conditions seen in practice and the types of assessment or care that may be considered.
+          Start with the area that best matches your concern. Each page describes the condition and the types of assessment or care that may be considered.
         </p>
       </div>
 
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 reveal reveal-delay-100">
-        {conditionPages.map((condition) => (
-          <a href={condition.href} class="site-card-interactive group flex h-full flex-col gap-3 p-5 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
-            <span class="flex items-start gap-2 text-lg font-semibold text-emerald-950 group-hover:text-emerald-700 transition-colors">
-              <ChevronRight class="mt-1 w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" aria-hidden="true" />
-              {condition.title}
-            </span>
-            <span class="text-sm text-slate-600 leading-relaxed">{condition.description}</span>
-          </a>
+      <div class="space-y-14 reveal reveal-delay-100">
+        {conditionGroups.map((group, groupIndex) => (
+          <section
+            aria-labelledby={`condition-group-${groupIndex}`}
+            class:list={[
+              groupIndex > 0 && 'border-t border-emerald-100 pt-12',
+            ]}
+          >
+            <div class="mb-6 grid gap-2 md:grid-cols-[minmax(0,1fr)_minmax(18rem,0.8fr)] md:items-end md:gap-10">
+              <h3 id={`condition-group-${groupIndex}`} class="text-2xl font-serif font-medium text-emerald-950 sm:text-3xl">
+                {group.title}
+              </h3>
+              <p class="text-sm leading-relaxed text-slate-600 md:text-right">{group.description}</p>
+            </div>
+            <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {group.conditions.map((condition) => (
+                <a href={condition.href} class="site-card-interactive group flex h-full flex-col gap-3 p-5 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
+                  <span class="flex items-start gap-2 text-lg font-semibold text-emerald-950 group-hover:text-emerald-700 transition-colors">
+                    <ChevronRight class="mt-1 w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" aria-hidden="true" />
+                    {condition.title}
+                  </span>
+                  <span class="text-sm text-slate-600 leading-relaxed">{condition.description}</span>
+                </a>
+              ))}
+            </div>
+          </section>
         ))}
       </div>
     </div>
