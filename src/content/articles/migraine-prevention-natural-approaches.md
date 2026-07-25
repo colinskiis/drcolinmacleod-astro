@@ -90,7 +90,7 @@ Addressing underlying imbalances is central to the naturopathic approach. This m
 
 Nutritional support plays an important role, as several nutrients have research supporting their use in migraine prevention. Rather than recommending specific supplements without proper assessment, I evaluate each patient's individual needs through detailed history and sometimes laboratory testing. This ensures that any nutritional interventions are appropriate and effective for that person's unique situation.
 
-[Herbal therapy](/herbal-therapy/) offers various options for migraine prevention and support. Botanical medicines can address underlying contributors such as stress, hormonal imbalances or inflammation. The specific herbs used depend on the individual's presentation and overall health picture, which is why working with a qualified practitioner is important rather than self-prescribing based on general recommendations.
+[Herbal therapy](/herbal-therapy/) offers various options for migraine prevention and support. Some botanical products have been studied for factors associated with migraine, including stress, hormonal patterns and inflammation. The specific herbs used depend on the individual's presentation and overall health picture, which is why working with a qualified practitioner is important rather than self-prescribing based on general recommendations.
 
 ## Acupuncture for Migraine Prevention
 

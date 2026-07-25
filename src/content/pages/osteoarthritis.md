@@ -29,7 +29,7 @@ Naturopathic care offers effective treatments for osteoarthritis. Typically a pa
 - Prolotherapy: Dextrose prolotherapy has been studied for osteoarthritis, with mixed evidence and variable individual response. It is an invasive procedure with potential risks and should be considered alongside established options rather than presented as predictably safe or effective.
 - Acupuncture: Acupuncture is an overall excellent treatment for pain. Acupuncture helps to reduce inflammation, swelling and pain associated with osteoarthritis. Acupuncture also promotes healing of affected joints. Read more on acupuncture.
 - Food Sensitivities: Immune reactions to specific foods can also negatively impact arthritic joints. Eliminating offending foods can help to significantly reduce the pain and stiffness of an arthritic joint.
-- Dietary & Herbal Supplements: Although there are several dietary supplements and herbal medicines which are helpful in treating osteoarthritis and associated pain, it is best to consult a naturopathic doctor to have an individualized plan for you and to avoid any possible interactions or contraindications.
+- Dietary & Herbal Supplements: Some dietary supplements and herbal products have been studied for osteoarthritis symptoms. An individualized plan should account for the evidence, dosing, possible interactions and contraindications.
 
 ### References
 

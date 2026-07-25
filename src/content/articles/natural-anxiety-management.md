@@ -130,7 +130,7 @@ I offer [clinical nutrition services](/clinical-nutrition/) that can help identi
 
 ### Herbal Therapy
 
-Botanical medicines have been used for centuries to calm the nervous system and support stress resilience. Many herbs have accumulated research demonstrating their effectiveness for anxiety and stress-related conditions.
+Botanical products have been used traditionally to support calm and stress resilience. Research has examined several herbs for anxiety and stress-related symptoms, with evidence and safety varying by product.
 
 Different herbs work through different mechanisms. Some have calming effects on the nervous system, some support healthy cortisol levels and HPA axis function and some work on neurotransmitter systems. The choice of which herbs to use depends on the individual's specific pattern of symptoms and underlying factors.
 

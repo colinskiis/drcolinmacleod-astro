@@ -121,7 +121,7 @@ Influence hormonal balance. Examples include chaste tree for menstrual issues, b
 
 ## Safety and Quality Considerations
 
-While often safer than pharmaceuticals, herbal medicines aren't without risks. Safe use requires attention to several factors.
+Herbal products are not risk-free. Safe use requires attention to several factors.
 
 ### Drug Interactions
 

@@ -64,7 +64,7 @@ Acupuncture has been found in a large-scale review study to reduce the frequency
 
 The Myers cocktail is another useful tool in preventing and managing migraines. Two of the ingredients of the Myers' cocktail have been independently shown to be helpful in reducing frequency and intensity of migraines: magnesium and specific B vitamins<sup>6-8</sup>. Using the intravenous route for these nutrients leads to higher blood concentration and rapid nutrient repletion. This combination can help to head off the symptoms of a migraine quickly in many cases.
 
-There are also several natural health products including vitamin, mineral and herbal medicines which limit the intensity and frequency of migraines. There is a good research basis for these treatments and I have seen consistent improvement in migraine patients over the years with these treatments.
+Some natural health products, including selected vitamins, minerals and herbal products, have been studied for migraine prevention. Evidence, dosing and safety vary by product, so recommendations should be individualized.
 
 ## Prevention of Migraines
 

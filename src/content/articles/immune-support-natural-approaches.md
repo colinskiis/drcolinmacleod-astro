@@ -40,7 +40,7 @@ A whole-foods diet rich in colorful vegetables and fruits, quality proteins and 
 
 ## Herbal Therapy and Immunity
 
-Botanical medicines have been used for centuries to support immune function, and modern research continues to validate their effectiveness<sup>8</sup>. Although there are several herbal medicines which are helpful in supporting immune health, it is best to consult a naturopathic doctor to have an individualized plan and to avoid any possible interactions with medications or contraindications.
+Botanical products have a long history of traditional use, and modern research has examined selected herbs for immune-related outcomes<sup>8</sup>. Evidence and safety vary by product, so an individualized plan should account for possible interactions with medications and contraindications.
 
 ## When to Seek Naturopathic Immune Support
 
