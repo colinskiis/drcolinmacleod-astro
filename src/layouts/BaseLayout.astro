@@ -6,7 +6,7 @@ import { isConditionPath, isLabTestingPath, isServicePath } from '../config/rout
 import { ClientRouter } from 'astro:transitions';
 import Search from '../components/Search.astro';
 import MedicalDisclaimer from '../components/MedicalDisclaimer.astro';
-import { Calendar, Menu, X, ChevronDown, ChevronRight, MapPin, MessageCircle, Phone, Search as SearchIcon } from '@lucide/astro';
+import { Calendar, Menu, X, ChevronDown, ChevronRight, MapPin, MessageCircle, Phone, Printer, Search as SearchIcon } from '@lucide/astro';
 
 export interface Props {
   title: string;
@@ -859,18 +859,11 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
                 <MessageCircle class="h-4 w-4" aria-hidden="true" />
                 <span>Text (902) 707-0230</span>
               </a>
-              <p><span class="font-semibold">Fax:</span> 1-800-689-8264</p>
+              <p class="flex items-center gap-2 py-1">
+                <Printer class="h-4 w-4" aria-hidden="true" />
+                <span><span class="font-semibold">Fax</span> 1-800-689-8264</span>
+              </p>
             </div>
-            <a
-              href="https://macleodnaturopathic.janeapp.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="booking-btn inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-emerald-900 px-5 py-2.5 font-semibold text-white shadow-sm transition-all hover:-translate-y-0.5 hover:bg-emerald-800 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-700 focus-visible:ring-offset-2"
-              data-booking-source="footer"
-            >
-              <Calendar class="h-4 w-4" aria-hidden="true" />
-              Book Online
-            </a>
           </div>
 
           <!-- Secondary navigation -->
