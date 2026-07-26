@@ -2,35 +2,33 @@
 
 ## Project Overview
 
-DrColinMacleod.com - Naturopathic medicine practice website built with Astro.
+DrColinMacleod.com - Naturopathic care practice website built with Astro.
 
 ## Deployment
 
 **Deployment is automatic: push to `main`.** The `Deploy production site`
 GitHub Actions workflow builds, rsyncs to Namecheap, and verifies production.
-This is the normal path — check `gh run list` after pushing.
+This is the only supported path — check `gh run list` after pushing.
 
-**Manual fallback:**
+**`deploy.sh` is legacy. Do not run it, and do not publish over SSH.** It is
+kept for reference only; publishing outside CI skips the production
+verification step and can put an unverified build live.
+
+The build requires `PUBLIC_TURNSTILE_SITE_KEY` — without it the contact form
+ships with no bot protection. CI supplies it from the
+`PUBLIC_TURNSTILE_SITE_KEY` repository variable. Set it locally only for
+build checks:
+
 ```bash
-PUBLIC_TURNSTILE_SITE_KEY=<site key> ./deploy.sh
+PUBLIC_TURNSTILE_SITE_KEY=<site key> npm run build
 ```
 
-This script:
-1. Runs `npm run check` and builds the site (`npm run build`)
-2. Aborts if the contact form has no Turnstile site key baked in
-3. Syncs `dist/` to Namecheap via rsync over SSH
-
-The env var is required — without it the build produces a contact form with no
-bot protection and the script's preflight check stops the deploy. CI supplies
-it from the `PUBLIC_TURNSTILE_SITE_KEY` repository variable.
-
-**SSH Details:**
+**Server access — inspection and debugging only, never to publish:**
 - Host: `business81.web-hosting.com`
 - Port: `21098`
 - User: `drcohmrh`
 - Key: `~/.ssh/namecheap_rsa`
-
-Manual SSH: `ssh namecheap`
+- Shortcut: `ssh namecheap`
 
 ## Key Directories
 

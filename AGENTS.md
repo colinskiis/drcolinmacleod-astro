@@ -8,8 +8,19 @@ DrColinMacleod.com - Naturopathic care practice website built with Astro.
 
 **Deployment is handled only through GitHub.** Push to `main` and let the
 `Deploy production site` GitHub Actions workflow build, publish and verify the
-production site. Do not use the legacy `deploy.sh` script or deploy directly
-over SSH.
+production site. Check `gh run list` after pushing.
+
+**`deploy.sh` is legacy. Do not run it, and do not publish over SSH.** It is
+kept for reference only; publishing outside CI skips the production
+verification step and can put an unverified build live.
+
+The build requires `PUBLIC_TURNSTILE_SITE_KEY` — without it the contact form
+ships with no bot protection. CI supplies it from the
+`PUBLIC_TURNSTILE_SITE_KEY` repository variable. Set it locally only for build
+checks: `PUBLIC_TURNSTILE_SITE_KEY=<site key> npm run build`.
+
+SSH access to `business81.web-hosting.com` (`ssh namecheap`) is for inspection
+and debugging only, never to publish.
 
 ## Key Directories
 
