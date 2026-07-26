@@ -28,48 +28,47 @@ const benefits = [
   },
 ];
 
+// Cards are deliberately typographic rather than photographic. The six category
+// images still serve as heroes on their own pages, but side by side in one grid
+// they mixed four unrelated visual idioms (anatomical illustration, flat vector,
+// clinical stock, in-clinic documentary). The hero photo carries the page's
+// photographic voice; the grid carries information instead.
 const testingOptions = [
   {
     title: 'Thyroid Testing',
-    description: 'Individualized thyroid testing using TSH, free thyroid hormones and thyroid antibodies.',
+    description: 'Individualized thyroid assessment ordered according to symptoms and history.',
+    markers: ['TSH', 'Free T4', 'Free T3', 'TPO antibodies'],
     href: '/thyroid-testing/',
-    image: '/images/lab-testing/thyroid-panel.webp',
-    alt: 'Thyroid gland anatomy illustration',
   },
   {
     title: 'Hormone Testing',
-    description: 'Blood testing for estradiol, progesterone, testosterone, FSH, LH, prolactin and DHEA-S.',
+    description: 'Blood testing for the reproductive and adrenal hormones relevant to your concern.',
+    markers: ['Estradiol', 'Progesterone', 'Testosterone', 'FSH & LH'],
     href: '/hormone-testing/',
-    image: '/images/lab-testing/hormone-testing.webp',
-    alt: 'Hormone testing blood vials',
   },
   {
     title: 'Nutrient Status',
-    description: 'Assess vitamin D, B12, iron, magnesium, zinc and other nutrients that may affect health.',
+    description: 'Assessment of the nutrients most likely to be contributing to your symptoms.',
+    markers: ['Vitamin D', 'B12', 'Ferritin', 'Magnesium'],
     href: '/nutrient-testing/',
-    image: '/images/lab-testing/nutrient-status.webp',
-    alt: 'Nutritious foods associated with nutrient status',
   },
   {
     title: 'Wellness Baseline',
-    description: 'Comprehensive screening that may include blood counts, metabolic markers, lipids and blood sugar.',
+    description: 'Broad screening across blood counts, metabolic markers, lipids and blood sugar.',
+    markers: ['CBC', 'Lipids', 'HbA1c', 'Creatinine'],
     href: '/wellness-blood-work/',
-    image: '/images/lab-testing/in-office-wellness-blood-work.webp',
-    alt: 'Dr. Colin MacLeod preparing a patient for in-office blood work',
   },
   {
     title: 'Digestive Health',
-    description: 'Stool analysis and other assessments selected according to symptoms and clinical history.',
+    description: 'Tests chosen by what they can actually answer for your symptom pattern.',
+    markers: ['Celiac serology', 'Calprotectin', 'Stool analysis', 'Breath testing'],
     href: '/digestive-health-testing/',
-    image: '/images/lab-testing/digestive-health.webp',
-    alt: 'Digestive system illustration',
   },
   {
     title: 'Specialized Testing',
-    description: 'Selected assessments for complex cases, including heavy metals, organic acids and other panels.',
+    description: 'Selected assessments for complex cases where routine testing has not explained things.',
+    markers: ['Heavy metals', 'Organic acids', 'Methylation', 'Environmental toxins'],
     href: '/specialized-testing/',
-    image: '/images/lab-testing/specialized-testing.webp',
-    alt: 'Blood draw preparation for specialized testing',
   },
 ];
 
@@ -136,39 +135,25 @@ const faqs = [
     <div class="section-shell">
       <div class="mb-10 text-center sm:mb-12">
         <h2 class="mb-4 text-3xl font-serif font-medium text-emerald-950 sm:text-4xl">Available Testing</h2>
-        <p class="mx-auto max-w-3xl text-lg text-slate-600">Testing is individualized; these are common categories available through the practice.</p>
+        <p class="mx-auto max-w-3xl text-lg text-slate-600">Testing is individualized; these are common categories available through the practice. The markers listed are examples rather than a fixed panel.</p>
       </div>
 
-      <div class="space-y-1 sm:hidden">
+      <div class="grid gap-5 sm:grid-cols-2 sm:gap-7 lg:grid-cols-3">
         {testingOptions.map((option) => (
-          <a href={option.href} class="group flex items-center gap-3 border-b border-emerald-100 py-4 font-medium text-slate-700 transition-colors hover:text-emerald-700">
-            <ChevronRight class="h-4 w-4 flex-none text-emerald-500 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
-            {option.title}
-          </a>
-        ))}
-      </div>
+          <a href={option.href} class="site-card-interactive group flex flex-col p-6 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
+            <h3 class="mb-2 text-xl font-serif font-medium text-emerald-950 transition-colors group-hover:text-emerald-700">{option.title}</h3>
+            <p class="mb-5 leading-relaxed text-slate-600">{option.description}</p>
 
-      <div class="hidden gap-7 sm:grid sm:grid-cols-2 lg:grid-cols-3">
-        {testingOptions.map((option) => (
-          <a href={option.href} class="site-card-interactive group overflow-hidden">
-            <div class="aspect-[16/10] overflow-hidden">
-              <img
-                src={option.image}
-                alt={option.alt}
-                class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                width="800"
-                height="500"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-            <div class="p-6">
-              <h3 class="mb-3 text-xl font-serif font-medium text-emerald-950 transition-colors group-hover:text-emerald-700">{option.title}</h3>
-              <p class="mb-4 leading-relaxed text-slate-600">{option.description}</p>
-              <span class="inline-flex items-center text-sm font-semibold text-emerald-700">
-                Learn more <ChevronRight class="ml-1 h-4 w-4" aria-hidden="true" />
-              </span>
-            </div>
+            <p class="sr-only">Commonly includes:</p>
+            <ul class="mb-6 flex flex-wrap gap-1.5">
+              {option.markers.map((marker) => (
+                <li class="rounded-full border border-emerald-100 bg-emerald-50/70 px-2.5 py-1 text-xs font-medium text-emerald-900">{marker}</li>
+              ))}
+            </ul>
+
+            <span class="mt-auto inline-flex items-center text-sm font-semibold text-emerald-700">
+              Learn more <ChevronRight class="ml-1 h-4 w-4 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
+            </span>
           </a>
         ))}
       </div>
