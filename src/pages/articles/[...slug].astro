@@ -3,6 +3,7 @@ import { type CollectionEntry, getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import FAQSection from '../../components/FAQSection.astro';
 import RelatedArticles from '../../components/RelatedArticles.astro';
+import OnThisPage from '../../components/OnThisPage.astro';
 import { readingTime } from '../../lib/readingTime';
 import GithubSlugger from 'github-slugger';
 
@@ -168,18 +169,7 @@ const breadcrumbSchema = {
           </div>
         )}
 
-        {showToc && (
-          <details class="site-card mb-8 p-5 lg:hidden">
-            <summary class="cursor-pointer text-sm font-semibold text-emerald-950">On This Page</summary>
-            <nav class="mt-4 space-y-1" aria-label="Article sections">
-              {tocItems.map((item) => (
-                <a href={`#${item.id}`} class="block rounded-lg px-2 py-2 text-sm leading-snug text-slate-600 transition-colors hover:bg-emerald-50 hover:text-emerald-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500">
-                  {item.title}
-                </a>
-              ))}
-            </nav>
-          </details>
-        )}
+        {showToc && <OnThisPage items={tocItems} display="mobile" label="Article sections" />}
 
         <!-- Article Content -->
         <div class={showToc ? 'grid lg:grid-cols-[minmax(0,1fr)_16rem] gap-10 items-start' : ''}>
@@ -187,18 +177,7 @@ const breadcrumbSchema = {
             <Content />
           </div>
 
-          {showToc && (
-            <aside class="site-card sticky top-32 hidden p-5 lg:block">
-              <p class="text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-4">On This Page</p>
-              <nav class="space-y-1" aria-label="Article sections">
-                {tocItems.map((item) => (
-                  <a href={`#${item.id}`} class="block rounded-lg px-2 py-2 text-sm leading-snug text-slate-600 transition-colors hover:bg-emerald-50 hover:text-emerald-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500">
-                    {item.title}
-                  </a>
-                ))}
-              </nav>
-            </aside>
-          )}
+          {showToc && <OnThisPage items={tocItems} display="desktop" label="Article sections" />}
         </div>
 
         {article.data.faq && article.data.faq.length > 0 && (

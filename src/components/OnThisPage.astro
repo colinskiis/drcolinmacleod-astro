@@ -7,9 +7,10 @@ export interface TocItem {
 export interface Props {
   items: TocItem[];
   display: 'mobile' | 'desktop';
+  label?: string;
 }
 
-const { items, display } = Astro.props;
+const { items, display, label = 'Page sections' } = Astro.props;
 ---
 
 {items.length >= 4 && display === 'mobile' && (
@@ -17,7 +18,7 @@ const { items, display } = Astro.props;
     <summary class="cursor-pointer text-sm font-semibold text-emerald-950">
       On This Page
     </summary>
-    <nav class="mt-4 space-y-1" aria-label="Page sections">
+    <nav class="mt-4 space-y-1" aria-label={label}>
       {items.map((item) => (
         <a
           href={`#${item.id}`}
@@ -36,7 +37,7 @@ const { items, display } = Astro.props;
     <p class="mb-4 text-xs font-semibold uppercase tracking-wide text-emerald-700">
       On This Page
     </p>
-    <nav class="space-y-1" aria-label="Page sections">
+    <nav class="space-y-1" aria-label={label}>
       {items.map((item) => (
         <a
           href={`#${item.id}`}

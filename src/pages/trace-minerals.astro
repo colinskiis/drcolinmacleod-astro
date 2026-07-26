@@ -18,6 +18,7 @@ import FAQSection from '../components/FAQSection.astro';
     compact
   >
     <p>Trace minerals, zinc, selenium, manganese, copper and chromium, serve as essential cofactors for hundreds of enzymatic reactions. Even mild deficiencies impair immune function, antioxidant defence and metabolic efficiency.</p>
+    <CTAButton slot="cta" source="trace-minerals-hero" />
   </HeroSection>
 
   <!-- Three Benefits Section -->
@@ -25,19 +26,19 @@ import FAQSection from '../components/FAQSection.astro';
     <div class="section-shell">
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
         <!-- Enzyme Function -->
-        <BenefitCard title="Enzyme Function">
+        <BenefitCard level={2} title="Enzyme Function">
           <FlaskConical slot="icon" class="h-6 w-6" stroke-width={1.75} aria-hidden="true" />
           <p>Trace minerals activate hundreds of enzymes essential for digestion, detoxification and energy metabolism. Without adequate mineral cofactors, these enzymatic processes slow or fail entirely.</p>
         </BenefitCard>
 
         <!-- Immune & Antioxidant Support -->
-        <BenefitCard title="Immune &amp; Antioxidant Support">
+        <BenefitCard level={2} title="Immune &amp; Antioxidant Support">
           <Shield slot="icon" class="h-6 w-6" stroke-width={1.75} aria-hidden="true" />
           <p>Zinc, selenium and copper are critical for immune cell function and antioxidant enzyme activity. Selenium is a core component of glutathione peroxidase, the body's primary antioxidant enzyme.</p>
         </BenefitCard>
 
         <!-- Metabolic Health -->
-        <BenefitCard title="Metabolic Health">
+        <BenefitCard level={2} title="Metabolic Health">
           <Activity slot="icon" class="h-6 w-6" stroke-width={1.75} aria-hidden="true" />
           <p>Chromium enhances insulin sensitivity and glucose metabolism. Manganese supports bone formation and carbohydrate metabolism. Together, trace minerals underpin metabolic efficiency at the cellular level.</p>
         </BenefitCard>

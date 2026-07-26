@@ -530,8 +530,10 @@ details[open]::details-content {
   text-transform: uppercase;
 }
 
-.prose .article-summary h3,
-.prose .article-note h3 {
+/* Callouts take h2 when they lead an article (before the first ##) and h3 when
+   they sit inside a section, so the outline never skips a level either way. */
+.prose .article-summary :is(h2, h3),
+.prose .article-note :is(h2, h3) {
   margin: 0 0 1rem;
   color: var(--ink);
   font-size: 1.35rem;

@@ -19,23 +19,24 @@ import FAQSection from '../components/FAQSection.astro';
     image={{ src: "/images/treatments/nad-iv-therapy-session.webp", alt: "Patient receiving NAD+ IV therapy in Halifax", aspect: "video" }}
   >
     <p>NAD+ (nicotinamide adenine dinucleotide) is a coenzyme essential for cellular energy production, DNA repair and cellular signaling. IV therapy offers a direct way to receive NAD+ and is commonly explored for energy, mental clarity, recovery and healthy-aging support.</p>
+    <CTAButton slot="cta" source="nad-therapy-hero" />
   </HeroSection>
 
   <!-- Three Benefits Section -->
   <section class="bg-emerald-50/70 pt-20 lg:pt-28 pb-14 lg:pb-16">
     <div class="section-shell">
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-        <BenefitCard title="Cellular Energy">
+        <BenefitCard level={2} title="Cellular Energy">
           <Zap slot="icon" class="h-6 w-6" stroke-width={1.75} aria-hidden="true" />
           <p>NAD+ is essential for mitochondrial function and ATP production, helping cells convert nutrients into usable energy.<sup>1-3</sup></p>
         </BenefitCard>
 
-        <BenefitCard title="Mental Clarity">
+        <BenefitCard level={2} title="Mental Clarity">
           <Lightbulb slot="icon" class="h-6 w-6" stroke-width={1.75} aria-hidden="true" />
           <p>NAD+ is important to neuronal metabolism and cellular repair, which has made cognition and brain health an active area of NAD+ research.<sup>3-5</sup></p>
         </BenefitCard>
 
-        <BenefitCard title="Healthy Aging">
+        <BenefitCard level={2} title="Healthy Aging">
           <Heart slot="icon" class="h-6 w-6" stroke-width={1.75} aria-hidden="true" />
           <p>NAD+ supports sirtuins and other enzymes involved in metabolism, stress response and DNA repair—pathways closely studied in healthy aging.<sup>1-5</sup></p>
         </BenefitCard>

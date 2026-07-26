@@ -18,6 +18,7 @@ import FAQSection from '../components/FAQSection.astro';
     compact
   >
     <p>L-Carnitine is an amino acid that plays a central role in energy production by transporting fatty acids into the mitochondria where they are burned for fuel. IV delivery ensures optimal absorption and immediate cellular availability.</p>
+    <CTAButton slot="cta" source="l-carnitine-hero" />
   </HeroSection>
 
   <!-- Three Benefits Section -->
@@ -25,19 +26,19 @@ import FAQSection from '../components/FAQSection.astro';
     <div class="section-shell">
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
         <!-- Fat Metabolism -->
-        <BenefitCard title="Fat Metabolism">
+        <BenefitCard level={2} title="Fat Metabolism">
           <Flame slot="icon" class="h-6 w-6" stroke-width={1.75} aria-hidden="true" />
           <p>L-Carnitine transports long-chain fatty acids into mitochondria for energy production. Without adequate L-Carnitine, fatty acids cannot enter the mitochondria and accumulate in tissues.</p>
         </BenefitCard>
 
         <!-- Cardiovascular Support -->
-        <BenefitCard title="Cardiovascular Support">
+        <BenefitCard level={2} title="Cardiovascular Support">
           <Heart slot="icon" class="h-6 w-6" stroke-width={1.75} aria-hidden="true" />
           <p>L-Carnitine supports heart muscle function by ensuring cardiac cells have access to fatty acid fuel. Research shows L-Carnitine improves outcomes in heart failure and angina.</p>
         </BenefitCard>
 
         <!-- Athletic Recovery -->
-        <BenefitCard title="Athletic Recovery">
+        <BenefitCard level={2} title="Athletic Recovery">
           <Dumbbell slot="icon" class="h-6 w-6" stroke-width={1.75} aria-hidden="true" />
           <p>Athletes use L-Carnitine to reduce exercise-induced muscle damage, decrease lactic acid accumulation and accelerate post-exercise recovery.</p>
         </BenefitCard>

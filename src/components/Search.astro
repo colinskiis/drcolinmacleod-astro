@@ -26,6 +26,7 @@ import { Search as SearchIcon, X } from '@lucide/astro';
       <div class="search-panel bg-white rounded-2xl shadow-2xl shadow-emerald-900/10 w-full max-w-2xl mx-4 border border-emerald-900/10">
         <div class="p-6">
           <div class="relative mb-4">
+            <label for="search-input" class="sr-only">Search this site</label>
             <input
               type="text"
               id="search-input"
@@ -34,6 +35,9 @@ import { Search as SearchIcon, X } from '@lucide/astro';
               autocomplete="off"
               aria-describedby="search-help"
             >
+            <p id="search-help" class="sr-only">
+              Results update as you type. Use the up and down arrow keys to move between results, then press Enter to open one.
+            </p>
             <SearchIcon class="w-5 h-5 text-slate-400 absolute left-3 top-3.5" aria-hidden="true" />
             <button
               id="search-close"
