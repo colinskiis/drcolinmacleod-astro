@@ -142,7 +142,7 @@ export const articleTopics = [
   {
     id: 'heart-metabolic',
     label: 'Heart & Metabolic',
-    title: 'Heart & Metabolic Health Articles',
+    title: 'Heart & Metabolic Health',
     description: 'Articles on blood pressure, blood sugar, weight, cardiovascular and metabolic health from Dr. Colin MacLeod, ND.',
     intro: 'Articles on blood pressure, blood sugar, cardiovascular and metabolic health.',
     overview: [

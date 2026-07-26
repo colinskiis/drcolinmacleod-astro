@@ -117,13 +117,14 @@ const faqs = [
 
   <section class="bg-white py-10 sm:py-16 lg:py-20" aria-label="Laboratory testing benefits">
     <div class="section-shell">
+      <h2 class="sr-only">Laboratory testing benefits</h2>
       <div class="grid grid-cols-2 gap-5 sm:gap-8 lg:grid-cols-4">
         {benefits.map(({ title, description, icon: Icon }) => (
           <div class="text-center">
             <div class="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-emerald-100 sm:mb-4 sm:h-16 sm:w-16">
               <Icon class="h-6 w-6 text-emerald-700 sm:h-8 sm:w-8" stroke-width={1.5} aria-hidden="true" />
             </div>
-            <h2 class="mb-2 text-base font-serif font-medium text-emerald-950 sm:text-lg">{title}</h2>
+            <h3 class="mb-2 text-base font-serif font-medium text-emerald-950 sm:text-lg">{title}</h3>
             <p class="text-xs leading-relaxed text-slate-600 sm:text-sm">{description}</p>
           </div>
         ))}
