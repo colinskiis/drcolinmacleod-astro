@@ -26,7 +26,7 @@ import FAQSection from '../components/FAQSection.astro';
   </HeroSection>
 
   <!-- Three Benefits Section -->
-  <section class="py-16 lg:py-24 bg-emerald-50/70">
+  <section class="bg-emerald-50/70 pt-20 lg:pt-28 pb-14 lg:pb-16">
     <div class="section-shell">
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
         <!-- Pain Relief -->
@@ -144,7 +144,7 @@ import FAQSection from '../components/FAQSection.astro';
   </section>
 
   <!-- Pricing Section -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
+  <section class="bg-emerald-50/70 pb-20 lg:pb-28">
     <div class="section-shell">
       <div class="grid lg:grid-cols-2 gap-12">
         <!-- Prolotherapy Card -->
@@ -258,7 +258,7 @@ import FAQSection from '../components/FAQSection.astro';
   </section>
 
   <!-- Joints We Treat Section -->
-  <section id="joints-treated" class="py-16 lg:py-24 bg-white">
+  <section id="joints-treated" class="bg-white py-20 lg:py-28">
     <div class="section-shell">
       <div class="text-center mb-12">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">Joints We Treat</h2>
@@ -310,7 +310,7 @@ import FAQSection from '../components/FAQSection.astro';
   </section>
 
   <!-- How Does Prolotherapy Work Section -->
-  <section id="how-prolotherapy-works" class="py-16 lg:py-24 bg-emerald-950">
+  <section id="how-prolotherapy-works" class="bg-emerald-950 py-20 lg:py-28">
     <div class="section-shell">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">How Does Prolotherapy Work?</h2>
@@ -327,7 +327,7 @@ import FAQSection from '../components/FAQSection.astro';
   </section>
 
   <!-- Growth Factors Section -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
+  <section class="bg-emerald-50 py-20 lg:py-28">
     <div class="section-shell">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6">Growth Factors Promote Repair</h2>
@@ -347,7 +347,7 @@ import FAQSection from '../components/FAQSection.astro';
   </section>
 
   <!-- How Long Do Results Last Section -->
-  <section class="py-16 lg:py-24 bg-white">
+  <section class="bg-white pt-20 lg:pt-28 pb-14 lg:pb-16">
     <div class="section-shell">
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         <div>
@@ -379,7 +379,7 @@ import FAQSection from '../components/FAQSection.astro';
   </section>
 
   <!-- Prolotherapy vs Other Treatments Section -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
+  <section class="bg-white pb-20 lg:pb-28">
     <div class="section-shell">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6">Prolotherapy Vs. Hyaluronic Acid & Cortisone</h2>
@@ -399,15 +399,15 @@ import FAQSection from '../components/FAQSection.astro';
   </section>
 
   <!-- Safety Section -->
-  <section class="py-16 lg:py-24 bg-emerald-950">
+  <section class="bg-emerald-50 py-20 lg:py-28">
     <div class="section-shell">
       <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">Safety of Prolotherapy</h2>
-        <div class="prose prose-lg prose-invert">
-          <p class="text-white/90">
+        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6">Safety of Prolotherapy</h2>
+        <div class="prose prose-lg text-slate-600">
+          <p class="text-slate-600">
             Prolotherapy is an invasive procedure. Potential effects include pain, stiffness, bruising, swelling, bleeding, infection, reaction to an ingredient and anatomical-area-specific complications. The likelihood and significance of these risks vary by procedure and individual health.
           </p>
-          <p class="text-white/90">
+          <p class="text-slate-600">
             As with any injection there is a small chance of infection. There is also a small chance of allergic reaction to the local anesthetic (numbing agent) which is used at the site of the injection.
           </p>
         </div>
@@ -415,7 +415,7 @@ import FAQSection from '../components/FAQSection.astro';
     </div>
   </section>
 
-  <FAQSection bg="white" items={[
+  <FAQSection bg="white" sectionClass="bg-white pt-20 lg:pt-24 pb-12 lg:pb-16" items={[
           { question: "Does Prolotherapy Hurt?", answer: "<p>There can be some discomfort associated with prolotherapy but it is typically short-lived. The needle size used is smaller than a needle for drawing blood or a cortisone injection, and a local anesthetic is included in the solution. After treatment, it is normal to experience temporary soreness, stiffness or mild swelling at the injection site for 1-4 days as part of the healing response. Bruising is possible. Infection is a rare risk with any injection procedure. Serious complications are rare and have not been reported in published clinical trials of dextrose prolotherapy.</p>" },
           { question: "How Many Injections Will I Need?", answer: "<p>Six treatment sessions at a rate of one injection every 1-2 weeks yields optimal results for osteoarthritis. If there is pain in the region of ligaments or tendons surrounding the joint these can also be treated effectively with prolotherapy.</p>" },
           { question: "What Do I Do After Prolotherapy?", answer: "<p>After a prolotherapy treatment it is best to limit exercise to less intense activities for 1-2 days to allow the treated region to complete the repair process unhindered.</p>" },
@@ -424,7 +424,7 @@ import FAQSection from '../components/FAQSection.astro';
         ]} />
 
   <!-- Other Conditions Section -->
-  <section class="py-16 lg:py-24 bg-white">
+  <section class="bg-emerald-50/70 py-12 lg:py-16">
     <div class="section-shell">
       <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6 text-center">Prolotherapy for Other Conditions</h2>
       <p class="text-lg text-slate-600 text-center max-w-3xl mx-auto mb-12">
@@ -443,25 +443,13 @@ import FAQSection from '../components/FAQSection.astro';
     </div>
   </section>
 
-  <!-- Final CTA -->
-  <section class="py-16 lg:py-24 bg-emerald-950">
-    <div class="section-shell">
-      <div class="text-center max-w-3xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">Ready to Experience Prolotherapy?</h2>
-        <p class="text-lg text-white/80 mb-8">
-          Book your consultation today and discover how prolotherapy can help relieve your arthritis pain and improve your quality of life.
-        </p>
-        <CTAButton source="prolotherapy-for-arthritis-cta" />
-      </div>
-    </div>
-  </section>
 
   <!-- References Section -->
-  <section class="py-16 lg:py-24 bg-emerald-950">
+  <section class="bg-white py-16 lg:py-20">
     <div class="section-shell">
       <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-8">References</h2>
-        <div class="text-white/80 text-sm space-y-2 max-h-96 overflow-y-auto pr-4">
+        <h2 class="text-base font-serif font-medium text-emerald-950 mb-4">References</h2>
+        <div class="text-slate-600 text-sm space-y-2 max-h-96 overflow-y-auto pr-4">
           <ol class="list-decimal list-inside space-y-1">
             <li>Reeves KD, Hassanein K. Randomized prospective double-blind placebo-controlled study of dextrose prolotherapy for knee osteoarthritis with or without ACL laxity. Altern Ther Health Med. 2000 Mar;6(2):68-74, 77-80.</li>
             <li>Reeves KD, Hassanein K. Randomized, prospective, placebo-controlled double-blind study of dextrose prolotherapy for osteoarthritic thumb and finger (DIP, PIP and trapeziometacarpal) joints: evidence of clinical efficacy. J Altern Complement Med. 2000 Aug;6(4):311-20.</li>
@@ -504,6 +492,18 @@ import FAQSection from '../components/FAQSection.astro';
             <li>Wakitani S, Imoto K, Kimura T, Ochi T, Matsumoto K, Nakamura T. Hepatocyte growth factor facilitates cartilage repair. Full thickness articular cartilage defect studied in rabbit knees. Acta Orthop Scand. 1997 Oct;68(5):474-80.</li>
           </ol>
         </div>
+      </div>
+    </div>
+  </section>
+  <!-- Final CTA -->
+  <section class="py-20 lg:py-28 bg-emerald-950">
+    <div class="section-shell">
+      <div class="text-center max-w-3xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">Ready to Experience Prolotherapy?</h2>
+        <p class="text-lg text-white/80 mb-8">
+          Book your consultation today and discover how prolotherapy can help relieve your arthritis pain and improve your quality of life.
+        </p>
+        <CTAButton source="prolotherapy-for-arthritis-cta" />
       </div>
     </div>
   </section>
