@@ -134,7 +134,7 @@ class ArticleListSearch {
       if (status) {
         status.textContent = visibleCount === this.totalCount
           ? `Showing all ${this.totalCount} articles.`
-          : `Showing ${visibleCount} of ${this.totalCount} additional articles.`;
+          : `Showing ${visibleCount} of ${this.totalCount} articles.`;
       }
       this.showMoreButton?.classList.toggle('hidden', this.expanded);
       empty?.classList.add('hidden');

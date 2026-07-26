@@ -10,8 +10,11 @@
   <p class="text-xs">
     <strong class="text-red-700">For medical emergencies, call 911 immediately.</strong>
   </p>
-  <p class="flex flex-wrap gap-x-3 gap-y-1 text-xs">
-    <a href="/privacy/" class="text-emerald-700 hover:text-emerald-900 underline underline-offset-2">Privacy Policy</a>
-    <a href="/editorial-policy/" class="text-emerald-700 hover:text-emerald-900 underline underline-offset-2">Editorial Policy</a>
+  <!-- Standalone links, so they carry a 24px minimum target (WCAG 2.2 2.5.8)
+       without enlarging the type. The negative inline margin keeps the row
+       optically flush with the disclaimer text above. -->
+  <p class="-mx-2 flex flex-wrap items-center gap-x-1 gap-y-1 text-xs">
+    <a href="/privacy/" class="inline-flex min-h-6 items-center rounded px-2 py-1 text-emerald-700 underline underline-offset-2 transition-colors hover:text-emerald-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500">Privacy Policy</a>
+    <a href="/editorial-policy/" class="inline-flex min-h-6 items-center rounded px-2 py-1 text-emerald-700 underline underline-offset-2 transition-colors hover:text-emerald-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500">Editorial Policy</a>
   </p>
 </div>

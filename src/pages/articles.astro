@@ -21,8 +21,15 @@ const sortedArticles = allArticles.sort((a, b) =>
 );
 
 const featuredArticles = sortedArticles.slice(0, 3);
+// The browse list keeps every article so search can always reach them, but the
+// three already shown as featured cards start hidden — otherwise the same three
+// appear twice within one screen. "Show all" and any search reveal them.
 const browseArticles = sortedArticles;
 const initiallyVisibleArticles = 12;
+const isDefaultHidden = (index: number) =>
+  index < featuredArticles.length ||
+  index >= featuredArticles.length + initiallyVisibleArticles;
+const defaultVisibleCount = browseArticles.filter((_, index) => !isDefaultHidden(index)).length;
 const articleSearchIndex = toArticleSearchIndex(browseArticles);
 
 const topicCounts = articleTopicFilters.reduce((counts, topic) => {
@@ -137,7 +144,7 @@ const collectionSchema = {
           </nav>
         </div>
 
-        <ArticleSearch articles={articleSearchIndex} initialVisibleCount={initiallyVisibleArticles} />
+        <ArticleSearch articles={articleSearchIndex} initialVisibleCount={defaultVisibleCount} />
 
         <div id="article-list">
         {browseArticles.map((article, index) => (
@@ -145,10 +152,10 @@ const collectionSchema = {
             href={`/articles/${article.slug}/`}
             data-article-search-item
             data-article-slug={article.slug}
-            data-default-hidden={index >= initiallyVisibleArticles ? 'true' : undefined}
+            data-default-hidden={isDefaultHidden(index) ? 'true' : undefined}
             class:list={[
               'group flex items-center gap-4 py-5 border-b border-slate-100 last:border-0 -mx-4 px-4 rounded-lg hover:bg-emerald-50/50 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-inset',
-              index >= initiallyVisibleArticles && 'article-overflow',
+              isDefaultHidden(index) && 'article-overflow',
             ]}
           >
             {article.data.heroImage && (
@@ -192,7 +199,7 @@ const collectionSchema = {
         ))}
         </div>
 
-        {browseArticles.length > initiallyVisibleArticles && (
+        {browseArticles.length > defaultVisibleCount && (
           <div class="mt-8 text-center">
             <button
               type="button"

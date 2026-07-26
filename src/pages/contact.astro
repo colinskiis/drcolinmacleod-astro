@@ -156,7 +156,7 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? '';
           <!-- Contact and location -->
           <div class="bg-white border border-emerald-100 rounded-2xl p-6 shadow-sm card-hover">
             <h3 class="text-xl font-serif font-medium text-emerald-950 mb-4">Contact &amp; Visit</h3>
-            <div class="grid gap-6 border-b border-emerald-100 pb-5 sm:grid-cols-2">
+            <div class="grid gap-6 border-b border-emerald-100 pb-5 sm:grid-cols-[1.15fr_0.85fr]">
               <div class="space-y-5">
                 <div class="flex items-start">
                   <svg class="w-5 h-5 text-emerald-700 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -165,7 +165,7 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? '';
                   </svg>
                   <div>
                     <p class="font-semibold text-slate-800">Optimal Wellbeing Clinic</p>
-                    <p class="text-slate-600">1378 Bedford Highway, Unit 1</p>
+                    <p class="text-slate-600"><span class="whitespace-nowrap">1378 Bedford Highway,</span> <span class="whitespace-nowrap">Unit 1</span></p>
                     <p class="text-slate-600">Bedford, NS B4A 1E2</p>
                   </div>
                 </div>
@@ -175,7 +175,7 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? '';
                   </svg>
                   <div class="space-y-1 text-slate-600">
                     <p class="font-semibold text-slate-800">Hours</p>
-                    <p><span class="font-medium text-slate-800">Mon - Fri:</span> 7:30 AM - 3:30 PM</p>
+                    <p><span class="font-medium text-slate-800">Mon - Fri:</span> <span class="whitespace-nowrap">7:30 AM - 3:30 PM</span></p>
                     <p><span class="font-medium text-slate-800">Sat, Sun:</span> Closed</p>
                   </div>
                 </div>
@@ -187,7 +187,7 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? '';
                   </svg>
                   <div>
                     <p class="text-sm text-slate-600">Call</p>
-                    <a href="tel:+19024064424" class="font-semibold text-emerald-800 hover:text-emerald-900 transition-colors">(902) 406-4424</a>
+                    <a href="tel:+19024064424" class="-mx-1 inline-flex min-h-6 items-center rounded px-1 font-semibold text-emerald-800 transition-colors hover:text-emerald-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500">(902) 406-4424</a>
                   </div>
                 </div>
                 <div class="flex items-start">
@@ -196,7 +196,7 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? '';
                   </svg>
                   <div>
                     <p class="text-sm text-slate-600">Text</p>
-                    <a href="sms:+19027070230" data-text-source="contact-page" class="font-semibold text-emerald-800 hover:text-emerald-900 transition-colors">(902) 707-0230</a>
+                    <a href="sms:+19027070230" data-text-source="contact-page" class="-mx-1 inline-flex min-h-6 items-center rounded px-1 font-semibold text-emerald-800 transition-colors hover:text-emerald-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500">(902) 707-0230</a>
                   </div>
                 </div>
                 <div class="flex items-start">
@@ -226,18 +226,33 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? '';
                 Look for the Integrated Health Professional Centre at 1378 Bedford Highway, Unit 1.
               </figcaption>
             </figure>
-            <a
-              href="https://www.google.com/maps/dir/?api=1&destination=1378+Bedford+Highway,+Unit+1,Bedford,NS,Canada"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="inline-flex min-h-11 items-center justify-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 font-semibold text-emerald-900 transition-colors hover:bg-emerald-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2"
-            >
-              <MapPin class="h-4 w-4" aria-hidden="true" />
-              Get Directions
-              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-              </svg>
-            </a>
+            <div class="flex flex-wrap items-center gap-3">
+              <!-- Booking is the primary intent on this page. Below lg the
+                   contact-options nav above already carries it, so this copy
+                   only appears once the nav is hidden. -->
+              <a
+                href="https://macleodnaturopathic.janeapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-booking-source="contact-details-card"
+                class="booking-btn hidden min-h-11 items-center justify-center gap-2 rounded-full bg-emerald-900 px-5 py-2.5 font-semibold text-white shadow-sm transition-all hover:-translate-y-0.5 hover:bg-emerald-800 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 lg:inline-flex"
+              >
+                <Calendar class="h-4 w-4" aria-hidden="true" />
+                Book Online
+              </a>
+              <a
+                href="https://www.google.com/maps/dir/?api=1&destination=1378+Bedford+Highway,+Unit+1,Bedford,NS,Canada"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex min-h-11 items-center justify-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 font-semibold text-emerald-900 transition-colors hover:bg-emerald-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2"
+              >
+                <MapPin class="h-4 w-4" aria-hidden="true" />
+                Get Directions
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </div>

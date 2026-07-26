@@ -29,9 +29,12 @@ const defaultBreadcrumb = isLabTestingPath(currentPath)
       ? { href: '/conditions/', label: 'Conditions' }
       : null;
 
-// Padding classes based on compact prop
+// Padding classes based on compact prop.
+// Compact heroes clear the fixed header via pt-28/pt-32, so their effective top
+// inset is larger than the bottom. Keep the bottom smaller so a title-only hero
+// reads as optically centred rather than bottom-heavy.
 const sectionPadding = compact
-  ? "pb-12 lg:pb-16"
+  ? "pb-8 lg:pb-12"
   : "pb-24 lg:pb-32";
 const topPadding = compact
   ? "pt-28 lg:pt-32"
@@ -55,7 +58,7 @@ const imageDimensions = imageAspect === 'square'
           <slot name="breadcrumb" />
         ) : defaultBreadcrumb && (
           <nav class="text-emerald-300 text-sm mb-4" aria-label="Breadcrumb">
-            <a href={defaultBreadcrumb.href} class="hover:text-white transition-colors">{defaultBreadcrumb.label}</a>
+            <a href={defaultBreadcrumb.href} class="-mx-1 inline-flex min-h-6 items-center rounded px-1 transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300">{defaultBreadcrumb.label}</a>
             <span class="mx-2" aria-hidden="true">/</span>
             <span class="text-white">{title}</span>
           </nav>
@@ -72,7 +75,7 @@ const imageDimensions = imageAspect === 'square'
           <slot name="breadcrumb" />
         ) : defaultBreadcrumb && (
           <nav class="text-emerald-300 text-sm mb-4" aria-label="Breadcrumb">
-            <a href={defaultBreadcrumb.href} class="hover:text-white transition-colors">{defaultBreadcrumb.label}</a>
+            <a href={defaultBreadcrumb.href} class="-mx-1 inline-flex min-h-6 items-center rounded px-1 transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300">{defaultBreadcrumb.label}</a>
             <span class="mx-2" aria-hidden="true">/</span>
             <span class="text-white">{title}</span>
           </nav>
@@ -90,7 +93,7 @@ const imageDimensions = imageAspect === 'square'
             <slot name="breadcrumb" />
           ) : defaultBreadcrumb && (
             <nav class="text-emerald-300 text-sm mb-4" aria-label="Breadcrumb">
-              <a href={defaultBreadcrumb.href} class="hover:text-white transition-colors">{defaultBreadcrumb.label}</a>
+              <a href={defaultBreadcrumb.href} class="-mx-1 inline-flex min-h-6 items-center rounded px-1 transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300">{defaultBreadcrumb.label}</a>
               <span class="mx-2" aria-hidden="true">/</span>
               <span class="text-white">{title}</span>
             </nav>
