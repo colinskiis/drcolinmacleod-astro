@@ -1,0 +1,50 @@
+---
+import { buttonClasses, type Size, type Surface, type Variant } from '../lib/buttonStyles';
+
+/**
+ * A button-styled link for any action that is *not* booking.
+ *
+ * Shares the visual system with `BookingButton` through `buttonStyles.ts`, but
+ * deliberately carries no `data-booking-source`. A "Get Directions" or "Explore
+ * Lab Testing" click that fired `booking_click` would quietly inflate the
+ * conversion count with people who did not book.
+ *
+ * If the link needs its own analytics, pass `dataAttrs` — BaseLayout already
+ * has delegated listeners for `data-text-source` and `data-navigation-source`.
+ */
+
+export interface Props {
+  href: string;
+  variant?: Variant;
+  surface?: Surface;
+  size?: Size;
+  external?: boolean;
+  fullWidth?: boolean;
+  /** Extra utility classes, for layout only — never for colour. */
+  class?: string;
+  /** e.g. `{ 'data-navigation-source': 'hero' }` */
+  dataAttrs?: Record<string, string>;
+}
+
+const {
+  href,
+  variant = 'secondary',
+  surface = 'dark',
+  size = 'md',
+  external = false,
+  fullWidth = false,
+  class: extra,
+  dataAttrs = {},
+} = Astro.props;
+---
+
+<a
+  href={href}
+  target={external ? '_blank' : undefined}
+  rel={external ? 'noopener noreferrer' : undefined}
+  class={buttonClasses({ variant, surface, size, fullWidth, extra })}
+  {...dataAttrs}
+>
+  <slot />
+  {external && <span class="sr-only"> (opens in a new tab)</span>}
+</a>

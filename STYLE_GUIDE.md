@@ -226,11 +226,24 @@ wearing a rationale.
 
 |  | `surface="dark"` | `surface="light"` |
 |---|---|---|
-| `primary` | `emerald-400` fill, `emerald-950` text — 7.88:1 | `emerald-900` fill, white text — 9.72:1 |
-| `secondary` | `white/10` fill, `white/40` border — 3.57:1 | transparent, `emerald-900` border — 9.72:1 |
+| `primary` | `emerald-400` fill, `emerald-950` text | `emerald-900` fill, white text |
+| `secondary` | `white/10` fill, `white/55` border | white fill, `emerald-700` border |
 
-All four clear the 3:1 that WCAG 1.4.11 requires for a control's boundary. The
-frosted button this replaced measured 1.34:1 for its fill and 2.61:1 for its
+All four clear the 3:1 that WCAG 1.4.11 requires for a control's boundary.
+
+**`dark` is two surfaces, not one.** `emerald-950` (#022c22) and the hero
+gradient (≈#065640) are far enough apart to matter:
+
+| | on emerald-950 | on hero gradient |
+|---|---|---|
+| `primary` mint fill | 7.88:1 | 4.53:1 |
+| `secondary` `white/55` border | 5.51:1 | 3.81:1 |
+
+`secondary` was first specified at `white/40`, checked against emerald-950 alone
+at 3.57:1. On the hero gradient that is 2.74:1 and fails. Check any new dark
+surface against the **lightest** one, not the darkest.
+
+The frosted button this replaced measured 1.34:1 for its fill and 2.61:1 for its
 border: the label was legible, the button was not findable.
 
 ```astro
@@ -250,6 +263,33 @@ import BookingButton from '../components/BookingButton.astro';
 reached production reporting exactly that. `placement` comes from a fixed
 vocabulary (`hero`, `inline`, `sidebar`, `closing`, `nav`, `footer`, `sticky`)
 so GA4 has a dimension it can group by.
+
+### ActionButton (everything that is not booking)
+
+`ActionButton` shares the same look through `src/lib/buttonStyles.ts` but
+carries no tracking attribute. Use it for "Get Directions", "Explore Lab
+Testing" and similar.
+
+```astro
+<ActionButton href="/lab-testing/" variant="secondary" surface="dark">
+  Explore Lab Testing
+</ActionButton>
+```
+
+Never use `BookingButton` for a non-booking action: it hard-codes the JaneApp
+URL and fires `booking_click`, which would inflate the conversion count with
+people who did not book.
+
+### Auditing
+
+`npm run audit:buttons` walks the built site and measures every control against
+the pixels actually rendered behind it. Requires `npm i -D playwright pngjs`
+and a running `astro preview` on port 4322; the deps are deliberately not
+permanent, so CI stays lean.
+
+Measuring computed styles is not sufficient — an earlier version walked the DOM
+for an ancestor `background-color`, which is blind to gradients and reported a
+passing hero button as a 1.79:1 failure while missing real ones.
 
 ### Tracking
 
