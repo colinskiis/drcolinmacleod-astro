@@ -16,7 +16,7 @@ import FAQSection from '../components/FAQSection.astro';
     image={{ src: "/images/services/sports-performance-hero.webp", alt: "Athlete receiving regenerative injection therapy for sports injury", aspect: "video" }}
   >
     <p>Assessment-led care for sports injuries and persistent joint or tendon concerns, with rehabilitation guidance and selected injection therapies when appropriate.</p>
-    <CTAButton slot="cta">Book Online</CTAButton>
+    <CTAButton slot="cta" source="sports-performance-injury-hero" placement="hero" />
   </HeroSection>
 
   <!-- Why Regenerative Therapy Section -->
@@ -385,7 +385,7 @@ import FAQSection from '../components/FAQSection.astro';
         <p class="text-lg text-white/80 mb-8">
           Don't let an injury keep you sidelined. Book your assessment today and discover how regenerative injection therapy can help you return to the activities you love.
         </p>
-        <CTAButton source="sports-performance-cta" />
+        <CTAButton source="sports-performance-cta" placement="closing" />
       </div>
     </div>
   </section>

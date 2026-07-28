@@ -251,9 +251,10 @@ const modifiedDate = page.data.modifiedDate
               </p>
               <BookingButton
                 text="Book Online"
-                variant="secondary"
+                variant="primary" surface="light"
                 size="sm"
                 source={`page-sidebar-${page.slug}`}
+                placement="sidebar"
               />
             </div>
           </aside>
@@ -282,9 +283,10 @@ const modifiedDate = page.data.modifiedDate
                 <div class="flex flex-col sm:flex-row gap-3">
                   <BookingButton
                     text="Book Online"
-                    variant="secondary"
+                    variant="primary" surface="light"
                     size="sm"
                     source={`page-${page.slug}`}
+                placement="inline"
                   />
                   <a
                     href={hubHref}
@@ -341,6 +343,7 @@ const modifiedDate = page.data.modifiedDate
             text="Book Online"
             size="lg"
             source={`page-cta-${page.slug}`}
+                placement="closing"
           />
           <a
             href={hubHref}

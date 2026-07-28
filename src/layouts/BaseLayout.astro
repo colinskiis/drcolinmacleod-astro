@@ -411,7 +411,13 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
           const bookingLink = target.closest('[data-booking-source]');
           if (bookingLink) {
             gtag('event', 'booking_click', {
+              // button_source is left exactly as it was so historical data
+              // stays comparable, even though its values are free-text and
+              // high-cardinality. button_placement is the low-cardinality
+              // dimension to group by; it must be registered as a custom
+              // dimension in GA4 admin or it will not appear in reports.
               button_source: bookingLink.getAttribute('data-booking-source') || 'unknown',
+              button_placement: bookingLink.getAttribute('data-booking-placement') || 'unspecified',
               page_path: window.location.pathname,
               link_url: bookingLink.getAttribute('href') || ''
             });
@@ -608,12 +614,18 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
           <!-- Right Side: Search + Book Button + Mobile Menu -->
           <div class="flex items-center gap-2 sm:gap-4 flex-shrink-0">
             <Search />
+            <!-- Hand-rolled rather than <BookingButton>: the responsive
+                 visibility and touch-target rules cannot be expressed through
+                 the component without a class escape hatch. Colours must stay
+                 in step with BookingButton's primary/dark.
+                 data-booking-source is the GA hook — do not remove it. -->
             <a
               href="https://macleodnaturopathic.janeapp.com/"
               target="_blank"
               rel="noopener noreferrer"
               class="booking-btn hidden min-[380px]:inline-flex xl:hidden min-h-10 items-center justify-center rounded-full bg-emerald-400 px-3.5 py-2 text-sm font-semibold text-emerald-950 shadow-md shadow-black/15 transition-colors hover:bg-emerald-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300 focus-visible:ring-offset-2 focus-visible:ring-offset-emerald-950"
               data-booking-source="mobile-header"
+              data-booking-placement="nav"
             >
               Book Online
             </a>
@@ -685,6 +697,7 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
                 rel="noopener noreferrer"
                 class="booking-btn flex min-h-[3.25rem] w-full items-center justify-center gap-2 rounded-full bg-emerald-400 px-6 py-3.5 text-lg font-semibold text-emerald-950 shadow-lg shadow-black/15 transition-colors hover:bg-emerald-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300 focus-visible:ring-offset-2 focus-visible:ring-offset-emerald-950"
                 data-booking-source="mobile-menu"
+              data-booking-placement="nav"
               >
                 <Calendar class="w-5 h-5" aria-hidden="true" />
                 Book Online

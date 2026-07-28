@@ -208,50 +208,61 @@ Used for benefits/highlights:
 
 ## Button Styles
 
-### BookingButton Component (preferred for all booking CTAs)
-`BookingButton` handles the JaneApp link, GA tracking, and all variants. Always use this instead of raw `<a>` tags for booking.
+### BookingButton (the only booking CTA)
+
+`BookingButton` owns the JaneApp link, the GA4 tracking attribute and every
+variant. Never hand-roll an `<a>` for booking.
+
+Two independent axes:
+
+- **`variant`** — semantic emphasis. `primary` means "book an appointment" and
+  looks the same everywhere, because that repetition is what teaches people to
+  recognise it. `secondary` is any lesser action.
+- **`surface`** — physical. A solid button cannot use one fill on both dark and
+  light sections, so the palette inverts. The visual weight does not.
+
+Do not add variants that vary *emphasis* by section type. That is inconsistency
+wearing a rationale.
+
+|  | `surface="dark"` | `surface="light"` |
+|---|---|---|
+| `primary` | `emerald-400` fill, `emerald-950` text — 7.88:1 | `emerald-900` fill, white text — 9.72:1 |
+| `secondary` | `white/10` fill, `white/40` border — 3.57:1 | transparent, `emerald-900` border — 9.72:1 |
+
+All four clear the 3:1 that WCAG 1.4.11 requires for a control's boundary. The
+frosted button this replaced measured 1.34:1 for its fill and 2.61:1 for its
+border: the label was legible, the button was not findable.
 
 ```astro
 import BookingButton from '../components/BookingButton.astro';
 
-<!-- Hero CTA (white solid button on dark background) -->
-<BookingButton text="Book Online" variant="hero" size="lg" source="hero" />
+<!-- Dark section (hero, closing CTA) -->
+<BookingButton source="page-hero" placement="hero" size="lg" />
 
-<!-- Primary (frosted glass, for dark section backgrounds) -->
-<BookingButton text="Book Online" variant="primary" source="section-name" />
+<!-- Light card -->
+<BookingButton source="page-pricing" placement="inline" surface="light" />
 
-<!-- Secondary (dark green solid, for light backgrounds) -->
-<BookingButton text="Book Online" variant="secondary" source="section-name" />
-
-<!-- Outline (transparent with dark border) -->
-<BookingButton text="Book Online" variant="outline" source="section-name" />
-
-<!-- Full width -->
-<BookingButton text="Book Online" fullWidth source="section-name" />
+<!-- A genuinely lesser action on a dark section -->
+<BookingButton text="See pricing" source="x" surface="dark" variant="secondary" />
 ```
 
-Props: `text` (default "Book Online"), `variant` (primary/secondary/outline/hero), `size` (sm/md/lg), `source` (for GA tracking), `icon` (boolean, default true), `fullWidth` (boolean).
+`source` is **required** — it used to default to `"unknown"`, and eleven CTAs
+reached production reporting exactly that. `placement` comes from a fixed
+vocabulary (`hero`, `inline`, `sidebar`, `closing`, `nav`, `footer`, `sticky`)
+so GA4 has a dimension it can group by.
 
-### CTAButton Component (simpler alternative)
-Used in some interior pages. Has fewer variants but accepts a custom `href`.
+### Tracking
 
-```astro
-import CTAButton from '../components/CTAButton.astro';
+`data-booking-source` on the root `<a>` is what fires the GA4 `booking_click`
+event, via one delegated listener in `BaseLayout.astro`. That attribute is the
+whole contract. The `booking-btn` class is **not** a tracking hook and has no
+CSS rule behind it. Removing or renaming `data-booking-source` stops conversion
+tracking silently, with no visible symptom.
 
-<CTAButton source="about-cta" />                    <!-- primary (white on dark) -->
-<CTAButton variant="secondary" source="cta" />      <!-- secondary (white border) -->
-```
+### CTAButton
 
-### Pill Link (on dark hero backgrounds)
-```html
-<a class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 bg-white/5 backdrop-blur-sm text-white text-sm font-medium hover:bg-white/10 hover:border-white/30 transition-all group">
-  <Icon class="w-4 h-4 text-emerald-300" aria-hidden="true" />
-  Label
-  <ChevronRight class="w-3.5 h-3.5 text-emerald-400 group-hover:translate-x-0.5 transition-transform" aria-hidden="true" />
-</a>
-```
-
----
+`@deprecated`. A forwarding wrapper around `BookingButton`, kept so its ~50 call
+sites can migrate a file at a time. Do not use it in new work.
 
 ## Hero Sections
 

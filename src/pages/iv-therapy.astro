@@ -20,7 +20,7 @@ import ServiceArticles from '../components/ServiceArticles.astro';
   >
     <p>IV therapy delivers fluids and selected nutrients directly into the bloodstream. Whether it is appropriate depends on your health history, clinical assessment, goals and potential risks.</p>
     <p class="text-white/80">Dr. MacLeod develops individualized protocols with screening and monitoring. Response varies, and IV therapy does not replace appropriate conventional care.</p>
-    <CTAButton slot="cta" source="iv-therapy-hero" />
+    <CTAButton slot="cta" source="iv-therapy-hero" placement="hero" />
   </HeroSection>
 
   <!-- Myers Cocktail & Getting Started -->
@@ -58,7 +58,7 @@ import ServiceArticles from '../components/ServiceArticles.astro';
               A consultation is required before beginning IV therapy. We will evaluate your health, discuss your goals and determine if IV therapy is appropriate for you.
             </p>
 
-            <BookingButton variant="secondary" size="lg" fullWidth source="iv-therapy-pricing" />
+            <BookingButton variant="primary" surface="light" size="lg" fullWidth source="iv-therapy-pricing" placement="inline" />
           </div>
         </div>
       </div>
@@ -214,7 +214,7 @@ import ServiceArticles from '../components/ServiceArticles.astro';
         <p class="text-lg text-white/80 mb-8">
           Book a consultation to review whether IV therapy is appropriate for your circumstances, including potential benefits, limitations, alternatives and risks.
         </p>
-        <CTAButton source="iv-therapy-cta" />
+        <CTAButton source="iv-therapy-cta" placement="closing" />
       </div>
     </div>
   </section>

@@ -1,36 +1,38 @@
 ---
-import { Calendar } from '@lucide/astro';
+import BookingButton from './BookingButton.astro';
+
+/**
+ * @deprecated Use `BookingButton` directly.
+ *
+ * A forwarding wrapper, kept so the ~50 existing call sites can migrate a file
+ * at a time rather than in one sweep. It renders exactly what `BookingButton`
+ * renders.
+ *
+ * `size="lg"` is preserved deliberately: this component hard-coded
+ * `px-10 py-4 text-lg` with no size prop, so every one of its call sites is a
+ * large button. Dropping that would silently shrink fifty CTAs.
+ *
+ * Props dropped because nothing used them: `href` and `external` (no call site
+ * overrode either — `BookingButton` owns the JaneApp URL), `variant="secondary"`
+ * (zero usages), and the text slot (three usages, all passing the default
+ * "Book Online", which CLAUDE.md mandates for every booking button anyway).
+ *
+ * Migration: `<CTAButton source="x" />` becomes
+ * `<BookingButton source="x" size="lg" placement="..." />`.
+ */
 
 export interface Props {
-  href?: string;
-  variant?: 'primary' | 'secondary';
-  external?: boolean;
-  source?: string;
+  source: string;
+  placement?: 'hero' | 'inline' | 'sidebar' | 'closing' | 'nav' | 'footer' | 'sticky';
 }
 
-const {
-  href = "https://macleodnaturopathic.janeapp.com/",
-  variant = 'primary',
-  external = true,
-  source = 'unknown'
-} = Astro.props;
-
-const baseClasses = "px-10 py-4 rounded-full text-lg font-semibold transition-all duration-200 inline-flex items-center justify-center hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:ring-offset-2 focus-visible:ring-offset-emerald-950";
-const variantClasses = {
-  primary: "bg-white text-emerald-950 hover:bg-emerald-50 shadow-xl",
-  secondary: "border-2 border-white text-white hover:bg-white hover:text-emerald-950"
-};
+const { source, placement } = Astro.props;
 ---
 
-<a
-  href={href}
-  target={external ? "_blank" : undefined}
-  rel={external ? "noopener noreferrer" : undefined}
-  class:list={["booking-btn", baseClasses, variantClasses[variant]]}
-  data-booking-source={source}
->
-  <slot>Book Online</slot>
-  {variant === 'primary' && (
-    <Calendar class="w-5 h-5 ml-2" aria-hidden="true" />
-  )}
-</a>
+<BookingButton
+  variant="primary"
+  surface="dark"
+  size="lg"
+  source={source}
+  placement={placement}
+/>

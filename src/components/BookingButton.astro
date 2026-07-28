@@ -1,51 +1,131 @@
 ---
 import { Calendar } from '@lucide/astro';
 
+/**
+ * The single booking call-to-action for the whole site.
+ *
+ * Two independent axes:
+ *
+ *   variant — semantic emphasis. `primary` is "book an appointment" and looks
+ *     the same everywhere, because that repetition is what teaches people to
+ *     recognise it. `secondary` is any lesser action.
+ *
+ *   surface — physical. A solid button cannot use one fill on both dark and
+ *     light sections, so the palette inverts. The visual weight does not.
+ *
+ * Do not add variants that vary *emphasis* by section type. That is
+ * inconsistency wearing a rationale, and it spends the recognition that makes a
+ * booking button work.
+ *
+ * TRACKING — read before restyling:
+ *   `data-booking-source` on the root <a> is what fires the GA4 `booking_click`
+ *   event, through one delegated listener in BaseLayout.astro. That attribute is
+ *   the entire contract. The `booking-btn` class is NOT a tracking hook and has
+ *   no CSS rule behind it anywhere in this project. Removing or renaming
+ *   `data-booking-source` stops conversion tracking silently, with no visible
+ *   symptom on the page.
+ */
+
+/** Superseded names, still accepted so call sites can migrate gradually. */
+type LegacyVariant = 'hero' | 'outline';
+
 export interface Props {
   text?: string;
-  variant?: 'primary' | 'secondary' | 'outline' | 'hero';
+  /** Semantic emphasis. Booking is `primary` almost everywhere. */
+  variant?: 'primary' | 'secondary' | LegacyVariant;
+  /** The background this sits on. Picks the palette, never the weight. */
+  surface?: 'dark' | 'light';
   size?: 'sm' | 'md' | 'lg';
-  source?: string; // For tracking which page/section the booking came from
+  /**
+   * Which CTA this is, for analytics. Required: it used to default to
+   * "unknown", and eleven CTAs reached production reporting exactly that.
+   */
+  source: string;
+  /** Fixed vocabulary, so GA4 gets a dimension it can actually group by. */
+  placement?: 'hero' | 'inline' | 'sidebar' | 'closing' | 'nav' | 'footer' | 'sticky';
   icon?: boolean;
   fullWidth?: boolean;
 }
 
-const { 
-  text = 'Book Online', 
-  variant = 'primary', 
+const {
+  text = 'Book Online',
+  variant = 'primary',
+  surface = 'dark',
   size = 'md',
-  source = 'unknown',
+  source,
+  placement,
   icon = true,
-  fullWidth = false
+  fullWidth = false,
 } = Astro.props;
 
-// Button classes based on variant and size
-const variantClasses = {
-  primary: 'bg-white/10 text-white border border-white/30 backdrop-blur-sm hover:bg-white/20 hover:border-white/50 shadow-lg shadow-black/5',
-  secondary: 'bg-emerald-900 text-white border border-emerald-900 hover:bg-emerald-800 hover:border-emerald-800 shadow-lg shadow-emerald-900/20',
-  outline: 'bg-transparent border border-emerald-900 text-emerald-900 hover:bg-emerald-900 hover:text-white',
-  hero: 'bg-white text-emerald-950 font-bold hover:bg-emerald-100 shadow-xl shadow-black/20 hover:shadow-2xl'
+// `hero` was only ever `primary` at a larger size. `outline` was `secondary` on
+// a light surface.
+const LEGACY: Record<LegacyVariant, { variant: 'primary' | 'secondary'; surface: 'dark' | 'light' }> = {
+  hero: { variant: 'primary', surface: 'dark' },
+  outline: { variant: 'secondary', surface: 'light' },
 };
+const resolved = (variant === 'hero' || variant === 'outline')
+  ? LEGACY[variant]
+  : { variant, surface };
+
+/*
+ * Contrast of each button against the surface behind it — measured, not
+ * estimated, because the treatment this replaced looked fine and was not.
+ * Mint is not a new colour: it is already the fill of the mobile header and
+ * mobile menu booking buttons, the site's highest-traffic booking entry
+ * points, so this makes the rest of the site agree with them.
+ *
+ *   mint (emerald-400) on emerald-950  7.88:1, label on mint 7.88:1
+ *   emerald-900 on white ............  9.72:1
+ *   white/40 border on emerald-950 ..  3.57:1   (WCAG 1.4.11 wants 3:1)
+ *
+ * The frosted primary this supersedes measured 1.34:1 for its fill and 2.61:1
+ * for its border. Its white label was legible at 11.29:1 — what failed was the
+ * boundary that tells you there is a button there at all.
+ */
+const styles = {
+  primary: {
+    dark: 'bg-emerald-400 text-emerald-950 hover:bg-emerald-300 shadow-lg shadow-black/15',
+    light: 'bg-emerald-900 text-white hover:bg-emerald-800 shadow-lg shadow-emerald-900/20',
+  },
+  secondary: {
+    dark: 'bg-white/10 text-white border border-white/40 backdrop-blur-sm hover:bg-white/20 hover:border-white/60',
+    light: 'bg-transparent text-emerald-900 border border-emerald-900 hover:bg-emerald-900 hover:text-white',
+  },
+} as const;
+
+// The focus ring offset must match the surface, or the ring reads as a halo of
+// the wrong colour.
+const ringClasses = resolved.surface === 'dark'
+  ? 'focus-visible:ring-emerald-300 focus-visible:ring-offset-emerald-950'
+  : 'focus-visible:ring-emerald-600 focus-visible:ring-offset-white';
 
 const sizeClasses = {
   sm: 'px-4 py-2 text-sm',
   md: 'px-5 py-2.5 text-sm',
-  lg: 'px-6 py-3 text-base'
+  lg: 'px-8 py-3.5 text-base',
 };
 
-const widthClass = fullWidth ? 'w-full' : '';
+const classes = [
+  'booking-btn inline-flex items-center justify-center rounded-full font-semibold',
+  'transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98]',
+  'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2',
+  styles[resolved.variant][resolved.surface],
+  sizeClasses[size],
+  ringClasses,
+  fullWidth ? 'w-full' : '',
+].filter(Boolean).join(' ');
 ---
 
 <a
   href="https://macleodnaturopathic.janeapp.com/"
   target="_blank"
   rel="noopener noreferrer"
-  class={`booking-btn inline-flex items-center justify-center rounded-full font-semibold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98] ${variantClasses[variant]} ${sizeClasses[size]} ${widthClass}`}
+  class={classes}
   data-booking-source={source}
-  aria-label={text}
+  data-booking-placement={placement}
 >
   <span>{text}</span>
-  {icon && (
-    <Calendar class="w-5 h-5 ml-2" aria-hidden="true" />
-  )}
+  {icon && <Calendar class="w-5 h-5 ml-2" aria-hidden="true" />}
+  <span class="sr-only"> (opens in a new tab)</span>
 </a>

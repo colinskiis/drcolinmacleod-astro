@@ -17,7 +17,7 @@ import FAQSection from '../components/FAQSection.astro';
     image={{ src: "/images/conditions/low-back-pain-hero.webp", alt: "Low back pain treatment", aspect: "video" }}
   >
     <p>Low back pain affects up to <strong class="text-white">75% of Canadians</strong> at some point in their lives. Whether your pain stems from disc problems, facet joints, sacroiliac dysfunction or ligament injury, we offer treatments that address the underlying cause, not just the symptoms.</p>
-    <CTAButton slot="cta" />
+    <CTAButton slot="cta" source="low-back-pain-hero" placement="hero" />
   </HeroSection>
 
   <!-- Statistics Section -->
@@ -308,7 +308,7 @@ import FAQSection from '../components/FAQSection.astro';
         <div class="bg-emerald-50 rounded-2xl p-8 text-center card-hover">
           <h3 class="font-serif font-medium text-xl text-emerald-950 mb-4">Getting Started</h3>
           <p class="text-slate-600 mb-6">Most extended health plans cover naturopathic services including prolotherapy.</p>
-          <BookingButton variant="secondary" size="lg" source="low-back-pain" />
+          <BookingButton variant="primary" surface="light" size="lg" source="low-back-pain-getting-started" placement="inline" />
         </div>
       </div>
     </div>
@@ -331,7 +331,7 @@ import FAQSection from '../components/FAQSection.astro';
         <p class="text-lg text-white/90 mb-8">
           Don't let low back pain limit your life. Book a consultation to discuss your treatment options and develop a plan to get you moving comfortably again.
         </p>
-        <CTAButton source="low-back-pain-cta" />
+        <CTAButton source="low-back-pain-cta" placement="closing" />
       </div>
     </div>
   </section>

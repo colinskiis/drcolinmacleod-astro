@@ -26,6 +26,7 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? '';
           target="_blank"
           rel="noopener noreferrer"
           data-booking-source="contact-mobile-actions"
+              data-booking-placement="inline"
           class="booking-btn col-span-2 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-emerald-900 px-5 py-3 font-semibold text-white shadow-sm transition-colors hover:bg-emerald-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2"
         >
           <Calendar class="h-5 w-5" aria-hidden="true" />
@@ -235,6 +236,7 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? '';
                 target="_blank"
                 rel="noopener noreferrer"
                 data-booking-source="contact-details-card"
+              data-booking-placement="inline"
                 class="booking-btn hidden min-h-11 items-center justify-center gap-2 rounded-full bg-emerald-900 px-5 py-2.5 font-semibold text-white shadow-sm transition-all hover:-translate-y-0.5 hover:bg-emerald-800 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 lg:inline-flex"
               >
                 <Calendar class="h-4 w-4" aria-hidden="true" />
@@ -272,7 +274,7 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? '';
       <p class="text-lg sm:text-xl text-emerald-100 mb-8 max-w-2xl mx-auto">
         Choose a time online, or send a message if you have a general question before booking.
       </p>
-      <BookingButton variant="hero" size="lg" source="contact-bottom" />
+      <BookingButton variant="primary" surface="dark" size="lg" source="contact-bottom" placement="closing" />
     </div>
   </section>
 </BaseLayout>
