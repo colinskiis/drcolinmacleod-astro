@@ -74,3 +74,9 @@ this practice as "medicine". When writing new content:
 
 - All booking buttons: "Book Online"
 - Articles should NOT have inline booking links
+
+## New-patient appointment policy
+
+- All new patients must complete a one-hour initial consultation ($200) first.
+- IV therapy and injection treatments, including prolotherapy, are scheduled separately afterward if appropriate and billed at the treatment rate.
+- Do not offer combined initial-visit/treatment appointments, same-day initial-visit treatment, or the retired $260 package prices.

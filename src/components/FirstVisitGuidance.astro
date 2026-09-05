@@ -1,19 +1,17 @@
 ---
 interface Props {
-  treatment?: 'iv' | 'prolotherapy';
   pricingHref?: string;
   pricingLabel?: string;
 }
 const {
-  treatment,
   pricingHref = '/services/#pricing',
   pricingLabel = 'View fees and treatment pricing',
 } = Astro.props;
 ---
 
 <div class="mx-auto mb-6 max-w-xl text-base leading-relaxed text-emerald-100">
-  <p>New to the practice? Choose “New Patient Visit (60 min)” in Jane if you are unsure where to start.</p>
-  {treatment && <p class="mt-2">If you are specifically booking a first visit for {treatment === 'iv' ? 'IV therapy' : 'prolotherapy'}, Jane also lists “New Patient Visit With {treatment === 'iv' ? 'IV' : 'Prolotherapy'} Treatment.” Suitability is assessed before treatment.</p>}
+  <p>All new patients start with “New Patient Visit (60 min)” in Jane: a one-hour consultation costing $200.</p>
+  <p class="mt-2">Complete this consultation before IV therapy or injection treatments, including prolotherapy. If treatment is appropriate, it is scheduled separately and charged at the treatment rate.</p>
   <p class="mt-2 text-sm">Booking opens in Jane, our secure patient portal, in a new tab.</p>
   <a href={pricingHref} class="mt-2 inline-flex min-h-11 items-center rounded px-2 py-2 font-medium text-white underline underline-offset-4 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300">{pricingLabel}</a>
 </div>

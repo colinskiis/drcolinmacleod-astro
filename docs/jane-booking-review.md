@@ -8,7 +8,7 @@ Keep the scheduler on Jane. The public booking page sends `X-Frame-Options: SAME
 
 Sources: [Booking button integration](https://jane.app/guide/adding-book-online-buttons-to-your-website), [Jane integration FAQ](https://jane.app/guide/integrations-hub-faq), [Direct appointment links](https://jane.app/guide/how-to-simplify-online-booking-for-new-patients).
 
-Website changes: dedicated New Patients and laboratory-testing closing buttons open the verified **New Patient Visit (60 min)** appointment. General navigation retains the full booking menu for returning patients. Nearby copy explains that Jane opens in a new tab. IV/prolotherapy pages distinguish the combined first-visit options from the general consultation.
+Website changes: dedicated New Patients and laboratory-testing closing buttons open the verified **New Patient Visit (60 min)** appointment. General navigation retains the full booking menu for returning patients. Nearby copy explains that Jane opens in a new tab. All new patients must complete the one-hour initial consultation ($200) before IV therapy or injection treatments, including prolotherapy. Any recommended treatment is scheduled separately and billed at the treatment rate. The website no longer offers combined first-visit appointments or package pricing. Dr. MacLeod will update Jane to match.
 
 Verified direct link: https://macleodnaturopathic.janeapp.com/#/staff_member/1/treatment/2
 
@@ -17,10 +17,10 @@ Verified direct link: https://macleodnaturopathic.janeapp.com/#/staff_member/1/t
 | Priority | Public observation | Recommended setting or copy change |
 | --- | --- | --- |
 | 1 | The discipline heading still says “Naturopathic Medicine.” | Rename the practice discipline to “Naturopathic Care” in Settings > Disciplines, consistent with the terminology requirements already recorded in this repository. Review the practitioner biography and notification templates for the same practice-description wording. |
-| 1 | “New Patient Visit With IV Treatment (80 min)” displays a 70-minute duration. | Confirm the actual appointment length, then align the title and displayed duration. Do not change scheduling duration simply to match the title. |
+| 1 | The practice now requires a separate initial consultation before IV or injection treatment. | Remove combined new-patient treatment options from online booking. Keep New Patient Visit (60 min), $200, as the starting point for all new patients. Treatment appointments follow separately if appropriate. Dr. MacLeod will make these changes in Jane. |
 | 2 | Phone visits say Jane may call them video appointments. | Review the appointment configuration and notification templates with Jane support so the booking description, reminders and actual phone workflow agree. The public view cannot establish which configuration caused this mismatch. |
-| 2 | The older MacLeod Naturopathic Health Clinic logo, lime green palette and older portrait differ from the website. | Update branding and the profile photo to match the website. Use the clinic location consistently: Dr. Colin MacLeod, ND at Optimal Wellbeing Clinic, inside Integrated Health Professional Centre, 1378 Bedford Highway, Unit 1. The existing logo link correctly returns to the website. |
-| 2 | General first visits, combined first visits, follow-ups and procedures share a long treatment list. | Keep the general new-patient visit first; group combined first visits next, standard follow-ups together, and procedure visits together. Review whether clinician-directed/short visits need to be offered to every visitor. |
+| 2 | The older MacLeod Naturopathic Health Clinic logo, lime green palette and older portrait differ from the website. | Use Dr. Colin MacLeod, ND as a simple text identity and update the profile photo to match the website. A separate logo is not necessary; do not use the Optimal Wellbeing logo. The supplied settings screenshot flags both existing greens as inaccessible. Try the website’s dark emerald #064E3B as the primary colour and #047857 as the accent, then confirm both pass Jane’s accessibility checks. Use the clinic location consistently: Dr. Colin MacLeod, ND at Optimal Wellbeing Clinic, inside Integrated Health Professional Centre, 1378 Bedford Highway, Unit 1. The existing logo link correctly returns to the website. |
+| 2 | Appointment choices need to reflect the simpler first-visit pathway. | Keep the initial consultation first, then group returning-patient follow-ups and procedures. State that IV and injection appointments require a completed initial consultation. Review whether clinician-directed/short visits need to be offered to every visitor. |
 | 2 | IV visits have 30- and 60-minute options without a visible price. | Add a short explanation of who should select each duration and how fees are determined. Use a price or accurate range only after verifying it. |
 | 3 | A wait-list option is already available; Jane moves the calendar to the first availability and shows a notice. | Keep the wait list available and include it in patient-facing booking help. Avoid promising fixed wait times on the website. |
 
@@ -32,17 +32,11 @@ These are drafts for review in Jane; they have not been saved there.
 
 **New Patient Visit (60 min)**
 
-> Start here if this is your first appointment, you would like to discuss private blood testing, or you are unsure which service to choose. We will review your concerns, history, medications and previous results, then discuss a plan and fees before proceeding. Consultation: $200. Laboratory fees are separate.
+> All new patients start here, including those interested in IV therapy, injections or prolotherapy. This one-hour consultation costs $200. We will review your concerns, history, medications and previous results, then discuss a plan and fees. Any recommended IV or injection treatment is scheduled for a separate appointment and billed separately. Laboratory fees are separate.
 
-**New Patient Visit With IV Treatment**
+**IV therapy and injection treatment appointments**
 
-> For new patients specifically requesting an IV therapy assessment and possible treatment. Suitability is assessed before treatment; an appointment does not guarantee that IV therapy will be recommended. If you are unsure, choose New Patient Visit (60 min) or call the clinic.
-
-Confirm the duration and what happens to the combined fee if no treatment proceeds before adding either detail.
-
-**New Patient Visit With Prolotherapy Treatment**
-
-> For new patients specifically requesting a prolotherapy assessment and possible treatment. Suitability is assessed before treatment. If you are unsure which care is appropriate, choose New Patient Visit (60 min) or call the clinic.
+> For patients who have completed their initial consultation and for whom this treatment has been recommended. If you are new to the practice, please choose New Patient Visit (60 min) first.
 
 **Follow-up Visit (30 min)**
 

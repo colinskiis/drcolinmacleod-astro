@@ -104,7 +104,7 @@ Treatment may not be appropriate with significant kidney impairment, certain car
 
 ## Exploring Myers' Cocktail IV Therapy in Halifax
 
-If you are curious about IV nutrient therapy, an initial consultation provides a practical way to review your goals and choose the most suitable formula. New patients who would like the possibility of same-day treatment can book an **Initial consultation with IV treatment**.
+All new patients complete a **one-hour initial consultation ($200)** before IV nutrient therapy. This visit provides time to review your health history, goals and whether treatment is appropriate. Any recommended infusion is scheduled for a separate appointment and billed at the treatment rate.
 
 The Myers' Cocktail is one of several formulas available through the practice. Visit the [IV Nutrient Therapy page](/iv-therapy/) to compare it with more focused options such as glutathione, vitamin C and NAD+.
 

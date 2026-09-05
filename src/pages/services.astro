@@ -68,7 +68,7 @@ const pricingGroups = [
   {
     title: 'Consultations',
     rows: [
-      ['Initial Visit', '$200'],
+      ['Initial Visit (60 minutes)', '$200'],
       ['Follow-up Visit', '$100'],
     ],
   },
@@ -87,13 +87,6 @@ const pricingGroups = [
       ['NAD+ IV Therapy', '$190'],
       ['Myers Cocktail', '$130'],
       ['Chelation Therapy', '$130'],
-    ],
-  },
-  {
-    title: 'Combined Visits',
-    rows: [
-      ['Initial Visit + IV Treatment', '$260'],
-      ['Initial Visit + Prolotherapy', '$260'],
     ],
   },
 ];
@@ -121,7 +114,7 @@ const pricingGroups = [
         <p class="pill mb-4">Major Service Areas</p>
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">Find the right starting point</h2>
         <p class="text-lg text-slate-600">
-          Laboratory testing is the most common reason patients contact the practice. IV therapy and prolotherapy are also available for selected patients after an appropriate assessment.
+          Laboratory testing is the most common reason patients contact the practice. All new patients complete a one-hour initial consultation first. IV therapy and prolotherapy may then be scheduled separately if appropriate.
         </p>
       </div>
 
@@ -228,7 +221,7 @@ const pricingGroups = [
         </p>
       </div>
 
-      <p class="mx-auto mb-6 max-w-3xl text-center leading-relaxed text-slate-600">Consultations and treatments are listed separately, with combined-visit prices shown below. Private laboratory fees are additional and confirmed before testing proceeds.</p>
+      <p class="mx-auto mb-6 max-w-3xl text-center leading-relaxed text-slate-600">All new patients begin with a 60-minute initial consultation ($200). IV therapy and injection treatments, including prolotherapy, are scheduled separately after this visit if appropriate. Treatment prices below are separate from the consultation fee. Private laboratory fees are confirmed before testing proceeds.</p>
 
       <div class="mx-auto max-w-4xl overflow-hidden rounded-2xl border border-emerald-100 bg-white shadow-sm reveal reveal-delay-100">
         {pricingGroups.map((group, groupIndex) => (
