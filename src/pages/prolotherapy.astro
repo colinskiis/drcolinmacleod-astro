@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
+import FirstVisitGuidance from '../components/FirstVisitGuidance.astro';
 import CTAButton from '../components/CTAButton.astro';
 import FAQSection from '../components/FAQSection.astro';
 ---
@@ -375,6 +376,7 @@ import FAQSection from '../components/FAQSection.astro';
       <p class="text-lg text-emerald-200 max-w-2xl mx-auto mb-8">
         Schedule a consultation to discuss whether prolotherapy is right for your condition. We'll review your health history, examine your injury and create a personalized treatment plan.
       </p>
+      <FirstVisitGuidance treatment="prolotherapy" />
       <CTAButton source="prolotherapy-cta" placement="closing" />
     </div>
   </section>

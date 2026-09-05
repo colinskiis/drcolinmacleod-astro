@@ -22,14 +22,16 @@ import BookingButton from './BookingButton.astro';
  */
 
 export interface Props {
+  destination?: 'all' | 'initial';
   source: string;
   placement?: 'hero' | 'inline' | 'sidebar' | 'closing' | 'nav' | 'footer' | 'sticky';
 }
 
-const { source, placement } = Astro.props;
+const { source, placement, destination } = Astro.props;
 ---
 
 <BookingButton
+  destination={destination}
   variant="primary"
   surface="dark"
   size="lg"

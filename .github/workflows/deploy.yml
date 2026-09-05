@@ -38,6 +38,9 @@ jobs:
       - name: Check project
         run: npm run check
 
+      - name: Check contact handler syntax
+        run: docker run --rm -i php:8.3-cli php -l < public/contact-handler.php
+
       - name: Build site
         run: npm run build
         env:

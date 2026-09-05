@@ -1,5 +1,5 @@
 ---
-import { type CollectionEntry, getCollection } from 'astro:content';
+import { type CollectionEntry, getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import FAQSection from '../../components/FAQSection.astro';
 import RelatedArticles from '../../components/RelatedArticles.astro';
@@ -10,7 +10,7 @@ import GithubSlugger from 'github-slugger';
 export async function getStaticPaths() {
   const articles = await getCollection('articles', ({ data }) => data.draft !== true);
   return articles.map((article) => ({
-    params: { slug: article.slug },
+    params: { slug: article.id },
     props: article,
   }));
 }
@@ -18,15 +18,15 @@ export async function getStaticPaths() {
 type Props = CollectionEntry<'articles'>;
 
 const article = Astro.props;
-const { Content } = await article.render();
-const minutes = readingTime(article.body);
+const { Content } = await render(article);
+const minutes = readingTime(article.body ?? "");
 
 const heroImage = article.data.heroImage;
 const heroWebp =
   heroImage?.replace(/\.(png|jpe?g)$/i, '.webp') ?? null;
 const heroUsesWebp = heroImage?.endsWith('.webp') ?? false;
 const slugger = new GithubSlugger();
-const tocItems = Array.from(article.body.matchAll(/^##\s+(.+)$/gm))
+const tocItems = Array.from((article.body ?? "").matchAll(/^##\s+(.+)$/gm))
   .map((match) => match[1].replace(/<\/?[^>]+>/g, '').replace(/[*_`]/g, '').trim())
   .filter((heading) => heading && heading.toLowerCase() !== 'references')
   .map((heading) => ({
@@ -76,7 +76,7 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 3,
       "name": article.data.title,
-      "item": `https://drcolinmacleod.com/articles/${article.slug}`
+      "item": `https://drcolinmacleod.com/articles/${article.id}`
     }
   ]
 };
@@ -191,7 +191,7 @@ const breadcrumbSchema = {
           
           <!-- Related Articles -->
           <RelatedArticles
-            currentSlug={article.slug}
+            currentSlug={article.id}
             currentTags={article.data.tags || []}
             currentCategories={article.data.categories}
             limit={5}

@@ -21,6 +21,14 @@ if ($origin !== '') {
 }
 
 // Cloudflare Turnstile validation (free anti-bot protection)
+// Reject array-valued form fields before string operations (PHP 8 TypeError).
+foreach (['cf-turnstile-response', 'name', 'email', 'message', '_gotcha'] as $field) {
+    if (isset($_POST[$field]) && !is_string($_POST[$field])) {
+        http_response_code(422);
+        echo json_encode(['error' => 'Invalid form data']);
+        exit;
+    }
+}
 $turnstileToken = trim($_POST['cf-turnstile-response'] ?? '');
 if ($turnstileToken === '') {
     http_response_code(422);
@@ -48,6 +56,8 @@ $turnstilePayload = http_build_query([
 
 $turnstileCh = curl_init('https://challenges.cloudflare.com/turnstile/v0/siteverify');
 curl_setopt_array($turnstileCh, [
+    CURLOPT_CONNECTTIMEOUT => 5,
+    CURLOPT_TIMEOUT        => 15,
     CURLOPT_POST           => true,
     CURLOPT_POSTFIELDS     => $turnstilePayload,
     CURLOPT_RETURNTRANSFER => true,
@@ -196,6 +206,8 @@ $payload = json_encode([
 
 $ch = curl_init('https://api.resend.com/emails');
 curl_setopt_array($ch, [
+    CURLOPT_CONNECTTIMEOUT => 5,
+    CURLOPT_TIMEOUT        => 15,
     CURLOPT_POST           => true,
     CURLOPT_POSTFIELDS     => $payload,
     CURLOPT_RETURNTRANSFER => true,

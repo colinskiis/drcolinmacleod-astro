@@ -59,12 +59,12 @@ const faqSchema = {
       <div class="absolute bottom-0 right-1/4 w-80 h-80 bg-emerald-600/10 rounded-full blur-3xl"></div>
     </div>
 
-    <div class="section-shell relative z-10 py-8 sm:py-14 lg:py-20">
+    <div class="section-shell relative z-10 py-6 sm:py-14 lg:py-20">
       <div class="grid items-center gap-8 lg:grid-cols-[1.08fr_0.92fr] lg:gap-16">
-        <div class="space-y-6 lg:space-y-7">
+        <div class="space-y-4 sm:space-y-6 lg:space-y-7">
           <!-- Compact mobile portrait -->
           <div class="flex justify-center max-[359px]:hidden lg:hidden animate-fade-in-up">
-            <a href="/about/" aria-label="About Dr. Colin MacLeod, ND" class="block h-28 w-24 overflow-hidden rounded-2xl border-2 border-white/20 shadow-xl shadow-black/25 transition-all duration-300 hover:border-white/40">
+            <a href="/about/" aria-label="About Dr. Colin MacLeod, ND" class="block h-20 w-16 sm:h-28 sm:w-24 overflow-hidden rounded-2xl border-2 border-white/20 shadow-xl shadow-black/25 transition-all duration-300 hover:border-white/40">
               <picture>
                 <source srcset="/images/general/colin-hero.avif" type="image/avif" />
                 <source srcset="/images/general/colin-hero.webp" type="image/webp" />
@@ -85,12 +85,12 @@ const faqSchema = {
               Halifax Naturopathic Doctor
             </p>
 
-            <h1 class="text-[2.35rem] min-[360px]:text-[2.55rem] font-medium font-serif leading-[1.06] tracking-tight text-white sm:text-5xl lg:text-6xl animate-fade-in-up animate-delay-100">
+            <h1 class="text-[2.1rem] min-[360px]:text-[2.3rem] font-medium font-serif leading-[1.06] tracking-tight text-white sm:text-5xl lg:text-6xl animate-fade-in-up animate-delay-100">
               Look beyond symptoms. Build a plan for better health.
             </h1>
 
             <p class="mx-auto max-w-xl text-base leading-relaxed text-emerald-100 sm:text-lg lg:mx-0 animate-fade-in-up animate-delay-200">
-              Naturopathic care in Bedford, serving Halifax, with private lab testing, IV therapy and prolotherapy coordinated around your broader healthcare team.
+              Naturopathic care in Bedford, serving Halifax. Private lab testing, IV therapy and prolotherapy, coordinated with your healthcare team.
             </p>
           </div>
 
@@ -163,6 +163,28 @@ const faqSchema = {
           <MapPin class="h-5 w-5 flex-none text-emerald-700" aria-hidden="true" />
           <span>Bedford clinic serving Halifax</span>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="border-b border-emerald-100 bg-white py-10 sm:py-14" aria-labelledby="your-concerns">
+    <div class="section-shell">
+      <div class="mb-6 max-w-2xl">
+        <h2 id="your-concerns" class="mb-3 text-2xl sm:text-3xl font-serif font-medium text-emerald-950">What brings you here?</h2>
+        <p class="leading-relaxed text-slate-600">You do not need to know which treatment to choose. Start with your concern, or find out what a first visit involves.</p>
+      </div>
+      <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        {[
+          { title: 'Questions about blood work', detail: 'Explore private testing and reviewing results.', href: '/lab-testing/' },
+          { title: 'Back, joint or muscle pain', detail: 'Find information about pain and injury care.', href: '/conditions/' },
+          { title: 'Nutrition and digestive concerns', detail: 'Learn about an individualized nutrition assessment.', href: '/clinical-nutrition/' },
+          { title: 'Persistent symptoms or unsure?', detail: 'Start with a conversation about your concerns.', href: '/new-patients/' },
+        ].map(({ title, detail, href }) => (
+          <a href={href} class="group rounded-2xl border border-emerald-200 bg-emerald-50/40 p-5 transition-colors hover:bg-emerald-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 focus-visible:ring-offset-2">
+            <h3 class="mb-2 flex items-start justify-between gap-3 font-sans text-base font-semibold text-emerald-950">{title}<ChevronRight class="mt-0.5 h-5 w-5 shrink-0 text-emerald-700" aria-hidden="true" /></h3>
+            <p class="text-sm leading-relaxed text-slate-600">{detail}</p>
+          </a>
+        ))}
       </div>
     </div>
   </section>

@@ -1,5 +1,5 @@
 ---
-import { type CollectionEntry, getCollection } from 'astro:content';
+import { type CollectionEntry, getCollection, render } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import BookingButton from '../components/BookingButton.astro';
@@ -12,7 +12,7 @@ import GithubSlugger from 'github-slugger';
 export async function getStaticPaths() {
   const pages = await getCollection('pages');
   return pages.map((page) => ({
-    params: { slug: page.slug },
+    params: { slug: page.id },
     props: page,
   }));
 }
@@ -20,7 +20,7 @@ export async function getStaticPaths() {
 type Props = CollectionEntry<'pages'>;
 
 const page = Astro.props;
-const { Content } = await page.render();
+const { Content } = await render(page);
 
 // SEO preparation
 const seoTitle = page.data.seo?.title || page.data.title;
@@ -140,7 +140,7 @@ const fallbackLinks = isTreatment
       { title: 'Lab Testing', href: '/lab-testing/' },
     ];
 
-const relatedLinks = page.data.relatedLinks ?? relatedLinksMap[page.slug] ?? fallbackLinks;
+const relatedLinks = page.data.relatedLinks ?? relatedLinksMap[page.id] ?? fallbackLinks;
 const useClinicalLayout = page.data.pageTemplate === 'clinical';
 const ctaTitle = page.data.cta?.title ?? (isTreatment
   ? `Considering ${page.data.title}?`
@@ -149,7 +149,7 @@ const ctaDescription = page.data.cta?.description ?? (isTreatment
   ? 'Book a consultation to discuss whether this treatment is appropriate for your symptoms, health history and goals.'
   : 'A consultation can help clarify what may be contributing to your symptoms and which treatment options fit your situation.');
 const slugger = new GithubSlugger();
-const tocItems = Array.from(page.body.matchAll(/^##\s+(.+)$/gm))
+const tocItems = Array.from((page.body ?? "").matchAll(/^##\s+(.+)$/gm))
   .map((match) => match[1].replace(/<\/?[^>]+>/g, '').replace(/[*_`]/g, '').trim())
   .filter((heading) => heading && heading.toLowerCase() !== 'references')
   .map((heading) => ({
@@ -201,7 +201,7 @@ const modifiedDate = page.data.modifiedDate
       <ClinicalPageCTA
         title={ctaTitle}
         description={ctaDescription}
-        source={`clinical-page-cta-${page.slug}`}
+        source={`clinical-page-cta-${page.id}`}
       />
     </>
   )}
@@ -253,7 +253,7 @@ const modifiedDate = page.data.modifiedDate
                 text="Book Online"
                 variant="primary" surface="light"
                 size="sm"
-                source={`page-sidebar-${page.slug}`}
+                source={`page-sidebar-${page.id}`}
                 placement="sidebar"
               />
             </div>
@@ -285,7 +285,7 @@ const modifiedDate = page.data.modifiedDate
                     text="Book Online"
                     variant="primary" surface="light"
                     size="sm"
-                    source={`page-${page.slug}`}
+                    source={`page-${page.id}`}
                 placement="inline"
                   />
                   <a
@@ -342,7 +342,7 @@ const modifiedDate = page.data.modifiedDate
           <BookingButton
             text="Book Online"
             size="lg"
-            source={`page-cta-${page.slug}`}
+            source={`page-cta-${page.id}`}
                 placement="closing"
           />
           <a

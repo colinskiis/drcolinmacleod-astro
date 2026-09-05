@@ -1,13 +1,13 @@
 # DrColinMacleod.com
 
-Naturopathic medicine website built with Astro.
+Naturopathic care website built with Astro.
 
 ## Development
 
 ```bash
-npm install      # Install dependencies
+npm ci           # Install locked dependencies
 npm run dev      # Start dev server at localhost:4321
-npm run build    # Build for production
+npm run check    # Check types and Astro templates
 ```
 
 ## Contact Form Bot Protection (Cloudflare Turnstile)
@@ -39,20 +39,38 @@ Path on Namecheap:
 
 ## Deployment
 
-Deploy to Namecheap hosting via SSH:
+Push to `main` and let the **Deploy production site** GitHub Actions workflow
+build, publish and verify the site. Check `gh run list` after pushing.
+
+`deploy.sh` is legacy reference material. Do not run it or publish over SSH.
+SSH (`ssh namecheap`) is for inspection and debugging only.
+
+The workflow reads `PUBLIC_TURNSTILE_SITE_KEY` from the `production` environment
+variable in GitHub. A local build must also set that public site key as shown above.
+Turnstile and Resend secret keys remain outside the server's web root.
+
+## Runtime and checks
+
+Use Node.js 22.12 or newer (CI uses Node 22).
 
 ```bash
-./deploy.sh
+npm run check
+PUBLIC_TURNSTILE_SITE_KEY=your_site_key_here npm run build
+npm audit
 ```
 
-This builds the site and syncs to the server using rsync (only uploads changed files).
+The site uses Astro's Content Layer API. Collections are configured in
+`src/content.config.ts`; underscore-prefixed archive folders are excluded.
+Tailwind 3 runs through PostCSS, and the unified Markdown processor preserves
+our reference and image-attribute plugins.
 
-### SSH Setup
+The optional button audit dependencies are included in `devDependencies`:
 
-The deploy script uses SSH key authentication:
-- **Host**: `business81.web-hosting.com`
-- **Port**: `21098`
-- **User**: `drcohmrh`
-- **Key**: `~/.ssh/namecheap_rsa`
+```bash
+npx playwright install chromium
+npm run preview -- --port 4322
+# In another terminal:
+npm run audit:buttons
+```
 
-To connect manually: `ssh namecheap` (configured in `~/.ssh/config`)
+The button audit inspects a locally built site; it is not a complete accessibility audit.

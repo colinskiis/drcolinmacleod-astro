@@ -1,6 +1,7 @@
 ---
 import { Calendar } from '@lucide/astro';
 import { buttonClasses } from '../lib/buttonStyles';
+import { bookingUrls } from '../config/booking';
 
 /**
  * The single booking call-to-action for the whole site.
@@ -35,6 +36,7 @@ import { buttonClasses } from '../lib/buttonStyles';
 type LegacyVariant = 'hero' | 'outline';
 
 export interface Props {
+  destination?: keyof typeof bookingUrls;
   text?: string;
   /** Semantic emphasis. Booking is `primary` almost everywhere. */
   variant?: 'primary' | 'secondary' | LegacyVariant;
@@ -53,6 +55,7 @@ export interface Props {
 }
 
 const {
+  destination = 'all',
   text = 'Book Online',
   variant = 'primary',
   surface = 'dark',
@@ -77,7 +80,7 @@ const classes = `booking-btn ${buttonClasses({ variant: resolved.variant, surfac
 ---
 
 <a
-  href="https://macleodnaturopathic.janeapp.com/"
+  href={bookingUrls[destination]}
   target="_blank"
   rel="noopener noreferrer"
   class={classes}
@@ -86,5 +89,5 @@ const classes = `booking-btn ${buttonClasses({ variant: resolved.variant, surfac
 >
   <span>{text}</span>
   {icon && <Calendar class="w-5 h-5 ml-2" aria-hidden="true" />}
-  <span class="sr-only"> (opens in a new tab)</span>
+  <span class="sr-only"> (opens Jane booking in a new tab)</span>
 </a>

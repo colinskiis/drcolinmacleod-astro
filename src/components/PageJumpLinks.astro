@@ -1,0 +1,17 @@
+---
+interface Props {
+  items: { id: string; title: string }[];
+}
+const { items } = Astro.props;
+---
+
+<nav aria-label="On this page" class="border-b border-emerald-100 bg-white">
+  <div class="section-shell flex flex-wrap items-center gap-x-2 gap-y-1 py-3">
+    <span class="mr-2 text-sm font-semibold text-emerald-950">On this page</span>
+    {items.map(({ id, title }) => (
+      <a href={`#${id}`} data-toc-section={id} class="inline-flex min-h-11 items-center rounded-lg px-3 py-2 text-sm font-medium text-emerald-800 underline decoration-emerald-300 underline-offset-4 transition-colors hover:bg-emerald-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600">
+        {title}
+      </a>
+    ))}
+  </div>
+</nav>

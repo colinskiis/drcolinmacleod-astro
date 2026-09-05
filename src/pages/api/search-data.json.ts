@@ -146,7 +146,7 @@ export const GET: APIRoute = async () => {
       type: 'article',
       title: article.data.title,
       description: article.data.description || '',
-      url: `/articles/${article.slug}/`,
+      url: `/articles/${article.id}/`,
       category: article.data.categories?.[0] || 'Health',
       tags: article.data.tags || [],
       publishDate: article.data.publishDate
@@ -157,7 +157,7 @@ export const GET: APIRoute = async () => {
       type: 'condition',
       title: page.data.title,
       description: page.data.description || '',
-      url: `/${page.slug}/`,
+      url: `/${page.id}/`,
       category: 'Conditions & Treatments'
     }));
 

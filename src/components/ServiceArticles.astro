@@ -13,7 +13,7 @@ const { slugs, title = "Learn More", subtitle, bg = 'white' } = Astro.props;
 const allArticles = await getCollection('articles', ({ data }) => data.draft !== true);
 
 const articles = slugs
-  .map(slug => allArticles.find(a => a.slug === slug))
+  .map(slug => allArticles.find(a => a.id === slug))
   .filter(Boolean);
 
 const sectionClass = bg === 'emerald' ? 'py-16 lg:py-24 bg-emerald-50' : 'py-16 lg:py-24 bg-white';
@@ -31,7 +31,7 @@ const cardClass = bg === 'emerald'
       </div>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-5xl mx-auto">
         {articles.map(article => (
-          <a href={`/articles/${article!.slug}/`} class={cardClass}>
+          <a href={`/articles/${article!.id}/`} class={cardClass}>
             <h3 class="font-serif font-medium text-emerald-950 mb-2 group-hover:text-emerald-700 transition-colors">{article!.data.title}</h3>
             <p class="text-slate-600 text-sm">{article!.data.description}</p>
           </a>

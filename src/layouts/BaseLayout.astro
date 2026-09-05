@@ -385,6 +385,13 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
     {analyticsEnabled && <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
+      function analyticsUrl(value) {
+        if (!value) return '';
+        try {
+          const url = new URL(value, window.location.origin);
+          return url.origin + url.pathname;
+        } catch { return ''; }
+      }
 
       if (!window.__siteAnalyticsInit) {
         window.__siteAnalyticsInit = true;
@@ -392,12 +399,17 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
         // Astro's client router manages page changes. Disable the automatic
         // page_view so the initial load and subsequent navigations use the same
         // explicit event and cannot be counted twice.
-        gtag('config', 'G-HWHX5T8PEG', { send_page_view: false });
+        gtag('config', 'G-HWHX5T8PEG', {
+          send_page_view: false,
+          page_location: analyticsUrl(window.location.href),
+          page_referrer: analyticsUrl(document.referrer)
+        });
 
         document.addEventListener('astro:page-load', function() {
           gtag('event', 'page_view', {
             page_title: document.title,
-            page_location: window.location.href,
+            page_location: analyticsUrl(window.location.href),
+            page_referrer: analyticsUrl(document.referrer),
             page_path: window.location.pathname
           });
         });

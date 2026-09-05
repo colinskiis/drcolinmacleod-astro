@@ -12,7 +12,7 @@ export function toArticleSearchIndex(
   articles: CollectionEntry<'articles'>[]
 ): ArticleSearchEntry[] {
   return articles.map((article) => ({
-    slug: article.slug,
+    slug: article.id,
     title: article.data.title,
     description: article.data.description,
     tags: article.data.tags ?? [],

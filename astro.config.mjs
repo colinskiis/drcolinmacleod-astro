@@ -1,8 +1,10 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
+import { unified } from '@astrojs/markdown-remark';
 import sitemap from '@astrojs/sitemap';
-import tailwind from '@astrojs/tailwind';
+import tailwind from 'tailwindcss';
+import autoprefixer from 'autoprefixer';
 import rehypeReferences from './src/lib/rehype-references.mjs';
 import rehypeImageAttrs from './src/lib/rehype-image-attrs.mjs';
 
@@ -10,13 +12,14 @@ import rehypeImageAttrs from './src/lib/rehype-image-attrs.mjs';
 export default defineConfig({
   site: 'https://drcolinmacleod.com',
   trailingSlash: 'always',
+  compressHTML: true,
   integrations: [
     mdx(),
-    sitemap(),
-    tailwind()
+    sitemap()
   ],
+  vite: { css: { postcss: { plugins: [tailwind(), autoprefixer()] } } },
   markdown: {
-    rehypePlugins: [rehypeReferences, rehypeImageAttrs],
+    processor: unified({ rehypePlugins: [rehypeReferences, rehypeImageAttrs] }),
     shikiConfig: {
       theme: 'github-light',
       wrap: true

@@ -62,8 +62,13 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? '';
           
           <form
             id="contact-form"
+            method="post"
+            action="/contact-handler.php"
             class="space-y-6"
           >
+            <noscript>
+              <p class="rounded-lg bg-emerald-50 p-4 text-slate-700">This form needs JavaScript for its bot check. Please call <a href="tel:+19024064424" class="underline">(902) 406-4424</a> for help with scheduling or general questions.</p>
+            </noscript>
             <input type="hidden" name="subject" value="New Contact Form Submission - drcolinmacleod.com">
             <!-- Name -->
             <div>
@@ -75,6 +80,8 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? '';
                 type="text"
                 id="name"
                 name="name"
+                autocomplete="name"
+                maxlength="200"
                 required
                 aria-required="true"
                 class="w-full px-4 py-3 rounded-lg border border-emerald-900/15 hover:border-emerald-900/30 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:border-transparent"
@@ -91,6 +98,7 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? '';
                 type="email"
                 id="email"
                 name="email"
+                autocomplete="email"
                 required
                 aria-required="true"
                 class="w-full px-4 py-3 rounded-lg border border-emerald-900/15 hover:border-emerald-900/30 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:border-transparent"
@@ -106,15 +114,17 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? '';
               <textarea
                 id="message"
                 name="message"
+                maxlength="5000"
+                aria-describedby="contact-privacy-note"
                 rows="5"
                 required
                 aria-required="true"
-                placeholder="Please provide details about your question or health concern..."
+                placeholder="Ask about scheduling, services or fees. Please do not include personal health details."
                 class="w-full px-4 py-3 rounded-lg border border-emerald-900/15 hover:border-emerald-900/30 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:border-transparent resize-vertical"
               ></textarea>
             </div>
 
-            <div class="rounded-lg bg-emerald-50 p-4 text-sm leading-relaxed text-slate-700">
+            <div id="contact-privacy-note" class="rounded-lg bg-emerald-50 p-4 text-sm leading-relaxed text-slate-700">
               This form is for general inquiries only and is not monitored for medical emergencies. Please avoid sending detailed personal health information here.
             </div>
 
@@ -131,6 +141,7 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? '';
               <button 
                 type="submit" 
                 id="submit-btn"
+                disabled
                 class="w-full bg-emerald-900 text-white py-3 px-6 rounded-full font-semibold hover:bg-emerald-800 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2"
               >
                 <span id="submit-text">Send Message</span>
@@ -293,7 +304,8 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? '';
     const errorMessage = document.getElementById('error-message');
 
     // Form submission
-    if (!form || !submitBtn || !submitText || !submitLoading || !formMessages || !successMessage || !errorMessage) return;
+    if (!form || !submitBtn || !submitText || !submitLoading || !formMessages || !successMessage || !errorMessage || form.dataset.initialized) return;
+    form.dataset.initialized = 'true';
 
     form.addEventListener('submit', function(e) {
       e.preventDefault();
@@ -352,6 +364,7 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? '';
         submitLoading.classList.add('hidden');
       });
     });
+    submitBtn.disabled = false;
   }
 
   document.addEventListener('astro:page-load', initContactPage);

@@ -5,8 +5,9 @@ import { PNG } from 'pngjs';
  * Measures every button-like control against the pixels actually rendered
  * behind it.
  *
- *   npm i -D playwright pngjs      # not permanent deps: CI does not run this
- *   npx astro build && npx astro preview --port 4322
+ *   npm ci && npx playwright install chromium
+ *   PUBLIC_TURNSTILE_SITE_KEY=<site key> npm run build
+ *   npm run preview -- --port 4322
  *   npm run audit:buttons
  *
  * An earlier version walked up the DOM for an ancestor background-color. That

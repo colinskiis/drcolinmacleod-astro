@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
+import FirstVisitGuidance from '../components/FirstVisitGuidance.astro';
 import CTAButton from '../components/CTAButton.astro';
 import BookingButton from '../components/BookingButton.astro';
 import { Check, Droplets, Zap, Atom, HeartPulse, Dna } from '@lucide/astro';
@@ -213,6 +214,7 @@ import ServiceArticles from '../components/ServiceArticles.astro';
         <p class="text-lg text-white/80 mb-8">
           Book a consultation to review whether IV therapy is appropriate for your circumstances, including potential benefits, limitations, alternatives and risks.
         </p>
+        <FirstVisitGuidance treatment="iv" />
         <CTAButton source="iv-therapy-cta" placement="closing" />
       </div>
     </div>

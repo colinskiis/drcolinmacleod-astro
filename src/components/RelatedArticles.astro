@@ -17,7 +17,7 @@ const allArticles = await getCollection('articles', ({ data }) => !data.draft);
 
 // Score articles by relevance (shared tags and categories)
 const scoredArticles = allArticles
-  .filter((article) => article.slug !== currentSlug)
+  .filter((article) => article.id !== currentSlug)
   .map((article) => {
     let score = 0;
 
@@ -47,8 +47,8 @@ const scoredArticles = allArticles
 const recentArticles = scoredArticles.length < limit
   ? allArticles
       .filter((article) =>
-        article.slug !== currentSlug &&
-        !scoredArticles.some((ra) => ra.slug === article.slug)
+        article.id !== currentSlug &&
+        !scoredArticles.some((ra) => ra.id === article.id)
       )
       .sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime())
       .slice(0, limit - scoredArticles.length)
@@ -64,7 +64,7 @@ const heading = scoredArticles.length > 0 ? 'Related Articles' : 'More from Dr. 
     <div>
       {relatedArticles.map((article) => (
         <a
-          href={`/articles/${article.slug}/`}
+          href={`/articles/${article.id}/`}
           class="group flex items-center gap-4 py-4 border-b border-slate-100 last:border-0 hover:text-emerald-700 transition-colors"
         >
           <span class="flex-1 font-serif font-medium text-slate-900 group-hover:text-emerald-700 transition-colors leading-snug">
