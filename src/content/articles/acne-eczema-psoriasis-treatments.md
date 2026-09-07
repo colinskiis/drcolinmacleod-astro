@@ -1,19 +1,26 @@
 ---
 title: "Acne, Eczema & Psoriasis: Natural Treatment Approaches"
-description: "Comprehensive natural treatment approaches for common skin conditions including acne, eczema and psoriasis, addressing root causes like gut health, inflammation and immune function."
+description: "A guide to acne, eczema and psoriasis, including dietary factors, treatment options and differences between these skin conditions."
 publishDate: 2012-06-13
-modifiedDate: 2026-01-10
+modifiedDate: 2026-09-07
 author: "Dr. Colin MacLeod, ND"
 heroImage: "/images/conditions/acne.webp"
 categories: ["Naturopathic", "Skin Health"]
 tags: ["acne", "eczema", "psoriasis", "skin health", "natural treatment", "Halifax"]
 seo:
   title: "Natural Approaches to Acne, Eczema and Psoriasis"
-  description: "Comprehensive natural treatment approaches for common skin conditions including acne, eczema and psoriasis, addressing root causes like gut health, inflammation and immune function."
+  description: "A guide to acne, eczema and psoriasis, including dietary factors, treatment options and differences between these skin conditions."
   focusKeyword: "natural eczema treatment"
+relatedLinks:
+  - title: "Clinical nutrition services"
+    href: "/clinical-nutrition/"
+  - title: "Lab testing options"
+    href: "/lab-testing/"
 ---
 
-## The Skin as a Window to Internal Health
+<span id="the-skin-as-a-window-to-internal-health" class="article-anchor" aria-hidden="true"></span>
+
+## Skin and Overall Health
 
 The skin is the largest organ of the body, weighing between 6 to 9 pounds with a surface area of approximately 20 square feet. Beyond its role as a protective barrier between our bodies and the external environment, the skin serves as a mirror reflecting our internal health.
 
@@ -31,7 +38,9 @@ One of the most important advances in dermatology research has been recognizing 
 
 This gut-skin axis explains why dietary changes and gut-healing protocols are often effective for skin conditions that seem unrelated to digestion.
 
-## Acne: Beyond Surface-Level Treatment
+<span id="acne-beyond-surface-level-treatment" class="article-anchor" aria-hidden="true"></span>
+
+## Acne
 
 ### Understanding Acne Development
 
@@ -244,12 +253,6 @@ Regardless of the specific condition, several principles support healthy skin.
 Skin conditions vary significantly between individuals. What works for one person may not work for another. This is why a personalized approach, identifying your specific triggers, imbalances and needs, is more effective than generic advice.
 
 The timeline for improvement also varies. While some patients see rapid improvement with dietary changes, others require longer-term gut healing or multiple interventions. Patience and consistency are important.
-
-## Skin Health Support in Halifax
-
-Chronic skin conditions like acne, eczema and psoriasis often reflect internal imbalances that can be addressed naturally. By identifying triggers, supporting gut health, reducing inflammation and optimizing nutrition, many patients achieve significant improvement in their skin and overall health.
-
-If you're dealing with chronic skin issues and are interested in addressing root causes rather than just suppressing symptoms, please contact Dr. Colin MacLeod, ND to book an initial consultation. Dr. MacLeod provides comprehensive assessments, appropriate testing (including food sensitivity testing when indicated) and personalized treatment plans. Learn more about our [clinical nutrition services](/clinical-nutrition/) and [lab testing options](/lab-testing/).
 
 ## References
 

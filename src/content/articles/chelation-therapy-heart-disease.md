@@ -2,7 +2,7 @@
 title: "Chelation Therapy and Heart Disease: What the TACT Trials Found"
 description: "A balanced review of the TACT and TACT2 trials of EDTA chelation for cardiovascular disease, including their limitations and current clinical implications."
 publishDate: 2024-04-14
-modifiedDate: 2026-07-17
+modifiedDate: 2026-09-07
 author: "Dr. Colin MacLeod, ND"
 heroImage: "/images/conditions/chelation-heart-disease.webp"
 categories: ["Naturopathic", "Heart Health"]
@@ -48,7 +48,9 @@ EDTA chelation is an invasive treatment with potential risks. These include IV-s
 
 No website can determine whether chelation is appropriate or provide a treatment schedule. A clinical assessment must first establish a supportable indication, consider alternatives and review the expected benefits, uncertainty, risks and costs. Cardiovascular symptoms or known heart disease require appropriate medical assessment and should not be managed through chelation in place of established care.
 
-## Current Practical Conclusion
+<span id="current-practical-conclusion" class="article-anchor" aria-hidden="true"></span>
+
+## Interpreting the Findings
 
 The combined TACT evidence does not support advertising EDTA chelation as a proven treatment for heart disease or as a way to reduce cardiovascular events. Its established role is limited to selected cases of confirmed metal poisoning under appropriate clinical oversight—not nonspecific symptoms, unvalidated testing or general cardiovascular risk.
 

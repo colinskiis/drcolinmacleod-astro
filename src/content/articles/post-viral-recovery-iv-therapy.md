@@ -2,7 +2,7 @@
 title: "Post-Viral Recovery and IV Therapy: Evidence and Limitations"
 description: "A cautious review of persistent symptoms after viral illness, appropriate assessment and the limited evidence for IV nutrient therapy during recovery."
 publishDate: 2024-06-03
-modifiedDate: 2026-07-17
+modifiedDate: 2026-09-07
 heroImage: "/images/treatments/iv-patient-man.webp"
 categories: ["IV Therapy", "Post-Viral Recovery"]
 tags: ["long COVID", "post-viral fatigue", "IV therapy", "Myers Cocktail", "vitamin C", "Halifax", "Nova Scotia"]
@@ -10,6 +10,15 @@ seo:
   title: "Post-Viral Recovery and IV Therapy: Evidence and Limits"
   description: "A cautious review of post-viral symptoms, appropriate assessment and the limited evidence for IV nutrient therapy during recovery."
   focusKeyword: "post-viral recovery IV therapy"
+relatedLinks:
+  - title: "IV Therapy"
+    href: "/iv-therapy/"
+  - title: "IV Vitamin C"
+    href: "/iv-vitamin-c/"
+  - title: "Chronic Fatigue Syndrome"
+    href: "/chronic-fatigue-syndrome/"
+  - title: "Lab Testing"
+    href: "/lab-testing/"
 ---
 
 Fatigue, cognitive difficulty, sleep disturbance, shortness of breath, palpitations and reduced tolerance for activity can persist after an acute viral infection. These symptoms are sometimes described as a post-viral condition; following COVID-19, they may fall within the broad clinical picture of Long COVID.<sup>1</sup>
@@ -22,7 +31,9 @@ Post-viral symptoms can overlap with anemia, thyroid disorders, sleep disorders,
 
 Chest pain, significant breathing difficulty, fainting, new neurological symptoms or rapidly worsening function require prompt medical care. Website information cannot diagnose the reason for persistent symptoms or determine whether IV treatment is appropriate.
 
-## What IV Delivery Does—and Does Not Establish
+<span id="what-iv-delivery-doesand-does-not-establish" class="article-anchor" aria-hidden="true"></span>
+
+## What IV Delivery Can Establish
 
 An intravenous infusion delivers its ingredients directly into the bloodstream and avoids gastrointestinal absorption. This can produce higher circulating concentrations than oral administration for some nutrients.<sup>2</sup> Pharmacokinetics, however, do not prove that an infusion improves a particular symptom, shortens recovery or treats the underlying condition.
 
@@ -47,13 +58,6 @@ Nutritional adequacy matters during recovery, but symptoms alone do not demonstr
 IV nutrient therapy should not be advertised as restoring depleted stores, accelerating post-viral recovery or producing predictable improvements in energy. If it is considered, the discussion should cover the limited evidence, uncertainty, risks, alternatives and cost. There is no standard website-based dose, formulation or treatment schedule for post-viral symptoms.
 
 An initial consultation can review the history, previous results and whether additional assessment is appropriate. That assessment may lead to conventional medical follow-up or another form of care rather than IV treatment.
-
-## Related Resources
-
-- [IV Therapy](/iv-therapy/)
-- [IV Vitamin C](/iv-vitamin-c/)
-- [Chronic Fatigue Syndrome](/chronic-fatigue-syndrome/)
-- [Lab Testing](/lab-testing/)
 
 ## References
 

@@ -1,22 +1,35 @@
 ---
 title: "Nutrients For Athletic Performance"
-description: "For competitive athletes, maximized nutrition, training and rest are essential for performance and health; but perfect nutrient status is rare in athletes."
+description: "A review of nutrients discussed in sports performance, their food sources and the use of nutrient infusions."
 publishDate: 2015-11-01
-modifiedDate: 2026-01-10
+modifiedDate: 2026-09-07
 author: "Dr. Colin MacLeod, ND"
 heroImage: "/images/general/hockey-player-performance.webp"
 categories: ["Naturopathic", "Athletic Performance"]
 tags: ["athletic performance", "sports nutrition", "IV therapy", "nutrients", "Halifax"]
 seo:
-  description: "For competitive athletes, maximized nutrition, training and rest are essential for performance and health; but perfect nutrient status is rare in athletes."
+  description: "A review of nutrients discussed in sports performance, their food sources and the use of nutrient infusions."
   focusKeyword: "athletic performance nutrition"
+relatedLinks:
+  - title: "IV therapy services"
+    href: "/iv-therapy/"
+  - title: "Creatine: Beyond Muscle Building"
+    href: "/articles/creatine-beyond-muscle-building/"
+  - title: "How Much Sleep Does an Athlete Need?"
+    href: "/articles/how-much-sleep-does-an-athlete-need/"
+  - title: "Recovery Enhancement: Natural Approaches"
+    href: "/articles/recovery-enhancement-natural-approaches/"
 ---
 
-## Do Athletes Get Enough Vitamins & Minerals?
+<span id="do-athletes-get-enough-vitamins--minerals" class="article-anchor" aria-hidden="true"></span>
+
+## Nutrient Intake in Athletes
 
 For competitive athletes, maximized nutrition, training and rest are essential for performance and health; but perfect nutrient status is rare in athletes. In fact athletes are commonly low in many vitamins and minerals including B vitamins, vitamin C, vitamin D, vitamin E, β-carotene, calcium, magnesium, iron, zinc and selenium<sup>1,2,3,4</sup>. Performance suffers as a result<sup>2</sup>. Athletes are often deficient due to poor nutrient intake through diet and because athletes utilize nutrients faster than a sedentary person<sup>5</sup>.
 
-## Athletes Have Greater Nutrient Requirements
+<span id="athletes-have-greater-nutrient-requirements" class="article-anchor" aria-hidden="true"></span>
+
+## Nutrient Demands of Training
 
 Working hard, sweating and pushing your muscles and nervous system hard are all taxing on the body. It is clear that intense physical activity actively depletes nutrients from the body, including zinc, magnesium, potassium, iron<sup>6</sup>, vitamin B1, vitamin B2 and vitamin B6<sup>7</sup>.
 
@@ -73,23 +86,11 @@ Calcium is well known for its importance in formation and maintenance of healthy
 
 Zinc is found throughout every cell in our bodies and many functions. Zinc helps aid in tissue repair and healing as well as fine-tuning the immune system. Zinc is also important for taste, smell, vision, growth and reproduction. Zinc deficiency can cause loss of appetite, poor wound healing, fatigue, frequent infection or hair loss. Sources of zinc include wheat germ, wheat bran, dairy products, pumpkin or squash seeds, baked beans, lamb, beef liver and oysters. Zinc is depleted by physical activity.
 
-## Related Athletic Performance Topics
-
-For athletes looking to optimize their performance through nutrition and lifestyle, consider exploring these related articles:
-
-- [Creatine: Beyond Muscle Building](/articles/creatine-beyond-muscle-building/) - The science behind one of the most studied sports supplements
-- [How Much Sleep Does an Athlete Need?](/articles/how-much-sleep-does-an-athlete-need/) - Sleep optimization for recovery and performance
-- [Recovery Enhancement: Natural Approaches](/articles/recovery-enhancement-natural-approaches/) - Strategies for faster recovery between training sessions
-
 ## Safe For All Athletes
 
 Our athletic performance infusion treatment falls within the guidelines set by the World Anti-Doping Agency and is safe for amateur and professional athletes alike.
 
-## Nutrient Infusions in Halifax
-
-If you are interested in receiving nutrient infusion treatments and are located in the Halifax area, please contact Dr. Colin MacLeod, ND to book an initial naturopathic visit to discuss your options. Learn more about our [IV therapy services](/iv-therapy/).
-
-### References
+## References
 
 1. Driskell J. Summary: Vitamins and trace elements in sports nutrition. In: Driskell J, Wolinsky I, editors. Sports Nutrition. Vitamins and Trace Elements. New York (NY): CRC/Taylor & Francis; 2006. p. 323-31.
 2. Lukaski H. Vitamin and mineral status: effects on physical performance. *Nutrition*. 2004 Jul-Aug;20(7-8):632-44.

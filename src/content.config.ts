@@ -12,6 +12,7 @@ const articles = defineCollection({
     modifiedDate: z.date().optional(),
     author: z.string().default('Dr. Colin MacLeod, ND'),
     heroImage: z.string().optional(),
+    relatedLinks: z.array(z.object({ title: z.string(), href: z.string() })).optional(),
     categories: z.array(z.string()).default([]),
     tags: z.array(z.string()).default([]),
     seo: z.object({

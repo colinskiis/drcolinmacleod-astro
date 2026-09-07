@@ -1,16 +1,19 @@
 ---
 title: "Sustainable Weight Management: A Naturopathic Approach"
-description: "Evidence-based natural approaches to weight management including metabolic health optimization, appetite regulation and sustainable lifestyle strategies."
+description: "Metabolic health, nutrition, sleep and sustainable habits in the context of weight management."
 publishDate: 2013-08-20
-modifiedDate: 2026-01-10
+modifiedDate: 2026-09-07
 author: "Dr. Colin MacLeod, ND"
 heroImage: "/images/general/weight-management-balance.webp"
 categories: ["Naturopathic", "Weight Management"]
 tags: ["weight loss", "metabolism", "nutrition", "lifestyle", "Halifax"]
 seo:
   title: "Natural Weight Management | Halifax Naturopathic Doctor"
-  description: "Evidence-based natural approaches to weight management including metabolic health optimization, appetite regulation and sustainable lifestyle strategies."
+  description: "Metabolic health, nutrition, sleep and sustainable habits in the context of weight management."
   focusKeyword: "natural weight management"
+relatedLinks:
+  - title: "Clinical nutrition services"
+    href: "/clinical-nutrition/"
 ---
 
 ## The Weight Management Challenge
@@ -147,13 +150,17 @@ Several supplements have evidence supporting their use in weight management.
 
 Always work with a healthcare provider when using herbs and supplements, as interactions with medications are possible.
 
-## What Doesn't Work (Or Doesn't Work Safely)
+<span id="what-doesnt-work-or-doesnt-work-safely" class="article-anchor" aria-hidden="true"></span>
+
+## Approaches to Avoid
 
 The weight loss industry is full of products and programs with little evidence. Approaches to be cautious about include extreme calorie restriction, which leads to metabolic adaptation and muscle loss. Detox cleanses claiming to "flush fat" are not supported by evidence. Most "fat burner" supplements have minimal effects and potential risks. Single-food diets or extreme elimination approaches are unsustainable.
 
 If something sounds too good to be true, rapid weight loss with no effort, it probably is. Sustainable weight management requires addressing underlying factors, not quick fixes.
 
-## Getting Started: A Practical Framework
+<span id="getting-started-a-practical-framework" class="article-anchor" aria-hidden="true"></span>
+
+## Getting Started
 
 Effective weight management usually involves a progression of steps.
 
@@ -173,17 +180,13 @@ Addressing individual factors such as specific dietary modifications based on me
 
 Transitioning to sustainable long-term practices including continued healthy eating patterns (not "going off" the diet), regular physical activity, ongoing stress management and periodic reassessment and adjustment.
 
-## A Note on Body Composition vs. Scale Weight
+<span id="a-note-on-body-composition-vs-scale-weight" class="article-anchor" aria-hidden="true"></span>
+
+## Body Composition and Scale Weight
 
 The number on the scale doesn't tell the whole story. Muscle weighs more than fat by volume, so someone who starts strength training while losing fat may see their weight stable while their body composition improves significantly.
 
 Better markers of progress include how clothes fit, waist circumference, energy levels, strength and fitness, metabolic markers (blood sugar, triglycerides) and overall health and wellbeing.
-
-## Weight Management Support in Halifax
-
-Sustainable weight management is rarely about simply eating less, it requires understanding and addressing the factors that drive weight gain and make weight loss difficult. Metabolic health, hormonal balance, sleep, stress and gut health all play important roles.
-
-If you're interested in a comprehensive naturopathic approach to weight management that addresses root causes rather than just calories, please contact Dr. Colin MacLeod, ND to book an initial consultation. Dr. MacLeod provides thorough assessments, appropriate testing and individualized treatment plans. Learn more about our [clinical nutrition services](/clinical-nutrition/).
 
 ## References
 

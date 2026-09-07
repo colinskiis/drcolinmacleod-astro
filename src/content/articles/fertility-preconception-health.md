@@ -1,18 +1,21 @@
 ---
-title: "Fertility and Preconception Health: Preparing Your Body for Pregnancy"
-description: "Evidence-based natural approaches to optimize fertility and prepare for a healthy pregnancy, including nutrition, lifestyle and targeted supplementation."
+title: "Fertility and Preconception Health"
+description: "Nutrition, lifestyle and assessment considerations when preparing for pregnancy, including when to seek fertility support."
 publishDate: 2025-04-24
+modifiedDate: 2026-09-07
 author: "Dr. Colin MacLeod, ND"
 heroImage: "/images/general/fertility-prenatal-nutrition.webp"
 categories: ["Naturopathic", "Women's Health", "Fertility"]
 tags: ["fertility", "preconception", "pregnancy", "women's health", "natural treatment", "Halifax"]
 seo:
   title: "Natural Fertility Support | Halifax Naturopathic Doctor"
-  description: "Evidence-based natural approaches to optimize fertility and prepare for a healthy pregnancy, including nutrition, lifestyle and targeted supplementation."
+  description: "Nutrition, lifestyle and assessment considerations when preparing for pregnancy, including when to seek fertility support."
   focusKeyword: "natural fertility support"
 ---
 
-## The Foundation for Healthy Conception
+<span id="the-foundation-for-healthy-conception" class="article-anchor" aria-hidden="true"></span>
+
+## Preparing for Pregnancy
 
 The months before conception represent a crucial window for optimizing both fertility and the health of a future pregnancy. What happens during this preconception period affects not only your ability to conceive but also the health of your developing baby and even their long-term disease risk.
 
@@ -70,7 +73,9 @@ Building a fertility-supporting diet means emphasizing colorful vegetables and f
 
 Food-safety, alcohol, caffeine and fish-consumption recommendations change when preparing for pregnancy and during pregnancy. Readers should use current Health Canada prenatal guidance and discuss individual concerns with their prenatal clinician rather than relying on a fixed list or threshold in this article.
 
-## Lifestyle Factors Affecting Fertility
+<span id="lifestyle-factors-affecting-fertility" class="article-anchor" aria-hidden="true"></span>
+
+## Lifestyle and Fertility
 
 ### Body Weight and Composition
 
@@ -171,12 +176,6 @@ Seek evaluation before or early in the conception journey if the woman is over 3
 Seek evaluation if conception has not occurred after 12 months of well-timed intercourse (or 6 months if over 35).
 
 Naturopathic approaches can work alongside conventional fertility evaluation and treatment. Many patients find that optimizing nutrition, lifestyle and foundational health improves outcomes whether they conceive naturally or with assisted reproductive technologies.
-
-## Comprehensive Preconception Care in Halifax
-
-The preconception period offers a unique opportunity to optimize health for both parents and create the best possible foundation for a healthy pregnancy. Through nutrition optimization, lifestyle modifications, appropriate supplementation and addressing any underlying health concerns, many couples significantly improve their chances of conception and healthy pregnancy outcomes.
-
-If you are planning pregnancy and would like support with preconception optimization, or if you have been struggling with fertility and want to explore natural approaches, please contact Dr. Colin MacLeod, ND to book an initial appointment. Dr. MacLeod provides comprehensive preconception and fertility assessments, working alongside reproductive endocrinologists and other fertility specialists when appropriate to provide integrative care.
 
 ## References
 

@@ -167,8 +167,9 @@ const breadcrumbSchema = {
                   href={`/articles/${article.id}/`}
                   class="directory-link group"
                 >
-                  <time class="text-xs text-slate-400 block mb-2">
+                  <time datetime={article.data.publishDate.toISOString()} class="text-xs text-slate-500 block mb-2">
                     {new Date(article.data.publishDate).toLocaleDateString('en-US', {
+                      timeZone: 'UTC',
                       year: 'numeric',
                       month: 'short',
                       day: 'numeric'
@@ -210,8 +211,9 @@ const breadcrumbSchema = {
               )}
               <div class="flex-1 min-w-0">
                 <div class="flex flex-wrap items-center gap-x-2 text-xs text-slate-500 mb-1">
-                  <time>
+                  <time datetime={article.data.publishDate.toISOString()}>
                     {new Date(article.data.publishDate).toLocaleDateString('en-US', {
+                      timeZone: 'UTC',
                       year: 'numeric',
                       month: 'short',
                       day: 'numeric'

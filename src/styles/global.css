@@ -569,3 +569,44 @@ html.js .nav-disclosure-toggle { display: inline-flex; }
   .prose h3 { font-size: 1.4rem; margin-top: 2rem; }
   .prose p { font-size: 1rem; line-height: 1.8; }
 }
+
+/* Article family: a continuous reading column, with navigation only beside it
+   when both columns fit comfortably. Keep care-page prose unaffected. */
+.article-shell { max-width: 44rem; }
+.article-prose { font-size: 1.0625rem; line-height: 1.8; color: #475569; }
+.article-prose p { font-size: inherit; line-height: inherit; margin-bottom: 1.25rem; }
+.article-prose :is(ul, ol) { margin: 1.25rem 0; }
+.article-prose h2 { font-size: clamp(1.625rem, 3vw, 2rem); margin-top: 2.75rem; }
+.article-prose h3 { font-size: 1.375rem; margin: 2rem 0 0.875rem; }
+.article-prose h4 { font-size: 1.125rem; margin: 1.5rem 0 0.75rem; }
+.article-prose > :first-child { margin-top: 0; }
+.article-prose img { box-shadow: none; }
+.article-prose .references-heading {
+  font-size: 1rem;
+  font-family: 'Manrope', sans-serif;
+  letter-spacing: 0;
+  text-transform: none;
+  margin-top: 2.5rem;
+}
+.article-prose .references-list { overflow-wrap: anywhere; }
+.article-prose .article-summary,
+.article-prose .article-note {
+  border: 0;
+  border-left: 2px solid #6ee7b7;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  padding: 0 0 0 1.25rem;
+  margin: 2rem 0;
+}
+.article-prose .article-summary--plain { border-left: 0; padding-left: 0; }
+.article-reading-layout { display: grid; grid-template-columns: minmax(0, 1fr); }
+.article-anchor { display: block; scroll-margin-top: 7rem; }
+@media (min-width: 1280px) {
+  .article-shell { max-width: 62rem; }
+  .article-header, .article-cover, .article-supplement { max-width: 44rem; }
+  .article-reading-layout { grid-template-columns: minmax(0, 44rem) 14rem; gap: 4rem; align-items: start; }
+}
+@media (max-width: 639px) {
+  .article-prose { font-size: 1rem; }
+}

@@ -152,6 +152,45 @@ Symptoms, evidence and safety guidance should remain easy to find. Simplifying t
 layout must not remove necessary qualifications or weaken advice to seek other care.
 This guide does not authorize changes to clinical claims merely to shorten a page.
 
+## Article template and editorial rules
+
+[The shared article template](src/pages/articles/[...slug].astro) owns the article
+family. The [article review record](docs/article-review.md) documents the rollout.
+Articles use a white editorial header, a short descriptive introduction,
+author/date and reading time, restrained cover media and continuous prose. Do not
+recreate service-page cards, booking sections or promotional local endings inside
+articles.
+
+- Keep the reading column at a maximum of 44rem (roughly 65–70 characters). Show
+  the 14rem contents sidebar only at 1280px and above, with a 4rem gap. At smaller
+  widths, use the native “On This Page” disclosure above the text.
+- Treat the description as the short opening orientation. State what the reader
+  will learn or the key distinction; avoid hype or a second sales headline. Do not
+  add a mandatory takeaway box that simply repeats the introduction.
+- Keep cover images subordinate to reading: within the text column, using the
+  shared 12:5 crop. No full-bleed article hero is needed.
+- Prefer short, descriptive H2s, with H3s for meaningful subsections. The contents
+  list comes from Astro's rendered headings, so its labels and anchors cannot drift.
+  Preserve useful old heading URLs with `.article-anchor` spans when renaming them.
+- Explain a point once. A comparison, note or summary should replace repetition,
+  not sit beside a paragraph saying the same thing. Optional notes use an open left
+  rule; ordinary paragraphs and lists need no cards or icons.
+- Length follows the subject. Short articles need no extra sections to match long
+  ones. For long articles, consolidate overlapping explanations and generic endings
+  before cutting substantive detail. Preserve evidence limitations, safety guidance,
+  source attribution and advice to seek other care.
+- Keep references visible at the end, in compact text with wrapping links. Reading
+  time excludes the reference list and markup. Reading progress measures the body,
+  excluding the author footer and related destinations.
+- Use optional `relatedLinks` frontmatter for curated further resources. The shared
+  footer provides a compact author bio, those links and up to three further articles,
+  avoiding duplicate destinations. No inline booking requests or repeated Halifax
+  practice pitches are needed.
+
+Editorial layout changes are not a new clinical evidence review. Do not update
+clinical claims, recommendation strength or research dates merely to make a paragraph
+shorter. Draft and archived articles remain unpublished.
+
 ## Cards, icons and disclosure
 
 **Cards group a meaningful object or destination.** They are appropriate for linked

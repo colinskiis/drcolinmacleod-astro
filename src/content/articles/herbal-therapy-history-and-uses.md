@@ -1,16 +1,19 @@
 ---
 title: "Herbal Therapy: History, Science and Modern Applications"
-description: "A comprehensive guide to herbal therapy covering its rich history, scientific basis, evidence-based applications and safe usage principles."
+description: "The history and science of herbal therapy, common preparations and considerations for safe use."
 publishDate: 2012-02-01
-modifiedDate: 2026-01-10
+modifiedDate: 2026-09-07
 author: "Dr. Colin MacLeod, ND"
 heroImage: "/images/nutrition/herbal-therapy-2.webp"
 categories: ["Naturopathic", "Herbal Therapy"]
 tags: ["herbal therapy", "botanical therapy", "natural remedies", "Halifax"]
 seo:
   title: "Herbal Therapy Guide | Halifax Naturopathic Doctor"
-  description: "A comprehensive guide to herbal therapy covering its rich history, scientific basis, evidence-based applications and safe usage principles."
+  description: "The history and science of herbal therapy, common preparations and considerations for safe use."
   focusKeyword: "herbal therapy"
+relatedLinks:
+  - title: "Herbal therapy services"
+    href: "/herbal-therapy/"
 ---
 
 ## The Science Behind Plant Compounds
@@ -162,12 +165,6 @@ Herbs come in various forms, each with advantages.
 Herbal therapy works well as part of a comprehensive health approach. Rather than replacing other treatments, herbs often complement dietary changes, lifestyle modifications and conventional treatments when appropriate.
 
 The best outcomes typically come from addressing root causes (diet, lifestyle, underlying conditions), using herbs targeted to individual patterns and needs, working with qualified practitioners for complex situations and maintaining communication with all healthcare providers.
-
-## Herbal Therapy in Halifax
-
-Herbal therapy offers powerful tools for supporting health, tools refined over millennia and increasingly validated by modern research. When used appropriately, herbs can address numerous conditions safely and effectively.
-
-If you're interested in exploring herbal therapy for your health concerns, please contact Dr. Colin MacLeod, ND to book an initial consultation. Dr. MacLeod is trained in botanical therapy and can assess your situation, recommend appropriate herbs and monitor your progress. Learn more about our [herbal therapy services](/herbal-therapy/).
 
 ## References
 

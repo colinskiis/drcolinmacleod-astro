@@ -2,7 +2,7 @@
 title: "Chelation & Lead Toxicity"
 description: "An overview of lead exposure, blood testing, prevention and the limited circumstances in which chelation may be considered by qualified clinicians."
 publishDate: 2015-02-02
-modifiedDate: 2026-01-10
+modifiedDate: 2026-09-07
 author: "Dr. Colin MacLeod, ND"
 heroImage: "/images/treatments/lead-toxicity2.webp"
 categories: ["Naturopathic"]
@@ -34,7 +34,9 @@ Chelating agents are used in selected cases of confirmed, clinically significant
 ### Safety of Chelation
 Chelation has meaningful risks, including reactions to the agent, changes in blood pressure, mineral or electrolyte disturbances, kidney injury and complications related to intravenous administration. Appropriate laboratory confirmation, clinical oversight and monitoring are required. Suspected lead poisoning should be assessed through established medical and public-health pathways.
 
-## Assessing For Lead Toxicity
+<span id="assessing-for-lead-toxicity" class="article-anchor" aria-hidden="true"></span>
+
+## Assessing Lead Exposure
 
 ### Blood tests
 Venous blood lead concentration is the primary laboratory test used to assess lead exposure and guide follow-up. Results must be interpreted with the exposure history, symptoms and applicable public-health thresholds. Post-chelator or “provoked” urine testing is not recommended for diagnosing metal toxicity because chelating agents increase urinary metal excretion and there are no validated reference ranges for interpreting the resulting values.
@@ -53,7 +55,9 @@ There are a few important ways to reduce your exposure to lead, including avoidi
 
 If you are in the Halifax area you can contact Halifax Water<sup>23</sup> to have your drinking water tested for the presence of heavy metals.
 
-## Chelation Therapy in Halifax
+<span id="chelation-therapy-in-halifax" class="article-anchor" aria-hidden="true"></span>
+
+## Discussing Lead Exposure
 If you are concerned about lead exposure, an initial visit can review the exposure history, previous results and whether established blood testing or referral is appropriate. Website information cannot determine whether chelation is indicated.
 
 ## Related Resources

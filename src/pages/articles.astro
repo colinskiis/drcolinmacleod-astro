@@ -95,8 +95,9 @@ const collectionSchema = {
                 )}
                 <div class="p-4 md:p-5">
                   <div class="mb-2 flex flex-wrap items-center gap-x-2 text-xs text-slate-600">
-                    <time>
+                    <time datetime={article.data.publishDate.toISOString()}>
                       {new Date(article.data.publishDate).toLocaleDateString('en-US', {
+                        timeZone: 'UTC',
                         year: 'numeric',
                         month: 'short',
                         day: 'numeric'
@@ -171,8 +172,9 @@ const collectionSchema = {
             )}
             <div class="flex-1 min-w-0">
               <div class="flex flex-wrap items-center gap-x-2 text-xs text-slate-500 mb-1">
-                <time>
+                <time datetime={article.data.publishDate.toISOString()}>
                   {new Date(article.data.publishDate).toLocaleDateString('en-US', {
+                    timeZone: 'UTC',
                     year: 'numeric',
                     month: 'short',
                     day: 'numeric'

@@ -1,14 +1,19 @@
 ---
 title: "How Much Sleep Does An Athlete Need?"
-description: "Nutrition and training are front and centre in the minds of competitive athletes. However sleep is also an essential factor in performance optimization."
+description: "A look at sleep research in athletes, its relationship to performance and practical sleep habits."
 publishDate: 2015-05-27
-modifiedDate: 2022-07-12
+modifiedDate: 2026-09-07
 heroImage: "/images/general/athlete-sleep.webp"
 categories: ["Naturopathic"]
 tags: ["naturopathic"]
 seo:
-  description: "Nutrition and training are front and centre in the minds of competitive athletes. However sleep is also an essential factor in performance optimization."
+  description: "A look at sleep research in athletes, its relationship to performance and practical sleep habits."
   focusKeyword: "Athlete"
+relatedLinks:
+  - title: "Sports performance and injury care"
+    href: "/sports-performance-injury/"
+  - title: "Nutrients for athletic performance"
+    href: "/articles/nutrients-for-athletic-performance/"
 ---
 
 Nutrition and training are front and centre in the minds of competitive athletes. However, there is more that needs to be done to optimize performance and maintain health.
@@ -51,7 +56,9 @@ More *realistic, real-world* tests reveal that sleep deprivation has a powerful 
 
 While exercise in general is an important factor in maintaining good quality sleep, elite level athletes tend to have more sleep problems<sup>17</sup> than the average person. Overreaching and overtraining can also result from long-term sleep deficits, leading to poor performance and a myriad of health issues including depression, fatigue and immune system suppression<sup>17,18</sup>. With this in mind athletes must make efforts to maintain ideal sleep habits for performance and health maintenance.
 
-## How Much Sleep Does An Athlete Need?
+<span id="how-much-sleep-does-an-athlete-need" class="article-anchor" aria-hidden="true"></span>
+
+## Sleep Duration for Athletes
 
 An excellent guide for athlete sleep requirements<sup>19</sup> was released by Canadian Sports For Life in 2013. From 15 years of age and older this guideline recommends that athletes get 8-10 hours of sleep per night with an additional 30 minutes of sleep in the form of a nap between 2:00-4:00pm. However, aiming for 10 hours of sleep per day in total is likely to provide optimal performance benefits compared to 8 hours per day.
 
@@ -59,11 +66,7 @@ An excellent guide for athlete sleep requirements<sup>19</sup> was released by C
 
 Optimizing numbers of hours slept and sleep quality should be a goal near the top of the list for competitive athletes. Sleep can often be improved by making small changes in sleep hygiene such as keeping the bedroom dark, avoiding screen time before bedtime and decluttering the bedroom. Naturopathic treatments such as clinical nutrition, herbal therapy and acupuncture also offer an excellent means of improving sleep beyond basic sleep hygiene changes. For more on optimizing sleep, see our guide to [evidence-based sleep strategies](/articles/sleep-optimization-evidence-based-strategies/).
 
-## Halifax Athletic Performance
-
-If you are interested in improving athletic performance and are located in the Halifax area, please contact Dr. Colin MacLeod, ND to book an initial naturopathic visit with Dr. MacLeod to discuss your options. Learn more about our [sports performance and injury care](/sports-performance-injury/) and [nutrients for athletic performance](/articles/nutrients-for-athletic-performance/).
-
-### References
+## References
 
 1. Leeder J, Glaister M, Pizzoferro K, Dawson J, Pedlar C. Sleep duration and quality in elite athletes measured using wristwatch actigraphy. *J Sports Sci*. 2012;30(6):541-5.
 2. Blumert PA, Crum AJ, Ernsting M, Volek JS, Hollander DB, Haff EE, Haff GG. The acute effects of twenty-four hours of sleep loss on the performance of national-caliber male collegiate weightlifters. *J Strength Cond Res*. 2007 Nov;21(4):1146-54.

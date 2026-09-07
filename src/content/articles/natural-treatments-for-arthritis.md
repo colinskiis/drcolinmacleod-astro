@@ -1,8 +1,8 @@
 ---
-title: "Arthritis: Understanding the Condition and Natural Treatment Options"
+title: "Arthritis: Understanding Treatment Options"
 description: "An evidence-informed guide to osteoarthritis and adjunct options including exercise, nutrition, acupuncture and prolotherapy."
 publishDate: 2015-11-27
-modifiedDate: 2024-12-06
+modifiedDate: 2026-09-07
 author: "Dr. Colin MacLeod, ND"
 heroImage: "/images/conditions/knee-injury1.webp"
 categories: ["Pain Management", "Naturopathic"]
@@ -11,6 +11,13 @@ seo:
   title: "Arthritis: Evidence and Natural Treatment Options"
   description: "Review osteoarthritis care and the evidence, limitations and safety considerations for exercise, nutrition, acupuncture and prolotherapy."
   focusKeyword: "natural arthritis treatment"
+relatedLinks:
+  - title: "Prolotherapy for Arthritis"
+    href: "/prolotherapy-for-arthritis/"
+  - title: "Sports Performance & Injury"
+    href: "/sports-performance-injury/"
+  - title: "Conditions We Treat"
+    href: "/conditions/"
 ---
 
 Arthritis affects millions of Canadians, and osteoarthritis is by far the most common form. Anti-inflammatory medications can reduce symptoms and remain part of standard care for many people, although their risks and benefits depend on the individual, dose and duration of use. Understanding the condition and the evidence for medication, exercise, rehabilitation and adjunct options supports an informed discussion with your healthcare team.
@@ -27,7 +34,9 @@ People suffering from osteoarthritis typically experience limited range of motio
 
 As cartilage deteriorates, joints often produce audible sounds: cracking, popping or grinding (called crepitus) during movement. These sounds reflect the roughened surfaces moving against each other without adequate cushioning. As the condition progresses, joints may show visible swelling from inflammation and fluid accumulation. Pain that was once intermittent becomes more constant, and activities that were previously manageable become difficult or impossible.
 
-## The Problem with Conventional Treatment
+<span id="the-problem-with-conventional-treatment" class="article-anchor" aria-hidden="true"></span>
+
+## Conventional Treatment Considerations
 
 Non-steroidal anti-inflammatory drugs (NSAIDs) such as ibuprofen, naproxen and prescription options like Arthrotec represent the conventional first-line treatment for osteoarthritis pain. These medications effectively reduce pain and inflammation, which is why they're so widely prescribed. However, their adverse effects extend beyond the commonly known risks of stomach irritation and bleeding.
 
@@ -80,14 +89,6 @@ This comprehensive approach recognizes that osteoarthritis results from multiple
 If you're dealing with osteoarthritis and are interested in exploring natural treatment options, an initial consultation allows us to review your specific situation, including which joints are affected, the severity of changes, what you've tried previously and what your goals are. From this assessment, we can develop an individualized treatment plan targeting your particular needs.
 
 Many patients come to naturopathic treatment after years of NSAID use with progressive worsening of their condition. While we can't reverse established joint damage, treatment can often significantly reduce pain, improve function and slow further progression. These outcomes matter for quality of life and long-term joint health.
-
----
-
-## Related Resources
-
-- [Prolotherapy for Arthritis](/prolotherapy-for-arthritis/)
-- [Sports Performance & Injury](/sports-performance-injury/)
-- [Conditions We Treat](/conditions/)
 
 ## References
 

@@ -2,7 +2,7 @@
 title: "Sex Hormone Blood Testing in Halifax: A Practical Guide"
 description: "A factual guide to private sex hormone blood testing in Halifax, including estradiol, progesterone, testosterone, FSH, LH, prolactin and DHEA-S."
 publishDate: 2024-05-09
-modifiedDate: 2026-07-14
+modifiedDate: 2026-09-07
 heroImage: "/images/lab-testing/hormone-testing-consult.webp"
 categories: ["Lab Testing", "Hormones"]
 tags: ["hormone testing", "Halifax", "Nova Scotia", "testosterone", "estradiol", "progesterone", "FSH", "LH"]
@@ -10,6 +10,13 @@ seo:
   title: "Hormone Blood Testing in Halifax: A Practical Guide"
   description: "Learn what estradiol, progesterone, testosterone, FSH, LH and related blood tests measure, when timing matters and how private testing works in Halifax."
   focusKeyword: "hormone testing Halifax"
+relatedLinks:
+  - title: "Laboratory Testing Services"
+    href: "/lab-testing/"
+  - title: "Hormone Testing"
+    href: "/hormone-testing/"
+  - title: "Complete Thyroid Testing"
+    href: "/thyroid-testing/"
 ---
 
 Hormone blood tests can provide useful information when symptoms, menstrual changes, reproductive concerns or previous results suggest that a closer assessment is appropriate. The most useful tests depend on the person's age, symptoms, menstrual or reproductive history, medications and any hormone therapy or contraception being used.
@@ -73,7 +80,9 @@ Results are reviewed alongside symptoms, health history, medications, cycle timi
 
 Testing can sometimes identify a useful direction, but it does not guarantee that nonspecific symptoms such as fatigue, sleep disruption, mood changes or weight change are hormonal. Blood count, iron status, thyroid function, glucose regulation, medication effects, sleep and other health factors may also need consideration.
 
-## The Relationship Between Hormone and Thyroid Testing
+<span id="the-relationship-between-hormone-and-thyroid-testing" class="article-anchor" aria-hidden="true"></span>
+
+## Hormone and Thyroid Testing
 
 Thyroid disorders can contribute to menstrual changes, fertility concerns, fatigue, temperature intolerance, weight change and mood symptoms. Thyroid testing may therefore be considered alongside sex hormone testing when the history suggests overlap.
 
@@ -100,14 +109,6 @@ The same symptoms can have several possible causes. The purpose of testing is to
 The process begins with a review of symptoms, health history, menstrual or reproductive history, medications, supplements and previous test results. From there, the blood tests most relevant to the person's needs are selected. A broader panel can be arranged when it is reasonable and the person prefers a wider assessment, while avoiding tests that would be misleading because of timing, medication use or poor clinical validity.
 
 Costs and collection instructions are reviewed before proceeding. Blood collection may be completed in the office or through a partner laboratory, depending on the tests. Once results are available, they are reviewed in context and any appropriate follow-up, repeat testing or medical referral is discussed.
-
----
-
-## Related Resources
-
-- [Laboratory Testing Services](/lab-testing/): Overview of private blood testing
-- [Hormone Testing](/hormone-testing/): Hormone markers, timing and the testing process
-- [Complete Thyroid Testing](/thyroid-testing/): Thyroid blood test options
 
 ## References
 

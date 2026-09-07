@@ -1,14 +1,15 @@
 ---
 title: "PCOS: Natural Approaches to Polycystic Ovary Syndrome"
-description: "Evidence-based natural approaches to managing PCOS including diet, lifestyle and targeted supplementation from a Halifax naturopathic doctor."
+description: "Understanding PCOS, dietary and lifestyle approaches, and when additional treatment or assessment is needed."
 publishDate: 2025-11-10
+modifiedDate: 2026-09-07
 author: "Dr. Colin MacLeod, ND"
 heroImage: "/images/general/pcos-hormone-balance.webp"
 categories: ["Naturopathic", "Women's Health", "Hormonal Health"]
 tags: ["PCOS", "women's health", "hormones", "insulin resistance", "natural treatment", "Halifax"]
 seo:
   title: "PCOS Natural Treatment | Halifax Naturopathic Doctor"
-  description: "Evidence-based natural approaches to managing PCOS including diet, lifestyle and targeted supplementation from a Halifax naturopathic doctor."
+  description: "Understanding PCOS, dietary and lifestyle approaches, and when additional treatment or assessment is needed."
   focusKeyword: "PCOS natural treatment Halifax"
 ---
 
@@ -46,7 +47,9 @@ Not all PCOS presents the same way. Researchers have identified four distinct ph
 
 Understanding which phenotype applies helps guide treatment. Type A and B tend to have stronger metabolic components and respond especially well to insulin-sensitizing interventions. Type C may benefit more from anti-androgen approaches. Type D may require different strategies altogether.
 
-## The Root Causes: Beyond the Ovaries
+<span id="the-root-causes-beyond-the-ovaries" class="article-anchor" aria-hidden="true"></span>
+
+## Contributing Factors
 
 ### Insulin Resistance: The Central Player
 
@@ -187,12 +190,6 @@ While natural approaches are effective for many women with PCOS, some situations
 You should consult with your healthcare provider if you are trying to conceive and have not achieved pregnancy after 6-12 months of well-timed intercourse, if you have very irregular or absent periods that have not responded to lifestyle interventions, if you have signs of severe insulin resistance such as acanthosis nigricans (dark, velvety skin patches) or very high fasting insulin levels, if you are experiencing depression, anxiety or disordered eating related to PCOS, or if you need assistance with acne or hirsutism that significantly affects your quality of life.
 
 Conventional treatments including metformin, oral contraceptives and fertility medications have their place and can be combined with natural approaches for optimal results.
-
-## A Comprehensive Approach in Halifax
-
-PCOS is complex, but it responds well to a comprehensive approach that addresses the underlying metabolic dysfunction rather than just treating symptoms. Through careful assessment of your individual presentation, targeted dietary and lifestyle recommendations, appropriate supplementation and ongoing support, significant improvement is possible for most women.
-
-If you are struggling with PCOS and would like to explore naturopathic approaches, please contact Dr. Colin MacLeod, ND to book an initial appointment. Dr. MacLeod offers comprehensive hormonal health assessments and individualized treatment plans for women with PCOS and other hormonal conditions.
 
 ## References
 

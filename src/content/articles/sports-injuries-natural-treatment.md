@@ -1,14 +1,17 @@
 ---
 title: "Natural Treatment for Sports Injuries"
-description: "Naturopathic treatment of sports injuries including prolotherapy, acupuncture and nutritional support can accelerate healing and help prevent re-injury."
+description: "An overview of sports injuries, treatment approaches, nutritional support and preventing re-injury."
 publishDate: 2024-03-20
-modifiedDate: 2024-12-03
+modifiedDate: 2026-09-07
 heroImage: "/images/general/sports-injury-treatment.webp"
 categories: ["Pain Management", "Sports Performance & Injury"]
 tags: ["sports injuries", "prolotherapy", "acupuncture", "injury recovery", "naturopathic"]
 seo:
   description: "Naturopathic treatment of sports injuries including prolotherapy, acupuncture and nutritional support for faster healing."
   focusKeyword: "sports injury natural treatment"
+relatedLinks:
+  - title: "Sports performance and injury care"
+    href: "/sports-performance-injury/"
 ---
 
 ## A Naturopathic Approach to Sports Injuries
@@ -47,11 +50,11 @@ Key nutrients for tissue repair include vitamin C (essential for collagen synthe
 
 Successful treatment goes beyond pain relief to address the factors that contributed to injury in the first place. Poor biomechanics, muscle imbalances and training errors such as rapid increases in volume, insufficient recovery, inadequate warm-up or training through pain are common contributors that should be addressed as part of a comprehensive treatment plan<sup>7</sup>.
 
-## Sports Injury Treatment in Halifax
+## When to Seek Assessment
 
-If you are experiencing pain that limits your training or competition, injuries that have not responded to rest alone, recurring injuries in the same area or chronic joint instability, please contact Dr. Colin MacLeod, ND to book an initial naturopathic visit to discuss your options. Learn more about our [sports performance and injury care](/sports-performance-injury/).
+If you are experiencing pain that limits your training or competition, injuries that have not responded to rest alone, recurring injuries in the same area or chronic joint instability, seek assessment to discuss your symptoms and treatment options.
 
-### References
+## References
 
 1. Cook JL, Purdam CR. Is tendon pathology a continuum? A pathology model to explain the clinical presentation of load-induced tendinopathy. *Br J Sports Med*. 2009 Jun;43(6):409-16.
 2. Hubbard TJ, Hicks-Little CA. Ankle ligament healing after an acute ankle sprain: an evidence-based approach. *J Athl Train*. 2008 Sep-Oct;43(5):523-9.

@@ -1,8 +1,8 @@
 ---
 title: "Strengthening Your Immune System Naturally"
-description: "The immune system is a complex network that can be supported through proper nutrition, lifestyle factors and naturopathic treatments including IV therapy."
+description: "An overview of nutrition, lifestyle and approaches discussed for immune support, including when to seek assessment."
 publishDate: 2024-01-30
-modifiedDate: 2024-12-03
+modifiedDate: 2026-09-07
 author: "Dr. Colin MacLeod, ND"
 heroImage: "/images/general/immune-health.webp"
 categories: ["Naturopathic", "Immune Health"]
@@ -10,6 +10,9 @@ tags: ["immune system", "vitamin D", "IV therapy", "naturopathic"]
 seo:
   description: "Natural approaches to immune health including key nutrients, lifestyle factors and IV therapy for optimal immune function."
   focusKeyword: "natural immune support"
+relatedLinks:
+  - title: "Post-viral recovery with IV therapy"
+    href: "/articles/post-viral-recovery-iv-therapy/"
 ---
 
 ## Understanding Immune Function
@@ -42,15 +45,13 @@ A whole-foods diet rich in colorful vegetables and fruits, quality proteins and 
 
 Botanical products have a long history of traditional use, and modern research has examined selected herbs for immune-related outcomes<sup>8</sup>. Evidence and safety vary by product, so an individualized plan should account for possible interactions with medications and contraindications.
 
-## When to Seek Naturopathic Immune Support
+<span id="when-to-seek-naturopathic-immune-support" class="article-anchor" aria-hidden="true"></span>
+
+## When to Seek Assessment
 
 If you experience frequent colds or infections, infections that linger or are difficult to resolve, chronic fatigue or slow wound healing, a naturopathic assessment may be beneficial. Your naturopathic doctor can assess immune function through detailed health history, nutrient testing including vitamin D levels and evaluation of lifestyle factors affecting immunity.
 
-## Immune Support in Halifax
-
-If you are interested in optimizing your immune function or are experiencing recurrent infections, please contact Dr. Colin MacLeod, ND to book an initial naturopathic visit to discuss your options. If you're struggling with fatigue following a viral illness, see our guide on [post-viral recovery with IV therapy](/articles/post-viral-recovery-iv-therapy/).
-
-### References
+## References
 
 1. Chaplin DD. Overview of the immune response. *J Allergy Clin Immunol*. 2010 Feb;125(2 Suppl 2):S3-23.
 2. Aranow C. Vitamin D and the immune system. *J Investig Med*. 2011 Aug;59(6):881-6.

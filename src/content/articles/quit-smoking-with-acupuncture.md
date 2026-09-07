@@ -1,13 +1,16 @@
 ---
 title: "Quit Smoking With Acupuncture"
-description: "Acupuncture helps reduce nicotine cravings and improves smoking cessation rates. Learn how this traditional treatment supports quitting smoking."
+description: "A discussion of acupuncture research, smoking-related health risks and conventional smoking-cessation treatments."
 publishDate: 2017-07-28
-modifiedDate: 2022-07-12
+modifiedDate: 2026-09-07
 heroImage: "/images/reference/services/acupuncture.webp"
 categories: ["Naturopathic"]
 tags: ["naturopathic"]
 seo:
   focusKeyword: "quit smoking acupuncture"
+relatedLinks:
+  - title: "Acupuncture services"
+    href: "/acupuncture/"
 ---
 
 Smoking has a major impact on our population. In Canada, 17% of adults smoke regularly<sup>1</sup> and 16.6% of people die due to smoking-related causes<sup>2</sup>. The leading smoking-induced causes of death in Canada are cancer (47%), cardiovascular disease (28%) and respiratory diseases (22%)<sup>2</sup>.
@@ -38,11 +41,7 @@ A review of smoking research by the U.S. Surgeon General<sup>9</sup> concluded t
 
 As far as conventional treatment for quitting smoking goes, nicotine replacement therapy (patches, gum)<sup>10</sup>, varenicline (Champix) and buproprion (Zyban) all help to reduce craving and promote abstinence, though each has possible side effects. Champix can cause gastrointestinal side effects<sup>11</sup> and research has shown that it may increase cardiovascular risk<sup>12</sup>. Nicotine gum or patches are generally quite safe but should not be used during pregnancy due to an increased risk of congenital malformations<sup>13</sup>. Zyban which is also used as an anti-depressant is another safe treatment with more mild side effects of insomnia, dry mouth and nausea.
 
-## Acupuncture To Quit Smoking in Halifax
-
-If you are interested in receiving acupuncture to help quit smoking in the Halifax area, please contact Dr. Colin MacLeod, ND to book an initial naturopathic visit to discuss your options. Learn more about our [acupuncture services](/acupuncture/).
-
-### References
+## References
 
 1. Reid JL, Hammond D, Rynard VL, Burkhalter R. Tobacco Use in Canada: Patterns and Trends, 2014 Edition. Waterloo, ON: Propel Centre for Population Health Impact, University of Waterloo.
 2. Baliunas D, Patra J, Rehm J, Popova S, Kaiserman M, Taylor B. Smoking-attributable mortality and expected years of life lost in Canada 2002: conclusions for prevention and policy. *Chronic Dis Can*. 2007;27(4):154-62.

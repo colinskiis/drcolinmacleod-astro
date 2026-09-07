@@ -1,8 +1,8 @@
 ---
 title: "Creatine: Beyond Muscle Building"
-description: "Creatine was named 'supplement of the year' for 2025. Learn about the emerging research on creatine for brain health, women's health and benefits beyond the gym."
+description: "Established uses in sport, emerging research on brain health and practical considerations for creatine supplementation."
 publishDate: 2024-08-17
-modifiedDate: 2026-01-09
+modifiedDate: 2026-09-07
 author: "Dr. Colin MacLeod, ND"
 heroImage: "/images/nutrition/creatine-brain-muscle.webp"
 categories: ["Naturopathic", "Sports Performance & Injury"]
@@ -10,9 +10,14 @@ tags: ["creatine", "brain health", "women's health", "supplements", "naturopathi
 seo:
   description: "Evidence-based guide to creatine benefits beyond muscle. Learn about creatine for brain health, cognitive function, women's health and menopause."
   focusKeyword: "creatine benefits"
+relatedLinks:
+  - title: "Sports performance and injury care"
+    href: "/sports-performance-injury/"
 ---
 
-## Creatine's Moment in the Spotlight
+<span id="creatines-moment-in-the-spotlight" class="article-anchor" aria-hidden="true"></span>
+
+## Interest in Creatine
 
 Creatine has been declared the "supplement of the year" for 2025, and for good reason. Long associated with bodybuilders and gym enthusiasts, creatine is now gaining attention for benefits that extend far beyond muscle building, including brain health, cognitive function and specific benefits for women.
 
@@ -24,13 +29,17 @@ Creatine is a naturally occurring compound found primarily in muscle tissue, wit
 
 Creatine's primary function is energy production. It helps regenerate ATP (adenosine triphosphate), the molecule your cells use as their primary energy currency. When your muscles or brain need quick energy, creatine is there to help replenish ATP stores.
 
-## The Traditional Use: Athletic Performance
+<span id="the-traditional-use-athletic-performance" class="article-anchor" aria-hidden="true"></span>
+
+## Athletic Performance
 
 The evidence for creatine's benefits in exercise performance is robust and well-established. Research consistently shows increased strength and power output during high-intensity activities, enhanced muscle recovery between sets and workouts, increased lean muscle mass when combined with resistance training and improved performance in repeated sprint activities.
 
 Creatine is one of the most studied supplements in sports nutrition, with decades of research supporting its safety and efficacy for athletic performance<sup>1</sup>.
 
-## The Emerging Story: Brain Health
+<span id="the-emerging-story-brain-health" class="article-anchor" aria-hidden="true"></span>
+
+## Brain Health Research
 
 Here's where things get interesting. Creatine can cross the blood-brain barrier, and your brain requires significant amounts of energy to function optimally. Researchers have begun exploring whether creatine supplementation might benefit cognitive function.
 
@@ -40,7 +49,9 @@ The mechanism involves creatine helping to regenerate ATP in neurons with increa
 
 While the research is promising, it's important to note that the evidence for cognitive benefits is still developing. Many studies are small, and the effects appear most pronounced under conditions of stress or cognitive challenge rather than in well-rested, healthy individuals<sup>4</sup>.
 
-## Creatine for Women: Closing the Research Gap
+<span id="creatine-for-women-closing-the-research-gap" class="article-anchor" aria-hidden="true"></span>
+
+## Research in Women
 
 Historically, creatine research has focused predominantly on men. Women have made up only about one-third of exercise science study subjects, and even fewer in creatine-specific trials<sup>5</sup>. This is changing, and the emerging research is particularly relevant for women.
 
@@ -80,17 +91,15 @@ Several myths about creatine have been debunked by research. Creatine does not c
 
 Those with pre-existing kidney disease or anyone on medications affecting kidney function should consult their healthcare provider before starting creatine.
 
-## The Bottom Line
+<span id="the-bottom-line" class="article-anchor" aria-hidden="true"></span>
+
+## Putting the Evidence in Context
 
 Creatine has evolved from a bodybuilding supplement to a compound with genuinely broad applications. The research supporting its traditional uses in athletic performance is robust, and the emerging evidence for cognitive benefits, particularly for women and older adults, is compelling.
 
 For most people, creatine is safe, affordable and backed by decades of research. Whether you're an athlete looking to optimize performance, a woman navigating perimenopause or someone interested in supporting cognitive health, creatine deserves consideration.
 
-## Creatine and Sports Performance & Injury in Halifax
-
-If you're interested in learning whether creatine supplementation might benefit your specific situation, or if you have questions about optimizing your athletic performance and recovery, please contact Dr. Colin MacLeod, ND to book an initial visit. Dr. MacLeod provides [sports performance and injury care](/sports-performance-injury/) and works with athletes and active individuals to develop evidence-based supplementation and training strategies.
-
-### References
+## References
 
 1. Kreider RB, Kalman DS, Antonio J, et al. International Society of Sports Nutrition position stand: safety and efficacy of creatine supplementation in exercise, sport and medicine. *J Int Soc Sports Nutr*. 2017;14:18.
 2. Prokopidis K, Giannos P, Triantafyllidis KK, et al. Effects of creatine supplementation on cognitive function of healthy individuals: A systematic review and meta-analysis. *Front Nutr*. 2024;11:1127132.

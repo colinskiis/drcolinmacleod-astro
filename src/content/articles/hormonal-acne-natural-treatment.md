@@ -1,18 +1,21 @@
 ---
-title: "Hormonal Acne: Understanding and Treating Adult Breakouts Naturally"
-description: "Learn about the root causes of hormonal acne and evidence-based natural approaches to clearing skin from the inside out."
+title: "Hormonal Acne: Understanding Adult Breakouts"
+description: "Hormonal influences on adult acne, dietary and treatment considerations, and when further assessment may help."
 publishDate: 2025-05-19
+modifiedDate: 2026-09-07
 author: "Dr. Colin MacLeod, ND"
 heroImage: "/images/general/healthy-lifestyle.webp"
 categories: ["Naturopathic", "Women's Health", "Skin Health"]
 tags: ["acne", "hormones", "skin health", "natural treatment", "women's health", "Halifax"]
 seo:
   title: "Natural Approaches to Hormonal Acne"
-  description: "Learn about the root causes of hormonal acne and evidence-based natural approaches to clearing skin from the inside out."
+  description: "Hormonal influences on adult acne, dietary and treatment considerations, and when further assessment may help."
   focusKeyword: "hormonal acne treatment natural"
 ---
 
-## When Acne Persists Past Adolescence
+<span id="when-acne-persists-past-adolescence" class="article-anchor" aria-hidden="true"></span>
+
+## Adult Acne
 
 Many people expect acne to disappear after their teenage years. For a significant number of adults, particularly women, this expectation goes unmet. Adult acne affects up to 50% of women in their twenties and 25% of women in their forties<sup>1</sup>. This persistent or late-onset acne is frequently hormonal in nature, driven by factors very different from the acne of adolescence.
 
@@ -22,7 +25,9 @@ Hormonal acne typically looks different from typical teenage acne. It tends to a
 
 Understanding the mechanisms behind hormonal acne reveals why topical treatments alone often fail, and why addressing the underlying hormonal and metabolic factors can finally bring lasting improvement.
 
-## The Hormonal Mechanisms Behind Acne
+<span id="the-hormonal-mechanisms-behind-acne" class="article-anchor" aria-hidden="true"></span>
+
+## Hormones and Acne
 
 ### Androgens: The Primary Drivers
 
@@ -58,7 +63,9 @@ Chronic stress elevates cortisol, which promotes acne through several mechanisms
 
 Many women notice their skin worsens during stressful periods. This is not coincidence or imagination but a real physiological response.
 
-## Beyond Hormones: Other Contributing Factors
+<span id="beyond-hormones-other-contributing-factors" class="article-anchor" aria-hidden="true"></span>
+
+## Other Contributing Factors
 
 ### Gut Health and the Gut-Skin Axis
 
@@ -181,14 +188,6 @@ For those interested in natural topical options, tea tree oil has antimicrobial 
 Some cases of hormonal acne benefit from conventional medical treatment. Consider consulting a healthcare provider if acne is severe or cystic, if natural approaches have not provided sufficient improvement after three to six months, if there are signs of underlying hormonal conditions such as PCOS, if acne is causing significant psychological distress or if you need support for scarring.
 
 Options may include prescription topicals (retinoids, antibiotics), oral medications (spironolactone, birth control pills, isotretinoin) or referral to a dermatologist or endocrinologist.
-
-## A Comprehensive Approach in Halifax
-
-Clearing hormonal acne requires addressing root causes rather than just treating symptoms. For most women, this means improving insulin sensitivity through diet and lifestyle, supporting healthy hormone metabolism, addressing gut health, reducing inflammation and managing stress.
-
-While this approach requires more effort than applying a topical cream, the results are often more lasting and come with additional benefits for overall health.
-
-If you are struggling with hormonal acne and would like to explore naturopathic approaches, please contact Dr. Colin MacLeod, ND to book an initial appointment. Dr. MacLeod offers comprehensive hormonal assessments and individualized treatment plans for hormonal acne and other skin conditions.
 
 ## References
 

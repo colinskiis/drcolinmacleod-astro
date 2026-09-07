@@ -1,8 +1,8 @@
 ---
-title: "Fiber: The Boring Nutrient That Actually Works"
-description: "While social media promotes miracle supplements and detox cleanses, fiber remains the most underconsumed and underappreciated nutrient. Here's why it deserves your attention."
+title: "Fiber: Food Sources and Everyday Benefits"
+description: "What fiber does, where to find it and practical ways to increase your intake gradually."
 publishDate: 2024-10-06
-modifiedDate: 2026-01-09
+modifiedDate: 2026-09-07
 author: "Dr. Colin MacLeod, ND"
 heroImage: "/images/nutrition/fruits-vegetables.webp"
 categories: ["Naturopathic", "Nutrition", "Digestive Health"]
@@ -10,6 +10,11 @@ tags: ["fiber", "gut health", "nutrition", "digestive health", "naturopathic"]
 seo:
   description: "Evidence-based guide to dietary fiber. Learn why 95% of people don't get enough fiber and how this simple nutrient supports gut health, weight management and disease prevention."
   focusKeyword: "dietary fiber benefits"
+relatedLinks:
+  - title: "Clinical nutrition services"
+    href: "/clinical-nutrition/"
+  - title: "Digestive health assessments"
+    href: "/articles/digestive-health-natural-approaches/"
 ---
 
 ## The Most Underrated Nutrient
@@ -32,7 +37,9 @@ Our ancestors consumed far more fiber daily from wild plants, roots and seeds th
 
 The fiber gap reflects our shift away from whole foods toward processed foods, which typically have fiber removed during manufacturing.
 
-## What Fiber Does for Your Gut Microbiome
+<span id="what-fiber-does-for-your-gut-microbiome" class="article-anchor" aria-hidden="true"></span>
+
+## Fiber and the Gut Microbiome
 
 Your gut contains trillions of bacteria collectively known as the microbiome. These bacteria need to eat, and their preferred food is fiber.
 
@@ -100,7 +107,9 @@ Rather than eliminating foods, focus on adding fiber-rich options. Add vegetable
 
 **Simple salads:** Start with a basic template: two handfuls of spinach or mixed greens, a few sliced strawberries or berries and a simple olive oil and balsamic dressing (3:1 ratio). Keep it easy and you'll actually make it.
 
-## Fiber Supplements: When and Which
+<span id="fiber-supplements-when-and-which" class="article-anchor" aria-hidden="true"></span>
+
+## Fiber Supplements
 
 While whole foods are preferable, fiber supplements can be useful in some situations.
 
@@ -124,19 +133,13 @@ Different fibers affect IBS differently. Soluble fiber (psyllium, oats) is often
 
 Vegetables are excellent but often lower in fiber than you'd expect. A cup of lettuce has less than one gram of fiber. The highest-fiber foods are legumes, whole grains and certain fruits and vegetables like raspberries, peas and artichokes.
 
-## The Bottom Line
+<span id="the-bottom-line" class="article-anchor" aria-hidden="true"></span>
 
-Fiber won't go viral on TikTok. It doesn't promise overnight transformation. But the evidence is clear: adequate fiber intake is one of the most effective things you can do for digestive health, metabolic health, cardiovascular health and longevity.
+## Putting the Evidence in Context
 
-In a world of health trends that come and go, fiber has remained consistently beneficial across decades of research. It's affordable, available and effective.
+Focus on practical, gradual changes: include a wider variety of plant foods, increase fiber as tolerated and choose foods that work for your digestion. The everyday habits outlined above matter more than a single supplement.
 
-The unglamorous truth? Sometimes the most powerful health intervention is also the simplest: eat more plants.
-
-## Digestive Health Support in Halifax
-
-If you're experiencing digestive issues, want guidance on optimizing your fiber intake or need help identifying which foods work best for your individual situation, please contact Dr. Colin MacLeod, ND to book an initial visit. Dr. MacLeod offers [clinical nutrition services](/clinical-nutrition/) and comprehensive [digestive health assessments](/articles/digestive-health-natural-approaches/) to help you develop an eating pattern that supports your gut health and overall wellness.
-
-### References
+## References
 
 1. Quagliani D, Felt-Gunderson P. Closing America's Fiber Intake Gap. *Am J Lifestyle Med*. 2017;11(1):80-85.
 2. Institute of Medicine. Dietary Reference Intakes for Energy, Carbohydrate, Fiber, Fat, Fatty Acids, Cholesterol, Protein and Amino Acids. Washington, DC: National Academies Press; 2005.

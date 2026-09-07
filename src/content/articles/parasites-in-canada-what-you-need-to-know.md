@@ -1,8 +1,8 @@
 ---
-title: "Parasites in Canada: Separating Social Media Hype from Science"
-description: "Parasite cleanses are trending on TikTok and Instagram, but are they necessary? A Canadian naturopathic doctor separates fact from fiction about parasitic infections."
+title: "Parasites in Canada: Testing and Common Claims"
+description: "When to consider parasite testing, why symptoms need assessment and the problems with online cleanse claims."
 publishDate: 2024-11-25
-modifiedDate: 2026-01-09
+modifiedDate: 2026-09-07
 heroImage: "/images/general/digestive-testing.webp"
 categories: ["Naturopathic", "Digestive Health"]
 tags: ["parasites", "digestive health", "gut health", "naturopathic"]
@@ -10,6 +10,9 @@ seo:
   title: "Parasites in Canada: Hype Versus Science"
   description: "Evidence-based guide to parasites in Canada. Learn when parasite testing is appropriate and why most people don't need a 'parasite cleanse.'"
   focusKeyword: "parasites Canada"
+relatedLinks:
+  - title: "Lab testing services"
+    href: "/lab-testing/"
 ---
 
 ## The Parasite Craze on Social Media
@@ -30,7 +33,9 @@ Cryptosporidium is another waterborne parasite that can cause watery diarrhea, t
 
 Blastocystis hominis is a very common finding on stool testing, though it's controversial whether it actually causes symptoms. Many people carry it without any issues, and treatment is typically only considered if the person is symptomatic and no other cause is found.
 
-## When Should You Actually Consider Parasites?
+<span id="when-should-you-actually-consider-parasites" class="article-anchor" aria-hidden="true"></span>
+
+## When to Consider Parasites
 
 While parasites shouldn't be the first explanation for common symptoms, there are situations where testing makes sense.
 
@@ -64,7 +69,9 @@ Blood testing is useful for certain parasites that don't show up in stool and ca
 
 Some parasites require specialized testing methods. Pinworm testing, for example, uses tape applied to the perianal area in the morning.
 
-## What's More Likely Causing Your Symptoms?
+<span id="whats-more-likely-causing-your-symptoms" class="article-anchor" aria-hidden="true"></span>
+
+## Other Causes of Digestive Symptoms
 
 If you're experiencing bloating, fatigue or digestive issues, consider these more common explanations.
 
@@ -86,13 +93,7 @@ If parasites are suspected, get proper testing first. Treatment should be target
 
 Address more common causes of your symptoms through comprehensive evaluation, and support your gut health through evidence-based strategies including diverse fiber intake, fermented foods, stress management and avoiding unnecessary gut irritants.
 
-## Parasite Testing and Digestive Health in Halifax
-
-If you're concerned about parasites or experiencing persistent digestive symptoms, please contact Dr. Colin MacLeod, ND to book an initial visit. Dr. MacLeod offers comprehensive [lab testing services](/lab-testing/) including stool analysis and can help determine the actual cause of your symptoms rather than guessing based on social media trends.
-
-A thorough evaluation often reveals that symptoms attributed to parasites have entirely different, and very treatable, causes. Evidence-based naturopathic care means identifying what's actually going on in your body, not following internet fads.
-
-### References
+## References
 
 1. Public Health Agency of Canada. Giardiasis and Cryptosporidiosis surveillance data.
 2. Torgerson PR, Devleesschauwer B, Praet N, et al. World Health Organization Estimates of the Global and Regional Disease Burden of 11 Foodborne Parasitic Diseases. *PLoS Med*. 2015;12(12):e1001920.

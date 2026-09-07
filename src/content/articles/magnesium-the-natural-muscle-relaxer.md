@@ -1,8 +1,8 @@
 ---
-title: "Magnesium - The Natural Muscle Relaxer"
-description: "Magnesium is a mineral essential for healthy muscles, nervous system, cardiovascular system and digestive tract. Learn about magnesium deficiency symptoms and food sources."
+title: "Magnesium: Food Sources and Supplementation"
+description: "Magnesium food sources, daily requirements, supplementation and considerations when interpreting blood tests."
 publishDate: 2019-09-24
-modifiedDate: 2022-07-12
+modifiedDate: 2026-09-07
 author: "Dr. Colin MacLeod, ND"
 heroImage: "/images/nutrition/magnesium-muscle-foods.webp"
 categories: ["Naturopathic"]

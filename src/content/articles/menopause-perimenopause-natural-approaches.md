@@ -1,15 +1,23 @@
 ---
 title: "Menopause and Perimenopause: Natural Approaches"
-description: "Learn how naturopathic care supports women through perimenopause and menopause with evidence-based natural approaches including nutrition, lifestyle and herbal therapies."
+description: "Understanding the menopausal transition, care options and symptoms that deserve further assessment."
 publishDate: 2025-07-08
+modifiedDate: 2026-09-07
 author: "Dr. Colin MacLeod, ND"
 heroImage: "/images/general/menopause-woman.webp"
 categories: ["Naturopathic", "Hormones"]
 tags: ["menopause", "perimenopause", "hormones", "women's health", "Halifax", "natural treatment"]
 seo:
   title: "Menopause and Perimenopause: Natural Approaches | Halifax ND"
-  description: "Learn how naturopathic care supports women through perimenopause and menopause with evidence-based natural approaches including nutrition, lifestyle and herbal therapies."
+  description: "Understanding the menopausal transition, care options and symptoms that deserve further assessment."
   focusKeyword: "menopause natural treatment Halifax"
+relatedLinks:
+  - title: "Advanced laboratory testing"
+    href: "/lab-testing/"
+  - title: "Clinical nutrition"
+    href: "/clinical-nutrition/"
+  - title: "Herbal products"
+    href: "/herbal-therapy/"
 ---
 
 ## Understanding the Transition
@@ -126,13 +134,7 @@ Finally, women who want to understand what's happening in their bodies and make 
 
 ## Moving Forward
 
-Menopause is a universal experience for women who live long enough, yet each woman's journey through this transition is unique. Some women find the cessation of menstruation liberating, a freedom from monthly cycles and contraception concerns. Others grieve the end of fertility or struggle with changes in how they feel in their bodies. Many experience a mixture of these responses along with the practical challenge of managing symptoms.
-
-The naturopathic approach recognizes this complexity. We work with each woman to understand her individual experience, identify the factors contributing to her symptoms and develop a personalized plan that addresses both immediate comfort and long-term health. This may involve dietary modifications, targeted supplementation, herbal products, stress management strategies and coordination with other healthcare providers when appropriate.
-
-For women in Halifax and throughout Nova Scotia seeking support for perimenopause or menopause, Dr. Colin MacLeod, ND offers comprehensive assessment and individualized care. We can evaluate hormonal status through [advanced laboratory testing](/lab-testing/), provide guidance on [clinical nutrition](/clinical-nutrition/) tailored to hormonal health and recommend appropriate [herbal products](/herbal-therapy/) when indicated. The goal is to help women not merely survive this transition, but to emerge feeling healthy, vital and empowered.
-
----
+Each woman's experience of menopause is different. Care should reflect both immediate symptoms and long-term health, with dietary and lifestyle support, appropriate treatment and coordination between healthcare providers.
 
 ## References
 

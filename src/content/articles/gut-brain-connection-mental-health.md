@@ -1,8 +1,8 @@
 ---
-title: "The Gut-Brain Connection: How Your Digestive System Affects Mental Health"
-description: "The gut-brain axis is revolutionizing our understanding of mental health. Learn how your gut microbiome influences mood, anxiety and cognitive function."
+title: "The Gut-Brain Connection and Mental Health"
+description: "How the gut and brain communicate, what the research suggests and where its limitations matter."
 publishDate: 2024-10-31
-modifiedDate: 2026-01-09
+modifiedDate: 2026-09-07
 author: "Dr. Colin MacLeod, ND"
 heroImage: "/images/general/gut-brain-connection.webp"
 categories: ["Naturopathic", "Digestive Health", "Mental Health"]
@@ -11,6 +11,9 @@ seo:
   title: "The Gut-Brain Connection and Mental Health"
   description: "Evidence-based guide to the gut-brain connection. Learn how your gut microbiome affects mental health and what you can do to support both."
   focusKeyword: "gut brain connection"
+relatedLinks:
+  - title: "Digestive health"
+    href: "/articles/digestive-health-natural-approaches/"
 ---
 
 ## Your Second Brain
@@ -79,7 +82,9 @@ When signals travel from brain to gut, psychological stress alters gut motility 
 
 This bidirectionality means that gut problems can cause or worsen mental health symptoms, mental health problems can cause or worsen gut symptoms and addressing one often helps the other.
 
-## Practical Implications: Supporting the Gut-Brain Axis
+<span id="practical-implications-supporting-the-gut-brain-axis" class="article-anchor" aria-hidden="true"></span>
+
+## Supporting Gut and Mental Health
 
 While the research is still evolving, several evidence-based strategies support gut-brain health.
 
@@ -123,19 +128,15 @@ Individual variation matters as well. What works for one person's microbiome may
 
 Finally, this is an evolving science. This field is developing rapidly. What we "know" today may be refined or revised as research continues.
 
-## The Integrative Approach
+<span id="the-integrative-approach" class="article-anchor" aria-hidden="true"></span>
+
+## Coordinating Care
 
 The gut-brain connection highlights why treating the whole person matters. Mental health isn't just "in your head" but is influenced by diet, gut health, inflammation, hormones and more.
 
 An integrative approach might include dietary optimization for gut-brain health, addressing identified gut dysfunction, stress management and nervous system support, appropriate supplementation such as probiotics and omega-3s, conventional mental health treatment as indicated and lifestyle factors including sleep, exercise and social connection.
 
-## Gut-Brain Support in Halifax
-
-If you're experiencing digestive symptoms alongside mood concerns, or if you're interested in optimizing your gut health for overall wellbeing, please contact Dr. Colin MacLeod, ND to book an initial visit.
-
-Dr. MacLeod offers comprehensive [digestive health](/articles/digestive-health-natural-approaches/) assessment including stool testing and can help develop a personalized plan addressing both gut function and its effects on whole-body health.
-
-### References
+## References
 
 1. Vighi G, Marcucci F, Sensi L, Di Cara G, Frati F. Allergy and the gastrointestinal system. *Clin Exp Immunol*. 2008;153 Suppl 1:3-6.
 2. Yano JM, Yu K, Donaldson GP, et al. Indigenous bacteria from the gut microbiota regulate host serotonin biosynthesis. *Cell*. 2015;161(2):264-276.

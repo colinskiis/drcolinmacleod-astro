@@ -2,11 +2,11 @@
 import PublicImage from '../../components/PublicImage.astro';
 import { type CollectionEntry, getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import FAQSection from '../../components/FAQSection.astro';
+import FAQAccordion from '../../components/FAQAccordion.astro';
+import { faqPageSchema } from '../../lib/faqSchema';
 import RelatedArticles from '../../components/RelatedArticles.astro';
 import OnThisPage from '../../components/OnThisPage.astro';
 import { readingTime } from '../../lib/readingTime';
-import GithubSlugger from 'github-slugger';
 
 export async function getStaticPaths() {
   const articles = await getCollection('articles', ({ data }) => data.draft !== true);
@@ -19,21 +19,17 @@ export async function getStaticPaths() {
 type Props = CollectionEntry<'articles'>;
 
 const article = Astro.props;
-const { Content } = await render(article);
+const { Content, headings } = await render(article);
 const minutes = readingTime(article.body ?? "");
 
 const heroImage = article.data.heroImage;
 const heroWebp =
   heroImage?.replace(/\.(png|jpe?g)$/i, '.webp') ?? null;
 const heroUsesWebp = heroImage?.endsWith('.webp') ?? false;
-const slugger = new GithubSlugger();
-const tocItems = Array.from((article.body ?? "").matchAll(/^##\s+(.+)$/gm))
-  .map((match) => match[1].replace(/<\/?[^>]+>/g, '').replace(/[*_`]/g, '').trim())
-  .filter((heading) => heading && heading.toLowerCase() !== 'references')
-  .map((heading) => ({
-    title: heading,
-    id: slugger.slug(heading),
-  }));
+// Use rendered headings so the navigation exactly matches Astro's anchor IDs.
+const tocItems = headings
+  .filter(({ depth, text }) => depth === 2 && text.toLowerCase() !== 'references')
+  .map(({ text, slug }) => ({ title: text, id: slug }));
 const showToc = tocItems.length >= 4;
 
 // SEO preparation
@@ -43,6 +39,7 @@ const focusKeyword = article.data.seo?.focusKeyword || '';
 
 // Format dates
 const publishedDate = new Date(article.data.publishDate).toLocaleDateString('en-US', {
+  timeZone: 'UTC',
   year: 'numeric',
   month: 'long',
   day: 'numeric'
@@ -50,6 +47,7 @@ const publishedDate = new Date(article.data.publishDate).toLocaleDateString('en-
 
 const modifiedDate = article.data.modifiedDate
   ? new Date(article.data.modifiedDate).toLocaleDateString('en-US', {
+      timeZone: 'UTC',
       year: 'numeric',
       month: 'long',
       day: 'numeric'
@@ -77,7 +75,7 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 3,
       "name": article.data.title,
-      "item": `https://drcolinmacleod.com/articles/${article.id}`
+      "item": `https://drcolinmacleod.com/articles/${article.id}/`
     }
   ]
 };
@@ -100,12 +98,12 @@ const breadcrumbSchema = {
   <div id="reading-progress" class="fixed top-0 left-0 h-[3px] bg-emerald-500 z-50 transition-[width] duration-75 ease-out" style="width: 0%"></div>
 
   <!-- Article Header -->
-  <article class="py-10 lg:py-16 bg-white">
+  <article class="article-page py-8 sm:py-12 lg:py-16 bg-white">
     <div class="section-shell">
-      <div class="max-w-4xl mx-auto">
+      <div class="article-shell mx-auto">
 
         <!-- Breadcrumbs -->
-        <nav class="flex items-center space-x-2 text-sm mb-8">
+        <nav aria-label="Breadcrumb" class="flex items-center space-x-2 text-sm mb-7">
           <a href="/" class="-mx-1 inline-flex min-h-6 items-center rounded px-1 font-medium text-emerald-800 transition-colors hover:text-emerald-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500">Home</a>
           <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -118,12 +116,13 @@ const breadcrumbSchema = {
         </nav>
 
         <!-- Article Header -->
-        <header class="mb-12 max-w-[70ch]">
-          <h1 class="text-4xl sm:text-5xl font-serif font-medium text-emerald-950 mb-6 leading-tight tracking-tight">
+        <header class="article-header mb-8">
+          <p class="mb-4 text-xs font-semibold uppercase tracking-[0.16em] text-emerald-800">Health journal</p>
+          <h1 class="text-[2.125rem] sm:text-5xl font-serif font-medium text-emerald-950 mb-5 leading-[1.15] tracking-tight">
             {article.data.title}
           </h1>
 
-          <p class="text-xl text-slate-600 mb-6 leading-relaxed">
+          <p class="text-lg sm:text-xl text-slate-600 mb-6 leading-relaxed">
             {article.data.description}
           </p>
 
@@ -139,8 +138,8 @@ const breadcrumbSchema = {
             <div>
               <span class="text-sm font-semibold text-slate-900">{article.data.author}</span>
               <div class="flex flex-wrap items-center gap-x-3 text-xs text-slate-500 mt-0.5">
-                <time>{publishedDate}</time>
-                {modifiedDate && <span>Updated {modifiedDate}</span>}
+                <time datetime={article.data.publishDate.toISOString()}>Published {publishedDate}</time>
+                {modifiedDate && <time datetime={article.data.modifiedDate?.toISOString()}>Edited {modifiedDate}</time>}
                 <span>{minutes} min read</span>
               </div>
             </div>
@@ -149,7 +148,7 @@ const breadcrumbSchema = {
 
         <!-- Hero Image -->
         {heroImage && (
-          <div class="mb-12 -mx-5 sm:mx-0 aspect-[2/1] overflow-hidden sm:rounded-xl">
+          <div class="article-cover mb-8 aspect-[12/5] overflow-hidden rounded-lg">
             <picture>
               {heroWebp && !heroUsesWebp && (
                 <source srcset={heroWebp} type="image/webp" />
@@ -166,66 +165,68 @@ const breadcrumbSchema = {
           </div>
         )}
 
-        {showToc && <OnThisPage items={tocItems} display="mobile" label="Article sections" />}
+        {showToc && <OnThisPage items={tocItems} display="mobile" breakpoint="xl" label="Article sections" />}
 
         <!-- Article Content -->
-        <div class={showToc ? 'grid lg:grid-cols-[minmax(0,1fr)_16rem] gap-10 items-start' : ''}>
-          <div class="prose max-w-[70ch]">
+        <div class="article-reading-layout">
+          <div id="article-body" class="prose article-prose">
             <Content />
           </div>
 
-          {showToc && <OnThisPage items={tocItems} display="desktop" label="Article sections" />}
+          {showToc && <OnThisPage items={tocItems} display="desktop" breakpoint="xl" label="Article sections" />}
         </div>
 
         {article.data.faq && article.data.faq.length > 0 && (
-          <div class="-mx-5 sm:mx-0 mt-12">
-            <FAQSection items={article.data.faq} />
-          </div>
+          <section class="article-supplement mt-10 border-t border-slate-200 pt-8" aria-labelledby="article-faq-heading">
+            <h2 id="article-faq-heading" class="text-2xl font-serif font-medium text-emerald-950 mb-5">Questions and answers</h2>
+            <FAQAccordion items={article.data.faq} />
+          </section>
+          <script is:inline type="application/ld+json" set:html={JSON.stringify(faqPageSchema(article.data.faq))} />
         )}
 
         <!-- Article Footer -->
-        <footer class="mt-12 pt-8 border-t border-slate-200">
+        <footer class="article-supplement mt-10 pt-8 border-t border-slate-200">
+          <div class="flex items-start gap-4 mb-10">
+            <PublicImage
+              src="/images/general/colin-hero.webp"
+              alt=""
+              class="w-12 h-12 rounded-full object-cover object-top flex-shrink-0"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="min-w-0">
+              <h2 class="text-lg font-serif font-medium text-emerald-950 mb-2">About the author</h2>
+              <p class="text-sm leading-relaxed text-slate-600 mb-2">
+                Dr. Colin MacLeod, ND is a licensed naturopathic doctor in Halifax, Nova Scotia.
+                His interests include blood test interpretation, pain care, IV therapy and exercise.
+              </p>
+              <a href="/about/" class="inline-flex min-h-11 items-center text-sm font-medium text-emerald-800 underline underline-offset-4">Meet Dr. MacLeod</a>
+            </div>
+          </div>
 
-          <!-- Related Articles -->
+          {article.data.relatedLinks && article.data.relatedLinks.length > 0 && (
+            <nav aria-label="Further resources" class="mb-8">
+              <h2 class="text-xl font-serif font-medium text-emerald-950 mb-3">Further resources</h2>
+              <ul class="flex flex-wrap gap-x-6 gap-y-1">
+                {article.data.relatedLinks.map(({ title, href }) => (
+                  <li><a href={href} class="inline-flex min-h-11 items-center text-sm text-emerald-800 underline underline-offset-4">{title}</a></li>
+                ))}
+              </ul>
+            </nav>
+          )}
+
           <RelatedArticles
             currentSlug={article.id}
             currentTags={article.data.tags || []}
             currentCategories={article.data.categories}
-            limit={5}
+            excludePaths={article.data.relatedLinks?.map(({ href }) => href)}
+            limit={3}
           />
-
-          <!-- Author Bio -->
-          <div class="bg-emerald-50/50 border border-emerald-100 rounded-2xl p-8 mb-8 mt-8 shadow-sm">
-            <div class="flex items-start space-x-4">
-              <PublicImage
-                src="/images/general/colin-hero.webp"
-                alt="Dr. Colin MacLeod, ND"
-                class="w-16 h-16 rounded-full object-cover object-top flex-shrink-0 shadow-lg"
-                loading="lazy"
-                decoding="async"
-              />
-              <div class="flex-1">
-                <h3 class="text-xl font-serif font-medium text-emerald-950 mb-2">About the Author</h3>
-                <p class="text-slate-600 mb-4">
-                  Dr. Colin MacLeod, ND is a licensed naturopathic doctor in Halifax, Nova Scotia. He has a special interest in blood test interpretation, natural pain solutions, IV therapy and the many benefits of exercise.
-                </p>
-                <a
-                  href="/about/"
-                  class="-mx-1 inline-flex min-h-6 items-center rounded px-1 text-sm font-medium text-emerald-800 transition-colors hover:text-emerald-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
-                >
-                  Learn More About Dr. MacLeod
-                  <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
 
           <!-- Back link -->
           <a
             href="/articles/"
-            class="inline-flex items-center text-emerald-800 hover:text-emerald-900 font-medium"
+            class="mt-8 inline-flex min-h-11 items-center text-emerald-800 hover:text-emerald-900 font-medium"
           >
             <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
@@ -245,25 +246,28 @@ const breadcrumbSchema = {
       // Remove previous scroll listener if navigating between articles
       if (progressListener) {
         window.removeEventListener('scroll', progressListener);
+        window.removeEventListener('resize', progressListener);
         progressListener = null;
       }
 
       const bar = document.getElementById('reading-progress');
-      const article = document.querySelector('article') as HTMLElement | null;
+      const article = document.getElementById('article-body');
       if (!bar || !article) return;
       const progressBar = bar;
       const articleEl = article;
 
       function updateProgress() {
-        const articleTop = articleEl.offsetTop;
+        const articleTop = articleEl.getBoundingClientRect().top + window.scrollY;
         const articleHeight = articleEl.offsetHeight;
         const scrolled = window.scrollY - articleTop;
-        const progress = Math.min(Math.max(scrolled / (articleHeight - window.innerHeight), 0), 1);
+        const available = articleHeight - window.innerHeight;
+        const progress = available > 0 ? Math.min(Math.max(scrolled / available, 0), 1) : (scrolled >= 0 ? 1 : 0);
         progressBar.style.width = (progress * 100) + '%';
       }
 
       progressListener = updateProgress;
       window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
       updateProgress();
     }
 

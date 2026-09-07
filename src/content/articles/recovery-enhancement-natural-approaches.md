@@ -1,14 +1,17 @@
 ---
 title: "Optimizing Recovery: Natural Approaches for Athletes"
-description: "Evidence-based strategies to enhance athletic recovery including IV therapy, nutrition, sleep optimization and natural anti-inflammatory support for faster return to training."
+description: "Training recovery, nutrition, sleep and signs that persistent fatigue or declining performance need assessment."
 publishDate: 2024-02-24
-modifiedDate: 2024-12-03
+modifiedDate: 2026-09-07
 heroImage: "/images/general/athletic-recovery.webp"
 categories: ["Sports Performance & Injury", "Naturopathic"]
 tags: ["athletic recovery", "IV therapy", "sports nutrition", "sleep", "naturopathic"]
 seo:
   description: "Evidence-based strategies to enhance athletic recovery including IV therapy, nutrition, sleep optimization and natural anti-inflammatory support."
   focusKeyword: "athletic recovery natural"
+relatedLinks:
+  - title: "Sports performance and injury care"
+    href: "/sports-performance-injury/"
 ---
 
 ## The Importance of Recovery
@@ -65,9 +68,7 @@ Monitoring recovery status helps athletes optimize their training loads. Subject
 
 Certain signs suggest that recovery may require more than basic strategies. Persistent fatigue despite adequate sleep, declining performance despite consistent training, frequent illness or infection, nagging injuries that fail to resolve, difficulty sleeping and mood changes or loss of motivation may all indicate overtraining or suboptimal recovery that warrants assessment<sup>13</sup>.
 
-A naturopathic approach to athletic recovery considers training demands and competition schedules, individual nutritional needs, sleep optimization and strategic use of treatments such as IV therapy. If you are experiencing symptoms of inadequate recovery or are interested in optimizing your performance through enhanced recovery strategies, please contact Dr. Colin MacLeod, ND to book an initial naturopathic visit. Learn more about our [sports performance and injury care](/sports-performance-injury/).
-
-### References
+## References
 
 1. Meeusen R, Duclos M, Foster C, et al. Prevention, diagnosis and treatment of the overtraining syndrome: joint consensus statement of the European College of Sport Science and the American College of Sports Medicine. *Med Sci Sports Exerc*. 2013 Jan;45(1):186-205.
 2. Peake JM, Neubauer O, Della Gatta PA, Nosaka K. Muscle damage and inflammation during recovery from exercise. *J Appl Physiol*. 2017 Mar 1;122(3):559-570.

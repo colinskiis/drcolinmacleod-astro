@@ -1,18 +1,21 @@
 ---
-title: "Asthma and Respiratory Health: Supporting Easier Breathing Naturally"
-description: "Evidence-informed ways to support respiratory health, manage asthma triggers and reduce inflammatory burden alongside appropriate medical care."
+title: "Asthma and Respiratory Health"
+description: "A guide to asthma triggers, diet and breathing practices alongside appropriate medical care."
 publishDate: 2025-01-14
+modifiedDate: 2026-09-07
 author: "Dr. Colin MacLeod, ND"
 heroImage: "/images/general/respiratory-health-lungs.webp"
 categories: ["Naturopathic", "Respiratory Health"]
 tags: ["asthma", "respiratory health", "allergies", "inflammation", "Halifax"]
 seo:
   title: "Asthma and Respiratory Health: Evidence-Informed Support"
-  description: "Evidence-informed ways to support respiratory health, manage asthma triggers and reduce inflammatory burden alongside appropriate medical care."
+  description: "A guide to asthma triggers, diet and breathing practices alongside appropriate medical care."
   focusKeyword: "respiratory health support"
 ---
 
-## The Growing Burden of Respiratory Conditions
+<span id="the-growing-burden-of-respiratory-conditions" class="article-anchor" aria-hidden="true"></span>
+
+## Respiratory Health
 
 Asthma affects approximately 10% of Canadians, making it one of the most common chronic conditions<sup>1</sup>. Beyond asthma, millions more struggle with allergic rhinitis (hay fever), chronic sinusitis and other respiratory concerns that affect their daily quality of life. In Nova Scotia, where seasonal changes bring shifting pollen counts, mold exposure and indoor air quality challenges during long winters, respiratory concerns are particularly common in my Halifax practice.
 
@@ -50,7 +53,9 @@ Chronic airway inflammation is the defining feature of asthma. This inflammation
 
 This understanding has shifted asthma treatment from purely symptom-based (bronchodilators for attacks) to controller-based (daily anti-inflammatory medications to prevent attacks). Natural approaches to asthma similarly focus on reducing this underlying inflammation.
 
-## Identifying and Avoiding Triggers
+<span id="identifying-and-avoiding-triggers" class="article-anchor" aria-hidden="true"></span>
+
+## Identifying Triggers
 
 Reducing exposure to triggers is foundational to asthma management. Common triggers include:
 
@@ -72,7 +77,9 @@ Tobacco smoke is a major asthma trigger and general respiratory toxin. Smoking c
 
 Respiratory infections, particularly viral infections, are common asthma triggers. Good hand hygiene, maintaining immune health and staying current on vaccinations (including flu) help prevent infections. Cold air can trigger bronchoconstriction. Cover your nose and mouth with a scarf in cold weather and consider warming up gradually before outdoor winter exercise. Gastroesophageal reflux (GERD) can worsen asthma, possibly through micro-aspiration or neural reflexes. Treating reflux may improve asthma control in affected individuals. Stress and strong emotions can trigger asthma attacks. Stress management is part of comprehensive asthma care.
 
-## Dietary Patterns and Respiratory Health
+<span id="dietary-patterns-and-respiratory-health" class="article-anchor" aria-hidden="true"></span>
+
+## Diet and Respiratory Health
 
 ### Anti-Inflammatory Eating
 
@@ -90,7 +97,9 @@ If you suspect food triggers, keeping a food and symptom diary or working with a
 
 Obesity is associated with more severe asthma and poorer response to medications. Excess body weight increases inflammatory mediators, impairs lung function mechanically and affects the immune responses underlying asthma. Weight loss in overweight asthmatic individuals often improves symptoms and medication requirements<sup>5</sup>.
 
-## Nutrient Status and Natural Health Products
+<span id="nutrient-status-and-natural-health-products" class="article-anchor" aria-hidden="true"></span>
+
+## Nutrients and Supplements
 
 Research has explored nutrition and natural health products in asthma and respiratory health, but the findings are mixed and do not translate into a one-size-fits-all supplement plan<sup>3,4</sup>.
 
@@ -146,19 +155,13 @@ Stress can trigger asthma attacks and worsen overall control. Stress management 
 
 The anxiety that often accompanies asthma (understandably, given the frightening nature of breathing difficulties) can itself worsen symptoms. Breaking this cycle is important.
 
-## When Natural Approaches Are Not Enough
+<span id="when-natural-approaches-are-not-enough" class="article-anchor" aria-hidden="true"></span>
+
+## When to Seek Medical Care
 
 Natural approaches to asthma work best as complements to appropriate medical care, not replacements. Seek medical care promptly if your asthma is not well-controlled despite treatment, if you are using your rescue inhaler more than twice a week (not including pre-exercise use), if you have had emergency room visits or hospitalizations for asthma, if you wake at night with asthma symptoms or if asthma limits your activities.
 
 Severe or poorly controlled asthma requires medical management. Supportive approaches can then be considered alongside that care to address triggers, inflammation and related health factors.
-
-## Comprehensive Respiratory Care in Halifax
-
-Respiratory health is influenced by multiple factors including allergens, irritants, diet, stress and overall inflammation. A comprehensive approach addresses these underlying factors while supporting optimal lung function.
-
-For patients with well-controlled asthma seeking to reduce triggers and support respiratory health naturally, or those with suboptimal control looking for complementary care, naturopathic care can help identify contributing factors. These approaches work alongside conventional care, not in place of it.
-
-If you are interested in exploring natural approaches to respiratory health, please contact Dr. Colin MacLeod, ND to book an initial appointment. Dr. MacLeod provides comprehensive assessments and individualized treatment plans for patients with asthma and other respiratory concerns, coordinating with family physicians and specialists as appropriate.
 
 ## References
 

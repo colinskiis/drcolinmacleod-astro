@@ -8,14 +8,15 @@ export interface Props {
   items: TocItem[];
   display: 'mobile' | 'desktop';
   label?: string;
+  breakpoint?: 'lg' | 'xl';
 }
 
-const { items, display, label = 'Page sections' } = Astro.props;
+const { items, display, label = 'Page sections', breakpoint = 'lg' } = Astro.props;
 ---
 
 {items.length >= 4 && display === 'mobile' && (
-  <details class="mb-8 border-y border-emerald-900/20 py-4 lg:hidden">
-    <summary class="cursor-pointer text-sm font-semibold text-emerald-950">
+  <details class:list={['mb-8 border-y border-emerald-900/20 py-1', breakpoint === 'xl' ? 'xl:hidden' : 'lg:hidden']}>
+    <summary class="min-h-11 cursor-pointer rounded py-3 text-sm font-semibold text-emerald-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600">
       On This Page
     </summary>
     <nav class="mt-4 space-y-1" aria-label={label}>
@@ -33,7 +34,7 @@ const { items, display, label = 'Page sections' } = Astro.props;
 )}
 
 {items.length >= 4 && display === 'desktop' && (
-  <aside class="sticky top-28 hidden max-h-[calc(100vh-9rem)] overflow-y-auto border-l border-emerald-900/20 pl-5 lg:block">
+  <aside class:list={['sticky top-28 hidden max-h-[calc(100vh-9rem)] overflow-y-auto border-l border-emerald-900/20 pl-5', breakpoint === 'xl' ? 'xl:block' : 'lg:block']}>
     <p class="mb-4 text-xs font-semibold uppercase tracking-wide text-emerald-700">
       On This Page
     </p>

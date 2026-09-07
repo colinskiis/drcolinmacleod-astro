@@ -9,6 +9,9 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 RewriteCond %{HTTP_HOST} ^www\.drcolinmacleod\.com [NC]
 RewriteRule ^(.*)$ https://drcolinmacleod.com/$1 [L,R=301]
 
+# Retired hydration article: retain access to related nutrition reading.
+RewriteRule ^articles/electrolytes-and-hydration-beyond-watertok/?$ /articles/nutrition/ [L,R=301]
+
 # Article redirects (old root URLs to new /articles/ paths)
 # Note: Some old articles were archived - redirecting to closest relevant page
 RewriteRule ^osteoarthritis-medication-natural-alternatives/?$ /articles/natural-treatments-for-arthritis/ [L,R=301]

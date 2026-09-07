@@ -1,8 +1,8 @@
 ---
-title: "MTHFR Gene Testing: What You Actually Need to Know"
-description: "MTHFR gene variants are common and often overhyped on social media. Learn when genetic testing is helpful, when it isn't and what evidence-based medicine says about methylation."
+title: "MTHFR Gene Testing and Methylation"
+description: "MTHFR variants, methylation and the questions to consider before pursuing genetic testing or supplements."
 publishDate: 2015-07-07
-modifiedDate: 2026-01-09
+modifiedDate: 2026-09-07
 author: "Dr. Colin MacLeod, ND"
 heroImage: "/images/charts/methylation-mthfr-brain-mind.webp"
 categories: ["Naturopathic"]
@@ -10,6 +10,9 @@ tags: ["naturopathic", "genetic testing", "methylation"]
 seo:
   description: "Evidence-based guide to MTHFR gene testing. Learn when genetic testing is helpful, when it isn't and what the research actually shows about methylation."
   focusKeyword: "MTHFR gene testing"
+relatedLinks:
+  - title: "Lab testing services"
+    href: "/lab-testing/"
 ---
 
 ## The MTHFR Buzz on Social Media
@@ -36,7 +39,9 @@ Here's something important that often gets lost in the social media conversation
 
 Studies show that approximately 40-60% of the population carries at least one copy of the C677T variant, and about 85% of people have some form of MTHFR polymorphism<sup>24</sup>. This means having an MTHFR variant puts you in the majority, not the minority.
 
-## The Problem with MTHFR Testing: What Medical Guidelines Say
+<span id="the-problem-with-mthfr-testing-what-medical-guidelines-say" class="article-anchor" aria-hidden="true"></span>
+
+## Guidelines on MTHFR Testing
 
 In 2013, the American College of Medical Genetics published guidelines advising against routine MTHFR genetic testing<sup>25</sup>. This recommendation has been supported by numerous other medical organizations including:
 
@@ -47,7 +52,9 @@ In 2013, the American College of Medical Genetics published guidelines advising 
 
 Why would these organizations recommend against testing for something that affects methylation? The key insight is this: **in the absence of elevated homocysteine levels, MTHFR variants alone are not a risk factor for disease**<sup>26</sup>.
 
-## The Better First Step: Homocysteine Testing
+<span id="the-better-first-step-homocysteine-testing" class="article-anchor" aria-hidden="true"></span>
+
+## Homocysteine Testing
 
 If the concern is whether your methylation pathways are functioning properly, there's a simpler, cheaper and more clinically useful test: measuring homocysteine levels in your blood.
 
@@ -94,17 +101,15 @@ Regardless of your MTHFR status, these evidence-based strategies support methyla
 - If homocysteine is elevated, methylated forms of folate (5-MTHF) and B12 (methylcobalamin) may be helpful
 - Work with a healthcare provider to determine appropriate doses
 
-## The Bottom Line
+<span id="the-bottom-line" class="article-anchor" aria-hidden="true"></span>
+
+## Putting the Evidence in Context
 
 MTHFR gene variants are common and, for most people, don't require any intervention. The social media narrative around MTHFR often exaggerates its significance and promotes expensive testing and supplement protocols that may not be necessary.
 
 If you're concerned about methylation, start with a homocysteine blood test. If levels are normal, your methylation is working fine. If levels are elevated, treatment is straightforward and doesn't require genetic testing to implement.
 
-## Methylation and Genetic Testing in Halifax
-
-If you have questions about methylation, homocysteine levels or whether genetic testing might be appropriate for your situation, please contact Dr. Colin MacLeod, ND to book an initial visit. Dr. MacLeod offers comprehensive [lab testing services](/lab-testing/) and can help you navigate this topic with an evidence-based approach. Dr. MacLeod has completed formal training with Dr. Ben Lynch, ND, an expert in the field of methylation.
-
-### References
+## References
 
 1. Razin A, Cedar H. DNA methylation and gene expression. *Microbiol Rev*. 1991 Sep;55(3):451-8.
 2. Kisseljova NP, Zueva ES, Pevzner VS, Grachev AN, Kisseljov FL. Methylation of CpG islands in cancer. *Mol Biol (Mosk)*. 1998 Jan;12(1):203-9.

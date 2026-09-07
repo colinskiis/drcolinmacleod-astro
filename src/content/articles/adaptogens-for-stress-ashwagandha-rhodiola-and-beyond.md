@@ -1,8 +1,8 @@
 ---
 title: "Adaptogens for Stress: Ashwagandha, Rhodiola and Beyond"
-description: "Adaptogens are trending on social media for stress relief. Here's what the research shows about ashwagandha, rhodiola and other adaptogenic herbs for managing stress and fatigue."
+description: "What research tells us about ashwagandha, rhodiola and other adaptogenic herbs, including their limitations and safety considerations."
 publishDate: 2024-06-28
-modifiedDate: 2026-01-09
+modifiedDate: 2026-09-07
 author: "Dr. Colin MacLeod, ND"
 heroImage: "/images/nutrition/adaptogens-herbs.webp"
 categories: ["Naturopathic", "Herbal Therapy"]
@@ -10,9 +10,14 @@ tags: ["adaptogens", "ashwagandha", "rhodiola", "stress", "herbal therapy", "nat
 seo:
   description: "Evidence-based guide to adaptogens including ashwagandha and rhodiola. Learn what the research shows about these herbs for stress, fatigue and cortisol."
   focusKeyword: "adaptogens stress"
+relatedLinks:
+  - title: "Herbal therapy consultations"
+    href: "/herbal-therapy/"
 ---
 
-## The Rise of Adaptogens
+<span id="the-rise-of-adaptogens" class="article-anchor" aria-hidden="true"></span>
+
+## Adaptogens and Stress
 
 Adaptogens have become one of the most popular categories of supplements, with ashwagandha in particular appearing everywhere from dedicated supplements to coffee creamers and energy drinks. The promise is appealing: natural substances that help your body "adapt" to stress and maintain balance. But what does the science actually show? Here's what the evidence tells us about these trending herbs.
 
@@ -24,7 +29,9 @@ The key characteristics that define adaptogens include producing a non-specific 
 
 Adaptogens are thought to affect the hypothalamic-pituitary-adrenal (HPA) axis, the body's central stress response system. They may help modulate cortisol production, stress-activated proteins, neurotransmitter balance and inflammatory pathways.
 
-## Ashwagandha: The Most-Studied Adaptogen
+<span id="ashwagandha-the-most-studied-adaptogen" class="article-anchor" aria-hidden="true"></span>
+
+## Ashwagandha
 
 Ashwagandha (*Withania somnifera*) has been used in Ayurvedic medicine for thousands of years and has accumulated the strongest modern research base among adaptogens.
 
@@ -52,7 +59,9 @@ Ashwagandha may increase thyroid hormone levels. Those with hyperthyroidism or t
 
 The herb should be avoided during pregnancy due to safety concerns. Rare cases of liver injury have been reported, though causality is not established.
 
-## Rhodiola: The Energy Adaptogen
+<span id="rhodiola-the-energy-adaptogen" class="article-anchor" aria-hidden="true"></span>
+
+## Rhodiola
 
 Rhodiola (*Rhodiola rosea*) has a long history of use in Russian and Scandinavian traditional medicine for fatigue, weakness and stress. I've written about Rhodiola's benefits for stress and fatigue previously, but let's review the key findings.
 
@@ -114,17 +123,15 @@ Look for quality products with standardized extracts that specify active compoun
 
 Give adaptogens time to work. They typically work gradually rather than immediately. Address fundamentals first, as adaptogens work best when basics are covered, including sleep, nutrition, exercise and stress management practices.
 
-## The Bigger Picture
+<span id="the-bigger-picture" class="article-anchor" aria-hidden="true"></span>
+
+## Putting the Evidence in Context
 
 Adaptogens can be helpful tools for stress management, but they're not a replacement for addressing the sources of stress or building sustainable coping strategies.
 
 The most effective approach combines lifestyle modification including [quality sleep](/articles/sleep-optimization-evidence-based-strategies/), exercise and nutrition with stress management practices such as meditation, breathing exercises and time in nature. Appropriate supplementation when indicated and professional support for significant stress or anxiety round out a comprehensive approach.
 
-## Adaptogen Support in Halifax
-
-If you're interested in whether adaptogens might be helpful for your situation, please contact Dr. Colin MacLeod, ND to book an initial visit. Dr. MacLeod provides [herbal therapy consultations](/herbal-therapy/) and can help determine which adaptogenic herbs (if any) are appropriate for your individual needs and ensure they're used safely alongside any medications or other treatments.
-
-### References
+## References
 
 1. Zahra K, et al. Effects of Ashwagandha (Withania Somnifera) on stress and anxiety: A systematic review and meta-analysis. *Explore*. 2024;20(6):101055.
 2. Akhgarjand C, et al. Effects of Ashwagandha Supplements on Cortisol, Stress and Anxiety Levels in Adults: A Systematic Review and Meta-Analysis. *BJPsych Open*. 2025.
