@@ -5,9 +5,9 @@ seo:
   focusKeyword: "Achilles tendinitis treatment"
 ---
 
-![Achilles tendinitis](/images/conditions/achilles-tendinitis-pain.jpeg)
-
 The Achilles tendon is the largest and strongest tendon in the human body. It forms the connection between the heel bone and the calf muscles, providing stability and function to the lower leg and foot. A healthy Achilles tendon enables a person to perform activities such walking, running, standing on their toes and climbing elevations, such as climbing stairs. An early symptom of Achilles tendinitis can be favouring of the affected foot and mild discomfort in the back of the top of the heel.
+
+![Achilles tendinitis](/images/conditions/achilles-tendinitis-pain.jpeg)
 
 Achilles tendinitis is the term used to refer to the inflammation of this tendon that usually follows excessive use. While some research suggests that women may be more commonly affected by Achilles tendinitis than men, more research needs to be performed to confirm this finding.
 

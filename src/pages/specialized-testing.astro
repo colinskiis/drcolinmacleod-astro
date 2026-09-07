@@ -1,7 +1,8 @@
 ---
+import PageJumpLinks from '../components/PageJumpLinks.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
-import CTAButton from '../components/CTAButton.astro';
+import BookingButton from '../components/BookingButton.astro';
 import FAQSection from '../components/FAQSection.astro';
 import RelatedCare from '../components/RelatedCare.astro';
 import { Check } from '@lucide/astro';
@@ -20,8 +21,10 @@ import { Check } from '@lucide/astro';
     <p>Specialized laboratory testing can extend an assessment beyond routine blood work. Available options include selected exposure, metabolic, infection and genetic tests, with <strong class="text-white">no specialist referral required</strong>.</p>
   </HeroSection>
 
+  <PageJumpLinks items={[{"id": "a-broader-range-of-testing-options", "title": "Overview"}, {"id": "specialized-testing-options", "title": "Testing options"}, {"id": "a-broader-assessment-for-complex-histories", "title": "Assessment"}, {"id": "concerns-to-review-during-your-consultation", "title": "Your concerns"}, {"id": "accessing-specialized-testing-in-nova-scotia", "title": "Accessing testing"}]} />
+
   <!-- The Problem with Standard Testing -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
+  <section id="a-broader-range-of-testing-options" class="care-section">
     <div class="section-shell">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6">A Broader Range of Testing Options</h2>
@@ -34,7 +37,7 @@ import { Check } from '@lucide/astro';
           </p>
         </div>
 
-        <div class="site-card-interactive p-8">
+        <div class="care-item">
           <h3 class="font-serif font-medium text-xl text-emerald-950 mb-6">What Specialized Testing May Assess</h3>
           <div class="grid md:grid-cols-2 gap-6">
             <div class="flex items-start gap-3">
@@ -72,9 +75,9 @@ import { Check } from '@lucide/astro';
   </section>
 
   <!-- Specialized Testing Panel Cards -->
-  <section class="py-16 lg:py-24 bg-white">
+  <section id="specialized-testing-options" class="care-section">
     <div class="section-shell">
-      <div class="text-center mb-12">
+      <div class="text-left mb-8">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">Specialized Testing Options</h2>
         <p class="text-lg text-slate-600 max-w-3xl mx-auto">
           Dr. MacLeod reviews your previous results, health history and testing priorities, recommends suitable options and discusses any additional panels you want to consider.
@@ -83,9 +86,9 @@ import { Check } from '@lucide/astro';
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Heavy Metal Assessment -->
-        <div class="bg-emerald-50 rounded-2xl p-6 card-hover">
-          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
-            <span class="text-white font-bold text-sm">Hg/Pb</span>
+        <div class="care-item">
+          <div class="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-slate-600 font-bold text-sm">Hg/Pb</span>
           </div>
           <h3 class="font-serif font-medium text-lg text-emerald-950 mb-2">Heavy Metal Assessment</h3>
           <p class="text-slate-600 text-sm mb-3">Measures selected elements such as mercury, lead, arsenic or cadmium. The specimen and interpretation depend on the element, the suspected source and the timing of exposure.</p>
@@ -96,9 +99,9 @@ import { Check } from '@lucide/astro';
         </div>
 
         <!-- Organic Acids -->
-        <div class="bg-emerald-50 rounded-2xl p-6 card-hover">
-          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
-            <span class="text-white font-bold text-sm">OAT</span>
+        <div class="care-item">
+          <div class="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-slate-600 font-bold text-sm">OAT</span>
           </div>
           <h3 class="font-serif font-medium text-lg text-emerald-950 mb-2">Organic Acids Test (OAT)</h3>
           <p class="text-slate-600 text-sm mb-3">Measures a range of metabolites in urine. The pattern may provide supplementary information about metabolic pathways, but it does not diagnose a specific cause of fatigue or other symptoms on its own.</p>
@@ -109,9 +112,9 @@ import { Check } from '@lucide/astro';
         </div>
 
         <!-- Chronic Infection Panels -->
-        <div class="bg-emerald-50 rounded-2xl p-6 card-hover">
-          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
-            <span class="text-white font-bold text-sm">Inf</span>
+        <div class="care-item">
+          <div class="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-slate-600 font-bold text-sm">Inf</span>
           </div>
           <h3 class="font-serif font-medium text-lg text-emerald-950 mb-2">Chronic Infection Panels</h3>
           <p class="text-slate-600 text-sm mb-3">Targeted testing may include Epstein-Barr virus, Lyme disease or other infections. The type of test and timing are selected according to symptoms, exposure history and previous results.</p>
@@ -122,9 +125,9 @@ import { Check } from '@lucide/astro';
         </div>
 
         <!-- Environmental Toxins -->
-        <div class="bg-emerald-50 rounded-2xl p-6 card-hover">
-          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
-            <span class="text-white font-bold text-sm">Tox</span>
+        <div class="care-item">
+          <div class="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-slate-600 font-bold text-sm">Tox</span>
           </div>
           <h3 class="font-serif font-medium text-lg text-emerald-950 mb-2">Environmental Toxins</h3>
           <p class="text-slate-600 text-sm mb-3">Some private laboratories measure metabolites associated with selected pesticides, plasticizers or solvents. Availability and the clinical usefulness of individual markers vary.</p>
@@ -135,9 +138,9 @@ import { Check } from '@lucide/astro';
         </div>
 
         <!-- Methylation Panel -->
-        <div class="bg-emerald-50 rounded-2xl p-6 card-hover">
-          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
-            <span class="text-white font-bold text-sm">MTHF</span>
+        <div class="care-item">
+          <div class="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-slate-600 font-bold text-sm">MTHF</span>
           </div>
           <h3 class="font-serif font-medium text-lg text-emerald-950 mb-2">Methylation Panel</h3>
           <p class="text-slate-600 text-sm mb-3">May combine selected genetic variants with blood markers such as homocysteine, folate and vitamin B12. A genetic variant does not by itself diagnose impaired metabolism or determine treatment.</p>
@@ -151,59 +154,59 @@ import { Check } from '@lucide/astro';
   </section>
 
   <!-- Broader assessment -->
-  <section class="py-16 lg:py-24 bg-emerald-950">
+  <section id="a-broader-assessment-for-complex-histories" class="care-section care-section--tint">
     <div class="section-shell">
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         <div>
-          <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">A Broader Assessment for Complex Histories</h2>
+          <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6">A Broader Assessment for Complex Histories</h2>
           <div class="prose prose-lg prose-invert">
-            <p class="text-white/90">
+            <p class="text-slate-600">
               Persistent or multi-system symptoms often require information from several sources: medical history, physical examination, routine laboratory work, imaging or specialist assessment, and sometimes additional private testing.
             </p>
-            <p class="text-white/90">
+            <p class="text-slate-600">
               Specialized tests can add another layer when you want to investigate a particular exposure, infection, metabolic profile or genetic variant. Their findings are reviewed alongside established tests rather than treated as a complete explanation on their own.
             </p>
-            <p class="text-white/90">
+            <p class="text-slate-600">
               Dr. MacLeod will explain which options fit your priorities, what the results can and cannot establish, and the cost before you decide how broad you want the assessment to be.
             </p>
           </div>
         </div>
 
-        <div class="bg-white/10 backdrop-blur rounded-2xl p-8">
-          <h3 class="font-serif font-medium text-xl text-white mb-6">When to Consider Specialized Testing</h3>
+        <div class="care-item">
+          <h3 class="font-serif font-medium text-xl text-emerald-950 mb-6">When to Consider Specialized Testing</h3>
           <ul class="space-y-4">
-            <li class="flex items-start gap-3 text-white/90">
-              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <li class="flex items-start gap-3 text-slate-600">
+              <svg class="w-5 h-5 text-emerald-700 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
               <span>Routine blood work has not explained persistent symptoms</span>
             </li>
-            <li class="flex items-start gap-3 text-white/90">
-              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <li class="flex items-start gap-3 text-slate-600">
+              <svg class="w-5 h-5 text-emerald-700 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
               <span>Chronic fatigue that doesn't improve with rest or lifestyle changes</span>
             </li>
-            <li class="flex items-start gap-3 text-white/90">
-              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <li class="flex items-start gap-3 text-slate-600">
+              <svg class="w-5 h-5 text-emerald-700 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
               <span>Multiple symptoms across different body systems</span>
             </li>
-            <li class="flex items-start gap-3 text-white/90">
-              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <li class="flex items-start gap-3 text-slate-600">
+              <svg class="w-5 h-5 text-emerald-700 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
               <span>History of environmental or occupational exposure</span>
             </li>
-            <li class="flex items-start gap-3 text-white/90">
-              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <li class="flex items-start gap-3 text-slate-600">
+              <svg class="w-5 h-5 text-emerald-700 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
               <span>Post-viral symptoms that haven't resolved (long COVID, post-EBV)</span>
             </li>
-            <li class="flex items-start gap-3 text-white/90">
-              <svg class="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <li class="flex items-start gap-3 text-slate-600">
+              <svg class="w-5 h-5 text-emerald-700 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
               <span>Family history of autoimmune, neurological or metabolic conditions</span>
@@ -215,14 +218,14 @@ import { Check } from '@lucide/astro';
   </section>
 
   <!-- Information to review -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
+  <section id="concerns-to-review-during-your-consultation" class="care-section">
     <div class="section-shell">
-      <div class="text-center mb-12">
+      <div class="text-left mb-8">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">Concerns to Review During Your Consultation</h2>
       </div>
 
       <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-        <div class="site-card-interactive p-8">
+        <div class="care-item">
           <h3 class="font-serif font-medium text-xl text-emerald-950 mb-4">Neurological & Cognitive</h3>
           <ul class="space-y-2">
             {['Persistent brain fog or poor memory', 'Numbness, tingling or neuropathy', 'Mood swings, anxiety or depression', 'Difficulty concentrating', 'Headaches or migraines'].map(symptom => (
@@ -234,7 +237,7 @@ import { Check } from '@lucide/astro';
           </ul>
         </div>
 
-        <div class="site-card-interactive p-8">
+        <div class="care-item">
           <h3 class="font-serif font-medium text-xl text-emerald-950 mb-4">Systemic & Physical</h3>
           <ul class="space-y-2">
             {['Chronic fatigue unresponsive to treatment', 'Joint and muscle pain without clear cause', 'Chemical sensitivities or medication reactions', 'Hormonal issues despite standard treatment', 'Recurrent infections or immune dysfunction', 'Symptoms that started after an illness or exposure'].map(symptom => (
@@ -250,7 +253,7 @@ import { Check } from '@lucide/astro';
   </section>
 
   <!-- Nova Scotia Context -->
-  <section class="py-16 lg:py-24 bg-white">
+  <section id="accessing-specialized-testing-in-nova-scotia" class="care-section">
     <div class="section-shell">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6">Accessing Specialized Testing in Nova Scotia</h2>
@@ -291,14 +294,14 @@ import { Check } from '@lucide/astro';
         ]} />
 
   <!-- CTA Section -->
-  <section class="py-16 lg:py-24 bg-emerald-950">
+  <section class="care-closing">
     <div class="section-shell">
       <div class="text-center max-w-3xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">Plan Your Specialized Testing</h2>
         <p class="text-lg text-white/90 mb-8">
           Book an initial consultation to review your concerns, previous results and the specialized tests you would like to explore.
         </p>
-        <CTAButton source="specialized-testing-cta" placement="closing" />
+        <BookingButton source="specialized-testing-cta" placement="closing" />
       </div>
     </div>
   </section>

@@ -10,11 +10,11 @@ seo:
   focusKeyword: "neural prolotherapy"
 ---
 
-![Neural prolotherapy shoulder injection](/images/treatments/neural-prolotherapy-shoulder.webp)
-
 ## What Is Neural Prolotherapy?
 
 Neural prolotherapy is a treatment for pain which uses shallow injections of a 5% dextrose (sugar) solution into the surrounding area of an inflamed nerve. The goal of the treatment is to reduce inflammation, swelling and pain of the affected nerve.
+
+![Neural prolotherapy shoulder injection](/images/treatments/neural-prolotherapy-shoulder.webp)
 
 This treatment was originated by Dr. John Lyftogt MD of New Zealand in an attempt to remedy his own Achilles tendinitis. Following his recovery, Dr. Lyftogt has since gone on to a career of teaching neural prolotherapy internationally.
 

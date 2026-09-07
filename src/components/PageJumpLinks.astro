@@ -1,17 +1,26 @@
 ---
-interface Props {
-  items: { id: string; title: string }[];
-}
+interface Props { items: { id: string; title: string }[]; }
 const { items } = Astro.props;
 ---
-
-<nav aria-label="On this page" class="border-b border-emerald-100 bg-white">
-  <div class="section-shell flex flex-wrap items-center gap-x-2 gap-y-1 py-3">
-    <span class="mr-2 text-sm font-semibold text-emerald-950">On this page</span>
-    {items.map(({ id, title }) => (
-      <a href={`#${id}`} data-toc-section={id} class="inline-flex min-h-11 items-center rounded-lg px-3 py-2 text-sm font-medium text-emerald-800 underline decoration-emerald-300 underline-offset-4 transition-colors hover:bg-emerald-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600">
-        {title}
-      </a>
-    ))}
+<nav aria-label="On this page" class="page-jumps border-b border-emerald-100 bg-white">
+  <div class="section-shell">
+    <details class="md:hidden">
+      <summary class="flex cursor-pointer list-none items-center justify-between gap-4 py-4 text-sm font-semibold text-emerald-950">
+        On this page <span class="text-lg" aria-hidden="true">+</span>
+      </summary>
+      <div class="pb-4 grid">
+        {items.map(({ id, title }) => <a href={`#${id}`} data-toc-section={id}>{title}</a>)}
+      </div>
+    </details>
+    <div class="hidden md:flex flex-wrap items-center gap-x-5 gap-y-1 py-3">
+      <span class="text-xs font-semibold uppercase tracking-wider text-emerald-950">On this page</span>
+      {items.map(({ id, title }) => <a href={`#${id}`} data-toc-section={id}>{title}</a>)}
+    </div>
   </div>
 </nav>
+<style>
+  .page-jumps a { display: inline-flex; align-items: center; min-height: 44px; padding: .4rem .15rem; color: #065f46; font-size: .875rem; text-decoration: underline; text-decoration-color: #b4cec0; text-underline-offset: .3rem; }
+  .page-jumps a:hover { text-decoration-color: currentColor; }
+  summary::-webkit-details-marker { display: none; }
+  details[open] summary span { transform: rotate(45deg); }
+</style>

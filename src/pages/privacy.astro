@@ -12,7 +12,7 @@ import HeroSection from '../components/HeroSection.astro';
     Your privacy is important to us. This policy explains how we collect, use and protect your personal information.
   </HeroSection>
 
-  <section class="py-16 lg:py-24 bg-white">
+  <section id="introduction" class="care-section">
     <div class="section-shell">
       <div class="max-w-3xl mx-auto">
 
@@ -39,10 +39,10 @@ import HeroSection from '../components/HeroSection.astro';
               <h3 class="font-serif font-medium text-xl text-emerald-800">Personal Information</h3>
               <p class="text-slate-700 leading-relaxed">We may collect the following types of personal information:</p>
               <ul class="space-y-1">
-                <li class="px-4 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors duration-200 text-slate-700 cursor-default"><strong class="text-emerald-800">Contact Information:</strong> Name, email address, phone number, mailing address</li>
-                <li class="px-4 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors duration-200 text-slate-700 cursor-default"><strong class="text-emerald-800">Health Information:</strong> Medical history, symptoms, treatment records, lab results and other health-related information necessary for your care</li>
-                <li class="px-4 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors duration-200 text-slate-700 cursor-default"><strong class="text-emerald-800">Appointment Information:</strong> Booking details, appointment history and scheduling preferences</li>
-                <li class="px-4 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors duration-200 text-slate-700 cursor-default"><strong class="text-emerald-800">Payment Information:</strong> Billing details and insurance information for processing payments</li>
+                <li class="care-item text-slate-700 cursor-default"><strong class="text-emerald-800">Contact Information:</strong> Name, email address, phone number, mailing address</li>
+                <li class="care-item text-slate-700 cursor-default"><strong class="text-emerald-800">Health Information:</strong> Medical history, symptoms, treatment records, lab results and other health-related information necessary for your care</li>
+                <li class="care-item text-slate-700 cursor-default"><strong class="text-emerald-800">Appointment Information:</strong> Booking details, appointment history and scheduling preferences</li>
+                <li class="care-item text-slate-700 cursor-default"><strong class="text-emerald-800">Payment Information:</strong> Billing details and insurance information for processing payments</li>
               </ul>
             </div>
 
@@ -50,9 +50,9 @@ import HeroSection from '../components/HeroSection.astro';
               <h3 class="font-serif font-medium text-xl text-emerald-800">Website Data</h3>
               <p class="text-slate-700 leading-relaxed">When you visit our website, we automatically collect:</p>
               <ul class="space-y-1">
-                <li class="px-4 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors duration-200 text-slate-700 cursor-default"><strong class="text-emerald-800">Usage Data:</strong> Pages visited, time spent on pages and navigation patterns</li>
-                <li class="px-4 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors duration-200 text-slate-700 cursor-default"><strong class="text-emerald-800">Device Information:</strong> Browser type, operating system and IP address</li>
-                <li class="px-4 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors duration-200 text-slate-700 cursor-default"><strong class="text-emerald-800">Cookies:</strong> Small data files stored on your device to improve your experience</li>
+                <li class="care-item text-slate-700 cursor-default"><strong class="text-emerald-800">Usage Data:</strong> Pages visited, time spent on pages and navigation patterns</li>
+                <li class="care-item text-slate-700 cursor-default"><strong class="text-emerald-800">Device Information:</strong> Browser type, operating system and IP address</li>
+                <li class="care-item text-slate-700 cursor-default"><strong class="text-emerald-800">Cookies:</strong> Small data files stored on your device to improve your experience</li>
               </ul>
             </div>
           </div>
@@ -62,13 +62,13 @@ import HeroSection from '../components/HeroSection.astro';
             <h2 class="text-2xl font-serif font-medium text-emerald-900">How We Use Your Information</h2>
             <p class="text-slate-700 leading-relaxed">We use your personal information to:</p>
             <ul class="space-y-1">
-              <li class="px-4 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors duration-200 text-slate-700 cursor-default">Provide naturopathic care and treatment</li>
-              <li class="px-4 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors duration-200 text-slate-700 cursor-default">Schedule and manage appointments</li>
-              <li class="px-4 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors duration-200 text-slate-700 cursor-default">Process payments and insurance claims</li>
-              <li class="px-4 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors duration-200 text-slate-700 cursor-default">Communicate with you about your care, appointments and health information</li>
-              <li class="px-4 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors duration-200 text-slate-700 cursor-default">Respond to your inquiries and contact form submissions</li>
-              <li class="px-4 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors duration-200 text-slate-700 cursor-default">Improve our website and services</li>
-              <li class="px-4 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors duration-200 text-slate-700 cursor-default">Comply with legal and regulatory requirements</li>
+              <li class="care-item text-slate-700 cursor-default">Provide naturopathic care and treatment</li>
+              <li class="care-item text-slate-700 cursor-default">Schedule and manage appointments</li>
+              <li class="care-item text-slate-700 cursor-default">Process payments and insurance claims</li>
+              <li class="care-item text-slate-700 cursor-default">Communicate with you about your care, appointments and health information</li>
+              <li class="care-item text-slate-700 cursor-default">Respond to your inquiries and contact form submissions</li>
+              <li class="care-item text-slate-700 cursor-default">Improve our website and services</li>
+              <li class="care-item text-slate-700 cursor-default">Comply with legal and regulatory requirements</li>
             </ul>
           </div>
 
@@ -79,11 +79,11 @@ import HeroSection from '../components/HeroSection.astro';
               We implement appropriate technical and organizational measures to protect your personal and health information, including:
             </p>
             <ul class="space-y-1">
-              <li class="px-4 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors duration-200 text-slate-700 cursor-default">Secure, encrypted communication channels</li>
-              <li class="px-4 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors duration-200 text-slate-700 cursor-default">Password-protected electronic health records</li>
-              <li class="px-4 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors duration-200 text-slate-700 cursor-default">Physical security measures for paper records</li>
-              <li class="px-4 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors duration-200 text-slate-700 cursor-default">Staff training on privacy and confidentiality</li>
-              <li class="px-4 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors duration-200 text-slate-700 cursor-default">Regular review of our security practices</li>
+              <li class="care-item text-slate-700 cursor-default">Secure, encrypted communication channels</li>
+              <li class="care-item text-slate-700 cursor-default">Password-protected electronic health records</li>
+              <li class="care-item text-slate-700 cursor-default">Physical security measures for paper records</li>
+              <li class="care-item text-slate-700 cursor-default">Staff training on privacy and confidentiality</li>
+              <li class="care-item text-slate-700 cursor-default">Regular review of our security practices</li>
             </ul>
           </div>
 
@@ -92,11 +92,11 @@ import HeroSection from '../components/HeroSection.astro';
             <h2 class="text-2xl font-serif font-medium text-emerald-900">Disclosure of Information</h2>
             <p class="text-slate-700 leading-relaxed">We do not sell, trade or rent your personal information. We may disclose your information only in the following circumstances:</p>
             <ul class="space-y-1">
-              <li class="px-4 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors duration-200 text-slate-700 cursor-default"><strong class="text-emerald-800">With Your Consent:</strong> When you authorize us to share information with other healthcare providers</li>
-              <li class="px-4 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors duration-200 text-slate-700 cursor-default"><strong class="text-emerald-800">For Treatment:</strong> To other healthcare professionals involved in your care, with your knowledge</li>
-              <li class="px-4 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors duration-200 text-slate-700 cursor-default"><strong class="text-emerald-800">Service Providers:</strong> To trusted third parties who assist us in operating our practice (e.g., appointment booking system, payment processors)</li>
-              <li class="px-4 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors duration-200 text-slate-700 cursor-default"><strong class="text-emerald-800">Legal Requirements:</strong> When required by law, regulation or legal process</li>
-              <li class="px-4 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors duration-200 text-slate-700 cursor-default"><strong class="text-emerald-800">Emergency Situations:</strong> To protect your health or safety, or the health and safety of others</li>
+              <li class="care-item text-slate-700 cursor-default"><strong class="text-emerald-800">With Your Consent:</strong> When you authorize us to share information with other healthcare providers</li>
+              <li class="care-item text-slate-700 cursor-default"><strong class="text-emerald-800">For Treatment:</strong> To other healthcare professionals involved in your care, with your knowledge</li>
+              <li class="care-item text-slate-700 cursor-default"><strong class="text-emerald-800">Service Providers:</strong> To trusted third parties who assist us in operating our practice (e.g., appointment booking system, payment processors)</li>
+              <li class="care-item text-slate-700 cursor-default"><strong class="text-emerald-800">Legal Requirements:</strong> When required by law, regulation or legal process</li>
+              <li class="care-item text-slate-700 cursor-default"><strong class="text-emerald-800">Emergency Situations:</strong> To protect your health or safety, or the health and safety of others</li>
             </ul>
           </div>
 
@@ -105,11 +105,11 @@ import HeroSection from '../components/HeroSection.astro';
             <h2 class="text-2xl font-serif font-medium text-emerald-900">Third-Party Services</h2>
             <p class="text-slate-700 leading-relaxed">Our website and practice use the following third-party services:</p>
             <ul class="space-y-1">
-              <li class="px-4 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors duration-200 text-slate-700 cursor-default"><strong class="text-emerald-800">Jane App:</strong> Our online booking system. Jane App has its own privacy policy governing how appointment and patient information is handled.</li>
-              <li class="px-4 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors duration-200 text-slate-700 cursor-default"><strong class="text-emerald-800">Google Analytics:</strong> We use Google Analytics to understand website usage, including pages visited, device and browser information and general interaction patterns. You can opt out by installing the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" class="text-emerald-700 hover:text-emerald-800 underline">Google Analytics Opt-out Browser Add-on</a>.</li>
-              <li class="px-4 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors duration-200 text-slate-700 cursor-default"><strong class="text-emerald-800">Resend:</strong> General contact-form messages are delivered to our practice through Resend's email delivery service. Please do not include detailed personal health information in the contact form.</li>
-              <li class="px-4 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors duration-200 text-slate-700 cursor-default"><strong class="text-emerald-800">Cloudflare:</strong> Cloudflare provides website security and bot protection. Its Turnstile service processes technical information needed to distinguish legitimate form submissions from automated abuse.</li>
-              <li class="px-4 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors duration-200 text-slate-700 cursor-default"><strong class="text-emerald-800">Google Maps:</strong> The contact page embeds a Google map. Loading the map may allow Google to receive technical information such as your IP address and browser details.</li>
+              <li class="care-item text-slate-700 cursor-default"><strong class="text-emerald-800">Jane App:</strong> Our online booking system. Jane App has its own privacy policy governing how appointment and patient information is handled.</li>
+              <li class="care-item text-slate-700 cursor-default"><strong class="text-emerald-800">Google Analytics:</strong> We use Google Analytics to understand website usage, including pages visited, device and browser information and general interaction patterns. You can opt out by installing the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" class="text-emerald-700 hover:text-emerald-800 underline">Google Analytics Opt-out Browser Add-on</a>.</li>
+              <li class="care-item text-slate-700 cursor-default"><strong class="text-emerald-800">Resend:</strong> General contact-form messages are delivered to our practice through Resend's email delivery service. Please do not include detailed personal health information in the contact form.</li>
+              <li class="care-item text-slate-700 cursor-default"><strong class="text-emerald-800">Cloudflare:</strong> Cloudflare provides website security and bot protection. Its Turnstile service processes technical information needed to distinguish legitimate form submissions from automated abuse.</li>
+              <li class="care-item text-slate-700 cursor-default"><strong class="text-emerald-800">Google Maps:</strong> The contact page embeds a Google map. Loading the map may allow Google to receive technical information such as your IP address and browser details.</li>
             </ul>
           </div>
 
@@ -118,10 +118,10 @@ import HeroSection from '../components/HeroSection.astro';
             <h2 class="text-2xl font-serif font-medium text-emerald-900">Your Rights</h2>
             <p class="text-slate-700 leading-relaxed">Under PIPEDA and applicable privacy legislation, you have the right to:</p>
             <ul class="space-y-1">
-              <li class="px-4 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors duration-200 text-slate-700 cursor-default"><strong class="text-emerald-800">Access:</strong> Request a copy of your personal information we hold</li>
-              <li class="px-4 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors duration-200 text-slate-700 cursor-default"><strong class="text-emerald-800">Correction:</strong> Request correction of inaccurate or incomplete information</li>
-              <li class="px-4 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors duration-200 text-slate-700 cursor-default"><strong class="text-emerald-800">Withdrawal of Consent:</strong> Withdraw your consent to certain uses of your information (though this may affect our ability to provide services)</li>
-              <li class="px-4 py-2.5 rounded-lg hover:bg-emerald-50 transition-colors duration-200 text-slate-700 cursor-default"><strong class="text-emerald-800">Complaint:</strong> File a complaint with the Office of the Privacy Commissioner of Canada if you believe your privacy rights have been violated</li>
+              <li class="care-item text-slate-700 cursor-default"><strong class="text-emerald-800">Access:</strong> Request a copy of your personal information we hold</li>
+              <li class="care-item text-slate-700 cursor-default"><strong class="text-emerald-800">Correction:</strong> Request correction of inaccurate or incomplete information</li>
+              <li class="care-item text-slate-700 cursor-default"><strong class="text-emerald-800">Withdrawal of Consent:</strong> Withdraw your consent to certain uses of your information (though this may affect our ability to provide services)</li>
+              <li class="care-item text-slate-700 cursor-default"><strong class="text-emerald-800">Complaint:</strong> File a complaint with the Office of the Privacy Commissioner of Canada if you believe your privacy rights have been violated</li>
             </ul>
           </div>
 
@@ -155,7 +155,7 @@ import HeroSection from '../components/HeroSection.astro';
             <p class="text-slate-700 leading-relaxed">
               If you have questions about this Privacy Policy, wish to exercise your privacy rights or have concerns about how your information is handled, please contact us:
             </p>
-            <div class="bg-emerald-50 p-6 rounded-xl hover:bg-emerald-100/70 transition-colors duration-200">
+            <div class="care-item">
               <p class="font-semibold text-emerald-900">Dr. Colin MacLeod, ND</p>
               <p class="text-slate-700">Optimal Wellbeing Clinic</p>
               <p class="text-slate-700">1378 Bedford Highway, Unit 1</p>

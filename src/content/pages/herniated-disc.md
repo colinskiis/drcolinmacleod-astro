@@ -5,11 +5,11 @@ seo:
   focusKeyword: "herniated disc treatment"
 ---
 
-![Herniated disc - woman in pain holding her back](/images/conditions/herniated-disc-pain.jpeg)
-
 ## What Is A Herniated Disc?
 
 An intervertebral disc is made up of rigid, spongy tissue which sits between two vertebral bones (vertebrae) of our spine. This disc allows movement between two vertebrae and serves the important role of being a shock absorber. Mechanical forces that act on the spine are cushioned by the intervertebral discs, limiting excessive movement of the vertebrae and protecting the spinal cord from damage. Each intervertebral disc is made up of two parts: a tough, rubbery outer portion called the annulus fibrosis; and a gelatinous, soft central portion called the nucleus pulposus.
+
+![Herniated disc - woman in pain holding her back](/images/conditions/herniated-disc-pain.jpeg)
 
 When a disc is "herniated," sometimes also referred to as "slipped," "bulging," or "ruptured," it means that injury or degeneration to the outer portion of the disc has allowed for the inner portion to protrude out.
 

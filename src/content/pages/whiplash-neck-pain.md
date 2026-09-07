@@ -5,9 +5,9 @@ seo:
   focusKeyword: "whiplash treatment Halifax"
 ---
 
-![Whiplash and neck pain](/images/conditions/herniated-disc-pain.webp)
-
 Whiplash is a soft tissue injury to the neck caused by a rapid, forceful back-and-forth movement of the cervical spine. Medically referred to as a cervical acceleration-deceleration (CAD) injury, whiplash primarily damages the muscles, tendons and ligaments of the neck rather than the bones or discs, which is why standard imaging studies such as X-rays and MRIs so often appear normal, even when a patient is in significant pain. This disconnect between imaging and symptoms leads many patients to feel dismissed, yet research consistently shows that approximately 40% of whiplash sufferers go on to develop chronic pain and disability lasting beyond 12 months<sup>1</sup>. Understanding why conventional treatment falls short for these individuals, and what regenerative options exist, is essential for anyone struggling with persistent whiplash-related symptoms.
+
+![Whiplash and neck pain](/images/conditions/herniated-disc-pain.webp)
 
 ## Causes of Whiplash
 

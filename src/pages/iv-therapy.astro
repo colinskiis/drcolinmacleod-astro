@@ -1,12 +1,12 @@
 ---
+import PublicImage from '../components/PublicImage.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PageJumpLinks from '../components/PageJumpLinks.astro';
 import AppointmentSummary from '../components/AppointmentSummary.astro';
 import HeroSection from '../components/HeroSection.astro';
 import FirstVisitGuidance from '../components/FirstVisitGuidance.astro';
-import CTAButton from '../components/CTAButton.astro';
 import BookingButton from '../components/BookingButton.astro';
-import { Check, Droplets, Zap, Atom, HeartPulse, Dna } from '@lucide/astro';
+import { Check } from '@lucide/astro';
 import FAQSection from '../components/FAQSection.astro';
 import ServiceArticles from '../components/ServiceArticles.astro';
 ---
@@ -34,7 +34,7 @@ import ServiceArticles from '../components/ServiceArticles.astro';
   ]} />
 
   <!-- Why IV Therapy Section -->
-  <section id="assessment" class="scroll-mt-32 py-12 lg:py-16 bg-white">
+  <section id="assessment" class="care-section scroll-mt-32">
     <div class="section-shell">
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         <div>
@@ -52,12 +52,10 @@ import ServiceArticles from '../components/ServiceArticles.astro';
           </div>
         </div>
         <div class="rounded-2xl overflow-hidden shadow-xl">
-          <img
+          <PublicImage
             src="/images/treatments/iv-patient-man.webp"
             alt="Patient receiving IV vitamin therapy in Halifax"
             class="w-full h-full object-cover"
-            width="1200"
-            height="896"
             loading="lazy"
           />
         </div>
@@ -66,17 +64,15 @@ import ServiceArticles from '../components/ServiceArticles.astro';
   </section>
 
   <!-- Patient visit sequence -->
-  <section id="first-treatment" class="scroll-mt-32 py-12 lg:py-16 bg-emerald-50">
+  <section id="first-treatment" class="care-section scroll-mt-32">
     <div class="section-shell">
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         <!-- Image -->
         <div class="rounded-3xl overflow-hidden shadow-xl">
-          <img
+          <PublicImage
             src="/images/treatments/iv-patient-woman.webp"
             alt="Patient receiving IV vitamin therapy in Halifax"
             class="w-full h-full object-cover"
-            width="1200"
-            height="896"
             loading="lazy"
           />
         </div>
@@ -102,9 +98,9 @@ import ServiceArticles from '../components/ServiceArticles.astro';
   </section>
 
   <!-- IV Therapy Boosters -->
-  <section id="formulations" class="scroll-mt-32 py-12 lg:py-16 bg-white">
+  <section id="formulations" class="care-section scroll-mt-32">
     <div class="section-shell">
-      <div class="text-center mb-12">
+      <div class="text-left mb-8">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">Nutrients and Formulations</h2>
         <p class="text-lg text-slate-600 max-w-3xl mx-auto">
           The Myers Cocktail is a commonly used formulation containing vitamins and minerals. Its composition and suitability are assessed individually. Other formulations may be discussed after reviewing clinical need, evidence, contraindications and potential interactions.
@@ -113,46 +109,36 @@ import ServiceArticles from '../components/ServiceArticles.astro';
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
         <!-- NAD+ - Lightning/Energy icon -->
-        <a href="/nad-therapy/" class="site-card-interactive group block p-6 text-center">
-          <div class="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-emerald-200 transition-colors">
-            <Zap class="w-10 h-10 text-emerald-700" aria-hidden="true" />
-          </div>
+        <a href="/nad-therapy/" class="directory-link  group block  text-center">
+
           <h3 class="font-serif font-medium text-lg text-emerald-950 mb-2 group-hover:text-emerald-700 transition-colors">NAD+</h3>
           <p class="text-slate-600 text-sm">A coenzyme involved in cellular energy metabolism. Evidence for IV use varies by indication.</p>
         </a>
 
         <!-- High-Dose Vitamin C -->
-        <a href="/iv-vitamin-c/" class="site-card-interactive group block p-6 text-center">
-          <div class="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-emerald-200 transition-colors">
-            <Droplets class="w-10 h-10 text-emerald-700" aria-hidden="true" />
-          </div>
+        <a href="/iv-vitamin-c/" class="directory-link  group block  text-center">
+
           <h3 class="font-serif font-medium text-lg text-emerald-950 mb-2 group-hover:text-emerald-700 transition-colors">High-Dose Vitamin C</h3>
           <p class="text-slate-600 text-sm">An antioxidant nutrient whose IV use requires individual screening and indication-specific consideration.</p>
         </a>
 
         <!-- Glutathione - Heart with EKG line -->
-        <a href="/glutathione/" class="site-card-interactive group block p-6 text-center">
-          <div class="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-emerald-200 transition-colors">
-            <HeartPulse class="w-10 h-10 text-emerald-700" aria-hidden="true" />
-          </div>
+        <a href="/glutathione/" class="directory-link  group block  text-center">
+
           <h3 class="font-serif font-medium text-lg text-emerald-950 mb-2 group-hover:text-emerald-700 transition-colors">Glutathione</h3>
           <p class="text-slate-600 text-sm">An antioxidant compound. The evidence and relevance of IV use depend on the clinical context.</p>
         </a>
 
         <!-- L-Carnitine -->
-        <a href="/l-carnitine/" class="site-card-interactive group block p-6 text-center">
-          <div class="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-emerald-200 transition-colors">
-            <Dna class="w-10 h-10 text-emerald-700" aria-hidden="true" />
-          </div>
+        <a href="/l-carnitine/" class="directory-link  group block  text-center">
+
           <h3 class="font-serif font-medium text-lg text-emerald-950 mb-2 group-hover:text-emerald-700 transition-colors">L-Carnitine</h3>
           <p class="text-slate-600 text-sm">A nutrient involved in fatty-acid transport and energy metabolism.</p>
         </a>
 
         <!-- Trace Minerals -->
-        <a href="/trace-minerals/" class="site-card-interactive group block p-6 text-center">
-          <div class="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-emerald-200 transition-colors">
-            <Atom class="w-10 h-10 text-emerald-700" aria-hidden="true" />
-          </div>
+        <a href="/trace-minerals/" class="directory-link  group block  text-center">
+
           <h3 class="font-serif font-medium text-lg text-emerald-950 mb-2 group-hover:text-emerald-700 transition-colors">Trace Minerals</h3>
           <p class="text-slate-600 text-sm">Minerals involved in normal enzyme and metabolic functions.</p>
         </a>
@@ -161,7 +147,7 @@ import ServiceArticles from '../components/ServiceArticles.astro';
   </section>
 
   <!-- Nutrients Used & Clinical Considerations -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
+  <section id="nutrients-used-in-iv-therapy" class="care-section">
     <div class="section-shell">
       <div class="grid lg:grid-cols-2 gap-12">
         <!-- Nutrients Used -->
@@ -211,7 +197,7 @@ import ServiceArticles from '../components/ServiceArticles.astro';
   />
 
   <!-- Final CTA -->
-  <section class="py-16 lg:py-24 bg-emerald-950">
+  <section class="care-closing">
     <div class="section-shell">
       <div class="text-center max-w-3xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">Considering IV Therapy?</h2>
@@ -219,7 +205,7 @@ import ServiceArticles from '../components/ServiceArticles.astro';
           Book a consultation to review whether IV therapy is appropriate for your circumstances, including potential benefits, limitations, alternatives and risks.
         </p>
         <FirstVisitGuidance />
-        <CTAButton destination="initial" source="iv-therapy-cta" placement="closing" />
+        <BookingButton destination="initial" source="iv-therapy-cta" placement="closing" />
       </div>
     </div>
   </section>

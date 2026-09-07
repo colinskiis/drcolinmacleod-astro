@@ -5,9 +5,9 @@ seo:
   focusKeyword: "carpal tunnel syndrome treatment"
 ---
 
-![Carpal tunnel syndrome treatment](/images/conditions/carpal-tunnel-syndrome.jpeg)
-
 Carpal tunnel syndrome is a condition which affects the wrist, hand and arm. The carpal tunnel of the wrist forms a boney, protective passageway for the median nerve and the flexor tendons of the fingers. The carpal tunnel provides space for the flexor tendons of the fingers and the median nerve to pass from the arm, through the wrist to the hand.
+
+![Carpal tunnel syndrome treatment](/images/conditions/carpal-tunnel-syndrome.jpeg)
 
 ## Symptoms of Carpal Tunnel Syndrome
 

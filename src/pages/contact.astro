@@ -1,4 +1,5 @@
 ---
+import PublicImage from '../components/PublicImage.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import BookingButton from '../components/BookingButton.astro';
@@ -18,7 +19,7 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? '';
   </HeroSection>
 
   <!-- Contact Options -->
-  <section class="py-14 lg:py-16 bg-white">
+  <section id="send-us-a-message" class="care-section">
     <div class="section-shell">
       <nav aria-label="Contact options" class="mb-10 grid grid-cols-2 gap-3 lg:hidden">
         <a
@@ -52,14 +53,14 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? '';
       </nav>
 
       <div class="grid lg:grid-cols-2 gap-12">
-        
+
         <!-- Contact Form -->
         <div class="lg:order-2">
           <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6">Send Us a Message</h2>
           <p class="text-slate-600 mb-8">
             Use this form to ask questions about treatments, scheduling or general inquiries. We'll respond within 1-2 business days.
           </p>
-          
+
           <form
             id="contact-form"
             method="post"
@@ -124,7 +125,7 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? '';
               ></textarea>
             </div>
 
-            <div id="contact-privacy-note" class="rounded-lg bg-emerald-50 p-4 text-sm leading-relaxed text-slate-700">
+            <div id="contact-privacy-note" class="care-item text-sm leading-relaxed text-slate-700">
               This form is for general inquiries only and is not monitored for medical emergencies. Please avoid sending detailed personal health information here.
             </div>
 
@@ -138,8 +139,8 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? '';
 
             <!-- Submit Button -->
             <div>
-              <button 
-                type="submit" 
+              <button
+                type="submit"
                 id="submit-btn"
                 disabled
                 class="w-full bg-emerald-900 text-white py-3 px-6 rounded-full font-semibold hover:bg-emerald-800 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2"
@@ -151,7 +152,7 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? '';
 
             <!-- Success/Error Messages -->
             <div id="form-messages" class="hidden" role="alert" aria-live="assertive" aria-atomic="true">
-              <div id="success-message" class="hidden bg-emerald-50 border border-emerald-200 text-emerald-700 px-4 py-3 rounded-lg">
+              <div id="success-message" class="care-item hidden text-emerald-700">
                 <p class="font-semibold">Message sent successfully!</p>
                 <p class="text-sm">We'll respond to your inquiry within 1-2 business days.</p>
               </div>
@@ -226,12 +227,10 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? '';
               Text messages are answered during business hours. Please use text for general questions and avoid sharing personal health information.
             </p>
             <figure class="mt-5 rounded-xl overflow-hidden border border-emerald-100 mb-4">
-              <img
+              <PublicImage
                 src="/images/general/ihpc-building.webp"
                 alt="Integrated Health Professional Centre at 1378 Bedford Highway, Unit 1"
                 class="w-full aspect-[16/10] object-cover"
-                width="1600"
-                height="972"
                 loading="lazy"
               />
               <figcaption class="px-4 py-3 text-sm text-slate-600 bg-emerald-50/60">
@@ -279,7 +278,7 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? '';
         { question: "Can I combine naturopathic treatment with conventional medicine?", answer: "<p>Absolutely. Dr. MacLeod works collaboratively with your existing healthcare team. Naturopathic treatments often complement conventional approaches effectively. We always consider medication interactions and communicate with your other healthcare providers when appropriate.</p>" },
       ]} />
 
-  <section class="py-16 lg:py-24 bg-emerald-950">
+  <section class="care-closing">
     <div class="section-shell text-center">
       <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">Ready to Book?</h2>
       <p class="text-lg sm:text-xl text-emerald-100 mb-8 max-w-2xl mx-auto">

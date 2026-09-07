@@ -14,7 +14,7 @@ const { items, display, label = 'Page sections' } = Astro.props;
 ---
 
 {items.length >= 4 && display === 'mobile' && (
-  <details class="site-card mb-8 p-5 lg:hidden">
+  <details class="mb-8 border-y border-emerald-900/20 py-4 lg:hidden">
     <summary class="cursor-pointer text-sm font-semibold text-emerald-950">
       On This Page
     </summary>
@@ -23,7 +23,7 @@ const { items, display, label = 'Page sections' } = Astro.props;
         <a
           href={`#${item.id}`}
           data-toc-section={item.id}
-          class="block rounded-lg px-2 py-2 text-sm leading-snug text-slate-600 transition-colors hover:bg-emerald-50 hover:text-emerald-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+          class="block min-h-11 rounded px-2 py-3 text-sm leading-snug text-slate-600 transition-colors hover:bg-emerald-50 hover:text-emerald-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
         >
           {item.title}
         </a>
@@ -33,7 +33,7 @@ const { items, display, label = 'Page sections' } = Astro.props;
 )}
 
 {items.length >= 4 && display === 'desktop' && (
-  <aside class="site-card sticky top-32 hidden max-h-[calc(100vh-10rem)] overflow-y-auto p-5 lg:block">
+  <aside class="sticky top-28 hidden max-h-[calc(100vh-9rem)] overflow-y-auto border-l border-emerald-900/20 pl-5 lg:block">
     <p class="mb-4 text-xs font-semibold uppercase tracking-wide text-emerald-700">
       On This Page
     </p>
@@ -42,7 +42,7 @@ const { items, display, label = 'Page sections' } = Astro.props;
         <a
           href={`#${item.id}`}
           data-toc-section={item.id}
-          class="block rounded-lg px-2 py-2 text-sm leading-snug text-slate-600 transition-colors hover:bg-emerald-50 hover:text-emerald-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+          class="block min-h-11 rounded px-2 py-3 text-sm leading-snug text-slate-600 transition-colors hover:bg-emerald-50 hover:text-emerald-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
         >
           {item.title}
         </a>

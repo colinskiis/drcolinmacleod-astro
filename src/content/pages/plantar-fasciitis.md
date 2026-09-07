@@ -9,9 +9,9 @@ seo:
   focusKeyword: "plantar fasciitis treatment"
 ---
 
-![Plantar fasciitis treatment](/images/conditions/plantar-fasciitis.jpeg)
-
 The plantar fascia is a flat strand of ligamentous tissue which connects the heel bone to the toes. It is responsible for the arch shape of the foot.
+
+![Plantar fasciitis treatment](/images/conditions/plantar-fasciitis.jpeg)
 
 ## Causes of Plantar Fasciitis
 

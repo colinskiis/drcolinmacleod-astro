@@ -2,7 +2,6 @@
 import { type CollectionEntry, getCollection, render } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
-import BookingButton from '../components/BookingButton.astro';
 import FAQSection from '../components/FAQSection.astro';
 import ClinicalContentLayout from '../components/ClinicalContentLayout.astro';
 import ClinicalPageCTA from '../components/ClinicalPageCTA.astro';
@@ -141,7 +140,6 @@ const fallbackLinks = isTreatment
     ];
 
 const relatedLinks = page.data.relatedLinks ?? relatedLinksMap[page.id] ?? fallbackLinks;
-const useClinicalLayout = page.data.pageTemplate === 'clinical';
 const ctaTitle = page.data.cta?.title ?? (isTreatment
   ? `Considering ${page.data.title}?`
   : `Looking for Help With ${page.data.title}?`);
@@ -181,8 +179,7 @@ const modifiedDate = page.data.modifiedDate
     <p>{page.data.description}</p>
   </HeroSection>
 
-  {useClinicalLayout && (
-    <>
+  <>
       <ClinicalContentLayout tocItems={tocItems} modifiedDate={modifiedDate}>
         <Content />
       </ClinicalContentLayout>
@@ -203,158 +200,6 @@ const modifiedDate = page.data.modifiedDate
         description={ctaDescription}
         source={`clinical-page-cta-${page.id}`}
       />
-    </>
-  )}
-
-  <!-- Page Content -->
-  {!useClinicalLayout && (
-  <><article class="py-16 lg:py-24 bg-white">
-    <div class="section-shell">
-      <div class="max-w-5xl mx-auto">
-
-        {modifiedDate && (
-          <p class="text-sm text-slate-500 mb-8">Last updated {modifiedDate}</p>
-        )}
-
-        <div class="grid lg:grid-cols-[minmax(0,1fr)_18rem] gap-10 items-start">
-          <div class="prose max-w-[70ch]">
-            <Content />
-          </div>
-
-          <aside class="lg:sticky lg:top-32 space-y-5">
-            <div class="site-card p-5">
-              <p class="text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-3">
-                {isTreatment ? 'Related Services' : 'Related Care'}
-              </p>
-              <div class="space-y-2">
-                {relatedLinks.map((link) => (
-                  <a href={link.href} class="group flex items-center justify-between gap-3 rounded-xl px-3 py-2 text-sm font-medium text-emerald-950 hover:bg-emerald-50 hover:text-emerald-700 transition-colors">
-                    {link.title}
-                    <svg class="w-4 h-4 text-emerald-500 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                    </svg>
-                  </a>
-                ))}
-              </div>
-              <a href={hubHref} class="mt-3 inline-flex items-center gap-1 border-t border-emerald-100 pt-3 text-sm font-semibold text-emerald-700 hover:text-emerald-900 transition-colors w-full">
-                View all {hubLabel.toLowerCase()}
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
-
-            <div class="site-card p-5">
-              <p class="text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-3">Next Step</p>
-              <p class="text-sm text-slate-600 leading-relaxed mb-4">
-                Use this page as general information. A visit can clarify what applies to your symptoms, history and goals.
-              </p>
-              <BookingButton
-                text="Book Online"
-                variant="primary" surface="light"
-                size="sm"
-                source={`page-sidebar-${page.id}`}
-                placement="sidebar"
-              />
-            </div>
-          </aside>
-        </div>
-
-        <!-- Page Footer -->
-        <footer class="mt-12 pt-8 border-t border-slate-200">
-
-          <!-- Quick Links Box -->
-          <div class="bg-emerald-50/50 border border-emerald-100 rounded-2xl p-8 mb-8 shadow-sm">
-            <div class="flex items-start space-x-4">
-              <div class="w-16 h-16 bg-emerald-900 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
-                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-              </div>
-              <div class="flex-1">
-                <h3 class="text-xl font-serif font-medium text-emerald-950 mb-2">
-                  {isTreatment ? 'Interested in This Treatment?' : 'Want Help With This Condition?'}
-                </h3>
-                <p class="text-slate-600 mb-4">
-                  {isTreatment
-                    ? 'Dr. MacLeod offers personalized consultations to discuss how this treatment approach might benefit your specific health concerns.'
-                    : 'Dr. MacLeod offers personalized consultations to discuss how naturopathic treatment might help your specific situation.'}
-                </p>
-                <div class="flex flex-col sm:flex-row gap-3">
-                  <BookingButton
-                    text="Book Online"
-                    variant="primary" surface="light"
-                    size="sm"
-                    source={`page-${page.id}`}
-                placement="inline"
-                  />
-                  <a
-                    href={hubHref}
-                    class="inline-flex items-center text-emerald-800 hover:text-emerald-900 font-medium text-sm"
-                  >
-                    View All {hubLabel}
-                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Navigation -->
-          <div class="flex justify-between items-center">
-            <a
-              href={hubHref}
-              class="inline-flex items-center text-emerald-800 hover:text-emerald-900 font-medium"
-            >
-              <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-              </svg>
-              Back to {hubLabel}
-            </a>
-
-            <div class="text-sm text-slate-500">
-              Have questions?
-              <a href="/contact/" class="text-emerald-800 hover:text-emerald-900 font-medium ml-1">
-                Contact Dr. MacLeod
-              </a>
-            </div>
-          </div>
-        </footer>
-      </div>
-    </div>
-  </article>
-
-  {page.data.faq && page.data.faq.length > 0 && (
-    <FAQSection items={page.data.faq} />
-  )}
-
-  <!-- CTA Section -->
-  <section class="bg-emerald-950 py-16 lg:py-24">
-    <div class="section-shell">
-      <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">Ready to Start Your Health Journey?</h2>
-        <p class="text-lg sm:text-xl text-white/90 mb-8 leading-relaxed">
-          Schedule a consultation to learn how naturopathic care can support your health goals.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <BookingButton
-            text="Book Online"
-            size="lg"
-            source={`page-cta-${page.id}`}
-                placement="closing"
-          />
-          <a
-            href={hubHref}
-            class="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-emerald-950 active:scale-[0.98] transition-colors inline-flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:ring-offset-2 focus-visible:ring-offset-emerald-950"
-          >
-            View All {hubLabel}
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
   </>
-  )}
+
 </BaseLayout>

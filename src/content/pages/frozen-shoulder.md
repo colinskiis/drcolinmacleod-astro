@@ -5,9 +5,9 @@ seo:
   focusKeyword: "frozen shoulder treatment"
 ---
 
-![Frozen shoulder treatment](/images/conditions/frozen-shoulder.jpeg)
-
 The shoulder joint is a unique joint in that it is stabilized largely by the muscles which surround it. While most joints are stabilized heavily by ligaments the shoulder joint has much less ligamentous support in comparison.
+
+![Frozen shoulder treatment](/images/conditions/frozen-shoulder.jpeg)
 
 The shoulder joint has an exceptional range of motion allowing us to perform a wide variety of tasks with our arms and hands. Unfortunately with the unique architecture and varied use of the shoulder joint can come a variety of injuries.
 

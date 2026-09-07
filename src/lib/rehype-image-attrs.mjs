@@ -13,7 +13,8 @@ const PUBLIC_DIR = path.resolve('public');
 // Same file is reused across many pages; measure each one once per build.
 const dimensionCache = new Map();
 
-async function getDimensions(src) {
+export async function publicImageDimensions(src) {
+  if (!src?.startsWith('/') || src.startsWith('//')) return null;
   if (dimensionCache.has(src)) return dimensionCache.get(src);
 
   const filePath = path.join(PUBLIC_DIR, src);
@@ -62,7 +63,7 @@ export default function rehypeImageAttrs() {
 
         if (props.width != null || props.height != null) return;
 
-        const dimensions = await getDimensions(decodeURIComponent(src));
+        const dimensions = await publicImageDimensions(decodeURIComponent(src));
         if (!dimensions) return;
 
         props.width = dimensions.width;

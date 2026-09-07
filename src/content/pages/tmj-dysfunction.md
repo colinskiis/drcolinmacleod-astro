@@ -5,9 +5,9 @@ seo:
   focusKeyword: "TMJ dysfunction treatment"
 ---
 
-![TMJ pain. Woman holding jaw in pain](/images/conditions/tmj-pain-woman-holding-jaw.jpeg)
-
 Temporomandibular joint (TMJ) dysfunction is a disorder that affects the jaw joint, causing pain and discomfort in the jaw, face, neck and head. TMJ dysfunction is a common problem, with an estimated 11 million North Americans affected.
+
+![TMJ pain. Woman holding jaw in pain](/images/conditions/tmj-pain-woman-holding-jaw.jpeg)
 
 The temporomandibular joint is a hinge joint that connects the lower jaw (mandible) to the temporal bone of the skull. It is a complex joint, with multiple components including muscles, ligaments, bones and cartilage. The specific components of the joint include the joint capsule, articular disc, mandibular condyles, articular surface of the temporal bone, temporomandibular ligament, sphenomandibular ligament, stylomandibular ligament and the lateral pterygoid muscle.
 

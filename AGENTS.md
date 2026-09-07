@@ -32,6 +32,10 @@ and debugging only, never to publish.
 
 ## Conventions
 
+- **Design**: [STYLE_GUIDE.md](STYLE_GUIDE.md) is the canonical design policy.
+  Read it before visual changes and follow the relevant page-family pattern.
+  Update the guide and shared implementation together when changing a design rule.
+
 - **Routes**: `trailingSlash: 'always'`. Every internal link must end in `/` —
   without one the request costs a 301 redirect.
 - **Nav/breadcrumb page lists** live only in `src/config/routes.ts`. Adding or

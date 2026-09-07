@@ -5,9 +5,9 @@ seo:
   focusKeyword: "runner's knee treatment Halifax"
 ---
 
-![Runner's knee pain](/images/conditions/acupuncture-knee-pain-halifax.webp)
-
 Patellofemoral pain syndrome, commonly known as runner's knee, is one of the most frequently encountered musculoskeletal complaints in active individuals. It is estimated to account for roughly 25% of all running-related injuries, and is also common among cyclists, hikers and people who spend extended time climbing stairs or squatting<sup>1</sup>. The condition involves pain arising from the patellofemoral joint, which is the articulation between the kneecap (patella) and the groove at the front of the thigh bone (femur).
+
+![Runner's knee pain](/images/conditions/acupuncture-knee-pain-halifax.webp)
 
 ## Causes of Runner's Knee
 

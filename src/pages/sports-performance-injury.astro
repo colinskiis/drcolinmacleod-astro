@@ -1,7 +1,8 @@
 ---
+import PageJumpLinks from '../components/PageJumpLinks.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
-import CTAButton from '../components/CTAButton.astro';
+import BookingButton from '../components/BookingButton.astro';
 import FAQSection from '../components/FAQSection.astro';
 ---
 
@@ -18,10 +19,12 @@ import FAQSection from '../components/FAQSection.astro';
     <p>Assessment-led care for sports injuries and persistent joint or tendon concerns, with rehabilitation guidance and selected injection therapies when appropriate.</p>
   </HeroSection>
 
+  <PageJumpLinks items={[{"id": "why-regenerative-therapy-for-sports-injuries", "title": "Approach"}, {"id": "prolotherapy-for-sports-injuries", "title": "Prolotherapy"}, {"id": "common-sports-injuries-we-treat", "title": "Injuries"}, {"id": "what-to-expect", "title": "Your visit"}, {"id": "supporting-your-recovery", "title": "Recovery"}, {"id": "related-information", "title": "Related care"}]} />
+
   <!-- Why Regenerative Therapy Section -->
-  <section class="py-16 lg:py-24 bg-white">
+  <section id="why-regenerative-therapy-for-sports-injuries" class="care-section">
     <div class="section-shell">
-      <div class="max-w-4xl mx-auto text-center mb-12">
+      <div class="max-w-4xl mx-auto text-left mb-8">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6">Why Regenerative Therapy for Sports Injuries?</h2>
         <p class="text-lg text-slate-600">
           Traditional approaches often mask pain without addressing the underlying tissue damage. Regenerative injection therapies stimulate your body's natural healing response to repair damaged ligaments, tendons and joints rather than just manage symptoms.
@@ -30,34 +33,22 @@ import FAQSection from '../components/FAQSection.astro';
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
         <!-- Heal the Source -->
-        <div class="bg-emerald-50 rounded-2xl p-8 text-center card-hover">
-          <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-6">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-            </svg>
-          </div>
+        <div class="care-item">
+
           <h3 class="text-xl font-serif font-medium text-emerald-950 mb-3">Heal the Source</h3>
           <p class="text-slate-600">Target damaged tissue directly rather than masking pain with medications</p>
         </div>
 
         <!-- Avoid Surgery -->
-        <div class="bg-emerald-50 rounded-2xl p-8 text-center card-hover">
-          <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-6">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-            </svg>
-          </div>
+        <div class="care-item">
+
           <h3 class="text-xl font-serif font-medium text-emerald-950 mb-3">Avoid Surgery</h3>
           <p class="text-slate-600">Non-surgical option that can help many athletes avoid or delay invasive procedures</p>
         </div>
 
         <!-- Return to Activity -->
-        <div class="bg-emerald-50 rounded-2xl p-8 text-center card-hover">
-          <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-6">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-            </svg>
-          </div>
+        <div class="care-item">
+
           <h3 class="text-xl font-serif font-medium text-emerald-950 mb-3">Return to Activity</h3>
           <p class="text-slate-600">Progressive healing allows gradual return to sport with lasting results</p>
         </div>
@@ -66,9 +57,9 @@ import FAQSection from '../components/FAQSection.astro';
   </section>
 
   <!-- Prolotherapy Section -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
+  <section id="prolotherapy-for-sports-injuries" class="care-section">
     <div class="section-shell">
-      <div class="text-center mb-12">
+      <div class="text-left mb-8">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">Prolotherapy for Sports Injuries</h2>
         <p class="text-lg text-slate-600 max-w-3xl mx-auto">
           Evidence-informed injection therapy for ligament, tendon and joint injuries.
@@ -77,7 +68,7 @@ import FAQSection from '../components/FAQSection.astro';
 
       <div class="max-w-3xl mx-auto">
         <!-- Prolotherapy Card -->
-        <div class="bg-white rounded-2xl border border-emerald-100 shadow-sm overflow-hidden card-hover">
+        <div class="care-item overflow-hidden">
           <div class="bg-white p-6 border-b border-emerald-100">
             <h3 class="text-2xl font-serif font-medium text-emerald-950">Prolotherapy</h3>
             <p class="text-slate-600 mt-2">Concentrated dextrose injections for tissue regeneration</p>
@@ -130,9 +121,9 @@ import FAQSection from '../components/FAQSection.astro';
   </section>
 
   <!-- Common Sports Injuries Section -->
-  <section class="py-16 lg:py-24 bg-white">
+  <section id="common-sports-injuries-we-treat" class="care-section">
     <div class="section-shell">
-      <div class="text-center mb-12">
+      <div class="text-left mb-8">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">Common Sports Injuries We Treat</h2>
         <p class="text-lg text-slate-600 max-w-3xl mx-auto">
           From weekend warriors to competitive athletes, we help Nova Scotians recover from a wide range of sports-related injuries
@@ -141,7 +132,7 @@ import FAQSection from '../components/FAQSection.astro';
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Knee Injuries -->
-        <div class="bg-emerald-50 rounded-xl p-6 card-hover">
+        <div class="care-item">
           <h3 class="font-serif font-medium text-lg text-emerald-950 mb-3">Knee Injuries</h3>
           <ul class="space-y-2 text-slate-600">
             <li>• ACL/MCL sprains and laxity</li>
@@ -152,7 +143,7 @@ import FAQSection from '../components/FAQSection.astro';
         </div>
 
         <!-- Shoulder Injuries -->
-        <div class="bg-emerald-50 rounded-xl p-6 card-hover">
+        <div class="care-item">
           <h3 class="font-serif font-medium text-lg text-emerald-950 mb-3">Shoulder Injuries</h3>
           <ul class="space-y-2 text-slate-600">
             <li>• <a href="/rotator-cuff-shoulder-impingement/" class="text-emerald-700 hover:text-emerald-800 font-medium">Rotator cuff tendinitis/tears</a></li>
@@ -164,7 +155,7 @@ import FAQSection from '../components/FAQSection.astro';
         </div>
 
         <!-- Elbow & Wrist -->
-        <div class="bg-emerald-50 rounded-xl p-6 card-hover">
+        <div class="care-item">
           <h3 class="font-serif font-medium text-lg text-emerald-950 mb-3">Elbow & Wrist</h3>
           <ul class="space-y-2 text-slate-600">
             <li>• <a href="/tennis-elbow/" class="text-emerald-700 hover:text-emerald-800 font-medium">Tennis elbow (lateral epicondylitis)</a></li>
@@ -175,7 +166,7 @@ import FAQSection from '../components/FAQSection.astro';
         </div>
 
         <!-- Hip & Pelvis -->
-        <div class="bg-emerald-50 rounded-xl p-6 card-hover">
+        <div class="care-item">
           <h3 class="font-serif font-medium text-lg text-emerald-950 mb-3">Hip & Pelvis</h3>
           <ul class="space-y-2 text-slate-600">
             <li>• Hip labral tears</li>
@@ -187,7 +178,7 @@ import FAQSection from '../components/FAQSection.astro';
         </div>
 
         <!-- Ankle & Foot -->
-        <div class="bg-emerald-50 rounded-xl p-6 card-hover">
+        <div class="care-item">
           <h3 class="font-serif font-medium text-lg text-emerald-950 mb-3">Ankle & Foot</h3>
           <ul class="space-y-2 text-slate-600">
             <li>• <a href="/achilles-tendinitis/" class="text-emerald-700 hover:text-emerald-800 font-medium">Achilles tendinitis/tendinosis</a></li>
@@ -198,7 +189,7 @@ import FAQSection from '../components/FAQSection.astro';
         </div>
 
         <!-- Back & Spine -->
-        <div class="bg-emerald-50 rounded-xl p-6 card-hover">
+        <div class="care-item">
           <h3 class="font-serif font-medium text-lg text-emerald-950 mb-3">Back & Spine</h3>
           <ul class="space-y-2 text-slate-600">
             <li>• <a href="/low-back-pain/" class="text-emerald-700 hover:text-emerald-800 font-medium">Low back pain</a></li>
@@ -213,9 +204,9 @@ import FAQSection from '../components/FAQSection.astro';
   </section>
 
   <!-- Treatment Process Section -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
+  <section id="what-to-expect" class="care-section">
     <div class="section-shell">
-      <div class="text-center mb-12">
+      <div class="text-left mb-8">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">What to Expect</h2>
         <p class="text-lg text-slate-600 max-w-3xl mx-auto">
           The number of visits, if treatment is appropriate, depends on the diagnosis, response and available alternatives; improvement cannot be predicted from a standard series
@@ -227,7 +218,7 @@ import FAQSection from '../components/FAQSection.astro';
           <!-- Step 1 -->
           <div class="flex gap-6">
             <div class="flex-shrink-0">
-              <div class="w-12 h-12 bg-emerald-700 rounded-full flex items-center justify-center text-white font-bold text-lg">1</div>
+              <div class="care-number">1</div>
             </div>
             <div>
               <h3 class="font-serif font-medium text-xl text-emerald-950 mb-2">Initial Assessment</h3>
@@ -238,7 +229,7 @@ import FAQSection from '../components/FAQSection.astro';
           <!-- Step 2 -->
           <div class="flex gap-6">
             <div class="flex-shrink-0">
-              <div class="w-12 h-12 bg-emerald-700 rounded-full flex items-center justify-center text-white font-bold text-lg">2</div>
+              <div class="care-number">2</div>
             </div>
             <div>
               <h3 class="font-serif font-medium text-xl text-emerald-950 mb-2">Treatment Sessions</h3>
@@ -249,7 +240,7 @@ import FAQSection from '../components/FAQSection.astro';
           <!-- Step 3 -->
           <div class="flex gap-6">
             <div class="flex-shrink-0">
-              <div class="w-12 h-12 bg-emerald-700 rounded-full flex items-center justify-center text-white font-bold text-lg">3</div>
+              <div class="care-number">3</div>
             </div>
             <div>
               <h3 class="font-serif font-medium text-xl text-emerald-950 mb-2">Recovery Period</h3>
@@ -260,7 +251,7 @@ import FAQSection from '../components/FAQSection.astro';
           <!-- Step 4 -->
           <div class="flex gap-6">
             <div class="flex-shrink-0">
-              <div class="w-12 h-12 bg-emerald-700 rounded-full flex items-center justify-center text-white font-bold text-lg">4</div>
+              <div class="care-number">4</div>
             </div>
             <div>
               <h3 class="font-serif font-medium text-xl text-emerald-950 mb-2">Progressive Return</h3>
@@ -273,7 +264,7 @@ import FAQSection from '../components/FAQSection.astro';
   </section>
 
   <!-- Supporting Recovery Section -->
-  <section class="py-16 lg:py-24 bg-white">
+  <section id="supporting-your-recovery" class="care-section">
     <div class="section-shell">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6 text-center">Supporting Your Recovery</h2>
@@ -284,11 +275,7 @@ import FAQSection from '../components/FAQSection.astro';
         <div class="grid md:grid-cols-2 gap-8">
           <div class="flex gap-4">
             <div class="flex-shrink-0">
-              <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center">
-                <svg class="w-5 h-5 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-              </div>
+
             </div>
             <div>
               <h3 class="font-sans font-semibold text-emerald-950 mb-1">IV Nutrient Therapy</h3>
@@ -298,11 +285,7 @@ import FAQSection from '../components/FAQSection.astro';
 
           <div class="flex gap-4">
             <div class="flex-shrink-0">
-              <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center">
-                <svg class="w-5 h-5 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-              </div>
+
             </div>
             <div>
               <h3 class="font-sans font-semibold text-emerald-950 mb-1">Nutritional Support</h3>
@@ -312,11 +295,7 @@ import FAQSection from '../components/FAQSection.astro';
 
           <div class="flex gap-4">
             <div class="flex-shrink-0">
-              <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center">
-                <svg class="w-5 h-5 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-              </div>
+
             </div>
             <div>
               <h3 class="font-sans font-semibold text-emerald-950 mb-1">Lab Testing</h3>
@@ -326,11 +305,7 @@ import FAQSection from '../components/FAQSection.astro';
 
           <div class="flex gap-4">
             <div class="flex-shrink-0">
-              <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center">
-                <svg class="w-5 h-5 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-              </div>
+
             </div>
             <div>
               <h3 class="font-sans font-semibold text-emerald-950 mb-1">Physiotherapy Coordination</h3>
@@ -351,9 +326,9 @@ import FAQSection from '../components/FAQSection.astro';
         ]} />
 
   <!-- Related Conditions Section -->
-  <section class="py-16 lg:py-24 bg-white">
+  <section id="related-information" class="care-section">
     <div class="section-shell">
-      <div class="text-center mb-12">
+      <div class="text-left mb-8">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">Related Information</h2>
       </div>
 
@@ -377,14 +352,14 @@ import FAQSection from '../components/FAQSection.astro';
   </section>
 
   <!-- Final CTA -->
-  <section class="py-16 lg:py-24 bg-emerald-950">
+  <section class="care-closing">
     <div class="section-shell">
       <div class="text-center max-w-3xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">Ready to Get Back in the Game?</h2>
         <p class="text-lg text-white/80 mb-8">
           Don't let an injury keep you sidelined. Book your assessment today and discover how regenerative injection therapy can help you return to the activities you love.
         </p>
-        <CTAButton source="sports-performance-cta" placement="closing" />
+        <BookingButton source="sports-performance-cta" placement="closing" />
       </div>
     </div>
   </section>

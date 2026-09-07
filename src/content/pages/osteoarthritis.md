@@ -9,11 +9,11 @@ seo:
   focusKeyword: "osteoarthritis treatment"
 ---
 
-![Osteoarthritis knee joint](/images/treatments/prolotherapy-knee-injection.webp)
-
 ## Causes of Arthritis (Osteoarthritis)
 
 Arthritis does not have a single cause but has many contributing factors. Mechanical over-use, excess body weight, past injuries and systemic inflammation are all major contributing factors to arthritic changes and joint degradation. Osteoarthritis is characterized by joint cartilage degradation over time and can be worsened by old and new injuries. Osteoarthritis is a very common condition, affecting 14% of adults aged 25 and older and 34% of those aged 65 and older<sup>1</sup>.
+
+![Osteoarthritis knee joint](/images/treatments/prolotherapy-knee-injection.webp)
 
 The mechanical wear-and-tear of osteoarthritis can lead to bone remodeling and bony growths called osteophytes. Osteophytes typically occur as outgrowths of bone and can contribute to pain and further loss of range of motion of a joint.
 

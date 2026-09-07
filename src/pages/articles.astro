@@ -1,7 +1,8 @@
 ---
+import PublicImage from '../components/PublicImage.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
-import CTAButton from '../components/CTAButton.astro';
+import BookingButton from '../components/BookingButton.astro';
 import ArticleSearch from '../components/ArticleSearch.astro';
 import { getCollection } from 'astro:content';
 import { articleTopicFilters, articleTopics, getArticleTopics } from '../lib/articleTopics';
@@ -23,7 +24,7 @@ const sortedArticles = allArticles.sort((a, b) =>
 const featuredArticles = sortedArticles.slice(0, 3);
 // The browse list keeps every article so search can always reach them, but the
 // three already shown as featured cards start hidden — otherwise the same three
-// appear twice within one screen. "Show all" and any search reveal them.
+// appear twice within one screen. "Show all" and any search them.
 const browseArticles = sortedArticles;
 const initiallyVisibleArticles = 12;
 const isDefaultHidden = (index: number) =>
@@ -65,7 +66,7 @@ const collectionSchema = {
 
   <section class="py-16 lg:py-24 bg-white">
     <div class="section-shell">
-      <div class="max-w-4xl mx-auto reveal">
+      <div class="max-w-4xl mx-auto ">
         <section aria-labelledby="featured-articles-heading" class="mb-14">
           <div class="mb-6 flex items-end justify-between gap-6">
             <div>
@@ -74,17 +75,16 @@ const collectionSchema = {
             </div>
           </div>
           <div class="grid gap-5 md:grid-cols-3">
-            {featuredArticles.map((article, index) => (
+            {featuredArticles.map((article) => (
               <a
                 href={`/articles/${article.id}/`}
                 class:list={[
-                  'group overflow-hidden rounded-2xl border border-emerald-100 bg-white shadow-sm shadow-emerald-950/5 transition-all duration-200 hover:-translate-y-0.5 hover:border-emerald-200 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2',
-                  index > 0 && 'hidden md:block',
+                  'group grid grid-cols-[5.5rem_1fr] md:block overflow-hidden rounded-xl border border-emerald-100 bg-white transition-colors hover:border-emerald-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2',
                 ]}
               >
                 {article.data.heroImage && (
-                  <div class="aspect-[16/10] overflow-hidden bg-emerald-50">
-                    <img
+                  <div class="h-full min-h-24 md:h-40 overflow-hidden bg-emerald-50">
+                    <PublicImage
                       src={article.data.heroImage}
                       alt=""
                       class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
@@ -93,7 +93,7 @@ const collectionSchema = {
                     />
                   </div>
                 )}
-                <div class="p-5">
+                <div class="p-4 md:p-5">
                   <div class="mb-2 flex flex-wrap items-center gap-x-2 text-xs text-slate-600">
                     <time>
                       {new Date(article.data.publishDate).toLocaleDateString('en-US', {
@@ -105,7 +105,7 @@ const collectionSchema = {
                     <span aria-hidden="true">&middot;</span>
                     <span>{readingTime(article.body ?? "")} min read</span>
                   </div>
-                  <h3 class="text-xl font-serif font-medium leading-snug text-emerald-950 transition-colors group-hover:text-emerald-700">
+                  <h3 class="text-lg md:text-xl font-serif font-medium leading-snug text-emerald-950 transition-colors group-hover:text-emerald-700">
                     {article.data.title}
                   </h3>
                   <p class="mt-2 line-clamp-2 text-sm leading-relaxed text-slate-600">{article.data.description}</p>
@@ -160,7 +160,7 @@ const collectionSchema = {
           >
             {article.data.heroImage && (
               <div class="hidden sm:block w-24 h-16 rounded-lg overflow-hidden flex-shrink-0 bg-emerald-50">
-                <img
+                <PublicImage
                   src={article.data.heroImage}
                   alt=""
                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -220,14 +220,14 @@ const collectionSchema = {
   </section>
 
   <!-- CTA Section -->
-  <section class="bg-emerald-950 py-16 lg:py-24">
+  <section class="care-closing">
     <div class="section-shell text-center">
       <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">Take Control of Your Health</h2>
       <p class="text-lg sm:text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
         Questions about natural health approaches? Book your appointment to discuss how naturopathic care can support your health goals.
       </p>
       <div class="flex justify-center">
-        <CTAButton source="articles-cta" placement="closing" />
+        <BookingButton source="articles-cta" placement="closing" />
       </div>
     </div>
   </section>

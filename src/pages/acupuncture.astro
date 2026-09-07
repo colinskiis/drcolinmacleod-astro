@@ -1,7 +1,8 @@
 ---
+import PageJumpLinks from '../components/PageJumpLinks.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
-import CTAButton from '../components/CTAButton.astro';
+import BookingButton from '../components/BookingButton.astro';
 import FAQSection from '../components/FAQSection.astro';
 import ServiceArticles from '../components/ServiceArticles.astro';
 ---
@@ -20,10 +21,12 @@ import ServiceArticles from '../components/ServiceArticles.astro';
     <p class="text-white/80">Whether you're recovering from an injury, dealing with chronic pain or looking to improve athletic performance, acupuncture can help restore function and reduce discomfort.</p>
   </HeroSection>
 
+  <PageJumpLinks items={[{"id": "how-acupuncture-works", "title": "How it works"}, {"id": "conditions-treated", "title": "Conditions"}, {"id": "beyond-injury--pain", "title": "Other uses"}, {"id": "electroacupuncture", "title": "Electroacupuncture"}]} />
+
   <!-- How It Works Section -->
-  <section class="py-16 lg:py-24 bg-white">
+  <section id="how-acupuncture-works" class="care-section">
     <div class="section-shell">
-      <div class="text-center mb-12">
+      <div class="text-left mb-8">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">How Acupuncture Works</h2>
         <p class="text-lg text-slate-600 max-w-3xl mx-auto">
           Understanding the science behind this ancient healing practice
@@ -43,39 +46,23 @@ import ServiceArticles from '../components/ServiceArticles.astro';
           </p>
         </div>
         <div class="grid grid-cols-2 gap-6">
-          <div class="bg-emerald-50 rounded-2xl p-6 text-center card-hover">
-            <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-              </svg>
-            </div>
+          <div class="care-item">
+
             <h3 class="font-sans font-semibold text-emerald-950 mb-2">Muscle Relaxation</h3>
             <p class="text-sm text-slate-600">Releases tension in tight, spasmed muscles</p>
           </div>
-          <div class="bg-emerald-50 rounded-2xl p-6 text-center card-hover">
-            <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-              </svg>
-            </div>
+          <div class="care-item">
+
             <h3 class="font-sans font-semibold text-emerald-950 mb-2">Improved Blood Flow</h3>
             <p class="text-sm text-slate-600">Enhances circulation to injured areas</p>
           </div>
-          <div class="bg-emerald-50 rounded-2xl p-6 text-center card-hover">
-            <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-              </svg>
-            </div>
+          <div class="care-item">
+
             <h3 class="font-sans font-semibold text-emerald-950 mb-2">Reduced Inflammation</h3>
             <p class="text-sm text-slate-600">Decreases swelling and irritation</p>
           </div>
-          <div class="bg-emerald-50 rounded-2xl p-6 text-center card-hover">
-            <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
-              </svg>
-            </div>
+          <div class="care-item">
+
             <h3 class="font-sans font-semibold text-emerald-950 mb-2">Faster Recovery</h3>
             <p class="text-sm text-slate-600">Accelerates the healing process</p>
           </div>
@@ -85,9 +72,9 @@ import ServiceArticles from '../components/ServiceArticles.astro';
   </section>
 
   <!-- Conditions Treated -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
+  <section id="conditions-treated" class="care-section">
     <div class="section-shell">
-      <div class="text-center mb-12">
+      <div class="text-left mb-8">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">Conditions Treated</h2>
         <p class="text-lg text-slate-600 max-w-3xl mx-auto">
           High-quality studies have found benefit from acupuncture in a variety of conditions
@@ -95,35 +82,35 @@ import ServiceArticles from '../components/ServiceArticles.astro';
       </div>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <a href="/osteoarthritis/" class="site-card-interactive block p-6">
+        <a href="/osteoarthritis/" class="directory-link  block ">
           <h3 class="font-sans font-semibold text-emerald-950 mb-3">Osteoarthritis</h3>
           <p class="text-sm text-slate-600">Joint pain and stiffness from wear and tear</p>
         </a>
-        <a href="/plantar-fasciitis/" class="site-card-interactive block p-6">
+        <a href="/plantar-fasciitis/" class="directory-link  block ">
           <h3 class="font-sans font-semibold text-emerald-950 mb-3">Plantar Fasciitis</h3>
           <p class="text-sm text-slate-600">Heel and foot pain affecting mobility</p>
         </a>
-        <a href="/low-back-pain/" class="site-card-interactive block p-6">
+        <a href="/low-back-pain/" class="directory-link  block ">
           <h3 class="font-sans font-semibold text-emerald-950 mb-3">Low Back Pain</h3>
           <p class="text-sm text-slate-600">Chronic or acute lumbar discomfort</p>
         </a>
-        <a href="/whiplash-neck-pain/" class="site-card-interactive block p-6">
+        <a href="/whiplash-neck-pain/" class="directory-link  block ">
           <h3 class="font-sans font-semibold text-emerald-950 mb-3">Neck Pain</h3>
           <p class="text-sm text-slate-600">Cervical tension and restricted movement</p>
         </a>
-        <a href="/migraine-headache/" class="site-card-interactive block p-6">
+        <a href="/migraine-headache/" class="directory-link  block ">
           <h3 class="font-sans font-semibold text-emerald-950 mb-3">Migraines</h3>
           <p class="text-sm text-slate-600">Chronic headaches and migraine prevention</p>
         </a>
-        <a href="/articles/migraine-prevention-natural-approaches/" class="site-card-interactive block p-6">
+        <a href="/articles/migraine-prevention-natural-approaches/" class="directory-link  block ">
           <h3 class="font-sans font-semibold text-emerald-950 mb-3">Tension Headaches</h3>
           <p class="text-sm text-slate-600">Muscle tension-related head pain</p>
         </a>
-        <a href="/frozen-shoulder/" class="site-card-interactive block p-6">
+        <a href="/frozen-shoulder/" class="directory-link  block ">
           <h3 class="font-sans font-semibold text-emerald-950 mb-3">Joint Pain</h3>
           <p class="text-sm text-slate-600">Shoulder, knee, hip and other joints</p>
         </a>
-        <a href="/articles/sports-injuries-natural-treatment/" class="site-card-interactive block p-6">
+        <a href="/articles/sports-injuries-natural-treatment/" class="directory-link  block ">
           <h3 class="font-sans font-semibold text-emerald-950 mb-3">Sports Injuries</h3>
           <p class="text-sm text-slate-600">Athletic strains, sprains and overuse</p>
         </a>
@@ -132,9 +119,9 @@ import ServiceArticles from '../components/ServiceArticles.astro';
   </section>
 
   <!-- Beyond injury & pain -->
-  <section class="py-16 lg:py-24 bg-white border-t border-emerald-50">
+  <section id="beyond-injury--pain" class="care-section border-t">
     <div class="section-shell">
-      <div class="max-w-3xl mx-auto text-center mb-10">
+      <div class="max-w-3xl mx-auto text-left mb-10">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">Beyond Injury &amp; Pain</h2>
         <p class="text-lg text-slate-600 leading-relaxed">
           Acupuncture is also used for stress support, habit change and general wellness. Dr. MacLeod integrates traditional acupuncture with naturopathic care so treatment fits your broader health picture.
@@ -154,7 +141,7 @@ import ServiceArticles from '../components/ServiceArticles.astro';
   </section>
 
   <!-- Electroacupuncture Section -->
-  <section class="py-16 lg:py-24 bg-white">
+  <section id="electroacupuncture" class="care-section">
     <div class="section-shell">
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         <div>
@@ -165,7 +152,7 @@ import ServiceArticles from '../components/ServiceArticles.astro';
           <p class="text-slate-600 leading-relaxed mb-6">
             The electrical pulses are similar to transcutaneous electrical nerve stimulation (TENS) but act deeper and closer to the problem area. The current is low enough to cause a gentle twitch of the affected muscle fibers while preventing muscle spasm.
           </p>
-          <div class="bg-emerald-50 rounded-2xl p-6 card-hover">
+          <div class="care-item">
             <h3 class="font-sans font-semibold text-emerald-950 mb-3">Benefits of Electroacupuncture</h3>
             <ul class="space-y-2">
               <li class="flex items-center text-slate-600">
@@ -195,43 +182,43 @@ import ServiceArticles from '../components/ServiceArticles.astro';
             </ul>
           </div>
         </div>
-        <div class="bg-emerald-950 rounded-3xl p-8 lg:p-10 text-white">
-          <h3 class="text-2xl font-serif font-medium mb-6 text-white">How Electroacupuncture Works</h3>
+        <div class="care-item text-slate-600">
+          <h3 class="text-2xl font-serif font-medium mb-6 text-emerald-950">How Electroacupuncture Works</h3>
           <div class="space-y-6">
             <div class="flex items-start">
-              <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 mr-4">
+              <div class="care-number">
                 <span class="font-bold">1</span>
               </div>
               <div>
-                <h4 class="font-sans font-semibold mb-1 text-white">Needle Placement</h4>
-                <p class="text-white/80 text-sm">Acupuncture needles are inserted at specific trigger points</p>
+                <h4 class="font-sans font-semibold mb-1 text-emerald-950">Needle Placement</h4>
+                <p class="text-slate-600 text-sm">Acupuncture needles are inserted at specific trigger points</p>
               </div>
             </div>
             <div class="flex items-start">
-              <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 mr-4">
+              <div class="care-number">
                 <span class="font-bold">2</span>
               </div>
               <div>
-                <h4 class="font-sans font-semibold mb-1 text-white">Electrical Connection</h4>
-                <p class="text-white/80 text-sm">Small clips connect needles to the electrostim device</p>
+                <h4 class="font-sans font-semibold mb-1 text-emerald-950">Electrical Connection</h4>
+                <p class="text-slate-600 text-sm">Small clips connect needles to the electrostim device</p>
               </div>
             </div>
             <div class="flex items-start">
-              <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 mr-4">
+              <div class="care-number">
                 <span class="font-bold">3</span>
               </div>
               <div>
-                <h4 class="font-sans font-semibold mb-1 text-white">Gentle Stimulation</h4>
-                <p class="text-white/80 text-sm">Low-intensity current creates rhythmic muscle contractions</p>
+                <h4 class="font-sans font-semibold mb-1 text-emerald-950">Gentle Stimulation</h4>
+                <p class="text-slate-600 text-sm">Low-intensity current creates rhythmic muscle contractions</p>
               </div>
             </div>
             <div class="flex items-start">
-              <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 mr-4">
+              <div class="care-number">
                 <span class="font-bold">4</span>
               </div>
               <div>
-                <h4 class="font-sans font-semibold mb-1 text-white">Deep Release</h4>
-                <p class="text-white/80 text-sm">Muscles release tension and healing is accelerated</p>
+                <h4 class="font-sans font-semibold mb-1 text-emerald-950">Deep Release</h4>
+                <p class="text-slate-600 text-sm">Muscles release tension and healing is accelerated</p>
               </div>
             </div>
           </div>
@@ -253,18 +240,18 @@ import ServiceArticles from '../components/ServiceArticles.astro';
   />
 
   <!-- CTA Section -->
-  <section class="py-16 lg:py-24 bg-emerald-950">
+  <section class="care-closing">
     <div class="section-shell text-center">
       <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">Ready to Get Started?</h2>
       <p class="text-lg text-white/80 max-w-2xl mx-auto mb-8">
         Book a consultation to discuss how acupuncture can help you recover from injury, reduce pain and improve your quality of life.
       </p>
-      <CTAButton source="acupuncture-cta" placement="closing" />
+      <BookingButton source="acupuncture-cta" placement="closing" />
     </div>
   </section>
 
   <!-- References Section -->
-  <section class="py-12 bg-emerald-50">
+  <section class="care-section">
     <div class="section-shell">
       <details class="group">
         <summary class="cursor-pointer text-sm font-medium text-slate-500 hover:text-slate-700">

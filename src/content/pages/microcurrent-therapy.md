@@ -10,11 +10,11 @@ seo:
   focusKeyword: "microcurrent therapy"
 ---
 
-![Microcurrent therapy treatment on man's knee](/images/treatments/microcurrent-therapy.webp)
-
 ## What Is Microcurrent Therapy?
 
 Microcurrent therapy is a treatment that applies electricity to affected areas of the body at a low amplitude (microamps) rather than the more commonly used high amplitude (milliamps) treatments.
+
+![Microcurrent therapy treatment on man's knee](/images/treatments/microcurrent-therapy.webp)
 
 While transcutaneous electrical nerve stimulation (TENS) applies short bursts of electricity at a high amplitude, microcurrent treatment opts for longer bursts of low amplitude electricity. A microcurrent device uses an electric current with an amplitude that is 1,000 times lower than that of TENS. The total electrical current (volume of electrons) being administered per second of treatment is similar in milliamp and microamp devices because of the longer bursts of electricity of microcurrent devices.
 

@@ -129,7 +129,7 @@
   }
 
   #site-header.scrolled {
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35), 0 1px 0 rgba(255,255,255,0.05);
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
   }
 }
 
@@ -137,144 +137,6 @@
   html {
     font-size: 17px;
   }
-}
-
-/* Custom animations for hero section */
-@keyframes float {
-
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(-20px);
-  }
-}
-
-@keyframes float-delayed {
-
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(-15px);
-  }
-}
-
-.animate-float {
-  animation: float 6s ease-in-out infinite;
-}
-
-.animate-float-delayed {
-  animation: float-delayed 6s ease-in-out infinite 2s;
-}
-
-/* Staggered fade-in animations */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.animate-fade-in {
-  animation: fadeIn 0.6s ease-out forwards;
-}
-
-.animate-fade-in-up {
-  opacity: 0;
-  animation: fadeInUp 0.6s ease-out forwards;
-}
-
-.animate-delay-100 { animation-delay: 100ms; }
-.animate-delay-200 { animation-delay: 200ms; }
-.animate-delay-300 { animation-delay: 300ms; }
-.animate-delay-400 { animation-delay: 400ms; }
-.animate-delay-500 { animation-delay: 500ms; }
-.animate-delay-600 { animation-delay: 600ms; }
-
-/* Keep the mobile hero responsive without making users wait through a long
-   stagger before the primary message becomes readable. */
-@media (max-width: 640px) {
-  .animate-delay-100 { animation-delay: 0ms; }
-  .animate-delay-200 { animation-delay: 50ms; }
-  .animate-delay-300 { animation-delay: 100ms; }
-  .animate-delay-400 { animation-delay: 150ms; }
-  .animate-delay-500 { animation-delay: 200ms; }
-  .animate-delay-600 { animation-delay: 250ms; }
-}
-
-/* Scroll-triggered reveal animations.
-   Hidden state is scoped to html.js (set by an inline script in BaseLayout)
-   so content stays visible when JavaScript is unavailable. */
-html.js .reveal {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-html.js .reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.reveal-delay-100 { transition-delay: 100ms; }
-.reveal-delay-200 { transition-delay: 200ms; }
-.reveal-delay-300 { transition-delay: 300ms; }
-
-@media (prefers-reduced-motion: reduce) {
-  html.js .reveal {
-    opacity: 1;
-    transform: none;
-    transition: none;
-  }
-
-  /* opacity: 1 is required — these animations start from opacity: 0,
-     so animation: none alone would leave content invisible */
-  .animate-fade-in-up,
-  .animate-fade-in {
-    opacity: 1;
-    animation: none;
-  }
-
-  .animate-float,
-  .animate-float-delayed {
-    animation: none;
-  }
-
-  details::details-content {
-    transition: none;
-  }
-}
-
-/* Entrance animations play on first load only; client-side navigations
-   (View Transitions) skip them so revisits don't replay the hero */
-html.astro-navigated .animate-fade-in-up,
-html.astro-navigated .animate-fade-in {
-  opacity: 1;
-  animation: none;
-}
-
-html.astro-navigated.js footer.reveal {
-  opacity: 1;
-  transform: none;
-  transition: none;
 }
 
 /* Progressive article disclosure is an enhancement. Without JavaScript all
@@ -322,6 +184,8 @@ details[open]::details-content {
    (The @tailwindcss/typography plugin is not installed; the .prose
    class is styled entirely here.)
    ---------------------------------------------------------------- */
+.prose { min-width: 0; }
+
 .prose h2,
 .prose h3,
 .prose h4 {
@@ -630,3 +494,78 @@ details[open]::details-content {
 html.js .nav-disclosure-toggle { display: inline-flex; }
 .nav-disclosure-toggle[aria-expanded="true"] svg { transform: rotate(180deg); }
 [data-nav-panel][hidden] { display: none; }
+
+/* Page families: shared brand, deliberate differences in reading and navigation. */
+:root {
+  --care-line: #cdded5;
+  --care-paper: #f3f7f4;
+  --care-space: clamp(3rem, 5vw, 4.5rem);
+}
+.page-hero { margin-top: -1rem; background: #022c22; color: white; padding: 2.5rem 0 3.5rem; }
+.page-hero__layout { max-width: 64rem; margin-inline: auto; }
+.page-hero__layout--centered { text-align: center; max-width: 52rem; }
+.page-hero h1 { color: white; font-size: clamp(2.25rem, 4.2vw, 3.75rem); line-height: 1.1; text-wrap: balance; }
+.page-hero__intro { color: #d7e9df; font-size: clamp(1rem, 1.5vw, 1.125rem); max-width: 68ch; margin-top: 1.25rem; }
+.page-hero__intro p + p { margin-top: 1rem; }
+.page-hero__layout--centered .page-hero__intro { margin-inline: auto; }
+.page-hero__breadcrumb { display: flex; flex-wrap: wrap; gap: .6rem; font-size: .8rem; color: #b4dac8; margin-bottom: 1.25rem; }
+.page-hero__breadcrumb a { text-underline-offset: .25em; text-decoration: underline; }
+.page-hero__breadcrumb a:hover { color: white; }
+.page-hero__breadcrumb [aria-current] { color: #e1eee7; }
+.page-hero__media { margin-top: 2rem; max-width: 32rem; border-radius: .75rem; overflow: hidden; }
+.page-hero__media > img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
+.page-hero__media > div { max-width: none; margin: 0; box-shadow: none; }
+@media (min-width: 1024px) {
+  .page-hero { padding-block: 3rem 4rem; }
+  .page-hero__layout--media { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, .85fr); gap: 3.5rem; align-items: center; }
+  .page-hero__media { margin: 0; }
+}
+:is([data-page-family="service"], [data-page-family="condition"]) > section > .section-shell,
+:is([data-page-family="service"], [data-page-family="condition"]) > article > .section-shell { max-width: 67rem; }
+.care-section { padding-block: var(--care-space); background: white; }
+.care-section + .care-section { border-top: 1px solid #e4ece7; }
+.care-section--tint { background: var(--care-paper); }
+.care-section h2 { font-size: clamp(1.75rem, 3vw, 2.25rem); line-height: 1.2; text-wrap: balance; }
+.care-section h3 { line-height: 1.3; }
+.care-item { border-top: 1px solid var(--care-line); padding-block: 1.25rem; min-width: 0; }
+.care-section .care-item > h2 { font-size: 1.375rem; }
+.care-item > :first-child { margin-top: 0; }
+.care-note { border-left: 2px solid #6c9b84; padding: 1.25rem 1.5rem; background: var(--care-paper); }
+.care-number { display: inline-flex; flex: none; width: 2rem; color: #047857; font-family: 'Manrope', sans-serif; font-size: .875rem; font-weight: 600; }
+.care-reading { color: #475569; }
+.care-reading > :first-child { margin-top: 0; }
+/* Lead photographs are supporting content; dimensions retain the source ratio. */
+.care-reading > p:first-child:has(> img:only-child) { max-width: 24rem; margin-bottom: 2rem; }
+.care-reading > p:first-child > img { margin: 0; box-shadow: none; max-height: 17rem; width: auto; }
+.care-closing { padding-block: var(--care-space); background: #022c22; color: white; }
+.care-closing h2 { color: white; font-size: clamp(1.75rem, 3vw, 2.25rem); }
+.directory-link { display: block; border-top: 1px solid var(--care-line); padding: 1.25rem .25rem; transition: background-color .15s; }
+.directory-link:hover { background: #edf5ef; }
+.directory-link h3 { color: #022c22; }
+.directory-link:focus-visible { outline: 2px solid #047857; outline-offset: 4px; border-radius: .25rem; }
+/* Focus and reduced motion apply to every page family, including legacy utilities. */
+:where(a, button, summary, input, select, textarea):focus-visible { outline: 2px solid #047857; outline-offset: 4px; }
+.page-hero :focus-visible, .care-closing :focus-visible { outline-color: #6ee7b7; }
+:where(main) { overflow-wrap: break-word; }
+:where(main) :is(h1, h2, h3) { text-wrap: balance; }
+:where(main) :is(section, article)[id] { scroll-margin-top: 7rem; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+}
+/* Directories and practical pages introduce a task on a light surface; service
+   and condition headers retain the compact dark care-family treatment. */
+.page-hero--general { background: var(--care-paper); border-bottom: 1px solid var(--care-line); }
+.page-hero--general h1 { color: #022c22; }
+.page-hero--general .page-hero__intro { color: #475569; }
+.page-hero--general :is(nav, nav a, nav span) { color: #065f46; }
+.page-hero--general .page-hero__intro :is(p, strong) { color: inherit; }
+.page-hero--general :focus-visible { outline-color: #047857; }
+.eyebrow { font-family: 'Manrope', sans-serif; font-size: .75rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
+.care-reading > p:has(> img:only-child) { max-width: 28rem; margin-block: 2rem; }
+.care-reading > p > img:only-child { box-shadow: none; max-height: 19rem; width: auto; margin-left: 0; }
+@media (max-width: 639px) {
+  .care-reading > p > img:only-child { max-height: 15rem; }
+  .prose h2 { font-size: 1.75rem; margin-top: 2.5rem; }
+  .prose h3 { font-size: 1.4rem; margin-top: 2rem; }
+  .prose p { font-size: 1rem; line-height: 1.8; }
+}

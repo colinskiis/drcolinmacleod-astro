@@ -1,4 +1,5 @@
 ---
+import PublicImage from '../../components/PublicImage.astro';
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import HeroSection from '../../components/HeroSection.astro';
@@ -109,7 +110,7 @@ const breadcrumbSchema = {
         <div class="mb-8 flex flex-wrap gap-3">
           <a
             href="/articles/"
-            class="rounded-full border border-emerald-100 bg-white px-4 py-2 text-sm font-medium text-emerald-900 transition-colors hover:border-emerald-300 hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
+            class="rounded-full border border-emerald-700 bg-white px-4 py-2 text-sm font-medium text-emerald-900 transition-colors hover:border-emerald-300 hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
           >
             All Articles
           </a>
@@ -121,7 +122,7 @@ const breadcrumbSchema = {
                 'rounded-full border px-4 py-2 text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2',
                 item.id === topic.id
                   ? 'border-emerald-900 bg-emerald-900 text-white'
-                  : 'border-emerald-100 bg-white text-emerald-900 hover:border-emerald-300 hover:bg-emerald-50'
+                  : 'border-emerald-700 bg-white text-emerald-900 hover:border-emerald-300 hover:bg-emerald-50'
               ]}
             >
               {item.label}
@@ -130,7 +131,7 @@ const breadcrumbSchema = {
         </div>
 
         <div class="grid gap-8 lg:grid-cols-[1.4fr_1fr] mb-12">
-          <section class="rounded-lg border border-emerald-100 bg-emerald-50/40 p-6 sm:p-8">
+          <section class="care-item">
             <h2 class="text-2xl font-serif font-medium text-emerald-950 mb-4">About This Topic</h2>
             <div class="space-y-4 text-slate-700 leading-relaxed">
               {topic.overview.map((paragraph) => (
@@ -139,13 +140,13 @@ const breadcrumbSchema = {
             </div>
           </section>
 
-          <section class="rounded-lg border border-slate-100 bg-white p-6 sm:p-8">
+          <section class="care-item">
             <h2 class="text-xl font-serif font-medium text-emerald-950 mb-4">Related Services</h2>
             <div class="grid gap-3">
               {topic.relatedServices.map((service) => (
                 <a
                   href={service.href}
-                  class="group flex items-center justify-between gap-3 rounded-lg border border-emerald-100 px-4 py-3 text-sm font-medium text-emerald-900 transition-colors hover:border-emerald-300 hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
+                  class="directory-link group flex items-center justify-between gap-3 text-sm font-medium text-emerald-900"
                 >
                   <span>{service.label}</span>
                   <svg class="h-4 w-4 text-emerald-700 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -164,7 +165,7 @@ const breadcrumbSchema = {
               {featuredArticles.map((article) => (
                 <a
                   href={`/articles/${article.id}/`}
-                  class="group rounded-lg border border-slate-100 bg-white p-5 transition-colors hover:border-emerald-200 hover:bg-emerald-50/50 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
+                  class="directory-link group"
                 >
                   <time class="text-xs text-slate-400 block mb-2">
                     {new Date(article.data.publishDate).toLocaleDateString('en-US', {
@@ -198,12 +199,10 @@ const breadcrumbSchema = {
             >
               {article.data.heroImage && (
                 <div class="hidden sm:block w-24 h-16 rounded-lg overflow-hidden flex-shrink-0 bg-emerald-50">
-                  <img
+                  <PublicImage
                     src={article.data.heroImage}
                     alt=""
                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    width="96"
-                    height="64"
                     loading="lazy"
                     decoding="async"
                   />

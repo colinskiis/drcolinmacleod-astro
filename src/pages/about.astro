@@ -1,4 +1,5 @@
 ---
+import PublicImage from '../components/PublicImage.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import BookingButton from '../components/BookingButton.astro';
@@ -14,10 +15,10 @@ import { CircleCheckBig, MapPin, ShieldCheck, Clock, ChevronRight } from '@lucid
     Naturopathic doctor in Bedford, Nova Scotia, with more than 15 years of clinical experience.
   </HeroSection>
 
-  <section class="bg-white py-14 lg:py-24">
+  <section id="what-an-appointment-with-me-is-like" class="care-section">
     <div class="section-shell">
       <div class="about-grid">
-        <article class="story-content reveal reveal-delay-100">
+        <article class="story-content ">
           <div class="mb-10 border-b border-emerald-100 pb-10">
             <p class="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-emerald-700">Working together</p>
             <h2 class="mb-5 text-3xl font-medium text-emerald-950 sm:text-4xl font-serif">What an Appointment With Me Is Like</h2>
@@ -74,7 +75,7 @@ import { CircleCheckBig, MapPin, ShieldCheck, Clock, ChevronRight } from '@lucid
           <div>
             <p class="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-emerald-700">Qualifications</p>
             <h2 class="mb-5 text-3xl font-medium text-emerald-950 sm:text-4xl font-serif">Education & Training</h2>
-            <div class="rounded-2xl border border-emerald-100 bg-emerald-50/40 p-6 sm:p-7">
+            <div class="care-item">
               <ul class="space-y-4">
                 <li class="flex items-start gap-3">
                   <CircleCheckBig class="mt-0.5 h-5 w-5 flex-none text-emerald-700" aria-hidden="true" />
@@ -102,21 +103,19 @@ import { CircleCheckBig, MapPin, ShieldCheck, Clock, ChevronRight } from '@lucid
         </article>
 
         <aside class="profile-sidebar" aria-label="Professional details">
-          <div class="profile-photo reveal">
+          <div class="profile-photo ">
             <div class="overflow-hidden rounded-3xl border border-emerald-100 bg-white shadow-lg shadow-emerald-950/5">
-              <img
+              <PublicImage
                 src="/images/general/dr-colin-macleod-nd.webp"
                 alt="Dr. Colin MacLeod, ND, naturopathic doctor in Bedford, Nova Scotia"
                 class="aspect-[3/4] w-full object-cover object-top"
-                width="1600"
-                height="2399"
                 loading="eager"
               />
             </div>
           </div>
 
-          <div class="profile-details space-y-6 reveal reveal-delay-200">
-            <div class="rounded-2xl border border-emerald-100 bg-white p-6 shadow-sm">
+          <div class="profile-details space-y-6 ">
+            <div class="care-item">
             <h2 class="mb-4 text-xl font-medium text-emerald-950 font-serif">Professional Details</h2>
             <div class="space-y-4">
               <div class="flex items-start gap-3">
@@ -134,7 +133,7 @@ import { CircleCheckBig, MapPin, ShieldCheck, Clock, ChevronRight } from '@lucid
             </div>
           </div>
 
-            <div class="rounded-2xl border border-emerald-100 bg-white p-6 shadow-sm">
+            <div class="care-item">
             <h2 class="mb-3 text-xl font-medium text-emerald-950 font-serif">Insurance & Billing</h2>
             <p class="text-sm leading-relaxed text-slate-700">Many extended health plans cover naturopathic visits. Direct billing is available for many insurers; coverage varies by individual plan.</p>
           </div>
@@ -172,10 +171,10 @@ import { CircleCheckBig, MapPin, ShieldCheck, Clock, ChevronRight } from '@lucid
     </div>
   </section>
 
-  <section class="border-y border-emerald-100 bg-emerald-50/50 py-16 lg:py-24">
+  <section id="beyond-the-clinic" class="care-section">
     <div class="section-shell">
       <div class="mx-auto max-w-5xl">
-        <div class="mx-auto mb-10 max-w-3xl text-center reveal">
+        <div class="mx-auto mb-10 max-w-3xl text-left ">
           <p class="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-emerald-700">Outside the clinic</p>
           <h2 class="mb-5 text-3xl font-medium text-emerald-950 sm:text-4xl font-serif">Beyond the Clinic</h2>
           <blockquote class="text-lg leading-relaxed text-slate-600">
@@ -184,14 +183,12 @@ import { CircleCheckBig, MapPin, ShieldCheck, Clock, ChevronRight } from '@lucid
           </blockquote>
         </div>
 
-        <div class="grid items-stretch gap-8 md:grid-cols-2 reveal reveal-delay-100">
+        <div class="grid items-stretch gap-8 md:grid-cols-2 ">
           <div class="min-h-72 overflow-hidden rounded-3xl border border-emerald-100 bg-white shadow-lg shadow-emerald-950/5">
-            <img
+            <PublicImage
               src="/images/general/bluenose-marathon.webp"
               alt="Dr. Colin MacLeod running the Bluenose Marathon in Halifax"
               class="h-full w-full object-cover object-center"
-              width="1280"
-              height="1449"
               loading="lazy"
             />
           </div>
@@ -270,7 +267,7 @@ import { CircleCheckBig, MapPin, ShieldCheck, Clock, ChevronRight } from '@lucid
     </div>
   </section>
 
-  <section class="bg-emerald-950 py-16 lg:py-24">
+  <section class="care-closing">
     <div class="section-shell text-center">
       <h2 class="mb-6 text-3xl font-medium text-white sm:text-4xl font-serif">Interested in Working Together?</h2>
       <p class="mx-auto mb-8 max-w-3xl text-lg leading-relaxed text-white/90 sm:text-xl">

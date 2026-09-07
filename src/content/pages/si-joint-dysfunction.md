@@ -9,9 +9,9 @@ seo:
   focusKeyword: "SI joint dysfunction treatment Halifax"
 ---
 
-![Sacroiliac joint pain](/images/conditions/low-back-pain.webp)
-
 Sacroiliac (SI) joint dysfunction is one of the most frequently overlooked causes of low back and buttock pain, estimated to account for 15 to 30% of chronic low back pain cases.<sup>1</sup> The sacroiliac joints connect the sacrum (the triangular bone at the base of the spine) to the ilium bones of the pelvis on each side. These joints are held together primarily by strong ligaments and bear the significant task of transferring load between the spine and the lower limbs. When the ligaments supporting the SI joint become lax or damaged, or when the joint itself becomes inflamed or degenerated, pain and instability can result. Because SI joint pain can mimic disc herniation, hip pathology and other causes of [low back pain](/low-back-pain/), it is commonly missed in conventional diagnostic workups.
+
+![Sacroiliac joint pain](/images/conditions/low-back-pain.webp)
 
 ## Causes of SI Joint Dysfunction
 

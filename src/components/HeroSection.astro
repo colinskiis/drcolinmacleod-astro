@@ -1,4 +1,5 @@
 ---
+import PublicImage from './PublicImage.astro';
 import VideoPreview from './VideoPreview.astro';
 import { isConditionPath, isLabTestingPath, isServicePath } from '../config/routes';
 
@@ -7,140 +8,50 @@ export interface Props {
   centered?: boolean;
   compact?: boolean;
   textOnly?: boolean;
-  image?: {
-    src: string;
-    alt: string;
-    aspect?: 'video' | 'square';
-    width?: number;
-    height?: number;
-    hideOnMobile?: boolean;
-  };
-  video?: {
-    src: string;
-    title: string;
-    poster?: string;
-  };
+  image?: { src: string; alt: string; aspect?: 'video' | 'square'; hideOnMobile?: boolean };
+  video?: { src: string; title: string; poster?: string };
 }
-
 const { title, centered = false, compact = false, textOnly = false, image, video } = Astro.props;
-const hasMedia = image || video;
-const currentPath = Astro.url.pathname;
-const hasBreadcrumbSlot = Astro.slots.has('breadcrumb');
-const defaultBreadcrumb = isLabTestingPath(currentPath)
+const path = Astro.url.pathname;
+const condition = isConditionPath(path);
+const service = isServicePath(path);
+const care = condition || service;
+const breadcrumb = isLabTestingPath(path) && path !== '/lab-testing/'
   ? { href: '/lab-testing/', label: 'Lab Testing' }
-  : isServicePath(currentPath)
-    ? { href: '/services/', label: 'Services' }
-    : isConditionPath(currentPath)
-      ? { href: '/conditions/', label: 'Conditions' }
-      : null;
-
-// Padding classes based on compact prop.
-// Compact heroes clear the fixed header via pt-28/pt-32, so their effective top
-// inset is larger than the bottom. Keep the bottom smaller so a title-only hero
-// reads as optically centred rather than bottom-heavy.
-const sectionPadding = compact
-  ? "pb-8 lg:pb-12"
-  : "pb-24 lg:pb-32";
-const topPadding = compact
-  ? "pt-28 lg:pt-32"
-  : "pt-32 lg:pt-44";
-
-// Image dimensions based on aspect ratio
-const imageAspect = image?.aspect || 'video';
-const imageClasses = imageAspect === 'square'
-  ? "aspect-square"
-  : "aspect-video";
-const imageDimensions = imageAspect === 'square'
-  ? { width: 800, height: 800 }
-  : { width: 1280, height: 720 };
+  : service ? { href: '/services/', label: 'Services' }
+  : condition ? { href: '/conditions/', label: 'Conditions' } : null;
+// Conditions lead with information. Their supporting imagery belongs beside the
+// relevant explanation, rather than delaying it in a large introductory banner.
+const showMedia = !condition && !textOnly && !centered && (image || video || Astro.slots.has('media'));
 ---
 
-<section class={`bg-emerald-950 -mt-24 ${topPadding} ${sectionPadding}`}>
+<section class:list={['page-hero', care ? 'page-hero--care' : 'page-hero--general', compact && 'page-hero--compact']}>
   <div class="section-shell">
-    {centered ? (
-      <div class="text-center max-w-4xl mx-auto space-y-6">
-        {hasBreadcrumbSlot ? (
-          <slot name="breadcrumb" />
-        ) : defaultBreadcrumb && (
-          <nav class="text-emerald-300 text-sm mb-4" aria-label="Breadcrumb">
-            <a href={defaultBreadcrumb.href} class="-mx-1 inline-flex min-h-6 items-center rounded px-1 transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300">{defaultBreadcrumb.label}</a>
-            <span class="mx-2" aria-hidden="true">/</span>
-            <span class="text-white">{title}</span>
+    <div class:list={['page-hero__layout', showMedia && 'page-hero__layout--media', centered && !care && 'page-hero__layout--centered']}>
+      <div class="min-w-0">
+        {Astro.slots.has('breadcrumb') ? <slot name="breadcrumb" /> : breadcrumb && (
+          <nav class="page-hero__breadcrumb" aria-label="Breadcrumb">
+            <a href={breadcrumb.href}>{breadcrumb.label}</a>
+            <span aria-hidden="true">/</span>
+            <span aria-current="page">{title}</span>
           </nav>
         )}
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-medium text-white mb-6 tracking-tight">{title}</h1>
-        <div class="text-lg sm:text-xl text-emerald-100 mb-8 leading-relaxed font-light">
-          <slot />
-        </div>
-        <slot name="cta" />
+        <h1>{title}</h1>
+        <div class="page-hero__intro"><slot /></div>
+        {Astro.slots.has('cta') && <div class="mt-7"><slot name="cta" /></div>}
       </div>
-    ) : textOnly ? (
-      <div class="max-w-4xl">
-        {hasBreadcrumbSlot ? (
-          <slot name="breadcrumb" />
-        ) : defaultBreadcrumb && (
-          <nav class="text-emerald-300 text-sm mb-4" aria-label="Breadcrumb">
-            <a href={defaultBreadcrumb.href} class="-mx-1 inline-flex min-h-6 items-center rounded px-1 transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300">{defaultBreadcrumb.label}</a>
-            <span class="mx-2" aria-hidden="true">/</span>
-            <span class="text-white">{title}</span>
-          </nav>
-        )}
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-medium text-white tracking-tight mb-6">{title}</h1>
-        <div class="text-lg sm:text-xl text-white/90 leading-relaxed font-light space-y-4 mb-8">
-          <slot />
+      {showMedia && (
+        <div class:list={['page-hero__media', image?.hideOnMobile && 'hidden lg:block']}>
+          {image ? (
+            <PublicImage src={image.src} alt={image.alt}
+              loading="eager" fetchpriority="high" decoding="async" />
+          ) : video?.poster ? <VideoPreview src={video.src} title={video.title} poster={video.poster} />
+          : video ? (
+            <iframe src={video.src} title={video.title} class="aspect-video w-full" style="border:0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+          ) : <slot name="media" />}
         </div>
-        <slot name="cta" />
-      </div>
-    ) : (
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
-        <div class="space-y-6">
-          {hasBreadcrumbSlot ? (
-            <slot name="breadcrumb" />
-          ) : defaultBreadcrumb && (
-            <nav class="text-emerald-300 text-sm mb-4" aria-label="Breadcrumb">
-              <a href={defaultBreadcrumb.href} class="-mx-1 inline-flex min-h-6 items-center rounded px-1 transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300">{defaultBreadcrumb.label}</a>
-              <span class="mx-2" aria-hidden="true">/</span>
-              <span class="text-white">{title}</span>
-            </nav>
-          )}
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-medium text-white tracking-tight">{title}</h1>
-          <div class="text-lg sm:text-xl text-white/90 leading-relaxed font-light space-y-4">
-            <slot />
-          </div>
-          <slot name="cta" />
-        </div>
-        {image && (
-          <div class={`rounded-2xl overflow-hidden shadow-2xl ${image.hideOnMobile ? 'hidden lg:block' : ''} ${imageAspect === 'square' ? 'aspect-square' : ''}`}>
-            <img
-              src={image.src}
-              alt={image.alt}
-              class={`w-full h-full object-cover ${imageClasses}`}
-              width={image.width ?? imageDimensions.width}
-              height={image.height ?? imageDimensions.height}
-              loading="eager"
-              fetchpriority="high"
-              decoding="async"
-            />
-          </div>
-        )}
-        {video?.poster ? (
-          <VideoPreview src={video.src} title={video.title} poster={video.poster} />
-        ) : video && (
-          <div class="aspect-video rounded-2xl overflow-hidden shadow-2xl">
-            <iframe
-              src={video.src}
-              title={video.title}
-              class="w-full h-full"
-              style="border: 0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen>
-            </iframe>
-          </div>
-        )}
-        {!hasMedia && (
-          <slot name="media" />
-        )}
-      </div>
-    )}
+      )}
+    </div>
   </div>
 </section>

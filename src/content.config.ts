@@ -36,7 +36,7 @@ const pages = defineCollection({
     title: z.string(),
     description: z.string(),
     type: z.enum(['condition', 'treatment']).default('condition'),
-    pageTemplate: z.enum(['legacy', 'clinical']).default('legacy'),
+    pageTemplate: z.literal('clinical').default('clinical'),
     modifiedDate: z.date().optional(),
     relatedLinks: z
       .array(

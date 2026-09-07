@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
-import CTAButton from '../components/CTAButton.astro';
+import BookingButton from '../components/BookingButton.astro';
 import { ChevronRight } from '@lucide/astro';
 
 const conditionPages = [
@@ -146,17 +146,17 @@ const conditionGroups = [
     Support for acute and chronic health concerns using naturopathic assessment, lifestyle therapy, nutrition, IV therapy and regenerative injection approaches where appropriate.
   </HeroSection>
 
-  <section class="py-16 lg:py-24 bg-white">
+  <section id="care-information-by-condition" class="care-section">
     <div class="section-shell">
-      <div class="max-w-3xl mb-12 reveal">
-        <p class="pill mb-4">Condition Pages</p>
+      <div class="max-w-3xl mb-12 ">
+
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">Care Information by Condition</h2>
         <p class="text-lg text-slate-600">
           Start with the area that best matches your concern. Each page describes the condition and the types of assessment or care that may be considered.
         </p>
       </div>
 
-      <div class="space-y-14 reveal reveal-delay-100">
+      <div class="space-y-14 ">
         {conditionGroups.map((group, groupIndex) => (
           <section
             aria-labelledby={`condition-group-${groupIndex}`}
@@ -170,9 +170,9 @@ const conditionGroups = [
               </h3>
               <p class="text-sm leading-relaxed text-slate-600">{group.description}</p>
             </div>
-            <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div class="grid gap-x-10 gap-y-1 sm:grid-cols-2 lg:grid-cols-3">
               {group.conditions.map((condition) => (
-                <a href={condition.href} class="site-card-interactive group flex h-full flex-col gap-3 p-5 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
+                <a href={condition.href} class="directory-link  group flex h-full flex-col gap-3  focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
                   <span class="flex items-start gap-2 text-lg font-semibold text-emerald-950 group-hover:text-emerald-700 transition-colors">
                     <ChevronRight class="mt-1 w-4 h-4 text-emerald-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform duration-200" aria-hidden="true" />
                     {condition.title}
@@ -188,14 +188,14 @@ const conditionGroups = [
   </section>
 
   <!-- CTA Section -->
-  <section class="bg-emerald-950 py-16 lg:py-24">
+  <section class="care-closing">
     <div class="section-shell text-center">
       <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">Don't See Your Condition Listed?</h2>
       <p class="text-lg sm:text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
         Dr. MacLeod works with a wide range of health concerns. Contact us to discuss whether naturopathic care is a fit for your specific situation.
       </p>
       <div class="flex justify-center">
-        <CTAButton source="conditions-cta" placement="closing" />
+        <BookingButton source="conditions-cta" placement="closing" />
       </div>
     </div>
   </section>

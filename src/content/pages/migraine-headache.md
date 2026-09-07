@@ -5,9 +5,9 @@ seo:
   focusKeyword: "migraine treatment"
 ---
 
-![Migraine headache. Woman holding her head.](/images/conditions/migraine.jpeg)
-
 Migraines are a common type of headache characterized by a pulsing or throbbing sensation and often accompanied by nausea, vomiting and sensitivity to light and sound. Migraines are a very common problem, affecting 12% of the population of the USA, including 17% of women and 6% of men each year<sup>1</sup>. Migraines are the second most common cause of disability, next to low back pain, worldwide<sup>2</sup>.
+
+![Migraine headache. Woman holding her head.](/images/conditions/migraine.jpeg)
 
 This article will provide an overview of migraines, including their causes, symptoms, diagnosis, conventional treatment, naturopathic treatment and prevention.
 

@@ -10,11 +10,11 @@ seo:
   focusKeyword: "glutathione IV therapy"
 ---
 
-![Glutathione bottle. For IV use.](/images/treatments/glutathione-iv.webp)
-
 ## What is Glutathione
 
 Glutathione is a potent antioxidant that the body produces naturally from three amino acid starting materials: glycine, glutamine and cysteine. Most cells within the body have a 5 mmol concentration of glutathione. This is a high cellular concentration considering that magnesium (<1 mmol), cholesterol (1.5 mmol), hemoglobin (1.5 mmol) and calcium (2 mmol) all have a significantly lower concentration within our cells than glutathione<sup>1</sup>.
+
+![Glutathione bottle. For IV use.](/images/treatments/glutathione-iv.webp)
 
 ## What Is Oxidation?
 

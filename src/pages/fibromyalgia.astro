@@ -1,7 +1,8 @@
 ---
+import PageJumpLinks from '../components/PageJumpLinks.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
-import CTAButton from '../components/CTAButton.astro';
+import BookingButton from '../components/BookingButton.astro';
 import FAQSection from '../components/FAQSection.astro';
 ---
 
@@ -15,35 +16,15 @@ import FAQSection from '../components/FAQSection.astro';
     compact
     image={{ src: "/images/conditions/fibromyalgia-hero.webp", alt: "Fibromyalgia treatment and pain relief", aspect: "video" }}
   >
-    <p>Fibromyalgia affects over <strong class="text-white">500,000 Canadians</strong> with widespread pain, fatigue and cognitive difficulties. We offer comprehensive naturopathic care including <strong class="text-white">IV nutrient therapy</strong> to help manage your symptoms and improve quality of life.</p>
+    <p>Care for widespread pain, fatigue and other fibromyalgia symptoms, beginning with your health history and the concerns affecting daily life.</p>
   </HeroSection>
 
+  <PageJumpLinks items={[{"id": "understanding-fibromyalgia", "title": "Understanding fibromyalgia"}, {"id": "iv-therapy", "title": "IV nutrient therapy"}, {"id": "comprehensive-fibromyalgia-care", "title": "Supporting care"}, {"id": "what-to-expect", "title": "Your visit"}]} />
+
   <!-- Statistics -->
-  <section class="py-12 bg-white">
-    <div class="section-shell">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-        <div>
-          <div class="text-4xl font-bold text-emerald-700 mb-2">2-3%</div>
-          <p class="text-slate-600 text-sm">of Canadians affected</p>
-        </div>
-        <div>
-          <div class="text-4xl font-bold text-emerald-700 mb-2">6-9x</div>
-          <p class="text-slate-600 text-sm">more common in women</p>
-        </div>
-        <div>
-          <div class="text-4xl font-bold text-emerald-700 mb-2">90%+</div>
-          <p class="text-slate-600 text-sm">use complementary therapies</p>
-        </div>
-        <div>
-          <div class="text-4xl font-bold text-emerald-700 mb-2">$4,000+</div>
-          <p class="text-slate-600 text-sm">annual healthcare costs per patient</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- Understanding Fibromyalgia -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
+  <section id="understanding-fibromyalgia" class="care-section">
     <div class="section-shell">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6">Understanding Fibromyalgia</h2>
@@ -56,7 +37,7 @@ import FAQSection from '../components/FAQSection.astro';
           </p>
         </div>
 
-        <div class="site-card-interactive p-8">
+        <div class="care-item">
           <h3 class="font-serif font-medium text-xl text-emerald-950 mb-6">Common Fibromyalgia Symptoms</h3>
           <div class="grid md:grid-cols-2 gap-6">
             <div>
@@ -108,7 +89,7 @@ import FAQSection from '../components/FAQSection.astro';
   </section>
 
   <!-- Myers' Cocktail for Fibromyalgia -->
-  <section id="iv-therapy" class="py-16 lg:py-24 bg-white">
+  <section id="iv-therapy" class="care-section">
     <div class="section-shell">
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         <div>
@@ -126,51 +107,35 @@ import FAQSection from '../components/FAQSection.astro';
           </div>
         </div>
 
-        <div class="bg-emerald-700 rounded-2xl p-8 text-white">
-          <h3 class="font-serif font-medium text-xl mb-6 text-white">Why IV Therapy Works</h3>
+        <div class="care-item text-slate-600">
+          <h3 class="font-serif font-medium text-xl mb-6 text-emerald-950">Why IV Therapy Works</h3>
           <div class="space-y-4">
             <div class="flex gap-4">
-              <div class="flex-shrink-0 w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                </svg>
-              </div>
+
               <div>
-                <h4 class="font-medium mb-1 text-white">Direct Delivery</h4>
-                <p class="text-white/80 text-sm">Bypasses digestive absorption, delivering nutrients directly to cells</p>
+                <h4 class="font-medium mb-1 text-emerald-950">Direct Delivery</h4>
+                <p class="text-slate-600 text-sm">Bypasses digestive absorption, delivering nutrients directly to cells</p>
               </div>
             </div>
             <div class="flex gap-4">
-              <div class="flex-shrink-0 w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
-                </svg>
-              </div>
+
               <div>
-                <h4 class="font-medium mb-1 text-white">Higher Concentrations</h4>
-                <p class="text-white/80 text-sm">Achieves blood levels impossible with oral supplements</p>
+                <h4 class="font-medium mb-1 text-emerald-950">Higher Concentrations</h4>
+                <p class="text-slate-600 text-sm">Achieves blood levels impossible with oral supplements</p>
               </div>
             </div>
             <div class="flex gap-4">
-              <div class="flex-shrink-0 w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-              </div>
+
               <div>
-                <h4 class="font-medium mb-1 text-white">Rapid Response</h4>
-                <p class="text-white/80 text-sm">Many patients feel improvement within hours</p>
+                <h4 class="font-medium mb-1 text-emerald-950">Rapid Response</h4>
+                <p class="text-slate-600 text-sm">Many patients feel improvement within hours</p>
               </div>
             </div>
             <div class="flex gap-4">
-              <div class="flex-shrink-0 w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                </svg>
-              </div>
+
               <div>
-                <h4 class="font-medium mb-1 text-white">Magnesium Benefits</h4>
-                <p class="text-white/80 text-sm">IV magnesium has been shown to help pain in multiple conditions</p>
+                <h4 class="font-medium mb-1 text-emerald-950">Magnesium Benefits</h4>
+                <p class="text-slate-600 text-sm">IV magnesium has been shown to help pain in multiple conditions</p>
               </div>
             </div>
           </div>
@@ -190,72 +155,56 @@ import FAQSection from '../components/FAQSection.astro';
   </section>
 
   <!-- Comprehensive Approach -->
-  <section class="py-16 lg:py-24 bg-emerald-950">
+  <section id="comprehensive-fibromyalgia-care" class="care-section care-section--tint">
     <div class="section-shell">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-4">Comprehensive Fibromyalgia Care</h2>
-        <p class="text-lg text-white/80 max-w-3xl mx-auto">
+      <div class="text-left mb-8">
+        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">Comprehensive Fibromyalgia Care</h2>
+        <p class="text-lg text-slate-600 max-w-3xl mx-auto">
           IV therapy is one piece of a comprehensive approach. We also address other factors that may be contributing to or worsening your symptoms.
         </p>
       </div>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         <!-- Testing -->
-        <div class="bg-white/10 backdrop-blur rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 hover:bg-white/15">
-          <div class="w-12 h-12 bg-emerald-400/20 rounded-xl flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
-            </svg>
-          </div>
-          <h3 class="font-serif font-medium text-lg text-white mb-2">Testing</h3>
-          <p class="text-white/70 text-sm">Rule out thyroid issues, nutrient deficiencies and other conditions that mimic or worsen fibromyalgia</p>
+        <div class="care-item">
+
+          <h3 class="font-serif font-medium text-lg text-emerald-950 mb-2">Testing</h3>
+          <p class="text-slate-600 text-sm">Rule out thyroid issues, nutrient deficiencies and other conditions that mimic or worsen fibromyalgia</p>
         </div>
 
         <!-- Sleep -->
-        <div class="bg-white/10 backdrop-blur rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 hover:bg-white/15">
-          <div class="w-12 h-12 bg-emerald-400/20 rounded-xl flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
-            </svg>
-          </div>
-          <h3 class="font-serif font-medium text-lg text-white mb-2">Sleep Support</h3>
-          <p class="text-white/70 text-sm">Non-restorative sleep worsens pain and fatigue. We address sleep quality with natural approaches</p>
+        <div class="care-item">
+
+          <h3 class="font-serif font-medium text-lg text-emerald-950 mb-2">Sleep Support</h3>
+          <p class="text-slate-600 text-sm">Non-restorative sleep worsens pain and fatigue. We address sleep quality with natural approaches</p>
         </div>
 
         <!-- Inflammation -->
-        <div class="bg-white/10 backdrop-blur rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 hover:bg-white/15">
-          <div class="w-12 h-12 bg-emerald-400/20 rounded-xl flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
-            </svg>
-          </div>
-          <h3 class="font-serif font-medium text-lg text-white mb-2">Anti-Inflammatory</h3>
-          <p class="text-white/70 text-sm">Reduce systemic inflammation with diet strategies and targeted natural anti-inflammatories</p>
+        <div class="care-item">
+
+          <h3 class="font-serif font-medium text-lg text-emerald-950 mb-2">Anti-Inflammatory</h3>
+          <p class="text-slate-600 text-sm">Reduce systemic inflammation with diet strategies and targeted natural anti-inflammatories</p>
         </div>
 
         <!-- Stress -->
-        <div class="bg-white/10 backdrop-blur rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 hover:bg-white/15">
-          <div class="w-12 h-12 bg-emerald-400/20 rounded-xl flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-            </svg>
-          </div>
-          <h3 class="font-serif font-medium text-lg text-white mb-2">Stress & Adrenals</h3>
-          <p class="text-white/70 text-sm">Support the stress response system that is often dysregulated in fibromyalgia</p>
+        <div class="care-item">
+
+          <h3 class="font-serif font-medium text-lg text-emerald-950 mb-2">Stress & Adrenals</h3>
+          <p class="text-slate-600 text-sm">Support the stress response system that is often dysregulated in fibromyalgia</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- What to Expect -->
-  <section class="py-16 lg:py-24 bg-white">
+  <section id="what-to-expect" class="care-section">
     <div class="section-shell">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6">What to Expect</h2>
 
         <div class="space-y-6">
           <div class="flex gap-6 items-start">
-            <div class="flex-shrink-0 w-12 h-12 bg-emerald-700 rounded-full flex items-center justify-center text-white font-bold text-lg">1</div>
+            <div class="care-number">1</div>
             <div>
               <h3 class="font-serif font-medium text-xl text-emerald-950 mb-2">Initial Consultation</h3>
               <p class="text-slate-600">We'll review your history, current symptoms, previous treatments and goals. We'll discuss which tests might be helpful and develop a treatment plan tailored to your situation.</p>
@@ -263,7 +212,7 @@ import FAQSection from '../components/FAQSection.astro';
           </div>
 
           <div class="flex gap-6 items-start">
-            <div class="flex-shrink-0 w-12 h-12 bg-emerald-700 rounded-full flex items-center justify-center text-white font-bold text-lg">2</div>
+            <div class="care-number">2</div>
             <div>
               <h3 class="font-serif font-medium text-xl text-emerald-950 mb-2">Testing (If Indicated)</h3>
               <p class="text-slate-600">Based on your history, we may recommend thyroid testing, nutrient status, adrenal function or other assessments to identify contributing factors.</p>
@@ -271,7 +220,7 @@ import FAQSection from '../components/FAQSection.astro';
           </div>
 
           <div class="flex gap-6 items-start">
-            <div class="flex-shrink-0 w-12 h-12 bg-emerald-700 rounded-full flex items-center justify-center text-white font-bold text-lg">3</div>
+            <div class="care-number">3</div>
             <div>
               <h3 class="font-serif font-medium text-xl text-emerald-950 mb-2">IV Therapy</h3>
               <p class="text-slate-600">If appropriate, we'll begin Myers' Cocktail treatments. Each infusion takes 30-45 minutes. Many patients feel improvement within hours: decreased pain, increased energy, better mental clarity.</p>
@@ -279,7 +228,7 @@ import FAQSection from '../components/FAQSection.astro';
           </div>
 
           <div class="flex gap-6 items-start">
-            <div class="flex-shrink-0 w-12 h-12 bg-emerald-700 rounded-full flex items-center justify-center text-white font-bold text-lg">4</div>
+            <div class="care-number">4</div>
             <div>
               <h3 class="font-serif font-medium text-xl text-emerald-950 mb-2">Ongoing Support</h3>
               <p class="text-slate-600">We'll work with you to find the optimal treatment frequency and address other aspects of your health. Most fibromyalgia patients do best with regular IV treatments combined with other supportive strategies.</p>
@@ -299,20 +248,21 @@ import FAQSection from '../components/FAQSection.astro';
         ]} />
 
   <!-- CTA Section -->
-  <section class="py-16 lg:py-24 bg-emerald-950">
+  <section class="care-closing">
     <div class="section-shell">
       <div class="text-center max-w-3xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">Ready to Take Control of Your Fibromyalgia?</h2>
         <p class="text-lg text-white/90 mb-8">
           Living with fibromyalgia is challenging, but you don't have to face it alone. Let's work together to reduce your pain, improve your energy and enhance your quality of life.
         </p>
-        <CTAButton source="fibromyalgia-cta" placement="closing" />
+        <BookingButton source="fibromyalgia-cta" placement="closing" />
       </div>
     </div>
   </section>
 
   <!-- References -->
-  <section class="py-12 bg-emerald-50">
+
+<section class="care-section">
     <div class="section-shell">
       <div class="max-w-4xl mx-auto">
         <h3 class="font-serif font-medium text-lg text-slate-700 mb-4">References</h3>

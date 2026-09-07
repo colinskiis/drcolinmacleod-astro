@@ -1,8 +1,9 @@
 ---
+import PageJumpLinks from '../components/PageJumpLinks.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
-import CTAButton from '../components/CTAButton.astro';
-import { Minus, Check, Shield, Zap, RefreshCw, Heart, Sparkles, ChevronRight } from '@lucide/astro';
+import BookingButton from '../components/BookingButton.astro';
+import { Minus, Check, ChevronRight } from '@lucide/astro';
 import FAQSection from '../components/FAQSection.astro';
 ---
 
@@ -19,8 +20,10 @@ import FAQSection from '../components/FAQSection.astro';
     <p>Intravenous vitamin C produces different blood concentrations than oral vitamin C, but that pharmacological difference does not establish benefit for every symptom or condition. Assessment, screening and informed consent come first.</p>
   </HeroSection>
 
+  <PageJumpLinks items={[{"id": "iv-and-oral-vitamin-c-are-different", "title": "IV & oral vitamin C"}, {"id": "who-benefits-from-iv-vitamin-c", "title": "When considered"}, {"id": "the-science-of-iv-vitamin-c", "title": "How it works"}, {"id": "treatment-options", "title": "Treatment options"}, {"id": "what-to-expect", "title": "Your visit"}, {"id": "safety--considerations", "title": "Safety"}]} />
+
   <!-- Key Benefits -->
-  <section class="py-12 bg-white">
+  <section class="care-section">
     <div class="section-shell">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
         <div>
@@ -44,7 +47,7 @@ import FAQSection from '../components/FAQSection.astro';
   </section>
 
   <!-- Why IV vs Oral -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
+  <section id="iv-and-oral-vitamin-c-are-different" class="care-section">
     <div class="section-shell">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6">IV and Oral Vitamin C Are Different</h2>
@@ -58,7 +61,7 @@ import FAQSection from '../components/FAQSection.astro';
         </div>
 
         <div class="grid md:grid-cols-2 gap-8">
-          <div class="site-card-interactive p-8">
+          <div class="care-item">
             <h3 class="font-serif font-medium text-xl text-emerald-950 mb-4 flex items-center gap-2">
               <span class="w-8 h-8 bg-slate-200 rounded-full flex items-center justify-center text-slate-600 text-sm font-bold">C</span>
               Oral Vitamin C
@@ -83,7 +86,7 @@ import FAQSection from '../components/FAQSection.astro';
             </ul>
           </div>
 
-          <div class="bg-white border border-emerald-100 rounded-2xl p-8 shadow-sm">
+          <div class="care-item">
             <h3 class="font-serif font-medium text-xl text-emerald-950 mb-4 flex items-center gap-2">
               <span class="w-8 h-8 bg-emerald-100 text-emerald-800 rounded-full flex items-center justify-center text-sm font-bold">IV</span>
               IV Vitamin C
@@ -113,9 +116,9 @@ import FAQSection from '../components/FAQSection.astro';
   </section>
 
   <!-- What IV Vitamin C Treats -->
-  <section class="py-16 lg:py-24 bg-white">
+  <section id="who-benefits-from-iv-vitamin-c" class="care-section">
     <div class="section-shell">
-      <div class="text-center mb-12">
+      <div class="text-left mb-8">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">Who Benefits from IV Vitamin C?</h2>
         <p class="text-lg text-slate-600 max-w-3xl mx-auto">
           IV vitamin C supports multiple aspects of health through its antioxidant, immune-supporting and tissue-repair properties.
@@ -124,55 +127,43 @@ import FAQSection from '../components/FAQSection.astro';
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Immune Support -->
-        <div class="bg-emerald-50 rounded-2xl p-6 card-hover">
-          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
-            <Shield class="w-6 h-6 text-white" aria-hidden="true" />
-          </div>
+        <div class="care-item">
+
           <h3 class="font-serif font-medium text-lg text-emerald-950 mb-2">Immune Function</h3>
           <p class="text-slate-600 text-sm">Vitamin C has established biological roles in immune function. This does not establish IV vitamin C as a treatment for acute infection.</p>
         </div>
 
         <!-- Acute Illness -->
-        <div class="bg-emerald-50 rounded-2xl p-6 card-hover">
-          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
-            <Zap class="w-6 h-6 text-white" aria-hidden="true" />
-          </div>
+        <div class="care-item">
+
           <h3 class="font-serif font-medium text-lg text-emerald-950 mb-2">Acute Illness Evidence</h3>
           <p class="text-slate-600 text-sm">Research in acute illness is condition- and setting-specific. It does not support routine IV treatment for common infections.</p>
         </div>
 
         <!-- Post-Viral Recovery -->
-        <div class="bg-emerald-50 rounded-2xl p-6 card-hover">
-          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
-            <RefreshCw class="w-6 h-6 text-white" aria-hidden="true" />
-          </div>
+        <div class="care-item">
+
           <h3 class="font-serif font-medium text-lg text-emerald-950 mb-2">Post-Viral Symptoms</h3>
           <p class="text-slate-600 text-sm">Evidence does not establish IV vitamin C as a treatment for Long COVID or post-viral fatigue. Persistent symptoms require appropriate assessment.</p>
         </div>
 
         <!-- Fatigue -->
-        <div class="bg-emerald-50 rounded-2xl p-6 card-hover">
-          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
-            <Zap class="w-6 h-6 text-white" aria-hidden="true" />
-          </div>
+        <div class="care-item">
+
           <h3 class="font-serif font-medium text-lg text-emerald-950 mb-2">Fatigue</h3>
           <p class="text-slate-600 text-sm">Fatigue has many possible causes. Limited studies do not justify presenting IV vitamin C as a general fatigue treatment.</p>
         </div>
 
         <!-- Stress -->
-        <div class="bg-emerald-50 rounded-2xl p-6 card-hover">
-          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
-            <Heart class="w-6 h-6 text-white" aria-hidden="true" />
-          </div>
+        <div class="care-item">
+
           <h3 class="font-serif font-medium text-lg text-emerald-950 mb-2">Stress Claims</h3>
           <p class="text-slate-600 text-sm">The presence of vitamin C in adrenal tissue does not establish that IV vitamin C treats stress or “adrenal depletion.”</p>
         </div>
 
         <!-- Skin & Collagen -->
-        <div class="bg-emerald-50 rounded-2xl p-6 card-hover">
-          <div class="w-12 h-12 bg-emerald-700 rounded-xl flex items-center justify-center mb-4">
-            <Sparkles class="w-6 h-6 text-white" aria-hidden="true" />
-          </div>
+        <div class="care-item">
+
           <h3 class="font-serif font-medium text-lg text-emerald-950 mb-2">Collagen Biology</h3>
           <p class="text-slate-600 text-sm">Vitamin C is required for normal collagen synthesis, but this does not establish high-dose IV treatment for skin or connective-tissue concerns.</p>
         </div>
@@ -181,48 +172,48 @@ import FAQSection from '../components/FAQSection.astro';
   </section>
 
   <!-- The Science -->
-  <section class="py-16 lg:py-24 bg-emerald-950">
+  <section id="the-science-of-iv-vitamin-c" class="care-section care-section--tint">
     <div class="section-shell">
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         <div>
-          <h2 class="text-3xl sm:text-4xl font-serif font-medium !text-white mb-6">The Science of IV Vitamin C</h2>
+          <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6">The Science of IV Vitamin C</h2>
           <div class="prose prose-lg prose-invert">
-            <p class="text-white/90">
+            <p class="text-slate-600">
               Vitamin C (ascorbic acid) is a potent antioxidant and essential cofactor for numerous enzymatic reactions in the body. It supports immune function through multiple mechanisms:
             </p>
-            <ul class="text-white/90">
-              <li><strong class="!text-white">Enhances neutrophil function</strong>, improving their ability to engulf and destroy pathogens</li>
-              <li><strong class="!text-white">Supports T and B cell development</strong>, critical for adaptive immunity</li>
-              <li><strong class="!text-white">Increases antibody production</strong>. Studies show higher IgA, IgG and IgM levels with supplementation</li>
-              <li><strong class="!text-white">Reduces oxidative stress</strong>, protecting cells from damage during infection</li>
-              <li><strong class="!text-white">Supports collagen synthesis</strong>, essential for tissue repair and wound healing</li>
+            <ul class="text-slate-600">
+              <li><strong class="text-slate-600">Enhances neutrophil function</strong>, improving their ability to engulf and destroy pathogens</li>
+              <li><strong class="text-slate-600">Supports T and B cell development</strong>, critical for adaptive immunity</li>
+              <li><strong class="text-slate-600">Increases antibody production</strong>. Studies show higher IgA, IgG and IgM levels with supplementation</li>
+              <li><strong class="text-slate-600">Reduces oxidative stress</strong>, protecting cells from damage during infection</li>
+              <li><strong class="text-slate-600">Supports collagen synthesis</strong>, essential for tissue repair and wound healing</li>
             </ul>
-            <p class="text-white/90">
+            <p class="text-slate-600">
               At high concentrations achievable only through IV administration, vitamin C may also have pro-oxidant effects that help fight certain pathogens while remaining protective to healthy cells.
             </p>
           </div>
         </div>
 
-        <div class="bg-white/10 backdrop-blur rounded-2xl p-8">
-          <h3 class="font-serif font-medium text-xl text-white mb-6">How to Read the Research</h3>
+        <div class="care-item">
+          <h3 class="font-serif font-medium text-xl text-emerald-950 mb-6">How to Read the Research</h3>
           <div class="space-y-6">
             <div class="border-b border-white/20 pb-4">
-              <p class="text-white/90 text-sm mb-2">
+              <p class="text-slate-600 text-sm mb-2">
                 Biological roles of vitamin C do not by themselves demonstrate that an IV infusion improves clinical outcomes.
               </p>
-              <p class="text-emerald-400 text-xs">Biological plausibility is not treatment evidence</p>
+              <p class="text-emerald-700 text-xs">Biological plausibility is not treatment evidence</p>
             </div>
             <div class="border-b border-white/20 pb-4">
-              <p class="text-white/90 text-sm mb-2">
+              <p class="text-slate-600 text-sm mb-2">
                 Findings from one condition, dose or hospital setting should not be generalized to routine wellness or unrelated symptoms.
               </p>
-              <p class="text-emerald-400 text-xs">Indication-specific evidence matters</p>
+              <p class="text-emerald-700 text-xs">Indication-specific evidence matters</p>
             </div>
             <div>
-              <p class="text-white/90 text-sm mb-2">
+              <p class="text-slate-600 text-sm mb-2">
                 Early or exploratory findings need confirmation in adequately powered trials before being advertised as patient benefit.
               </p>
-              <p class="text-emerald-400 text-xs">Study quality and endpoints matter</p>
+              <p class="text-emerald-700 text-xs">Study quality and endpoints matter</p>
             </div>
           </div>
         </div>
@@ -231,14 +222,14 @@ import FAQSection from '../components/FAQSection.astro';
   </section>
 
   <!-- Treatment Options -->
-  <section class="py-16 lg:py-24 bg-white">
+  <section id="treatment-options" class="care-section">
     <div class="section-shell">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6 text-center">Treatment Options</h2>
 
         <div class="grid md:grid-cols-2 gap-8">
           <!-- Myers with extra C -->
-          <div class="bg-emerald-50 rounded-2xl p-8 card-hover">
+          <div class="care-item">
             <h3 class="font-serif font-medium text-xl text-emerald-950 mb-4">Myers' Cocktail + Vitamin C</h3>
             <p class="text-slate-600 mb-4">A Myers' Cocktail generally combines vitamin C with B vitamins, magnesium and calcium. Formulations vary, and evidence for broad wellness, fatigue or immune claims is limited.</p>
             <a href="/myers-cocktail-intravenous-nutrients/" class="text-emerald-700 text-sm font-medium mt-4 inline-flex items-center hover:text-emerald-800">
@@ -248,7 +239,7 @@ import FAQSection from '../components/FAQSection.astro';
           </div>
 
           <!-- High-dose C -->
-          <div class="bg-emerald-50 rounded-2xl p-8 card-hover">
+          <div class="care-item">
             <h3 class="font-serif font-medium text-xl text-emerald-950 mb-4">High-Dose Vitamin C</h3>
             <p class="text-slate-600 mb-4">Higher-dose vitamin C requires a clear, evidence-informed rationale and additional screening. It is not presented as routine care for acute illness or post-viral recovery.</p>
             <p class="text-xs text-slate-500 mt-4">G6PD screening required before first high-dose treatment</p>
@@ -259,14 +250,14 @@ import FAQSection from '../components/FAQSection.astro';
   </section>
 
   <!-- What to Expect -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
+  <section id="what-to-expect" class="care-section">
     <div class="section-shell">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-8 text-center">What to Expect</h2>
 
         <div class="space-y-6">
           <div class="flex gap-6 items-start">
-            <div class="flex-shrink-0 w-12 h-12 bg-emerald-700 rounded-full flex items-center justify-center text-white font-bold text-lg">1</div>
+            <div class="care-number">1</div>
             <div>
               <h3 class="font-serif font-medium text-xl text-emerald-950 mb-2">Initial Consultation</h3>
               <p class="text-slate-600">We'll review your health history, discuss the proposed indication and determine whether treatment is appropriate. For high-dose vitamin C, G6PD screening is required before treatment.</p>
@@ -274,7 +265,7 @@ import FAQSection from '../components/FAQSection.astro';
           </div>
 
           <div class="flex gap-6 items-start">
-            <div class="flex-shrink-0 w-12 h-12 bg-emerald-700 rounded-full flex items-center justify-center text-white font-bold text-lg">2</div>
+            <div class="care-number">2</div>
             <div>
               <h3 class="font-serif font-medium text-xl text-emerald-950 mb-2">During Treatment</h3>
               <p class="text-slate-600">You'll relax in a comfortable chair while the IV infuses over 30-90 minutes depending on the dose. Many people read, work on their laptop or simply rest. You may feel a mild cooling sensation or taste vitamin C during the infusion, which is normal.</p>
@@ -282,7 +273,7 @@ import FAQSection from '../components/FAQSection.astro';
           </div>
 
           <div class="flex gap-6 items-start">
-            <div class="flex-shrink-0 w-12 h-12 bg-emerald-700 rounded-full flex items-center justify-center text-white font-bold text-lg">3</div>
+            <div class="care-number">3</div>
             <div>
               <h3 class="font-serif font-medium text-xl text-emerald-950 mb-2">After Treatment</h3>
               <p class="text-slate-600">Most people feel energized after their infusion. You can drive and return to normal activities immediately. Stay well-hydrated for the rest of the day.</p>
@@ -290,7 +281,7 @@ import FAQSection from '../components/FAQSection.astro';
           </div>
         </div>
 
-        <div class="site-card-interactive mt-12 p-8">
+        <div class="care-item mt-12">
           <h3 class="font-serif font-medium text-xl text-emerald-950 mb-4">Preparation Tips</h3>
           <ul class="grid md:grid-cols-2 gap-4">
             <li class="flex items-start gap-2 text-slate-600">
@@ -316,7 +307,7 @@ import FAQSection from '../components/FAQSection.astro';
   </section>
 
   <!-- Safety -->
-  <section class="py-16 lg:py-24 bg-white">
+  <section id="safety--considerations" class="care-section">
     <div class="section-shell">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6">Safety & Considerations</h2>
@@ -328,28 +319,28 @@ import FAQSection from '../components/FAQSection.astro';
         </div>
 
         <div class="grid md:grid-cols-2 gap-8">
-          <div class="bg-emerald-50 rounded-2xl p-6 card-hover">
+          <div class="care-item">
             <h3 class="font-serif font-medium text-lg text-emerald-950 mb-4">G6PD Deficiency Screening</h3>
             <p class="text-slate-600 text-sm">
               People with G6PD deficiency (a genetic enzyme deficiency) should not receive high-dose vitamin C, as it can cause red blood cell breakdown. We require a simple blood test before your first high-dose treatment to ensure safety. This is a one-time test.
             </p>
           </div>
 
-          <div class="bg-emerald-50 rounded-2xl p-6 card-hover">
+          <div class="care-item">
             <h3 class="font-serif font-medium text-lg text-emerald-950 mb-4">Kidney Considerations</h3>
             <p class="text-slate-600 text-sm">
               High-dose vitamin C is processed by the kidneys. If you have kidney disease or a history of kidney stones, we'll discuss whether IV vitamin C is appropriate and may adjust the protocol accordingly.
             </p>
           </div>
 
-          <div class="bg-emerald-50 rounded-2xl p-6 card-hover">
+          <div class="care-item">
             <h3 class="font-serif font-medium text-lg text-emerald-950 mb-4">Common Side Effects</h3>
             <p class="text-slate-600 text-sm">
               Potential effects include pain, bruising, inflammation or infection at the IV site, thirst, nausea, light-headedness, fluid or electrolyte changes and reactions to an ingredient. Serious risks vary with dose and health history.
             </p>
           </div>
 
-          <div class="bg-emerald-50 rounded-2xl p-6 card-hover">
+          <div class="care-item">
             <h3 class="font-serif font-medium text-lg text-emerald-950 mb-4">Medication Interactions</h3>
             <p class="text-slate-600 text-sm">
               Please inform us of all medications you're taking. Some medications may interact with high-dose vitamin C. We'll review your medications during your consultation.
@@ -368,14 +359,14 @@ import FAQSection from '../components/FAQSection.astro';
         ]} />
 
   <!-- CTA Section -->
-  <section class="py-16 lg:py-24 bg-emerald-950">
+  <section class="care-closing">
     <div class="section-shell">
       <div class="text-center max-w-3xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">Considering IV Vitamin C?</h2>
         <p class="text-lg text-white/90 mb-8">
           Book a consultation to review the proposed indication, evidence, alternatives, screening requirements and potential risks. An assessment does not mean treatment will be recommended.
         </p>
-        <CTAButton source="iv-vitamin-c-cta" placement="closing" />
+        <BookingButton source="iv-vitamin-c-cta" placement="closing" />
         <p class="text-white/70 mt-6 text-sm">Initial consultation required for new patients | Most extended health plans cover naturopathic services</p>
       </div>
     </div>

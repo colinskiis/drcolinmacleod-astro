@@ -10,27 +10,16 @@ export interface Props {
   variant?: 'dark' | 'light';
 }
 
-const { steps, size = 'md', variant = 'dark' } = Astro.props;
-
-const sizeClasses = size === 'sm'
-  ? "w-8 h-8 text-sm"
-  : "w-12 h-12 text-lg";
-
-const colorClasses = variant === 'light'
-  ? "bg-emerald-100 text-emerald-700"
-  : "bg-emerald-700 text-white";
+const { steps } = Astro.props;
 ---
-
-<div class="space-y-6">
+<ol class="divide-y divide-emerald-100">
   {steps.map((step, index) => (
-    <div class="flex gap-6 items-start">
-      <div class={`flex-shrink-0 ${sizeClasses} ${colorClasses} rounded-full flex items-center justify-center font-bold`}>
-        {index + 1}
-      </div>
+    <li class="flex gap-4 py-5 items-start">
+      <span class="care-number pt-1" aria-hidden="true">0{index + 1}</span>
       <div>
         <h3 class="font-serif font-medium text-xl text-emerald-950 mb-2">{step.title}</h3>
         <p class="text-slate-600">{step.description}</p>
       </div>
-    </div>
+    </li>
   ))}
-</div>
+</ol>

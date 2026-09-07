@@ -1,0 +1,12 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+import { publicImageDimensions } from '../lib/rehype-image-attrs.mjs';
+
+type Props = HTMLAttributes<'img'> & { src: string };
+const { src, loading = 'lazy', decoding = 'async', ...attributes } = Astro.props;
+// Measure local assets at build time using the same cache as Markdown images.
+// CSS wrappers control crops; HTML dimensions always describe the source asset.
+const dimensions = await publicImageDimensions(src);
+---
+<img {...attributes} src={src} width={dimensions?.width ?? attributes.width}
+  height={dimensions?.height ?? attributes.height} loading={loading} decoding={decoding} />

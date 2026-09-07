@@ -1,4 +1,5 @@
 ---
+import PublicImage from '../components/PublicImage.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import PageJumpLinks from '../components/PageJumpLinks.astro';
@@ -24,30 +25,30 @@ import BookingButton from '../components/BookingButton.astro';
   ]} />
 
   <!-- Visit process -->
-  <section id="first-visit" class="scroll-mt-32 bg-white py-10 lg:py-16">
+  <section id="first-visit" class="care-section scroll-mt-32">
     <div class="section-shell">
-      <div class="mx-auto max-w-5xl reveal">
+      <div class="mx-auto max-w-5xl ">
         <div class="mx-auto mb-10 max-w-3xl">
           <AppointmentSummary source="new-patients-summary" surface="light" />
         </div>
-        <div class="mx-auto mb-12 max-w-3xl text-center">
+        <div class="mx-auto mb-8 max-w-3xl text-left">
           <h2 class="mb-4 text-3xl font-serif font-medium text-emerald-950 sm:text-4xl">How Your First Visit Works</h2>
           <p class="text-lg leading-relaxed text-slate-600">The initial appointment is a 60-minute review of your health concerns, history, previous results, medications and priorities.</p>
         </div>
 
         <ol class="grid gap-8 md:grid-cols-3">
           <li class="relative border-t border-emerald-200 pt-7">
-            <span class="absolute -top-5 left-0 flex h-10 w-10 items-center justify-center rounded-full bg-emerald-900 text-sm font-bold text-white ring-8 ring-white">1</span>
+            <span class="care-number">1</span>
             <h3 class="mb-3 text-xl font-serif font-medium text-emerald-950">Prepare</h3>
             <p class="leading-relaxed text-slate-600">Complete the requested intake information and gather any previous laboratory results, imaging or reports you would like reviewed.</p>
           </li>
           <li class="relative border-t border-emerald-200 pt-7">
-            <span class="absolute -top-5 left-0 flex h-10 w-10 items-center justify-center rounded-full bg-emerald-900 text-sm font-bold text-white ring-8 ring-white">2</span>
+            <span class="care-number">2</span>
             <h3 class="mb-3 text-xl font-serif font-medium text-emerald-950">Meet</h3>
             <p class="leading-relaxed text-slate-600">Discuss your symptoms, health history, current care and goals. There is time to address the concerns and testing priorities that brought you in.</p>
           </li>
           <li class="relative border-t border-emerald-200 pt-7">
-            <span class="absolute -top-5 left-0 flex h-10 w-10 items-center justify-center rounded-full bg-emerald-900 text-sm font-bold text-white ring-8 ring-white">3</span>
+            <span class="care-number">3</span>
             <h3 class="mb-3 text-xl font-serif font-medium text-emerald-950">Plan the Next Step</h3>
             <p class="leading-relaxed text-slate-600">Review appropriate testing or treatment options, their limitations and costs. Follow-up visits are used to review results and adjust the plan when needed.</p>
           </li>
@@ -62,10 +63,10 @@ import BookingButton from '../components/BookingButton.astro';
   </section>
 
   <!-- Fees and insurance -->
-  <section id="fees" class="scroll-mt-32 bg-white py-16 lg:py-24">
+  <section id="fees" class="care-section scroll-mt-32">
     <div class="section-shell">
-      <div class="mx-auto max-w-5xl reveal">
-        <div class="mb-12 text-center">
+      <div class="mx-auto max-w-5xl ">
+        <div class="mb-8 text-left">
           <h2 class="mb-4 text-3xl font-serif font-medium text-emerald-950 sm:text-4xl">Fees & Insurance</h2>
           <p class="mx-auto max-w-3xl text-lg leading-relaxed text-slate-600">Consultation fees, private laboratory charges and treatment costs are billed separately.</p>
         </div>
@@ -104,9 +105,9 @@ import BookingButton from '../components/BookingButton.astro';
   </section>
 
   <!-- Private blood testing pathway -->
-  <section id="blood-testing" class="scroll-mt-28 bg-emerald-50 py-16 lg:py-20">
+  <section id="blood-testing" class="care-section scroll-mt-28">
     <div class="section-shell">
-      <div class="mx-auto grid max-w-5xl gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-center reveal">
+      <div class="mx-auto grid max-w-5xl gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-center ">
         <div>
           <p class="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-emerald-700">Private Laboratory Access</p>
           <h2 class="mb-5 text-3xl font-serif font-medium text-emerald-950 sm:text-4xl">Coming for Blood Work?</h2>
@@ -118,25 +119,25 @@ import BookingButton from '../components/BookingButton.astro';
           </p>
         </div>
 
-        <div class="rounded-3xl border border-emerald-200 bg-white p-6 shadow-sm sm:p-8">
+        <div class="care-item">
           <h3 class="mb-5 text-xl font-serif font-medium text-emerald-950">A simple place to start</h3>
           <ol class="space-y-5">
             <li class="flex gap-4">
-              <span class="flex h-8 w-8 flex-none items-center justify-center rounded-full bg-emerald-100 text-sm font-bold text-emerald-800">1</span>
+              <span class="care-number">1</span>
               <div>
                 <p class="font-semibold text-emerald-950">Book an initial consultation</p>
                 <p class="mt-1 text-sm leading-relaxed text-slate-600">No family-doctor or specialist referral is required for private testing.</p>
               </div>
             </li>
             <li class="flex gap-4">
-              <span class="flex h-8 w-8 flex-none items-center justify-center rounded-full bg-emerald-100 text-sm font-bold text-emerald-800">2</span>
+              <span class="care-number">2</span>
               <div>
                 <p class="font-semibold text-emerald-950">Bring any previous results</p>
                 <p class="mt-1 text-sm leading-relaxed text-slate-600">Existing blood work and reports help identify what has already been assessed and where broader testing may be useful.</p>
               </div>
             </li>
             <li class="flex gap-4">
-              <span class="flex h-8 w-8 flex-none items-center justify-center rounded-full bg-emerald-100 text-sm font-bold text-emerald-800">3</span>
+              <span class="care-number">3</span>
               <div>
                 <p class="font-semibold text-emerald-950">Review the plan and costs</p>
                 <p class="mt-1 text-sm leading-relaxed text-slate-600">The selected tests, preparation instructions and laboratory fees are reviewed before collection is arranged.</p>
@@ -155,31 +156,31 @@ import BookingButton from '../components/BookingButton.astro';
   </section>
 
   <!-- Preparation checklist -->
-  <section id="preparation" class="scroll-mt-32 bg-emerald-950 py-16 lg:py-20">
+  <section id="preparation" class="care-section care-section--tint scroll-mt-32">
     <div class="section-shell">
-      <div class="mx-auto grid max-w-5xl gap-10 lg:grid-cols-[0.7fr_1.3fr] lg:items-start reveal">
+      <div class="mx-auto grid max-w-5xl gap-10 lg:grid-cols-[0.7fr_1.3fr] lg:items-start ">
         <div>
-          <p class="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-emerald-300">Before Your Appointment</p>
-          <h2 class="mb-4 text-3xl font-serif font-medium text-white sm:text-4xl">What to Prepare</h2>
-          <p class="leading-relaxed text-emerald-100">Bring what you have access to. You do not need a perfectly organized medical file before booking.</p>
+          <p class="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-slate-600">Before Your Appointment</p>
+          <h2 class="mb-4 text-3xl font-serif font-medium text-emerald-950 sm:text-4xl">What to Prepare</h2>
+          <p class="leading-relaxed text-slate-600">Bring what you have access to. You do not need a perfectly organized medical file before booking.</p>
         </div>
 
         <ul class="grid gap-x-10 gap-y-6 sm:grid-cols-2">
           <li class="flex gap-3">
-            <svg class="mt-0.5 h-5 w-5 flex-none text-emerald-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-            <div><h3 class="font-sans font-semibold text-white">Health history</h3><p class="mt-1 text-sm leading-relaxed text-emerald-100">Past conditions, surgeries and hospitalizations, with approximate dates when possible.</p></div>
+            <svg class="mt-0.5 h-5 w-5 flex-none text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            <div><h3 class="font-sans font-semibold text-emerald-950">Health history</h3><p class="mt-1 text-sm leading-relaxed text-slate-600">Past conditions, surgeries and hospitalizations, with approximate dates when possible.</p></div>
           </li>
           <li class="flex gap-3">
-            <svg class="mt-0.5 h-5 w-5 flex-none text-emerald-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-            <div><h3 class="font-sans font-semibold text-white">Medications and supplements</h3><p class="mt-1 text-sm leading-relaxed text-emerald-100">A current list of prescriptions, over-the-counter medications, vitamins and supplements.</p></div>
+            <svg class="mt-0.5 h-5 w-5 flex-none text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            <div><h3 class="font-sans font-semibold text-emerald-950">Medications and supplements</h3><p class="mt-1 text-sm leading-relaxed text-slate-600">A current list of prescriptions, over-the-counter medications, vitamins and supplements.</p></div>
           </li>
           <li class="flex gap-3">
-            <svg class="mt-0.5 h-5 w-5 flex-none text-emerald-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-            <div><h3 class="font-sans font-semibold text-white">Previous results</h3><p class="mt-1 text-sm leading-relaxed text-emerald-100">Relevant blood work, imaging and diagnostic reports you already have available.</p></div>
+            <svg class="mt-0.5 h-5 w-5 flex-none text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            <div><h3 class="font-sans font-semibold text-emerald-950">Previous results</h3><p class="mt-1 text-sm leading-relaxed text-slate-600">Relevant blood work, imaging and diagnostic reports you already have available.</p></div>
           </li>
           <li class="flex gap-3">
-            <svg class="mt-0.5 h-5 w-5 flex-none text-emerald-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-            <div><h3 class="font-sans font-semibold text-white">Insurance details</h3><p class="mt-1 text-sm leading-relaxed text-emerald-100">Your extended health insurance information if you would like the clinic to attempt direct billing.</p></div>
+            <svg class="mt-0.5 h-5 w-5 flex-none text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            <div><h3 class="font-sans font-semibold text-emerald-950">Insurance details</h3><p class="mt-1 text-sm leading-relaxed text-slate-600">Your extended health insurance information if you would like the clinic to attempt direct billing.</p></div>
           </li>
         </ul>
       </div>
@@ -187,16 +188,14 @@ import BookingButton from '../components/BookingButton.astro';
   </section>
 
   <!-- Finding the clinic -->
-  <section id="clinic" class="scroll-mt-32 bg-emerald-50 py-16 lg:py-24">
+  <section id="clinic" class="care-section scroll-mt-32">
     <div class="section-shell">
-      <div class="mx-auto grid max-w-5xl gap-10 lg:grid-cols-2 lg:items-center lg:gap-14 reveal">
+      <div class="mx-auto grid max-w-5xl gap-10 lg:grid-cols-2 lg:items-center lg:gap-14 ">
         <div class="overflow-hidden rounded-3xl border border-emerald-100 shadow-xl">
-          <img
+          <PublicImage
             src="/images/general/ihpc-building.webp"
             alt="Integrated Health Professional Centre at 1378 Bedford Highway, Unit 1"
             class="aspect-[16/10] w-full object-cover"
-            width="1600"
-            height="972"
             loading="lazy"
           />
         </div>
@@ -220,9 +219,9 @@ import BookingButton from '../components/BookingButton.astro';
   </section>
 
   <!-- Closing CTA -->
-  <section class="bg-emerald-950 py-16 lg:py-24">
+  <section class="care-closing">
     <div class="section-shell">
-      <div class="mx-auto max-w-3xl text-center reveal">
+      <div class="mx-auto max-w-3xl text-center ">
         <h2 class="mb-4 text-3xl font-serif font-medium text-white sm:text-4xl">Ready to Book?</h2>
         <p class="mb-8 text-lg text-emerald-100">The button below opens “New Patient Visit (60 min)” in Jane, our secure patient portal, in a new tab. Choose an available time, then follow Jane’s sign-in or account-creation steps to finish booking. Call the clinic if you need help choosing an appointment.</p>
         <div class="mb-6 flex flex-col items-center justify-center gap-4 sm:flex-row">

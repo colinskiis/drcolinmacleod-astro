@@ -5,9 +5,9 @@ seo:
   focusKeyword: "golfer's elbow treatment Halifax"
 ---
 
-![Golfer's elbow treatment](/images/conditions/tennis-elbow.webp)
-
 Medial epicondylitis, commonly known as golfer's elbow, is a condition that causes pain and tenderness on the inside of the elbow where the forearm flexor muscles attach to the medial epicondyle. It is the inside-of-elbow counterpart to [tennis elbow (lateral epicondylitis)](/tennis-elbow/), which affects the outside. Despite the name, golfer's elbow is not limited to golfers: it affects climbers, throwing athletes, manual labourers, and anyone whose activities involve repeated gripping, flexing, or rotating of the forearm.
+
+![Golfer's elbow treatment](/images/conditions/tennis-elbow.webp)
 
 ## Causes of Golfer's Elbow
 

@@ -1,37 +1,11 @@
 ---
+import FeaturedServices from '../components/FeaturedServices.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import PageJumpLinks from '../components/PageJumpLinks.astro';
 import FirstVisitGuidance from '../components/FirstVisitGuidance.astro';
-import CTAButton from '../components/CTAButton.astro';
+import BookingButton from '../components/BookingButton.astro';
 import { ChevronRight } from '@lucide/astro';
-
-const featuredServices = [
-  {
-    title: 'Lab Testing',
-    href: '/lab-testing/',
-    description: 'Access private blood work, in-office collection and broader testing without a family-doctor requisition.',
-    image: '/images/lab-testing/in-office-blood-draw.webp',
-    alt: 'Dr. Colin MacLeod performing an in-office blood draw',
-  },
-  {
-    title: 'IV Therapy',
-    href: '/iv-therapy/',
-    description: 'Individualized intravenous nutrient therapy with clinical screening, preparation and monitoring.',
-    image: '/images/treatments/iv-patient-woman.webp',
-    alt: 'Patient receiving IV nutrient therapy in the clinic',
-  },
-  {
-    title: 'Prolotherapy',
-    href: '/prolotherapy/',
-    description: 'Dextrose injection treatment used in the practice for selected joint, tendon and ligament concerns.',
-    image: '/images/treatments/prolotherapy-knee-injection.webp',
-    alt: 'Dr. Colin MacLeod performing a prolotherapy knee injection',
-  },
-];
-
-const primaryService = featuredServices[0];
-const secondaryServices = featuredServices.slice(1);
 
 const serviceGroups = [
   {
@@ -108,85 +82,30 @@ const pricingGroups = [
   ]} />
 
   <!-- Featured Service Areas -->
-  <section id="starting-point" class="scroll-mt-32 py-14 lg:py-20 bg-white">
+  <section id="starting-point" class="care-section scroll-mt-32">
     <div class="section-shell">
-      <div class="mb-10 max-w-3xl reveal">
-        <p class="pill mb-4">Major Service Areas</p>
+      <div class="mb-8 max-w-3xl ">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">Find the right starting point</h2>
         <p class="text-lg text-slate-600">
           Laboratory testing is the most common reason patients contact the practice. All new patients complete a one-hour initial consultation first. IV therapy and prolotherapy may then be scheduled separately if appropriate.
         </p>
       </div>
 
-      <div class="space-y-6 reveal reveal-delay-100">
-        <a
-          href={primaryService.href}
-          class="group grid overflow-hidden rounded-3xl border border-emerald-100 bg-emerald-50 shadow-xl shadow-emerald-900/5 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-2xl hover:shadow-emerald-900/10 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 sm:grid-cols-[1.1fr_0.9fr]"
-        >
-          <div class="aspect-[16/10] overflow-hidden sm:aspect-[4/3]">
-            <img
-              src={primaryService.image}
-              alt={primaryService.alt}
-              class="h-full w-full object-cover object-[center_20%] transition-transform duration-500 group-hover:scale-[1.02] sm:object-center"
-              width="768"
-              height="1024"
-              loading="lazy"
-            />
-          </div>
-          <div class="flex flex-col justify-center p-7 sm:p-10 lg:p-12">
-            <p class="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-emerald-700">Private Laboratory Access</p>
-            <h3 class="mb-4 text-3xl font-serif font-medium text-emerald-950 transition-colors group-hover:text-emerald-700 sm:text-4xl">{primaryService.title}</h3>
-            <p class="mb-6 text-base leading-relaxed text-slate-600 sm:text-lg">{primaryService.description}</p>
-            <span class="inline-flex items-center gap-1.5 font-semibold text-emerald-800">
-              Explore Lab Testing
-              <ChevronRight class="h-4 w-4 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
-            </span>
-          </div>
-        </a>
-
-        <div class="grid gap-4 sm:grid-cols-2 sm:gap-6">
-          {secondaryServices.map(({ title, href, description, image, alt }) => (
-            <a
-              href={href}
-              class="group grid min-h-36 grid-cols-[8rem_1fr] overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-md shadow-emerald-900/5 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 sm:block"
-            >
-              <div class="overflow-hidden sm:aspect-[16/9]">
-                <img
-                  src={image}
-                  alt={alt}
-                  class:list={[
-                    'h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]',
-                    title === 'Prolotherapy' ? 'object-top' : 'object-center',
-                  ]}
-                  width={title === 'IV Therapy' ? 1200 : 1024}
-                  height={title === 'IV Therapy' ? 896 : 1024}
-                  loading="lazy"
-                />
-              </div>
-              <div class="flex flex-col justify-center p-5 sm:p-7">
-                <h3 class="mb-2 text-xl font-serif font-medium text-emerald-950 transition-colors group-hover:text-emerald-700 sm:text-2xl">{title}</h3>
-                <p class="hidden leading-relaxed text-slate-600 sm:block">{description}</p>
-                <span class="mt-2 inline-flex items-center gap-1 text-sm font-semibold text-emerald-700 sm:mt-4">
-                  View service
-                  <ChevronRight class="h-4 w-4 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
-                </span>
-              </div>
-            </a>
-          ))}
-        </div>
+      <div class="">
+        <FeaturedServices />
       </div>
     </div>
   </section>
 
   <!-- Service Directory -->
-  <section id="all-services" class="scroll-mt-32 py-14 lg:py-20 bg-emerald-50/70">
+  <section id="all-services" class="care-section scroll-mt-32">
     <div class="section-shell">
-      <div class="mb-8 text-center reveal">
+      <div class="mb-8 text-left ">
         <h2 class="text-2xl sm:text-3xl font-serif font-medium text-emerald-950 mb-2">All Services</h2>
         <p class="text-slate-600">Browse our complete list of treatments and services</p>
       </div>
 
-      <div class="overflow-hidden rounded-2xl border border-emerald-100 bg-white shadow-sm reveal reveal-delay-100">
+      <div class="overflow-hidden rounded-2xl border border-emerald-100 bg-white shadow-sm ">
         <div class="grid divide-y divide-emerald-100 md:grid-cols-3 md:divide-x md:divide-y-0">
           {serviceGroups.map((group) => (
             <div class="p-6">
@@ -199,7 +118,7 @@ const pricingGroups = [
                       class="group flex items-center justify-between rounded-lg px-2 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-emerald-50 hover:text-emerald-800 focus:outline-none focus:ring-2 focus:ring-emerald-500"
                     >
                       <span>{item.label}</span>
-                      <ChevronRight class="h-4 w-4 text-emerald-400 transition-transform group-hover:translate-x-0.5 group-hover:text-emerald-600" aria-hidden="true" />
+                      <ChevronRight class="h-4 w-4 text-emerald-700 transition-transform group-hover:translate-x-0.5 group-hover:text-emerald-600" aria-hidden="true" />
                     </a>
                   </li>
                 ))}
@@ -212,9 +131,9 @@ const pricingGroups = [
   </section>
 
   <!-- Pricing Section -->
-  <section id="pricing" class="scroll-mt-32 py-14 sm:py-16 lg:py-20 bg-white">
+  <section id="pricing" class="care-section scroll-mt-32">
     <div class="section-shell">
-      <div class="text-center mb-10 reveal">
+      <div class="text-left mb-10 ">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">Service Pricing</h2>
         <p class="text-lg text-slate-600 max-w-3xl mx-auto">
           Coverage and direct billing depend on your individual insurance plan. Please confirm your eligibility and limits.
@@ -223,7 +142,7 @@ const pricingGroups = [
 
       <p class="mx-auto mb-6 max-w-3xl text-center leading-relaxed text-slate-600">All new patients begin with a 60-minute initial consultation ($200). IV therapy and injection treatments, including prolotherapy, are scheduled separately after this visit if appropriate. Treatment prices below are separate from the consultation fee. Private laboratory fees are confirmed before testing proceeds.</p>
 
-      <div class="mx-auto max-w-4xl overflow-hidden rounded-2xl border border-emerald-100 bg-white shadow-sm reveal reveal-delay-100">
+      <div class="mx-auto max-w-4xl overflow-hidden rounded-2xl border border-emerald-100 bg-white shadow-sm ">
         {pricingGroups.map((group, groupIndex) => (
           <div class:list={[
             'grid md:grid-cols-[220px_1fr]',
@@ -247,12 +166,12 @@ const pricingGroups = [
   </section>
 
   <!-- CTA Section -->
-  <section class="py-16 lg:py-24 bg-emerald-950">
+  <section class="care-closing">
     <div class="section-shell">
-      <div class="text-center max-w-3xl mx-auto reveal">
+      <div class="text-center max-w-3xl mx-auto ">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">Not Sure Where to Start?</h2>
         <FirstVisitGuidance />
-        <CTAButton destination="initial" source="services-cta" placement="closing" />
+        <BookingButton destination="initial" source="services-cta" placement="closing" />
       </div>
     </div>
   </section>

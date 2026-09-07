@@ -1,7 +1,9 @@
 ---
+import PublicImage from '../components/PublicImage.astro';
+import PageJumpLinks from '../components/PageJumpLinks.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
-import CTAButton from '../components/CTAButton.astro';
+import BookingButton from '../components/BookingButton.astro';
 import FAQSection from '../components/FAQSection.astro';
 import ServiceArticles from '../components/ServiceArticles.astro';
 ---
@@ -14,16 +16,20 @@ import ServiceArticles from '../components/ServiceArticles.astro';
   <HeroSection
     title="Herbal Therapy"
     compact
-    image={{ src: "/images/reference/services/herbal-therapy.webp", alt: "Herbal therapy preparations", aspect: "square" }}
   >
     <p>Plants have been used as remedies for thousands of years. Today, modern research helps clarify the potential benefits, limitations and safety considerations of botanical products.</p>
     <p class="text-white/80">Dr. Colin MacLeod, ND combines traditional herbal knowledge with current scientific research to create personalized botanical protocols.</p>
+    <div slot="media" class="mx-auto aspect-[16/9] w-full max-w-lg overflow-hidden rounded-2xl lg:max-w-none">
+      <PublicImage src="/images/reference/services/herbal-therapy.webp" alt="Herbal therapy preparations"   class="h-full w-full object-cover" loading="eager" />
+    </div>
   </HeroSection>
 
+  <PageJumpLinks items={[{"id": "evidence-based-botanical-therapy", "title": "Approach"}, {"id": "common-applications", "title": "Applications"}, {"id": "quality--safety", "title": "Quality & safety"}]} />
+
   <!-- Our Approach Section -->
-  <section class="py-16 lg:py-24 bg-white">
+  <section id="evidence-based-botanical-therapy" class="care-section">
     <div class="section-shell">
-      <div class="text-center mb-12">
+      <div class="text-left mb-8">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">Evidence-Based Botanical Therapy</h2>
         <p class="text-lg text-slate-600 max-w-3xl mx-auto">
           Bridging traditional wisdom with modern science
@@ -42,92 +48,60 @@ import ServiceArticles from '../components/ServiceArticles.astro';
             Herbal products may be considered alongside conventional treatments when evidence, safety and the individual's circumstances support their use.
           </p>
         </div>
-        <div class="grid grid-cols-2 gap-6">
-          <div class="bg-emerald-50 rounded-2xl p-6 text-center card-hover">
-            <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-              </svg>
-            </div>
-            <h3 class="font-sans font-semibold text-emerald-950 mb-2">Research-Backed</h3>
-            <p class="text-sm text-slate-600">Herbs selected based on clinical evidence</p>
-          </div>
-          <div class="bg-emerald-50 rounded-2xl p-6 text-center card-hover">
-            <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
-              </svg>
-            </div>
-            <h3 class="font-sans font-semibold text-emerald-950 mb-2">Quality Sourced</h3>
-            <p class="text-sm text-slate-600">Professional-grade botanical products</p>
-          </div>
-          <div class="bg-emerald-50 rounded-2xl p-6 text-center card-hover">
-            <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-              </svg>
-            </div>
-            <h3 class="font-sans font-semibold text-emerald-950 mb-2">Personalized</h3>
-            <p class="text-sm text-slate-600">Formulas tailored to your needs</p>
-          </div>
-          <div class="bg-emerald-50 rounded-2xl p-6 text-center card-hover">
-            <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-            </div>
-            <h3 class="font-sans font-semibold text-emerald-950 mb-2">Safe Integration</h3>
-            <p class="text-sm text-slate-600">Checked for drug interactions</p>
-          </div>
-        </div>
+        <dl class="divide-y divide-emerald-200 border-y border-emerald-200">
+          <div class="py-4"><dt class="mb-1 font-semibold text-emerald-950">Research-Backed</dt><dd class="text-sm leading-relaxed text-slate-600">Herbs selected based on clinical evidence</dd></div>
+          <div class="py-4"><dt class="mb-1 font-semibold text-emerald-950">Quality Sourced</dt><dd class="text-sm leading-relaxed text-slate-600">Professional-grade botanical products</dd></div>
+          <div class="py-4"><dt class="mb-1 font-semibold text-emerald-950">Personalized</dt><dd class="text-sm leading-relaxed text-slate-600">Formulas tailored to your needs</dd></div>
+          <div class="py-4"><dt class="mb-1 font-semibold text-emerald-950">Safe Integration</dt><dd class="text-sm leading-relaxed text-slate-600">Checked for drug interactions</dd></div>
+        </dl>
       </div>
     </div>
   </section>
 
   <!-- Common Applications Section -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
+  <section id="common-applications" class="care-section">
     <div class="section-shell">
-      <div class="text-center mb-12">
+      <div class="text-left mb-8">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">Common Applications</h2>
         <p class="text-lg text-slate-600 max-w-3xl mx-auto">
           Herbal therapy can be helpful for a wide range of health concerns
         </p>
       </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="site-card-interactive p-6">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-5">
+        <div class="border-t border-emerald-200 pt-5 pb-2">
           <h3 class="font-sans font-semibold text-emerald-950 mb-3">Stress & Anxiety</h3>
           <p class="text-sm text-slate-600">Adaptogenic herbs like rhodiola, ashwagandha and holy basil support the body's stress response and promote calm.</p>
         </div>
-        <div class="site-card-interactive p-6">
+        <div class="border-t border-emerald-200 pt-5 pb-2">
           <h3 class="font-sans font-semibold text-emerald-950 mb-3">Digestive Health</h3>
           <p class="text-sm text-slate-600">Bitter herbs, carminatives and demulcents can address bloating, reflux, IBS symptoms and other GI concerns.</p>
         </div>
-        <div class="site-card-interactive p-6">
+        <div class="border-t border-emerald-200 pt-5 pb-2">
           <h3 class="font-sans font-semibold text-emerald-950 mb-3">Sleep Support</h3>
           <p class="text-sm text-slate-600">Gentle sedative herbs like valerian, passionflower and hops can improve sleep quality without morning grogginess.</p>
         </div>
-        <div class="site-card-interactive p-6">
+        <div class="border-t border-emerald-200 pt-5 pb-2">
           <h3 class="font-sans font-semibold text-emerald-950 mb-3">Immune Support</h3>
           <p class="text-sm text-slate-600">Immune-modulating herbs help prevent illness and support recovery from infections.</p>
         </div>
-        <div class="site-card-interactive p-6">
+        <div class="border-t border-emerald-200 pt-5 pb-2">
           <h3 class="font-sans font-semibold text-emerald-950 mb-3">Hormone Balance</h3>
           <p class="text-sm text-slate-600">Herbs like chaste tree, black cohosh and maca can support hormonal health in both women and men.</p>
         </div>
-        <div class="site-card-interactive p-6">
+        <div class="border-t border-emerald-200 pt-5 pb-2">
           <h3 class="font-sans font-semibold text-emerald-950 mb-3">Liver & Detoxification</h3>
           <p class="text-sm text-slate-600">Milk thistle, dandelion and other hepatoprotective herbs support healthy liver function.</p>
         </div>
-        <div class="site-card-interactive p-6">
+        <div class="border-t border-emerald-200 pt-5 pb-2">
           <h3 class="font-sans font-semibold text-emerald-950 mb-3">Pain & Inflammation</h3>
           <p class="text-sm text-slate-600">Anti-inflammatory herbs like turmeric, boswellia and devil's claw can help manage chronic pain conditions.</p>
         </div>
-        <div class="site-card-interactive p-6">
+        <div class="border-t border-emerald-200 pt-5 pb-2">
           <h3 class="font-sans font-semibold text-emerald-950 mb-3">Cardiovascular Health</h3>
           <p class="text-sm text-slate-600">Herbs like hawthorn, garlic and olive leaf support healthy blood pressure and circulation.</p>
         </div>
-        <div class="site-card-interactive p-6">
+        <div class="border-t border-emerald-200 pt-5 pb-2">
           <h3 class="font-sans font-semibold text-emerald-950 mb-3">Energy & Vitality</h3>
           <p class="text-sm text-slate-600">Tonic herbs can help restore energy levels and combat fatigue without stimulant side effects.</p>
         </div>
@@ -136,54 +110,34 @@ import ServiceArticles from '../components/ServiceArticles.astro';
   </section>
 
   <!-- Quality & Safety Section -->
-  <section class="py-16 lg:py-24 bg-white">
+  <section id="quality--safety" class="care-section">
     <div class="section-shell">
       <div class="grid lg:grid-cols-2 gap-12 items-center">
-        <div class="bg-emerald-950 rounded-3xl p-8 lg:p-10 text-white">
-          <h2 class="text-2xl font-serif font-medium mb-6">Quality & Safety</h2>
+        <div class="care-item text-slate-600">
+          <h2 class="text-2xl font-serif font-medium mb-6 text-emerald-950">Quality & Safety</h2>
           <div class="space-y-6">
             <div class="flex items-start">
-              <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 mr-4">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-              </div>
               <div>
-                <h3 class="font-sans font-semibold mb-1 text-white">Professional-Grade Products</h3>
-                <p class="text-white/80 text-sm">We use only professional-quality botanical products that are tested for purity, potency and safety.</p>
+                <h3 class="font-sans font-semibold mb-1 text-emerald-950">Professional-Grade Products</h3>
+                <p class="text-slate-600 text-sm">We use only professional-quality botanical products that are tested for purity, potency and safety.</p>
               </div>
             </div>
             <div class="flex items-start">
-              <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 mr-4">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-              </div>
               <div>
-                <h3 class="font-sans font-semibold mb-1 text-white">Drug Interaction Screening</h3>
-                <p class="text-white/80 text-sm">All herbal recommendations are checked against your current medications to ensure safe use.</p>
+                <h3 class="font-sans font-semibold mb-1 text-emerald-950">Drug Interaction Screening</h3>
+                <p class="text-slate-600 text-sm">All herbal recommendations are checked against your current medications to ensure safe use.</p>
               </div>
             </div>
             <div class="flex items-start">
-              <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 mr-4">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-              </div>
               <div>
-                <h3 class="font-sans font-semibold mb-1 text-white">Proper Dosing</h3>
-                <p class="text-white/80 text-sm">Herbs are dosed based on research and clinical experience to ensure effectiveness and safety.</p>
+                <h3 class="font-sans font-semibold mb-1 text-emerald-950">Proper Dosing</h3>
+                <p class="text-slate-600 text-sm">Herbs are dosed based on research and clinical experience to ensure effectiveness and safety.</p>
               </div>
             </div>
             <div class="flex items-start">
-              <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 mr-4">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-              </div>
               <div>
-                <h3 class="font-sans font-semibold mb-1 text-white">Ongoing Monitoring</h3>
-                <p class="text-white/80 text-sm">We track your response to treatment and adjust protocols as needed for optimal results.</p>
+                <h3 class="font-sans font-semibold mb-1 text-emerald-950">Ongoing Monitoring</h3>
+                <p class="text-slate-600 text-sm">We track your response to treatment and adjust protocols as needed for optimal results.</p>
               </div>
             </div>
           </div>
@@ -220,13 +174,13 @@ import ServiceArticles from '../components/ServiceArticles.astro';
   />
 
   <!-- CTA Section -->
-  <section class="py-16 lg:py-24 bg-emerald-950">
+  <section class="care-closing">
     <div class="section-shell text-center">
       <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">Interested in Herbal Therapy?</h2>
       <p class="text-lg text-white/80 max-w-2xl mx-auto mb-8">
         Book a consultation to discuss how botanical therapies can support your health goals as part of a comprehensive treatment plan.
       </p>
-      <CTAButton source="herbal-therapy-cta" placement="closing" />
+      <BookingButton source="herbal-therapy-cta" placement="closing" />
     </div>
   </section>
 

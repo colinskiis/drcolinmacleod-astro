@@ -1,3 +1,5 @@
+import { articleTopics } from '../lib/articleTopics';
+
 /**
  * Route Inventory
  * Single source of truth for the service, condition, and lab testing page paths.
@@ -76,4 +78,14 @@ export function isConditionPath(path: string): boolean {
 
 export function isLabTestingPath(path: string): boolean {
   return (labTestingPaths as readonly string[]).includes(path);
+}
+
+/** Presentation families share the route inventory used by navigation. */
+export function pageFamily(path: string): 'home' | 'service' | 'condition' | 'directory' | 'article' | 'practical' {
+  if (path === '/') return 'home';
+  if (isConditionPath(path)) return 'condition';
+  if (isServicePath(path)) return 'service';
+  if (['/services/', '/conditions/', '/articles/'].includes(path) || articleTopics.some(topic => path === `/articles/${topic.id}/`)) return 'directory';
+  if (path.startsWith('/articles/')) return 'article';
+  return 'practical';
 }

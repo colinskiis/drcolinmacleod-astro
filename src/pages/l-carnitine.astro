@@ -1,7 +1,7 @@
 ---
+import PageJumpLinks from '../components/PageJumpLinks.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
-import CTAButton from '../components/CTAButton.astro';
 import BookingButton from '../components/BookingButton.astro';
 import BenefitCard from '../components/BenefitCard.astro';
 import { Flame, Heart, Dumbbell, Check } from '@lucide/astro';
@@ -19,14 +19,15 @@ import FAQSection from '../components/FAQSection.astro';
     image={{
       src: "/images/treatments/l-carnitine-iv-therapy.webp",
       alt: "IV therapy setup with athletic recovery essentials",
-      aspect: "video"
-    }}
+      aspect: "video" }}
   >
     <p>L-Carnitine is an amino acid that plays a central role in energy production by transporting fatty acids into the mitochondria where they are burned for fuel. IV delivery ensures optimal absorption and immediate cellular availability.</p>
   </HeroSection>
 
+  <PageJumpLinks items={[{"id": "what-is-l-carnitine", "title": "Overview"}, {"id": "who-benefits", "title": "When considered"}, {"id": "how-l-carnitine-works", "title": "How it works"}, {"id": "why-iv-administration", "title": "IV delivery"}, {"id": "getting-started", "title": "Getting started"}, {"id": "what-to-expect", "title": "Your visit"}]} />
+
   <!-- Three Benefits Section -->
-  <section class="py-16 lg:py-24 bg-emerald-50/70">
+  <section class="care-section">
     <div class="section-shell">
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
         <!-- Fat Metabolism -->
@@ -51,7 +52,7 @@ import FAQSection from '../components/FAQSection.astro';
   </section>
 
   <!-- What is L-Carnitine? Section -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
+  <section id="what-is-l-carnitine" class="care-section">
     <div class="section-shell">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6">What is L-Carnitine?</h2>
@@ -68,9 +69,9 @@ import FAQSection from '../components/FAQSection.astro';
   </section>
 
   <!-- Who Benefits? Section -->
-  <section id="who-benefits" class="py-16 lg:py-24 bg-white">
+  <section id="who-benefits" class="care-section">
     <div class="section-shell">
-      <div class="text-center mb-12">
+      <div class="text-left mb-8">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">Who Benefits From L-Carnitine?</h2>
         <p class="text-lg text-slate-600 max-w-3xl mx-auto">
           L-Carnitine IV therapy may help individuals experiencing the following conditions
@@ -78,7 +79,7 @@ import FAQSection from '../components/FAQSection.astro';
       </div>
 
       <div class="grid lg:grid-cols-2 gap-12 items-start">
-        <div class="bg-emerald-50 rounded-2xl p-8 card-hover">
+        <div class="care-item">
           <h3 class="text-xl font-serif font-medium text-emerald-950 mb-6">Energy &amp; Fatigue</h3>
           <div class="grid gap-3">
             {['Chronic fatigue', 'Low energy despite adequate sleep', 'Post-viral fatigue', 'Muscle weakness', 'Poor exercise tolerance'].map(condition => (
@@ -90,7 +91,7 @@ import FAQSection from '../components/FAQSection.astro';
           </div>
         </div>
 
-        <div class="bg-emerald-50 rounded-2xl p-8 card-hover">
+        <div class="care-item">
           <h3 class="text-xl font-serif font-medium text-emerald-950 mb-6">Cardiovascular</h3>
           <div class="grid gap-3">
             {['Heart failure support', 'Angina', 'Peripheral artery disease', 'Cardiac recovery', 'Metabolic syndrome'].map(condition => (
@@ -102,7 +103,7 @@ import FAQSection from '../components/FAQSection.astro';
           </div>
         </div>
 
-        <div class="bg-emerald-50 rounded-2xl p-8 card-hover">
+        <div class="care-item">
           <h3 class="text-xl font-serif font-medium text-emerald-950 mb-6">Athletic Performance</h3>
           <div class="grid gap-3">
             {['Enhanced fat burning', 'Faster recovery', 'Reduced muscle soreness', 'Improved exercise capacity', 'Lactic acid clearance'].map(condition => (
@@ -114,7 +115,7 @@ import FAQSection from '../components/FAQSection.astro';
           </div>
         </div>
 
-        <div class="bg-emerald-50 rounded-2xl p-8 card-hover">
+        <div class="care-item">
           <h3 class="text-xl font-serif font-medium text-emerald-950 mb-6">Metabolic Health</h3>
           <div class="grid gap-3">
             {['Weight management support', 'Insulin resistance', 'Type 2 diabetes support', 'Non-alcoholic fatty liver disease', 'Vegetarian/vegan deficiency'].map(condition => (
@@ -130,18 +131,18 @@ import FAQSection from '../components/FAQSection.astro';
   </section>
 
   <!-- How L-Carnitine Works Section -->
-  <section id="how-l-carnitine-works" class="py-16 lg:py-24 bg-emerald-950">
+  <section id="how-l-carnitine-works" class="care-section care-section--tint">
     <div class="section-shell">
       <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">How L-Carnitine Works</h2>
+        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6">How L-Carnitine Works</h2>
         <div class="prose prose-lg prose-invert">
-          <p class="text-white/90">
+          <p class="text-slate-600">
             L-Carnitine functions as a molecular shuttle, binding to long-chain fatty acids and transporting them across the inner mitochondrial membrane, a barrier that fatty acids cannot cross unassisted. Once inside the mitochondria, these fatty acids undergo beta-oxidation to generate ATP.
           </p>
-          <p class="text-white/90">
+          <p class="text-slate-600">
             This transport function is rate-limiting for fat metabolism. When L-Carnitine is deficient, fatty acid oxidation slows, energy production falls and fatty acids accumulate in tissues including the liver and muscle. Restoring L-Carnitine levels reactivates this metabolic pathway.
           </p>
-          <p class="text-white/90">
+          <p class="text-slate-600">
             Beyond energy metabolism, L-Carnitine plays roles in clearing toxic metabolites from the mitochondria, modulating gene expression related to fatty acid oxidation and protecting against oxidative stress.
           </p>
         </div>
@@ -150,7 +151,7 @@ import FAQSection from '../components/FAQSection.astro';
   </section>
 
   <!-- Why IV Administration? Section -->
-  <section class="py-16 lg:py-24 bg-white">
+  <section id="why-iv-administration" class="care-section">
     <div class="section-shell">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6">Why IV Administration?</h2>
@@ -167,7 +168,7 @@ import FAQSection from '../components/FAQSection.astro';
   </section>
 
   <!-- Getting Started Section -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
+  <section id="getting-started" class="care-section">
     <div class="section-shell">
       <div class="grid lg:grid-cols-2 gap-12">
         <div>
@@ -178,7 +179,7 @@ import FAQSection from '../components/FAQSection.astro';
             </p>
           </div>
         </div>
-        <div class="bg-white rounded-3xl shadow-xl p-8 lg:p-10 flex flex-col justify-center card-hover">
+        <div class="care-item flex flex-col justify-center">
           <h3 class="text-2xl font-serif font-medium text-emerald-950 mb-6">Book a Consultation</h3>
           <p class="text-slate-600 mb-8">
             Ready to add L-Carnitine to your IV treatment plan? Book your naturopathic consultation with Dr. Colin MacLeod, ND in Halifax.
@@ -190,31 +191,31 @@ import FAQSection from '../components/FAQSection.astro';
   </section>
 
   <!-- What to Expect Section -->
-  <section class="py-16 lg:py-24 bg-white">
+  <section id="what-to-expect" class="care-section">
     <div class="section-shell">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-8 text-center">What to Expect</h2>
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           <div class="text-center">
-            <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4">
-              <span class="text-2xl font-bold text-white">1</span>
+            <div class="care-number">
+              <span class="text-2xl font-bold text-slate-600">1</span>
             </div>
             <h3 class="font-sans font-semibold text-emerald-950 mb-2">Before Your Infusion</h3>
             <p class="text-slate-600">Stay well hydrated. No special fasting required. Wear comfortable clothing with easy arm access.</p>
           </div>
 
           <div class="text-center">
-            <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4">
-              <span class="text-2xl font-bold text-white">2</span>
+            <div class="care-number">
+              <span class="text-2xl font-bold text-slate-600">2</span>
             </div>
             <h3 class="font-sans font-semibold text-emerald-950 mb-2">During Your Infusion</h3>
             <p class="text-slate-600">Sessions may take 30–60 minutes. Potential effects include IV-site complications, nausea, light-headedness, warmth, odour changes and formulation-specific reactions. Effects should not be described as harmless without individual assessment.</p>
           </div>
 
           <div class="text-center">
-            <div class="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4">
-              <span class="text-2xl font-bold text-white">3</span>
+            <div class="care-number">
+              <span class="text-2xl font-bold text-slate-600">3</span>
             </div>
             <h3 class="font-sans font-semibold text-emerald-950 mb-2">After Your Infusion</h3>
             <p class="text-slate-600">Energy improvements are often felt within hours to days. For best results, L-Carnitine is frequently added as a booster to the Myers Cocktail or administered as a standalone infusion in a series of 4–6 treatments.</p>
@@ -233,14 +234,14 @@ import FAQSection from '../components/FAQSection.astro';
         ]} />
 
   <!-- Final CTA Section -->
-  <section class="py-16 lg:py-24 bg-emerald-950">
+  <section class="care-closing">
     <div class="section-shell">
       <div class="max-w-3xl mx-auto text-center">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">Add L-Carnitine to Your IV Treatment</h2>
         <p class="text-lg text-white/80 mb-10">
           Book a consultation to discuss whether L-Carnitine IV therapy is right for you.
         </p>
-        <CTAButton source="l-carnitine-cta" placement="closing" />
+        <BookingButton source="l-carnitine-cta" placement="closing" />
       </div>
     </div>
   </section>

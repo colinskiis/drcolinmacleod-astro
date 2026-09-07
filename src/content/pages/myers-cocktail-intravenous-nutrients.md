@@ -17,11 +17,11 @@ faq:
     answer: "<p>No. Eating a light meal and drinking water before the appointment generally makes the infusion more comfortable.</p>"
 ---
 
-![Patient receiving a monitored IV nutrient infusion](/images/treatments/nad-patient.webp)
-
 ## What Is a Myers' Cocktail?
 
 A Myers' Cocktail is an intravenous mixture of selected vitamins and minerals. Formulas vary, but commonly include magnesium, calcium, vitamin C and several B vitamins. The name comes from Dr. John Myers, whose approach was later described by Dr. Alan Gaby.<sup>1</sup>
+
+![Patient receiving a monitored IV nutrient infusion](/images/treatments/nad-patient.webp)
 
 The infusion provides these nutrients directly into the bloodstream, bypassing the limits of digestive absorption. This makes the Myers' Cocktail an appealing option for people who want a broad nutrient formula delivered in one comfortable clinic visit.
 

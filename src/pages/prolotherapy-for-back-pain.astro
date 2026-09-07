@@ -1,7 +1,8 @@
 ---
+import PageJumpLinks from '../components/PageJumpLinks.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
-import CTAButton from '../components/CTAButton.astro';
+import BookingButton from '../components/BookingButton.astro';
 import FAQSection from '../components/FAQSection.astro';
 ---
 
@@ -19,8 +20,10 @@ import FAQSection from '../components/FAQSection.astro';
     <p>Back pain often involves ligament and joint dysfunction that prolotherapy can address. The evidence is particularly strong for sacroiliac joint pain, with promising but mixed results for other types of low back pain.</p>
   </HeroSection>
 
+  <PageJumpLinks items={[{"id": "understanding-back-pain-and-prolotherapy", "title": "Overview"}, {"id": "sacroiliac", "title": "SI joint pain"}, {"id": "is-your-pain-coming-from-the-si-joint", "title": "Assessment"}, {"id": "low-back", "title": "Other back pain"}, {"id": "factors-considered-during-assessment", "title": "Individual factors"}, {"id": "how-treatment-is-considered", "title": "Treatment planning"}, {"id": "related-information", "title": "Related care"}]} />
+
   <!-- Understanding Back Pain -->
-  <section class="py-16 lg:py-24 bg-white">
+  <section id="understanding-back-pain-and-prolotherapy" class="care-section">
     <div class="section-shell">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-8">Understanding Back Pain and Prolotherapy</h2>
@@ -40,11 +43,11 @@ import FAQSection from '../components/FAQSection.astro';
   </section>
 
   <!-- Sacroiliac Joint Section -->
-  <section id="sacroiliac" class="py-16 lg:py-24 bg-emerald-50">
+  <section id="sacroiliac" class="care-section">
     <div class="section-shell">
       <div class="grid lg:grid-cols-2 gap-12 items-start">
         <div>
-          <div class="inline-block bg-emerald-700 text-white text-sm font-semibold px-4 py-1 rounded-full mb-4">Strong Evidence</div>
+          <div class="care-item inline-block text-slate-600 text-sm font-semibold mb-4">Strong Evidence</div>
           <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6">Sacroiliac Joint Pain</h2>
           <div class="prose prose-lg prose-emerald">
             <p>
@@ -55,7 +58,7 @@ import FAQSection from '../components/FAQSection.astro';
             </p>
           </div>
         </div>
-        <div class="site-card-interactive p-8">
+        <div class="care-item">
           <h3 class="text-xl font-serif font-medium text-emerald-950 mb-6">The Kim 2010 Study</h3>
           <div class="space-y-6">
             <div class="border-l-4 border-emerald-700 pl-4">
@@ -78,12 +81,12 @@ import FAQSection from '../components/FAQSection.astro';
       </div>
 
       <!-- Key Statistic Callout -->
-      <div class="mt-12 bg-emerald-700 rounded-2xl p-8 text-center">
-        <div class="text-5xl font-bold text-white mb-4">58.7% vs 10.2%</div>
-        <p class="text-xl text-emerald-100">
+      <div class="care-item mt-12">
+        <div class="text-5xl font-bold text-slate-600 mb-4">58.7% vs 10.2%</div>
+        <p class="text-xl text-slate-600">
           Sustained pain relief at 15 months: Prolotherapy vs Steroid injection
         </p>
-        <p class="text-emerald-200 mt-4">
+        <p class="text-slate-600 mt-4">
           Prolotherapy provided nearly 6 times better long-term results than steroid injection for sacroiliac joint pain.
         </p>
       </div>
@@ -91,7 +94,7 @@ import FAQSection from '../components/FAQSection.astro';
   </section>
 
   <!-- SI Joint Symptoms -->
-  <section class="py-16 lg:py-24 bg-white">
+  <section id="is-your-pain-coming-from-the-si-joint" class="care-section">
     <div class="section-shell">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-8 text-center">Is Your Pain Coming from the SI Joint?</h2>
@@ -99,7 +102,7 @@ import FAQSection from '../components/FAQSection.astro';
           SI joint pain is often misdiagnosed as hip pain, sciatica or general low back pain. Here are common signs that your pain may be SI joint-related:
         </p>
         <div class="grid md:grid-cols-2 gap-8">
-          <div class="bg-emerald-50 rounded-2xl p-8 card-hover">
+          <div class="care-item">
             <h3 class="text-xl font-serif font-medium text-emerald-950 mb-4">Common Symptoms</h3>
             <ul class="space-y-3 text-slate-600">
               <li class="flex gap-3">
@@ -128,7 +131,7 @@ import FAQSection from '../components/FAQSection.astro';
               </li>
             </ul>
           </div>
-          <div class="bg-emerald-50 rounded-2xl p-8 card-hover">
+          <div class="care-item">
             <h3 class="text-xl font-serif font-medium text-emerald-950 mb-4">Common Causes</h3>
             <ul class="space-y-3 text-slate-600">
               <li class="flex gap-3">
@@ -163,13 +166,13 @@ import FAQSection from '../components/FAQSection.astro';
   </section>
 
   <!-- Low Back Pain Section -->
-  <section id="low-back" class="py-16 lg:py-24 bg-emerald-50">
+  <section id="low-back" class="care-section">
     <div class="section-shell">
       <div class="max-w-4xl mx-auto">
-        <div class="inline-block bg-amber-600 text-white text-sm font-semibold px-4 py-1 rounded-full mb-4">Mixed Evidence - Honest Assessment</div>
+        <div class="inline-block bg-amber-50 text-amber-950 text-sm font-semibold px-4 py-1 rounded-full mb-4">Mixed Evidence - Honest Assessment</div>
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6">Nonspecific Low Back Pain</h2>
 
-        <div class="site-card-interactive mb-8 p-8">
+        <div class="care-item mb-8">
           <div class="prose prose-lg prose-emerald max-w-none">
             <p>
               We believe patients deserve an honest assessment of the evidence. For nonspecific chronic low back pain (pain without a clear structural cause like disc herniation), the research on prolotherapy is more complicated than for SI joint pain.
@@ -178,7 +181,7 @@ import FAQSection from '../components/FAQSection.astro';
         </div>
 
         <div class="grid md:grid-cols-2 gap-8 mb-8">
-          <div class="bg-white rounded-2xl p-8 card-hover">
+          <div class="care-item">
             <h3 class="text-xl font-serif font-medium text-emerald-950 mb-4">The Yelland 2004 Study</h3>
             <p class="text-slate-600 mb-4">
               A well-designed factorial RCT of 110 patients with chronic low back pain (average duration: 14 years) compared dextrose-lignocaine injections to saline injections.
@@ -194,7 +197,7 @@ import FAQSection from '../components/FAQSection.astro';
               </li>
             </ul>
           </div>
-          <div class="bg-white rounded-2xl p-8 card-hover">
+          <div class="care-item">
             <h3 class="text-xl font-serif font-medium text-emerald-950 mb-4">What This Means</h3>
             <p class="text-slate-600 mb-4">
               This study is often cited as a "negative" prolotherapy study, but the interpretation is nuanced:
@@ -231,12 +234,12 @@ import FAQSection from '../components/FAQSection.astro';
   </section>
 
   <!-- Suitability Assessment -->
-  <section class="py-16 lg:py-24 bg-white">
+  <section id="factors-considered-during-assessment" class="care-section">
     <div class="section-shell">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-8 text-center">Factors Considered During Assessment</h2>
         <div class="grid md:grid-cols-2 gap-8">
-          <div class="bg-emerald-50 rounded-2xl p-8 card-hover">
+          <div class="care-item">
             <h3 class="text-xl font-serif font-medium text-emerald-950 mb-4 flex items-center gap-2">
               <svg class="w-6 h-6 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
@@ -252,7 +255,7 @@ import FAQSection from '../components/FAQSection.astro';
               <li>Whether the evidence applies to the proposed procedure</li>
             </ul>
           </div>
-          <div class="bg-emerald-50 rounded-2xl p-8 card-hover">
+          <div class="care-item">
             <h3 class="text-xl font-serif font-medium text-emerald-950 mb-4 flex items-center gap-2">
               <svg class="w-6 h-6 text-slate-400" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
@@ -274,28 +277,28 @@ import FAQSection from '../components/FAQSection.astro';
   </section>
 
   <!-- Treatment Planning -->
-  <section class="py-16 lg:py-24 bg-emerald-950">
+  <section id="how-treatment-is-considered" class="care-section care-section--tint">
     <div class="section-shell">
-      <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-12 text-center">How Treatment Is Considered</h2>
+      <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-12 text-center">How Treatment Is Considered</h2>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-4xl mx-auto">
-        <div class="bg-white/10 rounded-2xl p-8 text-center">
-          <div class="text-2xl font-bold text-white mb-4">Individual</div>
-          <h3 class="text-xl font-serif font-medium text-white mb-3">Treatment Plan</h3>
-          <p class="text-emerald-200">
+        <div class="care-item">
+          <div class="text-2xl font-bold text-slate-600 mb-4">Individual</div>
+          <h3 class="text-xl font-serif font-medium text-emerald-950 mb-3">Treatment Plan</h3>
+          <p class="text-slate-600">
             A study protocol is not a prescription for an individual. Diagnosis, alternatives, risks and response determine whether any procedure or repeat visit is appropriate.
           </p>
         </div>
-        <div class="bg-white/10 rounded-2xl p-8 text-center">
-          <div class="text-2xl font-bold text-white mb-4">Procedure-specific</div>
-          <h3 class="text-xl font-serif font-medium text-white mb-3">Formulation</h3>
-          <p class="text-emerald-200">
+        <div class="care-item">
+          <div class="text-2xl font-bold text-slate-600 mb-4">Procedure-specific</div>
+          <h3 class="text-xl font-serif font-medium text-emerald-950 mb-3">Formulation</h3>
+          <p class="text-slate-600">
             Formulation and technique depend on the anatomical area, clinical findings, evidence and applicable injection authorization.
           </p>
         </div>
-        <div class="bg-white/10 rounded-2xl p-8 text-center">
-          <div class="text-2xl font-bold text-white mb-4">Uncertain</div>
-          <h3 class="text-xl font-serif font-medium text-white mb-3">Outcome</h3>
-          <p class="text-emerald-200">
+        <div class="care-item">
+          <div class="text-2xl font-bold text-slate-600 mb-4">Uncertain</div>
+          <h3 class="text-xl font-serif font-medium text-emerald-950 mb-3">Outcome</h3>
+          <p class="text-slate-600">
             Published studies report group averages, not a guaranteed duration or result for an individual patient.
           </p>
         </div>
@@ -312,15 +315,15 @@ import FAQSection from '../components/FAQSection.astro';
       ]} />
 
   <!-- Related Conditions -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
+  <section id="related-information" class="care-section">
     <div class="section-shell">
       <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6 text-center">Related Information</h2>
       <div class="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-        <a href="/low-back-pain/" class="site-card-interactive group p-6">
+        <a href="/low-back-pain/" class="directory-link  group ">
           <h3 class="text-lg font-serif font-medium text-emerald-950 mb-2 group-hover:text-emerald-700 transition-colors">Low Back Pain</h3>
           <p class="text-slate-600 text-sm">Comprehensive information about causes and treatment options for low back pain.</p>
         </a>
-        <a href="/prolotherapy/" class="site-card-interactive group p-6">
+        <a href="/prolotherapy/" class="directory-link  group ">
           <h3 class="text-lg font-serif font-medium text-emerald-950 mb-2 group-hover:text-emerald-700 transition-colors">Prolotherapy Overview</h3>
           <p class="text-slate-600 text-sm">Learn more about prolotherapy and all the conditions it can treat.</p>
         </a>
@@ -329,18 +332,18 @@ import FAQSection from '../components/FAQSection.astro';
   </section>
 
   <!-- CTA Section -->
-  <section class="py-16 lg:py-24 bg-emerald-950">
+  <section class="care-closing">
     <div class="section-shell text-center">
       <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white mb-6">Ready to Address Your Back Pain?</h2>
       <p class="text-lg text-emerald-200 max-w-2xl mx-auto mb-8">
         If you've been struggling with SI joint pain or chronic low back pain, schedule a consultation to discuss whether prolotherapy might help. We'll give you an honest assessment based on your specific situation.
       </p>
-      <CTAButton source="prolotherapy-for-back-pain-cta" placement="closing" />
+      <BookingButton source="prolotherapy-for-back-pain-cta" placement="closing" />
     </div>
   </section>
 
   <!-- References Section -->
-  <section class="py-12 bg-emerald-50">
+  <section class="care-section">
     <div class="section-shell">
       <h2 class="text-xl font-serif font-medium text-emerald-950 mb-6">References</h2>
       <div class="prose prose-sm prose-slate max-w-none">

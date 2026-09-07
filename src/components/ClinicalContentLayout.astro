@@ -11,7 +11,7 @@ const { tocItems, modifiedDate = null, prose = true } = Astro.props;
 const showToc = tocItems.length >= 4;
 ---
 
-<article class="bg-white py-16 lg:py-24">
+<article class="care-section">
   <div class="section-shell">
     <div class="mx-auto max-w-5xl">
       {modifiedDate && (
@@ -21,7 +21,7 @@ const showToc = tocItems.length >= 4;
       {showToc && <OnThisPage items={tocItems} display="mobile" />}
 
       <div class:list={[showToc && 'grid items-start gap-10 lg:grid-cols-[minmax(0,1fr)_16rem]']}>
-        <div class:list={[prose && 'prose', 'max-w-[70ch] min-w-0']}>
+        <div class:list={[prose && 'prose care-reading', 'max-w-[70ch] min-w-0']}>
           <slot />
         </div>
 

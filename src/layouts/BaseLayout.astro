@@ -2,7 +2,7 @@
 import '../styles/global.css';
 import manropeWoff2 from '@fontsource/manrope/files/manrope-latin-400-normal.woff2?url';
 import playfairWoff2 from '@fontsource/playfair-display/files/playfair-display-latin-500-normal.woff2?url';
-import { isConditionPath, isLabTestingPath, isServicePath } from '../config/routes';
+import { pageFamily, isConditionPath, isLabTestingPath, isServicePath } from '../config/routes';
 import { ClientRouter } from 'astro:transitions';
 import Search from '../components/Search.astro';
 import MedicalDisclaimer from '../components/MedicalDisclaimer.astro';
@@ -366,13 +366,9 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
     <meta name="generator" content={Astro.generator} />
     <title>{fullTitle}</title>
 
-    <!-- Marks JS availability so reveal animations only hide content when they can run -->
+    <!-- Marks JavaScript availability for progressive enhancements -->
     <script is:inline>
       document.documentElement.classList.add('js');
-      // Mark client-side navigations so entrance animations only play on first load
-      document.addEventListener('astro:after-swap', function () {
-        document.documentElement.classList.add('astro-navigated');
-      }, { once: true });
     </script>
 
     <!-- Resource hints for faster loading -->
@@ -478,7 +474,7 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
 
     <!-- Canonical URL -->
     {!noindex && <link rel="canonical" href={canonicalUrl} />}
-    
+
     <!-- SEO Meta Tags -->
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={metaDescription} />
@@ -489,15 +485,15 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:locale" content="en_CA" />
-    
+
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={fullTitle} />
     <meta name="twitter:description" content={metaDescription} />
     <meta name="twitter:image" content={new URL(ogImage, Astro.site)} />
-    
+
     <meta name="author" content="Dr. Colin MacLeod, ND" />
     <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow'} />
-    
+
     <!-- Structured Data: LocalBusiness -->
     <script is:inline type="application/ld+json" set:html={medicalBusinessSchema} />
 
@@ -919,12 +915,12 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
     </script>
 
     <!-- Main Content -->
-    <main id="main-content" class="pt-24">
+    <main data-page-family={articleData ? "article" : pageFamily(currentPath)} id="main-content" class="pt-24">
       <slot />
     </main>
 
     <!-- Footer -->
-    <footer id="site-footer" class="reveal bg-emerald-50 border-t border-emerald-200/60 relative overflow-hidden">
+    <footer id="site-footer" class="bg-emerald-50 border-t border-emerald-200/60 relative overflow-hidden">
       <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
         <div class="absolute -right-16 -top-16 w-64 h-64 rounded-full bg-emerald-200/30 blur-3xl"></div>
         <div class="absolute -left-10 bottom-0 w-52 h-52 rounded-full bg-emerald-900/10 blur-3xl"></div>
@@ -1002,24 +998,8 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
       </div>
     </footer>
 
-    <!-- Scroll-triggered reveal animations & header scroll effect -->
+    <!-- Header scroll effect -->
     <script>
-      function initRevealObserver() {
-        const reveals = document.querySelectorAll('.reveal:not(.visible)');
-        if (!reveals.length) return;
-
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('visible');
-              observer.unobserve(entry.target);
-            }
-          });
-        }, { threshold: 0, rootMargin: '0px 0px 50px 0px' });
-
-        reveals.forEach(el => observer.observe(el));
-      }
-
       let scrollAbortController: AbortController | null = null;
       function initHeaderScroll() {
         // Abort previous listener so it doesn't reference a stale header element
@@ -1043,10 +1023,8 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
         onScroll();
       }
 
-      initRevealObserver();
       initHeaderScroll();
       document.addEventListener('astro:page-load', () => {
-        initRevealObserver();
         initHeaderScroll();
       });
     </script>

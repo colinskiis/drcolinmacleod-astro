@@ -26,11 +26,11 @@ const {
 
 const bgClass = {
   white: 'bg-white',
-  emerald: 'bg-emerald-50',
-  gray: 'bg-emerald-50',
+  emerald: 'bg-[#f3f7f4]',
+  gray: 'bg-[#f3f7f4]',
 }[bg];
 
-const sectionClasses = sectionClass ?? `py-16 lg:py-24 ${bgClass}`;
+const sectionClasses = sectionClass ?? `py-12 lg:py-16 ${bgClass}`;
 ---
 
 <section id={id} class:list={[sectionClasses, id && 'scroll-mt-32']}>
