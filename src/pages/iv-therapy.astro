@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import PageJumpLinks from '../components/PageJumpLinks.astro';
+import AppointmentSummary from '../components/AppointmentSummary.astro';
 import HeroSection from '../components/HeroSection.astro';
 import FirstVisitGuidance from '../components/FirstVisitGuidance.astro';
 import CTAButton from '../components/CTAButton.astro';
@@ -17,14 +19,54 @@ import ServiceArticles from '../components/ServiceArticles.astro';
   <HeroSection
     title="IV Therapy"
     compact
-    video={{ src: "https://www.youtube.com/embed/sjG8VsLP3u8", title: "IV Therapy Overview" }}
+    video={{ src: "https://www.youtube.com/embed/sjG8VsLP3u8", title: "IV Therapy Overview", poster: "/images/treatments/iv-patient-woman.webp" }}
   >
     <p>IV therapy delivers fluids and selected nutrients directly into the bloodstream. Whether it is appropriate depends on your health history, clinical assessment, goals and potential risks.</p>
     <p class="text-white/80">Dr. MacLeod develops individualized protocols with screening and monitoring. Response varies, and IV therapy does not replace appropriate conventional care.</p>
+    <AppointmentSummary slot="cta" source="iv-therapy-summary" />
   </HeroSection>
 
-  <!-- Myers Cocktail & Getting Started -->
-  <section class="py-16 lg:py-24 bg-emerald-50">
+  <PageJumpLinks items={[
+    { id: 'assessment', title: 'Suitability & risks' },
+    { id: 'first-treatment', title: 'What to expect' },
+    { id: 'formulations', title: 'Formulations' },
+    { id: 'questions', title: 'Questions' },
+  ]} />
+
+  <!-- Why IV Therapy Section -->
+  <section id="assessment" class="scroll-mt-32 py-12 lg:py-16 bg-white">
+    <div class="section-shell">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6">Suitability &amp; Risks</h2>
+          <div class="prose prose-lg text-slate-600">
+            <p>
+              IV administration delivers a substance directly into the bloodstream and avoids gastrointestinal absorption. That difference in delivery does not, by itself, establish that an IV will improve a particular symptom or condition.
+            </p>
+            <p>
+              The decision to use an IV depends on whether there is a reasonable clinical indication, whether the proposed formulation is supported for that purpose and whether the potential benefit outweighs the risks and burden of treatment.
+            </p>
+            <p>
+              Some people will not be suitable candidates. Screening, informed consent and monitoring are required, and response cannot be predicted or guaranteed.
+            </p>
+          </div>
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-xl">
+          <img
+            src="/images/treatments/iv-patient-man.webp"
+            alt="Patient receiving IV vitamin therapy in Halifax"
+            class="w-full h-full object-cover"
+            width="1200"
+            height="896"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Patient visit sequence -->
+  <section id="first-treatment" class="scroll-mt-32 py-12 lg:py-16 bg-emerald-50">
     <div class="section-shell">
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         <!-- Image -->
@@ -33,45 +75,39 @@ import ServiceArticles from '../components/ServiceArticles.astro';
             src="/images/treatments/iv-patient-woman.webp"
             alt="Patient receiving IV vitamin therapy in Halifax"
             class="w-full h-full object-cover"
-            width="800"
-            height="600"
+            width="1200"
+            height="896"
             loading="lazy"
           />
         </div>
 
-        <!-- Content -->
-        <div class="bg-white rounded-3xl shadow-xl p-8 lg:p-10 card-hover">
-          <h2 class="text-2xl font-serif font-medium text-emerald-950 mb-2">The Myers Cocktail</h2>
-          <p class="text-slate-600 mb-4">A commonly used IV nutrient formulation containing vitamins and minerals. Its suitability and composition are assessed individually.</p>
-
-          <div class="flex flex-wrap gap-2 mb-6">
-            <span class="px-3 py-1.5 bg-emerald-100 text-emerald-800 rounded-full text-sm font-medium">Calcium</span>
-            <span class="px-3 py-1.5 bg-emerald-100 text-emerald-800 rounded-full text-sm font-medium">Magnesium</span>
-            <span class="px-3 py-1.5 bg-emerald-100 text-emerald-800 rounded-full text-sm font-medium">B Vitamins</span>
-            <span class="px-3 py-1.5 bg-emerald-100 text-emerald-800 rounded-full text-sm font-medium">B12</span>
-            <span class="px-3 py-1.5 bg-emerald-100 text-emerald-800 rounded-full text-sm font-medium">Vitamin C</span>
-          </div>
-
-          <div class="border-t border-slate-200 pt-6">
-            <h3 class="font-serif font-medium text-lg text-emerald-950 mb-3">Getting Started</h3>
-            <p class="text-slate-600 mb-6">
-              All new patients complete a one-hour initial consultation ($200) before IV therapy. We review your health and goals to determine whether IV therapy is appropriate. Any recommended treatment is scheduled for a separate appointment and billed separately.
-            </p>
-
-            <BookingButton variant="primary" surface="light" size="lg" fullWidth source="iv-therapy-pricing" placement="inline" />
-          </div>
+        <div>
+          <h2 class="mb-6 text-3xl font-serif font-medium text-emerald-950">What to Expect</h2>
+          <ol class="space-y-5">
+            {[
+              { title: 'Start with a consultation', detail: 'All new patients complete a 60-minute consultation ($200). Review your health history, goals, previous testing and whether IV therapy is appropriate.' },
+              { title: 'Plan a separate treatment visit', detail: 'If appropriate, your infusion is scheduled separately afterward. The formulation, preparation, risks and treatment fee are reviewed before proceeding.' },
+              { title: 'Receive monitored care', detail: 'You are monitored during the infusion. Further treatment depends on your response, tolerance and ongoing clinical need.' },
+            ].map(({ title, detail }, index) => (
+              <li class="flex gap-4 border-t border-emerald-200 pt-5">
+                <span class="text-sm font-semibold text-emerald-700" aria-hidden="true">0{index + 1}</span>
+                <div><h3 class="mb-2 font-sans text-base font-semibold text-emerald-950">{title}</h3><p class="text-sm leading-relaxed text-slate-600">{detail}</p></div>
+              </li>
+            ))}
+          </ol>
+          <div class="mt-6"><BookingButton destination="initial" surface="light" size="lg" source="iv-therapy-pricing" placement="inline" /></div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- IV Therapy Boosters -->
-  <section class="py-16 lg:py-24 bg-white">
+  <section id="formulations" class="scroll-mt-32 py-12 lg:py-16 bg-white">
     <div class="section-shell">
       <div class="text-center mb-12">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">Nutrients and Formulations</h2>
         <p class="text-lg text-slate-600 max-w-3xl mx-auto">
-          Different nutrients and formulations may be discussed after reviewing clinical need, available evidence, contraindications and potential interactions.
+          The Myers Cocktail is a commonly used formulation containing vitamins and minerals. Its composition and suitability are assessed individually. Other formulations may be discussed after reviewing clinical need, evidence, contraindications and potential interactions.
         </p>
       </div>
 
@@ -161,40 +197,8 @@ import ServiceArticles from '../components/ServiceArticles.astro';
     </div>
   </section>
 
-  <!-- Why IV Therapy Section -->
-  <section class="py-16 lg:py-24 bg-white">
-    <div class="section-shell">
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
-        <div>
-          <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-6">How IV Delivery Differs</h2>
-          <div class="prose prose-lg text-slate-600">
-            <p>
-              IV administration delivers a substance directly into the bloodstream and avoids gastrointestinal absorption. That difference in delivery does not, by itself, establish that an IV will improve a particular symptom or condition.
-            </p>
-            <p>
-              The decision to use an IV depends on whether there is a reasonable clinical indication, whether the proposed formulation is supported for that purpose and whether the potential benefit outweighs the risks and burden of treatment.
-            </p>
-            <p>
-              Some people will not be suitable candidates. Screening, informed consent and monitoring are required, and response cannot be predicted or guaranteed.
-            </p>
-          </div>
-        </div>
-        <div class="rounded-2xl overflow-hidden shadow-xl">
-          <img
-            src="/images/treatments/iv-patient-man.webp"
-            alt="Patient receiving IV vitamin therapy in Halifax"
-            class="w-full h-full object-cover"
-            width="800"
-            height="600"
-            loading="lazy"
-          />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <FAQSection items={[
-          { question: "What happens at my first IV therapy visit?", answer: "<p>Your first visit includes a health review, discussion of your goals and a decision about whether IV therapy is appropriate. If treatment proceeds, we select nutrients for your needs and monitor you throughout the infusion. Many patients schedule a consultation before their first drip.</p>" },
+  <FAQSection id="questions" items={[
+          { question: "What happens at my first IV therapy visit?", answer: "<p>All new patients first complete a 60-minute consultation ($200) to review their health, goals and whether IV therapy is appropriate. Any recommended infusion is scheduled separately afterward and billed at the treatment rate. Nutrients are selected individually and you are monitored during treatment.</p>" },
           { question: "Is IV therapy covered by insurance?", answer: "<p>Coverage varies by insurer and plan. Ask your insurer whether naturopathic IV administration and treatment supplies are eligible under your specific policy before proceeding.</p>" },
           { question: "How often is IV therapy given?", answer: "<p>There is no standard schedule suitable for everyone. Whether treatment is offered at all, and whether it is repeated, depends on the indication, response, risks and available alternatives. This is decided through individual assessment rather than from website information.</p>" },
           { question: "What are the risks of IV therapy?", answer: "<p>Potential effects include discomfort, bruising or infection at the insertion site, light-headedness, changes in blood pressure, nausea, fluid or electrolyte problems and reactions to an ingredient. Additional risks and contraindications depend on the formulation and the person's health history. These are reviewed before consent.</p>" },
@@ -215,7 +219,7 @@ import ServiceArticles from '../components/ServiceArticles.astro';
           Book a consultation to review whether IV therapy is appropriate for your circumstances, including potential benefits, limitations, alternatives and risks.
         </p>
         <FirstVisitGuidance />
-        <CTAButton source="iv-therapy-cta" placement="closing" />
+        <CTAButton destination="initial" source="iv-therapy-cta" placement="closing" />
       </div>
     </div>
   </section>

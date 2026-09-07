@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BookingButton from '../components/BookingButton.astro';
 import FAQSection from '../components/FAQSection.astro';
-import { Phone, MessageCircle, FlaskConical, ChevronRight, ShieldCheck, Clock, CreditCard, MapPin } from '@lucide/astro';
+import { Phone, MessageCircle, ChevronRight, ShieldCheck, Clock, CreditCard, MapPin } from '@lucide/astro';
 
 // All services for Services section
 const allServices = [
@@ -64,14 +64,14 @@ const faqSchema = {
         <div class="space-y-4 sm:space-y-6 lg:space-y-7">
           <!-- Compact mobile portrait -->
           <div class="flex justify-center max-[359px]:hidden lg:hidden animate-fade-in-up">
-            <a href="/about/" aria-label="About Dr. Colin MacLeod, ND" class="block h-20 w-16 sm:h-28 sm:w-24 overflow-hidden rounded-2xl border-2 border-white/20 shadow-xl shadow-black/25 transition-all duration-300 hover:border-white/40">
+            <a href="/about/" aria-label="About Dr. Colin MacLeod, ND" class="block h-24 w-24 sm:h-28 sm:w-28 overflow-hidden rounded-2xl border-2 border-white/20 shadow-xl shadow-black/25 transition-all duration-300 hover:border-white/40">
               <picture>
                 <source srcset="/images/general/colin-hero.avif" type="image/avif" />
                 <source srcset="/images/general/colin-hero.webp" type="image/webp" />
                 <img
                   src="/images/general/Dr-colin-macleod-ND.jpeg"
                   alt="Dr. Colin MacLeod, ND"
-                  class="h-full w-full object-cover object-top"
+                  class="h-full w-full object-cover object-top max-lg:scale-[1.65] max-lg:origin-[85%_20%]"
                   width="609"
                   height="1050"
                   loading="eager"
@@ -90,32 +90,32 @@ const faqSchema = {
             </h1>
 
             <p class="mx-auto max-w-xl text-base leading-relaxed text-emerald-100 sm:text-lg lg:mx-0 animate-fade-in-up animate-delay-200">
-              Naturopathic care in Bedford, serving Halifax. Private lab testing, IV therapy and prolotherapy, coordinated with your healthcare team.
+              Naturopathic care in Bedford, serving Halifax. A plan built around your health history, concerns and goals.
             </p>
           </div>
 
           <div class="flex flex-col items-center justify-center gap-3 sm:flex-row lg:justify-start animate-fade-in-up animate-delay-300">
-            <BookingButton text="Book Online" variant="primary" surface="dark" size="lg" source="hero" placement="hero" />
+            <BookingButton destination="initial" text="Book Online" variant="primary" surface="dark" size="lg" source="hero" placement="hero" />
             <a
-              href="/lab-testing/"
+              href="/new-patients/"
               class="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/55 bg-white/10 px-6 py-3 font-medium text-white backdrop-blur-sm transition-all hover:-translate-y-0.5 hover:border-white/75 hover:bg-white/20"
             >
-              <FlaskConical class="h-4 w-4 text-emerald-300" aria-hidden="true" />
-              Explore Lab Testing
+              Your First Visit
               <ChevronRight class="h-4 w-4 text-emerald-300" aria-hidden="true" />
             </a>
           </div>
 
+          <p class="text-center text-sm text-emerald-100 lg:text-left">New patients: 60-minute consultation · $200</p>
+
           <div class="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-sm text-emerald-200 lg:justify-start animate-fade-in-up animate-delay-400">
             <a href="tel:+19024064424" class="inline-flex min-h-11 items-center gap-2 px-1 transition-colors hover:text-white">
               <Phone class="h-4 w-4" aria-hidden="true" />
-              Call (902) 406-4424
+              Call the clinic
             </a>
             <a href="sms:+19027070230" data-text-source="homepage-hero" class="inline-flex min-h-11 items-center gap-2 px-1 transition-colors hover:text-white">
               <MessageCircle class="h-4 w-4" aria-hidden="true" />
-              Text (902) 707-0230
+              Text the clinic
             </a>
-            <a href="/new-patients/" class="inline-flex min-h-11 items-center px-1 text-emerald-300 underline underline-offset-2 transition-colors hover:text-white">First visit? Learn what to expect →</a>
           </div>
         </div>
 
@@ -190,7 +190,7 @@ const faqSchema = {
   </section>
 
   <!-- Services Grid -->
-  <section class="py-16 lg:py-24 bg-white">
+  <section class="py-12 lg:py-16 bg-white">
     <div class="section-shell">
       <div class="text-center max-w-3xl mx-auto mb-10 lg:mb-14 space-y-4 reveal">
         <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 tracking-tight">Services</h2>
@@ -199,7 +199,7 @@ const faqSchema = {
 
       <div class="space-y-6 sm:space-y-8 reveal reveal-delay-100">
         <!-- Featured laboratory testing -->
-        <a href={featuredService.href} class="group grid overflow-hidden rounded-3xl border border-emerald-100 bg-emerald-50 shadow-xl shadow-emerald-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-emerald-900/10 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 sm:grid-cols-[1.15fr_0.85fr] sm:items-stretch">
+        <a href={featuredService.href} class="group grid overflow-hidden rounded-3xl border border-emerald-100 bg-emerald-50 transition-colors duration-200 hover:border-emerald-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 sm:grid-cols-[1.15fr_0.85fr] sm:items-stretch">
           <div class="aspect-[16/10] overflow-hidden sm:aspect-[4/3]">
             <img src={featuredService.img} alt="Dr. Colin MacLeod performing an in-office blood draw" class="h-full w-full object-cover object-[center_20%] transition-transform duration-500 group-hover:scale-[1.03] sm:object-center xl:object-[center_20%]" width="768" height="1024" loading="lazy" />
           </div>
@@ -217,7 +217,7 @@ const faqSchema = {
         <!-- Secondary services retain authentic imagery at every breakpoint -->
         <div class="grid gap-4 sm:grid-cols-2 sm:gap-8">
           {secondaryServices.map((item) => (
-            <a href={item.href} class="group grid min-h-32 grid-cols-[7.5rem_1fr] overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-lg shadow-emerald-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-emerald-900/10 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 sm:block sm:rounded-3xl">
+            <a href={item.href} class="group grid min-h-32 grid-cols-[7.5rem_1fr] overflow-hidden rounded-2xl border border-slate-100 bg-white transition-colors duration-200 hover:border-emerald-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 sm:block sm:rounded-3xl">
               <div class="overflow-hidden sm:aspect-[4/3]">
                 <img
                   src={item.img}
@@ -283,7 +283,7 @@ const faqSchema = {
       <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white">Ready to discuss your health and testing needs?</h2>
       <p class="text-emerald-200 text-lg max-w-2xl mx-auto">All new patients begin with a one-hour initial consultation ($200) to review concerns and plan next steps. Any recommended IV therapy or injection treatment is scheduled separately afterward.</p>
       <div>
-        <BookingButton text="Book Online" variant="primary" surface="dark" size="lg" source="bottom-cta" placement="closing" />
+        <BookingButton text="Book Online" variant="primary" surface="dark" size="lg" destination="initial" source="bottom-cta" placement="closing" />
       </div>
       <div class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm text-emerald-200">
         <span>No referral needed</span>

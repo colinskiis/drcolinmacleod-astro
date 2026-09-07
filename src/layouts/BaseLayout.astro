@@ -548,17 +548,16 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
           <!-- Centered Navigation -->
           <div class="hidden xl:flex items-center justify-center flex-1 gap-4 text-sm font-medium text-white" role="navigation" aria-label="Main navigation">
             <a href="/lab-testing/" data-navigation-source="desktop-main-nav-lab-testing" class={`whitespace-nowrap hover:text-emerald-200 hover:border-emerald-400/50 transition-colors duration-200 pb-1 border-b-2 ${onLabTestingPath ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={onLabTestingPath ? 'page' : undefined}>Lab Testing</a>
-            <div class="relative group">
-              <a
-                href="/services/"
-                class={`inline-flex items-center gap-1 whitespace-nowrap hover:text-emerald-200 hover:border-emerald-400/50 transition-colors duration-200 pb-1 border-b-2 ${onServicePath ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`}
-                aria-current={onServicePath ? 'page' : undefined}
-                aria-haspopup="true"
-              >
-                Services
-                <ChevronDown class="w-3.5 h-3.5 transition-transform group-hover:rotate-180 group-focus-within:rotate-180" aria-hidden="true" />
-              </a>
-              <div class="invisible pointer-events-none absolute left-1/2 top-full z-50 w-[44rem] max-w-[calc(100vw-3rem)] -translate-x-1/2 pt-4 opacity-0 transition-all duration-150 group-hover:visible group-hover:pointer-events-auto group-hover:opacity-100 group-focus-within:visible group-focus-within:pointer-events-auto group-focus-within:opacity-100">
+            <nav-disclosure class="relative block">
+              <div class="flex items-center">
+                <a href="/services/" data-nav-link aria-current={onServicePath ? 'page' : undefined}
+                  class={`inline-flex min-h-11 items-center rounded-sm border-b-2 hover:text-emerald-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300 ${onServicePath ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`}>Services</a>
+                <button type="button" data-nav-toggle aria-label="Toggle services menu" aria-expanded="false" aria-controls="services-menu"
+                  class="nav-disclosure-toggle min-h-11 min-w-8 items-center justify-center rounded-md text-white hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300">
+                  <ChevronDown class="w-3.5 h-3.5 transition-transform" aria-hidden="true" />
+                </button>
+              </div>
+              <div id="services-menu" data-nav-panel hidden class="absolute left-1/2 top-full z-50 w-[44rem] max-w-[calc(100vw-3rem)] -translate-x-1/2 pt-4">
                 <div class="rounded-2xl border border-emerald-800/60 bg-emerald-950/95 p-4 shadow-2xl shadow-emerald-950/40 ring-1 ring-white/10 backdrop-blur">
                   <div class="grid grid-cols-3 gap-3">
                     {serviceMenuGroups.map((group) => (
@@ -582,18 +581,17 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="relative group">
-              <a
-                href="/conditions/"
-                class={`inline-flex items-center gap-1 whitespace-nowrap hover:text-emerald-200 hover:border-emerald-400/50 transition-colors duration-200 pb-1 border-b-2 ${onConditionPath ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`}
-                aria-current={onConditionPath ? 'page' : undefined}
-                aria-haspopup="true"
-              >
-                Conditions
-                <ChevronDown class="w-3.5 h-3.5 transition-transform group-hover:rotate-180 group-focus-within:rotate-180" aria-hidden="true" />
-              </a>
-              <div class="invisible pointer-events-none absolute left-1/2 top-full z-50 w-[44rem] max-w-[calc(100vw-3rem)] -translate-x-1/2 pt-4 opacity-0 transition-all duration-150 group-hover:visible group-hover:pointer-events-auto group-hover:opacity-100 group-focus-within:visible group-focus-within:pointer-events-auto group-focus-within:opacity-100">
+            </nav-disclosure>
+            <nav-disclosure class="relative block">
+              <div class="flex items-center">
+                <a href="/conditions/" data-nav-link aria-current={onConditionPath ? 'page' : undefined}
+                  class={`inline-flex min-h-11 items-center rounded-sm border-b-2 hover:text-emerald-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300 ${onConditionPath ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`}>Conditions</a>
+                <button type="button" data-nav-toggle aria-label="Toggle conditions menu" aria-expanded="false" aria-controls="conditions-menu"
+                  class="nav-disclosure-toggle min-h-11 min-w-8 items-center justify-center rounded-md text-white hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300">
+                  <ChevronDown class="w-3.5 h-3.5 transition-transform" aria-hidden="true" />
+                </button>
+              </div>
+              <div id="conditions-menu" data-nav-panel hidden class="absolute left-1/2 top-full z-50 w-[44rem] max-w-[calc(100vw-3rem)] -translate-x-1/2 pt-4">
                 <div class="rounded-2xl border border-emerald-800/60 bg-emerald-950/95 p-4 shadow-2xl shadow-emerald-950/40 ring-1 ring-white/10 backdrop-blur">
                   <div class="grid grid-cols-3 gap-3">
                     {conditionMenuGroups.map((group) => (
@@ -617,7 +615,7 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
                   </div>
                 </div>
               </div>
-            </div>
+            </nav-disclosure>
             <a href="/new-patients/" class={`whitespace-nowrap hover:text-emerald-200 hover:border-emerald-400/50 transition-colors duration-200 pb-1 border-b-2 ${currentPath.startsWith('/new-patients') ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={currentPath.startsWith('/new-patients') ? 'page' : undefined}>New Patients</a>
             <a href="/about/" class={`whitespace-nowrap hover:text-emerald-200 hover:border-emerald-400/50 transition-colors duration-200 pb-1 border-b-2 ${currentPath.startsWith('/about') ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={currentPath.startsWith('/about') ? 'page' : undefined}>About</a>
             <a href="/contact/" class={`whitespace-nowrap hover:text-emerald-200 hover:border-emerald-400/50 transition-colors duration-200 pb-1 border-b-2 ${currentPath.startsWith('/contact') ? 'text-emerald-300 border-emerald-400' : 'border-transparent'}`} aria-current={currentPath.startsWith('/contact') ? 'page' : undefined}>Contact</a>
@@ -670,14 +668,42 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
                 Lab Testing
                 <ChevronRight class="w-5 h-5 text-emerald-300 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
               </a>
-              <a href="/services/" class={`group flex items-center justify-between rounded-lg px-3 py-3.5 text-xl transition-colors hover:bg-emerald-700/20 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 ${onServicePath ? 'text-white bg-emerald-800/30' : ''}`} aria-current={onServicePath ? 'page' : undefined}>
-                Services
-                <ChevronRight class="w-5 h-5 text-emerald-300 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
-              </a>
-              <a href="/conditions/" class={`group flex items-center justify-between rounded-lg px-3 py-3.5 text-xl transition-colors hover:bg-emerald-700/20 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 ${onConditionPath ? 'text-white bg-emerald-800/30' : ''}`} aria-current={onConditionPath ? 'page' : undefined}>
-                Conditions
-                <ChevronRight class="w-5 h-5 text-emerald-300 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
-              </a>
+              <nav-disclosure class="block" data-mobile-disclosure>
+                <div class="flex items-center">
+                  <a href="/services/" class={`flex-1 rounded-lg px-3 py-3.5 text-xl hover:bg-emerald-700/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 ${onServicePath ? 'text-white bg-emerald-800/30' : ''}`} aria-current={onServicePath ? 'page' : undefined}>Services</a>
+                  <button type="button" data-nav-toggle aria-label="Toggle services menu" aria-expanded="false" aria-controls="mobile-services-submenu" class="nav-disclosure-toggle min-h-12 min-w-12 items-center justify-center rounded-lg hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300">
+                    <ChevronDown class="h-5 w-5" aria-hidden="true" />
+                  </button>
+                </div>
+                <div id="mobile-services-submenu" data-nav-panel hidden class="space-y-4 border-l border-emerald-700 ml-3 mb-4 pl-3">
+                  {serviceMenuGroups.map(group => (
+                    <div>
+                      <p class="px-3 pt-2 text-xs uppercase tracking-wide text-emerald-300">{group.title}</p>
+                      {group.links.map(link => (
+                        <a href={link.href} class="flex min-h-11 items-center rounded-lg px-3 py-2 text-base font-medium hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300">{link.label}</a>
+                      ))}
+                    </div>
+                  ))}
+                </div>
+              </nav-disclosure>
+              <nav-disclosure class="block" data-mobile-disclosure>
+                <div class="flex items-center">
+                  <a href="/conditions/" class={`flex-1 rounded-lg px-3 py-3.5 text-xl hover:bg-emerald-700/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 ${onConditionPath ? 'text-white bg-emerald-800/30' : ''}`} aria-current={onConditionPath ? 'page' : undefined}>Conditions</a>
+                  <button type="button" data-nav-toggle aria-label="Toggle conditions menu" aria-expanded="false" aria-controls="mobile-conditions-submenu" class="nav-disclosure-toggle min-h-12 min-w-12 items-center justify-center rounded-lg hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300">
+                    <ChevronDown class="h-5 w-5" aria-hidden="true" />
+                  </button>
+                </div>
+                <div id="mobile-conditions-submenu" data-nav-panel hidden class="space-y-4 border-l border-emerald-700 ml-3 mb-4 pl-3">
+                  {conditionMenuGroups.map(group => (
+                    <div>
+                      <p class="px-3 pt-2 text-xs uppercase tracking-wide text-emerald-300">{group.title}</p>
+                      {group.links.map(link => (
+                        <a href={link.href} class="flex min-h-11 items-center rounded-lg px-3 py-2 text-base font-medium hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300">{link.label}</a>
+                      ))}
+                    </div>
+                  ))}
+                </div>
+              </nav-disclosure>
               <a href="/new-patients/" class={`group flex items-center justify-between rounded-lg px-3 py-3.5 text-xl transition-colors hover:bg-emerald-700/20 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 ${currentPath.startsWith('/new-patients') ? 'text-white bg-emerald-800/30' : ''}`} aria-current={currentPath.startsWith('/new-patients') ? 'page' : undefined}>
                 New Patients
                 <ChevronRight class="w-5 h-5 text-emerald-300 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
@@ -736,6 +762,60 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
     </header>
 
     <script>
+      class NavDisclosure extends HTMLElement {
+        private controller?: AbortController;
+        connectedCallback() {
+          this.controller?.abort();
+          this.controller = new AbortController();
+          const { signal } = this.controller;
+          const toggle = this.querySelector<HTMLButtonElement>('[data-nav-toggle]');
+          const panel = this.querySelector<HTMLElement>('[data-nav-panel]');
+          if (!toggle || !panel) return;
+          const close = () => { panel.hidden = true; toggle.setAttribute('aria-expanded', 'false'); };
+          close();
+          const openMenu = () => {
+            document.dispatchEvent(new CustomEvent('nav-disclosure-open', { detail: this }));
+            panel.hidden = false;
+            toggle.setAttribute('aria-expanded', 'true');
+          };
+          // The label navigates; its adjacent arrow explicitly toggles the menu.
+          // Mouse users can also browse by hovering over the label.
+          this.querySelector('[data-nav-link]')?.addEventListener('pointerenter', (event) => {
+            if ((event as PointerEvent).pointerType === 'mouse') openMenu();
+          }, { signal });
+          this.addEventListener('pointerleave', (event) => {
+            if (!this.hasAttribute('data-mobile-disclosure') && event.pointerType === 'mouse' && !panel.contains(document.activeElement)) close();
+          }, { signal });
+          toggle.addEventListener('click', () => {
+            const open = toggle.getAttribute('aria-expanded') !== 'true';
+            document.dispatchEvent(new CustomEvent('nav-disclosure-open', { detail: this }));
+            panel.hidden = !open;
+            toggle.setAttribute('aria-expanded', String(open));
+          }, { signal });
+          document.addEventListener('nav-disclosure-open', (event) => {
+            if ((event as CustomEvent).detail !== this) close();
+          }, { signal });
+          document.addEventListener('pointerdown', (event) => {
+            if (event.target instanceof Node && !this.contains(event.target)) close();
+          }, { signal });
+          document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && !panel.hidden) {
+              event.preventDefault();
+              close();
+              toggle.focus();
+            }
+          }, { signal, capture: true });
+          this.addEventListener('focusout', (event) => {
+            if (!(event.relatedTarget instanceof Node) || !this.contains(event.relatedTarget)) close();
+          }, { signal });
+          window.matchMedia('(min-width: 1280px)').addEventListener('change', close, { signal });
+        }
+        disconnectedCallback() { this.controller?.abort(); }
+      }
+      if (!customElements.get('nav-disclosure')) customElements.define('nav-disclosure', NavDisclosure);
+    </script>
+
+    <script>
       function initMobileMenu() {
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -749,6 +829,7 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
 
         function closeMenu() {
           if (mobileMenu) {
+            mobileMenu.querySelectorAll<HTMLButtonElement>('[data-nav-toggle][aria-expanded="true"]').forEach(toggle => toggle.click());
             mobileMenu.classList.add(...openClasses);
             mobileMenu.scrollTop = 0;
           }
@@ -805,7 +886,7 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
             const btn = document.getElementById('mobile-menu-button');
             if (!btn || btn.getAttribute('aria-expanded') !== 'true') return;
 
-            if (e.key === 'Escape') {
+            if (e.key === 'Escape' && !e.defaultPrevented) {
               btn.click();
               btn.focus();
               return;

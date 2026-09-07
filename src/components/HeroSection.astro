@@ -1,4 +1,5 @@
 ---
+import VideoPreview from './VideoPreview.astro';
 import { isConditionPath, isLabTestingPath, isServicePath } from '../config/routes';
 
 export interface Props {
@@ -10,10 +11,14 @@ export interface Props {
     src: string;
     alt: string;
     aspect?: 'video' | 'square';
+    width?: number;
+    height?: number;
+    hideOnMobile?: boolean;
   };
   video?: {
     src: string;
     title: string;
+    poster?: string;
   };
 }
 
@@ -105,20 +110,22 @@ const imageDimensions = imageAspect === 'square'
           <slot name="cta" />
         </div>
         {image && (
-          <div class={`rounded-2xl overflow-hidden shadow-2xl ${imageAspect === 'square' ? 'aspect-square' : ''}`}>
+          <div class={`rounded-2xl overflow-hidden shadow-2xl ${image.hideOnMobile ? 'hidden lg:block' : ''} ${imageAspect === 'square' ? 'aspect-square' : ''}`}>
             <img
               src={image.src}
               alt={image.alt}
               class={`w-full h-full object-cover ${imageClasses}`}
-              width={imageDimensions.width}
-              height={imageDimensions.height}
+              width={image.width ?? imageDimensions.width}
+              height={image.height ?? imageDimensions.height}
               loading="eager"
               fetchpriority="high"
               decoding="async"
             />
           </div>
         )}
-        {video && (
+        {video?.poster ? (
+          <VideoPreview src={video.src} title={video.title} poster={video.poster} />
+        ) : video && (
           <div class="aspect-video rounded-2xl overflow-hidden shadow-2xl">
             <iframe
               src={video.src}

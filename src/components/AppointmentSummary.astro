@@ -1,0 +1,22 @@
+---
+import BookingButton from './BookingButton.astro';
+interface Props {
+  source: string;
+  surface?: 'dark' | 'light';
+  testing?: boolean;
+}
+const { source, surface = 'dark', testing = false } = Astro.props;
+const dark = surface === 'dark';
+---
+<div class:list={['border-t pt-5', dark ? 'border-white/20 text-emerald-100' : 'border-emerald-200 text-slate-700']}>
+  <p class:list={['text-sm font-semibold', dark ? 'text-emerald-300' : 'text-emerald-800']}>Your first appointment</p>
+  <p class:list={['mt-1 text-xl font-semibold', dark ? 'text-white' : 'text-emerald-950']}>60-minute consultation · $200</p>
+  <p class="mt-2 max-w-xl text-sm leading-relaxed">
+    {testing ? 'Laboratory fees are separate and confirmed before testing. Start with a consultation to review your concerns and plan your tests.' : 'All new patients start here. IV therapy and injection treatments are scheduled separately afterward if appropriate, and billed separately.'}
+  </p>
+  <div class="mt-4 flex flex-wrap items-center gap-x-5 gap-y-2">
+    <BookingButton destination="initial" surface={surface} source={source} placement="hero" size="lg" />
+    <a href="/new-patients/#fees" class:list={['inline-flex min-h-11 items-center rounded px-1 text-sm font-medium underline underline-offset-4 focus-visible:outline-none focus-visible:ring-2', dark ? 'text-white focus-visible:ring-emerald-300' : 'text-emerald-800 focus-visible:ring-emerald-600']}>Fees &amp; insurance</a>
+  </div>
+  <p class="mt-2 text-xs">Opens the new-patient appointment in Jane in a new tab.</p>
+</div>

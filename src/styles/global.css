@@ -624,3 +624,9 @@ details[open]::details-content {
     radial-gradient(ellipse 50% 30% at 50% 80%, rgba(16, 185, 129, 0.06) 0%, transparent 50%),
     linear-gradient(180deg, #022c22 0%, #064e3b 40%, #065f46 100%);
 }
+
+/* Desktop navigation uses explicit disclosure state for mouse and keyboard. */
+.nav-disclosure-toggle { display: none; }
+html.js .nav-disclosure-toggle { display: inline-flex; }
+.nav-disclosure-toggle[aria-expanded="true"] svg { transform: rotate(180deg); }
+[data-nav-panel][hidden] { display: none; }

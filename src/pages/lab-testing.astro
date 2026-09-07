@@ -1,34 +1,12 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import AppointmentSummary from '../components/AppointmentSummary.astro';
 import HeroSection from '../components/HeroSection.astro';
 import PageJumpLinks from '../components/PageJumpLinks.astro';
 import FirstVisitGuidance from '../components/FirstVisitGuidance.astro';
 import CTAButton from '../components/CTAButton.astro';
 import FAQSection from '../components/FAQSection.astro';
-import { ClipboardCheck, TestTubes, Clock, Sparkles, ChevronRight } from '@lucide/astro';
-
-const benefits = [
-  {
-    title: 'No Family-Doctor Requisition',
-    description: 'Dr. MacLeod can provide a private laboratory requisition for patients of the practice.',
-    icon: ClipboardCheck,
-  },
-  {
-    title: 'Broad Testing Options',
-    description: 'Options range from general wellness blood work to more detailed and specialized testing.',
-    icon: TestTubes,
-  },
-  {
-    title: 'In-Office Collection',
-    description: 'Blood collection is performed in the clinic for tests available through the practice.',
-    icon: Clock,
-  },
-  {
-    title: 'Clinical Interpretation',
-    description: 'Results are reviewed in the context of your symptoms, history and other clinical information.',
-    icon: Sparkles,
-  },
-];
+import { ChevronRight } from '@lucide/astro';
 
 // Cards are deliberately typographic rather than photographic. The six category
 // images still serve as heroes on their own pages, but side by side in one grid
@@ -102,9 +80,11 @@ const faqs = [
       src: '/images/lab-testing/in-office-blood-draw.webp',
       alt: 'Dr. Colin MacLeod performing an in-office blood draw',
       aspect: 'square',
+      width: 768, height: 1024, hideOnMobile: true,
     }}
   >
-    <p>Get the blood work and laboratory testing you need without a family doctor's requisition. Testing and in-office blood collection are available through Dr. MacLeod's practice at Optimal Wellbeing Clinic in Bedford.</p>
+    <p>Private blood testing and in-office collection in Bedford, without a family doctor's requisition. Choose a testing plan with Dr. MacLeod and review what your results mean.</p>
+    <AppointmentSummary slot="cta" source="lab-testing-summary" testing />
   </HeroSection>
 
   <PageJumpLinks items={[
@@ -114,30 +94,18 @@ const faqs = [
     { id: 'questions', title: 'Results timing & questions' },
   ]} />
 
-  <section class="border-b border-slate-100 bg-white py-12">
+  <section id="process" class="scroll-mt-32 bg-white py-10 lg:py-14">
     <div class="section-shell">
-      <div class="mx-auto max-w-[72ch] text-center">
-        <p class="text-lg leading-relaxed text-slate-700">
-          Private testing can provide access to routine and specialized laboratory assessments when you do not have a family physician, when appointments or publicly funded testing are difficult to access, or when you would like a broader assessment. Your testing plan is developed with you during a consultation and can include recommended markers as well as additional tests you would like to discuss.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="bg-white py-10 sm:py-16 lg:py-20" aria-label="Laboratory testing benefits">
-    <div class="section-shell">
-      <h2 class="sr-only">Laboratory testing benefits</h2>
-      <div class="grid grid-cols-2 gap-5 sm:gap-8 lg:grid-cols-4">
-        {benefits.map(({ title, description, icon: Icon }) => (
-          <div class="text-center">
-            <div class="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-emerald-100 sm:mb-4 sm:h-16 sm:w-16">
-              <Icon class="h-6 w-6 text-emerald-700 sm:h-8 sm:w-8" stroke-width={1.5} aria-hidden="true" />
-            </div>
+      <h2 class="mb-10 text-center text-3xl font-serif font-medium text-emerald-950 sm:text-4xl">How It Works</h2>
+      <ol class="grid grid-cols-2 gap-5 sm:gap-8 lg:grid-cols-4">
+        {steps.map(([number, title, description]) => (
+          <li class="text-center">
+            <span class="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-emerald-700 text-xl font-semibold text-white sm:mb-4 sm:h-16 sm:w-16 sm:text-2xl">{number}</span>
             <h3 class="mb-2 text-base font-serif font-medium text-emerald-950 sm:text-lg">{title}</h3>
-            <p class="text-xs leading-relaxed text-slate-600 sm:text-sm">{description}</p>
-          </div>
+            <p class="text-sm leading-relaxed text-slate-600">{description}</p>
+          </li>
         ))}
-      </div>
+      </ol>
     </div>
   </section>
 
@@ -151,7 +119,7 @@ const faqs = [
     </div>
   </section>
 
-  <section id="testing-options" class="scroll-mt-32 bg-emerald-50 py-16 lg:py-24">
+  <section id="testing-options" class="scroll-mt-32 bg-emerald-50 py-12 lg:py-16">
     <div class="section-shell">
       <div class="mb-10 text-center sm:mb-12">
         <h2 class="mb-4 text-3xl font-serif font-medium text-emerald-950 sm:text-4xl">Available Testing</h2>
@@ -177,21 +145,6 @@ const faqs = [
           </a>
         ))}
       </div>
-    </div>
-  </section>
-
-  <section id="process" class="scroll-mt-32 bg-white py-16 lg:py-24">
-    <div class="section-shell">
-      <h2 class="mb-10 text-center text-3xl font-serif font-medium text-emerald-950 sm:text-4xl">How It Works</h2>
-      <ol class="grid grid-cols-2 gap-5 sm:gap-8 lg:grid-cols-4">
-        {steps.map(([number, title, description]) => (
-          <li class="text-center">
-            <span class="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-emerald-700 text-xl font-semibold text-white sm:mb-4 sm:h-16 sm:w-16 sm:text-2xl">{number}</span>
-            <h3 class="mb-2 text-base font-serif font-medium text-emerald-950 sm:text-lg">{title}</h3>
-            <p class="text-xs leading-relaxed text-slate-600 sm:text-sm">{description}</p>
-          </li>
-        ))}
-      </ol>
     </div>
   </section>
 

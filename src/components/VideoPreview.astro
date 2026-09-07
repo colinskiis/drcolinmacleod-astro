@@ -1,0 +1,45 @@
+---
+interface Props { src: string; title: string; poster: string; }
+const { src, title, poster } = Astro.props;
+---
+<video-preview class="block">
+  <div class="relative aspect-video overflow-hidden rounded-2xl bg-emerald-900" data-video-container>
+    <button type="button" data-video-src={src} data-video-title={title} aria-label={`Play ${title}`} class="video-play group relative h-full w-full text-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-inset focus-visible:ring-emerald-300">
+      <span class="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('${poster}')` }} aria-hidden="true"></span>
+      <span class="absolute inset-0 bg-black/40 transition-colors group-hover:bg-black/50" aria-hidden="true"></span>
+      <span class="relative flex h-full flex-col items-center justify-center gap-3 p-5">
+        <span class="flex h-16 w-16 items-center justify-center rounded-full bg-white text-emerald-950 shadow-lg" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z" /></svg>
+        </span>
+        <span class="text-lg font-semibold">Watch: {title}</span>
+        <span class="text-sm">Plays a video from YouTube</span>
+      </span>
+    </button>
+    <noscript><a href={src} class="absolute inset-0 flex items-center justify-center p-6 font-semibold text-white underline">Watch {title} on YouTube</a></noscript>
+  </div>
+</video-preview>
+<style>
+  .video-play { display: none; }
+  :global(html.js) .video-play { display: block; }
+</style>
+<script>
+  class VideoPreview extends HTMLElement {
+    connectedCallback() {
+      const button = this.querySelector<HTMLButtonElement>('button');
+      if (!button || button.dataset.bound) return;
+      button.dataset.bound = 'true';
+      button.addEventListener('click', () => {
+        const frame = document.createElement('iframe');
+        frame.src = `${button.dataset.videoSrc}?autoplay=1`;
+        frame.title = button.dataset.videoTitle || 'Video';
+        frame.className = 'h-full w-full';
+        frame.allow = 'autoplay; encrypted-media; picture-in-picture';
+        frame.allowFullscreen = true;
+        frame.tabIndex = 0;
+        this.querySelector('[data-video-container]')?.replaceChildren(frame);
+        frame.focus();
+      }, { once: true });
+    }
+  }
+  if (!customElements.get('video-preview')) customElements.define('video-preview', VideoPreview);
+</script>
