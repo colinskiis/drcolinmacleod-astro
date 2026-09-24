@@ -202,3 +202,32 @@ axes depending on the section.
   styles, which is deterministic, and use screenshots for human review only.
 - Two spellings of the heading size pair were in use — adjacent, and split
   across other utilities — so a naive find-and-replace finds only 106 of 169.
+
+## Corrections to the original findings
+
+Two findings were wrong as written, and measurement caught both.
+
+**Finding 7 (hero media) said "top-aligned".** It was already centred. The real
+problem was scale: 210px of media against a 469px text column, leaving ~129px
+empty above *and* below. Fixed by widening the column and cropping 4:3.
+
+**Finding 6 (photo colour) said "cool clinical / warm outdoor / neutral beige".**
+Sampling the rendered pixels says otherwise:
+
+| image | mean R,G,B | warmth (R-B) | saturation |
+| --- | --- | --- | --- |
+| `in-office-blood-draw.webp` | 144, 132, 116 | 28 | 28 |
+| `iv-patient-woman.webp` | 177, 174, 148 | 30 | 30 |
+| `prolotherapy-knee-injection.webp` | 124, 123, 121 | 3 | 3 |
+
+Two of the three are already closely matched for warmth (28 and 30). The actual
+mismatches are that `iv-patient-woman` is roughly 35 points brighter than the
+other two, and `prolotherapy-knee-injection` is nearly monochrome at saturation
+3 against their 28-30.
+
+So the fix is an exposure and saturation match, not a white-balance match.
+
+**This one is deliberately not done in this wave.** Altering photographs of an
+identifiable practitioner and patients is a content decision, not a CSS change,
+and it should be a re-export from the source files rather than a filter applied
+over clinical imagery. It needs the source assets and an explicit go-ahead.
