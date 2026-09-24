@@ -9,7 +9,7 @@ const destinations = [
 ];
 ---
 <BaseLayout title="Page Not Found" description="Find services, appointment information and contact details for Dr. Colin MacLeod, ND." noindex={true}>
-  <HeroSection title="Page not found" centered compact>
+  <HeroSection title="Page not found" textOnly compact>
     <p>The page may have moved, or the address may be incorrect. The links below can help you find your way.</p>
     <div slot="cta" class="flex flex-wrap justify-center gap-3">
       <ActionButton href="/" surface="light" variant="primary">Go Home</ActionButton>
@@ -18,7 +18,7 @@ const destinations = [
   </HeroSection>
   <section class="care-section">
     <div class="section-shell">
-      <div class="mx-auto max-w-5xl">
+      <div class="max-w-5xl">
         <h2 class="mb-8 text-3xl text-emerald-950">Find what you need</h2>
         <div class="grid gap-x-10 gap-y-2 sm:grid-cols-3">
           {destinations.map(item => (

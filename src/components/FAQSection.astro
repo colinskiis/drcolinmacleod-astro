@@ -20,24 +20,24 @@ const {
   bg = 'emerald',
   includeSchema = true,
   sectionClass,
-  headingClass = 'text-3xl sm:text-4xl font-serif font-medium text-emerald-950',
+  headingClass = 'h-section font-serif font-medium text-emerald-950',
   id,
 } = Astro.props;
 
 const bgClass = {
   white: 'bg-white',
-  emerald: 'bg-[#f3f7f4]',
-  gray: 'bg-[#f3f7f4]',
+  emerald: 'bg-[var(--care-paper)]',
+  gray: 'bg-[var(--care-paper)]',
 }[bg];
 
 const sectionClasses = sectionClass ?? `py-12 lg:py-16 ${bgClass}`;
 ---
 
-<section id={id} class:list={[sectionClasses, id && 'scroll-mt-32']}>
+<section id={id} data-reveal class:list={[sectionClasses, id && 'scroll-mt-32']}>
   <div class="section-shell">
-    <div class="text-center max-w-3xl mx-auto mb-8 space-y-3">
-      <h2 class:list={[headingClass, 'text-center']}>{title}</h2>
-      {subtitle && <p class="text-lg text-slate-600 max-w-2xl mx-auto">{subtitle}</p>}
+    <div class="max-w-3xl mb-8 space-y-3">
+      <h2 class={headingClass}>{title}</h2>
+      {subtitle && <p class="text-lg text-slate-600 max-w-2xl">{subtitle}</p>}
     </div>
     <FAQAccordion items={items} />
   </div>

@@ -23,11 +23,11 @@ const cardClass = 'directory-link group';
 {articles.length > 0 && (
   <section class={sectionClass}>
     <div class="section-shell">
-      <div class="max-w-5xl mx-auto mb-8">
-        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 mb-4">{title}</h2>
+      <div class="max-w-5xl mb-8">
+        <h2 class="h-section font-serif font-medium text-emerald-950 mb-4">{title}</h2>
         {subtitle && <p class="text-lg text-slate-600">{subtitle}</p>}
       </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-5xl mx-auto">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-5xl">
         {articles.map(article => (
           <a href={`/articles/${article!.id}/`} class={cardClass}>
             <h3 class="font-serif font-medium text-emerald-950 mb-2 group-hover:text-emerald-700 transition-colors">{article!.data.title}</h3>

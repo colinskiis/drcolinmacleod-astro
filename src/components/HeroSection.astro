@@ -5,13 +5,12 @@ import { isConditionPath, isLabTestingPath, isServicePath } from '../config/rout
 
 export interface Props {
   title: string;
-  centered?: boolean;
   compact?: boolean;
   textOnly?: boolean;
   image?: { src: string; alt: string; aspect?: 'video' | 'square'; hideOnMobile?: boolean };
   video?: { src: string; title: string; poster?: string };
 }
-const { title, centered = false, compact = false, textOnly = false, image, video } = Astro.props;
+const { title, compact = false, textOnly = false, image, video } = Astro.props;
 const path = Astro.url.pathname;
 const condition = isConditionPath(path);
 const service = isServicePath(path);
@@ -22,12 +21,12 @@ const breadcrumb = isLabTestingPath(path) && path !== '/lab-testing/'
   : condition ? { href: '/conditions/', label: 'Conditions' } : null;
 // Conditions lead with information. Their supporting imagery belongs beside the
 // relevant explanation, rather than delaying it in a large introductory banner.
-const showMedia = !condition && !textOnly && !centered && (image || video || Astro.slots.has('media'));
+const showMedia = !condition && !textOnly && (image || video || Astro.slots.has('media'));
 ---
 
 <section class:list={['page-hero', care ? 'page-hero--care' : 'page-hero--general', compact && 'page-hero--compact']}>
   <div class="section-shell">
-    <div class:list={['page-hero__layout', showMedia && 'page-hero__layout--media', centered && !care && 'page-hero__layout--centered']}>
+    <div class:list={['page-hero__layout', showMedia && 'page-hero__layout--media']}>
       <div class="min-w-0">
         {Astro.slots.has('breadcrumb') ? <slot name="breadcrumb" /> : breadcrumb && (
           <nav class="page-hero__breadcrumb" aria-label="Breadcrumb">

@@ -1,6 +1,6 @@
 # DrColinMacleod.com Design Guide
 
-Canonical design policy · Updated 7 September 2026
+Canonical design policy · Updated 23 September 2026
 
 ## Purpose and authority
 
@@ -16,7 +16,29 @@ and its implementation together.
 
 These standards are implemented through the shared page families and apply to new
 and revised work. The [design review and implementation record](docs/design-review.md)
-documents the September rollout and validation; it is not another style guide.
+documents the September rollout; [the design wave plan](docs/design-wave.md) documents
+the later pass that produced the current tokens, surfaces and motion, including the
+positions it deliberately reversed. Neither is another style guide.
+
+## Constraints that are not design preferences
+
+The rest of this guide is open to revision by a future design pass. These four are
+not, and a pass that changes them is doing something other than design:
+
+- **Control contrast.** WCAG 1.4.11 requires 3:1 at a control's edge and 4.5:1 for
+  ordinary text. `src/lib/buttonStyles.ts` records a worked near-miss: a border at
+  `white/40` cleared 3.57:1 on emerald-950 and failed at 2.74:1 on the lighter part
+  of the hero gradient. Check a new surface against the **lightest** surface a
+  control appears on, never the darkest, and re-run `npm run audit:buttons`.
+- **Content available without JavaScript.** Nothing essential may depend on a script.
+- **Visible focus, `prefers-reduced-motion`, and comfortable touch targets.**
+- **Truthful image dimensions.** `width`/`height` preserve the source asset's
+  intrinsic ratio; crops use a wrapper with `object-cover`, never falsified
+  dimensions.
+
+`AGENTS.md` owns practice, content and deployment constraints, including the
+regulatory protected terms and the initial-consultation policy. Those take
+precedence over everything here.
 
 **Required:** shared branding, accessible interactions, accurate content, consistent
 button semantics and the correct page family. **Defaults:** section order, spacing,
@@ -46,33 +68,69 @@ and reading structure; care pages emphasize assessment and practical next steps.
 
 Implementation sources:
 
-- [Global styles](src/styles/global.css): font imports, CSS variables, headings,
-  `.section-shell`, `.prose` and shared utilities.
+- [Global styles](src/styles/global.css): font imports, the type scale and warm
+  surface tokens, headings, `.section-shell`, `.h-section`/`.h-sub`, `.card-link`,
+  `.prose`, and the feature-detected motion layer.
 - [Tailwind configuration](tailwind.config.mjs): inspect the configured font families
   and extensions before adding tokens.
 - [Button styles](src/lib/buttonStyles.ts): button emphasis, surfaces, sizing and focus.
 - [Base layout](src/layouts/BaseLayout.astro): global header, navigation and footer.
 - [Route inventory](src/config/routes.ts): service/condition identity and breadcrumbs.
 
-### Colour and typography
+### Colour and surfaces
 
 Use emerald-950 for dark care-page headers and strong headings, slate-600 for ordinary
-body text on white, and emerald accents for links and purposeful emphasis. White is
-the default content surface. The shared `--care-paper` surface marks a meaningful
-change in subject and introduces directories and practical pages. Amber is reserved for relevant cautionary information. Do not alternate
-backgrounds mechanically after every heading.
+body text, and emerald accents for links and purposeful emphasis. Amber is reserved for
+relevant cautionary information.
 
-Use the existing Playfair Display heading font at its loaded weight of 500 and
-Manrope for body text and controls. Avoid synthetic bold serif headings. Let heading
-size, spacing and position do the work before adding a badge or icon. Use one H1 and
-logical H2/H3 levels. Most care-page H2s should be 30–36px and H3s 20–24px; these are
-defaults, not reasons to override a shared component. Body copy is normally 16–18px;
-long-form `.prose` already defines readable typography.
+There are **two content surfaces**: white, and one warm neutral. The warm ramp lives in
+`:root` as `--surface-warm` (#f6f3ec), `--surface-warm-strong` and `--border-warm`.
+`--care-paper` is an alias of `--surface-warm`, so the care family's pale band and the
+directory headers are the same surface as everything else. Do not introduce a third
+pale surface, and do not reintroduce a cool mint tint beside the warm one.
+
+The warm surface exists as a counterweight: an all-emerald page stops reading as a
+brand choice. It also gives white cards an edge they do not have on a white section.
+Alternate surfaces where the subject genuinely changes — the homepage runs dark, warm,
+white, warm, white, dark, warm — not mechanically after every heading.
+
+Contrast on the warm surface is recorded in the token comment in `global.css`. Note
+that `--surface-warm-strong` carries emerald-700 link text at 4.54:1, which clears AA
+by 0.04; prefer it for borders, hovers and small fills rather than as a surface for
+body links.
+
+### Typography
+
+Playfair Display at its loaded weight of 500 for headings, Manrope for body text and
+controls. Avoid synthetic bold serif headings. Let heading size, spacing and position
+do the work before adding a badge or icon. Use one H1 and logical H2/H3 levels.
+
+**Section headings use the scale tokens, not breakpoint pairs.** `--text-h2`,
+`--text-h3`, `--text-h4` and `--text-lead` are defined in `:root`, and `.h-section`
+and `.h-sub` consume them. Write `class="h-section font-serif font-medium
+text-emerald-950"`, never `text-3xl sm:text-4xl`. Changing a section-heading size
+site-wide is then a one-line edit rather than a find-and-replace across 169 call
+sites — which is what the previous spelling had grown to, in two different orders.
+
+Body copy is normally 16–18px; long-form `.prose` defines its own readable typography.
+
+### Alignment
+
+**One left axis per page.** Content sections align their heading, intro and body to
+the same left edge. Centred text is reserved for the dark closing band, where the
+composition is deliberately symmetrical.
+
+This means a section must not nest a centred `max-w-* mx-auto` wrapper inside
+`.section-shell`: the shell already sets the measure, and a narrower centred box
+inside it produces a second left edge that shifts as the reader scrolls. Constrain the
+measure with `max-w-*` alone and let it align left. Prose measures (`max-w-2xl` on a
+paragraph) are fine — they cap line length without moving the axis.
 
 ### Width and spacing
 
 Always use `.section-shell` for outer alignment. Use a maximum content width around
-`max-w-5xl` for care pages and approximately 65–70 characters for long prose. `.prose` must retain `min-width: 0`
+`max-w-5xl` for care pages and approximately 65–70 characters for long prose, applied
+without `mx-auto` so the left axis holds (see Alignment above). `.prose` must retain `min-width: 0`
 so long content cannot force a grid column wider than a phone screen. A wide
 viewport must not produce very long paragraphs.
 
@@ -93,7 +151,14 @@ empty columns, forced equal heights and oversized headings merely to fill space.
 Use [HeroSection](src/components/HeroSection.astro) with a breadcrumb, descriptive
 H1 and a short introduction. It selects the care family from the route inventory:
 services use a compact dark header with optional landscape media; conditions use a
-text-led dark header. Directories and practical pages use a pale header. Articles
+text-led dark header. Directories and practical pages use a warm header, left-aligned
+to the same axis as the content below it and tightened to 32/36px of block padding —
+a directory header introduces a task and should not push the first destination off
+the first screen.
+
+Pass `textOnly` to suppress hero media. There was also a `centered` prop; once the
+header stopped centring its text, it did nothing that `textOnly` did not, so it was
+removed rather than left as a second spelling. Articles
 retain their white editorial header with author/date information. A hero does not need an image.
 If an image helps explain the service, use a restrained landscape crop. Keep stacked
 hero media constrained on tablet as well as mobile; do not allow it to become a
@@ -201,8 +266,14 @@ and `.directory-link` for a compact destination. `BenefitCard` retains its compa
 name but renders an open information block; its old icon badge is no longer displayed.
 Avoid nested cards and successive grids of static cards.
 
+**A linked card uses `.card-link` — the one recipe.** White surface, emerald-100
+border, border-colour change on hover, shared focus ring. Two recipes previously sat
+within one screen of each other on the homepage, and the tinted one read cool once the
+warm surface arrived. Do not add a second card surface.
+
 - Only genuinely interactive elements receive interactive hover, lift or pointer
-  styling. Do not apply `.site-card-interactive` to static explanatory blocks.
+  styling. Do not apply `.site-card-interactive` to static explanatory blocks. The
+  lift and shadow belong to actual buttons, via `BASE` in `buttonStyles.ts`.
 - Linked cards should have one clear destination, an accessible name and visible
   keyboard focus; avoid nested links or buttons inside an enclosing link.
 - Use modest borders and little or no shadow. Large shadows and glass effects are
@@ -236,10 +307,34 @@ never falsify image dimensions to force the crop. Use useful alternative text an
 empty alt for purely decorative images. Video should use the shared preview pattern,
 with an explicit play action and appropriate accessible labelling.
 
-Motion should confirm an interaction. Scroll-triggered content reveals have been
-removed: body content and the footer are visible immediately. The homepage introduction is also visible immediately. Respect reduced-motion
-preferences across all controls.
-Content must remain available when animation or JavaScript fails.
+### Motion
+
+Motion is permitted, and it is **CSS-only and feature-detected**. The rule it replaces
+banned scroll reveals outright; that ban was aimed at JavaScript-driven reveals, where
+content sits at `opacity: 0` until a script runs and a script error leaves a blank
+page. That failure mode is still prohibited. The current approach cannot produce it:
+
+- Reveals use `animation-timeline: view()` inside `@supports (animation-timeline:
+  view())`. An unsupported browser never applies the rule, so content renders
+  normally. The failure mode is "no animation", never "no content".
+- **No element has an `opacity: 0` start frame outside a block that guarantees the
+  timeline which ends it.** This is the property that makes the approach safe; a
+  change that breaks it reintroduces the original bug.
+- `@media print` forces reveals to their end frame. Print has no scroll timeline, so
+  an animation never advances and a section would otherwise print blank. This is the
+  one remaining way a CSS-only reveal can hide content, and it is closed explicitly.
+- Page transitions use `@view-transition { navigation: auto; }`, a no-op where
+  unsupported. `#site-header` carries a `view-transition-name` so it persists across
+  navigation instead of repainting.
+- The header's scrolled state uses `animation-timeline: scroll()`. It replaced a JS
+  scroll listener; do not run both.
+- Every block respects `prefers-reduced-motion`, in addition to the global
+  reduced-motion rule.
+
+**The hero headline is not animated.** It is the LCP text and the first thing a
+patient in pain reads. Animate below the fold.
+
+Sections opt in with `data-reveal`; `.care-section` opts in by selector.
 
 ## Buttons and booking
 
@@ -282,6 +377,21 @@ prerequisites instead of treating an unrun audit as passed.
 
 For documentation-only changes, verify linked local paths and consistency with the
 implementation; a production build is unnecessary.
+
+## Positions this guide deliberately reversed
+
+The September 2026 guide said otherwise on the points below. They were changed on
+purpose, with the reasoning in [the design wave plan](docs/design-wave.md). Do not
+restore them on the assumption that they were overlooked.
+
+| Then | Now | Why |
+| --- | --- | --- |
+| Scroll-triggered reveals removed entirely | CSS-only, feature-detected reveals permitted | The ban targeted JS-gated reveals. Content can no longer be hidden by a script failure, and print is guarded. |
+| `--care-paper` was a cool mint (#f3f7f4) | Alias of the warm `--surface-warm` | Two pale surfaces on one site is the same problem the two card recipes had. |
+| Section headings free to be centred | One left axis; centring only on the dark closing band | The homepage axis jumped left, centre, centre within one scroll. |
+| Two card surfaces (white and tinted) | One `.card-link` recipe | They sat within a screen of each other and read as unresolved. |
+| Breakpoint size pairs in templates | `.h-section` / `.h-sub` scale tokens | The pair had grown to 169 call sites in two spellings. |
+| Directory header centred and full-height | Left-aligned, tightened, warm | Its title sat 44px inside the content below it and cost a screen of space. |
 
 ## Keeping the guide useful
 

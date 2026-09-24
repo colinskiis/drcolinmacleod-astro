@@ -92,13 +92,13 @@ const breadcrumbSchema = {
   focusKeyword={topic.focusKeyword}
   customSchemas={[collectionSchema, breadcrumbSchema]}
 >
-  <HeroSection title={topic.title} centered compact>
+  <HeroSection title={topic.title} textOnly compact>
     <p>{topic.intro}</p>
   </HeroSection>
 
   <section class="py-16 lg:py-24 bg-white">
     <div class="section-shell">
-      <div class="max-w-4xl mx-auto">
+      <div class="max-w-4xl">
         <nav class="flex items-center gap-2 text-sm mb-8" aria-label="Breadcrumb">
           <a href="/" class="text-emerald-800 hover:text-emerald-900 font-medium">Home</a>
           <span class="text-slate-400" aria-hidden="true">/</span>

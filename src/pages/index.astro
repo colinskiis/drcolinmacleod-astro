@@ -3,6 +3,7 @@ import PublicImage from '../components/PublicImage.astro';
 import FeaturedServices from '../components/FeaturedServices.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BookingButton from '../components/BookingButton.astro';
+import ActionButton from '../components/ActionButton.astro';
 import FAQSection from '../components/FAQSection.astro';
 import { Phone, MessageCircle, ChevronRight, ShieldCheck, Clock, CreditCard, MapPin } from '@lucide/astro';
 
@@ -132,7 +133,7 @@ const faqSchema = {
   </section>
 
   <!-- Compact trust signals -->
-  <section class="border-b border-emerald-100 bg-emerald-50/70">
+  <section class="border-b border-[var(--border-warm)] bg-[var(--surface-warm)]">
     <div class="section-shell py-6">
       <div class="grid grid-cols-2 gap-x-5 gap-y-5 text-sm text-slate-700 lg:grid-cols-4 lg:gap-8">
         <div class="flex items-center gap-3">
@@ -155,10 +156,10 @@ const faqSchema = {
     </div>
   </section>
 
-  <section class="border-b border-emerald-100 bg-white py-10 sm:py-14" aria-labelledby="your-concerns">
+  <section data-reveal class="border-b border-emerald-100 bg-white py-10 sm:py-14" aria-labelledby="your-concerns">
     <div class="section-shell">
       <div class="mb-6 max-w-2xl">
-        <h2 id="your-concerns" class="mb-3 text-2xl sm:text-3xl font-serif font-medium text-emerald-950">What brings you here?</h2>
+        <h2 id="your-concerns" class="mb-3 h-sub font-serif font-medium text-emerald-950">What brings you here?</h2>
         <p class="leading-relaxed text-slate-600">You do not need to know which treatment to choose. Start with your concern, or find out what a first visit involves.</p>
       </div>
       <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
@@ -168,7 +169,7 @@ const faqSchema = {
           { title: 'Nutrition and digestive concerns', detail: 'Learn about an individualized nutrition assessment.', href: '/clinical-nutrition/' },
           { title: 'Persistent symptoms or unsure?', detail: 'Start with a conversation about your concerns.', href: '/new-patients/' },
         ].map(({ title, detail, href }) => (
-          <a href={href} class="group rounded-2xl border border-emerald-200 bg-emerald-50/40 p-5 transition-colors hover:bg-emerald-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 focus-visible:ring-offset-2">
+          <a href={href} class="card-link group p-5">
             <h3 class="mb-2 flex items-start justify-between gap-3 font-sans text-base font-semibold text-emerald-950">{title}<ChevronRight class="mt-0.5 h-5 w-5 shrink-0 text-emerald-700" aria-hidden="true" /></h3>
             <p class="text-sm leading-relaxed text-slate-600">{detail}</p>
           </a>
@@ -178,34 +179,31 @@ const faqSchema = {
   </section>
 
   <!-- Services Grid -->
-  <section class="py-12 lg:py-16 bg-white">
+  <section data-reveal class="py-12 lg:py-16 bg-[var(--surface-warm)]">
     <div class="section-shell">
-      <div class="text-center max-w-3xl mx-auto mb-8 space-y-3 ">
-        <h2 class="text-3xl sm:text-4xl font-serif font-medium text-emerald-950 tracking-tight">Services</h2>
-        <p class="text-lg text-slate-600 max-w-2xl mx-auto">Private testing and treatments tailored to your concerns, health history and goals.</p>
+      <div class="max-w-3xl mb-8 space-y-3">
+        <h2 class="h-section font-serif font-medium text-emerald-950 tracking-tight">Services</h2>
+        <p class="text-lg text-slate-600 max-w-2xl">Private testing and treatments tailored to your concerns, health history and goals.</p>
       </div>
 
-      <div class="">
+      <div>
         <FeaturedServices />
       </div>
 
-      <div class="text-center mt-8">
-        <a
-          href="/services/"
-          class="inline-flex items-center bg-emerald-900 text-white px-10 py-4 rounded-full text-base font-medium tracking-wide hover:bg-emerald-800 hover:-translate-y-0.5 transition-all duration-200 shadow-lg shadow-emerald-900/20 hover:shadow-xl hover:shadow-emerald-900/25"
-        >
+      <div class="mt-8">
+        <ActionButton href="/services/" variant="secondary" surface="light" size="lg">
           View All Services
-        </a>
+        </ActionButton>
       </div>
     </div>
   </section>
 
   <FAQSection
     bg="white"
-    sectionClass="pt-0 pb-16 lg:pt-0 lg:pb-24 bg-white"
+    sectionClass="pt-12 lg:pt-16 pb-16 lg:pb-24 bg-white"
     title="Common Questions"
     subtitle="Answers to what patients most commonly ask before their first visit."
-    headingClass="text-3xl sm:text-4xl font-serif font-medium text-emerald-950"
+    headingClass="h-section font-serif font-medium text-emerald-950"
     includeSchema={false}
     items={[
       {
@@ -224,9 +222,9 @@ const faqSchema = {
   />
 
   <!-- Closing CTA -->
-  <section class="py-14 lg:py-16 bg-emerald-950">
-    <div class="section-shell text-center space-y-6 ">
-      <h2 class="text-3xl sm:text-4xl font-serif font-medium text-white">Ready to discuss your health and testing needs?</h2>
+  <section data-reveal class="py-14 lg:py-16 bg-emerald-950">
+    <div class="section-shell text-center space-y-6">
+      <h2 class="h-section font-serif font-medium text-white">Ready to discuss your health and testing needs?</h2>
       <p class="text-emerald-200 text-lg max-w-2xl mx-auto">All new patients begin with a one-hour initial consultation ($200) to review concerns and plan next steps. Any recommended IV therapy or injection treatment is scheduled separately afterward.</p>
       <div>
         <BookingButton text="Book Online" variant="primary" surface="dark" size="lg" destination="initial" source="bottom-cta" placement="closing" />
