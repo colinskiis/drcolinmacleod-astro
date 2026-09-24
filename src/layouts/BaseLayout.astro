@@ -997,36 +997,6 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
       </div>
     </footer>
 
-    <!-- Header scroll effect -->
-    <script>
-      let scrollAbortController: AbortController | null = null;
-      function initHeaderScroll() {
-        // Abort previous listener so it doesn't reference a stale header element
-        // after View Transitions replace the DOM.
-        scrollAbortController?.abort();
-        scrollAbortController = new AbortController();
-
-        const header = document.getElementById('site-header');
-        if (!header) return;
-
-        function onScroll() {
-          if (!header) return;
-          if (window.scrollY > 20) {
-            header.classList.add('scrolled');
-          } else {
-            header.classList.remove('scrolled');
-          }
-        }
-
-        window.addEventListener('scroll', onScroll, { passive: true, signal: scrollAbortController.signal });
-        onScroll();
-      }
-
-      initHeaderScroll();
-      document.addEventListener('astro:page-load', () => {
-        initHeaderScroll();
-      });
-    </script>
 
   </body>
 </html>

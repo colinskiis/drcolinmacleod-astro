@@ -200,15 +200,13 @@
   }
 
   /* Header styling - matches emerald-950 hero backgrounds (no color seam) */
+  /* The scrolled state is driven by animation-timeline: scroll() in the motion
+     section below, not by a JS class. Where that is unsupported the header
+     simply keeps this resting shadow. */
   #site-header {
     background: rgb(2, 44, 34); /* emerald-950 */
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
-  }
-
-  #site-header.scrolled {
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
   }
 }
 
@@ -709,4 +707,86 @@ html.js .nav-disclosure-toggle { display: inline-flex; }
 }
 @media (max-width: 639px) {
   .article-prose { font-size: 1rem; }
+}
+
+/* ----------------------------------------------------------------
+   Motion.
+
+   Everything below is an enhancement. Each block is feature-detected, and
+   nothing here is the only thing making content visible: no element starts at
+   opacity 0 outside a @supports block that guarantees the timeline which
+   reveals it. A browser without support renders the page exactly as it would
+   have, which is the property the September removal of the JS scroll-reveals
+   was protecting. See docs/design-wave.md.
+
+   The global prefers-reduced-motion block further up neutralises animation
+   duration, and each block also opts out explicitly so intent is local.
+   ---------------------------------------------------------------- */
+
+/* Cross-document page transitions. A no-op where unsupported. */
+@view-transition {
+  navigation: auto;
+}
+
+/* The header is the same element on every page, so it should not repaint
+   between navigations. */
+#site-header {
+  view-transition-name: site-header;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  @view-transition { navigation: none; }
+}
+
+/* Scroll-driven section reveals.
+   `animation-timeline: view()` reports an element's own progress through the
+   viewport, so an element already on screen at load is already at its final
+   frame — there is no first-paint flash and no dependence on a scroll event.
+   Guarded so the opacity-0 start frame can only exist where the timeline that
+   ends it also exists. */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    @keyframes reveal-rise {
+      from { opacity: 0; transform: translateY(1.25rem); }
+      to   { opacity: 1; transform: none; }
+    }
+
+    /* .care-section carries the care family's own rhythm, so it opts in
+       without needing the attribute on 40-odd templates. */
+    [data-reveal],
+    .care-section {
+      animation: reveal-rise linear both;
+      animation-timeline: view();
+      /* Start as the element enters the lower edge, finish well before centre,
+         so reading position is never waiting on the animation. */
+      animation-range: entry 0% cover 22%;
+    }
+  }
+}
+
+/* Print has no scroll timeline, so a scroll-driven animation never advances
+   and any section still at its start frame would print blank. This is the one
+   way a CSS-only reveal can still hide content, so it is closed explicitly. */
+@media print {
+  [data-reveal],
+  .care-section {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+}
+
+/* Header condensing on scroll, replacing a JS scroll listener.
+   `animation-timeline: scroll()` tracks the document scroller directly. */
+@supports (animation-timeline: scroll()) {
+  @keyframes header-condense {
+    from { box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); }
+    to   { box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12); }
+  }
+
+  #site-header {
+    animation: header-condense linear both;
+    animation-timeline: scroll();
+    animation-range: 0 120px;
+  }
 }
