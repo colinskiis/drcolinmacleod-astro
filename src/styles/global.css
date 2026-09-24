@@ -32,8 +32,9 @@
      A counterweight to the emerald. Before this the site ran dark emerald ->
      mint -> emerald cards -> emerald buttons -> emerald-950 -> mint footer,
      with no neutral anywhere, so the green stopped reading as a choice. These
-     are low-chroma bone tones: warm enough to be distinct from --care-paper
-     (#f3f7f4, which is cool), not warm enough to read as cream.
+     are low-chroma bone tones: warm enough to be distinct from white, not
+     warm enough to read as cream. --care-paper now points here too, so the
+     site has one pale surface rather than a warm one and a cool one.
 
      A second effect turned out to matter more than the colour: white cards
      had no definition on a white section. On --surface-warm they do.
@@ -576,7 +577,11 @@ html.js .nav-disclosure-toggle { display: inline-flex; }
 /* Page families: shared brand, deliberate differences in reading and navigation. */
 :root {
   --care-line: #cdded5;
-  --care-paper: #f3f7f4;
+  /* The care family's pale surface now points at the warm ramp. It was
+     #f3f7f4, a cool mint, which put two different neutrals on the site once
+     --surface-warm arrived — the same two-surfaces problem the card recipe
+     had. One pale surface, used everywhere. */
+  --care-paper: var(--surface-warm);
   --care-space: clamp(3rem, 5vw, 4.5rem);
 }
 .page-hero { margin-top: -1rem; background: #022c22; color: white; padding: 2.5rem 0 3.5rem; }
