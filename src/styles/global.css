@@ -28,6 +28,35 @@
   --color-bg-accent: #ecfdf5;        /* emerald-50 */
   --color-border-default: #e5e7eb;   /* gray-200 */
 
+  /* Warm neutral surfaces.
+     A counterweight to the emerald. Before this the site ran dark emerald ->
+     mint -> emerald cards -> emerald buttons -> emerald-950 -> mint footer,
+     with no neutral anywhere, so the green stopped reading as a choice. These
+     are low-chroma bone tones: warm enough to be distinct from --care-paper
+     (#f3f7f4, which is cool), not warm enough to read as cream.
+
+     A second effect turned out to matter more than the colour: white cards
+     had no definition on a white section. On --surface-warm they do.
+
+     Contrast, measured against --surface-warm (ratios hold for the other two,
+     which are darker):
+       ink #0f1b1a           15.90:1   AA
+       slate-600 #475569      6.84:1   AA
+       emerald-700 #047857    4.95:1   AA  (body links)
+       emerald-900 #064e3b    8.77:1   AA  (primary button fill edge)
+     WCAG 1.4.11 needs 3:1 at a control's edge; the tightest here is 4.95:1.
+
+     CAUTION on --surface-warm-strong: emerald-700 link text is 4.54:1 there,
+     clearing the 4.5 AA threshold by 0.04. Darkening that token, or moving a
+     link to a lighter emerald on it, drops it below AA. Prefer it for borders,
+     hovers and small fills rather than as a surface for body links.
+
+     Any new control on these surfaces must be re-checked, not assumed —
+     see the worked near-miss in src/lib/buttonStyles.ts. */
+  --surface-warm: #f6f3ec;
+  --surface-warm-strong: #efe9dd;
+  --border-warm: #e4ddcf;
+
   /* Type scale.
      Replaces the `text-3xl sm:text-4xl` pairs repeated across 24 templates.
      The ramps are calibrated to the sizes those pairs already produced: each
