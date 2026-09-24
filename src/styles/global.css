@@ -168,6 +168,18 @@
     }
   }
 
+  /* The one card recipe for a linked destination.
+     Two surfaces were in use — white with an emerald-100 border, and a tinted
+     emerald-50/40 with an emerald-200 border — within one screen of each other
+     on the homepage. The tint also read as cool against --surface-warm once
+     that arrived, so white is the survivor. Hover moves the border only; the
+     lift and shadow belong to BASE in buttonStyles.ts, on actual buttons. */
+  .card-link {
+    @apply rounded-2xl border border-emerald-100 bg-white transition-colors;
+    @apply hover:border-emerald-400;
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 focus-visible:ring-offset-2;
+  }
+
   .site-card {
     @apply rounded-2xl border border-emerald-100 bg-white shadow-sm shadow-emerald-900/5;
   }
