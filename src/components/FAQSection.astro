@@ -33,7 +33,7 @@ const bgClass = {
 const sectionClasses = sectionClass ?? `py-12 lg:py-16 ${bgClass}`;
 ---
 
-<section id={id} class:list={[sectionClasses, id && 'scroll-mt-32']}>
+<section id={id} data-reveal class:list={[sectionClasses, id && 'scroll-mt-32']}>
   <div class="section-shell">
     <div class="max-w-3xl mb-8 space-y-3">
       <h2 class={headingClass}>{title}</h2>
