@@ -623,7 +623,14 @@ html.js .nav-disclosure-toggle { display: inline-flex; }
 .care-reading > p:first-child > img { margin: 0; box-shadow: none; max-height: 17rem; width: auto; }
 .care-closing { padding-block: var(--care-space); background: #022c22; color: white; }
 .care-closing h2 { color: white; font-size: clamp(1.75rem, 3vw, 2.25rem); }
-.directory-link { display: block; border-top: 1px solid var(--care-line); padding: 1.25rem .25rem; transition: background-color .15s; }
+/* The display sits in :where() so it carries zero specificity. This rule is
+   defined after @tailwind utilities, so at equal specificity it would win the
+   cascade and silently cancel a `flex`/`grid` utility on the same element —
+   which it was doing on four templates, stacking the chevron under the title
+   instead of placing it beside. Utilities now win; the block default still
+   applies where no display utility is present. */
+:where(.directory-link) { display: block; }
+.directory-link { border-top: 1px solid var(--care-line); padding: 1.25rem .25rem; transition: background-color .15s; }
 .directory-link:hover { background: #edf5ef; }
 .directory-link h3 { color: #022c22; }
 .directory-link:focus-visible { outline: 2px solid #047857; outline-offset: 4px; border-radius: .25rem; }
