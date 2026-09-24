@@ -2,11 +2,38 @@
 
 23 September 2026 · Branch `design-wave` · **Proposed, not implemented**
 
-The canonical design policy is [STYLE_GUIDE.md](../STYLE_GUIDE.md). This document
-plans a single co-ordinated change wave and records the reasoning behind each item.
-Where an item changes a shared design rule, it names the guide section to amend in
-the same commit. Nothing here authorises a change to clinical claims, the protected
-terms in `AGENTS.md`, or the initial-consultation policy.
+This document plans a single co-ordinated change wave and records the reasoning
+behind each item.
+
+## Standing of the existing style guide
+
+On this branch [STYLE_GUIDE.md](../STYLE_GUIDE.md) is **advisory, not binding**. Its
+design positions — section order, card recipes, heading alignment, surface tinting,
+decoration limits, the motion ban — are open to revision. They were written before
+this wave and describe the site being replaced.
+
+The guide is being rewritten, not discarded. Findings 1–3 below are all consequences
+of drift: a page that invented its own button, two card recipes, a wandering heading
+axis. An absent guide reproduces exactly that. Stage 5 rewrites the guide to describe
+what this wave actually builds.
+
+### Constraints that hold regardless
+
+These are not design preferences and are not open on this branch:
+
+- **Control contrast.** WCAG 1.4.11 requires 3:1 at a control's edge. `buttonStyles.ts`
+  documents a real near-miss: `white/40` cleared 3.57:1 on emerald-950 but failed at
+  2.74:1 on the lighter hero gradient. Every new surface is checked against the
+  *lightest* surface it appears on, not the darkest.
+- **Content available without JavaScript.** Nothing essential may depend on a script.
+- **Visible focus, `prefers-reduced-motion`, and comfortable touch targets.**
+- **Image dimensions matching the source asset's intrinsic aspect ratio.** Crops use a
+  wrapper with `object-cover`; dimensions are never falsified to force one.
+
+`AGENTS.md` is a separate file and is outside the scope of this branch entirely. The
+protected terms (regulatory, following counsel's July 2026 letter), the
+initial-consultation policy, deployment rules and image handling hold everywhere.
+Nothing here authorises a change to clinical claims, evidence or safety guidance.
 
 ## Why a wave rather than incremental changes
 
@@ -26,9 +53,11 @@ assessment. It is not an accessibility audit, a performance audit, or a content 
 - The button system in `src/lib/buttonStyles.ts`, including its documented contrast
   ratios against both dark surfaces. Any new surface must be checked against the
   *lightest* part of the hero gradient, as that file already warns.
-- Page families and the care-section rhythm in `global.css`.
 - Content organised by visitor task rather than by service catalogue.
 - Article reading column, citation handling and editorial identity.
+- The page-family concept in `global.css` — distinct structures for care pages,
+  directories and articles. The concept is sound; its specific spacing and surface
+  choices are open like everything else.
 
 ### Findings
 
@@ -45,17 +74,15 @@ assessment. It is not an accessibility audit, a performance audit, or a content 
 
 ## The motion question
 
-`STYLE_GUIDE.md` currently states: *"Scroll-triggered content reveals have been
-removed: body content and the footer are visible immediately."*
+The old guide banned scroll reveals outright, and
 [docs/design-review.md](design-review.md) records that as a deliberate September
-decision.
+decision. The ban itself is advisory here — but the *reason* behind it is one of the
+standing constraints above, so it still shapes the approach.
 
-**That decision was correct and is not being reversed.** It was made about
-JavaScript-driven reveals, where content is `opacity: 0` until a script runs. That
-pattern fails to a blank page on a script error or a slow connection, and it delays
-text a patient came to read.
-
-This wave introduces motion that cannot fail that way:
+The September removal was aimed at JavaScript-driven reveals, where content is
+`opacity: 0` until a script runs. That pattern fails to a blank page on a script error
+or a slow connection, and it delays text a patient came to read. That failure mode
+stays prohibited. Motion that cannot fail that way is in scope:
 
 - **CSS-only, no JavaScript.** Reveals use `animation-timeline: view()` inside an
   `@supports (animation-timeline: view())` guard. Where the feature is unsupported
@@ -67,7 +94,8 @@ This wave introduces motion that cannot fail that way:
   `global.css:552` already neutralises animations globally; new rules must be
   verified against it rather than assumed covered.
 - **The hero headline is not animated.** It is the LCP text and the first thing a
-  patient in pain reads. This is a deliberate exception to record in the guide.
+  patient in pain reads. A recommendation, not a hard constraint — but it should be
+  overturned deliberately rather than by accident.
 
 Browser support to verify against current data before merging, not to assume:
 scroll-driven animations are established in Chromium and shipped in recent Safari;
@@ -88,6 +116,9 @@ many visitors see the effect, not whether the site works.
    including primary and secondary on the new neutral.
 
 ### Stage 2 — Consistency fixes (findings 1–3)
+
+With the guide advisory, these settle on one answer each; the answer is not required
+to be the old guide's answer. Each decision is recorded in the Stage 5 rewrite.
 
 4. Unify the homepage heading axis to left-aligned for content sections. Centring is
    retained only for the closing dark band. Requires an alignment prop on
@@ -120,17 +151,21 @@ many visitors see the effect, not whether the site works.
     `animation-timeline: scroll()`, removing the scroll listener.
 15. Press states on buttons and eased nav underlines.
 
-### Stage 5 — Guide and verification
+### Stage 5 — Guide rewrite and verification
 
-16. Amend the "Images and motion" section of `STYLE_GUIDE.md`: record that CSS-only,
-    feature-detected reveals are permitted, that JavaScript-gated reveals remain
-    prohibited, and that the hero headline is not animated. Amend the rule; do not
-    silently contradict it.
-17. Update the card, button and surface guidance to match what stages 2–3 landed.
-18. `npm run check` and a build with `PUBLIC_TURNSTILE_SITE_KEY`.
-19. Responsive review at 320/390/768/1440 per the guide: keyboard navigation, visible
-    focus, heading order, contrast on the new neutral, text zoom, horizontal overflow.
-20. `npm run audit:buttons` after the stage 2 button change, or report it unrun.
+16. Rewrite `STYLE_GUIDE.md` to describe what this wave built: the surface ramp and
+    type scale, the single card recipe, the heading axis, the button hierarchy, and
+    the motion rules (CSS-only and feature-detected permitted; JavaScript-gated
+    reveals prohibited; hero headline static by default).
+17. Carry the standing constraints above into the rewritten guide verbatim, including
+    the `buttonStyles.ts` contrast worked example. These survived the wave because
+    they are not design preferences, and the new guide must say so explicitly.
+18. Note in the rewrite which positions were deliberately reversed from the September
+    guide, so the next pass does not restore them by assuming they were overlooked.
+19. `npm run check` and a build with `PUBLIC_TURNSTILE_SITE_KEY`.
+20. Responsive review at 320/390/768/1440: keyboard navigation, visible focus,
+    heading order, contrast on the new neutral, text zoom, horizontal overflow.
+21. `npm run audit:buttons` after the stage 2 button change, or report it unrun.
 
 ## Explicitly out of scope
 
