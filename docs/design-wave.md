@@ -255,3 +255,36 @@ media, rather than relying on `fullPage`.
 
 This is the second way the screenshot harness misleads on this site; the first
 is the non-determinism noted above.
+
+## Status
+
+| Stage | State |
+| --- | --- |
+| 1 Tokens and foundations | Done |
+| 2 Consistency fixes | Done |
+| 3 Rhythm and surfaces | Done except item 11 (photography) and finding 9 |
+| 4 Motion | Done |
+| 5 Guide rewrite and verification | Done |
+
+**Outstanding, both needing a decision rather than more implementation:**
+
+- **Item 11, photography.** Needs the source assets and a go-ahead. The measured
+  mismatch is exposure and saturation, not white balance — see the corrections
+  above. Not appropriate to solve with a CSS filter over clinical imagery.
+- **Finding 9, step tiles.** `trace-minerals`, `l-carnitine` and `nad-therapy` use
+  centred numbered tiles; `lab-testing` uses a third variant; the rest of the care
+  family uses left-aligned numbered rows. Consolidating means restructuring each
+  page's step section, which is per-page design work rather than a sweep.
+
+**Verification run on the final state:** `npm run check` 0 errors / 0 warnings;
+production build 100 pages; no horizontal overflow, heading-level skips or duplicate
+H1s at 320/390/768/1440 across eight representative pages; `npm run audit:buttons`
+63 controls, 8 distinct styles, all clearing their contrast bound, the lowest at
+4.21:1 against a 3:1 requirement.
+
+A scripted text-contrast sweep flagged seven items, all inside the homepage hero.
+All seven are false positives: the hero's background is a gradient, so
+`backgroundColor` reports transparent and the script walks up to the body colour.
+The hero's real contrast is documented in `buttonStyles.ts`. A contrast checker
+used on this site needs to resolve gradient backgrounds before its output means
+anything.
