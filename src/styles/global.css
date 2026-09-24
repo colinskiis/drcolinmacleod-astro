@@ -598,7 +598,12 @@ html.js .nav-disclosure-toggle { display: inline-flex; }
 .page-hero__media > div { max-width: none; margin: 0; box-shadow: none; }
 @media (min-width: 1024px) {
   .page-hero { padding-block: 3rem 4rem; }
-  .page-hero__layout--media { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, .85fr); gap: 3.5rem; align-items: center; }
+  /* The media was already centred; it simply sat far shorter than the text
+     column (210px against 469px on /prolotherapy/), leaving ~129px empty above
+     and below. A wider column and a 4:3 crop close most of that gap. The crop
+     lives here, on the wrapper — the img keeps its intrinsic dimensions. */
+  .page-hero__layout--media { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 3rem; align-items: center; }
+  .page-hero__layout--media .page-hero__media > img { aspect-ratio: 4 / 3; }
   .page-hero__media { margin: 0; }
 }
 :is([data-page-family="service"], [data-page-family="condition"]) > section > .section-shell,
