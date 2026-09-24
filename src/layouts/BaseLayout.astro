@@ -366,9 +366,20 @@ const customSchemaJson = (Array.isArray(customSchemas) ? customSchemas : [custom
     <meta name="generator" content={Astro.generator} />
     <title>{fullTitle}</title>
 
-    <!-- Marks JavaScript availability for progressive enhancements -->
+    <!-- Marks JavaScript availability for progressive enhancements.
+         ClientRouter replaces the <html> attributes on a client-side
+         navigation with those from the incoming server-rendered document,
+         which has no `js` class — so the class has to be reapplied after every
+         swap. Without this, four progressive enhancements silently invert on
+         any in-site navigation: the video play button and the desktop nav
+         disclosure toggles disappear, the article "show all" control
+         disappears, and the article rows it hides are all revealed.
+         astro:after-swap runs before paint, so there is no flash. -->
     <script is:inline>
       document.documentElement.classList.add('js');
+      document.addEventListener('astro:after-swap', function () {
+        document.documentElement.classList.add('js');
+      });
     </script>
 
     <!-- Resource hints for faster loading -->

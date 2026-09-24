@@ -30,10 +30,14 @@ const { src, title, poster } = Astro.props;
       button.dataset.bound = 'true';
       button.addEventListener('click', () => {
         const frame = document.createElement('iframe');
-        frame.src = `${button.dataset.videoSrc}?autoplay=1`;
+        // playsinline is required on iOS: without it the embed tries to take
+        // over the screen, and autoplay is refused outright. fullscreen has to
+        // be named in `allow`, because setting `allow` at all overrides the
+        // permissions the legacy allowfullscreen attribute would have granted.
+        frame.src = `${button.dataset.videoSrc}?autoplay=1&playsinline=1`;
         frame.title = button.dataset.videoTitle || 'Video';
         frame.className = 'h-full w-full';
-        frame.allow = 'autoplay; encrypted-media; picture-in-picture';
+        frame.allow = 'autoplay; fullscreen; encrypted-media; picture-in-picture';
         frame.allowFullscreen = true;
         frame.tabIndex = 0;
         this.querySelector('[data-video-container]')?.replaceChildren(frame);
