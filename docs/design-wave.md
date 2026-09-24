@@ -231,3 +231,27 @@ So the fix is an exposure and saturation match, not a white-balance match.
 identifiable practitioner and patients is a content decision, not a CSS change,
 and it should be a re-export from the source files rather than a filter applied
 over clinical imagery. It needs the source assets and an explicit go-ahead.
+
+## Screenshot QA after the motion change
+
+A full-page screenshot of this site now shows blank sections, and that is an
+artifact, not a bug. Chromium captures a `fullPage` screenshot with the document
+at scroll position 0, so any section driven by `animation-timeline: view()` is
+captured at its start frame — `opacity: 0` — even though a real visitor sees it
+animate in normally.
+
+Verified at 390px by probing computed opacity while scrolling:
+
+| scrollY | section 1 | section 2 | section 3 |
+| --- | --- | --- | --- |
+| 0 | 0 | 0 | 0 |
+| 600 | 1 | 0 | 0 |
+| 1200 | 1 | 1 | 0 |
+| 2400 | 1 | 1 | 1 |
+
+Every section reaches full opacity as it enters the viewport. For visual QA,
+take viewport-sized screenshots at several scroll offsets, or emulate print
+media, rather than relying on `fullPage`.
+
+This is the second way the screenshot harness misleads on this site; the first
+is the non-determinism noted above.
