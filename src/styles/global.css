@@ -581,11 +581,9 @@ html.js .nav-disclosure-toggle { display: inline-flex; }
 }
 .page-hero { margin-top: -1rem; background: #022c22; color: white; padding: 2.5rem 0 3.5rem; }
 .page-hero__layout { max-width: 64rem; margin-inline: auto; }
-.page-hero__layout--centered { text-align: center; max-width: 52rem; }
 .page-hero h1 { color: white; font-size: clamp(2.25rem, 4.2vw, 3.75rem); line-height: 1.1; text-wrap: balance; }
 .page-hero__intro { color: #d7e9df; font-size: clamp(1rem, 1.5vw, 1.125rem); max-width: 68ch; margin-top: 1.25rem; }
 .page-hero__intro p + p { margin-top: 1rem; }
-.page-hero__layout--centered .page-hero__intro { margin-inline: auto; }
 .page-hero__breadcrumb { display: flex; flex-wrap: wrap; gap: .6rem; font-size: .8rem; color: #b4dac8; margin-bottom: 1.25rem; }
 .page-hero__breadcrumb a { text-underline-offset: .25em; text-decoration: underline; }
 .page-hero__breadcrumb a:hover { color: white; }
@@ -632,7 +630,21 @@ html.js .nav-disclosure-toggle { display: inline-flex; }
 }
 /* Directories and practical pages introduce a task on a light surface; service
    and condition headers retain the compact dark care-family treatment. */
-.page-hero--general { background: var(--care-paper); border-bottom: 1px solid var(--care-line); }
+.page-hero--general {
+  background: var(--surface-warm);
+  border-bottom: 1px solid var(--border-warm);
+  /* A directory header introduces a task; it does not need the care family's
+     full presence. Tightened from the shared 48/64px (56/80px at >=1024) so
+     the first actual destination is not pushed off the first screen. */
+  padding-block: 2rem 2.25rem;
+}
+@media (min-width: 1024px) {
+  .page-hero--general { padding-block: 2.5rem 2.75rem; }
+}
+/* The general shell is wider than the care shell, so the shared 64rem centred
+   hero layout would sit 44px inside the content below it. Align to the shell
+   instead; .page-hero__intro keeps its own 68ch measure. */
+.page-hero--general .page-hero__layout { max-width: none; margin-inline: 0; }
 .page-hero--general h1 { color: #022c22; }
 .page-hero--general .page-hero__intro { color: #475569; }
 .page-hero--general :is(nav, nav a, nav span) { color: #065f46; }
