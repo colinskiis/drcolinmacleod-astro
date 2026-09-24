@@ -239,31 +239,29 @@ import FAQSection from '../components/FAQSection.astro';
       <div class="max-w-4xl">
         <h2 class="h-section font-serif font-medium text-emerald-950 mb-8">What to Expect</h2>
 
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          <div class="text-center">
-            <div class="care-number">
-              <span class="text-2xl font-bold text-slate-600">1</span>
+        <ol class="care-item divide-y divide-emerald-100">
+          <li class="grid grid-cols-[2.5rem_1fr] gap-4 py-6">
+            <span class="care-number">1</span>
+            <div>
+              <h3 class="mb-1 font-sans font-semibold text-emerald-950">Before Your Infusion</h3>
+              <p class="leading-relaxed text-slate-600">Eat a light meal, stay well hydrated and wear comfortable clothing with easy arm access. Bring something to read, watch or work on.</p>
             </div>
-            <h3 class="font-sans font-semibold text-emerald-950 mb-2">Before Your Infusion</h3>
-            <p class="text-slate-600">Eat a light meal, stay well hydrated and wear comfortable clothing with easy arm access. Bring something to read, watch or work on.</p>
-          </div>
-
-          <div class="text-center">
-            <div class="care-number">
-              <span class="text-2xl font-bold text-slate-600">2</span>
+          </li>
+          <li class="grid grid-cols-[2.5rem_1fr] gap-4 py-6">
+            <span class="care-number">2</span>
+            <div>
+              <h3 class="mb-1 font-sans font-semibold text-emerald-950">During Your Infusion</h3>
+              <p class="leading-relaxed text-slate-600">Sessions commonly take 1–4 hours depending on dose and infusion rate. Some people notice warmth, mild nausea or abdominal sensations that are usually managed by slowing the drip.</p>
             </div>
-            <h3 class="font-sans font-semibold text-emerald-950 mb-2">During Your Infusion</h3>
-            <p class="text-slate-600">Sessions commonly take 1–4 hours depending on dose and infusion rate. Some people notice warmth, mild nausea or abdominal sensations that are usually managed by slowing the drip.</p>
-          </div>
-
-          <div class="text-center">
-            <div class="care-number">
-              <span class="text-2xl font-bold text-slate-600">3</span>
+          </li>
+          <li class="grid grid-cols-[2.5rem_1fr] gap-4 py-6">
+            <span class="care-number">3</span>
+            <div>
+              <h3 class="mb-1 font-sans font-semibold text-emerald-950">After Your Infusion</h3>
+              <p class="leading-relaxed text-slate-600">Most people resume their usual activities afterward. Many patients report increased energy or mental clarity within hours to days, although the timing and degree of response vary.</p>
             </div>
-            <h3 class="font-sans font-semibold text-emerald-950 mb-2">After Your Infusion</h3>
-            <p class="text-slate-600">Most people resume their usual activities afterward. Many patients report increased energy or mental clarity within hours to days, although the timing and degree of response vary.</p>
-          </div>
-        </div>
+          </li>
+        </ol>
       </div>
     </div>
   </section>

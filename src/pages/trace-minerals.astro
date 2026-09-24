@@ -209,31 +209,29 @@ import FAQSection from '../components/FAQSection.astro';
       <div class="max-w-4xl">
         <h2 class="h-section font-serif font-medium text-emerald-950 mb-8">What to Expect</h2>
 
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          <div class="text-center">
-            <div class="care-number">
-              <span class="text-2xl font-bold text-slate-600">1</span>
+        <ol class="care-item divide-y divide-emerald-100">
+          <li class="grid grid-cols-[2.5rem_1fr] gap-4 py-6">
+            <span class="care-number">1</span>
+            <div>
+              <h3 class="mb-1 font-sans font-semibold text-emerald-950">Before Your Infusion</h3>
+              <p class="leading-relaxed text-slate-600">No special preparation required. Stay hydrated. Trace minerals can be added to the Myers Cocktail or administered as a standalone booster.</p>
             </div>
-            <h3 class="font-sans font-semibold text-emerald-950 mb-2">Before Your Infusion</h3>
-            <p class="text-slate-600">No special preparation required. Stay hydrated. Trace minerals can be added to the Myers Cocktail or administered as a standalone booster.</p>
-          </div>
-
-          <div class="text-center">
-            <div class="care-number">
-              <span class="text-2xl font-bold text-slate-600">2</span>
+          </li>
+          <li class="grid grid-cols-[2.5rem_1fr] gap-4 py-6">
+            <span class="care-number">2</span>
+            <div>
+              <h3 class="mb-1 font-sans font-semibold text-emerald-950">During Your Infusion</h3>
+              <p class="leading-relaxed text-slate-600">Sessions may take 30–60 minutes. Potential effects include IV-site complications, metallic taste, nausea, light-headedness, reactions to ingredients and toxicity from inappropriate mineral dosing.</p>
             </div>
-            <h3 class="font-sans font-semibold text-emerald-950 mb-2">During Your Infusion</h3>
-            <p class="text-slate-600">Sessions may take 30–60 minutes. Potential effects include IV-site complications, metallic taste, nausea, light-headedness, reactions to ingredients and toxicity from inappropriate mineral dosing.</p>
-          </div>
-
-          <div class="text-center">
-            <div class="care-number">
-              <span class="text-2xl font-bold text-slate-600">3</span>
+          </li>
+          <li class="grid grid-cols-[2.5rem_1fr] gap-4 py-6">
+            <span class="care-number">3</span>
+            <div>
+              <h3 class="mb-1 font-sans font-semibold text-emerald-950">After Your Infusion</h3>
+              <p class="leading-relaxed text-slate-600">Effects are often felt gradually as mineral stores replenish over days to weeks. For best results, trace minerals are typically administered monthly as a maintenance booster following an initial series of treatments.</p>
             </div>
-            <h3 class="font-sans font-semibold text-emerald-950 mb-2">After Your Infusion</h3>
-            <p class="text-slate-600">Effects are often felt gradually as mineral stores replenish over days to weeks. For best results, trace minerals are typically administered monthly as a maintenance booster following an initial series of treatments.</p>
-          </div>
-        </div>
+          </li>
+        </ol>
       </div>
     </div>
   </section>
