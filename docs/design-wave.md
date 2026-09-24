@@ -182,3 +182,23 @@ to be the old guide's answer. Each decision is recorded in the Stage 5 rewrite.
   emerald without turning cream. To be decided against a rendered comparison, not a
   hex value on paper.
 - Whether finding 6 grading is done in-repo or the source assets are re-exported.
+
+## Findings added during implementation
+
+| # | Finding | Evidence | Stage |
+| --- | --- | --- | --- |
+| 9 | Three IV pages use centred numbered step tiles while the rest of the care family uses left-aligned numbered rows | `trace-minerals.astro:213`, `l-carnitine.astro:200`, `nad-therapy.astro:243`; `lab-testing.astro:99` uses a third variant | 3 |
+| 10 | Section content widths disagree within a page: `.section-shell` is 67rem on care pages, but several sections nest a `max-w-4xl mx-auto` inside it, producing two different left edges as you scroll | `prolotherapy-for-back-pain.astro:99` and similar | 3 |
+
+Finding 10 is the reason the heading-axis fix does not fully land on care pages:
+the headings are left-aligned now, but they are left-aligned to two different
+axes depending on the section.
+
+## Implementation notes
+
+- **Screenshot pixel-diffing is not usable as a regression check here.** Two
+  captures of identical code differ by 2.8-3.2% of pixels because images load
+  lazily and the capture races them. Verify rendering by measuring computed
+  styles, which is deterministic, and use screenshots for human review only.
+- Two spellings of the heading size pair were in use — adjacent, and split
+  across other utilities — so a naive find-and-replace finds only 106 of 169.
